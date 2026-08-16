@@ -51,6 +51,10 @@ public class SceneBlock {
                 ScriptLoader.getScript(
                         "Scene/" + sceneId + "/scene" + sceneId + "_block" + this.id + ".lua");
 
+        if (cs == null) {
+            return null;
+        }
+
         // Eval script
         try {
             ScriptLoader.eval(cs, bindings);

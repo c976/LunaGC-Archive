@@ -65,15 +65,6 @@ public class EntityGadget extends EntityBaseGadget {
 
     @Getter private boolean interactEnabled = true;
 
-    private static final Set<EntityType> Vulnerable = Set.of(
-        EntityType.Avatar,
-        EntityType.Gadget,
-        EntityType.GatherObject,
-        EntityType.ElemCrystal,
-        EntityType.EnvAnimal,
-        EntityType.Bush
-    );
-
     public EntityGadget(Scene scene, int gadgetId, Position pos) {
         this(scene, gadgetId, pos, null, null);
     }
@@ -103,7 +94,6 @@ public class EntityGadget extends EntityBaseGadget {
         super(scene, pos, rot, campId, campType);
 
         this.gadgetData = GameData.getGadgetDataMap().get(gadgetId);
-        if (gadgetData.getType() != null && Vulnerable.contains(gadgetData.getType())) this.setLimbo(-1.0f);
         if (gadgetData != null && gadgetData.getJsonName() != null) {
             this.configGadget = GameData.getGadgetConfigData().get(gadgetData.getJsonName());
         }
@@ -171,7 +161,7 @@ public class EntityGadget extends EntityBaseGadget {
         this.state = state;
         // Cache the gadget state
         if (metaGadget != null && metaGadget.group != null) {
-            var instance = getScene().getScriptManager().getGroupInstanceById(metaGadget.group.id);
+            var instance = getScene().getScriptManager().getCachedGroupInstanceById(metaGadget.group.id);
             if (instance != null) instance.cacheGadgetState(metaGadget, state);
         }
     }
@@ -220,15 +210,13 @@ public class EntityGadget extends EntityBaseGadget {
     }
 
     @Override
-    public void onInteract(Player player, @Nullable GadgetInteractReq interactReq) {
+    public void onInteract(Player player, GadgetInteractReq interactReq) {
         if (!this.interactEnabled) return;
 
         if (this.getContent() == null) {
             return;
         }
 
-        if (interactReq == null)
-            interactReq = GadgetInteractReq.newBuilder().setGadgetId(this.gadgetId).build();
         boolean shouldDelete = this.getContent().onInteract(player, interactReq);
 
         if (shouldDelete) {
@@ -270,7 +258,7 @@ public class EntityGadget extends EntityBaseGadget {
                         new ScriptArgs(this.getGroupId(), EventType.EVENT_ANY_GADGET_DIE, this.getConfigId()));
 
         SceneGroupInstance groupInstance =
-                getScene().getScriptManager().getGroupInstanceById(this.getGroupId());
+                getScene().getScriptManager().getCachedGroupInstanceById(this.getGroupId());
         if (groupInstance != null && metaGadget != null)
             groupInstance.getDeadEntities().add(metaGadget.config_id);
     }
@@ -288,10 +276,6 @@ public class EntityGadget extends EntityBaseGadget {
             var route = this.getScene().getSceneRouteById(configRoute.getRouteId());
             if (route != null) {
                 var points = route.getPoints();
-                if (points == null) {
-                    Grasscutter.getLogger().error("StartPlatform route {} with null points", configRoute.getRouteId());
-                    return false;
-                }
                 if (configRoute.getStartIndex() == points.length - 1) {
                     configRoute.setStartIndex(0);
                 }

@@ -19,37 +19,13 @@ public final class GetSceneAreaRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 1;</code>
+     * <code>uint32 scene_id = 5;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>repeated .CityInfo city_info_list = 6;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> 
-        getCityInfoListList();
-    /**
-     * <code>repeated .CityInfo city_info_list = 6;</code>
-     */
-    emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo getCityInfoList(int index);
-    /**
-     * <code>repeated .CityInfo city_info_list = 6;</code>
-     */
-    int getCityInfoListCount();
-    /**
-     * <code>repeated .CityInfo city_info_list = 6;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> 
-        getCityInfoListOrBuilderList();
-    /**
-     * <code>repeated .CityInfo city_info_list = 6;</code>
-     */
-    emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder getCityInfoListOrBuilder(
-        int index);
-
-    /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -70,6 +46,30 @@ public final class GetSceneAreaRspOuterClass {
      * @return The areaIdList at the given index.
      */
     int getAreaIdList(int index);
+
+    /**
+     * <code>repeated .CityInfo city_info_list = 14;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> 
+        getCityInfoListList();
+    /**
+     * <code>repeated .CityInfo city_info_list = 14;</code>
+     */
+    emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo getCityInfoList(int index);
+    /**
+     * <code>repeated .CityInfo city_info_list = 14;</code>
+     */
+    int getCityInfoListCount();
+    /**
+     * <code>repeated .CityInfo city_info_list = 14;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> 
+        getCityInfoListOrBuilderList();
+    /**
+     * <code>repeated .CityInfo city_info_list = 14;</code>
+     */
+    emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder getCityInfoListOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code GetSceneAreaRsp}
@@ -84,8 +84,8 @@ public final class GetSceneAreaRspOuterClass {
       super(builder);
     }
     private GetSceneAreaRsp() {
-      cityInfoList_ = java.util.Collections.emptyList();
       areaIdList_ = emptyIntList();
+      cityInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -119,29 +119,20 @@ public final class GetSceneAreaRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 50: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cityInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              cityInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 56: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
             }
             case 80: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 areaIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               areaIdList_.addInt(input.readUInt32());
               break;
@@ -149,14 +140,23 @@ public final class GetSceneAreaRspOuterClass {
             case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 areaIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 areaIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 114: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                cityInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              cityInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -175,10 +175,10 @@ public final class GetSceneAreaRspOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          cityInfoList_ = java.util.Collections.unmodifiableList(cityInfoList_);
+          areaIdList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          areaIdList_.makeImmutable(); // C
+          cityInfoList_ = java.util.Collections.unmodifiableList(cityInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -197,10 +197,10 @@ public final class GetSceneAreaRspOuterClass {
               emu.grasscutter.net.proto.GetSceneAreaRspOuterClass.GetSceneAreaRsp.class, emu.grasscutter.net.proto.GetSceneAreaRspOuterClass.GetSceneAreaRsp.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 1;
+    public static final int SCENE_ID_FIELD_NUMBER = 5;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 1;</code>
+     * <code>uint32 scene_id = 5;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -208,50 +208,10 @@ public final class GetSceneAreaRspOuterClass {
       return sceneId_;
     }
 
-    public static final int CITY_INFO_LIST_FIELD_NUMBER = 6;
-    private java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> cityInfoList_;
-    /**
-     * <code>repeated .CityInfo city_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> getCityInfoListList() {
-      return cityInfoList_;
-    }
-    /**
-     * <code>repeated .CityInfo city_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> 
-        getCityInfoListOrBuilderList() {
-      return cityInfoList_;
-    }
-    /**
-     * <code>repeated .CityInfo city_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public int getCityInfoListCount() {
-      return cityInfoList_.size();
-    }
-    /**
-     * <code>repeated .CityInfo city_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo getCityInfoList(int index) {
-      return cityInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .CityInfo city_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder getCityInfoListOrBuilder(
-        int index) {
-      return cityInfoList_.get(index);
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -287,6 +247,46 @@ public final class GetSceneAreaRspOuterClass {
     }
     private int areaIdListMemoizedSerializedSize = -1;
 
+    public static final int CITY_INFO_LIST_FIELD_NUMBER = 14;
+    private java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> cityInfoList_;
+    /**
+     * <code>repeated .CityInfo city_info_list = 14;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> getCityInfoListList() {
+      return cityInfoList_;
+    }
+    /**
+     * <code>repeated .CityInfo city_info_list = 14;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> 
+        getCityInfoListOrBuilderList() {
+      return cityInfoList_;
+    }
+    /**
+     * <code>repeated .CityInfo city_info_list = 14;</code>
+     */
+    @java.lang.Override
+    public int getCityInfoListCount() {
+      return cityInfoList_.size();
+    }
+    /**
+     * <code>repeated .CityInfo city_info_list = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo getCityInfoList(int index) {
+      return cityInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .CityInfo city_info_list = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder getCityInfoListOrBuilder(
+        int index) {
+      return cityInfoList_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -303,13 +303,10 @@ public final class GetSceneAreaRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (sceneId_ != 0) {
-        output.writeUInt32(1, sceneId_);
-      }
-      for (int i = 0; i < cityInfoList_.size(); i++) {
-        output.writeMessage(6, cityInfoList_.get(i));
+        output.writeUInt32(5, sceneId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(8, retcode_);
       }
       if (getAreaIdListList().size() > 0) {
         output.writeUInt32NoTag(82);
@@ -317,6 +314,9 @@ public final class GetSceneAreaRspOuterClass {
       }
       for (int i = 0; i < areaIdList_.size(); i++) {
         output.writeUInt32NoTag(areaIdList_.getInt(i));
+      }
+      for (int i = 0; i < cityInfoList_.size(); i++) {
+        output.writeMessage(14, cityInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -329,15 +329,11 @@ public final class GetSceneAreaRspOuterClass {
       size = 0;
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, sceneId_);
-      }
-      for (int i = 0; i < cityInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, cityInfoList_.get(i));
+          .computeUInt32Size(5, sceneId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(8, retcode_);
       }
       {
         int dataSize = 0;
@@ -352,6 +348,10 @@ public final class GetSceneAreaRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         areaIdListMemoizedSerializedSize = dataSize;
+      }
+      for (int i = 0; i < cityInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, cityInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,12 +370,12 @@ public final class GetSceneAreaRspOuterClass {
 
       if (getSceneId()
           != other.getSceneId()) return false;
-      if (!getCityInfoListList()
-          .equals(other.getCityInfoListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (!getAreaIdListList()
           .equals(other.getAreaIdListList())) return false;
+      if (!getCityInfoListList()
+          .equals(other.getCityInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -389,15 +389,15 @@ public final class GetSceneAreaRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
-      if (getCityInfoListCount() > 0) {
-        hash = (37 * hash) + CITY_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getCityInfoListList().hashCode();
-      }
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       if (getAreaIdListCount() > 0) {
         hash = (37 * hash) + AREA_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAreaIdListList().hashCode();
+      }
+      if (getCityInfoListCount() > 0) {
+        hash = (37 * hash) + CITY_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getCityInfoListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -535,16 +535,16 @@ public final class GetSceneAreaRspOuterClass {
         super.clear();
         sceneId_ = 0;
 
-        if (cityInfoListBuilder_ == null) {
-          cityInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          cityInfoListBuilder_.clear();
-        }
         retcode_ = 0;
 
         areaIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (cityInfoListBuilder_ == null) {
+          cityInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          cityInfoListBuilder_.clear();
+        }
         return this;
       }
 
@@ -573,21 +573,21 @@ public final class GetSceneAreaRspOuterClass {
         emu.grasscutter.net.proto.GetSceneAreaRspOuterClass.GetSceneAreaRsp result = new emu.grasscutter.net.proto.GetSceneAreaRspOuterClass.GetSceneAreaRsp(this);
         int from_bitField0_ = bitField0_;
         result.sceneId_ = sceneId_;
+        result.retcode_ = retcode_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          areaIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.areaIdList_ = areaIdList_;
         if (cityInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             cityInfoList_ = java.util.Collections.unmodifiableList(cityInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.cityInfoList_ = cityInfoList_;
         } else {
           result.cityInfoList_ = cityInfoListBuilder_.build();
         }
-        result.retcode_ = retcode_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          areaIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.areaIdList_ = areaIdList_;
         onBuilt();
         return result;
       }
@@ -639,11 +639,24 @@ public final class GetSceneAreaRspOuterClass {
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
         }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (!other.areaIdList_.isEmpty()) {
+          if (areaIdList_.isEmpty()) {
+            areaIdList_ = other.areaIdList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureAreaIdListIsMutable();
+            areaIdList_.addAll(other.areaIdList_);
+          }
+          onChanged();
+        }
         if (cityInfoListBuilder_ == null) {
           if (!other.cityInfoList_.isEmpty()) {
             if (cityInfoList_.isEmpty()) {
               cityInfoList_ = other.cityInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureCityInfoListIsMutable();
               cityInfoList_.addAll(other.cityInfoList_);
@@ -656,7 +669,7 @@ public final class GetSceneAreaRspOuterClass {
               cityInfoListBuilder_.dispose();
               cityInfoListBuilder_ = null;
               cityInfoList_ = other.cityInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               cityInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getCityInfoListFieldBuilder() : null;
@@ -664,19 +677,6 @@ public final class GetSceneAreaRspOuterClass {
               cityInfoListBuilder_.addAllMessages(other.cityInfoList_);
             }
           }
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (!other.areaIdList_.isEmpty()) {
-          if (areaIdList_.isEmpty()) {
-            areaIdList_ = other.areaIdList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureAreaIdListIsMutable();
-            areaIdList_.addAll(other.areaIdList_);
-          }
-          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -710,7 +710,7 @@ public final class GetSceneAreaRspOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 5;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -718,7 +718,7 @@ public final class GetSceneAreaRspOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 5;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -729,7 +729,7 @@ public final class GetSceneAreaRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -739,249 +739,9 @@ public final class GetSceneAreaRspOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> cityInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureCityInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          cityInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo>(cityInfoList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> cityInfoListBuilder_;
-
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> getCityInfoListList() {
-        if (cityInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(cityInfoList_);
-        } else {
-          return cityInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public int getCityInfoListCount() {
-        if (cityInfoListBuilder_ == null) {
-          return cityInfoList_.size();
-        } else {
-          return cityInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo getCityInfoList(int index) {
-        if (cityInfoListBuilder_ == null) {
-          return cityInfoList_.get(index);
-        } else {
-          return cityInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public Builder setCityInfoList(
-          int index, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo value) {
-        if (cityInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCityInfoListIsMutable();
-          cityInfoList_.set(index, value);
-          onChanged();
-        } else {
-          cityInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public Builder setCityInfoList(
-          int index, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder builderForValue) {
-        if (cityInfoListBuilder_ == null) {
-          ensureCityInfoListIsMutable();
-          cityInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          cityInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public Builder addCityInfoList(emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo value) {
-        if (cityInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCityInfoListIsMutable();
-          cityInfoList_.add(value);
-          onChanged();
-        } else {
-          cityInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public Builder addCityInfoList(
-          int index, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo value) {
-        if (cityInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCityInfoListIsMutable();
-          cityInfoList_.add(index, value);
-          onChanged();
-        } else {
-          cityInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public Builder addCityInfoList(
-          emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder builderForValue) {
-        if (cityInfoListBuilder_ == null) {
-          ensureCityInfoListIsMutable();
-          cityInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          cityInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public Builder addCityInfoList(
-          int index, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder builderForValue) {
-        if (cityInfoListBuilder_ == null) {
-          ensureCityInfoListIsMutable();
-          cityInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          cityInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public Builder addAllCityInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> values) {
-        if (cityInfoListBuilder_ == null) {
-          ensureCityInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, cityInfoList_);
-          onChanged();
-        } else {
-          cityInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public Builder clearCityInfoList() {
-        if (cityInfoListBuilder_ == null) {
-          cityInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          cityInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public Builder removeCityInfoList(int index) {
-        if (cityInfoListBuilder_ == null) {
-          ensureCityInfoListIsMutable();
-          cityInfoList_.remove(index);
-          onChanged();
-        } else {
-          cityInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder getCityInfoListBuilder(
-          int index) {
-        return getCityInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder getCityInfoListOrBuilder(
-          int index) {
-        if (cityInfoListBuilder_ == null) {
-          return cityInfoList_.get(index);  } else {
-          return cityInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> 
-           getCityInfoListOrBuilderList() {
-        if (cityInfoListBuilder_ != null) {
-          return cityInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(cityInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder addCityInfoListBuilder() {
-        return getCityInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder addCityInfoListBuilder(
-          int index) {
-        return getCityInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .CityInfo city_info_list = 6;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder> 
-           getCityInfoListBuilderList() {
-        return getCityInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> 
-          getCityInfoListFieldBuilder() {
-        if (cityInfoListBuilder_ == null) {
-          cityInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder>(
-                  cityInfoList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          cityInfoList_ = null;
-        }
-        return cityInfoListBuilder_;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 8;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -989,7 +749,7 @@ public final class GetSceneAreaRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 8;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -1000,7 +760,7 @@ public final class GetSceneAreaRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -1012,9 +772,9 @@ public final class GetSceneAreaRspOuterClass {
 
       private com.google.protobuf.Internal.IntList areaIdList_ = emptyIntList();
       private void ensureAreaIdListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           areaIdList_ = mutableCopy(areaIdList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000001;
          }
       }
       /**
@@ -1023,7 +783,7 @@ public final class GetSceneAreaRspOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getAreaIdListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000001) != 0) ?
                  java.util.Collections.unmodifiableList(areaIdList_) : areaIdList_;
       }
       /**
@@ -1084,9 +844,249 @@ public final class GetSceneAreaRspOuterClass {
        */
       public Builder clearAreaIdList() {
         areaIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> cityInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureCityInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          cityInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo>(cityInfoList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> cityInfoListBuilder_;
+
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> getCityInfoListList() {
+        if (cityInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(cityInfoList_);
+        } else {
+          return cityInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public int getCityInfoListCount() {
+        if (cityInfoListBuilder_ == null) {
+          return cityInfoList_.size();
+        } else {
+          return cityInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo getCityInfoList(int index) {
+        if (cityInfoListBuilder_ == null) {
+          return cityInfoList_.get(index);
+        } else {
+          return cityInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public Builder setCityInfoList(
+          int index, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo value) {
+        if (cityInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCityInfoListIsMutable();
+          cityInfoList_.set(index, value);
+          onChanged();
+        } else {
+          cityInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public Builder setCityInfoList(
+          int index, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder builderForValue) {
+        if (cityInfoListBuilder_ == null) {
+          ensureCityInfoListIsMutable();
+          cityInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          cityInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public Builder addCityInfoList(emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo value) {
+        if (cityInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCityInfoListIsMutable();
+          cityInfoList_.add(value);
+          onChanged();
+        } else {
+          cityInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public Builder addCityInfoList(
+          int index, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo value) {
+        if (cityInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCityInfoListIsMutable();
+          cityInfoList_.add(index, value);
+          onChanged();
+        } else {
+          cityInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public Builder addCityInfoList(
+          emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder builderForValue) {
+        if (cityInfoListBuilder_ == null) {
+          ensureCityInfoListIsMutable();
+          cityInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          cityInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public Builder addCityInfoList(
+          int index, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder builderForValue) {
+        if (cityInfoListBuilder_ == null) {
+          ensureCityInfoListIsMutable();
+          cityInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          cityInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public Builder addAllCityInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo> values) {
+        if (cityInfoListBuilder_ == null) {
+          ensureCityInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, cityInfoList_);
+          onChanged();
+        } else {
+          cityInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public Builder clearCityInfoList() {
+        if (cityInfoListBuilder_ == null) {
+          cityInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          cityInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public Builder removeCityInfoList(int index) {
+        if (cityInfoListBuilder_ == null) {
+          ensureCityInfoListIsMutable();
+          cityInfoList_.remove(index);
+          onChanged();
+        } else {
+          cityInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder getCityInfoListBuilder(
+          int index) {
+        return getCityInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder getCityInfoListOrBuilder(
+          int index) {
+        if (cityInfoListBuilder_ == null) {
+          return cityInfoList_.get(index);  } else {
+          return cityInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> 
+           getCityInfoListOrBuilderList() {
+        if (cityInfoListBuilder_ != null) {
+          return cityInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(cityInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder addCityInfoListBuilder() {
+        return getCityInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder addCityInfoListBuilder(
+          int index) {
+        return getCityInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .CityInfo city_info_list = 14;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder> 
+           getCityInfoListBuilderList() {
+        return getCityInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> 
+          getCityInfoListFieldBuilder() {
+        if (cityInfoListBuilder_ == null) {
+          cityInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder>(
+                  cityInfoList_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          cityInfoList_ = null;
+        }
+        return cityInfoListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1156,9 +1156,9 @@ public final class GetSceneAreaRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025GetSceneAreaRsp.proto\032\016CityInfo.proto\"" +
-      "m\n\017GetSceneAreaRsp\022\020\n\010scene_id\030\001 \001(\r\022!\n\016" +
-      "city_info_list\030\006 \003(\0132\t.CityInfo\022\017\n\007retco" +
-      "de\030\007 \001(\005\022\024\n\014area_id_list\030\n \003(\rB\033\n\031emu.gr" +
+      "m\n\017GetSceneAreaRsp\022\020\n\010scene_id\030\005 \001(\r\022\017\n\007" +
+      "retcode\030\010 \001(\005\022\024\n\014area_id_list\030\n \003(\r\022!\n\016c" +
+      "ity_info_list\030\016 \003(\0132\t.CityInfoB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1171,7 +1171,7 @@ public final class GetSceneAreaRspOuterClass {
     internal_static_GetSceneAreaRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetSceneAreaRsp_descriptor,
-        new java.lang.String[] { "SceneId", "CityInfoList", "Retcode", "AreaIdList", });
+        new java.lang.String[] { "SceneId", "Retcode", "AreaIdList", "CityInfoList", });
     emu.grasscutter.net.proto.CityInfoOuterClass.getDescriptor();
   }
 

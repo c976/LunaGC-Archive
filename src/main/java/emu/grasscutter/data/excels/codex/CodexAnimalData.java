@@ -21,7 +21,6 @@ public class CodexAnimalData extends GameResource {
 
     public enum CountType {
         CODEX_COUNT_TYPE_KILL,
-        CODEX_COUNT_TYPE_CAPTURE,
-        CODEX_COUNT_TYPE_FISH
+        CODEX_COUNT_TYPE_CAPTURE
     }
 }

@@ -45,9 +45,9 @@ public class HomeSceneItem {
                 .bornRot(defaultItem.getBornRot() == null ? new Position() : defaultItem.getBornRot())
                 .djinnPos(defaultItem.getDjinPos() == null ? new Position() : defaultItem.getDjinPos())
                 .mainHouse(
-                        defaultItem.getMainHouse() == null
+                        defaultItem.getMainhouse() == null
                                 ? null
-                                : HomeFurnitureItem.parseFrom(defaultItem.getMainHouse()))
+                                : HomeFurnitureItem.parseFrom(defaultItem.getMainhouse()))
                 .build();
     }
 

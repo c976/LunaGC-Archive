@@ -19,12 +19,6 @@ public final class BatchBuyGoodsReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 shop_type = 10;</code>
-     * @return The shopType.
-     */
-    int getShopType();
-
-    /**
      * <code>repeated .BuyGoodsParam buy_goods_list = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> 
@@ -47,14 +41,14 @@ public final class BatchBuyGoodsReqOuterClass {
      */
     emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParamOrBuilder getBuyGoodsListOrBuilder(
         int index);
+
+    /**
+     * <code>uint32 shop_type = 4;</code>
+     * @return The shopType.
+     */
+    int getShopType();
   }
   /**
-   * <pre>
-   * CmdId: 6661
-   * Version: 4.6.0
-   * Obfs: MGHFKOEEGKD
-   * </pre>
-   *
    * Protobuf type {@code BatchBuyGoodsReq}
    */
   public static final class BatchBuyGoodsReq extends
@@ -101,7 +95,7 @@ public final class BatchBuyGoodsReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 32: {
 
               shopType_ = input.readUInt32();
               break;
@@ -150,17 +144,6 @@ public final class BatchBuyGoodsReqOuterClass {
               emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq.class, emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq.Builder.class);
     }
 
-    public static final int SHOP_TYPE_FIELD_NUMBER = 10;
-    private int shopType_;
-    /**
-     * <code>uint32 shop_type = 10;</code>
-     * @return The shopType.
-     */
-    @java.lang.Override
-    public int getShopType() {
-      return shopType_;
-    }
-
     public static final int BUY_GOODS_LIST_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> buyGoodsList_;
     /**
@@ -201,6 +184,17 @@ public final class BatchBuyGoodsReqOuterClass {
       return buyGoodsList_.get(index);
     }
 
+    public static final int SHOP_TYPE_FIELD_NUMBER = 4;
+    private int shopType_;
+    /**
+     * <code>uint32 shop_type = 4;</code>
+     * @return The shopType.
+     */
+    @java.lang.Override
+    public int getShopType() {
+      return shopType_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -216,7 +210,7 @@ public final class BatchBuyGoodsReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (shopType_ != 0) {
-        output.writeUInt32(10, shopType_);
+        output.writeUInt32(4, shopType_);
       }
       for (int i = 0; i < buyGoodsList_.size(); i++) {
         output.writeMessage(11, buyGoodsList_.get(i));
@@ -232,7 +226,7 @@ public final class BatchBuyGoodsReqOuterClass {
       size = 0;
       if (shopType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, shopType_);
+          .computeUInt32Size(4, shopType_);
       }
       for (int i = 0; i < buyGoodsList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -253,10 +247,10 @@ public final class BatchBuyGoodsReqOuterClass {
       }
       emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq other = (emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq) obj;
 
-      if (getShopType()
-          != other.getShopType()) return false;
       if (!getBuyGoodsListList()
           .equals(other.getBuyGoodsListList())) return false;
+      if (getShopType()
+          != other.getShopType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,12 +262,12 @@ public final class BatchBuyGoodsReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SHOP_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getShopType();
       if (getBuyGoodsListCount() > 0) {
         hash = (37 * hash) + BUY_GOODS_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBuyGoodsListList().hashCode();
       }
+      hash = (37 * hash) + SHOP_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getShopType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -370,12 +364,6 @@ public final class BatchBuyGoodsReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 6661
-     * Version: 4.6.0
-     * Obfs: MGHFKOEEGKD
-     * </pre>
-     *
      * Protobuf type {@code BatchBuyGoodsReq}
      */
     public static final class Builder extends
@@ -414,14 +402,14 @@ public final class BatchBuyGoodsReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        shopType_ = 0;
-
         if (buyGoodsListBuilder_ == null) {
           buyGoodsList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           buyGoodsListBuilder_.clear();
         }
+        shopType_ = 0;
+
         return this;
       }
 
@@ -449,7 +437,6 @@ public final class BatchBuyGoodsReqOuterClass {
       public emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq buildPartial() {
         emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq result = new emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq(this);
         int from_bitField0_ = bitField0_;
-        result.shopType_ = shopType_;
         if (buyGoodsListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             buyGoodsList_ = java.util.Collections.unmodifiableList(buyGoodsList_);
@@ -459,6 +446,7 @@ public final class BatchBuyGoodsReqOuterClass {
         } else {
           result.buyGoodsList_ = buyGoodsListBuilder_.build();
         }
+        result.shopType_ = shopType_;
         onBuilt();
         return result;
       }
@@ -507,9 +495,6 @@ public final class BatchBuyGoodsReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq other) {
         if (other == emu.grasscutter.net.proto.BatchBuyGoodsReqOuterClass.BatchBuyGoodsReq.getDefaultInstance()) return this;
-        if (other.getShopType() != 0) {
-          setShopType(other.getShopType());
-        }
         if (buyGoodsListBuilder_ == null) {
           if (!other.buyGoodsList_.isEmpty()) {
             if (buyGoodsList_.isEmpty()) {
@@ -535,6 +520,9 @@ public final class BatchBuyGoodsReqOuterClass {
               buyGoodsListBuilder_.addAllMessages(other.buyGoodsList_);
             }
           }
+        }
+        if (other.getShopType() != 0) {
+          setShopType(other.getShopType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -565,37 +553,6 @@ public final class BatchBuyGoodsReqOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private int shopType_ ;
-      /**
-       * <code>uint32 shop_type = 10;</code>
-       * @return The shopType.
-       */
-      @java.lang.Override
-      public int getShopType() {
-        return shopType_;
-      }
-      /**
-       * <code>uint32 shop_type = 10;</code>
-       * @param value The shopType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setShopType(int value) {
-        
-        shopType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 shop_type = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearShopType() {
-        
-        shopType_ = 0;
-        onChanged();
-        return this;
-      }
 
       private java.util.List<emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam> buyGoodsList_ =
         java.util.Collections.emptyList();
@@ -836,6 +793,37 @@ public final class BatchBuyGoodsReqOuterClass {
         }
         return buyGoodsListBuilder_;
       }
+
+      private int shopType_ ;
+      /**
+       * <code>uint32 shop_type = 4;</code>
+       * @return The shopType.
+       */
+      @java.lang.Override
+      public int getShopType() {
+        return shopType_;
+      }
+      /**
+       * <code>uint32 shop_type = 4;</code>
+       * @param value The shopType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setShopType(int value) {
+        
+        shopType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 shop_type = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearShopType() {
+        
+        shopType_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -904,9 +892,9 @@ public final class BatchBuyGoodsReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026BatchBuyGoodsReq.proto\032\023BuyGoodsParam." +
-      "proto\"M\n\020BatchBuyGoodsReq\022\021\n\tshop_type\030\n" +
-      " \001(\r\022&\n\016buy_goods_list\030\013 \003(\0132\016.BuyGoodsP" +
-      "aramB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "proto\"M\n\020BatchBuyGoodsReq\022&\n\016buy_goods_l" +
+      "ist\030\013 \003(\0132\016.BuyGoodsParam\022\021\n\tshop_type\030\004" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -919,7 +907,7 @@ public final class BatchBuyGoodsReqOuterClass {
     internal_static_BatchBuyGoodsReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BatchBuyGoodsReq_descriptor,
-        new java.lang.String[] { "ShopType", "BuyGoodsList", });
+        new java.lang.String[] { "BuyGoodsList", "ShopType", });
     emu.grasscutter.net.proto.BuyGoodsParamOuterClass.getDescriptor();
   }
 

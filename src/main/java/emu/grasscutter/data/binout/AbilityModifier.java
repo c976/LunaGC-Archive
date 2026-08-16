@@ -37,7 +37,6 @@ public class AbilityModifier implements Serializable {
     public AbilityModifierAction[] onZoneExit;
     public AbilityModifierAction[] onHeal;
     public AbilityModifierAction[] onBeingHealed;
-    @SerializedName(value = "duration", alternate = "MICAHMPGCHN")
     public DynamicFloat duration = DynamicFloat.ZERO;
     public DynamicFloat thinkInterval = DynamicFloat.ZERO;
     public String stacking;
@@ -51,28 +50,22 @@ public class AbilityModifier implements Serializable {
     @ToString
     public static class AbilityModifierAction implements Serializable {
         public enum Type {
-            @SerializedName(value = "ActCameraRadialBlur", alternate = "MoleMole.Config.ActCameraRadialBlur")
             ActCameraRadialBlur,
             ActCameraShake,
             AddAvatarSkillInfo,
             AddChargeBarValue,
             AddClimateMeter,
             AddElementDurability,
-            @SerializedName(value = "AddHPDebts", alternate = "KIHOLGIAEPD")
             AddHPDebts,
             AddGlobalValue,
             AddGlobalValueToTarget,
             AddRegionalPlayVarValue,
-            @SerializedName(value = "ApplyModifier", alternate = "FBADPIEFIBB")
             ApplyModifier,
-            @SerializedName(value = "AttachAbilityStateResistance", alternate = {"KFDIAOMJPKF", "MoleMole.Config.AttachAbilityStateResistance"})
             AttachAbilityStateResistance,
             AttachBulletAimPoint,
-            @SerializedName(value = "AttachEffect", alternate = "MoleMole.Config.AttachEffect")
             AttachEffect,
             AttachEffectFirework,
             AttachElementTypeResistance,
-            @SerializedName(value = "AttachModifier", alternate = {"JJJCOKPGFCC", "MoleMole.Config.AttachModifier"})
             AttachModifier,
             AttachUIEffect,
             AvatarCameraParam,
@@ -100,11 +93,9 @@ public class AbilityModifier implements Serializable {
             ClearLocalGadgets,
             ClearLockTarget,
             ClearPos,
-            @SerializedName(value = "ConfigAbilityAction", alternate = "KPJFLMMEFDM")
             ConfigAbilityAction,
             ControlEmotion,
             CopyGlobalValue,
-            @SerializedName(value = "CreateGadget", alternate = "JDFKJFKCBNG")
             CreateGadget,
             CreateMovingPlatform,
             CreateTile,
@@ -153,21 +144,17 @@ public class AbilityModifier implements Serializable {
             GetFightProperty,
             GetInteractIdToGlobalValue,
             GetPos,
-            @SerializedName(value = "HealHP", alternate = "KFPABDEBDHB")
             HealHP,
             HideUIBillBoard,
             IgnoreMoveColToRockCol,
-            @SerializedName(value = "KillGadget", alternate = "LGLMGMKLKEC")
             KillGadget,
             KillPlayEntity,
-            @SerializedName(value = "KillSelf", alternate = "LCMHGFMDBHI")
             KillSelf,
             KillServerGadget,
             LoseHP,
             ModifyAvatarSkillCD,
             ModifyVehicleSkillCD,
             PlayEmoSync,
-            @SerializedName(value = "Predicated", alternate = {"KHDEMEKNJOE", "MoleMole.Config.Predicated"})
             Predicated,
             PushDvalinS01Process,
             PushInterActionByConfigPath,
@@ -218,7 +205,6 @@ public class AbilityModifier implements Serializable {
             SetExtraAbilityState,
             SetGlobalDir,
             SetGlobalPos,
-            @SerializedName(value = "SetGlobalValue", alternate = {"PICDKHFOLFE", "MoleMole.Config.SetGlobalValue"})
             SetGlobalValue,
             SetGlobalValueByTargetDistance,
             SetGlobalValueToOverrideMap,
@@ -254,7 +240,6 @@ public class AbilityModifier implements Serializable {
             Summon,
             SyncToStageScript,
             TriggerAbility,
-            @SerializedName(value = "TriggerAttackEvent", alternate = "MoleMole.Config.TriggerAttackEvent")
             TriggerAttackEvent,
             TriggerAttackTargetMapEvent,
             TriggerAudio,
@@ -290,7 +275,7 @@ public class AbilityModifier implements Serializable {
 
         @SerializedName(
                 value = "amount",
-                alternate = {"LNFMOCKIAGK", "PDLLIFICICJ", "LKDJMGOJHAH", "GHINLKIEMFA", "JNLAKCOAEOD"})
+                alternate = {"LNFMOCKIAGK", "PDLLIFICICJ", "LKDJMGOJHAH", "GHINLKIEMFA"})
         public DynamicFloat amount = DynamicFloat.ZERO;
 
         @SerializedName(
@@ -311,7 +296,7 @@ public class AbilityModifier implements Serializable {
         @SerializedName(value = "amountByTargetMaxHPRatio")
         public DynamicFloat amountByTargetCurrentHPRatio = DynamicFloat.ZERO;
 
-        @SerializedName(value = "unknown1", alternate = {"GGLMMJHNGMO", "CFNADFMJIOO"})
+        @SerializedName(value = "unknown1", alternate = "GGLMMJHNGMO")
         public DynamicFloat amountByTargetMaxHPRatio = DynamicFloat.ZERO;
 
         public DynamicFloat limboByTargetMaxHPRatio = DynamicFloat.ZERO;
@@ -354,7 +339,6 @@ public class AbilityModifier implements Serializable {
 
         public DropType dropType = DropType.LevelControl;
         public DynamicFloat baseEnergy;
-        @SerializedName(value = "ratio", alternate = {"HNFDLMNEBKC", "KAMIECGOHOF"})
         public DynamicFloat ratio = DynamicFloat.ONE;
         public int configID;
 
@@ -362,10 +346,9 @@ public class AbilityModifier implements Serializable {
         public DynamicFloat valueRangeMax;
         public String overrideMapKey;
 
-        public int paramNum;
-        public DynamicFloat param1 = DynamicFloat.ZERO,
-                param2 = DynamicFloat.ZERO,
-                param3 = DynamicFloat.ZERO;
+        public int param1;
+        public int param2;
+        public int param3;
 
         public String funcName;
         public LuaCallType luaCallType;
@@ -376,18 +359,12 @@ public class AbilityModifier implements Serializable {
         public String content;
 
         public enum LuaCallType {
-            Gadget,
-            @SerializedName(value = "OwnerGadegt", alternate = "OwnerGadget")
-            OwnerGadget,
             FromGroup,
-            OwnerFromGroup,
-            SpecificGroup,
-            CurScenePlay,
-            CurChallengeGroup,
-            CurRogueBossGroup,
             CurGalleryControlGroup,
+            CurChallengeGroup,
+            SpecificGroup,
             AbilityGroupSourceGroup,
-            LevelBankZoneContainsGroup
+            CurScenePlay
         }
 
         public enum DropType {
@@ -413,28 +390,7 @@ public class AbilityModifier implements Serializable {
         IgnoreAddEnergy,
         IsGhostToEnemy,
         IsGhostToAllied,
-        UnlockFrequencyLimit,
-        AttackUp,
-        DefenseDown,
-        ElementDeadTime,
-        SpeedUp,
-        DefenseUp,
-        Struggle,
-        OvergrowVariation,
-        ElementElectric,
-        ElementFire,
-        NyxState,
-        ElementBurning,
-        ElementShock,
-        ElementWet,
-        ElementIce,
-        ElementFrozen,
-        ElementRock,
-        ElementWind,
-        ElementGrass,
-        ElementOverdose,
-        SpeedDown,
-        MuteTaunt
+        UnlockFrequencyLimit
     }
 
     // The following should be implemented into DynamicFloat if older resource formats need to be

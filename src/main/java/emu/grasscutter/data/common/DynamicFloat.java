@@ -57,10 +57,6 @@ public class DynamicFloat {
         return this.get(ability.getAbilitySpecials(), 0f);
     }
 
-    public int getInt(Ability ability) {
-        return (int) this.get(ability.getAbilitySpecials(), 0f);
-    }
-
     public float get(Object2FloatMap<String> props, float defaultValue) {
         if (!this.dynamic) return constant;
 

@@ -19,7 +19,7 @@ public final class BuyGoodsParamOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 buy_count = 6;</code>
+     * <code>uint32 buy_count = 2;</code>
      * @return The buyCount.
      */
     int getBuyCount();
@@ -40,11 +40,6 @@ public final class BuyGoodsParamOuterClass {
     emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder getGoodsOrBuilder();
   }
   /**
-   * <pre>
-   * Version: 4.6.0
-   * Obfs: KHNAGEGDMIJ
-   * </pre>
-   *
    * Protobuf type {@code BuyGoodsParam}
    */
   public static final class BuyGoodsParam extends
@@ -89,7 +84,7 @@ public final class BuyGoodsParamOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
 
               buyCount_ = input.readUInt32();
               break;
@@ -139,10 +134,10 @@ public final class BuyGoodsParamOuterClass {
               emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.class, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder.class);
     }
 
-    public static final int BUY_COUNT_FIELD_NUMBER = 6;
+    public static final int BUY_COUNT_FIELD_NUMBER = 2;
     private int buyCount_;
     /**
-     * <code>uint32 buy_count = 6;</code>
+     * <code>uint32 buy_count = 2;</code>
      * @return The buyCount.
      */
     @java.lang.Override
@@ -191,7 +186,7 @@ public final class BuyGoodsParamOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (buyCount_ != 0) {
-        output.writeUInt32(6, buyCount_);
+        output.writeUInt32(2, buyCount_);
       }
       if (goods_ != null) {
         output.writeMessage(10, getGoods());
@@ -207,7 +202,7 @@ public final class BuyGoodsParamOuterClass {
       size = 0;
       if (buyCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, buyCount_);
+          .computeUInt32Size(2, buyCount_);
       }
       if (goods_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -348,11 +343,6 @@ public final class BuyGoodsParamOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Version: 4.6.0
-     * Obfs: KHNAGEGDMIJ
-     * </pre>
-     *
      * Protobuf type {@code BuyGoodsParam}
      */
     public static final class Builder extends
@@ -515,7 +505,7 @@ public final class BuyGoodsParamOuterClass {
 
       private int buyCount_ ;
       /**
-       * <code>uint32 buy_count = 6;</code>
+       * <code>uint32 buy_count = 2;</code>
        * @return The buyCount.
        */
       @java.lang.Override
@@ -523,7 +513,7 @@ public final class BuyGoodsParamOuterClass {
         return buyCount_;
       }
       /**
-       * <code>uint32 buy_count = 6;</code>
+       * <code>uint32 buy_count = 2;</code>
        * @param value The buyCount to set.
        * @return This builder for chaining.
        */
@@ -534,7 +524,7 @@ public final class BuyGoodsParamOuterClass {
         return this;
       }
       /**
-       * <code>uint32 buy_count = 6;</code>
+       * <code>uint32 buy_count = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearBuyCount() {
@@ -730,7 +720,7 @@ public final class BuyGoodsParamOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023BuyGoodsParam.proto\032\017ShopGoods.proto\"=" +
-      "\n\rBuyGoodsParam\022\021\n\tbuy_count\030\006 \001(\r\022\031\n\005go" +
+      "\n\rBuyGoodsParam\022\021\n\tbuy_count\030\002 \001(\r\022\031\n\005go" +
       "ods\030\n \001(\0132\n.ShopGoodsB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };

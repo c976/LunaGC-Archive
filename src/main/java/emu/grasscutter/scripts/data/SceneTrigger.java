@@ -37,11 +37,6 @@ public final class SceneTrigger {
                 + "name='"
                 + name
                 + '\''
-                + ", tag='"
-                + tag
-                + '\''
-                + ", group_id="
-                + currentGroup.id
                 + ", config_id="
                 + config_id
                 + ", event="

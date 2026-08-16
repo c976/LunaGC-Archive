@@ -7,11 +7,10 @@ import lombok.Getter;
 @ResourceType(name = "BuffExcelConfigData.json")
 @Getter
 public class BuffData extends GameResource {
-    private int groupId = 0;
+    private int groupId;
     private int serverBuffId;
-    private float time = 0f;
+    private float time;
     private boolean isPersistent;
-    private String stackType = "";
     private ServerBuffType serverBuffType;
     private String abilityName;
     private String modifierName;

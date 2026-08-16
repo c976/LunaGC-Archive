@@ -104,9 +104,7 @@ public class SatiationManager extends BasePlayerManager {
     }
 
     private void updateTime() {
-        if (player.getWorld() != null) {
-            player.getSession().send(new PacketPlayerGameTimeNotify(player));
-            player.getSession().send(new PacketPlayerTimeNotify(player));
-        }
+        player.getSession().send(new PacketPlayerGameTimeNotify(player));
+        player.getSession().send(new PacketPlayerTimeNotify(player));
     }
 }

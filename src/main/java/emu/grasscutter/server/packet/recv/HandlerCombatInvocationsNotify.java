@@ -1,7 +1,7 @@
 package emu.grasscutter.server.packet.recv;
 
 import emu.grasscutter.Grasscutter;
-import emu.grasscutter.game.entity.*;
+import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.game.world.Position;
@@ -29,13 +29,13 @@ public class HandlerCombatInvocationsNotify extends PacketHandler {
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
         CombatInvocationsNotify notif = CombatInvocationsNotify.parseFrom(payload);
-        Player player = session.getPlayer();
         for (CombatInvokeEntry entry : notif.getInvokeListList()) {
             // Handle combat invoke
             switch (entry.getArgumentType()) {
                 case COMBAT_TYPE_ARGUMENT_EVT_BEING_HIT -> {
                     EvtBeingHitInfo hitInfo = EvtBeingHitInfo.parseFrom(entry.getCombatData());
                     AttackResult attackResult = hitInfo.getAttackResult();
+                    Player player = session.getPlayer();
 
                     // Check if the player is invulnerable.
                     if (attackResult.getAttackerId()
@@ -49,9 +49,9 @@ public class HandlerCombatInvocationsNotify extends PacketHandler {
                 case COMBAT_TYPE_ARGUMENT_ENTITY_MOVE -> {
                     // Handle movement
                     EntityMoveInfo moveInfo = EntityMoveInfo.parseFrom(entry.getCombatData());
-                    GameEntity entity = player.getScene().getEntityById(moveInfo.getEntityId());
+                    GameEntity entity = session.getPlayer().getScene().getEntityById(moveInfo.getEntityId());
                     if (entity != null
-                            && player.getSceneLoadState() != Player.SceneLoadState.LOADING) {
+                            && session.getPlayer().getSceneLoadState() != Player.SceneLoadState.LOADING) {
                         // Move player
                         MotionInfo motionInfo = moveInfo.getMotionInfo();
                         MotionState motionState = motionInfo.getState();
@@ -70,9 +70,10 @@ public class HandlerCombatInvocationsNotify extends PacketHandler {
                         entity.setLastMoveReliableSeq(moveInfo.getReliableSeq());
                         entity.setMotionState(motionState);
 
-                        player
-                            .getStaminaManager()
-                            .handleCombatInvocationsNotify(session, moveInfo, entity);
+                        session
+                                .getPlayer()
+                                .getStaminaManager()
+                                .handleCombatInvocationsNotify(session, moveInfo, entity);
 
                         // TODO: handle MOTION_FIGHT landing which has a different damage factor
                         // 		Also, for plunge attacks, LAND_SPEED is always -30 and is not useful.
@@ -111,7 +112,7 @@ public class HandlerCombatInvocationsNotify extends PacketHandler {
                 default -> {}
             }
 
-            player.getCombatInvokeHandler().addEntry(entry.getForwardType(), entry);
+            session.getPlayer().getCombatInvokeHandler().addEntry(entry.getForwardType(), entry);
         }
     }
 

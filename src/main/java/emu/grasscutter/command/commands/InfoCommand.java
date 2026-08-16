@@ -26,6 +26,7 @@ public final class InfoCommand implements CommandHandler {
         var gameOptions = config.server.game;
         var questingEnabled = gameOptions.gameOptions.questing.enabled;
         var scriptsEnabled = gameOptions.enableScriptInBigWorld;
+        var fastRequire = config.server.fastRequire;
 
         CommandHandler.sendMessage(sender, """
                 Modified by Kei-Luna and the contributors
@@ -56,7 +57,7 @@ public final class InfoCommand implements CommandHandler {
 
             discord.gg/2AxayFampP"""
                     .formatted(
-                            build, playerCount, questingEnabled, scriptsEnabled, true,
+                            build, playerCount, questingEnabled, scriptsEnabled, fastRequire,
                             System.getProperty("os.name"), resourceInfo.toString()
                     )
             );

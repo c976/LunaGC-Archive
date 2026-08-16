@@ -10,18 +10,7 @@ public enum SpecialFurnitureType {
     NPC(5),
     Apartment(6),
     FurnitureSuite(7),
-    Paimon(8),
-    BlockDependent(9),
-    Fishpond(10),
-    Fish(11),
-    CustomBaseFurnitrue(12),
-    CustomNodeFurnitrue(13),
-    GroupFurnitrue(14),
-    VirtualFurnitrue(15),
-    CoopPictureFrame(16),
-    ChangeBgmFurniture(17),
-    ServerGadget(18),
-    Fishtank(19);
+    Paimon(8);
 
     private final int value;
 

@@ -162,7 +162,7 @@ public class GameHome {
                             var roomSceneId = curHomeSceneItem.getRoomSceneId();
                             var defaultItem = GameData.getHomeworldDefaultSaveData().get(roomSceneId);
                             if (defaultItem == null) {
-                                Grasscutter.getLogger().info("House {} default item is null! returns Liyue style house.", roomSceneId);
+                                Grasscutter.getLogger().info("defaultItem == null! returns Liyue style house.");
                                 return HomeSceneItem.parseFrom(
                                         GameData.getHomeworldDefaultSaveData().get(2202), 2202); // Liyue style
                             }

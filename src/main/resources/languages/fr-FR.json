@@ -150,11 +150,6 @@
       "not_found": "Impossible de trouver l'annonce %s.",
       "description": "Envoie une annonce à tous les joueurs en ligne, ou configure les annonces du serveur"
     },
-    "buff": {
-      "info": "Il y a maintenant %s buffs.",
-      "add_buff": "Ajouté %s.",
-      "remove_buff": "Buff supprimé %s."
-    },
     "clear": {
       "weapons": "Les armes de %s ont été supprimés.",
       "artifacts": "Les artéfacts de %s ont été supprimés.",
@@ -163,7 +158,6 @@
       "displays": "Les display de %s ont été supprimés.",
       "virtuals": "Les virtuals de %s ont été supprimés.",
       "everything": "Tous les objets de  %s ont été supprimés.",
-      "item": "A effacé %1 de %2 %3.",
       "description": "Supprime les objets débloqués et non équipés, y compris ceux de rareté 5* de votre inventaire"
     },
     "coop": {
@@ -236,7 +230,7 @@
       "description": "Accorde ou retire une permission a un utilisateur"
     },
     "position": {
-      "success": "Coordonées: %s, %s, %s\nRotatifs: %s, %s, %s\nID de la scène: %s, ID de la région: %s, ID de l'aire: %s\nBlocs: %s\nGroupes: %s",
+      "success": "Coordonées: %s, %s, %s\nRotatifs：%s, %s, %s\nID de la scène: %s",
       "description": "Obtient des informations de position et de rotation"
     },
     "quest": {

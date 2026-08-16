@@ -10,7 +10,7 @@ public class ScriptArgs {
     public int source_eid; // Source entity
     public int target_eid;
     public int group_id;
-    public String source_name; // source string, used for timers
+    public String source; // source string, used for timers
     public int type; // lua event type, used by scripts and the ScriptManager
 
     public ScriptArgs(int groupId, int eventType) {
@@ -74,16 +74,16 @@ public class ScriptArgs {
     }
 
     public String getEventSource() {
-        return source_name;
+        return source;
     }
 
     public ScriptArgs setEventSource(String source) {
-        this.source_name = source;
+        this.source = source;
         return this;
     }
 
     public ScriptArgs setEventSource(int source) {
-        this.source_name = Integer.toString(source);
+        this.source = Integer.toString(source);
         return this;
     }
 

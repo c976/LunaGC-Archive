@@ -48,7 +48,6 @@ public class EntityAvatar extends GameEntity {
 
         this.avatar = avatar;
         this.avatar.setCurrentEnergy();
-        this.setLimbo(-1.0f);
 
         if (scene != null) {
             var world = scene.getWorld();
@@ -161,7 +160,7 @@ public class EntityAvatar extends GameEntity {
                                     mute
                                             ? PropChangeReason.PROP_CHANGE_REASON_NONE
                                             : PropChangeReason.PROP_CHANGE_REASON_ABILITY,
-                                    ChangeHpReason.CHANGE_HP_REASON_ADD_ABILITY));
+                                    ChangeHpReason.CHANGE_HP_ADD_ABILITY));
         }
 
         return healed;

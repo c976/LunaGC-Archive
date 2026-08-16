@@ -34,7 +34,7 @@ public class SceneMeta {
         }
 
         // Create bindings
-        this.context = cs.getEngine().createBindings();
+        this.context = ScriptLoader.getEngine().createBindings();
 
         // Eval script
         try {
