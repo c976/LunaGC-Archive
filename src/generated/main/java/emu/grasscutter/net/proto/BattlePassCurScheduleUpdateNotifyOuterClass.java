@@ -19,30 +19,6 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 default_reward_type = 2;</code>
-     * @return The defaultRewardType.
-     */
-    int getDefaultRewardType();
-
-    /**
-     * <code>bool is_viewed = 3;</code>
-     * @return The isViewed.
-     */
-    boolean getIsViewed();
-
-    /**
-     * <code>bool have_cur_schedule = 7;</code>
-     * @return The haveCurSchedule.
-     */
-    boolean getHaveCurSchedule();
-
-    /**
-     * <code>bool HNDKICJJANM = 9;</code>
-     * @return The hNDKICJJANM.
-     */
-    boolean getHNDKICJJANM();
-
-    /**
      * <code>.BattlePassSchedule cur_schedule = 12;</code>
      * @return Whether the curSchedule field is set.
      */
@@ -56,6 +32,30 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
      * <code>.BattlePassSchedule cur_schedule = 12;</code>
      */
     emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassScheduleOrBuilder getCurScheduleOrBuilder();
+
+    /**
+     * <code>bool have_cur_schedule = 3;</code>
+     * @return The haveCurSchedule.
+     */
+    boolean getHaveCurSchedule();
+
+    /**
+     * <code>bool COGAGPDCDON = 13;</code>
+     * @return The cOGAGPDCDON.
+     */
+    boolean getCOGAGPDCDON();
+
+    /**
+     * <code>bool is_copy_reward_preference_to_all_schedule = 15;</code>
+     * @return The isCopyRewardPreferenceToAllSchedule.
+     */
+    boolean getIsCopyRewardPreferenceToAllSchedule();
+
+    /**
+     * <code>uint32 reward_type = 9;</code>
+     * @return The rewardType.
+     */
+    int getRewardType();
   }
   /**
    * Protobuf type {@code BattlePassCurScheduleUpdateNotify}
@@ -102,24 +102,14 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              defaultRewardType_ = input.readUInt32();
-              break;
-            }
             case 24: {
-
-              isViewed_ = input.readBool();
-              break;
-            }
-            case 56: {
 
               haveCurSchedule_ = input.readBool();
               break;
             }
             case 72: {
 
-              hNDKICJJANM_ = input.readBool();
+              rewardType_ = input.readUInt32();
               break;
             }
             case 98: {
@@ -133,6 +123,16 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
                 curSchedule_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 104: {
+
+              cOGAGPDCDON_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              isCopyRewardPreferenceToAllSchedule_ = input.readBool();
               break;
             }
             default: {
@@ -167,50 +167,6 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify.class, emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify.Builder.class);
     }
 
-    public static final int DEFAULT_REWARD_TYPE_FIELD_NUMBER = 2;
-    private int defaultRewardType_;
-    /**
-     * <code>uint32 default_reward_type = 2;</code>
-     * @return The defaultRewardType.
-     */
-    @java.lang.Override
-    public int getDefaultRewardType() {
-      return defaultRewardType_;
-    }
-
-    public static final int IS_VIEWED_FIELD_NUMBER = 3;
-    private boolean isViewed_;
-    /**
-     * <code>bool is_viewed = 3;</code>
-     * @return The isViewed.
-     */
-    @java.lang.Override
-    public boolean getIsViewed() {
-      return isViewed_;
-    }
-
-    public static final int HAVE_CUR_SCHEDULE_FIELD_NUMBER = 7;
-    private boolean haveCurSchedule_;
-    /**
-     * <code>bool have_cur_schedule = 7;</code>
-     * @return The haveCurSchedule.
-     */
-    @java.lang.Override
-    public boolean getHaveCurSchedule() {
-      return haveCurSchedule_;
-    }
-
-    public static final int HNDKICJJANM_FIELD_NUMBER = 9;
-    private boolean hNDKICJJANM_;
-    /**
-     * <code>bool HNDKICJJANM = 9;</code>
-     * @return The hNDKICJJANM.
-     */
-    @java.lang.Override
-    public boolean getHNDKICJJANM() {
-      return hNDKICJJANM_;
-    }
-
     public static final int CUR_SCHEDULE_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule curSchedule_;
     /**
@@ -237,6 +193,50 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       return getCurSchedule();
     }
 
+    public static final int HAVE_CUR_SCHEDULE_FIELD_NUMBER = 3;
+    private boolean haveCurSchedule_;
+    /**
+     * <code>bool have_cur_schedule = 3;</code>
+     * @return The haveCurSchedule.
+     */
+    @java.lang.Override
+    public boolean getHaveCurSchedule() {
+      return haveCurSchedule_;
+    }
+
+    public static final int COGAGPDCDON_FIELD_NUMBER = 13;
+    private boolean cOGAGPDCDON_;
+    /**
+     * <code>bool COGAGPDCDON = 13;</code>
+     * @return The cOGAGPDCDON.
+     */
+    @java.lang.Override
+    public boolean getCOGAGPDCDON() {
+      return cOGAGPDCDON_;
+    }
+
+    public static final int IS_COPY_REWARD_PREFERENCE_TO_ALL_SCHEDULE_FIELD_NUMBER = 15;
+    private boolean isCopyRewardPreferenceToAllSchedule_;
+    /**
+     * <code>bool is_copy_reward_preference_to_all_schedule = 15;</code>
+     * @return The isCopyRewardPreferenceToAllSchedule.
+     */
+    @java.lang.Override
+    public boolean getIsCopyRewardPreferenceToAllSchedule() {
+      return isCopyRewardPreferenceToAllSchedule_;
+    }
+
+    public static final int REWARD_TYPE_FIELD_NUMBER = 9;
+    private int rewardType_;
+    /**
+     * <code>uint32 reward_type = 9;</code>
+     * @return The rewardType.
+     */
+    @java.lang.Override
+    public int getRewardType() {
+      return rewardType_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -251,20 +251,20 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (defaultRewardType_ != 0) {
-        output.writeUInt32(2, defaultRewardType_);
-      }
-      if (isViewed_ != false) {
-        output.writeBool(3, isViewed_);
-      }
       if (haveCurSchedule_ != false) {
-        output.writeBool(7, haveCurSchedule_);
+        output.writeBool(3, haveCurSchedule_);
       }
-      if (hNDKICJJANM_ != false) {
-        output.writeBool(9, hNDKICJJANM_);
+      if (rewardType_ != 0) {
+        output.writeUInt32(9, rewardType_);
       }
       if (curSchedule_ != null) {
         output.writeMessage(12, getCurSchedule());
+      }
+      if (cOGAGPDCDON_ != false) {
+        output.writeBool(13, cOGAGPDCDON_);
+      }
+      if (isCopyRewardPreferenceToAllSchedule_ != false) {
+        output.writeBool(15, isCopyRewardPreferenceToAllSchedule_);
       }
       unknownFields.writeTo(output);
     }
@@ -275,25 +275,25 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (defaultRewardType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, defaultRewardType_);
-      }
-      if (isViewed_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isViewed_);
-      }
       if (haveCurSchedule_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, haveCurSchedule_);
+          .computeBoolSize(3, haveCurSchedule_);
       }
-      if (hNDKICJJANM_ != false) {
+      if (rewardType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, hNDKICJJANM_);
+          .computeUInt32Size(9, rewardType_);
       }
       if (curSchedule_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, getCurSchedule());
+      }
+      if (cOGAGPDCDON_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, cOGAGPDCDON_);
+      }
+      if (isCopyRewardPreferenceToAllSchedule_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isCopyRewardPreferenceToAllSchedule_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,19 +310,19 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       }
       emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify other = (emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify) obj;
 
-      if (getDefaultRewardType()
-          != other.getDefaultRewardType()) return false;
-      if (getIsViewed()
-          != other.getIsViewed()) return false;
-      if (getHaveCurSchedule()
-          != other.getHaveCurSchedule()) return false;
-      if (getHNDKICJJANM()
-          != other.getHNDKICJJANM()) return false;
       if (hasCurSchedule() != other.hasCurSchedule()) return false;
       if (hasCurSchedule()) {
         if (!getCurSchedule()
             .equals(other.getCurSchedule())) return false;
       }
+      if (getHaveCurSchedule()
+          != other.getHaveCurSchedule()) return false;
+      if (getCOGAGPDCDON()
+          != other.getCOGAGPDCDON()) return false;
+      if (getIsCopyRewardPreferenceToAllSchedule()
+          != other.getIsCopyRewardPreferenceToAllSchedule()) return false;
+      if (getRewardType()
+          != other.getRewardType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -334,21 +334,21 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DEFAULT_REWARD_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getDefaultRewardType();
-      hash = (37 * hash) + IS_VIEWED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsViewed());
-      hash = (37 * hash) + HAVE_CUR_SCHEDULE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHaveCurSchedule());
-      hash = (37 * hash) + HNDKICJJANM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHNDKICJJANM());
       if (hasCurSchedule()) {
         hash = (37 * hash) + CUR_SCHEDULE_FIELD_NUMBER;
         hash = (53 * hash) + getCurSchedule().hashCode();
       }
+      hash = (37 * hash) + HAVE_CUR_SCHEDULE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getHaveCurSchedule());
+      hash = (37 * hash) + COGAGPDCDON_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getCOGAGPDCDON());
+      hash = (37 * hash) + IS_COPY_REWARD_PREFERENCE_TO_ALL_SCHEDULE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsCopyRewardPreferenceToAllSchedule());
+      hash = (37 * hash) + REWARD_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getRewardType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -482,20 +482,20 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        defaultRewardType_ = 0;
-
-        isViewed_ = false;
-
-        haveCurSchedule_ = false;
-
-        hNDKICJJANM_ = false;
-
         if (curScheduleBuilder_ == null) {
           curSchedule_ = null;
         } else {
           curSchedule_ = null;
           curScheduleBuilder_ = null;
         }
+        haveCurSchedule_ = false;
+
+        cOGAGPDCDON_ = false;
+
+        isCopyRewardPreferenceToAllSchedule_ = false;
+
+        rewardType_ = 0;
+
         return this;
       }
 
@@ -522,15 +522,15 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify buildPartial() {
         emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify result = new emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify(this);
-        result.defaultRewardType_ = defaultRewardType_;
-        result.isViewed_ = isViewed_;
-        result.haveCurSchedule_ = haveCurSchedule_;
-        result.hNDKICJJANM_ = hNDKICJJANM_;
         if (curScheduleBuilder_ == null) {
           result.curSchedule_ = curSchedule_;
         } else {
           result.curSchedule_ = curScheduleBuilder_.build();
         }
+        result.haveCurSchedule_ = haveCurSchedule_;
+        result.cOGAGPDCDON_ = cOGAGPDCDON_;
+        result.isCopyRewardPreferenceToAllSchedule_ = isCopyRewardPreferenceToAllSchedule_;
+        result.rewardType_ = rewardType_;
         onBuilt();
         return result;
       }
@@ -579,20 +579,20 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify other) {
         if (other == emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify.getDefaultInstance()) return this;
-        if (other.getDefaultRewardType() != 0) {
-          setDefaultRewardType(other.getDefaultRewardType());
-        }
-        if (other.getIsViewed() != false) {
-          setIsViewed(other.getIsViewed());
+        if (other.hasCurSchedule()) {
+          mergeCurSchedule(other.getCurSchedule());
         }
         if (other.getHaveCurSchedule() != false) {
           setHaveCurSchedule(other.getHaveCurSchedule());
         }
-        if (other.getHNDKICJJANM() != false) {
-          setHNDKICJJANM(other.getHNDKICJJANM());
+        if (other.getCOGAGPDCDON() != false) {
+          setCOGAGPDCDON(other.getCOGAGPDCDON());
         }
-        if (other.hasCurSchedule()) {
-          mergeCurSchedule(other.getCurSchedule());
+        if (other.getIsCopyRewardPreferenceToAllSchedule() != false) {
+          setIsCopyRewardPreferenceToAllSchedule(other.getIsCopyRewardPreferenceToAllSchedule());
+        }
+        if (other.getRewardType() != 0) {
+          setRewardType(other.getRewardType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -620,130 +620,6 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private int defaultRewardType_ ;
-      /**
-       * <code>uint32 default_reward_type = 2;</code>
-       * @return The defaultRewardType.
-       */
-      @java.lang.Override
-      public int getDefaultRewardType() {
-        return defaultRewardType_;
-      }
-      /**
-       * <code>uint32 default_reward_type = 2;</code>
-       * @param value The defaultRewardType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDefaultRewardType(int value) {
-        
-        defaultRewardType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 default_reward_type = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDefaultRewardType() {
-        
-        defaultRewardType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isViewed_ ;
-      /**
-       * <code>bool is_viewed = 3;</code>
-       * @return The isViewed.
-       */
-      @java.lang.Override
-      public boolean getIsViewed() {
-        return isViewed_;
-      }
-      /**
-       * <code>bool is_viewed = 3;</code>
-       * @param value The isViewed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsViewed(boolean value) {
-        
-        isViewed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_viewed = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsViewed() {
-        
-        isViewed_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean haveCurSchedule_ ;
-      /**
-       * <code>bool have_cur_schedule = 7;</code>
-       * @return The haveCurSchedule.
-       */
-      @java.lang.Override
-      public boolean getHaveCurSchedule() {
-        return haveCurSchedule_;
-      }
-      /**
-       * <code>bool have_cur_schedule = 7;</code>
-       * @param value The haveCurSchedule to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHaveCurSchedule(boolean value) {
-        
-        haveCurSchedule_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool have_cur_schedule = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHaveCurSchedule() {
-        
-        haveCurSchedule_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean hNDKICJJANM_ ;
-      /**
-       * <code>bool HNDKICJJANM = 9;</code>
-       * @return The hNDKICJJANM.
-       */
-      @java.lang.Override
-      public boolean getHNDKICJJANM() {
-        return hNDKICJJANM_;
-      }
-      /**
-       * <code>bool HNDKICJJANM = 9;</code>
-       * @param value The hNDKICJJANM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHNDKICJJANM(boolean value) {
-        
-        hNDKICJJANM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool HNDKICJJANM = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHNDKICJJANM() {
-        
-        hNDKICJJANM_ = false;
-        onChanged();
         return this;
       }
 
@@ -865,6 +741,130 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
         }
         return curScheduleBuilder_;
       }
+
+      private boolean haveCurSchedule_ ;
+      /**
+       * <code>bool have_cur_schedule = 3;</code>
+       * @return The haveCurSchedule.
+       */
+      @java.lang.Override
+      public boolean getHaveCurSchedule() {
+        return haveCurSchedule_;
+      }
+      /**
+       * <code>bool have_cur_schedule = 3;</code>
+       * @param value The haveCurSchedule to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHaveCurSchedule(boolean value) {
+        
+        haveCurSchedule_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool have_cur_schedule = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHaveCurSchedule() {
+        
+        haveCurSchedule_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean cOGAGPDCDON_ ;
+      /**
+       * <code>bool COGAGPDCDON = 13;</code>
+       * @return The cOGAGPDCDON.
+       */
+      @java.lang.Override
+      public boolean getCOGAGPDCDON() {
+        return cOGAGPDCDON_;
+      }
+      /**
+       * <code>bool COGAGPDCDON = 13;</code>
+       * @param value The cOGAGPDCDON to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCOGAGPDCDON(boolean value) {
+        
+        cOGAGPDCDON_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool COGAGPDCDON = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCOGAGPDCDON() {
+        
+        cOGAGPDCDON_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isCopyRewardPreferenceToAllSchedule_ ;
+      /**
+       * <code>bool is_copy_reward_preference_to_all_schedule = 15;</code>
+       * @return The isCopyRewardPreferenceToAllSchedule.
+       */
+      @java.lang.Override
+      public boolean getIsCopyRewardPreferenceToAllSchedule() {
+        return isCopyRewardPreferenceToAllSchedule_;
+      }
+      /**
+       * <code>bool is_copy_reward_preference_to_all_schedule = 15;</code>
+       * @param value The isCopyRewardPreferenceToAllSchedule to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsCopyRewardPreferenceToAllSchedule(boolean value) {
+        
+        isCopyRewardPreferenceToAllSchedule_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_copy_reward_preference_to_all_schedule = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsCopyRewardPreferenceToAllSchedule() {
+        
+        isCopyRewardPreferenceToAllSchedule_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int rewardType_ ;
+      /**
+       * <code>uint32 reward_type = 9;</code>
+       * @return The rewardType.
+       */
+      @java.lang.Override
+      public int getRewardType() {
+        return rewardType_;
+      }
+      /**
+       * <code>uint32 reward_type = 9;</code>
+       * @param value The rewardType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRewardType(int value) {
+        
+        rewardType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 reward_type = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRewardType() {
+        
+        rewardType_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -933,13 +933,13 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'BattlePassCurScheduleUpdateNotify.prot" +
-      "o\032\030BattlePassSchedule.proto\"\256\001\n!BattlePa" +
-      "ssCurScheduleUpdateNotify\022\033\n\023default_rew" +
-      "ard_type\030\002 \001(\r\022\021\n\tis_viewed\030\003 \001(\010\022\031\n\021hav" +
-      "e_cur_schedule\030\007 \001(\010\022\023\n\013HNDKICJJANM\030\t \001(" +
-      "\010\022)\n\014cur_schedule\030\014 \001(\0132\023.BattlePassSche" +
-      "duleB\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "o\032\030BattlePassSchedule.proto\"\306\001\n!BattlePa" +
+      "ssCurScheduleUpdateNotify\022)\n\014cur_schedul" +
+      "e\030\014 \001(\0132\023.BattlePassSchedule\022\031\n\021have_cur" +
+      "_schedule\030\003 \001(\010\022\023\n\013COGAGPDCDON\030\r \001(\010\0221\n)" +
+      "is_copy_reward_preference_to_all_schedul" +
+      "e\030\017 \001(\010\022\023\n\013reward_type\030\t \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -951,7 +951,7 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
     internal_static_BattlePassCurScheduleUpdateNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BattlePassCurScheduleUpdateNotify_descriptor,
-        new java.lang.String[] { "DefaultRewardType", "IsViewed", "HaveCurSchedule", "HNDKICJJANM", "CurSchedule", });
+        new java.lang.String[] { "CurSchedule", "HaveCurSchedule", "COGAGPDCDON", "IsCopyRewardPreferenceToAllSchedule", "RewardType", });
     emu.grasscutter.net.proto.BattlePassScheduleOuterClass.getDescriptor();
   }
 

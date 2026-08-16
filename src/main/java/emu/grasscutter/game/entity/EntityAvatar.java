@@ -1,5 +1,7 @@
 package emu.grasscutter.game.entity;
 
+
+
 import emu.grasscutter.*;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.avatar.*;
@@ -12,6 +14,7 @@ import emu.grasscutter.game.world.*;
 import emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock;
 import emu.grasscutter.net.proto.AbilityEmbryoOuterClass.AbilityEmbryo;
 import emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo;
+import emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility;
 import emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair;
 import emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason;
 import emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason;
@@ -35,6 +38,8 @@ import lombok.*;
 
 public class EntityAvatar extends GameEntity {
     @Getter private final Avatar avatar;
+    private static long lastExecutionTime = 0;
+    public static final long COOLDOWN = 14000;
 
     @Getter private PlayerDieType killedType;
     @Getter private int killedBy;
@@ -73,11 +78,29 @@ public class EntityAvatar extends GameEntity {
         // Otherwise avatars could have 0 HP but not considered dead.
         this.checkIfDead();
     }
+    public long getLastExecutionTime() {
+        return this.lastExecutionTime;
+    }
+    @Override
+        public float getNyxValue() {
+            if (this.getGlobalAbilityValues().containsKey("NyxValue")) {
+                return this.getGlobalAbilityValues().get("NyxValue");
+            } else {
+                Grasscutter.getLogger().info("NyxValue from entityavatar not found");
+                return 0f;
+            }
+        }
+    
+
+    public void setLastExecutionTime(long time) {
+        this.lastExecutionTime = time;
+    }
 
     @Override
     public int getEntityTypeId() {
         return this.getAvatar().getAvatarId();
     }
+
 
     public Player getPlayer() {
         return this.avatar.getPlayer();
@@ -170,15 +193,23 @@ public class EntityAvatar extends GameEntity {
     public float heal(float amount) {
         return this.heal(amount, false);
     }
+        public FightProperty GetEnergyProp(Avatar avatar) {
+        if(avatar.getSkillDepot().getEnergySkillData().getSpecialEnergyMin() > 0){
+            return FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY;
+        }else{
+            return avatar.getSkillDepot().getElementType().getCurEnergyProp();
+        }
+
+    }
 
     public void clearEnergy(ChangeEnergyReason reason) {
         // Fight props.
-        val curEnergyProp = this.getAvatar().getSkillDepot().getElementType().getCurEnergyProp();
+        val curEnergyProp = GetEnergyProp(this.getAvatar());
         float curEnergy = this.getFightProperty(curEnergyProp);
-
+        Grasscutter.getLogger().info("EnergyProp: "+curEnergyProp.name());
         // Set energy to zero.
         this.avatar.setCurrentEnergy(curEnergyProp, 0);
-
+        getPlayer().sendPacket(new PacketAvatarFightPropNotify(this.getAvatar()));
         // Send packets.
         this.getScene().broadcastPacket(new PacketEntityFightPropUpdateNotify(this, curEnergyProp));
 
@@ -200,7 +231,8 @@ public class EntityAvatar extends GameEntity {
         var curEnergy = this.getFightProperty(curEnergyProp);
         if (curEnergy == amount) return false;
 
-        this.getAvatar().setCurrentEnergy(curEnergyProp, amount);
+        this.getAvatar().setCurrentEnergy(curEnergyProp, curEnergy + amount);
+
         this.getScene().broadcastPacket(new PacketEntityFightPropUpdateNotify(this, curEnergyProp));
         return true;
     }
@@ -256,6 +288,7 @@ public class EntityAvatar extends GameEntity {
                         .addAllTeamResonanceList(player.getTeamManager().getTeamResonances())
                         .setWearingFlycloakId(avatar.getFlyCloak())
                         .setCostumeId(avatar.getCostume())
+                        .setTraceEffectId(avatar.getTraceEffect())
                         .setBornTime(avatar.getBornTime());
 
         for (GameItem item : avatar.getEquips().values()) {

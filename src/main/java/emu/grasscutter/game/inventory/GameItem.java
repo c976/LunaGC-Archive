@@ -21,6 +21,7 @@ import emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo
 import emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo;
 import emu.grasscutter.net.proto.WeaponOuterClass.Weapon;
 import emu.grasscutter.utils.objects.WeightedList;
+
 import java.util.*;
 import lombok.*;
 import org.bson.types.ObjectId;
@@ -40,6 +41,7 @@ public class GameItem {
     @Getter @Setter private int exp;
     @Getter @Setter private int totalExp;
     @Getter @Setter private int promoteLevel;
+    @Getter @Setter private boolean favourite;
     @Getter @Setter private boolean locked;
 
     // Weapon

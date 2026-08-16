@@ -21,6 +21,7 @@ public class ItemUseAction {
             case ITEM_USE_GAIN_COSTUME -> new ItemUseGainCostume(useParam); // TODO - real success/fail
             case ITEM_USE_GAIN_FLYCLOAK -> new ItemUseGainFlycloak(useParam); // TODO - real success/fail
             case ITEM_USE_GAIN_NAME_CARD -> new ItemUseGainNameCard(useParam);
+            case ITEM_USE_UNLOCK_AVATAR_TRACE -> new ItemUseGainTraceEffect(useParam);
             case ITEM_USE_CHEST_SELECT_ITEM -> new ItemUseChestSelectItem(useParam);
             case ITEM_USE_ADD_SELECT_ITEM -> new ItemUseAddSelectItem(useParam);
             case ITEM_USE_GRANT_SELECT_REWARD -> new ItemUseGrantSelectReward(useParam);

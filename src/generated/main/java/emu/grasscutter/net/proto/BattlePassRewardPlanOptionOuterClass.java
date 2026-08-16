@@ -19,22 +19,22 @@ public final class BattlePassRewardPlanOptionOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool OCACCJODDDO = 4;</code>
-     * @return The oCACCJODDDO.
+     * <code>uint32 reward_type = 12;</code>
+     * @return The rewardType.
      */
-    boolean getOCACCJODDDO();
+    int getRewardType();
 
     /**
-     * <code>uint32 default_reward_type = 6;</code>
-     * @return The defaultRewardType.
+     * <code>uint32 tier_id = 4;</code>
+     * @return The tierId.
      */
-    int getDefaultRewardType();
+    int getTierId();
 
     /**
-     * <code>uint32 IOIHAODNIKF = 14;</code>
-     * @return The iOIHAODNIKF.
+     * <code>bool is_original = 5;</code>
+     * @return The isOriginal.
      */
-    int getIOIHAODNIKF();
+    boolean getIsOriginal();
   }
   /**
    * Protobuf type {@code BattlePassRewardPlanOption}
@@ -83,17 +83,17 @@ public final class BattlePassRewardPlanOptionOuterClass {
               break;
             case 32: {
 
-              oCACCJODDDO_ = input.readBool();
+              tierId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 40: {
 
-              defaultRewardType_ = input.readUInt32();
+              isOriginal_ = input.readBool();
               break;
             }
-            case 112: {
+            case 96: {
 
-              iOIHAODNIKF_ = input.readUInt32();
+              rewardType_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,37 +128,37 @@ public final class BattlePassRewardPlanOptionOuterClass {
               emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption.class, emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption.Builder.class);
     }
 
-    public static final int OCACCJODDDO_FIELD_NUMBER = 4;
-    private boolean oCACCJODDDO_;
+    public static final int REWARD_TYPE_FIELD_NUMBER = 12;
+    private int rewardType_;
     /**
-     * <code>bool OCACCJODDDO = 4;</code>
-     * @return The oCACCJODDDO.
+     * <code>uint32 reward_type = 12;</code>
+     * @return The rewardType.
      */
     @java.lang.Override
-    public boolean getOCACCJODDDO() {
-      return oCACCJODDDO_;
+    public int getRewardType() {
+      return rewardType_;
     }
 
-    public static final int DEFAULT_REWARD_TYPE_FIELD_NUMBER = 6;
-    private int defaultRewardType_;
+    public static final int TIER_ID_FIELD_NUMBER = 4;
+    private int tierId_;
     /**
-     * <code>uint32 default_reward_type = 6;</code>
-     * @return The defaultRewardType.
+     * <code>uint32 tier_id = 4;</code>
+     * @return The tierId.
      */
     @java.lang.Override
-    public int getDefaultRewardType() {
-      return defaultRewardType_;
+    public int getTierId() {
+      return tierId_;
     }
 
-    public static final int IOIHAODNIKF_FIELD_NUMBER = 14;
-    private int iOIHAODNIKF_;
+    public static final int IS_ORIGINAL_FIELD_NUMBER = 5;
+    private boolean isOriginal_;
     /**
-     * <code>uint32 IOIHAODNIKF = 14;</code>
-     * @return The iOIHAODNIKF.
+     * <code>bool is_original = 5;</code>
+     * @return The isOriginal.
      */
     @java.lang.Override
-    public int getIOIHAODNIKF() {
-      return iOIHAODNIKF_;
+    public boolean getIsOriginal() {
+      return isOriginal_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +175,14 @@ public final class BattlePassRewardPlanOptionOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (oCACCJODDDO_ != false) {
-        output.writeBool(4, oCACCJODDDO_);
+      if (tierId_ != 0) {
+        output.writeUInt32(4, tierId_);
       }
-      if (defaultRewardType_ != 0) {
-        output.writeUInt32(6, defaultRewardType_);
+      if (isOriginal_ != false) {
+        output.writeBool(5, isOriginal_);
       }
-      if (iOIHAODNIKF_ != 0) {
-        output.writeUInt32(14, iOIHAODNIKF_);
+      if (rewardType_ != 0) {
+        output.writeUInt32(12, rewardType_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class BattlePassRewardPlanOptionOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (oCACCJODDDO_ != false) {
+      if (tierId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, oCACCJODDDO_);
+          .computeUInt32Size(4, tierId_);
       }
-      if (defaultRewardType_ != 0) {
+      if (isOriginal_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, defaultRewardType_);
+          .computeBoolSize(5, isOriginal_);
       }
-      if (iOIHAODNIKF_ != 0) {
+      if (rewardType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, iOIHAODNIKF_);
+          .computeUInt32Size(12, rewardType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +220,12 @@ public final class BattlePassRewardPlanOptionOuterClass {
       }
       emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption other = (emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption) obj;
 
-      if (getOCACCJODDDO()
-          != other.getOCACCJODDDO()) return false;
-      if (getDefaultRewardType()
-          != other.getDefaultRewardType()) return false;
-      if (getIOIHAODNIKF()
-          != other.getIOIHAODNIKF()) return false;
+      if (getRewardType()
+          != other.getRewardType()) return false;
+      if (getTierId()
+          != other.getTierId()) return false;
+      if (getIsOriginal()
+          != other.getIsOriginal()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,13 +237,13 @@ public final class BattlePassRewardPlanOptionOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OCACCJODDDO_FIELD_NUMBER;
+      hash = (37 * hash) + REWARD_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getRewardType();
+      hash = (37 * hash) + TIER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTierId();
+      hash = (37 * hash) + IS_ORIGINAL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getOCACCJODDDO());
-      hash = (37 * hash) + DEFAULT_REWARD_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getDefaultRewardType();
-      hash = (37 * hash) + IOIHAODNIKF_FIELD_NUMBER;
-      hash = (53 * hash) + getIOIHAODNIKF();
+          getIsOriginal());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -377,11 +377,11 @@ public final class BattlePassRewardPlanOptionOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oCACCJODDDO_ = false;
+        rewardType_ = 0;
 
-        defaultRewardType_ = 0;
+        tierId_ = 0;
 
-        iOIHAODNIKF_ = 0;
+        isOriginal_ = false;
 
         return this;
       }
@@ -409,9 +409,9 @@ public final class BattlePassRewardPlanOptionOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption buildPartial() {
         emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption result = new emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption(this);
-        result.oCACCJODDDO_ = oCACCJODDDO_;
-        result.defaultRewardType_ = defaultRewardType_;
-        result.iOIHAODNIKF_ = iOIHAODNIKF_;
+        result.rewardType_ = rewardType_;
+        result.tierId_ = tierId_;
+        result.isOriginal_ = isOriginal_;
         onBuilt();
         return result;
       }
@@ -460,14 +460,14 @@ public final class BattlePassRewardPlanOptionOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption other) {
         if (other == emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption.getDefaultInstance()) return this;
-        if (other.getOCACCJODDDO() != false) {
-          setOCACCJODDDO(other.getOCACCJODDDO());
+        if (other.getRewardType() != 0) {
+          setRewardType(other.getRewardType());
         }
-        if (other.getDefaultRewardType() != 0) {
-          setDefaultRewardType(other.getDefaultRewardType());
+        if (other.getTierId() != 0) {
+          setTierId(other.getTierId());
         }
-        if (other.getIOIHAODNIKF() != 0) {
-          setIOIHAODNIKF(other.getIOIHAODNIKF());
+        if (other.getIsOriginal() != false) {
+          setIsOriginal(other.getIsOriginal());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -498,95 +498,95 @@ public final class BattlePassRewardPlanOptionOuterClass {
         return this;
       }
 
-      private boolean oCACCJODDDO_ ;
+      private int rewardType_ ;
       /**
-       * <code>bool OCACCJODDDO = 4;</code>
-       * @return The oCACCJODDDO.
+       * <code>uint32 reward_type = 12;</code>
+       * @return The rewardType.
        */
       @java.lang.Override
-      public boolean getOCACCJODDDO() {
-        return oCACCJODDDO_;
+      public int getRewardType() {
+        return rewardType_;
       }
       /**
-       * <code>bool OCACCJODDDO = 4;</code>
-       * @param value The oCACCJODDDO to set.
+       * <code>uint32 reward_type = 12;</code>
+       * @param value The rewardType to set.
        * @return This builder for chaining.
        */
-      public Builder setOCACCJODDDO(boolean value) {
+      public Builder setRewardType(int value) {
         
-        oCACCJODDDO_ = value;
+        rewardType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool OCACCJODDDO = 4;</code>
+       * <code>uint32 reward_type = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOCACCJODDDO() {
+      public Builder clearRewardType() {
         
-        oCACCJODDDO_ = false;
+        rewardType_ = 0;
         onChanged();
         return this;
       }
 
-      private int defaultRewardType_ ;
+      private int tierId_ ;
       /**
-       * <code>uint32 default_reward_type = 6;</code>
-       * @return The defaultRewardType.
+       * <code>uint32 tier_id = 4;</code>
+       * @return The tierId.
        */
       @java.lang.Override
-      public int getDefaultRewardType() {
-        return defaultRewardType_;
+      public int getTierId() {
+        return tierId_;
       }
       /**
-       * <code>uint32 default_reward_type = 6;</code>
-       * @param value The defaultRewardType to set.
+       * <code>uint32 tier_id = 4;</code>
+       * @param value The tierId to set.
        * @return This builder for chaining.
        */
-      public Builder setDefaultRewardType(int value) {
+      public Builder setTierId(int value) {
         
-        defaultRewardType_ = value;
+        tierId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 default_reward_type = 6;</code>
+       * <code>uint32 tier_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDefaultRewardType() {
+      public Builder clearTierId() {
         
-        defaultRewardType_ = 0;
+        tierId_ = 0;
         onChanged();
         return this;
       }
 
-      private int iOIHAODNIKF_ ;
+      private boolean isOriginal_ ;
       /**
-       * <code>uint32 IOIHAODNIKF = 14;</code>
-       * @return The iOIHAODNIKF.
+       * <code>bool is_original = 5;</code>
+       * @return The isOriginal.
        */
       @java.lang.Override
-      public int getIOIHAODNIKF() {
-        return iOIHAODNIKF_;
+      public boolean getIsOriginal() {
+        return isOriginal_;
       }
       /**
-       * <code>uint32 IOIHAODNIKF = 14;</code>
-       * @param value The iOIHAODNIKF to set.
+       * <code>bool is_original = 5;</code>
+       * @param value The isOriginal to set.
        * @return This builder for chaining.
        */
-      public Builder setIOIHAODNIKF(int value) {
+      public Builder setIsOriginal(boolean value) {
         
-        iOIHAODNIKF_ = value;
+        isOriginal_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IOIHAODNIKF = 14;</code>
+       * <code>bool is_original = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIOIHAODNIKF() {
+      public Builder clearIsOriginal() {
         
-        iOIHAODNIKF_ = 0;
+        isOriginal_ = false;
         onChanged();
         return this;
       }
@@ -657,11 +657,10 @@ public final class BattlePassRewardPlanOptionOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n BattlePassRewardPlanOption.proto\"c\n\032Ba" +
-      "ttlePassRewardPlanOption\022\023\n\013OCACCJODDDO\030" +
-      "\004 \001(\010\022\033\n\023default_reward_type\030\006 \001(\r\022\023\n\013IO" +
-      "IHAODNIKF\030\016 \001(\rB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n BattlePassRewardPlanOption.proto\"W\n\032Ba" +
+      "ttlePassRewardPlanOption\022\023\n\013reward_type\030" +
+      "\014 \001(\r\022\017\n\007tier_id\030\004 \001(\r\022\023\n\013is_original\030\005 " +
+      "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -672,7 +671,7 @@ public final class BattlePassRewardPlanOptionOuterClass {
     internal_static_BattlePassRewardPlanOption_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BattlePassRewardPlanOption_descriptor,
-        new java.lang.String[] { "OCACCJODDDO", "DefaultRewardType", "IOIHAODNIKF", });
+        new java.lang.String[] { "RewardType", "TierId", "IsOriginal", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

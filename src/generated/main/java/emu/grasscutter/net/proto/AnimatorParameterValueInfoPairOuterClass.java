@@ -19,25 +19,25 @@ public final class AnimatorParameterValueInfoPairOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
-     * @return Whether the pPIBAHHFOPG field is set.
+     * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
+     * @return Whether the animatorPara field is set.
      */
-    boolean hasPPIBAHHFOPG();
+    boolean hasAnimatorPara();
     /**
-     * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
-     * @return The pPIBAHHFOPG.
+     * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
+     * @return The animatorPara.
      */
-    emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo getPPIBAHHFOPG();
+    emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo getAnimatorPara();
     /**
-     * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
+     * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
      */
-    emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfoOrBuilder getPPIBAHHFOPGOrBuilder();
+    emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfoOrBuilder getAnimatorParaOrBuilder();
 
     /**
-     * <code>int32 OIJFJHELAKA = 1;</code>
-     * @return The oIJFJHELAKA.
+     * <code>int32 name_id = 1;</code>
+     * @return The nameId.
      */
-    int getOIJFJHELAKA();
+    int getNameId();
   }
   /**
    * Protobuf type {@code AnimatorParameterValueInfoPair}
@@ -86,18 +86,18 @@ public final class AnimatorParameterValueInfoPairOuterClass {
               break;
             case 8: {
 
-              oIJFJHELAKA_ = input.readInt32();
+              nameId_ = input.readInt32();
               break;
             }
             case 18: {
               emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.Builder subBuilder = null;
-              if (pPIBAHHFOPG_ != null) {
-                subBuilder = pPIBAHHFOPG_.toBuilder();
+              if (animatorPara_ != null) {
+                subBuilder = animatorPara_.toBuilder();
               }
-              pPIBAHHFOPG_ = input.readMessage(emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.parser(), extensionRegistry);
+              animatorPara_ = input.readMessage(emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(pPIBAHHFOPG_);
-                pPIBAHHFOPG_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(animatorPara_);
+                animatorPara_ = subBuilder.buildPartial();
               }
 
               break;
@@ -134,41 +134,41 @@ public final class AnimatorParameterValueInfoPairOuterClass {
               emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.class, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder.class);
     }
 
-    public static final int PPIBAHHFOPG_FIELD_NUMBER = 2;
-    private emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo pPIBAHHFOPG_;
+    public static final int ANIMATOR_PARA_FIELD_NUMBER = 2;
+    private emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo animatorPara_;
     /**
-     * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
-     * @return Whether the pPIBAHHFOPG field is set.
+     * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
+     * @return Whether the animatorPara field is set.
      */
     @java.lang.Override
-    public boolean hasPPIBAHHFOPG() {
-      return pPIBAHHFOPG_ != null;
+    public boolean hasAnimatorPara() {
+      return animatorPara_ != null;
     }
     /**
-     * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
-     * @return The pPIBAHHFOPG.
+     * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
+     * @return The animatorPara.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo getPPIBAHHFOPG() {
-      return pPIBAHHFOPG_ == null ? emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.getDefaultInstance() : pPIBAHHFOPG_;
+    public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo getAnimatorPara() {
+      return animatorPara_ == null ? emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.getDefaultInstance() : animatorPara_;
     }
     /**
-     * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
+     * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfoOrBuilder getPPIBAHHFOPGOrBuilder() {
-      return getPPIBAHHFOPG();
+    public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfoOrBuilder getAnimatorParaOrBuilder() {
+      return getAnimatorPara();
     }
 
-    public static final int OIJFJHELAKA_FIELD_NUMBER = 1;
-    private int oIJFJHELAKA_;
+    public static final int NAME_ID_FIELD_NUMBER = 1;
+    private int nameId_;
     /**
-     * <code>int32 OIJFJHELAKA = 1;</code>
-     * @return The oIJFJHELAKA.
+     * <code>int32 name_id = 1;</code>
+     * @return The nameId.
      */
     @java.lang.Override
-    public int getOIJFJHELAKA() {
-      return oIJFJHELAKA_;
+    public int getNameId() {
+      return nameId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -185,11 +185,11 @@ public final class AnimatorParameterValueInfoPairOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (oIJFJHELAKA_ != 0) {
-        output.writeInt32(1, oIJFJHELAKA_);
+      if (nameId_ != 0) {
+        output.writeInt32(1, nameId_);
       }
-      if (pPIBAHHFOPG_ != null) {
-        output.writeMessage(2, getPPIBAHHFOPG());
+      if (animatorPara_ != null) {
+        output.writeMessage(2, getAnimatorPara());
       }
       unknownFields.writeTo(output);
     }
@@ -200,13 +200,13 @@ public final class AnimatorParameterValueInfoPairOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (oIJFJHELAKA_ != 0) {
+      if (nameId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, oIJFJHELAKA_);
+          .computeInt32Size(1, nameId_);
       }
-      if (pPIBAHHFOPG_ != null) {
+      if (animatorPara_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getPPIBAHHFOPG());
+          .computeMessageSize(2, getAnimatorPara());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -223,13 +223,13 @@ public final class AnimatorParameterValueInfoPairOuterClass {
       }
       emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair other = (emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair) obj;
 
-      if (hasPPIBAHHFOPG() != other.hasPPIBAHHFOPG()) return false;
-      if (hasPPIBAHHFOPG()) {
-        if (!getPPIBAHHFOPG()
-            .equals(other.getPPIBAHHFOPG())) return false;
+      if (hasAnimatorPara() != other.hasAnimatorPara()) return false;
+      if (hasAnimatorPara()) {
+        if (!getAnimatorPara()
+            .equals(other.getAnimatorPara())) return false;
       }
-      if (getOIJFJHELAKA()
-          != other.getOIJFJHELAKA()) return false;
+      if (getNameId()
+          != other.getNameId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +241,12 @@ public final class AnimatorParameterValueInfoPairOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasPPIBAHHFOPG()) {
-        hash = (37 * hash) + PPIBAHHFOPG_FIELD_NUMBER;
-        hash = (53 * hash) + getPPIBAHHFOPG().hashCode();
+      if (hasAnimatorPara()) {
+        hash = (37 * hash) + ANIMATOR_PARA_FIELD_NUMBER;
+        hash = (53 * hash) + getAnimatorPara().hashCode();
       }
-      hash = (37 * hash) + OIJFJHELAKA_FIELD_NUMBER;
-      hash = (53 * hash) + getOIJFJHELAKA();
+      hash = (37 * hash) + NAME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getNameId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -380,13 +380,13 @@ public final class AnimatorParameterValueInfoPairOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (pPIBAHHFOPGBuilder_ == null) {
-          pPIBAHHFOPG_ = null;
+        if (animatorParaBuilder_ == null) {
+          animatorPara_ = null;
         } else {
-          pPIBAHHFOPG_ = null;
-          pPIBAHHFOPGBuilder_ = null;
+          animatorPara_ = null;
+          animatorParaBuilder_ = null;
         }
-        oIJFJHELAKA_ = 0;
+        nameId_ = 0;
 
         return this;
       }
@@ -414,12 +414,12 @@ public final class AnimatorParameterValueInfoPairOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair buildPartial() {
         emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair result = new emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair(this);
-        if (pPIBAHHFOPGBuilder_ == null) {
-          result.pPIBAHHFOPG_ = pPIBAHHFOPG_;
+        if (animatorParaBuilder_ == null) {
+          result.animatorPara_ = animatorPara_;
         } else {
-          result.pPIBAHHFOPG_ = pPIBAHHFOPGBuilder_.build();
+          result.animatorPara_ = animatorParaBuilder_.build();
         }
-        result.oIJFJHELAKA_ = oIJFJHELAKA_;
+        result.nameId_ = nameId_;
         onBuilt();
         return result;
       }
@@ -468,11 +468,11 @@ public final class AnimatorParameterValueInfoPairOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair other) {
         if (other == emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.getDefaultInstance()) return this;
-        if (other.hasPPIBAHHFOPG()) {
-          mergePPIBAHHFOPG(other.getPPIBAHHFOPG());
+        if (other.hasAnimatorPara()) {
+          mergeAnimatorPara(other.getAnimatorPara());
         }
-        if (other.getOIJFJHELAKA() != 0) {
-          setOIJFJHELAKA(other.getOIJFJHELAKA());
+        if (other.getNameId() != 0) {
+          setNameId(other.getNameId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -503,152 +503,152 @@ public final class AnimatorParameterValueInfoPairOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo pPIBAHHFOPG_;
+      private emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo animatorPara_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo, emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.Builder, emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfoOrBuilder> pPIBAHHFOPGBuilder_;
+          emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo, emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.Builder, emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfoOrBuilder> animatorParaBuilder_;
       /**
-       * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
-       * @return Whether the pPIBAHHFOPG field is set.
+       * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
+       * @return Whether the animatorPara field is set.
        */
-      public boolean hasPPIBAHHFOPG() {
-        return pPIBAHHFOPGBuilder_ != null || pPIBAHHFOPG_ != null;
+      public boolean hasAnimatorPara() {
+        return animatorParaBuilder_ != null || animatorPara_ != null;
       }
       /**
-       * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
-       * @return The pPIBAHHFOPG.
+       * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
+       * @return The animatorPara.
        */
-      public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo getPPIBAHHFOPG() {
-        if (pPIBAHHFOPGBuilder_ == null) {
-          return pPIBAHHFOPG_ == null ? emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.getDefaultInstance() : pPIBAHHFOPG_;
+      public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo getAnimatorPara() {
+        if (animatorParaBuilder_ == null) {
+          return animatorPara_ == null ? emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.getDefaultInstance() : animatorPara_;
         } else {
-          return pPIBAHHFOPGBuilder_.getMessage();
+          return animatorParaBuilder_.getMessage();
         }
       }
       /**
-       * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
+       * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
        */
-      public Builder setPPIBAHHFOPG(emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo value) {
-        if (pPIBAHHFOPGBuilder_ == null) {
+      public Builder setAnimatorPara(emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo value) {
+        if (animatorParaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          pPIBAHHFOPG_ = value;
+          animatorPara_ = value;
           onChanged();
         } else {
-          pPIBAHHFOPGBuilder_.setMessage(value);
+          animatorParaBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
+       * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
        */
-      public Builder setPPIBAHHFOPG(
+      public Builder setAnimatorPara(
           emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.Builder builderForValue) {
-        if (pPIBAHHFOPGBuilder_ == null) {
-          pPIBAHHFOPG_ = builderForValue.build();
+        if (animatorParaBuilder_ == null) {
+          animatorPara_ = builderForValue.build();
           onChanged();
         } else {
-          pPIBAHHFOPGBuilder_.setMessage(builderForValue.build());
+          animatorParaBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
+       * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
        */
-      public Builder mergePPIBAHHFOPG(emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo value) {
-        if (pPIBAHHFOPGBuilder_ == null) {
-          if (pPIBAHHFOPG_ != null) {
-            pPIBAHHFOPG_ =
-              emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.newBuilder(pPIBAHHFOPG_).mergeFrom(value).buildPartial();
+      public Builder mergeAnimatorPara(emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo value) {
+        if (animatorParaBuilder_ == null) {
+          if (animatorPara_ != null) {
+            animatorPara_ =
+              emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.newBuilder(animatorPara_).mergeFrom(value).buildPartial();
           } else {
-            pPIBAHHFOPG_ = value;
+            animatorPara_ = value;
           }
           onChanged();
         } else {
-          pPIBAHHFOPGBuilder_.mergeFrom(value);
+          animatorParaBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
+       * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
        */
-      public Builder clearPPIBAHHFOPG() {
-        if (pPIBAHHFOPGBuilder_ == null) {
-          pPIBAHHFOPG_ = null;
+      public Builder clearAnimatorPara() {
+        if (animatorParaBuilder_ == null) {
+          animatorPara_ = null;
           onChanged();
         } else {
-          pPIBAHHFOPG_ = null;
-          pPIBAHHFOPGBuilder_ = null;
+          animatorPara_ = null;
+          animatorParaBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
+       * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
        */
-      public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.Builder getPPIBAHHFOPGBuilder() {
+      public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.Builder getAnimatorParaBuilder() {
         
         onChanged();
-        return getPPIBAHHFOPGFieldBuilder().getBuilder();
+        return getAnimatorParaFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
+       * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
        */
-      public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfoOrBuilder getPPIBAHHFOPGOrBuilder() {
-        if (pPIBAHHFOPGBuilder_ != null) {
-          return pPIBAHHFOPGBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfoOrBuilder getAnimatorParaOrBuilder() {
+        if (animatorParaBuilder_ != null) {
+          return animatorParaBuilder_.getMessageOrBuilder();
         } else {
-          return pPIBAHHFOPG_ == null ?
-              emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.getDefaultInstance() : pPIBAHHFOPG_;
+          return animatorPara_ == null ?
+              emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.getDefaultInstance() : animatorPara_;
         }
       }
       /**
-       * <code>.AnimatorParameterValueInfo PPIBAHHFOPG = 2;</code>
+       * <code>.AnimatorParameterValueInfo animator_para = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo, emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.Builder, emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfoOrBuilder> 
-          getPPIBAHHFOPGFieldBuilder() {
-        if (pPIBAHHFOPGBuilder_ == null) {
-          pPIBAHHFOPGBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getAnimatorParaFieldBuilder() {
+        if (animatorParaBuilder_ == null) {
+          animatorParaBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo, emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.Builder, emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfoOrBuilder>(
-                  getPPIBAHHFOPG(),
+                  getAnimatorPara(),
                   getParentForChildren(),
                   isClean());
-          pPIBAHHFOPG_ = null;
+          animatorPara_ = null;
         }
-        return pPIBAHHFOPGBuilder_;
+        return animatorParaBuilder_;
       }
 
-      private int oIJFJHELAKA_ ;
+      private int nameId_ ;
       /**
-       * <code>int32 OIJFJHELAKA = 1;</code>
-       * @return The oIJFJHELAKA.
+       * <code>int32 name_id = 1;</code>
+       * @return The nameId.
        */
       @java.lang.Override
-      public int getOIJFJHELAKA() {
-        return oIJFJHELAKA_;
+      public int getNameId() {
+        return nameId_;
       }
       /**
-       * <code>int32 OIJFJHELAKA = 1;</code>
-       * @param value The oIJFJHELAKA to set.
+       * <code>int32 name_id = 1;</code>
+       * @param value The nameId to set.
        * @return This builder for chaining.
        */
-      public Builder setOIJFJHELAKA(int value) {
+      public Builder setNameId(int value) {
         
-        oIJFJHELAKA_ = value;
+        nameId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 OIJFJHELAKA = 1;</code>
+       * <code>int32 name_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOIJFJHELAKA() {
+      public Builder clearNameId() {
         
-        oIJFJHELAKA_ = 0;
+        nameId_ = 0;
         onChanged();
         return this;
       }
@@ -720,11 +720,11 @@ public final class AnimatorParameterValueInfoPairOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$AnimatorParameterValueInfoPair.proto\032 " +
-      "AnimatorParameterValueInfo.proto\"g\n\036Anim" +
-      "atorParameterValueInfoPair\0220\n\013PPIBAHHFOP" +
-      "G\030\002 \001(\0132\033.AnimatorParameterValueInfo\022\023\n\013" +
-      "OIJFJHELAKA\030\001 \001(\005B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "AnimatorParameterValueInfo.proto\"e\n\036Anim" +
+      "atorParameterValueInfoPair\0222\n\ranimator_p" +
+      "ara\030\002 \001(\0132\033.AnimatorParameterValueInfo\022\017" +
+      "\n\007name_id\030\001 \001(\005B\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -736,7 +736,7 @@ public final class AnimatorParameterValueInfoPairOuterClass {
     internal_static_AnimatorParameterValueInfoPair_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AnimatorParameterValueInfoPair_descriptor,
-        new java.lang.String[] { "PPIBAHHFOPG", "OIJFJHELAKA", });
+        new java.lang.String[] { "AnimatorPara", "NameId", });
     emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.getDescriptor();
   }
 

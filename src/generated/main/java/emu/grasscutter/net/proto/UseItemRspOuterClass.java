@@ -19,51 +19,51 @@ public final class UseItemRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
-     * @return A list containing the lHAAMIHFKAB.
+     * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
+     * @return A list containing the aEOBGGBIOEA.
      */
-    java.util.List<java.lang.Integer> getLHAAMIHFKABList();
+    java.util.List<java.lang.Integer> getAEOBGGBIOEAList();
     /**
-     * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
-     * @return The count of lHAAMIHFKAB.
+     * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
+     * @return The count of aEOBGGBIOEA.
      */
-    int getLHAAMIHFKABCount();
+    int getAEOBGGBIOEACount();
     /**
-     * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
+     * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
      * @param index The index of the element to return.
-     * @return The lHAAMIHFKAB at the given index.
+     * @return The aEOBGGBIOEA at the given index.
      */
-    int getLHAAMIHFKAB(int index);
+    int getAEOBGGBIOEA(int index);
 
     /**
-     * <code>uint32 item_id = 3;</code>
+     * <code>uint32 item_id = 15;</code>
      * @return The itemId.
      */
     int getItemId();
 
     /**
-     * <code>uint64 target_guid = 6;</code>
-     * @return The targetGuid.
-     */
-    long getTargetGuid();
-
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint64 guid = 12;</code>
+     * <code>uint64 guid = 9;</code>
      * @return The guid.
      */
     long getGuid();
 
     /**
-     * <code>uint32 option_idx = 14;</code>
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 option_idx = 7;</code>
      * @return The optionIdx.
      */
     int getOptionIdx();
+
+    /**
+     * <code>uint64 target_guid = 14;</code>
+     * @return The targetGuid.
+     */
+    long getTargetGuid();
   }
   /**
    * Protobuf type {@code UseItemRsp}
@@ -78,7 +78,7 @@ public final class UseItemRspOuterClass {
       super(builder);
     }
     private UseItemRsp() {
-      lHAAMIHFKAB_ = emptyIntList();
+      aEOBGGBIOEA_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -112,50 +112,50 @@ public final class UseItemRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                lHAAMIHFKAB_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              lHAAMIHFKAB_.addInt(input.readUInt32());
-              break;
-            }
-            case 10: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                lHAAMIHFKAB_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                lHAAMIHFKAB_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 24: {
+            case 56: {
 
-              itemId_ = input.readUInt32();
+              optionIdx_ = input.readUInt32();
               break;
             }
-            case 48: {
-
-              targetGuid_ = input.readUInt64();
-              break;
-            }
-            case 80: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 96: {
+            case 72: {
 
               guid_ = input.readUInt64();
               break;
             }
+            case 88: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                aEOBGGBIOEA_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              aEOBGGBIOEA_.addInt(input.readUInt32());
+              break;
+            }
+            case 90: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                aEOBGGBIOEA_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                aEOBGGBIOEA_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
             case 112: {
 
-              optionIdx_ = input.readUInt32();
+              targetGuid_ = input.readUInt64();
+              break;
+            }
+            case 120: {
+
+              itemId_ = input.readUInt32();
               break;
             }
             default: {
@@ -174,7 +174,7 @@ public final class UseItemRspOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          lHAAMIHFKAB_.makeImmutable(); // C
+          aEOBGGBIOEA_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -193,38 +193,38 @@ public final class UseItemRspOuterClass {
               emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp.class, emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp.Builder.class);
     }
 
-    public static final int LHAAMIHFKAB_FIELD_NUMBER = 1;
-    private com.google.protobuf.Internal.IntList lHAAMIHFKAB_;
+    public static final int AEOBGGBIOEA_FIELD_NUMBER = 11;
+    private com.google.protobuf.Internal.IntList aEOBGGBIOEA_;
     /**
-     * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
-     * @return A list containing the lHAAMIHFKAB.
+     * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
+     * @return A list containing the aEOBGGBIOEA.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getLHAAMIHFKABList() {
-      return lHAAMIHFKAB_;
+        getAEOBGGBIOEAList() {
+      return aEOBGGBIOEA_;
     }
     /**
-     * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
-     * @return The count of lHAAMIHFKAB.
+     * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
+     * @return The count of aEOBGGBIOEA.
      */
-    public int getLHAAMIHFKABCount() {
-      return lHAAMIHFKAB_.size();
+    public int getAEOBGGBIOEACount() {
+      return aEOBGGBIOEA_.size();
     }
     /**
-     * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
+     * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
      * @param index The index of the element to return.
-     * @return The lHAAMIHFKAB at the given index.
+     * @return The aEOBGGBIOEA at the given index.
      */
-    public int getLHAAMIHFKAB(int index) {
-      return lHAAMIHFKAB_.getInt(index);
+    public int getAEOBGGBIOEA(int index) {
+      return aEOBGGBIOEA_.getInt(index);
     }
-    private int lHAAMIHFKABMemoizedSerializedSize = -1;
+    private int aEOBGGBIOEAMemoizedSerializedSize = -1;
 
-    public static final int ITEM_ID_FIELD_NUMBER = 3;
+    public static final int ITEM_ID_FIELD_NUMBER = 15;
     private int itemId_;
     /**
-     * <code>uint32 item_id = 3;</code>
+     * <code>uint32 item_id = 15;</code>
      * @return The itemId.
      */
     @java.lang.Override
@@ -232,32 +232,10 @@ public final class UseItemRspOuterClass {
       return itemId_;
     }
 
-    public static final int TARGET_GUID_FIELD_NUMBER = 6;
-    private long targetGuid_;
-    /**
-     * <code>uint64 target_guid = 6;</code>
-     * @return The targetGuid.
-     */
-    @java.lang.Override
-    public long getTargetGuid() {
-      return targetGuid_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 10;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int GUID_FIELD_NUMBER = 12;
+    public static final int GUID_FIELD_NUMBER = 9;
     private long guid_;
     /**
-     * <code>uint64 guid = 12;</code>
+     * <code>uint64 guid = 9;</code>
      * @return The guid.
      */
     @java.lang.Override
@@ -265,15 +243,37 @@ public final class UseItemRspOuterClass {
       return guid_;
     }
 
-    public static final int OPTION_IDX_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 8;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int OPTION_IDX_FIELD_NUMBER = 7;
     private int optionIdx_;
     /**
-     * <code>uint32 option_idx = 14;</code>
+     * <code>uint32 option_idx = 7;</code>
      * @return The optionIdx.
      */
     @java.lang.Override
     public int getOptionIdx() {
       return optionIdx_;
+    }
+
+    public static final int TARGET_GUID_FIELD_NUMBER = 14;
+    private long targetGuid_;
+    /**
+     * <code>uint64 target_guid = 14;</code>
+     * @return The targetGuid.
+     */
+    @java.lang.Override
+    public long getTargetGuid() {
+      return targetGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -291,27 +291,27 @@ public final class UseItemRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getLHAAMIHFKABList().size() > 0) {
-        output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(lHAAMIHFKABMemoizedSerializedSize);
-      }
-      for (int i = 0; i < lHAAMIHFKAB_.size(); i++) {
-        output.writeUInt32NoTag(lHAAMIHFKAB_.getInt(i));
-      }
-      if (itemId_ != 0) {
-        output.writeUInt32(3, itemId_);
-      }
-      if (targetGuid_ != 0L) {
-        output.writeUInt64(6, targetGuid_);
+      if (optionIdx_ != 0) {
+        output.writeUInt32(7, optionIdx_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(8, retcode_);
       }
       if (guid_ != 0L) {
-        output.writeUInt64(12, guid_);
+        output.writeUInt64(9, guid_);
       }
-      if (optionIdx_ != 0) {
-        output.writeUInt32(14, optionIdx_);
+      if (getAEOBGGBIOEAList().size() > 0) {
+        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(aEOBGGBIOEAMemoizedSerializedSize);
+      }
+      for (int i = 0; i < aEOBGGBIOEA_.size(); i++) {
+        output.writeUInt32NoTag(aEOBGGBIOEA_.getInt(i));
+      }
+      if (targetGuid_ != 0L) {
+        output.writeUInt64(14, targetGuid_);
+      }
+      if (itemId_ != 0) {
+        output.writeUInt32(15, itemId_);
       }
       unknownFields.writeTo(output);
     }
@@ -322,39 +322,39 @@ public final class UseItemRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (optionIdx_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, optionIdx_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(8, retcode_);
+      }
+      if (guid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(9, guid_);
+      }
       {
         int dataSize = 0;
-        for (int i = 0; i < lHAAMIHFKAB_.size(); i++) {
+        for (int i = 0; i < aEOBGGBIOEA_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(lHAAMIHFKAB_.getInt(i));
+            .computeUInt32SizeNoTag(aEOBGGBIOEA_.getInt(i));
         }
         size += dataSize;
-        if (!getLHAAMIHFKABList().isEmpty()) {
+        if (!getAEOBGGBIOEAList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        lHAAMIHFKABMemoizedSerializedSize = dataSize;
-      }
-      if (itemId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, itemId_);
+        aEOBGGBIOEAMemoizedSerializedSize = dataSize;
       }
       if (targetGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, targetGuid_);
+          .computeUInt64Size(14, targetGuid_);
       }
-      if (retcode_ != 0) {
+      if (itemId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
-      }
-      if (guid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, guid_);
-      }
-      if (optionIdx_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, optionIdx_);
+          .computeUInt32Size(15, itemId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -371,18 +371,18 @@ public final class UseItemRspOuterClass {
       }
       emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp other = (emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp) obj;
 
-      if (!getLHAAMIHFKABList()
-          .equals(other.getLHAAMIHFKABList())) return false;
+      if (!getAEOBGGBIOEAList()
+          .equals(other.getAEOBGGBIOEAList())) return false;
       if (getItemId()
           != other.getItemId()) return false;
-      if (getTargetGuid()
-          != other.getTargetGuid()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getGuid()
           != other.getGuid()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getOptionIdx()
           != other.getOptionIdx()) return false;
+      if (getTargetGuid()
+          != other.getTargetGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -394,22 +394,22 @@ public final class UseItemRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getLHAAMIHFKABCount() > 0) {
-        hash = (37 * hash) + LHAAMIHFKAB_FIELD_NUMBER;
-        hash = (53 * hash) + getLHAAMIHFKABList().hashCode();
+      if (getAEOBGGBIOEACount() > 0) {
+        hash = (37 * hash) + AEOBGGBIOEA_FIELD_NUMBER;
+        hash = (53 * hash) + getAEOBGGBIOEAList().hashCode();
       }
       hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getItemId();
-      hash = (37 * hash) + TARGET_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getTargetGuid());
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getGuid());
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + OPTION_IDX_FIELD_NUMBER;
       hash = (53 * hash) + getOptionIdx();
+      hash = (37 * hash) + TARGET_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTargetGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -543,17 +543,17 @@ public final class UseItemRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        lHAAMIHFKAB_ = emptyIntList();
+        aEOBGGBIOEA_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         itemId_ = 0;
 
-        targetGuid_ = 0L;
+        guid_ = 0L;
 
         retcode_ = 0;
 
-        guid_ = 0L;
-
         optionIdx_ = 0;
+
+        targetGuid_ = 0L;
 
         return this;
       }
@@ -583,15 +583,15 @@ public final class UseItemRspOuterClass {
         emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp result = new emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          lHAAMIHFKAB_.makeImmutable();
+          aEOBGGBIOEA_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.lHAAMIHFKAB_ = lHAAMIHFKAB_;
+        result.aEOBGGBIOEA_ = aEOBGGBIOEA_;
         result.itemId_ = itemId_;
-        result.targetGuid_ = targetGuid_;
-        result.retcode_ = retcode_;
         result.guid_ = guid_;
+        result.retcode_ = retcode_;
         result.optionIdx_ = optionIdx_;
+        result.targetGuid_ = targetGuid_;
         onBuilt();
         return result;
       }
@@ -640,30 +640,30 @@ public final class UseItemRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp other) {
         if (other == emu.grasscutter.net.proto.UseItemRspOuterClass.UseItemRsp.getDefaultInstance()) return this;
-        if (!other.lHAAMIHFKAB_.isEmpty()) {
-          if (lHAAMIHFKAB_.isEmpty()) {
-            lHAAMIHFKAB_ = other.lHAAMIHFKAB_;
+        if (!other.aEOBGGBIOEA_.isEmpty()) {
+          if (aEOBGGBIOEA_.isEmpty()) {
+            aEOBGGBIOEA_ = other.aEOBGGBIOEA_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureLHAAMIHFKABIsMutable();
-            lHAAMIHFKAB_.addAll(other.lHAAMIHFKAB_);
+            ensureAEOBGGBIOEAIsMutable();
+            aEOBGGBIOEA_.addAll(other.aEOBGGBIOEA_);
           }
           onChanged();
         }
         if (other.getItemId() != 0) {
           setItemId(other.getItemId());
         }
-        if (other.getTargetGuid() != 0L) {
-          setTargetGuid(other.getTargetGuid());
+        if (other.getGuid() != 0L) {
+          setGuid(other.getGuid());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getGuid() != 0L) {
-          setGuid(other.getGuid());
-        }
         if (other.getOptionIdx() != 0) {
           setOptionIdx(other.getOptionIdx());
+        }
+        if (other.getTargetGuid() != 0L) {
+          setTargetGuid(other.getTargetGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -695,80 +695,80 @@ public final class UseItemRspOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList lHAAMIHFKAB_ = emptyIntList();
-      private void ensureLHAAMIHFKABIsMutable() {
+      private com.google.protobuf.Internal.IntList aEOBGGBIOEA_ = emptyIntList();
+      private void ensureAEOBGGBIOEAIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          lHAAMIHFKAB_ = mutableCopy(lHAAMIHFKAB_);
+          aEOBGGBIOEA_ = mutableCopy(aEOBGGBIOEA_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
-       * @return A list containing the lHAAMIHFKAB.
+       * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
+       * @return A list containing the aEOBGGBIOEA.
        */
       public java.util.List<java.lang.Integer>
-          getLHAAMIHFKABList() {
+          getAEOBGGBIOEAList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(lHAAMIHFKAB_) : lHAAMIHFKAB_;
+                 java.util.Collections.unmodifiableList(aEOBGGBIOEA_) : aEOBGGBIOEA_;
       }
       /**
-       * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
-       * @return The count of lHAAMIHFKAB.
+       * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
+       * @return The count of aEOBGGBIOEA.
        */
-      public int getLHAAMIHFKABCount() {
-        return lHAAMIHFKAB_.size();
+      public int getAEOBGGBIOEACount() {
+        return aEOBGGBIOEA_.size();
       }
       /**
-       * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
+       * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
        * @param index The index of the element to return.
-       * @return The lHAAMIHFKAB at the given index.
+       * @return The aEOBGGBIOEA at the given index.
        */
-      public int getLHAAMIHFKAB(int index) {
-        return lHAAMIHFKAB_.getInt(index);
+      public int getAEOBGGBIOEA(int index) {
+        return aEOBGGBIOEA_.getInt(index);
       }
       /**
-       * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
+       * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
        * @param index The index to set the value at.
-       * @param value The lHAAMIHFKAB to set.
+       * @param value The aEOBGGBIOEA to set.
        * @return This builder for chaining.
        */
-      public Builder setLHAAMIHFKAB(
+      public Builder setAEOBGGBIOEA(
           int index, int value) {
-        ensureLHAAMIHFKABIsMutable();
-        lHAAMIHFKAB_.setInt(index, value);
+        ensureAEOBGGBIOEAIsMutable();
+        aEOBGGBIOEA_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
-       * @param value The lHAAMIHFKAB to add.
+       * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
+       * @param value The aEOBGGBIOEA to add.
        * @return This builder for chaining.
        */
-      public Builder addLHAAMIHFKAB(int value) {
-        ensureLHAAMIHFKABIsMutable();
-        lHAAMIHFKAB_.addInt(value);
+      public Builder addAEOBGGBIOEA(int value) {
+        ensureAEOBGGBIOEAIsMutable();
+        aEOBGGBIOEA_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
-       * @param values The lHAAMIHFKAB to add.
+       * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
+       * @param values The aEOBGGBIOEA to add.
        * @return This builder for chaining.
        */
-      public Builder addAllLHAAMIHFKAB(
+      public Builder addAllAEOBGGBIOEA(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureLHAAMIHFKABIsMutable();
+        ensureAEOBGGBIOEAIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, lHAAMIHFKAB_);
+            values, aEOBGGBIOEA_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 LHAAMIHFKAB = 1;</code>
+       * <code>repeated uint32 AEOBGGBIOEA = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLHAAMIHFKAB() {
-        lHAAMIHFKAB_ = emptyIntList();
+      public Builder clearAEOBGGBIOEA() {
+        aEOBGGBIOEA_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
@@ -776,7 +776,7 @@ public final class UseItemRspOuterClass {
 
       private int itemId_ ;
       /**
-       * <code>uint32 item_id = 3;</code>
+       * <code>uint32 item_id = 15;</code>
        * @return The itemId.
        */
       @java.lang.Override
@@ -784,7 +784,7 @@ public final class UseItemRspOuterClass {
         return itemId_;
       }
       /**
-       * <code>uint32 item_id = 3;</code>
+       * <code>uint32 item_id = 15;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
        */
@@ -795,7 +795,7 @@ public final class UseItemRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_id = 3;</code>
+       * <code>uint32 item_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemId() {
@@ -805,71 +805,9 @@ public final class UseItemRspOuterClass {
         return this;
       }
 
-      private long targetGuid_ ;
-      /**
-       * <code>uint64 target_guid = 6;</code>
-       * @return The targetGuid.
-       */
-      @java.lang.Override
-      public long getTargetGuid() {
-        return targetGuid_;
-      }
-      /**
-       * <code>uint64 target_guid = 6;</code>
-       * @param value The targetGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetGuid(long value) {
-        
-        targetGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 target_guid = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetGuid() {
-        
-        targetGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private long guid_ ;
       /**
-       * <code>uint64 guid = 12;</code>
+       * <code>uint64 guid = 9;</code>
        * @return The guid.
        */
       @java.lang.Override
@@ -877,7 +815,7 @@ public final class UseItemRspOuterClass {
         return guid_;
       }
       /**
-       * <code>uint64 guid = 12;</code>
+       * <code>uint64 guid = 9;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
        */
@@ -888,7 +826,7 @@ public final class UseItemRspOuterClass {
         return this;
       }
       /**
-       * <code>uint64 guid = 12;</code>
+       * <code>uint64 guid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
@@ -898,9 +836,40 @@ public final class UseItemRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int optionIdx_ ;
       /**
-       * <code>uint32 option_idx = 14;</code>
+       * <code>uint32 option_idx = 7;</code>
        * @return The optionIdx.
        */
       @java.lang.Override
@@ -908,7 +877,7 @@ public final class UseItemRspOuterClass {
         return optionIdx_;
       }
       /**
-       * <code>uint32 option_idx = 14;</code>
+       * <code>uint32 option_idx = 7;</code>
        * @param value The optionIdx to set.
        * @return This builder for chaining.
        */
@@ -919,12 +888,43 @@ public final class UseItemRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 option_idx = 14;</code>
+       * <code>uint32 option_idx = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearOptionIdx() {
         
         optionIdx_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long targetGuid_ ;
+      /**
+       * <code>uint64 target_guid = 14;</code>
+       * @return The targetGuid.
+       */
+      @java.lang.Override
+      public long getTargetGuid() {
+        return targetGuid_;
+      }
+      /**
+       * <code>uint64 target_guid = 14;</code>
+       * @param value The targetGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetGuid(long value) {
+        
+        targetGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 target_guid = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetGuid() {
+        
+        targetGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -995,10 +995,10 @@ public final class UseItemRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020UseItemRsp.proto\"z\n\nUseItemRsp\022\023\n\013LHAA" +
-      "MIHFKAB\030\001 \003(\r\022\017\n\007item_id\030\003 \001(\r\022\023\n\013target" +
-      "_guid\030\006 \001(\004\022\017\n\007retcode\030\n \001(\005\022\014\n\004guid\030\014 \001" +
-      "(\004\022\022\n\noption_idx\030\016 \001(\rB\033\n\031emu.grasscutte" +
+      "\n\020UseItemRsp.proto\"z\n\nUseItemRsp\022\023\n\013AEOB" +
+      "GGBIOEA\030\013 \003(\r\022\017\n\007item_id\030\017 \001(\r\022\014\n\004guid\030\t" +
+      " \001(\004\022\017\n\007retcode\030\010 \001(\005\022\022\n\noption_idx\030\007 \001(" +
+      "\r\022\023\n\013target_guid\030\016 \001(\004B\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1010,7 +1010,7 @@ public final class UseItemRspOuterClass {
     internal_static_UseItemRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UseItemRsp_descriptor,
-        new java.lang.String[] { "LHAAMIHFKAB", "ItemId", "TargetGuid", "Retcode", "Guid", "OptionIdx", });
+        new java.lang.String[] { "AEOBGGBIOEA", "ItemId", "Guid", "Retcode", "OptionIdx", "TargetGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

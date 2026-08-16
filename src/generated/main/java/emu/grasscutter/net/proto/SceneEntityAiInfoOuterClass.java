@@ -157,10 +157,10 @@ public final class SceneEntityAiInfoOuterClass {
         int key);
 
     /**
-     * <code>bool IFKJPBKLCDP = 8;</code>
-     * @return The iFKJPBKLCDP.
+     * <code>bool is_entered_combat = 8;</code>
+     * @return The isEnteredCombat.
      */
-    boolean getIFKJPBKLCDP();
+    boolean getIsEnteredCombat();
 
     /**
      * <code>uint32 cur_tactic = 7;</code>
@@ -291,7 +291,7 @@ public final class SceneEntityAiInfoOuterClass {
             }
             case 64: {
 
-              iFKJPBKLCDP_ = input.readBool();
+              isEnteredCombat_ = input.readBool();
               break;
             }
             default: {
@@ -648,15 +648,15 @@ public final class SceneEntityAiInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int IFKJPBKLCDP_FIELD_NUMBER = 8;
-    private boolean iFKJPBKLCDP_;
+    public static final int IS_ENTERED_COMBAT_FIELD_NUMBER = 8;
+    private boolean isEnteredCombat_;
     /**
-     * <code>bool IFKJPBKLCDP = 8;</code>
-     * @return The iFKJPBKLCDP.
+     * <code>bool is_entered_combat = 8;</code>
+     * @return The isEnteredCombat.
      */
     @java.lang.Override
-    public boolean getIFKJPBKLCDP() {
-      return iFKJPBKLCDP_;
+    public boolean getIsEnteredCombat() {
+      return isEnteredCombat_;
     }
 
     public static final int CUR_TACTIC_FIELD_NUMBER = 7;
@@ -714,8 +714,8 @@ public final class SceneEntityAiInfoOuterClass {
       if (curTactic_ != 0) {
         output.writeUInt32(7, curTactic_);
       }
-      if (iFKJPBKLCDP_ != false) {
-        output.writeBool(8, iFKJPBKLCDP_);
+      if (isEnteredCombat_ != false) {
+        output.writeBool(8, isEnteredCombat_);
       }
       unknownFields.writeTo(output);
     }
@@ -772,9 +772,9 @@ public final class SceneEntityAiInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, curTactic_);
       }
-      if (iFKJPBKLCDP_ != false) {
+      if (isEnteredCombat_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, iFKJPBKLCDP_);
+          .computeBoolSize(8, isEnteredCombat_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -809,8 +809,8 @@ public final class SceneEntityAiInfoOuterClass {
       }
       if (!internalGetSkillGroupCdMap().equals(
           other.internalGetSkillGroupCdMap())) return false;
-      if (getIFKJPBKLCDP()
-          != other.getIFKJPBKLCDP()) return false;
+      if (getIsEnteredCombat()
+          != other.getIsEnteredCombat()) return false;
       if (getCurTactic()
           != other.getCurTactic()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -847,9 +847,9 @@ public final class SceneEntityAiInfoOuterClass {
         hash = (37 * hash) + SKILL_GROUP_CD_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetSkillGroupCdMap().hashCode();
       }
-      hash = (37 * hash) + IFKJPBKLCDP_FIELD_NUMBER;
+      hash = (37 * hash) + IS_ENTERED_COMBAT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIFKJPBKLCDP());
+          getIsEnteredCombat());
       hash = (37 * hash) + CUR_TACTIC_FIELD_NUMBER;
       hash = (53 * hash) + getCurTactic();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -1032,7 +1032,7 @@ public final class SceneEntityAiInfoOuterClass {
           servantInfoBuilder_ = null;
         }
         internalGetMutableSkillGroupCdMap().clear();
-        iFKJPBKLCDP_ = false;
+        isEnteredCombat_ = false;
 
         curTactic_ = 0;
 
@@ -1080,7 +1080,7 @@ public final class SceneEntityAiInfoOuterClass {
         }
         result.skillGroupCdMap_ = internalGetSkillGroupCdMap();
         result.skillGroupCdMap_.makeImmutable();
-        result.iFKJPBKLCDP_ = iFKJPBKLCDP_;
+        result.isEnteredCombat_ = isEnteredCombat_;
         result.curTactic_ = curTactic_;
         onBuilt();
         return result;
@@ -1145,8 +1145,8 @@ public final class SceneEntityAiInfoOuterClass {
         }
         internalGetMutableSkillGroupCdMap().mergeFrom(
             other.internalGetSkillGroupCdMap());
-        if (other.getIFKJPBKLCDP() != false) {
-          setIFKJPBKLCDP(other.getIFKJPBKLCDP());
+        if (other.getIsEnteredCombat() != false) {
+          setIsEnteredCombat(other.getIsEnteredCombat());
         }
         if (other.getCurTactic() != 0) {
           setCurTactic(other.getCurTactic());
@@ -1834,33 +1834,33 @@ public final class SceneEntityAiInfoOuterClass {
         return this;
       }
 
-      private boolean iFKJPBKLCDP_ ;
+      private boolean isEnteredCombat_ ;
       /**
-       * <code>bool IFKJPBKLCDP = 8;</code>
-       * @return The iFKJPBKLCDP.
+       * <code>bool is_entered_combat = 8;</code>
+       * @return The isEnteredCombat.
        */
       @java.lang.Override
-      public boolean getIFKJPBKLCDP() {
-        return iFKJPBKLCDP_;
+      public boolean getIsEnteredCombat() {
+        return isEnteredCombat_;
       }
       /**
-       * <code>bool IFKJPBKLCDP = 8;</code>
-       * @param value The iFKJPBKLCDP to set.
+       * <code>bool is_entered_combat = 8;</code>
+       * @param value The isEnteredCombat to set.
        * @return This builder for chaining.
        */
-      public Builder setIFKJPBKLCDP(boolean value) {
+      public Builder setIsEnteredCombat(boolean value) {
         
-        iFKJPBKLCDP_ = value;
+        isEnteredCombat_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool IFKJPBKLCDP = 8;</code>
+       * <code>bool is_entered_combat = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFKJPBKLCDP() {
+      public Builder clearIsEnteredCombat() {
         
-        iFKJPBKLCDP_ = false;
+        isEnteredCombat_ = false;
         onChanged();
         return this;
       }
@@ -1978,20 +1978,20 @@ public final class SceneEntityAiInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027SceneEntityAiInfo.proto\032\021ServantInfo.p" +
-      "roto\032\014Vector.proto\"\351\003\n\021SceneEntityAiInfo" +
+      "roto\032\014Vector.proto\"\357\003\n\021SceneEntityAiInfo" +
       "\022\022\n\nis_ai_open\030\001 \001(\010\022\031\n\010born_pos\030\002 \001(\0132\007" +
       ".Vector\022:\n\rai_threat_map\030\005 \003(\0132#.SceneEn" +
       "tityAiInfo.AiThreatMapEntry\0228\n\014skill_cd_" +
       "map\030\006 \003(\0132\".SceneEntityAiInfo.SkillCdMap" +
       "Entry\022\"\n\014servant_info\030\004 \001(\0132\014.ServantInf" +
       "o\022C\n\022skill_group_cd_map\030\003 \003(\0132\'.SceneEnt" +
-      "ityAiInfo.SkillGroupCdMapEntry\022\023\n\013IFKJPB" +
-      "KLCDP\030\010 \001(\010\022\022\n\ncur_tactic\030\007 \001(\r\0322\n\020AiThr" +
-      "eatMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:" +
-      "\0028\001\0321\n\017SkillCdMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005v" +
-      "alue\030\002 \001(\r:\0028\001\0326\n\024SkillGroupCdMapEntry\022\013" +
-      "\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "ityAiInfo.SkillGroupCdMapEntry\022\031\n\021is_ent" +
+      "ered_combat\030\010 \001(\010\022\022\n\ncur_tactic\030\007 \001(\r\0322\n" +
+      "\020AiThreatMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030" +
+      "\002 \001(\r:\0028\001\0321\n\017SkillCdMapEntry\022\013\n\003key\030\001 \001(" +
+      "\r\022\r\n\005value\030\002 \001(\r:\0028\001\0326\n\024SkillGroupCdMapE" +
+      "ntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2004,7 +2004,7 @@ public final class SceneEntityAiInfoOuterClass {
     internal_static_SceneEntityAiInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneEntityAiInfo_descriptor,
-        new java.lang.String[] { "IsAiOpen", "BornPos", "AiThreatMap", "SkillCdMap", "ServantInfo", "SkillGroupCdMap", "IFKJPBKLCDP", "CurTactic", });
+        new java.lang.String[] { "IsAiOpen", "BornPos", "AiThreatMap", "SkillCdMap", "ServantInfo", "SkillGroupCdMap", "IsEnteredCombat", "CurTactic", });
     internal_static_SceneEntityAiInfo_AiThreatMapEntry_descriptor =
       internal_static_SceneEntityAiInfo_descriptor.getNestedTypes().get(0);
     internal_static_SceneEntityAiInfo_AiThreatMapEntry_fieldAccessorTable = new

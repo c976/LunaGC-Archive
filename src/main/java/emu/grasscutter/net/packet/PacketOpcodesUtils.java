@@ -12,12 +12,16 @@ public class PacketOpcodesUtils {
             Set.of(
                     PacketOpcodes.PingReq,
                     PacketOpcodes.PingRsp,
-                    PacketOpcodes.WorldPlayerRTTNotify,
+                    //PacketOpcodes.WorldPlayerRTTNotify,
                     PacketOpcodes.UnionCmdNotify,
-                    PacketOpcodes.QueryPathReq,
-                    PacketOpcodes.QueryPathRsp,
+                    //PacketOpcodes.QueryPathReq,
+                    //PacketOpcodes.QueryPathRsp,
 
                     // Satiation sends these every tick
+                    PacketOpcodes.AbilityInvocationsNotify,
+                    PacketOpcodes.CombatInvocationsNotify,
+                    PacketOpcodes.annoyingpacket,
+                    PacketOpcodes.WorldOwnerBlossomScheduleInfoNotify,
                     PacketOpcodes.PlayerTimeNotify,
                     PacketOpcodes.PlayerGameTimeNotify,
                     PacketOpcodes.AvatarPropNotify,

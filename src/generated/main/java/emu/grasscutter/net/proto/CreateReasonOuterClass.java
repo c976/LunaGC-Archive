@@ -20,32 +20,32 @@ public final class CreateReasonOuterClass {
   public enum CreateReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>CREATE_NONE = 0;</code>
+     * <code>CREATE_REASON_NONE = 0;</code>
      */
-    CREATE_NONE(0),
+    CREATE_REASON_NONE(0),
     /**
-     * <code>CREATE_QUEST = 1;</code>
+     * <code>CREATE_REASON_QUEST = 1;</code>
      */
-    CREATE_QUEST(1),
+    CREATE_REASON_QUEST(1),
     /**
-     * <code>CREATE_ENERGY = 2;</code>
+     * <code>CREATE_REASON_ENERGY = 2;</code>
      */
-    CREATE_ENERGY(2),
+    CREATE_REASON_ENERGY(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>CREATE_NONE = 0;</code>
+     * <code>CREATE_REASON_NONE = 0;</code>
      */
-    public static final int CREATE_NONE_VALUE = 0;
+    public static final int CREATE_REASON_NONE_VALUE = 0;
     /**
-     * <code>CREATE_QUEST = 1;</code>
+     * <code>CREATE_REASON_QUEST = 1;</code>
      */
-    public static final int CREATE_QUEST_VALUE = 1;
+    public static final int CREATE_REASON_QUEST_VALUE = 1;
     /**
-     * <code>CREATE_ENERGY = 2;</code>
+     * <code>CREATE_REASON_ENERGY = 2;</code>
      */
-    public static final int CREATE_ENERGY_VALUE = 2;
+    public static final int CREATE_REASON_ENERGY_VALUE = 2;
 
 
     public final int getNumber() {
@@ -72,9 +72,9 @@ public final class CreateReasonOuterClass {
      */
     public static CreateReason forNumber(int value) {
       switch (value) {
-        case 0: return CREATE_NONE;
-        case 1: return CREATE_QUEST;
-        case 2: return CREATE_ENERGY;
+        case 0: return CREATE_REASON_NONE;
+        case 1: return CREATE_REASON_QUEST;
+        case 2: return CREATE_REASON_ENERGY;
         default: return null;
       }
     }
@@ -140,10 +140,10 @@ public final class CreateReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022CreateReason.proto*D\n\014CreateReason\022\017\n\013" +
-      "CREATE_NONE\020\000\022\020\n\014CREATE_QUEST\020\001\022\021\n\rCREAT" +
-      "E_ENERGY\020\002B\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\022CreateReason.proto*Y\n\014CreateReason\022\026\n\022" +
+      "CREATE_REASON_NONE\020\000\022\027\n\023CREATE_REASON_QU" +
+      "EST\020\001\022\030\n\024CREATE_REASON_ENERGY\020\002B\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

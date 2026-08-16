@@ -15,12 +15,6 @@ public class ActionCreateGadget extends AbilityActionHandler {
     @Override
     public boolean execute(
             Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
-        if (!action.byServer) {
-            Grasscutter.getLogger().debug("Action not executed by server");
-
-            return true;
-        }
-
         var entity = ability.getOwner();
         AbilityActionCreateGadget createGadget;
         try {

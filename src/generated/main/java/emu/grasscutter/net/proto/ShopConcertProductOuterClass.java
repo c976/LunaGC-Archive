@@ -19,18 +19,6 @@ public final class ShopConcertProductOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string product_id = 1;</code>
-     * @return The productId.
-     */
-    java.lang.String getProductId();
-    /**
-     * <code>string product_id = 1;</code>
-     * @return The bytes for productId.
-     */
-    com.google.protobuf.ByteString
-        getProductIdBytes();
-
-    /**
      * <code>string price_tier = 2;</code>
      * @return The priceTier.
      */
@@ -43,10 +31,16 @@ public final class ShopConcertProductOuterClass {
         getPriceTierBytes();
 
     /**
-     * <code>uint32 buy_times = 7;</code>
-     * @return The buyTimes.
+     * <code>string product_id = 1;</code>
+     * @return The productId.
      */
-    int getBuyTimes();
+    java.lang.String getProductId();
+    /**
+     * <code>string product_id = 1;</code>
+     * @return The bytes for productId.
+     */
+    com.google.protobuf.ByteString
+        getProductIdBytes();
 
     /**
      * <code>uint32 obtain_limit = 4;</code>
@@ -55,22 +49,28 @@ public final class ShopConcertProductOuterClass {
     int getObtainLimit();
 
     /**
+     * <code>uint32 buy_times = 7;</code>
+     * @return The buyTimes.
+     */
+    int getBuyTimes();
+
+    /**
      * <code>uint32 begin_time = 5;</code>
      * @return The beginTime.
      */
     int getBeginTime();
 
     /**
-     * <code>uint32 obtain_count = 3;</code>
-     * @return The obtainCount.
-     */
-    int getObtainCount();
-
-    /**
      * <code>uint32 end_time = 6;</code>
      * @return The endTime.
      */
     int getEndTime();
+
+    /**
+     * <code>uint32 obtain_count = 3;</code>
+     * @return The obtainCount.
+     */
+    int getObtainCount();
   }
   /**
    * Protobuf type {@code ShopConcertProduct}
@@ -85,8 +85,8 @@ public final class ShopConcertProductOuterClass {
       super(builder);
     }
     private ShopConcertProduct() {
-      productId_ = "";
       priceTier_ = "";
+      productId_ = "";
     }
 
     @java.lang.Override
@@ -188,44 +188,6 @@ public final class ShopConcertProductOuterClass {
               emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.class, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder.class);
     }
 
-    public static final int PRODUCT_ID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object productId_;
-    /**
-     * <code>string product_id = 1;</code>
-     * @return The productId.
-     */
-    @java.lang.Override
-    public java.lang.String getProductId() {
-      java.lang.Object ref = productId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        productId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string product_id = 1;</code>
-     * @return The bytes for productId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getProductIdBytes() {
-      java.lang.Object ref = productId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        productId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     public static final int PRICE_TIER_FIELD_NUMBER = 2;
     private volatile java.lang.Object priceTier_;
     /**
@@ -264,15 +226,42 @@ public final class ShopConcertProductOuterClass {
       }
     }
 
-    public static final int BUY_TIMES_FIELD_NUMBER = 7;
-    private int buyTimes_;
+    public static final int PRODUCT_ID_FIELD_NUMBER = 1;
+    private volatile java.lang.Object productId_;
     /**
-     * <code>uint32 buy_times = 7;</code>
-     * @return The buyTimes.
+     * <code>string product_id = 1;</code>
+     * @return The productId.
      */
     @java.lang.Override
-    public int getBuyTimes() {
-      return buyTimes_;
+    public java.lang.String getProductId() {
+      java.lang.Object ref = productId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        productId_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string product_id = 1;</code>
+     * @return The bytes for productId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getProductIdBytes() {
+      java.lang.Object ref = productId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        productId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     public static final int OBTAIN_LIMIT_FIELD_NUMBER = 4;
@@ -286,6 +275,17 @@ public final class ShopConcertProductOuterClass {
       return obtainLimit_;
     }
 
+    public static final int BUY_TIMES_FIELD_NUMBER = 7;
+    private int buyTimes_;
+    /**
+     * <code>uint32 buy_times = 7;</code>
+     * @return The buyTimes.
+     */
+    @java.lang.Override
+    public int getBuyTimes() {
+      return buyTimes_;
+    }
+
     public static final int BEGIN_TIME_FIELD_NUMBER = 5;
     private int beginTime_;
     /**
@@ -297,17 +297,6 @@ public final class ShopConcertProductOuterClass {
       return beginTime_;
     }
 
-    public static final int OBTAIN_COUNT_FIELD_NUMBER = 3;
-    private int obtainCount_;
-    /**
-     * <code>uint32 obtain_count = 3;</code>
-     * @return The obtainCount.
-     */
-    @java.lang.Override
-    public int getObtainCount() {
-      return obtainCount_;
-    }
-
     public static final int END_TIME_FIELD_NUMBER = 6;
     private int endTime_;
     /**
@@ -317,6 +306,17 @@ public final class ShopConcertProductOuterClass {
     @java.lang.Override
     public int getEndTime() {
       return endTime_;
+    }
+
+    public static final int OBTAIN_COUNT_FIELD_NUMBER = 3;
+    private int obtainCount_;
+    /**
+     * <code>uint32 obtain_count = 3;</code>
+     * @return The obtainCount.
+     */
+    @java.lang.Override
+    public int getObtainCount() {
+      return obtainCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -404,20 +404,20 @@ public final class ShopConcertProductOuterClass {
       }
       emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct other = (emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct) obj;
 
-      if (!getProductId()
-          .equals(other.getProductId())) return false;
       if (!getPriceTier()
           .equals(other.getPriceTier())) return false;
-      if (getBuyTimes()
-          != other.getBuyTimes()) return false;
+      if (!getProductId()
+          .equals(other.getProductId())) return false;
       if (getObtainLimit()
           != other.getObtainLimit()) return false;
+      if (getBuyTimes()
+          != other.getBuyTimes()) return false;
       if (getBeginTime()
           != other.getBeginTime()) return false;
-      if (getObtainCount()
-          != other.getObtainCount()) return false;
       if (getEndTime()
           != other.getEndTime()) return false;
+      if (getObtainCount()
+          != other.getObtainCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -429,20 +429,20 @@ public final class ShopConcertProductOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PRODUCT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getProductId().hashCode();
       hash = (37 * hash) + PRICE_TIER_FIELD_NUMBER;
       hash = (53 * hash) + getPriceTier().hashCode();
-      hash = (37 * hash) + BUY_TIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getBuyTimes();
+      hash = (37 * hash) + PRODUCT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getProductId().hashCode();
       hash = (37 * hash) + OBTAIN_LIMIT_FIELD_NUMBER;
       hash = (53 * hash) + getObtainLimit();
+      hash = (37 * hash) + BUY_TIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getBuyTimes();
       hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getBeginTime();
-      hash = (37 * hash) + OBTAIN_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getObtainCount();
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
+      hash = (37 * hash) + OBTAIN_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getObtainCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -576,19 +576,19 @@ public final class ShopConcertProductOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        productId_ = "";
-
         priceTier_ = "";
 
-        buyTimes_ = 0;
+        productId_ = "";
 
         obtainLimit_ = 0;
 
+        buyTimes_ = 0;
+
         beginTime_ = 0;
 
-        obtainCount_ = 0;
-
         endTime_ = 0;
+
+        obtainCount_ = 0;
 
         return this;
       }
@@ -616,13 +616,13 @@ public final class ShopConcertProductOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct buildPartial() {
         emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct result = new emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct(this);
-        result.productId_ = productId_;
         result.priceTier_ = priceTier_;
-        result.buyTimes_ = buyTimes_;
+        result.productId_ = productId_;
         result.obtainLimit_ = obtainLimit_;
+        result.buyTimes_ = buyTimes_;
         result.beginTime_ = beginTime_;
-        result.obtainCount_ = obtainCount_;
         result.endTime_ = endTime_;
+        result.obtainCount_ = obtainCount_;
         onBuilt();
         return result;
       }
@@ -671,28 +671,28 @@ public final class ShopConcertProductOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct other) {
         if (other == emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.getDefaultInstance()) return this;
-        if (!other.getProductId().isEmpty()) {
-          productId_ = other.productId_;
-          onChanged();
-        }
         if (!other.getPriceTier().isEmpty()) {
           priceTier_ = other.priceTier_;
           onChanged();
         }
-        if (other.getBuyTimes() != 0) {
-          setBuyTimes(other.getBuyTimes());
+        if (!other.getProductId().isEmpty()) {
+          productId_ = other.productId_;
+          onChanged();
         }
         if (other.getObtainLimit() != 0) {
           setObtainLimit(other.getObtainLimit());
         }
+        if (other.getBuyTimes() != 0) {
+          setBuyTimes(other.getBuyTimes());
+        }
         if (other.getBeginTime() != 0) {
           setBeginTime(other.getBeginTime());
         }
-        if (other.getObtainCount() != 0) {
-          setObtainCount(other.getObtainCount());
-        }
         if (other.getEndTime() != 0) {
           setEndTime(other.getEndTime());
+        }
+        if (other.getObtainCount() != 0) {
+          setObtainCount(other.getObtainCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -720,82 +720,6 @@ public final class ShopConcertProductOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private java.lang.Object productId_ = "";
-      /**
-       * <code>string product_id = 1;</code>
-       * @return The productId.
-       */
-      public java.lang.String getProductId() {
-        java.lang.Object ref = productId_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          productId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string product_id = 1;</code>
-       * @return The bytes for productId.
-       */
-      public com.google.protobuf.ByteString
-          getProductIdBytes() {
-        java.lang.Object ref = productId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          productId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string product_id = 1;</code>
-       * @param value The productId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProductId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        productId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string product_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearProductId() {
-        
-        productId_ = getDefaultInstance().getProductId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string product_id = 1;</code>
-       * @param value The bytes for productId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProductIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        productId_ = value;
-        onChanged();
         return this;
       }
 
@@ -875,33 +799,78 @@ public final class ShopConcertProductOuterClass {
         return this;
       }
 
-      private int buyTimes_ ;
+      private java.lang.Object productId_ = "";
       /**
-       * <code>uint32 buy_times = 7;</code>
-       * @return The buyTimes.
+       * <code>string product_id = 1;</code>
+       * @return The productId.
        */
-      @java.lang.Override
-      public int getBuyTimes() {
-        return buyTimes_;
+      public java.lang.String getProductId() {
+        java.lang.Object ref = productId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          productId_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <code>uint32 buy_times = 7;</code>
-       * @param value The buyTimes to set.
+       * <code>string product_id = 1;</code>
+       * @return The bytes for productId.
+       */
+      public com.google.protobuf.ByteString
+          getProductIdBytes() {
+        java.lang.Object ref = productId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          productId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string product_id = 1;</code>
+       * @param value The productId to set.
        * @return This builder for chaining.
        */
-      public Builder setBuyTimes(int value) {
-        
-        buyTimes_ = value;
+      public Builder setProductId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        productId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 buy_times = 7;</code>
+       * <code>string product_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBuyTimes() {
+      public Builder clearProductId() {
         
-        buyTimes_ = 0;
+        productId_ = getDefaultInstance().getProductId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string product_id = 1;</code>
+       * @param value The bytes for productId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProductIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        productId_ = value;
         onChanged();
         return this;
       }
@@ -937,6 +906,37 @@ public final class ShopConcertProductOuterClass {
         return this;
       }
 
+      private int buyTimes_ ;
+      /**
+       * <code>uint32 buy_times = 7;</code>
+       * @return The buyTimes.
+       */
+      @java.lang.Override
+      public int getBuyTimes() {
+        return buyTimes_;
+      }
+      /**
+       * <code>uint32 buy_times = 7;</code>
+       * @param value The buyTimes to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBuyTimes(int value) {
+        
+        buyTimes_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 buy_times = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBuyTimes() {
+        
+        buyTimes_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int beginTime_ ;
       /**
        * <code>uint32 begin_time = 5;</code>
@@ -968,37 +968,6 @@ public final class ShopConcertProductOuterClass {
         return this;
       }
 
-      private int obtainCount_ ;
-      /**
-       * <code>uint32 obtain_count = 3;</code>
-       * @return The obtainCount.
-       */
-      @java.lang.Override
-      public int getObtainCount() {
-        return obtainCount_;
-      }
-      /**
-       * <code>uint32 obtain_count = 3;</code>
-       * @param value The obtainCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setObtainCount(int value) {
-        
-        obtainCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 obtain_count = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearObtainCount() {
-        
-        obtainCount_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int endTime_ ;
       /**
        * <code>uint32 end_time = 6;</code>
@@ -1026,6 +995,37 @@ public final class ShopConcertProductOuterClass {
       public Builder clearEndTime() {
         
         endTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int obtainCount_ ;
+      /**
+       * <code>uint32 obtain_count = 3;</code>
+       * @return The obtainCount.
+       */
+      @java.lang.Override
+      public int getObtainCount() {
+        return obtainCount_;
+      }
+      /**
+       * <code>uint32 obtain_count = 3;</code>
+       * @param value The obtainCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setObtainCount(int value) {
+        
+        obtainCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 obtain_count = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearObtainCount() {
+        
+        obtainCount_ = 0;
         onChanged();
         return this;
       }
@@ -1097,10 +1097,10 @@ public final class ShopConcertProductOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030ShopConcertProduct.proto\"\241\001\n\022ShopConce" +
-      "rtProduct\022\022\n\nproduct_id\030\001 \001(\t\022\022\n\nprice_t" +
-      "ier\030\002 \001(\t\022\021\n\tbuy_times\030\007 \001(\r\022\024\n\014obtain_l" +
-      "imit\030\004 \001(\r\022\022\n\nbegin_time\030\005 \001(\r\022\024\n\014obtain" +
-      "_count\030\003 \001(\r\022\020\n\010end_time\030\006 \001(\rB\033\n\031emu.gr" +
+      "rtProduct\022\022\n\nprice_tier\030\002 \001(\t\022\022\n\nproduct" +
+      "_id\030\001 \001(\t\022\024\n\014obtain_limit\030\004 \001(\r\022\021\n\tbuy_t" +
+      "imes\030\007 \001(\r\022\022\n\nbegin_time\030\005 \001(\r\022\020\n\010end_ti" +
+      "me\030\006 \001(\r\022\024\n\014obtain_count\030\003 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1112,7 +1112,7 @@ public final class ShopConcertProductOuterClass {
     internal_static_ShopConcertProduct_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ShopConcertProduct_descriptor,
-        new java.lang.String[] { "ProductId", "PriceTier", "BuyTimes", "ObtainLimit", "BeginTime", "ObtainCount", "EndTime", });
+        new java.lang.String[] { "PriceTier", "ProductId", "ObtainLimit", "BuyTimes", "BeginTime", "EndTime", "ObtainCount", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

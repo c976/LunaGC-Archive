@@ -53,31 +53,31 @@ public final class ReliquaryUpgradeRspOuterClass {
     int getOldAppendPropList(int index);
 
     /**
-     * <code>uint32 cur_level = 8;</code>
+     * <code>uint32 cur_level = 4;</code>
      * @return The curLevel.
      */
     int getCurLevel();
 
     /**
-     * <code>uint32 old_level = 11;</code>
+     * <code>uint32 old_level = 12;</code>
      * @return The oldLevel.
      */
     int getOldLevel();
 
     /**
-     * <code>uint64 target_reliquary_guid = 4;</code>
+     * <code>uint64 target_reliquary_guid = 15;</code>
      * @return The targetReliquaryGuid.
      */
     long getTargetReliquaryGuid();
 
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 power_up_rate = 6;</code>
+     * <code>uint32 power_up_rate = 8;</code>
      * @return The powerUpRate.
      */
     int getPowerUpRate();
@@ -132,12 +132,7 @@ public final class ReliquaryUpgradeRspOuterClass {
               break;
             case 32: {
 
-              targetReliquaryGuid_ = input.readUInt64();
-              break;
-            }
-            case 48: {
-
-              powerUpRate_ = input.readUInt32();
+              curLevel_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -163,7 +158,7 @@ public final class ReliquaryUpgradeRspOuterClass {
             }
             case 64: {
 
-              curLevel_ = input.readUInt32();
+              powerUpRate_ = input.readUInt32();
               break;
             }
             case 72: {
@@ -187,14 +182,19 @@ public final class ReliquaryUpgradeRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 88: {
+            case 80: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 96: {
 
               oldLevel_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 120: {
 
-              retcode_ = input.readInt32();
+              targetReliquaryGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -291,10 +291,10 @@ public final class ReliquaryUpgradeRspOuterClass {
     }
     private int oldAppendPropListMemoizedSerializedSize = -1;
 
-    public static final int CUR_LEVEL_FIELD_NUMBER = 8;
+    public static final int CUR_LEVEL_FIELD_NUMBER = 4;
     private int curLevel_;
     /**
-     * <code>uint32 cur_level = 8;</code>
+     * <code>uint32 cur_level = 4;</code>
      * @return The curLevel.
      */
     @java.lang.Override
@@ -302,10 +302,10 @@ public final class ReliquaryUpgradeRspOuterClass {
       return curLevel_;
     }
 
-    public static final int OLD_LEVEL_FIELD_NUMBER = 11;
+    public static final int OLD_LEVEL_FIELD_NUMBER = 12;
     private int oldLevel_;
     /**
-     * <code>uint32 old_level = 11;</code>
+     * <code>uint32 old_level = 12;</code>
      * @return The oldLevel.
      */
     @java.lang.Override
@@ -313,10 +313,10 @@ public final class ReliquaryUpgradeRspOuterClass {
       return oldLevel_;
     }
 
-    public static final int TARGET_RELIQUARY_GUID_FIELD_NUMBER = 4;
+    public static final int TARGET_RELIQUARY_GUID_FIELD_NUMBER = 15;
     private long targetReliquaryGuid_;
     /**
-     * <code>uint64 target_reliquary_guid = 4;</code>
+     * <code>uint64 target_reliquary_guid = 15;</code>
      * @return The targetReliquaryGuid.
      */
     @java.lang.Override
@@ -324,10 +324,10 @@ public final class ReliquaryUpgradeRspOuterClass {
       return targetReliquaryGuid_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -335,10 +335,10 @@ public final class ReliquaryUpgradeRspOuterClass {
       return retcode_;
     }
 
-    public static final int POWER_UP_RATE_FIELD_NUMBER = 6;
+    public static final int POWER_UP_RATE_FIELD_NUMBER = 8;
     private int powerUpRate_;
     /**
-     * <code>uint32 power_up_rate = 6;</code>
+     * <code>uint32 power_up_rate = 8;</code>
      * @return The powerUpRate.
      */
     @java.lang.Override
@@ -361,11 +361,8 @@ public final class ReliquaryUpgradeRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (targetReliquaryGuid_ != 0L) {
-        output.writeUInt64(4, targetReliquaryGuid_);
-      }
-      if (powerUpRate_ != 0) {
-        output.writeUInt32(6, powerUpRate_);
+      if (curLevel_ != 0) {
+        output.writeUInt32(4, curLevel_);
       }
       if (getCurAppendPropListList().size() > 0) {
         output.writeUInt32NoTag(58);
@@ -374,8 +371,8 @@ public final class ReliquaryUpgradeRspOuterClass {
       for (int i = 0; i < curAppendPropList_.size(); i++) {
         output.writeUInt32NoTag(curAppendPropList_.getInt(i));
       }
-      if (curLevel_ != 0) {
-        output.writeUInt32(8, curLevel_);
+      if (powerUpRate_ != 0) {
+        output.writeUInt32(8, powerUpRate_);
       }
       if (getOldAppendPropListList().size() > 0) {
         output.writeUInt32NoTag(74);
@@ -384,11 +381,14 @@ public final class ReliquaryUpgradeRspOuterClass {
       for (int i = 0; i < oldAppendPropList_.size(); i++) {
         output.writeUInt32NoTag(oldAppendPropList_.getInt(i));
       }
-      if (oldLevel_ != 0) {
-        output.writeUInt32(11, oldLevel_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(10, retcode_);
+      }
+      if (oldLevel_ != 0) {
+        output.writeUInt32(12, oldLevel_);
+      }
+      if (targetReliquaryGuid_ != 0L) {
+        output.writeUInt64(15, targetReliquaryGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -399,13 +399,9 @@ public final class ReliquaryUpgradeRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetReliquaryGuid_ != 0L) {
+      if (curLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(4, targetReliquaryGuid_);
-      }
-      if (powerUpRate_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, powerUpRate_);
+          .computeUInt32Size(4, curLevel_);
       }
       {
         int dataSize = 0;
@@ -421,9 +417,9 @@ public final class ReliquaryUpgradeRspOuterClass {
         }
         curAppendPropListMemoizedSerializedSize = dataSize;
       }
-      if (curLevel_ != 0) {
+      if (powerUpRate_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, curLevel_);
+          .computeUInt32Size(8, powerUpRate_);
       }
       {
         int dataSize = 0;
@@ -439,13 +435,17 @@ public final class ReliquaryUpgradeRspOuterClass {
         }
         oldAppendPropListMemoizedSerializedSize = dataSize;
       }
-      if (oldLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, oldLevel_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(10, retcode_);
+      }
+      if (oldLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, oldLevel_);
+      }
+      if (targetReliquaryGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(15, targetReliquaryGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -968,7 +968,7 @@ public final class ReliquaryUpgradeRspOuterClass {
 
       private int curLevel_ ;
       /**
-       * <code>uint32 cur_level = 8;</code>
+       * <code>uint32 cur_level = 4;</code>
        * @return The curLevel.
        */
       @java.lang.Override
@@ -976,7 +976,7 @@ public final class ReliquaryUpgradeRspOuterClass {
         return curLevel_;
       }
       /**
-       * <code>uint32 cur_level = 8;</code>
+       * <code>uint32 cur_level = 4;</code>
        * @param value The curLevel to set.
        * @return This builder for chaining.
        */
@@ -987,7 +987,7 @@ public final class ReliquaryUpgradeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_level = 8;</code>
+       * <code>uint32 cur_level = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurLevel() {
@@ -999,7 +999,7 @@ public final class ReliquaryUpgradeRspOuterClass {
 
       private int oldLevel_ ;
       /**
-       * <code>uint32 old_level = 11;</code>
+       * <code>uint32 old_level = 12;</code>
        * @return The oldLevel.
        */
       @java.lang.Override
@@ -1007,7 +1007,7 @@ public final class ReliquaryUpgradeRspOuterClass {
         return oldLevel_;
       }
       /**
-       * <code>uint32 old_level = 11;</code>
+       * <code>uint32 old_level = 12;</code>
        * @param value The oldLevel to set.
        * @return This builder for chaining.
        */
@@ -1018,7 +1018,7 @@ public final class ReliquaryUpgradeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 old_level = 11;</code>
+       * <code>uint32 old_level = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearOldLevel() {
@@ -1030,7 +1030,7 @@ public final class ReliquaryUpgradeRspOuterClass {
 
       private long targetReliquaryGuid_ ;
       /**
-       * <code>uint64 target_reliquary_guid = 4;</code>
+       * <code>uint64 target_reliquary_guid = 15;</code>
        * @return The targetReliquaryGuid.
        */
       @java.lang.Override
@@ -1038,7 +1038,7 @@ public final class ReliquaryUpgradeRspOuterClass {
         return targetReliquaryGuid_;
       }
       /**
-       * <code>uint64 target_reliquary_guid = 4;</code>
+       * <code>uint64 target_reliquary_guid = 15;</code>
        * @param value The targetReliquaryGuid to set.
        * @return This builder for chaining.
        */
@@ -1049,7 +1049,7 @@ public final class ReliquaryUpgradeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint64 target_reliquary_guid = 4;</code>
+       * <code>uint64 target_reliquary_guid = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetReliquaryGuid() {
@@ -1061,7 +1061,7 @@ public final class ReliquaryUpgradeRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -1069,7 +1069,7 @@ public final class ReliquaryUpgradeRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -1080,7 +1080,7 @@ public final class ReliquaryUpgradeRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -1092,7 +1092,7 @@ public final class ReliquaryUpgradeRspOuterClass {
 
       private int powerUpRate_ ;
       /**
-       * <code>uint32 power_up_rate = 6;</code>
+       * <code>uint32 power_up_rate = 8;</code>
        * @return The powerUpRate.
        */
       @java.lang.Override
@@ -1100,7 +1100,7 @@ public final class ReliquaryUpgradeRspOuterClass {
         return powerUpRate_;
       }
       /**
-       * <code>uint32 power_up_rate = 6;</code>
+       * <code>uint32 power_up_rate = 8;</code>
        * @param value The powerUpRate to set.
        * @return This builder for chaining.
        */
@@ -1111,7 +1111,7 @@ public final class ReliquaryUpgradeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 power_up_rate = 6;</code>
+       * <code>uint32 power_up_rate = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearPowerUpRate() {
@@ -1190,9 +1190,9 @@ public final class ReliquaryUpgradeRspOuterClass {
       "\n\031ReliquaryUpgradeRsp.proto\"\276\001\n\023Reliquar" +
       "yUpgradeRsp\022\034\n\024cur_append_prop_list\030\007 \003(" +
       "\r\022\034\n\024old_append_prop_list\030\t \003(\r\022\021\n\tcur_l" +
-      "evel\030\010 \001(\r\022\021\n\told_level\030\013 \001(\r\022\035\n\025target_" +
-      "reliquary_guid\030\004 \001(\004\022\017\n\007retcode\030\r \001(\005\022\025\n" +
-      "\rpower_up_rate\030\006 \001(\rB\033\n\031emu.grasscutter." +
+      "evel\030\004 \001(\r\022\021\n\told_level\030\014 \001(\r\022\035\n\025target_" +
+      "reliquary_guid\030\017 \001(\004\022\017\n\007retcode\030\n \001(\005\022\025\n" +
+      "\rpower_up_rate\030\010 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

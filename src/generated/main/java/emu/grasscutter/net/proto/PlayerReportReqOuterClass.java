@@ -19,68 +19,61 @@ public final class PlayerReportReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 2;</code>
-     * @return The targetUid.
-     */
-    int getTargetUid();
-
-    /**
-     * <code>string target_home_module_name = 3;</code>
-     * @return The targetHomeModuleName.
-     */
-    java.lang.String getTargetHomeModuleName();
-    /**
-     * <code>string target_home_module_name = 3;</code>
-     * @return The bytes for targetHomeModuleName.
-     */
-    com.google.protobuf.ByteString
-        getTargetHomeModuleNameBytes();
-
-    /**
-     * <code>.ReportReasonType reason = 4;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    int getReasonValue();
-    /**
-     * <code>.ReportReasonType reason = 4;</code>
-     * @return The reason.
-     */
-    emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType getReason();
-
-    /**
-     * <code>string content = 8;</code>
+     * <code>string content = 9;</code>
      * @return The content.
      */
     java.lang.String getContent();
     /**
-     * <code>string content = 8;</code>
+     * <code>string content = 9;</code>
      * @return The bytes for content.
      */
     com.google.protobuf.ByteString
         getContentBytes();
 
     /**
-     * <code>uint32 target_home_module_id = 9;</code>
+     * <code>string target_home_module_name = 13;</code>
+     * @return The targetHomeModuleName.
+     */
+    java.lang.String getTargetHomeModuleName();
+    /**
+     * <code>string target_home_module_name = 13;</code>
+     * @return The bytes for targetHomeModuleName.
+     */
+    com.google.protobuf.ByteString
+        getTargetHomeModuleNameBytes();
+
+    /**
+     * <code>uint32 target_home_module_id = 1;</code>
      * @return The targetHomeModuleId.
      */
     int getTargetHomeModuleId();
 
     /**
-     * <code>.ReportSubtype subtype = 14;</code>
-     * @return The enum numeric value on the wire for subtype.
+     * <code>uint32 target_uid = 2;</code>
+     * @return The targetUid.
      */
-    int getSubtypeValue();
+    int getTargetUid();
+
     /**
-     * <code>.ReportSubtype subtype = 14;</code>
-     * @return The subtype.
+     * <pre>
+     *PlayerReportReq.ReportReasonSubType subtype = 3;
+     * </pre>
+     *
+     * <code>.ReportReasonType reason = 10;</code>
+     * @return The enum numeric value on the wire for reason.
      */
-    emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype getSubtype();
+    int getReasonValue();
+    /**
+     * <pre>
+     *PlayerReportReq.ReportReasonSubType subtype = 3;
+     * </pre>
+     *
+     * <code>.ReportReasonType reason = 10;</code>
+     * @return The reason.
+     */
+    emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType getReason();
   }
   /**
-   * <pre>
-   * CmdId: 22232
-   * </pre>
-   *
    * Protobuf type {@code PlayerReportReq}
    */
   public static final class PlayerReportReq extends
@@ -93,10 +86,9 @@ public final class PlayerReportReqOuterClass {
       super(builder);
     }
     private PlayerReportReq() {
+      content_ = "";
       targetHomeModuleName_ = "";
       reason_ = 0;
-      content_ = "";
-      subtype_ = 0;
     }
 
     @java.lang.Override
@@ -129,38 +121,32 @@ public final class PlayerReportReqOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              targetHomeModuleId_ = input.readUInt32();
+              break;
+            }
             case 16: {
 
               targetUid_ = input.readUInt32();
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              targetHomeModuleName_ = s;
-              break;
-            }
-            case 32: {
-              int rawValue = input.readEnum();
-
-              reason_ = rawValue;
-              break;
-            }
-            case 66: {
+            case 74: {
               java.lang.String s = input.readStringRequireUtf8();
 
               content_ = s;
               break;
             }
-            case 72: {
-
-              targetHomeModuleId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 80: {
               int rawValue = input.readEnum();
 
-              subtype_ = rawValue;
+              reason_ = rawValue;
+              break;
+            }
+            case 106: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              targetHomeModuleName_ = s;
               break;
             }
             default: {
@@ -195,78 +181,163 @@ public final class PlayerReportReqOuterClass {
               emu.grasscutter.net.proto.PlayerReportReqOuterClass.PlayerReportReq.class, emu.grasscutter.net.proto.PlayerReportReqOuterClass.PlayerReportReq.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 2;
-    private int targetUid_;
     /**
-     * <code>uint32 target_uid = 2;</code>
-     * @return The targetUid.
+     * Protobuf enum {@code PlayerReportReq.ReportReasonSubtype}
      */
-    @java.lang.Override
-    public int getTargetUid() {
-      return targetUid_;
-    }
+    public enum ReportReasonSubtype
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_NONE = 0;</code>
+       */
+      REPORT_SUBTYPE_REASON_SUBTYPE_NONE(0),
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_NICKNAME = 1;</code>
+       */
+      REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_NICKNAME(1),
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_SIGNATURE = 2;</code>
+       */
+      REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_SIGNATURE(2),
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_ARRANGEMENT = 3;</code>
+       */
+      REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_ARRANGEMENT(3),
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_CHAT = 4;</code>
+       */
+      REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_CHAT(4),
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_AVATAR_NAME = 5;</code>
+       */
+      REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_AVATAR_NAME(5),
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_OTHER = 6;</code>
+       */
+      REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_OTHER(6),
+      UNRECOGNIZED(-1),
+      ;
 
-    public static final int TARGET_HOME_MODULE_NAME_FIELD_NUMBER = 3;
-    private volatile java.lang.Object targetHomeModuleName_;
-    /**
-     * <code>string target_home_module_name = 3;</code>
-     * @return The targetHomeModuleName.
-     */
-    @java.lang.Override
-    public java.lang.String getTargetHomeModuleName() {
-      java.lang.Object ref = targetHomeModuleName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        targetHomeModuleName_ = s;
-        return s;
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_NONE = 0;</code>
+       */
+      public static final int REPORT_SUBTYPE_REASON_SUBTYPE_NONE_VALUE = 0;
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_NICKNAME = 1;</code>
+       */
+      public static final int REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_NICKNAME_VALUE = 1;
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_SIGNATURE = 2;</code>
+       */
+      public static final int REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_SIGNATURE_VALUE = 2;
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_ARRANGEMENT = 3;</code>
+       */
+      public static final int REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_ARRANGEMENT_VALUE = 3;
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_CHAT = 4;</code>
+       */
+      public static final int REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_CHAT_VALUE = 4;
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_AVATAR_NAME = 5;</code>
+       */
+      public static final int REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_AVATAR_NAME_VALUE = 5;
+      /**
+       * <code>REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_OTHER = 6;</code>
+       */
+      public static final int REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_OTHER_VALUE = 6;
+
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
       }
-    }
-    /**
-     * <code>string target_home_module_name = 3;</code>
-     * @return The bytes for targetHomeModuleName.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getTargetHomeModuleNameBytes() {
-      java.lang.Object ref = targetHomeModuleName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        targetHomeModuleName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ReportReasonSubtype valueOf(int value) {
+        return forNumber(value);
       }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static ReportReasonSubtype forNumber(int value) {
+        switch (value) {
+          case 0: return REPORT_SUBTYPE_REASON_SUBTYPE_NONE;
+          case 1: return REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_NICKNAME;
+          case 2: return REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_SIGNATURE;
+          case 3: return REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_ARRANGEMENT;
+          case 4: return REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_CHAT;
+          case 5: return REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_AVATAR_NAME;
+          case 6: return REPORT_SUBTYPE_REASON_SUBTYPE_INVALID_OTHER;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<ReportReasonSubtype>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          ReportReasonSubtype> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<ReportReasonSubtype>() {
+              public ReportReasonSubtype findValueByNumber(int number) {
+                return ReportReasonSubtype.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.PlayerReportReqOuterClass.PlayerReportReq.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final ReportReasonSubtype[] VALUES = values();
+
+      public static ReportReasonSubtype valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private ReportReasonSubtype(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:PlayerReportReq.ReportReasonSubtype)
     }
 
-    public static final int REASON_FIELD_NUMBER = 4;
-    private int reason_;
-    /**
-     * <code>.ReportReasonType reason = 4;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    @java.lang.Override public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>.ReportReasonType reason = 4;</code>
-     * @return The reason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType getReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType result = emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType.valueOf(reason_);
-      return result == null ? emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType.UNRECOGNIZED : result;
-    }
-
-    public static final int CONTENT_FIELD_NUMBER = 8;
+    public static final int CONTENT_FIELD_NUMBER = 9;
     private volatile java.lang.Object content_;
     /**
-     * <code>string content = 8;</code>
+     * <code>string content = 9;</code>
      * @return The content.
      */
     @java.lang.Override
@@ -283,7 +354,7 @@ public final class PlayerReportReqOuterClass {
       }
     }
     /**
-     * <code>string content = 8;</code>
+     * <code>string content = 9;</code>
      * @return The bytes for content.
      */
     @java.lang.Override
@@ -301,10 +372,48 @@ public final class PlayerReportReqOuterClass {
       }
     }
 
-    public static final int TARGET_HOME_MODULE_ID_FIELD_NUMBER = 9;
+    public static final int TARGET_HOME_MODULE_NAME_FIELD_NUMBER = 13;
+    private volatile java.lang.Object targetHomeModuleName_;
+    /**
+     * <code>string target_home_module_name = 13;</code>
+     * @return The targetHomeModuleName.
+     */
+    @java.lang.Override
+    public java.lang.String getTargetHomeModuleName() {
+      java.lang.Object ref = targetHomeModuleName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        targetHomeModuleName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string target_home_module_name = 13;</code>
+     * @return The bytes for targetHomeModuleName.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getTargetHomeModuleNameBytes() {
+      java.lang.Object ref = targetHomeModuleName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        targetHomeModuleName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int TARGET_HOME_MODULE_ID_FIELD_NUMBER = 1;
     private int targetHomeModuleId_;
     /**
-     * <code>uint32 target_home_module_id = 9;</code>
+     * <code>uint32 target_home_module_id = 1;</code>
      * @return The targetHomeModuleId.
      */
     @java.lang.Override
@@ -312,23 +421,42 @@ public final class PlayerReportReqOuterClass {
       return targetHomeModuleId_;
     }
 
-    public static final int SUBTYPE_FIELD_NUMBER = 14;
-    private int subtype_;
+    public static final int TARGET_UID_FIELD_NUMBER = 2;
+    private int targetUid_;
     /**
-     * <code>.ReportSubtype subtype = 14;</code>
-     * @return The enum numeric value on the wire for subtype.
+     * <code>uint32 target_uid = 2;</code>
+     * @return The targetUid.
      */
-    @java.lang.Override public int getSubtypeValue() {
-      return subtype_;
+    @java.lang.Override
+    public int getTargetUid() {
+      return targetUid_;
+    }
+
+    public static final int REASON_FIELD_NUMBER = 10;
+    private int reason_;
+    /**
+     * <pre>
+     *PlayerReportReq.ReportReasonSubType subtype = 3;
+     * </pre>
+     *
+     * <code>.ReportReasonType reason = 10;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    @java.lang.Override public int getReasonValue() {
+      return reason_;
     }
     /**
-     * <code>.ReportSubtype subtype = 14;</code>
-     * @return The subtype.
+     * <pre>
+     *PlayerReportReq.ReportReasonSubType subtype = 3;
+     * </pre>
+     *
+     * <code>.ReportReasonType reason = 10;</code>
+     * @return The reason.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype getSubtype() {
+    @java.lang.Override public emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType getReason() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype result = emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype.valueOf(subtype_);
-      return result == null ? emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType result = emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType.valueOf(reason_);
+      return result == null ? emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -345,23 +473,20 @@ public final class PlayerReportReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (targetHomeModuleId_ != 0) {
+        output.writeUInt32(1, targetHomeModuleId_);
+      }
       if (targetUid_ != 0) {
         output.writeUInt32(2, targetUid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetHomeModuleName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, targetHomeModuleName_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType.REPORT_REASON_NONE.getNumber()) {
-        output.writeEnum(4, reason_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, content_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, content_);
       }
-      if (targetHomeModuleId_ != 0) {
-        output.writeUInt32(9, targetHomeModuleId_);
+      if (reason_ != emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType.REPORT_REASON_TYPE_NONE.getNumber()) {
+        output.writeEnum(10, reason_);
       }
-      if (subtype_ != emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype.REPORT_REASON_SUBTYPE_NONE.getNumber()) {
-        output.writeEnum(14, subtype_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetHomeModuleName_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, targetHomeModuleName_);
       }
       unknownFields.writeTo(output);
     }
@@ -372,27 +497,23 @@ public final class PlayerReportReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (targetHomeModuleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, targetHomeModuleId_);
+      }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, targetUid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetHomeModuleName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, targetHomeModuleName_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType.REPORT_REASON_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, reason_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, content_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, content_);
       }
-      if (targetHomeModuleId_ != 0) {
+      if (reason_ != emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType.REPORT_REASON_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, targetHomeModuleId_);
+          .computeEnumSize(10, reason_);
       }
-      if (subtype_ != emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype.REPORT_REASON_SUBTYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, subtype_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetHomeModuleName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, targetHomeModuleName_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -409,16 +530,15 @@ public final class PlayerReportReqOuterClass {
       }
       emu.grasscutter.net.proto.PlayerReportReqOuterClass.PlayerReportReq other = (emu.grasscutter.net.proto.PlayerReportReqOuterClass.PlayerReportReq) obj;
 
-      if (getTargetUid()
-          != other.getTargetUid()) return false;
-      if (!getTargetHomeModuleName()
-          .equals(other.getTargetHomeModuleName())) return false;
-      if (reason_ != other.reason_) return false;
       if (!getContent()
           .equals(other.getContent())) return false;
+      if (!getTargetHomeModuleName()
+          .equals(other.getTargetHomeModuleName())) return false;
       if (getTargetHomeModuleId()
           != other.getTargetHomeModuleId()) return false;
-      if (subtype_ != other.subtype_) return false;
+      if (getTargetUid()
+          != other.getTargetUid()) return false;
+      if (reason_ != other.reason_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -430,18 +550,16 @@ public final class PlayerReportReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetUid();
-      hash = (37 * hash) + TARGET_HOME_MODULE_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetHomeModuleName().hashCode();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
       hash = (37 * hash) + CONTENT_FIELD_NUMBER;
       hash = (53 * hash) + getContent().hashCode();
+      hash = (37 * hash) + TARGET_HOME_MODULE_NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetHomeModuleName().hashCode();
       hash = (37 * hash) + TARGET_HOME_MODULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetHomeModuleId();
-      hash = (37 * hash) + SUBTYPE_FIELD_NUMBER;
-      hash = (53 * hash) + subtype_;
+      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetUid();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -538,10 +656,6 @@ public final class PlayerReportReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 22232
-     * </pre>
-     *
      * Protobuf type {@code PlayerReportReq}
      */
     public static final class Builder extends
@@ -579,17 +693,15 @@ public final class PlayerReportReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetUid_ = 0;
+        content_ = "";
 
         targetHomeModuleName_ = "";
 
-        reason_ = 0;
-
-        content_ = "";
-
         targetHomeModuleId_ = 0;
 
-        subtype_ = 0;
+        targetUid_ = 0;
+
+        reason_ = 0;
 
         return this;
       }
@@ -617,12 +729,11 @@ public final class PlayerReportReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerReportReqOuterClass.PlayerReportReq buildPartial() {
         emu.grasscutter.net.proto.PlayerReportReqOuterClass.PlayerReportReq result = new emu.grasscutter.net.proto.PlayerReportReqOuterClass.PlayerReportReq(this);
-        result.targetUid_ = targetUid_;
-        result.targetHomeModuleName_ = targetHomeModuleName_;
-        result.reason_ = reason_;
         result.content_ = content_;
+        result.targetHomeModuleName_ = targetHomeModuleName_;
         result.targetHomeModuleId_ = targetHomeModuleId_;
-        result.subtype_ = subtype_;
+        result.targetUid_ = targetUid_;
+        result.reason_ = reason_;
         onBuilt();
         return result;
       }
@@ -671,25 +782,22 @@ public final class PlayerReportReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerReportReqOuterClass.PlayerReportReq other) {
         if (other == emu.grasscutter.net.proto.PlayerReportReqOuterClass.PlayerReportReq.getDefaultInstance()) return this;
-        if (other.getTargetUid() != 0) {
-          setTargetUid(other.getTargetUid());
+        if (!other.getContent().isEmpty()) {
+          content_ = other.content_;
+          onChanged();
         }
         if (!other.getTargetHomeModuleName().isEmpty()) {
           targetHomeModuleName_ = other.targetHomeModuleName_;
           onChanged();
         }
-        if (other.reason_ != 0) {
-          setReasonValue(other.getReasonValue());
-        }
-        if (!other.getContent().isEmpty()) {
-          content_ = other.content_;
-          onChanged();
-        }
         if (other.getTargetHomeModuleId() != 0) {
           setTargetHomeModuleId(other.getTargetHomeModuleId());
         }
-        if (other.subtype_ != 0) {
-          setSubtypeValue(other.getSubtypeValue());
+        if (other.getTargetUid() != 0) {
+          setTargetUid(other.getTargetUid());
+        }
+        if (other.reason_ != 0) {
+          setReasonValue(other.getReasonValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -717,6 +825,189 @@ public final class PlayerReportReqOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private java.lang.Object content_ = "";
+      /**
+       * <code>string content = 9;</code>
+       * @return The content.
+       */
+      public java.lang.String getContent() {
+        java.lang.Object ref = content_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          content_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string content = 9;</code>
+       * @return The bytes for content.
+       */
+      public com.google.protobuf.ByteString
+          getContentBytes() {
+        java.lang.Object ref = content_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          content_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string content = 9;</code>
+       * @param value The content to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContent(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        content_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string content = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearContent() {
+        
+        content_ = getDefaultInstance().getContent();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string content = 9;</code>
+       * @param value The bytes for content to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContentBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        content_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object targetHomeModuleName_ = "";
+      /**
+       * <code>string target_home_module_name = 13;</code>
+       * @return The targetHomeModuleName.
+       */
+      public java.lang.String getTargetHomeModuleName() {
+        java.lang.Object ref = targetHomeModuleName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          targetHomeModuleName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string target_home_module_name = 13;</code>
+       * @return The bytes for targetHomeModuleName.
+       */
+      public com.google.protobuf.ByteString
+          getTargetHomeModuleNameBytes() {
+        java.lang.Object ref = targetHomeModuleName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          targetHomeModuleName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string target_home_module_name = 13;</code>
+       * @param value The targetHomeModuleName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetHomeModuleName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        targetHomeModuleName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string target_home_module_name = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetHomeModuleName() {
+        
+        targetHomeModuleName_ = getDefaultInstance().getTargetHomeModuleName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string target_home_module_name = 13;</code>
+       * @param value The bytes for targetHomeModuleName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetHomeModuleNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        targetHomeModuleName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int targetHomeModuleId_ ;
+      /**
+       * <code>uint32 target_home_module_id = 1;</code>
+       * @return The targetHomeModuleId.
+       */
+      @java.lang.Override
+      public int getTargetHomeModuleId() {
+        return targetHomeModuleId_;
+      }
+      /**
+       * <code>uint32 target_home_module_id = 1;</code>
+       * @param value The targetHomeModuleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetHomeModuleId(int value) {
+        
+        targetHomeModuleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 target_home_module_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetHomeModuleId() {
+        
+        targetHomeModuleId_ = 0;
+        onChanged();
         return this;
       }
 
@@ -751,92 +1042,24 @@ public final class PlayerReportReqOuterClass {
         return this;
       }
 
-      private java.lang.Object targetHomeModuleName_ = "";
-      /**
-       * <code>string target_home_module_name = 3;</code>
-       * @return The targetHomeModuleName.
-       */
-      public java.lang.String getTargetHomeModuleName() {
-        java.lang.Object ref = targetHomeModuleName_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          targetHomeModuleName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string target_home_module_name = 3;</code>
-       * @return The bytes for targetHomeModuleName.
-       */
-      public com.google.protobuf.ByteString
-          getTargetHomeModuleNameBytes() {
-        java.lang.Object ref = targetHomeModuleName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          targetHomeModuleName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string target_home_module_name = 3;</code>
-       * @param value The targetHomeModuleName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetHomeModuleName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        targetHomeModuleName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string target_home_module_name = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetHomeModuleName() {
-        
-        targetHomeModuleName_ = getDefaultInstance().getTargetHomeModuleName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string target_home_module_name = 3;</code>
-       * @param value The bytes for targetHomeModuleName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetHomeModuleNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        targetHomeModuleName_ = value;
-        onChanged();
-        return this;
-      }
-
       private int reason_ = 0;
       /**
-       * <code>.ReportReasonType reason = 4;</code>
+       * <pre>
+       *PlayerReportReq.ReportReasonSubType subtype = 3;
+       * </pre>
+       *
+       * <code>.ReportReasonType reason = 10;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.ReportReasonType reason = 4;</code>
+       * <pre>
+       *PlayerReportReq.ReportReasonSubType subtype = 3;
+       * </pre>
+       *
+       * <code>.ReportReasonType reason = 10;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -847,7 +1070,11 @@ public final class PlayerReportReqOuterClass {
         return this;
       }
       /**
-       * <code>.ReportReasonType reason = 4;</code>
+       * <pre>
+       *PlayerReportReq.ReportReasonSubType subtype = 3;
+       * </pre>
+       *
+       * <code>.ReportReasonType reason = 10;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -857,7 +1084,11 @@ public final class PlayerReportReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.ReportReasonTypeOuterClass.ReportReasonType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.ReportReasonType reason = 4;</code>
+       * <pre>
+       *PlayerReportReq.ReportReasonSubType subtype = 3;
+       * </pre>
+       *
+       * <code>.ReportReasonType reason = 10;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -871,173 +1102,16 @@ public final class PlayerReportReqOuterClass {
         return this;
       }
       /**
-       * <code>.ReportReasonType reason = 4;</code>
+       * <pre>
+       *PlayerReportReq.ReportReasonSubType subtype = 3;
+       * </pre>
+       *
+       * <code>.ReportReasonType reason = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
         
         reason_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object content_ = "";
-      /**
-       * <code>string content = 8;</code>
-       * @return The content.
-       */
-      public java.lang.String getContent() {
-        java.lang.Object ref = content_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          content_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string content = 8;</code>
-       * @return The bytes for content.
-       */
-      public com.google.protobuf.ByteString
-          getContentBytes() {
-        java.lang.Object ref = content_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          content_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string content = 8;</code>
-       * @param value The content to set.
-       * @return This builder for chaining.
-       */
-      public Builder setContent(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        content_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string content = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearContent() {
-        
-        content_ = getDefaultInstance().getContent();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string content = 8;</code>
-       * @param value The bytes for content to set.
-       * @return This builder for chaining.
-       */
-      public Builder setContentBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        content_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int targetHomeModuleId_ ;
-      /**
-       * <code>uint32 target_home_module_id = 9;</code>
-       * @return The targetHomeModuleId.
-       */
-      @java.lang.Override
-      public int getTargetHomeModuleId() {
-        return targetHomeModuleId_;
-      }
-      /**
-       * <code>uint32 target_home_module_id = 9;</code>
-       * @param value The targetHomeModuleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetHomeModuleId(int value) {
-        
-        targetHomeModuleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 target_home_module_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetHomeModuleId() {
-        
-        targetHomeModuleId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int subtype_ = 0;
-      /**
-       * <code>.ReportSubtype subtype = 14;</code>
-       * @return The enum numeric value on the wire for subtype.
-       */
-      @java.lang.Override public int getSubtypeValue() {
-        return subtype_;
-      }
-      /**
-       * <code>.ReportSubtype subtype = 14;</code>
-       * @param value The enum numeric value on the wire for subtype to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSubtypeValue(int value) {
-        
-        subtype_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.ReportSubtype subtype = 14;</code>
-       * @return The subtype.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype getSubtype() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype result = emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype.valueOf(subtype_);
-        return result == null ? emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.ReportSubtype subtype = 14;</code>
-       * @param value The subtype to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSubtype(emu.grasscutter.net.proto.ReportSubtypeOuterClass.ReportSubtype value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        subtype_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.ReportSubtype subtype = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSubtype() {
-        
-        subtype_ = 0;
         onChanged();
         return this;
       }
@@ -1109,28 +1183,34 @@ public final class PlayerReportReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025PlayerReportReq.proto\032\026ReportReasonTyp" +
-      "e.proto\032\023ReportSubtype.proto\"\272\001\n\017PlayerR" +
-      "eportReq\022\022\n\ntarget_uid\030\002 \001(\r\022\037\n\027target_h" +
-      "ome_module_name\030\003 \001(\t\022!\n\006reason\030\004 \001(\0162\021." +
-      "ReportReasonType\022\017\n\007content\030\010 \001(\t\022\035\n\025tar" +
-      "get_home_module_id\030\t \001(\r\022\037\n\007subtype\030\016 \001(" +
-      "\0162\016.ReportSubtypeB\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "e.proto\"\221\004\n\017PlayerReportReq\022\017\n\007content\030\t" +
+      " \001(\t\022\037\n\027target_home_module_name\030\r \001(\t\022\035\n" +
+      "\025target_home_module_id\030\001 \001(\r\022\022\n\ntarget_u" +
+      "id\030\002 \001(\r\022!\n\006reason\030\n \001(\0162\021.ReportReasonT" +
+      "ype\"\365\002\n\023ReportReasonSubtype\022&\n\"REPORT_SU" +
+      "BTYPE_REASON_SUBTYPE_NONE\020\000\0222\n.REPORT_SU" +
+      "BTYPE_REASON_SUBTYPE_INVALID_NICKNAME\020\001\022" +
+      "3\n/REPORT_SUBTYPE_REASON_SUBTYPE_INVALID" +
+      "_SIGNATURE\020\002\0225\n1REPORT_SUBTYPE_REASON_SU" +
+      "BTYPE_INVALID_ARRANGEMENT\020\003\022.\n*REPORT_SU" +
+      "BTYPE_REASON_SUBTYPE_INVALID_CHAT\020\004\0225\n1R" +
+      "EPORT_SUBTYPE_REASON_SUBTYPE_INVALID_AVA" +
+      "TAR_NAME\020\005\022/\n+REPORT_SUBTYPE_REASON_SUBT" +
+      "YPE_INVALID_OTHER\020\006B\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.ReportReasonTypeOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.ReportSubtypeOuterClass.getDescriptor(),
         });
     internal_static_PlayerReportReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PlayerReportReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerReportReq_descriptor,
-        new java.lang.String[] { "TargetUid", "TargetHomeModuleName", "Reason", "Content", "TargetHomeModuleId", "Subtype", });
+        new java.lang.String[] { "Content", "TargetHomeModuleName", "TargetHomeModuleId", "TargetUid", "Reason", });
     emu.grasscutter.net.proto.ReportReasonTypeOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.ReportSubtypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

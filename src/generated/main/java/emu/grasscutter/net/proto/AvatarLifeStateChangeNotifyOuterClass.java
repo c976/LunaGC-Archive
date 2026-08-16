@@ -19,100 +19,100 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.PlayerDieType die_type = 1;</code>
-     * @return The enum numeric value on the wire for dieType.
-     */
-    int getDieTypeValue();
-    /**
-     * <code>.PlayerDieType die_type = 1;</code>
-     * @return The dieType.
-     */
-    emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType();
-
-    /**
-     * <code>repeated string FIFOPECDNNL = 3;</code>
-     * @return A list containing the fIFOPECDNNL.
-     */
-    java.util.List<java.lang.String>
-        getFIFOPECDNNLList();
-    /**
-     * <code>repeated string FIFOPECDNNL = 3;</code>
-     * @return The count of fIFOPECDNNL.
-     */
-    int getFIFOPECDNNLCount();
-    /**
-     * <code>repeated string FIFOPECDNNL = 3;</code>
-     * @param index The index of the element to return.
-     * @return The fIFOPECDNNL at the given index.
-     */
-    java.lang.String getFIFOPECDNNL(int index);
-    /**
-     * <code>repeated string FIFOPECDNNL = 3;</code>
-     * @param index The index of the value to return.
-     * @return The bytes of the fIFOPECDNNL at the given index.
-     */
-    com.google.protobuf.ByteString
-        getFIFOPECDNNLBytes(int index);
-
-    /**
-     * <code>uint64 avatar_guid = 4;</code>
-     * @return The avatarGuid.
-     */
-    long getAvatarGuid();
-
-    /**
-     * <code>string attack_tag = 6;</code>
+     * <code>string attack_tag = 7;</code>
      * @return The attackTag.
      */
     java.lang.String getAttackTag();
     /**
-     * <code>string attack_tag = 6;</code>
+     * <code>string attack_tag = 7;</code>
      * @return The bytes for attackTag.
      */
     com.google.protobuf.ByteString
         getAttackTagBytes();
 
     /**
-     * <code>uint32 move_reliable_seq = 9;</code>
-     * @return The moveReliableSeq.
+     * <code>repeated string FFLCDLBLCIF = 12;</code>
+     * @return A list containing the fFLCDLBLCIF.
      */
-    int getMoveReliableSeq();
+    java.util.List<java.lang.String>
+        getFFLCDLBLCIFList();
+    /**
+     * <code>repeated string FFLCDLBLCIF = 12;</code>
+     * @return The count of fFLCDLBLCIF.
+     */
+    int getFFLCDLBLCIFCount();
+    /**
+     * <code>repeated string FFLCDLBLCIF = 12;</code>
+     * @param index The index of the element to return.
+     * @return The fFLCDLBLCIF at the given index.
+     */
+    java.lang.String getFFLCDLBLCIF(int index);
+    /**
+     * <code>repeated string FFLCDLBLCIF = 12;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the fFLCDLBLCIF at the given index.
+     */
+    com.google.protobuf.ByteString
+        getFFLCDLBLCIFBytes(int index);
 
     /**
-     * <code>repeated .ServerBuff server_buff_list = 10;</code>
+     * <code>repeated .ServerBuff server_buff_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> 
         getServerBuffListList();
     /**
-     * <code>repeated .ServerBuff server_buff_list = 10;</code>
+     * <code>repeated .ServerBuff server_buff_list = 15;</code>
      */
     emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index);
     /**
-     * <code>repeated .ServerBuff server_buff_list = 10;</code>
+     * <code>repeated .ServerBuff server_buff_list = 15;</code>
      */
     int getServerBuffListCount();
     /**
-     * <code>repeated .ServerBuff server_buff_list = 10;</code>
+     * <code>repeated .ServerBuff server_buff_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
         getServerBuffListOrBuilderList();
     /**
-     * <code>repeated .ServerBuff server_buff_list = 10;</code>
+     * <code>repeated .ServerBuff server_buff_list = 15;</code>
      */
     emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 life_state = 11;</code>
+     * <code>uint32 move_reliable_seq = 11;</code>
+     * @return The moveReliableSeq.
+     */
+    int getMoveReliableSeq();
+
+    /**
+     * <code>uint32 source_entity_id = 10;</code>
+     * @return The sourceEntityId.
+     */
+    int getSourceEntityId();
+
+    /**
+     * <code>uint32 life_state = 1;</code>
      * @return The lifeState.
      */
     int getLifeState();
 
     /**
-     * <code>uint32 source_entity_id = 13;</code>
-     * @return The sourceEntityId.
+     * <code>.PlayerDieType die_type = 5;</code>
+     * @return The enum numeric value on the wire for dieType.
      */
-    int getSourceEntityId();
+    int getDieTypeValue();
+    /**
+     * <code>.PlayerDieType die_type = 5;</code>
+     * @return The dieType.
+     */
+    emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType();
+
+    /**
+     * <code>uint64 avatar_guid = 8;</code>
+     * @return The avatarGuid.
+     */
+    long getAvatarGuid();
   }
   /**
    * Protobuf type {@code AvatarLifeStateChangeNotify}
@@ -127,10 +127,10 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       super(builder);
     }
     private AvatarLifeStateChangeNotify() {
-      dieType_ = 0;
-      fIFOPECDNNL_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       attackTag_ = "";
+      fFLCDLBLCIF_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       serverBuffList_ = java.util.Collections.emptyList();
+      dieType_ = 0;
     }
 
     @java.lang.Override
@@ -165,53 +165,53 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
               done = true;
               break;
             case 8: {
+
+              lifeState_ = input.readUInt32();
+              break;
+            }
+            case 40: {
               int rawValue = input.readEnum();
 
               dieType_ = rawValue;
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                fIFOPECDNNL_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              fIFOPECDNNL_.add(s);
-              break;
-            }
-            case 32: {
-
-              avatarGuid_ = input.readUInt64();
-              break;
-            }
-            case 50: {
+            case 58: {
               java.lang.String s = input.readStringRequireUtf8();
 
               attackTag_ = s;
               break;
             }
-            case 72: {
+            case 64: {
+
+              avatarGuid_ = input.readUInt64();
+              break;
+            }
+            case 80: {
+
+              sourceEntityId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
 
               moveReliableSeq_ = input.readUInt32();
               break;
             }
-            case 82: {
+            case 98: {
+              java.lang.String s = input.readStringRequireUtf8();
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                fFLCDLBLCIF_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              fFLCDLBLCIF_.add(s);
+              break;
+            }
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 serverBuffList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff>();
                 mutable_bitField0_ |= 0x00000002;
               }
               serverBuffList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.parser(), extensionRegistry));
-              break;
-            }
-            case 88: {
-
-              lifeState_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              sourceEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -230,7 +230,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          fIFOPECDNNL_ = fIFOPECDNNL_.getUnmodifiableView();
+          fFLCDLBLCIF_ = fFLCDLBLCIF_.getUnmodifiableView();
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           serverBuffList_ = java.util.Collections.unmodifiableList(serverBuffList_);
@@ -252,75 +252,10 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarLifeStateChangeNotifyOuterClass.AvatarLifeStateChangeNotify.class, emu.grasscutter.net.proto.AvatarLifeStateChangeNotifyOuterClass.AvatarLifeStateChangeNotify.Builder.class);
     }
 
-    public static final int DIE_TYPE_FIELD_NUMBER = 1;
-    private int dieType_;
-    /**
-     * <code>.PlayerDieType die_type = 1;</code>
-     * @return The enum numeric value on the wire for dieType.
-     */
-    @java.lang.Override public int getDieTypeValue() {
-      return dieType_;
-    }
-    /**
-     * <code>.PlayerDieType die_type = 1;</code>
-     * @return The dieType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType result = emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.valueOf(dieType_);
-      return result == null ? emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.UNRECOGNIZED : result;
-    }
-
-    public static final int FIFOPECDNNL_FIELD_NUMBER = 3;
-    private com.google.protobuf.LazyStringList fIFOPECDNNL_;
-    /**
-     * <code>repeated string FIFOPECDNNL = 3;</code>
-     * @return A list containing the fIFOPECDNNL.
-     */
-    public com.google.protobuf.ProtocolStringList
-        getFIFOPECDNNLList() {
-      return fIFOPECDNNL_;
-    }
-    /**
-     * <code>repeated string FIFOPECDNNL = 3;</code>
-     * @return The count of fIFOPECDNNL.
-     */
-    public int getFIFOPECDNNLCount() {
-      return fIFOPECDNNL_.size();
-    }
-    /**
-     * <code>repeated string FIFOPECDNNL = 3;</code>
-     * @param index The index of the element to return.
-     * @return The fIFOPECDNNL at the given index.
-     */
-    public java.lang.String getFIFOPECDNNL(int index) {
-      return fIFOPECDNNL_.get(index);
-    }
-    /**
-     * <code>repeated string FIFOPECDNNL = 3;</code>
-     * @param index The index of the value to return.
-     * @return The bytes of the fIFOPECDNNL at the given index.
-     */
-    public com.google.protobuf.ByteString
-        getFIFOPECDNNLBytes(int index) {
-      return fIFOPECDNNL_.getByteString(index);
-    }
-
-    public static final int AVATAR_GUID_FIELD_NUMBER = 4;
-    private long avatarGuid_;
-    /**
-     * <code>uint64 avatar_guid = 4;</code>
-     * @return The avatarGuid.
-     */
-    @java.lang.Override
-    public long getAvatarGuid() {
-      return avatarGuid_;
-    }
-
-    public static final int ATTACK_TAG_FIELD_NUMBER = 6;
+    public static final int ATTACK_TAG_FIELD_NUMBER = 7;
     private volatile java.lang.Object attackTag_;
     /**
-     * <code>string attack_tag = 6;</code>
+     * <code>string attack_tag = 7;</code>
      * @return The attackTag.
      */
     @java.lang.Override
@@ -337,7 +272,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       }
     }
     /**
-     * <code>string attack_tag = 6;</code>
+     * <code>string attack_tag = 7;</code>
      * @return The bytes for attackTag.
      */
     @java.lang.Override
@@ -355,28 +290,52 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       }
     }
 
-    public static final int MOVE_RELIABLE_SEQ_FIELD_NUMBER = 9;
-    private int moveReliableSeq_;
+    public static final int FFLCDLBLCIF_FIELD_NUMBER = 12;
+    private com.google.protobuf.LazyStringList fFLCDLBLCIF_;
     /**
-     * <code>uint32 move_reliable_seq = 9;</code>
-     * @return The moveReliableSeq.
+     * <code>repeated string FFLCDLBLCIF = 12;</code>
+     * @return A list containing the fFLCDLBLCIF.
      */
-    @java.lang.Override
-    public int getMoveReliableSeq() {
-      return moveReliableSeq_;
+    public com.google.protobuf.ProtocolStringList
+        getFFLCDLBLCIFList() {
+      return fFLCDLBLCIF_;
+    }
+    /**
+     * <code>repeated string FFLCDLBLCIF = 12;</code>
+     * @return The count of fFLCDLBLCIF.
+     */
+    public int getFFLCDLBLCIFCount() {
+      return fFLCDLBLCIF_.size();
+    }
+    /**
+     * <code>repeated string FFLCDLBLCIF = 12;</code>
+     * @param index The index of the element to return.
+     * @return The fFLCDLBLCIF at the given index.
+     */
+    public java.lang.String getFFLCDLBLCIF(int index) {
+      return fFLCDLBLCIF_.get(index);
+    }
+    /**
+     * <code>repeated string FFLCDLBLCIF = 12;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the fFLCDLBLCIF at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getFFLCDLBLCIFBytes(int index) {
+      return fFLCDLBLCIF_.getByteString(index);
     }
 
-    public static final int SERVER_BUFF_LIST_FIELD_NUMBER = 10;
+    public static final int SERVER_BUFF_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> serverBuffList_;
     /**
-     * <code>repeated .ServerBuff server_buff_list = 10;</code>
+     * <code>repeated .ServerBuff server_buff_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> getServerBuffListList() {
       return serverBuffList_;
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 10;</code>
+     * <code>repeated .ServerBuff server_buff_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
@@ -384,21 +343,21 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       return serverBuffList_;
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 10;</code>
+     * <code>repeated .ServerBuff server_buff_list = 15;</code>
      */
     @java.lang.Override
     public int getServerBuffListCount() {
       return serverBuffList_.size();
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 10;</code>
+     * <code>repeated .ServerBuff server_buff_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index) {
       return serverBuffList_.get(index);
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 10;</code>
+     * <code>repeated .ServerBuff server_buff_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
@@ -406,10 +365,32 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       return serverBuffList_.get(index);
     }
 
-    public static final int LIFE_STATE_FIELD_NUMBER = 11;
+    public static final int MOVE_RELIABLE_SEQ_FIELD_NUMBER = 11;
+    private int moveReliableSeq_;
+    /**
+     * <code>uint32 move_reliable_seq = 11;</code>
+     * @return The moveReliableSeq.
+     */
+    @java.lang.Override
+    public int getMoveReliableSeq() {
+      return moveReliableSeq_;
+    }
+
+    public static final int SOURCE_ENTITY_ID_FIELD_NUMBER = 10;
+    private int sourceEntityId_;
+    /**
+     * <code>uint32 source_entity_id = 10;</code>
+     * @return The sourceEntityId.
+     */
+    @java.lang.Override
+    public int getSourceEntityId() {
+      return sourceEntityId_;
+    }
+
+    public static final int LIFE_STATE_FIELD_NUMBER = 1;
     private int lifeState_;
     /**
-     * <code>uint32 life_state = 11;</code>
+     * <code>uint32 life_state = 1;</code>
      * @return The lifeState.
      */
     @java.lang.Override
@@ -417,15 +398,34 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       return lifeState_;
     }
 
-    public static final int SOURCE_ENTITY_ID_FIELD_NUMBER = 13;
-    private int sourceEntityId_;
+    public static final int DIE_TYPE_FIELD_NUMBER = 5;
+    private int dieType_;
     /**
-     * <code>uint32 source_entity_id = 13;</code>
-     * @return The sourceEntityId.
+     * <code>.PlayerDieType die_type = 5;</code>
+     * @return The enum numeric value on the wire for dieType.
+     */
+    @java.lang.Override public int getDieTypeValue() {
+      return dieType_;
+    }
+    /**
+     * <code>.PlayerDieType die_type = 5;</code>
+     * @return The dieType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType result = emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.valueOf(dieType_);
+      return result == null ? emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.UNRECOGNIZED : result;
+    }
+
+    public static final int AVATAR_GUID_FIELD_NUMBER = 8;
+    private long avatarGuid_;
+    /**
+     * <code>uint64 avatar_guid = 8;</code>
+     * @return The avatarGuid.
      */
     @java.lang.Override
-    public int getSourceEntityId() {
-      return sourceEntityId_;
+    public long getAvatarGuid() {
+      return avatarGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -442,29 +442,29 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (lifeState_ != 0) {
+        output.writeUInt32(1, lifeState_);
+      }
       if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
-        output.writeEnum(1, dieType_);
-      }
-      for (int i = 0; i < fIFOPECDNNL_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, fIFOPECDNNL_.getRaw(i));
-      }
-      if (avatarGuid_ != 0L) {
-        output.writeUInt64(4, avatarGuid_);
+        output.writeEnum(5, dieType_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(attackTag_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, attackTag_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, attackTag_);
       }
-      if (moveReliableSeq_ != 0) {
-        output.writeUInt32(9, moveReliableSeq_);
-      }
-      for (int i = 0; i < serverBuffList_.size(); i++) {
-        output.writeMessage(10, serverBuffList_.get(i));
-      }
-      if (lifeState_ != 0) {
-        output.writeUInt32(11, lifeState_);
+      if (avatarGuid_ != 0L) {
+        output.writeUInt64(8, avatarGuid_);
       }
       if (sourceEntityId_ != 0) {
-        output.writeUInt32(13, sourceEntityId_);
+        output.writeUInt32(10, sourceEntityId_);
+      }
+      if (moveReliableSeq_ != 0) {
+        output.writeUInt32(11, moveReliableSeq_);
+      }
+      for (int i = 0; i < fFLCDLBLCIF_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, fFLCDLBLCIF_.getRaw(i));
+      }
+      for (int i = 0; i < serverBuffList_.size(); i++) {
+        output.writeMessage(15, serverBuffList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -475,40 +475,40 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (lifeState_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, lifeState_);
+      }
       if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, dieType_);
+          .computeEnumSize(5, dieType_);
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < fIFOPECDNNL_.size(); i++) {
-          dataSize += computeStringSizeNoTag(fIFOPECDNNL_.getRaw(i));
-        }
-        size += dataSize;
-        size += 1 * getFIFOPECDNNLList().size();
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(attackTag_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, attackTag_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(4, avatarGuid_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(attackTag_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, attackTag_);
-      }
-      if (moveReliableSeq_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, moveReliableSeq_);
-      }
-      for (int i = 0; i < serverBuffList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, serverBuffList_.get(i));
-      }
-      if (lifeState_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, lifeState_);
+          .computeUInt64Size(8, avatarGuid_);
       }
       if (sourceEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, sourceEntityId_);
+          .computeUInt32Size(10, sourceEntityId_);
+      }
+      if (moveReliableSeq_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, moveReliableSeq_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < fFLCDLBLCIF_.size(); i++) {
+          dataSize += computeStringSizeNoTag(fFLCDLBLCIF_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getFFLCDLBLCIFList().size();
+      }
+      for (int i = 0; i < serverBuffList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, serverBuffList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -525,21 +525,21 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AvatarLifeStateChangeNotifyOuterClass.AvatarLifeStateChangeNotify other = (emu.grasscutter.net.proto.AvatarLifeStateChangeNotifyOuterClass.AvatarLifeStateChangeNotify) obj;
 
-      if (dieType_ != other.dieType_) return false;
-      if (!getFIFOPECDNNLList()
-          .equals(other.getFIFOPECDNNLList())) return false;
-      if (getAvatarGuid()
-          != other.getAvatarGuid()) return false;
       if (!getAttackTag()
           .equals(other.getAttackTag())) return false;
-      if (getMoveReliableSeq()
-          != other.getMoveReliableSeq()) return false;
+      if (!getFFLCDLBLCIFList()
+          .equals(other.getFFLCDLBLCIFList())) return false;
       if (!getServerBuffListList()
           .equals(other.getServerBuffListList())) return false;
-      if (getLifeState()
-          != other.getLifeState()) return false;
+      if (getMoveReliableSeq()
+          != other.getMoveReliableSeq()) return false;
       if (getSourceEntityId()
           != other.getSourceEntityId()) return false;
+      if (getLifeState()
+          != other.getLifeState()) return false;
+      if (dieType_ != other.dieType_) return false;
+      if (getAvatarGuid()
+          != other.getAvatarGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -551,27 +551,27 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DIE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + dieType_;
-      if (getFIFOPECDNNLCount() > 0) {
-        hash = (37 * hash) + FIFOPECDNNL_FIELD_NUMBER;
-        hash = (53 * hash) + getFIFOPECDNNLList().hashCode();
-      }
-      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getAvatarGuid());
       hash = (37 * hash) + ATTACK_TAG_FIELD_NUMBER;
       hash = (53 * hash) + getAttackTag().hashCode();
-      hash = (37 * hash) + MOVE_RELIABLE_SEQ_FIELD_NUMBER;
-      hash = (53 * hash) + getMoveReliableSeq();
+      if (getFFLCDLBLCIFCount() > 0) {
+        hash = (37 * hash) + FFLCDLBLCIF_FIELD_NUMBER;
+        hash = (53 * hash) + getFFLCDLBLCIFList().hashCode();
+      }
       if (getServerBuffListCount() > 0) {
         hash = (37 * hash) + SERVER_BUFF_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getServerBuffListList().hashCode();
       }
-      hash = (37 * hash) + LIFE_STATE_FIELD_NUMBER;
-      hash = (53 * hash) + getLifeState();
+      hash = (37 * hash) + MOVE_RELIABLE_SEQ_FIELD_NUMBER;
+      hash = (53 * hash) + getMoveReliableSeq();
       hash = (37 * hash) + SOURCE_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSourceEntityId();
+      hash = (37 * hash) + LIFE_STATE_FIELD_NUMBER;
+      hash = (53 * hash) + getLifeState();
+      hash = (37 * hash) + DIE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + dieType_;
+      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getAvatarGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -706,25 +706,25 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dieType_ = 0;
-
-        fIFOPECDNNL_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        avatarGuid_ = 0L;
-
         attackTag_ = "";
 
-        moveReliableSeq_ = 0;
-
+        fFLCDLBLCIF_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
         if (serverBuffListBuilder_ == null) {
           serverBuffList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           serverBuffListBuilder_.clear();
         }
-        lifeState_ = 0;
+        moveReliableSeq_ = 0;
 
         sourceEntityId_ = 0;
+
+        lifeState_ = 0;
+
+        dieType_ = 0;
+
+        avatarGuid_ = 0L;
 
         return this;
       }
@@ -753,15 +753,12 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       public emu.grasscutter.net.proto.AvatarLifeStateChangeNotifyOuterClass.AvatarLifeStateChangeNotify buildPartial() {
         emu.grasscutter.net.proto.AvatarLifeStateChangeNotifyOuterClass.AvatarLifeStateChangeNotify result = new emu.grasscutter.net.proto.AvatarLifeStateChangeNotifyOuterClass.AvatarLifeStateChangeNotify(this);
         int from_bitField0_ = bitField0_;
-        result.dieType_ = dieType_;
+        result.attackTag_ = attackTag_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          fIFOPECDNNL_ = fIFOPECDNNL_.getUnmodifiableView();
+          fFLCDLBLCIF_ = fFLCDLBLCIF_.getUnmodifiableView();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.fIFOPECDNNL_ = fIFOPECDNNL_;
-        result.avatarGuid_ = avatarGuid_;
-        result.attackTag_ = attackTag_;
-        result.moveReliableSeq_ = moveReliableSeq_;
+        result.fFLCDLBLCIF_ = fFLCDLBLCIF_;
         if (serverBuffListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             serverBuffList_ = java.util.Collections.unmodifiableList(serverBuffList_);
@@ -771,8 +768,11 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         } else {
           result.serverBuffList_ = serverBuffListBuilder_.build();
         }
-        result.lifeState_ = lifeState_;
+        result.moveReliableSeq_ = moveReliableSeq_;
         result.sourceEntityId_ = sourceEntityId_;
+        result.lifeState_ = lifeState_;
+        result.dieType_ = dieType_;
+        result.avatarGuid_ = avatarGuid_;
         onBuilt();
         return result;
       }
@@ -821,28 +821,19 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarLifeStateChangeNotifyOuterClass.AvatarLifeStateChangeNotify other) {
         if (other == emu.grasscutter.net.proto.AvatarLifeStateChangeNotifyOuterClass.AvatarLifeStateChangeNotify.getDefaultInstance()) return this;
-        if (other.dieType_ != 0) {
-          setDieTypeValue(other.getDieTypeValue());
-        }
-        if (!other.fIFOPECDNNL_.isEmpty()) {
-          if (fIFOPECDNNL_.isEmpty()) {
-            fIFOPECDNNL_ = other.fIFOPECDNNL_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureFIFOPECDNNLIsMutable();
-            fIFOPECDNNL_.addAll(other.fIFOPECDNNL_);
-          }
-          onChanged();
-        }
-        if (other.getAvatarGuid() != 0L) {
-          setAvatarGuid(other.getAvatarGuid());
-        }
         if (!other.getAttackTag().isEmpty()) {
           attackTag_ = other.attackTag_;
           onChanged();
         }
-        if (other.getMoveReliableSeq() != 0) {
-          setMoveReliableSeq(other.getMoveReliableSeq());
+        if (!other.fFLCDLBLCIF_.isEmpty()) {
+          if (fFLCDLBLCIF_.isEmpty()) {
+            fFLCDLBLCIF_ = other.fFLCDLBLCIF_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureFFLCDLBLCIFIsMutable();
+            fFLCDLBLCIF_.addAll(other.fFLCDLBLCIF_);
+          }
+          onChanged();
         }
         if (serverBuffListBuilder_ == null) {
           if (!other.serverBuffList_.isEmpty()) {
@@ -870,11 +861,20 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
             }
           }
         }
-        if (other.getLifeState() != 0) {
-          setLifeState(other.getLifeState());
+        if (other.getMoveReliableSeq() != 0) {
+          setMoveReliableSeq(other.getMoveReliableSeq());
         }
         if (other.getSourceEntityId() != 0) {
           setSourceEntityId(other.getSourceEntityId());
+        }
+        if (other.getLifeState() != 0) {
+          setLifeState(other.getLifeState());
+        }
+        if (other.dieType_ != 0) {
+          setDieTypeValue(other.getDieTypeValue());
+        }
+        if (other.getAvatarGuid() != 0L) {
+          setAvatarGuid(other.getAvatarGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -906,204 +906,9 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int dieType_ = 0;
-      /**
-       * <code>.PlayerDieType die_type = 1;</code>
-       * @return The enum numeric value on the wire for dieType.
-       */
-      @java.lang.Override public int getDieTypeValue() {
-        return dieType_;
-      }
-      /**
-       * <code>.PlayerDieType die_type = 1;</code>
-       * @param value The enum numeric value on the wire for dieType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDieTypeValue(int value) {
-        
-        dieType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.PlayerDieType die_type = 1;</code>
-       * @return The dieType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType result = emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.valueOf(dieType_);
-        return result == null ? emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.PlayerDieType die_type = 1;</code>
-       * @param value The dieType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDieType(emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        dieType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.PlayerDieType die_type = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDieType() {
-        
-        dieType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.LazyStringList fIFOPECDNNL_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      private void ensureFIFOPECDNNLIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          fIFOPECDNNL_ = new com.google.protobuf.LazyStringArrayList(fIFOPECDNNL_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated string FIFOPECDNNL = 3;</code>
-       * @return A list containing the fIFOPECDNNL.
-       */
-      public com.google.protobuf.ProtocolStringList
-          getFIFOPECDNNLList() {
-        return fIFOPECDNNL_.getUnmodifiableView();
-      }
-      /**
-       * <code>repeated string FIFOPECDNNL = 3;</code>
-       * @return The count of fIFOPECDNNL.
-       */
-      public int getFIFOPECDNNLCount() {
-        return fIFOPECDNNL_.size();
-      }
-      /**
-       * <code>repeated string FIFOPECDNNL = 3;</code>
-       * @param index The index of the element to return.
-       * @return The fIFOPECDNNL at the given index.
-       */
-      public java.lang.String getFIFOPECDNNL(int index) {
-        return fIFOPECDNNL_.get(index);
-      }
-      /**
-       * <code>repeated string FIFOPECDNNL = 3;</code>
-       * @param index The index of the value to return.
-       * @return The bytes of the fIFOPECDNNL at the given index.
-       */
-      public com.google.protobuf.ByteString
-          getFIFOPECDNNLBytes(int index) {
-        return fIFOPECDNNL_.getByteString(index);
-      }
-      /**
-       * <code>repeated string FIFOPECDNNL = 3;</code>
-       * @param index The index to set the value at.
-       * @param value The fIFOPECDNNL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFIFOPECDNNL(
-          int index, java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureFIFOPECDNNLIsMutable();
-        fIFOPECDNNL_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string FIFOPECDNNL = 3;</code>
-       * @param value The fIFOPECDNNL to add.
-       * @return This builder for chaining.
-       */
-      public Builder addFIFOPECDNNL(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureFIFOPECDNNLIsMutable();
-        fIFOPECDNNL_.add(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string FIFOPECDNNL = 3;</code>
-       * @param values The fIFOPECDNNL to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllFIFOPECDNNL(
-          java.lang.Iterable<java.lang.String> values) {
-        ensureFIFOPECDNNLIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, fIFOPECDNNL_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string FIFOPECDNNL = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFIFOPECDNNL() {
-        fIFOPECDNNL_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string FIFOPECDNNL = 3;</code>
-       * @param value The bytes of the fIFOPECDNNL to add.
-       * @return This builder for chaining.
-       */
-      public Builder addFIFOPECDNNLBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        ensureFIFOPECDNNLIsMutable();
-        fIFOPECDNNL_.add(value);
-        onChanged();
-        return this;
-      }
-
-      private long avatarGuid_ ;
-      /**
-       * <code>uint64 avatar_guid = 4;</code>
-       * @return The avatarGuid.
-       */
-      @java.lang.Override
-      public long getAvatarGuid() {
-        return avatarGuid_;
-      }
-      /**
-       * <code>uint64 avatar_guid = 4;</code>
-       * @param value The avatarGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarGuid(long value) {
-        
-        avatarGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 avatar_guid = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarGuid() {
-        
-        avatarGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object attackTag_ = "";
       /**
-       * <code>string attack_tag = 6;</code>
+       * <code>string attack_tag = 7;</code>
        * @return The attackTag.
        */
       public java.lang.String getAttackTag() {
@@ -1119,7 +924,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>string attack_tag = 6;</code>
+       * <code>string attack_tag = 7;</code>
        * @return The bytes for attackTag.
        */
       public com.google.protobuf.ByteString
@@ -1136,7 +941,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>string attack_tag = 6;</code>
+       * <code>string attack_tag = 7;</code>
        * @param value The attackTag to set.
        * @return This builder for chaining.
        */
@@ -1151,7 +956,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string attack_tag = 6;</code>
+       * <code>string attack_tag = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearAttackTag() {
@@ -1161,7 +966,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string attack_tag = 6;</code>
+       * <code>string attack_tag = 7;</code>
        * @param value The bytes for attackTag to set.
        * @return This builder for chaining.
        */
@@ -1177,33 +982,112 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
 
-      private int moveReliableSeq_ ;
-      /**
-       * <code>uint32 move_reliable_seq = 9;</code>
-       * @return The moveReliableSeq.
-       */
-      @java.lang.Override
-      public int getMoveReliableSeq() {
-        return moveReliableSeq_;
+      private com.google.protobuf.LazyStringList fFLCDLBLCIF_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureFFLCDLBLCIFIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          fFLCDLBLCIF_ = new com.google.protobuf.LazyStringArrayList(fFLCDLBLCIF_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
-       * <code>uint32 move_reliable_seq = 9;</code>
-       * @param value The moveReliableSeq to set.
+       * <code>repeated string FFLCDLBLCIF = 12;</code>
+       * @return A list containing the fFLCDLBLCIF.
+       */
+      public com.google.protobuf.ProtocolStringList
+          getFFLCDLBLCIFList() {
+        return fFLCDLBLCIF_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string FFLCDLBLCIF = 12;</code>
+       * @return The count of fFLCDLBLCIF.
+       */
+      public int getFFLCDLBLCIFCount() {
+        return fFLCDLBLCIF_.size();
+      }
+      /**
+       * <code>repeated string FFLCDLBLCIF = 12;</code>
+       * @param index The index of the element to return.
+       * @return The fFLCDLBLCIF at the given index.
+       */
+      public java.lang.String getFFLCDLBLCIF(int index) {
+        return fFLCDLBLCIF_.get(index);
+      }
+      /**
+       * <code>repeated string FFLCDLBLCIF = 12;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the fFLCDLBLCIF at the given index.
+       */
+      public com.google.protobuf.ByteString
+          getFFLCDLBLCIFBytes(int index) {
+        return fFLCDLBLCIF_.getByteString(index);
+      }
+      /**
+       * <code>repeated string FFLCDLBLCIF = 12;</code>
+       * @param index The index to set the value at.
+       * @param value The fFLCDLBLCIF to set.
        * @return This builder for chaining.
        */
-      public Builder setMoveReliableSeq(int value) {
-        
-        moveReliableSeq_ = value;
+      public Builder setFFLCDLBLCIF(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureFFLCDLBLCIFIsMutable();
+        fFLCDLBLCIF_.set(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 move_reliable_seq = 9;</code>
+       * <code>repeated string FFLCDLBLCIF = 12;</code>
+       * @param value The fFLCDLBLCIF to add.
        * @return This builder for chaining.
        */
-      public Builder clearMoveReliableSeq() {
-        
-        moveReliableSeq_ = 0;
+      public Builder addFFLCDLBLCIF(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureFFLCDLBLCIFIsMutable();
+        fFLCDLBLCIF_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string FFLCDLBLCIF = 12;</code>
+       * @param values The fFLCDLBLCIF to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllFFLCDLBLCIF(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureFFLCDLBLCIFIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, fFLCDLBLCIF_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string FFLCDLBLCIF = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFFLCDLBLCIF() {
+        fFLCDLBLCIF_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string FFLCDLBLCIF = 12;</code>
+       * @param value The bytes of the fFLCDLBLCIF to add.
+       * @return This builder for chaining.
+       */
+      public Builder addFFLCDLBLCIFBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureFFLCDLBLCIFIsMutable();
+        fFLCDLBLCIF_.add(value);
         onChanged();
         return this;
       }
@@ -1221,7 +1105,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
           emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> serverBuffListBuilder_;
 
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> getServerBuffListList() {
         if (serverBuffListBuilder_ == null) {
@@ -1231,7 +1115,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public int getServerBuffListCount() {
         if (serverBuffListBuilder_ == null) {
@@ -1241,7 +1125,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index) {
         if (serverBuffListBuilder_ == null) {
@@ -1251,7 +1135,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public Builder setServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
@@ -1268,7 +1152,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public Builder setServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
@@ -1282,7 +1166,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public Builder addServerBuffList(emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
         if (serverBuffListBuilder_ == null) {
@@ -1298,7 +1182,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public Builder addServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
@@ -1315,7 +1199,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public Builder addServerBuffList(
           emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
@@ -1329,7 +1213,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public Builder addServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
@@ -1343,7 +1227,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public Builder addAllServerBuffList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> values) {
@@ -1358,7 +1242,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public Builder clearServerBuffList() {
         if (serverBuffListBuilder_ == null) {
@@ -1371,7 +1255,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public Builder removeServerBuffList(int index) {
         if (serverBuffListBuilder_ == null) {
@@ -1384,14 +1268,14 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder getServerBuffListBuilder(
           int index) {
         return getServerBuffListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
           int index) {
@@ -1401,7 +1285,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
            getServerBuffListOrBuilderList() {
@@ -1412,14 +1296,14 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder addServerBuffListBuilder() {
         return getServerBuffListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.getDefaultInstance());
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder addServerBuffListBuilder(
           int index) {
@@ -1427,7 +1311,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
             index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.getDefaultInstance());
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 10;</code>
+       * <code>repeated .ServerBuff server_buff_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder> 
            getServerBuffListBuilderList() {
@@ -1448,40 +1332,40 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return serverBuffListBuilder_;
       }
 
-      private int lifeState_ ;
+      private int moveReliableSeq_ ;
       /**
-       * <code>uint32 life_state = 11;</code>
-       * @return The lifeState.
+       * <code>uint32 move_reliable_seq = 11;</code>
+       * @return The moveReliableSeq.
        */
       @java.lang.Override
-      public int getLifeState() {
-        return lifeState_;
+      public int getMoveReliableSeq() {
+        return moveReliableSeq_;
       }
       /**
-       * <code>uint32 life_state = 11;</code>
-       * @param value The lifeState to set.
+       * <code>uint32 move_reliable_seq = 11;</code>
+       * @param value The moveReliableSeq to set.
        * @return This builder for chaining.
        */
-      public Builder setLifeState(int value) {
+      public Builder setMoveReliableSeq(int value) {
         
-        lifeState_ = value;
+        moveReliableSeq_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 life_state = 11;</code>
+       * <code>uint32 move_reliable_seq = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLifeState() {
+      public Builder clearMoveReliableSeq() {
         
-        lifeState_ = 0;
+        moveReliableSeq_ = 0;
         onChanged();
         return this;
       }
 
       private int sourceEntityId_ ;
       /**
-       * <code>uint32 source_entity_id = 13;</code>
+       * <code>uint32 source_entity_id = 10;</code>
        * @return The sourceEntityId.
        */
       @java.lang.Override
@@ -1489,7 +1373,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return sourceEntityId_;
       }
       /**
-       * <code>uint32 source_entity_id = 13;</code>
+       * <code>uint32 source_entity_id = 10;</code>
        * @param value The sourceEntityId to set.
        * @return This builder for chaining.
        */
@@ -1500,12 +1384,128 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 source_entity_id = 13;</code>
+       * <code>uint32 source_entity_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearSourceEntityId() {
         
         sourceEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lifeState_ ;
+      /**
+       * <code>uint32 life_state = 1;</code>
+       * @return The lifeState.
+       */
+      @java.lang.Override
+      public int getLifeState() {
+        return lifeState_;
+      }
+      /**
+       * <code>uint32 life_state = 1;</code>
+       * @param value The lifeState to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLifeState(int value) {
+        
+        lifeState_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 life_state = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLifeState() {
+        
+        lifeState_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dieType_ = 0;
+      /**
+       * <code>.PlayerDieType die_type = 5;</code>
+       * @return The enum numeric value on the wire for dieType.
+       */
+      @java.lang.Override public int getDieTypeValue() {
+        return dieType_;
+      }
+      /**
+       * <code>.PlayerDieType die_type = 5;</code>
+       * @param value The enum numeric value on the wire for dieType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDieTypeValue(int value) {
+        
+        dieType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.PlayerDieType die_type = 5;</code>
+       * @return The dieType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType result = emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.valueOf(dieType_);
+        return result == null ? emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.PlayerDieType die_type = 5;</code>
+       * @param value The dieType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDieType(emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        dieType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.PlayerDieType die_type = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDieType() {
+        
+        dieType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long avatarGuid_ ;
+      /**
+       * <code>uint64 avatar_guid = 8;</code>
+       * @return The avatarGuid.
+       */
+      @java.lang.Override
+      public long getAvatarGuid() {
+        return avatarGuid_;
+      }
+      /**
+       * <code>uint64 avatar_guid = 8;</code>
+       * @param value The avatarGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarGuid(long value) {
+        
+        avatarGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 avatar_guid = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarGuid() {
+        
+        avatarGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -1578,12 +1578,12 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n!AvatarLifeStateChangeNotify.proto\032\020Ser" +
       "verBuff.proto\032\023PlayerDieType.proto\"\355\001\n\033A" +
-      "vatarLifeStateChangeNotify\022 \n\010die_type\030\001" +
-      " \001(\0162\016.PlayerDieType\022\023\n\013FIFOPECDNNL\030\003 \003(" +
-      "\t\022\023\n\013avatar_guid\030\004 \001(\004\022\022\n\nattack_tag\030\006 \001" +
-      "(\t\022\031\n\021move_reliable_seq\030\t \001(\r\022%\n\020server_" +
-      "buff_list\030\n \003(\0132\013.ServerBuff\022\022\n\nlife_sta" +
-      "te\030\013 \001(\r\022\030\n\020source_entity_id\030\r \001(\rB\033\n\031em" +
+      "vatarLifeStateChangeNotify\022\022\n\nattack_tag" +
+      "\030\007 \001(\t\022\023\n\013FFLCDLBLCIF\030\014 \003(\t\022%\n\020server_bu" +
+      "ff_list\030\017 \003(\0132\013.ServerBuff\022\031\n\021move_relia" +
+      "ble_seq\030\013 \001(\r\022\030\n\020source_entity_id\030\n \001(\r\022" +
+      "\022\n\nlife_state\030\001 \001(\r\022 \n\010die_type\030\005 \001(\0162\016." +
+      "PlayerDieType\022\023\n\013avatar_guid\030\010 \001(\004B\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1597,7 +1597,7 @@ public final class AvatarLifeStateChangeNotifyOuterClass {
     internal_static_AvatarLifeStateChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarLifeStateChangeNotify_descriptor,
-        new java.lang.String[] { "DieType", "FIFOPECDNNL", "AvatarGuid", "AttackTag", "MoveReliableSeq", "ServerBuffList", "LifeState", "SourceEntityId", });
+        new java.lang.String[] { "AttackTag", "FFLCDLBLCIF", "ServerBuffList", "MoveReliableSeq", "SourceEntityId", "LifeState", "DieType", "AvatarGuid", });
     emu.grasscutter.net.proto.ServerBuffOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PlayerDieTypeOuterClass.getDescriptor();
   }

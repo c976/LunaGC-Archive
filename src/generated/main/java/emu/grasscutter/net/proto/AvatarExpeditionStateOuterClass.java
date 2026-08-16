@@ -15,6 +15,10 @@ public final class AvatarExpeditionStateOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Obf: OJBIHADNECN
+   * </pre>
+   *
    * Protobuf enum {@code AvatarExpeditionState}
    */
   public enum AvatarExpeditionState

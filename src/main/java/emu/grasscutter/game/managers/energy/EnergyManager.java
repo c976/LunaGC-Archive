@@ -255,6 +255,7 @@ public class EnergyManager extends BasePlayerManager {
 
     private void handleBurstCast(Avatar avatar, int skillId) {
         // Don't do anything if energy usage is disabled.
+
         if (!GAME_OPTIONS.energyUsage || !this.energyUsage) {
             return;
         }
@@ -263,10 +264,16 @@ public class EnergyManager extends BasePlayerManager {
         // when the avatar is in a different state. For example, Wanderer's burst is
         // 10755 usually but when he floats, it becomes 10753.
         var skillData = GameData.getAvatarSkillDataMap().get(skillId);
+        if(avatar.getAvatarId()==10000106){
+            Grasscutter.getLogger().info("Skill id: "+skillId);
+            if(skillData.getSpecialEnergyMin() > 0){
+                avatar.getAsEntity().clearEnergy(ChangeEnergyReason.CHANGE_ENERGY_REASON_SKILL_START);
+            }
+        }
 
         // If the cast skill was a burst, consume energy.
         if ((avatar.getSkillDepot() != null && skillId == avatar.getSkillDepot().getEnergySkill())
-                || (skillData != null && skillData.getCostElemVal() > 0)) {
+                || (skillData != null && (skillData.getCostElemVal() > 0 || skillData.getSpecialEnergyMin() > 0))) {
             avatar.getAsEntity().clearEnergy(ChangeEnergyReason.CHANGE_ENERGY_REASON_SKILL_START);
         }
     }

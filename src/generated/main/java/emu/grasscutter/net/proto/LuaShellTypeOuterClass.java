@@ -20,40 +20,48 @@ public final class LuaShellTypeOuterClass {
   public enum LuaShellType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
+     * <pre>
+     *forced
+     * </pre>
+     *
      * <code>LUASHELL_NONE = 0;</code>
      */
     LUASHELL_NONE(0),
     /**
-     * <code>LUASHELL_NORMAL = 1;</code>
+     * <code>LUA_SHELL_TYPE_LUASHELL_NORMAL = 1;</code>
      */
-    LUASHELL_NORMAL(1),
+    LUA_SHELL_TYPE_LUASHELL_NORMAL(1),
     /**
-     * <code>LUASHELL_SECURITY = 2;</code>
+     * <code>LUA_SHELL_TYPE_LUASHELL_SECURITY = 2;</code>
      */
-    LUASHELL_SECURITY(2),
+    LUA_SHELL_TYPE_LUASHELL_SECURITY(2),
     /**
-     * <code>LUASHELL_SHELL_CODE = 3;</code>
+     * <code>LUA_SHELL_TYPE_LUASHELL_SHELL_CODE = 3;</code>
      */
-    LUASHELL_SHELL_CODE(3),
+    LUA_SHELL_TYPE_LUASHELL_SHELL_CODE(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
+     * <pre>
+     *forced
+     * </pre>
+     *
      * <code>LUASHELL_NONE = 0;</code>
      */
     public static final int LUASHELL_NONE_VALUE = 0;
     /**
-     * <code>LUASHELL_NORMAL = 1;</code>
+     * <code>LUA_SHELL_TYPE_LUASHELL_NORMAL = 1;</code>
      */
-    public static final int LUASHELL_NORMAL_VALUE = 1;
+    public static final int LUA_SHELL_TYPE_LUASHELL_NORMAL_VALUE = 1;
     /**
-     * <code>LUASHELL_SECURITY = 2;</code>
+     * <code>LUA_SHELL_TYPE_LUASHELL_SECURITY = 2;</code>
      */
-    public static final int LUASHELL_SECURITY_VALUE = 2;
+    public static final int LUA_SHELL_TYPE_LUASHELL_SECURITY_VALUE = 2;
     /**
-     * <code>LUASHELL_SHELL_CODE = 3;</code>
+     * <code>LUA_SHELL_TYPE_LUASHELL_SHELL_CODE = 3;</code>
      */
-    public static final int LUASHELL_SHELL_CODE_VALUE = 3;
+    public static final int LUA_SHELL_TYPE_LUASHELL_SHELL_CODE_VALUE = 3;
 
 
     public final int getNumber() {
@@ -81,9 +89,9 @@ public final class LuaShellTypeOuterClass {
     public static LuaShellType forNumber(int value) {
       switch (value) {
         case 0: return LUASHELL_NONE;
-        case 1: return LUASHELL_NORMAL;
-        case 2: return LUASHELL_SECURITY;
-        case 3: return LUASHELL_SHELL_CODE;
+        case 1: return LUA_SHELL_TYPE_LUASHELL_NORMAL;
+        case 2: return LUA_SHELL_TYPE_LUASHELL_SECURITY;
+        case 3: return LUA_SHELL_TYPE_LUASHELL_SHELL_CODE;
         default: return null;
       }
     }
@@ -149,11 +157,12 @@ public final class LuaShellTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022LuaShellType.proto*f\n\014LuaShellType\022\021\n\r" +
-      "LUASHELL_NONE\020\000\022\023\n\017LUASHELL_NORMAL\020\001\022\025\n\021" +
-      "LUASHELL_SECURITY\020\002\022\027\n\023LUASHELL_SHELL_CO" +
-      "DE\020\003B\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "\n\022LuaShellType.proto*\223\001\n\014LuaShellType\022\021\n" +
+      "\rLUASHELL_NONE\020\000\022\"\n\036LUA_SHELL_TYPE_LUASH" +
+      "ELL_NORMAL\020\001\022$\n LUA_SHELL_TYPE_LUASHELL_" +
+      "SECURITY\020\002\022&\n\"LUA_SHELL_TYPE_LUASHELL_SH" +
+      "ELL_CODE\020\003B\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

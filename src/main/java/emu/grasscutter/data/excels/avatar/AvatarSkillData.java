@@ -1,5 +1,6 @@
 package emu.grasscutter.data.excels.avatar;
 
+import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.data.*;
 import emu.grasscutter.data.ResourceType.LoadPriority;
 import emu.grasscutter.game.props.ElementType;
@@ -21,4 +22,12 @@ public class AvatarSkillData extends GameResource {
     private long nameTextMapHash;
     private long descTextMapHash;
     private String abilityName;
+    @SerializedName(
+            value = "specialEnergyMin",
+            alternate = {"AJOIGPJIICC"})
+    public float specialEnergyMin;
+    @SerializedName(
+            value = "specialEnergyMax",
+            alternate = {"LKIPHPLNGKP"})
+    public float specialEnergyMax;
 }

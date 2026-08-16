@@ -4,6 +4,9 @@ import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.data.common.DynamicFloat;
 import emu.grasscutter.game.props.ElementType;
 import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
+
 import lombok.ToString;
 
 public class AbilityModifier implements Serializable {
@@ -50,6 +53,7 @@ public class AbilityModifier implements Serializable {
     @ToString
     public static class AbilityModifierAction implements Serializable {
         public enum Type {
+           PhlogistonCostMixin,
             ActCameraRadialBlur,
             ActCameraShake,
             AddAvatarSkillInfo,
@@ -57,6 +61,9 @@ public class AbilityModifier implements Serializable {
             AddClimateMeter,
             AddElementDurability,
             AddHPDebts,
+            AddSpecialEnergy,
+            GetHPPaidDebts,
+            ChangePhlogiston,
             AddGlobalValue,
             AddGlobalValueToTarget,
             AddRegionalPlayVarValue,
@@ -79,6 +86,7 @@ public class AbilityModifier implements Serializable {
             AvatarShareCDSkillStart,
             AvatarSkillStart,
             BroadcastNeuronStimulate,
+            ByTargetGlobalValue,
             CalcDvalinS04RebornPoint,
             CallLuaTask,
             ChangeEnviroWeather,
@@ -101,6 +109,8 @@ public class AbilityModifier implements Serializable {
             CreateTile,
             DamageByAttackValue,
             DebugLog,
+            NyxSet,
+            NyxAdd,
             DestroyTile,
             DoBlink,
             DoTileAction,
@@ -160,6 +170,7 @@ public class AbilityModifier implements Serializable {
             PushInterActionByConfigPath,
             PushPos,
             Randomed,
+            ReduceHPDebts,
             ReTriggerAISkillInitialCD,
             RefreshUICombatBarLayout,
             RegisterAIActionPoint,
@@ -175,6 +186,7 @@ public class AbilityModifier implements Serializable {
             ResetAIResistTauntLevel,
             ResetAIThreatBroadcastRange,
             ResetAnimatorTrigger,
+            ReviveAvatar,
             ReviveDeadAvatar,
             ReviveElemEnergy,
             ReviveStamina,
@@ -272,6 +284,7 @@ public class AbilityModifier implements Serializable {
         public Type type;
 
         public String target;
+        public List<Object> predicates;
 
         @SerializedName(
                 value = "amount",
@@ -302,6 +315,7 @@ public class AbilityModifier implements Serializable {
         public DynamicFloat limboByTargetMaxHPRatio = DynamicFloat.ZERO;
 
         public DynamicFloat healRatio = DynamicFloat.ONE;
+        public DynamicFloat speed = DynamicFloat.ONE;
 
         @SerializedName(value = "ignoreAbilityProperty", alternate = "HHFGADCJJDI")
         public boolean ignoreAbilityProperty;
@@ -322,11 +336,21 @@ public class AbilityModifier implements Serializable {
         public boolean ownerIsTarget;
 
         public boolean isFromOwner;
+        public String healTag;
         public String key;
+        public String abilityName;
         public String globalValueKey;
         public String abilityFormula;
         public String srcTarget, dstTarget;
         public String srcKey, dstKey;
+        public List<Map<String, Object>> targetPredicates;
+
+        public DynamicFloat minValue = DynamicFloat.ZERO;
+        public DynamicFloat maxValue = DynamicFloat.ZERO;
+        public DynamicFloat targetValue = DynamicFloat.ZERO;
+        public DynamicFloat costStaminaRatio = DynamicFloat.ZERO;
+        public DynamicFloat fightProp = DynamicFloat.ZERO;
+        public boolean useLimitRange;
 
         public int skillID;
         public int resistanceListID;
@@ -340,15 +364,17 @@ public class AbilityModifier implements Serializable {
         public DropType dropType = DropType.LevelControl;
         public DynamicFloat baseEnergy;
         public DynamicFloat ratio = DynamicFloat.ONE;
+        public String determineType;
         public int configID;
 
         public DynamicFloat valueRangeMin;
         public DynamicFloat valueRangeMax;
         public String overrideMapKey;
 
-        public int param1;
-        public int param2;
-        public int param3;
+        public int paramNum;
+        public DynamicFloat param1 = DynamicFloat.ZERO,
+                param2 = DynamicFloat.ZERO,
+                param3 = DynamicFloat.ZERO;
 
         public String funcName;
         public LuaCallType luaCallType;
@@ -359,12 +385,18 @@ public class AbilityModifier implements Serializable {
         public String content;
 
         public enum LuaCallType {
+            Gadget,
+            @SerializedName(value = "OwnerGadegt", alternate = "OwnerGadget")
+            OwnerGadget,
             FromGroup,
-            CurGalleryControlGroup,
-            CurChallengeGroup,
+            OwnerFromGroup,
             SpecificGroup,
+            CurScenePlay,
+            CurChallengeGroup,
+            CurRogueBossGroup,
+            CurGalleryControlGroup,
             AbilityGroupSourceGroup,
-            CurScenePlay
+            LevelBankZoneContainsGroup
         }
 
         public enum DropType {
@@ -380,17 +412,38 @@ public class AbilityModifier implements Serializable {
     }
 
     public enum State {
-        LockHP,
-        Invincible,
-        ElementFreeze,
-        ElementPetrifaction,
-        DenyLockOn,
-        Limbo,
-        NoHeal,
-        IgnoreAddEnergy,
-        IsGhostToEnemy,
-        IsGhostToAllied,
-        UnlockFrequencyLimit
+            LockHP,
+            Invincible,
+            ElementFreeze,
+            ElementPetrifaction,
+            DenyLockOn,
+            Limbo,
+            NoHeal,
+            IgnoreAddEnergy,
+            IsGhostToEnemy,
+            IsGhostToAllied,
+            UnlockFrequencyLimit,
+            AttackUp,
+            DefenseDown,
+            ElementDeadTime,
+            SpeedUp,
+            DefenseUp,
+            Struggle,
+            OvergrowVariation,
+            ElementElectric,
+            ElementFire,
+            NyxState,
+            ElementBurning,
+            ElementShock,
+            ElementWet,
+            ElementIce,
+            ElementFrozen,
+            ElementRock,
+            ElementWind,
+            ElementGrass,
+            ElementOverdose,
+            SpeedDown,
+            MuteTaunt
     }
 
     // The following should be implemented into DynamicFloat if older resource formats need to be

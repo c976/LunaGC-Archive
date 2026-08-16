@@ -103,6 +103,9 @@ public class InventorySystem extends BaseGameSystem {
         if (equip == null || !equip.getItemData().isEquip()) {
             return;
         }
+        if(isLocked == false){
+            equip.setFavourite(false);
+        }
 
         equip.setLocked(isLocked);
         equip.save();
@@ -110,6 +113,7 @@ public class InventorySystem extends BaseGameSystem {
         player.sendPacket(new PacketStoreItemChangeNotify(equip));
         player.sendPacket(new PacketSetEquipLockStateRsp(equip));
     }
+
 
     public void upgradeRelic(
             Player player, long targetGuid, List<Long> foodRelicList, List<ItemParam> list) {
@@ -962,5 +966,20 @@ public class InventorySystem extends BaseGameSystem {
         return actions.stream()
                 .map(use -> use.useItem(params))
                 .reduce(false, (a, b) -> a || b); // Don't short-circuit!!!
+    }
+    public void favouriteEquip(Player player, long itemId, boolean isFavourite) {
+        GameItem equip = player.getInventory().getItemByGuid(itemId);
+
+        if (equip == null) {
+            return;
+        }
+        if(isFavourite == true){
+            equip.setLocked(true);
+        }
+        equip.setFavourite(isFavourite);
+        equip.save();
+
+        player.sendPacket(new PacketStoreItemChangeNotify(equip));
+        player.sendPacket(new PacketSetReliquaryFavouriteRsp(itemId,isFavourite));
     }
 }

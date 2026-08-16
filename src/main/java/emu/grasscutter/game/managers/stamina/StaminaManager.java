@@ -143,7 +143,8 @@ public class StaminaManager extends BasePlayerManager {
     private Timer sustainedStaminaHandlerTimer;
     private GameSession cachedSession = null;
     private GameEntity cachedEntity = null;
-    private int staminaRecoverDelay = 0;
+    public int staminaRecoverDelay = 0;
+    private long lastCostStaminaTime = 0;
     private int lastSkillId = 0;
     private int lastSkillCasterId = 0;
     private boolean lastSkillFirstTick = true;
@@ -180,6 +181,14 @@ public class StaminaManager extends BasePlayerManager {
 
     public int getCurrentVehicleStamina() {
         return vehicleStamina;
+    }
+    
+    public long getLastCostStaminaTime() {
+    return lastCostStaminaTime;
+    }
+
+    public void setLastCostStaminaTime(long time) {
+    this.lastCostStaminaTime = time;
     }
 
     public boolean addCurrentStamina(int amount) {
@@ -526,7 +535,7 @@ public class StaminaManager extends BasePlayerManager {
 
     // Stamina Consumption Reduction: https://genshin-impact.fandom.com/wiki/Stamina
 
-    private Consumption getFightConsumption(int skillCasting) {
+    public Consumption getFightConsumption(int skillCasting) {
         // Talent moving
         if (TalentMovements.contains(skillCasting)) {
             // TODO: recover 1000 if kamisato hits an enemy at the end of dashing
@@ -611,6 +620,7 @@ public class StaminaManager extends BasePlayerManager {
         return switch (this.currentState) {
             default -> new Consumption();
             case MOTION_STATE_FIGHT -> new Consumption(ConsumptionType.FIGHT, 500);
+            case MOTION_STATE_NOTIFY -> new Consumption(ConsumptionType.NOTIFY);
         };
     }
 

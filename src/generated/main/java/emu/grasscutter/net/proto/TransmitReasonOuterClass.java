@@ -15,34 +15,29 @@ public final class TransmitReasonOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Version: 4.6.0
-   * Obfs: DJLNCMNEAOI
-   * </pre>
-   *
    * Protobuf enum {@code TransmitReason}
    */
   public enum TransmitReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>TRANSMIT_NONE = 0;</code>
+     * <code>TRANSMIT_REASON_NONE = 0;</code>
      */
-    TRANSMIT_NONE(0),
+    TRANSMIT_REASON_NONE(0),
     /**
-     * <code>TRANSMIT_QUEST = 1;</code>
+     * <code>TRANSMIT_REASON_QUEST = 1;</code>
      */
-    TRANSMIT_QUEST(1),
+    TRANSMIT_REASON_QUEST(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>TRANSMIT_NONE = 0;</code>
+     * <code>TRANSMIT_REASON_NONE = 0;</code>
      */
-    public static final int TRANSMIT_NONE_VALUE = 0;
+    public static final int TRANSMIT_REASON_NONE_VALUE = 0;
     /**
-     * <code>TRANSMIT_QUEST = 1;</code>
+     * <code>TRANSMIT_REASON_QUEST = 1;</code>
      */
-    public static final int TRANSMIT_QUEST_VALUE = 1;
+    public static final int TRANSMIT_REASON_QUEST_VALUE = 1;
 
 
     public final int getNumber() {
@@ -69,8 +64,8 @@ public final class TransmitReasonOuterClass {
      */
     public static TransmitReason forNumber(int value) {
       switch (value) {
-        case 0: return TRANSMIT_NONE;
-        case 1: return TRANSMIT_QUEST;
+        case 0: return TRANSMIT_REASON_NONE;
+        case 1: return TRANSMIT_REASON_QUEST;
         default: return null;
       }
     }
@@ -136,9 +131,10 @@ public final class TransmitReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024TransmitReason.proto*7\n\016TransmitReason" +
-      "\022\021\n\rTRANSMIT_NONE\020\000\022\022\n\016TRANSMIT_QUEST\020\001B" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\024TransmitReason.proto*E\n\016TransmitReason" +
+      "\022\030\n\024TRANSMIT_REASON_NONE\020\000\022\031\n\025TRANSMIT_R" +
+      "EASON_QUEST\020\001B\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

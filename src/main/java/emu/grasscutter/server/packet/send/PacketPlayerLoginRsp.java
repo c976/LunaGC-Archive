@@ -54,7 +54,7 @@ public class PacketPlayerLoginRsp extends BasePacket {
                 PlayerLoginRsp.newBuilder()
                         //.setIsUseAbilityHash(true) // true
                         //.setAbilityHashCode(1844674) // 1844674
-                        .setGameBiz("hk4e_global")
+                        //.setGameBiz("hk4e_global")
                         //.setClientDataVersion(info.getClientDataVersion())
                         //.setClientSilenceDataVersion(info.getClientSilenceDataVersion())
                         //.setClientMd5(info.getClientDataMd5())
@@ -65,7 +65,7 @@ public class PacketPlayerLoginRsp extends BasePacket {
                         // .setIsScOpen(false)
                         // .setScInfo(ByteString.copyFrom(new byte[] {}))
                         // .setRegisterCps("mihoyo")
-                        .setCountryCode("US")
+                        //.setCountryCode("US")
                         .build();
 
         this.setData(p.toByteArray());

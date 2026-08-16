@@ -55,18 +55,6 @@ public final class SocialDetailOuterClass {
         int index);
 
     /**
-     * <code>string PJMKDOCDKLH = 29;</code>
-     * @return The pJMKDOCDKLH.
-     */
-    java.lang.String getPJMKDOCDKLH();
-    /**
-     * <code>string PJMKDOCDKLH = 29;</code>
-     * @return The bytes for pJMKDOCDKLH.
-     */
-    com.google.protobuf.ByteString
-        getPJMKDOCDKLHBytes();
-
-    /**
      * <code>string remark_name = 17;</code>
      * @return The remarkName.
      */
@@ -167,18 +155,6 @@ public final class SocialDetailOuterClass {
     int getShowNameCardIdList(int index);
 
     /**
-     * <code>string ADDELLGIEED = 30;</code>
-     * @return The aDDELLGIEED.
-     */
-    java.lang.String getADDELLGIEED();
-    /**
-     * <code>string ADDELLGIEED = 30;</code>
-     * @return The bytes for aDDELLGIEED.
-     */
-    com.google.protobuf.ByteString
-        getADDELLGIEEDBytes();
-
-    /**
      * <code>string online_id = 13;</code>
      * @return The onlineId.
      */
@@ -195,18 +171,6 @@ public final class SocialDetailOuterClass {
      * @return The finishAchievementNum.
      */
     int getFinishAchievementNum();
-
-    /**
-     * <code>uint32 NONBJHEKADM = 27;</code>
-     * @return The nONBJHEKADM.
-     */
-    int getNONBJHEKADM();
-
-    /**
-     * <code>uint32 PGDGEBEANMO = 28;</code>
-     * @return The pGDGEBEANMO.
-     */
-    int getPGDGEBEANMO();
 
     /**
      * <code>uint32 world_level = 7;</code>
@@ -238,12 +202,6 @@ public final class SocialDetailOuterClass {
     int getTowerLevelIndex();
 
     /**
-     * <code>uint32 LJJABLHIIMI = 32;</code>
-     * @return The lJJABLHIIMI.
-     */
-    int getLJJABLHIIMI();
-
-    /**
      * <code>uint32 param = 10;</code>
      * @return The param.
      */
@@ -260,12 +218,6 @@ public final class SocialDetailOuterClass {
      * @return The isChatNoDisturb.
      */
     boolean getIsChatNoDisturb();
-
-    /**
-     * <code>bool ILAJDMIGBNJ = 33;</code>
-     * @return The iLAJDMIGBNJ.
-     */
-    boolean getILAJDMIGBNJ();
 
     /**
      * <code>bool is_mp_mode_available = 12;</code>
@@ -286,23 +238,6 @@ public final class SocialDetailOuterClass {
     boolean getIsInBlacklist();
 
     /**
-     * <code>.SocialDetail.FAFJBDCBCOE data_version = 36;</code>
-     * @return The enum numeric value on the wire for dataVersion.
-     */
-    int getDataVersionValue();
-    /**
-     * <code>.SocialDetail.FAFJBDCBCOE data_version = 36;</code>
-     * @return The dataVersion.
-     */
-    emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE getDataVersion();
-
-    /**
-     * <code>uint32 HDNMLJGPLFG = 34;</code>
-     * @return The hDNMLJGPLFG.
-     */
-    int getHDNMLJGPLFG();
-
-    /**
      * <code>uint32 level = 3;</code>
      * @return The level.
      */
@@ -313,12 +248,6 @@ public final class SocialDetailOuterClass {
      * @return The towerFloorIndex.
      */
     int getTowerFloorIndex();
-
-    /**
-     * <code>uint32 LEDJFOIDFKJ = 35;</code>
-     * @return The lEDJFOIDFKJ.
-     */
-    int getLEDJFOIDFKJ();
 
     /**
      * <code>uint32 name_card_id = 14;</code>
@@ -369,16 +298,13 @@ public final class SocialDetailOuterClass {
     private SocialDetail() {
       ipCode_ = "";
       showAvatarInfoList_ = java.util.Collections.emptyList();
-      pJMKDOCDKLH_ = "";
       remarkName_ = "";
       nickname_ = "";
       signature_ = "";
       reservedList_ = emptyIntList();
       showNameCardIdList_ = emptyIntList();
-      aDDELLGIEED_ = "";
       onlineId_ = "";
       onlineState_ = 0;
-      dataVersion_ = 0;
       friendEnterHomeOption_ = 0;
       platformType_ = 0;
     }
@@ -603,58 +529,10 @@ public final class SocialDetailOuterClass {
               ipCode_ = s;
               break;
             }
-            case 216: {
-
-              nONBJHEKADM_ = input.readUInt32();
-              break;
-            }
-            case 224: {
-
-              pGDGEBEANMO_ = input.readUInt32();
-              break;
-            }
-            case 234: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              pJMKDOCDKLH_ = s;
-              break;
-            }
-            case 242: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              aDDELLGIEED_ = s;
-              break;
-            }
             case 248: {
               int rawValue = input.readEnum();
 
               platformType_ = rawValue;
-              break;
-            }
-            case 256: {
-
-              lJJABLHIIMI_ = input.readUInt32();
-              break;
-            }
-            case 264: {
-
-              iLAJDMIGBNJ_ = input.readBool();
-              break;
-            }
-            case 272: {
-
-              hDNMLJGPLFG_ = input.readUInt32();
-              break;
-            }
-            case 280: {
-
-              lEDJFOIDFKJ_ = input.readUInt32();
-              break;
-            }
-            case 288: {
-              int rawValue = input.readEnum();
-
-              dataVersion_ = rawValue;
               break;
             }
             default: {
@@ -884,44 +762,6 @@ public final class SocialDetailOuterClass {
       return showAvatarInfoList_.get(index);
     }
 
-    public static final int PJMKDOCDKLH_FIELD_NUMBER = 29;
-    private volatile java.lang.Object pJMKDOCDKLH_;
-    /**
-     * <code>string PJMKDOCDKLH = 29;</code>
-     * @return The pJMKDOCDKLH.
-     */
-    @java.lang.Override
-    public java.lang.String getPJMKDOCDKLH() {
-      java.lang.Object ref = pJMKDOCDKLH_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        pJMKDOCDKLH_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string PJMKDOCDKLH = 29;</code>
-     * @return The bytes for pJMKDOCDKLH.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getPJMKDOCDKLHBytes() {
-      java.lang.Object ref = pJMKDOCDKLH_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        pJMKDOCDKLH_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     public static final int REMARK_NAME_FIELD_NUMBER = 17;
     private volatile java.lang.Object remarkName_;
     /**
@@ -1144,44 +984,6 @@ public final class SocialDetailOuterClass {
     }
     private int showNameCardIdListMemoizedSerializedSize = -1;
 
-    public static final int ADDELLGIEED_FIELD_NUMBER = 30;
-    private volatile java.lang.Object aDDELLGIEED_;
-    /**
-     * <code>string ADDELLGIEED = 30;</code>
-     * @return The aDDELLGIEED.
-     */
-    @java.lang.Override
-    public java.lang.String getADDELLGIEED() {
-      java.lang.Object ref = aDDELLGIEED_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        aDDELLGIEED_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string ADDELLGIEED = 30;</code>
-     * @return The bytes for aDDELLGIEED.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getADDELLGIEEDBytes() {
-      java.lang.Object ref = aDDELLGIEED_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        aDDELLGIEED_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     public static final int ONLINE_ID_FIELD_NUMBER = 13;
     private volatile java.lang.Object onlineId_;
     /**
@@ -1229,28 +1031,6 @@ public final class SocialDetailOuterClass {
     @java.lang.Override
     public int getFinishAchievementNum() {
       return finishAchievementNum_;
-    }
-
-    public static final int NONBJHEKADM_FIELD_NUMBER = 27;
-    private int nONBJHEKADM_;
-    /**
-     * <code>uint32 NONBJHEKADM = 27;</code>
-     * @return The nONBJHEKADM.
-     */
-    @java.lang.Override
-    public int getNONBJHEKADM() {
-      return nONBJHEKADM_;
-    }
-
-    public static final int PGDGEBEANMO_FIELD_NUMBER = 28;
-    private int pGDGEBEANMO_;
-    /**
-     * <code>uint32 PGDGEBEANMO = 28;</code>
-     * @return The pGDGEBEANMO.
-     */
-    @java.lang.Override
-    public int getPGDGEBEANMO() {
-      return pGDGEBEANMO_;
     }
 
     public static final int WORLD_LEVEL_FIELD_NUMBER = 7;
@@ -1305,17 +1085,6 @@ public final class SocialDetailOuterClass {
       return towerLevelIndex_;
     }
 
-    public static final int LJJABLHIIMI_FIELD_NUMBER = 32;
-    private int lJJABLHIIMI_;
-    /**
-     * <code>uint32 LJJABLHIIMI = 32;</code>
-     * @return The lJJABLHIIMI.
-     */
-    @java.lang.Override
-    public int getLJJABLHIIMI() {
-      return lJJABLHIIMI_;
-    }
-
     public static final int PARAM_FIELD_NUMBER = 10;
     private int param_;
     /**
@@ -1347,17 +1116,6 @@ public final class SocialDetailOuterClass {
     @java.lang.Override
     public boolean getIsChatNoDisturb() {
       return isChatNoDisturb_;
-    }
-
-    public static final int ILAJDMIGBNJ_FIELD_NUMBER = 33;
-    private boolean iLAJDMIGBNJ_;
-    /**
-     * <code>bool ILAJDMIGBNJ = 33;</code>
-     * @return The iLAJDMIGBNJ.
-     */
-    @java.lang.Override
-    public boolean getILAJDMIGBNJ() {
-      return iLAJDMIGBNJ_;
     }
 
     public static final int IS_MP_MODE_AVAILABLE_FIELD_NUMBER = 12;
@@ -1393,36 +1151,6 @@ public final class SocialDetailOuterClass {
       return isInBlacklist_;
     }
 
-    public static final int DATA_VERSION_FIELD_NUMBER = 36;
-    private int dataVersion_;
-    /**
-     * <code>.SocialDetail.FAFJBDCBCOE data_version = 36;</code>
-     * @return The enum numeric value on the wire for dataVersion.
-     */
-    @java.lang.Override public int getDataVersionValue() {
-      return dataVersion_;
-    }
-    /**
-     * <code>.SocialDetail.FAFJBDCBCOE data_version = 36;</code>
-     * @return The dataVersion.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE getDataVersion() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE result = emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE.valueOf(dataVersion_);
-      return result == null ? emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE.UNRECOGNIZED : result;
-    }
-
-    public static final int HDNMLJGPLFG_FIELD_NUMBER = 34;
-    private int hDNMLJGPLFG_;
-    /**
-     * <code>uint32 HDNMLJGPLFG = 34;</code>
-     * @return The hDNMLJGPLFG.
-     */
-    @java.lang.Override
-    public int getHDNMLJGPLFG() {
-      return hDNMLJGPLFG_;
-    }
-
     public static final int LEVEL_FIELD_NUMBER = 3;
     private int level_;
     /**
@@ -1443,17 +1171,6 @@ public final class SocialDetailOuterClass {
     @java.lang.Override
     public int getTowerFloorIndex() {
       return towerFloorIndex_;
-    }
-
-    public static final int LEDJFOIDFKJ_FIELD_NUMBER = 35;
-    private int lEDJFOIDFKJ_;
-    /**
-     * <code>uint32 LEDJFOIDFKJ = 35;</code>
-     * @return The lEDJFOIDFKJ.
-     */
-    @java.lang.Override
-    public int getLEDJFOIDFKJ() {
-      return lEDJFOIDFKJ_;
     }
 
     public static final int NAME_CARD_ID_FIELD_NUMBER = 14;
@@ -1617,35 +1334,8 @@ public final class SocialDetailOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(ipCode_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 26, ipCode_);
       }
-      if (nONBJHEKADM_ != 0) {
-        output.writeUInt32(27, nONBJHEKADM_);
-      }
-      if (pGDGEBEANMO_ != 0) {
-        output.writeUInt32(28, pGDGEBEANMO_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pJMKDOCDKLH_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 29, pJMKDOCDKLH_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aDDELLGIEED_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 30, aDDELLGIEED_);
-      }
       if (platformType_ != emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.PLATFORM_TYPE_EDITOR.getNumber()) {
         output.writeEnum(31, platformType_);
-      }
-      if (lJJABLHIIMI_ != 0) {
-        output.writeUInt32(32, lJJABLHIIMI_);
-      }
-      if (iLAJDMIGBNJ_ != false) {
-        output.writeBool(33, iLAJDMIGBNJ_);
-      }
-      if (hDNMLJGPLFG_ != 0) {
-        output.writeUInt32(34, hDNMLJGPLFG_);
-      }
-      if (lEDJFOIDFKJ_ != 0) {
-        output.writeUInt32(35, lEDJFOIDFKJ_);
-      }
-      if (dataVersion_ != emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE.FAFJBDCBCOE_VERSION_NONE.getNumber()) {
-        output.writeEnum(36, dataVersion_);
       }
       unknownFields.writeTo(output);
     }
@@ -1775,43 +1465,9 @@ public final class SocialDetailOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(ipCode_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(26, ipCode_);
       }
-      if (nONBJHEKADM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(27, nONBJHEKADM_);
-      }
-      if (pGDGEBEANMO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(28, pGDGEBEANMO_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pJMKDOCDKLH_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(29, pJMKDOCDKLH_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aDDELLGIEED_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(30, aDDELLGIEED_);
-      }
       if (platformType_ != emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.PLATFORM_TYPE_EDITOR.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(31, platformType_);
-      }
-      if (lJJABLHIIMI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(32, lJJABLHIIMI_);
-      }
-      if (iLAJDMIGBNJ_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(33, iLAJDMIGBNJ_);
-      }
-      if (hDNMLJGPLFG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(34, hDNMLJGPLFG_);
-      }
-      if (lEDJFOIDFKJ_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(35, lEDJFOIDFKJ_);
-      }
-      if (dataVersion_ != emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE.FAFJBDCBCOE_VERSION_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(36, dataVersion_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1832,8 +1488,6 @@ public final class SocialDetailOuterClass {
           .equals(other.getIpCode())) return false;
       if (!getShowAvatarInfoListList()
           .equals(other.getShowAvatarInfoListList())) return false;
-      if (!getPJMKDOCDKLH()
-          .equals(other.getPJMKDOCDKLH())) return false;
       if (!getRemarkName()
           .equals(other.getRemarkName())) return false;
       if (hasProfilePicture() != other.hasProfilePicture()) return false;
@@ -1854,16 +1508,10 @@ public final class SocialDetailOuterClass {
       }
       if (!getShowNameCardIdListList()
           .equals(other.getShowNameCardIdListList())) return false;
-      if (!getADDELLGIEED()
-          .equals(other.getADDELLGIEED())) return false;
       if (!getOnlineId()
           .equals(other.getOnlineId())) return false;
       if (getFinishAchievementNum()
           != other.getFinishAchievementNum()) return false;
-      if (getNONBJHEKADM()
-          != other.getNONBJHEKADM()) return false;
-      if (getPGDGEBEANMO()
-          != other.getPGDGEBEANMO()) return false;
       if (getWorldLevel()
           != other.getWorldLevel()) return false;
       if (getUid()
@@ -1871,31 +1519,22 @@ public final class SocialDetailOuterClass {
       if (onlineState_ != other.onlineState_) return false;
       if (getTowerLevelIndex()
           != other.getTowerLevelIndex()) return false;
-      if (getLJJABLHIIMI()
-          != other.getLJJABLHIIMI()) return false;
       if (getParam()
           != other.getParam()) return false;
       if (getIsFriend()
           != other.getIsFriend()) return false;
       if (getIsChatNoDisturb()
           != other.getIsChatNoDisturb()) return false;
-      if (getILAJDMIGBNJ()
-          != other.getILAJDMIGBNJ()) return false;
       if (getIsMpModeAvailable()
           != other.getIsMpModeAvailable()) return false;
       if (getIsShowAvatar()
           != other.getIsShowAvatar()) return false;
       if (getIsInBlacklist()
           != other.getIsInBlacklist()) return false;
-      if (dataVersion_ != other.dataVersion_) return false;
-      if (getHDNMLJGPLFG()
-          != other.getHDNMLJGPLFG()) return false;
       if (getLevel()
           != other.getLevel()) return false;
       if (getTowerFloorIndex()
           != other.getTowerFloorIndex()) return false;
-      if (getLEDJFOIDFKJ()
-          != other.getLEDJFOIDFKJ()) return false;
       if (getNameCardId()
           != other.getNameCardId()) return false;
       if (friendEnterHomeOption_ != other.friendEnterHomeOption_) return false;
@@ -1919,8 +1558,6 @@ public final class SocialDetailOuterClass {
         hash = (37 * hash) + SHOW_AVATAR_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getShowAvatarInfoListList().hashCode();
       }
-      hash = (37 * hash) + PJMKDOCDKLH_FIELD_NUMBER;
-      hash = (53 * hash) + getPJMKDOCDKLH().hashCode();
       hash = (37 * hash) + REMARK_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getRemarkName().hashCode();
       if (hasProfilePicture()) {
@@ -1943,16 +1580,10 @@ public final class SocialDetailOuterClass {
         hash = (37 * hash) + SHOW_NAME_CARD_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getShowNameCardIdListList().hashCode();
       }
-      hash = (37 * hash) + ADDELLGIEED_FIELD_NUMBER;
-      hash = (53 * hash) + getADDELLGIEED().hashCode();
       hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getOnlineId().hashCode();
       hash = (37 * hash) + FINISH_ACHIEVEMENT_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getFinishAchievementNum();
-      hash = (37 * hash) + NONBJHEKADM_FIELD_NUMBER;
-      hash = (53 * hash) + getNONBJHEKADM();
-      hash = (37 * hash) + PGDGEBEANMO_FIELD_NUMBER;
-      hash = (53 * hash) + getPGDGEBEANMO();
       hash = (37 * hash) + WORLD_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getWorldLevel();
       hash = (37 * hash) + UID_FIELD_NUMBER;
@@ -1961,8 +1592,6 @@ public final class SocialDetailOuterClass {
       hash = (53 * hash) + onlineState_;
       hash = (37 * hash) + TOWER_LEVEL_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getTowerLevelIndex();
-      hash = (37 * hash) + LJJABLHIIMI_FIELD_NUMBER;
-      hash = (53 * hash) + getLJJABLHIIMI();
       hash = (37 * hash) + PARAM_FIELD_NUMBER;
       hash = (53 * hash) + getParam();
       hash = (37 * hash) + IS_FRIEND_FIELD_NUMBER;
@@ -1971,9 +1600,6 @@ public final class SocialDetailOuterClass {
       hash = (37 * hash) + IS_CHAT_NO_DISTURB_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsChatNoDisturb());
-      hash = (37 * hash) + ILAJDMIGBNJ_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getILAJDMIGBNJ());
       hash = (37 * hash) + IS_MP_MODE_AVAILABLE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsMpModeAvailable());
@@ -1983,16 +1609,10 @@ public final class SocialDetailOuterClass {
       hash = (37 * hash) + IS_IN_BLACKLIST_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsInBlacklist());
-      hash = (37 * hash) + DATA_VERSION_FIELD_NUMBER;
-      hash = (53 * hash) + dataVersion_;
-      hash = (37 * hash) + HDNMLJGPLFG_FIELD_NUMBER;
-      hash = (53 * hash) + getHDNMLJGPLFG();
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
       hash = (37 * hash) + TOWER_FLOOR_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getTowerFloorIndex();
-      hash = (37 * hash) + LEDJFOIDFKJ_FIELD_NUMBER;
-      hash = (53 * hash) + getLEDJFOIDFKJ();
       hash = (37 * hash) + NAME_CARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getNameCardId();
       hash = (37 * hash) + FRIEND_ENTER_HOME_OPTION_FIELD_NUMBER;
@@ -2143,8 +1763,6 @@ public final class SocialDetailOuterClass {
         } else {
           showAvatarInfoListBuilder_.clear();
         }
-        pJMKDOCDKLH_ = "";
-
         remarkName_ = "";
 
         if (profilePictureBuilder_ == null) {
@@ -2167,15 +1785,9 @@ public final class SocialDetailOuterClass {
         }
         showNameCardIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
-        aDDELLGIEED_ = "";
-
         onlineId_ = "";
 
         finishAchievementNum_ = 0;
-
-        nONBJHEKADM_ = 0;
-
-        pGDGEBEANMO_ = 0;
 
         worldLevel_ = 0;
 
@@ -2185,15 +1797,11 @@ public final class SocialDetailOuterClass {
 
         towerLevelIndex_ = 0;
 
-        lJJABLHIIMI_ = 0;
-
         param_ = 0;
 
         isFriend_ = false;
 
         isChatNoDisturb_ = false;
-
-        iLAJDMIGBNJ_ = false;
 
         isMpModeAvailable_ = false;
 
@@ -2201,15 +1809,9 @@ public final class SocialDetailOuterClass {
 
         isInBlacklist_ = false;
 
-        dataVersion_ = 0;
-
-        hDNMLJGPLFG_ = 0;
-
         level_ = 0;
 
         towerFloorIndex_ = 0;
-
-        lEDJFOIDFKJ_ = 0;
 
         nameCardId_ = 0;
 
@@ -2256,7 +1858,6 @@ public final class SocialDetailOuterClass {
         } else {
           result.showAvatarInfoList_ = showAvatarInfoListBuilder_.build();
         }
-        result.pJMKDOCDKLH_ = pJMKDOCDKLH_;
         result.remarkName_ = remarkName_;
         if (profilePictureBuilder_ == null) {
           result.profilePicture_ = profilePicture_;
@@ -2280,28 +1881,20 @@ public final class SocialDetailOuterClass {
           bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.showNameCardIdList_ = showNameCardIdList_;
-        result.aDDELLGIEED_ = aDDELLGIEED_;
         result.onlineId_ = onlineId_;
         result.finishAchievementNum_ = finishAchievementNum_;
-        result.nONBJHEKADM_ = nONBJHEKADM_;
-        result.pGDGEBEANMO_ = pGDGEBEANMO_;
         result.worldLevel_ = worldLevel_;
         result.uid_ = uid_;
         result.onlineState_ = onlineState_;
         result.towerLevelIndex_ = towerLevelIndex_;
-        result.lJJABLHIIMI_ = lJJABLHIIMI_;
         result.param_ = param_;
         result.isFriend_ = isFriend_;
         result.isChatNoDisturb_ = isChatNoDisturb_;
-        result.iLAJDMIGBNJ_ = iLAJDMIGBNJ_;
         result.isMpModeAvailable_ = isMpModeAvailable_;
         result.isShowAvatar_ = isShowAvatar_;
         result.isInBlacklist_ = isInBlacklist_;
-        result.dataVersion_ = dataVersion_;
-        result.hDNMLJGPLFG_ = hDNMLJGPLFG_;
         result.level_ = level_;
         result.towerFloorIndex_ = towerFloorIndex_;
-        result.lEDJFOIDFKJ_ = lEDJFOIDFKJ_;
         result.nameCardId_ = nameCardId_;
         result.friendEnterHomeOption_ = friendEnterHomeOption_;
         result.avatarId_ = avatarId_;
@@ -2384,10 +1977,6 @@ public final class SocialDetailOuterClass {
             }
           }
         }
-        if (!other.getPJMKDOCDKLH().isEmpty()) {
-          pJMKDOCDKLH_ = other.pJMKDOCDKLH_;
-          onChanged();
-        }
         if (!other.getRemarkName().isEmpty()) {
           remarkName_ = other.remarkName_;
           onChanged();
@@ -2426,22 +2015,12 @@ public final class SocialDetailOuterClass {
           }
           onChanged();
         }
-        if (!other.getADDELLGIEED().isEmpty()) {
-          aDDELLGIEED_ = other.aDDELLGIEED_;
-          onChanged();
-        }
         if (!other.getOnlineId().isEmpty()) {
           onlineId_ = other.onlineId_;
           onChanged();
         }
         if (other.getFinishAchievementNum() != 0) {
           setFinishAchievementNum(other.getFinishAchievementNum());
-        }
-        if (other.getNONBJHEKADM() != 0) {
-          setNONBJHEKADM(other.getNONBJHEKADM());
-        }
-        if (other.getPGDGEBEANMO() != 0) {
-          setPGDGEBEANMO(other.getPGDGEBEANMO());
         }
         if (other.getWorldLevel() != 0) {
           setWorldLevel(other.getWorldLevel());
@@ -2455,9 +2034,6 @@ public final class SocialDetailOuterClass {
         if (other.getTowerLevelIndex() != 0) {
           setTowerLevelIndex(other.getTowerLevelIndex());
         }
-        if (other.getLJJABLHIIMI() != 0) {
-          setLJJABLHIIMI(other.getLJJABLHIIMI());
-        }
         if (other.getParam() != 0) {
           setParam(other.getParam());
         }
@@ -2466,9 +2042,6 @@ public final class SocialDetailOuterClass {
         }
         if (other.getIsChatNoDisturb() != false) {
           setIsChatNoDisturb(other.getIsChatNoDisturb());
-        }
-        if (other.getILAJDMIGBNJ() != false) {
-          setILAJDMIGBNJ(other.getILAJDMIGBNJ());
         }
         if (other.getIsMpModeAvailable() != false) {
           setIsMpModeAvailable(other.getIsMpModeAvailable());
@@ -2479,20 +2052,11 @@ public final class SocialDetailOuterClass {
         if (other.getIsInBlacklist() != false) {
           setIsInBlacklist(other.getIsInBlacklist());
         }
-        if (other.dataVersion_ != 0) {
-          setDataVersionValue(other.getDataVersionValue());
-        }
-        if (other.getHDNMLJGPLFG() != 0) {
-          setHDNMLJGPLFG(other.getHDNMLJGPLFG());
-        }
         if (other.getLevel() != 0) {
           setLevel(other.getLevel());
         }
         if (other.getTowerFloorIndex() != 0) {
           setTowerFloorIndex(other.getTowerFloorIndex());
-        }
-        if (other.getLEDJFOIDFKJ() != 0) {
-          setLEDJFOIDFKJ(other.getLEDJFOIDFKJ());
         }
         if (other.getNameCardId() != 0) {
           setNameCardId(other.getNameCardId());
@@ -2850,82 +2414,6 @@ public final class SocialDetailOuterClass {
           showAvatarInfoList_ = null;
         }
         return showAvatarInfoListBuilder_;
-      }
-
-      private java.lang.Object pJMKDOCDKLH_ = "";
-      /**
-       * <code>string PJMKDOCDKLH = 29;</code>
-       * @return The pJMKDOCDKLH.
-       */
-      public java.lang.String getPJMKDOCDKLH() {
-        java.lang.Object ref = pJMKDOCDKLH_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          pJMKDOCDKLH_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string PJMKDOCDKLH = 29;</code>
-       * @return The bytes for pJMKDOCDKLH.
-       */
-      public com.google.protobuf.ByteString
-          getPJMKDOCDKLHBytes() {
-        java.lang.Object ref = pJMKDOCDKLH_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          pJMKDOCDKLH_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string PJMKDOCDKLH = 29;</code>
-       * @param value The pJMKDOCDKLH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPJMKDOCDKLH(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        pJMKDOCDKLH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string PJMKDOCDKLH = 29;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPJMKDOCDKLH() {
-        
-        pJMKDOCDKLH_ = getDefaultInstance().getPJMKDOCDKLH();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string PJMKDOCDKLH = 29;</code>
-       * @param value The bytes for pJMKDOCDKLH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPJMKDOCDKLHBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        pJMKDOCDKLH_ = value;
-        onChanged();
-        return this;
       }
 
       private java.lang.Object remarkName_ = "";
@@ -3552,82 +3040,6 @@ public final class SocialDetailOuterClass {
         return this;
       }
 
-      private java.lang.Object aDDELLGIEED_ = "";
-      /**
-       * <code>string ADDELLGIEED = 30;</code>
-       * @return The aDDELLGIEED.
-       */
-      public java.lang.String getADDELLGIEED() {
-        java.lang.Object ref = aDDELLGIEED_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          aDDELLGIEED_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string ADDELLGIEED = 30;</code>
-       * @return The bytes for aDDELLGIEED.
-       */
-      public com.google.protobuf.ByteString
-          getADDELLGIEEDBytes() {
-        java.lang.Object ref = aDDELLGIEED_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          aDDELLGIEED_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string ADDELLGIEED = 30;</code>
-       * @param value The aDDELLGIEED to set.
-       * @return This builder for chaining.
-       */
-      public Builder setADDELLGIEED(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        aDDELLGIEED_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string ADDELLGIEED = 30;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearADDELLGIEED() {
-        
-        aDDELLGIEED_ = getDefaultInstance().getADDELLGIEED();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string ADDELLGIEED = 30;</code>
-       * @param value The bytes for aDDELLGIEED to set.
-       * @return This builder for chaining.
-       */
-      public Builder setADDELLGIEEDBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        aDDELLGIEED_ = value;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object onlineId_ = "";
       /**
        * <code>string online_id = 13;</code>
@@ -3731,68 +3143,6 @@ public final class SocialDetailOuterClass {
       public Builder clearFinishAchievementNum() {
         
         finishAchievementNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nONBJHEKADM_ ;
-      /**
-       * <code>uint32 NONBJHEKADM = 27;</code>
-       * @return The nONBJHEKADM.
-       */
-      @java.lang.Override
-      public int getNONBJHEKADM() {
-        return nONBJHEKADM_;
-      }
-      /**
-       * <code>uint32 NONBJHEKADM = 27;</code>
-       * @param value The nONBJHEKADM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNONBJHEKADM(int value) {
-        
-        nONBJHEKADM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 NONBJHEKADM = 27;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNONBJHEKADM() {
-        
-        nONBJHEKADM_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pGDGEBEANMO_ ;
-      /**
-       * <code>uint32 PGDGEBEANMO = 28;</code>
-       * @return The pGDGEBEANMO.
-       */
-      @java.lang.Override
-      public int getPGDGEBEANMO() {
-        return pGDGEBEANMO_;
-      }
-      /**
-       * <code>uint32 PGDGEBEANMO = 28;</code>
-       * @param value The pGDGEBEANMO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPGDGEBEANMO(int value) {
-        
-        pGDGEBEANMO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PGDGEBEANMO = 28;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPGDGEBEANMO() {
-        
-        pGDGEBEANMO_ = 0;
         onChanged();
         return this;
       }
@@ -3944,37 +3294,6 @@ public final class SocialDetailOuterClass {
         return this;
       }
 
-      private int lJJABLHIIMI_ ;
-      /**
-       * <code>uint32 LJJABLHIIMI = 32;</code>
-       * @return The lJJABLHIIMI.
-       */
-      @java.lang.Override
-      public int getLJJABLHIIMI() {
-        return lJJABLHIIMI_;
-      }
-      /**
-       * <code>uint32 LJJABLHIIMI = 32;</code>
-       * @param value The lJJABLHIIMI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLJJABLHIIMI(int value) {
-        
-        lJJABLHIIMI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 LJJABLHIIMI = 32;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLJJABLHIIMI() {
-        
-        lJJABLHIIMI_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int param_ ;
       /**
        * <code>uint32 param = 10;</code>
@@ -4064,37 +3383,6 @@ public final class SocialDetailOuterClass {
       public Builder clearIsChatNoDisturb() {
         
         isChatNoDisturb_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean iLAJDMIGBNJ_ ;
-      /**
-       * <code>bool ILAJDMIGBNJ = 33;</code>
-       * @return The iLAJDMIGBNJ.
-       */
-      @java.lang.Override
-      public boolean getILAJDMIGBNJ() {
-        return iLAJDMIGBNJ_;
-      }
-      /**
-       * <code>bool ILAJDMIGBNJ = 33;</code>
-       * @param value The iLAJDMIGBNJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setILAJDMIGBNJ(boolean value) {
-        
-        iLAJDMIGBNJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool ILAJDMIGBNJ = 33;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearILAJDMIGBNJ() {
-        
-        iLAJDMIGBNJ_ = false;
         onChanged();
         return this;
       }
@@ -4192,91 +3480,6 @@ public final class SocialDetailOuterClass {
         return this;
       }
 
-      private int dataVersion_ = 0;
-      /**
-       * <code>.SocialDetail.FAFJBDCBCOE data_version = 36;</code>
-       * @return The enum numeric value on the wire for dataVersion.
-       */
-      @java.lang.Override public int getDataVersionValue() {
-        return dataVersion_;
-      }
-      /**
-       * <code>.SocialDetail.FAFJBDCBCOE data_version = 36;</code>
-       * @param value The enum numeric value on the wire for dataVersion to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDataVersionValue(int value) {
-        
-        dataVersion_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.SocialDetail.FAFJBDCBCOE data_version = 36;</code>
-       * @return The dataVersion.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE getDataVersion() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE result = emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE.valueOf(dataVersion_);
-        return result == null ? emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.SocialDetail.FAFJBDCBCOE data_version = 36;</code>
-       * @param value The dataVersion to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDataVersion(emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail.FAFJBDCBCOE value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        dataVersion_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.SocialDetail.FAFJBDCBCOE data_version = 36;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDataVersion() {
-        
-        dataVersion_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hDNMLJGPLFG_ ;
-      /**
-       * <code>uint32 HDNMLJGPLFG = 34;</code>
-       * @return The hDNMLJGPLFG.
-       */
-      @java.lang.Override
-      public int getHDNMLJGPLFG() {
-        return hDNMLJGPLFG_;
-      }
-      /**
-       * <code>uint32 HDNMLJGPLFG = 34;</code>
-       * @param value The hDNMLJGPLFG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHDNMLJGPLFG(int value) {
-        
-        hDNMLJGPLFG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 HDNMLJGPLFG = 34;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHDNMLJGPLFG() {
-        
-        hDNMLJGPLFG_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int level_ ;
       /**
        * <code>uint32 level = 3;</code>
@@ -4335,37 +3538,6 @@ public final class SocialDetailOuterClass {
       public Builder clearTowerFloorIndex() {
         
         towerFloorIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int lEDJFOIDFKJ_ ;
-      /**
-       * <code>uint32 LEDJFOIDFKJ = 35;</code>
-       * @return The lEDJFOIDFKJ.
-       */
-      @java.lang.Override
-      public int getLEDJFOIDFKJ() {
-        return lEDJFOIDFKJ_;
-      }
-      /**
-       * <code>uint32 LEDJFOIDFKJ = 35;</code>
-       * @param value The lEDJFOIDFKJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLEDJFOIDFKJ(int value) {
-        
-        lEDJFOIDFKJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 LEDJFOIDFKJ = 35;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLEDJFOIDFKJ() {
-        
-        lEDJFOIDFKJ_ = 0;
         onChanged();
         return this;
       }
@@ -4610,33 +3782,28 @@ public final class SocialDetailOuterClass {
       "fo.proto\032\024ProfilePicture.proto\032\016Birthday" +
       ".proto\032\027FriendOnlineState.proto\032\033FriendE" +
       "nterHomeOption.proto\032\022PlatformType.proto" +
-      "\"\202\010\n\014SocialDetail\022\017\n\007ip_code\030\032 \001(\t\0224\n\025sh" +
+      "\"\251\006\n\014SocialDetail\022\017\n\007ip_code\030\032 \001(\t\0224\n\025sh" +
       "ow_avatar_info_list\030\026 \003(\0132\025.SocialShowAv" +
-      "atarInfo\022\023\n\013PJMKDOCDKLH\030\035 \001(\t\022\023\n\013remark_" +
-      "name\030\021 \001(\t\022(\n\017profile_picture\030\031 \001(\0132\017.Pr" +
-      "ofilePicture\022\020\n\010nickname\030\002 \001(\t\022\021\n\tsignat" +
-      "ure\030\005 \001(\t\022\025\n\rreserved_list\030\010 \003(\r\022\033\n\010birt" +
-      "hday\030\006 \001(\0132\t.Birthday\022\036\n\026show_name_card_" +
-      "id_list\030\027 \003(\r\022\023\n\013ADDELLGIEED\030\036 \001(\t\022\021\n\ton" +
-      "line_id\030\r \001(\t\022\036\n\026finish_achievement_num\030" +
-      "\022 \001(\r\022\023\n\013NONBJHEKADM\030\033 \001(\r\022\023\n\013PGDGEBEANM" +
-      "O\030\034 \001(\r\022\023\n\013world_level\030\007 \001(\r\022\013\n\003uid\030\001 \001(" +
-      "\r\022(\n\014online_state\030\t \001(\0162\022.FriendOnlineSt" +
-      "ate\022\031\n\021tower_level_index\030\024 \001(\r\022\023\n\013LJJABL" +
-      "HIIMI\030  \001(\r\022\r\n\005param\030\n \001(\r\022\021\n\tis_friend\030" +
-      "\013 \001(\010\022\032\n\022is_chat_no_disturb\030\020 \001(\010\022\023\n\013ILA" +
-      "JDMIGBNJ\030! \001(\010\022\034\n\024is_mp_mode_available\030\014" +
-      " \001(\010\022\026\n\016is_show_avatar\030\025 \001(\010\022\027\n\017is_in_bl" +
-      "acklist\030\017 \001(\010\022/\n\014data_version\030$ \001(\0162\031.So" +
-      "cialDetail.FAFJBDCBCOE\022\023\n\013HDNMLJGPLFG\030\" " +
-      "\001(\r\022\r\n\005level\030\003 \001(\r\022\031\n\021tower_floor_index\030" +
-      "\023 \001(\r\022\023\n\013LEDJFOIDFKJ\030# \001(\r\022\024\n\014name_card_" +
-      "id\030\016 \001(\r\0228\n\030friend_enter_home_option\030\030 \001" +
-      "(\0162\026.FriendEnterHomeOption\022\021\n\tavatar_id\030" +
-      "\004 \001(\r\022$\n\rplatform_type\030\037 \001(\0162\r.PlatformT" +
-      "ype\"@\n\013FAFJBDCBCOE\022\034\n\030FAFJBDCBCOE_VERSIO" +
-      "N_NONE\020\000\022\023\n\017FAFJBDCBCOE_V50\020\001B\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "atarInfo\022\023\n\013remark_name\030\021 \001(\t\022(\n\017profile" +
+      "_picture\030\031 \001(\0132\017.ProfilePicture\022\020\n\010nickn" +
+      "ame\030\002 \001(\t\022\021\n\tsignature\030\005 \001(\t\022\025\n\rreserved" +
+      "_list\030\010 \003(\r\022\033\n\010birthday\030\006 \001(\0132\t.Birthday" +
+      "\022\036\n\026show_name_card_id_list\030\027 \003(\r\022\021\n\tonli" +
+      "ne_id\030\r \001(\t\022\036\n\026finish_achievement_num\030\022 " +
+      "\001(\r\022\023\n\013world_level\030\007 \001(\r\022\013\n\003uid\030\001 \001(\r\022(\n" +
+      "\014online_state\030\t \001(\0162\022.FriendOnlineState\022" +
+      "\031\n\021tower_level_index\030\024 \001(\r\022\r\n\005param\030\n \001(" +
+      "\r\022\021\n\tis_friend\030\013 \001(\010\022\032\n\022is_chat_no_distu" +
+      "rb\030\020 \001(\010\022\034\n\024is_mp_mode_available\030\014 \001(\010\022\026" +
+      "\n\016is_show_avatar\030\025 \001(\010\022\027\n\017is_in_blacklis" +
+      "t\030\017 \001(\010\022\r\n\005level\030\003 \001(\r\022\031\n\021tower_floor_in" +
+      "dex\030\023 \001(\r\022\024\n\014name_card_id\030\016 \001(\r\0228\n\030frien" +
+      "d_enter_home_option\030\030 \001(\0162\026.FriendEnterH" +
+      "omeOption\022\021\n\tavatar_id\030\004 \001(\r\022$\n\rplatform" +
+      "_type\030\037 \001(\0162\r.PlatformType\"@\n\013FAFJBDCBCO" +
+      "E\022\034\n\030FAFJBDCBCOE_VERSION_NONE\020\000\022\023\n\017FAFJB" +
+      "DCBCOE_V50\020\001B\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -4653,7 +3820,7 @@ public final class SocialDetailOuterClass {
     internal_static_SocialDetail_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SocialDetail_descriptor,
-        new java.lang.String[] { "IpCode", "ShowAvatarInfoList", "PJMKDOCDKLH", "RemarkName", "ProfilePicture", "Nickname", "Signature", "ReservedList", "Birthday", "ShowNameCardIdList", "ADDELLGIEED", "OnlineId", "FinishAchievementNum", "NONBJHEKADM", "PGDGEBEANMO", "WorldLevel", "Uid", "OnlineState", "TowerLevelIndex", "LJJABLHIIMI", "Param", "IsFriend", "IsChatNoDisturb", "ILAJDMIGBNJ", "IsMpModeAvailable", "IsShowAvatar", "IsInBlacklist", "DataVersion", "HDNMLJGPLFG", "Level", "TowerFloorIndex", "LEDJFOIDFKJ", "NameCardId", "FriendEnterHomeOption", "AvatarId", "PlatformType", });
+        new java.lang.String[] { "IpCode", "ShowAvatarInfoList", "RemarkName", "ProfilePicture", "Nickname", "Signature", "ReservedList", "Birthday", "ShowNameCardIdList", "OnlineId", "FinishAchievementNum", "WorldLevel", "Uid", "OnlineState", "TowerLevelIndex", "Param", "IsFriend", "IsChatNoDisturb", "IsMpModeAvailable", "IsShowAvatar", "IsInBlacklist", "Level", "TowerFloorIndex", "NameCardId", "FriendEnterHomeOption", "AvatarId", "PlatformType", });
     emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
     emu.grasscutter.net.proto.BirthdayOuterClass.getDescriptor();

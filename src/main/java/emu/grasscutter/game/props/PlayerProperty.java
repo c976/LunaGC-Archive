@@ -36,7 +36,7 @@ public enum PlayerProperty {
     PROP_PLAYER_MP_SETTING_TYPE(
             10017, 0, 2), // Do you allow other players to join your game? [0=no 1=direct 2=approval]
     PROP_IS_MP_MODE_AVAILABLE(10018, 0, 1), // 0 if in quest or something that disables MP [0, 1]
-    PROP_PLAYER_WORLD_LEVEL(10019, 0, 9), // [0, 9]
+    PROP_PLAYER_WORLD_LEVEL(10019, 0, 9), // [0, 9] // [0, 8]
     PROP_PLAYER_RESIN(
             10020, 0, 2000), // Original Resin [0, 2000] - note that values above 160 require refills
     PROP_PLAYER_WAIT_SUB_HCOIN(10022),
@@ -51,7 +51,7 @@ public enum PlayerProperty {
     PROP_CUR_CLIMATE_TYPE(10036),
     PROP_CUR_CLIMATE_AREA_ID(10037),
     PROP_CUR_CLIMATE_AREA_CLIMATE_TYPE(10038),
-    PROP_PLAYER_WORLD_LEVEL_LIMIT(10039, 0, 9), // [0, 9] World level limit, up to 9.
+    PROP_PLAYER_WORLD_LEVEL_LIMIT(10039, 0, 9), // [0, 8] World level limit, up to 8.
     PROP_PLAYER_WORLD_LEVEL_ADJUST_CD(10040), // Time until world level can be increased/decreased.
     PROP_PLAYER_LEGENDARY_DAILY_TASK_NUM(10041), // Amount of remaining quests for another story key.
     PROP_PLAYER_HOME_COIN(10042, 0), // Realm currency [0, +inf)
@@ -64,7 +64,11 @@ public enum PlayerProperty {
     PROP_DIVE_MAX_STAMINA(
             10049, 0, 10000), // The maximum stamina of the player when diving. [0, 10000]
     PROP_DIVE_CUR_STAMINA(
-            10050, 0, 10000); // The current stamina of the player when diving. [0, 10000]
+        10050, 0, 10000), // The current stamina of the player when diving. [0, 10000]
+        PROP_PHLOGISTON_ENABLE(10052, 0, 1), 
+        PROP_PHLOGISTON_MAX_VALUE(
+                10053, 0, 10000),
+                PROP_CUR_PHLOGISTON                     (10054);   // The current stamina of the player when diving. [0, 10000]
 
     private static final int inf = Integer.MAX_VALUE; // Maybe this should be something else?
     private static final Int2ObjectMap<PlayerProperty> map = new Int2ObjectOpenHashMap<>();

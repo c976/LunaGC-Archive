@@ -19,28 +19,24 @@ public final class PlayerReportRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 2;</code>
+     * <code>uint32 target_uid = 7;</code>
      * @return The targetUid.
      */
     int getTargetUid();
 
     /**
-     * <code>int32 retcode = 3;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 cd_time = 4;</code>
+     * <code>uint32 cd_time = 2;</code>
      * @return The cdTime.
      */
     int getCdTime();
+
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 26350
-   * </pre>
-   *
    * Protobuf type {@code PlayerReportRsp}
    */
   public static final class PlayerReportRsp extends
@@ -85,19 +81,19 @@ public final class PlayerReportRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              targetUid_ = input.readUInt32();
-              break;
-            }
-            case 24: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 32: {
+            case 16: {
 
               cdTime_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              targetUid_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,10 +128,10 @@ public final class PlayerReportRspOuterClass {
               emu.grasscutter.net.proto.PlayerReportRspOuterClass.PlayerReportRsp.class, emu.grasscutter.net.proto.PlayerReportRspOuterClass.PlayerReportRsp.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 2;
+    public static final int TARGET_UID_FIELD_NUMBER = 7;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 2;</code>
+     * <code>uint32 target_uid = 7;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -143,26 +139,26 @@ public final class PlayerReportRspOuterClass {
       return targetUid_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 3;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int CD_TIME_FIELD_NUMBER = 4;
+    public static final int CD_TIME_FIELD_NUMBER = 2;
     private int cdTime_;
     /**
-     * <code>uint32 cd_time = 4;</code>
+     * <code>uint32 cd_time = 2;</code>
      * @return The cdTime.
      */
     @java.lang.Override
     public int getCdTime() {
       return cdTime_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 1;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +175,14 @@ public final class PlayerReportRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetUid_ != 0) {
-        output.writeUInt32(2, targetUid_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (cdTime_ != 0) {
-        output.writeUInt32(4, cdTime_);
+        output.writeUInt32(2, cdTime_);
+      }
+      if (targetUid_ != 0) {
+        output.writeUInt32(7, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +193,17 @@ public final class PlayerReportRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetUid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, targetUid_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (cdTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, cdTime_);
+          .computeUInt32Size(2, cdTime_);
+      }
+      if (targetUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -226,10 +222,10 @@ public final class PlayerReportRspOuterClass {
 
       if (getTargetUid()
           != other.getTargetUid()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getCdTime()
           != other.getCdTime()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,10 +239,10 @@ public final class PlayerReportRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetUid();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + CD_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getCdTime();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,10 +339,6 @@ public final class PlayerReportRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 26350
-     * </pre>
-     *
      * Protobuf type {@code PlayerReportRsp}
      */
     public static final class Builder extends
@@ -386,9 +378,9 @@ public final class PlayerReportRspOuterClass {
         super.clear();
         targetUid_ = 0;
 
-        retcode_ = 0;
-
         cdTime_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -417,8 +409,8 @@ public final class PlayerReportRspOuterClass {
       public emu.grasscutter.net.proto.PlayerReportRspOuterClass.PlayerReportRsp buildPartial() {
         emu.grasscutter.net.proto.PlayerReportRspOuterClass.PlayerReportRsp result = new emu.grasscutter.net.proto.PlayerReportRspOuterClass.PlayerReportRsp(this);
         result.targetUid_ = targetUid_;
-        result.retcode_ = retcode_;
         result.cdTime_ = cdTime_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -470,11 +462,11 @@ public final class PlayerReportRspOuterClass {
         if (other.getTargetUid() != 0) {
           setTargetUid(other.getTargetUid());
         }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getCdTime() != 0) {
           setCdTime(other.getCdTime());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,7 +499,7 @@ public final class PlayerReportRspOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 2;</code>
+       * <code>uint32 target_uid = 7;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -515,7 +507,7 @@ public final class PlayerReportRspOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 2;</code>
+       * <code>uint32 target_uid = 7;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -526,7 +518,7 @@ public final class PlayerReportRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 2;</code>
+       * <code>uint32 target_uid = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -536,40 +528,9 @@ public final class PlayerReportRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int cdTime_ ;
       /**
-       * <code>uint32 cd_time = 4;</code>
+       * <code>uint32 cd_time = 2;</code>
        * @return The cdTime.
        */
       @java.lang.Override
@@ -577,7 +538,7 @@ public final class PlayerReportRspOuterClass {
         return cdTime_;
       }
       /**
-       * <code>uint32 cd_time = 4;</code>
+       * <code>uint32 cd_time = 2;</code>
        * @param value The cdTime to set.
        * @return This builder for chaining.
        */
@@ -588,12 +549,43 @@ public final class PlayerReportRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cd_time = 4;</code>
+       * <code>uint32 cd_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCdTime() {
         
         cdTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -665,8 +657,8 @@ public final class PlayerReportRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025PlayerReportRsp.proto\"G\n\017PlayerReportR" +
-      "sp\022\022\n\ntarget_uid\030\002 \001(\r\022\017\n\007retcode\030\003 \001(\005\022" +
-      "\017\n\007cd_time\030\004 \001(\rB\033\n\031emu.grasscutter.net." +
+      "sp\022\022\n\ntarget_uid\030\007 \001(\r\022\017\n\007cd_time\030\002 \001(\r\022" +
+      "\017\n\007retcode\030\001 \001(\005B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -678,7 +670,7 @@ public final class PlayerReportRspOuterClass {
     internal_static_PlayerReportRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerReportRsp_descriptor,
-        new java.lang.String[] { "TargetUid", "Retcode", "CdTime", });
+        new java.lang.String[] { "TargetUid", "CdTime", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

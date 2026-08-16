@@ -13,38 +13,31 @@ public final class ActionSetGlobalValueToOverrideMap extends AbilityActionHandle
     public boolean execute(
             Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
         // TODO:
-        var entity = target;
+        GameEntity entity = target;
         if (action.isFromOwner) {
-            if (target instanceof EntityClientGadget gadget)
+            if (target instanceof EntityClientGadget) {
+                EntityClientGadget gadget = (EntityClientGadget)target;
                 entity = entity.getScene().getEntityById(gadget.getOwnerEntityId());
-            else if (target instanceof EntityGadget gadget) entity = gadget.getOwner();
+            } else if (target instanceof EntityGadget) {
+                EntityGadget gadget = (EntityGadget)target;
+                entity = gadget.getOwner();
+            }
         }
-
-        var globalValueKey = action.globalValueKey;
-        var abilityFormula = action.abilityFormula;
-
+        String globalValueKey = action.globalValueKey;
+        String abilityFormula = action.abilityFormula;
         if (!entity.getGlobalAbilityValues().containsKey(globalValueKey)) {
-            Grasscutter.getLogger().trace("Action does not contains {} global key", globalValueKey);
+            Grasscutter.getLogger().trace("Action does not contains {} global key", (Object)globalValueKey);
             return true;
         }
 
-        var globalValue = entity.getGlobalAbilityValues().getOrDefault(globalValueKey, 0.0f);
+        Float globalValue = entity.getGlobalAbilityValues().getOrDefault(globalValueKey, Float.valueOf(0.0f));
         if (abilityFormula.compareTo("DummyThrowSpeed") == 0) {
-            globalValue = ((globalValue * 30.0f) / ((float) Math.sin(0.9424778) * 100.0f)) - 1.0f;
+            globalValue = Float.valueOf(globalValue.floatValue() * 30.0f / ((float)Math.sin(0.9424778) * 100.0f) - 1.0f);
         }
-
-        entity.getGlobalAbilityValues().put(globalValueKey, globalValue); // Research if this is needed.
-        ability
-                .getAbilitySpecials()
-                .put(action.overrideMapKey, globalValue.floatValue()); // Override our own.
+        entity.getGlobalAbilityValues().put(globalValueKey, globalValue);
+        ability.getAbilitySpecials().put(action.overrideMapKey, globalValue.floatValue());
         entity.onAbilityValueUpdate();
-
-        // Send a value update packet.
-        entity
-                .getScene()
-                .getHost()
-                .sendPacket(new PacketServerGlobalValueChangeNotify(entity, globalValueKey, globalValue));
-
+        entity.getScene().getHost().sendPacket(new PacketServerGlobalValueChangeNotify(entity, globalValueKey, globalValue.floatValue()));
         return true;
     }
 }

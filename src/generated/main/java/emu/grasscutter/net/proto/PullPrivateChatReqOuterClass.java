@@ -19,22 +19,22 @@ public final class PullPrivateChatReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 3;</code>
+     * <code>uint32 target_uid = 15;</code>
      * @return The targetUid.
      */
     int getTargetUid();
 
     /**
-     * <code>uint32 pull_num = 6;</code>
-     * @return The pullNum.
-     */
-    int getPullNum();
-
-    /**
-     * <code>uint32 from_sequence = 1;</code>
+     * <code>uint32 from_sequence = 4;</code>
      * @return The fromSequence.
      */
     int getFromSequence();
+
+    /**
+     * <code>uint32 pull_num = 2;</code>
+     * @return The pullNum.
+     */
+    int getPullNum();
   }
   /**
    * Protobuf type {@code PullPrivateChatReq}
@@ -81,19 +81,19 @@ public final class PullPrivateChatReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
+
+              pullNum_ = input.readUInt32();
+              break;
+            }
+            case 32: {
 
               fromSequence_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 120: {
 
               targetUid_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              pullNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class PullPrivateChatReqOuterClass {
               emu.grasscutter.net.proto.PullPrivateChatReqOuterClass.PullPrivateChatReq.class, emu.grasscutter.net.proto.PullPrivateChatReqOuterClass.PullPrivateChatReq.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 3;
+    public static final int TARGET_UID_FIELD_NUMBER = 15;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 3;</code>
+     * <code>uint32 target_uid = 15;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -139,26 +139,26 @@ public final class PullPrivateChatReqOuterClass {
       return targetUid_;
     }
 
-    public static final int PULL_NUM_FIELD_NUMBER = 6;
-    private int pullNum_;
-    /**
-     * <code>uint32 pull_num = 6;</code>
-     * @return The pullNum.
-     */
-    @java.lang.Override
-    public int getPullNum() {
-      return pullNum_;
-    }
-
-    public static final int FROM_SEQUENCE_FIELD_NUMBER = 1;
+    public static final int FROM_SEQUENCE_FIELD_NUMBER = 4;
     private int fromSequence_;
     /**
-     * <code>uint32 from_sequence = 1;</code>
+     * <code>uint32 from_sequence = 4;</code>
      * @return The fromSequence.
      */
     @java.lang.Override
     public int getFromSequence() {
       return fromSequence_;
+    }
+
+    public static final int PULL_NUM_FIELD_NUMBER = 2;
+    private int pullNum_;
+    /**
+     * <code>uint32 pull_num = 2;</code>
+     * @return The pullNum.
+     */
+    @java.lang.Override
+    public int getPullNum() {
+      return pullNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +175,14 @@ public final class PullPrivateChatReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (pullNum_ != 0) {
+        output.writeUInt32(2, pullNum_);
+      }
       if (fromSequence_ != 0) {
-        output.writeUInt32(1, fromSequence_);
+        output.writeUInt32(4, fromSequence_);
       }
       if (targetUid_ != 0) {
-        output.writeUInt32(3, targetUid_);
-      }
-      if (pullNum_ != 0) {
-        output.writeUInt32(6, pullNum_);
+        output.writeUInt32(15, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class PullPrivateChatReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (pullNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, pullNum_);
+      }
       if (fromSequence_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, fromSequence_);
+          .computeUInt32Size(4, fromSequence_);
       }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, targetUid_);
-      }
-      if (pullNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, pullNum_);
+          .computeUInt32Size(15, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -222,10 +222,10 @@ public final class PullPrivateChatReqOuterClass {
 
       if (getTargetUid()
           != other.getTargetUid()) return false;
-      if (getPullNum()
-          != other.getPullNum()) return false;
       if (getFromSequence()
           != other.getFromSequence()) return false;
+      if (getPullNum()
+          != other.getPullNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -239,10 +239,10 @@ public final class PullPrivateChatReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetUid();
-      hash = (37 * hash) + PULL_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getPullNum();
       hash = (37 * hash) + FROM_SEQUENCE_FIELD_NUMBER;
       hash = (53 * hash) + getFromSequence();
+      hash = (37 * hash) + PULL_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getPullNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,9 +378,9 @@ public final class PullPrivateChatReqOuterClass {
         super.clear();
         targetUid_ = 0;
 
-        pullNum_ = 0;
-
         fromSequence_ = 0;
+
+        pullNum_ = 0;
 
         return this;
       }
@@ -409,8 +409,8 @@ public final class PullPrivateChatReqOuterClass {
       public emu.grasscutter.net.proto.PullPrivateChatReqOuterClass.PullPrivateChatReq buildPartial() {
         emu.grasscutter.net.proto.PullPrivateChatReqOuterClass.PullPrivateChatReq result = new emu.grasscutter.net.proto.PullPrivateChatReqOuterClass.PullPrivateChatReq(this);
         result.targetUid_ = targetUid_;
-        result.pullNum_ = pullNum_;
         result.fromSequence_ = fromSequence_;
+        result.pullNum_ = pullNum_;
         onBuilt();
         return result;
       }
@@ -462,11 +462,11 @@ public final class PullPrivateChatReqOuterClass {
         if (other.getTargetUid() != 0) {
           setTargetUid(other.getTargetUid());
         }
-        if (other.getPullNum() != 0) {
-          setPullNum(other.getPullNum());
-        }
         if (other.getFromSequence() != 0) {
           setFromSequence(other.getFromSequence());
+        }
+        if (other.getPullNum() != 0) {
+          setPullNum(other.getPullNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -499,7 +499,7 @@ public final class PullPrivateChatReqOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 3;</code>
+       * <code>uint32 target_uid = 15;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class PullPrivateChatReqOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 3;</code>
+       * <code>uint32 target_uid = 15;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class PullPrivateChatReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 3;</code>
+       * <code>uint32 target_uid = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -528,40 +528,9 @@ public final class PullPrivateChatReqOuterClass {
         return this;
       }
 
-      private int pullNum_ ;
-      /**
-       * <code>uint32 pull_num = 6;</code>
-       * @return The pullNum.
-       */
-      @java.lang.Override
-      public int getPullNum() {
-        return pullNum_;
-      }
-      /**
-       * <code>uint32 pull_num = 6;</code>
-       * @param value The pullNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPullNum(int value) {
-        
-        pullNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 pull_num = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPullNum() {
-        
-        pullNum_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int fromSequence_ ;
       /**
-       * <code>uint32 from_sequence = 1;</code>
+       * <code>uint32 from_sequence = 4;</code>
        * @return The fromSequence.
        */
       @java.lang.Override
@@ -569,7 +538,7 @@ public final class PullPrivateChatReqOuterClass {
         return fromSequence_;
       }
       /**
-       * <code>uint32 from_sequence = 1;</code>
+       * <code>uint32 from_sequence = 4;</code>
        * @param value The fromSequence to set.
        * @return This builder for chaining.
        */
@@ -580,12 +549,43 @@ public final class PullPrivateChatReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 from_sequence = 1;</code>
+       * <code>uint32 from_sequence = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearFromSequence() {
         
         fromSequence_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pullNum_ ;
+      /**
+       * <code>uint32 pull_num = 2;</code>
+       * @return The pullNum.
+       */
+      @java.lang.Override
+      public int getPullNum() {
+        return pullNum_;
+      }
+      /**
+       * <code>uint32 pull_num = 2;</code>
+       * @param value The pullNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPullNum(int value) {
+        
+        pullNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 pull_num = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPullNum() {
+        
+        pullNum_ = 0;
         onChanged();
         return this;
       }
@@ -657,8 +657,8 @@ public final class PullPrivateChatReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030PullPrivateChatReq.proto\"Q\n\022PullPrivat" +
-      "eChatReq\022\022\n\ntarget_uid\030\003 \001(\r\022\020\n\010pull_num" +
-      "\030\006 \001(\r\022\025\n\rfrom_sequence\030\001 \001(\rB\033\n\031emu.gra" +
+      "eChatReq\022\022\n\ntarget_uid\030\017 \001(\r\022\025\n\rfrom_seq" +
+      "uence\030\004 \001(\r\022\020\n\010pull_num\030\002 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -670,7 +670,7 @@ public final class PullPrivateChatReqOuterClass {
     internal_static_PullPrivateChatReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PullPrivateChatReq_descriptor,
-        new java.lang.String[] { "TargetUid", "PullNum", "FromSequence", });
+        new java.lang.String[] { "TargetUid", "FromSequence", "PullNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

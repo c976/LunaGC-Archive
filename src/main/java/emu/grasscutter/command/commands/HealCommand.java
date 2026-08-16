@@ -4,6 +4,8 @@ import static emu.grasscutter.utils.lang.Language.translate;
 
 import emu.grasscutter.command.*;
 import emu.grasscutter.game.player.Player;
+import emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason;
+import emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason;
 import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.server.packet.send.*;
 import java.util.List;
@@ -26,11 +28,28 @@ public final class HealCommand implements CommandHandler {
                             entity.setFightProperty(
                                     FightProperty.FIGHT_PROP_CUR_HP,
                                     entity.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP));
+                                   if (entity.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS) > 0) {
+                                        entity.setFightProperty(
+                                            FightProperty.FIGHT_PROP_CUR_HP_DEBTS,
+                                            0.0f
+                                            
+                                    );
+                                    entity
+                                    .getWorld()
+                                    .broadcastPacket(new PacketEntityFightPropUpdateNotify(entity, FightProperty.FIGHT_PROP_CUR_HP_DEBTS));
+                                    entity.getWorld().broadcastPacket(new PacketEntityFightPropChangeReasonNotify(entity, FightProperty.FIGHT_PROP_CUR_HP_DEBTS, 0f, PropChangeReason.PROP_CHANGE_REASON_NONE,
+                                          
+                                    ChangeHpDebtsReason.CHANGE_HP_DEBTS_PAY_FINISH
+                                   )); 
+                                   }
+
                             entity
                                     .getWorld()
                                     .broadcastPacket(
                                             new PacketAvatarFightPropUpdateNotify(
                                                     entity.getAvatar(), FightProperty.FIGHT_PROP_CUR_HP));
+        
+
                             if (!isAlive) {
                                 entity
                                         .getWorld()

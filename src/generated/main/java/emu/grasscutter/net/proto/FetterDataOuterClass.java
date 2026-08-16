@@ -19,21 +19,21 @@ public final class FetterDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 JNLBOMPONJC = 3;</code>
-     * @return A list containing the jNLBOMPONJC.
+     * <code>repeated uint32 cond_index_list = 3;</code>
+     * @return A list containing the condIndexList.
      */
-    java.util.List<java.lang.Integer> getJNLBOMPONJCList();
+    java.util.List<java.lang.Integer> getCondIndexListList();
     /**
-     * <code>repeated uint32 JNLBOMPONJC = 3;</code>
-     * @return The count of jNLBOMPONJC.
+     * <code>repeated uint32 cond_index_list = 3;</code>
+     * @return The count of condIndexList.
      */
-    int getJNLBOMPONJCCount();
+    int getCondIndexListCount();
     /**
-     * <code>repeated uint32 JNLBOMPONJC = 3;</code>
+     * <code>repeated uint32 cond_index_list = 3;</code>
      * @param index The index of the element to return.
-     * @return The jNLBOMPONJC at the given index.
+     * @return The condIndexList at the given index.
      */
-    int getJNLBOMPONJC(int index);
+    int getCondIndexList(int index);
 
     /**
      * <code>uint32 fetter_id = 1;</code>
@@ -60,7 +60,7 @@ public final class FetterDataOuterClass {
       super(builder);
     }
     private FetterData() {
-      jNLBOMPONJC_ = emptyIntList();
+      condIndexList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -106,21 +106,21 @@ public final class FetterDataOuterClass {
             }
             case 24: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                jNLBOMPONJC_ = newIntList();
+                condIndexList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              jNLBOMPONJC_.addInt(input.readUInt32());
+              condIndexList_.addInt(input.readUInt32());
               break;
             }
             case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                jNLBOMPONJC_ = newIntList();
+                condIndexList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                jNLBOMPONJC_.addInt(input.readUInt32());
+                condIndexList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -141,7 +141,7 @@ public final class FetterDataOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          jNLBOMPONJC_.makeImmutable(); // C
+          condIndexList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -160,33 +160,33 @@ public final class FetterDataOuterClass {
               emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.class, emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.Builder.class);
     }
 
-    public static final int JNLBOMPONJC_FIELD_NUMBER = 3;
-    private com.google.protobuf.Internal.IntList jNLBOMPONJC_;
+    public static final int COND_INDEX_LIST_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList condIndexList_;
     /**
-     * <code>repeated uint32 JNLBOMPONJC = 3;</code>
-     * @return A list containing the jNLBOMPONJC.
+     * <code>repeated uint32 cond_index_list = 3;</code>
+     * @return A list containing the condIndexList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getJNLBOMPONJCList() {
-      return jNLBOMPONJC_;
+        getCondIndexListList() {
+      return condIndexList_;
     }
     /**
-     * <code>repeated uint32 JNLBOMPONJC = 3;</code>
-     * @return The count of jNLBOMPONJC.
+     * <code>repeated uint32 cond_index_list = 3;</code>
+     * @return The count of condIndexList.
      */
-    public int getJNLBOMPONJCCount() {
-      return jNLBOMPONJC_.size();
+    public int getCondIndexListCount() {
+      return condIndexList_.size();
     }
     /**
-     * <code>repeated uint32 JNLBOMPONJC = 3;</code>
+     * <code>repeated uint32 cond_index_list = 3;</code>
      * @param index The index of the element to return.
-     * @return The jNLBOMPONJC at the given index.
+     * @return The condIndexList at the given index.
      */
-    public int getJNLBOMPONJC(int index) {
-      return jNLBOMPONJC_.getInt(index);
+    public int getCondIndexList(int index) {
+      return condIndexList_.getInt(index);
     }
-    private int jNLBOMPONJCMemoizedSerializedSize = -1;
+    private int condIndexListMemoizedSerializedSize = -1;
 
     public static final int FETTER_ID_FIELD_NUMBER = 1;
     private int fetterId_;
@@ -231,12 +231,12 @@ public final class FetterDataOuterClass {
       if (fetterState_ != 0) {
         output.writeUInt32(2, fetterState_);
       }
-      if (getJNLBOMPONJCList().size() > 0) {
+      if (getCondIndexListList().size() > 0) {
         output.writeUInt32NoTag(26);
-        output.writeUInt32NoTag(jNLBOMPONJCMemoizedSerializedSize);
+        output.writeUInt32NoTag(condIndexListMemoizedSerializedSize);
       }
-      for (int i = 0; i < jNLBOMPONJC_.size(); i++) {
-        output.writeUInt32NoTag(jNLBOMPONJC_.getInt(i));
+      for (int i = 0; i < condIndexList_.size(); i++) {
+        output.writeUInt32NoTag(condIndexList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -257,17 +257,17 @@ public final class FetterDataOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < jNLBOMPONJC_.size(); i++) {
+        for (int i = 0; i < condIndexList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(jNLBOMPONJC_.getInt(i));
+            .computeUInt32SizeNoTag(condIndexList_.getInt(i));
         }
         size += dataSize;
-        if (!getJNLBOMPONJCList().isEmpty()) {
+        if (!getCondIndexListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        jNLBOMPONJCMemoizedSerializedSize = dataSize;
+        condIndexListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -284,8 +284,8 @@ public final class FetterDataOuterClass {
       }
       emu.grasscutter.net.proto.FetterDataOuterClass.FetterData other = (emu.grasscutter.net.proto.FetterDataOuterClass.FetterData) obj;
 
-      if (!getJNLBOMPONJCList()
-          .equals(other.getJNLBOMPONJCList())) return false;
+      if (!getCondIndexListList()
+          .equals(other.getCondIndexListList())) return false;
       if (getFetterId()
           != other.getFetterId()) return false;
       if (getFetterState()
@@ -301,9 +301,9 @@ public final class FetterDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getJNLBOMPONJCCount() > 0) {
-        hash = (37 * hash) + JNLBOMPONJC_FIELD_NUMBER;
-        hash = (53 * hash) + getJNLBOMPONJCList().hashCode();
+      if (getCondIndexListCount() > 0) {
+        hash = (37 * hash) + COND_INDEX_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getCondIndexListList().hashCode();
       }
       hash = (37 * hash) + FETTER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getFetterId();
@@ -442,7 +442,7 @@ public final class FetterDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        jNLBOMPONJC_ = emptyIntList();
+        condIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         fetterId_ = 0;
 
@@ -476,10 +476,10 @@ public final class FetterDataOuterClass {
         emu.grasscutter.net.proto.FetterDataOuterClass.FetterData result = new emu.grasscutter.net.proto.FetterDataOuterClass.FetterData(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          jNLBOMPONJC_.makeImmutable();
+          condIndexList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.jNLBOMPONJC_ = jNLBOMPONJC_;
+        result.condIndexList_ = condIndexList_;
         result.fetterId_ = fetterId_;
         result.fetterState_ = fetterState_;
         onBuilt();
@@ -530,13 +530,13 @@ public final class FetterDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FetterDataOuterClass.FetterData other) {
         if (other == emu.grasscutter.net.proto.FetterDataOuterClass.FetterData.getDefaultInstance()) return this;
-        if (!other.jNLBOMPONJC_.isEmpty()) {
-          if (jNLBOMPONJC_.isEmpty()) {
-            jNLBOMPONJC_ = other.jNLBOMPONJC_;
+        if (!other.condIndexList_.isEmpty()) {
+          if (condIndexList_.isEmpty()) {
+            condIndexList_ = other.condIndexList_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureJNLBOMPONJCIsMutable();
-            jNLBOMPONJC_.addAll(other.jNLBOMPONJC_);
+            ensureCondIndexListIsMutable();
+            condIndexList_.addAll(other.condIndexList_);
           }
           onChanged();
         }
@@ -576,80 +576,80 @@ public final class FetterDataOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList jNLBOMPONJC_ = emptyIntList();
-      private void ensureJNLBOMPONJCIsMutable() {
+      private com.google.protobuf.Internal.IntList condIndexList_ = emptyIntList();
+      private void ensureCondIndexListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          jNLBOMPONJC_ = mutableCopy(jNLBOMPONJC_);
+          condIndexList_ = mutableCopy(condIndexList_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 JNLBOMPONJC = 3;</code>
-       * @return A list containing the jNLBOMPONJC.
+       * <code>repeated uint32 cond_index_list = 3;</code>
+       * @return A list containing the condIndexList.
        */
       public java.util.List<java.lang.Integer>
-          getJNLBOMPONJCList() {
+          getCondIndexListList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(jNLBOMPONJC_) : jNLBOMPONJC_;
+                 java.util.Collections.unmodifiableList(condIndexList_) : condIndexList_;
       }
       /**
-       * <code>repeated uint32 JNLBOMPONJC = 3;</code>
-       * @return The count of jNLBOMPONJC.
+       * <code>repeated uint32 cond_index_list = 3;</code>
+       * @return The count of condIndexList.
        */
-      public int getJNLBOMPONJCCount() {
-        return jNLBOMPONJC_.size();
+      public int getCondIndexListCount() {
+        return condIndexList_.size();
       }
       /**
-       * <code>repeated uint32 JNLBOMPONJC = 3;</code>
+       * <code>repeated uint32 cond_index_list = 3;</code>
        * @param index The index of the element to return.
-       * @return The jNLBOMPONJC at the given index.
+       * @return The condIndexList at the given index.
        */
-      public int getJNLBOMPONJC(int index) {
-        return jNLBOMPONJC_.getInt(index);
+      public int getCondIndexList(int index) {
+        return condIndexList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 JNLBOMPONJC = 3;</code>
+       * <code>repeated uint32 cond_index_list = 3;</code>
        * @param index The index to set the value at.
-       * @param value The jNLBOMPONJC to set.
+       * @param value The condIndexList to set.
        * @return This builder for chaining.
        */
-      public Builder setJNLBOMPONJC(
+      public Builder setCondIndexList(
           int index, int value) {
-        ensureJNLBOMPONJCIsMutable();
-        jNLBOMPONJC_.setInt(index, value);
+        ensureCondIndexListIsMutable();
+        condIndexList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 JNLBOMPONJC = 3;</code>
-       * @param value The jNLBOMPONJC to add.
+       * <code>repeated uint32 cond_index_list = 3;</code>
+       * @param value The condIndexList to add.
        * @return This builder for chaining.
        */
-      public Builder addJNLBOMPONJC(int value) {
-        ensureJNLBOMPONJCIsMutable();
-        jNLBOMPONJC_.addInt(value);
+      public Builder addCondIndexList(int value) {
+        ensureCondIndexListIsMutable();
+        condIndexList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 JNLBOMPONJC = 3;</code>
-       * @param values The jNLBOMPONJC to add.
+       * <code>repeated uint32 cond_index_list = 3;</code>
+       * @param values The condIndexList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllJNLBOMPONJC(
+      public Builder addAllCondIndexList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureJNLBOMPONJCIsMutable();
+        ensureCondIndexListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, jNLBOMPONJC_);
+            values, condIndexList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 JNLBOMPONJC = 3;</code>
+       * <code>repeated uint32 cond_index_list = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJNLBOMPONJC() {
-        jNLBOMPONJC_ = emptyIntList();
+      public Builder clearCondIndexList() {
+        condIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
@@ -783,10 +783,10 @@ public final class FetterDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020FetterData.proto\"J\n\nFetterData\022\023\n\013JNLB" +
-      "OMPONJC\030\003 \003(\r\022\021\n\tfetter_id\030\001 \001(\r\022\024\n\014fett" +
-      "er_state\030\002 \001(\rB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "\n\020FetterData.proto\"N\n\nFetterData\022\027\n\017cond" +
+      "_index_list\030\003 \003(\r\022\021\n\tfetter_id\030\001 \001(\r\022\024\n\014" +
+      "fetter_state\030\002 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -797,7 +797,7 @@ public final class FetterDataOuterClass {
     internal_static_FetterData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FetterData_descriptor,
-        new java.lang.String[] { "JNLBOMPONJC", "FetterId", "FetterState", });
+        new java.lang.String[] { "CondIndexList", "FetterId", "FetterState", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

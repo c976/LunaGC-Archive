@@ -19,13 +19,13 @@ public final class AttackHitEffectResultOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float air_strength = 3;</code>
+     * <code>float air_strength = 11;</code>
      * @return The airStrength.
      */
     float getAirStrength();
 
     /**
-     * <code>uint32 hit_eff_level = 4;</code>
+     * <code>uint32 hit_eff_level = 9;</code>
      * @return The hitEffLevel.
      */
     int getHitEffLevel();
@@ -37,13 +37,13 @@ public final class AttackHitEffectResultOuterClass {
     int getOriginalHitEffLevel();
 
     /**
-     * <code>float retreat_strength = 6;</code>
+     * <code>float retreat_strength = 10;</code>
      * @return The retreatStrength.
      */
     float getRetreatStrength();
 
     /**
-     * <code>float hit_halt_time_scale = 13;</code>
+     * <code>float hit_halt_time_scale = 6;</code>
      * @return The hitHaltTimeScale.
      */
     float getHitHaltTimeScale();
@@ -99,16 +99,6 @@ public final class AttackHitEffectResultOuterClass {
             case 0:
               done = true;
               break;
-            case 29: {
-
-              airStrength_ = input.readFloat();
-              break;
-            }
-            case 32: {
-
-              hitEffLevel_ = input.readUInt32();
-              break;
-            }
             case 45: {
 
               hitHaltTime_ = input.readFloat();
@@ -116,17 +106,27 @@ public final class AttackHitEffectResultOuterClass {
             }
             case 53: {
 
+              hitHaltTimeScale_ = input.readFloat();
+              break;
+            }
+            case 72: {
+
+              hitEffLevel_ = input.readUInt32();
+              break;
+            }
+            case 85: {
+
               retreatStrength_ = input.readFloat();
+              break;
+            }
+            case 93: {
+
+              airStrength_ = input.readFloat();
               break;
             }
             case 96: {
 
               originalHitEffLevel_ = input.readUInt32();
-              break;
-            }
-            case 109: {
-
-              hitHaltTimeScale_ = input.readFloat();
               break;
             }
             default: {
@@ -161,10 +161,10 @@ public final class AttackHitEffectResultOuterClass {
               emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.class, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder.class);
     }
 
-    public static final int AIR_STRENGTH_FIELD_NUMBER = 3;
+    public static final int AIR_STRENGTH_FIELD_NUMBER = 11;
     private float airStrength_;
     /**
-     * <code>float air_strength = 3;</code>
+     * <code>float air_strength = 11;</code>
      * @return The airStrength.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class AttackHitEffectResultOuterClass {
       return airStrength_;
     }
 
-    public static final int HIT_EFF_LEVEL_FIELD_NUMBER = 4;
+    public static final int HIT_EFF_LEVEL_FIELD_NUMBER = 9;
     private int hitEffLevel_;
     /**
-     * <code>uint32 hit_eff_level = 4;</code>
+     * <code>uint32 hit_eff_level = 9;</code>
      * @return The hitEffLevel.
      */
     @java.lang.Override
@@ -194,10 +194,10 @@ public final class AttackHitEffectResultOuterClass {
       return originalHitEffLevel_;
     }
 
-    public static final int RETREAT_STRENGTH_FIELD_NUMBER = 6;
+    public static final int RETREAT_STRENGTH_FIELD_NUMBER = 10;
     private float retreatStrength_;
     /**
-     * <code>float retreat_strength = 6;</code>
+     * <code>float retreat_strength = 10;</code>
      * @return The retreatStrength.
      */
     @java.lang.Override
@@ -205,10 +205,10 @@ public final class AttackHitEffectResultOuterClass {
       return retreatStrength_;
     }
 
-    public static final int HIT_HALT_TIME_SCALE_FIELD_NUMBER = 13;
+    public static final int HIT_HALT_TIME_SCALE_FIELD_NUMBER = 6;
     private float hitHaltTimeScale_;
     /**
-     * <code>float hit_halt_time_scale = 13;</code>
+     * <code>float hit_halt_time_scale = 6;</code>
      * @return The hitHaltTimeScale.
      */
     @java.lang.Override
@@ -241,23 +241,23 @@ public final class AttackHitEffectResultOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (airStrength_ != 0F) {
-        output.writeFloat(3, airStrength_);
-      }
-      if (hitEffLevel_ != 0) {
-        output.writeUInt32(4, hitEffLevel_);
-      }
       if (hitHaltTime_ != 0F) {
         output.writeFloat(5, hitHaltTime_);
       }
+      if (hitHaltTimeScale_ != 0F) {
+        output.writeFloat(6, hitHaltTimeScale_);
+      }
+      if (hitEffLevel_ != 0) {
+        output.writeUInt32(9, hitEffLevel_);
+      }
       if (retreatStrength_ != 0F) {
-        output.writeFloat(6, retreatStrength_);
+        output.writeFloat(10, retreatStrength_);
+      }
+      if (airStrength_ != 0F) {
+        output.writeFloat(11, airStrength_);
       }
       if (originalHitEffLevel_ != 0) {
         output.writeUInt32(12, originalHitEffLevel_);
-      }
-      if (hitHaltTimeScale_ != 0F) {
-        output.writeFloat(13, hitHaltTimeScale_);
       }
       unknownFields.writeTo(output);
     }
@@ -268,29 +268,29 @@ public final class AttackHitEffectResultOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (airStrength_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, airStrength_);
-      }
-      if (hitEffLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, hitEffLevel_);
-      }
       if (hitHaltTime_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(5, hitHaltTime_);
       }
+      if (hitHaltTimeScale_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(6, hitHaltTimeScale_);
+      }
+      if (hitEffLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, hitEffLevel_);
+      }
       if (retreatStrength_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, retreatStrength_);
+          .computeFloatSize(10, retreatStrength_);
+      }
+      if (airStrength_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(11, airStrength_);
       }
       if (originalHitEffLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, originalHitEffLevel_);
-      }
-      if (hitHaltTimeScale_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(13, hitHaltTimeScale_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -624,7 +624,7 @@ public final class AttackHitEffectResultOuterClass {
 
       private float airStrength_ ;
       /**
-       * <code>float air_strength = 3;</code>
+       * <code>float air_strength = 11;</code>
        * @return The airStrength.
        */
       @java.lang.Override
@@ -632,7 +632,7 @@ public final class AttackHitEffectResultOuterClass {
         return airStrength_;
       }
       /**
-       * <code>float air_strength = 3;</code>
+       * <code>float air_strength = 11;</code>
        * @param value The airStrength to set.
        * @return This builder for chaining.
        */
@@ -643,7 +643,7 @@ public final class AttackHitEffectResultOuterClass {
         return this;
       }
       /**
-       * <code>float air_strength = 3;</code>
+       * <code>float air_strength = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearAirStrength() {
@@ -655,7 +655,7 @@ public final class AttackHitEffectResultOuterClass {
 
       private int hitEffLevel_ ;
       /**
-       * <code>uint32 hit_eff_level = 4;</code>
+       * <code>uint32 hit_eff_level = 9;</code>
        * @return The hitEffLevel.
        */
       @java.lang.Override
@@ -663,7 +663,7 @@ public final class AttackHitEffectResultOuterClass {
         return hitEffLevel_;
       }
       /**
-       * <code>uint32 hit_eff_level = 4;</code>
+       * <code>uint32 hit_eff_level = 9;</code>
        * @param value The hitEffLevel to set.
        * @return This builder for chaining.
        */
@@ -674,7 +674,7 @@ public final class AttackHitEffectResultOuterClass {
         return this;
       }
       /**
-       * <code>uint32 hit_eff_level = 4;</code>
+       * <code>uint32 hit_eff_level = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearHitEffLevel() {
@@ -717,7 +717,7 @@ public final class AttackHitEffectResultOuterClass {
 
       private float retreatStrength_ ;
       /**
-       * <code>float retreat_strength = 6;</code>
+       * <code>float retreat_strength = 10;</code>
        * @return The retreatStrength.
        */
       @java.lang.Override
@@ -725,7 +725,7 @@ public final class AttackHitEffectResultOuterClass {
         return retreatStrength_;
       }
       /**
-       * <code>float retreat_strength = 6;</code>
+       * <code>float retreat_strength = 10;</code>
        * @param value The retreatStrength to set.
        * @return This builder for chaining.
        */
@@ -736,7 +736,7 @@ public final class AttackHitEffectResultOuterClass {
         return this;
       }
       /**
-       * <code>float retreat_strength = 6;</code>
+       * <code>float retreat_strength = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetreatStrength() {
@@ -748,7 +748,7 @@ public final class AttackHitEffectResultOuterClass {
 
       private float hitHaltTimeScale_ ;
       /**
-       * <code>float hit_halt_time_scale = 13;</code>
+       * <code>float hit_halt_time_scale = 6;</code>
        * @return The hitHaltTimeScale.
        */
       @java.lang.Override
@@ -756,7 +756,7 @@ public final class AttackHitEffectResultOuterClass {
         return hitHaltTimeScale_;
       }
       /**
-       * <code>float hit_halt_time_scale = 13;</code>
+       * <code>float hit_halt_time_scale = 6;</code>
        * @param value The hitHaltTimeScale to set.
        * @return This builder for chaining.
        */
@@ -767,7 +767,7 @@ public final class AttackHitEffectResultOuterClass {
         return this;
       }
       /**
-       * <code>float hit_halt_time_scale = 13;</code>
+       * <code>float hit_halt_time_scale = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearHitHaltTimeScale() {
@@ -875,10 +875,10 @@ public final class AttackHitEffectResultOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033AttackHitEffectResult.proto\"\262\001\n\025Attack" +
-      "HitEffectResult\022\024\n\014air_strength\030\003 \001(\002\022\025\n" +
-      "\rhit_eff_level\030\004 \001(\r\022\036\n\026original_hit_eff" +
-      "_level\030\014 \001(\r\022\030\n\020retreat_strength\030\006 \001(\002\022\033" +
-      "\n\023hit_halt_time_scale\030\r \001(\002\022\025\n\rhit_halt_" +
+      "HitEffectResult\022\024\n\014air_strength\030\013 \001(\002\022\025\n" +
+      "\rhit_eff_level\030\t \001(\r\022\036\n\026original_hit_eff" +
+      "_level\030\014 \001(\r\022\030\n\020retreat_strength\030\n \001(\002\022\033" +
+      "\n\023hit_halt_time_scale\030\006 \001(\002\022\025\n\rhit_halt_" +
       "time\030\005 \001(\002B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };

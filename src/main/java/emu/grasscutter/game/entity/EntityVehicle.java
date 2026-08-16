@@ -1,9 +1,20 @@
 package emu.grasscutter.game.entity;
 
+import emu.grasscutter.GameConstants;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.config.ConfigEntityGadget;
 import emu.grasscutter.data.excels.GadgetData;
+import emu.grasscutter.data.excels.avatar.VehicleData;
+import emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock;
+import emu.grasscutter.game.ability.*;
+import emu.grasscutter.data.binout.config.fields.ConfigAbilityData;
+import emu.grasscutter.game.ability.Ability;
 import emu.grasscutter.game.player.Player;
+import emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility;
+import emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier;
+import emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry;
+import emu.grasscutter.net.proto.AbilityStringOuterClass;
+import emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString;
 import emu.grasscutter.game.props.*;
 import emu.grasscutter.game.world.*;
 import emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo;
@@ -36,25 +47,29 @@ public class EntityVehicle extends EntityBaseGadget {
     @Getter private final int gadgetId;
 
     @Getter @Setter private float curStamina;
+    @Getter @Setter private VehicleData vehicleDataA;
+    @Getter @Setter public float curPhlogiston;
     @Getter private List<VehicleMember> vehicleMembers;
     @Nullable @Getter private ConfigEntityGadget configGadget;
-
+    public int transformEntityId;
     public EntityVehicle(
             Scene scene, Player player, int gadgetId, int pointId, Position pos, Position rot) {
-        super(scene, pos, rot);
-        this.owner = player;
-        this.id = getScene().getWorld().getNextEntityId(EntityIdType.GADGET);
-        this.fightProperties = new Int2FloatOpenHashMap();
-        this.gadgetId = gadgetId;
-        this.pointId = pointId;
-        this.curStamina = 240; // might be in configGadget.GCALKECLLLP.JBAKBEFIMBN.ANBMPHPOALP
-        this.vehicleMembers = new ArrayList<>();
-        GadgetData data = GameData.getGadgetDataMap().get(gadgetId);
-        if (data != null && data.getJsonName() != null) {
-            this.configGadget = GameData.getGadgetConfigData().get(data.getJsonName());
-        }
+                super(scene, pos, rot);
+                this.owner = player;
+                this.id = getScene().getWorld().getNextEntityId(EntityIdType.GADGET);
+                this.fightProperties = new Int2FloatOpenHashMap();
+                this.gadgetId = gadgetId;
+                this.pointId = pointId;
+                this.curStamina = 240; // might be in configGadget.GCALKECLLLP.JBAKBEFIMBN.ANBMPHPOALP
+                this.curPhlogiston = 50;
+                this.vehicleMembers = new ArrayList<>();
+                GadgetData data = GameData.getGadgetDataMap().get(gadgetId);
+                if (data != null && data.getJsonName() != null) {
+                        this.configGadget = GameData.getGadgetConfigData().get(data.getJsonName());
+                }
 
-        fillFightProps(configGadget);
+                fillFightProps(configGadget);
+                this.initAbilities();
     }
 
     @Override
@@ -64,6 +79,13 @@ public class EntityVehicle extends EntityBaseGadget {
         this.addFightProperty(FightProperty.FIGHT_PROP_CHARGE_EFFICIENCY, 0);
     }
 
+    private void addConfigAbility(ConfigAbilityData abilityData) {
+        var data = GameData.getAbilityData(abilityData.getAbilityName());
+
+        if (data != null)
+            this.getScene().getWorld().getHost().getAbilityManager().addAbilityToEntity(this, data);
+    }
+
     @Override
     public SceneEntityInfo toProto() {
 
@@ -71,6 +93,8 @@ public class EntityVehicle extends EntityBaseGadget {
                 VehicleInfo.newBuilder()
                         .setOwnerUid(this.owner.getUid())
                         .setCurStamina(getCurStamina())
+                        .setCurPhlogiston(getCurPhlogiston())
+                        .setTransformEntityId(transformEntityId)
                         .build();
 
         EntityAuthorityInfo authority =
@@ -108,7 +132,7 @@ public class EntityVehicle extends EntityBaseGadget {
         PropPair pair =
                 PropPair.newBuilder()
                         .setType(PlayerProperty.PROP_LEVEL.getId())
-                        .setPropValue(ProtoHelper.newPropValue(PlayerProperty.PROP_LEVEL, 47))
+                        .setPropValue(ProtoHelper.newPropValue(PlayerProperty.PROP_LEVEL, 90))
                         .build();
 
         this.addAllFightPropsToEntityInfo(entityInfo);
@@ -120,6 +144,10 @@ public class EntityVehicle extends EntityBaseGadget {
     @Override
     public void initAbilities() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'initAbilities'");
+        if (this.configGadget != null && this.configGadget.getAbilities() != null) {
+            for (var ability : this.configGadget.getAbilities()) {
+                this.addConfigAbility(ability);
+            }
+        }
     }
 }

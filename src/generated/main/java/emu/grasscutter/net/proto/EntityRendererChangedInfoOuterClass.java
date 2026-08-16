@@ -53,16 +53,16 @@ public final class EntityRendererChangedInfoOuterClass {
         java.lang.String key);
 
     /**
-     * <code>uint32 visibility_count = 2;</code>
-     * @return The visibilityCount.
-     */
-    int getVisibilityCount();
-
-    /**
      * <code>bool is_cached = 3;</code>
      * @return The isCached.
      */
     boolean getIsCached();
+
+    /**
+     * <code>uint32 visibility_count = 2;</code>
+     * @return The visibilityCount.
+     */
+    int getVisibilityCount();
   }
   /**
    * Protobuf type {@code EntityRendererChangedInfo}
@@ -258,17 +258,6 @@ public final class EntityRendererChangedInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int VISIBILITY_COUNT_FIELD_NUMBER = 2;
-    private int visibilityCount_;
-    /**
-     * <code>uint32 visibility_count = 2;</code>
-     * @return The visibilityCount.
-     */
-    @java.lang.Override
-    public int getVisibilityCount() {
-      return visibilityCount_;
-    }
-
     public static final int IS_CACHED_FIELD_NUMBER = 3;
     private boolean isCached_;
     /**
@@ -278,6 +267,17 @@ public final class EntityRendererChangedInfoOuterClass {
     @java.lang.Override
     public boolean getIsCached() {
       return isCached_;
+    }
+
+    public static final int VISIBILITY_COUNT_FIELD_NUMBER = 2;
+    private int visibilityCount_;
+    /**
+     * <code>uint32 visibility_count = 2;</code>
+     * @return The visibilityCount.
+     */
+    @java.lang.Override
+    public int getVisibilityCount() {
+      return visibilityCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -350,10 +350,10 @@ public final class EntityRendererChangedInfoOuterClass {
 
       if (!internalGetChangedRenderers().equals(
           other.internalGetChangedRenderers())) return false;
-      if (getVisibilityCount()
-          != other.getVisibilityCount()) return false;
       if (getIsCached()
           != other.getIsCached()) return false;
+      if (getVisibilityCount()
+          != other.getVisibilityCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -369,11 +369,11 @@ public final class EntityRendererChangedInfoOuterClass {
         hash = (37 * hash) + CHANGED_RENDERERS_FIELD_NUMBER;
         hash = (53 * hash) + internalGetChangedRenderers().hashCode();
       }
-      hash = (37 * hash) + VISIBILITY_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getVisibilityCount();
       hash = (37 * hash) + IS_CACHED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsCached());
+      hash = (37 * hash) + VISIBILITY_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getVisibilityCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -530,9 +530,9 @@ public final class EntityRendererChangedInfoOuterClass {
       public Builder clear() {
         super.clear();
         internalGetMutableChangedRenderers().clear();
-        visibilityCount_ = 0;
-
         isCached_ = false;
+
+        visibilityCount_ = 0;
 
         return this;
       }
@@ -563,8 +563,8 @@ public final class EntityRendererChangedInfoOuterClass {
         int from_bitField0_ = bitField0_;
         result.changedRenderers_ = internalGetChangedRenderers();
         result.changedRenderers_.makeImmutable();
-        result.visibilityCount_ = visibilityCount_;
         result.isCached_ = isCached_;
+        result.visibilityCount_ = visibilityCount_;
         onBuilt();
         return result;
       }
@@ -615,11 +615,11 @@ public final class EntityRendererChangedInfoOuterClass {
         if (other == emu.grasscutter.net.proto.EntityRendererChangedInfoOuterClass.EntityRendererChangedInfo.getDefaultInstance()) return this;
         internalGetMutableChangedRenderers().mergeFrom(
             other.internalGetChangedRenderers());
-        if (other.getVisibilityCount() != 0) {
-          setVisibilityCount(other.getVisibilityCount());
-        }
         if (other.getIsCached() != false) {
           setIsCached(other.getIsCached());
+        }
+        if (other.getVisibilityCount() != 0) {
+          setVisibilityCount(other.getVisibilityCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -779,37 +779,6 @@ public final class EntityRendererChangedInfoOuterClass {
         return this;
       }
 
-      private int visibilityCount_ ;
-      /**
-       * <code>uint32 visibility_count = 2;</code>
-       * @return The visibilityCount.
-       */
-      @java.lang.Override
-      public int getVisibilityCount() {
-        return visibilityCount_;
-      }
-      /**
-       * <code>uint32 visibility_count = 2;</code>
-       * @param value The visibilityCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setVisibilityCount(int value) {
-        
-        visibilityCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 visibility_count = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearVisibilityCount() {
-        
-        visibilityCount_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isCached_ ;
       /**
        * <code>bool is_cached = 3;</code>
@@ -837,6 +806,37 @@ public final class EntityRendererChangedInfoOuterClass {
       public Builder clearIsCached() {
         
         isCached_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int visibilityCount_ ;
+      /**
+       * <code>uint32 visibility_count = 2;</code>
+       * @return The visibilityCount.
+       */
+      @java.lang.Override
+      public int getVisibilityCount() {
+        return visibilityCount_;
+      }
+      /**
+       * <code>uint32 visibility_count = 2;</code>
+       * @param value The visibilityCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVisibilityCount(int value) {
+        
+        visibilityCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 visibility_count = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVisibilityCount() {
+        
+        visibilityCount_ = 0;
         onChanged();
         return this;
       }
@@ -915,8 +915,8 @@ public final class EntityRendererChangedInfoOuterClass {
       "\n\037EntityRendererChangedInfo.proto\"\316\001\n\031En" +
       "tityRendererChangedInfo\022K\n\021changed_rende" +
       "rers\030\001 \003(\01320.EntityRendererChangedInfo.C" +
-      "hangedRenderersEntry\022\030\n\020visibility_count" +
-      "\030\002 \001(\r\022\021\n\tis_cached\030\003 \001(\010\0327\n\025ChangedRend" +
+      "hangedRenderersEntry\022\021\n\tis_cached\030\003 \001(\010\022" +
+      "\030\n\020visibility_count\030\002 \001(\r\0327\n\025ChangedRend" +
       "erersEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\r:\002" +
       "8\001B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
@@ -929,7 +929,7 @@ public final class EntityRendererChangedInfoOuterClass {
     internal_static_EntityRendererChangedInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EntityRendererChangedInfo_descriptor,
-        new java.lang.String[] { "ChangedRenderers", "VisibilityCount", "IsCached", });
+        new java.lang.String[] { "ChangedRenderers", "IsCached", "VisibilityCount", });
     internal_static_EntityRendererChangedInfo_ChangedRenderersEntry_descriptor =
       internal_static_EntityRendererChangedInfo_descriptor.getNestedTypes().get(0);
     internal_static_EntityRendererChangedInfo_ChangedRenderersEntry_fieldAccessorTable = new

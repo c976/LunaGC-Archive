@@ -19,13 +19,13 @@ public final class PostEnterSceneRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 enter_scene_token = 8;</code>
+     * <code>uint32 enter_scene_token = 5;</code>
      * @return The enterSceneToken.
      */
     int getEnterSceneToken();
@@ -75,14 +75,14 @@ public final class PostEnterSceneRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 64: {
+            case 40: {
 
               enterSceneToken_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class PostEnterSceneRspOuterClass {
               emu.grasscutter.net.proto.PostEnterSceneRspOuterClass.PostEnterSceneRsp.class, emu.grasscutter.net.proto.PostEnterSceneRspOuterClass.PostEnterSceneRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class PostEnterSceneRspOuterClass {
       return retcode_;
     }
 
-    public static final int ENTER_SCENE_TOKEN_FIELD_NUMBER = 8;
+    public static final int ENTER_SCENE_TOKEN_FIELD_NUMBER = 5;
     private int enterSceneToken_;
     /**
-     * <code>uint32 enter_scene_token = 8;</code>
+     * <code>uint32 enter_scene_token = 5;</code>
      * @return The enterSceneToken.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class PostEnterSceneRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
-      }
       if (enterSceneToken_ != 0) {
-        output.writeUInt32(8, enterSceneToken_);
+        output.writeUInt32(5, enterSceneToken_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class PostEnterSceneRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
-      }
       if (enterSceneToken_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, enterSceneToken_);
+          .computeUInt32Size(5, enterSceneToken_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class PostEnterSceneRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class PostEnterSceneRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class PostEnterSceneRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -491,7 +491,7 @@ public final class PostEnterSceneRspOuterClass {
 
       private int enterSceneToken_ ;
       /**
-       * <code>uint32 enter_scene_token = 8;</code>
+       * <code>uint32 enter_scene_token = 5;</code>
        * @return The enterSceneToken.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class PostEnterSceneRspOuterClass {
         return enterSceneToken_;
       }
       /**
-       * <code>uint32 enter_scene_token = 8;</code>
+       * <code>uint32 enter_scene_token = 5;</code>
        * @param value The enterSceneToken to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class PostEnterSceneRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 enter_scene_token = 8;</code>
+       * <code>uint32 enter_scene_token = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEnterSceneToken() {
@@ -587,8 +587,8 @@ public final class PostEnterSceneRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027PostEnterSceneRsp.proto\"?\n\021PostEnterSc" +
-      "eneRsp\022\017\n\007retcode\030\002 \001(\005\022\031\n\021enter_scene_t" +
-      "oken\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "eneRsp\022\017\n\007retcode\030\013 \001(\005\022\031\n\021enter_scene_t" +
+      "oken\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -15,73 +15,69 @@ public final class ReportReasonTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Version: 4.6.0
-   * </pre>
-   *
    * Protobuf enum {@code ReportReasonType}
    */
   public enum ReportReasonType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>REPORT_REASON_NONE = 0;</code>
+     * <code>REPORT_REASON_TYPE_NONE = 0;</code>
      */
-    REPORT_REASON_NONE(0),
+    REPORT_REASON_TYPE_NONE(0),
     /**
-     * <code>REPORT_REASON_DECEPTIVE_ADS = 1;</code>
+     * <code>REPORT_REASON_TYPE_DECEPTIVE_ADS = 1;</code>
      */
-    REPORT_REASON_DECEPTIVE_ADS(1),
+    REPORT_REASON_TYPE_DECEPTIVE_ADS(1),
     /**
-     * <code>REPORT_REASON_ABUSING = 2;</code>
+     * <code>REPORT_REASON_TYPE_ABUSING = 2;</code>
      */
-    REPORT_REASON_ABUSING(2),
+    REPORT_REASON_TYPE_ABUSING(2),
     /**
-     * <code>REPORT_REASON_CHEAT = 3;</code>
+     * <code>REPORT_REASON_TYPE_CHEAT = 3;</code>
      */
-    REPORT_REASON_CHEAT(3),
+    REPORT_REASON_TYPE_CHEAT(3),
     /**
-     * <code>REPORT_REASON_POLITICAL = 4;</code>
+     * <code>REPORT_REASON_TYPE_POLITICAL = 4;</code>
      */
-    REPORT_REASON_POLITICAL(4),
+    REPORT_REASON_TYPE_POLITICAL(4),
     /**
-     * <code>REPORT_REASON_OTHER = 5;</code>
+     * <code>REPORT_REASON_TYPE_OTHER = 5;</code>
      */
-    REPORT_REASON_OTHER(5),
+    REPORT_REASON_TYPE_OTHER(5),
     /**
-     * <code>REPORT_REASON_HOME = 6;</code>
+     * <code>REPORT_REASON_TYPE_HOME = 6;</code>
      */
-    REPORT_REASON_HOME(6),
+    REPORT_REASON_TYPE_HOME(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>REPORT_REASON_NONE = 0;</code>
+     * <code>REPORT_REASON_TYPE_NONE = 0;</code>
      */
-    public static final int REPORT_REASON_NONE_VALUE = 0;
+    public static final int REPORT_REASON_TYPE_NONE_VALUE = 0;
     /**
-     * <code>REPORT_REASON_DECEPTIVE_ADS = 1;</code>
+     * <code>REPORT_REASON_TYPE_DECEPTIVE_ADS = 1;</code>
      */
-    public static final int REPORT_REASON_DECEPTIVE_ADS_VALUE = 1;
+    public static final int REPORT_REASON_TYPE_DECEPTIVE_ADS_VALUE = 1;
     /**
-     * <code>REPORT_REASON_ABUSING = 2;</code>
+     * <code>REPORT_REASON_TYPE_ABUSING = 2;</code>
      */
-    public static final int REPORT_REASON_ABUSING_VALUE = 2;
+    public static final int REPORT_REASON_TYPE_ABUSING_VALUE = 2;
     /**
-     * <code>REPORT_REASON_CHEAT = 3;</code>
+     * <code>REPORT_REASON_TYPE_CHEAT = 3;</code>
      */
-    public static final int REPORT_REASON_CHEAT_VALUE = 3;
+    public static final int REPORT_REASON_TYPE_CHEAT_VALUE = 3;
     /**
-     * <code>REPORT_REASON_POLITICAL = 4;</code>
+     * <code>REPORT_REASON_TYPE_POLITICAL = 4;</code>
      */
-    public static final int REPORT_REASON_POLITICAL_VALUE = 4;
+    public static final int REPORT_REASON_TYPE_POLITICAL_VALUE = 4;
     /**
-     * <code>REPORT_REASON_OTHER = 5;</code>
+     * <code>REPORT_REASON_TYPE_OTHER = 5;</code>
      */
-    public static final int REPORT_REASON_OTHER_VALUE = 5;
+    public static final int REPORT_REASON_TYPE_OTHER_VALUE = 5;
     /**
-     * <code>REPORT_REASON_HOME = 6;</code>
+     * <code>REPORT_REASON_TYPE_HOME = 6;</code>
      */
-    public static final int REPORT_REASON_HOME_VALUE = 6;
+    public static final int REPORT_REASON_TYPE_HOME_VALUE = 6;
 
 
     public final int getNumber() {
@@ -108,13 +104,13 @@ public final class ReportReasonTypeOuterClass {
      */
     public static ReportReasonType forNumber(int value) {
       switch (value) {
-        case 0: return REPORT_REASON_NONE;
-        case 1: return REPORT_REASON_DECEPTIVE_ADS;
-        case 2: return REPORT_REASON_ABUSING;
-        case 3: return REPORT_REASON_CHEAT;
-        case 4: return REPORT_REASON_POLITICAL;
-        case 5: return REPORT_REASON_OTHER;
-        case 6: return REPORT_REASON_HOME;
+        case 0: return REPORT_REASON_TYPE_NONE;
+        case 1: return REPORT_REASON_TYPE_DECEPTIVE_ADS;
+        case 2: return REPORT_REASON_TYPE_ABUSING;
+        case 3: return REPORT_REASON_TYPE_CHEAT;
+        case 4: return REPORT_REASON_TYPE_POLITICAL;
+        case 5: return REPORT_REASON_TYPE_OTHER;
+        case 6: return REPORT_REASON_TYPE_HOME;
         default: return null;
       }
     }
@@ -180,13 +176,14 @@ public final class ReportReasonTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026ReportReasonType.proto*\315\001\n\020ReportReaso" +
-      "nType\022\026\n\022REPORT_REASON_NONE\020\000\022\037\n\033REPORT_" +
-      "REASON_DECEPTIVE_ADS\020\001\022\031\n\025REPORT_REASON_" +
-      "ABUSING\020\002\022\027\n\023REPORT_REASON_CHEAT\020\003\022\033\n\027RE" +
-      "PORT_REASON_POLITICAL\020\004\022\027\n\023REPORT_REASON" +
-      "_OTHER\020\005\022\026\n\022REPORT_REASON_HOME\020\006B\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\026ReportReasonType.proto*\360\001\n\020ReportReaso" +
+      "nType\022\033\n\027REPORT_REASON_TYPE_NONE\020\000\022$\n RE" +
+      "PORT_REASON_TYPE_DECEPTIVE_ADS\020\001\022\036\n\032REPO" +
+      "RT_REASON_TYPE_ABUSING\020\002\022\034\n\030REPORT_REASO" +
+      "N_TYPE_CHEAT\020\003\022 \n\034REPORT_REASON_TYPE_POL" +
+      "ITICAL\020\004\022\034\n\030REPORT_REASON_TYPE_OTHER\020\005\022\033" +
+      "\n\027REPORT_REASON_TYPE_HOME\020\006B\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

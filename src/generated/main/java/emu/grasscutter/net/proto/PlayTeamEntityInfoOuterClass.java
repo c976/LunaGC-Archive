@@ -34,10 +34,10 @@ public final class PlayTeamEntityInfoOuterClass {
     emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getAbilityInfoOrBuilder();
 
     /**
-     * <code>uint32 authority_peer_id = 3;</code>
-     * @return The authorityPeerId.
+     * <code>uint32 gadget_config_id = 5;</code>
+     * @return The gadgetConfigId.
      */
-    int getAuthorityPeerId();
+    int getGadgetConfigId();
 
     /**
      * <code>uint32 entity_id = 1;</code>
@@ -46,10 +46,10 @@ public final class PlayTeamEntityInfoOuterClass {
     int getEntityId();
 
     /**
-     * <code>uint32 gadget_config_id = 5;</code>
-     * @return The gadgetConfigId.
+     * <code>uint32 authority_peer_id = 3;</code>
+     * @return The authorityPeerId.
      */
-    int getGadgetConfigId();
+    int getAuthorityPeerId();
 
     /**
      * <code>uint32 player_uid = 2;</code>
@@ -193,15 +193,15 @@ public final class PlayTeamEntityInfoOuterClass {
       return getAbilityInfo();
     }
 
-    public static final int AUTHORITY_PEER_ID_FIELD_NUMBER = 3;
-    private int authorityPeerId_;
+    public static final int GADGET_CONFIG_ID_FIELD_NUMBER = 5;
+    private int gadgetConfigId_;
     /**
-     * <code>uint32 authority_peer_id = 3;</code>
-     * @return The authorityPeerId.
+     * <code>uint32 gadget_config_id = 5;</code>
+     * @return The gadgetConfigId.
      */
     @java.lang.Override
-    public int getAuthorityPeerId() {
-      return authorityPeerId_;
+    public int getGadgetConfigId() {
+      return gadgetConfigId_;
     }
 
     public static final int ENTITY_ID_FIELD_NUMBER = 1;
@@ -215,15 +215,15 @@ public final class PlayTeamEntityInfoOuterClass {
       return entityId_;
     }
 
-    public static final int GADGET_CONFIG_ID_FIELD_NUMBER = 5;
-    private int gadgetConfigId_;
+    public static final int AUTHORITY_PEER_ID_FIELD_NUMBER = 3;
+    private int authorityPeerId_;
     /**
-     * <code>uint32 gadget_config_id = 5;</code>
-     * @return The gadgetConfigId.
+     * <code>uint32 authority_peer_id = 3;</code>
+     * @return The authorityPeerId.
      */
     @java.lang.Override
-    public int getGadgetConfigId() {
-      return gadgetConfigId_;
+    public int getAuthorityPeerId() {
+      return authorityPeerId_;
     }
 
     public static final int PLAYER_UID_FIELD_NUMBER = 2;
@@ -315,12 +315,12 @@ public final class PlayTeamEntityInfoOuterClass {
         if (!getAbilityInfo()
             .equals(other.getAbilityInfo())) return false;
       }
-      if (getAuthorityPeerId()
-          != other.getAuthorityPeerId()) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
       if (getGadgetConfigId()
           != other.getGadgetConfigId()) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (getAuthorityPeerId()
+          != other.getAuthorityPeerId()) return false;
       if (getPlayerUid()
           != other.getPlayerUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -338,12 +338,12 @@ public final class PlayTeamEntityInfoOuterClass {
         hash = (37 * hash) + ABILITY_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getAbilityInfo().hashCode();
       }
-      hash = (37 * hash) + AUTHORITY_PEER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAuthorityPeerId();
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       hash = (37 * hash) + GADGET_CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetConfigId();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + AUTHORITY_PEER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAuthorityPeerId();
       hash = (37 * hash) + PLAYER_UID_FIELD_NUMBER;
       hash = (53 * hash) + getPlayerUid();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -485,11 +485,11 @@ public final class PlayTeamEntityInfoOuterClass {
           abilityInfo_ = null;
           abilityInfoBuilder_ = null;
         }
-        authorityPeerId_ = 0;
+        gadgetConfigId_ = 0;
 
         entityId_ = 0;
 
-        gadgetConfigId_ = 0;
+        authorityPeerId_ = 0;
 
         playerUid_ = 0;
 
@@ -524,9 +524,9 @@ public final class PlayTeamEntityInfoOuterClass {
         } else {
           result.abilityInfo_ = abilityInfoBuilder_.build();
         }
-        result.authorityPeerId_ = authorityPeerId_;
-        result.entityId_ = entityId_;
         result.gadgetConfigId_ = gadgetConfigId_;
+        result.entityId_ = entityId_;
+        result.authorityPeerId_ = authorityPeerId_;
         result.playerUid_ = playerUid_;
         onBuilt();
         return result;
@@ -579,14 +579,14 @@ public final class PlayTeamEntityInfoOuterClass {
         if (other.hasAbilityInfo()) {
           mergeAbilityInfo(other.getAbilityInfo());
         }
-        if (other.getAuthorityPeerId() != 0) {
-          setAuthorityPeerId(other.getAuthorityPeerId());
+        if (other.getGadgetConfigId() != 0) {
+          setGadgetConfigId(other.getGadgetConfigId());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.getGadgetConfigId() != 0) {
-          setGadgetConfigId(other.getGadgetConfigId());
+        if (other.getAuthorityPeerId() != 0) {
+          setAuthorityPeerId(other.getAuthorityPeerId());
         }
         if (other.getPlayerUid() != 0) {
           setPlayerUid(other.getPlayerUid());
@@ -739,33 +739,33 @@ public final class PlayTeamEntityInfoOuterClass {
         return abilityInfoBuilder_;
       }
 
-      private int authorityPeerId_ ;
+      private int gadgetConfigId_ ;
       /**
-       * <code>uint32 authority_peer_id = 3;</code>
-       * @return The authorityPeerId.
+       * <code>uint32 gadget_config_id = 5;</code>
+       * @return The gadgetConfigId.
        */
       @java.lang.Override
-      public int getAuthorityPeerId() {
-        return authorityPeerId_;
+      public int getGadgetConfigId() {
+        return gadgetConfigId_;
       }
       /**
-       * <code>uint32 authority_peer_id = 3;</code>
-       * @param value The authorityPeerId to set.
+       * <code>uint32 gadget_config_id = 5;</code>
+       * @param value The gadgetConfigId to set.
        * @return This builder for chaining.
        */
-      public Builder setAuthorityPeerId(int value) {
+      public Builder setGadgetConfigId(int value) {
         
-        authorityPeerId_ = value;
+        gadgetConfigId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 authority_peer_id = 3;</code>
+       * <code>uint32 gadget_config_id = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAuthorityPeerId() {
+      public Builder clearGadgetConfigId() {
         
-        authorityPeerId_ = 0;
+        gadgetConfigId_ = 0;
         onChanged();
         return this;
       }
@@ -801,33 +801,33 @@ public final class PlayTeamEntityInfoOuterClass {
         return this;
       }
 
-      private int gadgetConfigId_ ;
+      private int authorityPeerId_ ;
       /**
-       * <code>uint32 gadget_config_id = 5;</code>
-       * @return The gadgetConfigId.
+       * <code>uint32 authority_peer_id = 3;</code>
+       * @return The authorityPeerId.
        */
       @java.lang.Override
-      public int getGadgetConfigId() {
-        return gadgetConfigId_;
+      public int getAuthorityPeerId() {
+        return authorityPeerId_;
       }
       /**
-       * <code>uint32 gadget_config_id = 5;</code>
-       * @param value The gadgetConfigId to set.
+       * <code>uint32 authority_peer_id = 3;</code>
+       * @param value The authorityPeerId to set.
        * @return This builder for chaining.
        */
-      public Builder setGadgetConfigId(int value) {
+      public Builder setAuthorityPeerId(int value) {
         
-        gadgetConfigId_ = value;
+        authorityPeerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gadget_config_id = 5;</code>
+       * <code>uint32 authority_peer_id = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGadgetConfigId() {
+      public Builder clearAuthorityPeerId() {
         
-        gadgetConfigId_ = 0;
+        authorityPeerId_ = 0;
         onChanged();
         return this;
       }
@@ -932,8 +932,8 @@ public final class PlayTeamEntityInfoOuterClass {
       "\n\030PlayTeamEntityInfo.proto\032\032AbilitySyncS" +
       "tateInfo.proto\"\235\001\n\022PlayTeamEntityInfo\022+\n" +
       "\014ability_info\030\006 \001(\0132\025.AbilitySyncStateIn" +
-      "fo\022\031\n\021authority_peer_id\030\003 \001(\r\022\021\n\tentity_" +
-      "id\030\001 \001(\r\022\030\n\020gadget_config_id\030\005 \001(\r\022\022\n\npl" +
+      "fo\022\030\n\020gadget_config_id\030\005 \001(\r\022\021\n\tentity_i" +
+      "d\030\001 \001(\r\022\031\n\021authority_peer_id\030\003 \001(\r\022\022\n\npl" +
       "ayer_uid\030\002 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
@@ -947,7 +947,7 @@ public final class PlayTeamEntityInfoOuterClass {
     internal_static_PlayTeamEntityInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayTeamEntityInfo_descriptor,
-        new java.lang.String[] { "AbilityInfo", "AuthorityPeerId", "EntityId", "GadgetConfigId", "PlayerUid", });
+        new java.lang.String[] { "AbilityInfo", "GadgetConfigId", "EntityId", "AuthorityPeerId", "PlayerUid", });
     emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.getDescriptor();
   }
 

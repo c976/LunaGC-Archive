@@ -8,9 +8,11 @@ import emu.grasscutter.game.entity.EntityAvatar;
 import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.player.BasePlayerManager;
 import emu.grasscutter.game.player.Player;
+import emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo;
 import emu.grasscutter.server.event.entity.EntityCreationEvent;
 import emu.grasscutter.server.packet.send.PacketAvatarChangeCostumeNotify;
 import emu.grasscutter.server.packet.send.PacketAvatarFlycloakChangeNotify;
+import emu.grasscutter.server.packet.send.PacketAvatarTraceEffectChangeNotify;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import it.unimi.dsi.fastutil.longs.Long2ObjectMap;
@@ -130,6 +132,25 @@ public class AvatarStorage extends BasePlayerManager implements Iterable<Avatar>
         // Done
         return true;
     }
+    public boolean changeTraceEffect(long avatarGuid, int traceEffectId) {
+        Avatar avatar = this.getAvatarByGuid(avatarGuid);
+        if (avatar == null || !this.getPlayer().getTraceEffectList().contains(traceEffectId) && traceEffectId != 0) {
+            return false;
+        }
+        avatar.setTraceEffect(traceEffectId);
+        avatar.save();
+        EntityAvatar entity = avatar.getAsEntity();
+        if (entity == null) {
+            entity =
+                    EntityCreationEvent.call(
+                            EntityAvatar.class, new Class<?>[] {Avatar.class}, new Object[] {avatar});
+            getPlayer().getWorld().broadcastPacket(new PacketAvatarTraceEffectChangeNotify(entity));
+        } else {
+            getPlayer().getWorld().broadcastPacket(new PacketAvatarTraceEffectChangeNotify(entity));
+        } 
+        return true;
+    }
+
 
     public void loadFromDatabase() {
         if (this.isLoaded()) return;

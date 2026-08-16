@@ -31,6 +31,10 @@ public final class MapMarkFromTypeOuterClass {
      * <code>MAP_MARK_FROM_TYPE_QUEST = 2;</code>
      */
     MAP_MARK_FROM_TYPE_QUEST(2),
+    /**
+     * <code>MAP_MARK_FROM_TYPE_NOE = 3;</code>
+     */
+    MAP_MARK_FROM_TYPE_NOE(3),
     UNRECOGNIZED(-1),
     ;
 
@@ -46,6 +50,10 @@ public final class MapMarkFromTypeOuterClass {
      * <code>MAP_MARK_FROM_TYPE_QUEST = 2;</code>
      */
     public static final int MAP_MARK_FROM_TYPE_QUEST_VALUE = 2;
+    /**
+     * <code>MAP_MARK_FROM_TYPE_NOE = 3;</code>
+     */
+    public static final int MAP_MARK_FROM_TYPE_NOE_VALUE = 3;
 
 
     public final int getNumber() {
@@ -75,6 +83,7 @@ public final class MapMarkFromTypeOuterClass {
         case 0: return MAP_MARK_FROM_TYPE_NONE;
         case 1: return MAP_MARK_FROM_TYPE_MONSTER;
         case 2: return MAP_MARK_FROM_TYPE_QUEST;
+        case 3: return MAP_MARK_FROM_TYPE_NOE;
         default: return null;
       }
     }
@@ -140,11 +149,11 @@ public final class MapMarkFromTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025MapMarkFromType.proto*l\n\017MapMarkFromTy" +
-      "pe\022\033\n\027MAP_MARK_FROM_TYPE_NONE\020\000\022\036\n\032MAP_M" +
-      "ARK_FROM_TYPE_MONSTER\020\001\022\034\n\030MAP_MARK_FROM" +
-      "_TYPE_QUEST\020\002B\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n\025MapMarkFromType.proto*\210\001\n\017MapMarkFromT" +
+      "ype\022\033\n\027MAP_MARK_FROM_TYPE_NONE\020\000\022\036\n\032MAP_" +
+      "MARK_FROM_TYPE_MONSTER\020\001\022\034\n\030MAP_MARK_FRO" +
+      "M_TYPE_QUEST\020\002\022\032\n\026MAP_MARK_FROM_TYPE_NOE" +
+      "\020\003B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

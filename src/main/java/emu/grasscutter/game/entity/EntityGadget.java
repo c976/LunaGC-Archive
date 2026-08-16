@@ -161,7 +161,7 @@ public class EntityGadget extends EntityBaseGadget {
         this.state = state;
         // Cache the gadget state
         if (metaGadget != null && metaGadget.group != null) {
-            var instance = getScene().getScriptManager().getCachedGroupInstanceById(metaGadget.group.id);
+            var instance = getScene().getScriptManager().getGroupInstanceById(metaGadget.group.id);
             if (instance != null) instance.cacheGadgetState(metaGadget, state);
         }
     }
@@ -258,7 +258,7 @@ public class EntityGadget extends EntityBaseGadget {
                         new ScriptArgs(this.getGroupId(), EventType.EVENT_ANY_GADGET_DIE, this.getConfigId()));
 
         SceneGroupInstance groupInstance =
-                getScene().getScriptManager().getCachedGroupInstanceById(this.getGroupId());
+                getScene().getScriptManager().getGroupInstanceById(this.getGroupId());
         if (groupInstance != null && metaGadget != null)
             groupInstance.getDeadEntities().add(metaGadget.config_id);
     }

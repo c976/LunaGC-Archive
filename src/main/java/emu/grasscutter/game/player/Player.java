@@ -38,6 +38,7 @@ import emu.grasscutter.net.packet.BasePacket;
 import emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry;
 import emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult;
 import emu.grasscutter.net.proto.CombatInvokeEntryOuterClass.CombatInvokeEntry;
+import emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry;
 import emu.grasscutter.net.proto.GadgetInteractReqOuterClass.GadgetInteractReq;
 import emu.grasscutter.net.proto.MpSettingTypeOuterClass.MpSettingType;
 import emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo;
@@ -52,16 +53,20 @@ import emu.grasscutter.scripts.data.SceneRegion;
 import emu.grasscutter.server.event.player.*;
 import emu.grasscutter.server.game.*;
 import emu.grasscutter.server.game.GameSession.SessionState;
+import emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType;
 import emu.grasscutter.server.packet.send.*;
 import emu.grasscutter.utils.*;
 import emu.grasscutter.utils.helpers.DateHelper;
 import emu.grasscutter.utils.objects.FieldFetch;
 import it.unimi.dsi.fastutil.ints.*;
+
+
 import lombok.*;
 
 import java.time.*;
 import java.util.*;
 import java.util.concurrent.*;
+
 
 import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 
@@ -77,6 +82,7 @@ public class Player implements PlayerHook, FieldFetch {
     @Getter private String nickname;
     @Getter private String signature;
     @Getter private int headImage;
+    @Getter private Map<Integer, Set<Integer>> sceneTags;
     @Getter private int nameCardId = 210001;
     @Getter private Position position;
     @Getter @Setter private Position prevPos;
@@ -100,6 +106,7 @@ public class Player implements PlayerHook, FieldFetch {
 
     @Getter private Set<Integer> nameCardList;
     @Getter private Set<Integer> flyCloakList;
+    @Getter private Set<Integer> traceEffectList;
     @Getter private Set<Integer> costumeList;
     @Getter private Set<Integer> personalLineList;
     @Getter @Setter private Set<Integer> rewardedLevels;
@@ -116,7 +123,6 @@ public class Player implements PlayerHook, FieldFetch {
     @Getter private Map<Integer, ActiveCookCompoundData> activeCookCompounds;
     @Getter private Map<Integer, Integer> questGlobalVariables;
     @Getter private Map<Integer, Integer> openStates;
-    @Getter private Map<Integer, Set<Integer>> sceneTags;
     @Getter @Setter private Map<Integer, Set<Integer>> unlockedSceneAreas;
     @Getter @Setter private Map<Integer, Set<Integer>> unlockedScenePoints;
     @Getter @Setter private List<Integer> chatEmojiIdList;
@@ -202,7 +208,8 @@ public class Player implements PlayerHook, FieldFetch {
 
     @Getter @Setter private ElementType mainCharacterElement = ElementType.None;
 
-    @Getter @Setter private Map<Integer, CityInfoData> cityInfoData; // cityId -> CityData
+    @Getter @Setter private Map<Integer, CityInfoData> cityInfoData;
+    @Getter @Setter private float phlogistonValue; // cityId -> CityData
 
     @Deprecated
     @SuppressWarnings({"rawtypes", "unchecked"}) // Morphia only!
@@ -233,6 +240,7 @@ public class Player implements PlayerHook, FieldFetch {
         this.gachaInfo = new PlayerGachaInfo();
         this.nameCardList = new HashSet<>();
         this.flyCloakList = new HashSet<>();
+        this.traceEffectList = new HashSet<>();
         this.costumeList = new HashSet<>();
         this.personalLineList = new HashSet<>();
         this.towerData = new TowerData();
@@ -282,6 +290,7 @@ public class Player implements PlayerHook, FieldFetch {
         this.cookingCompoundManager = new CookingCompoundManager(this);
         this.satiationManager = new SatiationManager(this);
         this.talkManager = new TalkManager(this);
+        setPhlogistonValue(100);
     }
 
     // On player creation
@@ -301,7 +310,10 @@ public class Player implements PlayerHook, FieldFetch {
         this.applyStartingSceneTags();
         this.getFlyCloakList().add(140001);
         this.getNameCardList().add(210001);
-
+        setPhlogistonValue(100);
+        for(int t=0; t < 20; t++){
+            this.getTraceEffectList().add(215001+t);
+        }
         this.mapMarksManager = new MapMarksManager(this);
         this.staminaManager = new StaminaManager(this);
         this.sotsManager = new SotSManager(this);
@@ -320,6 +332,12 @@ public class Player implements PlayerHook, FieldFetch {
     public Player getPlayer() {
         return this;
     }
+    public float addPhlogistonValue(float amount) {
+        setPhlogistonValue(getPhlogistonValue() + amount);
+        return getPhlogistonValue();
+    
+    }
+ 
 
     /**
      * Updates the player's game time if it has changed.
@@ -344,6 +362,8 @@ public class Player implements PlayerHook, FieldFetch {
     public int getUid() {
         return id;
     }
+    // Method to get the Phlogiston value from the AbilityScalarValueEntry
+    // Method to get the current Phlogiston value
 
     public void setUid(int id) {
         this.id = id;
@@ -585,11 +605,14 @@ public class Player implements PlayerHook, FieldFetch {
                 withQuesting ? 10000 : 0);
         this.setOrFetch(PlayerProperty.PROP_PLAYER_RESIN, 200);
 
+        this.setProperty(PlayerProperty.PROP_PHLOGISTON_ENABLE, 1);
         // The player's current stamina is always their max stamina.
         this.setProperty(PlayerProperty.PROP_CUR_PERSIST_STAMINA,
             this.getProperty(PlayerProperty.PROP_MAX_STAMINA));
         this.setProperty(PlayerProperty.PROP_DIVE_CUR_STAMINA,
                 this.getProperty(PlayerProperty.PROP_DIVE_MAX_STAMINA));
+        this.setProperty(PlayerProperty.PROP_CUR_PHLOGISTON,
+            this.getProperty(PlayerProperty.PROP_PHLOGISTON_MAX_VALUE));    
     }
 
     /**
@@ -638,6 +661,9 @@ public class Player implements PlayerHook, FieldFetch {
     public int getCrystals() {
         return this.getProperty(PlayerProperty.PROP_PLAYER_MCOIN);
     }
+
+    // Method to get the value dynamically based on the string key
+
 
     public boolean setCrystals(int crystals) {
         return this.setProperty(PlayerProperty.PROP_PLAYER_MCOIN, crystals);
@@ -969,6 +995,12 @@ public class Player implements PlayerHook, FieldFetch {
         this.getCostumeList().add(costumeId);
         this.sendPacket(new PacketAvatarGainCostumeNotify(costumeId));
     }
+    
+    public void addTraceEffect(int traceEffectId) {
+        this.getTraceEffectList().add(traceEffectId);
+        this.sendPacket(new PacketAvatarGainTraceEffectNotify(traceEffectId));
+    }
+    
 
     public int getCostumeFrom(int avatarId) {
         var avatars = this.getAvatars();

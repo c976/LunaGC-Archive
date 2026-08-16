@@ -32,6 +32,7 @@ import emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo;
 import emu.grasscutter.server.packet.send.*;
 import emu.grasscutter.utils.helpers.ProtoHelper;
 import it.unimi.dsi.fastutil.ints.*;
+
 import java.util.*;
 import java.util.stream.Stream;
 import javax.annotation.*;
@@ -50,6 +51,7 @@ public class Avatar {
     @Nullable @Transient @Getter private AvatarSkillDepotData skillDepot;
     @Transient @Getter private long guid; // Player unique id
     @Getter private int avatarId; // Id of avatar
+    @Getter @Setter public float nyxValue;
     @Getter @Setter private int level = 1;
     @Getter @Setter private int exp;
     @Getter @Setter private int promoteLevel;
@@ -83,6 +85,7 @@ public class Avatar {
 
     @Getter @Setter private int nameCardRewardId;
     @Getter @Setter private int nameCardId;
+    @Getter @Setter private int traceEffect;
 
     // trial avatar property
     @Getter @Setter private int trialAvatarId = 0;
@@ -140,6 +143,7 @@ public class Avatar {
         this.recalcStats();
         this.currentHp = getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
         setFightProperty(FightProperty.FIGHT_PROP_CUR_HP, this.currentHp);
+        setFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY, 100f);
         this.currentEnergy = 0f;
         // Load handler
         this.onLoad();
@@ -361,6 +365,7 @@ public class Avatar {
         }
     }
 
+
     public void setFightProperty(FightProperty prop, float value) {
         this.getFightProperties().put(prop.getId(), value);
     }
@@ -371,6 +376,24 @@ public class Avatar {
 
     public void addFightProperty(FightProperty prop, float value) {
         this.getFightProperties().put(prop.getId(), getFightProperty(prop) + value);
+    }
+    public void addSpecialEnergy(float energy){
+       float curSpecialEnergy = getFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY);
+       float maxSpecialEnergy = getFightProperty(FightProperty.FIGHT_PROP_MAX_SPECIAL_ENERGY);
+       curSpecialEnergy+=energy;
+        if (curSpecialEnergy >= maxSpecialEnergy){
+            curSpecialEnergy = maxSpecialEnergy;
+        }
+       setFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY, curSpecialEnergy);
+       getPlayer().sendPacket(new PacketAvatarFightPropNotify(this));
+    }
+
+    public void clearSpecialEnergy(){
+       float curSpecialEnergy = getFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY);
+       float maxSpecialEnergy = getFightProperty(FightProperty.FIGHT_PROP_MAX_SPECIAL_ENERGY);
+       curSpecialEnergy = 0;
+       setFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY, curSpecialEnergy);
+       getPlayer().sendPacket(new PacketAvatarFightPropNotify(this));
     }
 
     public float getFightProperty(FightProperty prop) {
@@ -531,6 +554,8 @@ public class Avatar {
                         : 0f;
 
         float hpDebt = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS);
+        float specialEnergy = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY);
+        float nyxValue = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_NATLAN_HP);
 
         // Clear properties
         this.getFightProperties().clear();
@@ -544,6 +569,10 @@ public class Avatar {
         this.setFightProperty(FightProperty.FIGHT_PROP_CRITICAL, data.getBaseCritical());
         this.setFightProperty(FightProperty.FIGHT_PROP_CRITICAL_HURT, data.getBaseCriticalHurt());
         this.setFightProperty(FightProperty.FIGHT_PROP_CHARGE_EFFICIENCY, 1f);
+        this.setFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY, specialEnergy);
+        this.setFightProperty(FightProperty.FIGHT_PROP_CUR_NATLAN_HP, nyxValue);
+        this.setFightProperty(FightProperty.FIGHT_PROP_MAX_SPECIAL_ENERGY, 200);
+        this.setFightProperty(FightProperty.FIGHT_PROP_START_SPECIAL_ENERGY, 100);
 
         if (promoteData != null) {
             for (FightPropData fightPropData : promoteData.getAddProps()) {
@@ -727,6 +756,8 @@ public class Avatar {
         this.setFightProperty(
                 FightProperty.FIGHT_PROP_CUR_HP_DEBTS,
                 hpDebt);
+                
+
 
         // Packet
         if (getPlayer() != null && getPlayer().hasSentLoginPackets()) {
@@ -1039,7 +1070,8 @@ public class Avatar {
                         .setBornTime(this.getBornTime())
                         .setFetterInfo(avatarFetter)
                         .setWearingFlycloakId(this.getFlyCloak())
-                        .setCostumeId(this.getCostume());
+                        .setCostumeId(this.getCostume())
+                        .setTraceEffectId(this.getTraceEffect());
 
         this.getSkillExtraChargeMap()
                 .forEach(
@@ -1068,6 +1100,7 @@ public class Avatar {
 
         return avatarInfo.build();
     }
+    
 
     // used only in character showcase
     public ShowAvatarInfo toShowAvatarInfoProto() {
