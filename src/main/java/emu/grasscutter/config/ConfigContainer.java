@@ -285,6 +285,8 @@ public class ConfigContainer {
         public Rates rates = new Rates();
 
         public HandbookOptions handbook = new HandbookOptions();
+        public BirthdayMailOptions birthdayMail = new BirthdayMailOptions();
+        public WatermarkOptions watermark = new WatermarkOptions();
 
         public static class InventoryLimits {
             public int weapons = 2000;
@@ -315,6 +317,58 @@ public class ConfigContainer {
         public static class Questing {
             /* Should questing behavior be used? */
             public boolean enabled = false;
+        }
+
+        public static class WatermarkOptions {
+            /* Replace the client's beta watermark text for everyone on this server. */
+            public boolean enabled = true;
+            /* Text to show. Capped at 254 bytes by the payload format; longer values are ignored. */
+            public String text = "TuttyTeam";
+            /* Colour as hex (#RRGGBB or #RGB). Leave blank to keep the client's default grey. */
+            public String color = "#FFFFFF";
+            /* Set to fade from "color" to this one across the text. Blank means a flat colour.
+             * A gradient costs ~24 bytes per character, so it fits roughly 10 characters. */
+            public String gradientTo = "#00FF80";
+            /* CmdId to send the wind seed notify under. 1242 is confirmed correct for 6.7; it is
+             * left configurable because it is renumbered every version and finding it again should
+             * not need a rebuild. Set to 0 to send nothing at all. */
+            public int cmdId = 1242;
+            /* Protobuf field number the payload is written to. 8 in 6.7; 6.6 used 11. */
+            public int payloadField = 8;
+            /* Try several candidates in one login instead of one per restart. Each entry is
+             * "cmdId:payloadField"; the watermark is sent once under each. The client ignores a
+             * CmdId it does not know, so the wrong ones are inert - if the text appears, bisect
+             * this list to find which one landed. Empty means just use cmdId/payloadField above.
+             * Never put 8191 or 9250 in here: those are PlayerLoginRsp and GetPlayerTokenRsp, and
+             * a Lua payload sent under them breaks login rather than the watermark. */
+            public String[] sweep = {};
+        }
+
+        public static class BirthdayMailOptions {
+            /* Should players receive a mail with a gift on their in-game birthday? */
+            public boolean enabled = true;
+            /* How many days the birthday mail stays claimable before it expires. */
+            public int expireDays = 7;
+            /* The items attached to the birthday mail. Defaults to Mora and Primogems. */
+            public GiftItem[] gifts =
+                    new GiftItem[] {
+                        new GiftItem(202, 10000000), // Mora
+                        new GiftItem(201, 600000) // Primogem
+                    };
+
+            public static class GiftItem {
+                public int itemId;
+                public int count;
+
+                public GiftItem() {
+                    this(202, 1);
+                }
+
+                public GiftItem(int itemId, int count) {
+                    this.itemId = itemId;
+                    this.count = count;
+                }
+            }
         }
 
         public static class HandbookOptions {

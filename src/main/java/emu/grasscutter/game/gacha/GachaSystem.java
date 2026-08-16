@@ -50,6 +50,12 @@ public class GachaSystem extends BaseGameSystem {
     }
 
     public int getRandom(int[] array) {
+        if (array == null || array.length == 0) {
+            // randomRange(0, -1) would reach nextInt(0) and throw. 0 is not a valid item id, so
+            // doPulls() skips the roll instead of aborting a pull the player has already paid for.
+            Grasscutter.getLogger().warn("[Gacha] Tried to roll from an empty item pool.");
+            return 0;
+        }
         return array[randomRange(0, array.length - 1)];
     }
 
@@ -105,7 +111,12 @@ public class GachaSystem extends BaseGameSystem {
             }
             total += weight;
         }
-        int roll = ThreadLocalRandom.current().nextInt((total < cutoff) ? total : cutoff);
+        int bound = Math.min(total, cutoff);
+        if (bound <= 0) {
+            // nextInt() requires a positive bound; nothing is drawable anyway.
+            return 0;
+        }
+        int roll = ThreadLocalRandom.current().nextInt(bound);
         int subTotal = 0;
         for (int i = 0; i < weights.length; i++) {
             subTotal += weights[i];
