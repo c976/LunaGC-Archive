@@ -3,8 +3,8 @@ option java_package = "emu.grasscutter.net.proto";
 
 
 message MathQuaternion {
-    float x = 1;
-    float y = 2;
-    float z = 3;
-    float w = 4;
+	float w = 4;
+	float y = 2;
+	float x = 1;
+	float z = 3;
 }

@@ -3,8 +3,8 @@ option java_package = "emu.grasscutter.net.proto";
 
 
 message SceneReliquaryInfo {
-    uint32 item_id = 1;
-    uint64 guid = 2;
-    uint32 level = 3;
-    uint32 promote_level = 4;
+	uint32 item_id = 1;
+	uint32 promote_level = 4;
+	uint32 level = 3;
+	uint64 guid = 2;
 }

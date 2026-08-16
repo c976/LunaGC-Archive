@@ -3,25 +3,25 @@ option java_package = "emu.grasscutter.net.proto";
 
 
 message MaterialDeleteInfo {
-    message CountDownDelete {
+	oneof delete_info {
+		CountDownDelete count_down_delete = 2;
+		DateTimeDelete date_delete = 3;
+		DelayWeekCountDownDelete delay_week_count_down_delete = 4;
+	}
+	bool has_delete_config = 1;
+	// CmdId: - | MergeFrom: 0x82AFF10 | WriteTo: 0x82AFC80
+	message CountDownDelete {
 		map<uint32, uint32> delete_time_num_map = 1;
 		uint32 config_count_down_time = 2;
 	}
-    
-    message DateTimeDelete {
+	// CmdId: - | MergeFrom: 0xC2C3420 | WriteTo: 0xC2C32B0
+	message DateTimeDelete {
 		uint32 delete_time = 1;
 	}
-
-    message DelayWeekCountDownDelete {
+	// CmdId: - | MergeFrom: 0xA3605B0 | WriteTo: 0xA3601B0
+	message DelayWeekCountDownDelete {
 		map<uint32, uint32> delete_time_num_map = 1;
 		uint32 config_delay_week = 2;
 		uint32 config_count_down_time = 3;
 	}
-
-    bool delete_time_num_map = 1;
-    oneof delete_info {
-        CountDownDelete count_down_delete = 2;
-        DateTimeDelete date_delete = 3;
-        DelayWeekCountDownDelete delay_week_count_down_delete = 4;
-    }
 }

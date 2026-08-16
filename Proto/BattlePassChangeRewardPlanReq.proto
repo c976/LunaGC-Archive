@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-
-message BattlePassChangeRewardPlanReq {
-	bool is_all_future_bp = 4;
-	uint32 default_reward_type = 1;
-}

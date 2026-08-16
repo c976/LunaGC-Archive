@@ -4,9 +4,9 @@ option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
 
 message WeaponUpgradeRsp {
-	uint32 old_level = 1;
-	int32 retcode = 3;
-	repeated ItemParam item_param_list = 11;
-	uint32 cur_level = 12;
-	uint64 target_weapon_guid = 13;
+	repeated ItemParam item_param_list = 8;
+	uint64 target_weapon_guid = 1;
+	uint32 old_level = 14;
+	int32 retcode = 2;
+	uint32 cur_level = 10;
 }

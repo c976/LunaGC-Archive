@@ -3,6 +3,6 @@ option java_package = "emu.grasscutter.net.proto";
 
 
 message ShortAbilityHashPair {
-    sfixed32 OMPEBEMNKLG = 13;
-    sfixed32 ability_name_hash = 15;
+	sfixed32 ability_config_hash = 1;
+	sfixed32 ability_name_hash = 2;
 }

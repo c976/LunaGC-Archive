@@ -3,5 +3,5 @@ option java_package = "emu.grasscutter.net.proto";
 
 
 message EnterSceneDoneReq {
-    uint32 enter_scene_token = 8;
+	uint32 enter_scene_token = 1;
 }

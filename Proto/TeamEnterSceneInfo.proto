@@ -5,7 +5,7 @@ import "AbilitySyncStateInfo.proto";
 import "AbilityControlBlock.proto";
 
 message TeamEnterSceneInfo {
-    uint32 team_entity_id = 1;
-    AbilitySyncStateInfo team_ability_info = 5;
-    AbilityControlBlock ability_control_block = 15;
+	AbilitySyncStateInfo team_ability_info = 7;
+	AbilityControlBlock ability_control_block = 3;
+	uint32 team_entity_id = 12;
 }

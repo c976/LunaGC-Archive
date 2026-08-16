@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-import "MapAreaInfo.proto";
-
-message MapAreaChangeNotify {
-	repeated MapAreaInfo map_area_info_list = 7;
-}

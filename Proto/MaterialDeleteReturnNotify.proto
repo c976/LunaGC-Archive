@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "MaterialDeleteReturnType.proto";
+
+message MaterialDeleteReturnNotify {
+	map<uint32, uint32> FIIACOMHGEH = 7;
+	map<uint32, uint32> LMPMGCIPDDE = 13;
+	MaterialDeleteReturnType type = 5;
+}

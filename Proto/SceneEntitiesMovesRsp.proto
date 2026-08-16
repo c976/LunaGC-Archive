@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-import "EntityMoveFailInfo.proto";
-
-message SceneEntitiesMovesRsp {
-	repeated EntityMoveFailInfo entity_move_fail_info_list = 6;
-}

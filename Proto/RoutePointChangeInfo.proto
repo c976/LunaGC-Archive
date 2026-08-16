@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message RoutePointChangeInfo {
+	float DMBPNFCDAGK = 13;
+	float ICKDCIMPDHH = 8;
+	uint32 EIFACCCOKAL = 10;
+}

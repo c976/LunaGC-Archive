@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 import "AvatarTeam.proto";
 
 message AvatarTeamUpdateNotify {
-    repeated uint64 temp_avatar_guid_list = 10;
-    map<uint32, AvatarTeam> avatar_team_map = 12;
+	map<uint32, AvatarTeam> avatar_team_map = 5;
+	repeated uint64 temp_avatar_guid_list = 8;
 }

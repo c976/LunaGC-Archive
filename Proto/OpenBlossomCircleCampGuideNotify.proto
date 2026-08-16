@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-
-message OpenBlossomCircleCampGuideNotify {
-	repeated uint32 circle_camp_id_list = 4;
-	uint32 refresh_id = 15;
-}

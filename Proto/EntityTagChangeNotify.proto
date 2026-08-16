@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-
-message EntityTagChangeNotify {
-    bool is_add = 7;
-    string tag = 10;
-    uint32 entity_id = 11;
-}

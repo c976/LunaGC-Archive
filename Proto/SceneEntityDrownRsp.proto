@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-
-message SceneEntityDrownRsp {
-	int32 retcode = 7;
-	uint32 entity_id = 10;
-}

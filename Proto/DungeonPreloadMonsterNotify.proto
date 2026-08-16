@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-import "PlatformType.proto";
-
-message DungeonPreloadMonsterNotify {
-	repeated PlatformType platform_list = 2;
-	repeated uint32 monster_id_list = 8;
-}

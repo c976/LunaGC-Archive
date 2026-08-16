@@ -3,6 +3,6 @@ option java_package = "emu.grasscutter.net.proto";
 
 
 message PostEnterSceneReq {
-    double total_tick_time = 8;
-    uint32 enter_scene_token = 13;
+	uint32 enter_scene_token = 12;
+	double total_tick_time = 14;
 }

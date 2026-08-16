@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-
-message PlayerApplyEnterMpRsp {
-	uint32 target_uid = 9;
-	int32 retcode = 11;
-	uint32 param = 13;
-}

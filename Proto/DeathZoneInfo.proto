@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-
-message DeathZoneInfo {
-	uint32 id = 11;
-	bool is_open = 15;
-}

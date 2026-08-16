@@ -1,9 +1,11 @@
 syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
 
+option java_package = "emu.grasscutter.net.proto";
+// Version: 5.3.50
+// CmdId: 2809
 
 message WearEquipRsp {
-	uint64 avatar_guid = 1;
-	int32 retcode = 9;
-	uint64 equip_guid = 13;
-}
+	int32 retcode = 12;
+	uint64 equip_guid = 7;
+	uint64 avatar_guid = 9;
+}

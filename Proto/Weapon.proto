@@ -3,9 +3,9 @@ option java_package = "emu.grasscutter.net.proto";
 
 
 message Weapon {
-    uint32 level = 1;
-    uint32 exp = 2;
-    uint32 promote_level = 3;
-    map<uint32, uint32> affix_map = 4;
-    bool HHLNNPOILDL = 5;
+	map<uint32, uint32> affix_map = 4;
+	uint32 promote_level = 3;
+	bool JHPLJPIFMBM = 5;
+	uint32 level = 1;
+	uint32 exp = 2;
 }

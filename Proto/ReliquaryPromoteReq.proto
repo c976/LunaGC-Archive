@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message ReliquaryPromoteReq {
+	repeated float NJFKGHEGPBF = 7;
+	string MJAOMIHHMIL = 15;
+	repeated int32 MHPJOEBAFMH = 8;
+	uint32 type = 11;
+}

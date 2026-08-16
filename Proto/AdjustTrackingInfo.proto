@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+message AdjustTrackingInfo {
+	string JOJNDDEFONL = 7;
+	string IKJAFKGGFDF = 9;
+	string CFGBPKEHADD = 6;
+	string DJBMLKOODGL = 14;
+	string MEKNFALPGFE = 15;
+	string BEIPJKJDAKN = 2;
+}

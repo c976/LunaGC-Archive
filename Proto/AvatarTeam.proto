@@ -3,6 +3,6 @@ option java_package = "emu.grasscutter.net.proto";
 
 
 message AvatarTeam {
-    string team_name = 5;
-    repeated uint64 avatar_guid_list = 10;
+	repeated uint64 avatar_guid_list = 14;
+	string team_name = 1;
 }

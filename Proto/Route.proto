@@ -3,8 +3,7 @@ option java_package = "emu.grasscutter.net.proto";
 
 import "RoutePoint.proto";
 
-// 5.0.0
 message Route {
-    repeated RoutePoint route_points = 1;
-    uint32 route_type = 2;
+	repeated RoutePoint route_points = 1;
+	uint32 route_type = 2;
 }

@@ -1,7 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-message UnlockAvatarTalentReq {
-	uint32 talent_id = 5;
-	uint64 avatar_guid = 13;
-}

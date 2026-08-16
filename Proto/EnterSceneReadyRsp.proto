@@ -3,6 +3,6 @@ option java_package = "emu.grasscutter.net.proto";
 
 
 message EnterSceneReadyRsp {
-    int32 retcode = 9;
-    uint32 enter_scene_token = 11;
+	int32 retcode = 12;
+	uint32 enter_scene_token = 3;
 }

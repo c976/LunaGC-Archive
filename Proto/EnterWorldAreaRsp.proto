@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-
-message EnterWorldAreaRsp {
-	uint32 area_type = 7;
-	uint32 area_id = 11;
-	int32 retcode = 15;
-}

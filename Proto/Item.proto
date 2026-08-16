@@ -6,11 +6,11 @@ import "Equip.proto";
 import "Furniture.proto";
 
 message Item {
-    uint32 item_id = 1;
-    uint64 guid = 2;
-    oneof Detail {
-        Material material = 5;
-        Equip equip = 6;
-        Furniture furniture = 7;
-    }
+	uint64 guid = 2;
+	uint32 item_id = 1;
+	oneof detail {
+		Material material = 5;
+		Equip equip = 6;
+		Furniture furniture = 7;
+	}
 }
