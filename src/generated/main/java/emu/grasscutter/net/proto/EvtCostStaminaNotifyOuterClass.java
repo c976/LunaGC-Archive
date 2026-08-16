@@ -19,18 +19,22 @@ public final class EvtCostStaminaNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 unlock_by_word_id = 1;</code>
-     * @return The unlockByWordId.
+     * <code>float cost_stamina = 11;</code>
+     * @return The costStamina.
      */
-    int getUnlockByWordId();
+    float getCostStamina();
 
     /**
-     * <code>uint32 page_id = 8;</code>
-     * @return The pageId.
+     * <code>uint32 skill_id = 8;</code>
+     * @return The skillId.
      */
-    int getPageId();
+    int getSkillId();
   }
   /**
+   * <pre>
+   * CmdId: 25934
+   * </pre>
+   *
    * Protobuf type {@code EvtCostStaminaNotify}
    */
   public static final class EvtCostStaminaNotify extends
@@ -75,14 +79,14 @@ public final class EvtCostStaminaNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              unlockByWordId_ = input.readUInt32();
-              break;
-            }
             case 64: {
 
-              pageId_ = input.readUInt32();
+              skillId_ = input.readUInt32();
+              break;
+            }
+            case 93: {
+
+              costStamina_ = input.readFloat();
               break;
             }
             default: {
@@ -117,26 +121,26 @@ public final class EvtCostStaminaNotifyOuterClass {
               emu.grasscutter.net.proto.EvtCostStaminaNotifyOuterClass.EvtCostStaminaNotify.class, emu.grasscutter.net.proto.EvtCostStaminaNotifyOuterClass.EvtCostStaminaNotify.Builder.class);
     }
 
-    public static final int UNLOCK_BY_WORD_ID_FIELD_NUMBER = 1;
-    private int unlockByWordId_;
+    public static final int COST_STAMINA_FIELD_NUMBER = 11;
+    private float costStamina_;
     /**
-     * <code>uint32 unlock_by_word_id = 1;</code>
-     * @return The unlockByWordId.
+     * <code>float cost_stamina = 11;</code>
+     * @return The costStamina.
      */
     @java.lang.Override
-    public int getUnlockByWordId() {
-      return unlockByWordId_;
+    public float getCostStamina() {
+      return costStamina_;
     }
 
-    public static final int PAGE_ID_FIELD_NUMBER = 8;
-    private int pageId_;
+    public static final int SKILL_ID_FIELD_NUMBER = 8;
+    private int skillId_;
     /**
-     * <code>uint32 page_id = 8;</code>
-     * @return The pageId.
+     * <code>uint32 skill_id = 8;</code>
+     * @return The skillId.
      */
     @java.lang.Override
-    public int getPageId() {
-      return pageId_;
+    public int getSkillId() {
+      return skillId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +157,11 @@ public final class EvtCostStaminaNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unlockByWordId_ != 0) {
-        output.writeUInt32(1, unlockByWordId_);
+      if (skillId_ != 0) {
+        output.writeUInt32(8, skillId_);
       }
-      if (pageId_ != 0) {
-        output.writeUInt32(8, pageId_);
+      if (costStamina_ != 0F) {
+        output.writeFloat(11, costStamina_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class EvtCostStaminaNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unlockByWordId_ != 0) {
+      if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, unlockByWordId_);
+          .computeUInt32Size(8, skillId_);
       }
-      if (pageId_ != 0) {
+      if (costStamina_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, pageId_);
+          .computeFloatSize(11, costStamina_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +195,11 @@ public final class EvtCostStaminaNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EvtCostStaminaNotifyOuterClass.EvtCostStaminaNotify other = (emu.grasscutter.net.proto.EvtCostStaminaNotifyOuterClass.EvtCostStaminaNotify) obj;
 
-      if (getUnlockByWordId()
-          != other.getUnlockByWordId()) return false;
-      if (getPageId()
-          != other.getPageId()) return false;
+      if (java.lang.Float.floatToIntBits(getCostStamina())
+          != java.lang.Float.floatToIntBits(
+              other.getCostStamina())) return false;
+      if (getSkillId()
+          != other.getSkillId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +211,11 @@ public final class EvtCostStaminaNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNLOCK_BY_WORD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getUnlockByWordId();
-      hash = (37 * hash) + PAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPageId();
+      hash = (37 * hash) + COST_STAMINA_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getCostStamina());
+      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -306,6 +312,10 @@ public final class EvtCostStaminaNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 25934
+     * </pre>
+     *
      * Protobuf type {@code EvtCostStaminaNotify}
      */
     public static final class Builder extends
@@ -343,9 +353,9 @@ public final class EvtCostStaminaNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unlockByWordId_ = 0;
+        costStamina_ = 0F;
 
-        pageId_ = 0;
+        skillId_ = 0;
 
         return this;
       }
@@ -373,8 +383,8 @@ public final class EvtCostStaminaNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtCostStaminaNotifyOuterClass.EvtCostStaminaNotify buildPartial() {
         emu.grasscutter.net.proto.EvtCostStaminaNotifyOuterClass.EvtCostStaminaNotify result = new emu.grasscutter.net.proto.EvtCostStaminaNotifyOuterClass.EvtCostStaminaNotify(this);
-        result.unlockByWordId_ = unlockByWordId_;
-        result.pageId_ = pageId_;
+        result.costStamina_ = costStamina_;
+        result.skillId_ = skillId_;
         onBuilt();
         return result;
       }
@@ -423,11 +433,11 @@ public final class EvtCostStaminaNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtCostStaminaNotifyOuterClass.EvtCostStaminaNotify other) {
         if (other == emu.grasscutter.net.proto.EvtCostStaminaNotifyOuterClass.EvtCostStaminaNotify.getDefaultInstance()) return this;
-        if (other.getUnlockByWordId() != 0) {
-          setUnlockByWordId(other.getUnlockByWordId());
+        if (other.getCostStamina() != 0F) {
+          setCostStamina(other.getCostStamina());
         }
-        if (other.getPageId() != 0) {
-          setPageId(other.getPageId());
+        if (other.getSkillId() != 0) {
+          setSkillId(other.getSkillId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,64 +468,64 @@ public final class EvtCostStaminaNotifyOuterClass {
         return this;
       }
 
-      private int unlockByWordId_ ;
+      private float costStamina_ ;
       /**
-       * <code>uint32 unlock_by_word_id = 1;</code>
-       * @return The unlockByWordId.
+       * <code>float cost_stamina = 11;</code>
+       * @return The costStamina.
        */
       @java.lang.Override
-      public int getUnlockByWordId() {
-        return unlockByWordId_;
+      public float getCostStamina() {
+        return costStamina_;
       }
       /**
-       * <code>uint32 unlock_by_word_id = 1;</code>
-       * @param value The unlockByWordId to set.
+       * <code>float cost_stamina = 11;</code>
+       * @param value The costStamina to set.
        * @return This builder for chaining.
        */
-      public Builder setUnlockByWordId(int value) {
+      public Builder setCostStamina(float value) {
         
-        unlockByWordId_ = value;
+        costStamina_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 unlock_by_word_id = 1;</code>
+       * <code>float cost_stamina = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnlockByWordId() {
+      public Builder clearCostStamina() {
         
-        unlockByWordId_ = 0;
+        costStamina_ = 0F;
         onChanged();
         return this;
       }
 
-      private int pageId_ ;
+      private int skillId_ ;
       /**
-       * <code>uint32 page_id = 8;</code>
-       * @return The pageId.
+       * <code>uint32 skill_id = 8;</code>
+       * @return The skillId.
        */
       @java.lang.Override
-      public int getPageId() {
-        return pageId_;
+      public int getSkillId() {
+        return skillId_;
       }
       /**
-       * <code>uint32 page_id = 8;</code>
-       * @param value The pageId to set.
+       * <code>uint32 skill_id = 8;</code>
+       * @param value The skillId to set.
        * @return This builder for chaining.
        */
-      public Builder setPageId(int value) {
+      public Builder setSkillId(int value) {
         
-        pageId_ = value;
+        skillId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 page_id = 8;</code>
+       * <code>uint32 skill_id = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPageId() {
+      public Builder clearSkillId() {
         
-        pageId_ = 0;
+        skillId_ = 0;
         onChanged();
         return this;
       }
@@ -586,10 +596,10 @@ public final class EvtCostStaminaNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032EvtCostStaminaNotify.proto\"B\n\024EvtCostS" +
-      "taminaNotify\022\031\n\021unlock_by_word_id\030\001 \001(\r\022" +
-      "\017\n\007page_id\030\010 \001(\rB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "\n\032EvtCostStaminaNotify.proto\">\n\024EvtCostS" +
+      "taminaNotify\022\024\n\014cost_stamina\030\013 \001(\002\022\020\n\010sk" +
+      "ill_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +610,7 @@ public final class EvtCostStaminaNotifyOuterClass {
     internal_static_EvtCostStaminaNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtCostStaminaNotify_descriptor,
-        new java.lang.String[] { "UnlockByWordId", "PageId", });
+        new java.lang.String[] { "CostStamina", "SkillId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

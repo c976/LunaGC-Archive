@@ -19,33 +19,32 @@ public final class DungeonRestartInviteNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 point_id = 11;</code>
+     * <code>uint32 point_id = 5;</code>
      * @return The pointId.
      */
     int getPointId();
 
     /**
-     * <code>uint32 player_uid = 15;</code>
+     * <code>uint32 player_uid = 8;</code>
      * @return The playerUid.
      */
     int getPlayerUid();
 
     /**
-     * <code>uint32 cd = 7;</code>
+     * <code>uint32 cd = 10;</code>
      * @return The cd.
      */
     int getCd();
 
     /**
-     * <code>uint32 dungeon_id = 13;</code>
+     * <code>uint32 dungeon_id = 6;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
   }
   /**
    * <pre>
-   * CmdId: 29338
-   * Obf: CEELKKHAKNI
+   * CmdId: 20624
    * </pre>
    *
    * Protobuf type {@code DungeonRestartInviteNotify}
@@ -92,24 +91,24 @@ public final class DungeonRestartInviteNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              cd_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 40: {
 
               pointId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 48: {
 
               dungeonId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 64: {
 
               playerUid_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              cd_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,10 +143,10 @@ public final class DungeonRestartInviteNotifyOuterClass {
               emu.grasscutter.net.proto.DungeonRestartInviteNotifyOuterClass.DungeonRestartInviteNotify.class, emu.grasscutter.net.proto.DungeonRestartInviteNotifyOuterClass.DungeonRestartInviteNotify.Builder.class);
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 11;
+    public static final int POINT_ID_FIELD_NUMBER = 5;
     private int pointId_;
     /**
-     * <code>uint32 point_id = 11;</code>
+     * <code>uint32 point_id = 5;</code>
      * @return The pointId.
      */
     @java.lang.Override
@@ -155,10 +154,10 @@ public final class DungeonRestartInviteNotifyOuterClass {
       return pointId_;
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 15;
+    public static final int PLAYER_UID_FIELD_NUMBER = 8;
     private int playerUid_;
     /**
-     * <code>uint32 player_uid = 15;</code>
+     * <code>uint32 player_uid = 8;</code>
      * @return The playerUid.
      */
     @java.lang.Override
@@ -166,10 +165,10 @@ public final class DungeonRestartInviteNotifyOuterClass {
       return playerUid_;
     }
 
-    public static final int CD_FIELD_NUMBER = 7;
+    public static final int CD_FIELD_NUMBER = 10;
     private int cd_;
     /**
-     * <code>uint32 cd = 7;</code>
+     * <code>uint32 cd = 10;</code>
      * @return The cd.
      */
     @java.lang.Override
@@ -177,10 +176,10 @@ public final class DungeonRestartInviteNotifyOuterClass {
       return cd_;
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 13;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 6;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 13;</code>
+     * <code>uint32 dungeon_id = 6;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -202,17 +201,17 @@ public final class DungeonRestartInviteNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cd_ != 0) {
-        output.writeUInt32(7, cd_);
-      }
       if (pointId_ != 0) {
-        output.writeUInt32(11, pointId_);
+        output.writeUInt32(5, pointId_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(13, dungeonId_);
+        output.writeUInt32(6, dungeonId_);
       }
       if (playerUid_ != 0) {
-        output.writeUInt32(15, playerUid_);
+        output.writeUInt32(8, playerUid_);
+      }
+      if (cd_ != 0) {
+        output.writeUInt32(10, cd_);
       }
       unknownFields.writeTo(output);
     }
@@ -223,21 +222,21 @@ public final class DungeonRestartInviteNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cd_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, cd_);
-      }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, pointId_);
+          .computeUInt32Size(5, pointId_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, dungeonId_);
+          .computeUInt32Size(6, dungeonId_);
       }
       if (playerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, playerUid_);
+          .computeUInt32Size(8, playerUid_);
+      }
+      if (cd_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, cd_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -378,8 +377,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29338
-     * Obf: CEELKKHAKNI
+     * CmdId: 20624
      * </pre>
      *
      * Protobuf type {@code DungeonRestartInviteNotify}
@@ -548,7 +546,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
 
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 11;</code>
+       * <code>uint32 point_id = 5;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -556,7 +554,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 11;</code>
+       * <code>uint32 point_id = 5;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -567,7 +565,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 11;</code>
+       * <code>uint32 point_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
@@ -579,7 +577,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
 
       private int playerUid_ ;
       /**
-       * <code>uint32 player_uid = 15;</code>
+       * <code>uint32 player_uid = 8;</code>
        * @return The playerUid.
        */
       @java.lang.Override
@@ -587,7 +585,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
         return playerUid_;
       }
       /**
-       * <code>uint32 player_uid = 15;</code>
+       * <code>uint32 player_uid = 8;</code>
        * @param value The playerUid to set.
        * @return This builder for chaining.
        */
@@ -598,7 +596,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_uid = 15;</code>
+       * <code>uint32 player_uid = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUid() {
@@ -610,7 +608,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
 
       private int cd_ ;
       /**
-       * <code>uint32 cd = 7;</code>
+       * <code>uint32 cd = 10;</code>
        * @return The cd.
        */
       @java.lang.Override
@@ -618,7 +616,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
         return cd_;
       }
       /**
-       * <code>uint32 cd = 7;</code>
+       * <code>uint32 cd = 10;</code>
        * @param value The cd to set.
        * @return This builder for chaining.
        */
@@ -629,7 +627,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cd = 7;</code>
+       * <code>uint32 cd = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearCd() {
@@ -641,7 +639,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 13;</code>
+       * <code>uint32 dungeon_id = 6;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -649,7 +647,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 13;</code>
+       * <code>uint32 dungeon_id = 6;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -660,7 +658,7 @@ public final class DungeonRestartInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 13;</code>
+       * <code>uint32 dungeon_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -737,9 +735,9 @@ public final class DungeonRestartInviteNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n DungeonRestartInviteNotify.proto\"b\n\032Du" +
-      "ngeonRestartInviteNotify\022\020\n\010point_id\030\013 \001" +
-      "(\r\022\022\n\nplayer_uid\030\017 \001(\r\022\n\n\002cd\030\007 \001(\r\022\022\n\ndu" +
-      "ngeon_id\030\r \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "ngeonRestartInviteNotify\022\020\n\010point_id\030\005 \001" +
+      "(\r\022\022\n\nplayer_uid\030\010 \001(\r\022\n\n\002cd\030\n \001(\r\022\022\n\ndu" +
+      "ngeon_id\030\006 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

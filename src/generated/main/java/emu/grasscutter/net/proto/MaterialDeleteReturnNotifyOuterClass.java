@@ -53,11 +53,11 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         int key);
 
     /**
-     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
      */
     int getLMPMGCIPDDECount();
     /**
-     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
      */
     boolean containsLMPMGCIPDDE(
         int key);
@@ -68,36 +68,40 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getLMPMGCIPDDE();
     /**
-     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getLMPMGCIPDDEMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
      */
 
     int getLMPMGCIPDDEOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
      */
 
     int getLMPMGCIPDDEOrThrow(
         int key);
 
     /**
-     * <code>.MaterialDeleteReturnType type = 5;</code>
+     * <code>.MaterialDeleteReturnType type = 13;</code>
      * @return The enum numeric value on the wire for type.
      */
     int getTypeValue();
     /**
-     * <code>.MaterialDeleteReturnType type = 5;</code>
+     * <code>.MaterialDeleteReturnType type = 13;</code>
      * @return The type.
      */
     emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType();
   }
   /**
+   * <pre>
+   * CmdId: 20266
+   * </pre>
+   *
    * Protobuf type {@code MaterialDeleteReturnNotify}
    */
   public static final class MaterialDeleteReturnNotify extends
@@ -144,12 +148,6 @@ public final class MaterialDeleteReturnNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-              int rawValue = input.readEnum();
-
-              type_ = rawValue;
-              break;
-            }
             case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fIIACOMHGEH_ = com.google.protobuf.MapField.newMapField(
@@ -163,7 +161,13 @@ public final class MaterialDeleteReturnNotifyOuterClass {
                   fIIACOMHGEH__.getKey(), fIIACOMHGEH__.getValue());
               break;
             }
-            case 106: {
+            case 104: {
+              int rawValue = input.readEnum();
+
+              type_ = rawValue;
+              break;
+            }
+            case 89706: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 lMPMGCIPDDE_ = com.google.protobuf.MapField.newMapField(
                     LMPMGCIPDDEDefaultEntryHolder.defaultEntry);
@@ -207,7 +211,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       switch (number) {
         case 7:
           return internalGetFIIACOMHGEH();
-        case 13:
+        case 11213:
           return internalGetLMPMGCIPDDE();
         default:
           throw new RuntimeException(
@@ -303,7 +307,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int LMPMGCIPDDE_FIELD_NUMBER = 13;
+    public static final int LMPMGCIPDDE_FIELD_NUMBER = 11213;
     private static final class LMPMGCIPDDEDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -330,7 +334,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return internalGetLMPMGCIPDDE().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
      */
 
     @java.lang.Override
@@ -348,7 +352,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return getLMPMGCIPDDEMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
      */
     @java.lang.Override
 
@@ -356,7 +360,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return internalGetLMPMGCIPDDE().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
      */
     @java.lang.Override
 
@@ -369,7 +373,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
      */
     @java.lang.Override
 
@@ -384,17 +388,17 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 5;
+    public static final int TYPE_FIELD_NUMBER = 13;
     private int type_;
     /**
-     * <code>.MaterialDeleteReturnType type = 5;</code>
+     * <code>.MaterialDeleteReturnType type = 13;</code>
      * @return The enum numeric value on the wire for type.
      */
     @java.lang.Override public int getTypeValue() {
       return type_;
     }
     /**
-     * <code>.MaterialDeleteReturnType type = 5;</code>
+     * <code>.MaterialDeleteReturnType type = 13;</code>
      * @return The type.
      */
     @java.lang.Override public emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType() {
@@ -417,21 +421,21 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MATERIAL_DELETE_RETURN_BAG.getNumber()) {
-        output.writeEnum(5, type_);
-      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetFIIACOMHGEH(),
           FIIACOMHGEHDefaultEntryHolder.defaultEntry,
           7);
+      if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MATERIAL_DELETE_RETURN_BAG.getNumber()) {
+        output.writeEnum(13, type_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetLMPMGCIPDDE(),
           LMPMGCIPDDEDefaultEntryHolder.defaultEntry,
-          13);
+          11213);
       unknownFields.writeTo(output);
     }
 
@@ -441,10 +445,6 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MATERIAL_DELETE_RETURN_BAG.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, type_);
-      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetFIIACOMHGEH().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
@@ -455,6 +455,10 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(7, fIIACOMHGEH__);
       }
+      if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MATERIAL_DELETE_RETURN_BAG.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(13, type_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetLMPMGCIPDDE().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
@@ -463,7 +467,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(13, lMPMGCIPDDE__);
+            .computeMessageSize(11213, lMPMGCIPDDE__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -602,6 +606,10 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 20266
+     * </pre>
+     *
      * Protobuf type {@code MaterialDeleteReturnNotify}
      */
     public static final class Builder extends
@@ -619,7 +627,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         switch (number) {
           case 7:
             return internalGetFIIACOMHGEH();
-          case 13:
+          case 11213:
             return internalGetLMPMGCIPDDE();
           default:
             throw new RuntimeException(
@@ -632,7 +640,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         switch (number) {
           case 7:
             return internalGetMutableFIIACOMHGEH();
-          case 13:
+          case 11213:
             return internalGetMutableLMPMGCIPDDE();
           default:
             throw new RuntimeException(
@@ -941,7 +949,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return internalGetLMPMGCIPDDE().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
        */
 
       @java.lang.Override
@@ -959,7 +967,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return getLMPMGCIPDDEMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
        */
       @java.lang.Override
 
@@ -967,7 +975,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return internalGetLMPMGCIPDDE().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
        */
       @java.lang.Override
 
@@ -980,7 +988,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
        */
       @java.lang.Override
 
@@ -1001,7 +1009,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
        */
 
       public Builder removeLMPMGCIPDDE(
@@ -1020,7 +1028,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return internalGetMutableLMPMGCIPDDE().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
        */
       public Builder putLMPMGCIPDDE(
           int key,
@@ -1032,7 +1040,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; LMPMGCIPDDE = 11213;</code>
        */
 
       public Builder putAllLMPMGCIPDDE(
@@ -1044,14 +1052,14 @@ public final class MaterialDeleteReturnNotifyOuterClass {
 
       private int type_ = 0;
       /**
-       * <code>.MaterialDeleteReturnType type = 5;</code>
+       * <code>.MaterialDeleteReturnType type = 13;</code>
        * @return The enum numeric value on the wire for type.
        */
       @java.lang.Override public int getTypeValue() {
         return type_;
       }
       /**
-       * <code>.MaterialDeleteReturnType type = 5;</code>
+       * <code>.MaterialDeleteReturnType type = 13;</code>
        * @param value The enum numeric value on the wire for type to set.
        * @return This builder for chaining.
        */
@@ -1062,7 +1070,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MaterialDeleteReturnType type = 5;</code>
+       * <code>.MaterialDeleteReturnType type = 13;</code>
        * @return The type.
        */
       @java.lang.Override
@@ -1072,7 +1080,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.MaterialDeleteReturnType type = 5;</code>
+       * <code>.MaterialDeleteReturnType type = 13;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
@@ -1086,7 +1094,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MaterialDeleteReturnType type = 5;</code>
+       * <code>.MaterialDeleteReturnType type = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
@@ -1173,16 +1181,16 @@ public final class MaterialDeleteReturnNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n MaterialDeleteReturnNotify.proto\032\036Mate" +
-      "rialDeleteReturnType.proto\"\263\002\n\032MaterialD" +
+      "rialDeleteReturnType.proto\"\264\002\n\032MaterialD" +
       "eleteReturnNotify\022A\n\013FIIACOMHGEH\030\007 \003(\0132," +
       ".MaterialDeleteReturnNotify.FIIACOMHGEHE" +
-      "ntry\022A\n\013LMPMGCIPDDE\030\r \003(\0132,.MaterialDele" +
-      "teReturnNotify.LMPMGCIPDDEEntry\022\'\n\004type\030" +
-      "\005 \001(\0162\031.MaterialDeleteReturnType\0322\n\020FIIA" +
-      "COMHGEHEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r" +
-      ":\0028\001\0322\n\020LMPMGCIPDDEEntry\022\013\n\003key\030\001 \001(\r\022\r\n" +
-      "\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "ntry\022B\n\013LMPMGCIPDDE\030\315W \003(\0132,.MaterialDel" +
+      "eteReturnNotify.LMPMGCIPDDEEntry\022\'\n\004type" +
+      "\030\r \001(\0162\031.MaterialDeleteReturnType\0322\n\020FII" +
+      "ACOMHGEHEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(" +
+      "\r:\0028\001\0322\n\020LMPMGCIPDDEEntry\022\013\n\003key\030\001 \001(\r\022\r" +
+      "\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

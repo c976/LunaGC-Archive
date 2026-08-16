@@ -19,13 +19,13 @@ public final class CookRecipeDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 proficiency = 12;</code>
+     * <code>uint32 proficiency = 2;</code>
      * @return The proficiency.
      */
     int getProficiency();
 
     /**
-     * <code>uint32 recipe_id = 15;</code>
+     * <code>uint32 recipe_id = 11;</code>
      * @return The recipeId.
      */
     int getRecipeId();
@@ -75,12 +75,12 @@ public final class CookRecipeDataOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 16: {
 
               proficiency_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
               recipeId_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class CookRecipeDataOuterClass {
               emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.class, emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.Builder.class);
     }
 
-    public static final int PROFICIENCY_FIELD_NUMBER = 12;
+    public static final int PROFICIENCY_FIELD_NUMBER = 2;
     private int proficiency_;
     /**
-     * <code>uint32 proficiency = 12;</code>
+     * <code>uint32 proficiency = 2;</code>
      * @return The proficiency.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class CookRecipeDataOuterClass {
       return proficiency_;
     }
 
-    public static final int RECIPE_ID_FIELD_NUMBER = 15;
+    public static final int RECIPE_ID_FIELD_NUMBER = 11;
     private int recipeId_;
     /**
-     * <code>uint32 recipe_id = 15;</code>
+     * <code>uint32 recipe_id = 11;</code>
      * @return The recipeId.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class CookRecipeDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (proficiency_ != 0) {
-        output.writeUInt32(12, proficiency_);
+        output.writeUInt32(2, proficiency_);
       }
       if (recipeId_ != 0) {
-        output.writeUInt32(15, recipeId_);
+        output.writeUInt32(11, recipeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class CookRecipeDataOuterClass {
       size = 0;
       if (proficiency_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, proficiency_);
+          .computeUInt32Size(2, proficiency_);
       }
       if (recipeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, recipeId_);
+          .computeUInt32Size(11, recipeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class CookRecipeDataOuterClass {
 
       private int proficiency_ ;
       /**
-       * <code>uint32 proficiency = 12;</code>
+       * <code>uint32 proficiency = 2;</code>
        * @return The proficiency.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class CookRecipeDataOuterClass {
         return proficiency_;
       }
       /**
-       * <code>uint32 proficiency = 12;</code>
+       * <code>uint32 proficiency = 2;</code>
        * @param value The proficiency to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class CookRecipeDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 proficiency = 12;</code>
+       * <code>uint32 proficiency = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearProficiency() {
@@ -491,7 +491,7 @@ public final class CookRecipeDataOuterClass {
 
       private int recipeId_ ;
       /**
-       * <code>uint32 recipe_id = 15;</code>
+       * <code>uint32 recipe_id = 11;</code>
        * @return The recipeId.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class CookRecipeDataOuterClass {
         return recipeId_;
       }
       /**
-       * <code>uint32 recipe_id = 15;</code>
+       * <code>uint32 recipe_id = 11;</code>
        * @param value The recipeId to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class CookRecipeDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 recipe_id = 15;</code>
+       * <code>uint32 recipe_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRecipeId() {
@@ -587,7 +587,7 @@ public final class CookRecipeDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024CookRecipeData.proto\"8\n\016CookRecipeData" +
-      "\022\023\n\013proficiency\030\014 \001(\r\022\021\n\trecipe_id\030\017 \001(\r" +
+      "\022\023\n\013proficiency\030\002 \001(\r\022\021\n\trecipe_id\030\013 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

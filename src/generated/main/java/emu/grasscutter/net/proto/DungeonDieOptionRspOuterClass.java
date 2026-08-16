@@ -19,29 +19,33 @@ public final class DungeonDieOptionRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 revive_count = 1;</code>
+     * <code>uint32 revive_count = 11;</code>
      * @return The reviveCount.
      */
     int getReviveCount();
 
     /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>.PlayerDieOption die_option = 15;</code>
+     * <code>.PlayerDieOption die_option = 2;</code>
      * @return The enum numeric value on the wire for dieOption.
      */
     int getDieOptionValue();
     /**
-     * <code>.PlayerDieOption die_option = 15;</code>
+     * <code>.PlayerDieOption die_option = 2;</code>
      * @return The dieOption.
      */
     emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption getDieOption();
+
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 9540
+   * </pre>
+   *
    * Protobuf type {@code DungeonDieOptionRsp}
    */
   public static final class DungeonDieOptionRsp extends
@@ -87,20 +91,20 @@ public final class DungeonDieOptionRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
+              int rawValue = input.readEnum();
+
+              dieOption_ = rawValue;
+              break;
+            }
+            case 88: {
 
               reviveCount_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 112: {
 
               retcode_ = input.readInt32();
-              break;
-            }
-            case 120: {
-              int rawValue = input.readEnum();
-
-              dieOption_ = rawValue;
               break;
             }
             default: {
@@ -135,10 +139,10 @@ public final class DungeonDieOptionRspOuterClass {
               emu.grasscutter.net.proto.DungeonDieOptionRspOuterClass.DungeonDieOptionRsp.class, emu.grasscutter.net.proto.DungeonDieOptionRspOuterClass.DungeonDieOptionRsp.Builder.class);
     }
 
-    public static final int REVIVE_COUNT_FIELD_NUMBER = 1;
+    public static final int REVIVE_COUNT_FIELD_NUMBER = 11;
     private int reviveCount_;
     /**
-     * <code>uint32 revive_count = 1;</code>
+     * <code>uint32 revive_count = 11;</code>
      * @return The reviveCount.
      */
     @java.lang.Override
@@ -146,34 +150,34 @@ public final class DungeonDieOptionRspOuterClass {
       return reviveCount_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int DIE_OPTION_FIELD_NUMBER = 15;
+    public static final int DIE_OPTION_FIELD_NUMBER = 2;
     private int dieOption_;
     /**
-     * <code>.PlayerDieOption die_option = 15;</code>
+     * <code>.PlayerDieOption die_option = 2;</code>
      * @return The enum numeric value on the wire for dieOption.
      */
     @java.lang.Override public int getDieOptionValue() {
       return dieOption_;
     }
     /**
-     * <code>.PlayerDieOption die_option = 15;</code>
+     * <code>.PlayerDieOption die_option = 2;</code>
      * @return The dieOption.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption getDieOption() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption result = emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption.valueOf(dieOption_);
       return result == null ? emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption.UNRECOGNIZED : result;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 14;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -190,14 +194,14 @@ public final class DungeonDieOptionRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (dieOption_ != emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption.PLAYER_DIE_OPTION_OPT_NONE.getNumber()) {
+        output.writeEnum(2, dieOption_);
+      }
       if (reviveCount_ != 0) {
-        output.writeUInt32(1, reviveCount_);
+        output.writeUInt32(11, reviveCount_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
-      }
-      if (dieOption_ != emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption.DIE_OPT_NONE.getNumber()) {
-        output.writeEnum(15, dieOption_);
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -208,17 +212,17 @@ public final class DungeonDieOptionRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (dieOption_ != emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption.PLAYER_DIE_OPTION_OPT_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, dieOption_);
+      }
       if (reviveCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, reviveCount_);
+          .computeUInt32Size(11, reviveCount_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
-      }
-      if (dieOption_ != emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption.DIE_OPT_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(15, dieOption_);
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -237,9 +241,9 @@ public final class DungeonDieOptionRspOuterClass {
 
       if (getReviveCount()
           != other.getReviveCount()) return false;
+      if (dieOption_ != other.dieOption_) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (dieOption_ != other.dieOption_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -253,10 +257,10 @@ public final class DungeonDieOptionRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + REVIVE_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getReviveCount();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + DIE_OPTION_FIELD_NUMBER;
       hash = (53 * hash) + dieOption_;
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -353,6 +357,10 @@ public final class DungeonDieOptionRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 9540
+     * </pre>
+     *
      * Protobuf type {@code DungeonDieOptionRsp}
      */
     public static final class Builder extends
@@ -392,9 +400,9 @@ public final class DungeonDieOptionRspOuterClass {
         super.clear();
         reviveCount_ = 0;
 
-        retcode_ = 0;
-
         dieOption_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -423,8 +431,8 @@ public final class DungeonDieOptionRspOuterClass {
       public emu.grasscutter.net.proto.DungeonDieOptionRspOuterClass.DungeonDieOptionRsp buildPartial() {
         emu.grasscutter.net.proto.DungeonDieOptionRspOuterClass.DungeonDieOptionRsp result = new emu.grasscutter.net.proto.DungeonDieOptionRspOuterClass.DungeonDieOptionRsp(this);
         result.reviveCount_ = reviveCount_;
-        result.retcode_ = retcode_;
         result.dieOption_ = dieOption_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -476,11 +484,11 @@ public final class DungeonDieOptionRspOuterClass {
         if (other.getReviveCount() != 0) {
           setReviveCount(other.getReviveCount());
         }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.dieOption_ != 0) {
           setDieOptionValue(other.getDieOptionValue());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -513,7 +521,7 @@ public final class DungeonDieOptionRspOuterClass {
 
       private int reviveCount_ ;
       /**
-       * <code>uint32 revive_count = 1;</code>
+       * <code>uint32 revive_count = 11;</code>
        * @return The reviveCount.
        */
       @java.lang.Override
@@ -521,7 +529,7 @@ public final class DungeonDieOptionRspOuterClass {
         return reviveCount_;
       }
       /**
-       * <code>uint32 revive_count = 1;</code>
+       * <code>uint32 revive_count = 11;</code>
        * @param value The reviveCount to set.
        * @return This builder for chaining.
        */
@@ -532,7 +540,7 @@ public final class DungeonDieOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 revive_count = 1;</code>
+       * <code>uint32 revive_count = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearReviveCount() {
@@ -542,47 +550,16 @@ public final class DungeonDieOptionRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int dieOption_ = 0;
       /**
-       * <code>.PlayerDieOption die_option = 15;</code>
+       * <code>.PlayerDieOption die_option = 2;</code>
        * @return The enum numeric value on the wire for dieOption.
        */
       @java.lang.Override public int getDieOptionValue() {
         return dieOption_;
       }
       /**
-       * <code>.PlayerDieOption die_option = 15;</code>
+       * <code>.PlayerDieOption die_option = 2;</code>
        * @param value The enum numeric value on the wire for dieOption to set.
        * @return This builder for chaining.
        */
@@ -593,7 +570,7 @@ public final class DungeonDieOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerDieOption die_option = 15;</code>
+       * <code>.PlayerDieOption die_option = 2;</code>
        * @return The dieOption.
        */
       @java.lang.Override
@@ -603,7 +580,7 @@ public final class DungeonDieOptionRspOuterClass {
         return result == null ? emu.grasscutter.net.proto.PlayerDieOptionOuterClass.PlayerDieOption.UNRECOGNIZED : result;
       }
       /**
-       * <code>.PlayerDieOption die_option = 15;</code>
+       * <code>.PlayerDieOption die_option = 2;</code>
        * @param value The dieOption to set.
        * @return This builder for chaining.
        */
@@ -617,12 +594,43 @@ public final class DungeonDieOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerDieOption die_option = 15;</code>
+       * <code>.PlayerDieOption die_option = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearDieOption() {
         
         dieOption_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -695,8 +703,8 @@ public final class DungeonDieOptionRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031DungeonDieOptionRsp.proto\032\025PlayerDieOp" +
       "tion.proto\"b\n\023DungeonDieOptionRsp\022\024\n\014rev" +
-      "ive_count\030\001 \001(\r\022\017\n\007retcode\030\010 \001(\005\022$\n\ndie_" +
-      "option\030\017 \001(\0162\020.PlayerDieOptionB\033\n\031emu.gr" +
+      "ive_count\030\013 \001(\r\022$\n\ndie_option\030\002 \001(\0162\020.Pl" +
+      "ayerDieOption\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -709,7 +717,7 @@ public final class DungeonDieOptionRspOuterClass {
     internal_static_DungeonDieOptionRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonDieOptionRsp_descriptor,
-        new java.lang.String[] { "ReviveCount", "Retcode", "DieOption", });
+        new java.lang.String[] { "ReviveCount", "DieOption", "Retcode", });
     emu.grasscutter.net.proto.PlayerDieOptionOuterClass.getDescriptor();
   }
 

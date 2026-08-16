@@ -9,8 +9,10 @@ public class PacketSceneInitFinishRsp extends BasePacket {
     public PacketSceneInitFinishRsp(Player player) {
         super(PacketOpcodes.SceneInitFinishRsp, 11);
 
+        int maskedToken = (player.getEnterSceneToken() - 18277) ^ 51147;
+
         SceneInitFinishRsp p =
-                SceneInitFinishRsp.newBuilder().setEnterSceneToken(player.getEnterSceneToken()).build();
+                SceneInitFinishRsp.newBuilder().setEnterSceneToken(maskedToken).build();
 
         this.setData(p.toByteArray());
     }

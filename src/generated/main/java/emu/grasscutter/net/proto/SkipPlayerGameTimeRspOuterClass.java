@@ -19,41 +19,28 @@ public final class SkipPlayerGameTimeRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-     * @return A list containing the fOGECJAHNIN.
+     * <code>int32 retcode = 10;</code>
+     * @return The retcode.
      */
-    java.util.List<java.lang.Integer> getFOGECJAHNINList();
-    /**
-     * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-     * @return The count of fOGECJAHNIN.
-     */
-    int getFOGECJAHNINCount();
-    /**
-     * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-     * @param index The index of the element to return.
-     * @return The fOGECJAHNIN at the given index.
-     */
-    int getFOGECJAHNIN(int index);
+    int getRetcode();
 
     /**
-     * <code>uint32 client_game_time = 11;</code>
+     * <code>uint32 client_game_time = 7;</code>
      * @return The clientGameTime.
      */
     int getClientGameTime();
 
     /**
-     * <code>uint32 game_time = 15;</code>
+     * <code>uint32 game_time = 1;</code>
      * @return The gameTime.
      */
     int getGameTime();
-
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 4904
+   * </pre>
+   *
    * Protobuf type {@code SkipPlayerGameTimeRsp}
    */
   public static final class SkipPlayerGameTimeRsp extends
@@ -66,7 +53,6 @@ public final class SkipPlayerGameTimeRspOuterClass {
       super(builder);
     }
     private SkipPlayerGameTimeRsp() {
-      fOGECJAHNIN_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -89,7 +75,6 @@ public final class SkipPlayerGameTimeRspOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -100,40 +85,19 @@ public final class SkipPlayerGameTimeRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                fOGECJAHNIN_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              fOGECJAHNIN_.addInt(input.readUInt32());
-              break;
-            }
-            case 50: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                fOGECJAHNIN_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                fOGECJAHNIN_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
+            case 8: {
+
+              gameTime_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 88: {
-
               clientGameTime_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 80: {
 
-              gameTime_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -151,9 +115,6 @@ public final class SkipPlayerGameTimeRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          fOGECJAHNIN_.makeImmutable(); // C
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -171,38 +132,21 @@ public final class SkipPlayerGameTimeRspOuterClass {
               emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp.class, emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp.Builder.class);
     }
 
-    public static final int FOGECJAHNIN_FIELD_NUMBER = 6;
-    private com.google.protobuf.Internal.IntList fOGECJAHNIN_;
+    public static final int RETCODE_FIELD_NUMBER = 10;
+    private int retcode_;
     /**
-     * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-     * @return A list containing the fOGECJAHNIN.
+     * <code>int32 retcode = 10;</code>
+     * @return The retcode.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getFOGECJAHNINList() {
-      return fOGECJAHNIN_;
+    public int getRetcode() {
+      return retcode_;
     }
-    /**
-     * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-     * @return The count of fOGECJAHNIN.
-     */
-    public int getFOGECJAHNINCount() {
-      return fOGECJAHNIN_.size();
-    }
-    /**
-     * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-     * @param index The index of the element to return.
-     * @return The fOGECJAHNIN at the given index.
-     */
-    public int getFOGECJAHNIN(int index) {
-      return fOGECJAHNIN_.getInt(index);
-    }
-    private int fOGECJAHNINMemoizedSerializedSize = -1;
 
-    public static final int CLIENT_GAME_TIME_FIELD_NUMBER = 11;
+    public static final int CLIENT_GAME_TIME_FIELD_NUMBER = 7;
     private int clientGameTime_;
     /**
-     * <code>uint32 client_game_time = 11;</code>
+     * <code>uint32 client_game_time = 7;</code>
      * @return The clientGameTime.
      */
     @java.lang.Override
@@ -210,26 +154,15 @@ public final class SkipPlayerGameTimeRspOuterClass {
       return clientGameTime_;
     }
 
-    public static final int GAME_TIME_FIELD_NUMBER = 15;
+    public static final int GAME_TIME_FIELD_NUMBER = 1;
     private int gameTime_;
     /**
-     * <code>uint32 game_time = 15;</code>
+     * <code>uint32 game_time = 1;</code>
      * @return The gameTime.
      */
     @java.lang.Override
     public int getGameTime() {
       return gameTime_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -246,22 +179,14 @@ public final class SkipPlayerGameTimeRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      if (getFOGECJAHNINList().size() > 0) {
-        output.writeUInt32NoTag(50);
-        output.writeUInt32NoTag(fOGECJAHNINMemoizedSerializedSize);
-      }
-      for (int i = 0; i < fOGECJAHNIN_.size(); i++) {
-        output.writeUInt32NoTag(fOGECJAHNIN_.getInt(i));
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+      if (gameTime_ != 0) {
+        output.writeUInt32(1, gameTime_);
       }
       if (clientGameTime_ != 0) {
-        output.writeUInt32(11, clientGameTime_);
+        output.writeUInt32(7, clientGameTime_);
       }
-      if (gameTime_ != 0) {
-        output.writeUInt32(15, gameTime_);
+      if (retcode_ != 0) {
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,31 +197,17 @@ public final class SkipPlayerGameTimeRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < fOGECJAHNIN_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(fOGECJAHNIN_.getInt(i));
-        }
-        size += dataSize;
-        if (!getFOGECJAHNINList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        fOGECJAHNINMemoizedSerializedSize = dataSize;
-      }
-      if (retcode_ != 0) {
+      if (gameTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeUInt32Size(1, gameTime_);
       }
       if (clientGameTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, clientGameTime_);
+          .computeUInt32Size(7, clientGameTime_);
       }
-      if (gameTime_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, gameTime_);
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,14 +224,12 @@ public final class SkipPlayerGameTimeRspOuterClass {
       }
       emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp other = (emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp) obj;
 
-      if (!getFOGECJAHNINList()
-          .equals(other.getFOGECJAHNINList())) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getClientGameTime()
           != other.getClientGameTime()) return false;
       if (getGameTime()
           != other.getGameTime()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -332,16 +241,12 @@ public final class SkipPlayerGameTimeRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getFOGECJAHNINCount() > 0) {
-        hash = (37 * hash) + FOGECJAHNIN_FIELD_NUMBER;
-        hash = (53 * hash) + getFOGECJAHNINList().hashCode();
-      }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + CLIENT_GAME_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getClientGameTime();
       hash = (37 * hash) + GAME_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getGameTime();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -438,6 +343,10 @@ public final class SkipPlayerGameTimeRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 4904
+     * </pre>
+     *
      * Protobuf type {@code SkipPlayerGameTimeRsp}
      */
     public static final class Builder extends
@@ -475,13 +384,11 @@ public final class SkipPlayerGameTimeRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        fOGECJAHNIN_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        retcode_ = 0;
+
         clientGameTime_ = 0;
 
         gameTime_ = 0;
-
-        retcode_ = 0;
 
         return this;
       }
@@ -509,15 +416,9 @@ public final class SkipPlayerGameTimeRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp buildPartial() {
         emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp result = new emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp(this);
-        int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          fOGECJAHNIN_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.fOGECJAHNIN_ = fOGECJAHNIN_;
+        result.retcode_ = retcode_;
         result.clientGameTime_ = clientGameTime_;
         result.gameTime_ = gameTime_;
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -566,24 +467,14 @@ public final class SkipPlayerGameTimeRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp other) {
         if (other == emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp.getDefaultInstance()) return this;
-        if (!other.fOGECJAHNIN_.isEmpty()) {
-          if (fOGECJAHNIN_.isEmpty()) {
-            fOGECJAHNIN_ = other.fOGECJAHNIN_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureFOGECJAHNINIsMutable();
-            fOGECJAHNIN_.addAll(other.fOGECJAHNIN_);
-          }
-          onChanged();
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (other.getClientGameTime() != 0) {
           setClientGameTime(other.getClientGameTime());
         }
         if (other.getGameTime() != 0) {
           setGameTime(other.getGameTime());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -613,90 +504,41 @@ public final class SkipPlayerGameTimeRspOuterClass {
         }
         return this;
       }
-      private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList fOGECJAHNIN_ = emptyIntList();
-      private void ensureFOGECJAHNINIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          fOGECJAHNIN_ = mutableCopy(fOGECJAHNIN_);
-          bitField0_ |= 0x00000001;
-         }
-      }
+      private int retcode_ ;
       /**
-       * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-       * @return A list containing the fOGECJAHNIN.
+       * <code>int32 retcode = 10;</code>
+       * @return The retcode.
        */
-      public java.util.List<java.lang.Integer>
-          getFOGECJAHNINList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(fOGECJAHNIN_) : fOGECJAHNIN_;
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
       }
       /**
-       * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-       * @return The count of fOGECJAHNIN.
-       */
-      public int getFOGECJAHNINCount() {
-        return fOGECJAHNIN_.size();
-      }
-      /**
-       * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-       * @param index The index of the element to return.
-       * @return The fOGECJAHNIN at the given index.
-       */
-      public int getFOGECJAHNIN(int index) {
-        return fOGECJAHNIN_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-       * @param index The index to set the value at.
-       * @param value The fOGECJAHNIN to set.
+       * <code>int32 retcode = 10;</code>
+       * @param value The retcode to set.
        * @return This builder for chaining.
        */
-      public Builder setFOGECJAHNIN(
-          int index, int value) {
-        ensureFOGECJAHNINIsMutable();
-        fOGECJAHNIN_.setInt(index, value);
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-       * @param value The fOGECJAHNIN to add.
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder addFOGECJAHNIN(int value) {
-        ensureFOGECJAHNINIsMutable();
-        fOGECJAHNIN_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-       * @param values The fOGECJAHNIN to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllFOGECJAHNIN(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureFOGECJAHNINIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, fOGECJAHNIN_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 FOGECJAHNIN = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFOGECJAHNIN() {
-        fOGECJAHNIN_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
 
       private int clientGameTime_ ;
       /**
-       * <code>uint32 client_game_time = 11;</code>
+       * <code>uint32 client_game_time = 7;</code>
        * @return The clientGameTime.
        */
       @java.lang.Override
@@ -704,7 +546,7 @@ public final class SkipPlayerGameTimeRspOuterClass {
         return clientGameTime_;
       }
       /**
-       * <code>uint32 client_game_time = 11;</code>
+       * <code>uint32 client_game_time = 7;</code>
        * @param value The clientGameTime to set.
        * @return This builder for chaining.
        */
@@ -715,7 +557,7 @@ public final class SkipPlayerGameTimeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 client_game_time = 11;</code>
+       * <code>uint32 client_game_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientGameTime() {
@@ -727,7 +569,7 @@ public final class SkipPlayerGameTimeRspOuterClass {
 
       private int gameTime_ ;
       /**
-       * <code>uint32 game_time = 15;</code>
+       * <code>uint32 game_time = 1;</code>
        * @return The gameTime.
        */
       @java.lang.Override
@@ -735,7 +577,7 @@ public final class SkipPlayerGameTimeRspOuterClass {
         return gameTime_;
       }
       /**
-       * <code>uint32 game_time = 15;</code>
+       * <code>uint32 game_time = 1;</code>
        * @param value The gameTime to set.
        * @return This builder for chaining.
        */
@@ -746,43 +588,12 @@ public final class SkipPlayerGameTimeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 game_time = 15;</code>
+       * <code>uint32 game_time = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearGameTime() {
         
         gameTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -853,11 +664,10 @@ public final class SkipPlayerGameTimeRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033SkipPlayerGameTimeRsp.proto\"j\n\025SkipPla" +
-      "yerGameTimeRsp\022\023\n\013FOGECJAHNIN\030\006 \003(\r\022\030\n\020c" +
-      "lient_game_time\030\013 \001(\r\022\021\n\tgame_time\030\017 \001(\r" +
-      "\022\017\n\007retcode\030\007 \001(\005B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\n\033SkipPlayerGameTimeRsp.proto\"U\n\025SkipPla" +
+      "yerGameTimeRsp\022\017\n\007retcode\030\n \001(\005\022\030\n\020clien" +
+      "t_game_time\030\007 \001(\r\022\021\n\tgame_time\030\001 \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -868,7 +678,7 @@ public final class SkipPlayerGameTimeRspOuterClass {
     internal_static_SkipPlayerGameTimeRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SkipPlayerGameTimeRsp_descriptor,
-        new java.lang.String[] { "FOGECJAHNIN", "ClientGameTime", "GameTime", "Retcode", });
+        new java.lang.String[] { "Retcode", "ClientGameTime", "GameTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

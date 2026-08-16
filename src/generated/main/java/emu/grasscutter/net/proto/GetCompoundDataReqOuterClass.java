@@ -19,6 +19,10 @@ public final class GetCompoundDataReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * CmdId: 2839
+   * </pre>
+   *
    * Protobuf type {@code GetCompoundDataReq}
    */
   public static final class GetCompoundDataReq extends
@@ -240,6 +244,10 @@ public final class GetCompoundDataReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 2839
+     * </pre>
+     *
      * Protobuf type {@code GetCompoundDataReq}
      */
     public static final class Builder extends

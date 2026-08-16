@@ -24,7 +24,7 @@ public final class GameplayRecommendationReliquaryResponseOuterClass {
      *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 1; // maybe, doesnt matter anyway, all obf
      * </pre>
      *
-     * <code>uint32 equip_type = 7;</code>
+     * <code>uint32 equip_type = 1;</code>
      * @return The equipType.
      */
     int getEquipType();
@@ -74,7 +74,7 @@ public final class GameplayRecommendationReliquaryResponseOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 8: {
 
               equipType_ = input.readUInt32();
               break;
@@ -111,7 +111,7 @@ public final class GameplayRecommendationReliquaryResponseOuterClass {
               emu.grasscutter.net.proto.GameplayRecommendationReliquaryResponseOuterClass.GameplayRecommendationReliquaryResponse.class, emu.grasscutter.net.proto.GameplayRecommendationReliquaryResponseOuterClass.GameplayRecommendationReliquaryResponse.Builder.class);
     }
 
-    public static final int EQUIP_TYPE_FIELD_NUMBER = 7;
+    public static final int EQUIP_TYPE_FIELD_NUMBER = 1;
     private int equipType_;
     /**
      * <pre>
@@ -119,7 +119,7 @@ public final class GameplayRecommendationReliquaryResponseOuterClass {
      *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 1; // maybe, doesnt matter anyway, all obf
      * </pre>
      *
-     * <code>uint32 equip_type = 7;</code>
+     * <code>uint32 equip_type = 1;</code>
      * @return The equipType.
      */
     @java.lang.Override
@@ -142,7 +142,7 @@ public final class GameplayRecommendationReliquaryResponseOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (equipType_ != 0) {
-        output.writeUInt32(7, equipType_);
+        output.writeUInt32(1, equipType_);
       }
       unknownFields.writeTo(output);
     }
@@ -155,7 +155,7 @@ public final class GameplayRecommendationReliquaryResponseOuterClass {
       size = 0;
       if (equipType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, equipType_);
+          .computeUInt32Size(1, equipType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -436,7 +436,7 @@ public final class GameplayRecommendationReliquaryResponseOuterClass {
        *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 1; // maybe, doesnt matter anyway, all obf
        * </pre>
        *
-       * <code>uint32 equip_type = 7;</code>
+       * <code>uint32 equip_type = 1;</code>
        * @return The equipType.
        */
       @java.lang.Override
@@ -449,7 +449,7 @@ public final class GameplayRecommendationReliquaryResponseOuterClass {
        *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 1; // maybe, doesnt matter anyway, all obf
        * </pre>
        *
-       * <code>uint32 equip_type = 7;</code>
+       * <code>uint32 equip_type = 1;</code>
        * @param value The equipType to set.
        * @return This builder for chaining.
        */
@@ -465,7 +465,7 @@ public final class GameplayRecommendationReliquaryResponseOuterClass {
        *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 1; // maybe, doesnt matter anyway, all obf
        * </pre>
        *
-       * <code>uint32 equip_type = 7;</code>
+       * <code>uint32 equip_type = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearEquipType() {
@@ -543,7 +543,7 @@ public final class GameplayRecommendationReliquaryResponseOuterClass {
     java.lang.String[] descriptorData = {
       "\n-GameplayRecommendationReliquaryRespons" +
       "e.proto\"=\n\'GameplayRecommendationReliqua" +
-      "ryResponse\022\022\n\nequip_type\030\007 \001(\rB\033\n\031emu.gr" +
+      "ryResponse\022\022\n\nequip_type\030\001 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

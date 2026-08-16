@@ -2,6 +2,7 @@ package emu.grasscutter.server.packet.recv;
 
 import emu.grasscutter.game.quest.enums.QuestContent;
 import emu.grasscutter.net.packet.*;
+import emu.grasscutter.net.proto.PostEnterSceneReqOuterClass.PostEnterSceneReq;
 import emu.grasscutter.server.game.GameSession;
 import emu.grasscutter.server.packet.send.PacketPostEnterSceneRsp;
 
@@ -10,6 +11,8 @@ public class HandlerPostEnterSceneReq extends PacketHandler {
 
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
+        PostEnterSceneReq req = PostEnterSceneReq.parseFrom(payload);
+                
         var player = session.getPlayer();
         var scene = player.getScene();
         var questManager = player.getQuestManager();

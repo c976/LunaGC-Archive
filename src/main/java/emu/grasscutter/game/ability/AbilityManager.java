@@ -102,6 +102,12 @@ public final class AbilityManager extends BasePlayerManager {
         // If that is missing, search for modifier action that sets
         // invulnerability as a fallback.
         //
+
+        if (ability == null) {
+            Grasscutter.getLogger().trace("possible elemental burst is null");
+            return;
+        }
+
         if (this.burstCasterId == 0) return;
 
         boolean skillInvincibility = modifier.state == AbilityModifier.State.Invincible;
@@ -326,7 +332,7 @@ public final class AbilityManager extends BasePlayerManager {
 
         switch (invoke.getArgumentType()) {
             case ABILITY_INVOKE_ARGUMENT_META_OVERRIDE_PARAM -> this.handleOverrideParam(invoke);
-            case  ABILITY_INVOKE_ARGUMENT_MIXIN_CHANGE_PHLOGISTON -> this.handleMixinChangePhlogiston(invoke);
+            case ABILITY_INVOKE_ARGUMENT_MIXIN_CHANGE_PHLOGISTON -> this.handleMixinChangePhlogiston(invoke);
             case ABILITY_INVOKE_ARGUMENT_META_REINIT_OVERRIDEMAP -> this.handleReinitOverrideMap(invoke);
             case ABILITY_INVOKE_ARGUMENT_META_MODIFIER_CHANGE -> this.handleModifierChange(invoke);
             case ABILITY_INVOKE_ARGUMENT_MIXIN_COST_STAMINA -> this.handleMixinCostStamina(invoke);
@@ -716,6 +722,12 @@ private void handleClearGlobalFloatValue(AbilityInvokeEntry invoke)
                                 head.getInstancedModifierId(),
                                 instancedAbilityData.abilityName,
                                 modifierData);
+            }
+
+            if (instancedAbility != null) {
+                onPossibleElementalBurst(instancedAbility, modifierData, invoke.getEntityId());
+            } else {
+                Grasscutter.getLogger().trace("no instanced ability for modifier");
             }
 
             onPossibleElementalBurst(instancedAbility, modifierData, invoke.getEntityId());

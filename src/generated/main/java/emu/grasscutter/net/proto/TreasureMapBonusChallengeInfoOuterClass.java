@@ -19,23 +19,11 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_active = 6;</code>
-     * @return The isActive.
-     */
-    boolean getIsActive();
-
-    /**
-     * <code>uint32 config_id = 5;</code>
-     * @return The configId.
-     */
-    int getConfigId();
-
-    /**
-     * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+     * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
      */
     int getFragmentMapCount();
     /**
-     * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+     * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
      */
     boolean containsFragmentMap(
         int key);
@@ -46,41 +34,49 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Boolean>
     getFragmentMap();
     /**
-     * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+     * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Boolean>
     getFragmentMapMap();
     /**
-     * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+     * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
      */
 
     boolean getFragmentMapOrDefault(
         int key,
         boolean defaultValue);
     /**
-     * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+     * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
      */
 
     boolean getFragmentMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 solution_id = 9;</code>
-     * @return The solutionId.
+     * <code>bool is_active = 1;</code>
+     * @return The isActive.
      */
-    int getSolutionId();
+    boolean getIsActive();
 
     /**
-     * <code>bool is_done = 10;</code>
+     * <code>bool is_done = 13;</code>
      * @return The isDone.
      */
     boolean getIsDone();
+
+    /**
+     * <code>uint32 config_id = 7;</code>
+     * @return The configId.
+     */
+    int getConfigId();
+
+    /**
+     * <code>uint32 solution_id = 5;</code>
+     * @return The solutionId.
+     */
+    int getSolutionId();
   }
   /**
-   * <pre>
-   * Obf: DNIFECLOOPI
-   * </pre>
-   *
    * Protobuf type {@code TreasureMapBonusChallengeInfo}
    */
   public static final class TreasureMapBonusChallengeInfo extends
@@ -126,7 +122,27 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 8: {
+
+              isActive_ = input.readBool();
+              break;
+            }
+            case 40: {
+
+              solutionId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              configId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              isDone_ = input.readBool();
+              break;
+            }
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fragmentMap_ = com.google.protobuf.MapField.newMapField(
                     FragmentMapDefaultEntryHolder.defaultEntry);
@@ -137,26 +153,6 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
                   FragmentMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               fragmentMap_.getMutableMap().put(
                   fragmentMap__.getKey(), fragmentMap__.getValue());
-              break;
-            }
-            case 40: {
-
-              configId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              isActive_ = input.readBool();
-              break;
-            }
-            case 72: {
-
-              solutionId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              isDone_ = input.readBool();
               break;
             }
             default: {
@@ -188,7 +184,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 1:
+        case 15:
           return internalGetFragmentMap();
         default:
           throw new RuntimeException(
@@ -203,29 +199,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
               emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.class, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder.class);
     }
 
-    public static final int IS_ACTIVE_FIELD_NUMBER = 6;
-    private boolean isActive_;
-    /**
-     * <code>bool is_active = 6;</code>
-     * @return The isActive.
-     */
-    @java.lang.Override
-    public boolean getIsActive() {
-      return isActive_;
-    }
-
-    public static final int CONFIG_ID_FIELD_NUMBER = 5;
-    private int configId_;
-    /**
-     * <code>uint32 config_id = 5;</code>
-     * @return The configId.
-     */
-    @java.lang.Override
-    public int getConfigId() {
-      return configId_;
-    }
-
-    public static final int FRAGMENT_MAP_FIELD_NUMBER = 1;
+    public static final int FRAGMENT_MAP_FIELD_NUMBER = 15;
     private static final class FragmentMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Boolean> defaultEntry =
@@ -252,7 +226,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       return internalGetFragmentMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+     * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
      */
 
     @java.lang.Override
@@ -270,7 +244,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       return getFragmentMapMap();
     }
     /**
-     * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+     * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
      */
     @java.lang.Override
 
@@ -278,7 +252,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       return internalGetFragmentMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+     * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
      */
     @java.lang.Override
 
@@ -291,7 +265,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+     * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
      */
     @java.lang.Override
 
@@ -306,26 +280,48 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int SOLUTION_ID_FIELD_NUMBER = 9;
-    private int solutionId_;
+    public static final int IS_ACTIVE_FIELD_NUMBER = 1;
+    private boolean isActive_;
     /**
-     * <code>uint32 solution_id = 9;</code>
-     * @return The solutionId.
+     * <code>bool is_active = 1;</code>
+     * @return The isActive.
      */
     @java.lang.Override
-    public int getSolutionId() {
-      return solutionId_;
+    public boolean getIsActive() {
+      return isActive_;
     }
 
-    public static final int IS_DONE_FIELD_NUMBER = 10;
+    public static final int IS_DONE_FIELD_NUMBER = 13;
     private boolean isDone_;
     /**
-     * <code>bool is_done = 10;</code>
+     * <code>bool is_done = 13;</code>
      * @return The isDone.
      */
     @java.lang.Override
     public boolean getIsDone() {
       return isDone_;
+    }
+
+    public static final int CONFIG_ID_FIELD_NUMBER = 7;
+    private int configId_;
+    /**
+     * <code>uint32 config_id = 7;</code>
+     * @return The configId.
+     */
+    @java.lang.Override
+    public int getConfigId() {
+      return configId_;
+    }
+
+    public static final int SOLUTION_ID_FIELD_NUMBER = 5;
+    private int solutionId_;
+    /**
+     * <code>uint32 solution_id = 5;</code>
+     * @return The solutionId.
+     */
+    @java.lang.Override
+    public int getSolutionId() {
+      return solutionId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -342,24 +338,24 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isActive_ != false) {
+        output.writeBool(1, isActive_);
+      }
+      if (solutionId_ != 0) {
+        output.writeUInt32(5, solutionId_);
+      }
+      if (configId_ != 0) {
+        output.writeUInt32(7, configId_);
+      }
+      if (isDone_ != false) {
+        output.writeBool(13, isDone_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetFragmentMap(),
           FragmentMapDefaultEntryHolder.defaultEntry,
-          1);
-      if (configId_ != 0) {
-        output.writeUInt32(5, configId_);
-      }
-      if (isActive_ != false) {
-        output.writeBool(6, isActive_);
-      }
-      if (solutionId_ != 0) {
-        output.writeUInt32(9, solutionId_);
-      }
-      if (isDone_ != false) {
-        output.writeBool(10, isDone_);
-      }
+          15);
       unknownFields.writeTo(output);
     }
 
@@ -369,6 +365,22 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isActive_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, isActive_);
+      }
+      if (solutionId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, solutionId_);
+      }
+      if (configId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, configId_);
+      }
+      if (isDone_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isDone_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Boolean> entry
            : internalGetFragmentMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Boolean>
@@ -377,23 +389,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(1, fragmentMap__);
-      }
-      if (configId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, configId_);
-      }
-      if (isActive_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isActive_);
-      }
-      if (solutionId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, solutionId_);
-      }
-      if (isDone_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isDone_);
+            .computeMessageSize(15, fragmentMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -410,16 +406,16 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       }
       emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo other = (emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo) obj;
 
-      if (getIsActive()
-          != other.getIsActive()) return false;
-      if (getConfigId()
-          != other.getConfigId()) return false;
       if (!internalGetFragmentMap().equals(
           other.internalGetFragmentMap())) return false;
-      if (getSolutionId()
-          != other.getSolutionId()) return false;
+      if (getIsActive()
+          != other.getIsActive()) return false;
       if (getIsDone()
           != other.getIsDone()) return false;
+      if (getConfigId()
+          != other.getConfigId()) return false;
+      if (getSolutionId()
+          != other.getSolutionId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -431,20 +427,20 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ACTIVE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsActive());
-      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getConfigId();
       if (!internalGetFragmentMap().getMap().isEmpty()) {
         hash = (37 * hash) + FRAGMENT_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetFragmentMap().hashCode();
       }
-      hash = (37 * hash) + SOLUTION_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSolutionId();
+      hash = (37 * hash) + IS_ACTIVE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsActive());
       hash = (37 * hash) + IS_DONE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsDone());
+      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getConfigId();
+      hash = (37 * hash) + SOLUTION_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSolutionId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -541,10 +537,6 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DNIFECLOOPI
-     * </pre>
-     *
      * Protobuf type {@code TreasureMapBonusChallengeInfo}
      */
     public static final class Builder extends
@@ -560,7 +552,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 1:
+          case 15:
             return internalGetFragmentMap();
           default:
             throw new RuntimeException(
@@ -571,7 +563,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 1:
+          case 15:
             return internalGetMutableFragmentMap();
           default:
             throw new RuntimeException(
@@ -604,14 +596,14 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        internalGetMutableFragmentMap().clear();
         isActive_ = false;
+
+        isDone_ = false;
 
         configId_ = 0;
 
-        internalGetMutableFragmentMap().clear();
         solutionId_ = 0;
-
-        isDone_ = false;
 
         return this;
       }
@@ -640,12 +632,12 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo buildPartial() {
         emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo result = new emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo(this);
         int from_bitField0_ = bitField0_;
-        result.isActive_ = isActive_;
-        result.configId_ = configId_;
         result.fragmentMap_ = internalGetFragmentMap();
         result.fragmentMap_.makeImmutable();
-        result.solutionId_ = solutionId_;
+        result.isActive_ = isActive_;
         result.isDone_ = isDone_;
+        result.configId_ = configId_;
+        result.solutionId_ = solutionId_;
         onBuilt();
         return result;
       }
@@ -694,19 +686,19 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo other) {
         if (other == emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.getDefaultInstance()) return this;
+        internalGetMutableFragmentMap().mergeFrom(
+            other.internalGetFragmentMap());
         if (other.getIsActive() != false) {
           setIsActive(other.getIsActive());
+        }
+        if (other.getIsDone() != false) {
+          setIsDone(other.getIsDone());
         }
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
         }
-        internalGetMutableFragmentMap().mergeFrom(
-            other.internalGetFragmentMap());
         if (other.getSolutionId() != 0) {
           setSolutionId(other.getSolutionId());
-        }
-        if (other.getIsDone() != false) {
-          setIsDone(other.getIsDone());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -738,68 +730,6 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
       }
       private int bitField0_;
 
-      private boolean isActive_ ;
-      /**
-       * <code>bool is_active = 6;</code>
-       * @return The isActive.
-       */
-      @java.lang.Override
-      public boolean getIsActive() {
-        return isActive_;
-      }
-      /**
-       * <code>bool is_active = 6;</code>
-       * @param value The isActive to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsActive(boolean value) {
-        
-        isActive_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_active = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsActive() {
-        
-        isActive_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int configId_ ;
-      /**
-       * <code>uint32 config_id = 5;</code>
-       * @return The configId.
-       */
-      @java.lang.Override
-      public int getConfigId() {
-        return configId_;
-      }
-      /**
-       * <code>uint32 config_id = 5;</code>
-       * @param value The configId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setConfigId(int value) {
-        
-        configId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 config_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearConfigId() {
-        
-        configId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Boolean> fragmentMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Boolean>
@@ -827,7 +757,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
         return internalGetFragmentMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+       * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
        */
 
       @java.lang.Override
@@ -845,7 +775,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
         return getFragmentMapMap();
       }
       /**
-       * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+       * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
        */
       @java.lang.Override
 
@@ -853,7 +783,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
         return internalGetFragmentMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+       * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
        */
       @java.lang.Override
 
@@ -866,7 +796,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+       * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
        */
       @java.lang.Override
 
@@ -887,7 +817,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+       * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
        */
 
       public Builder removeFragmentMap(
@@ -906,7 +836,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
         return internalGetMutableFragmentMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+       * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
        */
       public Builder putFragmentMap(
           int key,
@@ -918,7 +848,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, bool&gt; fragment_map = 1;</code>
+       * <code>map&lt;uint32, bool&gt; fragment_map = 15;</code>
        */
 
       public Builder putAllFragmentMap(
@@ -928,40 +858,40 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
         return this;
       }
 
-      private int solutionId_ ;
+      private boolean isActive_ ;
       /**
-       * <code>uint32 solution_id = 9;</code>
-       * @return The solutionId.
+       * <code>bool is_active = 1;</code>
+       * @return The isActive.
        */
       @java.lang.Override
-      public int getSolutionId() {
-        return solutionId_;
+      public boolean getIsActive() {
+        return isActive_;
       }
       /**
-       * <code>uint32 solution_id = 9;</code>
-       * @param value The solutionId to set.
+       * <code>bool is_active = 1;</code>
+       * @param value The isActive to set.
        * @return This builder for chaining.
        */
-      public Builder setSolutionId(int value) {
+      public Builder setIsActive(boolean value) {
         
-        solutionId_ = value;
+        isActive_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 solution_id = 9;</code>
+       * <code>bool is_active = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSolutionId() {
+      public Builder clearIsActive() {
         
-        solutionId_ = 0;
+        isActive_ = false;
         onChanged();
         return this;
       }
 
       private boolean isDone_ ;
       /**
-       * <code>bool is_done = 10;</code>
+       * <code>bool is_done = 13;</code>
        * @return The isDone.
        */
       @java.lang.Override
@@ -969,7 +899,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
         return isDone_;
       }
       /**
-       * <code>bool is_done = 10;</code>
+       * <code>bool is_done = 13;</code>
        * @param value The isDone to set.
        * @return This builder for chaining.
        */
@@ -980,12 +910,74 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_done = 10;</code>
+       * <code>bool is_done = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsDone() {
         
         isDone_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int configId_ ;
+      /**
+       * <code>uint32 config_id = 7;</code>
+       * @return The configId.
+       */
+      @java.lang.Override
+      public int getConfigId() {
+        return configId_;
+      }
+      /**
+       * <code>uint32 config_id = 7;</code>
+       * @param value The configId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setConfigId(int value) {
+        
+        configId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 config_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearConfigId() {
+        
+        configId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int solutionId_ ;
+      /**
+       * <code>uint32 solution_id = 5;</code>
+       * @return The solutionId.
+       */
+      @java.lang.Override
+      public int getSolutionId() {
+        return solutionId_;
+      }
+      /**
+       * <code>uint32 solution_id = 5;</code>
+       * @param value The solutionId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSolutionId(int value) {
+        
+        solutionId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 solution_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSolutionId() {
+        
+        solutionId_ = 0;
         onChanged();
         return this;
       }
@@ -1062,11 +1054,11 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#TreasureMapBonusChallengeInfo.proto\"\346\001" +
-      "\n\035TreasureMapBonusChallengeInfo\022\021\n\tis_ac" +
-      "tive\030\006 \001(\010\022\021\n\tconfig_id\030\005 \001(\r\022E\n\014fragmen" +
-      "t_map\030\001 \003(\0132/.TreasureMapBonusChallengeI" +
-      "nfo.FragmentMapEntry\022\023\n\013solution_id\030\t \001(" +
-      "\r\022\017\n\007is_done\030\n \001(\010\0322\n\020FragmentMapEntry\022\013" +
+      "\n\035TreasureMapBonusChallengeInfo\022E\n\014fragm" +
+      "ent_map\030\017 \003(\0132/.TreasureMapBonusChalleng" +
+      "eInfo.FragmentMapEntry\022\021\n\tis_active\030\001 \001(" +
+      "\010\022\017\n\007is_done\030\r \001(\010\022\021\n\tconfig_id\030\007 \001(\r\022\023\n" +
+      "\013solution_id\030\005 \001(\r\0322\n\020FragmentMapEntry\022\013" +
       "\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\010:\0028\001B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
@@ -1079,7 +1071,7 @@ public final class TreasureMapBonusChallengeInfoOuterClass {
     internal_static_TreasureMapBonusChallengeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TreasureMapBonusChallengeInfo_descriptor,
-        new java.lang.String[] { "IsActive", "ConfigId", "FragmentMap", "SolutionId", "IsDone", });
+        new java.lang.String[] { "FragmentMap", "IsActive", "IsDone", "ConfigId", "SolutionId", });
     internal_static_TreasureMapBonusChallengeInfo_FragmentMapEntry_descriptor =
       internal_static_TreasureMapBonusChallengeInfo_descriptor.getNestedTypes().get(0);
     internal_static_TreasureMapBonusChallengeInfo_FragmentMapEntry_fieldAccessorTable = new

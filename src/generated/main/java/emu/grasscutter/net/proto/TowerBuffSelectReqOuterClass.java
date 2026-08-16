@@ -19,15 +19,14 @@ public final class TowerBuffSelectReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 tower_buff_id = 5;</code>
+     * <code>uint32 tower_buff_id = 10;</code>
      * @return The towerBuffId.
      */
     int getTowerBuffId();
   }
   /**
    * <pre>
-   * CmdId: 8694
-   * Obf: ALCNOJCIJGE
+   * CmdId: 424
    * </pre>
    *
    * Protobuf type {@code TowerBuffSelectReq}
@@ -74,7 +73,7 @@ public final class TowerBuffSelectReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 80: {
 
               towerBuffId_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class TowerBuffSelectReqOuterClass {
               emu.grasscutter.net.proto.TowerBuffSelectReqOuterClass.TowerBuffSelectReq.class, emu.grasscutter.net.proto.TowerBuffSelectReqOuterClass.TowerBuffSelectReq.Builder.class);
     }
 
-    public static final int TOWER_BUFF_ID_FIELD_NUMBER = 5;
+    public static final int TOWER_BUFF_ID_FIELD_NUMBER = 10;
     private int towerBuffId_;
     /**
-     * <code>uint32 tower_buff_id = 5;</code>
+     * <code>uint32 tower_buff_id = 10;</code>
      * @return The towerBuffId.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class TowerBuffSelectReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (towerBuffId_ != 0) {
-        output.writeUInt32(5, towerBuffId_);
+        output.writeUInt32(10, towerBuffId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class TowerBuffSelectReqOuterClass {
       size = 0;
       if (towerBuffId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, towerBuffId_);
+          .computeUInt32Size(10, towerBuffId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class TowerBuffSelectReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8694
-     * Obf: ALCNOJCIJGE
+     * CmdId: 424
      * </pre>
      *
      * Protobuf type {@code TowerBuffSelectReq}
@@ -431,7 +429,7 @@ public final class TowerBuffSelectReqOuterClass {
 
       private int towerBuffId_ ;
       /**
-       * <code>uint32 tower_buff_id = 5;</code>
+       * <code>uint32 tower_buff_id = 10;</code>
        * @return The towerBuffId.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class TowerBuffSelectReqOuterClass {
         return towerBuffId_;
       }
       /**
-       * <code>uint32 tower_buff_id = 5;</code>
+       * <code>uint32 tower_buff_id = 10;</code>
        * @param value The towerBuffId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class TowerBuffSelectReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 tower_buff_id = 5;</code>
+       * <code>uint32 tower_buff_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearTowerBuffId() {
@@ -527,7 +525,7 @@ public final class TowerBuffSelectReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030TowerBuffSelectReq.proto\"+\n\022TowerBuffS" +
-      "electReq\022\025\n\rtower_buff_id\030\005 \001(\rB\033\n\031emu.g" +
+      "electReq\022\025\n\rtower_buff_id\030\n \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

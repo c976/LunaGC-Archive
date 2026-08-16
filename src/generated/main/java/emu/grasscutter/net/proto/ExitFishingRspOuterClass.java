@@ -26,8 +26,7 @@ public final class ExitFishingRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4039
-   * Obf: AGBLLAMGEMM
+   * CmdId: 1713
    * </pre>
    *
    * Protobuf type {@code ExitFishingRsp}
@@ -279,8 +278,7 @@ public final class ExitFishingRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4039
-     * Obf: AGBLLAMGEMM
+     * CmdId: 1713
      * </pre>
      *
      * Protobuf type {@code ExitFishingRsp}

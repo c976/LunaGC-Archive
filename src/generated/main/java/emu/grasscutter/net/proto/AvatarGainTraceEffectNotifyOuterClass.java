@@ -25,6 +25,10 @@ public final class AvatarGainTraceEffectNotifyOuterClass {
     int getTraceEffectId();
   }
   /**
+   * <pre>
+   * CmdId: 27778
+   * </pre>
+   *
    * Protobuf type {@code AvatarGainTraceEffectNotify}
    */
   public static final class AvatarGainTraceEffectNotify extends
@@ -273,6 +277,10 @@ public final class AvatarGainTraceEffectNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 27778
+     * </pre>
+     *
      * Protobuf type {@code AvatarGainTraceEffectNotify}
      */
     public static final class Builder extends

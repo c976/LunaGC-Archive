@@ -13,18 +13,18 @@ public final class MapLayerFloorData extends GameResource {
     @Getter(onMethod_ = @Override)
     int id;
 
-    int PJDGAAAGOPO;
-    int LCGNJBLMDHA;
+    int IHIJBINKPAI;
+    int COOJGPKCJIK;
 
     @SerializedName(
             value = "floorNameTextMapHash",
-            alternate = {"NDAGFKELEAP"})
+            alternate = {"COFPPGFELDJ"})
     long floorNameTextMapHash;
 
-    CKNDNKLCAHC CKNDNKLCAHC;
-    long BHEMLJCFHPI;
+    BAGNDMMEMCN BAGNDMMEMCN;
+    long JNCGDCNCHOE;
 
-    public static class CKNDNKLCAHC {
+    public static class BAGNDMMEMCN {
         Unk_Type type;
         List<Integer> paramList;
 

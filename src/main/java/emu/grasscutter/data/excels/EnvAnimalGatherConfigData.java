@@ -10,7 +10,7 @@ import java.util.List;
 public class EnvAnimalGatherConfigData extends GameResource {
     private int animalId;
     private String entityType;
-    private List<ItemParamData> gatherItemId;
+    private List<ItemParamData> gatherItemList;
     private String excludeWeathers;
     private int aliveTime;
     private int escapeTime;
@@ -30,6 +30,6 @@ public class EnvAnimalGatherConfigData extends GameResource {
     }
 
     public ItemParamData getGatherItem() {
-        return gatherItemId.size() > 0 ? gatherItemId.get(0) : null;
+        return gatherItemList != null && gatherItemList.size() > 0 ? gatherItemList.get(0) : null;
     }
 }

@@ -19,23 +19,27 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 show_name_card_id_list = 13;</code>
+     * <code>repeated uint32 show_name_card_id_list = 2;</code>
      * @return A list containing the showNameCardIdList.
      */
     java.util.List<java.lang.Integer> getShowNameCardIdListList();
     /**
-     * <code>repeated uint32 show_name_card_id_list = 13;</code>
+     * <code>repeated uint32 show_name_card_id_list = 2;</code>
      * @return The count of showNameCardIdList.
      */
     int getShowNameCardIdListCount();
     /**
-     * <code>repeated uint32 show_name_card_id_list = 13;</code>
+     * <code>repeated uint32 show_name_card_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The showNameCardIdList at the given index.
      */
     int getShowNameCardIdList(int index);
   }
   /**
+   * <pre>
+   * CmdId: 8105
+   * </pre>
+   *
    * Protobuf type {@code UpdatePlayerShowNameCardListReq}
    */
   public static final class UpdatePlayerShowNameCardListReq extends
@@ -82,7 +86,7 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 16: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 showNameCardIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -90,7 +94,7 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
               showNameCardIdList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -138,10 +142,10 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
               emu.grasscutter.net.proto.UpdatePlayerShowNameCardListReqOuterClass.UpdatePlayerShowNameCardListReq.class, emu.grasscutter.net.proto.UpdatePlayerShowNameCardListReqOuterClass.UpdatePlayerShowNameCardListReq.Builder.class);
     }
 
-    public static final int SHOW_NAME_CARD_ID_LIST_FIELD_NUMBER = 13;
+    public static final int SHOW_NAME_CARD_ID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList showNameCardIdList_;
     /**
-     * <code>repeated uint32 show_name_card_id_list = 13;</code>
+     * <code>repeated uint32 show_name_card_id_list = 2;</code>
      * @return A list containing the showNameCardIdList.
      */
     @java.lang.Override
@@ -150,14 +154,14 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
       return showNameCardIdList_;
     }
     /**
-     * <code>repeated uint32 show_name_card_id_list = 13;</code>
+     * <code>repeated uint32 show_name_card_id_list = 2;</code>
      * @return The count of showNameCardIdList.
      */
     public int getShowNameCardIdListCount() {
       return showNameCardIdList_.size();
     }
     /**
-     * <code>repeated uint32 show_name_card_id_list = 13;</code>
+     * <code>repeated uint32 show_name_card_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The showNameCardIdList at the given index.
      */
@@ -182,7 +186,7 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getShowNameCardIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(showNameCardIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < showNameCardIdList_.size(); i++) {
@@ -339,6 +343,10 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 8105
+     * </pre>
+     *
      * Protobuf type {@code UpdatePlayerShowNameCardListReq}
      */
     public static final class Builder extends
@@ -506,7 +514,7 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 13;</code>
+       * <code>repeated uint32 show_name_card_id_list = 2;</code>
        * @return A list containing the showNameCardIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -515,14 +523,14 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
                  java.util.Collections.unmodifiableList(showNameCardIdList_) : showNameCardIdList_;
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 13;</code>
+       * <code>repeated uint32 show_name_card_id_list = 2;</code>
        * @return The count of showNameCardIdList.
        */
       public int getShowNameCardIdListCount() {
         return showNameCardIdList_.size();
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 13;</code>
+       * <code>repeated uint32 show_name_card_id_list = 2;</code>
        * @param index The index of the element to return.
        * @return The showNameCardIdList at the given index.
        */
@@ -530,7 +538,7 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
         return showNameCardIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 13;</code>
+       * <code>repeated uint32 show_name_card_id_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The showNameCardIdList to set.
        * @return This builder for chaining.
@@ -543,7 +551,7 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 13;</code>
+       * <code>repeated uint32 show_name_card_id_list = 2;</code>
        * @param value The showNameCardIdList to add.
        * @return This builder for chaining.
        */
@@ -554,7 +562,7 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 13;</code>
+       * <code>repeated uint32 show_name_card_id_list = 2;</code>
        * @param values The showNameCardIdList to add.
        * @return This builder for chaining.
        */
@@ -567,7 +575,7 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 13;</code>
+       * <code>repeated uint32 show_name_card_id_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearShowNameCardIdList() {
@@ -645,7 +653,7 @@ public final class UpdatePlayerShowNameCardListReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%UpdatePlayerShowNameCardListReq.proto\"" +
       "A\n\037UpdatePlayerShowNameCardListReq\022\036\n\026sh" +
-      "ow_name_card_id_list\030\r \003(\rB\033\n\031emu.grassc" +
+      "ow_name_card_id_list\030\002 \003(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

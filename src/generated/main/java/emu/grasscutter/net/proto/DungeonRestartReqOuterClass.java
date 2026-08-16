@@ -19,6 +19,10 @@ public final class DungeonRestartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * CmdId: 21623
+   * </pre>
+   *
    * Protobuf type {@code DungeonRestartReq}
    */
   public static final class DungeonRestartReq extends
@@ -240,6 +244,10 @@ public final class DungeonRestartReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 21623
+     * </pre>
+     *
      * Protobuf type {@code DungeonRestartReq}
      */
     public static final class Builder extends

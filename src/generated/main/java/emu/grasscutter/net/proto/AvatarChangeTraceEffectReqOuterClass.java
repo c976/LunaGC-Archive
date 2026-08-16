@@ -19,18 +19,22 @@ public final class AvatarChangeTraceEffectReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 trace_effect_id = 11;</code>
+     * <code>uint32 trace_effect_id = 1;</code>
      * @return The traceEffectId.
      */
     int getTraceEffectId();
 
     /**
-     * <code>uint64 avatar_guid = 1;</code>
+     * <code>uint64 avatar_guid = 6;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
   }
   /**
+   * <pre>
+   * CmdId: 4375
+   * </pre>
+   *
    * Protobuf type {@code AvatarChangeTraceEffectReq}
    */
   public static final class AvatarChangeTraceEffectReq extends
@@ -77,12 +81,12 @@ public final class AvatarChangeTraceEffectReqOuterClass {
               break;
             case 8: {
 
-              avatarGuid_ = input.readUInt64();
+              traceEffectId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 48: {
 
-              traceEffectId_ = input.readUInt32();
+              avatarGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -117,10 +121,10 @@ public final class AvatarChangeTraceEffectReqOuterClass {
               emu.grasscutter.net.proto.AvatarChangeTraceEffectReqOuterClass.AvatarChangeTraceEffectReq.class, emu.grasscutter.net.proto.AvatarChangeTraceEffectReqOuterClass.AvatarChangeTraceEffectReq.Builder.class);
     }
 
-    public static final int TRACE_EFFECT_ID_FIELD_NUMBER = 11;
+    public static final int TRACE_EFFECT_ID_FIELD_NUMBER = 1;
     private int traceEffectId_;
     /**
-     * <code>uint32 trace_effect_id = 11;</code>
+     * <code>uint32 trace_effect_id = 1;</code>
      * @return The traceEffectId.
      */
     @java.lang.Override
@@ -128,10 +132,10 @@ public final class AvatarChangeTraceEffectReqOuterClass {
       return traceEffectId_;
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 1;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 6;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 1;</code>
+     * <code>uint64 avatar_guid = 6;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -153,11 +157,11 @@ public final class AvatarChangeTraceEffectReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (avatarGuid_ != 0L) {
-        output.writeUInt64(1, avatarGuid_);
-      }
       if (traceEffectId_ != 0) {
-        output.writeUInt32(11, traceEffectId_);
+        output.writeUInt32(1, traceEffectId_);
+      }
+      if (avatarGuid_ != 0L) {
+        output.writeUInt64(6, avatarGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class AvatarChangeTraceEffectReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatarGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, avatarGuid_);
-      }
       if (traceEffectId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, traceEffectId_);
+          .computeUInt32Size(1, traceEffectId_);
+      }
+      if (avatarGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(6, avatarGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,6 +311,10 @@ public final class AvatarChangeTraceEffectReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 4375
+     * </pre>
+     *
      * Protobuf type {@code AvatarChangeTraceEffectReq}
      */
     public static final class Builder extends
@@ -461,7 +469,7 @@ public final class AvatarChangeTraceEffectReqOuterClass {
 
       private int traceEffectId_ ;
       /**
-       * <code>uint32 trace_effect_id = 11;</code>
+       * <code>uint32 trace_effect_id = 1;</code>
        * @return The traceEffectId.
        */
       @java.lang.Override
@@ -469,7 +477,7 @@ public final class AvatarChangeTraceEffectReqOuterClass {
         return traceEffectId_;
       }
       /**
-       * <code>uint32 trace_effect_id = 11;</code>
+       * <code>uint32 trace_effect_id = 1;</code>
        * @param value The traceEffectId to set.
        * @return This builder for chaining.
        */
@@ -480,7 +488,7 @@ public final class AvatarChangeTraceEffectReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 trace_effect_id = 11;</code>
+       * <code>uint32 trace_effect_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearTraceEffectId() {
@@ -492,7 +500,7 @@ public final class AvatarChangeTraceEffectReqOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 1;</code>
+       * <code>uint64 avatar_guid = 6;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -500,7 +508,7 @@ public final class AvatarChangeTraceEffectReqOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 1;</code>
+       * <code>uint64 avatar_guid = 6;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -511,7 +519,7 @@ public final class AvatarChangeTraceEffectReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 1;</code>
+       * <code>uint64 avatar_guid = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -589,7 +597,7 @@ public final class AvatarChangeTraceEffectReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n AvatarChangeTraceEffectReq.proto\"J\n\032Av" +
       "atarChangeTraceEffectReq\022\027\n\017trace_effect" +
-      "_id\030\013 \001(\r\022\023\n\013avatar_guid\030\001 \001(\004B\033\n\031emu.gr" +
+      "_id\030\001 \001(\r\022\023\n\013avatar_guid\030\006 \001(\004B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

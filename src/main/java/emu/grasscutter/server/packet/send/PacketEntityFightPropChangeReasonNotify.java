@@ -159,4 +159,4 @@ public class PacketEntityFightPropChangeReasonNotify extends BasePacket {
     this.setData(proto);
 }
 
-    }
+}

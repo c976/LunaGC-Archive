@@ -19,48 +19,44 @@ public final class LunaRiteHintPointOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 area_id = 11;</code>
-     * @return The areaId.
-     */
-    int getAreaId();
-
-    /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 4;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 4;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 4;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>uint32 index = 10;</code>
+     * <code>.LunaRiteHintPointType type = 8;</code>
+     * @return The enum numeric value on the wire for type.
+     */
+    int getTypeValue();
+    /**
+     * <code>.LunaRiteHintPointType type = 8;</code>
+     * @return The type.
+     */
+    emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType getType();
+
+    /**
+     * <code>uint32 index = 2;</code>
      * @return The index.
      */
     int getIndex();
 
     /**
-     * <code>.LunaRiteHintPointType type = 9;</code>
-     * @return The enum numeric value on the wire for type.
+     * <code>uint32 area_id = 13;</code>
+     * @return The areaId.
      */
-    int getTypeValue();
-    /**
-     * <code>.LunaRiteHintPointType type = 9;</code>
-     * @return The type.
-     */
-    emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType getType();
+    int getAreaId();
   }
   /**
-   * <pre>
-   * Obf: PBNGPDHJOBG
-   * </pre>
-   *
    * Protobuf type {@code LunaRiteHintPoint}
    */
   public static final class LunaRiteHintPoint extends
@@ -106,7 +102,12 @@ public final class LunaRiteHintPointOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 16: {
+
+              index_ = input.readUInt32();
+              break;
+            }
+            case 34: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -119,18 +120,13 @@ public final class LunaRiteHintPointOuterClass {
 
               break;
             }
-            case 72: {
+            case 64: {
               int rawValue = input.readEnum();
 
               type_ = rawValue;
               break;
             }
-            case 80: {
-
-              index_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 104: {
 
               areaId_ = input.readUInt32();
               break;
@@ -167,21 +163,10 @@ public final class LunaRiteHintPointOuterClass {
               emu.grasscutter.net.proto.LunaRiteHintPointOuterClass.LunaRiteHintPoint.class, emu.grasscutter.net.proto.LunaRiteHintPointOuterClass.LunaRiteHintPoint.Builder.class);
     }
 
-    public static final int AREA_ID_FIELD_NUMBER = 11;
-    private int areaId_;
-    /**
-     * <code>uint32 area_id = 11;</code>
-     * @return The areaId.
-     */
-    @java.lang.Override
-    public int getAreaId() {
-      return areaId_;
-    }
-
-    public static final int POS_FIELD_NUMBER = 2;
+    public static final int POS_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 4;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -189,7 +174,7 @@ public final class LunaRiteHintPointOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 4;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -197,17 +182,36 @@ public final class LunaRiteHintPointOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
-    public static final int INDEX_FIELD_NUMBER = 10;
+    public static final int TYPE_FIELD_NUMBER = 8;
+    private int type_;
+    /**
+     * <code>.LunaRiteHintPointType type = 8;</code>
+     * @return The enum numeric value on the wire for type.
+     */
+    @java.lang.Override public int getTypeValue() {
+      return type_;
+    }
+    /**
+     * <code>.LunaRiteHintPointType type = 8;</code>
+     * @return The type.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType getType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType result = emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType.valueOf(type_);
+      return result == null ? emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType.UNRECOGNIZED : result;
+    }
+
+    public static final int INDEX_FIELD_NUMBER = 2;
     private int index_;
     /**
-     * <code>uint32 index = 10;</code>
+     * <code>uint32 index = 2;</code>
      * @return The index.
      */
     @java.lang.Override
@@ -215,23 +219,15 @@ public final class LunaRiteHintPointOuterClass {
       return index_;
     }
 
-    public static final int TYPE_FIELD_NUMBER = 9;
-    private int type_;
+    public static final int AREA_ID_FIELD_NUMBER = 13;
+    private int areaId_;
     /**
-     * <code>.LunaRiteHintPointType type = 9;</code>
-     * @return The enum numeric value on the wire for type.
+     * <code>uint32 area_id = 13;</code>
+     * @return The areaId.
      */
-    @java.lang.Override public int getTypeValue() {
-      return type_;
-    }
-    /**
-     * <code>.LunaRiteHintPointType type = 9;</code>
-     * @return The type.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType getType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType result = emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType.valueOf(type_);
-      return result == null ? emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType.UNRECOGNIZED : result;
+    @java.lang.Override
+    public int getAreaId() {
+      return areaId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -248,17 +244,17 @@ public final class LunaRiteHintPointOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pos_ != null) {
-        output.writeMessage(2, getPos());
-      }
-      if (type_ != emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType.LUNA_RITE_HINT_TYPE_NONE.getNumber()) {
-        output.writeEnum(9, type_);
-      }
       if (index_ != 0) {
-        output.writeUInt32(10, index_);
+        output.writeUInt32(2, index_);
+      }
+      if (pos_ != null) {
+        output.writeMessage(4, getPos());
+      }
+      if (type_ != emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType.LUNA_RITE_HINT_POINT_TYPE_NONE.getNumber()) {
+        output.writeEnum(8, type_);
       }
       if (areaId_ != 0) {
-        output.writeUInt32(11, areaId_);
+        output.writeUInt32(13, areaId_);
       }
       unknownFields.writeTo(output);
     }
@@ -269,21 +265,21 @@ public final class LunaRiteHintPointOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pos_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getPos());
-      }
-      if (type_ != emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType.LUNA_RITE_HINT_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(9, type_);
-      }
       if (index_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, index_);
+          .computeUInt32Size(2, index_);
+      }
+      if (pos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, getPos());
+      }
+      if (type_ != emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType.LUNA_RITE_HINT_POINT_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(8, type_);
       }
       if (areaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, areaId_);
+          .computeUInt32Size(13, areaId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -300,16 +296,16 @@ public final class LunaRiteHintPointOuterClass {
       }
       emu.grasscutter.net.proto.LunaRiteHintPointOuterClass.LunaRiteHintPoint other = (emu.grasscutter.net.proto.LunaRiteHintPointOuterClass.LunaRiteHintPoint) obj;
 
-      if (getAreaId()
-          != other.getAreaId()) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
+      if (type_ != other.type_) return false;
       if (getIndex()
           != other.getIndex()) return false;
-      if (type_ != other.type_) return false;
+      if (getAreaId()
+          != other.getAreaId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -321,16 +317,16 @@ public final class LunaRiteHintPointOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AREA_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAreaId();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
-      hash = (37 * hash) + INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getIndex();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
       hash = (53 * hash) + type_;
+      hash = (37 * hash) + INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getIndex();
+      hash = (37 * hash) + AREA_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAreaId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -427,10 +423,6 @@ public final class LunaRiteHintPointOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PBNGPDHJOBG
-     * </pre>
-     *
      * Protobuf type {@code LunaRiteHintPoint}
      */
     public static final class Builder extends
@@ -468,17 +460,17 @@ public final class LunaRiteHintPointOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        areaId_ = 0;
-
         if (posBuilder_ == null) {
           pos_ = null;
         } else {
           pos_ = null;
           posBuilder_ = null;
         }
+        type_ = 0;
+
         index_ = 0;
 
-        type_ = 0;
+        areaId_ = 0;
 
         return this;
       }
@@ -506,14 +498,14 @@ public final class LunaRiteHintPointOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LunaRiteHintPointOuterClass.LunaRiteHintPoint buildPartial() {
         emu.grasscutter.net.proto.LunaRiteHintPointOuterClass.LunaRiteHintPoint result = new emu.grasscutter.net.proto.LunaRiteHintPointOuterClass.LunaRiteHintPoint(this);
-        result.areaId_ = areaId_;
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
-        result.index_ = index_;
         result.type_ = type_;
+        result.index_ = index_;
+        result.areaId_ = areaId_;
         onBuilt();
         return result;
       }
@@ -562,17 +554,17 @@ public final class LunaRiteHintPointOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LunaRiteHintPointOuterClass.LunaRiteHintPoint other) {
         if (other == emu.grasscutter.net.proto.LunaRiteHintPointOuterClass.LunaRiteHintPoint.getDefaultInstance()) return this;
-        if (other.getAreaId() != 0) {
-          setAreaId(other.getAreaId());
-        }
         if (other.hasPos()) {
           mergePos(other.getPos());
+        }
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
         }
         if (other.getIndex() != 0) {
           setIndex(other.getIndex());
         }
-        if (other.type_ != 0) {
-          setTypeValue(other.getTypeValue());
+        if (other.getAreaId() != 0) {
+          setAreaId(other.getAreaId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -603,49 +595,18 @@ public final class LunaRiteHintPointOuterClass {
         return this;
       }
 
-      private int areaId_ ;
-      /**
-       * <code>uint32 area_id = 11;</code>
-       * @return The areaId.
-       */
-      @java.lang.Override
-      public int getAreaId() {
-        return areaId_;
-      }
-      /**
-       * <code>uint32 area_id = 11;</code>
-       * @param value The areaId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAreaId(int value) {
-        
-        areaId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 area_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAreaId() {
-        
-        areaId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 4;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 4;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -656,7 +617,7 @@ public final class LunaRiteHintPointOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 4;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -672,7 +633,7 @@ public final class LunaRiteHintPointOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 4;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -686,7 +647,7 @@ public final class LunaRiteHintPointOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 4;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -704,7 +665,7 @@ public final class LunaRiteHintPointOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 4;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -718,7 +679,7 @@ public final class LunaRiteHintPointOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 4;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -726,7 +687,7 @@ public final class LunaRiteHintPointOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 4;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -737,7 +698,7 @@ public final class LunaRiteHintPointOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -753,47 +714,16 @@ public final class LunaRiteHintPointOuterClass {
         return posBuilder_;
       }
 
-      private int index_ ;
-      /**
-       * <code>uint32 index = 10;</code>
-       * @return The index.
-       */
-      @java.lang.Override
-      public int getIndex() {
-        return index_;
-      }
-      /**
-       * <code>uint32 index = 10;</code>
-       * @param value The index to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIndex(int value) {
-        
-        index_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 index = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIndex() {
-        
-        index_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int type_ = 0;
       /**
-       * <code>.LunaRiteHintPointType type = 9;</code>
+       * <code>.LunaRiteHintPointType type = 8;</code>
        * @return The enum numeric value on the wire for type.
        */
       @java.lang.Override public int getTypeValue() {
         return type_;
       }
       /**
-       * <code>.LunaRiteHintPointType type = 9;</code>
+       * <code>.LunaRiteHintPointType type = 8;</code>
        * @param value The enum numeric value on the wire for type to set.
        * @return This builder for chaining.
        */
@@ -804,7 +734,7 @@ public final class LunaRiteHintPointOuterClass {
         return this;
       }
       /**
-       * <code>.LunaRiteHintPointType type = 9;</code>
+       * <code>.LunaRiteHintPointType type = 8;</code>
        * @return The type.
        */
       @java.lang.Override
@@ -814,7 +744,7 @@ public final class LunaRiteHintPointOuterClass {
         return result == null ? emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.LunaRiteHintPointType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.LunaRiteHintPointType type = 9;</code>
+       * <code>.LunaRiteHintPointType type = 8;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
@@ -828,12 +758,74 @@ public final class LunaRiteHintPointOuterClass {
         return this;
       }
       /**
-       * <code>.LunaRiteHintPointType type = 9;</code>
+       * <code>.LunaRiteHintPointType type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
         
         type_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int index_ ;
+      /**
+       * <code>uint32 index = 2;</code>
+       * @return The index.
+       */
+      @java.lang.Override
+      public int getIndex() {
+        return index_;
+      }
+      /**
+       * <code>uint32 index = 2;</code>
+       * @param value The index to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIndex(int value) {
+        
+        index_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 index = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIndex() {
+        
+        index_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int areaId_ ;
+      /**
+       * <code>uint32 area_id = 13;</code>
+       * @return The areaId.
+       */
+      @java.lang.Override
+      public int getAreaId() {
+        return areaId_;
+      }
+      /**
+       * <code>uint32 area_id = 13;</code>
+       * @param value The areaId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAreaId(int value) {
+        
+        areaId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 area_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAreaId() {
+        
+        areaId_ = 0;
         onChanged();
         return this;
       }
@@ -904,27 +896,27 @@ public final class LunaRiteHintPointOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027LunaRiteHintPoint.proto\032\014Vector.proto\032" +
-      "\033LunaRiteHintPointType.proto\"o\n\021LunaRite" +
-      "HintPoint\022\017\n\007area_id\030\013 \001(\r\022\024\n\003pos\030\002 \001(\0132" +
-      "\007.Vector\022\r\n\005index\030\n \001(\r\022$\n\004type\030\t \001(\0162\026." +
-      "LunaRiteHintPointTypeB\033\n\031emu.grasscutter" +
+      "\n\027LunaRiteHintPoint.proto\032\033LunaRiteHintP" +
+      "ointType.proto\032\014Vector.proto\"o\n\021LunaRite" +
+      "HintPoint\022\024\n\003pos\030\004 \001(\0132\007.Vector\022$\n\004type\030" +
+      "\010 \001(\0162\026.LunaRiteHintPointType\022\r\n\005index\030\002" +
+      " \001(\r\022\017\n\007area_id\030\r \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
         });
     internal_static_LunaRiteHintPoint_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_LunaRiteHintPoint_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LunaRiteHintPoint_descriptor,
-        new java.lang.String[] { "AreaId", "Pos", "Index", "Type", });
-    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+        new java.lang.String[] { "Pos", "Type", "Index", "AreaId", });
     emu.grasscutter.net.proto.LunaRiteHintPointTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

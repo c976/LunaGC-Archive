@@ -19,29 +19,11 @@ public final class BlessingActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 next_refresh_time = 15;</code>
-     * @return The nextRefreshTime.
-     */
-    int getNextRefreshTime();
-
-    /**
-     * <code>bool is_activated = 5;</code>
-     * @return The isActivated.
-     */
-    boolean getIsActivated();
-
-    /**
-     * <code>uint32 CLCIHLHKGLO = 1;</code>
-     * @return The cLCIHLHKGLO.
-     */
-    int getCLCIHLHKGLO();
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
      */
     int getPicNumMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
      */
     boolean containsPicNumMap(
         int key);
@@ -52,53 +34,67 @@ public final class BlessingActivityDetailInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getPicNumMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getPicNumMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
      */
 
     int getPicNumMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
      */
 
     int getPicNumMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 CDHGHIHPGKH = 6;</code>
-     * @return The cDHGHIHPGKH.
+     * <code>uint32 FNOJMIINAKF = 14;</code>
+     * @return The fNOJMIINAKF.
      */
-    int getCDHGHIHPGKH();
+    int getFNOJMIINAKF();
 
     /**
-     * <code>uint32 content_close_time = 4;</code>
-     * @return The contentCloseTime.
+     * <code>uint32 FJELGDOCKPD = 15;</code>
+     * @return The fJELGDOCKPD.
      */
-    int getContentCloseTime();
+    int getFJELGDOCKPD();
 
     /**
-     * <code>bool is_content_closed = 13;</code>
+     * <code>uint32 next_refresh_time = 7;</code>
+     * @return The nextRefreshTime.
+     */
+    int getNextRefreshTime();
+
+    /**
+     * <code>uint32 ONMDMKJKHOA = 5;</code>
+     * @return The oNMDMKJKHOA.
+     */
+    int getONMDMKJKHOA();
+
+    /**
+     * <code>bool is_activated = 2;</code>
+     * @return The isActivated.
+     */
+    boolean getIsActivated();
+
+    /**
+     * <code>bool is_content_closed = 8;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
 
     /**
-     * <code>uint32 KBEBLJFLGOF = 9;</code>
-     * @return The kBEBLJFLGOF.
+     * <code>uint32 content_close_time = 6;</code>
+     * @return The contentCloseTime.
      */
-    int getKBEBLJFLGOF();
+    int getContentCloseTime();
   }
   /**
-   * <pre>
-   * Obf: FNMKOLBOGPO
-   * </pre>
-   *
    * Protobuf type {@code BlessingActivityDetailInfo}
    */
   public static final class BlessingActivityDetailInfo extends
@@ -144,12 +140,12 @@ public final class BlessingActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              cLCIHLHKGLO_ = input.readUInt32();
+              isActivated_ = input.readBool();
               break;
             }
-            case 18: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 picNumMap_ = com.google.protobuf.MapField.newMapField(
                     PicNumMapDefaultEntryHolder.defaultEntry);
@@ -162,34 +158,34 @@ public final class BlessingActivityDetailInfoOuterClass {
                   picNumMap__.getKey(), picNumMap__.getValue());
               break;
             }
-            case 32: {
-
-              contentCloseTime_ = input.readUInt32();
-              break;
-            }
             case 40: {
 
-              isActivated_ = input.readBool();
+              oNMDMKJKHOA_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              cDHGHIHPGKH_ = input.readUInt32();
+              contentCloseTime_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 56: {
 
-              kBEBLJFLGOF_ = input.readUInt32();
+              nextRefreshTime_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 64: {
 
               isContentClosed_ = input.readBool();
               break;
             }
+            case 112: {
+
+              fNOJMIINAKF_ = input.readUInt32();
+              break;
+            }
             case 120: {
 
-              nextRefreshTime_ = input.readUInt32();
+              fJELGDOCKPD_ = input.readUInt32();
               break;
             }
             default: {
@@ -221,7 +217,7 @@ public final class BlessingActivityDetailInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 2:
+        case 3:
           return internalGetPicNumMap();
         default:
           throw new RuntimeException(
@@ -236,40 +232,7 @@ public final class BlessingActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo.class, emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo.Builder.class);
     }
 
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 15;
-    private int nextRefreshTime_;
-    /**
-     * <code>uint32 next_refresh_time = 15;</code>
-     * @return The nextRefreshTime.
-     */
-    @java.lang.Override
-    public int getNextRefreshTime() {
-      return nextRefreshTime_;
-    }
-
-    public static final int IS_ACTIVATED_FIELD_NUMBER = 5;
-    private boolean isActivated_;
-    /**
-     * <code>bool is_activated = 5;</code>
-     * @return The isActivated.
-     */
-    @java.lang.Override
-    public boolean getIsActivated() {
-      return isActivated_;
-    }
-
-    public static final int CLCIHLHKGLO_FIELD_NUMBER = 1;
-    private int cLCIHLHKGLO_;
-    /**
-     * <code>uint32 CLCIHLHKGLO = 1;</code>
-     * @return The cLCIHLHKGLO.
-     */
-    @java.lang.Override
-    public int getCLCIHLHKGLO() {
-      return cLCIHLHKGLO_;
-    }
-
-    public static final int PIC_NUM_MAP_FIELD_NUMBER = 2;
+    public static final int PIC_NUM_MAP_FIELD_NUMBER = 3;
     private static final class PicNumMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -296,7 +259,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       return internalGetPicNumMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
      */
 
     @java.lang.Override
@@ -314,7 +277,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       return getPicNumMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
      */
     @java.lang.Override
 
@@ -322,7 +285,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       return internalGetPicNumMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
      */
     @java.lang.Override
 
@@ -335,7 +298,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
      */
     @java.lang.Override
 
@@ -350,32 +313,65 @@ public final class BlessingActivityDetailInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int CDHGHIHPGKH_FIELD_NUMBER = 6;
-    private int cDHGHIHPGKH_;
+    public static final int FNOJMIINAKF_FIELD_NUMBER = 14;
+    private int fNOJMIINAKF_;
     /**
-     * <code>uint32 CDHGHIHPGKH = 6;</code>
-     * @return The cDHGHIHPGKH.
+     * <code>uint32 FNOJMIINAKF = 14;</code>
+     * @return The fNOJMIINAKF.
      */
     @java.lang.Override
-    public int getCDHGHIHPGKH() {
-      return cDHGHIHPGKH_;
+    public int getFNOJMIINAKF() {
+      return fNOJMIINAKF_;
     }
 
-    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 4;
-    private int contentCloseTime_;
+    public static final int FJELGDOCKPD_FIELD_NUMBER = 15;
+    private int fJELGDOCKPD_;
     /**
-     * <code>uint32 content_close_time = 4;</code>
-     * @return The contentCloseTime.
+     * <code>uint32 FJELGDOCKPD = 15;</code>
+     * @return The fJELGDOCKPD.
      */
     @java.lang.Override
-    public int getContentCloseTime() {
-      return contentCloseTime_;
+    public int getFJELGDOCKPD() {
+      return fJELGDOCKPD_;
     }
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 13;
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 7;
+    private int nextRefreshTime_;
+    /**
+     * <code>uint32 next_refresh_time = 7;</code>
+     * @return The nextRefreshTime.
+     */
+    @java.lang.Override
+    public int getNextRefreshTime() {
+      return nextRefreshTime_;
+    }
+
+    public static final int ONMDMKJKHOA_FIELD_NUMBER = 5;
+    private int oNMDMKJKHOA_;
+    /**
+     * <code>uint32 ONMDMKJKHOA = 5;</code>
+     * @return The oNMDMKJKHOA.
+     */
+    @java.lang.Override
+    public int getONMDMKJKHOA() {
+      return oNMDMKJKHOA_;
+    }
+
+    public static final int IS_ACTIVATED_FIELD_NUMBER = 2;
+    private boolean isActivated_;
+    /**
+     * <code>bool is_activated = 2;</code>
+     * @return The isActivated.
+     */
+    @java.lang.Override
+    public boolean getIsActivated() {
+      return isActivated_;
+    }
+
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 8;
     private boolean isContentClosed_;
     /**
-     * <code>bool is_content_closed = 13;</code>
+     * <code>bool is_content_closed = 8;</code>
      * @return The isContentClosed.
      */
     @java.lang.Override
@@ -383,15 +379,15 @@ public final class BlessingActivityDetailInfoOuterClass {
       return isContentClosed_;
     }
 
-    public static final int KBEBLJFLGOF_FIELD_NUMBER = 9;
-    private int kBEBLJFLGOF_;
+    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 6;
+    private int contentCloseTime_;
     /**
-     * <code>uint32 KBEBLJFLGOF = 9;</code>
-     * @return The kBEBLJFLGOF.
+     * <code>uint32 content_close_time = 6;</code>
+     * @return The contentCloseTime.
      */
     @java.lang.Override
-    public int getKBEBLJFLGOF() {
-      return kBEBLJFLGOF_;
+    public int getContentCloseTime() {
+      return contentCloseTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -408,32 +404,32 @@ public final class BlessingActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cLCIHLHKGLO_ != 0) {
-        output.writeUInt32(1, cLCIHLHKGLO_);
+      if (isActivated_ != false) {
+        output.writeBool(2, isActivated_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetPicNumMap(),
           PicNumMapDefaultEntryHolder.defaultEntry,
-          2);
+          3);
+      if (oNMDMKJKHOA_ != 0) {
+        output.writeUInt32(5, oNMDMKJKHOA_);
+      }
       if (contentCloseTime_ != 0) {
-        output.writeUInt32(4, contentCloseTime_);
-      }
-      if (isActivated_ != false) {
-        output.writeBool(5, isActivated_);
-      }
-      if (cDHGHIHPGKH_ != 0) {
-        output.writeUInt32(6, cDHGHIHPGKH_);
-      }
-      if (kBEBLJFLGOF_ != 0) {
-        output.writeUInt32(9, kBEBLJFLGOF_);
-      }
-      if (isContentClosed_ != false) {
-        output.writeBool(13, isContentClosed_);
+        output.writeUInt32(6, contentCloseTime_);
       }
       if (nextRefreshTime_ != 0) {
-        output.writeUInt32(15, nextRefreshTime_);
+        output.writeUInt32(7, nextRefreshTime_);
+      }
+      if (isContentClosed_ != false) {
+        output.writeBool(8, isContentClosed_);
+      }
+      if (fNOJMIINAKF_ != 0) {
+        output.writeUInt32(14, fNOJMIINAKF_);
+      }
+      if (fJELGDOCKPD_ != 0) {
+        output.writeUInt32(15, fJELGDOCKPD_);
       }
       unknownFields.writeTo(output);
     }
@@ -444,9 +440,9 @@ public final class BlessingActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cLCIHLHKGLO_ != 0) {
+      if (isActivated_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, cLCIHLHKGLO_);
+          .computeBoolSize(2, isActivated_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetPicNumMap().getMap().entrySet()) {
@@ -456,31 +452,31 @@ public final class BlessingActivityDetailInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, picNumMap__);
+            .computeMessageSize(3, picNumMap__);
+      }
+      if (oNMDMKJKHOA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, oNMDMKJKHOA_);
       }
       if (contentCloseTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, contentCloseTime_);
-      }
-      if (isActivated_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isActivated_);
-      }
-      if (cDHGHIHPGKH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, cDHGHIHPGKH_);
-      }
-      if (kBEBLJFLGOF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, kBEBLJFLGOF_);
-      }
-      if (isContentClosed_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isContentClosed_);
+          .computeUInt32Size(6, contentCloseTime_);
       }
       if (nextRefreshTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, nextRefreshTime_);
+          .computeUInt32Size(7, nextRefreshTime_);
+      }
+      if (isContentClosed_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isContentClosed_);
+      }
+      if (fNOJMIINAKF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, fNOJMIINAKF_);
+      }
+      if (fJELGDOCKPD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, fJELGDOCKPD_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -497,22 +493,22 @@ public final class BlessingActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo other = (emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo) obj;
 
-      if (getNextRefreshTime()
-          != other.getNextRefreshTime()) return false;
-      if (getIsActivated()
-          != other.getIsActivated()) return false;
-      if (getCLCIHLHKGLO()
-          != other.getCLCIHLHKGLO()) return false;
       if (!internalGetPicNumMap().equals(
           other.internalGetPicNumMap())) return false;
-      if (getCDHGHIHPGKH()
-          != other.getCDHGHIHPGKH()) return false;
-      if (getContentCloseTime()
-          != other.getContentCloseTime()) return false;
+      if (getFNOJMIINAKF()
+          != other.getFNOJMIINAKF()) return false;
+      if (getFJELGDOCKPD()
+          != other.getFJELGDOCKPD()) return false;
+      if (getNextRefreshTime()
+          != other.getNextRefreshTime()) return false;
+      if (getONMDMKJKHOA()
+          != other.getONMDMKJKHOA()) return false;
+      if (getIsActivated()
+          != other.getIsActivated()) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
-      if (getKBEBLJFLGOF()
-          != other.getKBEBLJFLGOF()) return false;
+      if (getContentCloseTime()
+          != other.getContentCloseTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -524,26 +520,26 @@ public final class BlessingActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNextRefreshTime();
-      hash = (37 * hash) + IS_ACTIVATED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsActivated());
-      hash = (37 * hash) + CLCIHLHKGLO_FIELD_NUMBER;
-      hash = (53 * hash) + getCLCIHLHKGLO();
       if (!internalGetPicNumMap().getMap().isEmpty()) {
         hash = (37 * hash) + PIC_NUM_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetPicNumMap().hashCode();
       }
-      hash = (37 * hash) + CDHGHIHPGKH_FIELD_NUMBER;
-      hash = (53 * hash) + getCDHGHIHPGKH();
-      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getContentCloseTime();
+      hash = (37 * hash) + FNOJMIINAKF_FIELD_NUMBER;
+      hash = (53 * hash) + getFNOJMIINAKF();
+      hash = (37 * hash) + FJELGDOCKPD_FIELD_NUMBER;
+      hash = (53 * hash) + getFJELGDOCKPD();
+      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getNextRefreshTime();
+      hash = (37 * hash) + ONMDMKJKHOA_FIELD_NUMBER;
+      hash = (53 * hash) + getONMDMKJKHOA();
+      hash = (37 * hash) + IS_ACTIVATED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsActivated());
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      hash = (37 * hash) + KBEBLJFLGOF_FIELD_NUMBER;
-      hash = (53 * hash) + getKBEBLJFLGOF();
+      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getContentCloseTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -640,10 +636,6 @@ public final class BlessingActivityDetailInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FNMKOLBOGPO
-     * </pre>
-     *
      * Protobuf type {@code BlessingActivityDetailInfo}
      */
     public static final class Builder extends
@@ -659,7 +651,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 3:
             return internalGetPicNumMap();
           default:
             throw new RuntimeException(
@@ -670,7 +662,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 3:
             return internalGetMutablePicNumMap();
           default:
             throw new RuntimeException(
@@ -703,20 +695,20 @@ public final class BlessingActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        internalGetMutablePicNumMap().clear();
+        fNOJMIINAKF_ = 0;
+
+        fJELGDOCKPD_ = 0;
+
         nextRefreshTime_ = 0;
+
+        oNMDMKJKHOA_ = 0;
 
         isActivated_ = false;
 
-        cLCIHLHKGLO_ = 0;
-
-        internalGetMutablePicNumMap().clear();
-        cDHGHIHPGKH_ = 0;
-
-        contentCloseTime_ = 0;
-
         isContentClosed_ = false;
 
-        kBEBLJFLGOF_ = 0;
+        contentCloseTime_ = 0;
 
         return this;
       }
@@ -745,15 +737,15 @@ public final class BlessingActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo result = new emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.nextRefreshTime_ = nextRefreshTime_;
-        result.isActivated_ = isActivated_;
-        result.cLCIHLHKGLO_ = cLCIHLHKGLO_;
         result.picNumMap_ = internalGetPicNumMap();
         result.picNumMap_.makeImmutable();
-        result.cDHGHIHPGKH_ = cDHGHIHPGKH_;
-        result.contentCloseTime_ = contentCloseTime_;
+        result.fNOJMIINAKF_ = fNOJMIINAKF_;
+        result.fJELGDOCKPD_ = fJELGDOCKPD_;
+        result.nextRefreshTime_ = nextRefreshTime_;
+        result.oNMDMKJKHOA_ = oNMDMKJKHOA_;
+        result.isActivated_ = isActivated_;
         result.isContentClosed_ = isContentClosed_;
-        result.kBEBLJFLGOF_ = kBEBLJFLGOF_;
+        result.contentCloseTime_ = contentCloseTime_;
         onBuilt();
         return result;
       }
@@ -802,28 +794,28 @@ public final class BlessingActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo.getDefaultInstance()) return this;
+        internalGetMutablePicNumMap().mergeFrom(
+            other.internalGetPicNumMap());
+        if (other.getFNOJMIINAKF() != 0) {
+          setFNOJMIINAKF(other.getFNOJMIINAKF());
+        }
+        if (other.getFJELGDOCKPD() != 0) {
+          setFJELGDOCKPD(other.getFJELGDOCKPD());
+        }
         if (other.getNextRefreshTime() != 0) {
           setNextRefreshTime(other.getNextRefreshTime());
+        }
+        if (other.getONMDMKJKHOA() != 0) {
+          setONMDMKJKHOA(other.getONMDMKJKHOA());
         }
         if (other.getIsActivated() != false) {
           setIsActivated(other.getIsActivated());
         }
-        if (other.getCLCIHLHKGLO() != 0) {
-          setCLCIHLHKGLO(other.getCLCIHLHKGLO());
-        }
-        internalGetMutablePicNumMap().mergeFrom(
-            other.internalGetPicNumMap());
-        if (other.getCDHGHIHPGKH() != 0) {
-          setCDHGHIHPGKH(other.getCDHGHIHPGKH());
-        }
-        if (other.getContentCloseTime() != 0) {
-          setContentCloseTime(other.getContentCloseTime());
-        }
         if (other.getIsContentClosed() != false) {
           setIsContentClosed(other.getIsContentClosed());
         }
-        if (other.getKBEBLJFLGOF() != 0) {
-          setKBEBLJFLGOF(other.getKBEBLJFLGOF());
+        if (other.getContentCloseTime() != 0) {
+          setContentCloseTime(other.getContentCloseTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -855,99 +847,6 @@ public final class BlessingActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private int nextRefreshTime_ ;
-      /**
-       * <code>uint32 next_refresh_time = 15;</code>
-       * @return The nextRefreshTime.
-       */
-      @java.lang.Override
-      public int getNextRefreshTime() {
-        return nextRefreshTime_;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 15;</code>
-       * @param value The nextRefreshTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNextRefreshTime(int value) {
-        
-        nextRefreshTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNextRefreshTime() {
-        
-        nextRefreshTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isActivated_ ;
-      /**
-       * <code>bool is_activated = 5;</code>
-       * @return The isActivated.
-       */
-      @java.lang.Override
-      public boolean getIsActivated() {
-        return isActivated_;
-      }
-      /**
-       * <code>bool is_activated = 5;</code>
-       * @param value The isActivated to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsActivated(boolean value) {
-        
-        isActivated_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_activated = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsActivated() {
-        
-        isActivated_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int cLCIHLHKGLO_ ;
-      /**
-       * <code>uint32 CLCIHLHKGLO = 1;</code>
-       * @return The cLCIHLHKGLO.
-       */
-      @java.lang.Override
-      public int getCLCIHLHKGLO() {
-        return cLCIHLHKGLO_;
-      }
-      /**
-       * <code>uint32 CLCIHLHKGLO = 1;</code>
-       * @param value The cLCIHLHKGLO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCLCIHLHKGLO(int value) {
-        
-        cLCIHLHKGLO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CLCIHLHKGLO = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCLCIHLHKGLO() {
-        
-        cLCIHLHKGLO_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> picNumMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -975,7 +874,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return internalGetPicNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
        */
 
       @java.lang.Override
@@ -993,7 +892,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return getPicNumMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1001,7 +900,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return internalGetPicNumMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1014,7 +913,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1035,7 +934,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
        */
 
       public Builder removePicNumMap(
@@ -1054,7 +953,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return internalGetMutablePicNumMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
        */
       public Builder putPicNumMap(
           int key,
@@ -1066,7 +965,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 3;</code>
        */
 
       public Builder putAllPicNumMap(
@@ -1076,71 +975,164 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
 
-      private int cDHGHIHPGKH_ ;
+      private int fNOJMIINAKF_ ;
       /**
-       * <code>uint32 CDHGHIHPGKH = 6;</code>
-       * @return The cDHGHIHPGKH.
+       * <code>uint32 FNOJMIINAKF = 14;</code>
+       * @return The fNOJMIINAKF.
        */
       @java.lang.Override
-      public int getCDHGHIHPGKH() {
-        return cDHGHIHPGKH_;
+      public int getFNOJMIINAKF() {
+        return fNOJMIINAKF_;
       }
       /**
-       * <code>uint32 CDHGHIHPGKH = 6;</code>
-       * @param value The cDHGHIHPGKH to set.
+       * <code>uint32 FNOJMIINAKF = 14;</code>
+       * @param value The fNOJMIINAKF to set.
        * @return This builder for chaining.
        */
-      public Builder setCDHGHIHPGKH(int value) {
+      public Builder setFNOJMIINAKF(int value) {
         
-        cDHGHIHPGKH_ = value;
+        fNOJMIINAKF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CDHGHIHPGKH = 6;</code>
+       * <code>uint32 FNOJMIINAKF = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCDHGHIHPGKH() {
+      public Builder clearFNOJMIINAKF() {
         
-        cDHGHIHPGKH_ = 0;
+        fNOJMIINAKF_ = 0;
         onChanged();
         return this;
       }
 
-      private int contentCloseTime_ ;
+      private int fJELGDOCKPD_ ;
       /**
-       * <code>uint32 content_close_time = 4;</code>
-       * @return The contentCloseTime.
+       * <code>uint32 FJELGDOCKPD = 15;</code>
+       * @return The fJELGDOCKPD.
        */
       @java.lang.Override
-      public int getContentCloseTime() {
-        return contentCloseTime_;
+      public int getFJELGDOCKPD() {
+        return fJELGDOCKPD_;
       }
       /**
-       * <code>uint32 content_close_time = 4;</code>
-       * @param value The contentCloseTime to set.
+       * <code>uint32 FJELGDOCKPD = 15;</code>
+       * @param value The fJELGDOCKPD to set.
        * @return This builder for chaining.
        */
-      public Builder setContentCloseTime(int value) {
+      public Builder setFJELGDOCKPD(int value) {
         
-        contentCloseTime_ = value;
+        fJELGDOCKPD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 content_close_time = 4;</code>
+       * <code>uint32 FJELGDOCKPD = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearContentCloseTime() {
+      public Builder clearFJELGDOCKPD() {
         
-        contentCloseTime_ = 0;
+        fJELGDOCKPD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nextRefreshTime_ ;
+      /**
+       * <code>uint32 next_refresh_time = 7;</code>
+       * @return The nextRefreshTime.
+       */
+      @java.lang.Override
+      public int getNextRefreshTime() {
+        return nextRefreshTime_;
+      }
+      /**
+       * <code>uint32 next_refresh_time = 7;</code>
+       * @param value The nextRefreshTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNextRefreshTime(int value) {
+        
+        nextRefreshTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 next_refresh_time = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNextRefreshTime() {
+        
+        nextRefreshTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oNMDMKJKHOA_ ;
+      /**
+       * <code>uint32 ONMDMKJKHOA = 5;</code>
+       * @return The oNMDMKJKHOA.
+       */
+      @java.lang.Override
+      public int getONMDMKJKHOA() {
+        return oNMDMKJKHOA_;
+      }
+      /**
+       * <code>uint32 ONMDMKJKHOA = 5;</code>
+       * @param value The oNMDMKJKHOA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setONMDMKJKHOA(int value) {
+        
+        oNMDMKJKHOA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 ONMDMKJKHOA = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearONMDMKJKHOA() {
+        
+        oNMDMKJKHOA_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isActivated_ ;
+      /**
+       * <code>bool is_activated = 2;</code>
+       * @return The isActivated.
+       */
+      @java.lang.Override
+      public boolean getIsActivated() {
+        return isActivated_;
+      }
+      /**
+       * <code>bool is_activated = 2;</code>
+       * @param value The isActivated to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsActivated(boolean value) {
+        
+        isActivated_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_activated = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsActivated() {
+        
+        isActivated_ = false;
         onChanged();
         return this;
       }
 
       private boolean isContentClosed_ ;
       /**
-       * <code>bool is_content_closed = 13;</code>
+       * <code>bool is_content_closed = 8;</code>
        * @return The isContentClosed.
        */
       @java.lang.Override
@@ -1148,7 +1140,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return isContentClosed_;
       }
       /**
-       * <code>bool is_content_closed = 13;</code>
+       * <code>bool is_content_closed = 8;</code>
        * @param value The isContentClosed to set.
        * @return This builder for chaining.
        */
@@ -1159,7 +1151,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_content_closed = 13;</code>
+       * <code>bool is_content_closed = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsContentClosed() {
@@ -1169,33 +1161,33 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
 
-      private int kBEBLJFLGOF_ ;
+      private int contentCloseTime_ ;
       /**
-       * <code>uint32 KBEBLJFLGOF = 9;</code>
-       * @return The kBEBLJFLGOF.
+       * <code>uint32 content_close_time = 6;</code>
+       * @return The contentCloseTime.
        */
       @java.lang.Override
-      public int getKBEBLJFLGOF() {
-        return kBEBLJFLGOF_;
+      public int getContentCloseTime() {
+        return contentCloseTime_;
       }
       /**
-       * <code>uint32 KBEBLJFLGOF = 9;</code>
-       * @param value The kBEBLJFLGOF to set.
+       * <code>uint32 content_close_time = 6;</code>
+       * @param value The contentCloseTime to set.
        * @return This builder for chaining.
        */
-      public Builder setKBEBLJFLGOF(int value) {
+      public Builder setContentCloseTime(int value) {
         
-        kBEBLJFLGOF_ = value;
+        contentCloseTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 KBEBLJFLGOF = 9;</code>
+       * <code>uint32 content_close_time = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKBEBLJFLGOF() {
+      public Builder clearContentCloseTime() {
         
-        kBEBLJFLGOF_ = 0;
+        contentCloseTime_ = 0;
         onChanged();
         return this;
       }
@@ -1272,13 +1264,13 @@ public final class BlessingActivityDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n BlessingActivityDetailInfo.proto\"\266\002\n\032B" +
-      "lessingActivityDetailInfo\022\031\n\021next_refres" +
-      "h_time\030\017 \001(\r\022\024\n\014is_activated\030\005 \001(\010\022\023\n\013CL" +
-      "CIHLHKGLO\030\001 \001(\r\022?\n\013pic_num_map\030\002 \003(\0132*.B" +
-      "lessingActivityDetailInfo.PicNumMapEntry" +
-      "\022\023\n\013CDHGHIHPGKH\030\006 \001(\r\022\032\n\022content_close_t" +
-      "ime\030\004 \001(\r\022\031\n\021is_content_closed\030\r \001(\010\022\023\n\013" +
-      "KBEBLJFLGOF\030\t \001(\r\0320\n\016PicNumMapEntry\022\013\n\003k" +
+      "lessingActivityDetailInfo\022?\n\013pic_num_map" +
+      "\030\003 \003(\0132*.BlessingActivityDetailInfo.PicN" +
+      "umMapEntry\022\023\n\013FNOJMIINAKF\030\016 \001(\r\022\023\n\013FJELG" +
+      "DOCKPD\030\017 \001(\r\022\031\n\021next_refresh_time\030\007 \001(\r\022" +
+      "\023\n\013ONMDMKJKHOA\030\005 \001(\r\022\024\n\014is_activated\030\002 \001" +
+      "(\010\022\031\n\021is_content_closed\030\010 \001(\010\022\032\n\022content" +
+      "_close_time\030\006 \001(\r\0320\n\016PicNumMapEntry\022\013\n\003k" +
       "ey\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
@@ -1291,7 +1283,7 @@ public final class BlessingActivityDetailInfoOuterClass {
     internal_static_BlessingActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlessingActivityDetailInfo_descriptor,
-        new java.lang.String[] { "NextRefreshTime", "IsActivated", "CLCIHLHKGLO", "PicNumMap", "CDHGHIHPGKH", "ContentCloseTime", "IsContentClosed", "KBEBLJFLGOF", });
+        new java.lang.String[] { "PicNumMap", "FNOJMIINAKF", "FJELGDOCKPD", "NextRefreshTime", "ONMDMKJKHOA", "IsActivated", "IsContentClosed", "ContentCloseTime", });
     internal_static_BlessingActivityDetailInfo_PicNumMapEntry_descriptor =
       internal_static_BlessingActivityDetailInfo_descriptor.getNestedTypes().get(0);
     internal_static_BlessingActivityDetailInfo_PicNumMapEntry_fieldAccessorTable = new

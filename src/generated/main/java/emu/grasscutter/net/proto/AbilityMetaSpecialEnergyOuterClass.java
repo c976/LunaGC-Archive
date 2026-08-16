@@ -19,16 +19,12 @@ public final class AbilityMetaSpecialEnergyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float value = 13;</code>
+     * <code>float value = 14;</code>
      * @return The value.
      */
     float getValue();
   }
   /**
-   * <pre>
-   *5.3.0
-   * </pre>
-   *
    * Protobuf type {@code AbilityMetaSpecialEnergy}
    */
   public static final class AbilityMetaSpecialEnergy extends
@@ -73,7 +69,7 @@ public final class AbilityMetaSpecialEnergyOuterClass {
             case 0:
               done = true;
               break;
-            case 109: {
+            case 117: {
 
               value_ = input.readFloat();
               break;
@@ -110,10 +106,10 @@ public final class AbilityMetaSpecialEnergyOuterClass {
               emu.grasscutter.net.proto.AbilityMetaSpecialEnergyOuterClass.AbilityMetaSpecialEnergy.class, emu.grasscutter.net.proto.AbilityMetaSpecialEnergyOuterClass.AbilityMetaSpecialEnergy.Builder.class);
     }
 
-    public static final int VALUE_FIELD_NUMBER = 13;
+    public static final int VALUE_FIELD_NUMBER = 14;
     private float value_;
     /**
-     * <code>float value = 13;</code>
+     * <code>float value = 14;</code>
      * @return The value.
      */
     @java.lang.Override
@@ -136,7 +132,7 @@ public final class AbilityMetaSpecialEnergyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (value_ != 0F) {
-        output.writeFloat(13, value_);
+        output.writeFloat(14, value_);
       }
       unknownFields.writeTo(output);
     }
@@ -149,7 +145,7 @@ public final class AbilityMetaSpecialEnergyOuterClass {
       size = 0;
       if (value_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(13, value_);
+          .computeFloatSize(14, value_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,10 +275,6 @@ public final class AbilityMetaSpecialEnergyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     *5.3.0
-     * </pre>
-     *
      * Protobuf type {@code AbilityMetaSpecialEnergy}
      */
     public static final class Builder extends
@@ -431,7 +423,7 @@ public final class AbilityMetaSpecialEnergyOuterClass {
 
       private float value_ ;
       /**
-       * <code>float value = 13;</code>
+       * <code>float value = 14;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -439,7 +431,7 @@ public final class AbilityMetaSpecialEnergyOuterClass {
         return value_;
       }
       /**
-       * <code>float value = 13;</code>
+       * <code>float value = 14;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
@@ -450,7 +442,7 @@ public final class AbilityMetaSpecialEnergyOuterClass {
         return this;
       }
       /**
-       * <code>float value = 13;</code>
+       * <code>float value = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
@@ -527,7 +519,7 @@ public final class AbilityMetaSpecialEnergyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036AbilityMetaSpecialEnergy.proto\")\n\030Abil" +
-      "ityMetaSpecialEnergy\022\r\n\005value\030\r \001(\002B\033\n\031e" +
+      "ityMetaSpecialEnergy\022\r\n\005value\030\016 \001(\002B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

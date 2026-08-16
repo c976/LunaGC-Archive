@@ -8,7 +8,7 @@ import lombok.Getter;
 @Getter
 public class CodexAnimalData extends GameResource {
     @Getter(onMethod_ = @Override)
-    private int Id;
+    private int id;
 
     private String type;
     private int describeId;

@@ -53,14 +53,14 @@ public final class AvatarFightPropNotifyOuterClass {
         int key);
 
     /**
-     * <code>uint64 avatar_guid = 6;</code>
+     * <code>uint64 avatar_guid = 1;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
   }
   /**
    * <pre>
-   * CmdId: 23813
+   * CmdId: 27866
    * </pre>
    *
    * Protobuf type {@code AvatarFightPropNotify}
@@ -108,6 +108,11 @@ public final class AvatarFightPropNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              avatarGuid_ = input.readUInt64();
+              break;
+            }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fightPropMap_ = com.google.protobuf.MapField.newMapField(
@@ -119,11 +124,6 @@ public final class AvatarFightPropNotifyOuterClass {
                   FightPropMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               fightPropMap_.getMutableMap().put(
                   fightPropMap__.getKey(), fightPropMap__.getValue());
-              break;
-            }
-            case 48: {
-
-              avatarGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -251,10 +251,10 @@ public final class AvatarFightPropNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 6;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 1;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 6;</code>
+     * <code>uint64 avatar_guid = 1;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -276,15 +276,15 @@ public final class AvatarFightPropNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (avatarGuid_ != 0L) {
+        output.writeUInt64(1, avatarGuid_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetFightPropMap(),
           FightPropMapDefaultEntryHolder.defaultEntry,
           4);
-      if (avatarGuid_ != 0L) {
-        output.writeUInt64(6, avatarGuid_);
-      }
       unknownFields.writeTo(output);
     }
 
@@ -294,6 +294,10 @@ public final class AvatarFightPropNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (avatarGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(1, avatarGuid_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Float> entry
            : internalGetFightPropMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Float>
@@ -303,10 +307,6 @@ public final class AvatarFightPropNotifyOuterClass {
             .build();
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(4, fightPropMap__);
-      }
-      if (avatarGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, avatarGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -442,7 +442,7 @@ public final class AvatarFightPropNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23813
+     * CmdId: 27866
      * </pre>
      *
      * Protobuf type {@code AvatarFightPropNotify}
@@ -750,7 +750,7 @@ public final class AvatarFightPropNotifyOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 6;</code>
+       * <code>uint64 avatar_guid = 1;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -758,7 +758,7 @@ public final class AvatarFightPropNotifyOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 6;</code>
+       * <code>uint64 avatar_guid = 1;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -769,7 +769,7 @@ public final class AvatarFightPropNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 6;</code>
+       * <code>uint64 avatar_guid = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -853,7 +853,7 @@ public final class AvatarFightPropNotifyOuterClass {
       "\n\033AvatarFightPropNotify.proto\"\243\001\n\025Avatar" +
       "FightPropNotify\022@\n\016fight_prop_map\030\004 \003(\0132" +
       "(.AvatarFightPropNotify.FightPropMapEntr" +
-      "y\022\023\n\013avatar_guid\030\006 \001(\004\0323\n\021FightPropMapEn" +
+      "y\022\023\n\013avatar_guid\030\001 \001(\004\0323\n\021FightPropMapEn" +
       "try\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\002:\0028\001B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };

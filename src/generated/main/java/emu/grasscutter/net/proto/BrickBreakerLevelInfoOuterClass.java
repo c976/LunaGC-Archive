@@ -19,68 +19,81 @@ public final class BrickBreakerLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 3;</code>
-     * @return The levelId.
+     * <code>repeated uint32 EANIDCGNDKL = 1;</code>
+     * @return A list containing the eANIDCGNDKL.
      */
-    int getLevelId();
-
+    java.util.List<java.lang.Integer> getEANIDCGNDKLList();
     /**
-     * <code>repeated uint32 chosen_avatar_list = 1;</code>
-     * @return A list containing the chosenAvatarList.
+     * <code>repeated uint32 EANIDCGNDKL = 1;</code>
+     * @return The count of eANIDCGNDKL.
      */
-    java.util.List<java.lang.Integer> getChosenAvatarListList();
+    int getEANIDCGNDKLCount();
     /**
-     * <code>repeated uint32 chosen_avatar_list = 1;</code>
-     * @return The count of chosenAvatarList.
-     */
-    int getChosenAvatarListCount();
-    /**
-     * <code>repeated uint32 chosen_avatar_list = 1;</code>
+     * <code>repeated uint32 EANIDCGNDKL = 1;</code>
      * @param index The index of the element to return.
-     * @return The chosenAvatarList at the given index.
+     * @return The eANIDCGNDKL at the given index.
      */
-    int getChosenAvatarList(int index);
+    int getEANIDCGNDKL(int index);
 
     /**
-     * <code>repeated uint32 chosen_skill_list = 13;</code>
-     * @return A list containing the chosenSkillList.
+     * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
+     * @return A list containing the fJFJEJCDBDP.
      */
-    java.util.List<java.lang.Integer> getChosenSkillListList();
+    java.util.List<java.lang.Integer> getFJFJEJCDBDPList();
     /**
-     * <code>repeated uint32 chosen_skill_list = 13;</code>
-     * @return The count of chosenSkillList.
+     * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
+     * @return The count of fJFJEJCDBDP.
      */
-    int getChosenSkillListCount();
+    int getFJFJEJCDBDPCount();
     /**
-     * <code>repeated uint32 chosen_skill_list = 13;</code>
+     * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
      * @param index The index of the element to return.
-     * @return The chosenSkillList at the given index.
+     * @return The fJFJEJCDBDP at the given index.
      */
-    int getChosenSkillList(int index);
+    int getFJFJEJCDBDP(int index);
 
     /**
-     * <code>uint32 max_score = 12;</code>
-     * @return The maxScore.
+     * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+     * @return A list containing the oFLFEAJLLEM.
      */
-    int getMaxScore();
+    java.util.List<java.lang.Integer> getOFLFEAJLLEMList();
+    /**
+     * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+     * @return The count of oFLFEAJLLEM.
+     */
+    int getOFLFEAJLLEMCount();
+    /**
+     * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+     * @param index The index of the element to return.
+     * @return The oFLFEAJLLEM at the given index.
+     */
+    int getOFLFEAJLLEM(int index);
 
     /**
-     * <code>bool is_finish = 11;</code>
+     * <code>bool is_can_start = 14;</code>
+     * @return The isCanStart.
+     */
+    boolean getIsCanStart();
+
+    /**
+     * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>bool JNFKFCEMOFM = 8;</code>
-     * @return The jNFKFCEMOFM.
+     * <code>uint32 max_score = 6;</code>
+     * @return The maxScore.
      */
-    boolean getJNFKFCEMOFM();
+    int getMaxScore();
+
+    /**
+     * <code>uint32 level_id = 8;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
   }
   /**
-   * <pre>
-   * Obf: PMBMMHHDJOH
-   * </pre>
-   *
    * Protobuf type {@code BrickBreakerLevelInfo}
    */
   public static final class BrickBreakerLevelInfo extends
@@ -93,8 +106,9 @@ public final class BrickBreakerLevelInfoOuterClass {
       super(builder);
     }
     private BrickBreakerLevelInfo() {
-      chosenAvatarList_ = emptyIntList();
-      chosenSkillList_ = emptyIntList();
+      eANIDCGNDKL_ = emptyIntList();
+      fJFJEJCDBDP_ = emptyIntList();
+      oFLFEAJLLEM_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -130,64 +144,85 @@ public final class BrickBreakerLevelInfoOuterClass {
               break;
             case 8: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                chosenAvatarList_ = newIntList();
+                eANIDCGNDKL_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              chosenAvatarList_.addInt(input.readUInt32());
+              eANIDCGNDKL_.addInt(input.readUInt32());
               break;
             }
             case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                chosenAvatarList_ = newIntList();
+                eANIDCGNDKL_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                chosenAvatarList_.addInt(input.readUInt32());
+                eANIDCGNDKL_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 24: {
-
-              levelId_ = input.readUInt32();
+            case 16: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                fJFJEJCDBDP_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              fJFJEJCDBDP_.addInt(input.readUInt32());
               break;
             }
-            case 64: {
-
-              jNFKFCEMOFM_ = input.readBool();
+            case 18: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                fJFJEJCDBDP_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                fJFJEJCDBDP_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
-            case 88: {
-
-              isFinish_ = input.readBool();
+            case 40: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                oFLFEAJLLEM_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              oFLFEAJLLEM_.addInt(input.readUInt32());
               break;
             }
-            case 96: {
+            case 42: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                oFLFEAJLLEM_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                oFLFEAJLLEM_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 48: {
 
               maxScore_ = input.readUInt32();
               break;
             }
-            case 104: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                chosenSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              chosenSkillList_.addInt(input.readUInt32());
+            case 64: {
+
+              levelId_ = input.readUInt32();
               break;
             }
-            case 106: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                chosenSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                chosenSkillList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
+            case 80: {
+
+              isFinish_ = input.readBool();
+              break;
+            }
+            case 112: {
+
+              isCanStart_ = input.readBool();
               break;
             }
             default: {
@@ -206,10 +241,13 @@ public final class BrickBreakerLevelInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          chosenAvatarList_.makeImmutable(); // C
+          eANIDCGNDKL_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          chosenSkillList_.makeImmutable(); // C
+          fJFJEJCDBDP_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          oFLFEAJLLEM_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -228,88 +266,105 @@ public final class BrickBreakerLevelInfoOuterClass {
               emu.grasscutter.net.proto.BrickBreakerLevelInfoOuterClass.BrickBreakerLevelInfo.class, emu.grasscutter.net.proto.BrickBreakerLevelInfoOuterClass.BrickBreakerLevelInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
-    private int levelId_;
+    public static final int EANIDCGNDKL_FIELD_NUMBER = 1;
+    private com.google.protobuf.Internal.IntList eANIDCGNDKL_;
     /**
-     * <code>uint32 level_id = 3;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int CHOSEN_AVATAR_LIST_FIELD_NUMBER = 1;
-    private com.google.protobuf.Internal.IntList chosenAvatarList_;
-    /**
-     * <code>repeated uint32 chosen_avatar_list = 1;</code>
-     * @return A list containing the chosenAvatarList.
+     * <code>repeated uint32 EANIDCGNDKL = 1;</code>
+     * @return A list containing the eANIDCGNDKL.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getChosenAvatarListList() {
-      return chosenAvatarList_;
+        getEANIDCGNDKLList() {
+      return eANIDCGNDKL_;
     }
     /**
-     * <code>repeated uint32 chosen_avatar_list = 1;</code>
-     * @return The count of chosenAvatarList.
+     * <code>repeated uint32 EANIDCGNDKL = 1;</code>
+     * @return The count of eANIDCGNDKL.
      */
-    public int getChosenAvatarListCount() {
-      return chosenAvatarList_.size();
+    public int getEANIDCGNDKLCount() {
+      return eANIDCGNDKL_.size();
     }
     /**
-     * <code>repeated uint32 chosen_avatar_list = 1;</code>
+     * <code>repeated uint32 EANIDCGNDKL = 1;</code>
      * @param index The index of the element to return.
-     * @return The chosenAvatarList at the given index.
+     * @return The eANIDCGNDKL at the given index.
      */
-    public int getChosenAvatarList(int index) {
-      return chosenAvatarList_.getInt(index);
+    public int getEANIDCGNDKL(int index) {
+      return eANIDCGNDKL_.getInt(index);
     }
-    private int chosenAvatarListMemoizedSerializedSize = -1;
+    private int eANIDCGNDKLMemoizedSerializedSize = -1;
 
-    public static final int CHOSEN_SKILL_LIST_FIELD_NUMBER = 13;
-    private com.google.protobuf.Internal.IntList chosenSkillList_;
+    public static final int FJFJEJCDBDP_FIELD_NUMBER = 2;
+    private com.google.protobuf.Internal.IntList fJFJEJCDBDP_;
     /**
-     * <code>repeated uint32 chosen_skill_list = 13;</code>
-     * @return A list containing the chosenSkillList.
+     * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
+     * @return A list containing the fJFJEJCDBDP.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getChosenSkillListList() {
-      return chosenSkillList_;
+        getFJFJEJCDBDPList() {
+      return fJFJEJCDBDP_;
     }
     /**
-     * <code>repeated uint32 chosen_skill_list = 13;</code>
-     * @return The count of chosenSkillList.
+     * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
+     * @return The count of fJFJEJCDBDP.
      */
-    public int getChosenSkillListCount() {
-      return chosenSkillList_.size();
+    public int getFJFJEJCDBDPCount() {
+      return fJFJEJCDBDP_.size();
     }
     /**
-     * <code>repeated uint32 chosen_skill_list = 13;</code>
+     * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
      * @param index The index of the element to return.
-     * @return The chosenSkillList at the given index.
+     * @return The fJFJEJCDBDP at the given index.
      */
-    public int getChosenSkillList(int index) {
-      return chosenSkillList_.getInt(index);
+    public int getFJFJEJCDBDP(int index) {
+      return fJFJEJCDBDP_.getInt(index);
     }
-    private int chosenSkillListMemoizedSerializedSize = -1;
+    private int fJFJEJCDBDPMemoizedSerializedSize = -1;
 
-    public static final int MAX_SCORE_FIELD_NUMBER = 12;
-    private int maxScore_;
+    public static final int OFLFEAJLLEM_FIELD_NUMBER = 5;
+    private com.google.protobuf.Internal.IntList oFLFEAJLLEM_;
     /**
-     * <code>uint32 max_score = 12;</code>
-     * @return The maxScore.
+     * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+     * @return A list containing the oFLFEAJLLEM.
      */
     @java.lang.Override
-    public int getMaxScore() {
-      return maxScore_;
+    public java.util.List<java.lang.Integer>
+        getOFLFEAJLLEMList() {
+      return oFLFEAJLLEM_;
+    }
+    /**
+     * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+     * @return The count of oFLFEAJLLEM.
+     */
+    public int getOFLFEAJLLEMCount() {
+      return oFLFEAJLLEM_.size();
+    }
+    /**
+     * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+     * @param index The index of the element to return.
+     * @return The oFLFEAJLLEM at the given index.
+     */
+    public int getOFLFEAJLLEM(int index) {
+      return oFLFEAJLLEM_.getInt(index);
+    }
+    private int oFLFEAJLLEMMemoizedSerializedSize = -1;
+
+    public static final int IS_CAN_START_FIELD_NUMBER = 14;
+    private boolean isCanStart_;
+    /**
+     * <code>bool is_can_start = 14;</code>
+     * @return The isCanStart.
+     */
+    @java.lang.Override
+    public boolean getIsCanStart() {
+      return isCanStart_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 11;
+    public static final int IS_FINISH_FIELD_NUMBER = 10;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 11;</code>
+     * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -317,15 +372,26 @@ public final class BrickBreakerLevelInfoOuterClass {
       return isFinish_;
     }
 
-    public static final int JNFKFCEMOFM_FIELD_NUMBER = 8;
-    private boolean jNFKFCEMOFM_;
+    public static final int MAX_SCORE_FIELD_NUMBER = 6;
+    private int maxScore_;
     /**
-     * <code>bool JNFKFCEMOFM = 8;</code>
-     * @return The jNFKFCEMOFM.
+     * <code>uint32 max_score = 6;</code>
+     * @return The maxScore.
      */
     @java.lang.Override
-    public boolean getJNFKFCEMOFM() {
-      return jNFKFCEMOFM_;
+    public int getMaxScore() {
+      return maxScore_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 8;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 8;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -343,31 +409,38 @@ public final class BrickBreakerLevelInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getChosenAvatarListList().size() > 0) {
+      if (getEANIDCGNDKLList().size() > 0) {
         output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(chosenAvatarListMemoizedSerializedSize);
+        output.writeUInt32NoTag(eANIDCGNDKLMemoizedSerializedSize);
       }
-      for (int i = 0; i < chosenAvatarList_.size(); i++) {
-        output.writeUInt32NoTag(chosenAvatarList_.getInt(i));
+      for (int i = 0; i < eANIDCGNDKL_.size(); i++) {
+        output.writeUInt32NoTag(eANIDCGNDKL_.getInt(i));
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
+      if (getFJFJEJCDBDPList().size() > 0) {
+        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(fJFJEJCDBDPMemoizedSerializedSize);
       }
-      if (jNFKFCEMOFM_ != false) {
-        output.writeBool(8, jNFKFCEMOFM_);
+      for (int i = 0; i < fJFJEJCDBDP_.size(); i++) {
+        output.writeUInt32NoTag(fJFJEJCDBDP_.getInt(i));
       }
-      if (isFinish_ != false) {
-        output.writeBool(11, isFinish_);
+      if (getOFLFEAJLLEMList().size() > 0) {
+        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(oFLFEAJLLEMMemoizedSerializedSize);
+      }
+      for (int i = 0; i < oFLFEAJLLEM_.size(); i++) {
+        output.writeUInt32NoTag(oFLFEAJLLEM_.getInt(i));
       }
       if (maxScore_ != 0) {
-        output.writeUInt32(12, maxScore_);
+        output.writeUInt32(6, maxScore_);
       }
-      if (getChosenSkillListList().size() > 0) {
-        output.writeUInt32NoTag(106);
-        output.writeUInt32NoTag(chosenSkillListMemoizedSerializedSize);
+      if (levelId_ != 0) {
+        output.writeUInt32(8, levelId_);
       }
-      for (int i = 0; i < chosenSkillList_.size(); i++) {
-        output.writeUInt32NoTag(chosenSkillList_.getInt(i));
+      if (isFinish_ != false) {
+        output.writeBool(10, isFinish_);
+      }
+      if (isCanStart_ != false) {
+        output.writeBool(14, isCanStart_);
       }
       unknownFields.writeTo(output);
     }
@@ -380,47 +453,61 @@ public final class BrickBreakerLevelInfoOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < chosenAvatarList_.size(); i++) {
+        for (int i = 0; i < eANIDCGNDKL_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(chosenAvatarList_.getInt(i));
+            .computeUInt32SizeNoTag(eANIDCGNDKL_.getInt(i));
         }
         size += dataSize;
-        if (!getChosenAvatarListList().isEmpty()) {
+        if (!getEANIDCGNDKLList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        chosenAvatarListMemoizedSerializedSize = dataSize;
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
-      }
-      if (jNFKFCEMOFM_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, jNFKFCEMOFM_);
-      }
-      if (isFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isFinish_);
-      }
-      if (maxScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, maxScore_);
+        eANIDCGNDKLMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < chosenSkillList_.size(); i++) {
+        for (int i = 0; i < fJFJEJCDBDP_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(chosenSkillList_.getInt(i));
+            .computeUInt32SizeNoTag(fJFJEJCDBDP_.getInt(i));
         }
         size += dataSize;
-        if (!getChosenSkillListList().isEmpty()) {
+        if (!getFJFJEJCDBDPList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        chosenSkillListMemoizedSerializedSize = dataSize;
+        fJFJEJCDBDPMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < oFLFEAJLLEM_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(oFLFEAJLLEM_.getInt(i));
+        }
+        size += dataSize;
+        if (!getOFLFEAJLLEMList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        oFLFEAJLLEMMemoizedSerializedSize = dataSize;
+      }
+      if (maxScore_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, maxScore_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, levelId_);
+      }
+      if (isFinish_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, isFinish_);
+      }
+      if (isCanStart_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isCanStart_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -437,18 +524,20 @@ public final class BrickBreakerLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.BrickBreakerLevelInfoOuterClass.BrickBreakerLevelInfo other = (emu.grasscutter.net.proto.BrickBreakerLevelInfoOuterClass.BrickBreakerLevelInfo) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (!getChosenAvatarListList()
-          .equals(other.getChosenAvatarListList())) return false;
-      if (!getChosenSkillListList()
-          .equals(other.getChosenSkillListList())) return false;
-      if (getMaxScore()
-          != other.getMaxScore()) return false;
+      if (!getEANIDCGNDKLList()
+          .equals(other.getEANIDCGNDKLList())) return false;
+      if (!getFJFJEJCDBDPList()
+          .equals(other.getFJFJEJCDBDPList())) return false;
+      if (!getOFLFEAJLLEMList()
+          .equals(other.getOFLFEAJLLEMList())) return false;
+      if (getIsCanStart()
+          != other.getIsCanStart()) return false;
       if (getIsFinish()
           != other.getIsFinish()) return false;
-      if (getJNFKFCEMOFM()
-          != other.getJNFKFCEMOFM()) return false;
+      if (getMaxScore()
+          != other.getMaxScore()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -460,24 +549,28 @@ public final class BrickBreakerLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      if (getChosenAvatarListCount() > 0) {
-        hash = (37 * hash) + CHOSEN_AVATAR_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getChosenAvatarListList().hashCode();
+      if (getEANIDCGNDKLCount() > 0) {
+        hash = (37 * hash) + EANIDCGNDKL_FIELD_NUMBER;
+        hash = (53 * hash) + getEANIDCGNDKLList().hashCode();
       }
-      if (getChosenSkillListCount() > 0) {
-        hash = (37 * hash) + CHOSEN_SKILL_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getChosenSkillListList().hashCode();
+      if (getFJFJEJCDBDPCount() > 0) {
+        hash = (37 * hash) + FJFJEJCDBDP_FIELD_NUMBER;
+        hash = (53 * hash) + getFJFJEJCDBDPList().hashCode();
       }
-      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxScore();
+      if (getOFLFEAJLLEMCount() > 0) {
+        hash = (37 * hash) + OFLFEAJLLEM_FIELD_NUMBER;
+        hash = (53 * hash) + getOFLFEAJLLEMList().hashCode();
+      }
+      hash = (37 * hash) + IS_CAN_START_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsCanStart());
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
-      hash = (37 * hash) + JNFKFCEMOFM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getJNFKFCEMOFM());
+      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxScore();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -574,10 +667,6 @@ public final class BrickBreakerLevelInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PMBMMHHDJOH
-     * </pre>
-     *
      * Protobuf type {@code BrickBreakerLevelInfo}
      */
     public static final class Builder extends
@@ -615,17 +704,19 @@ public final class BrickBreakerLevelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
-
-        chosenAvatarList_ = emptyIntList();
+        eANIDCGNDKL_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        chosenSkillList_ = emptyIntList();
+        fJFJEJCDBDP_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        maxScore_ = 0;
+        oFLFEAJLLEM_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        isCanStart_ = false;
 
         isFinish_ = false;
 
-        jNFKFCEMOFM_ = false;
+        maxScore_ = 0;
+
+        levelId_ = 0;
 
         return this;
       }
@@ -654,20 +745,25 @@ public final class BrickBreakerLevelInfoOuterClass {
       public emu.grasscutter.net.proto.BrickBreakerLevelInfoOuterClass.BrickBreakerLevelInfo buildPartial() {
         emu.grasscutter.net.proto.BrickBreakerLevelInfoOuterClass.BrickBreakerLevelInfo result = new emu.grasscutter.net.proto.BrickBreakerLevelInfoOuterClass.BrickBreakerLevelInfo(this);
         int from_bitField0_ = bitField0_;
-        result.levelId_ = levelId_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          chosenAvatarList_.makeImmutable();
+          eANIDCGNDKL_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.chosenAvatarList_ = chosenAvatarList_;
+        result.eANIDCGNDKL_ = eANIDCGNDKL_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          chosenSkillList_.makeImmutable();
+          fJFJEJCDBDP_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.chosenSkillList_ = chosenSkillList_;
-        result.maxScore_ = maxScore_;
+        result.fJFJEJCDBDP_ = fJFJEJCDBDP_;
+        if (((bitField0_ & 0x00000004) != 0)) {
+          oFLFEAJLLEM_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.oFLFEAJLLEM_ = oFLFEAJLLEM_;
+        result.isCanStart_ = isCanStart_;
         result.isFinish_ = isFinish_;
-        result.jNFKFCEMOFM_ = jNFKFCEMOFM_;
+        result.maxScore_ = maxScore_;
+        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -716,37 +812,47 @@ public final class BrickBreakerLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BrickBreakerLevelInfoOuterClass.BrickBreakerLevelInfo other) {
         if (other == emu.grasscutter.net.proto.BrickBreakerLevelInfoOuterClass.BrickBreakerLevelInfo.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
-        if (!other.chosenAvatarList_.isEmpty()) {
-          if (chosenAvatarList_.isEmpty()) {
-            chosenAvatarList_ = other.chosenAvatarList_;
+        if (!other.eANIDCGNDKL_.isEmpty()) {
+          if (eANIDCGNDKL_.isEmpty()) {
+            eANIDCGNDKL_ = other.eANIDCGNDKL_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureChosenAvatarListIsMutable();
-            chosenAvatarList_.addAll(other.chosenAvatarList_);
+            ensureEANIDCGNDKLIsMutable();
+            eANIDCGNDKL_.addAll(other.eANIDCGNDKL_);
           }
           onChanged();
         }
-        if (!other.chosenSkillList_.isEmpty()) {
-          if (chosenSkillList_.isEmpty()) {
-            chosenSkillList_ = other.chosenSkillList_;
+        if (!other.fJFJEJCDBDP_.isEmpty()) {
+          if (fJFJEJCDBDP_.isEmpty()) {
+            fJFJEJCDBDP_ = other.fJFJEJCDBDP_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureChosenSkillListIsMutable();
-            chosenSkillList_.addAll(other.chosenSkillList_);
+            ensureFJFJEJCDBDPIsMutable();
+            fJFJEJCDBDP_.addAll(other.fJFJEJCDBDP_);
           }
           onChanged();
         }
-        if (other.getMaxScore() != 0) {
-          setMaxScore(other.getMaxScore());
+        if (!other.oFLFEAJLLEM_.isEmpty()) {
+          if (oFLFEAJLLEM_.isEmpty()) {
+            oFLFEAJLLEM_ = other.oFLFEAJLLEM_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureOFLFEAJLLEMIsMutable();
+            oFLFEAJLLEM_.addAll(other.oFLFEAJLLEM_);
+          }
+          onChanged();
+        }
+        if (other.getIsCanStart() != false) {
+          setIsCanStart(other.getIsCanStart());
         }
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
         }
-        if (other.getJNFKFCEMOFM() != false) {
-          setJNFKFCEMOFM(other.getJNFKFCEMOFM());
+        if (other.getMaxScore() != 0) {
+          setMaxScore(other.getMaxScore());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -778,229 +884,277 @@ public final class BrickBreakerLevelInfoOuterClass {
       }
       private int bitField0_;
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList chosenAvatarList_ = emptyIntList();
-      private void ensureChosenAvatarListIsMutable() {
+      private com.google.protobuf.Internal.IntList eANIDCGNDKL_ = emptyIntList();
+      private void ensureEANIDCGNDKLIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          chosenAvatarList_ = mutableCopy(chosenAvatarList_);
+          eANIDCGNDKL_ = mutableCopy(eANIDCGNDKL_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 1;</code>
-       * @return A list containing the chosenAvatarList.
+       * <code>repeated uint32 EANIDCGNDKL = 1;</code>
+       * @return A list containing the eANIDCGNDKL.
        */
       public java.util.List<java.lang.Integer>
-          getChosenAvatarListList() {
+          getEANIDCGNDKLList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(chosenAvatarList_) : chosenAvatarList_;
+                 java.util.Collections.unmodifiableList(eANIDCGNDKL_) : eANIDCGNDKL_;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 1;</code>
-       * @return The count of chosenAvatarList.
+       * <code>repeated uint32 EANIDCGNDKL = 1;</code>
+       * @return The count of eANIDCGNDKL.
        */
-      public int getChosenAvatarListCount() {
-        return chosenAvatarList_.size();
+      public int getEANIDCGNDKLCount() {
+        return eANIDCGNDKL_.size();
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 1;</code>
+       * <code>repeated uint32 EANIDCGNDKL = 1;</code>
        * @param index The index of the element to return.
-       * @return The chosenAvatarList at the given index.
+       * @return The eANIDCGNDKL at the given index.
        */
-      public int getChosenAvatarList(int index) {
-        return chosenAvatarList_.getInt(index);
+      public int getEANIDCGNDKL(int index) {
+        return eANIDCGNDKL_.getInt(index);
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 1;</code>
+       * <code>repeated uint32 EANIDCGNDKL = 1;</code>
        * @param index The index to set the value at.
-       * @param value The chosenAvatarList to set.
+       * @param value The eANIDCGNDKL to set.
        * @return This builder for chaining.
        */
-      public Builder setChosenAvatarList(
+      public Builder setEANIDCGNDKL(
           int index, int value) {
-        ensureChosenAvatarListIsMutable();
-        chosenAvatarList_.setInt(index, value);
+        ensureEANIDCGNDKLIsMutable();
+        eANIDCGNDKL_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 1;</code>
-       * @param value The chosenAvatarList to add.
+       * <code>repeated uint32 EANIDCGNDKL = 1;</code>
+       * @param value The eANIDCGNDKL to add.
        * @return This builder for chaining.
        */
-      public Builder addChosenAvatarList(int value) {
-        ensureChosenAvatarListIsMutable();
-        chosenAvatarList_.addInt(value);
+      public Builder addEANIDCGNDKL(int value) {
+        ensureEANIDCGNDKLIsMutable();
+        eANIDCGNDKL_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 1;</code>
-       * @param values The chosenAvatarList to add.
+       * <code>repeated uint32 EANIDCGNDKL = 1;</code>
+       * @param values The eANIDCGNDKL to add.
        * @return This builder for chaining.
        */
-      public Builder addAllChosenAvatarList(
+      public Builder addAllEANIDCGNDKL(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureChosenAvatarListIsMutable();
+        ensureEANIDCGNDKLIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, chosenAvatarList_);
+            values, eANIDCGNDKL_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 1;</code>
+       * <code>repeated uint32 EANIDCGNDKL = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChosenAvatarList() {
-        chosenAvatarList_ = emptyIntList();
+      public Builder clearEANIDCGNDKL() {
+        eANIDCGNDKL_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList chosenSkillList_ = emptyIntList();
-      private void ensureChosenSkillListIsMutable() {
+      private com.google.protobuf.Internal.IntList fJFJEJCDBDP_ = emptyIntList();
+      private void ensureFJFJEJCDBDPIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          chosenSkillList_ = mutableCopy(chosenSkillList_);
+          fJFJEJCDBDP_ = mutableCopy(fJFJEJCDBDP_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 chosen_skill_list = 13;</code>
-       * @return A list containing the chosenSkillList.
+       * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
+       * @return A list containing the fJFJEJCDBDP.
        */
       public java.util.List<java.lang.Integer>
-          getChosenSkillListList() {
+          getFJFJEJCDBDPList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(chosenSkillList_) : chosenSkillList_;
+                 java.util.Collections.unmodifiableList(fJFJEJCDBDP_) : fJFJEJCDBDP_;
       }
       /**
-       * <code>repeated uint32 chosen_skill_list = 13;</code>
-       * @return The count of chosenSkillList.
+       * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
+       * @return The count of fJFJEJCDBDP.
        */
-      public int getChosenSkillListCount() {
-        return chosenSkillList_.size();
+      public int getFJFJEJCDBDPCount() {
+        return fJFJEJCDBDP_.size();
       }
       /**
-       * <code>repeated uint32 chosen_skill_list = 13;</code>
+       * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
        * @param index The index of the element to return.
-       * @return The chosenSkillList at the given index.
+       * @return The fJFJEJCDBDP at the given index.
        */
-      public int getChosenSkillList(int index) {
-        return chosenSkillList_.getInt(index);
+      public int getFJFJEJCDBDP(int index) {
+        return fJFJEJCDBDP_.getInt(index);
       }
       /**
-       * <code>repeated uint32 chosen_skill_list = 13;</code>
+       * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
        * @param index The index to set the value at.
-       * @param value The chosenSkillList to set.
+       * @param value The fJFJEJCDBDP to set.
        * @return This builder for chaining.
        */
-      public Builder setChosenSkillList(
+      public Builder setFJFJEJCDBDP(
           int index, int value) {
-        ensureChosenSkillListIsMutable();
-        chosenSkillList_.setInt(index, value);
+        ensureFJFJEJCDBDPIsMutable();
+        fJFJEJCDBDP_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_skill_list = 13;</code>
-       * @param value The chosenSkillList to add.
+       * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
+       * @param value The fJFJEJCDBDP to add.
        * @return This builder for chaining.
        */
-      public Builder addChosenSkillList(int value) {
-        ensureChosenSkillListIsMutable();
-        chosenSkillList_.addInt(value);
+      public Builder addFJFJEJCDBDP(int value) {
+        ensureFJFJEJCDBDPIsMutable();
+        fJFJEJCDBDP_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_skill_list = 13;</code>
-       * @param values The chosenSkillList to add.
+       * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
+       * @param values The fJFJEJCDBDP to add.
        * @return This builder for chaining.
        */
-      public Builder addAllChosenSkillList(
+      public Builder addAllFJFJEJCDBDP(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureChosenSkillListIsMutable();
+        ensureFJFJEJCDBDPIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, chosenSkillList_);
+            values, fJFJEJCDBDP_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_skill_list = 13;</code>
+       * <code>repeated uint32 FJFJEJCDBDP = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChosenSkillList() {
-        chosenSkillList_ = emptyIntList();
+      public Builder clearFJFJEJCDBDP() {
+        fJFJEJCDBDP_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
-      private int maxScore_ ;
-      /**
-       * <code>uint32 max_score = 12;</code>
-       * @return The maxScore.
-       */
-      @java.lang.Override
-      public int getMaxScore() {
-        return maxScore_;
+      private com.google.protobuf.Internal.IntList oFLFEAJLLEM_ = emptyIntList();
+      private void ensureOFLFEAJLLEMIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          oFLFEAJLLEM_ = mutableCopy(oFLFEAJLLEM_);
+          bitField0_ |= 0x00000004;
+         }
       }
       /**
-       * <code>uint32 max_score = 12;</code>
-       * @param value The maxScore to set.
+       * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+       * @return A list containing the oFLFEAJLLEM.
+       */
+      public java.util.List<java.lang.Integer>
+          getOFLFEAJLLEMList() {
+        return ((bitField0_ & 0x00000004) != 0) ?
+                 java.util.Collections.unmodifiableList(oFLFEAJLLEM_) : oFLFEAJLLEM_;
+      }
+      /**
+       * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+       * @return The count of oFLFEAJLLEM.
+       */
+      public int getOFLFEAJLLEMCount() {
+        return oFLFEAJLLEM_.size();
+      }
+      /**
+       * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+       * @param index The index of the element to return.
+       * @return The oFLFEAJLLEM at the given index.
+       */
+      public int getOFLFEAJLLEM(int index) {
+        return oFLFEAJLLEM_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+       * @param index The index to set the value at.
+       * @param value The oFLFEAJLLEM to set.
        * @return This builder for chaining.
        */
-      public Builder setMaxScore(int value) {
-        
-        maxScore_ = value;
+      public Builder setOFLFEAJLLEM(
+          int index, int value) {
+        ensureOFLFEAJLLEMIsMutable();
+        oFLFEAJLLEM_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 max_score = 12;</code>
+       * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+       * @param value The oFLFEAJLLEM to add.
        * @return This builder for chaining.
        */
-      public Builder clearMaxScore() {
+      public Builder addOFLFEAJLLEM(int value) {
+        ensureOFLFEAJLLEMIsMutable();
+        oFLFEAJLLEM_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+       * @param values The oFLFEAJLLEM to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllOFLFEAJLLEM(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureOFLFEAJLLEMIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, oFLFEAJLLEM_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 OFLFEAJLLEM = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOFLFEAJLLEM() {
+        oFLFEAJLLEM_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+
+      private boolean isCanStart_ ;
+      /**
+       * <code>bool is_can_start = 14;</code>
+       * @return The isCanStart.
+       */
+      @java.lang.Override
+      public boolean getIsCanStart() {
+        return isCanStart_;
+      }
+      /**
+       * <code>bool is_can_start = 14;</code>
+       * @param value The isCanStart to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsCanStart(boolean value) {
         
-        maxScore_ = 0;
+        isCanStart_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_can_start = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsCanStart() {
+        
+        isCanStart_ = false;
         onChanged();
         return this;
       }
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 11;</code>
+       * <code>bool is_finish = 10;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -1008,7 +1162,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 11;</code>
+       * <code>bool is_finish = 10;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -1019,7 +1173,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 11;</code>
+       * <code>bool is_finish = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -1029,33 +1183,64 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
 
-      private boolean jNFKFCEMOFM_ ;
+      private int maxScore_ ;
       /**
-       * <code>bool JNFKFCEMOFM = 8;</code>
-       * @return The jNFKFCEMOFM.
+       * <code>uint32 max_score = 6;</code>
+       * @return The maxScore.
        */
       @java.lang.Override
-      public boolean getJNFKFCEMOFM() {
-        return jNFKFCEMOFM_;
+      public int getMaxScore() {
+        return maxScore_;
       }
       /**
-       * <code>bool JNFKFCEMOFM = 8;</code>
-       * @param value The jNFKFCEMOFM to set.
+       * <code>uint32 max_score = 6;</code>
+       * @param value The maxScore to set.
        * @return This builder for chaining.
        */
-      public Builder setJNFKFCEMOFM(boolean value) {
+      public Builder setMaxScore(int value) {
         
-        jNFKFCEMOFM_ = value;
+        maxScore_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool JNFKFCEMOFM = 8;</code>
+       * <code>uint32 max_score = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJNFKFCEMOFM() {
+      public Builder clearMaxScore() {
         
-        jNFKFCEMOFM_ = false;
+        maxScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 8;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 8;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -1126,12 +1311,12 @@ public final class BrickBreakerLevelInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033BrickBreakerLevelInfo.proto\"\233\001\n\025BrickB" +
-      "reakerLevelInfo\022\020\n\010level_id\030\003 \001(\r\022\032\n\022cho" +
-      "sen_avatar_list\030\001 \003(\r\022\031\n\021chosen_skill_li" +
-      "st\030\r \003(\r\022\021\n\tmax_score\030\014 \001(\r\022\021\n\tis_finish" +
-      "\030\013 \001(\010\022\023\n\013JNFKFCEMOFM\030\010 \001(\010B\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "\n\033BrickBreakerLevelInfo.proto\"\244\001\n\025BrickB" +
+      "reakerLevelInfo\022\023\n\013EANIDCGNDKL\030\001 \003(\r\022\023\n\013" +
+      "FJFJEJCDBDP\030\002 \003(\r\022\023\n\013OFLFEAJLLEM\030\005 \003(\r\022\024" +
+      "\n\014is_can_start\030\016 \001(\010\022\021\n\tis_finish\030\n \001(\010\022" +
+      "\021\n\tmax_score\030\006 \001(\r\022\020\n\010level_id\030\010 \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1142,7 +1327,7 @@ public final class BrickBreakerLevelInfoOuterClass {
     internal_static_BrickBreakerLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BrickBreakerLevelInfo_descriptor,
-        new java.lang.String[] { "LevelId", "ChosenAvatarList", "ChosenSkillList", "MaxScore", "IsFinish", "JNFKFCEMOFM", });
+        new java.lang.String[] { "EANIDCGNDKL", "FJFJEJCDBDP", "OFLFEAJLLEM", "IsCanStart", "IsFinish", "MaxScore", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

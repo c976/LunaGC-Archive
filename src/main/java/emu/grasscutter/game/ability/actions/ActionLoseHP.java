@@ -22,25 +22,16 @@ public final class ActionLoseHP extends AbilityActionHandler {
                 Grasscutter.getLogger().info("LoseHP executed");
                 var owner = ability.getOwner();
                 
-             
-            
-                
                 if (owner instanceof EntityClientGadget ownerGadget) {
                     Grasscutter.getLogger().info("Owner is a client gadget");
                     owner = ownerGadget.getScene().getEntityById(ownerGadget.getOwnerEntityId());
                     
-        
-            
-                   
-            
                     // Check if the ability is invulnerable for the owner
                     if (ownerGadget.getOwner().getAbilityManager().isAbilityInvulnerable()) return true;
                 }
 
-    
-
         if (owner == null) {
-       Grasscutter.getLogger().info("Owner is null");
+            Grasscutter.getLogger().info("Owner is null");
         }   
 
         if (action.enableLockHP && target.isLockHP()) {
@@ -84,7 +75,7 @@ public final class ActionLoseHP extends AbilityActionHandler {
         if (amountToLose == 0) amountToLose = 0.47f * target.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
 
         target.damage(amountToLose);
-        target.getWorld().broadcastPacket(new PacketEntityFightPropChangeReasonNotify(target, FightProperty.FIGHT_PROP_CUR_HP, -amountToLose, PropChangeReasonOuterClass.PropChangeReason.PROP_CHANGE_REASON_ABILITY, ChangeHpReason.CHANGE_HP_SUB_ABILITY));
+        target.getWorld().broadcastPacket(new PacketEntityFightPropChangeReasonNotify(target, FightProperty.FIGHT_PROP_CUR_HP, -amountToLose, PropChangeReasonOuterClass.PropChangeReason.PROP_CHANGE_REASON_ABILITY, ChangeHpReason.CHANGE_HP_REASON_SUB_ABILITY));
                 
             
 

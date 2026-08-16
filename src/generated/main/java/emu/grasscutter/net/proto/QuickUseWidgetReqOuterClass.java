@@ -19,89 +19,123 @@ public final class QuickUseWidgetReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool OOFCEOHJJCK = 823;</code>
-     * @return The oOFCEOHJJCK.
+     * <code>bool is_force_ignore_cd = 1631;</code>
+     * @return The isForceIgnoreCd.
      */
-    boolean getOOFCEOHJJCK();
+    boolean getIsForceIgnoreCd();
 
     /**
-     * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-     * @return Whether the locationInfo field is set.
-     */
-    boolean hasLocationInfo();
-    /**
-     * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-     * @return The locationInfo.
-     */
-    emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo getLocationInfo();
-    /**
-     * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-     */
-    emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder getLocationInfoOrBuilder();
-
-    /**
-     * <code>.WidgetCreatorInfo creator_info = 258;</code>
-     * @return Whether the creatorInfo field is set.
-     */
-    boolean hasCreatorInfo();
-    /**
-     * <code>.WidgetCreatorInfo creator_info = 258;</code>
-     * @return The creatorInfo.
-     */
-    emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo getCreatorInfo();
-    /**
-     * <code>.WidgetCreatorInfo creator_info = 258;</code>
-     */
-    emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder getCreatorInfoOrBuilder();
-
-    /**
-     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-     * @return Whether the thunderBirdFeatherInfo field is set.
-     */
-    boolean hasThunderBirdFeatherInfo();
-    /**
-     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-     * @return The thunderBirdFeatherInfo.
-     */
-    emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo getThunderBirdFeatherInfo();
-    /**
-     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-     */
-    emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder getThunderBirdFeatherInfoOrBuilder();
-
-    /**
-     * <code>.WidgetSorushInfo sorush_info = 555;</code>
-     * @return Whether the sorushInfo field is set.
-     */
-    boolean hasSorushInfo();
-    /**
-     * <code>.WidgetSorushInfo sorush_info = 555;</code>
-     * @return The sorushInfo.
-     */
-    emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo getSorushInfo();
-    /**
-     * <code>.WidgetSorushInfo sorush_info = 555;</code>
-     */
-    emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder getSorushInfoOrBuilder();
-
-    /**
-     * <code>.WidgetCameraInfo camera_info = 990;</code>
+     * <code>.WidgetCameraInfo camera_info = 128;</code>
      * @return Whether the cameraInfo field is set.
      */
     boolean hasCameraInfo();
     /**
-     * <code>.WidgetCameraInfo camera_info = 990;</code>
+     * <code>.WidgetCameraInfo camera_info = 128;</code>
      * @return The cameraInfo.
      */
     emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo getCameraInfo();
     /**
-     * <code>.WidgetCameraInfo camera_info = 990;</code>
+     * <code>.WidgetCameraInfo camera_info = 128;</code>
      */
     emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfoOrBuilder getCameraInfoOrBuilder();
+
+    /**
+     * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+     * @return Whether the sorushInfo field is set.
+     */
+    boolean hasSorushInfo();
+    /**
+     * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+     * @return The sorushInfo.
+     */
+    emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo getSorushInfo();
+    /**
+     * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+     */
+    emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder getSorushInfoOrBuilder();
+
+    /**
+     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+     * @return Whether the thunderBirdFeatherInfo field is set.
+     */
+    boolean hasThunderBirdFeatherInfo();
+    /**
+     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+     * @return The thunderBirdFeatherInfo.
+     */
+    emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo getThunderBirdFeatherInfo();
+    /**
+     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+     */
+    emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder getThunderBirdFeatherInfoOrBuilder();
+
+    /**
+     * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+     * @return Whether the locationInfo field is set.
+     */
+    boolean hasLocationInfo();
+    /**
+     * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+     * @return The locationInfo.
+     */
+    emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo getLocationInfo();
+    /**
+     * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+     */
+    emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder getLocationInfoOrBuilder();
+
+    /**
+     * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+     * @return Whether the clientDetectorInfo field is set.
+     */
+    boolean hasClientDetectorInfo();
+    /**
+     * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+     * @return The clientDetectorInfo.
+     */
+    emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo getClientDetectorInfo();
+    /**
+     * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+     */
+    emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfoOrBuilder getClientDetectorInfoOrBuilder();
+
+    /**
+     * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+     * @return Whether the newDetectorInfo field is set.
+     */
+    boolean hasNewDetectorInfo();
+    /**
+     * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+     * @return The newDetectorInfo.
+     */
+    emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo getNewDetectorInfo();
+    /**
+     * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+     */
+    emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfoOrBuilder getNewDetectorInfoOrBuilder();
+
+    /**
+     * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+     * @return Whether the creatorInfo field is set.
+     */
+    boolean hasCreatorInfo();
+    /**
+     * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+     * @return The creatorInfo.
+     */
+    emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo getCreatorInfo();
+    /**
+     * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+     */
+    emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder getCreatorInfoOrBuilder();
 
     public emu.grasscutter.net.proto.QuickUseWidgetReqOuterClass.QuickUseWidgetReq.ParamCase getParamCase();
   }
   /**
+   * <pre>
+   * CmdId: 3885
+   * </pre>
+   *
    * Protobuf type {@code QuickUseWidgetReq}
    */
   public static final class QuickUseWidgetReq extends
@@ -146,70 +180,9 @@ public final class QuickUseWidgetReqOuterClass {
             case 0:
               done = true;
               break;
-            case 362: {
-              emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder subBuilder = null;
-              if (paramCase_ == 45) {
-                subBuilder = ((emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_).toBuilder();
-              }
-              param_ =
-                  input.readMessage(emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_);
-                param_ = subBuilder.buildPartial();
-              }
-              paramCase_ = 45;
-              break;
-            }
-            case 2066: {
-              emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder subBuilder = null;
-              if (paramCase_ == 258) {
-                subBuilder = ((emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_).toBuilder();
-              }
-              param_ =
-                  input.readMessage(emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_);
-                param_ = subBuilder.buildPartial();
-              }
-              paramCase_ = 258;
-              break;
-            }
-            case 3178: {
-              emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder subBuilder = null;
-              if (paramCase_ == 397) {
-                subBuilder = ((emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_).toBuilder();
-              }
-              param_ =
-                  input.readMessage(emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_);
-                param_ = subBuilder.buildPartial();
-              }
-              paramCase_ = 397;
-              break;
-            }
-            case 4442: {
-              emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder subBuilder = null;
-              if (paramCase_ == 555) {
-                subBuilder = ((emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_).toBuilder();
-              }
-              param_ =
-                  input.readMessage(emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_);
-                param_ = subBuilder.buildPartial();
-              }
-              paramCase_ = 555;
-              break;
-            }
-            case 6584: {
-
-              oOFCEOHJJCK_ = input.readBool();
-              break;
-            }
-            case 7922: {
+            case 1026: {
               emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.Builder subBuilder = null;
-              if (paramCase_ == 990) {
+              if (paramCase_ == 128) {
                 subBuilder = ((emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo) param_).toBuilder();
               }
               param_ =
@@ -218,7 +191,96 @@ public final class QuickUseWidgetReqOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo) param_);
                 param_ = subBuilder.buildPartial();
               }
-              paramCase_ = 990;
+              paramCase_ = 128;
+              break;
+            }
+            case 8098: {
+              emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder subBuilder = null;
+              if (paramCase_ == 1012) {
+                subBuilder = ((emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_).toBuilder();
+              }
+              param_ =
+                  input.readMessage(emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_);
+                param_ = subBuilder.buildPartial();
+              }
+              paramCase_ = 1012;
+              break;
+            }
+            case 12858: {
+              emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder subBuilder = null;
+              if (paramCase_ == 1607) {
+                subBuilder = ((emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_).toBuilder();
+              }
+              param_ =
+                  input.readMessage(emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_);
+                param_ = subBuilder.buildPartial();
+              }
+              paramCase_ = 1607;
+              break;
+            }
+            case 12986: {
+              emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder subBuilder = null;
+              if (paramCase_ == 1623) {
+                subBuilder = ((emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_).toBuilder();
+              }
+              param_ =
+                  input.readMessage(emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_);
+                param_ = subBuilder.buildPartial();
+              }
+              paramCase_ = 1623;
+              break;
+            }
+            case 13048: {
+
+              isForceIgnoreCd_ = input.readBool();
+              break;
+            }
+            case 14730: {
+              emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder subBuilder = null;
+              if (paramCase_ == 1841) {
+                subBuilder = ((emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_).toBuilder();
+              }
+              param_ =
+                  input.readMessage(emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_);
+                param_ = subBuilder.buildPartial();
+              }
+              paramCase_ = 1841;
+              break;
+            }
+            case 34954: {
+              emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.Builder subBuilder = null;
+              if (paramCase_ == 4369) {
+                subBuilder = ((emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo) param_).toBuilder();
+              }
+              param_ =
+                  input.readMessage(emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo) param_);
+                param_ = subBuilder.buildPartial();
+              }
+              paramCase_ = 4369;
+              break;
+            }
+            case 55618: {
+              emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.Builder subBuilder = null;
+              if (paramCase_ == 6952) {
+                subBuilder = ((emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo) param_).toBuilder();
+              }
+              param_ =
+                  input.readMessage(emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo) param_);
+                param_ = subBuilder.buildPartial();
+              }
+              paramCase_ = 6952;
               break;
             }
             default: {
@@ -258,11 +320,13 @@ public final class QuickUseWidgetReqOuterClass {
     public enum ParamCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      LOCATION_INFO(45),
-      CREATOR_INFO(258),
-      THUNDER_BIRD_FEATHER_INFO(397),
-      SORUSH_INFO(555),
-      CAMERA_INFO(990),
+      CAMERA_INFO(128),
+      SORUSH_INFO(1012),
+      THUNDER_BIRD_FEATHER_INFO(1841),
+      LOCATION_INFO(1607),
+      CLIENT_DETECTOR_INFO(6952),
+      NEW_DETECTOR_INFO(4369),
+      CREATOR_INFO(1623),
       PARAM_NOT_SET(0);
       private final int value;
       private ParamCase(int value) {
@@ -280,11 +344,13 @@ public final class QuickUseWidgetReqOuterClass {
 
       public static ParamCase forNumber(int value) {
         switch (value) {
-          case 45: return LOCATION_INFO;
-          case 258: return CREATOR_INFO;
-          case 397: return THUNDER_BIRD_FEATHER_INFO;
-          case 555: return SORUSH_INFO;
-          case 990: return CAMERA_INFO;
+          case 128: return CAMERA_INFO;
+          case 1012: return SORUSH_INFO;
+          case 1841: return THUNDER_BIRD_FEATHER_INFO;
+          case 1607: return LOCATION_INFO;
+          case 6952: return CLIENT_DETECTOR_INFO;
+          case 4369: return NEW_DETECTOR_INFO;
+          case 1623: return CREATOR_INFO;
           case 0: return PARAM_NOT_SET;
           default: return null;
         }
@@ -300,170 +366,232 @@ public final class QuickUseWidgetReqOuterClass {
           paramCase_);
     }
 
-    public static final int OOFCEOHJJCK_FIELD_NUMBER = 823;
-    private boolean oOFCEOHJJCK_;
+    public static final int IS_FORCE_IGNORE_CD_FIELD_NUMBER = 1631;
+    private boolean isForceIgnoreCd_;
     /**
-     * <code>bool OOFCEOHJJCK = 823;</code>
-     * @return The oOFCEOHJJCK.
+     * <code>bool is_force_ignore_cd = 1631;</code>
+     * @return The isForceIgnoreCd.
      */
     @java.lang.Override
-    public boolean getOOFCEOHJJCK() {
-      return oOFCEOHJJCK_;
+    public boolean getIsForceIgnoreCd() {
+      return isForceIgnoreCd_;
     }
 
-    public static final int LOCATION_INFO_FIELD_NUMBER = 45;
+    public static final int CAMERA_INFO_FIELD_NUMBER = 128;
     /**
-     * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-     * @return Whether the locationInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasLocationInfo() {
-      return paramCase_ == 45;
-    }
-    /**
-     * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-     * @return The locationInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo getLocationInfo() {
-      if (paramCase_ == 45) {
-         return (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_;
-      }
-      return emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder getLocationInfoOrBuilder() {
-      if (paramCase_ == 45) {
-         return (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_;
-      }
-      return emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
-    }
-
-    public static final int CREATOR_INFO_FIELD_NUMBER = 258;
-    /**
-     * <code>.WidgetCreatorInfo creator_info = 258;</code>
-     * @return Whether the creatorInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasCreatorInfo() {
-      return paramCase_ == 258;
-    }
-    /**
-     * <code>.WidgetCreatorInfo creator_info = 258;</code>
-     * @return The creatorInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo getCreatorInfo() {
-      if (paramCase_ == 258) {
-         return (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_;
-      }
-      return emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.WidgetCreatorInfo creator_info = 258;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder getCreatorInfoOrBuilder() {
-      if (paramCase_ == 258) {
-         return (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_;
-      }
-      return emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
-    }
-
-    public static final int THUNDER_BIRD_FEATHER_INFO_FIELD_NUMBER = 397;
-    /**
-     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-     * @return Whether the thunderBirdFeatherInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasThunderBirdFeatherInfo() {
-      return paramCase_ == 397;
-    }
-    /**
-     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-     * @return The thunderBirdFeatherInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo getThunderBirdFeatherInfo() {
-      if (paramCase_ == 397) {
-         return (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_;
-      }
-      return emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder getThunderBirdFeatherInfoOrBuilder() {
-      if (paramCase_ == 397) {
-         return (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_;
-      }
-      return emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
-    }
-
-    public static final int SORUSH_INFO_FIELD_NUMBER = 555;
-    /**
-     * <code>.WidgetSorushInfo sorush_info = 555;</code>
-     * @return Whether the sorushInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasSorushInfo() {
-      return paramCase_ == 555;
-    }
-    /**
-     * <code>.WidgetSorushInfo sorush_info = 555;</code>
-     * @return The sorushInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo getSorushInfo() {
-      if (paramCase_ == 555) {
-         return (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_;
-      }
-      return emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.WidgetSorushInfo sorush_info = 555;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder getSorushInfoOrBuilder() {
-      if (paramCase_ == 555) {
-         return (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_;
-      }
-      return emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
-    }
-
-    public static final int CAMERA_INFO_FIELD_NUMBER = 990;
-    /**
-     * <code>.WidgetCameraInfo camera_info = 990;</code>
+     * <code>.WidgetCameraInfo camera_info = 128;</code>
      * @return Whether the cameraInfo field is set.
      */
     @java.lang.Override
     public boolean hasCameraInfo() {
-      return paramCase_ == 990;
+      return paramCase_ == 128;
     }
     /**
-     * <code>.WidgetCameraInfo camera_info = 990;</code>
+     * <code>.WidgetCameraInfo camera_info = 128;</code>
      * @return The cameraInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo getCameraInfo() {
-      if (paramCase_ == 990) {
+      if (paramCase_ == 128) {
          return (emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo) param_;
       }
       return emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.getDefaultInstance();
     }
     /**
-     * <code>.WidgetCameraInfo camera_info = 990;</code>
+     * <code>.WidgetCameraInfo camera_info = 128;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfoOrBuilder getCameraInfoOrBuilder() {
-      if (paramCase_ == 990) {
+      if (paramCase_ == 128) {
          return (emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo) param_;
       }
       return emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.getDefaultInstance();
+    }
+
+    public static final int SORUSH_INFO_FIELD_NUMBER = 1012;
+    /**
+     * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+     * @return Whether the sorushInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasSorushInfo() {
+      return paramCase_ == 1012;
+    }
+    /**
+     * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+     * @return The sorushInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo getSorushInfo() {
+      if (paramCase_ == 1012) {
+         return (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder getSorushInfoOrBuilder() {
+      if (paramCase_ == 1012) {
+         return (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
+    }
+
+    public static final int THUNDER_BIRD_FEATHER_INFO_FIELD_NUMBER = 1841;
+    /**
+     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+     * @return Whether the thunderBirdFeatherInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasThunderBirdFeatherInfo() {
+      return paramCase_ == 1841;
+    }
+    /**
+     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+     * @return The thunderBirdFeatherInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo getThunderBirdFeatherInfo() {
+      if (paramCase_ == 1841) {
+         return (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder getThunderBirdFeatherInfoOrBuilder() {
+      if (paramCase_ == 1841) {
+         return (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
+    }
+
+    public static final int LOCATION_INFO_FIELD_NUMBER = 1607;
+    /**
+     * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+     * @return Whether the locationInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasLocationInfo() {
+      return paramCase_ == 1607;
+    }
+    /**
+     * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+     * @return The locationInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo getLocationInfo() {
+      if (paramCase_ == 1607) {
+         return (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder getLocationInfoOrBuilder() {
+      if (paramCase_ == 1607) {
+         return (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
+    }
+
+    public static final int CLIENT_DETECTOR_INFO_FIELD_NUMBER = 6952;
+    /**
+     * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+     * @return Whether the clientDetectorInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasClientDetectorInfo() {
+      return paramCase_ == 6952;
+    }
+    /**
+     * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+     * @return The clientDetectorInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo getClientDetectorInfo() {
+      if (paramCase_ == 6952) {
+         return (emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfoOrBuilder getClientDetectorInfoOrBuilder() {
+      if (paramCase_ == 6952) {
+         return (emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.getDefaultInstance();
+    }
+
+    public static final int NEW_DETECTOR_INFO_FIELD_NUMBER = 4369;
+    /**
+     * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+     * @return Whether the newDetectorInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasNewDetectorInfo() {
+      return paramCase_ == 4369;
+    }
+    /**
+     * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+     * @return The newDetectorInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo getNewDetectorInfo() {
+      if (paramCase_ == 4369) {
+         return (emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfoOrBuilder getNewDetectorInfoOrBuilder() {
+      if (paramCase_ == 4369) {
+         return (emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.getDefaultInstance();
+    }
+
+    public static final int CREATOR_INFO_FIELD_NUMBER = 1623;
+    /**
+     * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+     * @return Whether the creatorInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasCreatorInfo() {
+      return paramCase_ == 1623;
+    }
+    /**
+     * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+     * @return The creatorInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo getCreatorInfo() {
+      if (paramCase_ == 1623) {
+         return (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
+    }
+    /**
+     * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder getCreatorInfoOrBuilder() {
+      if (paramCase_ == 1623) {
+         return (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_;
+      }
+      return emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -480,23 +608,29 @@ public final class QuickUseWidgetReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (paramCase_ == 45) {
-        output.writeMessage(45, (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_);
+      if (paramCase_ == 128) {
+        output.writeMessage(128, (emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo) param_);
       }
-      if (paramCase_ == 258) {
-        output.writeMessage(258, (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_);
+      if (paramCase_ == 1012) {
+        output.writeMessage(1012, (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_);
       }
-      if (paramCase_ == 397) {
-        output.writeMessage(397, (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_);
+      if (paramCase_ == 1607) {
+        output.writeMessage(1607, (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_);
       }
-      if (paramCase_ == 555) {
-        output.writeMessage(555, (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_);
+      if (paramCase_ == 1623) {
+        output.writeMessage(1623, (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_);
       }
-      if (oOFCEOHJJCK_ != false) {
-        output.writeBool(823, oOFCEOHJJCK_);
+      if (isForceIgnoreCd_ != false) {
+        output.writeBool(1631, isForceIgnoreCd_);
       }
-      if (paramCase_ == 990) {
-        output.writeMessage(990, (emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo) param_);
+      if (paramCase_ == 1841) {
+        output.writeMessage(1841, (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_);
+      }
+      if (paramCase_ == 4369) {
+        output.writeMessage(4369, (emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo) param_);
+      }
+      if (paramCase_ == 6952) {
+        output.writeMessage(6952, (emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo) param_);
       }
       unknownFields.writeTo(output);
     }
@@ -507,29 +641,37 @@ public final class QuickUseWidgetReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (paramCase_ == 45) {
+      if (paramCase_ == 128) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(45, (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_);
+          .computeMessageSize(128, (emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo) param_);
       }
-      if (paramCase_ == 258) {
+      if (paramCase_ == 1012) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(258, (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_);
+          .computeMessageSize(1012, (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_);
       }
-      if (paramCase_ == 397) {
+      if (paramCase_ == 1607) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(397, (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_);
+          .computeMessageSize(1607, (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_);
       }
-      if (paramCase_ == 555) {
+      if (paramCase_ == 1623) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(555, (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_);
+          .computeMessageSize(1623, (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_);
       }
-      if (oOFCEOHJJCK_ != false) {
+      if (isForceIgnoreCd_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(823, oOFCEOHJJCK_);
+          .computeBoolSize(1631, isForceIgnoreCd_);
       }
-      if (paramCase_ == 990) {
+      if (paramCase_ == 1841) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(990, (emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo) param_);
+          .computeMessageSize(1841, (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_);
+      }
+      if (paramCase_ == 4369) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4369, (emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo) param_);
+      }
+      if (paramCase_ == 6952) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6952, (emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo) param_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -546,29 +688,37 @@ public final class QuickUseWidgetReqOuterClass {
       }
       emu.grasscutter.net.proto.QuickUseWidgetReqOuterClass.QuickUseWidgetReq other = (emu.grasscutter.net.proto.QuickUseWidgetReqOuterClass.QuickUseWidgetReq) obj;
 
-      if (getOOFCEOHJJCK()
-          != other.getOOFCEOHJJCK()) return false;
+      if (getIsForceIgnoreCd()
+          != other.getIsForceIgnoreCd()) return false;
       if (!getParamCase().equals(other.getParamCase())) return false;
       switch (paramCase_) {
-        case 45:
-          if (!getLocationInfo()
-              .equals(other.getLocationInfo())) return false;
+        case 128:
+          if (!getCameraInfo()
+              .equals(other.getCameraInfo())) return false;
           break;
-        case 258:
-          if (!getCreatorInfo()
-              .equals(other.getCreatorInfo())) return false;
-          break;
-        case 397:
-          if (!getThunderBirdFeatherInfo()
-              .equals(other.getThunderBirdFeatherInfo())) return false;
-          break;
-        case 555:
+        case 1012:
           if (!getSorushInfo()
               .equals(other.getSorushInfo())) return false;
           break;
-        case 990:
-          if (!getCameraInfo()
-              .equals(other.getCameraInfo())) return false;
+        case 1841:
+          if (!getThunderBirdFeatherInfo()
+              .equals(other.getThunderBirdFeatherInfo())) return false;
+          break;
+        case 1607:
+          if (!getLocationInfo()
+              .equals(other.getLocationInfo())) return false;
+          break;
+        case 6952:
+          if (!getClientDetectorInfo()
+              .equals(other.getClientDetectorInfo())) return false;
+          break;
+        case 4369:
+          if (!getNewDetectorInfo()
+              .equals(other.getNewDetectorInfo())) return false;
+          break;
+        case 1623:
+          if (!getCreatorInfo()
+              .equals(other.getCreatorInfo())) return false;
           break;
         case 0:
         default:
@@ -584,29 +734,37 @@ public final class QuickUseWidgetReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OOFCEOHJJCK_FIELD_NUMBER;
+      hash = (37 * hash) + IS_FORCE_IGNORE_CD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getOOFCEOHJJCK());
+          getIsForceIgnoreCd());
       switch (paramCase_) {
-        case 45:
-          hash = (37 * hash) + LOCATION_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getLocationInfo().hashCode();
+        case 128:
+          hash = (37 * hash) + CAMERA_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getCameraInfo().hashCode();
           break;
-        case 258:
-          hash = (37 * hash) + CREATOR_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getCreatorInfo().hashCode();
-          break;
-        case 397:
-          hash = (37 * hash) + THUNDER_BIRD_FEATHER_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getThunderBirdFeatherInfo().hashCode();
-          break;
-        case 555:
+        case 1012:
           hash = (37 * hash) + SORUSH_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getSorushInfo().hashCode();
           break;
-        case 990:
-          hash = (37 * hash) + CAMERA_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getCameraInfo().hashCode();
+        case 1841:
+          hash = (37 * hash) + THUNDER_BIRD_FEATHER_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getThunderBirdFeatherInfo().hashCode();
+          break;
+        case 1607:
+          hash = (37 * hash) + LOCATION_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getLocationInfo().hashCode();
+          break;
+        case 6952:
+          hash = (37 * hash) + CLIENT_DETECTOR_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getClientDetectorInfo().hashCode();
+          break;
+        case 4369:
+          hash = (37 * hash) + NEW_DETECTOR_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getNewDetectorInfo().hashCode();
+          break;
+        case 1623:
+          hash = (37 * hash) + CREATOR_INFO_FIELD_NUMBER;
+          hash = (53 * hash) + getCreatorInfo().hashCode();
           break;
         case 0:
         default:
@@ -707,6 +865,10 @@ public final class QuickUseWidgetReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3885
+     * </pre>
+     *
      * Protobuf type {@code QuickUseWidgetReq}
      */
     public static final class Builder extends
@@ -744,7 +906,7 @@ public final class QuickUseWidgetReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oOFCEOHJJCK_ = false;
+        isForceIgnoreCd_ = false;
 
         paramCase_ = 0;
         param_ = null;
@@ -774,40 +936,54 @@ public final class QuickUseWidgetReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.QuickUseWidgetReqOuterClass.QuickUseWidgetReq buildPartial() {
         emu.grasscutter.net.proto.QuickUseWidgetReqOuterClass.QuickUseWidgetReq result = new emu.grasscutter.net.proto.QuickUseWidgetReqOuterClass.QuickUseWidgetReq(this);
-        result.oOFCEOHJJCK_ = oOFCEOHJJCK_;
-        if (paramCase_ == 45) {
-          if (locationInfoBuilder_ == null) {
+        result.isForceIgnoreCd_ = isForceIgnoreCd_;
+        if (paramCase_ == 128) {
+          if (cameraInfoBuilder_ == null) {
             result.param_ = param_;
           } else {
-            result.param_ = locationInfoBuilder_.build();
+            result.param_ = cameraInfoBuilder_.build();
           }
         }
-        if (paramCase_ == 258) {
-          if (creatorInfoBuilder_ == null) {
-            result.param_ = param_;
-          } else {
-            result.param_ = creatorInfoBuilder_.build();
-          }
-        }
-        if (paramCase_ == 397) {
-          if (thunderBirdFeatherInfoBuilder_ == null) {
-            result.param_ = param_;
-          } else {
-            result.param_ = thunderBirdFeatherInfoBuilder_.build();
-          }
-        }
-        if (paramCase_ == 555) {
+        if (paramCase_ == 1012) {
           if (sorushInfoBuilder_ == null) {
             result.param_ = param_;
           } else {
             result.param_ = sorushInfoBuilder_.build();
           }
         }
-        if (paramCase_ == 990) {
-          if (cameraInfoBuilder_ == null) {
+        if (paramCase_ == 1841) {
+          if (thunderBirdFeatherInfoBuilder_ == null) {
             result.param_ = param_;
           } else {
-            result.param_ = cameraInfoBuilder_.build();
+            result.param_ = thunderBirdFeatherInfoBuilder_.build();
+          }
+        }
+        if (paramCase_ == 1607) {
+          if (locationInfoBuilder_ == null) {
+            result.param_ = param_;
+          } else {
+            result.param_ = locationInfoBuilder_.build();
+          }
+        }
+        if (paramCase_ == 6952) {
+          if (clientDetectorInfoBuilder_ == null) {
+            result.param_ = param_;
+          } else {
+            result.param_ = clientDetectorInfoBuilder_.build();
+          }
+        }
+        if (paramCase_ == 4369) {
+          if (newDetectorInfoBuilder_ == null) {
+            result.param_ = param_;
+          } else {
+            result.param_ = newDetectorInfoBuilder_.build();
+          }
+        }
+        if (paramCase_ == 1623) {
+          if (creatorInfoBuilder_ == null) {
+            result.param_ = param_;
+          } else {
+            result.param_ = creatorInfoBuilder_.build();
           }
         }
         result.paramCase_ = paramCase_;
@@ -859,28 +1035,36 @@ public final class QuickUseWidgetReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.QuickUseWidgetReqOuterClass.QuickUseWidgetReq other) {
         if (other == emu.grasscutter.net.proto.QuickUseWidgetReqOuterClass.QuickUseWidgetReq.getDefaultInstance()) return this;
-        if (other.getOOFCEOHJJCK() != false) {
-          setOOFCEOHJJCK(other.getOOFCEOHJJCK());
+        if (other.getIsForceIgnoreCd() != false) {
+          setIsForceIgnoreCd(other.getIsForceIgnoreCd());
         }
         switch (other.getParamCase()) {
-          case LOCATION_INFO: {
-            mergeLocationInfo(other.getLocationInfo());
-            break;
-          }
-          case CREATOR_INFO: {
-            mergeCreatorInfo(other.getCreatorInfo());
-            break;
-          }
-          case THUNDER_BIRD_FEATHER_INFO: {
-            mergeThunderBirdFeatherInfo(other.getThunderBirdFeatherInfo());
+          case CAMERA_INFO: {
+            mergeCameraInfo(other.getCameraInfo());
             break;
           }
           case SORUSH_INFO: {
             mergeSorushInfo(other.getSorushInfo());
             break;
           }
-          case CAMERA_INFO: {
-            mergeCameraInfo(other.getCameraInfo());
+          case THUNDER_BIRD_FEATHER_INFO: {
+            mergeThunderBirdFeatherInfo(other.getThunderBirdFeatherInfo());
+            break;
+          }
+          case LOCATION_INFO: {
+            mergeLocationInfo(other.getLocationInfo());
+            break;
+          }
+          case CLIENT_DETECTOR_INFO: {
+            mergeClientDetectorInfo(other.getClientDetectorInfo());
+            break;
+          }
+          case NEW_DETECTOR_INFO: {
+            mergeNewDetectorInfo(other.getNewDetectorInfo());
+            break;
+          }
+          case CREATOR_INFO: {
+            mergeCreatorInfo(other.getCreatorInfo());
             break;
           }
           case PARAM_NOT_SET: {
@@ -931,631 +1115,67 @@ public final class QuickUseWidgetReqOuterClass {
       }
 
 
-      private boolean oOFCEOHJJCK_ ;
+      private boolean isForceIgnoreCd_ ;
       /**
-       * <code>bool OOFCEOHJJCK = 823;</code>
-       * @return The oOFCEOHJJCK.
+       * <code>bool is_force_ignore_cd = 1631;</code>
+       * @return The isForceIgnoreCd.
        */
       @java.lang.Override
-      public boolean getOOFCEOHJJCK() {
-        return oOFCEOHJJCK_;
+      public boolean getIsForceIgnoreCd() {
+        return isForceIgnoreCd_;
       }
       /**
-       * <code>bool OOFCEOHJJCK = 823;</code>
-       * @param value The oOFCEOHJJCK to set.
+       * <code>bool is_force_ignore_cd = 1631;</code>
+       * @param value The isForceIgnoreCd to set.
        * @return This builder for chaining.
        */
-      public Builder setOOFCEOHJJCK(boolean value) {
+      public Builder setIsForceIgnoreCd(boolean value) {
         
-        oOFCEOHJJCK_ = value;
+        isForceIgnoreCd_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool OOFCEOHJJCK = 823;</code>
+       * <code>bool is_force_ignore_cd = 1631;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOOFCEOHJJCK() {
+      public Builder clearIsForceIgnoreCd() {
         
-        oOFCEOHJJCK_ = false;
+        isForceIgnoreCd_ = false;
         onChanged();
         return this;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder> locationInfoBuilder_;
-      /**
-       * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-       * @return Whether the locationInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasLocationInfo() {
-        return paramCase_ == 45;
-      }
-      /**
-       * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-       * @return The locationInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo getLocationInfo() {
-        if (locationInfoBuilder_ == null) {
-          if (paramCase_ == 45) {
-            return (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_;
-          }
-          return emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
-        } else {
-          if (paramCase_ == 45) {
-            return locationInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-       */
-      public Builder setLocationInfo(emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo value) {
-        if (locationInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          param_ = value;
-          onChanged();
-        } else {
-          locationInfoBuilder_.setMessage(value);
-        }
-        paramCase_ = 45;
-        return this;
-      }
-      /**
-       * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-       */
-      public Builder setLocationInfo(
-          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder builderForValue) {
-        if (locationInfoBuilder_ == null) {
-          param_ = builderForValue.build();
-          onChanged();
-        } else {
-          locationInfoBuilder_.setMessage(builderForValue.build());
-        }
-        paramCase_ = 45;
-        return this;
-      }
-      /**
-       * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-       */
-      public Builder mergeLocationInfo(emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo value) {
-        if (locationInfoBuilder_ == null) {
-          if (paramCase_ == 45 &&
-              param_ != emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance()) {
-            param_ = emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.newBuilder((emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            param_ = value;
-          }
-          onChanged();
-        } else {
-          if (paramCase_ == 45) {
-            locationInfoBuilder_.mergeFrom(value);
-          }
-          locationInfoBuilder_.setMessage(value);
-        }
-        paramCase_ = 45;
-        return this;
-      }
-      /**
-       * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-       */
-      public Builder clearLocationInfo() {
-        if (locationInfoBuilder_ == null) {
-          if (paramCase_ == 45) {
-            paramCase_ = 0;
-            param_ = null;
-            onChanged();
-          }
-        } else {
-          if (paramCase_ == 45) {
-            paramCase_ = 0;
-            param_ = null;
-          }
-          locationInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-       */
-      public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder getLocationInfoBuilder() {
-        return getLocationInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder getLocationInfoOrBuilder() {
-        if ((paramCase_ == 45) && (locationInfoBuilder_ != null)) {
-          return locationInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (paramCase_ == 45) {
-            return (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_;
-          }
-          return emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.WidgetCreateLocationInfo location_info = 45;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder> 
-          getLocationInfoFieldBuilder() {
-        if (locationInfoBuilder_ == null) {
-          if (!(paramCase_ == 45)) {
-            param_ = emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
-          }
-          locationInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_,
-                  getParentForChildren(),
-                  isClean());
-          param_ = null;
-        }
-        paramCase_ = 45;
-        onChanged();;
-        return locationInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder> creatorInfoBuilder_;
-      /**
-       * <code>.WidgetCreatorInfo creator_info = 258;</code>
-       * @return Whether the creatorInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasCreatorInfo() {
-        return paramCase_ == 258;
-      }
-      /**
-       * <code>.WidgetCreatorInfo creator_info = 258;</code>
-       * @return The creatorInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo getCreatorInfo() {
-        if (creatorInfoBuilder_ == null) {
-          if (paramCase_ == 258) {
-            return (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_;
-          }
-          return emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
-        } else {
-          if (paramCase_ == 258) {
-            return creatorInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.WidgetCreatorInfo creator_info = 258;</code>
-       */
-      public Builder setCreatorInfo(emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo value) {
-        if (creatorInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          param_ = value;
-          onChanged();
-        } else {
-          creatorInfoBuilder_.setMessage(value);
-        }
-        paramCase_ = 258;
-        return this;
-      }
-      /**
-       * <code>.WidgetCreatorInfo creator_info = 258;</code>
-       */
-      public Builder setCreatorInfo(
-          emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder builderForValue) {
-        if (creatorInfoBuilder_ == null) {
-          param_ = builderForValue.build();
-          onChanged();
-        } else {
-          creatorInfoBuilder_.setMessage(builderForValue.build());
-        }
-        paramCase_ = 258;
-        return this;
-      }
-      /**
-       * <code>.WidgetCreatorInfo creator_info = 258;</code>
-       */
-      public Builder mergeCreatorInfo(emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo value) {
-        if (creatorInfoBuilder_ == null) {
-          if (paramCase_ == 258 &&
-              param_ != emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance()) {
-            param_ = emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.newBuilder((emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            param_ = value;
-          }
-          onChanged();
-        } else {
-          if (paramCase_ == 258) {
-            creatorInfoBuilder_.mergeFrom(value);
-          }
-          creatorInfoBuilder_.setMessage(value);
-        }
-        paramCase_ = 258;
-        return this;
-      }
-      /**
-       * <code>.WidgetCreatorInfo creator_info = 258;</code>
-       */
-      public Builder clearCreatorInfo() {
-        if (creatorInfoBuilder_ == null) {
-          if (paramCase_ == 258) {
-            paramCase_ = 0;
-            param_ = null;
-            onChanged();
-          }
-        } else {
-          if (paramCase_ == 258) {
-            paramCase_ = 0;
-            param_ = null;
-          }
-          creatorInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.WidgetCreatorInfo creator_info = 258;</code>
-       */
-      public emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder getCreatorInfoBuilder() {
-        return getCreatorInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.WidgetCreatorInfo creator_info = 258;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder getCreatorInfoOrBuilder() {
-        if ((paramCase_ == 258) && (creatorInfoBuilder_ != null)) {
-          return creatorInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (paramCase_ == 258) {
-            return (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_;
-          }
-          return emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.WidgetCreatorInfo creator_info = 258;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder> 
-          getCreatorInfoFieldBuilder() {
-        if (creatorInfoBuilder_ == null) {
-          if (!(paramCase_ == 258)) {
-            param_ = emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
-          }
-          creatorInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_,
-                  getParentForChildren(),
-                  isClean());
-          param_ = null;
-        }
-        paramCase_ = 258;
-        onChanged();;
-        return creatorInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder> thunderBirdFeatherInfoBuilder_;
-      /**
-       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-       * @return Whether the thunderBirdFeatherInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasThunderBirdFeatherInfo() {
-        return paramCase_ == 397;
-      }
-      /**
-       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-       * @return The thunderBirdFeatherInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo getThunderBirdFeatherInfo() {
-        if (thunderBirdFeatherInfoBuilder_ == null) {
-          if (paramCase_ == 397) {
-            return (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_;
-          }
-          return emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
-        } else {
-          if (paramCase_ == 397) {
-            return thunderBirdFeatherInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-       */
-      public Builder setThunderBirdFeatherInfo(emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo value) {
-        if (thunderBirdFeatherInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          param_ = value;
-          onChanged();
-        } else {
-          thunderBirdFeatherInfoBuilder_.setMessage(value);
-        }
-        paramCase_ = 397;
-        return this;
-      }
-      /**
-       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-       */
-      public Builder setThunderBirdFeatherInfo(
-          emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder builderForValue) {
-        if (thunderBirdFeatherInfoBuilder_ == null) {
-          param_ = builderForValue.build();
-          onChanged();
-        } else {
-          thunderBirdFeatherInfoBuilder_.setMessage(builderForValue.build());
-        }
-        paramCase_ = 397;
-        return this;
-      }
-      /**
-       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-       */
-      public Builder mergeThunderBirdFeatherInfo(emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo value) {
-        if (thunderBirdFeatherInfoBuilder_ == null) {
-          if (paramCase_ == 397 &&
-              param_ != emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance()) {
-            param_ = emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.newBuilder((emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            param_ = value;
-          }
-          onChanged();
-        } else {
-          if (paramCase_ == 397) {
-            thunderBirdFeatherInfoBuilder_.mergeFrom(value);
-          }
-          thunderBirdFeatherInfoBuilder_.setMessage(value);
-        }
-        paramCase_ = 397;
-        return this;
-      }
-      /**
-       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-       */
-      public Builder clearThunderBirdFeatherInfo() {
-        if (thunderBirdFeatherInfoBuilder_ == null) {
-          if (paramCase_ == 397) {
-            paramCase_ = 0;
-            param_ = null;
-            onChanged();
-          }
-        } else {
-          if (paramCase_ == 397) {
-            paramCase_ = 0;
-            param_ = null;
-          }
-          thunderBirdFeatherInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-       */
-      public emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder getThunderBirdFeatherInfoBuilder() {
-        return getThunderBirdFeatherInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder getThunderBirdFeatherInfoOrBuilder() {
-        if ((paramCase_ == 397) && (thunderBirdFeatherInfoBuilder_ != null)) {
-          return thunderBirdFeatherInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (paramCase_ == 397) {
-            return (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_;
-          }
-          return emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 397;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder> 
-          getThunderBirdFeatherInfoFieldBuilder() {
-        if (thunderBirdFeatherInfoBuilder_ == null) {
-          if (!(paramCase_ == 397)) {
-            param_ = emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
-          }
-          thunderBirdFeatherInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_,
-                  getParentForChildren(),
-                  isClean());
-          param_ = null;
-        }
-        paramCase_ = 397;
-        onChanged();;
-        return thunderBirdFeatherInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder> sorushInfoBuilder_;
-      /**
-       * <code>.WidgetSorushInfo sorush_info = 555;</code>
-       * @return Whether the sorushInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasSorushInfo() {
-        return paramCase_ == 555;
-      }
-      /**
-       * <code>.WidgetSorushInfo sorush_info = 555;</code>
-       * @return The sorushInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo getSorushInfo() {
-        if (sorushInfoBuilder_ == null) {
-          if (paramCase_ == 555) {
-            return (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_;
-          }
-          return emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
-        } else {
-          if (paramCase_ == 555) {
-            return sorushInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.WidgetSorushInfo sorush_info = 555;</code>
-       */
-      public Builder setSorushInfo(emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo value) {
-        if (sorushInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          param_ = value;
-          onChanged();
-        } else {
-          sorushInfoBuilder_.setMessage(value);
-        }
-        paramCase_ = 555;
-        return this;
-      }
-      /**
-       * <code>.WidgetSorushInfo sorush_info = 555;</code>
-       */
-      public Builder setSorushInfo(
-          emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder builderForValue) {
-        if (sorushInfoBuilder_ == null) {
-          param_ = builderForValue.build();
-          onChanged();
-        } else {
-          sorushInfoBuilder_.setMessage(builderForValue.build());
-        }
-        paramCase_ = 555;
-        return this;
-      }
-      /**
-       * <code>.WidgetSorushInfo sorush_info = 555;</code>
-       */
-      public Builder mergeSorushInfo(emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo value) {
-        if (sorushInfoBuilder_ == null) {
-          if (paramCase_ == 555 &&
-              param_ != emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance()) {
-            param_ = emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.newBuilder((emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            param_ = value;
-          }
-          onChanged();
-        } else {
-          if (paramCase_ == 555) {
-            sorushInfoBuilder_.mergeFrom(value);
-          }
-          sorushInfoBuilder_.setMessage(value);
-        }
-        paramCase_ = 555;
-        return this;
-      }
-      /**
-       * <code>.WidgetSorushInfo sorush_info = 555;</code>
-       */
-      public Builder clearSorushInfo() {
-        if (sorushInfoBuilder_ == null) {
-          if (paramCase_ == 555) {
-            paramCase_ = 0;
-            param_ = null;
-            onChanged();
-          }
-        } else {
-          if (paramCase_ == 555) {
-            paramCase_ = 0;
-            param_ = null;
-          }
-          sorushInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.WidgetSorushInfo sorush_info = 555;</code>
-       */
-      public emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder getSorushInfoBuilder() {
-        return getSorushInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.WidgetSorushInfo sorush_info = 555;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder getSorushInfoOrBuilder() {
-        if ((paramCase_ == 555) && (sorushInfoBuilder_ != null)) {
-          return sorushInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (paramCase_ == 555) {
-            return (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_;
-          }
-          return emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.WidgetSorushInfo sorush_info = 555;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder> 
-          getSorushInfoFieldBuilder() {
-        if (sorushInfoBuilder_ == null) {
-          if (!(paramCase_ == 555)) {
-            param_ = emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
-          }
-          sorushInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_,
-                  getParentForChildren(),
-                  isClean());
-          param_ = null;
-        }
-        paramCase_ = 555;
-        onChanged();;
-        return sorushInfoBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo, emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.Builder, emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfoOrBuilder> cameraInfoBuilder_;
       /**
-       * <code>.WidgetCameraInfo camera_info = 990;</code>
+       * <code>.WidgetCameraInfo camera_info = 128;</code>
        * @return Whether the cameraInfo field is set.
        */
       @java.lang.Override
       public boolean hasCameraInfo() {
-        return paramCase_ == 990;
+        return paramCase_ == 128;
       }
       /**
-       * <code>.WidgetCameraInfo camera_info = 990;</code>
+       * <code>.WidgetCameraInfo camera_info = 128;</code>
        * @return The cameraInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo getCameraInfo() {
         if (cameraInfoBuilder_ == null) {
-          if (paramCase_ == 990) {
+          if (paramCase_ == 128) {
             return (emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo) param_;
           }
           return emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.getDefaultInstance();
         } else {
-          if (paramCase_ == 990) {
+          if (paramCase_ == 128) {
             return cameraInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.WidgetCameraInfo camera_info = 990;</code>
+       * <code>.WidgetCameraInfo camera_info = 128;</code>
        */
       public Builder setCameraInfo(emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo value) {
         if (cameraInfoBuilder_ == null) {
@@ -1567,11 +1187,11 @@ public final class QuickUseWidgetReqOuterClass {
         } else {
           cameraInfoBuilder_.setMessage(value);
         }
-        paramCase_ = 990;
+        paramCase_ = 128;
         return this;
       }
       /**
-       * <code>.WidgetCameraInfo camera_info = 990;</code>
+       * <code>.WidgetCameraInfo camera_info = 128;</code>
        */
       public Builder setCameraInfo(
           emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.Builder builderForValue) {
@@ -1581,15 +1201,15 @@ public final class QuickUseWidgetReqOuterClass {
         } else {
           cameraInfoBuilder_.setMessage(builderForValue.build());
         }
-        paramCase_ = 990;
+        paramCase_ = 128;
         return this;
       }
       /**
-       * <code>.WidgetCameraInfo camera_info = 990;</code>
+       * <code>.WidgetCameraInfo camera_info = 128;</code>
        */
       public Builder mergeCameraInfo(emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo value) {
         if (cameraInfoBuilder_ == null) {
-          if (paramCase_ == 990 &&
+          if (paramCase_ == 128 &&
               param_ != emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.getDefaultInstance()) {
             param_ = emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.newBuilder((emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo) param_)
                 .mergeFrom(value).buildPartial();
@@ -1598,26 +1218,26 @@ public final class QuickUseWidgetReqOuterClass {
           }
           onChanged();
         } else {
-          if (paramCase_ == 990) {
+          if (paramCase_ == 128) {
             cameraInfoBuilder_.mergeFrom(value);
           }
           cameraInfoBuilder_.setMessage(value);
         }
-        paramCase_ = 990;
+        paramCase_ = 128;
         return this;
       }
       /**
-       * <code>.WidgetCameraInfo camera_info = 990;</code>
+       * <code>.WidgetCameraInfo camera_info = 128;</code>
        */
       public Builder clearCameraInfo() {
         if (cameraInfoBuilder_ == null) {
-          if (paramCase_ == 990) {
+          if (paramCase_ == 128) {
             paramCase_ = 0;
             param_ = null;
             onChanged();
           }
         } else {
-          if (paramCase_ == 990) {
+          if (paramCase_ == 128) {
             paramCase_ = 0;
             param_ = null;
           }
@@ -1626,33 +1246,33 @@ public final class QuickUseWidgetReqOuterClass {
         return this;
       }
       /**
-       * <code>.WidgetCameraInfo camera_info = 990;</code>
+       * <code>.WidgetCameraInfo camera_info = 128;</code>
        */
       public emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.Builder getCameraInfoBuilder() {
         return getCameraInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.WidgetCameraInfo camera_info = 990;</code>
+       * <code>.WidgetCameraInfo camera_info = 128;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfoOrBuilder getCameraInfoOrBuilder() {
-        if ((paramCase_ == 990) && (cameraInfoBuilder_ != null)) {
+        if ((paramCase_ == 128) && (cameraInfoBuilder_ != null)) {
           return cameraInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (paramCase_ == 990) {
+          if (paramCase_ == 128) {
             return (emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo) param_;
           }
           return emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.WidgetCameraInfo camera_info = 990;</code>
+       * <code>.WidgetCameraInfo camera_info = 128;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo, emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.Builder, emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfoOrBuilder> 
           getCameraInfoFieldBuilder() {
         if (cameraInfoBuilder_ == null) {
-          if (!(paramCase_ == 990)) {
+          if (!(paramCase_ == 128)) {
             param_ = emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.WidgetCameraInfo.getDefaultInstance();
           }
           cameraInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1662,9 +1282,855 @@ public final class QuickUseWidgetReqOuterClass {
                   isClean());
           param_ = null;
         }
-        paramCase_ = 990;
+        paramCase_ = 128;
         onChanged();;
         return cameraInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder> sorushInfoBuilder_;
+      /**
+       * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+       * @return Whether the sorushInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasSorushInfo() {
+        return paramCase_ == 1012;
+      }
+      /**
+       * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+       * @return The sorushInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo getSorushInfo() {
+        if (sorushInfoBuilder_ == null) {
+          if (paramCase_ == 1012) {
+            return (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
+        } else {
+          if (paramCase_ == 1012) {
+            return sorushInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+       */
+      public Builder setSorushInfo(emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo value) {
+        if (sorushInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          param_ = value;
+          onChanged();
+        } else {
+          sorushInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 1012;
+        return this;
+      }
+      /**
+       * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+       */
+      public Builder setSorushInfo(
+          emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder builderForValue) {
+        if (sorushInfoBuilder_ == null) {
+          param_ = builderForValue.build();
+          onChanged();
+        } else {
+          sorushInfoBuilder_.setMessage(builderForValue.build());
+        }
+        paramCase_ = 1012;
+        return this;
+      }
+      /**
+       * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+       */
+      public Builder mergeSorushInfo(emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo value) {
+        if (sorushInfoBuilder_ == null) {
+          if (paramCase_ == 1012 &&
+              param_ != emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance()) {
+            param_ = emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.newBuilder((emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            param_ = value;
+          }
+          onChanged();
+        } else {
+          if (paramCase_ == 1012) {
+            sorushInfoBuilder_.mergeFrom(value);
+          }
+          sorushInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 1012;
+        return this;
+      }
+      /**
+       * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+       */
+      public Builder clearSorushInfo() {
+        if (sorushInfoBuilder_ == null) {
+          if (paramCase_ == 1012) {
+            paramCase_ = 0;
+            param_ = null;
+            onChanged();
+          }
+        } else {
+          if (paramCase_ == 1012) {
+            paramCase_ = 0;
+            param_ = null;
+          }
+          sorushInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+       */
+      public emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder getSorushInfoBuilder() {
+        return getSorushInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder getSorushInfoOrBuilder() {
+        if ((paramCase_ == 1012) && (sorushInfoBuilder_ != null)) {
+          return sorushInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (paramCase_ == 1012) {
+            return (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetSorushInfo sorush_info = 1012;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder> 
+          getSorushInfoFieldBuilder() {
+        if (sorushInfoBuilder_ == null) {
+          if (!(paramCase_ == 1012)) {
+            param_ = emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.getDefaultInstance();
+          }
+          sorushInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo.Builder, emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.WidgetSorushInfo) param_,
+                  getParentForChildren(),
+                  isClean());
+          param_ = null;
+        }
+        paramCase_ = 1012;
+        onChanged();;
+        return sorushInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder> thunderBirdFeatherInfoBuilder_;
+      /**
+       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+       * @return Whether the thunderBirdFeatherInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasThunderBirdFeatherInfo() {
+        return paramCase_ == 1841;
+      }
+      /**
+       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+       * @return The thunderBirdFeatherInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo getThunderBirdFeatherInfo() {
+        if (thunderBirdFeatherInfoBuilder_ == null) {
+          if (paramCase_ == 1841) {
+            return (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
+        } else {
+          if (paramCase_ == 1841) {
+            return thunderBirdFeatherInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+       */
+      public Builder setThunderBirdFeatherInfo(emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo value) {
+        if (thunderBirdFeatherInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          param_ = value;
+          onChanged();
+        } else {
+          thunderBirdFeatherInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 1841;
+        return this;
+      }
+      /**
+       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+       */
+      public Builder setThunderBirdFeatherInfo(
+          emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder builderForValue) {
+        if (thunderBirdFeatherInfoBuilder_ == null) {
+          param_ = builderForValue.build();
+          onChanged();
+        } else {
+          thunderBirdFeatherInfoBuilder_.setMessage(builderForValue.build());
+        }
+        paramCase_ = 1841;
+        return this;
+      }
+      /**
+       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+       */
+      public Builder mergeThunderBirdFeatherInfo(emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo value) {
+        if (thunderBirdFeatherInfoBuilder_ == null) {
+          if (paramCase_ == 1841 &&
+              param_ != emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance()) {
+            param_ = emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.newBuilder((emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            param_ = value;
+          }
+          onChanged();
+        } else {
+          if (paramCase_ == 1841) {
+            thunderBirdFeatherInfoBuilder_.mergeFrom(value);
+          }
+          thunderBirdFeatherInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 1841;
+        return this;
+      }
+      /**
+       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+       */
+      public Builder clearThunderBirdFeatherInfo() {
+        if (thunderBirdFeatherInfoBuilder_ == null) {
+          if (paramCase_ == 1841) {
+            paramCase_ = 0;
+            param_ = null;
+            onChanged();
+          }
+        } else {
+          if (paramCase_ == 1841) {
+            paramCase_ = 0;
+            param_ = null;
+          }
+          thunderBirdFeatherInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+       */
+      public emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder getThunderBirdFeatherInfoBuilder() {
+        return getThunderBirdFeatherInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder getThunderBirdFeatherInfoOrBuilder() {
+        if ((paramCase_ == 1841) && (thunderBirdFeatherInfoBuilder_ != null)) {
+          return thunderBirdFeatherInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (paramCase_ == 1841) {
+            return (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1841;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder> 
+          getThunderBirdFeatherInfoFieldBuilder() {
+        if (thunderBirdFeatherInfoBuilder_ == null) {
+          if (!(paramCase_ == 1841)) {
+            param_ = emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.getDefaultInstance();
+          }
+          thunderBirdFeatherInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo.Builder, emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.WidgetThunderBirdFeatherInfo) param_,
+                  getParentForChildren(),
+                  isClean());
+          param_ = null;
+        }
+        paramCase_ = 1841;
+        onChanged();;
+        return thunderBirdFeatherInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder> locationInfoBuilder_;
+      /**
+       * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+       * @return Whether the locationInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasLocationInfo() {
+        return paramCase_ == 1607;
+      }
+      /**
+       * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+       * @return The locationInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo getLocationInfo() {
+        if (locationInfoBuilder_ == null) {
+          if (paramCase_ == 1607) {
+            return (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
+        } else {
+          if (paramCase_ == 1607) {
+            return locationInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+       */
+      public Builder setLocationInfo(emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo value) {
+        if (locationInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          param_ = value;
+          onChanged();
+        } else {
+          locationInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 1607;
+        return this;
+      }
+      /**
+       * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+       */
+      public Builder setLocationInfo(
+          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder builderForValue) {
+        if (locationInfoBuilder_ == null) {
+          param_ = builderForValue.build();
+          onChanged();
+        } else {
+          locationInfoBuilder_.setMessage(builderForValue.build());
+        }
+        paramCase_ = 1607;
+        return this;
+      }
+      /**
+       * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+       */
+      public Builder mergeLocationInfo(emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo value) {
+        if (locationInfoBuilder_ == null) {
+          if (paramCase_ == 1607 &&
+              param_ != emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance()) {
+            param_ = emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.newBuilder((emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            param_ = value;
+          }
+          onChanged();
+        } else {
+          if (paramCase_ == 1607) {
+            locationInfoBuilder_.mergeFrom(value);
+          }
+          locationInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 1607;
+        return this;
+      }
+      /**
+       * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+       */
+      public Builder clearLocationInfo() {
+        if (locationInfoBuilder_ == null) {
+          if (paramCase_ == 1607) {
+            paramCase_ = 0;
+            param_ = null;
+            onChanged();
+          }
+        } else {
+          if (paramCase_ == 1607) {
+            paramCase_ = 0;
+            param_ = null;
+          }
+          locationInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+       */
+      public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder getLocationInfoBuilder() {
+        return getLocationInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder getLocationInfoOrBuilder() {
+        if ((paramCase_ == 1607) && (locationInfoBuilder_ != null)) {
+          return locationInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (paramCase_ == 1607) {
+            return (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetCreateLocationInfo location_info = 1607;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder> 
+          getLocationInfoFieldBuilder() {
+        if (locationInfoBuilder_ == null) {
+          if (!(paramCase_ == 1607)) {
+            param_ = emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance();
+          }
+          locationInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo) param_,
+                  getParentForChildren(),
+                  isClean());
+          param_ = null;
+        }
+        paramCase_ = 1607;
+        onChanged();;
+        return locationInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo, emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.Builder, emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfoOrBuilder> clientDetectorInfoBuilder_;
+      /**
+       * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+       * @return Whether the clientDetectorInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasClientDetectorInfo() {
+        return paramCase_ == 6952;
+      }
+      /**
+       * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+       * @return The clientDetectorInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo getClientDetectorInfo() {
+        if (clientDetectorInfoBuilder_ == null) {
+          if (paramCase_ == 6952) {
+            return (emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.getDefaultInstance();
+        } else {
+          if (paramCase_ == 6952) {
+            return clientDetectorInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+       */
+      public Builder setClientDetectorInfo(emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo value) {
+        if (clientDetectorInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          param_ = value;
+          onChanged();
+        } else {
+          clientDetectorInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 6952;
+        return this;
+      }
+      /**
+       * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+       */
+      public Builder setClientDetectorInfo(
+          emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.Builder builderForValue) {
+        if (clientDetectorInfoBuilder_ == null) {
+          param_ = builderForValue.build();
+          onChanged();
+        } else {
+          clientDetectorInfoBuilder_.setMessage(builderForValue.build());
+        }
+        paramCase_ = 6952;
+        return this;
+      }
+      /**
+       * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+       */
+      public Builder mergeClientDetectorInfo(emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo value) {
+        if (clientDetectorInfoBuilder_ == null) {
+          if (paramCase_ == 6952 &&
+              param_ != emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.getDefaultInstance()) {
+            param_ = emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.newBuilder((emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo) param_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            param_ = value;
+          }
+          onChanged();
+        } else {
+          if (paramCase_ == 6952) {
+            clientDetectorInfoBuilder_.mergeFrom(value);
+          }
+          clientDetectorInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 6952;
+        return this;
+      }
+      /**
+       * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+       */
+      public Builder clearClientDetectorInfo() {
+        if (clientDetectorInfoBuilder_ == null) {
+          if (paramCase_ == 6952) {
+            paramCase_ = 0;
+            param_ = null;
+            onChanged();
+          }
+        } else {
+          if (paramCase_ == 6952) {
+            paramCase_ = 0;
+            param_ = null;
+          }
+          clientDetectorInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+       */
+      public emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.Builder getClientDetectorInfoBuilder() {
+        return getClientDetectorInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfoOrBuilder getClientDetectorInfoOrBuilder() {
+        if ((paramCase_ == 6952) && (clientDetectorInfoBuilder_ != null)) {
+          return clientDetectorInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (paramCase_ == 6952) {
+            return (emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetClientDetectorInfo client_detector_info = 6952;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo, emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.Builder, emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfoOrBuilder> 
+          getClientDetectorInfoFieldBuilder() {
+        if (clientDetectorInfoBuilder_ == null) {
+          if (!(paramCase_ == 6952)) {
+            param_ = emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.getDefaultInstance();
+          }
+          clientDetectorInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo, emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo.Builder, emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.WidgetClientDetectorInfo) param_,
+                  getParentForChildren(),
+                  isClean());
+          param_ = null;
+        }
+        paramCase_ = 6952;
+        onChanged();;
+        return clientDetectorInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo, emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.Builder, emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfoOrBuilder> newDetectorInfoBuilder_;
+      /**
+       * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+       * @return Whether the newDetectorInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasNewDetectorInfo() {
+        return paramCase_ == 4369;
+      }
+      /**
+       * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+       * @return The newDetectorInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo getNewDetectorInfo() {
+        if (newDetectorInfoBuilder_ == null) {
+          if (paramCase_ == 4369) {
+            return (emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.getDefaultInstance();
+        } else {
+          if (paramCase_ == 4369) {
+            return newDetectorInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+       */
+      public Builder setNewDetectorInfo(emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo value) {
+        if (newDetectorInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          param_ = value;
+          onChanged();
+        } else {
+          newDetectorInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 4369;
+        return this;
+      }
+      /**
+       * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+       */
+      public Builder setNewDetectorInfo(
+          emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.Builder builderForValue) {
+        if (newDetectorInfoBuilder_ == null) {
+          param_ = builderForValue.build();
+          onChanged();
+        } else {
+          newDetectorInfoBuilder_.setMessage(builderForValue.build());
+        }
+        paramCase_ = 4369;
+        return this;
+      }
+      /**
+       * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+       */
+      public Builder mergeNewDetectorInfo(emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo value) {
+        if (newDetectorInfoBuilder_ == null) {
+          if (paramCase_ == 4369 &&
+              param_ != emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.getDefaultInstance()) {
+            param_ = emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.newBuilder((emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo) param_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            param_ = value;
+          }
+          onChanged();
+        } else {
+          if (paramCase_ == 4369) {
+            newDetectorInfoBuilder_.mergeFrom(value);
+          }
+          newDetectorInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 4369;
+        return this;
+      }
+      /**
+       * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+       */
+      public Builder clearNewDetectorInfo() {
+        if (newDetectorInfoBuilder_ == null) {
+          if (paramCase_ == 4369) {
+            paramCase_ = 0;
+            param_ = null;
+            onChanged();
+          }
+        } else {
+          if (paramCase_ == 4369) {
+            paramCase_ = 0;
+            param_ = null;
+          }
+          newDetectorInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+       */
+      public emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.Builder getNewDetectorInfoBuilder() {
+        return getNewDetectorInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfoOrBuilder getNewDetectorInfoOrBuilder() {
+        if ((paramCase_ == 4369) && (newDetectorInfoBuilder_ != null)) {
+          return newDetectorInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (paramCase_ == 4369) {
+            return (emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetNewDetectorInfo new_detector_info = 4369;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo, emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.Builder, emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfoOrBuilder> 
+          getNewDetectorInfoFieldBuilder() {
+        if (newDetectorInfoBuilder_ == null) {
+          if (!(paramCase_ == 4369)) {
+            param_ = emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.getDefaultInstance();
+          }
+          newDetectorInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo, emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo.Builder, emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.WidgetNewDetectorInfo) param_,
+                  getParentForChildren(),
+                  isClean());
+          param_ = null;
+        }
+        paramCase_ = 4369;
+        onChanged();;
+        return newDetectorInfoBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder> creatorInfoBuilder_;
+      /**
+       * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+       * @return Whether the creatorInfo field is set.
+       */
+      @java.lang.Override
+      public boolean hasCreatorInfo() {
+        return paramCase_ == 1623;
+      }
+      /**
+       * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+       * @return The creatorInfo.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo getCreatorInfo() {
+        if (creatorInfoBuilder_ == null) {
+          if (paramCase_ == 1623) {
+            return (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
+        } else {
+          if (paramCase_ == 1623) {
+            return creatorInfoBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+       */
+      public Builder setCreatorInfo(emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo value) {
+        if (creatorInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          param_ = value;
+          onChanged();
+        } else {
+          creatorInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 1623;
+        return this;
+      }
+      /**
+       * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+       */
+      public Builder setCreatorInfo(
+          emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder builderForValue) {
+        if (creatorInfoBuilder_ == null) {
+          param_ = builderForValue.build();
+          onChanged();
+        } else {
+          creatorInfoBuilder_.setMessage(builderForValue.build());
+        }
+        paramCase_ = 1623;
+        return this;
+      }
+      /**
+       * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+       */
+      public Builder mergeCreatorInfo(emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo value) {
+        if (creatorInfoBuilder_ == null) {
+          if (paramCase_ == 1623 &&
+              param_ != emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance()) {
+            param_ = emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.newBuilder((emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            param_ = value;
+          }
+          onChanged();
+        } else {
+          if (paramCase_ == 1623) {
+            creatorInfoBuilder_.mergeFrom(value);
+          }
+          creatorInfoBuilder_.setMessage(value);
+        }
+        paramCase_ = 1623;
+        return this;
+      }
+      /**
+       * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+       */
+      public Builder clearCreatorInfo() {
+        if (creatorInfoBuilder_ == null) {
+          if (paramCase_ == 1623) {
+            paramCase_ = 0;
+            param_ = null;
+            onChanged();
+          }
+        } else {
+          if (paramCase_ == 1623) {
+            paramCase_ = 0;
+            param_ = null;
+          }
+          creatorInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+       */
+      public emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder getCreatorInfoBuilder() {
+        return getCreatorInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder getCreatorInfoOrBuilder() {
+        if ((paramCase_ == 1623) && (creatorInfoBuilder_ != null)) {
+          return creatorInfoBuilder_.getMessageOrBuilder();
+        } else {
+          if (paramCase_ == 1623) {
+            return (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_;
+          }
+          return emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.WidgetCreatorInfo creator_info = 1623;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder> 
+          getCreatorInfoFieldBuilder() {
+        if (creatorInfoBuilder_ == null) {
+          if (!(paramCase_ == 1623)) {
+            param_ = emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance();
+          }
+          creatorInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) param_,
+                  getParentForChildren(),
+                  isClean());
+          param_ = null;
+        }
+        paramCase_ = 1623;
+        onChanged();;
+        return creatorInfoBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1733,40 +2199,49 @@ public final class QuickUseWidgetReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027QuickUseWidgetReq.proto\032\036WidgetCreateL" +
-      "ocationInfo.proto\032\027WidgetCreatorInfo.pro" +
-      "to\032\"WidgetThunderBirdFeatherInfo.proto\032\026" +
-      "WidgetSorushInfo.proto\032\026WidgetCameraInfo" +
-      ".proto\"\256\002\n\021QuickUseWidgetReq\022\024\n\013OOFCEOHJ" +
-      "JCK\030\267\006 \001(\010\0222\n\rlocation_info\030- \001(\0132\031.Widg" +
-      "etCreateLocationInfoH\000\022+\n\014creator_info\030\202" +
-      "\002 \001(\0132\022.WidgetCreatorInfoH\000\022C\n\031thunder_b" +
-      "ird_feather_info\030\215\003 \001(\0132\035.WidgetThunderB" +
-      "irdFeatherInfoH\000\022)\n\013sorush_info\030\253\004 \001(\0132\021" +
-      ".WidgetSorushInfoH\000\022)\n\013camera_info\030\336\007 \001(" +
-      "\0132\021.WidgetCameraInfoH\000B\007\n\005paramB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\027QuickUseWidgetReq.proto\032\026WidgetCameraI" +
+      "nfo.proto\032\026WidgetSorushInfo.proto\032\"Widge" +
+      "tThunderBirdFeatherInfo.proto\032\036WidgetCre" +
+      "ateLocationInfo.proto\032\036WidgetClientDetec" +
+      "torInfo.proto\032\033WidgetNewDetectorInfo.pro" +
+      "to\032\027WidgetCreatorInfo.proto\"\250\003\n\021QuickUse" +
+      "WidgetReq\022\033\n\022is_force_ignore_cd\030\337\014 \001(\010\022)" +
+      "\n\013camera_info\030\200\001 \001(\0132\021.WidgetCameraInfoH" +
+      "\000\022)\n\013sorush_info\030\364\007 \001(\0132\021.WidgetSorushIn" +
+      "foH\000\022C\n\031thunder_bird_feather_info\030\261\016 \001(\013" +
+      "2\035.WidgetThunderBirdFeatherInfoH\000\0223\n\rloc" +
+      "ation_info\030\307\014 \001(\0132\031.WidgetCreateLocation" +
+      "InfoH\000\022:\n\024client_detector_info\030\2506 \001(\0132\031." +
+      "WidgetClientDetectorInfoH\000\0224\n\021new_detect" +
+      "or_info\030\221\" \001(\0132\026.WidgetNewDetectorInfoH\000" +
+      "\022+\n\014creator_info\030\327\014 \001(\0132\022.WidgetCreatorI" +
+      "nfoH\000B\007\n\005paramB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.getDescriptor(),
         });
     internal_static_QuickUseWidgetReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_QuickUseWidgetReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QuickUseWidgetReq_descriptor,
-        new java.lang.String[] { "OOFCEOHJJCK", "LocationInfo", "CreatorInfo", "ThunderBirdFeatherInfo", "SorushInfo", "CameraInfo", "Param", });
-    emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "IsForceIgnoreCd", "CameraInfo", "SorushInfo", "ThunderBirdFeatherInfo", "LocationInfo", "ClientDetectorInfo", "NewDetectorInfo", "CreatorInfo", "Param", });
     emu.grasscutter.net.proto.WidgetCameraInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.WidgetSorushInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.WidgetThunderBirdFeatherInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.WidgetClientDetectorInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.WidgetNewDetectorInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

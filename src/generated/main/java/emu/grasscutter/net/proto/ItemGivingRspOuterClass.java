@@ -19,24 +19,28 @@ public final class ItemGivingRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>uint32 giving_id = 2;</code>
+     * @return The givingId.
+     */
+    int getGivingId();
+
+    /**
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 giving_group_id = 4;</code>
+     * <code>uint32 giving_group_id = 12;</code>
      * @return The givingGroupId.
      */
     int getGivingGroupId();
-
-    /**
-     * <code>uint32 giving_id = 10;</code>
-     * @return The givingId.
-     */
-    int getGivingId();
   }
   /**
+   * <pre>
+   * CmdId: 27050
+   * </pre>
+   *
    * Protobuf type {@code ItemGivingRsp}
    */
   public static final class ItemGivingRsp extends
@@ -81,19 +85,19 @@ public final class ItemGivingRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
+
+              givingId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 32: {
+            case 96: {
 
               givingGroupId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              givingId_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +132,21 @@ public final class ItemGivingRspOuterClass {
               emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp.class, emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int GIVING_ID_FIELD_NUMBER = 2;
+    private int givingId_;
+    /**
+     * <code>uint32 giving_id = 2;</code>
+     * @return The givingId.
+     */
+    @java.lang.Override
+    public int getGivingId() {
+      return givingId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -139,26 +154,15 @@ public final class ItemGivingRspOuterClass {
       return retcode_;
     }
 
-    public static final int GIVING_GROUP_ID_FIELD_NUMBER = 4;
+    public static final int GIVING_GROUP_ID_FIELD_NUMBER = 12;
     private int givingGroupId_;
     /**
-     * <code>uint32 giving_group_id = 4;</code>
+     * <code>uint32 giving_group_id = 12;</code>
      * @return The givingGroupId.
      */
     @java.lang.Override
     public int getGivingGroupId() {
       return givingGroupId_;
-    }
-
-    public static final int GIVING_ID_FIELD_NUMBER = 10;
-    private int givingId_;
-    /**
-     * <code>uint32 giving_id = 10;</code>
-     * @return The givingId.
-     */
-    @java.lang.Override
-    public int getGivingId() {
-      return givingId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +179,14 @@ public final class ItemGivingRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (givingId_ != 0) {
+        output.writeUInt32(2, givingId_);
+      }
       if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
+        output.writeInt32(7, retcode_);
       }
       if (givingGroupId_ != 0) {
-        output.writeUInt32(4, givingGroupId_);
-      }
-      if (givingId_ != 0) {
-        output.writeUInt32(10, givingId_);
+        output.writeUInt32(12, givingGroupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +197,17 @@ public final class ItemGivingRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (givingId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, givingId_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
+          .computeInt32Size(7, retcode_);
       }
       if (givingGroupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, givingGroupId_);
-      }
-      if (givingId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, givingId_);
+          .computeUInt32Size(12, givingGroupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +224,12 @@ public final class ItemGivingRspOuterClass {
       }
       emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp other = (emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp) obj;
 
+      if (getGivingId()
+          != other.getGivingId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getGivingGroupId()
           != other.getGivingGroupId()) return false;
-      if (getGivingId()
-          != other.getGivingId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,12 +241,12 @@ public final class ItemGivingRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GIVING_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGivingId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + GIVING_GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGivingGroupId();
-      hash = (37 * hash) + GIVING_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGivingId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -339,6 +343,10 @@ public final class ItemGivingRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 27050
+     * </pre>
+     *
      * Protobuf type {@code ItemGivingRsp}
      */
     public static final class Builder extends
@@ -376,11 +384,11 @@ public final class ItemGivingRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        givingId_ = 0;
+
         retcode_ = 0;
 
         givingGroupId_ = 0;
-
-        givingId_ = 0;
 
         return this;
       }
@@ -408,9 +416,9 @@ public final class ItemGivingRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp buildPartial() {
         emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp result = new emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp(this);
+        result.givingId_ = givingId_;
         result.retcode_ = retcode_;
         result.givingGroupId_ = givingGroupId_;
-        result.givingId_ = givingId_;
         onBuilt();
         return result;
       }
@@ -459,14 +467,14 @@ public final class ItemGivingRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp other) {
         if (other == emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp.getDefaultInstance()) return this;
+        if (other.getGivingId() != 0) {
+          setGivingId(other.getGivingId());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
         if (other.getGivingGroupId() != 0) {
           setGivingGroupId(other.getGivingGroupId());
-        }
-        if (other.getGivingId() != 0) {
-          setGivingId(other.getGivingId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -497,9 +505,40 @@ public final class ItemGivingRspOuterClass {
         return this;
       }
 
+      private int givingId_ ;
+      /**
+       * <code>uint32 giving_id = 2;</code>
+       * @return The givingId.
+       */
+      @java.lang.Override
+      public int getGivingId() {
+        return givingId_;
+      }
+      /**
+       * <code>uint32 giving_id = 2;</code>
+       * @param value The givingId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGivingId(int value) {
+        
+        givingId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 giving_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGivingId() {
+        
+        givingId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 7;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -507,7 +546,7 @@ public final class ItemGivingRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 7;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -518,7 +557,7 @@ public final class ItemGivingRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -530,7 +569,7 @@ public final class ItemGivingRspOuterClass {
 
       private int givingGroupId_ ;
       /**
-       * <code>uint32 giving_group_id = 4;</code>
+       * <code>uint32 giving_group_id = 12;</code>
        * @return The givingGroupId.
        */
       @java.lang.Override
@@ -538,7 +577,7 @@ public final class ItemGivingRspOuterClass {
         return givingGroupId_;
       }
       /**
-       * <code>uint32 giving_group_id = 4;</code>
+       * <code>uint32 giving_group_id = 12;</code>
        * @param value The givingGroupId to set.
        * @return This builder for chaining.
        */
@@ -549,43 +588,12 @@ public final class ItemGivingRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 giving_group_id = 4;</code>
+       * <code>uint32 giving_group_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearGivingGroupId() {
         
         givingGroupId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int givingId_ ;
-      /**
-       * <code>uint32 giving_id = 10;</code>
-       * @return The givingId.
-       */
-      @java.lang.Override
-      public int getGivingId() {
-        return givingId_;
-      }
-      /**
-       * <code>uint32 giving_id = 10;</code>
-       * @param value The givingId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGivingId(int value) {
-        
-        givingId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 giving_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGivingId() {
-        
-        givingId_ = 0;
         onChanged();
         return this;
       }
@@ -656,9 +664,9 @@ public final class ItemGivingRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023ItemGivingRsp.proto\"L\n\rItemGivingRsp\022\017" +
-      "\n\007retcode\030\003 \001(\005\022\027\n\017giving_group_id\030\004 \001(\r" +
-      "\022\021\n\tgiving_id\030\n \001(\rB\033\n\031emu.grasscutter.n" +
+      "\n\023ItemGivingRsp.proto\"L\n\rItemGivingRsp\022\021" +
+      "\n\tgiving_id\030\002 \001(\r\022\017\n\007retcode\030\007 \001(\005\022\027\n\017gi" +
+      "ving_group_id\030\014 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -670,7 +678,7 @@ public final class ItemGivingRspOuterClass {
     internal_static_ItemGivingRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ItemGivingRsp_descriptor,
-        new java.lang.String[] { "Retcode", "GivingGroupId", "GivingId", });
+        new java.lang.String[] { "GivingId", "Retcode", "GivingGroupId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

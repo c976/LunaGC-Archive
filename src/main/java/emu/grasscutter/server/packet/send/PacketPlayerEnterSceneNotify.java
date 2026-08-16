@@ -19,14 +19,16 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
         player.setSceneLoadState(SceneLoadState.LOADING);
         player.setEnterSceneToken(Utils.randomRange(1000, 99999));
 
+        long currentTime = System.currentTimeMillis();
+
         var proto =
                 PlayerEnterSceneNotify.newBuilder()
-                        .setSceneId(player.getSceneId())
+                        .setSceneId((player.getSceneId() - 49379) ^ 11523)
                         .setPos(player.getPosition().toProto())
-                        .setSceneBeginTime(System.currentTimeMillis())
+                        .setSceneBeginTime((currentTime ^ 27843L) + 16749L)
                         .setType(EnterType.ENTER_TYPE_SELF)
-                        .setTargetUid(player.getUid())
-                        .setEnterSceneToken(player.getEnterSceneToken())
+                        .setTargetUid((player.getUid() - 30259) ^ 4145)
+                        .setEnterSceneToken((player.getEnterSceneToken() ^ 57361) - 22665)
                         .setWorldLevel(player.getWorldLevel())
                         //.setEnterReason(EnterReason.Login.getValue())
                         //.setIsFirstLoginEnterScene(player.isFirstLoginEnterScene())
@@ -77,16 +79,18 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
         player.setSceneLoadState(SceneLoadState.LOADING);
         player.setEnterSceneToken(Utils.randomRange(1000, 99999));
 
+        long currentTime = System.currentTimeMillis();
+
         var proto =
                 PlayerEnterSceneNotify.newBuilder()
                         //.setPrevSceneId(player.getSceneId())
                         //.setPrevPos(player.getPosition().toProto())
-                        .setSceneId(teleportProperties.getSceneId())
+                        .setSceneId((teleportProperties.getSceneId() - 49379) ^ 11523)
                         .setPos(teleportProperties.getTeleportTo().toProto())
-                        .setSceneBeginTime(System.currentTimeMillis())
+                        .setSceneBeginTime((currentTime ^ 27843L) + 16749L)
                         .setType(teleportProperties.getEnterType())
-                        .setTargetUid(target.getUid())
-                        .setEnterSceneToken(player.getEnterSceneToken())
+                        .setTargetUid((target.getUid() - 30259) ^ 4145)
+                        .setEnterSceneToken((player.getEnterSceneToken() ^ 57361) - 22665)
                         .setWorldLevel(target.getWorld().getWorldLevel())
                         //.setEnterReason(teleportProperties.getEnterReason().getValue())
                         //.setWorldType(1)
@@ -101,7 +105,7 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
 
         // Apply the dungeon ID to the packet if it's a dungeon.
         if (teleportProperties.getDungeonId() != 0) {
-            //proto.setDungeonId(teleportProperties.getDungeonId());
+            proto.setDungeonId((teleportProperties.getDungeonId() ^ 27544) - 17829);
         }
 
         this.setData(proto);
@@ -115,16 +119,18 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
         player.setSceneLoadState(SceneLoadState.LOADING);
         player.setEnterSceneToken(Utils.randomRange(1000, 99999));
 
+        long currentTime = System.currentTimeMillis();
+
         var proto =
                 PlayerEnterSceneNotify.newBuilder()
                         //.setPrevSceneId(player.getSceneId())
                         //.setPrevPos(player.getPosition().toProto())
-                        .setSceneId(teleportProperties.getSceneId())
+                        .setSceneId((teleportProperties.getSceneId() - 49379) ^ 11523)
                         .setPos(teleportProperties.getTeleportTo().toProto())
-                        .setSceneBeginTime(System.currentTimeMillis())
+                        .setSceneBeginTime((currentTime ^ 27843L) + 16749L)
                         .setType(other ? EnterType.ENTER_TYPE_OTHER_HOME : EnterType.ENTER_TYPE_SELF_HOME)
-                        .setTargetUid(targetUid)
-                        .setEnterSceneToken(player.getEnterSceneToken())
+                        .setTargetUid((targetUid - 30259) ^ 4145)
+                        .setEnterSceneToken((player.getEnterSceneToken() ^ 57361) - 22665)
                         //.setEnterReason(teleportProperties.getEnterReason().getValue())
                         //.setWorldType(64)
                         .setSceneTransaction(

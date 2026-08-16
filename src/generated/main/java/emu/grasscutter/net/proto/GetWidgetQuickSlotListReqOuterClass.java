@@ -19,6 +19,10 @@ public final class GetWidgetQuickSlotListReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * CmdId: 3762
+   * </pre>
+   *
    * Protobuf type {@code GetWidgetQuickSlotListReq}
    */
   public static final class GetWidgetQuickSlotListReq extends
@@ -240,6 +244,10 @@ public final class GetWidgetQuickSlotListReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3762
+     * </pre>
+     *
      * Protobuf type {@code GetWidgetQuickSlotListReq}
      */
     public static final class Builder extends

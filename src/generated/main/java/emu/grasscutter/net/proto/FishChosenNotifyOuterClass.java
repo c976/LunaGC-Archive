@@ -19,15 +19,14 @@ public final class FishChosenNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 fish_id = 15;</code>
+     * <code>uint32 fish_id = 8;</code>
      * @return The fishId.
      */
     int getFishId();
   }
   /**
    * <pre>
-   * CmdId: 26704
-   * Obf: MDNEPFPANAP
+   * CmdId: 27687
    * </pre>
    *
    * Protobuf type {@code FishChosenNotify}
@@ -74,7 +73,7 @@ public final class FishChosenNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 64: {
 
               fishId_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class FishChosenNotifyOuterClass {
               emu.grasscutter.net.proto.FishChosenNotifyOuterClass.FishChosenNotify.class, emu.grasscutter.net.proto.FishChosenNotifyOuterClass.FishChosenNotify.Builder.class);
     }
 
-    public static final int FISH_ID_FIELD_NUMBER = 15;
+    public static final int FISH_ID_FIELD_NUMBER = 8;
     private int fishId_;
     /**
-     * <code>uint32 fish_id = 15;</code>
+     * <code>uint32 fish_id = 8;</code>
      * @return The fishId.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class FishChosenNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (fishId_ != 0) {
-        output.writeUInt32(15, fishId_);
+        output.writeUInt32(8, fishId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class FishChosenNotifyOuterClass {
       size = 0;
       if (fishId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, fishId_);
+          .computeUInt32Size(8, fishId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class FishChosenNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26704
-     * Obf: MDNEPFPANAP
+     * CmdId: 27687
      * </pre>
      *
      * Protobuf type {@code FishChosenNotify}
@@ -431,7 +429,7 @@ public final class FishChosenNotifyOuterClass {
 
       private int fishId_ ;
       /**
-       * <code>uint32 fish_id = 15;</code>
+       * <code>uint32 fish_id = 8;</code>
        * @return The fishId.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class FishChosenNotifyOuterClass {
         return fishId_;
       }
       /**
-       * <code>uint32 fish_id = 15;</code>
+       * <code>uint32 fish_id = 8;</code>
        * @param value The fishId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class FishChosenNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 fish_id = 15;</code>
+       * <code>uint32 fish_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearFishId() {
@@ -527,7 +525,7 @@ public final class FishChosenNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026FishChosenNotify.proto\"#\n\020FishChosenNo" +
-      "tify\022\017\n\007fish_id\030\017 \001(\rB\033\n\031emu.grasscutter" +
+      "tify\022\017\n\007fish_id\030\010 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

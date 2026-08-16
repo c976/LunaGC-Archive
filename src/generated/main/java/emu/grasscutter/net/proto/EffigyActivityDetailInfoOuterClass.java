@@ -36,46 +36,42 @@ public final class EffigyActivityDetailInfoOuterClass {
     int getTakenRewardIndexList(int index);
 
     /**
-     * <code>uint32 last_difficulty_id = 6;</code>
-     * @return The lastDifficultyId.
-     */
-    int getLastDifficultyId();
-
-    /**
-     * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+     * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo> 
         getDailyInfoListList();
     /**
-     * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+     * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
      */
     emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo getDailyInfoList(int index);
     /**
-     * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+     * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
      */
     int getDailyInfoListCount();
     /**
-     * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+     * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfoOrBuilder> 
         getDailyInfoListOrBuilderList();
     /**
-     * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+     * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
      */
     emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfoOrBuilder getDailyInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 cur_score = 14;</code>
+     * <code>uint32 cur_score = 4;</code>
      * @return The curScore.
      */
     int getCurScore();
+
+    /**
+     * <code>uint32 last_difficulty_id = 15;</code>
+     * @return The lastDifficultyId.
+     */
+    int getLastDifficultyId();
   }
   /**
-   * <pre>
-   * Obf: DLOMGLGOALI
-   * </pre>
-   *
    * Protobuf type {@code EffigyActivityDetailInfo}
    */
   public static final class EffigyActivityDetailInfo extends
@@ -123,9 +119,9 @@ public final class EffigyActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 32: {
 
-              lastDifficultyId_ = input.readUInt32();
+              curScore_ = input.readUInt32();
               break;
             }
             case 80: {
@@ -149,7 +145,7 @@ public final class EffigyActivityDetailInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 90: {
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 dailyInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo>();
                 mutable_bitField0_ |= 0x00000002;
@@ -158,9 +154,9 @@ public final class EffigyActivityDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo.parser(), extensionRegistry));
               break;
             }
-            case 112: {
+            case 120: {
 
-              curScore_ = input.readUInt32();
+              lastDifficultyId_ = input.readUInt32();
               break;
             }
             default: {
@@ -229,28 +225,17 @@ public final class EffigyActivityDetailInfoOuterClass {
     }
     private int takenRewardIndexListMemoizedSerializedSize = -1;
 
-    public static final int LAST_DIFFICULTY_ID_FIELD_NUMBER = 6;
-    private int lastDifficultyId_;
-    /**
-     * <code>uint32 last_difficulty_id = 6;</code>
-     * @return The lastDifficultyId.
-     */
-    @java.lang.Override
-    public int getLastDifficultyId() {
-      return lastDifficultyId_;
-    }
-
-    public static final int DAILY_INFO_LIST_FIELD_NUMBER = 11;
+    public static final int DAILY_INFO_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo> dailyInfoList_;
     /**
-     * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+     * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo> getDailyInfoListList() {
       return dailyInfoList_;
     }
     /**
-     * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+     * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfoOrBuilder> 
@@ -258,21 +243,21 @@ public final class EffigyActivityDetailInfoOuterClass {
       return dailyInfoList_;
     }
     /**
-     * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+     * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
      */
     @java.lang.Override
     public int getDailyInfoListCount() {
       return dailyInfoList_.size();
     }
     /**
-     * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+     * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo getDailyInfoList(int index) {
       return dailyInfoList_.get(index);
     }
     /**
-     * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+     * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfoOrBuilder getDailyInfoListOrBuilder(
@@ -280,15 +265,26 @@ public final class EffigyActivityDetailInfoOuterClass {
       return dailyInfoList_.get(index);
     }
 
-    public static final int CUR_SCORE_FIELD_NUMBER = 14;
+    public static final int CUR_SCORE_FIELD_NUMBER = 4;
     private int curScore_;
     /**
-     * <code>uint32 cur_score = 14;</code>
+     * <code>uint32 cur_score = 4;</code>
      * @return The curScore.
      */
     @java.lang.Override
     public int getCurScore() {
       return curScore_;
+    }
+
+    public static final int LAST_DIFFICULTY_ID_FIELD_NUMBER = 15;
+    private int lastDifficultyId_;
+    /**
+     * <code>uint32 last_difficulty_id = 15;</code>
+     * @return The lastDifficultyId.
+     */
+    @java.lang.Override
+    public int getLastDifficultyId() {
+      return lastDifficultyId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -306,8 +302,8 @@ public final class EffigyActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (lastDifficultyId_ != 0) {
-        output.writeUInt32(6, lastDifficultyId_);
+      if (curScore_ != 0) {
+        output.writeUInt32(4, curScore_);
       }
       if (getTakenRewardIndexListList().size() > 0) {
         output.writeUInt32NoTag(82);
@@ -317,10 +313,10 @@ public final class EffigyActivityDetailInfoOuterClass {
         output.writeUInt32NoTag(takenRewardIndexList_.getInt(i));
       }
       for (int i = 0; i < dailyInfoList_.size(); i++) {
-        output.writeMessage(11, dailyInfoList_.get(i));
+        output.writeMessage(12, dailyInfoList_.get(i));
       }
-      if (curScore_ != 0) {
-        output.writeUInt32(14, curScore_);
+      if (lastDifficultyId_ != 0) {
+        output.writeUInt32(15, lastDifficultyId_);
       }
       unknownFields.writeTo(output);
     }
@@ -331,9 +327,9 @@ public final class EffigyActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lastDifficultyId_ != 0) {
+      if (curScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, lastDifficultyId_);
+          .computeUInt32Size(4, curScore_);
       }
       {
         int dataSize = 0;
@@ -351,11 +347,11 @@ public final class EffigyActivityDetailInfoOuterClass {
       }
       for (int i = 0; i < dailyInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, dailyInfoList_.get(i));
+          .computeMessageSize(12, dailyInfoList_.get(i));
       }
-      if (curScore_ != 0) {
+      if (lastDifficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, curScore_);
+          .computeUInt32Size(15, lastDifficultyId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -374,12 +370,12 @@ public final class EffigyActivityDetailInfoOuterClass {
 
       if (!getTakenRewardIndexListList()
           .equals(other.getTakenRewardIndexListList())) return false;
-      if (getLastDifficultyId()
-          != other.getLastDifficultyId()) return false;
       if (!getDailyInfoListList()
           .equals(other.getDailyInfoListList())) return false;
       if (getCurScore()
           != other.getCurScore()) return false;
+      if (getLastDifficultyId()
+          != other.getLastDifficultyId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -395,14 +391,14 @@ public final class EffigyActivityDetailInfoOuterClass {
         hash = (37 * hash) + TAKEN_REWARD_INDEX_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTakenRewardIndexListList().hashCode();
       }
-      hash = (37 * hash) + LAST_DIFFICULTY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLastDifficultyId();
       if (getDailyInfoListCount() > 0) {
         hash = (37 * hash) + DAILY_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDailyInfoListList().hashCode();
       }
       hash = (37 * hash) + CUR_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getCurScore();
+      hash = (37 * hash) + LAST_DIFFICULTY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLastDifficultyId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -499,10 +495,6 @@ public final class EffigyActivityDetailInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DLOMGLGOALI
-     * </pre>
-     *
      * Protobuf type {@code EffigyActivityDetailInfo}
      */
     public static final class Builder extends
@@ -543,8 +535,6 @@ public final class EffigyActivityDetailInfoOuterClass {
         super.clear();
         takenRewardIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        lastDifficultyId_ = 0;
-
         if (dailyInfoListBuilder_ == null) {
           dailyInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -552,6 +542,8 @@ public final class EffigyActivityDetailInfoOuterClass {
           dailyInfoListBuilder_.clear();
         }
         curScore_ = 0;
+
+        lastDifficultyId_ = 0;
 
         return this;
       }
@@ -585,7 +577,6 @@ public final class EffigyActivityDetailInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.takenRewardIndexList_ = takenRewardIndexList_;
-        result.lastDifficultyId_ = lastDifficultyId_;
         if (dailyInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             dailyInfoList_ = java.util.Collections.unmodifiableList(dailyInfoList_);
@@ -596,6 +587,7 @@ public final class EffigyActivityDetailInfoOuterClass {
           result.dailyInfoList_ = dailyInfoListBuilder_.build();
         }
         result.curScore_ = curScore_;
+        result.lastDifficultyId_ = lastDifficultyId_;
         onBuilt();
         return result;
       }
@@ -654,9 +646,6 @@ public final class EffigyActivityDetailInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getLastDifficultyId() != 0) {
-          setLastDifficultyId(other.getLastDifficultyId());
-        }
         if (dailyInfoListBuilder_ == null) {
           if (!other.dailyInfoList_.isEmpty()) {
             if (dailyInfoList_.isEmpty()) {
@@ -685,6 +674,9 @@ public final class EffigyActivityDetailInfoOuterClass {
         }
         if (other.getCurScore() != 0) {
           setCurScore(other.getCurScore());
+        }
+        if (other.getLastDifficultyId() != 0) {
+          setLastDifficultyId(other.getLastDifficultyId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -795,37 +787,6 @@ public final class EffigyActivityDetailInfoOuterClass {
         return this;
       }
 
-      private int lastDifficultyId_ ;
-      /**
-       * <code>uint32 last_difficulty_id = 6;</code>
-       * @return The lastDifficultyId.
-       */
-      @java.lang.Override
-      public int getLastDifficultyId() {
-        return lastDifficultyId_;
-      }
-      /**
-       * <code>uint32 last_difficulty_id = 6;</code>
-       * @param value The lastDifficultyId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLastDifficultyId(int value) {
-        
-        lastDifficultyId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 last_difficulty_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLastDifficultyId() {
-        
-        lastDifficultyId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo> dailyInfoList_ =
         java.util.Collections.emptyList();
       private void ensureDailyInfoListIsMutable() {
@@ -839,7 +800,7 @@ public final class EffigyActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo, emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo.Builder, emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfoOrBuilder> dailyInfoListBuilder_;
 
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo> getDailyInfoListList() {
         if (dailyInfoListBuilder_ == null) {
@@ -849,7 +810,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public int getDailyInfoListCount() {
         if (dailyInfoListBuilder_ == null) {
@@ -859,7 +820,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo getDailyInfoList(int index) {
         if (dailyInfoListBuilder_ == null) {
@@ -869,7 +830,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public Builder setDailyInfoList(
           int index, emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo value) {
@@ -886,7 +847,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public Builder setDailyInfoList(
           int index, emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo.Builder builderForValue) {
@@ -900,7 +861,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public Builder addDailyInfoList(emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo value) {
         if (dailyInfoListBuilder_ == null) {
@@ -916,7 +877,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public Builder addDailyInfoList(
           int index, emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo value) {
@@ -933,7 +894,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public Builder addDailyInfoList(
           emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo.Builder builderForValue) {
@@ -947,7 +908,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public Builder addDailyInfoList(
           int index, emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo.Builder builderForValue) {
@@ -961,7 +922,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public Builder addAllDailyInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo> values) {
@@ -976,7 +937,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public Builder clearDailyInfoList() {
         if (dailyInfoListBuilder_ == null) {
@@ -989,7 +950,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public Builder removeDailyInfoList(int index) {
         if (dailyInfoListBuilder_ == null) {
@@ -1002,14 +963,14 @@ public final class EffigyActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo.Builder getDailyInfoListBuilder(
           int index) {
         return getDailyInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfoOrBuilder getDailyInfoListOrBuilder(
           int index) {
@@ -1019,7 +980,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfoOrBuilder> 
            getDailyInfoListOrBuilderList() {
@@ -1030,14 +991,14 @@ public final class EffigyActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo.Builder addDailyInfoListBuilder() {
         return getDailyInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo.Builder addDailyInfoListBuilder(
           int index) {
@@ -1045,7 +1006,7 @@ public final class EffigyActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .EffigyDailyInfo daily_info_list = 11;</code>
+       * <code>repeated .EffigyDailyInfo daily_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.EffigyDailyInfo.Builder> 
            getDailyInfoListBuilderList() {
@@ -1068,7 +1029,7 @@ public final class EffigyActivityDetailInfoOuterClass {
 
       private int curScore_ ;
       /**
-       * <code>uint32 cur_score = 14;</code>
+       * <code>uint32 cur_score = 4;</code>
        * @return The curScore.
        */
       @java.lang.Override
@@ -1076,7 +1037,7 @@ public final class EffigyActivityDetailInfoOuterClass {
         return curScore_;
       }
       /**
-       * <code>uint32 cur_score = 14;</code>
+       * <code>uint32 cur_score = 4;</code>
        * @param value The curScore to set.
        * @return This builder for chaining.
        */
@@ -1087,12 +1048,43 @@ public final class EffigyActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_score = 14;</code>
+       * <code>uint32 cur_score = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurScore() {
         
         curScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lastDifficultyId_ ;
+      /**
+       * <code>uint32 last_difficulty_id = 15;</code>
+       * @return The lastDifficultyId.
+       */
+      @java.lang.Override
+      public int getLastDifficultyId() {
+        return lastDifficultyId_;
+      }
+      /**
+       * <code>uint32 last_difficulty_id = 15;</code>
+       * @param value The lastDifficultyId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLastDifficultyId(int value) {
+        
+        lastDifficultyId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 last_difficulty_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLastDifficultyId() {
+        
+        lastDifficultyId_ = 0;
         onChanged();
         return this;
       }
@@ -1165,10 +1157,10 @@ public final class EffigyActivityDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036EffigyActivityDetailInfo.proto\032\025Effigy" +
       "DailyInfo.proto\"\225\001\n\030EffigyActivityDetail" +
-      "Info\022\037\n\027taken_reward_index_list\030\n \003(\r\022\032\n" +
-      "\022last_difficulty_id\030\006 \001(\r\022)\n\017daily_info_" +
-      "list\030\013 \003(\0132\020.EffigyDailyInfo\022\021\n\tcur_scor" +
-      "e\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "Info\022\037\n\027taken_reward_index_list\030\n \003(\r\022)\n" +
+      "\017daily_info_list\030\014 \003(\0132\020.EffigyDailyInfo" +
+      "\022\021\n\tcur_score\030\004 \001(\r\022\032\n\022last_difficulty_i" +
+      "d\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1181,7 +1173,7 @@ public final class EffigyActivityDetailInfoOuterClass {
     internal_static_EffigyActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EffigyActivityDetailInfo_descriptor,
-        new java.lang.String[] { "TakenRewardIndexList", "LastDifficultyId", "DailyInfoList", "CurScore", });
+        new java.lang.String[] { "TakenRewardIndexList", "DailyInfoList", "CurScore", "LastDifficultyId", });
     emu.grasscutter.net.proto.EffigyDailyInfoOuterClass.getDescriptor();
   }
 

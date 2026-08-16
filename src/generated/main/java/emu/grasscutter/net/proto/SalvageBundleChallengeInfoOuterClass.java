@@ -36,10 +36,6 @@ public final class SalvageBundleChallengeInfoOuterClass {
     int getFinishedBundleList(int index);
   }
   /**
-   * <pre>
-   * Obf: MKCOAKEADAN
-   * </pre>
-   *
    * Protobuf type {@code SalvageBundleChallengeInfo}
    */
   public static final class SalvageBundleChallengeInfo extends
@@ -343,10 +339,6 @@ public final class SalvageBundleChallengeInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: MKCOAKEADAN
-     * </pre>
-     *
      * Protobuf type {@code SalvageBundleChallengeInfo}
      */
     public static final class Builder extends

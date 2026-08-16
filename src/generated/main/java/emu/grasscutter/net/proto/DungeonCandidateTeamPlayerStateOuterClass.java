@@ -15,10 +15,6 @@ public final class DungeonCandidateTeamPlayerStateOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: KMBKLPECAEO
-   * </pre>
-   *
    * Protobuf enum {@code DungeonCandidateTeamPlayerState}
    */
   public enum DungeonCandidateTeamPlayerState

@@ -435,22 +435,28 @@ public final class AvatarInfoOuterClass {
     emu.grasscutter.net.proto.MirrorAvatarInfoOuterClass.MirrorAvatarInfoOrBuilder getMirrorAvatarInfoOrBuilder();
 
     /**
-     * <code>uint32 GJFKDCJENJE = 29;</code>
-     * @return The gJFKDCJENJE.
+     * <code>uint32 PPLKDGOCEFA = 29;</code>
+     * @return The pPLKDGOCEFA.
      */
-    int getGJFKDCJENJE();
+    int getPPLKDGOCEFA();
 
     /**
-     * <code>uint32 EPHMICEFJOM = 30;</code>
-     * @return The ePHMICEFJOM.
+     * <code>uint32 CMINCPBKJNJ = 30;</code>
+     * @return The cMINCPBKJNJ.
      */
-    int getEPHMICEFJOM();
+    int getCMINCPBKJNJ();
 
     /**
      * <code>uint32 trace_effect_id = 31;</code>
      * @return The traceEffectId.
      */
     int getTraceEffectId();
+
+    /**
+     * <code>uint32 EDCDKHBBKHN = 32;</code>
+     * @return The eDCDKHBBKHN.
+     */
+    int getEDCDKHBBKHN();
   }
   /**
    * Protobuf type {@code AvatarInfo}
@@ -799,17 +805,22 @@ public final class AvatarInfoOuterClass {
             }
             case 232: {
 
-              gJFKDCJENJE_ = input.readUInt32();
+              pPLKDGOCEFA_ = input.readUInt32();
               break;
             }
             case 240: {
 
-              ePHMICEFJOM_ = input.readUInt32();
+              cMINCPBKJNJ_ = input.readUInt32();
               break;
             }
             case 248: {
 
               traceEffectId_ = input.readUInt32();
+              break;
+            }
+            case 256: {
+
+              eDCDKHBBKHN_ = input.readUInt32();
               break;
             }
             default: {
@@ -1711,26 +1722,26 @@ public final class AvatarInfoOuterClass {
       return getMirrorAvatarInfo();
     }
 
-    public static final int GJFKDCJENJE_FIELD_NUMBER = 29;
-    private int gJFKDCJENJE_;
+    public static final int PPLKDGOCEFA_FIELD_NUMBER = 29;
+    private int pPLKDGOCEFA_;
     /**
-     * <code>uint32 GJFKDCJENJE = 29;</code>
-     * @return The gJFKDCJENJE.
+     * <code>uint32 PPLKDGOCEFA = 29;</code>
+     * @return The pPLKDGOCEFA.
      */
     @java.lang.Override
-    public int getGJFKDCJENJE() {
-      return gJFKDCJENJE_;
+    public int getPPLKDGOCEFA() {
+      return pPLKDGOCEFA_;
     }
 
-    public static final int EPHMICEFJOM_FIELD_NUMBER = 30;
-    private int ePHMICEFJOM_;
+    public static final int CMINCPBKJNJ_FIELD_NUMBER = 30;
+    private int cMINCPBKJNJ_;
     /**
-     * <code>uint32 EPHMICEFJOM = 30;</code>
-     * @return The ePHMICEFJOM.
+     * <code>uint32 CMINCPBKJNJ = 30;</code>
+     * @return The cMINCPBKJNJ.
      */
     @java.lang.Override
-    public int getEPHMICEFJOM() {
-      return ePHMICEFJOM_;
+    public int getCMINCPBKJNJ() {
+      return cMINCPBKJNJ_;
     }
 
     public static final int TRACE_EFFECT_ID_FIELD_NUMBER = 31;
@@ -1742,6 +1753,17 @@ public final class AvatarInfoOuterClass {
     @java.lang.Override
     public int getTraceEffectId() {
       return traceEffectId_;
+    }
+
+    public static final int EDCDKHBBKHN_FIELD_NUMBER = 32;
+    private int eDCDKHBBKHN_;
+    /**
+     * <code>uint32 EDCDKHBBKHN = 32;</code>
+     * @return The eDCDKHBBKHN.
+     */
+    @java.lang.Override
+    public int getEDCDKHBBKHN() {
+      return eDCDKHBBKHN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1875,14 +1897,17 @@ public final class AvatarInfoOuterClass {
       if (mirrorAvatarInfo_ != null) {
         output.writeMessage(28, getMirrorAvatarInfo());
       }
-      if (gJFKDCJENJE_ != 0) {
-        output.writeUInt32(29, gJFKDCJENJE_);
+      if (pPLKDGOCEFA_ != 0) {
+        output.writeUInt32(29, pPLKDGOCEFA_);
       }
-      if (ePHMICEFJOM_ != 0) {
-        output.writeUInt32(30, ePHMICEFJOM_);
+      if (cMINCPBKJNJ_ != 0) {
+        output.writeUInt32(30, cMINCPBKJNJ_);
       }
       if (traceEffectId_ != 0) {
         output.writeUInt32(31, traceEffectId_);
+      }
+      if (eDCDKHBBKHN_ != 0) {
+        output.writeUInt32(32, eDCDKHBBKHN_);
       }
       unknownFields.writeTo(output);
     }
@@ -2081,17 +2106,21 @@ public final class AvatarInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(28, getMirrorAvatarInfo());
       }
-      if (gJFKDCJENJE_ != 0) {
+      if (pPLKDGOCEFA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(29, gJFKDCJENJE_);
+          .computeUInt32Size(29, pPLKDGOCEFA_);
       }
-      if (ePHMICEFJOM_ != 0) {
+      if (cMINCPBKJNJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(30, ePHMICEFJOM_);
+          .computeUInt32Size(30, cMINCPBKJNJ_);
       }
       if (traceEffectId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(31, traceEffectId_);
+      }
+      if (eDCDKHBBKHN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(32, eDCDKHBBKHN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2173,12 +2202,14 @@ public final class AvatarInfoOuterClass {
         if (!getMirrorAvatarInfo()
             .equals(other.getMirrorAvatarInfo())) return false;
       }
-      if (getGJFKDCJENJE()
-          != other.getGJFKDCJENJE()) return false;
-      if (getEPHMICEFJOM()
-          != other.getEPHMICEFJOM()) return false;
+      if (getPPLKDGOCEFA()
+          != other.getPPLKDGOCEFA()) return false;
+      if (getCMINCPBKJNJ()
+          != other.getCMINCPBKJNJ()) return false;
       if (getTraceEffectId()
           != other.getTraceEffectId()) return false;
+      if (getEDCDKHBBKHN()
+          != other.getEDCDKHBBKHN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -2276,12 +2307,14 @@ public final class AvatarInfoOuterClass {
         hash = (37 * hash) + MIRROR_AVATAR_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getMirrorAvatarInfo().hashCode();
       }
-      hash = (37 * hash) + GJFKDCJENJE_FIELD_NUMBER;
-      hash = (53 * hash) + getGJFKDCJENJE();
-      hash = (37 * hash) + EPHMICEFJOM_FIELD_NUMBER;
-      hash = (53 * hash) + getEPHMICEFJOM();
+      hash = (37 * hash) + PPLKDGOCEFA_FIELD_NUMBER;
+      hash = (53 * hash) + getPPLKDGOCEFA();
+      hash = (37 * hash) + CMINCPBKJNJ_FIELD_NUMBER;
+      hash = (53 * hash) + getCMINCPBKJNJ();
       hash = (37 * hash) + TRACE_EFFECT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTraceEffectId();
+      hash = (37 * hash) + EDCDKHBBKHN_FIELD_NUMBER;
+      hash = (53 * hash) + getEDCDKHBBKHN();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -2523,11 +2556,13 @@ public final class AvatarInfoOuterClass {
           mirrorAvatarInfo_ = null;
           mirrorAvatarInfoBuilder_ = null;
         }
-        gJFKDCJENJE_ = 0;
+        pPLKDGOCEFA_ = 0;
 
-        ePHMICEFJOM_ = 0;
+        cMINCPBKJNJ_ = 0;
 
         traceEffectId_ = 0;
+
+        eDCDKHBBKHN_ = 0;
 
         return this;
       }
@@ -2632,9 +2667,10 @@ public final class AvatarInfoOuterClass {
         } else {
           result.mirrorAvatarInfo_ = mirrorAvatarInfoBuilder_.build();
         }
-        result.gJFKDCJENJE_ = gJFKDCJENJE_;
-        result.ePHMICEFJOM_ = ePHMICEFJOM_;
+        result.pPLKDGOCEFA_ = pPLKDGOCEFA_;
+        result.cMINCPBKJNJ_ = cMINCPBKJNJ_;
         result.traceEffectId_ = traceEffectId_;
+        result.eDCDKHBBKHN_ = eDCDKHBBKHN_;
         onBuilt();
         return result;
       }
@@ -2817,14 +2853,17 @@ public final class AvatarInfoOuterClass {
         if (other.hasMirrorAvatarInfo()) {
           mergeMirrorAvatarInfo(other.getMirrorAvatarInfo());
         }
-        if (other.getGJFKDCJENJE() != 0) {
-          setGJFKDCJENJE(other.getGJFKDCJENJE());
+        if (other.getPPLKDGOCEFA() != 0) {
+          setPPLKDGOCEFA(other.getPPLKDGOCEFA());
         }
-        if (other.getEPHMICEFJOM() != 0) {
-          setEPHMICEFJOM(other.getEPHMICEFJOM());
+        if (other.getCMINCPBKJNJ() != 0) {
+          setCMINCPBKJNJ(other.getCMINCPBKJNJ());
         }
         if (other.getTraceEffectId() != 0) {
           setTraceEffectId(other.getTraceEffectId());
+        }
+        if (other.getEDCDKHBBKHN() != 0) {
+          setEDCDKHBBKHN(other.getEDCDKHBBKHN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -5002,64 +5041,64 @@ public final class AvatarInfoOuterClass {
         return mirrorAvatarInfoBuilder_;
       }
 
-      private int gJFKDCJENJE_ ;
+      private int pPLKDGOCEFA_ ;
       /**
-       * <code>uint32 GJFKDCJENJE = 29;</code>
-       * @return The gJFKDCJENJE.
+       * <code>uint32 PPLKDGOCEFA = 29;</code>
+       * @return The pPLKDGOCEFA.
        */
       @java.lang.Override
-      public int getGJFKDCJENJE() {
-        return gJFKDCJENJE_;
+      public int getPPLKDGOCEFA() {
+        return pPLKDGOCEFA_;
       }
       /**
-       * <code>uint32 GJFKDCJENJE = 29;</code>
-       * @param value The gJFKDCJENJE to set.
+       * <code>uint32 PPLKDGOCEFA = 29;</code>
+       * @param value The pPLKDGOCEFA to set.
        * @return This builder for chaining.
        */
-      public Builder setGJFKDCJENJE(int value) {
+      public Builder setPPLKDGOCEFA(int value) {
         
-        gJFKDCJENJE_ = value;
+        pPLKDGOCEFA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GJFKDCJENJE = 29;</code>
+       * <code>uint32 PPLKDGOCEFA = 29;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGJFKDCJENJE() {
+      public Builder clearPPLKDGOCEFA() {
         
-        gJFKDCJENJE_ = 0;
+        pPLKDGOCEFA_ = 0;
         onChanged();
         return this;
       }
 
-      private int ePHMICEFJOM_ ;
+      private int cMINCPBKJNJ_ ;
       /**
-       * <code>uint32 EPHMICEFJOM = 30;</code>
-       * @return The ePHMICEFJOM.
+       * <code>uint32 CMINCPBKJNJ = 30;</code>
+       * @return The cMINCPBKJNJ.
        */
       @java.lang.Override
-      public int getEPHMICEFJOM() {
-        return ePHMICEFJOM_;
+      public int getCMINCPBKJNJ() {
+        return cMINCPBKJNJ_;
       }
       /**
-       * <code>uint32 EPHMICEFJOM = 30;</code>
-       * @param value The ePHMICEFJOM to set.
+       * <code>uint32 CMINCPBKJNJ = 30;</code>
+       * @param value The cMINCPBKJNJ to set.
        * @return This builder for chaining.
        */
-      public Builder setEPHMICEFJOM(int value) {
+      public Builder setCMINCPBKJNJ(int value) {
         
-        ePHMICEFJOM_ = value;
+        cMINCPBKJNJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EPHMICEFJOM = 30;</code>
+       * <code>uint32 CMINCPBKJNJ = 30;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEPHMICEFJOM() {
+      public Builder clearCMINCPBKJNJ() {
         
-        ePHMICEFJOM_ = 0;
+        cMINCPBKJNJ_ = 0;
         onChanged();
         return this;
       }
@@ -5091,6 +5130,37 @@ public final class AvatarInfoOuterClass {
       public Builder clearTraceEffectId() {
         
         traceEffectId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int eDCDKHBBKHN_ ;
+      /**
+       * <code>uint32 EDCDKHBBKHN = 32;</code>
+       * @return The eDCDKHBBKHN.
+       */
+      @java.lang.Override
+      public int getEDCDKHBBKHN() {
+        return eDCDKHBBKHN_;
+      }
+      /**
+       * <code>uint32 EDCDKHBBKHN = 32;</code>
+       * @param value The eDCDKHBBKHN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEDCDKHBBKHN(int value) {
+        
+        eDCDKHBBKHN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 EDCDKHBBKHN = 32;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEDCDKHBBKHN() {
+        
+        eDCDKHBBKHN_ = 0;
         onChanged();
         return this;
       }
@@ -5191,7 +5261,7 @@ public final class AvatarInfoOuterClass {
       "e.proto\032\025TrialAvatarInfo.proto\032\026AvatarFe" +
       "tterInfo.proto\032\032AvatarEquipAffixInfo.pro" +
       "to\032\025AvatarExcelInfo.proto\032\026MirrorAvatarI" +
-      "nfo.proto\"\240\n\n\nAvatarInfo\022\021\n\tavatar_id\030\001 " +
+      "nfo.proto\"\265\n\n\nAvatarInfo\022\021\n\tavatar_id\030\001 " +
       "\001(\r\022\014\n\004guid\030\002 \001(\004\022*\n\010prop_map\030\003 \003(\0132\030.Av" +
       "atarInfo.PropMapEntry\022\022\n\nlife_state\030\004 \001(" +
       "\r\022\027\n\017equip_guid_list\030\005 \003(\004\022\026\n\016talent_id_" +
@@ -5215,17 +5285,17 @@ public final class AvatarInfoOuterClass {
       "ostume_id\030\031 \001(\r\022$\n\nexcel_info\030\032 \001(\0132\020.Av" +
       "atarExcelInfo\022\021\n\tanim_hash\030\033 \001(\r\022-\n\022mirr" +
       "or_avatar_info\030\034 \001(\0132\021.MirrorAvatarInfo\022" +
-      "\023\n\013GJFKDCJENJE\030\035 \001(\r\022\023\n\013EPHMICEFJOM\030\036 \001(" +
-      "\r\022\027\n\017trace_effect_id\030\037 \001(\r\032:\n\014PropMapEnt" +
-      "ry\022\013\n\003key\030\001 \001(\r\022\031\n\005value\030\002 \001(\0132\n.PropVal" +
-      "ue:\0028\001\0323\n\021FightPropMapEntry\022\013\n\003key\030\001 \001(\r" +
-      "\022\r\n\005value\030\002 \001(\002:\0028\001\032A\n\rSkillMapEntry\022\013\n\003" +
-      "key\030\001 \001(\r\022\037\n\005value\030\002 \001(\0132\020.AvatarSkillIn" +
-      "fo:\0028\001\0324\n\022SkillLevelMapEntry\022\013\n\003key\030\001 \001(" +
-      "\r\022\r\n\005value\030\002 \001(\r:\0028\001\032>\n\034ProudSkillExtraL" +
-      "evelMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r" +
-      ":\0028\001B\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "\023\n\013PPLKDGOCEFA\030\035 \001(\r\022\023\n\013CMINCPBKJNJ\030\036 \001(" +
+      "\r\022\027\n\017trace_effect_id\030\037 \001(\r\022\023\n\013EDCDKHBBKH" +
+      "N\030  \001(\r\032:\n\014PropMapEntry\022\013\n\003key\030\001 \001(\r\022\031\n\005" +
+      "value\030\002 \001(\0132\n.PropValue:\0028\001\0323\n\021FightProp" +
+      "MapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\002:\0028\001" +
+      "\032A\n\rSkillMapEntry\022\013\n\003key\030\001 \001(\r\022\037\n\005value\030" +
+      "\002 \001(\0132\020.AvatarSkillInfo:\0028\001\0324\n\022SkillLeve" +
+      "lMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028" +
+      "\001\032>\n\034ProudSkillExtraLevelMapEntry\022\013\n\003key" +
+      "\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -5244,7 +5314,7 @@ public final class AvatarInfoOuterClass {
     internal_static_AvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarInfo_descriptor,
-        new java.lang.String[] { "AvatarId", "Guid", "PropMap", "LifeState", "EquipGuidList", "TalentIdList", "FightPropMap", "TrialAvatarInfo", "SkillMap", "SkillDepotId", "FetterInfo", "CoreProudSkillLevel", "InherentProudSkillList", "SkillLevelMap", "ExpeditionState", "ProudSkillExtraLevelMap", "IsFocus", "AvatarType", "TeamResonanceList", "WearingFlycloakId", "EquipAffixList", "BornTime", "PendingPromoteRewardList", "CostumeId", "ExcelInfo", "AnimHash", "MirrorAvatarInfo", "GJFKDCJENJE", "EPHMICEFJOM", "TraceEffectId", });
+        new java.lang.String[] { "AvatarId", "Guid", "PropMap", "LifeState", "EquipGuidList", "TalentIdList", "FightPropMap", "TrialAvatarInfo", "SkillMap", "SkillDepotId", "FetterInfo", "CoreProudSkillLevel", "InherentProudSkillList", "SkillLevelMap", "ExpeditionState", "ProudSkillExtraLevelMap", "IsFocus", "AvatarType", "TeamResonanceList", "WearingFlycloakId", "EquipAffixList", "BornTime", "PendingPromoteRewardList", "CostumeId", "ExcelInfo", "AnimHash", "MirrorAvatarInfo", "PPLKDGOCEFA", "CMINCPBKJNJ", "TraceEffectId", "EDCDKHBBKHN", });
     internal_static_AvatarInfo_PropMapEntry_descriptor =
       internal_static_AvatarInfo_descriptor.getNestedTypes().get(0);
     internal_static_AvatarInfo_PropMapEntry_fieldAccessorTable = new

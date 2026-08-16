@@ -19,24 +19,28 @@ public final class TakeCompoundOutputReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool OLEJPBPBNHC = 4;</code>
-     * @return The oLEJPBPBNHC.
+     * <code>bool is_claim_all = 3;</code>
+     * @return The isClaimAll.
      */
-    boolean getOLEJPBPBNHC();
+    boolean getIsClaimAll();
 
     /**
-     * <code>uint32 compound_group_id = 2;</code>
+     * <code>uint32 compound_group_id = 12;</code>
      * @return The compoundGroupId.
      */
     int getCompoundGroupId();
 
     /**
-     * <code>uint32 compound_id = 3;</code>
+     * <code>uint32 compound_id = 11;</code>
      * @return The compoundId.
      */
     int getCompoundId();
   }
   /**
+   * <pre>
+   * CmdId: 29411
+   * </pre>
+   *
    * Protobuf type {@code TakeCompoundOutputReq}
    */
   public static final class TakeCompoundOutputReq extends
@@ -81,19 +85,19 @@ public final class TakeCompoundOutputReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
 
-              compoundGroupId_ = input.readUInt32();
+              isClaimAll_ = input.readBool();
               break;
             }
-            case 24: {
+            case 88: {
 
               compoundId_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 96: {
 
-              oLEJPBPBNHC_ = input.readBool();
+              compoundGroupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,21 +132,21 @@ public final class TakeCompoundOutputReqOuterClass {
               emu.grasscutter.net.proto.TakeCompoundOutputReqOuterClass.TakeCompoundOutputReq.class, emu.grasscutter.net.proto.TakeCompoundOutputReqOuterClass.TakeCompoundOutputReq.Builder.class);
     }
 
-    public static final int OLEJPBPBNHC_FIELD_NUMBER = 4;
-    private boolean oLEJPBPBNHC_;
+    public static final int IS_CLAIM_ALL_FIELD_NUMBER = 3;
+    private boolean isClaimAll_;
     /**
-     * <code>bool OLEJPBPBNHC = 4;</code>
-     * @return The oLEJPBPBNHC.
+     * <code>bool is_claim_all = 3;</code>
+     * @return The isClaimAll.
      */
     @java.lang.Override
-    public boolean getOLEJPBPBNHC() {
-      return oLEJPBPBNHC_;
+    public boolean getIsClaimAll() {
+      return isClaimAll_;
     }
 
-    public static final int COMPOUND_GROUP_ID_FIELD_NUMBER = 2;
+    public static final int COMPOUND_GROUP_ID_FIELD_NUMBER = 12;
     private int compoundGroupId_;
     /**
-     * <code>uint32 compound_group_id = 2;</code>
+     * <code>uint32 compound_group_id = 12;</code>
      * @return The compoundGroupId.
      */
     @java.lang.Override
@@ -150,10 +154,10 @@ public final class TakeCompoundOutputReqOuterClass {
       return compoundGroupId_;
     }
 
-    public static final int COMPOUND_ID_FIELD_NUMBER = 3;
+    public static final int COMPOUND_ID_FIELD_NUMBER = 11;
     private int compoundId_;
     /**
-     * <code>uint32 compound_id = 3;</code>
+     * <code>uint32 compound_id = 11;</code>
      * @return The compoundId.
      */
     @java.lang.Override
@@ -175,14 +179,14 @@ public final class TakeCompoundOutputReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (compoundGroupId_ != 0) {
-        output.writeUInt32(2, compoundGroupId_);
+      if (isClaimAll_ != false) {
+        output.writeBool(3, isClaimAll_);
       }
       if (compoundId_ != 0) {
-        output.writeUInt32(3, compoundId_);
+        output.writeUInt32(11, compoundId_);
       }
-      if (oLEJPBPBNHC_ != false) {
-        output.writeBool(4, oLEJPBPBNHC_);
+      if (compoundGroupId_ != 0) {
+        output.writeUInt32(12, compoundGroupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +197,17 @@ public final class TakeCompoundOutputReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (compoundGroupId_ != 0) {
+      if (isClaimAll_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, compoundGroupId_);
+          .computeBoolSize(3, isClaimAll_);
       }
       if (compoundId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, compoundId_);
+          .computeUInt32Size(11, compoundId_);
       }
-      if (oLEJPBPBNHC_ != false) {
+      if (compoundGroupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, oLEJPBPBNHC_);
+          .computeUInt32Size(12, compoundGroupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,8 +224,8 @@ public final class TakeCompoundOutputReqOuterClass {
       }
       emu.grasscutter.net.proto.TakeCompoundOutputReqOuterClass.TakeCompoundOutputReq other = (emu.grasscutter.net.proto.TakeCompoundOutputReqOuterClass.TakeCompoundOutputReq) obj;
 
-      if (getOLEJPBPBNHC()
-          != other.getOLEJPBPBNHC()) return false;
+      if (getIsClaimAll()
+          != other.getIsClaimAll()) return false;
       if (getCompoundGroupId()
           != other.getCompoundGroupId()) return false;
       if (getCompoundId()
@@ -237,9 +241,9 @@ public final class TakeCompoundOutputReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OLEJPBPBNHC_FIELD_NUMBER;
+      hash = (37 * hash) + IS_CLAIM_ALL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getOLEJPBPBNHC());
+          getIsClaimAll());
       hash = (37 * hash) + COMPOUND_GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCompoundGroupId();
       hash = (37 * hash) + COMPOUND_ID_FIELD_NUMBER;
@@ -340,6 +344,10 @@ public final class TakeCompoundOutputReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 29411
+     * </pre>
+     *
      * Protobuf type {@code TakeCompoundOutputReq}
      */
     public static final class Builder extends
@@ -377,7 +385,7 @@ public final class TakeCompoundOutputReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oLEJPBPBNHC_ = false;
+        isClaimAll_ = false;
 
         compoundGroupId_ = 0;
 
@@ -409,7 +417,7 @@ public final class TakeCompoundOutputReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TakeCompoundOutputReqOuterClass.TakeCompoundOutputReq buildPartial() {
         emu.grasscutter.net.proto.TakeCompoundOutputReqOuterClass.TakeCompoundOutputReq result = new emu.grasscutter.net.proto.TakeCompoundOutputReqOuterClass.TakeCompoundOutputReq(this);
-        result.oLEJPBPBNHC_ = oLEJPBPBNHC_;
+        result.isClaimAll_ = isClaimAll_;
         result.compoundGroupId_ = compoundGroupId_;
         result.compoundId_ = compoundId_;
         onBuilt();
@@ -460,8 +468,8 @@ public final class TakeCompoundOutputReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TakeCompoundOutputReqOuterClass.TakeCompoundOutputReq other) {
         if (other == emu.grasscutter.net.proto.TakeCompoundOutputReqOuterClass.TakeCompoundOutputReq.getDefaultInstance()) return this;
-        if (other.getOLEJPBPBNHC() != false) {
-          setOLEJPBPBNHC(other.getOLEJPBPBNHC());
+        if (other.getIsClaimAll() != false) {
+          setIsClaimAll(other.getIsClaimAll());
         }
         if (other.getCompoundGroupId() != 0) {
           setCompoundGroupId(other.getCompoundGroupId());
@@ -498,40 +506,40 @@ public final class TakeCompoundOutputReqOuterClass {
         return this;
       }
 
-      private boolean oLEJPBPBNHC_ ;
+      private boolean isClaimAll_ ;
       /**
-       * <code>bool OLEJPBPBNHC = 4;</code>
-       * @return The oLEJPBPBNHC.
+       * <code>bool is_claim_all = 3;</code>
+       * @return The isClaimAll.
        */
       @java.lang.Override
-      public boolean getOLEJPBPBNHC() {
-        return oLEJPBPBNHC_;
+      public boolean getIsClaimAll() {
+        return isClaimAll_;
       }
       /**
-       * <code>bool OLEJPBPBNHC = 4;</code>
-       * @param value The oLEJPBPBNHC to set.
+       * <code>bool is_claim_all = 3;</code>
+       * @param value The isClaimAll to set.
        * @return This builder for chaining.
        */
-      public Builder setOLEJPBPBNHC(boolean value) {
+      public Builder setIsClaimAll(boolean value) {
         
-        oLEJPBPBNHC_ = value;
+        isClaimAll_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool OLEJPBPBNHC = 4;</code>
+       * <code>bool is_claim_all = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOLEJPBPBNHC() {
+      public Builder clearIsClaimAll() {
         
-        oLEJPBPBNHC_ = false;
+        isClaimAll_ = false;
         onChanged();
         return this;
       }
 
       private int compoundGroupId_ ;
       /**
-       * <code>uint32 compound_group_id = 2;</code>
+       * <code>uint32 compound_group_id = 12;</code>
        * @return The compoundGroupId.
        */
       @java.lang.Override
@@ -539,7 +547,7 @@ public final class TakeCompoundOutputReqOuterClass {
         return compoundGroupId_;
       }
       /**
-       * <code>uint32 compound_group_id = 2;</code>
+       * <code>uint32 compound_group_id = 12;</code>
        * @param value The compoundGroupId to set.
        * @return This builder for chaining.
        */
@@ -550,7 +558,7 @@ public final class TakeCompoundOutputReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 compound_group_id = 2;</code>
+       * <code>uint32 compound_group_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCompoundGroupId() {
@@ -562,7 +570,7 @@ public final class TakeCompoundOutputReqOuterClass {
 
       private int compoundId_ ;
       /**
-       * <code>uint32 compound_id = 3;</code>
+       * <code>uint32 compound_id = 11;</code>
        * @return The compoundId.
        */
       @java.lang.Override
@@ -570,7 +578,7 @@ public final class TakeCompoundOutputReqOuterClass {
         return compoundId_;
       }
       /**
-       * <code>uint32 compound_id = 3;</code>
+       * <code>uint32 compound_id = 11;</code>
        * @param value The compoundId to set.
        * @return This builder for chaining.
        */
@@ -581,7 +589,7 @@ public final class TakeCompoundOutputReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 compound_id = 3;</code>
+       * <code>uint32 compound_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearCompoundId() {
@@ -657,10 +665,11 @@ public final class TakeCompoundOutputReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033TakeCompoundOutputReq.proto\"\\\n\025TakeCom" +
-      "poundOutputReq\022\023\n\013OLEJPBPBNHC\030\004 \001(\010\022\031\n\021c" +
-      "ompound_group_id\030\002 \001(\r\022\023\n\013compound_id\030\003 " +
-      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\033TakeCompoundOutputReq.proto\"]\n\025TakeCom" +
+      "poundOutputReq\022\024\n\014is_claim_all\030\003 \001(\010\022\031\n\021" +
+      "compound_group_id\030\014 \001(\r\022\023\n\013compound_id\030\013" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -671,7 +680,7 @@ public final class TakeCompoundOutputReqOuterClass {
     internal_static_TakeCompoundOutputReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeCompoundOutputReq_descriptor,
-        new java.lang.String[] { "OLEJPBPBNHC", "CompoundGroupId", "CompoundId", });
+        new java.lang.String[] { "IsClaimAll", "CompoundGroupId", "CompoundId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

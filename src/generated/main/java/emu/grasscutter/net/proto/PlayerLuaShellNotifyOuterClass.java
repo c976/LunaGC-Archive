@@ -19,35 +19,39 @@ public final class PlayerLuaShellNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bytes lua_shell = 1;</code>
+     * <code>bytes lua_shell = 11;</code>
      * @return The luaShell.
      */
     com.google.protobuf.ByteString getLuaShell();
 
     /**
-     * <code>uint32 id = 2;</code>
-     * @return The id.
+     * <code>uint32 use_type = 15;</code>
+     * @return The useType.
      */
-    int getId();
+    int getUseType();
 
     /**
-     * <code>uint32 AHKLDKPHKDI = 3;</code>
-     * @return The aHKLDKPHKDI.
-     */
-    int getAHKLDKPHKDI();
-
-    /**
-     * <code>.LuaShellType shell_type = 5;</code>
+     * <code>.LuaShellType shell_type = 4;</code>
      * @return The enum numeric value on the wire for shellType.
      */
     int getShellTypeValue();
     /**
-     * <code>.LuaShellType shell_type = 5;</code>
+     * <code>.LuaShellType shell_type = 4;</code>
      * @return The shellType.
      */
     emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType getShellType();
+
+    /**
+     * <code>uint32 id = 1;</code>
+     * @return The id.
+     */
+    int getId();
   }
   /**
+   * <pre>
+   * CmdId: 22096
+   * </pre>
+   *
    * Protobuf type {@code PlayerLuaShellNotify}
    */
   public static final class PlayerLuaShellNotify extends
@@ -94,25 +98,25 @@ public final class PlayerLuaShellNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-
-              luaShell_ = input.readBytes();
-              break;
-            }
-            case 16: {
+            case 8: {
 
               id_ = input.readUInt32();
               break;
             }
-            case 24: {
-
-              aHKLDKPHKDI_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 32: {
               int rawValue = input.readEnum();
 
               shellType_ = rawValue;
+              break;
+            }
+            case 90: {
+
+              luaShell_ = input.readBytes();
+              break;
+            }
+            case 120: {
+
+              useType_ = input.readUInt32();
               break;
             }
             default: {
@@ -147,10 +151,10 @@ public final class PlayerLuaShellNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify.class, emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify.Builder.class);
     }
 
-    public static final int LUA_SHELL_FIELD_NUMBER = 1;
+    public static final int LUA_SHELL_FIELD_NUMBER = 11;
     private com.google.protobuf.ByteString luaShell_;
     /**
-     * <code>bytes lua_shell = 1;</code>
+     * <code>bytes lua_shell = 11;</code>
      * @return The luaShell.
      */
     @java.lang.Override
@@ -158,45 +162,45 @@ public final class PlayerLuaShellNotifyOuterClass {
       return luaShell_;
     }
 
-    public static final int ID_FIELD_NUMBER = 2;
-    private int id_;
+    public static final int USE_TYPE_FIELD_NUMBER = 15;
+    private int useType_;
     /**
-     * <code>uint32 id = 2;</code>
-     * @return The id.
+     * <code>uint32 use_type = 15;</code>
+     * @return The useType.
      */
     @java.lang.Override
-    public int getId() {
-      return id_;
+    public int getUseType() {
+      return useType_;
     }
 
-    public static final int AHKLDKPHKDI_FIELD_NUMBER = 3;
-    private int aHKLDKPHKDI_;
-    /**
-     * <code>uint32 AHKLDKPHKDI = 3;</code>
-     * @return The aHKLDKPHKDI.
-     */
-    @java.lang.Override
-    public int getAHKLDKPHKDI() {
-      return aHKLDKPHKDI_;
-    }
-
-    public static final int SHELL_TYPE_FIELD_NUMBER = 5;
+    public static final int SHELL_TYPE_FIELD_NUMBER = 4;
     private int shellType_;
     /**
-     * <code>.LuaShellType shell_type = 5;</code>
+     * <code>.LuaShellType shell_type = 4;</code>
      * @return The enum numeric value on the wire for shellType.
      */
     @java.lang.Override public int getShellTypeValue() {
       return shellType_;
     }
     /**
-     * <code>.LuaShellType shell_type = 5;</code>
+     * <code>.LuaShellType shell_type = 4;</code>
      * @return The shellType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType getShellType() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType result = emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType.valueOf(shellType_);
       return result == null ? emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType.UNRECOGNIZED : result;
+    }
+
+    public static final int ID_FIELD_NUMBER = 1;
+    private int id_;
+    /**
+     * <code>uint32 id = 1;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -213,17 +217,17 @@ public final class PlayerLuaShellNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!luaShell_.isEmpty()) {
-        output.writeBytes(1, luaShell_);
-      }
       if (id_ != 0) {
-        output.writeUInt32(2, id_);
-      }
-      if (aHKLDKPHKDI_ != 0) {
-        output.writeUInt32(3, aHKLDKPHKDI_);
+        output.writeUInt32(1, id_);
       }
       if (shellType_ != emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType.LUASHELL_NONE.getNumber()) {
-        output.writeEnum(5, shellType_);
+        output.writeEnum(4, shellType_);
+      }
+      if (!luaShell_.isEmpty()) {
+        output.writeBytes(11, luaShell_);
+      }
+      if (useType_ != 0) {
+        output.writeUInt32(15, useType_);
       }
       unknownFields.writeTo(output);
     }
@@ -234,21 +238,21 @@ public final class PlayerLuaShellNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!luaShell_.isEmpty()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, luaShell_);
-      }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, id_);
-      }
-      if (aHKLDKPHKDI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, aHKLDKPHKDI_);
+          .computeUInt32Size(1, id_);
       }
       if (shellType_ != emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType.LUASHELL_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, shellType_);
+          .computeEnumSize(4, shellType_);
+      }
+      if (!luaShell_.isEmpty()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(11, luaShell_);
+      }
+      if (useType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, useType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -267,11 +271,11 @@ public final class PlayerLuaShellNotifyOuterClass {
 
       if (!getLuaShell()
           .equals(other.getLuaShell())) return false;
+      if (getUseType()
+          != other.getUseType()) return false;
+      if (shellType_ != other.shellType_) return false;
       if (getId()
           != other.getId()) return false;
-      if (getAHKLDKPHKDI()
-          != other.getAHKLDKPHKDI()) return false;
-      if (shellType_ != other.shellType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -285,12 +289,12 @@ public final class PlayerLuaShellNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + LUA_SHELL_FIELD_NUMBER;
       hash = (53 * hash) + getLuaShell().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
-      hash = (37 * hash) + AHKLDKPHKDI_FIELD_NUMBER;
-      hash = (53 * hash) + getAHKLDKPHKDI();
+      hash = (37 * hash) + USE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getUseType();
       hash = (37 * hash) + SHELL_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + shellType_;
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -387,6 +391,10 @@ public final class PlayerLuaShellNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 22096
+     * </pre>
+     *
      * Protobuf type {@code PlayerLuaShellNotify}
      */
     public static final class Builder extends
@@ -426,11 +434,11 @@ public final class PlayerLuaShellNotifyOuterClass {
         super.clear();
         luaShell_ = com.google.protobuf.ByteString.EMPTY;
 
-        id_ = 0;
-
-        aHKLDKPHKDI_ = 0;
+        useType_ = 0;
 
         shellType_ = 0;
+
+        id_ = 0;
 
         return this;
       }
@@ -459,9 +467,9 @@ public final class PlayerLuaShellNotifyOuterClass {
       public emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify result = new emu.grasscutter.net.proto.PlayerLuaShellNotifyOuterClass.PlayerLuaShellNotify(this);
         result.luaShell_ = luaShell_;
-        result.id_ = id_;
-        result.aHKLDKPHKDI_ = aHKLDKPHKDI_;
+        result.useType_ = useType_;
         result.shellType_ = shellType_;
+        result.id_ = id_;
         onBuilt();
         return result;
       }
@@ -513,14 +521,14 @@ public final class PlayerLuaShellNotifyOuterClass {
         if (other.getLuaShell() != com.google.protobuf.ByteString.EMPTY) {
           setLuaShell(other.getLuaShell());
         }
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
-        if (other.getAHKLDKPHKDI() != 0) {
-          setAHKLDKPHKDI(other.getAHKLDKPHKDI());
+        if (other.getUseType() != 0) {
+          setUseType(other.getUseType());
         }
         if (other.shellType_ != 0) {
           setShellTypeValue(other.getShellTypeValue());
+        }
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -553,7 +561,7 @@ public final class PlayerLuaShellNotifyOuterClass {
 
       private com.google.protobuf.ByteString luaShell_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <code>bytes lua_shell = 1;</code>
+       * <code>bytes lua_shell = 11;</code>
        * @return The luaShell.
        */
       @java.lang.Override
@@ -561,7 +569,7 @@ public final class PlayerLuaShellNotifyOuterClass {
         return luaShell_;
       }
       /**
-       * <code>bytes lua_shell = 1;</code>
+       * <code>bytes lua_shell = 11;</code>
        * @param value The luaShell to set.
        * @return This builder for chaining.
        */
@@ -575,7 +583,7 @@ public final class PlayerLuaShellNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bytes lua_shell = 1;</code>
+       * <code>bytes lua_shell = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearLuaShell() {
@@ -585,78 +593,47 @@ public final class PlayerLuaShellNotifyOuterClass {
         return this;
       }
 
-      private int id_ ;
+      private int useType_ ;
       /**
-       * <code>uint32 id = 2;</code>
-       * @return The id.
+       * <code>uint32 use_type = 15;</code>
+       * @return The useType.
        */
       @java.lang.Override
-      public int getId() {
-        return id_;
+      public int getUseType() {
+        return useType_;
       }
       /**
-       * <code>uint32 id = 2;</code>
-       * @param value The id to set.
+       * <code>uint32 use_type = 15;</code>
+       * @param value The useType to set.
        * @return This builder for chaining.
        */
-      public Builder setId(int value) {
+      public Builder setUseType(int value) {
         
-        id_ = value;
+        useType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 id = 2;</code>
+       * <code>uint32 use_type = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearId() {
+      public Builder clearUseType() {
         
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int aHKLDKPHKDI_ ;
-      /**
-       * <code>uint32 AHKLDKPHKDI = 3;</code>
-       * @return The aHKLDKPHKDI.
-       */
-      @java.lang.Override
-      public int getAHKLDKPHKDI() {
-        return aHKLDKPHKDI_;
-      }
-      /**
-       * <code>uint32 AHKLDKPHKDI = 3;</code>
-       * @param value The aHKLDKPHKDI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAHKLDKPHKDI(int value) {
-        
-        aHKLDKPHKDI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 AHKLDKPHKDI = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAHKLDKPHKDI() {
-        
-        aHKLDKPHKDI_ = 0;
+        useType_ = 0;
         onChanged();
         return this;
       }
 
       private int shellType_ = 0;
       /**
-       * <code>.LuaShellType shell_type = 5;</code>
+       * <code>.LuaShellType shell_type = 4;</code>
        * @return The enum numeric value on the wire for shellType.
        */
       @java.lang.Override public int getShellTypeValue() {
         return shellType_;
       }
       /**
-       * <code>.LuaShellType shell_type = 5;</code>
+       * <code>.LuaShellType shell_type = 4;</code>
        * @param value The enum numeric value on the wire for shellType to set.
        * @return This builder for chaining.
        */
@@ -667,7 +644,7 @@ public final class PlayerLuaShellNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.LuaShellType shell_type = 5;</code>
+       * <code>.LuaShellType shell_type = 4;</code>
        * @return The shellType.
        */
       @java.lang.Override
@@ -677,7 +654,7 @@ public final class PlayerLuaShellNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.LuaShellTypeOuterClass.LuaShellType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.LuaShellType shell_type = 5;</code>
+       * <code>.LuaShellType shell_type = 4;</code>
        * @param value The shellType to set.
        * @return This builder for chaining.
        */
@@ -691,12 +668,43 @@ public final class PlayerLuaShellNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.LuaShellType shell_type = 5;</code>
+       * <code>.LuaShellType shell_type = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearShellType() {
         
         shellType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>uint32 id = 1;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 1;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
         onChanged();
         return this;
       }
@@ -768,10 +776,10 @@ public final class PlayerLuaShellNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032PlayerLuaShellNotify.proto\032\022LuaShellTy" +
-      "pe.proto\"m\n\024PlayerLuaShellNotify\022\021\n\tlua_" +
-      "shell\030\001 \001(\014\022\n\n\002id\030\002 \001(\r\022\023\n\013AHKLDKPHKDI\030\003" +
-      " \001(\r\022!\n\nshell_type\030\005 \001(\0162\r.LuaShellTypeB" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "pe.proto\"j\n\024PlayerLuaShellNotify\022\021\n\tlua_" +
+      "shell\030\013 \001(\014\022\020\n\010use_type\030\017 \001(\r\022!\n\nshell_t" +
+      "ype\030\004 \001(\0162\r.LuaShellType\022\n\n\002id\030\001 \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -783,7 +791,7 @@ public final class PlayerLuaShellNotifyOuterClass {
     internal_static_PlayerLuaShellNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerLuaShellNotify_descriptor,
-        new java.lang.String[] { "LuaShell", "Id", "AHKLDKPHKDI", "ShellType", });
+        new java.lang.String[] { "LuaShell", "UseType", "ShellType", "Id", });
     emu.grasscutter.net.proto.LuaShellTypeOuterClass.getDescriptor();
   }
 

@@ -43,10 +43,6 @@ public final class DuelHeartDetailInfoOuterClass {
         int index);
   }
   /**
-   * <pre>
-   * Obf: AMFDOEOCHLJ
-   * </pre>
-   *
    * Protobuf type {@code DuelHeartDetailInfo}
    */
   public static final class DuelHeartDetailInfo extends
@@ -335,10 +331,6 @@ public final class DuelHeartDetailInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: AMFDOEOCHLJ
-     * </pre>
-     *
      * Protobuf type {@code DuelHeartDetailInfo}
      */
     public static final class Builder extends

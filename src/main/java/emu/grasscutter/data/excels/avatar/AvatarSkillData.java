@@ -24,10 +24,10 @@ public class AvatarSkillData extends GameResource {
     private String abilityName;
     @SerializedName(
             value = "specialEnergyMin",
-            alternate = {"AJOIGPJIICC"})
+            alternate = {"LNEGGCDIDCP"})
     public float specialEnergyMin;
     @SerializedName(
             value = "specialEnergyMax",
-            alternate = {"LKIPHPLNGKP"})
+            alternate = {"GHCNBMAPHML"})
     public float specialEnergyMax;
 }

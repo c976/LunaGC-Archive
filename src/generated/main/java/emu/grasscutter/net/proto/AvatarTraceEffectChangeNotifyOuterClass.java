@@ -19,21 +19,25 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.SceneEntityInfo entity_info = 7;</code>
+     * <code>.SceneEntityInfo entity_info = 2;</code>
      * @return Whether the entityInfo field is set.
      */
     boolean hasEntityInfo();
     /**
-     * <code>.SceneEntityInfo entity_info = 7;</code>
+     * <code>.SceneEntityInfo entity_info = 2;</code>
      * @return The entityInfo.
      */
     emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo getEntityInfo();
     /**
-     * <code>.SceneEntityInfo entity_info = 7;</code>
+     * <code>.SceneEntityInfo entity_info = 2;</code>
      */
     emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfoOrBuilder getEntityInfoOrBuilder();
   }
   /**
+   * <pre>
+   * CmdId: 3540
+   * </pre>
+   *
    * Protobuf type {@code AvatarTraceEffectChangeNotify}
    */
   public static final class AvatarTraceEffectChangeNotify extends
@@ -78,7 +82,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 18: {
               emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.Builder subBuilder = null;
               if (entityInfo_ != null) {
                 subBuilder = entityInfo_.toBuilder();
@@ -123,10 +127,10 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarTraceEffectChangeNotifyOuterClass.AvatarTraceEffectChangeNotify.class, emu.grasscutter.net.proto.AvatarTraceEffectChangeNotifyOuterClass.AvatarTraceEffectChangeNotify.Builder.class);
     }
 
-    public static final int ENTITY_INFO_FIELD_NUMBER = 7;
+    public static final int ENTITY_INFO_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo entityInfo_;
     /**
-     * <code>.SceneEntityInfo entity_info = 7;</code>
+     * <code>.SceneEntityInfo entity_info = 2;</code>
      * @return Whether the entityInfo field is set.
      */
     @java.lang.Override
@@ -134,7 +138,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
       return entityInfo_ != null;
     }
     /**
-     * <code>.SceneEntityInfo entity_info = 7;</code>
+     * <code>.SceneEntityInfo entity_info = 2;</code>
      * @return The entityInfo.
      */
     @java.lang.Override
@@ -142,7 +146,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
       return entityInfo_ == null ? emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.getDefaultInstance() : entityInfo_;
     }
     /**
-     * <code>.SceneEntityInfo entity_info = 7;</code>
+     * <code>.SceneEntityInfo entity_info = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfoOrBuilder getEntityInfoOrBuilder() {
@@ -164,7 +168,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (entityInfo_ != null) {
-        output.writeMessage(7, getEntityInfo());
+        output.writeMessage(2, getEntityInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -177,7 +181,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
       size = 0;
       if (entityInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getEntityInfo());
+          .computeMessageSize(2, getEntityInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,6 +314,10 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3540
+     * </pre>
+     *
      * Protobuf type {@code AvatarTraceEffectChangeNotify}
      */
     public static final class Builder extends
@@ -468,14 +476,14 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo, emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.Builder, emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfoOrBuilder> entityInfoBuilder_;
       /**
-       * <code>.SceneEntityInfo entity_info = 7;</code>
+       * <code>.SceneEntityInfo entity_info = 2;</code>
        * @return Whether the entityInfo field is set.
        */
       public boolean hasEntityInfo() {
         return entityInfoBuilder_ != null || entityInfo_ != null;
       }
       /**
-       * <code>.SceneEntityInfo entity_info = 7;</code>
+       * <code>.SceneEntityInfo entity_info = 2;</code>
        * @return The entityInfo.
        */
       public emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo getEntityInfo() {
@@ -486,7 +494,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.SceneEntityInfo entity_info = 7;</code>
+       * <code>.SceneEntityInfo entity_info = 2;</code>
        */
       public Builder setEntityInfo(emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo value) {
         if (entityInfoBuilder_ == null) {
@@ -502,7 +510,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SceneEntityInfo entity_info = 7;</code>
+       * <code>.SceneEntityInfo entity_info = 2;</code>
        */
       public Builder setEntityInfo(
           emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.Builder builderForValue) {
@@ -516,7 +524,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SceneEntityInfo entity_info = 7;</code>
+       * <code>.SceneEntityInfo entity_info = 2;</code>
        */
       public Builder mergeEntityInfo(emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo value) {
         if (entityInfoBuilder_ == null) {
@@ -534,7 +542,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SceneEntityInfo entity_info = 7;</code>
+       * <code>.SceneEntityInfo entity_info = 2;</code>
        */
       public Builder clearEntityInfo() {
         if (entityInfoBuilder_ == null) {
@@ -548,7 +556,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SceneEntityInfo entity_info = 7;</code>
+       * <code>.SceneEntityInfo entity_info = 2;</code>
        */
       public emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.Builder getEntityInfoBuilder() {
         
@@ -556,7 +564,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
         return getEntityInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.SceneEntityInfo entity_info = 7;</code>
+       * <code>.SceneEntityInfo entity_info = 2;</code>
        */
       public emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfoOrBuilder getEntityInfoOrBuilder() {
         if (entityInfoBuilder_ != null) {
@@ -567,7 +575,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.SceneEntityInfo entity_info = 7;</code>
+       * <code>.SceneEntityInfo entity_info = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo, emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.Builder, emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfoOrBuilder> 
@@ -651,7 +659,7 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#AvatarTraceEffectChangeNotify.proto\032\025S" +
       "ceneEntityInfo.proto\"F\n\035AvatarTraceEffec" +
-      "tChangeNotify\022%\n\013entity_info\030\007 \001(\0132\020.Sce" +
+      "tChangeNotify\022%\n\013entity_info\030\002 \001(\0132\020.Sce" +
       "neEntityInfoB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };

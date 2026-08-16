@@ -34,51 +34,55 @@ public final class RechargeReqOuterClass {
     emu.grasscutter.net.proto.PlayProductOuterClass.PlayProductOrBuilder getPlayProductOrBuilder();
 
     /**
-     * <code>.ShopCardProduct card_product = 1;</code>
+     * <code>.ShopCardProduct card_product = 8;</code>
      * @return Whether the cardProduct field is set.
      */
     boolean hasCardProduct();
     /**
-     * <code>.ShopCardProduct card_product = 1;</code>
+     * <code>.ShopCardProduct card_product = 8;</code>
      * @return The cardProduct.
      */
     emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct getCardProduct();
     /**
-     * <code>.ShopCardProduct card_product = 1;</code>
+     * <code>.ShopCardProduct card_product = 8;</code>
      */
     emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProductOrBuilder getCardProductOrBuilder();
 
     /**
-     * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+     * <code>.ShopMcoinProduct mcoin_product = 1;</code>
      * @return Whether the mcoinProduct field is set.
      */
     boolean hasMcoinProduct();
     /**
-     * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+     * <code>.ShopMcoinProduct mcoin_product = 1;</code>
      * @return The mcoinProduct.
      */
     emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct getMcoinProduct();
     /**
-     * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+     * <code>.ShopMcoinProduct mcoin_product = 1;</code>
      */
     emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProductOrBuilder getMcoinProductOrBuilder();
 
     /**
-     * <code>.ShopConcertProduct concert_product = 3;</code>
+     * <code>.ShopConcertProduct concert_product = 14;</code>
      * @return Whether the concertProduct field is set.
      */
     boolean hasConcertProduct();
     /**
-     * <code>.ShopConcertProduct concert_product = 3;</code>
+     * <code>.ShopConcertProduct concert_product = 14;</code>
      * @return The concertProduct.
      */
     emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct getConcertProduct();
     /**
-     * <code>.ShopConcertProduct concert_product = 3;</code>
+     * <code>.ShopConcertProduct concert_product = 14;</code>
      */
     emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder getConcertProductOrBuilder();
   }
   /**
+   * <pre>
+   * CmdId: 9725
+   * </pre>
+   *
    * Protobuf type {@code RechargeReq}
    */
   public static final class RechargeReq extends
@@ -124,6 +128,19 @@ public final class RechargeReqOuterClass {
               done = true;
               break;
             case 10: {
+              emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.Builder subBuilder = null;
+              if (mcoinProduct_ != null) {
+                subBuilder = mcoinProduct_.toBuilder();
+              }
+              mcoinProduct_ = input.readMessage(emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(mcoinProduct_);
+                mcoinProduct_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 66: {
               emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct.Builder subBuilder = null;
               if (cardProduct_ != null) {
                 subBuilder = cardProduct_.toBuilder();
@@ -132,19 +149,6 @@ public final class RechargeReqOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(cardProduct_);
                 cardProduct_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 26: {
-              emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder subBuilder = null;
-              if (concertProduct_ != null) {
-                subBuilder = concertProduct_.toBuilder();
-              }
-              concertProduct_ = input.readMessage(emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(concertProduct_);
-                concertProduct_ = subBuilder.buildPartial();
               }
 
               break;
@@ -162,15 +166,15 @@ public final class RechargeReqOuterClass {
 
               break;
             }
-            case 82: {
-              emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.Builder subBuilder = null;
-              if (mcoinProduct_ != null) {
-                subBuilder = mcoinProduct_.toBuilder();
+            case 114: {
+              emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder subBuilder = null;
+              if (concertProduct_ != null) {
+                subBuilder = concertProduct_.toBuilder();
               }
-              mcoinProduct_ = input.readMessage(emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.parser(), extensionRegistry);
+              concertProduct_ = input.readMessage(emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(mcoinProduct_);
-                mcoinProduct_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(concertProduct_);
+                concertProduct_ = subBuilder.buildPartial();
               }
 
               break;
@@ -233,10 +237,10 @@ public final class RechargeReqOuterClass {
       return getPlayProduct();
     }
 
-    public static final int CARD_PRODUCT_FIELD_NUMBER = 1;
+    public static final int CARD_PRODUCT_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct cardProduct_;
     /**
-     * <code>.ShopCardProduct card_product = 1;</code>
+     * <code>.ShopCardProduct card_product = 8;</code>
      * @return Whether the cardProduct field is set.
      */
     @java.lang.Override
@@ -244,7 +248,7 @@ public final class RechargeReqOuterClass {
       return cardProduct_ != null;
     }
     /**
-     * <code>.ShopCardProduct card_product = 1;</code>
+     * <code>.ShopCardProduct card_product = 8;</code>
      * @return The cardProduct.
      */
     @java.lang.Override
@@ -252,17 +256,17 @@ public final class RechargeReqOuterClass {
       return cardProduct_ == null ? emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct.getDefaultInstance() : cardProduct_;
     }
     /**
-     * <code>.ShopCardProduct card_product = 1;</code>
+     * <code>.ShopCardProduct card_product = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProductOrBuilder getCardProductOrBuilder() {
       return getCardProduct();
     }
 
-    public static final int MCOIN_PRODUCT_FIELD_NUMBER = 10;
+    public static final int MCOIN_PRODUCT_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct mcoinProduct_;
     /**
-     * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+     * <code>.ShopMcoinProduct mcoin_product = 1;</code>
      * @return Whether the mcoinProduct field is set.
      */
     @java.lang.Override
@@ -270,7 +274,7 @@ public final class RechargeReqOuterClass {
       return mcoinProduct_ != null;
     }
     /**
-     * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+     * <code>.ShopMcoinProduct mcoin_product = 1;</code>
      * @return The mcoinProduct.
      */
     @java.lang.Override
@@ -278,17 +282,17 @@ public final class RechargeReqOuterClass {
       return mcoinProduct_ == null ? emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.getDefaultInstance() : mcoinProduct_;
     }
     /**
-     * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+     * <code>.ShopMcoinProduct mcoin_product = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProductOrBuilder getMcoinProductOrBuilder() {
       return getMcoinProduct();
     }
 
-    public static final int CONCERT_PRODUCT_FIELD_NUMBER = 3;
+    public static final int CONCERT_PRODUCT_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct concertProduct_;
     /**
-     * <code>.ShopConcertProduct concert_product = 3;</code>
+     * <code>.ShopConcertProduct concert_product = 14;</code>
      * @return Whether the concertProduct field is set.
      */
     @java.lang.Override
@@ -296,7 +300,7 @@ public final class RechargeReqOuterClass {
       return concertProduct_ != null;
     }
     /**
-     * <code>.ShopConcertProduct concert_product = 3;</code>
+     * <code>.ShopConcertProduct concert_product = 14;</code>
      * @return The concertProduct.
      */
     @java.lang.Override
@@ -304,7 +308,7 @@ public final class RechargeReqOuterClass {
       return concertProduct_ == null ? emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.getDefaultInstance() : concertProduct_;
     }
     /**
-     * <code>.ShopConcertProduct concert_product = 3;</code>
+     * <code>.ShopConcertProduct concert_product = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder getConcertProductOrBuilder() {
@@ -325,17 +329,17 @@ public final class RechargeReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardProduct_ != null) {
-        output.writeMessage(1, getCardProduct());
+      if (mcoinProduct_ != null) {
+        output.writeMessage(1, getMcoinProduct());
       }
-      if (concertProduct_ != null) {
-        output.writeMessage(3, getConcertProduct());
+      if (cardProduct_ != null) {
+        output.writeMessage(8, getCardProduct());
       }
       if (playProduct_ != null) {
         output.writeMessage(9, getPlayProduct());
       }
-      if (mcoinProduct_ != null) {
-        output.writeMessage(10, getMcoinProduct());
+      if (concertProduct_ != null) {
+        output.writeMessage(14, getConcertProduct());
       }
       unknownFields.writeTo(output);
     }
@@ -346,21 +350,21 @@ public final class RechargeReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (mcoinProduct_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getMcoinProduct());
+      }
       if (cardProduct_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getCardProduct());
-      }
-      if (concertProduct_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getConcertProduct());
+          .computeMessageSize(8, getCardProduct());
       }
       if (playProduct_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, getPlayProduct());
       }
-      if (mcoinProduct_ != null) {
+      if (concertProduct_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getMcoinProduct());
+          .computeMessageSize(14, getConcertProduct());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -520,6 +524,10 @@ public final class RechargeReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 9725
+     * </pre>
+     *
      * Protobuf type {@code RechargeReq}
      */
     public static final class Builder extends
@@ -839,14 +847,14 @@ public final class RechargeReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct, emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct.Builder, emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProductOrBuilder> cardProductBuilder_;
       /**
-       * <code>.ShopCardProduct card_product = 1;</code>
+       * <code>.ShopCardProduct card_product = 8;</code>
        * @return Whether the cardProduct field is set.
        */
       public boolean hasCardProduct() {
         return cardProductBuilder_ != null || cardProduct_ != null;
       }
       /**
-       * <code>.ShopCardProduct card_product = 1;</code>
+       * <code>.ShopCardProduct card_product = 8;</code>
        * @return The cardProduct.
        */
       public emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct getCardProduct() {
@@ -857,7 +865,7 @@ public final class RechargeReqOuterClass {
         }
       }
       /**
-       * <code>.ShopCardProduct card_product = 1;</code>
+       * <code>.ShopCardProduct card_product = 8;</code>
        */
       public Builder setCardProduct(emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct value) {
         if (cardProductBuilder_ == null) {
@@ -873,7 +881,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopCardProduct card_product = 1;</code>
+       * <code>.ShopCardProduct card_product = 8;</code>
        */
       public Builder setCardProduct(
           emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct.Builder builderForValue) {
@@ -887,7 +895,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopCardProduct card_product = 1;</code>
+       * <code>.ShopCardProduct card_product = 8;</code>
        */
       public Builder mergeCardProduct(emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct value) {
         if (cardProductBuilder_ == null) {
@@ -905,7 +913,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopCardProduct card_product = 1;</code>
+       * <code>.ShopCardProduct card_product = 8;</code>
        */
       public Builder clearCardProduct() {
         if (cardProductBuilder_ == null) {
@@ -919,7 +927,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopCardProduct card_product = 1;</code>
+       * <code>.ShopCardProduct card_product = 8;</code>
        */
       public emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct.Builder getCardProductBuilder() {
         
@@ -927,7 +935,7 @@ public final class RechargeReqOuterClass {
         return getCardProductFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ShopCardProduct card_product = 1;</code>
+       * <code>.ShopCardProduct card_product = 8;</code>
        */
       public emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProductOrBuilder getCardProductOrBuilder() {
         if (cardProductBuilder_ != null) {
@@ -938,7 +946,7 @@ public final class RechargeReqOuterClass {
         }
       }
       /**
-       * <code>.ShopCardProduct card_product = 1;</code>
+       * <code>.ShopCardProduct card_product = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct, emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct.Builder, emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProductOrBuilder> 
@@ -958,14 +966,14 @@ public final class RechargeReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct, emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.Builder, emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProductOrBuilder> mcoinProductBuilder_;
       /**
-       * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+       * <code>.ShopMcoinProduct mcoin_product = 1;</code>
        * @return Whether the mcoinProduct field is set.
        */
       public boolean hasMcoinProduct() {
         return mcoinProductBuilder_ != null || mcoinProduct_ != null;
       }
       /**
-       * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+       * <code>.ShopMcoinProduct mcoin_product = 1;</code>
        * @return The mcoinProduct.
        */
       public emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct getMcoinProduct() {
@@ -976,7 +984,7 @@ public final class RechargeReqOuterClass {
         }
       }
       /**
-       * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+       * <code>.ShopMcoinProduct mcoin_product = 1;</code>
        */
       public Builder setMcoinProduct(emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct value) {
         if (mcoinProductBuilder_ == null) {
@@ -992,7 +1000,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+       * <code>.ShopMcoinProduct mcoin_product = 1;</code>
        */
       public Builder setMcoinProduct(
           emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.Builder builderForValue) {
@@ -1006,7 +1014,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+       * <code>.ShopMcoinProduct mcoin_product = 1;</code>
        */
       public Builder mergeMcoinProduct(emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct value) {
         if (mcoinProductBuilder_ == null) {
@@ -1024,7 +1032,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+       * <code>.ShopMcoinProduct mcoin_product = 1;</code>
        */
       public Builder clearMcoinProduct() {
         if (mcoinProductBuilder_ == null) {
@@ -1038,7 +1046,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+       * <code>.ShopMcoinProduct mcoin_product = 1;</code>
        */
       public emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.Builder getMcoinProductBuilder() {
         
@@ -1046,7 +1054,7 @@ public final class RechargeReqOuterClass {
         return getMcoinProductFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+       * <code>.ShopMcoinProduct mcoin_product = 1;</code>
        */
       public emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProductOrBuilder getMcoinProductOrBuilder() {
         if (mcoinProductBuilder_ != null) {
@@ -1057,7 +1065,7 @@ public final class RechargeReqOuterClass {
         }
       }
       /**
-       * <code>.ShopMcoinProduct mcoin_product = 10;</code>
+       * <code>.ShopMcoinProduct mcoin_product = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct, emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProduct.Builder, emu.grasscutter.net.proto.ShopMcoinProductOuterClass.ShopMcoinProductOrBuilder> 
@@ -1077,14 +1085,14 @@ public final class RechargeReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder> concertProductBuilder_;
       /**
-       * <code>.ShopConcertProduct concert_product = 3;</code>
+       * <code>.ShopConcertProduct concert_product = 14;</code>
        * @return Whether the concertProduct field is set.
        */
       public boolean hasConcertProduct() {
         return concertProductBuilder_ != null || concertProduct_ != null;
       }
       /**
-       * <code>.ShopConcertProduct concert_product = 3;</code>
+       * <code>.ShopConcertProduct concert_product = 14;</code>
        * @return The concertProduct.
        */
       public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct getConcertProduct() {
@@ -1095,7 +1103,7 @@ public final class RechargeReqOuterClass {
         }
       }
       /**
-       * <code>.ShopConcertProduct concert_product = 3;</code>
+       * <code>.ShopConcertProduct concert_product = 14;</code>
        */
       public Builder setConcertProduct(emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct value) {
         if (concertProductBuilder_ == null) {
@@ -1111,7 +1119,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopConcertProduct concert_product = 3;</code>
+       * <code>.ShopConcertProduct concert_product = 14;</code>
        */
       public Builder setConcertProduct(
           emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder builderForValue) {
@@ -1125,7 +1133,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopConcertProduct concert_product = 3;</code>
+       * <code>.ShopConcertProduct concert_product = 14;</code>
        */
       public Builder mergeConcertProduct(emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct value) {
         if (concertProductBuilder_ == null) {
@@ -1143,7 +1151,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopConcertProduct concert_product = 3;</code>
+       * <code>.ShopConcertProduct concert_product = 14;</code>
        */
       public Builder clearConcertProduct() {
         if (concertProductBuilder_ == null) {
@@ -1157,7 +1165,7 @@ public final class RechargeReqOuterClass {
         return this;
       }
       /**
-       * <code>.ShopConcertProduct concert_product = 3;</code>
+       * <code>.ShopConcertProduct concert_product = 14;</code>
        */
       public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder getConcertProductBuilder() {
         
@@ -1165,7 +1173,7 @@ public final class RechargeReqOuterClass {
         return getConcertProductFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ShopConcertProduct concert_product = 3;</code>
+       * <code>.ShopConcertProduct concert_product = 14;</code>
        */
       public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder getConcertProductOrBuilder() {
         if (concertProductBuilder_ != null) {
@@ -1176,7 +1184,7 @@ public final class RechargeReqOuterClass {
         }
       }
       /**
-       * <code>.ShopConcertProduct concert_product = 3;</code>
+       * <code>.ShopConcertProduct concert_product = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.Builder, emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProductOrBuilder> 
@@ -1262,9 +1270,9 @@ public final class RechargeReqOuterClass {
       "ShopCardProduct.proto\032\026ShopMcoinProduct." +
       "proto\032\030ShopConcertProduct.proto\"\261\001\n\013Rech" +
       "argeReq\022\"\n\014play_product\030\t \001(\0132\014.PlayProd" +
-      "uct\022&\n\014card_product\030\001 \001(\0132\020.ShopCardProd" +
-      "uct\022(\n\rmcoin_product\030\n \001(\0132\021.ShopMcoinPr" +
-      "oduct\022,\n\017concert_product\030\003 \001(\0132\023.ShopCon" +
+      "uct\022&\n\014card_product\030\010 \001(\0132\020.ShopCardProd" +
+      "uct\022(\n\rmcoin_product\030\001 \001(\0132\021.ShopMcoinPr" +
+      "oduct\022,\n\017concert_product\030\016 \001(\0132\023.ShopCon" +
       "certProductB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };

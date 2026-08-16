@@ -32,7 +32,7 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5344
+   * CmdId: 9226
    * </pre>
    *
    * Protobuf type {@code VehiclePhlogistonPointsNotify}
@@ -313,7 +313,7 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5344
+     * CmdId: 9226
      * </pre>
      *
      * Protobuf type {@code VehiclePhlogistonPointsNotify}

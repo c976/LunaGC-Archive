@@ -17,10 +17,13 @@ public class ActivityCondExcelConfigData extends GameResource {
 
     public static class ActivityConfigCondition {
         @Getter private ActivityConditions type;
-        @Getter private List<Integer> param;
-
+        @Getter private List<String> param;
+    
         public int[] paramArray() {
-            return param.stream().mapToInt(Integer::intValue).toArray();
+            return param.stream()
+                .filter(s -> s.matches("\\d+"))
+                .mapToInt(Integer::parseInt)
+                .toArray();
         }
     }
 

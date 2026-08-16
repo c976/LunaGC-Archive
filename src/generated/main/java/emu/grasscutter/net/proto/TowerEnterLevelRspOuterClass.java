@@ -19,41 +19,45 @@ public final class TowerEnterLevelRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 tower_buff_id_list = 9;</code>
+     * <code>repeated uint32 tower_buff_id_list = 10;</code>
      * @return A list containing the towerBuffIdList.
      */
     java.util.List<java.lang.Integer> getTowerBuffIdListList();
     /**
-     * <code>repeated uint32 tower_buff_id_list = 9;</code>
+     * <code>repeated uint32 tower_buff_id_list = 10;</code>
      * @return The count of towerBuffIdList.
      */
     int getTowerBuffIdListCount();
     /**
-     * <code>repeated uint32 tower_buff_id_list = 9;</code>
+     * <code>repeated uint32 tower_buff_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The towerBuffIdList at the given index.
      */
     int getTowerBuffIdList(int index);
 
     /**
-     * <code>uint32 level_index = 10;</code>
+     * <code>uint32 level_index = 8;</code>
      * @return The levelIndex.
      */
     int getLevelIndex();
 
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 floor_id = 15;</code>
+     * <code>uint32 floor_id = 7;</code>
      * @return The floorId.
      */
     int getFloorId();
   }
   /**
+   * <pre>
+   * CmdId: 21969
+   * </pre>
+   *
    * Protobuf type {@code TowerEnterLevelRsp}
    */
   public static final class TowerEnterLevelRsp extends
@@ -100,7 +104,17 @@ public final class TowerEnterLevelRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 56: {
+
+              floorId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              levelIndex_ = input.readUInt32();
+              break;
+            }
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 towerBuffIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -108,7 +122,7 @@ public final class TowerEnterLevelRspOuterClass {
               towerBuffIdList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -121,19 +135,9 @@ public final class TowerEnterLevelRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 80: {
-
-              levelIndex_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
             case 120: {
 
-              floorId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -171,10 +175,10 @@ public final class TowerEnterLevelRspOuterClass {
               emu.grasscutter.net.proto.TowerEnterLevelRspOuterClass.TowerEnterLevelRsp.class, emu.grasscutter.net.proto.TowerEnterLevelRspOuterClass.TowerEnterLevelRsp.Builder.class);
     }
 
-    public static final int TOWER_BUFF_ID_LIST_FIELD_NUMBER = 9;
+    public static final int TOWER_BUFF_ID_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList towerBuffIdList_;
     /**
-     * <code>repeated uint32 tower_buff_id_list = 9;</code>
+     * <code>repeated uint32 tower_buff_id_list = 10;</code>
      * @return A list containing the towerBuffIdList.
      */
     @java.lang.Override
@@ -183,14 +187,14 @@ public final class TowerEnterLevelRspOuterClass {
       return towerBuffIdList_;
     }
     /**
-     * <code>repeated uint32 tower_buff_id_list = 9;</code>
+     * <code>repeated uint32 tower_buff_id_list = 10;</code>
      * @return The count of towerBuffIdList.
      */
     public int getTowerBuffIdListCount() {
       return towerBuffIdList_.size();
     }
     /**
-     * <code>repeated uint32 tower_buff_id_list = 9;</code>
+     * <code>repeated uint32 tower_buff_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The towerBuffIdList at the given index.
      */
@@ -199,10 +203,10 @@ public final class TowerEnterLevelRspOuterClass {
     }
     private int towerBuffIdListMemoizedSerializedSize = -1;
 
-    public static final int LEVEL_INDEX_FIELD_NUMBER = 10;
+    public static final int LEVEL_INDEX_FIELD_NUMBER = 8;
     private int levelIndex_;
     /**
-     * <code>uint32 level_index = 10;</code>
+     * <code>uint32 level_index = 8;</code>
      * @return The levelIndex.
      */
     @java.lang.Override
@@ -210,10 +214,10 @@ public final class TowerEnterLevelRspOuterClass {
       return levelIndex_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -221,10 +225,10 @@ public final class TowerEnterLevelRspOuterClass {
       return retcode_;
     }
 
-    public static final int FLOOR_ID_FIELD_NUMBER = 15;
+    public static final int FLOOR_ID_FIELD_NUMBER = 7;
     private int floorId_;
     /**
-     * <code>uint32 floor_id = 15;</code>
+     * <code>uint32 floor_id = 7;</code>
      * @return The floorId.
      */
     @java.lang.Override
@@ -247,21 +251,21 @@ public final class TowerEnterLevelRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (floorId_ != 0) {
+        output.writeUInt32(7, floorId_);
+      }
+      if (levelIndex_ != 0) {
+        output.writeUInt32(8, levelIndex_);
+      }
       if (getTowerBuffIdListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(towerBuffIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < towerBuffIdList_.size(); i++) {
         output.writeUInt32NoTag(towerBuffIdList_.getInt(i));
       }
-      if (levelIndex_ != 0) {
-        output.writeUInt32(10, levelIndex_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
-      }
-      if (floorId_ != 0) {
-        output.writeUInt32(15, floorId_);
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,6 +276,14 @@ public final class TowerEnterLevelRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (floorId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, floorId_);
+      }
+      if (levelIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, levelIndex_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < towerBuffIdList_.size(); i++) {
@@ -286,17 +298,9 @@ public final class TowerEnterLevelRspOuterClass {
         }
         towerBuffIdListMemoizedSerializedSize = dataSize;
       }
-      if (levelIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, levelIndex_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
-      }
-      if (floorId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, floorId_);
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -438,6 +442,10 @@ public final class TowerEnterLevelRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 21969
+     * </pre>
+     *
      * Protobuf type {@code TowerEnterLevelRsp}
      */
     public static final class Builder extends
@@ -623,7 +631,7 @@ public final class TowerEnterLevelRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 tower_buff_id_list = 9;</code>
+       * <code>repeated uint32 tower_buff_id_list = 10;</code>
        * @return A list containing the towerBuffIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -632,14 +640,14 @@ public final class TowerEnterLevelRspOuterClass {
                  java.util.Collections.unmodifiableList(towerBuffIdList_) : towerBuffIdList_;
       }
       /**
-       * <code>repeated uint32 tower_buff_id_list = 9;</code>
+       * <code>repeated uint32 tower_buff_id_list = 10;</code>
        * @return The count of towerBuffIdList.
        */
       public int getTowerBuffIdListCount() {
         return towerBuffIdList_.size();
       }
       /**
-       * <code>repeated uint32 tower_buff_id_list = 9;</code>
+       * <code>repeated uint32 tower_buff_id_list = 10;</code>
        * @param index The index of the element to return.
        * @return The towerBuffIdList at the given index.
        */
@@ -647,7 +655,7 @@ public final class TowerEnterLevelRspOuterClass {
         return towerBuffIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 tower_buff_id_list = 9;</code>
+       * <code>repeated uint32 tower_buff_id_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The towerBuffIdList to set.
        * @return This builder for chaining.
@@ -660,7 +668,7 @@ public final class TowerEnterLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 tower_buff_id_list = 9;</code>
+       * <code>repeated uint32 tower_buff_id_list = 10;</code>
        * @param value The towerBuffIdList to add.
        * @return This builder for chaining.
        */
@@ -671,7 +679,7 @@ public final class TowerEnterLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 tower_buff_id_list = 9;</code>
+       * <code>repeated uint32 tower_buff_id_list = 10;</code>
        * @param values The towerBuffIdList to add.
        * @return This builder for chaining.
        */
@@ -684,7 +692,7 @@ public final class TowerEnterLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 tower_buff_id_list = 9;</code>
+       * <code>repeated uint32 tower_buff_id_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearTowerBuffIdList() {
@@ -696,7 +704,7 @@ public final class TowerEnterLevelRspOuterClass {
 
       private int levelIndex_ ;
       /**
-       * <code>uint32 level_index = 10;</code>
+       * <code>uint32 level_index = 8;</code>
        * @return The levelIndex.
        */
       @java.lang.Override
@@ -704,7 +712,7 @@ public final class TowerEnterLevelRspOuterClass {
         return levelIndex_;
       }
       /**
-       * <code>uint32 level_index = 10;</code>
+       * <code>uint32 level_index = 8;</code>
        * @param value The levelIndex to set.
        * @return This builder for chaining.
        */
@@ -715,7 +723,7 @@ public final class TowerEnterLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_index = 10;</code>
+       * <code>uint32 level_index = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelIndex() {
@@ -727,7 +735,7 @@ public final class TowerEnterLevelRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -735,7 +743,7 @@ public final class TowerEnterLevelRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -746,7 +754,7 @@ public final class TowerEnterLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -758,7 +766,7 @@ public final class TowerEnterLevelRspOuterClass {
 
       private int floorId_ ;
       /**
-       * <code>uint32 floor_id = 15;</code>
+       * <code>uint32 floor_id = 7;</code>
        * @return The floorId.
        */
       @java.lang.Override
@@ -766,7 +774,7 @@ public final class TowerEnterLevelRspOuterClass {
         return floorId_;
       }
       /**
-       * <code>uint32 floor_id = 15;</code>
+       * <code>uint32 floor_id = 7;</code>
        * @param value The floorId to set.
        * @return This builder for chaining.
        */
@@ -777,7 +785,7 @@ public final class TowerEnterLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 floor_id = 15;</code>
+       * <code>uint32 floor_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearFloorId() {
@@ -854,9 +862,9 @@ public final class TowerEnterLevelRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030TowerEnterLevelRsp.proto\"h\n\022TowerEnter" +
-      "LevelRsp\022\032\n\022tower_buff_id_list\030\t \003(\r\022\023\n\013" +
-      "level_index\030\n \001(\r\022\017\n\007retcode\030\r \001(\005\022\020\n\010fl" +
-      "oor_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "LevelRsp\022\032\n\022tower_buff_id_list\030\n \003(\r\022\023\n\013" +
+      "level_index\030\010 \001(\r\022\017\n\007retcode\030\017 \001(\005\022\020\n\010fl" +
+      "oor_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

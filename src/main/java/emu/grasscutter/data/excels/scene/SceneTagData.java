@@ -11,11 +11,9 @@ public final class SceneTagData extends GameResource {
     @Getter(onMethod_ = @Override)
     private int id;
 
-    @SerializedName("DJCOAOBDIHP")
-    private boolean idk1;
+    private boolean isIndependent;
 
-    @SerializedName("LOLNNMPKHIB")
-    private boolean idk2;
+    private boolean isSkipLoading;
 
     private boolean isDefaultValid; // shld be there by default
 

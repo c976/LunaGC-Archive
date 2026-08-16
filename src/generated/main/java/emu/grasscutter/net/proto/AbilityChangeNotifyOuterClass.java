@@ -34,14 +34,14 @@ public final class AbilityChangeNotifyOuterClass {
     emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder getAbilityControlBlockOrBuilder();
 
     /**
-     * <code>uint32 entity_id = 9;</code>
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 21065
+   * CmdId: 20777
    * </pre>
    *
    * Protobuf type {@code AbilityChangeNotify}
@@ -101,7 +101,7 @@ public final class AbilityChangeNotifyOuterClass {
 
               break;
             }
-            case 72: {
+            case 40: {
 
               entityId_ = input.readUInt32();
               break;
@@ -164,10 +164,10 @@ public final class AbilityChangeNotifyOuterClass {
       return getAbilityControlBlock();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 9;
+    public static final int ENTITY_ID_FIELD_NUMBER = 5;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 9;</code>
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -193,7 +193,7 @@ public final class AbilityChangeNotifyOuterClass {
         output.writeMessage(3, getAbilityControlBlock());
       }
       if (entityId_ != 0) {
-        output.writeUInt32(9, entityId_);
+        output.writeUInt32(5, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -210,7 +210,7 @@ public final class AbilityChangeNotifyOuterClass {
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, entityId_);
+          .computeUInt32Size(5, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -348,7 +348,7 @@ public final class AbilityChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21065
+     * CmdId: 20777
      * </pre>
      *
      * Protobuf type {@code AbilityChangeNotify}
@@ -632,7 +632,7 @@ public final class AbilityChangeNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class AbilityChangeNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class AbilityChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -730,7 +730,7 @@ public final class AbilityChangeNotifyOuterClass {
       "\n\031AbilityChangeNotify.proto\032\031AbilityCont" +
       "rolBlock.proto\"]\n\023AbilityChangeNotify\0223\n" +
       "\025ability_control_block\030\003 \001(\0132\024.AbilityCo" +
-      "ntrolBlock\022\021\n\tentity_id\030\t \001(\rB\033\n\031emu.gra" +
+      "ntrolBlock\022\021\n\tentity_id\030\005 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

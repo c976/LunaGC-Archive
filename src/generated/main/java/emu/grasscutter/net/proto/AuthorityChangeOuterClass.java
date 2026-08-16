@@ -34,16 +34,16 @@ public final class AuthorityChangeOuterClass {
     emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder getEntityAuthorityInfoOrBuilder();
 
     /**
-     * <code>uint32 entity_id = 2;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
-
-    /**
      * <code>uint32 authority_peer_id = 7;</code>
      * @return The authorityPeerId.
      */
     int getAuthorityPeerId();
+
+    /**
+     * <code>uint32 entity_id = 6;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
   }
   /**
    * Protobuf type {@code AuthorityChange}
@@ -90,11 +90,6 @@ public final class AuthorityChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
             case 26: {
               emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder subBuilder = null;
               if (entityAuthorityInfo_ != null) {
@@ -106,6 +101,11 @@ public final class AuthorityChangeOuterClass {
                 entityAuthorityInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 48: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -171,17 +171,6 @@ public final class AuthorityChangeOuterClass {
       return getEntityAuthorityInfo();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 2;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 2;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
     public static final int AUTHORITY_PEER_ID_FIELD_NUMBER = 7;
     private int authorityPeerId_;
     /**
@@ -191,6 +180,17 @@ public final class AuthorityChangeOuterClass {
     @java.lang.Override
     public int getAuthorityPeerId() {
       return authorityPeerId_;
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 6;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 6;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -207,11 +207,11 @@ public final class AuthorityChangeOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (entityId_ != 0) {
-        output.writeUInt32(2, entityId_);
-      }
       if (entityAuthorityInfo_ != null) {
         output.writeMessage(3, getEntityAuthorityInfo());
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(6, entityId_);
       }
       if (authorityPeerId_ != 0) {
         output.writeUInt32(7, authorityPeerId_);
@@ -225,13 +225,13 @@ public final class AuthorityChangeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, entityId_);
-      }
       if (entityAuthorityInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getEntityAuthorityInfo());
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, entityId_);
       }
       if (authorityPeerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -257,10 +257,10 @@ public final class AuthorityChangeOuterClass {
         if (!getEntityAuthorityInfo()
             .equals(other.getEntityAuthorityInfo())) return false;
       }
-      if (getEntityId()
-          != other.getEntityId()) return false;
       if (getAuthorityPeerId()
           != other.getAuthorityPeerId()) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -276,10 +276,10 @@ public final class AuthorityChangeOuterClass {
         hash = (37 * hash) + ENTITY_AUTHORITY_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getEntityAuthorityInfo().hashCode();
       }
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       hash = (37 * hash) + AUTHORITY_PEER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAuthorityPeerId();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -419,9 +419,9 @@ public final class AuthorityChangeOuterClass {
           entityAuthorityInfo_ = null;
           entityAuthorityInfoBuilder_ = null;
         }
-        entityId_ = 0;
-
         authorityPeerId_ = 0;
+
+        entityId_ = 0;
 
         return this;
       }
@@ -454,8 +454,8 @@ public final class AuthorityChangeOuterClass {
         } else {
           result.entityAuthorityInfo_ = entityAuthorityInfoBuilder_.build();
         }
-        result.entityId_ = entityId_;
         result.authorityPeerId_ = authorityPeerId_;
+        result.entityId_ = entityId_;
         onBuilt();
         return result;
       }
@@ -507,11 +507,11 @@ public final class AuthorityChangeOuterClass {
         if (other.hasEntityAuthorityInfo()) {
           mergeEntityAuthorityInfo(other.getEntityAuthorityInfo());
         }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
-        }
         if (other.getAuthorityPeerId() != 0) {
           setAuthorityPeerId(other.getAuthorityPeerId());
+        }
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -661,37 +661,6 @@ public final class AuthorityChangeOuterClass {
         return entityAuthorityInfoBuilder_;
       }
 
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 2;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 2;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int authorityPeerId_ ;
       /**
        * <code>uint32 authority_peer_id = 7;</code>
@@ -719,6 +688,37 @@ public final class AuthorityChangeOuterClass {
       public Builder clearAuthorityPeerId() {
         
         authorityPeerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 6;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 6;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
         onChanged();
         return this;
       }
@@ -792,8 +792,8 @@ public final class AuthorityChangeOuterClass {
       "\n\025AuthorityChange.proto\032\031EntityAuthority" +
       "Info.proto\"t\n\017AuthorityChange\0223\n\025entity_" +
       "authority_info\030\003 \001(\0132\024.EntityAuthorityIn" +
-      "fo\022\021\n\tentity_id\030\002 \001(\r\022\031\n\021authority_peer_" +
-      "id\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "fo\022\031\n\021authority_peer_id\030\007 \001(\r\022\021\n\tentity_" +
+      "id\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -806,7 +806,7 @@ public final class AuthorityChangeOuterClass {
     internal_static_AuthorityChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AuthorityChange_descriptor,
-        new java.lang.String[] { "EntityAuthorityInfo", "EntityId", "AuthorityPeerId", });
+        new java.lang.String[] { "EntityAuthorityInfo", "AuthorityPeerId", "EntityId", });
     emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.getDescriptor();
   }
 

@@ -15,10 +15,6 @@ public final class ChangeHpDebtsOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * 4.6.0
-   * </pre>
-   *
    * Protobuf enum {@code ChangeHpDebts}
    */
   public enum ChangeHpDebts
@@ -32,21 +28,21 @@ public final class ChangeHpDebtsOuterClass {
      */
     CHANGE_HP_DEBTS_PAY(1),
     /**
-     * <code>CHANGE_HP_DEBTS_PAYFINISH = 2;</code>
+     * <code>CHANGE_HP_DEBTS_PAY_FINISH = 2;</code>
      */
-    CHANGE_HP_DEBTS_PAYFINISH(2),
+    CHANGE_HP_DEBTS_PAY_FINISH(2),
     /**
      * <code>CHANGE_HP_DEBTS_CLEAR = 21;</code>
      */
     CHANGE_HP_DEBTS_CLEAR(21),
     /**
-     * <code>CHANGE_HP_DEBTS_REDUCEABILITY = 41;</code>
+     * <code>CHANGE_HP_DEBTS_REDUCE_ABILITY = 41;</code>
      */
-    CHANGE_HP_DEBTS_REDUCEABILITY(41),
+    CHANGE_HP_DEBTS_REDUCE_ABILITY(41),
     /**
-     * <code>CHANGE_HP_DEBTS_ADDABILiTY = 51;</code>
+     * <code>CHANGE_HP_DEBTS_ADD_ABILITY = 51;</code>
      */
-    CHANGE_HP_DEBTS_ADDABILiTY(51),
+    CHANGE_HP_DEBTS_ADD_ABILITY(51),
     UNRECOGNIZED(-1),
     ;
 
@@ -59,21 +55,21 @@ public final class ChangeHpDebtsOuterClass {
      */
     public static final int CHANGE_HP_DEBTS_PAY_VALUE = 1;
     /**
-     * <code>CHANGE_HP_DEBTS_PAYFINISH = 2;</code>
+     * <code>CHANGE_HP_DEBTS_PAY_FINISH = 2;</code>
      */
-    public static final int CHANGE_HP_DEBTS_PAYFINISH_VALUE = 2;
+    public static final int CHANGE_HP_DEBTS_PAY_FINISH_VALUE = 2;
     /**
      * <code>CHANGE_HP_DEBTS_CLEAR = 21;</code>
      */
     public static final int CHANGE_HP_DEBTS_CLEAR_VALUE = 21;
     /**
-     * <code>CHANGE_HP_DEBTS_REDUCEABILITY = 41;</code>
+     * <code>CHANGE_HP_DEBTS_REDUCE_ABILITY = 41;</code>
      */
-    public static final int CHANGE_HP_DEBTS_REDUCEABILITY_VALUE = 41;
+    public static final int CHANGE_HP_DEBTS_REDUCE_ABILITY_VALUE = 41;
     /**
-     * <code>CHANGE_HP_DEBTS_ADDABILiTY = 51;</code>
+     * <code>CHANGE_HP_DEBTS_ADD_ABILITY = 51;</code>
      */
-    public static final int CHANGE_HP_DEBTS_ADDABILiTY_VALUE = 51;
+    public static final int CHANGE_HP_DEBTS_ADD_ABILITY_VALUE = 51;
 
 
     public final int getNumber() {
@@ -102,10 +98,10 @@ public final class ChangeHpDebtsOuterClass {
       switch (value) {
         case 0: return CHANGE_HP_DEBTS_NONE;
         case 1: return CHANGE_HP_DEBTS_PAY;
-        case 2: return CHANGE_HP_DEBTS_PAYFINISH;
+        case 2: return CHANGE_HP_DEBTS_PAY_FINISH;
         case 21: return CHANGE_HP_DEBTS_CLEAR;
-        case 41: return CHANGE_HP_DEBTS_REDUCEABILITY;
-        case 51: return CHANGE_HP_DEBTS_ADDABILiTY;
+        case 41: return CHANGE_HP_DEBTS_REDUCE_ABILITY;
+        case 51: return CHANGE_HP_DEBTS_ADD_ABILITY;
         default: return null;
       }
     }
@@ -171,13 +167,13 @@ public final class ChangeHpDebtsOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023ChangeHpDebts.proto*\277\001\n\rChangeHpDebts\022" +
+      "\n\023ChangeHpDebts.proto*\302\001\n\rChangeHpDebts\022" +
       "\030\n\024CHANGE_HP_DEBTS_NONE\020\000\022\027\n\023CHANGE_HP_D" +
-      "EBTS_PAY\020\001\022\035\n\031CHANGE_HP_DEBTS_PAYFINISH\020" +
-      "\002\022\031\n\025CHANGE_HP_DEBTS_CLEAR\020\025\022!\n\035CHANGE_H" +
-      "P_DEBTS_REDUCEABILITY\020)\022\036\n\032CHANGE_HP_DEB" +
-      "TS_ADDABILiTY\0203B\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "EBTS_PAY\020\001\022\036\n\032CHANGE_HP_DEBTS_PAY_FINISH" +
+      "\020\002\022\031\n\025CHANGE_HP_DEBTS_CLEAR\020\025\022\"\n\036CHANGE_" +
+      "HP_DEBTS_REDUCE_ABILITY\020)\022\037\n\033CHANGE_HP_D" +
+      "EBTS_ADD_ABILITY\0203B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

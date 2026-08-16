@@ -19,40 +19,36 @@ public final class VintageHuntingStageDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 2;</code>
+     * <code>uint32 stage_id = 15;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>bool is_finish = 4;</code>
+     * <code>bool is_open = 10;</code>
+     * @return The isOpen.
+     */
+    boolean getIsOpen();
+
+    /**
+     * <code>bool is_finish = 9;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 open_time = 12;</code>
+     * <code>uint32 open_time = 5;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <code>uint32 HKIIFCMCGCL = 9;</code>
-     * @return The hKIIFCMCGCL.
+     * <code>uint32 record_value = 8;</code>
+     * @return The recordValue.
      */
-    int getHKIIFCMCGCL();
-
-    /**
-     * <code>bool is_open = 8;</code>
-     * @return The isOpen.
-     */
-    boolean getIsOpen();
+    int getRecordValue();
   }
   /**
-   * <pre>
-   * Obf: KFHOLBPEEPP
-   * </pre>
-   *
    * Protobuf type {@code VintageHuntingStageData}
    */
   public static final class VintageHuntingStageData extends
@@ -97,29 +93,29 @@ public final class VintageHuntingStageDataOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 40: {
 
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              isFinish_ = input.readBool();
+              openTime_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              isOpen_ = input.readBool();
+              recordValue_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              hKIIFCMCGCL_ = input.readUInt32();
+              isFinish_ = input.readBool();
               break;
             }
-            case 96: {
+            case 80: {
 
-              openTime_ = input.readUInt32();
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -154,10 +150,10 @@ public final class VintageHuntingStageDataOuterClass {
               emu.grasscutter.net.proto.VintageHuntingStageDataOuterClass.VintageHuntingStageData.class, emu.grasscutter.net.proto.VintageHuntingStageDataOuterClass.VintageHuntingStageData.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 2;
+    public static final int STAGE_ID_FIELD_NUMBER = 15;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 2;</code>
+     * <code>uint32 stage_id = 15;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -165,10 +161,21 @@ public final class VintageHuntingStageDataOuterClass {
       return stageId_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 4;
+    public static final int IS_OPEN_FIELD_NUMBER = 10;
+    private boolean isOpen_;
+    /**
+     * <code>bool is_open = 10;</code>
+     * @return The isOpen.
+     */
+    @java.lang.Override
+    public boolean getIsOpen() {
+      return isOpen_;
+    }
+
+    public static final int IS_FINISH_FIELD_NUMBER = 9;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 4;</code>
+     * <code>bool is_finish = 9;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -176,10 +183,10 @@ public final class VintageHuntingStageDataOuterClass {
       return isFinish_;
     }
 
-    public static final int OPEN_TIME_FIELD_NUMBER = 12;
+    public static final int OPEN_TIME_FIELD_NUMBER = 5;
     private int openTime_;
     /**
-     * <code>uint32 open_time = 12;</code>
+     * <code>uint32 open_time = 5;</code>
      * @return The openTime.
      */
     @java.lang.Override
@@ -187,26 +194,15 @@ public final class VintageHuntingStageDataOuterClass {
       return openTime_;
     }
 
-    public static final int HKIIFCMCGCL_FIELD_NUMBER = 9;
-    private int hKIIFCMCGCL_;
+    public static final int RECORD_VALUE_FIELD_NUMBER = 8;
+    private int recordValue_;
     /**
-     * <code>uint32 HKIIFCMCGCL = 9;</code>
-     * @return The hKIIFCMCGCL.
+     * <code>uint32 record_value = 8;</code>
+     * @return The recordValue.
      */
     @java.lang.Override
-    public int getHKIIFCMCGCL() {
-      return hKIIFCMCGCL_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 8;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 8;</code>
-     * @return The isOpen.
-     */
-    @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
+    public int getRecordValue() {
+      return recordValue_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -223,20 +219,20 @@ public final class VintageHuntingStageDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (stageId_ != 0) {
-        output.writeUInt32(2, stageId_);
+      if (openTime_ != 0) {
+        output.writeUInt32(5, openTime_);
+      }
+      if (recordValue_ != 0) {
+        output.writeUInt32(8, recordValue_);
       }
       if (isFinish_ != false) {
-        output.writeBool(4, isFinish_);
+        output.writeBool(9, isFinish_);
       }
       if (isOpen_ != false) {
-        output.writeBool(8, isOpen_);
+        output.writeBool(10, isOpen_);
       }
-      if (hKIIFCMCGCL_ != 0) {
-        output.writeUInt32(9, hKIIFCMCGCL_);
-      }
-      if (openTime_ != 0) {
-        output.writeUInt32(12, openTime_);
+      if (stageId_ != 0) {
+        output.writeUInt32(15, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -247,25 +243,25 @@ public final class VintageHuntingStageDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (stageId_ != 0) {
+      if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, stageId_);
+          .computeUInt32Size(5, openTime_);
+      }
+      if (recordValue_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, recordValue_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isFinish_);
+          .computeBoolSize(9, isFinish_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isOpen_);
+          .computeBoolSize(10, isOpen_);
       }
-      if (hKIIFCMCGCL_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, hKIIFCMCGCL_);
-      }
-      if (openTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, openTime_);
+          .computeUInt32Size(15, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -284,14 +280,14 @@ public final class VintageHuntingStageDataOuterClass {
 
       if (getStageId()
           != other.getStageId()) return false;
+      if (getIsOpen()
+          != other.getIsOpen()) return false;
       if (getIsFinish()
           != other.getIsFinish()) return false;
       if (getOpenTime()
           != other.getOpenTime()) return false;
-      if (getHKIIFCMCGCL()
-          != other.getHKIIFCMCGCL()) return false;
-      if (getIsOpen()
-          != other.getIsOpen()) return false;
+      if (getRecordValue()
+          != other.getRecordValue()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -305,16 +301,16 @@ public final class VintageHuntingStageDataOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsOpen());
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
       hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getOpenTime();
-      hash = (37 * hash) + HKIIFCMCGCL_FIELD_NUMBER;
-      hash = (53 * hash) + getHKIIFCMCGCL();
-      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsOpen());
+      hash = (37 * hash) + RECORD_VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + getRecordValue();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,10 +407,6 @@ public final class VintageHuntingStageDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: KFHOLBPEEPP
-     * </pre>
-     *
      * Protobuf type {@code VintageHuntingStageData}
      */
     public static final class Builder extends
@@ -454,13 +446,13 @@ public final class VintageHuntingStageDataOuterClass {
         super.clear();
         stageId_ = 0;
 
+        isOpen_ = false;
+
         isFinish_ = false;
 
         openTime_ = 0;
 
-        hKIIFCMCGCL_ = 0;
-
-        isOpen_ = false;
+        recordValue_ = 0;
 
         return this;
       }
@@ -489,10 +481,10 @@ public final class VintageHuntingStageDataOuterClass {
       public emu.grasscutter.net.proto.VintageHuntingStageDataOuterClass.VintageHuntingStageData buildPartial() {
         emu.grasscutter.net.proto.VintageHuntingStageDataOuterClass.VintageHuntingStageData result = new emu.grasscutter.net.proto.VintageHuntingStageDataOuterClass.VintageHuntingStageData(this);
         result.stageId_ = stageId_;
+        result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
         result.openTime_ = openTime_;
-        result.hKIIFCMCGCL_ = hKIIFCMCGCL_;
-        result.isOpen_ = isOpen_;
+        result.recordValue_ = recordValue_;
         onBuilt();
         return result;
       }
@@ -544,17 +536,17 @@ public final class VintageHuntingStageDataOuterClass {
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
         }
+        if (other.getIsOpen() != false) {
+          setIsOpen(other.getIsOpen());
+        }
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
         }
         if (other.getOpenTime() != 0) {
           setOpenTime(other.getOpenTime());
         }
-        if (other.getHKIIFCMCGCL() != 0) {
-          setHKIIFCMCGCL(other.getHKIIFCMCGCL());
-        }
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
+        if (other.getRecordValue() != 0) {
+          setRecordValue(other.getRecordValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -587,7 +579,7 @@ public final class VintageHuntingStageDataOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -595,7 +587,7 @@ public final class VintageHuntingStageDataOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -606,7 +598,7 @@ public final class VintageHuntingStageDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -616,9 +608,40 @@ public final class VintageHuntingStageDataOuterClass {
         return this;
       }
 
+      private boolean isOpen_ ;
+      /**
+       * <code>bool is_open = 10;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool is_open = 10;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_open = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 4;</code>
+       * <code>bool is_finish = 9;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -626,7 +649,7 @@ public final class VintageHuntingStageDataOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 4;</code>
+       * <code>bool is_finish = 9;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -637,7 +660,7 @@ public final class VintageHuntingStageDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 4;</code>
+       * <code>bool is_finish = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -649,7 +672,7 @@ public final class VintageHuntingStageDataOuterClass {
 
       private int openTime_ ;
       /**
-       * <code>uint32 open_time = 12;</code>
+       * <code>uint32 open_time = 5;</code>
        * @return The openTime.
        */
       @java.lang.Override
@@ -657,7 +680,7 @@ public final class VintageHuntingStageDataOuterClass {
         return openTime_;
       }
       /**
-       * <code>uint32 open_time = 12;</code>
+       * <code>uint32 open_time = 5;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
        */
@@ -668,7 +691,7 @@ public final class VintageHuntingStageDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 open_time = 12;</code>
+       * <code>uint32 open_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenTime() {
@@ -678,64 +701,33 @@ public final class VintageHuntingStageDataOuterClass {
         return this;
       }
 
-      private int hKIIFCMCGCL_ ;
+      private int recordValue_ ;
       /**
-       * <code>uint32 HKIIFCMCGCL = 9;</code>
-       * @return The hKIIFCMCGCL.
+       * <code>uint32 record_value = 8;</code>
+       * @return The recordValue.
        */
       @java.lang.Override
-      public int getHKIIFCMCGCL() {
-        return hKIIFCMCGCL_;
+      public int getRecordValue() {
+        return recordValue_;
       }
       /**
-       * <code>uint32 HKIIFCMCGCL = 9;</code>
-       * @param value The hKIIFCMCGCL to set.
+       * <code>uint32 record_value = 8;</code>
+       * @param value The recordValue to set.
        * @return This builder for chaining.
        */
-      public Builder setHKIIFCMCGCL(int value) {
+      public Builder setRecordValue(int value) {
         
-        hKIIFCMCGCL_ = value;
+        recordValue_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 HKIIFCMCGCL = 9;</code>
+       * <code>uint32 record_value = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHKIIFCMCGCL() {
+      public Builder clearRecordValue() {
         
-        hKIIFCMCGCL_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 8;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 8;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
+        recordValue_ = 0;
         onChanged();
         return this;
       }
@@ -806,11 +798,11 @@ public final class VintageHuntingStageDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035VintageHuntingStageData.proto\"w\n\027Vinta" +
-      "geHuntingStageData\022\020\n\010stage_id\030\002 \001(\r\022\021\n\t" +
-      "is_finish\030\004 \001(\010\022\021\n\topen_time\030\014 \001(\r\022\023\n\013HK" +
-      "IIFCMCGCL\030\t \001(\r\022\017\n\007is_open\030\010 \001(\010B\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\035VintageHuntingStageData.proto\"x\n\027Vinta" +
+      "geHuntingStageData\022\020\n\010stage_id\030\017 \001(\r\022\017\n\007" +
+      "is_open\030\n \001(\010\022\021\n\tis_finish\030\t \001(\010\022\021\n\topen" +
+      "_time\030\005 \001(\r\022\024\n\014record_value\030\010 \001(\rB\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -821,7 +813,7 @@ public final class VintageHuntingStageDataOuterClass {
     internal_static_VintageHuntingStageData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageHuntingStageData_descriptor,
-        new java.lang.String[] { "StageId", "IsFinish", "OpenTime", "HKIIFCMCGCL", "IsOpen", });
+        new java.lang.String[] { "StageId", "IsOpen", "IsFinish", "OpenTime", "RecordValue", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,94 +19,75 @@ public final class EvtRushMoveInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector HDJENAGNIHN = 8;</code>
-     * @return Whether the hDJENAGNIHN field is set.
+     * <code>.Vector rush_to_pos = 9;</code>
+     * @return Whether the rushToPos field is set.
      */
-    boolean hasHDJENAGNIHN();
+    boolean hasRushToPos();
     /**
-     * <code>.Vector HDJENAGNIHN = 8;</code>
-     * @return The hDJENAGNIHN.
+     * <code>.Vector rush_to_pos = 9;</code>
+     * @return The rushToPos.
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getHDJENAGNIHN();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getRushToPos();
     /**
-     * <code>.Vector HDJENAGNIHN = 8;</code>
+     * <code>.Vector rush_to_pos = 9;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getHDJENAGNIHNOrBuilder();
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRushToPosOrBuilder();
 
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 10;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 10;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 10;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>.Vector NJDPMMLPIGK = 3;</code>
-     * @return Whether the nJDPMMLPIGK field is set.
+     * <code>.Vector velocity = 6;</code>
+     * @return Whether the velocity field is set.
      */
-    boolean hasNJDPMMLPIGK();
+    boolean hasVelocity();
     /**
-     * <code>.Vector NJDPMMLPIGK = 3;</code>
-     * @return The nJDPMMLPIGK.
+     * <code>.Vector velocity = 6;</code>
+     * @return The velocity.
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getNJDPMMLPIGK();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getVelocity();
     /**
-     * <code>.Vector NJDPMMLPIGK = 3;</code>
+     * <code>.Vector velocity = 6;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getNJDPMMLPIGKOrBuilder();
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getVelocityOrBuilder();
 
     /**
-     * <code>.Vector CAHAEAECAEK = 2;</code>
-     * @return Whether the cAHAEAECAEK field is set.
-     */
-    boolean hasCAHAEAECAEK();
-    /**
-     * <code>.Vector CAHAEAECAEK = 2;</code>
-     * @return The cAHAEAECAEK.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getCAHAEAECAEK();
-    /**
-     * <code>.Vector CAHAEAECAEK = 2;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCAHAEAECAEKOrBuilder();
-
-    /**
-     * <code>uint32 entity_id = 6;</code>
+     * <code>uint32 entity_id = 4;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>int32 HIDHMHOOION = 7;</code>
-     * @return The hIDHMHOOION.
+     * <code>int32 face_angle_compact = 15;</code>
+     * @return The faceAngleCompact.
      */
-    int getHIDHMHOOION();
+    int getFaceAngleCompact();
 
     /**
-     * <code>int32 KGHFGNKKLID = 1;</code>
-     * @return The kGHFGNKKLID.
-     */
-    int getKGHFGNKKLID();
-
-    /**
-     * <code>float timeRange = 13;</code>
+     * <code>float timeRange = 8;</code>
      * @return The timeRange.
      */
     float getTimeRange();
+
+    /**
+     * <code>int32 state_name_hash = 11;</code>
+     * @return The stateNameHash.
+     */
+    int getStateNameHash();
   }
   /**
-   * <pre>
-   * CmdId: - 
-   * </pre>
-   *
    * Protobuf type {@code EvtRushMoveInfo}
    */
   public static final class EvtRushMoveInfo extends
@@ -151,61 +132,43 @@ public final class EvtRushMoveInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              kGHFGNKKLID_ = input.readInt32();
-              break;
-            }
-            case 18: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (cAHAEAECAEK_ != null) {
-                subBuilder = cAHAEAECAEK_.toBuilder();
-              }
-              cAHAEAECAEK_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(cAHAEAECAEK_);
-                cAHAEAECAEK_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 26: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (nJDPMMLPIGK_ != null) {
-                subBuilder = nJDPMMLPIGK_.toBuilder();
-              }
-              nJDPMMLPIGK_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(nJDPMMLPIGK_);
-                nJDPMMLPIGK_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 48: {
+            case 32: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              hIDHMHOOION_ = input.readInt32();
-              break;
-            }
-            case 66: {
+            case 50: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (hDJENAGNIHN_ != null) {
-                subBuilder = hDJENAGNIHN_.toBuilder();
+              if (velocity_ != null) {
+                subBuilder = velocity_.toBuilder();
               }
-              hDJENAGNIHN_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              velocity_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(hDJENAGNIHN_);
-                hDJENAGNIHN_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(velocity_);
+                velocity_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 98: {
+            case 69: {
+
+              timeRange_ = input.readFloat();
+              break;
+            }
+            case 74: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (rushToPos_ != null) {
+                subBuilder = rushToPos_.toBuilder();
+              }
+              rushToPos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(rushToPos_);
+                rushToPos_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 82: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -218,9 +181,14 @@ public final class EvtRushMoveInfoOuterClass {
 
               break;
             }
-            case 109: {
+            case 88: {
 
-              timeRange_ = input.readFloat();
+              stateNameHash_ = input.readInt32();
+              break;
+            }
+            case 120: {
+
+              faceAngleCompact_ = input.readInt32();
               break;
             }
             default: {
@@ -255,36 +223,36 @@ public final class EvtRushMoveInfoOuterClass {
               emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo.class, emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo.Builder.class);
     }
 
-    public static final int HDJENAGNIHN_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector hDJENAGNIHN_;
+    public static final int RUSH_TO_POS_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector rushToPos_;
     /**
-     * <code>.Vector HDJENAGNIHN = 8;</code>
-     * @return Whether the hDJENAGNIHN field is set.
+     * <code>.Vector rush_to_pos = 9;</code>
+     * @return Whether the rushToPos field is set.
      */
     @java.lang.Override
-    public boolean hasHDJENAGNIHN() {
-      return hDJENAGNIHN_ != null;
+    public boolean hasRushToPos() {
+      return rushToPos_ != null;
     }
     /**
-     * <code>.Vector HDJENAGNIHN = 8;</code>
-     * @return The hDJENAGNIHN.
+     * <code>.Vector rush_to_pos = 9;</code>
+     * @return The rushToPos.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getHDJENAGNIHN() {
-      return hDJENAGNIHN_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : hDJENAGNIHN_;
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getRushToPos() {
+      return rushToPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rushToPos_;
     }
     /**
-     * <code>.Vector HDJENAGNIHN = 8;</code>
+     * <code>.Vector rush_to_pos = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getHDJENAGNIHNOrBuilder() {
-      return getHDJENAGNIHN();
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRushToPosOrBuilder() {
+      return getRushToPos();
     }
 
-    public static final int POS_FIELD_NUMBER = 12;
+    public static final int POS_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 10;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -292,7 +260,7 @@ public final class EvtRushMoveInfoOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 10;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -300,69 +268,43 @@ public final class EvtRushMoveInfoOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
-    public static final int NJDPMMLPIGK_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector nJDPMMLPIGK_;
+    public static final int VELOCITY_FIELD_NUMBER = 6;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector velocity_;
     /**
-     * <code>.Vector NJDPMMLPIGK = 3;</code>
-     * @return Whether the nJDPMMLPIGK field is set.
+     * <code>.Vector velocity = 6;</code>
+     * @return Whether the velocity field is set.
      */
     @java.lang.Override
-    public boolean hasNJDPMMLPIGK() {
-      return nJDPMMLPIGK_ != null;
+    public boolean hasVelocity() {
+      return velocity_ != null;
     }
     /**
-     * <code>.Vector NJDPMMLPIGK = 3;</code>
-     * @return The nJDPMMLPIGK.
+     * <code>.Vector velocity = 6;</code>
+     * @return The velocity.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getNJDPMMLPIGK() {
-      return nJDPMMLPIGK_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : nJDPMMLPIGK_;
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getVelocity() {
+      return velocity_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : velocity_;
     }
     /**
-     * <code>.Vector NJDPMMLPIGK = 3;</code>
+     * <code>.Vector velocity = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getNJDPMMLPIGKOrBuilder() {
-      return getNJDPMMLPIGK();
-    }
-
-    public static final int CAHAEAECAEK_FIELD_NUMBER = 2;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector cAHAEAECAEK_;
-    /**
-     * <code>.Vector CAHAEAECAEK = 2;</code>
-     * @return Whether the cAHAEAECAEK field is set.
-     */
-    @java.lang.Override
-    public boolean hasCAHAEAECAEK() {
-      return cAHAEAECAEK_ != null;
-    }
-    /**
-     * <code>.Vector CAHAEAECAEK = 2;</code>
-     * @return The cAHAEAECAEK.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getCAHAEAECAEK() {
-      return cAHAEAECAEK_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : cAHAEAECAEK_;
-    }
-    /**
-     * <code>.Vector CAHAEAECAEK = 2;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCAHAEAECAEKOrBuilder() {
-      return getCAHAEAECAEK();
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getVelocityOrBuilder() {
+      return getVelocity();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 6;
+    public static final int ENTITY_ID_FIELD_NUMBER = 4;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 6;</code>
+     * <code>uint32 entity_id = 4;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -370,37 +312,37 @@ public final class EvtRushMoveInfoOuterClass {
       return entityId_;
     }
 
-    public static final int HIDHMHOOION_FIELD_NUMBER = 7;
-    private int hIDHMHOOION_;
+    public static final int FACE_ANGLE_COMPACT_FIELD_NUMBER = 15;
+    private int faceAngleCompact_;
     /**
-     * <code>int32 HIDHMHOOION = 7;</code>
-     * @return The hIDHMHOOION.
+     * <code>int32 face_angle_compact = 15;</code>
+     * @return The faceAngleCompact.
      */
     @java.lang.Override
-    public int getHIDHMHOOION() {
-      return hIDHMHOOION_;
+    public int getFaceAngleCompact() {
+      return faceAngleCompact_;
     }
 
-    public static final int KGHFGNKKLID_FIELD_NUMBER = 1;
-    private int kGHFGNKKLID_;
-    /**
-     * <code>int32 KGHFGNKKLID = 1;</code>
-     * @return The kGHFGNKKLID.
-     */
-    @java.lang.Override
-    public int getKGHFGNKKLID() {
-      return kGHFGNKKLID_;
-    }
-
-    public static final int TIMERANGE_FIELD_NUMBER = 13;
+    public static final int TIMERANGE_FIELD_NUMBER = 8;
     private float timeRange_;
     /**
-     * <code>float timeRange = 13;</code>
+     * <code>float timeRange = 8;</code>
      * @return The timeRange.
      */
     @java.lang.Override
     public float getTimeRange() {
       return timeRange_;
+    }
+
+    public static final int STATE_NAME_HASH_FIELD_NUMBER = 11;
+    private int stateNameHash_;
+    /**
+     * <code>int32 state_name_hash = 11;</code>
+     * @return The stateNameHash.
+     */
+    @java.lang.Override
+    public int getStateNameHash() {
+      return stateNameHash_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -417,29 +359,26 @@ public final class EvtRushMoveInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (kGHFGNKKLID_ != 0) {
-        output.writeInt32(1, kGHFGNKKLID_);
-      }
-      if (cAHAEAECAEK_ != null) {
-        output.writeMessage(2, getCAHAEAECAEK());
-      }
-      if (nJDPMMLPIGK_ != null) {
-        output.writeMessage(3, getNJDPMMLPIGK());
-      }
       if (entityId_ != 0) {
-        output.writeUInt32(6, entityId_);
+        output.writeUInt32(4, entityId_);
       }
-      if (hIDHMHOOION_ != 0) {
-        output.writeInt32(7, hIDHMHOOION_);
-      }
-      if (hDJENAGNIHN_ != null) {
-        output.writeMessage(8, getHDJENAGNIHN());
-      }
-      if (pos_ != null) {
-        output.writeMessage(12, getPos());
+      if (velocity_ != null) {
+        output.writeMessage(6, getVelocity());
       }
       if (timeRange_ != 0F) {
-        output.writeFloat(13, timeRange_);
+        output.writeFloat(8, timeRange_);
+      }
+      if (rushToPos_ != null) {
+        output.writeMessage(9, getRushToPos());
+      }
+      if (pos_ != null) {
+        output.writeMessage(10, getPos());
+      }
+      if (stateNameHash_ != 0) {
+        output.writeInt32(11, stateNameHash_);
+      }
+      if (faceAngleCompact_ != 0) {
+        output.writeInt32(15, faceAngleCompact_);
       }
       unknownFields.writeTo(output);
     }
@@ -450,37 +389,33 @@ public final class EvtRushMoveInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (kGHFGNKKLID_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, kGHFGNKKLID_);
-      }
-      if (cAHAEAECAEK_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getCAHAEAECAEK());
-      }
-      if (nJDPMMLPIGK_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getNJDPMMLPIGK());
-      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, entityId_);
+          .computeUInt32Size(4, entityId_);
       }
-      if (hIDHMHOOION_ != 0) {
+      if (velocity_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, hIDHMHOOION_);
-      }
-      if (hDJENAGNIHN_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getHDJENAGNIHN());
-      }
-      if (pos_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getPos());
+          .computeMessageSize(6, getVelocity());
       }
       if (timeRange_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(13, timeRange_);
+          .computeFloatSize(8, timeRange_);
+      }
+      if (rushToPos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, getRushToPos());
+      }
+      if (pos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, getPos());
+      }
+      if (stateNameHash_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, stateNameHash_);
+      }
+      if (faceAngleCompact_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, faceAngleCompact_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -497,35 +432,30 @@ public final class EvtRushMoveInfoOuterClass {
       }
       emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo other = (emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo) obj;
 
-      if (hasHDJENAGNIHN() != other.hasHDJENAGNIHN()) return false;
-      if (hasHDJENAGNIHN()) {
-        if (!getHDJENAGNIHN()
-            .equals(other.getHDJENAGNIHN())) return false;
+      if (hasRushToPos() != other.hasRushToPos()) return false;
+      if (hasRushToPos()) {
+        if (!getRushToPos()
+            .equals(other.getRushToPos())) return false;
       }
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
-      if (hasNJDPMMLPIGK() != other.hasNJDPMMLPIGK()) return false;
-      if (hasNJDPMMLPIGK()) {
-        if (!getNJDPMMLPIGK()
-            .equals(other.getNJDPMMLPIGK())) return false;
-      }
-      if (hasCAHAEAECAEK() != other.hasCAHAEAECAEK()) return false;
-      if (hasCAHAEAECAEK()) {
-        if (!getCAHAEAECAEK()
-            .equals(other.getCAHAEAECAEK())) return false;
+      if (hasVelocity() != other.hasVelocity()) return false;
+      if (hasVelocity()) {
+        if (!getVelocity()
+            .equals(other.getVelocity())) return false;
       }
       if (getEntityId()
           != other.getEntityId()) return false;
-      if (getHIDHMHOOION()
-          != other.getHIDHMHOOION()) return false;
-      if (getKGHFGNKKLID()
-          != other.getKGHFGNKKLID()) return false;
+      if (getFaceAngleCompact()
+          != other.getFaceAngleCompact()) return false;
       if (java.lang.Float.floatToIntBits(getTimeRange())
           != java.lang.Float.floatToIntBits(
               other.getTimeRange())) return false;
+      if (getStateNameHash()
+          != other.getStateNameHash()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -537,31 +467,27 @@ public final class EvtRushMoveInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasHDJENAGNIHN()) {
-        hash = (37 * hash) + HDJENAGNIHN_FIELD_NUMBER;
-        hash = (53 * hash) + getHDJENAGNIHN().hashCode();
+      if (hasRushToPos()) {
+        hash = (37 * hash) + RUSH_TO_POS_FIELD_NUMBER;
+        hash = (53 * hash) + getRushToPos().hashCode();
       }
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
-      if (hasNJDPMMLPIGK()) {
-        hash = (37 * hash) + NJDPMMLPIGK_FIELD_NUMBER;
-        hash = (53 * hash) + getNJDPMMLPIGK().hashCode();
-      }
-      if (hasCAHAEAECAEK()) {
-        hash = (37 * hash) + CAHAEAECAEK_FIELD_NUMBER;
-        hash = (53 * hash) + getCAHAEAECAEK().hashCode();
+      if (hasVelocity()) {
+        hash = (37 * hash) + VELOCITY_FIELD_NUMBER;
+        hash = (53 * hash) + getVelocity().hashCode();
       }
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + HIDHMHOOION_FIELD_NUMBER;
-      hash = (53 * hash) + getHIDHMHOOION();
-      hash = (37 * hash) + KGHFGNKKLID_FIELD_NUMBER;
-      hash = (53 * hash) + getKGHFGNKKLID();
+      hash = (37 * hash) + FACE_ANGLE_COMPACT_FIELD_NUMBER;
+      hash = (53 * hash) + getFaceAngleCompact();
       hash = (37 * hash) + TIMERANGE_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getTimeRange());
+      hash = (37 * hash) + STATE_NAME_HASH_FIELD_NUMBER;
+      hash = (53 * hash) + getStateNameHash();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -658,10 +584,6 @@ public final class EvtRushMoveInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: - 
-     * </pre>
-     *
      * Protobuf type {@code EvtRushMoveInfo}
      */
     public static final class Builder extends
@@ -699,11 +621,11 @@ public final class EvtRushMoveInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (hDJENAGNIHNBuilder_ == null) {
-          hDJENAGNIHN_ = null;
+        if (rushToPosBuilder_ == null) {
+          rushToPos_ = null;
         } else {
-          hDJENAGNIHN_ = null;
-          hDJENAGNIHNBuilder_ = null;
+          rushToPos_ = null;
+          rushToPosBuilder_ = null;
         }
         if (posBuilder_ == null) {
           pos_ = null;
@@ -711,25 +633,19 @@ public final class EvtRushMoveInfoOuterClass {
           pos_ = null;
           posBuilder_ = null;
         }
-        if (nJDPMMLPIGKBuilder_ == null) {
-          nJDPMMLPIGK_ = null;
+        if (velocityBuilder_ == null) {
+          velocity_ = null;
         } else {
-          nJDPMMLPIGK_ = null;
-          nJDPMMLPIGKBuilder_ = null;
-        }
-        if (cAHAEAECAEKBuilder_ == null) {
-          cAHAEAECAEK_ = null;
-        } else {
-          cAHAEAECAEK_ = null;
-          cAHAEAECAEKBuilder_ = null;
+          velocity_ = null;
+          velocityBuilder_ = null;
         }
         entityId_ = 0;
 
-        hIDHMHOOION_ = 0;
-
-        kGHFGNKKLID_ = 0;
+        faceAngleCompact_ = 0;
 
         timeRange_ = 0F;
+
+        stateNameHash_ = 0;
 
         return this;
       }
@@ -757,30 +673,25 @@ public final class EvtRushMoveInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo buildPartial() {
         emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo result = new emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo(this);
-        if (hDJENAGNIHNBuilder_ == null) {
-          result.hDJENAGNIHN_ = hDJENAGNIHN_;
+        if (rushToPosBuilder_ == null) {
+          result.rushToPos_ = rushToPos_;
         } else {
-          result.hDJENAGNIHN_ = hDJENAGNIHNBuilder_.build();
+          result.rushToPos_ = rushToPosBuilder_.build();
         }
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
-        if (nJDPMMLPIGKBuilder_ == null) {
-          result.nJDPMMLPIGK_ = nJDPMMLPIGK_;
+        if (velocityBuilder_ == null) {
+          result.velocity_ = velocity_;
         } else {
-          result.nJDPMMLPIGK_ = nJDPMMLPIGKBuilder_.build();
-        }
-        if (cAHAEAECAEKBuilder_ == null) {
-          result.cAHAEAECAEK_ = cAHAEAECAEK_;
-        } else {
-          result.cAHAEAECAEK_ = cAHAEAECAEKBuilder_.build();
+          result.velocity_ = velocityBuilder_.build();
         }
         result.entityId_ = entityId_;
-        result.hIDHMHOOION_ = hIDHMHOOION_;
-        result.kGHFGNKKLID_ = kGHFGNKKLID_;
+        result.faceAngleCompact_ = faceAngleCompact_;
         result.timeRange_ = timeRange_;
+        result.stateNameHash_ = stateNameHash_;
         onBuilt();
         return result;
       }
@@ -829,29 +740,26 @@ public final class EvtRushMoveInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo other) {
         if (other == emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo.getDefaultInstance()) return this;
-        if (other.hasHDJENAGNIHN()) {
-          mergeHDJENAGNIHN(other.getHDJENAGNIHN());
+        if (other.hasRushToPos()) {
+          mergeRushToPos(other.getRushToPos());
         }
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
-        if (other.hasNJDPMMLPIGK()) {
-          mergeNJDPMMLPIGK(other.getNJDPMMLPIGK());
-        }
-        if (other.hasCAHAEAECAEK()) {
-          mergeCAHAEAECAEK(other.getCAHAEAECAEK());
+        if (other.hasVelocity()) {
+          mergeVelocity(other.getVelocity());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.getHIDHMHOOION() != 0) {
-          setHIDHMHOOION(other.getHIDHMHOOION());
-        }
-        if (other.getKGHFGNKKLID() != 0) {
-          setKGHFGNKKLID(other.getKGHFGNKKLID());
+        if (other.getFaceAngleCompact() != 0) {
+          setFaceAngleCompact(other.getFaceAngleCompact());
         }
         if (other.getTimeRange() != 0F) {
           setTimeRange(other.getTimeRange());
+        }
+        if (other.getStateNameHash() != 0) {
+          setStateNameHash(other.getStateNameHash());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -882,137 +790,137 @@ public final class EvtRushMoveInfoOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector hDJENAGNIHN_;
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector rushToPos_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> hDJENAGNIHNBuilder_;
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rushToPosBuilder_;
       /**
-       * <code>.Vector HDJENAGNIHN = 8;</code>
-       * @return Whether the hDJENAGNIHN field is set.
+       * <code>.Vector rush_to_pos = 9;</code>
+       * @return Whether the rushToPos field is set.
        */
-      public boolean hasHDJENAGNIHN() {
-        return hDJENAGNIHNBuilder_ != null || hDJENAGNIHN_ != null;
+      public boolean hasRushToPos() {
+        return rushToPosBuilder_ != null || rushToPos_ != null;
       }
       /**
-       * <code>.Vector HDJENAGNIHN = 8;</code>
-       * @return The hDJENAGNIHN.
+       * <code>.Vector rush_to_pos = 9;</code>
+       * @return The rushToPos.
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getHDJENAGNIHN() {
-        if (hDJENAGNIHNBuilder_ == null) {
-          return hDJENAGNIHN_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : hDJENAGNIHN_;
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getRushToPos() {
+        if (rushToPosBuilder_ == null) {
+          return rushToPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rushToPos_;
         } else {
-          return hDJENAGNIHNBuilder_.getMessage();
+          return rushToPosBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Vector HDJENAGNIHN = 8;</code>
+       * <code>.Vector rush_to_pos = 9;</code>
        */
-      public Builder setHDJENAGNIHN(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (hDJENAGNIHNBuilder_ == null) {
+      public Builder setRushToPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (rushToPosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          hDJENAGNIHN_ = value;
+          rushToPos_ = value;
           onChanged();
         } else {
-          hDJENAGNIHNBuilder_.setMessage(value);
+          rushToPosBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector HDJENAGNIHN = 8;</code>
+       * <code>.Vector rush_to_pos = 9;</code>
        */
-      public Builder setHDJENAGNIHN(
+      public Builder setRushToPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (hDJENAGNIHNBuilder_ == null) {
-          hDJENAGNIHN_ = builderForValue.build();
+        if (rushToPosBuilder_ == null) {
+          rushToPos_ = builderForValue.build();
           onChanged();
         } else {
-          hDJENAGNIHNBuilder_.setMessage(builderForValue.build());
+          rushToPosBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Vector HDJENAGNIHN = 8;</code>
+       * <code>.Vector rush_to_pos = 9;</code>
        */
-      public Builder mergeHDJENAGNIHN(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (hDJENAGNIHNBuilder_ == null) {
-          if (hDJENAGNIHN_ != null) {
-            hDJENAGNIHN_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(hDJENAGNIHN_).mergeFrom(value).buildPartial();
+      public Builder mergeRushToPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (rushToPosBuilder_ == null) {
+          if (rushToPos_ != null) {
+            rushToPos_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(rushToPos_).mergeFrom(value).buildPartial();
           } else {
-            hDJENAGNIHN_ = value;
+            rushToPos_ = value;
           }
           onChanged();
         } else {
-          hDJENAGNIHNBuilder_.mergeFrom(value);
+          rushToPosBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector HDJENAGNIHN = 8;</code>
+       * <code>.Vector rush_to_pos = 9;</code>
        */
-      public Builder clearHDJENAGNIHN() {
-        if (hDJENAGNIHNBuilder_ == null) {
-          hDJENAGNIHN_ = null;
+      public Builder clearRushToPos() {
+        if (rushToPosBuilder_ == null) {
+          rushToPos_ = null;
           onChanged();
         } else {
-          hDJENAGNIHN_ = null;
-          hDJENAGNIHNBuilder_ = null;
+          rushToPos_ = null;
+          rushToPosBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Vector HDJENAGNIHN = 8;</code>
+       * <code>.Vector rush_to_pos = 9;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getHDJENAGNIHNBuilder() {
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRushToPosBuilder() {
         
         onChanged();
-        return getHDJENAGNIHNFieldBuilder().getBuilder();
+        return getRushToPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector HDJENAGNIHN = 8;</code>
+       * <code>.Vector rush_to_pos = 9;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getHDJENAGNIHNOrBuilder() {
-        if (hDJENAGNIHNBuilder_ != null) {
-          return hDJENAGNIHNBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRushToPosOrBuilder() {
+        if (rushToPosBuilder_ != null) {
+          return rushToPosBuilder_.getMessageOrBuilder();
         } else {
-          return hDJENAGNIHN_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : hDJENAGNIHN_;
+          return rushToPos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rushToPos_;
         }
       }
       /**
-       * <code>.Vector HDJENAGNIHN = 8;</code>
+       * <code>.Vector rush_to_pos = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getHDJENAGNIHNFieldBuilder() {
-        if (hDJENAGNIHNBuilder_ == null) {
-          hDJENAGNIHNBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getRushToPosFieldBuilder() {
+        if (rushToPosBuilder_ == null) {
+          rushToPosBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getHDJENAGNIHN(),
+                  getRushToPos(),
                   getParentForChildren(),
                   isClean());
-          hDJENAGNIHN_ = null;
+          rushToPos_ = null;
         }
-        return hDJENAGNIHNBuilder_;
+        return rushToPosBuilder_;
       }
 
       private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 10;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 10;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -1023,7 +931,7 @@ public final class EvtRushMoveInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 10;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -1039,7 +947,7 @@ public final class EvtRushMoveInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 10;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -1053,7 +961,7 @@ public final class EvtRushMoveInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 10;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -1071,7 +979,7 @@ public final class EvtRushMoveInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 10;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -1085,7 +993,7 @@ public final class EvtRushMoveInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 10;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -1093,7 +1001,7 @@ public final class EvtRushMoveInfoOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 10;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -1104,7 +1012,7 @@ public final class EvtRushMoveInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1120,247 +1028,128 @@ public final class EvtRushMoveInfoOuterClass {
         return posBuilder_;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector nJDPMMLPIGK_;
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector velocity_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> nJDPMMLPIGKBuilder_;
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> velocityBuilder_;
       /**
-       * <code>.Vector NJDPMMLPIGK = 3;</code>
-       * @return Whether the nJDPMMLPIGK field is set.
+       * <code>.Vector velocity = 6;</code>
+       * @return Whether the velocity field is set.
        */
-      public boolean hasNJDPMMLPIGK() {
-        return nJDPMMLPIGKBuilder_ != null || nJDPMMLPIGK_ != null;
+      public boolean hasVelocity() {
+        return velocityBuilder_ != null || velocity_ != null;
       }
       /**
-       * <code>.Vector NJDPMMLPIGK = 3;</code>
-       * @return The nJDPMMLPIGK.
+       * <code>.Vector velocity = 6;</code>
+       * @return The velocity.
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getNJDPMMLPIGK() {
-        if (nJDPMMLPIGKBuilder_ == null) {
-          return nJDPMMLPIGK_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : nJDPMMLPIGK_;
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getVelocity() {
+        if (velocityBuilder_ == null) {
+          return velocity_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : velocity_;
         } else {
-          return nJDPMMLPIGKBuilder_.getMessage();
+          return velocityBuilder_.getMessage();
         }
       }
       /**
-       * <code>.Vector NJDPMMLPIGK = 3;</code>
+       * <code>.Vector velocity = 6;</code>
        */
-      public Builder setNJDPMMLPIGK(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (nJDPMMLPIGKBuilder_ == null) {
+      public Builder setVelocity(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (velocityBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          nJDPMMLPIGK_ = value;
+          velocity_ = value;
           onChanged();
         } else {
-          nJDPMMLPIGKBuilder_.setMessage(value);
+          velocityBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector NJDPMMLPIGK = 3;</code>
+       * <code>.Vector velocity = 6;</code>
        */
-      public Builder setNJDPMMLPIGK(
+      public Builder setVelocity(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (nJDPMMLPIGKBuilder_ == null) {
-          nJDPMMLPIGK_ = builderForValue.build();
+        if (velocityBuilder_ == null) {
+          velocity_ = builderForValue.build();
           onChanged();
         } else {
-          nJDPMMLPIGKBuilder_.setMessage(builderForValue.build());
+          velocityBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.Vector NJDPMMLPIGK = 3;</code>
+       * <code>.Vector velocity = 6;</code>
        */
-      public Builder mergeNJDPMMLPIGK(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (nJDPMMLPIGKBuilder_ == null) {
-          if (nJDPMMLPIGK_ != null) {
-            nJDPMMLPIGK_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(nJDPMMLPIGK_).mergeFrom(value).buildPartial();
+      public Builder mergeVelocity(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (velocityBuilder_ == null) {
+          if (velocity_ != null) {
+            velocity_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(velocity_).mergeFrom(value).buildPartial();
           } else {
-            nJDPMMLPIGK_ = value;
+            velocity_ = value;
           }
           onChanged();
         } else {
-          nJDPMMLPIGKBuilder_.mergeFrom(value);
+          velocityBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.Vector NJDPMMLPIGK = 3;</code>
+       * <code>.Vector velocity = 6;</code>
        */
-      public Builder clearNJDPMMLPIGK() {
-        if (nJDPMMLPIGKBuilder_ == null) {
-          nJDPMMLPIGK_ = null;
+      public Builder clearVelocity() {
+        if (velocityBuilder_ == null) {
+          velocity_ = null;
           onChanged();
         } else {
-          nJDPMMLPIGK_ = null;
-          nJDPMMLPIGKBuilder_ = null;
+          velocity_ = null;
+          velocityBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.Vector NJDPMMLPIGK = 3;</code>
+       * <code>.Vector velocity = 6;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getNJDPMMLPIGKBuilder() {
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getVelocityBuilder() {
         
         onChanged();
-        return getNJDPMMLPIGKFieldBuilder().getBuilder();
+        return getVelocityFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector NJDPMMLPIGK = 3;</code>
+       * <code>.Vector velocity = 6;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getNJDPMMLPIGKOrBuilder() {
-        if (nJDPMMLPIGKBuilder_ != null) {
-          return nJDPMMLPIGKBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getVelocityOrBuilder() {
+        if (velocityBuilder_ != null) {
+          return velocityBuilder_.getMessageOrBuilder();
         } else {
-          return nJDPMMLPIGK_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : nJDPMMLPIGK_;
+          return velocity_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : velocity_;
         }
       }
       /**
-       * <code>.Vector NJDPMMLPIGK = 3;</code>
+       * <code>.Vector velocity = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getNJDPMMLPIGKFieldBuilder() {
-        if (nJDPMMLPIGKBuilder_ == null) {
-          nJDPMMLPIGKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getVelocityFieldBuilder() {
+        if (velocityBuilder_ == null) {
+          velocityBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getNJDPMMLPIGK(),
+                  getVelocity(),
                   getParentForChildren(),
                   isClean());
-          nJDPMMLPIGK_ = null;
+          velocity_ = null;
         }
-        return nJDPMMLPIGKBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector cAHAEAECAEK_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> cAHAEAECAEKBuilder_;
-      /**
-       * <code>.Vector CAHAEAECAEK = 2;</code>
-       * @return Whether the cAHAEAECAEK field is set.
-       */
-      public boolean hasCAHAEAECAEK() {
-        return cAHAEAECAEKBuilder_ != null || cAHAEAECAEK_ != null;
-      }
-      /**
-       * <code>.Vector CAHAEAECAEK = 2;</code>
-       * @return The cAHAEAECAEK.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getCAHAEAECAEK() {
-        if (cAHAEAECAEKBuilder_ == null) {
-          return cAHAEAECAEK_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : cAHAEAECAEK_;
-        } else {
-          return cAHAEAECAEKBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector CAHAEAECAEK = 2;</code>
-       */
-      public Builder setCAHAEAECAEK(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (cAHAEAECAEKBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          cAHAEAECAEK_ = value;
-          onChanged();
-        } else {
-          cAHAEAECAEKBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector CAHAEAECAEK = 2;</code>
-       */
-      public Builder setCAHAEAECAEK(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (cAHAEAECAEKBuilder_ == null) {
-          cAHAEAECAEK_ = builderForValue.build();
-          onChanged();
-        } else {
-          cAHAEAECAEKBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector CAHAEAECAEK = 2;</code>
-       */
-      public Builder mergeCAHAEAECAEK(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (cAHAEAECAEKBuilder_ == null) {
-          if (cAHAEAECAEK_ != null) {
-            cAHAEAECAEK_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(cAHAEAECAEK_).mergeFrom(value).buildPartial();
-          } else {
-            cAHAEAECAEK_ = value;
-          }
-          onChanged();
-        } else {
-          cAHAEAECAEKBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector CAHAEAECAEK = 2;</code>
-       */
-      public Builder clearCAHAEAECAEK() {
-        if (cAHAEAECAEKBuilder_ == null) {
-          cAHAEAECAEK_ = null;
-          onChanged();
-        } else {
-          cAHAEAECAEK_ = null;
-          cAHAEAECAEKBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector CAHAEAECAEK = 2;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCAHAEAECAEKBuilder() {
-        
-        onChanged();
-        return getCAHAEAECAEKFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector CAHAEAECAEK = 2;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCAHAEAECAEKOrBuilder() {
-        if (cAHAEAECAEKBuilder_ != null) {
-          return cAHAEAECAEKBuilder_.getMessageOrBuilder();
-        } else {
-          return cAHAEAECAEK_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : cAHAEAECAEK_;
-        }
-      }
-      /**
-       * <code>.Vector CAHAEAECAEK = 2;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getCAHAEAECAEKFieldBuilder() {
-        if (cAHAEAECAEKBuilder_ == null) {
-          cAHAEAECAEKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getCAHAEAECAEK(),
-                  getParentForChildren(),
-                  isClean());
-          cAHAEAECAEK_ = null;
-        }
-        return cAHAEAECAEKBuilder_;
+        return velocityBuilder_;
       }
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 6;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -1368,7 +1157,7 @@ public final class EvtRushMoveInfoOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 6;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -1379,7 +1168,7 @@ public final class EvtRushMoveInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 6;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -1389,71 +1178,40 @@ public final class EvtRushMoveInfoOuterClass {
         return this;
       }
 
-      private int hIDHMHOOION_ ;
+      private int faceAngleCompact_ ;
       /**
-       * <code>int32 HIDHMHOOION = 7;</code>
-       * @return The hIDHMHOOION.
+       * <code>int32 face_angle_compact = 15;</code>
+       * @return The faceAngleCompact.
        */
       @java.lang.Override
-      public int getHIDHMHOOION() {
-        return hIDHMHOOION_;
+      public int getFaceAngleCompact() {
+        return faceAngleCompact_;
       }
       /**
-       * <code>int32 HIDHMHOOION = 7;</code>
-       * @param value The hIDHMHOOION to set.
+       * <code>int32 face_angle_compact = 15;</code>
+       * @param value The faceAngleCompact to set.
        * @return This builder for chaining.
        */
-      public Builder setHIDHMHOOION(int value) {
+      public Builder setFaceAngleCompact(int value) {
         
-        hIDHMHOOION_ = value;
+        faceAngleCompact_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 HIDHMHOOION = 7;</code>
+       * <code>int32 face_angle_compact = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHIDHMHOOION() {
+      public Builder clearFaceAngleCompact() {
         
-        hIDHMHOOION_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int kGHFGNKKLID_ ;
-      /**
-       * <code>int32 KGHFGNKKLID = 1;</code>
-       * @return The kGHFGNKKLID.
-       */
-      @java.lang.Override
-      public int getKGHFGNKKLID() {
-        return kGHFGNKKLID_;
-      }
-      /**
-       * <code>int32 KGHFGNKKLID = 1;</code>
-       * @param value The kGHFGNKKLID to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKGHFGNKKLID(int value) {
-        
-        kGHFGNKKLID_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 KGHFGNKKLID = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKGHFGNKKLID() {
-        
-        kGHFGNKKLID_ = 0;
+        faceAngleCompact_ = 0;
         onChanged();
         return this;
       }
 
       private float timeRange_ ;
       /**
-       * <code>float timeRange = 13;</code>
+       * <code>float timeRange = 8;</code>
        * @return The timeRange.
        */
       @java.lang.Override
@@ -1461,7 +1219,7 @@ public final class EvtRushMoveInfoOuterClass {
         return timeRange_;
       }
       /**
-       * <code>float timeRange = 13;</code>
+       * <code>float timeRange = 8;</code>
        * @param value The timeRange to set.
        * @return This builder for chaining.
        */
@@ -1472,12 +1230,43 @@ public final class EvtRushMoveInfoOuterClass {
         return this;
       }
       /**
-       * <code>float timeRange = 13;</code>
+       * <code>float timeRange = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearTimeRange() {
         
         timeRange_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int stateNameHash_ ;
+      /**
+       * <code>int32 state_name_hash = 11;</code>
+       * @return The stateNameHash.
+       */
+      @java.lang.Override
+      public int getStateNameHash() {
+        return stateNameHash_;
+      }
+      /**
+       * <code>int32 state_name_hash = 11;</code>
+       * @param value The stateNameHash to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStateNameHash(int value) {
+        
+        stateNameHash_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 state_name_hash = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStateNameHash() {
+        
+        stateNameHash_ = 0;
         onChanged();
         return this;
       }
@@ -1548,14 +1337,13 @@ public final class EvtRushMoveInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025EvtRushMoveInfo.proto\032\014Vector.proto\"\321\001" +
-      "\n\017EvtRushMoveInfo\022\034\n\013HDJENAGNIHN\030\010 \001(\0132\007" +
-      ".Vector\022\024\n\003pos\030\014 \001(\0132\007.Vector\022\034\n\013NJDPMML" +
-      "PIGK\030\003 \001(\0132\007.Vector\022\034\n\013CAHAEAECAEK\030\002 \001(\013" +
-      "2\007.Vector\022\021\n\tentity_id\030\006 \001(\r\022\023\n\013HIDHMHOO" +
-      "ION\030\007 \001(\005\022\023\n\013KGHFGNKKLID\030\001 \001(\005\022\021\n\ttimeRa" +
-      "nge\030\r \001(\002B\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\025EvtRushMoveInfo.proto\032\014Vector.proto\"\273\001" +
+      "\n\017EvtRushMoveInfo\022\034\n\013rush_to_pos\030\t \001(\0132\007" +
+      ".Vector\022\024\n\003pos\030\n \001(\0132\007.Vector\022\031\n\010velocit" +
+      "y\030\006 \001(\0132\007.Vector\022\021\n\tentity_id\030\004 \001(\r\022\032\n\022f" +
+      "ace_angle_compact\030\017 \001(\005\022\021\n\ttimeRange\030\010 \001" +
+      "(\002\022\027\n\017state_name_hash\030\013 \001(\005B\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1567,7 +1355,7 @@ public final class EvtRushMoveInfoOuterClass {
     internal_static_EvtRushMoveInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtRushMoveInfo_descriptor,
-        new java.lang.String[] { "HDJENAGNIHN", "Pos", "NJDPMMLPIGK", "CAHAEAECAEK", "EntityId", "HIDHMHOOION", "KGHFGNKKLID", "TimeRange", });
+        new java.lang.String[] { "RushToPos", "Pos", "Velocity", "EntityId", "FaceAngleCompact", "TimeRange", "StateNameHash", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

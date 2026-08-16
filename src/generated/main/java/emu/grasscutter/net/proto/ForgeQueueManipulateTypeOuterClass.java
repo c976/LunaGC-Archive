@@ -15,11 +15,6 @@ public final class ForgeQueueManipulateTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * 4.7.0
-   * Obf: BGIMFJLOLAF
-   * </pre>
-   *
    * Protobuf enum {@code ForgeQueueManipulateType}
    */
   public enum ForgeQueueManipulateType

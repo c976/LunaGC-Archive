@@ -20,7 +20,6 @@ public class PacketOpcodesUtils {
                     // Satiation sends these every tick
                     PacketOpcodes.AbilityInvocationsNotify,
                     PacketOpcodes.CombatInvocationsNotify,
-                    PacketOpcodes.annoyingpacket,
                     PacketOpcodes.WorldOwnerBlossomScheduleInfoNotify,
                     PacketOpcodes.PlayerTimeNotify,
                     PacketOpcodes.PlayerGameTimeNotify,

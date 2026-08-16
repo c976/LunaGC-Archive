@@ -25,6 +25,10 @@ public final class QuestDelNotifyOuterClass {
     int getQuestId();
   }
   /**
+   * <pre>
+   * CmdId: 5774
+   * </pre>
+   *
    * Protobuf type {@code QuestDelNotify}
    */
   public static final class QuestDelNotify extends
@@ -273,6 +277,10 @@ public final class QuestDelNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 5774
+     * </pre>
+     *
      * Protobuf type {@code QuestDelNotify}
      */
     public static final class Builder extends

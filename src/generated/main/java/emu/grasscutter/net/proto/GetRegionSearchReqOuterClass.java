@@ -19,6 +19,10 @@ public final class GetRegionSearchReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * CmdId: 25833
+   * </pre>
+   *
    * Protobuf type {@code GetRegionSearchReq}
    */
   public static final class GetRegionSearchReq extends
@@ -240,6 +244,10 @@ public final class GetRegionSearchReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 25833
+     * </pre>
+     *
      * Protobuf type {@code GetRegionSearchReq}
      */
     public static final class Builder extends

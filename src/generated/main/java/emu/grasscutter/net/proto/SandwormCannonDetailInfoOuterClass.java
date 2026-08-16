@@ -19,34 +19,50 @@ public final class SandwormCannonDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+     * <pre>
+     * makeshift
+     * </pre>
+     *
+     * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA> 
-        getHAKEHEFJDBDList();
+    java.util.List<emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo> 
+        getSandwormCannonListList();
     /**
-     * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+     * <pre>
+     * makeshift
+     * </pre>
+     *
+     * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
      */
-    emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA getHAKEHEFJDBD(int index);
+    emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo getSandwormCannonList(int index);
     /**
-     * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+     * <pre>
+     * makeshift
+     * </pre>
+     *
+     * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
      */
-    int getHAKEHEFJDBDCount();
+    int getSandwormCannonListCount();
     /**
-     * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+     * <pre>
+     * makeshift
+     * </pre>
+     *
+     * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCAOrBuilder> 
-        getHAKEHEFJDBDOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfoOrBuilder> 
+        getSandwormCannonListOrBuilderList();
     /**
-     * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+     * <pre>
+     * makeshift
+     * </pre>
+     *
+     * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
      */
-    emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCAOrBuilder getHAKEHEFJDBDOrBuilder(
+    emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfoOrBuilder getSandwormCannonListOrBuilder(
         int index);
   }
   /**
-   * <pre>
-   * Obf: OPLKPKFMFNJ
-   * </pre>
-   *
    * Protobuf type {@code SandwormCannonDetailInfo}
    */
   public static final class SandwormCannonDetailInfo extends
@@ -59,7 +75,7 @@ public final class SandwormCannonDetailInfoOuterClass {
       super(builder);
     }
     private SandwormCannonDetailInfo() {
-      hAKEHEFJDBD_ = java.util.Collections.emptyList();
+      sandwormCannonList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -93,13 +109,13 @@ public final class SandwormCannonDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 122: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                hAKEHEFJDBD_ = new java.util.ArrayList<emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA>();
+                sandwormCannonList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              hAKEHEFJDBD_.add(
-                  input.readMessage(emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.parser(), extensionRegistry));
+              sandwormCannonList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -118,7 +134,7 @@ public final class SandwormCannonDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          hAKEHEFJDBD_ = java.util.Collections.unmodifiableList(hAKEHEFJDBD_);
+          sandwormCannonList_ = java.util.Collections.unmodifiableList(sandwormCannonList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -137,44 +153,64 @@ public final class SandwormCannonDetailInfoOuterClass {
               emu.grasscutter.net.proto.SandwormCannonDetailInfoOuterClass.SandwormCannonDetailInfo.class, emu.grasscutter.net.proto.SandwormCannonDetailInfoOuterClass.SandwormCannonDetailInfo.Builder.class);
     }
 
-    public static final int HAKEHEFJDBD_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA> hAKEHEFJDBD_;
+    public static final int SANDWORM_CANNON_LIST_FIELD_NUMBER = 10;
+    private java.util.List<emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo> sandwormCannonList_;
     /**
-     * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+     * <pre>
+     * makeshift
+     * </pre>
+     *
+     * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA> getHAKEHEFJDBDList() {
-      return hAKEHEFJDBD_;
+    public java.util.List<emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo> getSandwormCannonListList() {
+      return sandwormCannonList_;
     }
     /**
-     * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+     * <pre>
+     * makeshift
+     * </pre>
+     *
+     * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCAOrBuilder> 
-        getHAKEHEFJDBDOrBuilderList() {
-      return hAKEHEFJDBD_;
+    public java.util.List<? extends emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfoOrBuilder> 
+        getSandwormCannonListOrBuilderList() {
+      return sandwormCannonList_;
     }
     /**
-     * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+     * <pre>
+     * makeshift
+     * </pre>
+     *
+     * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
      */
     @java.lang.Override
-    public int getHAKEHEFJDBDCount() {
-      return hAKEHEFJDBD_.size();
+    public int getSandwormCannonListCount() {
+      return sandwormCannonList_.size();
     }
     /**
-     * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+     * <pre>
+     * makeshift
+     * </pre>
+     *
+     * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA getHAKEHEFJDBD(int index) {
-      return hAKEHEFJDBD_.get(index);
+    public emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo getSandwormCannonList(int index) {
+      return sandwormCannonList_.get(index);
     }
     /**
-     * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+     * <pre>
+     * makeshift
+     * </pre>
+     *
+     * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCAOrBuilder getHAKEHEFJDBDOrBuilder(
+    public emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfoOrBuilder getSandwormCannonListOrBuilder(
         int index) {
-      return hAKEHEFJDBD_.get(index);
+      return sandwormCannonList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,8 +227,8 @@ public final class SandwormCannonDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < hAKEHEFJDBD_.size(); i++) {
-        output.writeMessage(15, hAKEHEFJDBD_.get(i));
+      for (int i = 0; i < sandwormCannonList_.size(); i++) {
+        output.writeMessage(10, sandwormCannonList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -203,9 +239,9 @@ public final class SandwormCannonDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < hAKEHEFJDBD_.size(); i++) {
+      for (int i = 0; i < sandwormCannonList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, hAKEHEFJDBD_.get(i));
+          .computeMessageSize(10, sandwormCannonList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -222,8 +258,8 @@ public final class SandwormCannonDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.SandwormCannonDetailInfoOuterClass.SandwormCannonDetailInfo other = (emu.grasscutter.net.proto.SandwormCannonDetailInfoOuterClass.SandwormCannonDetailInfo) obj;
 
-      if (!getHAKEHEFJDBDList()
-          .equals(other.getHAKEHEFJDBDList())) return false;
+      if (!getSandwormCannonListList()
+          .equals(other.getSandwormCannonListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -235,9 +271,9 @@ public final class SandwormCannonDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getHAKEHEFJDBDCount() > 0) {
-        hash = (37 * hash) + HAKEHEFJDBD_FIELD_NUMBER;
-        hash = (53 * hash) + getHAKEHEFJDBDList().hashCode();
+      if (getSandwormCannonListCount() > 0) {
+        hash = (37 * hash) + SANDWORM_CANNON_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getSandwormCannonListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -335,10 +371,6 @@ public final class SandwormCannonDetailInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OPLKPKFMFNJ
-     * </pre>
-     *
      * Protobuf type {@code SandwormCannonDetailInfo}
      */
     public static final class Builder extends
@@ -371,17 +403,17 @@ public final class SandwormCannonDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getHAKEHEFJDBDFieldBuilder();
+          getSandwormCannonListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (hAKEHEFJDBDBuilder_ == null) {
-          hAKEHEFJDBD_ = java.util.Collections.emptyList();
+        if (sandwormCannonListBuilder_ == null) {
+          sandwormCannonList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          hAKEHEFJDBDBuilder_.clear();
+          sandwormCannonListBuilder_.clear();
         }
         return this;
       }
@@ -410,14 +442,14 @@ public final class SandwormCannonDetailInfoOuterClass {
       public emu.grasscutter.net.proto.SandwormCannonDetailInfoOuterClass.SandwormCannonDetailInfo buildPartial() {
         emu.grasscutter.net.proto.SandwormCannonDetailInfoOuterClass.SandwormCannonDetailInfo result = new emu.grasscutter.net.proto.SandwormCannonDetailInfoOuterClass.SandwormCannonDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        if (hAKEHEFJDBDBuilder_ == null) {
+        if (sandwormCannonListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            hAKEHEFJDBD_ = java.util.Collections.unmodifiableList(hAKEHEFJDBD_);
+            sandwormCannonList_ = java.util.Collections.unmodifiableList(sandwormCannonList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.hAKEHEFJDBD_ = hAKEHEFJDBD_;
+          result.sandwormCannonList_ = sandwormCannonList_;
         } else {
-          result.hAKEHEFJDBD_ = hAKEHEFJDBDBuilder_.build();
+          result.sandwormCannonList_ = sandwormCannonListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -467,29 +499,29 @@ public final class SandwormCannonDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SandwormCannonDetailInfoOuterClass.SandwormCannonDetailInfo other) {
         if (other == emu.grasscutter.net.proto.SandwormCannonDetailInfoOuterClass.SandwormCannonDetailInfo.getDefaultInstance()) return this;
-        if (hAKEHEFJDBDBuilder_ == null) {
-          if (!other.hAKEHEFJDBD_.isEmpty()) {
-            if (hAKEHEFJDBD_.isEmpty()) {
-              hAKEHEFJDBD_ = other.hAKEHEFJDBD_;
+        if (sandwormCannonListBuilder_ == null) {
+          if (!other.sandwormCannonList_.isEmpty()) {
+            if (sandwormCannonList_.isEmpty()) {
+              sandwormCannonList_ = other.sandwormCannonList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureHAKEHEFJDBDIsMutable();
-              hAKEHEFJDBD_.addAll(other.hAKEHEFJDBD_);
+              ensureSandwormCannonListIsMutable();
+              sandwormCannonList_.addAll(other.sandwormCannonList_);
             }
             onChanged();
           }
         } else {
-          if (!other.hAKEHEFJDBD_.isEmpty()) {
-            if (hAKEHEFJDBDBuilder_.isEmpty()) {
-              hAKEHEFJDBDBuilder_.dispose();
-              hAKEHEFJDBDBuilder_ = null;
-              hAKEHEFJDBD_ = other.hAKEHEFJDBD_;
+          if (!other.sandwormCannonList_.isEmpty()) {
+            if (sandwormCannonListBuilder_.isEmpty()) {
+              sandwormCannonListBuilder_.dispose();
+              sandwormCannonListBuilder_ = null;
+              sandwormCannonList_ = other.sandwormCannonList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              hAKEHEFJDBDBuilder_ = 
+              sandwormCannonListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getHAKEHEFJDBDFieldBuilder() : null;
+                   getSandwormCannonListFieldBuilder() : null;
             } else {
-              hAKEHEFJDBDBuilder_.addAllMessages(other.hAKEHEFJDBD_);
+              sandwormCannonListBuilder_.addAllMessages(other.sandwormCannonList_);
             }
           }
         }
@@ -523,244 +555,316 @@ public final class SandwormCannonDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA> hAKEHEFJDBD_ =
+      private java.util.List<emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo> sandwormCannonList_ =
         java.util.Collections.emptyList();
-      private void ensureHAKEHEFJDBDIsMutable() {
+      private void ensureSandwormCannonListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          hAKEHEFJDBD_ = new java.util.ArrayList<emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA>(hAKEHEFJDBD_);
+          sandwormCannonList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo>(sandwormCannonList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA, emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.Builder, emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCAOrBuilder> hAKEHEFJDBDBuilder_;
+          emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo, emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.Builder, emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfoOrBuilder> sandwormCannonListBuilder_;
 
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA> getHAKEHEFJDBDList() {
-        if (hAKEHEFJDBDBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(hAKEHEFJDBD_);
+      public java.util.List<emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo> getSandwormCannonListList() {
+        if (sandwormCannonListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(sandwormCannonList_);
         } else {
-          return hAKEHEFJDBDBuilder_.getMessageList();
+          return sandwormCannonListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public int getHAKEHEFJDBDCount() {
-        if (hAKEHEFJDBDBuilder_ == null) {
-          return hAKEHEFJDBD_.size();
+      public int getSandwormCannonListCount() {
+        if (sandwormCannonListBuilder_ == null) {
+          return sandwormCannonList_.size();
         } else {
-          return hAKEHEFJDBDBuilder_.getCount();
+          return sandwormCannonListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA getHAKEHEFJDBD(int index) {
-        if (hAKEHEFJDBDBuilder_ == null) {
-          return hAKEHEFJDBD_.get(index);
+      public emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo getSandwormCannonList(int index) {
+        if (sandwormCannonListBuilder_ == null) {
+          return sandwormCannonList_.get(index);
         } else {
-          return hAKEHEFJDBDBuilder_.getMessage(index);
+          return sandwormCannonListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public Builder setHAKEHEFJDBD(
-          int index, emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA value) {
-        if (hAKEHEFJDBDBuilder_ == null) {
+      public Builder setSandwormCannonList(
+          int index, emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo value) {
+        if (sandwormCannonListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHAKEHEFJDBDIsMutable();
-          hAKEHEFJDBD_.set(index, value);
+          ensureSandwormCannonListIsMutable();
+          sandwormCannonList_.set(index, value);
           onChanged();
         } else {
-          hAKEHEFJDBDBuilder_.setMessage(index, value);
+          sandwormCannonListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public Builder setHAKEHEFJDBD(
-          int index, emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.Builder builderForValue) {
-        if (hAKEHEFJDBDBuilder_ == null) {
-          ensureHAKEHEFJDBDIsMutable();
-          hAKEHEFJDBD_.set(index, builderForValue.build());
+      public Builder setSandwormCannonList(
+          int index, emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.Builder builderForValue) {
+        if (sandwormCannonListBuilder_ == null) {
+          ensureSandwormCannonListIsMutable();
+          sandwormCannonList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          hAKEHEFJDBDBuilder_.setMessage(index, builderForValue.build());
+          sandwormCannonListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public Builder addHAKEHEFJDBD(emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA value) {
-        if (hAKEHEFJDBDBuilder_ == null) {
+      public Builder addSandwormCannonList(emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo value) {
+        if (sandwormCannonListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHAKEHEFJDBDIsMutable();
-          hAKEHEFJDBD_.add(value);
+          ensureSandwormCannonListIsMutable();
+          sandwormCannonList_.add(value);
           onChanged();
         } else {
-          hAKEHEFJDBDBuilder_.addMessage(value);
+          sandwormCannonListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public Builder addHAKEHEFJDBD(
-          int index, emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA value) {
-        if (hAKEHEFJDBDBuilder_ == null) {
+      public Builder addSandwormCannonList(
+          int index, emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo value) {
+        if (sandwormCannonListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureHAKEHEFJDBDIsMutable();
-          hAKEHEFJDBD_.add(index, value);
+          ensureSandwormCannonListIsMutable();
+          sandwormCannonList_.add(index, value);
           onChanged();
         } else {
-          hAKEHEFJDBDBuilder_.addMessage(index, value);
+          sandwormCannonListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public Builder addHAKEHEFJDBD(
-          emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.Builder builderForValue) {
-        if (hAKEHEFJDBDBuilder_ == null) {
-          ensureHAKEHEFJDBDIsMutable();
-          hAKEHEFJDBD_.add(builderForValue.build());
+      public Builder addSandwormCannonList(
+          emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.Builder builderForValue) {
+        if (sandwormCannonListBuilder_ == null) {
+          ensureSandwormCannonListIsMutable();
+          sandwormCannonList_.add(builderForValue.build());
           onChanged();
         } else {
-          hAKEHEFJDBDBuilder_.addMessage(builderForValue.build());
+          sandwormCannonListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public Builder addHAKEHEFJDBD(
-          int index, emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.Builder builderForValue) {
-        if (hAKEHEFJDBDBuilder_ == null) {
-          ensureHAKEHEFJDBDIsMutable();
-          hAKEHEFJDBD_.add(index, builderForValue.build());
+      public Builder addSandwormCannonList(
+          int index, emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.Builder builderForValue) {
+        if (sandwormCannonListBuilder_ == null) {
+          ensureSandwormCannonListIsMutable();
+          sandwormCannonList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          hAKEHEFJDBDBuilder_.addMessage(index, builderForValue.build());
+          sandwormCannonListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public Builder addAllHAKEHEFJDBD(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA> values) {
-        if (hAKEHEFJDBDBuilder_ == null) {
-          ensureHAKEHEFJDBDIsMutable();
+      public Builder addAllSandwormCannonList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo> values) {
+        if (sandwormCannonListBuilder_ == null) {
+          ensureSandwormCannonListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, hAKEHEFJDBD_);
+              values, sandwormCannonList_);
           onChanged();
         } else {
-          hAKEHEFJDBDBuilder_.addAllMessages(values);
+          sandwormCannonListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public Builder clearHAKEHEFJDBD() {
-        if (hAKEHEFJDBDBuilder_ == null) {
-          hAKEHEFJDBD_ = java.util.Collections.emptyList();
+      public Builder clearSandwormCannonList() {
+        if (sandwormCannonListBuilder_ == null) {
+          sandwormCannonList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          hAKEHEFJDBDBuilder_.clear();
+          sandwormCannonListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public Builder removeHAKEHEFJDBD(int index) {
-        if (hAKEHEFJDBDBuilder_ == null) {
-          ensureHAKEHEFJDBDIsMutable();
-          hAKEHEFJDBD_.remove(index);
+      public Builder removeSandwormCannonList(int index) {
+        if (sandwormCannonListBuilder_ == null) {
+          ensureSandwormCannonListIsMutable();
+          sandwormCannonList_.remove(index);
           onChanged();
         } else {
-          hAKEHEFJDBDBuilder_.remove(index);
+          sandwormCannonListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.Builder getHAKEHEFJDBDBuilder(
+      public emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.Builder getSandwormCannonListBuilder(
           int index) {
-        return getHAKEHEFJDBDFieldBuilder().getBuilder(index);
+        return getSandwormCannonListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCAOrBuilder getHAKEHEFJDBDOrBuilder(
+      public emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfoOrBuilder getSandwormCannonListOrBuilder(
           int index) {
-        if (hAKEHEFJDBDBuilder_ == null) {
-          return hAKEHEFJDBD_.get(index);  } else {
-          return hAKEHEFJDBDBuilder_.getMessageOrBuilder(index);
+        if (sandwormCannonListBuilder_ == null) {
+          return sandwormCannonList_.get(index);  } else {
+          return sandwormCannonListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCAOrBuilder> 
-           getHAKEHEFJDBDOrBuilderList() {
-        if (hAKEHEFJDBDBuilder_ != null) {
-          return hAKEHEFJDBDBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfoOrBuilder> 
+           getSandwormCannonListOrBuilderList() {
+        if (sandwormCannonListBuilder_ != null) {
+          return sandwormCannonListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(hAKEHEFJDBD_);
+          return java.util.Collections.unmodifiableList(sandwormCannonList_);
         }
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.Builder addHAKEHEFJDBDBuilder() {
-        return getHAKEHEFJDBDFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.getDefaultInstance());
+      public emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.Builder addSandwormCannonListBuilder() {
+        return getSandwormCannonListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.Builder addHAKEHEFJDBDBuilder(
+      public emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.Builder addSandwormCannonListBuilder(
           int index) {
-        return getHAKEHEFJDBDFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.getDefaultInstance());
+        return getSandwormCannonListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .JGDMDPNJLCA HAKEHEFJDBD = 15;</code>
+       * <pre>
+       * makeshift
+       * </pre>
+       *
+       * <code>repeated .SandwormCannonInfo sandworm_cannon_list = 10;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.Builder> 
-           getHAKEHEFJDBDBuilderList() {
-        return getHAKEHEFJDBDFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.Builder> 
+           getSandwormCannonListBuilderList() {
+        return getSandwormCannonListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA, emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.Builder, emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCAOrBuilder> 
-          getHAKEHEFJDBDFieldBuilder() {
-        if (hAKEHEFJDBDBuilder_ == null) {
-          hAKEHEFJDBDBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA, emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCA.Builder, emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.JGDMDPNJLCAOrBuilder>(
-                  hAKEHEFJDBD_,
+          emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo, emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.Builder, emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfoOrBuilder> 
+          getSandwormCannonListFieldBuilder() {
+        if (sandwormCannonListBuilder_ == null) {
+          sandwormCannonListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo, emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfo.Builder, emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.SandwormCannonInfoOrBuilder>(
+                  sandwormCannonList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          hAKEHEFJDBD_ = null;
+          sandwormCannonList_ = null;
         }
-        return hAKEHEFJDBDBuilder_;
+        return sandwormCannonListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -829,23 +933,24 @@ public final class SandwormCannonDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036SandwormCannonDetailInfo.proto\032\021JGDMDP" +
-      "NJLCA.proto\"=\n\030SandwormCannonDetailInfo\022" +
-      "!\n\013HAKEHEFJDBD\030\017 \003(\0132\014.JGDMDPNJLCAB\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "\n\036SandwormCannonDetailInfo.proto\032\030Sandwo" +
+      "rmCannonInfo.proto\"M\n\030SandwormCannonDeta" +
+      "ilInfo\0221\n\024sandworm_cannon_list\030\n \003(\0132\023.S" +
+      "andwormCannonInfoB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.getDescriptor(),
         });
     internal_static_SandwormCannonDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SandwormCannonDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SandwormCannonDetailInfo_descriptor,
-        new java.lang.String[] { "HAKEHEFJDBD", });
-    emu.grasscutter.net.proto.JGDMDPNJLCAOuterClass.getDescriptor();
+        new java.lang.String[] { "SandwormCannonList", });
+    emu.grasscutter.net.proto.SandwormCannonInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

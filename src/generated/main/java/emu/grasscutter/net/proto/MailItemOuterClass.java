@@ -19,21 +19,6 @@ public final class MailItemOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.EquipParam equip_param = 1;</code>
-     * @return Whether the equipParam field is set.
-     */
-    boolean hasEquipParam();
-    /**
-     * <code>.EquipParam equip_param = 1;</code>
-     * @return The equipParam.
-     */
-    emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam getEquipParam();
-    /**
-     * <code>.EquipParam equip_param = 1;</code>
-     */
-    emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder getEquipParamOrBuilder();
-
-    /**
      * <code>.MaterialDeleteInfo delete_info = 2;</code>
      * @return Whether the deleteInfo field is set.
      */
@@ -47,6 +32,21 @@ public final class MailItemOuterClass {
      * <code>.MaterialDeleteInfo delete_info = 2;</code>
      */
     emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfoOrBuilder getDeleteInfoOrBuilder();
+
+    /**
+     * <code>.EquipParam equip_param = 1;</code>
+     * @return Whether the equipParam field is set.
+     */
+    boolean hasEquipParam();
+    /**
+     * <code>.EquipParam equip_param = 1;</code>
+     * @return The equipParam.
+     */
+    emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam getEquipParam();
+    /**
+     * <code>.EquipParam equip_param = 1;</code>
+     */
+    emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder getEquipParamOrBuilder();
   }
   /**
    * Protobuf type {@code MailItem}
@@ -151,32 +151,6 @@ public final class MailItemOuterClass {
               emu.grasscutter.net.proto.MailItemOuterClass.MailItem.class, emu.grasscutter.net.proto.MailItemOuterClass.MailItem.Builder.class);
     }
 
-    public static final int EQUIP_PARAM_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam equipParam_;
-    /**
-     * <code>.EquipParam equip_param = 1;</code>
-     * @return Whether the equipParam field is set.
-     */
-    @java.lang.Override
-    public boolean hasEquipParam() {
-      return equipParam_ != null;
-    }
-    /**
-     * <code>.EquipParam equip_param = 1;</code>
-     * @return The equipParam.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam getEquipParam() {
-      return equipParam_ == null ? emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.getDefaultInstance() : equipParam_;
-    }
-    /**
-     * <code>.EquipParam equip_param = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder getEquipParamOrBuilder() {
-      return getEquipParam();
-    }
-
     public static final int DELETE_INFO_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo deleteInfo_;
     /**
@@ -201,6 +175,32 @@ public final class MailItemOuterClass {
     @java.lang.Override
     public emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfoOrBuilder getDeleteInfoOrBuilder() {
       return getDeleteInfo();
+    }
+
+    public static final int EQUIP_PARAM_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam equipParam_;
+    /**
+     * <code>.EquipParam equip_param = 1;</code>
+     * @return Whether the equipParam field is set.
+     */
+    @java.lang.Override
+    public boolean hasEquipParam() {
+      return equipParam_ != null;
+    }
+    /**
+     * <code>.EquipParam equip_param = 1;</code>
+     * @return The equipParam.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam getEquipParam() {
+      return equipParam_ == null ? emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.getDefaultInstance() : equipParam_;
+    }
+    /**
+     * <code>.EquipParam equip_param = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder getEquipParamOrBuilder() {
+      return getEquipParam();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -255,15 +255,15 @@ public final class MailItemOuterClass {
       }
       emu.grasscutter.net.proto.MailItemOuterClass.MailItem other = (emu.grasscutter.net.proto.MailItemOuterClass.MailItem) obj;
 
-      if (hasEquipParam() != other.hasEquipParam()) return false;
-      if (hasEquipParam()) {
-        if (!getEquipParam()
-            .equals(other.getEquipParam())) return false;
-      }
       if (hasDeleteInfo() != other.hasDeleteInfo()) return false;
       if (hasDeleteInfo()) {
         if (!getDeleteInfo()
             .equals(other.getDeleteInfo())) return false;
+      }
+      if (hasEquipParam() != other.hasEquipParam()) return false;
+      if (hasEquipParam()) {
+        if (!getEquipParam()
+            .equals(other.getEquipParam())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -276,13 +276,13 @@ public final class MailItemOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasEquipParam()) {
-        hash = (37 * hash) + EQUIP_PARAM_FIELD_NUMBER;
-        hash = (53 * hash) + getEquipParam().hashCode();
-      }
       if (hasDeleteInfo()) {
         hash = (37 * hash) + DELETE_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getDeleteInfo().hashCode();
+      }
+      if (hasEquipParam()) {
+        hash = (37 * hash) + EQUIP_PARAM_FIELD_NUMBER;
+        hash = (53 * hash) + getEquipParam().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -417,17 +417,17 @@ public final class MailItemOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (equipParamBuilder_ == null) {
-          equipParam_ = null;
-        } else {
-          equipParam_ = null;
-          equipParamBuilder_ = null;
-        }
         if (deleteInfoBuilder_ == null) {
           deleteInfo_ = null;
         } else {
           deleteInfo_ = null;
           deleteInfoBuilder_ = null;
+        }
+        if (equipParamBuilder_ == null) {
+          equipParam_ = null;
+        } else {
+          equipParam_ = null;
+          equipParamBuilder_ = null;
         }
         return this;
       }
@@ -455,15 +455,15 @@ public final class MailItemOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MailItemOuterClass.MailItem buildPartial() {
         emu.grasscutter.net.proto.MailItemOuterClass.MailItem result = new emu.grasscutter.net.proto.MailItemOuterClass.MailItem(this);
-        if (equipParamBuilder_ == null) {
-          result.equipParam_ = equipParam_;
-        } else {
-          result.equipParam_ = equipParamBuilder_.build();
-        }
         if (deleteInfoBuilder_ == null) {
           result.deleteInfo_ = deleteInfo_;
         } else {
           result.deleteInfo_ = deleteInfoBuilder_.build();
+        }
+        if (equipParamBuilder_ == null) {
+          result.equipParam_ = equipParam_;
+        } else {
+          result.equipParam_ = equipParamBuilder_.build();
         }
         onBuilt();
         return result;
@@ -513,11 +513,11 @@ public final class MailItemOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MailItemOuterClass.MailItem other) {
         if (other == emu.grasscutter.net.proto.MailItemOuterClass.MailItem.getDefaultInstance()) return this;
-        if (other.hasEquipParam()) {
-          mergeEquipParam(other.getEquipParam());
-        }
         if (other.hasDeleteInfo()) {
           mergeDeleteInfo(other.getDeleteInfo());
+        }
+        if (other.hasEquipParam()) {
+          mergeEquipParam(other.getEquipParam());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,125 +546,6 @@ public final class MailItemOuterClass {
           }
         }
         return this;
-      }
-
-      private emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam equipParam_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder> equipParamBuilder_;
-      /**
-       * <code>.EquipParam equip_param = 1;</code>
-       * @return Whether the equipParam field is set.
-       */
-      public boolean hasEquipParam() {
-        return equipParamBuilder_ != null || equipParam_ != null;
-      }
-      /**
-       * <code>.EquipParam equip_param = 1;</code>
-       * @return The equipParam.
-       */
-      public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam getEquipParam() {
-        if (equipParamBuilder_ == null) {
-          return equipParam_ == null ? emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.getDefaultInstance() : equipParam_;
-        } else {
-          return equipParamBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.EquipParam equip_param = 1;</code>
-       */
-      public Builder setEquipParam(emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam value) {
-        if (equipParamBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          equipParam_ = value;
-          onChanged();
-        } else {
-          equipParamBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EquipParam equip_param = 1;</code>
-       */
-      public Builder setEquipParam(
-          emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder builderForValue) {
-        if (equipParamBuilder_ == null) {
-          equipParam_ = builderForValue.build();
-          onChanged();
-        } else {
-          equipParamBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EquipParam equip_param = 1;</code>
-       */
-      public Builder mergeEquipParam(emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam value) {
-        if (equipParamBuilder_ == null) {
-          if (equipParam_ != null) {
-            equipParam_ =
-              emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.newBuilder(equipParam_).mergeFrom(value).buildPartial();
-          } else {
-            equipParam_ = value;
-          }
-          onChanged();
-        } else {
-          equipParamBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EquipParam equip_param = 1;</code>
-       */
-      public Builder clearEquipParam() {
-        if (equipParamBuilder_ == null) {
-          equipParam_ = null;
-          onChanged();
-        } else {
-          equipParam_ = null;
-          equipParamBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EquipParam equip_param = 1;</code>
-       */
-      public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder getEquipParamBuilder() {
-        
-        onChanged();
-        return getEquipParamFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.EquipParam equip_param = 1;</code>
-       */
-      public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder getEquipParamOrBuilder() {
-        if (equipParamBuilder_ != null) {
-          return equipParamBuilder_.getMessageOrBuilder();
-        } else {
-          return equipParam_ == null ?
-              emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.getDefaultInstance() : equipParam_;
-        }
-      }
-      /**
-       * <code>.EquipParam equip_param = 1;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder> 
-          getEquipParamFieldBuilder() {
-        if (equipParamBuilder_ == null) {
-          equipParamBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder>(
-                  getEquipParam(),
-                  getParentForChildren(),
-                  isClean());
-          equipParam_ = null;
-        }
-        return equipParamBuilder_;
       }
 
       private emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo deleteInfo_;
@@ -785,6 +666,125 @@ public final class MailItemOuterClass {
         }
         return deleteInfoBuilder_;
       }
+
+      private emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam equipParam_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder> equipParamBuilder_;
+      /**
+       * <code>.EquipParam equip_param = 1;</code>
+       * @return Whether the equipParam field is set.
+       */
+      public boolean hasEquipParam() {
+        return equipParamBuilder_ != null || equipParam_ != null;
+      }
+      /**
+       * <code>.EquipParam equip_param = 1;</code>
+       * @return The equipParam.
+       */
+      public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam getEquipParam() {
+        if (equipParamBuilder_ == null) {
+          return equipParam_ == null ? emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.getDefaultInstance() : equipParam_;
+        } else {
+          return equipParamBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.EquipParam equip_param = 1;</code>
+       */
+      public Builder setEquipParam(emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam value) {
+        if (equipParamBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          equipParam_ = value;
+          onChanged();
+        } else {
+          equipParamBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EquipParam equip_param = 1;</code>
+       */
+      public Builder setEquipParam(
+          emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder builderForValue) {
+        if (equipParamBuilder_ == null) {
+          equipParam_ = builderForValue.build();
+          onChanged();
+        } else {
+          equipParamBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EquipParam equip_param = 1;</code>
+       */
+      public Builder mergeEquipParam(emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam value) {
+        if (equipParamBuilder_ == null) {
+          if (equipParam_ != null) {
+            equipParam_ =
+              emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.newBuilder(equipParam_).mergeFrom(value).buildPartial();
+          } else {
+            equipParam_ = value;
+          }
+          onChanged();
+        } else {
+          equipParamBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EquipParam equip_param = 1;</code>
+       */
+      public Builder clearEquipParam() {
+        if (equipParamBuilder_ == null) {
+          equipParam_ = null;
+          onChanged();
+        } else {
+          equipParam_ = null;
+          equipParamBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EquipParam equip_param = 1;</code>
+       */
+      public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder getEquipParamBuilder() {
+        
+        onChanged();
+        return getEquipParamFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.EquipParam equip_param = 1;</code>
+       */
+      public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder getEquipParamOrBuilder() {
+        if (equipParamBuilder_ != null) {
+          return equipParamBuilder_.getMessageOrBuilder();
+        } else {
+          return equipParam_ == null ?
+              emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.getDefaultInstance() : equipParam_;
+        }
+      }
+      /**
+       * <code>.EquipParam equip_param = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder> 
+          getEquipParamFieldBuilder() {
+        if (equipParamBuilder_ == null) {
+          equipParamBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam.Builder, emu.grasscutter.net.proto.EquipParamOuterClass.EquipParamOrBuilder>(
+                  getEquipParam(),
+                  getParentForChildren(),
+                  isClean());
+          equipParam_ = null;
+        }
+        return equipParamBuilder_;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -853,9 +853,9 @@ public final class MailItemOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\016MailItem.proto\032\020EquipParam.proto\032\030Mate" +
-      "rialDeleteInfo.proto\"V\n\010MailItem\022 \n\013equi" +
-      "p_param\030\001 \001(\0132\013.EquipParam\022(\n\013delete_inf" +
-      "o\030\002 \001(\0132\023.MaterialDeleteInfoB\033\n\031emu.gras" +
+      "rialDeleteInfo.proto\"V\n\010MailItem\022(\n\013dele" +
+      "te_info\030\002 \001(\0132\023.MaterialDeleteInfo\022 \n\013eq" +
+      "uip_param\030\001 \001(\0132\013.EquipParamB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -869,7 +869,7 @@ public final class MailItemOuterClass {
     internal_static_MailItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MailItem_descriptor,
-        new java.lang.String[] { "EquipParam", "DeleteInfo", });
+        new java.lang.String[] { "DeleteInfo", "EquipParam", });
     emu.grasscutter.net.proto.EquipParamOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.getDescriptor();
   }

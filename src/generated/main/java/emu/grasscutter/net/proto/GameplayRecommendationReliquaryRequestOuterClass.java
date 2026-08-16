@@ -19,7 +19,7 @@ public final class GameplayRecommendationReliquaryRequestOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 equip_type = 12;</code>
+     * <code>uint32 equip_type = 15;</code>
      * @return The equipType.
      */
     int getEquipType();
@@ -69,7 +69,7 @@ public final class GameplayRecommendationReliquaryRequestOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 120: {
 
               equipType_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class GameplayRecommendationReliquaryRequestOuterClass {
               emu.grasscutter.net.proto.GameplayRecommendationReliquaryRequestOuterClass.GameplayRecommendationReliquaryRequest.class, emu.grasscutter.net.proto.GameplayRecommendationReliquaryRequestOuterClass.GameplayRecommendationReliquaryRequest.Builder.class);
     }
 
-    public static final int EQUIP_TYPE_FIELD_NUMBER = 12;
+    public static final int EQUIP_TYPE_FIELD_NUMBER = 15;
     private int equipType_;
     /**
-     * <code>uint32 equip_type = 12;</code>
+     * <code>uint32 equip_type = 15;</code>
      * @return The equipType.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class GameplayRecommendationReliquaryRequestOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (equipType_ != 0) {
-        output.writeUInt32(12, equipType_);
+        output.writeUInt32(15, equipType_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class GameplayRecommendationReliquaryRequestOuterClass {
       size = 0;
       if (equipType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, equipType_);
+          .computeUInt32Size(15, equipType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class GameplayRecommendationReliquaryRequestOuterClass {
 
       private int equipType_ ;
       /**
-       * <code>uint32 equip_type = 12;</code>
+       * <code>uint32 equip_type = 15;</code>
        * @return The equipType.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class GameplayRecommendationReliquaryRequestOuterClass {
         return equipType_;
       }
       /**
-       * <code>uint32 equip_type = 12;</code>
+       * <code>uint32 equip_type = 15;</code>
        * @param value The equipType to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class GameplayRecommendationReliquaryRequestOuterClass {
         return this;
       }
       /**
-       * <code>uint32 equip_type = 12;</code>
+       * <code>uint32 equip_type = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearEquipType() {
@@ -518,7 +518,7 @@ public final class GameplayRecommendationReliquaryRequestOuterClass {
     java.lang.String[] descriptorData = {
       "\n,GameplayRecommendationReliquaryRequest" +
       ".proto\"<\n&GameplayRecommendationReliquar" +
-      "yRequest\022\022\n\nequip_type\030\014 \001(\rB\033\n\031emu.gras" +
+      "yRequest\022\022\n\nequip_type\030\017 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

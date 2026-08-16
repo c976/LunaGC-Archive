@@ -19,25 +19,29 @@ public final class MailDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mail_id = 1;</code>
-     * @return The mailId.
+     * <code>repeated string argument_list = 14;</code>
+     * @return A list containing the argumentList.
      */
-    int getMailId();
-
+    java.util.List<java.lang.String>
+        getArgumentListList();
     /**
-     * <code>.MailTextContent mail_text_content = 4;</code>
-     * @return Whether the mailTextContent field is set.
+     * <code>repeated string argument_list = 14;</code>
+     * @return The count of argumentList.
      */
-    boolean hasMailTextContent();
+    int getArgumentListCount();
     /**
-     * <code>.MailTextContent mail_text_content = 4;</code>
-     * @return The mailTextContent.
+     * <code>repeated string argument_list = 14;</code>
+     * @param index The index of the element to return.
+     * @return The argumentList at the given index.
      */
-    emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent getMailTextContent();
+    java.lang.String getArgumentList(int index);
     /**
-     * <code>.MailTextContent mail_text_content = 4;</code>
+     * <code>repeated string argument_list = 14;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the argumentList at the given index.
      */
-    emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder getMailTextContentOrBuilder();
+    com.google.protobuf.ByteString
+        getArgumentListBytes(int index);
 
     /**
      * <code>repeated .MailItem item_list = 7;</code>
@@ -64,6 +68,21 @@ public final class MailDataOuterClass {
         int index);
 
     /**
+     * <code>.MailTextContent mail_text_content = 4;</code>
+     * @return Whether the mailTextContent field is set.
+     */
+    boolean hasMailTextContent();
+    /**
+     * <code>.MailTextContent mail_text_content = 4;</code>
+     * @return The mailTextContent.
+     */
+    emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent getMailTextContent();
+    /**
+     * <code>.MailTextContent mail_text_content = 4;</code>
+     */
+    emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder getMailTextContentOrBuilder();
+
+    /**
      * <code>uint32 send_time = 8;</code>
      * @return The sendTime.
      */
@@ -76,10 +95,10 @@ public final class MailDataOuterClass {
     int getExpireTime();
 
     /**
-     * <code>uint32 importance = 10;</code>
-     * @return The importance.
+     * <code>uint32 mail_id = 1;</code>
+     * @return The mailId.
      */
-    int getImportance();
+    int getMailId();
 
     /**
      * <code>bool is_read = 11;</code>
@@ -100,31 +119,6 @@ public final class MailDataOuterClass {
     int getConfigId();
 
     /**
-     * <code>repeated string argument_list = 14;</code>
-     * @return A list containing the argumentList.
-     */
-    java.util.List<java.lang.String>
-        getArgumentListList();
-    /**
-     * <code>repeated string argument_list = 14;</code>
-     * @return The count of argumentList.
-     */
-    int getArgumentListCount();
-    /**
-     * <code>repeated string argument_list = 14;</code>
-     * @param index The index of the element to return.
-     * @return The argumentList at the given index.
-     */
-    java.lang.String getArgumentList(int index);
-    /**
-     * <code>repeated string argument_list = 14;</code>
-     * @param index The index of the value to return.
-     * @return The bytes of the argumentList at the given index.
-     */
-    com.google.protobuf.ByteString
-        getArgumentListBytes(int index);
-
-    /**
      * <code>.MailCollectState collect_state = 15;</code>
      * @return The enum numeric value on the wire for collectState.
      */
@@ -134,6 +128,12 @@ public final class MailDataOuterClass {
      * @return The collectState.
      */
     emu.grasscutter.net.proto.MailCollectStateOuterClass.MailCollectState getCollectState();
+
+    /**
+     * <code>uint32 importance = 10;</code>
+     * @return The importance.
+     */
+    int getImportance();
   }
   /**
    * Protobuf type {@code MailData}
@@ -148,8 +148,8 @@ public final class MailDataOuterClass {
       super(builder);
     }
     private MailData() {
-      itemList_ = java.util.Collections.emptyList();
       argumentList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      itemList_ = java.util.Collections.emptyList();
       collectState_ = 0;
     }
 
@@ -203,9 +203,9 @@ public final class MailDataOuterClass {
               break;
             }
             case 58: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MailItemOuterClass.MailItem>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               itemList_.add(
                   input.readMessage(emu.grasscutter.net.proto.MailItemOuterClass.MailItem.parser(), extensionRegistry));
@@ -243,9 +243,9 @@ public final class MailDataOuterClass {
             }
             case 114: {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 argumentList_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               argumentList_.add(s);
               break;
@@ -271,10 +271,10 @@ public final class MailDataOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           itemList_ = java.util.Collections.unmodifiableList(itemList_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           argumentList_ = argumentList_.getUnmodifiableView();
         }
         this.unknownFields = unknownFields.build();
@@ -294,41 +294,39 @@ public final class MailDataOuterClass {
               emu.grasscutter.net.proto.MailDataOuterClass.MailData.class, emu.grasscutter.net.proto.MailDataOuterClass.MailData.Builder.class);
     }
 
-    public static final int MAIL_ID_FIELD_NUMBER = 1;
-    private int mailId_;
+    public static final int ARGUMENT_LIST_FIELD_NUMBER = 14;
+    private com.google.protobuf.LazyStringList argumentList_;
     /**
-     * <code>uint32 mail_id = 1;</code>
-     * @return The mailId.
+     * <code>repeated string argument_list = 14;</code>
+     * @return A list containing the argumentList.
      */
-    @java.lang.Override
-    public int getMailId() {
-      return mailId_;
-    }
-
-    public static final int MAIL_TEXT_CONTENT_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent mailTextContent_;
-    /**
-     * <code>.MailTextContent mail_text_content = 4;</code>
-     * @return Whether the mailTextContent field is set.
-     */
-    @java.lang.Override
-    public boolean hasMailTextContent() {
-      return mailTextContent_ != null;
+    public com.google.protobuf.ProtocolStringList
+        getArgumentListList() {
+      return argumentList_;
     }
     /**
-     * <code>.MailTextContent mail_text_content = 4;</code>
-     * @return The mailTextContent.
+     * <code>repeated string argument_list = 14;</code>
+     * @return The count of argumentList.
      */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent getMailTextContent() {
-      return mailTextContent_ == null ? emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.getDefaultInstance() : mailTextContent_;
+    public int getArgumentListCount() {
+      return argumentList_.size();
     }
     /**
-     * <code>.MailTextContent mail_text_content = 4;</code>
+     * <code>repeated string argument_list = 14;</code>
+     * @param index The index of the element to return.
+     * @return The argumentList at the given index.
      */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder getMailTextContentOrBuilder() {
-      return getMailTextContent();
+    public java.lang.String getArgumentList(int index) {
+      return argumentList_.get(index);
+    }
+    /**
+     * <code>repeated string argument_list = 14;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the argumentList at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getArgumentListBytes(int index) {
+      return argumentList_.getByteString(index);
     }
 
     public static final int ITEM_LIST_FIELD_NUMBER = 7;
@@ -371,6 +369,32 @@ public final class MailDataOuterClass {
       return itemList_.get(index);
     }
 
+    public static final int MAIL_TEXT_CONTENT_FIELD_NUMBER = 4;
+    private emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent mailTextContent_;
+    /**
+     * <code>.MailTextContent mail_text_content = 4;</code>
+     * @return Whether the mailTextContent field is set.
+     */
+    @java.lang.Override
+    public boolean hasMailTextContent() {
+      return mailTextContent_ != null;
+    }
+    /**
+     * <code>.MailTextContent mail_text_content = 4;</code>
+     * @return The mailTextContent.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent getMailTextContent() {
+      return mailTextContent_ == null ? emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.getDefaultInstance() : mailTextContent_;
+    }
+    /**
+     * <code>.MailTextContent mail_text_content = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder getMailTextContentOrBuilder() {
+      return getMailTextContent();
+    }
+
     public static final int SEND_TIME_FIELD_NUMBER = 8;
     private int sendTime_;
     /**
@@ -393,15 +417,15 @@ public final class MailDataOuterClass {
       return expireTime_;
     }
 
-    public static final int IMPORTANCE_FIELD_NUMBER = 10;
-    private int importance_;
+    public static final int MAIL_ID_FIELD_NUMBER = 1;
+    private int mailId_;
     /**
-     * <code>uint32 importance = 10;</code>
-     * @return The importance.
+     * <code>uint32 mail_id = 1;</code>
+     * @return The mailId.
      */
     @java.lang.Override
-    public int getImportance() {
-      return importance_;
+    public int getMailId() {
+      return mailId_;
     }
 
     public static final int IS_READ_FIELD_NUMBER = 11;
@@ -437,41 +461,6 @@ public final class MailDataOuterClass {
       return configId_;
     }
 
-    public static final int ARGUMENT_LIST_FIELD_NUMBER = 14;
-    private com.google.protobuf.LazyStringList argumentList_;
-    /**
-     * <code>repeated string argument_list = 14;</code>
-     * @return A list containing the argumentList.
-     */
-    public com.google.protobuf.ProtocolStringList
-        getArgumentListList() {
-      return argumentList_;
-    }
-    /**
-     * <code>repeated string argument_list = 14;</code>
-     * @return The count of argumentList.
-     */
-    public int getArgumentListCount() {
-      return argumentList_.size();
-    }
-    /**
-     * <code>repeated string argument_list = 14;</code>
-     * @param index The index of the element to return.
-     * @return The argumentList at the given index.
-     */
-    public java.lang.String getArgumentList(int index) {
-      return argumentList_.get(index);
-    }
-    /**
-     * <code>repeated string argument_list = 14;</code>
-     * @param index The index of the value to return.
-     * @return The bytes of the argumentList at the given index.
-     */
-    public com.google.protobuf.ByteString
-        getArgumentListBytes(int index) {
-      return argumentList_.getByteString(index);
-    }
-
     public static final int COLLECT_STATE_FIELD_NUMBER = 15;
     private int collectState_;
     /**
@@ -489,6 +478,17 @@ public final class MailDataOuterClass {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.MailCollectStateOuterClass.MailCollectState result = emu.grasscutter.net.proto.MailCollectStateOuterClass.MailCollectState.valueOf(collectState_);
       return result == null ? emu.grasscutter.net.proto.MailCollectStateOuterClass.MailCollectState.UNRECOGNIZED : result;
+    }
+
+    public static final int IMPORTANCE_FIELD_NUMBER = 10;
+    private int importance_;
+    /**
+     * <code>uint32 importance = 10;</code>
+     * @return The importance.
+     */
+    @java.lang.Override
+    public int getImportance() {
+      return importance_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -535,7 +535,7 @@ public final class MailDataOuterClass {
       for (int i = 0; i < argumentList_.size(); i++) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 14, argumentList_.getRaw(i));
       }
-      if (collectState_ != emu.grasscutter.net.proto.MailCollectStateOuterClass.MailCollectState.MAIL_COLLECT_STATE_COLLECTIBLE_UNKNOWN.getNumber()) {
+      if (collectState_ != emu.grasscutter.net.proto.MailCollectStateOuterClass.MailCollectState.MAIL_COLLECT_STATE_COLLECTIBLE_UNKONW.getNumber()) {
         output.writeEnum(15, collectState_);
       }
       unknownFields.writeTo(output);
@@ -591,7 +591,7 @@ public final class MailDataOuterClass {
         size += dataSize;
         size += 1 * getArgumentListList().size();
       }
-      if (collectState_ != emu.grasscutter.net.proto.MailCollectStateOuterClass.MailCollectState.MAIL_COLLECT_STATE_COLLECTIBLE_UNKNOWN.getNumber()) {
+      if (collectState_ != emu.grasscutter.net.proto.MailCollectStateOuterClass.MailCollectState.MAIL_COLLECT_STATE_COLLECTIBLE_UNKONW.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(15, collectState_);
       }
@@ -610,30 +610,30 @@ public final class MailDataOuterClass {
       }
       emu.grasscutter.net.proto.MailDataOuterClass.MailData other = (emu.grasscutter.net.proto.MailDataOuterClass.MailData) obj;
 
-      if (getMailId()
-          != other.getMailId()) return false;
+      if (!getArgumentListList()
+          .equals(other.getArgumentListList())) return false;
+      if (!getItemListList()
+          .equals(other.getItemListList())) return false;
       if (hasMailTextContent() != other.hasMailTextContent()) return false;
       if (hasMailTextContent()) {
         if (!getMailTextContent()
             .equals(other.getMailTextContent())) return false;
       }
-      if (!getItemListList()
-          .equals(other.getItemListList())) return false;
       if (getSendTime()
           != other.getSendTime()) return false;
       if (getExpireTime()
           != other.getExpireTime()) return false;
-      if (getImportance()
-          != other.getImportance()) return false;
+      if (getMailId()
+          != other.getMailId()) return false;
       if (getIsRead()
           != other.getIsRead()) return false;
       if (getIsAttachmentGot()
           != other.getIsAttachmentGot()) return false;
       if (getConfigId()
           != other.getConfigId()) return false;
-      if (!getArgumentListList()
-          .equals(other.getArgumentListList())) return false;
       if (collectState_ != other.collectState_) return false;
+      if (getImportance()
+          != other.getImportance()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -645,22 +645,24 @@ public final class MailDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MAIL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMailId();
-      if (hasMailTextContent()) {
-        hash = (37 * hash) + MAIL_TEXT_CONTENT_FIELD_NUMBER;
-        hash = (53 * hash) + getMailTextContent().hashCode();
+      if (getArgumentListCount() > 0) {
+        hash = (37 * hash) + ARGUMENT_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getArgumentListList().hashCode();
       }
       if (getItemListCount() > 0) {
         hash = (37 * hash) + ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getItemListList().hashCode();
       }
+      if (hasMailTextContent()) {
+        hash = (37 * hash) + MAIL_TEXT_CONTENT_FIELD_NUMBER;
+        hash = (53 * hash) + getMailTextContent().hashCode();
+      }
       hash = (37 * hash) + SEND_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getSendTime();
       hash = (37 * hash) + EXPIRE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getExpireTime();
-      hash = (37 * hash) + IMPORTANCE_FIELD_NUMBER;
-      hash = (53 * hash) + getImportance();
+      hash = (37 * hash) + MAIL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMailId();
       hash = (37 * hash) + IS_READ_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsRead());
@@ -669,12 +671,10 @@ public final class MailDataOuterClass {
           getIsAttachmentGot());
       hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConfigId();
-      if (getArgumentListCount() > 0) {
-        hash = (37 * hash) + ARGUMENT_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getArgumentListList().hashCode();
-      }
       hash = (37 * hash) + COLLECT_STATE_FIELD_NUMBER;
       hash = (53 * hash) + collectState_;
+      hash = (37 * hash) + IMPORTANCE_FIELD_NUMBER;
+      hash = (53 * hash) + getImportance();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -809,25 +809,25 @@ public final class MailDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mailId_ = 0;
-
+        argumentList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (itemListBuilder_ == null) {
+          itemList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          itemListBuilder_.clear();
+        }
         if (mailTextContentBuilder_ == null) {
           mailTextContent_ = null;
         } else {
           mailTextContent_ = null;
           mailTextContentBuilder_ = null;
         }
-        if (itemListBuilder_ == null) {
-          itemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          itemListBuilder_.clear();
-        }
         sendTime_ = 0;
 
         expireTime_ = 0;
 
-        importance_ = 0;
+        mailId_ = 0;
 
         isRead_ = false;
 
@@ -835,9 +835,9 @@ public final class MailDataOuterClass {
 
         configId_ = 0;
 
-        argumentList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000002);
         collectState_ = 0;
+
+        importance_ = 0;
 
         return this;
       }
@@ -866,33 +866,33 @@ public final class MailDataOuterClass {
       public emu.grasscutter.net.proto.MailDataOuterClass.MailData buildPartial() {
         emu.grasscutter.net.proto.MailDataOuterClass.MailData result = new emu.grasscutter.net.proto.MailDataOuterClass.MailData(this);
         int from_bitField0_ = bitField0_;
-        result.mailId_ = mailId_;
-        if (mailTextContentBuilder_ == null) {
-          result.mailTextContent_ = mailTextContent_;
-        } else {
-          result.mailTextContent_ = mailTextContentBuilder_.build();
+        if (((bitField0_ & 0x00000001) != 0)) {
+          argumentList_ = argumentList_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
+        result.argumentList_ = argumentList_;
         if (itemListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             itemList_ = java.util.Collections.unmodifiableList(itemList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.itemList_ = itemList_;
         } else {
           result.itemList_ = itemListBuilder_.build();
         }
+        if (mailTextContentBuilder_ == null) {
+          result.mailTextContent_ = mailTextContent_;
+        } else {
+          result.mailTextContent_ = mailTextContentBuilder_.build();
+        }
         result.sendTime_ = sendTime_;
         result.expireTime_ = expireTime_;
-        result.importance_ = importance_;
+        result.mailId_ = mailId_;
         result.isRead_ = isRead_;
         result.isAttachmentGot_ = isAttachmentGot_;
         result.configId_ = configId_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          argumentList_ = argumentList_.getUnmodifiableView();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.argumentList_ = argumentList_;
         result.collectState_ = collectState_;
+        result.importance_ = importance_;
         onBuilt();
         return result;
       }
@@ -941,17 +941,21 @@ public final class MailDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MailDataOuterClass.MailData other) {
         if (other == emu.grasscutter.net.proto.MailDataOuterClass.MailData.getDefaultInstance()) return this;
-        if (other.getMailId() != 0) {
-          setMailId(other.getMailId());
-        }
-        if (other.hasMailTextContent()) {
-          mergeMailTextContent(other.getMailTextContent());
+        if (!other.argumentList_.isEmpty()) {
+          if (argumentList_.isEmpty()) {
+            argumentList_ = other.argumentList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureArgumentListIsMutable();
+            argumentList_.addAll(other.argumentList_);
+          }
+          onChanged();
         }
         if (itemListBuilder_ == null) {
           if (!other.itemList_.isEmpty()) {
             if (itemList_.isEmpty()) {
               itemList_ = other.itemList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureItemListIsMutable();
               itemList_.addAll(other.itemList_);
@@ -964,7 +968,7 @@ public final class MailDataOuterClass {
               itemListBuilder_.dispose();
               itemListBuilder_ = null;
               itemList_ = other.itemList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               itemListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getItemListFieldBuilder() : null;
@@ -973,14 +977,17 @@ public final class MailDataOuterClass {
             }
           }
         }
+        if (other.hasMailTextContent()) {
+          mergeMailTextContent(other.getMailTextContent());
+        }
         if (other.getSendTime() != 0) {
           setSendTime(other.getSendTime());
         }
         if (other.getExpireTime() != 0) {
           setExpireTime(other.getExpireTime());
         }
-        if (other.getImportance() != 0) {
-          setImportance(other.getImportance());
+        if (other.getMailId() != 0) {
+          setMailId(other.getMailId());
         }
         if (other.getIsRead() != false) {
           setIsRead(other.getIsRead());
@@ -991,18 +998,11 @@ public final class MailDataOuterClass {
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
         }
-        if (!other.argumentList_.isEmpty()) {
-          if (argumentList_.isEmpty()) {
-            argumentList_ = other.argumentList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureArgumentListIsMutable();
-            argumentList_.addAll(other.argumentList_);
-          }
-          onChanged();
-        }
         if (other.collectState_ != 0) {
           setCollectStateValue(other.getCollectStateValue());
+        }
+        if (other.getImportance() != 0) {
+          setImportance(other.getImportance());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1034,162 +1034,122 @@ public final class MailDataOuterClass {
       }
       private int bitField0_;
 
-      private int mailId_ ;
-      /**
-       * <code>uint32 mail_id = 1;</code>
-       * @return The mailId.
-       */
-      @java.lang.Override
-      public int getMailId() {
-        return mailId_;
+      private com.google.protobuf.LazyStringList argumentList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureArgumentListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          argumentList_ = new com.google.protobuf.LazyStringArrayList(argumentList_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
-       * <code>uint32 mail_id = 1;</code>
-       * @param value The mailId to set.
+       * <code>repeated string argument_list = 14;</code>
+       * @return A list containing the argumentList.
+       */
+      public com.google.protobuf.ProtocolStringList
+          getArgumentListList() {
+        return argumentList_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string argument_list = 14;</code>
+       * @return The count of argumentList.
+       */
+      public int getArgumentListCount() {
+        return argumentList_.size();
+      }
+      /**
+       * <code>repeated string argument_list = 14;</code>
+       * @param index The index of the element to return.
+       * @return The argumentList at the given index.
+       */
+      public java.lang.String getArgumentList(int index) {
+        return argumentList_.get(index);
+      }
+      /**
+       * <code>repeated string argument_list = 14;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the argumentList at the given index.
+       */
+      public com.google.protobuf.ByteString
+          getArgumentListBytes(int index) {
+        return argumentList_.getByteString(index);
+      }
+      /**
+       * <code>repeated string argument_list = 14;</code>
+       * @param index The index to set the value at.
+       * @param value The argumentList to set.
        * @return This builder for chaining.
        */
-      public Builder setMailId(int value) {
-        
-        mailId_ = value;
+      public Builder setArgumentList(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureArgumentListIsMutable();
+        argumentList_.set(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 mail_id = 1;</code>
+       * <code>repeated string argument_list = 14;</code>
+       * @param value The argumentList to add.
        * @return This builder for chaining.
        */
-      public Builder clearMailId() {
-        
-        mailId_ = 0;
+      public Builder addArgumentList(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureArgumentListIsMutable();
+        argumentList_.add(value);
         onChanged();
         return this;
       }
-
-      private emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent mailTextContent_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.Builder, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder> mailTextContentBuilder_;
       /**
-       * <code>.MailTextContent mail_text_content = 4;</code>
-       * @return Whether the mailTextContent field is set.
+       * <code>repeated string argument_list = 14;</code>
+       * @param values The argumentList to add.
+       * @return This builder for chaining.
        */
-      public boolean hasMailTextContent() {
-        return mailTextContentBuilder_ != null || mailTextContent_ != null;
-      }
-      /**
-       * <code>.MailTextContent mail_text_content = 4;</code>
-       * @return The mailTextContent.
-       */
-      public emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent getMailTextContent() {
-        if (mailTextContentBuilder_ == null) {
-          return mailTextContent_ == null ? emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.getDefaultInstance() : mailTextContent_;
-        } else {
-          return mailTextContentBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.MailTextContent mail_text_content = 4;</code>
-       */
-      public Builder setMailTextContent(emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent value) {
-        if (mailTextContentBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          mailTextContent_ = value;
-          onChanged();
-        } else {
-          mailTextContentBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MailTextContent mail_text_content = 4;</code>
-       */
-      public Builder setMailTextContent(
-          emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.Builder builderForValue) {
-        if (mailTextContentBuilder_ == null) {
-          mailTextContent_ = builderForValue.build();
-          onChanged();
-        } else {
-          mailTextContentBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MailTextContent mail_text_content = 4;</code>
-       */
-      public Builder mergeMailTextContent(emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent value) {
-        if (mailTextContentBuilder_ == null) {
-          if (mailTextContent_ != null) {
-            mailTextContent_ =
-              emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.newBuilder(mailTextContent_).mergeFrom(value).buildPartial();
-          } else {
-            mailTextContent_ = value;
-          }
-          onChanged();
-        } else {
-          mailTextContentBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MailTextContent mail_text_content = 4;</code>
-       */
-      public Builder clearMailTextContent() {
-        if (mailTextContentBuilder_ == null) {
-          mailTextContent_ = null;
-          onChanged();
-        } else {
-          mailTextContent_ = null;
-          mailTextContentBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MailTextContent mail_text_content = 4;</code>
-       */
-      public emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.Builder getMailTextContentBuilder() {
-        
+      public Builder addAllArgumentList(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureArgumentListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, argumentList_);
         onChanged();
-        return getMailTextContentFieldBuilder().getBuilder();
+        return this;
       }
       /**
-       * <code>.MailTextContent mail_text_content = 4;</code>
+       * <code>repeated string argument_list = 14;</code>
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder getMailTextContentOrBuilder() {
-        if (mailTextContentBuilder_ != null) {
-          return mailTextContentBuilder_.getMessageOrBuilder();
-        } else {
-          return mailTextContent_ == null ?
-              emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.getDefaultInstance() : mailTextContent_;
-        }
+      public Builder clearArgumentList() {
+        argumentList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
       }
       /**
-       * <code>.MailTextContent mail_text_content = 4;</code>
+       * <code>repeated string argument_list = 14;</code>
+       * @param value The bytes of the argumentList to add.
+       * @return This builder for chaining.
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.Builder, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder> 
-          getMailTextContentFieldBuilder() {
-        if (mailTextContentBuilder_ == null) {
-          mailTextContentBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.Builder, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder>(
-                  getMailTextContent(),
-                  getParentForChildren(),
-                  isClean());
-          mailTextContent_ = null;
-        }
-        return mailTextContentBuilder_;
+      public Builder addArgumentListBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureArgumentListIsMutable();
+        argumentList_.add(value);
+        onChanged();
+        return this;
       }
 
       private java.util.List<emu.grasscutter.net.proto.MailItemOuterClass.MailItem> itemList_ =
         java.util.Collections.emptyList();
       private void ensureItemListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MailItemOuterClass.MailItem>(itemList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -1339,7 +1299,7 @@ public final class MailDataOuterClass {
       public Builder clearItemList() {
         if (itemListBuilder_ == null) {
           itemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           itemListBuilder_.clear();
@@ -1416,12 +1376,131 @@ public final class MailDataOuterClass {
           itemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.MailItemOuterClass.MailItem, emu.grasscutter.net.proto.MailItemOuterClass.MailItem.Builder, emu.grasscutter.net.proto.MailItemOuterClass.MailItemOrBuilder>(
                   itemList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           itemList_ = null;
         }
         return itemListBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent mailTextContent_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.Builder, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder> mailTextContentBuilder_;
+      /**
+       * <code>.MailTextContent mail_text_content = 4;</code>
+       * @return Whether the mailTextContent field is set.
+       */
+      public boolean hasMailTextContent() {
+        return mailTextContentBuilder_ != null || mailTextContent_ != null;
+      }
+      /**
+       * <code>.MailTextContent mail_text_content = 4;</code>
+       * @return The mailTextContent.
+       */
+      public emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent getMailTextContent() {
+        if (mailTextContentBuilder_ == null) {
+          return mailTextContent_ == null ? emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.getDefaultInstance() : mailTextContent_;
+        } else {
+          return mailTextContentBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.MailTextContent mail_text_content = 4;</code>
+       */
+      public Builder setMailTextContent(emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent value) {
+        if (mailTextContentBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          mailTextContent_ = value;
+          onChanged();
+        } else {
+          mailTextContentBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MailTextContent mail_text_content = 4;</code>
+       */
+      public Builder setMailTextContent(
+          emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.Builder builderForValue) {
+        if (mailTextContentBuilder_ == null) {
+          mailTextContent_ = builderForValue.build();
+          onChanged();
+        } else {
+          mailTextContentBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MailTextContent mail_text_content = 4;</code>
+       */
+      public Builder mergeMailTextContent(emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent value) {
+        if (mailTextContentBuilder_ == null) {
+          if (mailTextContent_ != null) {
+            mailTextContent_ =
+              emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.newBuilder(mailTextContent_).mergeFrom(value).buildPartial();
+          } else {
+            mailTextContent_ = value;
+          }
+          onChanged();
+        } else {
+          mailTextContentBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MailTextContent mail_text_content = 4;</code>
+       */
+      public Builder clearMailTextContent() {
+        if (mailTextContentBuilder_ == null) {
+          mailTextContent_ = null;
+          onChanged();
+        } else {
+          mailTextContent_ = null;
+          mailTextContentBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MailTextContent mail_text_content = 4;</code>
+       */
+      public emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.Builder getMailTextContentBuilder() {
+        
+        onChanged();
+        return getMailTextContentFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.MailTextContent mail_text_content = 4;</code>
+       */
+      public emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder getMailTextContentOrBuilder() {
+        if (mailTextContentBuilder_ != null) {
+          return mailTextContentBuilder_.getMessageOrBuilder();
+        } else {
+          return mailTextContent_ == null ?
+              emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.getDefaultInstance() : mailTextContent_;
+        }
+      }
+      /**
+       * <code>.MailTextContent mail_text_content = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.Builder, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder> 
+          getMailTextContentFieldBuilder() {
+        if (mailTextContentBuilder_ == null) {
+          mailTextContentBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContent.Builder, emu.grasscutter.net.proto.MailTextContentOuterClass.MailTextContentOrBuilder>(
+                  getMailTextContent(),
+                  getParentForChildren(),
+                  isClean());
+          mailTextContent_ = null;
+        }
+        return mailTextContentBuilder_;
       }
 
       private int sendTime_ ;
@@ -1486,33 +1565,33 @@ public final class MailDataOuterClass {
         return this;
       }
 
-      private int importance_ ;
+      private int mailId_ ;
       /**
-       * <code>uint32 importance = 10;</code>
-       * @return The importance.
+       * <code>uint32 mail_id = 1;</code>
+       * @return The mailId.
        */
       @java.lang.Override
-      public int getImportance() {
-        return importance_;
+      public int getMailId() {
+        return mailId_;
       }
       /**
-       * <code>uint32 importance = 10;</code>
-       * @param value The importance to set.
+       * <code>uint32 mail_id = 1;</code>
+       * @param value The mailId to set.
        * @return This builder for chaining.
        */
-      public Builder setImportance(int value) {
+      public Builder setMailId(int value) {
         
-        importance_ = value;
+        mailId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 importance = 10;</code>
+       * <code>uint32 mail_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearImportance() {
+      public Builder clearMailId() {
         
-        importance_ = 0;
+        mailId_ = 0;
         onChanged();
         return this;
       }
@@ -1610,116 +1689,6 @@ public final class MailDataOuterClass {
         return this;
       }
 
-      private com.google.protobuf.LazyStringList argumentList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      private void ensureArgumentListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          argumentList_ = new com.google.protobuf.LazyStringArrayList(argumentList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated string argument_list = 14;</code>
-       * @return A list containing the argumentList.
-       */
-      public com.google.protobuf.ProtocolStringList
-          getArgumentListList() {
-        return argumentList_.getUnmodifiableView();
-      }
-      /**
-       * <code>repeated string argument_list = 14;</code>
-       * @return The count of argumentList.
-       */
-      public int getArgumentListCount() {
-        return argumentList_.size();
-      }
-      /**
-       * <code>repeated string argument_list = 14;</code>
-       * @param index The index of the element to return.
-       * @return The argumentList at the given index.
-       */
-      public java.lang.String getArgumentList(int index) {
-        return argumentList_.get(index);
-      }
-      /**
-       * <code>repeated string argument_list = 14;</code>
-       * @param index The index of the value to return.
-       * @return The bytes of the argumentList at the given index.
-       */
-      public com.google.protobuf.ByteString
-          getArgumentListBytes(int index) {
-        return argumentList_.getByteString(index);
-      }
-      /**
-       * <code>repeated string argument_list = 14;</code>
-       * @param index The index to set the value at.
-       * @param value The argumentList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setArgumentList(
-          int index, java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureArgumentListIsMutable();
-        argumentList_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string argument_list = 14;</code>
-       * @param value The argumentList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addArgumentList(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureArgumentListIsMutable();
-        argumentList_.add(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string argument_list = 14;</code>
-       * @param values The argumentList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllArgumentList(
-          java.lang.Iterable<java.lang.String> values) {
-        ensureArgumentListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, argumentList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string argument_list = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearArgumentList() {
-        argumentList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string argument_list = 14;</code>
-       * @param value The bytes of the argumentList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addArgumentListBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        ensureArgumentListIsMutable();
-        argumentList_.add(value);
-        onChanged();
-        return this;
-      }
-
       private int collectState_ = 0;
       /**
        * <code>.MailCollectState collect_state = 15;</code>
@@ -1770,6 +1739,37 @@ public final class MailDataOuterClass {
       public Builder clearCollectState() {
         
         collectState_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int importance_ ;
+      /**
+       * <code>uint32 importance = 10;</code>
+       * @return The importance.
+       */
+      @java.lang.Override
+      public int getImportance() {
+        return importance_;
+      }
+      /**
+       * <code>uint32 importance = 10;</code>
+       * @param value The importance to set.
+       * @return This builder for chaining.
+       */
+      public Builder setImportance(int value) {
+        
+        importance_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 importance = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearImportance() {
+        
+        importance_ = 0;
         onChanged();
         return this;
       }
@@ -1842,14 +1842,14 @@ public final class MailDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\016MailData.proto\032\016MailItem.proto\032\025MailTe" +
       "xtContent.proto\032\026MailCollectState.proto\"" +
-      "\242\002\n\010MailData\022\017\n\007mail_id\030\001 \001(\r\022+\n\021mail_te" +
-      "xt_content\030\004 \001(\0132\020.MailTextContent\022\034\n\tit" +
-      "em_list\030\007 \003(\0132\t.MailItem\022\021\n\tsend_time\030\010 " +
-      "\001(\r\022\023\n\013expire_time\030\t \001(\r\022\022\n\nimportance\030\n" +
-      " \001(\r\022\017\n\007is_read\030\013 \001(\010\022\031\n\021is_attachment_g" +
-      "ot\030\014 \001(\010\022\021\n\tconfig_id\030\r \001(\r\022\025\n\rargument_" +
-      "list\030\016 \003(\t\022(\n\rcollect_state\030\017 \001(\0162\021.Mail" +
-      "CollectStateB\033\n\031emu.grasscutter.net.prot" +
+      "\242\002\n\010MailData\022\025\n\rargument_list\030\016 \003(\t\022\034\n\ti" +
+      "tem_list\030\007 \003(\0132\t.MailItem\022+\n\021mail_text_c" +
+      "ontent\030\004 \001(\0132\020.MailTextContent\022\021\n\tsend_t" +
+      "ime\030\010 \001(\r\022\023\n\013expire_time\030\t \001(\r\022\017\n\007mail_i" +
+      "d\030\001 \001(\r\022\017\n\007is_read\030\013 \001(\010\022\031\n\021is_attachmen" +
+      "t_got\030\014 \001(\010\022\021\n\tconfig_id\030\r \001(\r\022(\n\rcollec" +
+      "t_state\030\017 \001(\0162\021.MailCollectState\022\022\n\nimpo" +
+      "rtance\030\n \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1864,7 +1864,7 @@ public final class MailDataOuterClass {
     internal_static_MailData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MailData_descriptor,
-        new java.lang.String[] { "MailId", "MailTextContent", "ItemList", "SendTime", "ExpireTime", "Importance", "IsRead", "IsAttachmentGot", "ConfigId", "ArgumentList", "CollectState", });
+        new java.lang.String[] { "ArgumentList", "ItemList", "MailTextContent", "SendTime", "ExpireTime", "MailId", "IsRead", "IsAttachmentGot", "ConfigId", "CollectState", "Importance", });
     emu.grasscutter.net.proto.MailItemOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MailTextContentOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MailCollectStateOuterClass.getDescriptor();

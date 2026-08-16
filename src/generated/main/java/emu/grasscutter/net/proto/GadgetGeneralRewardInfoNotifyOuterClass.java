@@ -34,12 +34,16 @@ public final class GadgetGeneralRewardInfoNotifyOuterClass {
     emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfoOrBuilder getGeneralRewardInfoOrBuilder();
 
     /**
-     * <code>uint32 entity_id = 4;</code>
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
+   * <pre>
+   * CmdId: 22418
+   * </pre>
+   *
    * Protobuf type {@code GadgetGeneralRewardInfoNotify}
    */
   public static final class GadgetGeneralRewardInfoNotify extends
@@ -84,11 +88,6 @@ public final class GadgetGeneralRewardInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
             case 42: {
               emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo.Builder subBuilder = null;
               if (generalRewardInfo_ != null) {
@@ -100,6 +99,11 @@ public final class GadgetGeneralRewardInfoNotifyOuterClass {
                 generalRewardInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 88: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,10 +164,10 @@ public final class GadgetGeneralRewardInfoNotifyOuterClass {
       return getGeneralRewardInfo();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 4;
+    public static final int ENTITY_ID_FIELD_NUMBER = 11;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 4;</code>
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -185,11 +189,11 @@ public final class GadgetGeneralRewardInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (entityId_ != 0) {
-        output.writeUInt32(4, entityId_);
-      }
       if (generalRewardInfo_ != null) {
         output.writeMessage(5, getGeneralRewardInfo());
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(11, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,13 +204,13 @@ public final class GadgetGeneralRewardInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, entityId_);
-      }
       if (generalRewardInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, getGeneralRewardInfo());
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -343,6 +347,10 @@ public final class GadgetGeneralRewardInfoNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 22418
+     * </pre>
+     *
      * Protobuf type {@code GadgetGeneralRewardInfoNotify}
      */
     public static final class Builder extends
@@ -624,7 +632,7 @@ public final class GadgetGeneralRewardInfoNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 4;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -632,7 +640,7 @@ public final class GadgetGeneralRewardInfoNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 4;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -643,7 +651,7 @@ public final class GadgetGeneralRewardInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 4;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -723,7 +731,7 @@ public final class GadgetGeneralRewardInfoNotifyOuterClass {
       "adgetGeneralRewardInfo.proto\"i\n\035GadgetGe" +
       "neralRewardInfoNotify\0225\n\023general_reward_" +
       "info\030\005 \001(\0132\030.GadgetGeneralRewardInfo\022\021\n\t" +
-      "entity_id\030\004 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "entity_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

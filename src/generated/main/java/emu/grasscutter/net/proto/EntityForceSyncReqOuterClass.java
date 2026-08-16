@@ -19,12 +19,49 @@ public final class EntityForceSyncReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 6;</code>
-     * @return The targetUid.
+     * <code>.MotionInfo motion_info = 12;</code>
+     * @return Whether the motionInfo field is set.
      */
-    int getTargetUid();
+    boolean hasMotionInfo();
+    /**
+     * <code>.MotionInfo motion_info = 12;</code>
+     * @return The motionInfo.
+     */
+    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo();
+    /**
+     * <code>.MotionInfo motion_info = 12;</code>
+     */
+    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder();
+
+    /**
+     * <code>uint32 entity_id = 13;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
+
+    /**
+     * <code>uint32 scene_time = 11;</code>
+     * @return The sceneTime.
+     */
+    int getSceneTime();
+
+    /**
+     * <code>uint32 room_id = 7;</code>
+     * @return The roomId.
+     */
+    int getRoomId();
+
+    /**
+     * <code>uint32 parent_quest_id = 3;</code>
+     * @return The parentQuestId.
+     */
+    int getParentQuestId();
   }
   /**
+   * <pre>
+   * CmdId: 24857
+   * </pre>
+   *
    * Protobuf type {@code EntityForceSyncReq}
    */
   public static final class EntityForceSyncReq extends
@@ -69,9 +106,37 @@ public final class EntityForceSyncReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 24: {
 
-              targetUid_ = input.readUInt32();
+              parentQuestId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              roomId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              sceneTime_ = input.readUInt32();
+              break;
+            }
+            case 98: {
+              emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder subBuilder = null;
+              if (motionInfo_ != null) {
+                subBuilder = motionInfo_.toBuilder();
+              }
+              motionInfo_ = input.readMessage(emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(motionInfo_);
+                motionInfo_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 104: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -106,15 +171,74 @@ public final class EntityForceSyncReqOuterClass {
               emu.grasscutter.net.proto.EntityForceSyncReqOuterClass.EntityForceSyncReq.class, emu.grasscutter.net.proto.EntityForceSyncReqOuterClass.EntityForceSyncReq.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 6;
-    private int targetUid_;
+    public static final int MOTION_INFO_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo motionInfo_;
     /**
-     * <code>uint32 target_uid = 6;</code>
-     * @return The targetUid.
+     * <code>.MotionInfo motion_info = 12;</code>
+     * @return Whether the motionInfo field is set.
      */
     @java.lang.Override
-    public int getTargetUid() {
-      return targetUid_;
+    public boolean hasMotionInfo() {
+      return motionInfo_ != null;
+    }
+    /**
+     * <code>.MotionInfo motion_info = 12;</code>
+     * @return The motionInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo() {
+      return motionInfo_ == null ? emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.getDefaultInstance() : motionInfo_;
+    }
+    /**
+     * <code>.MotionInfo motion_info = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder() {
+      return getMotionInfo();
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 13;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 13;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
+    }
+
+    public static final int SCENE_TIME_FIELD_NUMBER = 11;
+    private int sceneTime_;
+    /**
+     * <code>uint32 scene_time = 11;</code>
+     * @return The sceneTime.
+     */
+    @java.lang.Override
+    public int getSceneTime() {
+      return sceneTime_;
+    }
+
+    public static final int ROOM_ID_FIELD_NUMBER = 7;
+    private int roomId_;
+    /**
+     * <code>uint32 room_id = 7;</code>
+     * @return The roomId.
+     */
+    @java.lang.Override
+    public int getRoomId() {
+      return roomId_;
+    }
+
+    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 3;
+    private int parentQuestId_;
+    /**
+     * <code>uint32 parent_quest_id = 3;</code>
+     * @return The parentQuestId.
+     */
+    @java.lang.Override
+    public int getParentQuestId() {
+      return parentQuestId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -131,8 +255,20 @@ public final class EntityForceSyncReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetUid_ != 0) {
-        output.writeUInt32(6, targetUid_);
+      if (parentQuestId_ != 0) {
+        output.writeUInt32(3, parentQuestId_);
+      }
+      if (roomId_ != 0) {
+        output.writeUInt32(7, roomId_);
+      }
+      if (sceneTime_ != 0) {
+        output.writeUInt32(11, sceneTime_);
+      }
+      if (motionInfo_ != null) {
+        output.writeMessage(12, getMotionInfo());
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(13, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -143,9 +279,25 @@ public final class EntityForceSyncReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetUid_ != 0) {
+      if (parentQuestId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, targetUid_);
+          .computeUInt32Size(3, parentQuestId_);
+      }
+      if (roomId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, roomId_);
+      }
+      if (sceneTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, sceneTime_);
+      }
+      if (motionInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, getMotionInfo());
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -162,8 +314,19 @@ public final class EntityForceSyncReqOuterClass {
       }
       emu.grasscutter.net.proto.EntityForceSyncReqOuterClass.EntityForceSyncReq other = (emu.grasscutter.net.proto.EntityForceSyncReqOuterClass.EntityForceSyncReq) obj;
 
-      if (getTargetUid()
-          != other.getTargetUid()) return false;
+      if (hasMotionInfo() != other.hasMotionInfo()) return false;
+      if (hasMotionInfo()) {
+        if (!getMotionInfo()
+            .equals(other.getMotionInfo())) return false;
+      }
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (getSceneTime()
+          != other.getSceneTime()) return false;
+      if (getRoomId()
+          != other.getRoomId()) return false;
+      if (getParentQuestId()
+          != other.getParentQuestId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -175,8 +338,18 @@ public final class EntityForceSyncReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetUid();
+      if (hasMotionInfo()) {
+        hash = (37 * hash) + MOTION_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getMotionInfo().hashCode();
+      }
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + SCENE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneTime();
+      hash = (37 * hash) + ROOM_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRoomId();
+      hash = (37 * hash) + PARENT_QUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getParentQuestId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -273,6 +446,10 @@ public final class EntityForceSyncReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 24857
+     * </pre>
+     *
      * Protobuf type {@code EntityForceSyncReq}
      */
     public static final class Builder extends
@@ -310,7 +487,19 @@ public final class EntityForceSyncReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetUid_ = 0;
+        if (motionInfoBuilder_ == null) {
+          motionInfo_ = null;
+        } else {
+          motionInfo_ = null;
+          motionInfoBuilder_ = null;
+        }
+        entityId_ = 0;
+
+        sceneTime_ = 0;
+
+        roomId_ = 0;
+
+        parentQuestId_ = 0;
 
         return this;
       }
@@ -338,7 +527,15 @@ public final class EntityForceSyncReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EntityForceSyncReqOuterClass.EntityForceSyncReq buildPartial() {
         emu.grasscutter.net.proto.EntityForceSyncReqOuterClass.EntityForceSyncReq result = new emu.grasscutter.net.proto.EntityForceSyncReqOuterClass.EntityForceSyncReq(this);
-        result.targetUid_ = targetUid_;
+        if (motionInfoBuilder_ == null) {
+          result.motionInfo_ = motionInfo_;
+        } else {
+          result.motionInfo_ = motionInfoBuilder_.build();
+        }
+        result.entityId_ = entityId_;
+        result.sceneTime_ = sceneTime_;
+        result.roomId_ = roomId_;
+        result.parentQuestId_ = parentQuestId_;
         onBuilt();
         return result;
       }
@@ -387,8 +584,20 @@ public final class EntityForceSyncReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EntityForceSyncReqOuterClass.EntityForceSyncReq other) {
         if (other == emu.grasscutter.net.proto.EntityForceSyncReqOuterClass.EntityForceSyncReq.getDefaultInstance()) return this;
-        if (other.getTargetUid() != 0) {
-          setTargetUid(other.getTargetUid());
+        if (other.hasMotionInfo()) {
+          mergeMotionInfo(other.getMotionInfo());
+        }
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
+        }
+        if (other.getSceneTime() != 0) {
+          setSceneTime(other.getSceneTime());
+        }
+        if (other.getRoomId() != 0) {
+          setRoomId(other.getRoomId());
+        }
+        if (other.getParentQuestId() != 0) {
+          setParentQuestId(other.getParentQuestId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -419,33 +628,245 @@ public final class EntityForceSyncReqOuterClass {
         return this;
       }
 
-      private int targetUid_ ;
+      private emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo motionInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder> motionInfoBuilder_;
       /**
-       * <code>uint32 target_uid = 6;</code>
-       * @return The targetUid.
+       * <code>.MotionInfo motion_info = 12;</code>
+       * @return Whether the motionInfo field is set.
        */
-      @java.lang.Override
-      public int getTargetUid() {
-        return targetUid_;
+      public boolean hasMotionInfo() {
+        return motionInfoBuilder_ != null || motionInfo_ != null;
       }
       /**
-       * <code>uint32 target_uid = 6;</code>
-       * @param value The targetUid to set.
+       * <code>.MotionInfo motion_info = 12;</code>
+       * @return The motionInfo.
+       */
+      public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo() {
+        if (motionInfoBuilder_ == null) {
+          return motionInfo_ == null ? emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.getDefaultInstance() : motionInfo_;
+        } else {
+          return motionInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.MotionInfo motion_info = 12;</code>
+       */
+      public Builder setMotionInfo(emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo value) {
+        if (motionInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          motionInfo_ = value;
+          onChanged();
+        } else {
+          motionInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MotionInfo motion_info = 12;</code>
+       */
+      public Builder setMotionInfo(
+          emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder builderForValue) {
+        if (motionInfoBuilder_ == null) {
+          motionInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          motionInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MotionInfo motion_info = 12;</code>
+       */
+      public Builder mergeMotionInfo(emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo value) {
+        if (motionInfoBuilder_ == null) {
+          if (motionInfo_ != null) {
+            motionInfo_ =
+              emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.newBuilder(motionInfo_).mergeFrom(value).buildPartial();
+          } else {
+            motionInfo_ = value;
+          }
+          onChanged();
+        } else {
+          motionInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MotionInfo motion_info = 12;</code>
+       */
+      public Builder clearMotionInfo() {
+        if (motionInfoBuilder_ == null) {
+          motionInfo_ = null;
+          onChanged();
+        } else {
+          motionInfo_ = null;
+          motionInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MotionInfo motion_info = 12;</code>
+       */
+      public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder getMotionInfoBuilder() {
+        
+        onChanged();
+        return getMotionInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.MotionInfo motion_info = 12;</code>
+       */
+      public emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder() {
+        if (motionInfoBuilder_ != null) {
+          return motionInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return motionInfo_ == null ?
+              emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.getDefaultInstance() : motionInfo_;
+        }
+      }
+      /**
+       * <code>.MotionInfo motion_info = 12;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder> 
+          getMotionInfoFieldBuilder() {
+        if (motionInfoBuilder_ == null) {
+          motionInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo.Builder, emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder>(
+                  getMotionInfo(),
+                  getParentForChildren(),
+                  isClean());
+          motionInfo_ = null;
+        }
+        return motionInfoBuilder_;
+      }
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 13;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 13;</code>
+       * @param value The entityId to set.
        * @return This builder for chaining.
        */
-      public Builder setTargetUid(int value) {
+      public Builder setEntityId(int value) {
         
-        targetUid_ = value;
+        entityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 target_uid = 6;</code>
+       * <code>uint32 entity_id = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTargetUid() {
+      public Builder clearEntityId() {
         
-        targetUid_ = 0;
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sceneTime_ ;
+      /**
+       * <code>uint32 scene_time = 11;</code>
+       * @return The sceneTime.
+       */
+      @java.lang.Override
+      public int getSceneTime() {
+        return sceneTime_;
+      }
+      /**
+       * <code>uint32 scene_time = 11;</code>
+       * @param value The sceneTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneTime(int value) {
+        
+        sceneTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_time = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneTime() {
+        
+        sceneTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int roomId_ ;
+      /**
+       * <code>uint32 room_id = 7;</code>
+       * @return The roomId.
+       */
+      @java.lang.Override
+      public int getRoomId() {
+        return roomId_;
+      }
+      /**
+       * <code>uint32 room_id = 7;</code>
+       * @param value The roomId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRoomId(int value) {
+        
+        roomId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 room_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRoomId() {
+        
+        roomId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int parentQuestId_ ;
+      /**
+       * <code>uint32 parent_quest_id = 3;</code>
+       * @return The parentQuestId.
+       */
+      @java.lang.Override
+      public int getParentQuestId() {
+        return parentQuestId_;
+      }
+      /**
+       * <code>uint32 parent_quest_id = 3;</code>
+       * @param value The parentQuestId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParentQuestId(int value) {
+        
+        parentQuestId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 parent_quest_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParentQuestId() {
+        
+        parentQuestId_ = 0;
         onChanged();
         return this;
       }
@@ -516,20 +937,25 @@ public final class EntityForceSyncReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030EntityForceSyncReq.proto\"(\n\022EntityForc" +
-      "eSyncReq\022\022\n\ntarget_uid\030\006 \001(\rB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\030EntityForceSyncReq.proto\032\020MotionInfo.p" +
+      "roto\"\207\001\n\022EntityForceSyncReq\022 \n\013motion_in" +
+      "fo\030\014 \001(\0132\013.MotionInfo\022\021\n\tentity_id\030\r \001(\r" +
+      "\022\022\n\nscene_time\030\013 \001(\r\022\017\n\007room_id\030\007 \001(\r\022\027\n" +
+      "\017parent_quest_id\030\003 \001(\rB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.MotionInfoOuterClass.getDescriptor(),
         });
     internal_static_EntityForceSyncReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_EntityForceSyncReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EntityForceSyncReq_descriptor,
-        new java.lang.String[] { "TargetUid", });
+        new java.lang.String[] { "MotionInfo", "EntityId", "SceneTime", "RoomId", "ParentQuestId", });
+    emu.grasscutter.net.proto.MotionInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

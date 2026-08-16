@@ -19,42 +19,41 @@ public final class FishCastRodReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 NFOCOLMMGPL = 9;</code>
-     * @return The nFOCOLMMGPL.
+     * <code>.Vector pos = 3;</code>
+     * @return Whether the pos field is set.
      */
-    int getNFOCOLMMGPL();
+    boolean hasPos();
+    /**
+     * <code>.Vector pos = 3;</code>
+     * @return The pos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    /**
+     * <code>.Vector pos = 3;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>uint32 BGEFEMICKNP = 11;</code>
-     * @return The bGEFEMICKNP.
-     */
-    int getBGEFEMICKNP();
-
-    /**
-     * <code>uint32 rod_entity_id = 14;</code>
+     * <code>uint32 rod_entity_id = 2;</code>
      * @return The rodEntityId.
      */
     int getRodEntityId();
 
     /**
-     * <code>.Vector pos = 1;</code>
-     * @return Whether the pos field is set.
+     * <code>uint32 NLHKCFBFKMA = 14;</code>
+     * @return The nLHKCFBFKMA.
      */
-    boolean hasPos();
+    int getNLHKCFBFKMA();
+
     /**
-     * <code>.Vector pos = 1;</code>
-     * @return The pos.
+     * <code>uint32 MJCGEHNLMEI = 1;</code>
+     * @return The mJCGEHNLMEI.
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
-    /**
-     * <code>.Vector pos = 1;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+    int getMJCGEHNLMEI();
   }
   /**
    * <pre>
-   * CmdId: 21697
-   * Obf: PEFPPFGIIFA
+   * CmdId: 29759
    * </pre>
    *
    * Protobuf type {@code FishCastRodReq}
@@ -101,7 +100,17 @@ public final class FishCastRodReqOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 8: {
+
+              mJCGEHNLMEI_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+
+              rodEntityId_ = input.readUInt32();
+              break;
+            }
+            case 26: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -114,19 +123,9 @@ public final class FishCastRodReqOuterClass {
 
               break;
             }
-            case 72: {
-
-              nFOCOLMMGPL_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              bGEFEMICKNP_ = input.readUInt32();
-              break;
-            }
             case 112: {
 
-              rodEntityId_ = input.readUInt32();
+              nLHKCFBFKMA_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,43 +160,10 @@ public final class FishCastRodReqOuterClass {
               emu.grasscutter.net.proto.FishCastRodReqOuterClass.FishCastRodReq.class, emu.grasscutter.net.proto.FishCastRodReqOuterClass.FishCastRodReq.Builder.class);
     }
 
-    public static final int NFOCOLMMGPL_FIELD_NUMBER = 9;
-    private int nFOCOLMMGPL_;
-    /**
-     * <code>uint32 NFOCOLMMGPL = 9;</code>
-     * @return The nFOCOLMMGPL.
-     */
-    @java.lang.Override
-    public int getNFOCOLMMGPL() {
-      return nFOCOLMMGPL_;
-    }
-
-    public static final int BGEFEMICKNP_FIELD_NUMBER = 11;
-    private int bGEFEMICKNP_;
-    /**
-     * <code>uint32 BGEFEMICKNP = 11;</code>
-     * @return The bGEFEMICKNP.
-     */
-    @java.lang.Override
-    public int getBGEFEMICKNP() {
-      return bGEFEMICKNP_;
-    }
-
-    public static final int ROD_ENTITY_ID_FIELD_NUMBER = 14;
-    private int rodEntityId_;
-    /**
-     * <code>uint32 rod_entity_id = 14;</code>
-     * @return The rodEntityId.
-     */
-    @java.lang.Override
-    public int getRodEntityId() {
-      return rodEntityId_;
-    }
-
-    public static final int POS_FIELD_NUMBER = 1;
+    public static final int POS_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 1;</code>
+     * <code>.Vector pos = 3;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -205,7 +171,7 @@ public final class FishCastRodReqOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 1;</code>
+     * <code>.Vector pos = 3;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -213,11 +179,44 @@ public final class FishCastRodReqOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 1;</code>
+     * <code>.Vector pos = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
+    }
+
+    public static final int ROD_ENTITY_ID_FIELD_NUMBER = 2;
+    private int rodEntityId_;
+    /**
+     * <code>uint32 rod_entity_id = 2;</code>
+     * @return The rodEntityId.
+     */
+    @java.lang.Override
+    public int getRodEntityId() {
+      return rodEntityId_;
+    }
+
+    public static final int NLHKCFBFKMA_FIELD_NUMBER = 14;
+    private int nLHKCFBFKMA_;
+    /**
+     * <code>uint32 NLHKCFBFKMA = 14;</code>
+     * @return The nLHKCFBFKMA.
+     */
+    @java.lang.Override
+    public int getNLHKCFBFKMA() {
+      return nLHKCFBFKMA_;
+    }
+
+    public static final int MJCGEHNLMEI_FIELD_NUMBER = 1;
+    private int mJCGEHNLMEI_;
+    /**
+     * <code>uint32 MJCGEHNLMEI = 1;</code>
+     * @return The mJCGEHNLMEI.
+     */
+    @java.lang.Override
+    public int getMJCGEHNLMEI() {
+      return mJCGEHNLMEI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -234,17 +233,17 @@ public final class FishCastRodReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pos_ != null) {
-        output.writeMessage(1, getPos());
-      }
-      if (nFOCOLMMGPL_ != 0) {
-        output.writeUInt32(9, nFOCOLMMGPL_);
-      }
-      if (bGEFEMICKNP_ != 0) {
-        output.writeUInt32(11, bGEFEMICKNP_);
+      if (mJCGEHNLMEI_ != 0) {
+        output.writeUInt32(1, mJCGEHNLMEI_);
       }
       if (rodEntityId_ != 0) {
-        output.writeUInt32(14, rodEntityId_);
+        output.writeUInt32(2, rodEntityId_);
+      }
+      if (pos_ != null) {
+        output.writeMessage(3, getPos());
+      }
+      if (nLHKCFBFKMA_ != 0) {
+        output.writeUInt32(14, nLHKCFBFKMA_);
       }
       unknownFields.writeTo(output);
     }
@@ -255,21 +254,21 @@ public final class FishCastRodReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pos_ != null) {
+      if (mJCGEHNLMEI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getPos());
-      }
-      if (nFOCOLMMGPL_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, nFOCOLMMGPL_);
-      }
-      if (bGEFEMICKNP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, bGEFEMICKNP_);
+          .computeUInt32Size(1, mJCGEHNLMEI_);
       }
       if (rodEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, rodEntityId_);
+          .computeUInt32Size(2, rodEntityId_);
+      }
+      if (pos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getPos());
+      }
+      if (nLHKCFBFKMA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, nLHKCFBFKMA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -286,17 +285,17 @@ public final class FishCastRodReqOuterClass {
       }
       emu.grasscutter.net.proto.FishCastRodReqOuterClass.FishCastRodReq other = (emu.grasscutter.net.proto.FishCastRodReqOuterClass.FishCastRodReq) obj;
 
-      if (getNFOCOLMMGPL()
-          != other.getNFOCOLMMGPL()) return false;
-      if (getBGEFEMICKNP()
-          != other.getBGEFEMICKNP()) return false;
-      if (getRodEntityId()
-          != other.getRodEntityId()) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
+      if (getRodEntityId()
+          != other.getRodEntityId()) return false;
+      if (getNLHKCFBFKMA()
+          != other.getNLHKCFBFKMA()) return false;
+      if (getMJCGEHNLMEI()
+          != other.getMJCGEHNLMEI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -308,16 +307,16 @@ public final class FishCastRodReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NFOCOLMMGPL_FIELD_NUMBER;
-      hash = (53 * hash) + getNFOCOLMMGPL();
-      hash = (37 * hash) + BGEFEMICKNP_FIELD_NUMBER;
-      hash = (53 * hash) + getBGEFEMICKNP();
-      hash = (37 * hash) + ROD_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRodEntityId();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
+      hash = (37 * hash) + ROD_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRodEntityId();
+      hash = (37 * hash) + NLHKCFBFKMA_FIELD_NUMBER;
+      hash = (53 * hash) + getNLHKCFBFKMA();
+      hash = (37 * hash) + MJCGEHNLMEI_FIELD_NUMBER;
+      hash = (53 * hash) + getMJCGEHNLMEI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -415,8 +414,7 @@ public final class FishCastRodReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21697
-     * Obf: PEFPPFGIIFA
+     * CmdId: 29759
      * </pre>
      *
      * Protobuf type {@code FishCastRodReq}
@@ -456,18 +454,18 @@ public final class FishCastRodReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        nFOCOLMMGPL_ = 0;
-
-        bGEFEMICKNP_ = 0;
-
-        rodEntityId_ = 0;
-
         if (posBuilder_ == null) {
           pos_ = null;
         } else {
           pos_ = null;
           posBuilder_ = null;
         }
+        rodEntityId_ = 0;
+
+        nLHKCFBFKMA_ = 0;
+
+        mJCGEHNLMEI_ = 0;
+
         return this;
       }
 
@@ -494,14 +492,14 @@ public final class FishCastRodReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FishCastRodReqOuterClass.FishCastRodReq buildPartial() {
         emu.grasscutter.net.proto.FishCastRodReqOuterClass.FishCastRodReq result = new emu.grasscutter.net.proto.FishCastRodReqOuterClass.FishCastRodReq(this);
-        result.nFOCOLMMGPL_ = nFOCOLMMGPL_;
-        result.bGEFEMICKNP_ = bGEFEMICKNP_;
-        result.rodEntityId_ = rodEntityId_;
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
+        result.rodEntityId_ = rodEntityId_;
+        result.nLHKCFBFKMA_ = nLHKCFBFKMA_;
+        result.mJCGEHNLMEI_ = mJCGEHNLMEI_;
         onBuilt();
         return result;
       }
@@ -550,17 +548,17 @@ public final class FishCastRodReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FishCastRodReqOuterClass.FishCastRodReq other) {
         if (other == emu.grasscutter.net.proto.FishCastRodReqOuterClass.FishCastRodReq.getDefaultInstance()) return this;
-        if (other.getNFOCOLMMGPL() != 0) {
-          setNFOCOLMMGPL(other.getNFOCOLMMGPL());
-        }
-        if (other.getBGEFEMICKNP() != 0) {
-          setBGEFEMICKNP(other.getBGEFEMICKNP());
+        if (other.hasPos()) {
+          mergePos(other.getPos());
         }
         if (other.getRodEntityId() != 0) {
           setRodEntityId(other.getRodEntityId());
         }
-        if (other.hasPos()) {
-          mergePos(other.getPos());
+        if (other.getNLHKCFBFKMA() != 0) {
+          setNLHKCFBFKMA(other.getNLHKCFBFKMA());
+        }
+        if (other.getMJCGEHNLMEI() != 0) {
+          setMJCGEHNLMEI(other.getMJCGEHNLMEI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -591,111 +589,18 @@ public final class FishCastRodReqOuterClass {
         return this;
       }
 
-      private int nFOCOLMMGPL_ ;
-      /**
-       * <code>uint32 NFOCOLMMGPL = 9;</code>
-       * @return The nFOCOLMMGPL.
-       */
-      @java.lang.Override
-      public int getNFOCOLMMGPL() {
-        return nFOCOLMMGPL_;
-      }
-      /**
-       * <code>uint32 NFOCOLMMGPL = 9;</code>
-       * @param value The nFOCOLMMGPL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNFOCOLMMGPL(int value) {
-        
-        nFOCOLMMGPL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 NFOCOLMMGPL = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNFOCOLMMGPL() {
-        
-        nFOCOLMMGPL_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bGEFEMICKNP_ ;
-      /**
-       * <code>uint32 BGEFEMICKNP = 11;</code>
-       * @return The bGEFEMICKNP.
-       */
-      @java.lang.Override
-      public int getBGEFEMICKNP() {
-        return bGEFEMICKNP_;
-      }
-      /**
-       * <code>uint32 BGEFEMICKNP = 11;</code>
-       * @param value The bGEFEMICKNP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBGEFEMICKNP(int value) {
-        
-        bGEFEMICKNP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BGEFEMICKNP = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBGEFEMICKNP() {
-        
-        bGEFEMICKNP_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int rodEntityId_ ;
-      /**
-       * <code>uint32 rod_entity_id = 14;</code>
-       * @return The rodEntityId.
-       */
-      @java.lang.Override
-      public int getRodEntityId() {
-        return rodEntityId_;
-      }
-      /**
-       * <code>uint32 rod_entity_id = 14;</code>
-       * @param value The rodEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRodEntityId(int value) {
-        
-        rodEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 rod_entity_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRodEntityId() {
-        
-        rodEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 3;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 3;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -706,7 +611,7 @@ public final class FishCastRodReqOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -722,7 +627,7 @@ public final class FishCastRodReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -736,7 +641,7 @@ public final class FishCastRodReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -754,7 +659,7 @@ public final class FishCastRodReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -768,7 +673,7 @@ public final class FishCastRodReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -776,7 +681,7 @@ public final class FishCastRodReqOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -787,7 +692,7 @@ public final class FishCastRodReqOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 1;</code>
+       * <code>.Vector pos = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -801,6 +706,99 @@ public final class FishCastRodReqOuterClass {
           pos_ = null;
         }
         return posBuilder_;
+      }
+
+      private int rodEntityId_ ;
+      /**
+       * <code>uint32 rod_entity_id = 2;</code>
+       * @return The rodEntityId.
+       */
+      @java.lang.Override
+      public int getRodEntityId() {
+        return rodEntityId_;
+      }
+      /**
+       * <code>uint32 rod_entity_id = 2;</code>
+       * @param value The rodEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRodEntityId(int value) {
+        
+        rodEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 rod_entity_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRodEntityId() {
+        
+        rodEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nLHKCFBFKMA_ ;
+      /**
+       * <code>uint32 NLHKCFBFKMA = 14;</code>
+       * @return The nLHKCFBFKMA.
+       */
+      @java.lang.Override
+      public int getNLHKCFBFKMA() {
+        return nLHKCFBFKMA_;
+      }
+      /**
+       * <code>uint32 NLHKCFBFKMA = 14;</code>
+       * @param value The nLHKCFBFKMA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNLHKCFBFKMA(int value) {
+        
+        nLHKCFBFKMA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NLHKCFBFKMA = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNLHKCFBFKMA() {
+        
+        nLHKCFBFKMA_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mJCGEHNLMEI_ ;
+      /**
+       * <code>uint32 MJCGEHNLMEI = 1;</code>
+       * @return The mJCGEHNLMEI.
+       */
+      @java.lang.Override
+      public int getMJCGEHNLMEI() {
+        return mJCGEHNLMEI_;
+      }
+      /**
+       * <code>uint32 MJCGEHNLMEI = 1;</code>
+       * @param value The mJCGEHNLMEI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMJCGEHNLMEI(int value) {
+        
+        mJCGEHNLMEI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MJCGEHNLMEI = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMJCGEHNLMEI() {
+        
+        mJCGEHNLMEI_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -870,9 +868,9 @@ public final class FishCastRodReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024FishCastRodReq.proto\032\014Vector.proto\"g\n\016" +
-      "FishCastRodReq\022\023\n\013NFOCOLMMGPL\030\t \001(\r\022\023\n\013B" +
-      "GEFEMICKNP\030\013 \001(\r\022\025\n\rrod_entity_id\030\016 \001(\r\022" +
-      "\024\n\003pos\030\001 \001(\0132\007.VectorB\033\n\031emu.grasscutter" +
+      "FishCastRodReq\022\024\n\003pos\030\003 \001(\0132\007.Vector\022\025\n\r" +
+      "rod_entity_id\030\002 \001(\r\022\023\n\013NLHKCFBFKMA\030\016 \001(\r" +
+      "\022\023\n\013MJCGEHNLMEI\030\001 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -885,7 +883,7 @@ public final class FishCastRodReqOuterClass {
     internal_static_FishCastRodReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FishCastRodReq_descriptor,
-        new java.lang.String[] { "NFOCOLMMGPL", "BGEFEMICKNP", "RodEntityId", "Pos", });
+        new java.lang.String[] { "Pos", "RodEntityId", "NLHKCFBFKMA", "MJCGEHNLMEI", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

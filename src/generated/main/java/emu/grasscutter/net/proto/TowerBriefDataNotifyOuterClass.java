@@ -19,51 +19,56 @@ public final class TowerBriefDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 last_floor_index = 6;</code>
-     * @return The lastFloorIndex.
-     */
-    int getLastFloorIndex();
-
-    /**
-     * <code>uint32 tower_schedule_id = 7;</code>
-     * @return The towerScheduleId.
-     */
-    int getTowerScheduleId();
-
-    /**
-     * <code>uint32 last_level_index = 9;</code>
-     * @return The lastLevelIndex.
-     */
-    int getLastLevelIndex();
-
-    /**
-     * <code>uint32 next_schedule_change_time = 12;</code>
-     * @return The nextScheduleChangeTime.
-     */
-    int getNextScheduleChangeTime();
-
-    /**
-     * <code>uint32 total_star_num = 13;</code>
+     * <code>uint32 total_star_num = 10;</code>
      * @return The totalStarNum.
      */
     int getTotalStarNum();
 
     /**
-     * <code>uint32 schedule_start_time = 14;</code>
+     * <code>uint32 next_schedule_change_time = 9;</code>
+     * @return The nextScheduleChangeTime.
+     */
+    int getNextScheduleChangeTime();
+
+    /**
+     * <code>uint32 AHCPDFFJOAN = 13;</code>
+     * @return The aHCPDFFJOAN.
+     */
+    int getAHCPDFFJOAN();
+
+    /**
+     * <code>uint32 tower_schedule_id = 8;</code>
+     * @return The towerScheduleId.
+     */
+    int getTowerScheduleId();
+
+    /**
+     * <code>uint32 last_floor_index = 2;</code>
+     * @return The lastFloorIndex.
+     */
+    int getLastFloorIndex();
+
+    /**
+     * <code>uint32 last_level_index = 6;</code>
+     * @return The lastLevelIndex.
+     */
+    int getLastLevelIndex();
+
+    /**
+     * <code>uint32 schedule_start_time = 7;</code>
      * @return The scheduleStartTime.
      */
     int getScheduleStartTime();
 
     /**
-     * <code>bool is_finished_entrance_floor = 15;</code>
+     * <code>bool is_finished_entrance_floor = 1;</code>
      * @return The isFinishedEntranceFloor.
      */
     boolean getIsFinishedEntranceFloor();
   }
   /**
    * <pre>
-   * 4.6.0
-   * CmdId: 612
+   * CmdId: 9152
    * </pre>
    *
    * Protobuf type {@code TowerBriefDataNotify}
@@ -110,39 +115,44 @@ public final class TowerBriefDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
+
+              isFinishedEntranceFloor_ = input.readBool();
+              break;
+            }
+            case 16: {
 
               lastFloorIndex_ = input.readUInt32();
               break;
             }
+            case 48: {
+
+              lastLevelIndex_ = input.readUInt32();
+              break;
+            }
             case 56: {
+
+              scheduleStartTime_ = input.readUInt32();
+              break;
+            }
+            case 64: {
 
               towerScheduleId_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              lastLevelIndex_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
               nextScheduleChangeTime_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 80: {
 
               totalStarNum_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 104: {
 
-              scheduleStartTime_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              isFinishedEntranceFloor_ = input.readBool();
+              aHCPDFFJOAN_ = input.readUInt32();
               break;
             }
             default: {
@@ -177,54 +187,10 @@ public final class TowerBriefDataNotifyOuterClass {
               emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify.class, emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify.Builder.class);
     }
 
-    public static final int LAST_FLOOR_INDEX_FIELD_NUMBER = 6;
-    private int lastFloorIndex_;
-    /**
-     * <code>uint32 last_floor_index = 6;</code>
-     * @return The lastFloorIndex.
-     */
-    @java.lang.Override
-    public int getLastFloorIndex() {
-      return lastFloorIndex_;
-    }
-
-    public static final int TOWER_SCHEDULE_ID_FIELD_NUMBER = 7;
-    private int towerScheduleId_;
-    /**
-     * <code>uint32 tower_schedule_id = 7;</code>
-     * @return The towerScheduleId.
-     */
-    @java.lang.Override
-    public int getTowerScheduleId() {
-      return towerScheduleId_;
-    }
-
-    public static final int LAST_LEVEL_INDEX_FIELD_NUMBER = 9;
-    private int lastLevelIndex_;
-    /**
-     * <code>uint32 last_level_index = 9;</code>
-     * @return The lastLevelIndex.
-     */
-    @java.lang.Override
-    public int getLastLevelIndex() {
-      return lastLevelIndex_;
-    }
-
-    public static final int NEXT_SCHEDULE_CHANGE_TIME_FIELD_NUMBER = 12;
-    private int nextScheduleChangeTime_;
-    /**
-     * <code>uint32 next_schedule_change_time = 12;</code>
-     * @return The nextScheduleChangeTime.
-     */
-    @java.lang.Override
-    public int getNextScheduleChangeTime() {
-      return nextScheduleChangeTime_;
-    }
-
-    public static final int TOTAL_STAR_NUM_FIELD_NUMBER = 13;
+    public static final int TOTAL_STAR_NUM_FIELD_NUMBER = 10;
     private int totalStarNum_;
     /**
-     * <code>uint32 total_star_num = 13;</code>
+     * <code>uint32 total_star_num = 10;</code>
      * @return The totalStarNum.
      */
     @java.lang.Override
@@ -232,10 +198,65 @@ public final class TowerBriefDataNotifyOuterClass {
       return totalStarNum_;
     }
 
-    public static final int SCHEDULE_START_TIME_FIELD_NUMBER = 14;
+    public static final int NEXT_SCHEDULE_CHANGE_TIME_FIELD_NUMBER = 9;
+    private int nextScheduleChangeTime_;
+    /**
+     * <code>uint32 next_schedule_change_time = 9;</code>
+     * @return The nextScheduleChangeTime.
+     */
+    @java.lang.Override
+    public int getNextScheduleChangeTime() {
+      return nextScheduleChangeTime_;
+    }
+
+    public static final int AHCPDFFJOAN_FIELD_NUMBER = 13;
+    private int aHCPDFFJOAN_;
+    /**
+     * <code>uint32 AHCPDFFJOAN = 13;</code>
+     * @return The aHCPDFFJOAN.
+     */
+    @java.lang.Override
+    public int getAHCPDFFJOAN() {
+      return aHCPDFFJOAN_;
+    }
+
+    public static final int TOWER_SCHEDULE_ID_FIELD_NUMBER = 8;
+    private int towerScheduleId_;
+    /**
+     * <code>uint32 tower_schedule_id = 8;</code>
+     * @return The towerScheduleId.
+     */
+    @java.lang.Override
+    public int getTowerScheduleId() {
+      return towerScheduleId_;
+    }
+
+    public static final int LAST_FLOOR_INDEX_FIELD_NUMBER = 2;
+    private int lastFloorIndex_;
+    /**
+     * <code>uint32 last_floor_index = 2;</code>
+     * @return The lastFloorIndex.
+     */
+    @java.lang.Override
+    public int getLastFloorIndex() {
+      return lastFloorIndex_;
+    }
+
+    public static final int LAST_LEVEL_INDEX_FIELD_NUMBER = 6;
+    private int lastLevelIndex_;
+    /**
+     * <code>uint32 last_level_index = 6;</code>
+     * @return The lastLevelIndex.
+     */
+    @java.lang.Override
+    public int getLastLevelIndex() {
+      return lastLevelIndex_;
+    }
+
+    public static final int SCHEDULE_START_TIME_FIELD_NUMBER = 7;
     private int scheduleStartTime_;
     /**
-     * <code>uint32 schedule_start_time = 14;</code>
+     * <code>uint32 schedule_start_time = 7;</code>
      * @return The scheduleStartTime.
      */
     @java.lang.Override
@@ -243,10 +264,10 @@ public final class TowerBriefDataNotifyOuterClass {
       return scheduleStartTime_;
     }
 
-    public static final int IS_FINISHED_ENTRANCE_FLOOR_FIELD_NUMBER = 15;
+    public static final int IS_FINISHED_ENTRANCE_FLOOR_FIELD_NUMBER = 1;
     private boolean isFinishedEntranceFloor_;
     /**
-     * <code>bool is_finished_entrance_floor = 15;</code>
+     * <code>bool is_finished_entrance_floor = 1;</code>
      * @return The isFinishedEntranceFloor.
      */
     @java.lang.Override
@@ -268,26 +289,29 @@ public final class TowerBriefDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lastFloorIndex_ != 0) {
-        output.writeUInt32(6, lastFloorIndex_);
+      if (isFinishedEntranceFloor_ != false) {
+        output.writeBool(1, isFinishedEntranceFloor_);
       }
-      if (towerScheduleId_ != 0) {
-        output.writeUInt32(7, towerScheduleId_);
+      if (lastFloorIndex_ != 0) {
+        output.writeUInt32(2, lastFloorIndex_);
       }
       if (lastLevelIndex_ != 0) {
-        output.writeUInt32(9, lastLevelIndex_);
-      }
-      if (nextScheduleChangeTime_ != 0) {
-        output.writeUInt32(12, nextScheduleChangeTime_);
-      }
-      if (totalStarNum_ != 0) {
-        output.writeUInt32(13, totalStarNum_);
+        output.writeUInt32(6, lastLevelIndex_);
       }
       if (scheduleStartTime_ != 0) {
-        output.writeUInt32(14, scheduleStartTime_);
+        output.writeUInt32(7, scheduleStartTime_);
       }
-      if (isFinishedEntranceFloor_ != false) {
-        output.writeBool(15, isFinishedEntranceFloor_);
+      if (towerScheduleId_ != 0) {
+        output.writeUInt32(8, towerScheduleId_);
+      }
+      if (nextScheduleChangeTime_ != 0) {
+        output.writeUInt32(9, nextScheduleChangeTime_);
+      }
+      if (totalStarNum_ != 0) {
+        output.writeUInt32(10, totalStarNum_);
+      }
+      if (aHCPDFFJOAN_ != 0) {
+        output.writeUInt32(13, aHCPDFFJOAN_);
       }
       unknownFields.writeTo(output);
     }
@@ -298,33 +322,37 @@ public final class TowerBriefDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isFinishedEntranceFloor_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, isFinishedEntranceFloor_);
+      }
       if (lastFloorIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, lastFloorIndex_);
-      }
-      if (towerScheduleId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, towerScheduleId_);
+          .computeUInt32Size(2, lastFloorIndex_);
       }
       if (lastLevelIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, lastLevelIndex_);
-      }
-      if (nextScheduleChangeTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, nextScheduleChangeTime_);
-      }
-      if (totalStarNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, totalStarNum_);
+          .computeUInt32Size(6, lastLevelIndex_);
       }
       if (scheduleStartTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, scheduleStartTime_);
+          .computeUInt32Size(7, scheduleStartTime_);
       }
-      if (isFinishedEntranceFloor_ != false) {
+      if (towerScheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isFinishedEntranceFloor_);
+          .computeUInt32Size(8, towerScheduleId_);
+      }
+      if (nextScheduleChangeTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, nextScheduleChangeTime_);
+      }
+      if (totalStarNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, totalStarNum_);
+      }
+      if (aHCPDFFJOAN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, aHCPDFFJOAN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -341,16 +369,18 @@ public final class TowerBriefDataNotifyOuterClass {
       }
       emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify other = (emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify) obj;
 
-      if (getLastFloorIndex()
-          != other.getLastFloorIndex()) return false;
-      if (getTowerScheduleId()
-          != other.getTowerScheduleId()) return false;
-      if (getLastLevelIndex()
-          != other.getLastLevelIndex()) return false;
-      if (getNextScheduleChangeTime()
-          != other.getNextScheduleChangeTime()) return false;
       if (getTotalStarNum()
           != other.getTotalStarNum()) return false;
+      if (getNextScheduleChangeTime()
+          != other.getNextScheduleChangeTime()) return false;
+      if (getAHCPDFFJOAN()
+          != other.getAHCPDFFJOAN()) return false;
+      if (getTowerScheduleId()
+          != other.getTowerScheduleId()) return false;
+      if (getLastFloorIndex()
+          != other.getLastFloorIndex()) return false;
+      if (getLastLevelIndex()
+          != other.getLastLevelIndex()) return false;
       if (getScheduleStartTime()
           != other.getScheduleStartTime()) return false;
       if (getIsFinishedEntranceFloor()
@@ -366,16 +396,18 @@ public final class TowerBriefDataNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LAST_FLOOR_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getLastFloorIndex();
-      hash = (37 * hash) + TOWER_SCHEDULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTowerScheduleId();
-      hash = (37 * hash) + LAST_LEVEL_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getLastLevelIndex();
-      hash = (37 * hash) + NEXT_SCHEDULE_CHANGE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNextScheduleChangeTime();
       hash = (37 * hash) + TOTAL_STAR_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getTotalStarNum();
+      hash = (37 * hash) + NEXT_SCHEDULE_CHANGE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getNextScheduleChangeTime();
+      hash = (37 * hash) + AHCPDFFJOAN_FIELD_NUMBER;
+      hash = (53 * hash) + getAHCPDFFJOAN();
+      hash = (37 * hash) + TOWER_SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTowerScheduleId();
+      hash = (37 * hash) + LAST_FLOOR_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getLastFloorIndex();
+      hash = (37 * hash) + LAST_LEVEL_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getLastLevelIndex();
       hash = (37 * hash) + SCHEDULE_START_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleStartTime();
       hash = (37 * hash) + IS_FINISHED_ENTRANCE_FLOOR_FIELD_NUMBER;
@@ -478,8 +510,7 @@ public final class TowerBriefDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * 4.6.0
-     * CmdId: 612
+     * CmdId: 9152
      * </pre>
      *
      * Protobuf type {@code TowerBriefDataNotify}
@@ -519,15 +550,17 @@ public final class TowerBriefDataNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        lastFloorIndex_ = 0;
-
-        towerScheduleId_ = 0;
-
-        lastLevelIndex_ = 0;
+        totalStarNum_ = 0;
 
         nextScheduleChangeTime_ = 0;
 
-        totalStarNum_ = 0;
+        aHCPDFFJOAN_ = 0;
+
+        towerScheduleId_ = 0;
+
+        lastFloorIndex_ = 0;
+
+        lastLevelIndex_ = 0;
 
         scheduleStartTime_ = 0;
 
@@ -559,11 +592,12 @@ public final class TowerBriefDataNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify buildPartial() {
         emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify result = new emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify(this);
-        result.lastFloorIndex_ = lastFloorIndex_;
-        result.towerScheduleId_ = towerScheduleId_;
-        result.lastLevelIndex_ = lastLevelIndex_;
-        result.nextScheduleChangeTime_ = nextScheduleChangeTime_;
         result.totalStarNum_ = totalStarNum_;
+        result.nextScheduleChangeTime_ = nextScheduleChangeTime_;
+        result.aHCPDFFJOAN_ = aHCPDFFJOAN_;
+        result.towerScheduleId_ = towerScheduleId_;
+        result.lastFloorIndex_ = lastFloorIndex_;
+        result.lastLevelIndex_ = lastLevelIndex_;
         result.scheduleStartTime_ = scheduleStartTime_;
         result.isFinishedEntranceFloor_ = isFinishedEntranceFloor_;
         onBuilt();
@@ -614,20 +648,23 @@ public final class TowerBriefDataNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify other) {
         if (other == emu.grasscutter.net.proto.TowerBriefDataNotifyOuterClass.TowerBriefDataNotify.getDefaultInstance()) return this;
-        if (other.getLastFloorIndex() != 0) {
-          setLastFloorIndex(other.getLastFloorIndex());
-        }
-        if (other.getTowerScheduleId() != 0) {
-          setTowerScheduleId(other.getTowerScheduleId());
-        }
-        if (other.getLastLevelIndex() != 0) {
-          setLastLevelIndex(other.getLastLevelIndex());
+        if (other.getTotalStarNum() != 0) {
+          setTotalStarNum(other.getTotalStarNum());
         }
         if (other.getNextScheduleChangeTime() != 0) {
           setNextScheduleChangeTime(other.getNextScheduleChangeTime());
         }
-        if (other.getTotalStarNum() != 0) {
-          setTotalStarNum(other.getTotalStarNum());
+        if (other.getAHCPDFFJOAN() != 0) {
+          setAHCPDFFJOAN(other.getAHCPDFFJOAN());
+        }
+        if (other.getTowerScheduleId() != 0) {
+          setTowerScheduleId(other.getTowerScheduleId());
+        }
+        if (other.getLastFloorIndex() != 0) {
+          setLastFloorIndex(other.getLastFloorIndex());
+        }
+        if (other.getLastLevelIndex() != 0) {
+          setLastLevelIndex(other.getLastLevelIndex());
         }
         if (other.getScheduleStartTime() != 0) {
           setScheduleStartTime(other.getScheduleStartTime());
@@ -664,133 +701,9 @@ public final class TowerBriefDataNotifyOuterClass {
         return this;
       }
 
-      private int lastFloorIndex_ ;
-      /**
-       * <code>uint32 last_floor_index = 6;</code>
-       * @return The lastFloorIndex.
-       */
-      @java.lang.Override
-      public int getLastFloorIndex() {
-        return lastFloorIndex_;
-      }
-      /**
-       * <code>uint32 last_floor_index = 6;</code>
-       * @param value The lastFloorIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLastFloorIndex(int value) {
-        
-        lastFloorIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 last_floor_index = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLastFloorIndex() {
-        
-        lastFloorIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int towerScheduleId_ ;
-      /**
-       * <code>uint32 tower_schedule_id = 7;</code>
-       * @return The towerScheduleId.
-       */
-      @java.lang.Override
-      public int getTowerScheduleId() {
-        return towerScheduleId_;
-      }
-      /**
-       * <code>uint32 tower_schedule_id = 7;</code>
-       * @param value The towerScheduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTowerScheduleId(int value) {
-        
-        towerScheduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 tower_schedule_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTowerScheduleId() {
-        
-        towerScheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int lastLevelIndex_ ;
-      /**
-       * <code>uint32 last_level_index = 9;</code>
-       * @return The lastLevelIndex.
-       */
-      @java.lang.Override
-      public int getLastLevelIndex() {
-        return lastLevelIndex_;
-      }
-      /**
-       * <code>uint32 last_level_index = 9;</code>
-       * @param value The lastLevelIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLastLevelIndex(int value) {
-        
-        lastLevelIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 last_level_index = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLastLevelIndex() {
-        
-        lastLevelIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nextScheduleChangeTime_ ;
-      /**
-       * <code>uint32 next_schedule_change_time = 12;</code>
-       * @return The nextScheduleChangeTime.
-       */
-      @java.lang.Override
-      public int getNextScheduleChangeTime() {
-        return nextScheduleChangeTime_;
-      }
-      /**
-       * <code>uint32 next_schedule_change_time = 12;</code>
-       * @param value The nextScheduleChangeTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNextScheduleChangeTime(int value) {
-        
-        nextScheduleChangeTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 next_schedule_change_time = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNextScheduleChangeTime() {
-        
-        nextScheduleChangeTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int totalStarNum_ ;
       /**
-       * <code>uint32 total_star_num = 13;</code>
+       * <code>uint32 total_star_num = 10;</code>
        * @return The totalStarNum.
        */
       @java.lang.Override
@@ -798,7 +711,7 @@ public final class TowerBriefDataNotifyOuterClass {
         return totalStarNum_;
       }
       /**
-       * <code>uint32 total_star_num = 13;</code>
+       * <code>uint32 total_star_num = 10;</code>
        * @param value The totalStarNum to set.
        * @return This builder for chaining.
        */
@@ -809,7 +722,7 @@ public final class TowerBriefDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_star_num = 13;</code>
+       * <code>uint32 total_star_num = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalStarNum() {
@@ -819,9 +732,164 @@ public final class TowerBriefDataNotifyOuterClass {
         return this;
       }
 
+      private int nextScheduleChangeTime_ ;
+      /**
+       * <code>uint32 next_schedule_change_time = 9;</code>
+       * @return The nextScheduleChangeTime.
+       */
+      @java.lang.Override
+      public int getNextScheduleChangeTime() {
+        return nextScheduleChangeTime_;
+      }
+      /**
+       * <code>uint32 next_schedule_change_time = 9;</code>
+       * @param value The nextScheduleChangeTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNextScheduleChangeTime(int value) {
+        
+        nextScheduleChangeTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 next_schedule_change_time = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNextScheduleChangeTime() {
+        
+        nextScheduleChangeTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int aHCPDFFJOAN_ ;
+      /**
+       * <code>uint32 AHCPDFFJOAN = 13;</code>
+       * @return The aHCPDFFJOAN.
+       */
+      @java.lang.Override
+      public int getAHCPDFFJOAN() {
+        return aHCPDFFJOAN_;
+      }
+      /**
+       * <code>uint32 AHCPDFFJOAN = 13;</code>
+       * @param value The aHCPDFFJOAN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAHCPDFFJOAN(int value) {
+        
+        aHCPDFFJOAN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 AHCPDFFJOAN = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAHCPDFFJOAN() {
+        
+        aHCPDFFJOAN_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int towerScheduleId_ ;
+      /**
+       * <code>uint32 tower_schedule_id = 8;</code>
+       * @return The towerScheduleId.
+       */
+      @java.lang.Override
+      public int getTowerScheduleId() {
+        return towerScheduleId_;
+      }
+      /**
+       * <code>uint32 tower_schedule_id = 8;</code>
+       * @param value The towerScheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTowerScheduleId(int value) {
+        
+        towerScheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 tower_schedule_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTowerScheduleId() {
+        
+        towerScheduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lastFloorIndex_ ;
+      /**
+       * <code>uint32 last_floor_index = 2;</code>
+       * @return The lastFloorIndex.
+       */
+      @java.lang.Override
+      public int getLastFloorIndex() {
+        return lastFloorIndex_;
+      }
+      /**
+       * <code>uint32 last_floor_index = 2;</code>
+       * @param value The lastFloorIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLastFloorIndex(int value) {
+        
+        lastFloorIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 last_floor_index = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLastFloorIndex() {
+        
+        lastFloorIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lastLevelIndex_ ;
+      /**
+       * <code>uint32 last_level_index = 6;</code>
+       * @return The lastLevelIndex.
+       */
+      @java.lang.Override
+      public int getLastLevelIndex() {
+        return lastLevelIndex_;
+      }
+      /**
+       * <code>uint32 last_level_index = 6;</code>
+       * @param value The lastLevelIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLastLevelIndex(int value) {
+        
+        lastLevelIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 last_level_index = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLastLevelIndex() {
+        
+        lastLevelIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int scheduleStartTime_ ;
       /**
-       * <code>uint32 schedule_start_time = 14;</code>
+       * <code>uint32 schedule_start_time = 7;</code>
        * @return The scheduleStartTime.
        */
       @java.lang.Override
@@ -829,7 +897,7 @@ public final class TowerBriefDataNotifyOuterClass {
         return scheduleStartTime_;
       }
       /**
-       * <code>uint32 schedule_start_time = 14;</code>
+       * <code>uint32 schedule_start_time = 7;</code>
        * @param value The scheduleStartTime to set.
        * @return This builder for chaining.
        */
@@ -840,7 +908,7 @@ public final class TowerBriefDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_start_time = 14;</code>
+       * <code>uint32 schedule_start_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleStartTime() {
@@ -852,7 +920,7 @@ public final class TowerBriefDataNotifyOuterClass {
 
       private boolean isFinishedEntranceFloor_ ;
       /**
-       * <code>bool is_finished_entrance_floor = 15;</code>
+       * <code>bool is_finished_entrance_floor = 1;</code>
        * @return The isFinishedEntranceFloor.
        */
       @java.lang.Override
@@ -860,7 +928,7 @@ public final class TowerBriefDataNotifyOuterClass {
         return isFinishedEntranceFloor_;
       }
       /**
-       * <code>bool is_finished_entrance_floor = 15;</code>
+       * <code>bool is_finished_entrance_floor = 1;</code>
        * @param value The isFinishedEntranceFloor to set.
        * @return This builder for chaining.
        */
@@ -871,7 +939,7 @@ public final class TowerBriefDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished_entrance_floor = 15;</code>
+       * <code>bool is_finished_entrance_floor = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinishedEntranceFloor() {
@@ -947,14 +1015,14 @@ public final class TowerBriefDataNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032TowerBriefDataNotify.proto\"\341\001\n\024TowerBr" +
-      "iefDataNotify\022\030\n\020last_floor_index\030\006 \001(\r\022" +
-      "\031\n\021tower_schedule_id\030\007 \001(\r\022\030\n\020last_level" +
-      "_index\030\t \001(\r\022!\n\031next_schedule_change_tim" +
-      "e\030\014 \001(\r\022\026\n\016total_star_num\030\r \001(\r\022\033\n\023sched" +
-      "ule_start_time\030\016 \001(\r\022\"\n\032is_finished_entr" +
-      "ance_floor\030\017 \001(\010B\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "\n\032TowerBriefDataNotify.proto\"\366\001\n\024TowerBr" +
+      "iefDataNotify\022\026\n\016total_star_num\030\n \001(\r\022!\n" +
+      "\031next_schedule_change_time\030\t \001(\r\022\023\n\013AHCP" +
+      "DFFJOAN\030\r \001(\r\022\031\n\021tower_schedule_id\030\010 \001(\r" +
+      "\022\030\n\020last_floor_index\030\002 \001(\r\022\030\n\020last_level" +
+      "_index\030\006 \001(\r\022\033\n\023schedule_start_time\030\007 \001(" +
+      "\r\022\"\n\032is_finished_entrance_floor\030\001 \001(\010B\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -965,7 +1033,7 @@ public final class TowerBriefDataNotifyOuterClass {
     internal_static_TowerBriefDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerBriefDataNotify_descriptor,
-        new java.lang.String[] { "LastFloorIndex", "TowerScheduleId", "LastLevelIndex", "NextScheduleChangeTime", "TotalStarNum", "ScheduleStartTime", "IsFinishedEntranceFloor", });
+        new java.lang.String[] { "TotalStarNum", "NextScheduleChangeTime", "AHCPDFFJOAN", "TowerScheduleId", "LastFloorIndex", "LastLevelIndex", "ScheduleStartTime", "IsFinishedEntranceFloor", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

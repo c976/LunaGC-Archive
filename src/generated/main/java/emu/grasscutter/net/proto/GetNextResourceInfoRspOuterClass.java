@@ -19,17 +19,17 @@ public final class GetNextResourceInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ResVersionConfig next_res_version_config = 8;</code>
+     * <code>.ResVersionConfig next_res_version_config = 10;</code>
      * @return Whether the nextResVersionConfig field is set.
      */
     boolean hasNextResVersionConfig();
     /**
-     * <code>.ResVersionConfig next_res_version_config = 8;</code>
+     * <code>.ResVersionConfig next_res_version_config = 10;</code>
      * @return The nextResVersionConfig.
      */
     emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig();
     /**
-     * <code>.ResVersionConfig next_res_version_config = 8;</code>
+     * <code>.ResVersionConfig next_res_version_config = 10;</code>
      */
     emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder();
 
@@ -46,15 +46,14 @@ public final class GetNextResourceInfoRspOuterClass {
         getNextResourceUrlBytes();
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 9011
-   * Obf: DBMFHAOOFNL
+   * CmdId: 20974
    * </pre>
    *
    * Protobuf type {@code GetNextResourceInfoRsp}
@@ -102,7 +101,7 @@ public final class GetNextResourceInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 82: {
               emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder subBuilder = null;
               if (nextResVersionConfig_ != null) {
                 subBuilder = nextResVersionConfig_.toBuilder();
@@ -115,15 +114,15 @@ public final class GetNextResourceInfoRspOuterClass {
 
               break;
             }
-            case 88: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
             case 114: {
               java.lang.String s = input.readStringRequireUtf8();
 
               nextResourceUrl_ = s;
+              break;
+            }
+            case 120: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -158,10 +157,10 @@ public final class GetNextResourceInfoRspOuterClass {
               emu.grasscutter.net.proto.GetNextResourceInfoRspOuterClass.GetNextResourceInfoRsp.class, emu.grasscutter.net.proto.GetNextResourceInfoRspOuterClass.GetNextResourceInfoRsp.Builder.class);
     }
 
-    public static final int NEXT_RES_VERSION_CONFIG_FIELD_NUMBER = 8;
+    public static final int NEXT_RES_VERSION_CONFIG_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig nextResVersionConfig_;
     /**
-     * <code>.ResVersionConfig next_res_version_config = 8;</code>
+     * <code>.ResVersionConfig next_res_version_config = 10;</code>
      * @return Whether the nextResVersionConfig field is set.
      */
     @java.lang.Override
@@ -169,7 +168,7 @@ public final class GetNextResourceInfoRspOuterClass {
       return nextResVersionConfig_ != null;
     }
     /**
-     * <code>.ResVersionConfig next_res_version_config = 8;</code>
+     * <code>.ResVersionConfig next_res_version_config = 10;</code>
      * @return The nextResVersionConfig.
      */
     @java.lang.Override
@@ -177,7 +176,7 @@ public final class GetNextResourceInfoRspOuterClass {
       return nextResVersionConfig_ == null ? emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : nextResVersionConfig_;
     }
     /**
-     * <code>.ResVersionConfig next_res_version_config = 8;</code>
+     * <code>.ResVersionConfig next_res_version_config = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder() {
@@ -222,10 +221,10 @@ public final class GetNextResourceInfoRspOuterClass {
       }
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -248,13 +247,13 @@ public final class GetNextResourceInfoRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (nextResVersionConfig_ != null) {
-        output.writeMessage(8, getNextResVersionConfig());
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeMessage(10, getNextResVersionConfig());
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nextResourceUrl_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 14, nextResourceUrl_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -267,14 +266,14 @@ public final class GetNextResourceInfoRspOuterClass {
       size = 0;
       if (nextResVersionConfig_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getNextResVersionConfig());
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeMessageSize(10, getNextResVersionConfig());
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nextResourceUrl_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, nextResourceUrl_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -416,8 +415,7 @@ public final class GetNextResourceInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9011
-     * Obf: DBMFHAOOFNL
+     * CmdId: 20974
      * </pre>
      *
      * Protobuf type {@code GetNextResourceInfoRsp}
@@ -591,14 +589,14 @@ public final class GetNextResourceInfoRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> nextResVersionConfigBuilder_;
       /**
-       * <code>.ResVersionConfig next_res_version_config = 8;</code>
+       * <code>.ResVersionConfig next_res_version_config = 10;</code>
        * @return Whether the nextResVersionConfig field is set.
        */
       public boolean hasNextResVersionConfig() {
         return nextResVersionConfigBuilder_ != null || nextResVersionConfig_ != null;
       }
       /**
-       * <code>.ResVersionConfig next_res_version_config = 8;</code>
+       * <code>.ResVersionConfig next_res_version_config = 10;</code>
        * @return The nextResVersionConfig.
        */
       public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getNextResVersionConfig() {
@@ -609,7 +607,7 @@ public final class GetNextResourceInfoRspOuterClass {
         }
       }
       /**
-       * <code>.ResVersionConfig next_res_version_config = 8;</code>
+       * <code>.ResVersionConfig next_res_version_config = 10;</code>
        */
       public Builder setNextResVersionConfig(emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
         if (nextResVersionConfigBuilder_ == null) {
@@ -625,7 +623,7 @@ public final class GetNextResourceInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ResVersionConfig next_res_version_config = 8;</code>
+       * <code>.ResVersionConfig next_res_version_config = 10;</code>
        */
       public Builder setNextResVersionConfig(
           emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder builderForValue) {
@@ -639,7 +637,7 @@ public final class GetNextResourceInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ResVersionConfig next_res_version_config = 8;</code>
+       * <code>.ResVersionConfig next_res_version_config = 10;</code>
        */
       public Builder mergeNextResVersionConfig(emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
         if (nextResVersionConfigBuilder_ == null) {
@@ -657,7 +655,7 @@ public final class GetNextResourceInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ResVersionConfig next_res_version_config = 8;</code>
+       * <code>.ResVersionConfig next_res_version_config = 10;</code>
        */
       public Builder clearNextResVersionConfig() {
         if (nextResVersionConfigBuilder_ == null) {
@@ -671,7 +669,7 @@ public final class GetNextResourceInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ResVersionConfig next_res_version_config = 8;</code>
+       * <code>.ResVersionConfig next_res_version_config = 10;</code>
        */
       public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder getNextResVersionConfigBuilder() {
         
@@ -679,7 +677,7 @@ public final class GetNextResourceInfoRspOuterClass {
         return getNextResVersionConfigFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ResVersionConfig next_res_version_config = 8;</code>
+       * <code>.ResVersionConfig next_res_version_config = 10;</code>
        */
       public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getNextResVersionConfigOrBuilder() {
         if (nextResVersionConfigBuilder_ != null) {
@@ -690,7 +688,7 @@ public final class GetNextResourceInfoRspOuterClass {
         }
       }
       /**
-       * <code>.ResVersionConfig next_res_version_config = 8;</code>
+       * <code>.ResVersionConfig next_res_version_config = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> 
@@ -784,7 +782,7 @@ public final class GetNextResourceInfoRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -792,7 +790,7 @@ public final class GetNextResourceInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -803,7 +801,7 @@ public final class GetNextResourceInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -881,9 +879,9 @@ public final class GetNextResourceInfoRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034GetNextResourceInfoRsp.proto\032\026ResVersi" +
       "onConfig.proto\"x\n\026GetNextResourceInfoRsp" +
-      "\0222\n\027next_res_version_config\030\010 \001(\0132\021.ResV" +
+      "\0222\n\027next_res_version_config\030\n \001(\0132\021.ResV" +
       "ersionConfig\022\031\n\021next_resource_url\030\016 \001(\t\022" +
-      "\017\n\007retcode\030\013 \001(\005B\033\n\031emu.grasscutter.net." +
+      "\017\n\007retcode\030\017 \001(\005B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

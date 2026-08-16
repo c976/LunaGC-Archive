@@ -65,7 +65,7 @@ public final class ActionSetGlobalValue extends AbilityActionHandler {
                                 FightProperty.FIGHT_PROP_CUR_HP,
                                 -consumeHP,
                                 PropChangeReasonOuterClass.PropChangeReason.PROP_CHANGE_REASON_ABILITY,
-                                ChangeHpReason.CHANGE_HP_SUB_ABILITY
+                                ChangeHpReason.CHANGE_HP_REASON_SUB_ABILITY
                         ));
                     }
                 }

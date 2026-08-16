@@ -11,7 +11,7 @@ public class PacketAvatarFlycloakChangeNotify extends BasePacket {
 
         AvatarFlycloakChangeNotify proto =
                 AvatarFlycloakChangeNotify.newBuilder()
-                        .setAvatarGuid(avatar.getGuid())
+                        .addAvatarGuidList(avatar.getGuid())
                         .setFlycloakId(avatar.getFlyCloak())
                         .build();
 

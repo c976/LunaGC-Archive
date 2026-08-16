@@ -43,8 +43,10 @@ public class BattlePassMissionData extends GameResource {
         if (this.getTriggerConfig() != null) {
             var params = getTriggerConfig().getParamList()[0];
             if ((params != null) && !params.isEmpty()) {
-                this.mainParams =
-                        Arrays.stream(params.split("[:;,]")).map(Integer::parseInt).collect(Collectors.toSet());
+                this.mainParams = Arrays.stream(params.split("[:;,]"))
+                .filter(s -> s.matches("\\d+"))
+                .map(Integer::parseInt)
+                .collect(Collectors.toSet());
             }
         }
     }

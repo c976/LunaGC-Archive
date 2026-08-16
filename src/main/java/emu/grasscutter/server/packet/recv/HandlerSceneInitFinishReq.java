@@ -2,6 +2,7 @@ package emu.grasscutter.server.packet.recv;
 
 import emu.grasscutter.game.player.Player.SceneLoadState;
 import emu.grasscutter.net.packet.*;
+import emu.grasscutter.net.proto.SceneInitFinishReqOuterClass.SceneInitFinishReq;
 import emu.grasscutter.server.game.GameSession;
 import emu.grasscutter.server.packet.send.*;
 
@@ -10,6 +11,8 @@ public class HandlerSceneInitFinishReq extends PacketHandler {
 
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
+        SceneInitFinishReq req = SceneInitFinishReq.parseFrom(payload);
+        
         var player = session.getPlayer();
         var world = player.getWorld();
 

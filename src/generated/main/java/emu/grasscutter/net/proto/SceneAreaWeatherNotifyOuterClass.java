@@ -19,11 +19,11 @@ public final class SceneAreaWeatherNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
      */
     int getWeatherValueMapCount();
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
      */
     boolean containsWeatherValueMap(
         int key);
@@ -34,49 +34,53 @@ public final class SceneAreaWeatherNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.String>
     getWeatherValueMap();
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.String>
     getWeatherValueMapMap();
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
      */
 
     java.lang.String getWeatherValueMapOrDefault(
         int key,
         java.lang.String defaultValue);
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
      */
 
     java.lang.String getWeatherValueMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 weather_area_id = 10;</code>
+     * <code>uint32 weather_area_id = 9;</code>
      * @return The weatherAreaId.
      */
     int getWeatherAreaId();
 
     /**
-     * <code>float trans_duration = 6;</code>
+     * <code>float trans_duration = 10;</code>
      * @return The transDuration.
      */
     float getTransDuration();
 
     /**
-     * <code>uint32 weather_gadget_id = 9;</code>
+     * <code>uint32 weather_gadget_id = 11;</code>
      * @return The weatherGadgetId.
      */
     int getWeatherGadgetId();
 
     /**
-     * <code>uint32 climate_type = 1;</code>
+     * <code>uint32 climate_type = 4;</code>
      * @return The climateType.
      */
     int getClimateType();
   }
   /**
+   * <pre>
+   * CmdId: 3737
+   * </pre>
+   *
    * Protobuf type {@code SceneAreaWeatherNotify}
    */
   public static final class SceneAreaWeatherNotify extends
@@ -122,12 +126,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              climateType_ = input.readUInt32();
-              break;
-            }
-            case 42: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 weatherValueMap_ = com.google.protobuf.MapField.newMapField(
                     WeatherValueMapDefaultEntryHolder.defaultEntry);
@@ -140,19 +139,24 @@ public final class SceneAreaWeatherNotifyOuterClass {
                   weatherValueMap__.getKey(), weatherValueMap__.getValue());
               break;
             }
-            case 53: {
+            case 32: {
 
-              transDuration_ = input.readFloat();
+              climateType_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              weatherGadgetId_ = input.readUInt32();
+              weatherAreaId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 85: {
 
-              weatherAreaId_ = input.readUInt32();
+              transDuration_ = input.readFloat();
+              break;
+            }
+            case 88: {
+
+              weatherGadgetId_ = input.readUInt32();
               break;
             }
             default: {
@@ -184,7 +188,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 5:
+        case 2:
           return internalGetWeatherValueMap();
         default:
           throw new RuntimeException(
@@ -199,7 +203,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
               emu.grasscutter.net.proto.SceneAreaWeatherNotifyOuterClass.SceneAreaWeatherNotify.class, emu.grasscutter.net.proto.SceneAreaWeatherNotifyOuterClass.SceneAreaWeatherNotify.Builder.class);
     }
 
-    public static final int WEATHER_VALUE_MAP_FIELD_NUMBER = 5;
+    public static final int WEATHER_VALUE_MAP_FIELD_NUMBER = 2;
     private static final class WeatherValueMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.String> defaultEntry =
@@ -226,7 +230,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
       return internalGetWeatherValueMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
      */
 
     @java.lang.Override
@@ -244,7 +248,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
       return getWeatherValueMapMap();
     }
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
      */
     @java.lang.Override
 
@@ -252,7 +256,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
       return internalGetWeatherValueMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
      */
     @java.lang.Override
 
@@ -265,7 +269,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
      */
     @java.lang.Override
 
@@ -280,10 +284,10 @@ public final class SceneAreaWeatherNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int WEATHER_AREA_ID_FIELD_NUMBER = 10;
+    public static final int WEATHER_AREA_ID_FIELD_NUMBER = 9;
     private int weatherAreaId_;
     /**
-     * <code>uint32 weather_area_id = 10;</code>
+     * <code>uint32 weather_area_id = 9;</code>
      * @return The weatherAreaId.
      */
     @java.lang.Override
@@ -291,10 +295,10 @@ public final class SceneAreaWeatherNotifyOuterClass {
       return weatherAreaId_;
     }
 
-    public static final int TRANS_DURATION_FIELD_NUMBER = 6;
+    public static final int TRANS_DURATION_FIELD_NUMBER = 10;
     private float transDuration_;
     /**
-     * <code>float trans_duration = 6;</code>
+     * <code>float trans_duration = 10;</code>
      * @return The transDuration.
      */
     @java.lang.Override
@@ -302,10 +306,10 @@ public final class SceneAreaWeatherNotifyOuterClass {
       return transDuration_;
     }
 
-    public static final int WEATHER_GADGET_ID_FIELD_NUMBER = 9;
+    public static final int WEATHER_GADGET_ID_FIELD_NUMBER = 11;
     private int weatherGadgetId_;
     /**
-     * <code>uint32 weather_gadget_id = 9;</code>
+     * <code>uint32 weather_gadget_id = 11;</code>
      * @return The weatherGadgetId.
      */
     @java.lang.Override
@@ -313,10 +317,10 @@ public final class SceneAreaWeatherNotifyOuterClass {
       return weatherGadgetId_;
     }
 
-    public static final int CLIMATE_TYPE_FIELD_NUMBER = 1;
+    public static final int CLIMATE_TYPE_FIELD_NUMBER = 4;
     private int climateType_;
     /**
-     * <code>uint32 climate_type = 1;</code>
+     * <code>uint32 climate_type = 4;</code>
      * @return The climateType.
      */
     @java.lang.Override
@@ -338,23 +342,23 @@ public final class SceneAreaWeatherNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (climateType_ != 0) {
-        output.writeUInt32(1, climateType_);
-      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetWeatherValueMap(),
           WeatherValueMapDefaultEntryHolder.defaultEntry,
-          5);
-      if (transDuration_ != 0F) {
-        output.writeFloat(6, transDuration_);
-      }
-      if (weatherGadgetId_ != 0) {
-        output.writeUInt32(9, weatherGadgetId_);
+          2);
+      if (climateType_ != 0) {
+        output.writeUInt32(4, climateType_);
       }
       if (weatherAreaId_ != 0) {
-        output.writeUInt32(10, weatherAreaId_);
+        output.writeUInt32(9, weatherAreaId_);
+      }
+      if (transDuration_ != 0F) {
+        output.writeFloat(10, transDuration_);
+      }
+      if (weatherGadgetId_ != 0) {
+        output.writeUInt32(11, weatherGadgetId_);
       }
       unknownFields.writeTo(output);
     }
@@ -365,10 +369,6 @@ public final class SceneAreaWeatherNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (climateType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, climateType_);
-      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.String> entry
            : internalGetWeatherValueMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.String>
@@ -377,19 +377,23 @@ public final class SceneAreaWeatherNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(5, weatherValueMap__);
+            .computeMessageSize(2, weatherValueMap__);
       }
-      if (transDuration_ != 0F) {
+      if (climateType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, transDuration_);
-      }
-      if (weatherGadgetId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, weatherGadgetId_);
+          .computeUInt32Size(4, climateType_);
       }
       if (weatherAreaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, weatherAreaId_);
+          .computeUInt32Size(9, weatherAreaId_);
+      }
+      if (transDuration_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(10, transDuration_);
+      }
+      if (weatherGadgetId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, weatherGadgetId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -537,6 +541,10 @@ public final class SceneAreaWeatherNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3737
+     * </pre>
+     *
      * Protobuf type {@code SceneAreaWeatherNotify}
      */
     public static final class Builder extends
@@ -552,7 +560,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 5:
+          case 2:
             return internalGetWeatherValueMap();
           default:
             throw new RuntimeException(
@@ -563,7 +571,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 5:
+          case 2:
             return internalGetMutableWeatherValueMap();
           default:
             throw new RuntimeException(
@@ -757,7 +765,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return internalGetWeatherValueMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
        */
 
       @java.lang.Override
@@ -775,7 +783,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return getWeatherValueMapMap();
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
        */
       @java.lang.Override
 
@@ -783,7 +791,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return internalGetWeatherValueMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
        */
       @java.lang.Override
 
@@ -796,7 +804,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
        */
       @java.lang.Override
 
@@ -817,7 +825,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
        */
 
       public Builder removeWeatherValueMap(
@@ -836,7 +844,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return internalGetMutableWeatherValueMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
        */
       public Builder putWeatherValueMap(
           int key,
@@ -848,7 +856,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 5;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 2;</code>
        */
 
       public Builder putAllWeatherValueMap(
@@ -860,7 +868,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
 
       private int weatherAreaId_ ;
       /**
-       * <code>uint32 weather_area_id = 10;</code>
+       * <code>uint32 weather_area_id = 9;</code>
        * @return The weatherAreaId.
        */
       @java.lang.Override
@@ -868,7 +876,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return weatherAreaId_;
       }
       /**
-       * <code>uint32 weather_area_id = 10;</code>
+       * <code>uint32 weather_area_id = 9;</code>
        * @param value The weatherAreaId to set.
        * @return This builder for chaining.
        */
@@ -879,7 +887,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 weather_area_id = 10;</code>
+       * <code>uint32 weather_area_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearWeatherAreaId() {
@@ -891,7 +899,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
 
       private float transDuration_ ;
       /**
-       * <code>float trans_duration = 6;</code>
+       * <code>float trans_duration = 10;</code>
        * @return The transDuration.
        */
       @java.lang.Override
@@ -899,7 +907,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return transDuration_;
       }
       /**
-       * <code>float trans_duration = 6;</code>
+       * <code>float trans_duration = 10;</code>
        * @param value The transDuration to set.
        * @return This builder for chaining.
        */
@@ -910,7 +918,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>float trans_duration = 6;</code>
+       * <code>float trans_duration = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearTransDuration() {
@@ -922,7 +930,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
 
       private int weatherGadgetId_ ;
       /**
-       * <code>uint32 weather_gadget_id = 9;</code>
+       * <code>uint32 weather_gadget_id = 11;</code>
        * @return The weatherGadgetId.
        */
       @java.lang.Override
@@ -930,7 +938,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return weatherGadgetId_;
       }
       /**
-       * <code>uint32 weather_gadget_id = 9;</code>
+       * <code>uint32 weather_gadget_id = 11;</code>
        * @param value The weatherGadgetId to set.
        * @return This builder for chaining.
        */
@@ -941,7 +949,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 weather_gadget_id = 9;</code>
+       * <code>uint32 weather_gadget_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearWeatherGadgetId() {
@@ -953,7 +961,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
 
       private int climateType_ ;
       /**
-       * <code>uint32 climate_type = 1;</code>
+       * <code>uint32 climate_type = 4;</code>
        * @return The climateType.
        */
       @java.lang.Override
@@ -961,7 +969,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return climateType_;
       }
       /**
-       * <code>uint32 climate_type = 1;</code>
+       * <code>uint32 climate_type = 4;</code>
        * @param value The climateType to set.
        * @return This builder for chaining.
        */
@@ -972,7 +980,7 @@ public final class SceneAreaWeatherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 climate_type = 1;</code>
+       * <code>uint32 climate_type = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearClimateType() {
@@ -1054,11 +1062,11 @@ public final class SceneAreaWeatherNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SceneAreaWeatherNotify.proto\"\373\001\n\026Scene" +
-      "AreaWeatherNotify\022G\n\021weather_value_map\030\005" +
+      "AreaWeatherNotify\022G\n\021weather_value_map\030\002" +
       " \003(\0132,.SceneAreaWeatherNotify.WeatherVal" +
-      "ueMapEntry\022\027\n\017weather_area_id\030\n \001(\r\022\026\n\016t" +
-      "rans_duration\030\006 \001(\002\022\031\n\021weather_gadget_id" +
-      "\030\t \001(\r\022\024\n\014climate_type\030\001 \001(\r\0326\n\024WeatherV" +
+      "ueMapEntry\022\027\n\017weather_area_id\030\t \001(\r\022\026\n\016t" +
+      "rans_duration\030\n \001(\002\022\031\n\021weather_gadget_id" +
+      "\030\013 \001(\r\022\024\n\014climate_type\030\004 \001(\r\0326\n\024WeatherV" +
       "alueMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\t" +
       ":\0028\001B\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"

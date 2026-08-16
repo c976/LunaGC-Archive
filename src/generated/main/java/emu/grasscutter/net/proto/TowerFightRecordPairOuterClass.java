@@ -19,22 +19,18 @@ public final class TowerFightRecordPairOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 avatar_id = 4;</code>
+     * @return The avatarId.
+     */
+    int getAvatarId();
+
+    /**
      * <code>uint32 data = 6;</code>
      * @return The data.
      */
     int getData();
-
-    /**
-     * <code>uint32 avatar_id = 15;</code>
-     * @return The avatarId.
-     */
-    int getAvatarId();
   }
   /**
-   * <pre>
-   * 4.6.0
-   * </pre>
-   *
    * Protobuf type {@code TowerFightRecordPair}
    */
   public static final class TowerFightRecordPair extends
@@ -79,14 +75,14 @@ public final class TowerFightRecordPairOuterClass {
             case 0:
               done = true;
               break;
+            case 32: {
+
+              avatarId_ = input.readUInt32();
+              break;
+            }
             case 48: {
 
               data_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              avatarId_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,6 +117,17 @@ public final class TowerFightRecordPairOuterClass {
               emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.class, emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.Builder.class);
     }
 
+    public static final int AVATAR_ID_FIELD_NUMBER = 4;
+    private int avatarId_;
+    /**
+     * <code>uint32 avatar_id = 4;</code>
+     * @return The avatarId.
+     */
+    @java.lang.Override
+    public int getAvatarId() {
+      return avatarId_;
+    }
+
     public static final int DATA_FIELD_NUMBER = 6;
     private int data_;
     /**
@@ -130,17 +137,6 @@ public final class TowerFightRecordPairOuterClass {
     @java.lang.Override
     public int getData() {
       return data_;
-    }
-
-    public static final int AVATAR_ID_FIELD_NUMBER = 15;
-    private int avatarId_;
-    /**
-     * <code>uint32 avatar_id = 15;</code>
-     * @return The avatarId.
-     */
-    @java.lang.Override
-    public int getAvatarId() {
-      return avatarId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +153,11 @@ public final class TowerFightRecordPairOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (avatarId_ != 0) {
+        output.writeUInt32(4, avatarId_);
+      }
       if (data_ != 0) {
         output.writeUInt32(6, data_);
-      }
-      if (avatarId_ != 0) {
-        output.writeUInt32(15, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class TowerFightRecordPairOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (avatarId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, avatarId_);
+      }
       if (data_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, data_);
-      }
-      if (avatarId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +191,10 @@ public final class TowerFightRecordPairOuterClass {
       }
       emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair other = (emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair) obj;
 
-      if (getData()
-          != other.getData()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
+      if (getData()
+          != other.getData()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +206,10 @@ public final class TowerFightRecordPairOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DATA_FIELD_NUMBER;
-      hash = (53 * hash) + getData();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + DATA_FIELD_NUMBER;
+      hash = (53 * hash) + getData();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +306,6 @@ public final class TowerFightRecordPairOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 4.6.0
-     * </pre>
-     *
      * Protobuf type {@code TowerFightRecordPair}
      */
     public static final class Builder extends
@@ -351,9 +343,9 @@ public final class TowerFightRecordPairOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        data_ = 0;
-
         avatarId_ = 0;
+
+        data_ = 0;
 
         return this;
       }
@@ -381,8 +373,8 @@ public final class TowerFightRecordPairOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair buildPartial() {
         emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair result = new emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair(this);
-        result.data_ = data_;
         result.avatarId_ = avatarId_;
+        result.data_ = data_;
         onBuilt();
         return result;
       }
@@ -431,11 +423,11 @@ public final class TowerFightRecordPairOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair other) {
         if (other == emu.grasscutter.net.proto.TowerFightRecordPairOuterClass.TowerFightRecordPair.getDefaultInstance()) return this;
-        if (other.getData() != 0) {
-          setData(other.getData());
-        }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
+        }
+        if (other.getData() != 0) {
+          setData(other.getData());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,6 +458,37 @@ public final class TowerFightRecordPairOuterClass {
         return this;
       }
 
+      private int avatarId_ ;
+      /**
+       * <code>uint32 avatar_id = 4;</code>
+       * @return The avatarId.
+       */
+      @java.lang.Override
+      public int getAvatarId() {
+        return avatarId_;
+      }
+      /**
+       * <code>uint32 avatar_id = 4;</code>
+       * @param value The avatarId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarId(int value) {
+        
+        avatarId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 avatar_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarId() {
+        
+        avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int data_ ;
       /**
        * <code>uint32 data = 6;</code>
@@ -493,37 +516,6 @@ public final class TowerFightRecordPairOuterClass {
       public Builder clearData() {
         
         data_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int avatarId_ ;
-      /**
-       * <code>uint32 avatar_id = 15;</code>
-       * @return The avatarId.
-       */
-      @java.lang.Override
-      public int getAvatarId() {
-        return avatarId_;
-      }
-      /**
-       * <code>uint32 avatar_id = 15;</code>
-       * @param value The avatarId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarId(int value) {
-        
-        avatarId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 avatar_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarId() {
-        
-        avatarId_ = 0;
         onChanged();
         return this;
       }
@@ -595,8 +587,8 @@ public final class TowerFightRecordPairOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032TowerFightRecordPair.proto\"7\n\024TowerFig" +
-      "htRecordPair\022\014\n\004data\030\006 \001(\r\022\021\n\tavatar_id\030" +
-      "\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "htRecordPair\022\021\n\tavatar_id\030\004 \001(\r\022\014\n\004data\030" +
+      "\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +600,7 @@ public final class TowerFightRecordPairOuterClass {
     internal_static_TowerFightRecordPair_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerFightRecordPair_descriptor,
-        new java.lang.String[] { "Data", "AvatarId", });
+        new java.lang.String[] { "AvatarId", "Data", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

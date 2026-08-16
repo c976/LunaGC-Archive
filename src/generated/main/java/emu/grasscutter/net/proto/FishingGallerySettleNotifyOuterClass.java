@@ -19,36 +19,35 @@ public final class FishingGallerySettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+     * <code>.FishingGallerySettleInfo settle_info = 15;</code>
      * @return Whether the settleInfo field is set.
      */
     boolean hasSettleInfo();
     /**
-     * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+     * <code>.FishingGallerySettleInfo settle_info = 15;</code>
      * @return The settleInfo.
      */
     emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo getSettleInfo();
     /**
-     * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+     * <code>.FishingGallerySettleInfo settle_info = 15;</code>
      */
     emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfoOrBuilder getSettleInfoOrBuilder();
 
     /**
-     * <code>uint32 gallery_id = 12;</code>
+     * <code>uint32 gallery_id = 7;</code>
      * @return The galleryId.
      */
     int getGalleryId();
 
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * CmdId: 3899
-   * Obf: BDKGFCKCFMB
+   * CmdId: 4675
    * </pre>
    *
    * Protobuf type {@code FishingGallerySettleNotify}
@@ -95,17 +94,17 @@ public final class FishingGallerySettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 56: {
 
               galleryId_ = input.readUInt32();
               break;
             }
-            case 106: {
+            case 80: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 122: {
               emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo.Builder subBuilder = null;
               if (settleInfo_ != null) {
                 subBuilder = settleInfo_.toBuilder();
@@ -150,10 +149,10 @@ public final class FishingGallerySettleNotifyOuterClass {
               emu.grasscutter.net.proto.FishingGallerySettleNotifyOuterClass.FishingGallerySettleNotify.class, emu.grasscutter.net.proto.FishingGallerySettleNotifyOuterClass.FishingGallerySettleNotify.Builder.class);
     }
 
-    public static final int SETTLE_INFO_FIELD_NUMBER = 13;
+    public static final int SETTLE_INFO_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo settleInfo_;
     /**
-     * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+     * <code>.FishingGallerySettleInfo settle_info = 15;</code>
      * @return Whether the settleInfo field is set.
      */
     @java.lang.Override
@@ -161,7 +160,7 @@ public final class FishingGallerySettleNotifyOuterClass {
       return settleInfo_ != null;
     }
     /**
-     * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+     * <code>.FishingGallerySettleInfo settle_info = 15;</code>
      * @return The settleInfo.
      */
     @java.lang.Override
@@ -169,17 +168,17 @@ public final class FishingGallerySettleNotifyOuterClass {
       return settleInfo_ == null ? emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo.getDefaultInstance() : settleInfo_;
     }
     /**
-     * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+     * <code>.FishingGallerySettleInfo settle_info = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfoOrBuilder getSettleInfoOrBuilder() {
       return getSettleInfo();
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 12;
+    public static final int GALLERY_ID_FIELD_NUMBER = 7;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 12;</code>
+     * <code>uint32 gallery_id = 7;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -187,10 +186,10 @@ public final class FishingGallerySettleNotifyOuterClass {
       return galleryId_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 2;
+    public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -212,14 +211,14 @@ public final class FishingGallerySettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(2, levelId_);
-      }
       if (galleryId_ != 0) {
-        output.writeUInt32(12, galleryId_);
+        output.writeUInt32(7, galleryId_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(10, levelId_);
       }
       if (settleInfo_ != null) {
-        output.writeMessage(13, getSettleInfo());
+        output.writeMessage(15, getSettleInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -230,17 +229,17 @@ public final class FishingGallerySettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, levelId_);
-      }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, galleryId_);
+          .computeUInt32Size(7, galleryId_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, levelId_);
       }
       if (settleInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getSettleInfo());
+          .computeMessageSize(15, getSettleInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -382,8 +381,7 @@ public final class FishingGallerySettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3899
-     * Obf: BDKGFCKCFMB
+     * CmdId: 4675
      * </pre>
      *
      * Protobuf type {@code FishingGallerySettleNotify}
@@ -556,14 +554,14 @@ public final class FishingGallerySettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo, emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo.Builder, emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfoOrBuilder> settleInfoBuilder_;
       /**
-       * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+       * <code>.FishingGallerySettleInfo settle_info = 15;</code>
        * @return Whether the settleInfo field is set.
        */
       public boolean hasSettleInfo() {
         return settleInfoBuilder_ != null || settleInfo_ != null;
       }
       /**
-       * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+       * <code>.FishingGallerySettleInfo settle_info = 15;</code>
        * @return The settleInfo.
        */
       public emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo getSettleInfo() {
@@ -574,7 +572,7 @@ public final class FishingGallerySettleNotifyOuterClass {
         }
       }
       /**
-       * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+       * <code>.FishingGallerySettleInfo settle_info = 15;</code>
        */
       public Builder setSettleInfo(emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -590,7 +588,7 @@ public final class FishingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+       * <code>.FishingGallerySettleInfo settle_info = 15;</code>
        */
       public Builder setSettleInfo(
           emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo.Builder builderForValue) {
@@ -604,7 +602,7 @@ public final class FishingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+       * <code>.FishingGallerySettleInfo settle_info = 15;</code>
        */
       public Builder mergeSettleInfo(emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -622,7 +620,7 @@ public final class FishingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+       * <code>.FishingGallerySettleInfo settle_info = 15;</code>
        */
       public Builder clearSettleInfo() {
         if (settleInfoBuilder_ == null) {
@@ -636,7 +634,7 @@ public final class FishingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+       * <code>.FishingGallerySettleInfo settle_info = 15;</code>
        */
       public emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo.Builder getSettleInfoBuilder() {
         
@@ -644,7 +642,7 @@ public final class FishingGallerySettleNotifyOuterClass {
         return getSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+       * <code>.FishingGallerySettleInfo settle_info = 15;</code>
        */
       public emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfoOrBuilder getSettleInfoOrBuilder() {
         if (settleInfoBuilder_ != null) {
@@ -655,7 +653,7 @@ public final class FishingGallerySettleNotifyOuterClass {
         }
       }
       /**
-       * <code>.FishingGallerySettleInfo settle_info = 13;</code>
+       * <code>.FishingGallerySettleInfo settle_info = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo, emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfo.Builder, emu.grasscutter.net.proto.FishingGallerySettleInfoOuterClass.FishingGallerySettleInfoOrBuilder> 
@@ -673,7 +671,7 @@ public final class FishingGallerySettleNotifyOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 12;</code>
+       * <code>uint32 gallery_id = 7;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -681,7 +679,7 @@ public final class FishingGallerySettleNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 12;</code>
+       * <code>uint32 gallery_id = 7;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -692,7 +690,7 @@ public final class FishingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 12;</code>
+       * <code>uint32 gallery_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -704,7 +702,7 @@ public final class FishingGallerySettleNotifyOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -712,7 +710,7 @@ public final class FishingGallerySettleNotifyOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -723,7 +721,7 @@ public final class FishingGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -801,9 +799,9 @@ public final class FishingGallerySettleNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n FishingGallerySettleNotify.proto\032\036Fish" +
       "ingGallerySettleInfo.proto\"r\n\032FishingGal" +
-      "lerySettleNotify\022.\n\013settle_info\030\r \001(\0132\031." +
-      "FishingGallerySettleInfo\022\022\n\ngallery_id\030\014" +
-      " \001(\r\022\020\n\010level_id\030\002 \001(\rB\033\n\031emu.grasscutte" +
+      "lerySettleNotify\022.\n\013settle_info\030\017 \001(\0132\031." +
+      "FishingGallerySettleInfo\022\022\n\ngallery_id\030\007" +
+      " \001(\r\022\020\n\010level_id\030\n \001(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

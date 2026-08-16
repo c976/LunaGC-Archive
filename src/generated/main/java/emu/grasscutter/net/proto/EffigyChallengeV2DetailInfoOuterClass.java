@@ -43,10 +43,6 @@ public final class EffigyChallengeV2DetailInfoOuterClass {
         int index);
   }
   /**
-   * <pre>
-   * Obf: GLGCLOKDIJM
-   * </pre>
-   *
    * Protobuf type {@code EffigyChallengeV2DetailInfo}
    */
   public static final class EffigyChallengeV2DetailInfo extends
@@ -335,10 +331,6 @@ public final class EffigyChallengeV2DetailInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: GLGCLOKDIJM
-     * </pre>
-     *
      * Protobuf type {@code EffigyChallengeV2DetailInfo}
      */
     public static final class Builder extends

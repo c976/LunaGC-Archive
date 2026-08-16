@@ -11,13 +11,19 @@ public class HandlerAvatarWearFlycloakReq extends PacketHandler {
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
         AvatarWearFlycloakReq req = AvatarWearFlycloakReq.parseFrom(payload);
 
-        boolean success =
-                session.getPlayer().getAvatars().wearFlycloak(req.getAvatarGuid(), req.getFlycloakId());
+        boolean success = true;
+        for (Long guidObj : req.getAvatarGuidListList()) {
+            long guid = guidObj.longValue();
+            if (!session.getPlayer().getAvatars().wearFlycloak(guid, req.getFlycloakId())) {
+                success = false;
+                break;
+            }
+        }
 
         if (success) {
             session
-                    .getPlayer()
-                    .sendPacket(new PacketAvatarWearFlycloakRsp(req.getAvatarGuid(), req.getFlycloakId()));
+                .getPlayer()
+                .sendPacket(new PacketAvatarWearFlycloakRsp(req.getAvatarGuidListList(), req.getFlycloakId()));
         } else {
             session.getPlayer().sendPacket(new PacketAvatarWearFlycloakRsp());
         }

@@ -36,12 +36,16 @@ public final class MarkNewNotifyOuterClass {
     int getIdList(int index);
 
     /**
-     * <code>uint32 mark_new_type = 15;</code>
+     * <code>uint32 mark_new_type = 13;</code>
      * @return The markNewType.
      */
     int getMarkNewType();
   }
   /**
+   * <pre>
+   * CmdId: 24801
+   * </pre>
+   *
    * Protobuf type {@code MarkNewNotify}
    */
   public static final class MarkNewNotify extends
@@ -109,7 +113,7 @@ public final class MarkNewNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 120: {
+            case 104: {
 
               markNewType_ = input.readUInt32();
               break;
@@ -177,10 +181,10 @@ public final class MarkNewNotifyOuterClass {
     }
     private int idListMemoizedSerializedSize = -1;
 
-    public static final int MARK_NEW_TYPE_FIELD_NUMBER = 15;
+    public static final int MARK_NEW_TYPE_FIELD_NUMBER = 13;
     private int markNewType_;
     /**
-     * <code>uint32 mark_new_type = 15;</code>
+     * <code>uint32 mark_new_type = 13;</code>
      * @return The markNewType.
      */
     @java.lang.Override
@@ -211,7 +215,7 @@ public final class MarkNewNotifyOuterClass {
         output.writeUInt32NoTag(idList_.getInt(i));
       }
       if (markNewType_ != 0) {
-        output.writeUInt32(15, markNewType_);
+        output.writeUInt32(13, markNewType_);
       }
       unknownFields.writeTo(output);
     }
@@ -238,7 +242,7 @@ public final class MarkNewNotifyOuterClass {
       }
       if (markNewType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, markNewType_);
+          .computeUInt32Size(13, markNewType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -372,6 +376,10 @@ public final class MarkNewNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 24801
+     * </pre>
+     *
      * Protobuf type {@code MarkNewNotify}
      */
     public static final class Builder extends
@@ -618,7 +626,7 @@ public final class MarkNewNotifyOuterClass {
 
       private int markNewType_ ;
       /**
-       * <code>uint32 mark_new_type = 15;</code>
+       * <code>uint32 mark_new_type = 13;</code>
        * @return The markNewType.
        */
       @java.lang.Override
@@ -626,7 +634,7 @@ public final class MarkNewNotifyOuterClass {
         return markNewType_;
       }
       /**
-       * <code>uint32 mark_new_type = 15;</code>
+       * <code>uint32 mark_new_type = 13;</code>
        * @param value The markNewType to set.
        * @return This builder for chaining.
        */
@@ -637,7 +645,7 @@ public final class MarkNewNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mark_new_type = 15;</code>
+       * <code>uint32 mark_new_type = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearMarkNewType() {
@@ -714,7 +722,7 @@ public final class MarkNewNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023MarkNewNotify.proto\"7\n\rMarkNewNotify\022\017" +
-      "\n\007id_list\030\014 \003(\r\022\025\n\rmark_new_type\030\017 \001(\rB\033" +
+      "\n\007id_list\030\014 \003(\r\022\025\n\rmark_new_type\030\r \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

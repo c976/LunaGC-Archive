@@ -7,9 +7,9 @@
 - Pre-made: [github repo](https://github.com/Zhaokugua/Grasscutter_Banners)
 - Rename the file you chose to download to Banners.json and replace it with the already-existing one in the data folder.
 - The repo also offers a file which contains all of the banners, to use it follow the same procedure mentioned above.
-  
+
   ### Making custom banners
-  
+
 - If you want to make a custom banner for a character or weapon, you'll need to know the prefabPath, the titlePath and the character/item IDs.
 - Fun fact: You can set any item to be on the rateUp, even if it's a 4* instead of a 5*.
 
@@ -36,11 +36,12 @@
 - Get 9999 Acquaint fates: /g 224 x9999
 - Get 9999 Mora: /g 202 x9999
 - Get 9999 Primogems: /g 201 x9999
-  
+
+
   ### Make sure to not include <> or [] in the commands! The stuff in <> means its required and the stuff in [] means its optional.
-  
+
   ### How to get all of the stuff maxed out: /g all lv90 r5 c6 c6 sl10 | Then do a separate one for the materials: /g mats x99999
-  
+
 
 ## Ways to TP around the map:  
 
@@ -54,13 +55,11 @@ Method 2:
 
 - 1: Open the map
 - 2: Place a fishing rod marker (the last one) where you want to teleport and mark it.
-  
 
 ## How to get avatar/entity/material etc. IDs?
-  
+
 - Go to [gi.yotta.moe](https://gi.yatta.moe/en)
 - Search up the material/avatar/enemy and then the ID of it should be in the URL of the site, for example I searched for the pyro hilichurl archer; the link for it is gi.yotta.moe/en/archive/monster/21010501/pyro-hilichurl-shooter so the ID for it will be 21010501.
-
 
 ## How to spawn monsters?
 

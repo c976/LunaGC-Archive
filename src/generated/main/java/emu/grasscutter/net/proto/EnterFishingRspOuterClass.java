@@ -19,21 +19,20 @@ public final class EnterFishingRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 fish_pool_id = 2;</code>
+     * <code>uint32 fish_pool_id = 4;</code>
      * @return The fishPoolId.
      */
     int getFishPoolId();
+
+    /**
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 22129
-   * Obf: EMGCLLHPDOF
+   * CmdId: 2656
    * </pre>
    *
    * Protobuf type {@code EnterFishingRsp}
@@ -80,12 +79,12 @@ public final class EnterFishingRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 32: {
 
               fishPoolId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
@@ -122,26 +121,26 @@ public final class EnterFishingRspOuterClass {
               emu.grasscutter.net.proto.EnterFishingRspOuterClass.EnterFishingRsp.class, emu.grasscutter.net.proto.EnterFishingRspOuterClass.EnterFishingRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int FISH_POOL_ID_FIELD_NUMBER = 2;
+    public static final int FISH_POOL_ID_FIELD_NUMBER = 4;
     private int fishPoolId_;
     /**
-     * <code>uint32 fish_pool_id = 2;</code>
+     * <code>uint32 fish_pool_id = 4;</code>
      * @return The fishPoolId.
      */
     @java.lang.Override
     public int getFishPoolId() {
       return fishPoolId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 8;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +158,10 @@ public final class EnterFishingRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (fishPoolId_ != 0) {
-        output.writeUInt32(2, fishPoolId_);
+        output.writeUInt32(4, fishPoolId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(8, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +174,11 @@ public final class EnterFishingRspOuterClass {
       size = 0;
       if (fishPoolId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, fishPoolId_);
+          .computeUInt32Size(4, fishPoolId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(8, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class EnterFishingRspOuterClass {
       }
       emu.grasscutter.net.proto.EnterFishingRspOuterClass.EnterFishingRsp other = (emu.grasscutter.net.proto.EnterFishingRspOuterClass.EnterFishingRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getFishPoolId()
           != other.getFishPoolId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +210,10 @@ public final class EnterFishingRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + FISH_POOL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getFishPoolId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +311,7 @@ public final class EnterFishingRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22129
-     * Obf: EMGCLLHPDOF
+     * CmdId: 2656
      * </pre>
      *
      * Protobuf type {@code EnterFishingRsp}
@@ -353,9 +351,9 @@ public final class EnterFishingRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         fishPoolId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -383,8 +381,8 @@ public final class EnterFishingRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EnterFishingRspOuterClass.EnterFishingRsp buildPartial() {
         emu.grasscutter.net.proto.EnterFishingRspOuterClass.EnterFishingRsp result = new emu.grasscutter.net.proto.EnterFishingRspOuterClass.EnterFishingRsp(this);
-        result.retcode_ = retcode_;
         result.fishPoolId_ = fishPoolId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -433,11 +431,11 @@ public final class EnterFishingRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EnterFishingRspOuterClass.EnterFishingRsp other) {
         if (other == emu.grasscutter.net.proto.EnterFishingRspOuterClass.EnterFishingRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getFishPoolId() != 0) {
           setFishPoolId(other.getFishPoolId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +466,9 @@ public final class EnterFishingRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int fishPoolId_ ;
       /**
-       * <code>uint32 fish_pool_id = 2;</code>
+       * <code>uint32 fish_pool_id = 4;</code>
        * @return The fishPoolId.
        */
       @java.lang.Override
@@ -509,7 +476,7 @@ public final class EnterFishingRspOuterClass {
         return fishPoolId_;
       }
       /**
-       * <code>uint32 fish_pool_id = 2;</code>
+       * <code>uint32 fish_pool_id = 4;</code>
        * @param value The fishPoolId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +487,43 @@ public final class EnterFishingRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 fish_pool_id = 2;</code>
+       * <code>uint32 fish_pool_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearFishPoolId() {
         
         fishPoolId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +595,8 @@ public final class EnterFishingRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025EnterFishingRsp.proto\"8\n\017EnterFishingR" +
-      "sp\022\017\n\007retcode\030\016 \001(\005\022\024\n\014fish_pool_id\030\002 \001(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "sp\022\024\n\014fish_pool_id\030\004 \001(\r\022\017\n\007retcode\030\010 \001(" +
+      "\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -609,7 +607,7 @@ public final class EnterFishingRspOuterClass {
     internal_static_EnterFishingRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EnterFishingRsp_descriptor,
-        new java.lang.String[] { "Retcode", "FishPoolId", });
+        new java.lang.String[] { "FishPoolId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

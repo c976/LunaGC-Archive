@@ -240,10 +240,6 @@ public final class MaterialDeleteInfoOuterClass {
       int getConfigCountDownTime();
     }
     /**
-     * <pre>
-     * CmdId: - | MergeFrom: 0x82AFF10 | WriteTo: 0x82AFC80
-     * </pre>
-     *
      * Protobuf type {@code MaterialDeleteInfo.CountDownDelete}
      */
     public static final class CountDownDelete extends
@@ -621,10 +617,6 @@ public final class MaterialDeleteInfoOuterClass {
         return builder;
       }
       /**
-       * <pre>
-       * CmdId: - | MergeFrom: 0x82AFF10 | WriteTo: 0x82AFC80
-       * </pre>
-       *
        * Protobuf type {@code MaterialDeleteInfo.CountDownDelete}
        */
       public static final class Builder extends
@@ -1022,10 +1014,6 @@ public final class MaterialDeleteInfoOuterClass {
       int getDeleteTime();
     }
     /**
-     * <pre>
-     * CmdId: - | MergeFrom: 0xC2C3420 | WriteTo: 0xC2C32B0
-     * </pre>
-     *
      * Protobuf type {@code MaterialDeleteInfo.DateTimeDelete}
      */
     public static final class DateTimeDelete extends
@@ -1274,10 +1262,6 @@ public final class MaterialDeleteInfoOuterClass {
         return builder;
       }
       /**
-       * <pre>
-       * CmdId: - | MergeFrom: 0xC2C3420 | WriteTo: 0xC2C32B0
-       * </pre>
-       *
        * Protobuf type {@code MaterialDeleteInfo.DateTimeDelete}
        */
       public static final class Builder extends
@@ -1558,10 +1542,6 @@ public final class MaterialDeleteInfoOuterClass {
       int getConfigCountDownTime();
     }
     /**
-     * <pre>
-     * CmdId: - | MergeFrom: 0xA3605B0 | WriteTo: 0xA3601B0
-     * </pre>
-     *
      * Protobuf type {@code MaterialDeleteInfo.DelayWeekCountDownDelete}
      */
     public static final class DelayWeekCountDownDelete extends
@@ -1966,10 +1946,6 @@ public final class MaterialDeleteInfoOuterClass {
         return builder;
       }
       /**
-       * <pre>
-       * CmdId: - | MergeFrom: 0xA3605B0 | WriteTo: 0xA3601B0
-       * </pre>
-       *
        * Protobuf type {@code MaterialDeleteInfo.DelayWeekCountDownDelete}
        */
       public static final class Builder extends

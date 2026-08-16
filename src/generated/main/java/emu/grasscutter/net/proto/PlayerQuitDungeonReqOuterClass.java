@@ -19,18 +19,22 @@ public final class PlayerQuitDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_quit_immediately = 9;</code>
-     * @return The isQuitImmediately.
-     */
-    boolean getIsQuitImmediately();
-
-    /**
-     * <code>uint32 pointId = 10;</code>
+     * <code>uint32 point_id = 7;</code>
      * @return The pointId.
      */
     int getPointId();
+
+    /**
+     * <code>bool is_quit_immediately = 12;</code>
+     * @return The isQuitImmediately.
+     */
+    boolean getIsQuitImmediately();
   }
   /**
+   * <pre>
+   * CmdId: 3764
+   * </pre>
+   *
    * Protobuf type {@code PlayerQuitDungeonReq}
    */
   public static final class PlayerQuitDungeonReq extends
@@ -75,14 +79,14 @@ public final class PlayerQuitDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
-
-              isQuitImmediately_ = input.readBool();
-              break;
-            }
-            case 80: {
+            case 56: {
 
               pointId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              isQuitImmediately_ = input.readBool();
               break;
             }
             default: {
@@ -117,26 +121,26 @@ public final class PlayerQuitDungeonReqOuterClass {
               emu.grasscutter.net.proto.PlayerQuitDungeonReqOuterClass.PlayerQuitDungeonReq.class, emu.grasscutter.net.proto.PlayerQuitDungeonReqOuterClass.PlayerQuitDungeonReq.Builder.class);
     }
 
-    public static final int IS_QUIT_IMMEDIATELY_FIELD_NUMBER = 9;
-    private boolean isQuitImmediately_;
-    /**
-     * <code>bool is_quit_immediately = 9;</code>
-     * @return The isQuitImmediately.
-     */
-    @java.lang.Override
-    public boolean getIsQuitImmediately() {
-      return isQuitImmediately_;
-    }
-
-    public static final int POINTID_FIELD_NUMBER = 10;
+    public static final int POINT_ID_FIELD_NUMBER = 7;
     private int pointId_;
     /**
-     * <code>uint32 pointId = 10;</code>
+     * <code>uint32 point_id = 7;</code>
      * @return The pointId.
      */
     @java.lang.Override
     public int getPointId() {
       return pointId_;
+    }
+
+    public static final int IS_QUIT_IMMEDIATELY_FIELD_NUMBER = 12;
+    private boolean isQuitImmediately_;
+    /**
+     * <code>bool is_quit_immediately = 12;</code>
+     * @return The isQuitImmediately.
+     */
+    @java.lang.Override
+    public boolean getIsQuitImmediately() {
+      return isQuitImmediately_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +157,11 @@ public final class PlayerQuitDungeonReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isQuitImmediately_ != false) {
-        output.writeBool(9, isQuitImmediately_);
-      }
       if (pointId_ != 0) {
-        output.writeUInt32(10, pointId_);
+        output.writeUInt32(7, pointId_);
+      }
+      if (isQuitImmediately_ != false) {
+        output.writeBool(12, isQuitImmediately_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class PlayerQuitDungeonReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isQuitImmediately_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isQuitImmediately_);
-      }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, pointId_);
+          .computeUInt32Size(7, pointId_);
+      }
+      if (isQuitImmediately_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isQuitImmediately_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +195,10 @@ public final class PlayerQuitDungeonReqOuterClass {
       }
       emu.grasscutter.net.proto.PlayerQuitDungeonReqOuterClass.PlayerQuitDungeonReq other = (emu.grasscutter.net.proto.PlayerQuitDungeonReqOuterClass.PlayerQuitDungeonReq) obj;
 
-      if (getIsQuitImmediately()
-          != other.getIsQuitImmediately()) return false;
       if (getPointId()
           != other.getPointId()) return false;
+      if (getIsQuitImmediately()
+          != other.getIsQuitImmediately()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,11 +210,11 @@ public final class PlayerQuitDungeonReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPointId();
       hash = (37 * hash) + IS_QUIT_IMMEDIATELY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsQuitImmediately());
-      hash = (37 * hash) + POINTID_FIELD_NUMBER;
-      hash = (53 * hash) + getPointId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -307,6 +311,10 @@ public final class PlayerQuitDungeonReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3764
+     * </pre>
+     *
      * Protobuf type {@code PlayerQuitDungeonReq}
      */
     public static final class Builder extends
@@ -344,9 +352,9 @@ public final class PlayerQuitDungeonReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isQuitImmediately_ = false;
-
         pointId_ = 0;
+
+        isQuitImmediately_ = false;
 
         return this;
       }
@@ -374,8 +382,8 @@ public final class PlayerQuitDungeonReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerQuitDungeonReqOuterClass.PlayerQuitDungeonReq buildPartial() {
         emu.grasscutter.net.proto.PlayerQuitDungeonReqOuterClass.PlayerQuitDungeonReq result = new emu.grasscutter.net.proto.PlayerQuitDungeonReqOuterClass.PlayerQuitDungeonReq(this);
-        result.isQuitImmediately_ = isQuitImmediately_;
         result.pointId_ = pointId_;
+        result.isQuitImmediately_ = isQuitImmediately_;
         onBuilt();
         return result;
       }
@@ -424,11 +432,11 @@ public final class PlayerQuitDungeonReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerQuitDungeonReqOuterClass.PlayerQuitDungeonReq other) {
         if (other == emu.grasscutter.net.proto.PlayerQuitDungeonReqOuterClass.PlayerQuitDungeonReq.getDefaultInstance()) return this;
-        if (other.getIsQuitImmediately() != false) {
-          setIsQuitImmediately(other.getIsQuitImmediately());
-        }
         if (other.getPointId() != 0) {
           setPointId(other.getPointId());
+        }
+        if (other.getIsQuitImmediately() != false) {
+          setIsQuitImmediately(other.getIsQuitImmediately());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -459,40 +467,9 @@ public final class PlayerQuitDungeonReqOuterClass {
         return this;
       }
 
-      private boolean isQuitImmediately_ ;
-      /**
-       * <code>bool is_quit_immediately = 9;</code>
-       * @return The isQuitImmediately.
-       */
-      @java.lang.Override
-      public boolean getIsQuitImmediately() {
-        return isQuitImmediately_;
-      }
-      /**
-       * <code>bool is_quit_immediately = 9;</code>
-       * @param value The isQuitImmediately to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsQuitImmediately(boolean value) {
-        
-        isQuitImmediately_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_quit_immediately = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsQuitImmediately() {
-        
-        isQuitImmediately_ = false;
-        onChanged();
-        return this;
-      }
-
       private int pointId_ ;
       /**
-       * <code>uint32 pointId = 10;</code>
+       * <code>uint32 point_id = 7;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -500,7 +477,7 @@ public final class PlayerQuitDungeonReqOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 pointId = 10;</code>
+       * <code>uint32 point_id = 7;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -511,12 +488,43 @@ public final class PlayerQuitDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 pointId = 10;</code>
+       * <code>uint32 point_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
         
         pointId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isQuitImmediately_ ;
+      /**
+       * <code>bool is_quit_immediately = 12;</code>
+       * @return The isQuitImmediately.
+       */
+      @java.lang.Override
+      public boolean getIsQuitImmediately() {
+        return isQuitImmediately_;
+      }
+      /**
+       * <code>bool is_quit_immediately = 12;</code>
+       * @param value The isQuitImmediately to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsQuitImmediately(boolean value) {
+        
+        isQuitImmediately_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_quit_immediately = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsQuitImmediately() {
+        
+        isQuitImmediately_ = false;
         onChanged();
         return this;
       }
@@ -587,10 +595,10 @@ public final class PlayerQuitDungeonReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032PlayerQuitDungeonReq.proto\"D\n\024PlayerQu" +
-      "itDungeonReq\022\033\n\023is_quit_immediately\030\t \001(" +
-      "\010\022\017\n\007pointId\030\n \001(\rB\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "\n\032PlayerQuitDungeonReq.proto\"E\n\024PlayerQu" +
+      "itDungeonReq\022\020\n\010point_id\030\007 \001(\r\022\033\n\023is_qui" +
+      "t_immediately\030\014 \001(\010B\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -601,7 +609,7 @@ public final class PlayerQuitDungeonReqOuterClass {
     internal_static_PlayerQuitDungeonReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerQuitDungeonReq_descriptor,
-        new java.lang.String[] { "IsQuitImmediately", "PointId", });
+        new java.lang.String[] { "PointId", "IsQuitImmediately", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

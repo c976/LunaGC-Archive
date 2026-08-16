@@ -19,50 +19,45 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.OnlinePlayerInfo player_info = 3;</code>
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
      * @return Whether the playerInfo field is set.
      */
     boolean hasPlayerInfo();
     /**
-     * <code>.OnlinePlayerInfo player_info = 3;</code>
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
      * @return The playerInfo.
      */
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo();
     /**
-     * <code>.OnlinePlayerInfo player_info = 3;</code>
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
      */
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder();
 
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> 
         getCardListList();
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
      */
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index);
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
      */
     int getCardListCount();
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
         getCardListOrBuilderList();
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
      */
     emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
         int index);
   }
   /**
-   * <pre>
-   * 5.0.0
-   * CmdId: 
-   * </pre>
-   *
    * Protobuf type {@code DungeonSettleExhibitionInfo}
    */
   public static final class DungeonSettleExhibitionInfo extends
@@ -109,7 +104,16 @@ public final class DungeonSettleExhibitionInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              cardList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 114: {
               emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder subBuilder = null;
               if (playerInfo_ != null) {
                 subBuilder = playerInfo_.toBuilder();
@@ -120,15 +124,6 @@ public final class DungeonSettleExhibitionInfoOuterClass {
                 playerInfo_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cardList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              cardList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -166,10 +161,10 @@ public final class DungeonSettleExhibitionInfoOuterClass {
               emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.class, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder.class);
     }
 
-    public static final int PLAYER_INFO_FIELD_NUMBER = 3;
+    public static final int PLAYER_INFO_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo playerInfo_;
     /**
-     * <code>.OnlinePlayerInfo player_info = 3;</code>
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
      * @return Whether the playerInfo field is set.
      */
     @java.lang.Override
@@ -177,7 +172,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       return playerInfo_ != null;
     }
     /**
-     * <code>.OnlinePlayerInfo player_info = 3;</code>
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
      * @return The playerInfo.
      */
     @java.lang.Override
@@ -185,24 +180,24 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       return playerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : playerInfo_;
     }
     /**
-     * <code>.OnlinePlayerInfo player_info = 3;</code>
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
       return getPlayerInfo();
     }
 
-    public static final int CARD_LIST_FIELD_NUMBER = 8;
+    public static final int CARD_LIST_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> cardList_;
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getCardListList() {
       return cardList_;
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
@@ -210,21 +205,21 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       return cardList_;
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
      */
     @java.lang.Override
     public int getCardListCount() {
       return cardList_.size();
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index) {
       return cardList_.get(index);
     }
     /**
-     * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+     * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
@@ -246,11 +241,11 @@ public final class DungeonSettleExhibitionInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playerInfo_ != null) {
-        output.writeMessage(3, getPlayerInfo());
-      }
       for (int i = 0; i < cardList_.size(); i++) {
-        output.writeMessage(8, cardList_.get(i));
+        output.writeMessage(1, cardList_.get(i));
+      }
+      if (playerInfo_ != null) {
+        output.writeMessage(14, getPlayerInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -261,13 +256,13 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playerInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getPlayerInfo());
-      }
       for (int i = 0; i < cardList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, cardList_.get(i));
+          .computeMessageSize(1, cardList_.get(i));
+      }
+      if (playerInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getPlayerInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -406,11 +401,6 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * CmdId: 
-     * </pre>
-     *
      * Protobuf type {@code DungeonSettleExhibitionInfo}
      */
     public static final class Builder extends
@@ -613,14 +603,14 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> playerInfoBuilder_;
       /**
-       * <code>.OnlinePlayerInfo player_info = 3;</code>
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
        * @return Whether the playerInfo field is set.
        */
       public boolean hasPlayerInfo() {
         return playerInfoBuilder_ != null || playerInfo_ != null;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 3;</code>
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
        * @return The playerInfo.
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo() {
@@ -631,7 +621,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 3;</code>
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
        */
       public Builder setPlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -647,7 +637,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 3;</code>
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
        */
       public Builder setPlayerInfo(
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder builderForValue) {
@@ -661,7 +651,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 3;</code>
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
        */
       public Builder mergePlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -679,7 +669,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 3;</code>
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
        */
       public Builder clearPlayerInfo() {
         if (playerInfoBuilder_ == null) {
@@ -693,7 +683,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 3;</code>
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder getPlayerInfoBuilder() {
         
@@ -701,7 +691,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return getPlayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 3;</code>
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
         if (playerInfoBuilder_ != null) {
@@ -712,7 +702,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 3;</code>
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> 
@@ -741,7 +731,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> cardListBuilder_;
 
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> getCardListList() {
         if (cardListBuilder_ == null) {
@@ -751,7 +741,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public int getCardListCount() {
         if (cardListBuilder_ == null) {
@@ -761,7 +751,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo getCardList(int index) {
         if (cardListBuilder_ == null) {
@@ -771,7 +761,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public Builder setCardList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -788,7 +778,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public Builder setCardList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -802,7 +792,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public Builder addCardList(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
         if (cardListBuilder_ == null) {
@@ -818,7 +808,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public Builder addCardList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo value) {
@@ -835,7 +825,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public Builder addCardList(
           emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -849,7 +839,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public Builder addCardList(
           int index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder builderForValue) {
@@ -863,7 +853,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public Builder addAllCardList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo> values) {
@@ -878,7 +868,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public Builder clearCardList() {
         if (cardListBuilder_ == null) {
@@ -891,7 +881,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public Builder removeCardList(int index) {
         if (cardListBuilder_ == null) {
@@ -904,14 +894,14 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder getCardListBuilder(
           int index) {
         return getCardListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder getCardListOrBuilder(
           int index) {
@@ -921,7 +911,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfoOrBuilder> 
            getCardListOrBuilderList() {
@@ -932,14 +922,14 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addCardListBuilder() {
         return getCardListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder addCardListBuilder(
           int index) {
@@ -947,7 +937,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
             index, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ExhibitionDisplayInfo card_list = 8;</code>
+       * <code>repeated .ExhibitionDisplayInfo card_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder> 
            getCardListBuilderList() {
@@ -1037,8 +1027,8 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       "\n!DungeonSettleExhibitionInfo.proto\032\026Onl" +
       "inePlayerInfo.proto\032\033ExhibitionDisplayIn" +
       "fo.proto\"p\n\033DungeonSettleExhibitionInfo\022" +
-      "&\n\013player_info\030\003 \001(\0132\021.OnlinePlayerInfo\022" +
-      ")\n\tcard_list\030\010 \003(\0132\026.ExhibitionDisplayIn" +
+      "&\n\013player_info\030\016 \001(\0132\021.OnlinePlayerInfo\022" +
+      ")\n\tcard_list\030\001 \003(\0132\026.ExhibitionDisplayIn" +
       "foB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

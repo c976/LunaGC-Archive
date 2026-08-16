@@ -19,46 +19,42 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 CMCCNBNFAJE = 11;</code>
-     * @return The cMCCNBNFAJE.
+     * <code>uint32 record_time = 11;</code>
+     * @return The recordTime.
      */
-    int getCMCCNBNFAJE();
+    int getRecordTime();
 
     /**
-     * <code>bool LFNCGGFLHPL = 9;</code>
-     * @return The lFNCGGFLHPL.
+     * <code>uint32 create_dungeon_player_uid = 7;</code>
+     * @return The createDungeonPlayerUid.
      */
-    boolean getLFNCGGFLHPL();
+    int getCreateDungeonPlayerUid();
 
     /**
-     * <code>uint32 DCAKCNEDDEB = 12;</code>
-     * @return The dCAKCNEDDEB.
-     */
-    int getDCAKCNEDDEB();
-
-    /**
-     * <code>uint32 challenge_mode_difficulty = 3;</code>
+     * <code>uint32 challenge_mode_difficulty = 4;</code>
      * @return The challengeModeDifficulty.
      */
     int getChallengeModeDifficulty();
 
     /**
-     * <code>bool FOFHONJNIHG = 4;</code>
-     * @return The fOFHONJNIHG.
+     * <code>uint32 first_time_finish_difficulty = 10;</code>
+     * @return The firstTimeFinishDifficulty.
      */
-    boolean getFOFHONJNIHG();
+    int getFirstTimeFinishDifficulty();
 
     /**
-     * <code>uint32 PHNDBBLLHDI = 1;</code>
-     * @return The pHNDBBLLHDI.
+     * <code>bool is_new_record_time = 8;</code>
+     * @return The isNewRecordTime.
      */
-    int getPHNDBBLLHDI();
+    boolean getIsNewRecordTime();
+
+    /**
+     * <code>bool is_challenge_highest_difficulty = 9;</code>
+     * @return The isChallengeHighestDifficulty.
+     */
+    boolean getIsChallengeHighestDifficulty();
   }
   /**
-   * <pre>
-   * Obf: GKEGGCBBJNB
-   * </pre>
-   *
    * Protobuf type {@code EffigyChallengeV2SettleInfo}
    */
   public static final class EffigyChallengeV2SettleInfo extends
@@ -103,34 +99,34 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              pHNDBBLLHDI_ = input.readUInt32();
-              break;
-            }
-            case 24: {
+            case 32: {
 
               challengeModeDifficulty_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 56: {
 
-              fOFHONJNIHG_ = input.readBool();
+              createDungeonPlayerUid_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              isNewRecordTime_ = input.readBool();
               break;
             }
             case 72: {
 
-              lFNCGGFLHPL_ = input.readBool();
+              isChallengeHighestDifficulty_ = input.readBool();
+              break;
+            }
+            case 80: {
+
+              firstTimeFinishDifficulty_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              cMCCNBNFAJE_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              dCAKCNEDDEB_ = input.readUInt32();
+              recordTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,43 +161,32 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.class, emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.Builder.class);
     }
 
-    public static final int CMCCNBNFAJE_FIELD_NUMBER = 11;
-    private int cMCCNBNFAJE_;
+    public static final int RECORD_TIME_FIELD_NUMBER = 11;
+    private int recordTime_;
     /**
-     * <code>uint32 CMCCNBNFAJE = 11;</code>
-     * @return The cMCCNBNFAJE.
+     * <code>uint32 record_time = 11;</code>
+     * @return The recordTime.
      */
     @java.lang.Override
-    public int getCMCCNBNFAJE() {
-      return cMCCNBNFAJE_;
+    public int getRecordTime() {
+      return recordTime_;
     }
 
-    public static final int LFNCGGFLHPL_FIELD_NUMBER = 9;
-    private boolean lFNCGGFLHPL_;
+    public static final int CREATE_DUNGEON_PLAYER_UID_FIELD_NUMBER = 7;
+    private int createDungeonPlayerUid_;
     /**
-     * <code>bool LFNCGGFLHPL = 9;</code>
-     * @return The lFNCGGFLHPL.
+     * <code>uint32 create_dungeon_player_uid = 7;</code>
+     * @return The createDungeonPlayerUid.
      */
     @java.lang.Override
-    public boolean getLFNCGGFLHPL() {
-      return lFNCGGFLHPL_;
+    public int getCreateDungeonPlayerUid() {
+      return createDungeonPlayerUid_;
     }
 
-    public static final int DCAKCNEDDEB_FIELD_NUMBER = 12;
-    private int dCAKCNEDDEB_;
-    /**
-     * <code>uint32 DCAKCNEDDEB = 12;</code>
-     * @return The dCAKCNEDDEB.
-     */
-    @java.lang.Override
-    public int getDCAKCNEDDEB() {
-      return dCAKCNEDDEB_;
-    }
-
-    public static final int CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER = 3;
+    public static final int CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER = 4;
     private int challengeModeDifficulty_;
     /**
-     * <code>uint32 challenge_mode_difficulty = 3;</code>
+     * <code>uint32 challenge_mode_difficulty = 4;</code>
      * @return The challengeModeDifficulty.
      */
     @java.lang.Override
@@ -209,26 +194,37 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       return challengeModeDifficulty_;
     }
 
-    public static final int FOFHONJNIHG_FIELD_NUMBER = 4;
-    private boolean fOFHONJNIHG_;
+    public static final int FIRST_TIME_FINISH_DIFFICULTY_FIELD_NUMBER = 10;
+    private int firstTimeFinishDifficulty_;
     /**
-     * <code>bool FOFHONJNIHG = 4;</code>
-     * @return The fOFHONJNIHG.
+     * <code>uint32 first_time_finish_difficulty = 10;</code>
+     * @return The firstTimeFinishDifficulty.
      */
     @java.lang.Override
-    public boolean getFOFHONJNIHG() {
-      return fOFHONJNIHG_;
+    public int getFirstTimeFinishDifficulty() {
+      return firstTimeFinishDifficulty_;
     }
 
-    public static final int PHNDBBLLHDI_FIELD_NUMBER = 1;
-    private int pHNDBBLLHDI_;
+    public static final int IS_NEW_RECORD_TIME_FIELD_NUMBER = 8;
+    private boolean isNewRecordTime_;
     /**
-     * <code>uint32 PHNDBBLLHDI = 1;</code>
-     * @return The pHNDBBLLHDI.
+     * <code>bool is_new_record_time = 8;</code>
+     * @return The isNewRecordTime.
      */
     @java.lang.Override
-    public int getPHNDBBLLHDI() {
-      return pHNDBBLLHDI_;
+    public boolean getIsNewRecordTime() {
+      return isNewRecordTime_;
+    }
+
+    public static final int IS_CHALLENGE_HIGHEST_DIFFICULTY_FIELD_NUMBER = 9;
+    private boolean isChallengeHighestDifficulty_;
+    /**
+     * <code>bool is_challenge_highest_difficulty = 9;</code>
+     * @return The isChallengeHighestDifficulty.
+     */
+    @java.lang.Override
+    public boolean getIsChallengeHighestDifficulty() {
+      return isChallengeHighestDifficulty_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -245,23 +241,23 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pHNDBBLLHDI_ != 0) {
-        output.writeUInt32(1, pHNDBBLLHDI_);
-      }
       if (challengeModeDifficulty_ != 0) {
-        output.writeUInt32(3, challengeModeDifficulty_);
+        output.writeUInt32(4, challengeModeDifficulty_);
       }
-      if (fOFHONJNIHG_ != false) {
-        output.writeBool(4, fOFHONJNIHG_);
+      if (createDungeonPlayerUid_ != 0) {
+        output.writeUInt32(7, createDungeonPlayerUid_);
       }
-      if (lFNCGGFLHPL_ != false) {
-        output.writeBool(9, lFNCGGFLHPL_);
+      if (isNewRecordTime_ != false) {
+        output.writeBool(8, isNewRecordTime_);
       }
-      if (cMCCNBNFAJE_ != 0) {
-        output.writeUInt32(11, cMCCNBNFAJE_);
+      if (isChallengeHighestDifficulty_ != false) {
+        output.writeBool(9, isChallengeHighestDifficulty_);
       }
-      if (dCAKCNEDDEB_ != 0) {
-        output.writeUInt32(12, dCAKCNEDDEB_);
+      if (firstTimeFinishDifficulty_ != 0) {
+        output.writeUInt32(10, firstTimeFinishDifficulty_);
+      }
+      if (recordTime_ != 0) {
+        output.writeUInt32(11, recordTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,29 +268,29 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pHNDBBLLHDI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, pHNDBBLLHDI_);
-      }
       if (challengeModeDifficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, challengeModeDifficulty_);
+          .computeUInt32Size(4, challengeModeDifficulty_);
       }
-      if (fOFHONJNIHG_ != false) {
+      if (createDungeonPlayerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, fOFHONJNIHG_);
+          .computeUInt32Size(7, createDungeonPlayerUid_);
       }
-      if (lFNCGGFLHPL_ != false) {
+      if (isNewRecordTime_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, lFNCGGFLHPL_);
+          .computeBoolSize(8, isNewRecordTime_);
       }
-      if (cMCCNBNFAJE_ != 0) {
+      if (isChallengeHighestDifficulty_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, cMCCNBNFAJE_);
+          .computeBoolSize(9, isChallengeHighestDifficulty_);
       }
-      if (dCAKCNEDDEB_ != 0) {
+      if (firstTimeFinishDifficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, dCAKCNEDDEB_);
+          .computeUInt32Size(10, firstTimeFinishDifficulty_);
+      }
+      if (recordTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, recordTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,18 +307,18 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo other = (emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) obj;
 
-      if (getCMCCNBNFAJE()
-          != other.getCMCCNBNFAJE()) return false;
-      if (getLFNCGGFLHPL()
-          != other.getLFNCGGFLHPL()) return false;
-      if (getDCAKCNEDDEB()
-          != other.getDCAKCNEDDEB()) return false;
+      if (getRecordTime()
+          != other.getRecordTime()) return false;
+      if (getCreateDungeonPlayerUid()
+          != other.getCreateDungeonPlayerUid()) return false;
       if (getChallengeModeDifficulty()
           != other.getChallengeModeDifficulty()) return false;
-      if (getFOFHONJNIHG()
-          != other.getFOFHONJNIHG()) return false;
-      if (getPHNDBBLLHDI()
-          != other.getPHNDBBLLHDI()) return false;
+      if (getFirstTimeFinishDifficulty()
+          != other.getFirstTimeFinishDifficulty()) return false;
+      if (getIsNewRecordTime()
+          != other.getIsNewRecordTime()) return false;
+      if (getIsChallengeHighestDifficulty()
+          != other.getIsChallengeHighestDifficulty()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -334,20 +330,20 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CMCCNBNFAJE_FIELD_NUMBER;
-      hash = (53 * hash) + getCMCCNBNFAJE();
-      hash = (37 * hash) + LFNCGGFLHPL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getLFNCGGFLHPL());
-      hash = (37 * hash) + DCAKCNEDDEB_FIELD_NUMBER;
-      hash = (53 * hash) + getDCAKCNEDDEB();
+      hash = (37 * hash) + RECORD_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getRecordTime();
+      hash = (37 * hash) + CREATE_DUNGEON_PLAYER_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getCreateDungeonPlayerUid();
       hash = (37 * hash) + CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeModeDifficulty();
-      hash = (37 * hash) + FOFHONJNIHG_FIELD_NUMBER;
+      hash = (37 * hash) + FIRST_TIME_FINISH_DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getFirstTimeFinishDifficulty();
+      hash = (37 * hash) + IS_NEW_RECORD_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getFOFHONJNIHG());
-      hash = (37 * hash) + PHNDBBLLHDI_FIELD_NUMBER;
-      hash = (53 * hash) + getPHNDBBLLHDI();
+          getIsNewRecordTime());
+      hash = (37 * hash) + IS_CHALLENGE_HIGHEST_DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsChallengeHighestDifficulty());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -444,10 +440,6 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: GKEGGCBBJNB
-     * </pre>
-     *
      * Protobuf type {@code EffigyChallengeV2SettleInfo}
      */
     public static final class Builder extends
@@ -485,17 +477,17 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cMCCNBNFAJE_ = 0;
+        recordTime_ = 0;
 
-        lFNCGGFLHPL_ = false;
-
-        dCAKCNEDDEB_ = 0;
+        createDungeonPlayerUid_ = 0;
 
         challengeModeDifficulty_ = 0;
 
-        fOFHONJNIHG_ = false;
+        firstTimeFinishDifficulty_ = 0;
 
-        pHNDBBLLHDI_ = 0;
+        isNewRecordTime_ = false;
+
+        isChallengeHighestDifficulty_ = false;
 
         return this;
       }
@@ -523,12 +515,12 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo buildPartial() {
         emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo result = new emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo(this);
-        result.cMCCNBNFAJE_ = cMCCNBNFAJE_;
-        result.lFNCGGFLHPL_ = lFNCGGFLHPL_;
-        result.dCAKCNEDDEB_ = dCAKCNEDDEB_;
+        result.recordTime_ = recordTime_;
+        result.createDungeonPlayerUid_ = createDungeonPlayerUid_;
         result.challengeModeDifficulty_ = challengeModeDifficulty_;
-        result.fOFHONJNIHG_ = fOFHONJNIHG_;
-        result.pHNDBBLLHDI_ = pHNDBBLLHDI_;
+        result.firstTimeFinishDifficulty_ = firstTimeFinishDifficulty_;
+        result.isNewRecordTime_ = isNewRecordTime_;
+        result.isChallengeHighestDifficulty_ = isChallengeHighestDifficulty_;
         onBuilt();
         return result;
       }
@@ -577,23 +569,23 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo other) {
         if (other == emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.getDefaultInstance()) return this;
-        if (other.getCMCCNBNFAJE() != 0) {
-          setCMCCNBNFAJE(other.getCMCCNBNFAJE());
+        if (other.getRecordTime() != 0) {
+          setRecordTime(other.getRecordTime());
         }
-        if (other.getLFNCGGFLHPL() != false) {
-          setLFNCGGFLHPL(other.getLFNCGGFLHPL());
-        }
-        if (other.getDCAKCNEDDEB() != 0) {
-          setDCAKCNEDDEB(other.getDCAKCNEDDEB());
+        if (other.getCreateDungeonPlayerUid() != 0) {
+          setCreateDungeonPlayerUid(other.getCreateDungeonPlayerUid());
         }
         if (other.getChallengeModeDifficulty() != 0) {
           setChallengeModeDifficulty(other.getChallengeModeDifficulty());
         }
-        if (other.getFOFHONJNIHG() != false) {
-          setFOFHONJNIHG(other.getFOFHONJNIHG());
+        if (other.getFirstTimeFinishDifficulty() != 0) {
+          setFirstTimeFinishDifficulty(other.getFirstTimeFinishDifficulty());
         }
-        if (other.getPHNDBBLLHDI() != 0) {
-          setPHNDBBLLHDI(other.getPHNDBBLLHDI());
+        if (other.getIsNewRecordTime() != false) {
+          setIsNewRecordTime(other.getIsNewRecordTime());
+        }
+        if (other.getIsChallengeHighestDifficulty() != false) {
+          setIsChallengeHighestDifficulty(other.getIsChallengeHighestDifficulty());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -624,102 +616,71 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return this;
       }
 
-      private int cMCCNBNFAJE_ ;
+      private int recordTime_ ;
       /**
-       * <code>uint32 CMCCNBNFAJE = 11;</code>
-       * @return The cMCCNBNFAJE.
+       * <code>uint32 record_time = 11;</code>
+       * @return The recordTime.
        */
       @java.lang.Override
-      public int getCMCCNBNFAJE() {
-        return cMCCNBNFAJE_;
+      public int getRecordTime() {
+        return recordTime_;
       }
       /**
-       * <code>uint32 CMCCNBNFAJE = 11;</code>
-       * @param value The cMCCNBNFAJE to set.
+       * <code>uint32 record_time = 11;</code>
+       * @param value The recordTime to set.
        * @return This builder for chaining.
        */
-      public Builder setCMCCNBNFAJE(int value) {
+      public Builder setRecordTime(int value) {
         
-        cMCCNBNFAJE_ = value;
+        recordTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CMCCNBNFAJE = 11;</code>
+       * <code>uint32 record_time = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCMCCNBNFAJE() {
+      public Builder clearRecordTime() {
         
-        cMCCNBNFAJE_ = 0;
+        recordTime_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean lFNCGGFLHPL_ ;
+      private int createDungeonPlayerUid_ ;
       /**
-       * <code>bool LFNCGGFLHPL = 9;</code>
-       * @return The lFNCGGFLHPL.
+       * <code>uint32 create_dungeon_player_uid = 7;</code>
+       * @return The createDungeonPlayerUid.
        */
       @java.lang.Override
-      public boolean getLFNCGGFLHPL() {
-        return lFNCGGFLHPL_;
+      public int getCreateDungeonPlayerUid() {
+        return createDungeonPlayerUid_;
       }
       /**
-       * <code>bool LFNCGGFLHPL = 9;</code>
-       * @param value The lFNCGGFLHPL to set.
+       * <code>uint32 create_dungeon_player_uid = 7;</code>
+       * @param value The createDungeonPlayerUid to set.
        * @return This builder for chaining.
        */
-      public Builder setLFNCGGFLHPL(boolean value) {
+      public Builder setCreateDungeonPlayerUid(int value) {
         
-        lFNCGGFLHPL_ = value;
+        createDungeonPlayerUid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool LFNCGGFLHPL = 9;</code>
+       * <code>uint32 create_dungeon_player_uid = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLFNCGGFLHPL() {
+      public Builder clearCreateDungeonPlayerUid() {
         
-        lFNCGGFLHPL_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int dCAKCNEDDEB_ ;
-      /**
-       * <code>uint32 DCAKCNEDDEB = 12;</code>
-       * @return The dCAKCNEDDEB.
-       */
-      @java.lang.Override
-      public int getDCAKCNEDDEB() {
-        return dCAKCNEDDEB_;
-      }
-      /**
-       * <code>uint32 DCAKCNEDDEB = 12;</code>
-       * @param value The dCAKCNEDDEB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDCAKCNEDDEB(int value) {
-        
-        dCAKCNEDDEB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DCAKCNEDDEB = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDCAKCNEDDEB() {
-        
-        dCAKCNEDDEB_ = 0;
+        createDungeonPlayerUid_ = 0;
         onChanged();
         return this;
       }
 
       private int challengeModeDifficulty_ ;
       /**
-       * <code>uint32 challenge_mode_difficulty = 3;</code>
+       * <code>uint32 challenge_mode_difficulty = 4;</code>
        * @return The challengeModeDifficulty.
        */
       @java.lang.Override
@@ -727,7 +688,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return challengeModeDifficulty_;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 3;</code>
+       * <code>uint32 challenge_mode_difficulty = 4;</code>
        * @param value The challengeModeDifficulty to set.
        * @return This builder for chaining.
        */
@@ -738,7 +699,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 3;</code>
+       * <code>uint32 challenge_mode_difficulty = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeModeDifficulty() {
@@ -748,64 +709,95 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return this;
       }
 
-      private boolean fOFHONJNIHG_ ;
+      private int firstTimeFinishDifficulty_ ;
       /**
-       * <code>bool FOFHONJNIHG = 4;</code>
-       * @return The fOFHONJNIHG.
+       * <code>uint32 first_time_finish_difficulty = 10;</code>
+       * @return The firstTimeFinishDifficulty.
        */
       @java.lang.Override
-      public boolean getFOFHONJNIHG() {
-        return fOFHONJNIHG_;
+      public int getFirstTimeFinishDifficulty() {
+        return firstTimeFinishDifficulty_;
       }
       /**
-       * <code>bool FOFHONJNIHG = 4;</code>
-       * @param value The fOFHONJNIHG to set.
+       * <code>uint32 first_time_finish_difficulty = 10;</code>
+       * @param value The firstTimeFinishDifficulty to set.
        * @return This builder for chaining.
        */
-      public Builder setFOFHONJNIHG(boolean value) {
+      public Builder setFirstTimeFinishDifficulty(int value) {
         
-        fOFHONJNIHG_ = value;
+        firstTimeFinishDifficulty_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool FOFHONJNIHG = 4;</code>
+       * <code>uint32 first_time_finish_difficulty = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFOFHONJNIHG() {
+      public Builder clearFirstTimeFinishDifficulty() {
         
-        fOFHONJNIHG_ = false;
+        firstTimeFinishDifficulty_ = 0;
         onChanged();
         return this;
       }
 
-      private int pHNDBBLLHDI_ ;
+      private boolean isNewRecordTime_ ;
       /**
-       * <code>uint32 PHNDBBLLHDI = 1;</code>
-       * @return The pHNDBBLLHDI.
+       * <code>bool is_new_record_time = 8;</code>
+       * @return The isNewRecordTime.
        */
       @java.lang.Override
-      public int getPHNDBBLLHDI() {
-        return pHNDBBLLHDI_;
+      public boolean getIsNewRecordTime() {
+        return isNewRecordTime_;
       }
       /**
-       * <code>uint32 PHNDBBLLHDI = 1;</code>
-       * @param value The pHNDBBLLHDI to set.
+       * <code>bool is_new_record_time = 8;</code>
+       * @param value The isNewRecordTime to set.
        * @return This builder for chaining.
        */
-      public Builder setPHNDBBLLHDI(int value) {
+      public Builder setIsNewRecordTime(boolean value) {
         
-        pHNDBBLLHDI_ = value;
+        isNewRecordTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 PHNDBBLLHDI = 1;</code>
+       * <code>bool is_new_record_time = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPHNDBBLLHDI() {
+      public Builder clearIsNewRecordTime() {
         
-        pHNDBBLLHDI_ = 0;
+        isNewRecordTime_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isChallengeHighestDifficulty_ ;
+      /**
+       * <code>bool is_challenge_highest_difficulty = 9;</code>
+       * @return The isChallengeHighestDifficulty.
+       */
+      @java.lang.Override
+      public boolean getIsChallengeHighestDifficulty() {
+        return isChallengeHighestDifficulty_;
+      }
+      /**
+       * <code>bool is_challenge_highest_difficulty = 9;</code>
+       * @param value The isChallengeHighestDifficulty to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsChallengeHighestDifficulty(boolean value) {
+        
+        isChallengeHighestDifficulty_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_challenge_highest_difficulty = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsChallengeHighestDifficulty() {
+        
+        isChallengeHighestDifficulty_ = false;
         onChanged();
         return this;
       }
@@ -876,13 +868,14 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!EffigyChallengeV2SettleInfo.proto\"\251\001\n\033" +
-      "EffigyChallengeV2SettleInfo\022\023\n\013CMCCNBNFA" +
-      "JE\030\013 \001(\r\022\023\n\013LFNCGGFLHPL\030\t \001(\010\022\023\n\013DCAKCNE" +
-      "DDEB\030\014 \001(\r\022!\n\031challenge_mode_difficulty\030" +
-      "\003 \001(\r\022\023\n\013FOFHONJNIHG\030\004 \001(\010\022\023\n\013PHNDBBLLHD" +
-      "I\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
-      "oto3"
+      "\n!EffigyChallengeV2SettleInfo.proto\"\343\001\n\033" +
+      "EffigyChallengeV2SettleInfo\022\023\n\013record_ti" +
+      "me\030\013 \001(\r\022!\n\031create_dungeon_player_uid\030\007 " +
+      "\001(\r\022!\n\031challenge_mode_difficulty\030\004 \001(\r\022$" +
+      "\n\034first_time_finish_difficulty\030\n \001(\r\022\032\n\022" +
+      "is_new_record_time\030\010 \001(\010\022\'\n\037is_challenge" +
+      "_highest_difficulty\030\t \001(\010B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -893,7 +886,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
     internal_static_EffigyChallengeV2SettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EffigyChallengeV2SettleInfo_descriptor,
-        new java.lang.String[] { "CMCCNBNFAJE", "LFNCGGFLHPL", "DCAKCNEDDEB", "ChallengeModeDifficulty", "FOFHONJNIHG", "PHNDBBLLHDI", });
+        new java.lang.String[] { "RecordTime", "CreateDungeonPlayerUid", "ChallengeModeDifficulty", "FirstTimeFinishDifficulty", "IsNewRecordTime", "IsChallengeHighestDifficulty", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

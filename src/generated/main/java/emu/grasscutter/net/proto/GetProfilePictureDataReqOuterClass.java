@@ -19,6 +19,10 @@ public final class GetProfilePictureDataReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * CmdId: 7378
+   * </pre>
+   *
    * Protobuf type {@code GetProfilePictureDataReq}
    */
   public static final class GetProfilePictureDataReq extends
@@ -240,6 +244,10 @@ public final class GetProfilePictureDataReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 7378
+     * </pre>
+     *
      * Protobuf type {@code GetProfilePictureDataReq}
      */
     public static final class Builder extends

@@ -19,12 +19,16 @@ public final class PlayerApplyEnterMpReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 4;</code>
+     * <code>uint32 target_uid = 9;</code>
      * @return The targetUid.
      */
     int getTargetUid();
   }
   /**
+   * <pre>
+   * CmdId: 21127
+   * </pre>
+   *
    * Protobuf type {@code PlayerApplyEnterMpReq}
    */
   public static final class PlayerApplyEnterMpReq extends
@@ -69,7 +73,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 72: {
 
               targetUid_ = input.readUInt32();
               break;
@@ -106,10 +110,10 @@ public final class PlayerApplyEnterMpReqOuterClass {
               emu.grasscutter.net.proto.PlayerApplyEnterMpReqOuterClass.PlayerApplyEnterMpReq.class, emu.grasscutter.net.proto.PlayerApplyEnterMpReqOuterClass.PlayerApplyEnterMpReq.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 4;
+    public static final int TARGET_UID_FIELD_NUMBER = 9;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 4;</code>
+     * <code>uint32 target_uid = 9;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -132,7 +136,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetUid_ != 0) {
-        output.writeUInt32(4, targetUid_);
+        output.writeUInt32(9, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +149,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
       size = 0;
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, targetUid_);
+          .computeUInt32Size(9, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -273,6 +277,10 @@ public final class PlayerApplyEnterMpReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 21127
+     * </pre>
+     *
      * Protobuf type {@code PlayerApplyEnterMpReq}
      */
     public static final class Builder extends
@@ -421,7 +429,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 4;</code>
+       * <code>uint32 target_uid = 9;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -429,7 +437,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 4;</code>
+       * <code>uint32 target_uid = 9;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -440,7 +448,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 4;</code>
+       * <code>uint32 target_uid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -517,7 +525,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033PlayerApplyEnterMpReq.proto\"+\n\025PlayerA" +
-      "pplyEnterMpReq\022\022\n\ntarget_uid\030\004 \001(\rB\033\n\031em" +
+      "pplyEnterMpReq\022\022\n\ntarget_uid\030\t \001(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

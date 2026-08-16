@@ -19,27 +19,26 @@ public final class GadgetPlayStartNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 4;</code>
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>uint32 play_type = 13;</code>
+     * <code>uint32 play_type = 5;</code>
      * @return The playType.
      */
     int getPlayType();
 
     /**
-     * <code>uint32 start_time = 6;</code>
+     * <code>uint32 start_time = 11;</code>
      * @return The startTime.
      */
     int getStartTime();
   }
   /**
    * <pre>
-   * CmdId: 1524
-   * Obf: PPGEEFEAOCO
+   * CmdId: 28641
    * </pre>
    *
    * Protobuf type {@code GadgetPlayStartNotify}
@@ -86,19 +85,19 @@ public final class GadgetPlayStartNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 40: {
+
+              playType_ = input.readUInt32();
+              break;
+            }
+            case 64: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 88: {
 
               startTime_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              playType_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +132,10 @@ public final class GadgetPlayStartNotifyOuterClass {
               emu.grasscutter.net.proto.GadgetPlayStartNotifyOuterClass.GadgetPlayStartNotify.class, emu.grasscutter.net.proto.GadgetPlayStartNotifyOuterClass.GadgetPlayStartNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 4;
+    public static final int ENTITY_ID_FIELD_NUMBER = 8;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 4;</code>
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -144,10 +143,10 @@ public final class GadgetPlayStartNotifyOuterClass {
       return entityId_;
     }
 
-    public static final int PLAY_TYPE_FIELD_NUMBER = 13;
+    public static final int PLAY_TYPE_FIELD_NUMBER = 5;
     private int playType_;
     /**
-     * <code>uint32 play_type = 13;</code>
+     * <code>uint32 play_type = 5;</code>
      * @return The playType.
      */
     @java.lang.Override
@@ -155,10 +154,10 @@ public final class GadgetPlayStartNotifyOuterClass {
       return playType_;
     }
 
-    public static final int START_TIME_FIELD_NUMBER = 6;
+    public static final int START_TIME_FIELD_NUMBER = 11;
     private int startTime_;
     /**
-     * <code>uint32 start_time = 6;</code>
+     * <code>uint32 start_time = 11;</code>
      * @return The startTime.
      */
     @java.lang.Override
@@ -180,14 +179,14 @@ public final class GadgetPlayStartNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (playType_ != 0) {
+        output.writeUInt32(5, playType_);
+      }
       if (entityId_ != 0) {
-        output.writeUInt32(4, entityId_);
+        output.writeUInt32(8, entityId_);
       }
       if (startTime_ != 0) {
-        output.writeUInt32(6, startTime_);
-      }
-      if (playType_ != 0) {
-        output.writeUInt32(13, playType_);
+        output.writeUInt32(11, startTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class GadgetPlayStartNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (playType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, playType_);
+      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, entityId_);
+          .computeUInt32Size(8, entityId_);
       }
       if (startTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, startTime_);
-      }
-      if (playType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, playType_);
+          .computeUInt32Size(11, startTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -345,8 +344,7 @@ public final class GadgetPlayStartNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1524
-     * Obf: PPGEEFEAOCO
+     * CmdId: 28641
      * </pre>
      *
      * Protobuf type {@code GadgetPlayStartNotify}
@@ -509,7 +507,7 @@ public final class GadgetPlayStartNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 4;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -517,7 +515,7 @@ public final class GadgetPlayStartNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 4;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -528,7 +526,7 @@ public final class GadgetPlayStartNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 4;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -540,7 +538,7 @@ public final class GadgetPlayStartNotifyOuterClass {
 
       private int playType_ ;
       /**
-       * <code>uint32 play_type = 13;</code>
+       * <code>uint32 play_type = 5;</code>
        * @return The playType.
        */
       @java.lang.Override
@@ -548,7 +546,7 @@ public final class GadgetPlayStartNotifyOuterClass {
         return playType_;
       }
       /**
-       * <code>uint32 play_type = 13;</code>
+       * <code>uint32 play_type = 5;</code>
        * @param value The playType to set.
        * @return This builder for chaining.
        */
@@ -559,7 +557,7 @@ public final class GadgetPlayStartNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_type = 13;</code>
+       * <code>uint32 play_type = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayType() {
@@ -571,7 +569,7 @@ public final class GadgetPlayStartNotifyOuterClass {
 
       private int startTime_ ;
       /**
-       * <code>uint32 start_time = 6;</code>
+       * <code>uint32 start_time = 11;</code>
        * @return The startTime.
        */
       @java.lang.Override
@@ -579,7 +577,7 @@ public final class GadgetPlayStartNotifyOuterClass {
         return startTime_;
       }
       /**
-       * <code>uint32 start_time = 6;</code>
+       * <code>uint32 start_time = 11;</code>
        * @param value The startTime to set.
        * @return This builder for chaining.
        */
@@ -590,7 +588,7 @@ public final class GadgetPlayStartNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 start_time = 6;</code>
+       * <code>uint32 start_time = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearStartTime() {
@@ -667,8 +665,8 @@ public final class GadgetPlayStartNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033GadgetPlayStartNotify.proto\"Q\n\025GadgetP" +
-      "layStartNotify\022\021\n\tentity_id\030\004 \001(\r\022\021\n\tpla" +
-      "y_type\030\r \001(\r\022\022\n\nstart_time\030\006 \001(\rB\033\n\031emu." +
+      "layStartNotify\022\021\n\tentity_id\030\010 \001(\r\022\021\n\tpla" +
+      "y_type\030\005 \001(\r\022\022\n\nstart_time\030\013 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

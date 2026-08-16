@@ -21,16 +21,16 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
     /**
      * <pre>
      *repeated FKFPKCGAIGM OMJJDDGJOIJ = 2;
-     *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 9; | doesnt matter
+     *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 11; | doesnt matter
      * </pre>
      *
-     * <code>uint32 equip_type = 15;</code>
+     * <code>uint32 equip_type = 13;</code>
      * @return The equipType.
      */
     int getEquipType();
 
     /**
-     * <code>uint32 element_type = 7;</code>
+     * <code>uint32 element_type = 9;</code>
      * @return The elementType.
      */
     int getElementType();
@@ -80,12 +80,12 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 72: {
 
               elementType_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 104: {
 
               equipType_ = input.readUInt32();
               break;
@@ -122,15 +122,15 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
               emu.grasscutter.net.proto.GameplayRecommendationElementReliquaryResponseOuterClass.GameplayRecommendationElementReliquaryResponse.class, emu.grasscutter.net.proto.GameplayRecommendationElementReliquaryResponseOuterClass.GameplayRecommendationElementReliquaryResponse.Builder.class);
     }
 
-    public static final int EQUIP_TYPE_FIELD_NUMBER = 15;
+    public static final int EQUIP_TYPE_FIELD_NUMBER = 13;
     private int equipType_;
     /**
      * <pre>
      *repeated FKFPKCGAIGM OMJJDDGJOIJ = 2;
-     *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 9; | doesnt matter
+     *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 11; | doesnt matter
      * </pre>
      *
-     * <code>uint32 equip_type = 15;</code>
+     * <code>uint32 equip_type = 13;</code>
      * @return The equipType.
      */
     @java.lang.Override
@@ -138,10 +138,10 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
       return equipType_;
     }
 
-    public static final int ELEMENT_TYPE_FIELD_NUMBER = 7;
+    public static final int ELEMENT_TYPE_FIELD_NUMBER = 9;
     private int elementType_;
     /**
-     * <code>uint32 element_type = 7;</code>
+     * <code>uint32 element_type = 9;</code>
      * @return The elementType.
      */
     @java.lang.Override
@@ -164,10 +164,10 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (elementType_ != 0) {
-        output.writeUInt32(7, elementType_);
+        output.writeUInt32(9, elementType_);
       }
       if (equipType_ != 0) {
-        output.writeUInt32(15, equipType_);
+        output.writeUInt32(13, equipType_);
       }
       unknownFields.writeTo(output);
     }
@@ -180,11 +180,11 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
       size = 0;
       if (elementType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, elementType_);
+          .computeUInt32Size(9, elementType_);
       }
       if (equipType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, equipType_);
+          .computeUInt32Size(13, equipType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -472,10 +472,10 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
       /**
        * <pre>
        *repeated FKFPKCGAIGM OMJJDDGJOIJ = 2;
-       *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 9; | doesnt matter
+       *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 11; | doesnt matter
        * </pre>
        *
-       * <code>uint32 equip_type = 15;</code>
+       * <code>uint32 equip_type = 13;</code>
        * @return The equipType.
        */
       @java.lang.Override
@@ -485,10 +485,10 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
       /**
        * <pre>
        *repeated FKFPKCGAIGM OMJJDDGJOIJ = 2;
-       *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 9; | doesnt matter
+       *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 11; | doesnt matter
        * </pre>
        *
-       * <code>uint32 equip_type = 15;</code>
+       * <code>uint32 equip_type = 13;</code>
        * @param value The equipType to set.
        * @return This builder for chaining.
        */
@@ -501,10 +501,10 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
       /**
        * <pre>
        *repeated FKFPKCGAIGM OMJJDDGJOIJ = 2;
-       *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 9; | doesnt matter
+       *repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 11; | doesnt matter
        * </pre>
        *
-       * <code>uint32 equip_type = 15;</code>
+       * <code>uint32 equip_type = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearEquipType() {
@@ -516,7 +516,7 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
 
       private int elementType_ ;
       /**
-       * <code>uint32 element_type = 7;</code>
+       * <code>uint32 element_type = 9;</code>
        * @return The elementType.
        */
       @java.lang.Override
@@ -524,7 +524,7 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
         return elementType_;
       }
       /**
-       * <code>uint32 element_type = 7;</code>
+       * <code>uint32 element_type = 9;</code>
        * @param value The elementType to set.
        * @return This builder for chaining.
        */
@@ -535,7 +535,7 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
         return this;
       }
       /**
-       * <code>uint32 element_type = 7;</code>
+       * <code>uint32 element_type = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearElementType() {
@@ -613,8 +613,8 @@ public final class GameplayRecommendationElementReliquaryResponseOuterClass {
     java.lang.String[] descriptorData = {
       "\n4GameplayRecommendationElementReliquary" +
       "Response.proto\"Z\n.GameplayRecommendation" +
-      "ElementReliquaryResponse\022\022\n\nequip_type\030\017" +
-      " \001(\r\022\024\n\014element_type\030\007 \001(\rB\033\n\031emu.grassc" +
+      "ElementReliquaryResponse\022\022\n\nequip_type\030\r" +
+      " \001(\r\022\024\n\014element_type\030\t \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

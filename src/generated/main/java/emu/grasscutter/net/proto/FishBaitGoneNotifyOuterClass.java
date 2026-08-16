@@ -26,8 +26,7 @@ public final class FishBaitGoneNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 3285
-   * Obf: LAPCILJDCDH
+   * CmdId: 1337
    * </pre>
    *
    * Protobuf type {@code FishBaitGoneNotify}
@@ -279,8 +278,7 @@ public final class FishBaitGoneNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3285
-     * Obf: LAPCILJDCDH
+     * CmdId: 1337
      * </pre>
      *
      * Protobuf type {@code FishBaitGoneNotify}

@@ -19,24 +19,28 @@ public final class PingRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 seq = 3;</code>
+     * <code>uint32 seq = 2;</code>
      * @return The seq.
      */
     int getSeq();
 
     /**
-     * <code>uint32 client_time = 10;</code>
+     * <code>uint32 client_time = 14;</code>
      * @return The clientTime.
      */
     int getClientTime();
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 29457
+   * </pre>
+   *
    * Protobuf type {@code PingRsp}
    */
   public static final class PingRsp extends
@@ -81,17 +85,17 @@ public final class PingRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
               seq_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 48: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 80: {
+            case 112: {
 
               clientTime_ = input.readUInt32();
               break;
@@ -128,10 +132,10 @@ public final class PingRspOuterClass {
               emu.grasscutter.net.proto.PingRspOuterClass.PingRsp.class, emu.grasscutter.net.proto.PingRspOuterClass.PingRsp.Builder.class);
     }
 
-    public static final int SEQ_FIELD_NUMBER = 3;
+    public static final int SEQ_FIELD_NUMBER = 2;
     private int seq_;
     /**
-     * <code>uint32 seq = 3;</code>
+     * <code>uint32 seq = 2;</code>
      * @return The seq.
      */
     @java.lang.Override
@@ -139,10 +143,10 @@ public final class PingRspOuterClass {
       return seq_;
     }
 
-    public static final int CLIENT_TIME_FIELD_NUMBER = 10;
+    public static final int CLIENT_TIME_FIELD_NUMBER = 14;
     private int clientTime_;
     /**
-     * <code>uint32 client_time = 10;</code>
+     * <code>uint32 client_time = 14;</code>
      * @return The clientTime.
      */
     @java.lang.Override
@@ -150,10 +154,10 @@ public final class PingRspOuterClass {
       return clientTime_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -176,13 +180,13 @@ public final class PingRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (seq_ != 0) {
-        output.writeUInt32(3, seq_);
+        output.writeUInt32(2, seq_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(6, retcode_);
       }
       if (clientTime_ != 0) {
-        output.writeUInt32(10, clientTime_);
+        output.writeUInt32(14, clientTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +199,15 @@ public final class PingRspOuterClass {
       size = 0;
       if (seq_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, seq_);
+          .computeUInt32Size(2, seq_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(6, retcode_);
       }
       if (clientTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, clientTime_);
+          .computeUInt32Size(14, clientTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,6 +343,10 @@ public final class PingRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 29457
+     * </pre>
+     *
      * Protobuf type {@code PingRsp}
      */
     public static final class Builder extends
@@ -499,7 +507,7 @@ public final class PingRspOuterClass {
 
       private int seq_ ;
       /**
-       * <code>uint32 seq = 3;</code>
+       * <code>uint32 seq = 2;</code>
        * @return The seq.
        */
       @java.lang.Override
@@ -507,7 +515,7 @@ public final class PingRspOuterClass {
         return seq_;
       }
       /**
-       * <code>uint32 seq = 3;</code>
+       * <code>uint32 seq = 2;</code>
        * @param value The seq to set.
        * @return This builder for chaining.
        */
@@ -518,7 +526,7 @@ public final class PingRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 seq = 3;</code>
+       * <code>uint32 seq = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearSeq() {
@@ -530,7 +538,7 @@ public final class PingRspOuterClass {
 
       private int clientTime_ ;
       /**
-       * <code>uint32 client_time = 10;</code>
+       * <code>uint32 client_time = 14;</code>
        * @return The clientTime.
        */
       @java.lang.Override
@@ -538,7 +546,7 @@ public final class PingRspOuterClass {
         return clientTime_;
       }
       /**
-       * <code>uint32 client_time = 10;</code>
+       * <code>uint32 client_time = 14;</code>
        * @param value The clientTime to set.
        * @return This builder for chaining.
        */
@@ -549,7 +557,7 @@ public final class PingRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 client_time = 10;</code>
+       * <code>uint32 client_time = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientTime() {
@@ -561,7 +569,7 @@ public final class PingRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -569,7 +577,7 @@ public final class PingRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -580,7 +588,7 @@ public final class PingRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -656,8 +664,8 @@ public final class PingRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rPingRsp.proto\"<\n\007PingRsp\022\013\n\003seq\030\003 \001(\r\022" +
-      "\023\n\013client_time\030\n \001(\r\022\017\n\007retcode\030\t \001(\005B\033\n" +
+      "\n\rPingRsp.proto\"<\n\007PingRsp\022\013\n\003seq\030\002 \001(\r\022" +
+      "\023\n\013client_time\030\016 \001(\r\022\017\n\007retcode\030\006 \001(\005B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

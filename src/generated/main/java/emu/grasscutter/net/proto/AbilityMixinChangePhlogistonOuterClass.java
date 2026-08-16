@@ -19,7 +19,7 @@ public final class AbilityMixinChangePhlogistonOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float value = 1;</code>
+     * <code>float value = 8;</code>
      * @return The value.
      */
     float getValue();
@@ -69,7 +69,7 @@ public final class AbilityMixinChangePhlogistonOuterClass {
             case 0:
               done = true;
               break;
-            case 13: {
+            case 69: {
 
               value_ = input.readFloat();
               break;
@@ -106,10 +106,10 @@ public final class AbilityMixinChangePhlogistonOuterClass {
               emu.grasscutter.net.proto.AbilityMixinChangePhlogistonOuterClass.AbilityMixinChangePhlogiston.class, emu.grasscutter.net.proto.AbilityMixinChangePhlogistonOuterClass.AbilityMixinChangePhlogiston.Builder.class);
     }
 
-    public static final int VALUE_FIELD_NUMBER = 1;
+    public static final int VALUE_FIELD_NUMBER = 8;
     private float value_;
     /**
-     * <code>float value = 1;</code>
+     * <code>float value = 8;</code>
      * @return The value.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class AbilityMixinChangePhlogistonOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (value_ != 0F) {
-        output.writeFloat(1, value_);
+        output.writeFloat(8, value_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class AbilityMixinChangePhlogistonOuterClass {
       size = 0;
       if (value_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(1, value_);
+          .computeFloatSize(8, value_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -423,7 +423,7 @@ public final class AbilityMixinChangePhlogistonOuterClass {
 
       private float value_ ;
       /**
-       * <code>float value = 1;</code>
+       * <code>float value = 8;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -431,7 +431,7 @@ public final class AbilityMixinChangePhlogistonOuterClass {
         return value_;
       }
       /**
-       * <code>float value = 1;</code>
+       * <code>float value = 8;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
@@ -442,7 +442,7 @@ public final class AbilityMixinChangePhlogistonOuterClass {
         return this;
       }
       /**
-       * <code>float value = 1;</code>
+       * <code>float value = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
@@ -519,7 +519,7 @@ public final class AbilityMixinChangePhlogistonOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"AbilityMixinChangePhlogiston.proto\"-\n\034" +
-      "AbilityMixinChangePhlogiston\022\r\n\005value\030\001 " +
+      "AbilityMixinChangePhlogiston\022\r\n\005value\030\010 " +
       "\001(\002B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

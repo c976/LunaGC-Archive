@@ -19,18 +19,22 @@ public final class AddQuestContentProgressRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 content_type = 1;</code>
+     * <code>uint32 content_type = 10;</code>
      * @return The contentType.
      */
     int getContentType();
 
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 4639
+   * </pre>
+   *
    * Protobuf type {@code AddQuestContentProgressRsp}
    */
   public static final class AddQuestContentProgressRsp extends
@@ -77,12 +81,12 @@ public final class AddQuestContentProgressRspOuterClass {
               break;
             case 8: {
 
-              contentType_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
-            case 96: {
+            case 80: {
 
-              retcode_ = input.readInt32();
+              contentType_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,10 +121,10 @@ public final class AddQuestContentProgressRspOuterClass {
               emu.grasscutter.net.proto.AddQuestContentProgressRspOuterClass.AddQuestContentProgressRsp.class, emu.grasscutter.net.proto.AddQuestContentProgressRspOuterClass.AddQuestContentProgressRsp.Builder.class);
     }
 
-    public static final int CONTENT_TYPE_FIELD_NUMBER = 1;
+    public static final int CONTENT_TYPE_FIELD_NUMBER = 10;
     private int contentType_;
     /**
-     * <code>uint32 content_type = 1;</code>
+     * <code>uint32 content_type = 10;</code>
      * @return The contentType.
      */
     @java.lang.Override
@@ -128,10 +132,10 @@ public final class AddQuestContentProgressRspOuterClass {
       return contentType_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -153,11 +157,11 @@ public final class AddQuestContentProgressRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (contentType_ != 0) {
-        output.writeUInt32(1, contentType_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(1, retcode_);
+      }
+      if (contentType_ != 0) {
+        output.writeUInt32(10, contentType_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class AddQuestContentProgressRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (contentType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, contentType_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(1, retcode_);
+      }
+      if (contentType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, contentType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -306,6 +310,10 @@ public final class AddQuestContentProgressRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 4639
+     * </pre>
+     *
      * Protobuf type {@code AddQuestContentProgressRsp}
      */
     public static final class Builder extends
@@ -460,7 +468,7 @@ public final class AddQuestContentProgressRspOuterClass {
 
       private int contentType_ ;
       /**
-       * <code>uint32 content_type = 1;</code>
+       * <code>uint32 content_type = 10;</code>
        * @return The contentType.
        */
       @java.lang.Override
@@ -468,7 +476,7 @@ public final class AddQuestContentProgressRspOuterClass {
         return contentType_;
       }
       /**
-       * <code>uint32 content_type = 1;</code>
+       * <code>uint32 content_type = 10;</code>
        * @param value The contentType to set.
        * @return This builder for chaining.
        */
@@ -479,7 +487,7 @@ public final class AddQuestContentProgressRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 content_type = 1;</code>
+       * <code>uint32 content_type = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearContentType() {
@@ -491,7 +499,7 @@ public final class AddQuestContentProgressRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -499,7 +507,7 @@ public final class AddQuestContentProgressRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -510,7 +518,7 @@ public final class AddQuestContentProgressRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -588,7 +596,7 @@ public final class AddQuestContentProgressRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n AddQuestContentProgressRsp.proto\"C\n\032Ad" +
       "dQuestContentProgressRsp\022\024\n\014content_type" +
-      "\030\001 \001(\r\022\017\n\007retcode\030\014 \001(\005B\033\n\031emu.grasscutt" +
+      "\030\n \001(\r\022\017\n\007retcode\030\001 \001(\005B\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

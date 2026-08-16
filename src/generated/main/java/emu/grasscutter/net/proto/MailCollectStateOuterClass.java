@@ -20,9 +20,9 @@ public final class MailCollectStateOuterClass {
   public enum MailCollectState
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>MAIL_COLLECT_STATE_COLLECTIBLE_UNKNOWN = 0;</code>
+     * <code>MAIL_COLLECT_STATE_COLLECTIBLE_UNKONW = 0;</code>
      */
-    MAIL_COLLECT_STATE_COLLECTIBLE_UNKNOWN(0),
+    MAIL_COLLECT_STATE_COLLECTIBLE_UNKONW(0),
     /**
      * <code>MAIL_COLLECT_STATE_NOT_COLLECTIBLE = 1;</code>
      */
@@ -39,9 +39,9 @@ public final class MailCollectStateOuterClass {
     ;
 
     /**
-     * <code>MAIL_COLLECT_STATE_COLLECTIBLE_UNKNOWN = 0;</code>
+     * <code>MAIL_COLLECT_STATE_COLLECTIBLE_UNKONW = 0;</code>
      */
-    public static final int MAIL_COLLECT_STATE_COLLECTIBLE_UNKNOWN_VALUE = 0;
+    public static final int MAIL_COLLECT_STATE_COLLECTIBLE_UNKONW_VALUE = 0;
     /**
      * <code>MAIL_COLLECT_STATE_NOT_COLLECTIBLE = 1;</code>
      */
@@ -80,7 +80,7 @@ public final class MailCollectStateOuterClass {
      */
     public static MailCollectState forNumber(int value) {
       switch (value) {
-        case 0: return MAIL_COLLECT_STATE_COLLECTIBLE_UNKNOWN;
+        case 0: return MAIL_COLLECT_STATE_COLLECTIBLE_UNKONW;
         case 1: return MAIL_COLLECT_STATE_NOT_COLLECTIBLE;
         case 2: return MAIL_COLLECT_STATE_COLLECTIBLE_UNCOLLECTED;
         case 3: return MAIL_COLLECT_STATE_COLLECTIBLE_COLLECTED;
@@ -149,13 +149,13 @@ public final class MailCollectStateOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026MailCollectState.proto*\304\001\n\020MailCollect" +
-      "State\022*\n&MAIL_COLLECT_STATE_COLLECTIBLE_" +
-      "UNKNOWN\020\000\022&\n\"MAIL_COLLECT_STATE_NOT_COLL" +
-      "ECTIBLE\020\001\022.\n*MAIL_COLLECT_STATE_COLLECTI" +
-      "BLE_UNCOLLECTED\020\002\022,\n(MAIL_COLLECT_STATE_" +
-      "COLLECTIBLE_COLLECTED\020\003B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\026MailCollectState.proto*\303\001\n\020MailCollect" +
+      "State\022)\n%MAIL_COLLECT_STATE_COLLECTIBLE_" +
+      "UNKONW\020\000\022&\n\"MAIL_COLLECT_STATE_NOT_COLLE" +
+      "CTIBLE\020\001\022.\n*MAIL_COLLECT_STATE_COLLECTIB" +
+      "LE_UNCOLLECTED\020\002\022,\n(MAIL_COLLECT_STATE_C" +
+      "OLLECTIBLE_COLLECTED\020\003B\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

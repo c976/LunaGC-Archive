@@ -11,9 +11,12 @@ public class HandlerSetUpAvatarTeamReq extends PacketHandler {
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
         SetUpAvatarTeamReq req = SetUpAvatarTeamReq.parseFrom(payload);
 
+        int teamId = (req.getTeamId() ^ 63709) - 19529;
+        long curAvatarGuid = (req.getCurAvatarGuid() ^ 1583L) - 41090L;
+
         session
                 .getPlayer()
                 .getTeamManager()
-                .setupAvatarTeam(req.getTeamId(), req.getAvatarTeamGuidListList());
+                .setupAvatarTeam(teamId, req.getAvatarTeamGuidListList());
     }
 }

@@ -19,39 +19,35 @@ public final class DeliveryActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+     * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
      * @return A list containing the finishedDeliveryQuestIndex.
      */
     java.util.List<java.lang.Integer> getFinishedDeliveryQuestIndexList();
     /**
-     * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+     * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
      * @return The count of finishedDeliveryQuestIndex.
      */
     int getFinishedDeliveryQuestIndexCount();
     /**
-     * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+     * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
      * @param index The index of the element to return.
      * @return The finishedDeliveryQuestIndex at the given index.
      */
     int getFinishedDeliveryQuestIndex(int index);
 
     /**
-     * <code>uint32 day_index = 13;</code>
-     * @return The dayIndex.
-     */
-    int getDayIndex();
-
-    /**
-     * <code>bool is_taken_reward = 6;</code>
+     * <code>bool is_taken_reward = 7;</code>
      * @return The isTakenReward.
      */
     boolean getIsTakenReward();
+
+    /**
+     * <code>uint32 day_index = 11;</code>
+     * @return The dayIndex.
+     */
+    int getDayIndex();
   }
   /**
-   * <pre>
-   * Obf: DOBDHABKDGM
-   * </pre>
-   *
    * Protobuf type {@code DeliveryActivityDetailInfo}
    */
   public static final class DeliveryActivityDetailInfo extends
@@ -99,16 +95,6 @@ public final class DeliveryActivityDetailInfoOuterClass {
               done = true;
               break;
             case 48: {
-
-              isTakenReward_ = input.readBool();
-              break;
-            }
-            case 104: {
-
-              dayIndex_ = input.readUInt32();
-              break;
-            }
-            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 finishedDeliveryQuestIndex_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -116,7 +102,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
               finishedDeliveryQuestIndex_.addInt(input.readUInt32());
               break;
             }
-            case 114: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -127,6 +113,16 @@ public final class DeliveryActivityDetailInfoOuterClass {
                 finishedDeliveryQuestIndex_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 56: {
+
+              isTakenReward_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              dayIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -164,10 +160,10 @@ public final class DeliveryActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo.class, emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo.Builder.class);
     }
 
-    public static final int FINISHED_DELIVERY_QUEST_INDEX_FIELD_NUMBER = 14;
+    public static final int FINISHED_DELIVERY_QUEST_INDEX_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList finishedDeliveryQuestIndex_;
     /**
-     * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+     * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
      * @return A list containing the finishedDeliveryQuestIndex.
      */
     @java.lang.Override
@@ -176,14 +172,14 @@ public final class DeliveryActivityDetailInfoOuterClass {
       return finishedDeliveryQuestIndex_;
     }
     /**
-     * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+     * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
      * @return The count of finishedDeliveryQuestIndex.
      */
     public int getFinishedDeliveryQuestIndexCount() {
       return finishedDeliveryQuestIndex_.size();
     }
     /**
-     * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+     * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
      * @param index The index of the element to return.
      * @return The finishedDeliveryQuestIndex at the given index.
      */
@@ -192,26 +188,26 @@ public final class DeliveryActivityDetailInfoOuterClass {
     }
     private int finishedDeliveryQuestIndexMemoizedSerializedSize = -1;
 
-    public static final int DAY_INDEX_FIELD_NUMBER = 13;
-    private int dayIndex_;
-    /**
-     * <code>uint32 day_index = 13;</code>
-     * @return The dayIndex.
-     */
-    @java.lang.Override
-    public int getDayIndex() {
-      return dayIndex_;
-    }
-
-    public static final int IS_TAKEN_REWARD_FIELD_NUMBER = 6;
+    public static final int IS_TAKEN_REWARD_FIELD_NUMBER = 7;
     private boolean isTakenReward_;
     /**
-     * <code>bool is_taken_reward = 6;</code>
+     * <code>bool is_taken_reward = 7;</code>
      * @return The isTakenReward.
      */
     @java.lang.Override
     public boolean getIsTakenReward() {
       return isTakenReward_;
+    }
+
+    public static final int DAY_INDEX_FIELD_NUMBER = 11;
+    private int dayIndex_;
+    /**
+     * <code>uint32 day_index = 11;</code>
+     * @return The dayIndex.
+     */
+    @java.lang.Override
+    public int getDayIndex() {
+      return dayIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -229,18 +225,18 @@ public final class DeliveryActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (isTakenReward_ != false) {
-        output.writeBool(6, isTakenReward_);
-      }
-      if (dayIndex_ != 0) {
-        output.writeUInt32(13, dayIndex_);
-      }
       if (getFinishedDeliveryQuestIndexList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(finishedDeliveryQuestIndexMemoizedSerializedSize);
       }
       for (int i = 0; i < finishedDeliveryQuestIndex_.size(); i++) {
         output.writeUInt32NoTag(finishedDeliveryQuestIndex_.getInt(i));
+      }
+      if (isTakenReward_ != false) {
+        output.writeBool(7, isTakenReward_);
+      }
+      if (dayIndex_ != 0) {
+        output.writeUInt32(11, dayIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -251,14 +247,6 @@ public final class DeliveryActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isTakenReward_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isTakenReward_);
-      }
-      if (dayIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, dayIndex_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < finishedDeliveryQuestIndex_.size(); i++) {
@@ -272,6 +260,14 @@ public final class DeliveryActivityDetailInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         finishedDeliveryQuestIndexMemoizedSerializedSize = dataSize;
+      }
+      if (isTakenReward_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(7, isTakenReward_);
+      }
+      if (dayIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, dayIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -290,10 +286,10 @@ public final class DeliveryActivityDetailInfoOuterClass {
 
       if (!getFinishedDeliveryQuestIndexList()
           .equals(other.getFinishedDeliveryQuestIndexList())) return false;
-      if (getDayIndex()
-          != other.getDayIndex()) return false;
       if (getIsTakenReward()
           != other.getIsTakenReward()) return false;
+      if (getDayIndex()
+          != other.getDayIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -309,11 +305,11 @@ public final class DeliveryActivityDetailInfoOuterClass {
         hash = (37 * hash) + FINISHED_DELIVERY_QUEST_INDEX_FIELD_NUMBER;
         hash = (53 * hash) + getFinishedDeliveryQuestIndexList().hashCode();
       }
-      hash = (37 * hash) + DAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getDayIndex();
       hash = (37 * hash) + IS_TAKEN_REWARD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTakenReward());
+      hash = (37 * hash) + DAY_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getDayIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,10 +406,6 @@ public final class DeliveryActivityDetailInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DOBDHABKDGM
-     * </pre>
-     *
      * Protobuf type {@code DeliveryActivityDetailInfo}
      */
     public static final class Builder extends
@@ -453,9 +445,9 @@ public final class DeliveryActivityDetailInfoOuterClass {
         super.clear();
         finishedDeliveryQuestIndex_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        dayIndex_ = 0;
-
         isTakenReward_ = false;
+
+        dayIndex_ = 0;
 
         return this;
       }
@@ -489,8 +481,8 @@ public final class DeliveryActivityDetailInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.finishedDeliveryQuestIndex_ = finishedDeliveryQuestIndex_;
-        result.dayIndex_ = dayIndex_;
         result.isTakenReward_ = isTakenReward_;
+        result.dayIndex_ = dayIndex_;
         onBuilt();
         return result;
       }
@@ -549,11 +541,11 @@ public final class DeliveryActivityDetailInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getDayIndex() != 0) {
-          setDayIndex(other.getDayIndex());
-        }
         if (other.getIsTakenReward() != false) {
           setIsTakenReward(other.getIsTakenReward());
+        }
+        if (other.getDayIndex() != 0) {
+          setDayIndex(other.getDayIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -593,7 +585,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+       * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
        * @return A list containing the finishedDeliveryQuestIndex.
        */
       public java.util.List<java.lang.Integer>
@@ -602,14 +594,14 @@ public final class DeliveryActivityDetailInfoOuterClass {
                  java.util.Collections.unmodifiableList(finishedDeliveryQuestIndex_) : finishedDeliveryQuestIndex_;
       }
       /**
-       * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+       * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
        * @return The count of finishedDeliveryQuestIndex.
        */
       public int getFinishedDeliveryQuestIndexCount() {
         return finishedDeliveryQuestIndex_.size();
       }
       /**
-       * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+       * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
        * @param index The index of the element to return.
        * @return The finishedDeliveryQuestIndex at the given index.
        */
@@ -617,7 +609,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
         return finishedDeliveryQuestIndex_.getInt(index);
       }
       /**
-       * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+       * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
        * @param index The index to set the value at.
        * @param value The finishedDeliveryQuestIndex to set.
        * @return This builder for chaining.
@@ -630,7 +622,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+       * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
        * @param value The finishedDeliveryQuestIndex to add.
        * @return This builder for chaining.
        */
@@ -641,7 +633,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+       * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
        * @param values The finishedDeliveryQuestIndex to add.
        * @return This builder for chaining.
        */
@@ -654,7 +646,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_delivery_quest_index = 14;</code>
+       * <code>repeated uint32 finished_delivery_quest_index = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishedDeliveryQuestIndex() {
@@ -664,40 +656,9 @@ public final class DeliveryActivityDetailInfoOuterClass {
         return this;
       }
 
-      private int dayIndex_ ;
-      /**
-       * <code>uint32 day_index = 13;</code>
-       * @return The dayIndex.
-       */
-      @java.lang.Override
-      public int getDayIndex() {
-        return dayIndex_;
-      }
-      /**
-       * <code>uint32 day_index = 13;</code>
-       * @param value The dayIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDayIndex(int value) {
-        
-        dayIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 day_index = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDayIndex() {
-        
-        dayIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isTakenReward_ ;
       /**
-       * <code>bool is_taken_reward = 6;</code>
+       * <code>bool is_taken_reward = 7;</code>
        * @return The isTakenReward.
        */
       @java.lang.Override
@@ -705,7 +666,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
         return isTakenReward_;
       }
       /**
-       * <code>bool is_taken_reward = 6;</code>
+       * <code>bool is_taken_reward = 7;</code>
        * @param value The isTakenReward to set.
        * @return This builder for chaining.
        */
@@ -716,12 +677,43 @@ public final class DeliveryActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_taken_reward = 6;</code>
+       * <code>bool is_taken_reward = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTakenReward() {
         
         isTakenReward_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int dayIndex_ ;
+      /**
+       * <code>uint32 day_index = 11;</code>
+       * @return The dayIndex.
+       */
+      @java.lang.Override
+      public int getDayIndex() {
+        return dayIndex_;
+      }
+      /**
+       * <code>uint32 day_index = 11;</code>
+       * @param value The dayIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDayIndex(int value) {
+        
+        dayIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 day_index = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDayIndex() {
+        
+        dayIndex_ = 0;
         onChanged();
         return this;
       }
@@ -794,8 +786,8 @@ public final class DeliveryActivityDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n DeliveryActivityDetailInfo.proto\"o\n\032De" +
       "liveryActivityDetailInfo\022%\n\035finished_del" +
-      "ivery_quest_index\030\016 \003(\r\022\021\n\tday_index\030\r \001" +
-      "(\r\022\027\n\017is_taken_reward\030\006 \001(\010B\033\n\031emu.grass" +
+      "ivery_quest_index\030\006 \003(\r\022\027\n\017is_taken_rewa" +
+      "rd\030\007 \001(\010\022\021\n\tday_index\030\013 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -807,7 +799,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
     internal_static_DeliveryActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DeliveryActivityDetailInfo_descriptor,
-        new java.lang.String[] { "FinishedDeliveryQuestIndex", "DayIndex", "IsTakenReward", });
+        new java.lang.String[] { "FinishedDeliveryQuestIndex", "IsTakenReward", "DayIndex", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -118,18 +118,21 @@ public class GameSession implements GameSessionManager.KcpChannel {
         // Log
         switch (GAME_INFO.logPackets) {
             case ALL -> {
-                if (!PacketOpcodesUtils.LOOP_PACKETS.contains(packet.getOpcode())
-                        || GAME_INFO.isShowLoopPackets) {
+                if ((!PacketOpcodesUtils.LOOP_PACKETS.contains(packet.getOpcode())
+                        || GAME_INFO.isShowLoopPackets)
+                        && !PacketOpcodes.BANNED_PACKETS.contains(packet.getOpcode())) {
                     logPacket("SEND", packet.getOpcode(), packet.getData());
                 }
             }
             case WHITELIST -> {
-                if (SERVER.debugWhitelist.contains(packet.getOpcode())) {
+                if (SERVER.debugWhitelist.contains(packet.getOpcode())
+                        && !PacketOpcodes.BANNED_PACKETS.contains(packet.getOpcode())) {
                     logPacket("SEND", packet.getOpcode(), packet.getData());
                 }
             }
             case BLACKLIST -> {
-                if (!SERVER.debugBlacklist.contains(packet.getOpcode())) {
+                if (!SERVER.debugBlacklist.contains(packet.getOpcode())
+                        && !PacketOpcodes.BANNED_PACKETS.contains(packet.getOpcode())) {
                     logPacket("SEND", packet.getOpcode(), packet.getData());
                 }
             }
@@ -212,17 +215,20 @@ public class GameSession implements GameSessionManager.KcpChannel {
                 // Log packet
                 switch (GAME_INFO.logPackets) {
                     case ALL -> {
-                        if (!PacketOpcodesUtils.LOOP_PACKETS.contains(opcode) || GAME_INFO.isShowLoopPackets) {
+                        if ((!PacketOpcodesUtils.LOOP_PACKETS.contains(opcode) || GAME_INFO.isShowLoopPackets)
+                                && !PacketOpcodes.BANNED_PACKETS.contains(opcode)) {
                             logPacket("RECV", opcode, payload);
                         }
                     }
                     case WHITELIST -> {
-                        if (SERVER.debugWhitelist.contains(opcode)) {
+                        if (SERVER.debugWhitelist.contains(opcode)
+                                && !PacketOpcodes.BANNED_PACKETS.contains(opcode)) {
                             logPacket("RECV", opcode, payload);
                         }
                     }
                     case BLACKLIST -> {
-                        if (!(SERVER.debugBlacklist.contains(opcode))) {
+                        if (!(SERVER.debugBlacklist.contains(opcode))
+                                && !PacketOpcodes.BANNED_PACKETS.contains(opcode)) {
                             logPacket("RECV", opcode, payload);
                         }
                     }

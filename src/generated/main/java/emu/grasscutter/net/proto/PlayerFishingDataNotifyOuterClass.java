@@ -19,15 +19,14 @@ public final class PlayerFishingDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 last_fish_rod_id = 12;</code>
+     * <code>uint32 last_fish_rod_id = 7;</code>
      * @return The lastFishRodId.
      */
     int getLastFishRodId();
   }
   /**
    * <pre>
-   * CmdId: 6317
-   * Obf: JPONLOAPCLH
+   * CmdId: 22047
    * </pre>
    *
    * Protobuf type {@code PlayerFishingDataNotify}
@@ -74,7 +73,7 @@ public final class PlayerFishingDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 56: {
 
               lastFishRodId_ = input.readUInt32();
               break;
@@ -111,10 +110,10 @@ public final class PlayerFishingDataNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerFishingDataNotifyOuterClass.PlayerFishingDataNotify.class, emu.grasscutter.net.proto.PlayerFishingDataNotifyOuterClass.PlayerFishingDataNotify.Builder.class);
     }
 
-    public static final int LAST_FISH_ROD_ID_FIELD_NUMBER = 12;
+    public static final int LAST_FISH_ROD_ID_FIELD_NUMBER = 7;
     private int lastFishRodId_;
     /**
-     * <code>uint32 last_fish_rod_id = 12;</code>
+     * <code>uint32 last_fish_rod_id = 7;</code>
      * @return The lastFishRodId.
      */
     @java.lang.Override
@@ -137,7 +136,7 @@ public final class PlayerFishingDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (lastFishRodId_ != 0) {
-        output.writeUInt32(12, lastFishRodId_);
+        output.writeUInt32(7, lastFishRodId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +149,7 @@ public final class PlayerFishingDataNotifyOuterClass {
       size = 0;
       if (lastFishRodId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, lastFishRodId_);
+          .computeUInt32Size(7, lastFishRodId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +278,7 @@ public final class PlayerFishingDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6317
-     * Obf: JPONLOAPCLH
+     * CmdId: 22047
      * </pre>
      *
      * Protobuf type {@code PlayerFishingDataNotify}
@@ -431,7 +429,7 @@ public final class PlayerFishingDataNotifyOuterClass {
 
       private int lastFishRodId_ ;
       /**
-       * <code>uint32 last_fish_rod_id = 12;</code>
+       * <code>uint32 last_fish_rod_id = 7;</code>
        * @return The lastFishRodId.
        */
       @java.lang.Override
@@ -439,7 +437,7 @@ public final class PlayerFishingDataNotifyOuterClass {
         return lastFishRodId_;
       }
       /**
-       * <code>uint32 last_fish_rod_id = 12;</code>
+       * <code>uint32 last_fish_rod_id = 7;</code>
        * @param value The lastFishRodId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +448,7 @@ public final class PlayerFishingDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 last_fish_rod_id = 12;</code>
+       * <code>uint32 last_fish_rod_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLastFishRodId() {
@@ -527,7 +525,7 @@ public final class PlayerFishingDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035PlayerFishingDataNotify.proto\"3\n\027Playe" +
-      "rFishingDataNotify\022\030\n\020last_fish_rod_id\030\014" +
+      "rFishingDataNotify\022\030\n\020last_fish_rod_id\030\007" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
