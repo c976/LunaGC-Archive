@@ -19,46 +19,30 @@ public final class MOEJCPOJHJMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 name_id = 12;</code>
      * @return The nameId.
      */
     int getNameId();
 
     /**
-     * <code>uint32 OOPKJKPOKCP = 4;</code>
-     * @return The oOPKJKPOKCP.
+     * <code>uint32 fungus_id = 4;</code>
+     * @return The fungusId.
      */
-    int getOOPKJKPOKCP();
+    int getFungusId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HAMNPNGJECA = 10;</code>
      * @return The hAMNPNGJECA.
      */
     boolean getHAMNPNGJECA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DOBMNGKDBGC = 6;</code>
      * @return The dOBMNGKDBGC.
      */
     int getDOBMNGKDBGC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LEHONJFIMMG = 1;</code>
      * @return The lEHONJFIMMG.
      */
@@ -116,7 +100,7 @@ public final class MOEJCPOJHJMOuterClass {
             }
             case 32: {
 
-              oOPKJKPOKCP_ = input.readUInt32();
+              fungusId_ = input.readUInt32();
               break;
             }
             case 48: {
@@ -169,10 +153,6 @@ public final class MOEJCPOJHJMOuterClass {
     public static final int NAME_ID_FIELD_NUMBER = 12;
     private int nameId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 name_id = 12;</code>
      * @return The nameId.
      */
@@ -181,24 +161,20 @@ public final class MOEJCPOJHJMOuterClass {
       return nameId_;
     }
 
-    public static final int OOPKJKPOKCP_FIELD_NUMBER = 4;
-    private int oOPKJKPOKCP_;
+    public static final int FUNGUS_ID_FIELD_NUMBER = 4;
+    private int fungusId_;
     /**
-     * <code>uint32 OOPKJKPOKCP = 4;</code>
-     * @return The oOPKJKPOKCP.
+     * <code>uint32 fungus_id = 4;</code>
+     * @return The fungusId.
      */
     @java.lang.Override
-    public int getOOPKJKPOKCP() {
-      return oOPKJKPOKCP_;
+    public int getFungusId() {
+      return fungusId_;
     }
 
     public static final int HAMNPNGJECA_FIELD_NUMBER = 10;
     private boolean hAMNPNGJECA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HAMNPNGJECA = 10;</code>
      * @return The hAMNPNGJECA.
      */
@@ -210,10 +186,6 @@ public final class MOEJCPOJHJMOuterClass {
     public static final int DOBMNGKDBGC_FIELD_NUMBER = 6;
     private int dOBMNGKDBGC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DOBMNGKDBGC = 6;</code>
      * @return The dOBMNGKDBGC.
      */
@@ -225,10 +197,6 @@ public final class MOEJCPOJHJMOuterClass {
     public static final int LEHONJFIMMG_FIELD_NUMBER = 1;
     private int lEHONJFIMMG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LEHONJFIMMG = 1;</code>
      * @return The lEHONJFIMMG.
      */
@@ -254,8 +222,8 @@ public final class MOEJCPOJHJMOuterClass {
       if (lEHONJFIMMG_ != 0) {
         output.writeUInt32(1, lEHONJFIMMG_);
       }
-      if (oOPKJKPOKCP_ != 0) {
-        output.writeUInt32(4, oOPKJKPOKCP_);
+      if (fungusId_ != 0) {
+        output.writeUInt32(4, fungusId_);
       }
       if (dOBMNGKDBGC_ != 0) {
         output.writeUInt32(6, dOBMNGKDBGC_);
@@ -279,9 +247,9 @@ public final class MOEJCPOJHJMOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, lEHONJFIMMG_);
       }
-      if (oOPKJKPOKCP_ != 0) {
+      if (fungusId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, oOPKJKPOKCP_);
+          .computeUInt32Size(4, fungusId_);
       }
       if (dOBMNGKDBGC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -312,8 +280,8 @@ public final class MOEJCPOJHJMOuterClass {
 
       if (getNameId()
           != other.getNameId()) return false;
-      if (getOOPKJKPOKCP()
-          != other.getOOPKJKPOKCP()) return false;
+      if (getFungusId()
+          != other.getFungusId()) return false;
       if (getHAMNPNGJECA()
           != other.getHAMNPNGJECA()) return false;
       if (getDOBMNGKDBGC()
@@ -333,8 +301,8 @@ public final class MOEJCPOJHJMOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + NAME_ID_FIELD_NUMBER;
       hash = (53 * hash) + getNameId();
-      hash = (37 * hash) + OOPKJKPOKCP_FIELD_NUMBER;
-      hash = (53 * hash) + getOOPKJKPOKCP();
+      hash = (37 * hash) + FUNGUS_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getFungusId();
       hash = (37 * hash) + HAMNPNGJECA_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getHAMNPNGJECA());
@@ -477,7 +445,7 @@ public final class MOEJCPOJHJMOuterClass {
         super.clear();
         nameId_ = 0;
 
-        oOPKJKPOKCP_ = 0;
+        fungusId_ = 0;
 
         hAMNPNGJECA_ = false;
 
@@ -512,7 +480,7 @@ public final class MOEJCPOJHJMOuterClass {
       public emu.grasscutter.net.proto.MOEJCPOJHJMOuterClass.MOEJCPOJHJM buildPartial() {
         emu.grasscutter.net.proto.MOEJCPOJHJMOuterClass.MOEJCPOJHJM result = new emu.grasscutter.net.proto.MOEJCPOJHJMOuterClass.MOEJCPOJHJM(this);
         result.nameId_ = nameId_;
-        result.oOPKJKPOKCP_ = oOPKJKPOKCP_;
+        result.fungusId_ = fungusId_;
         result.hAMNPNGJECA_ = hAMNPNGJECA_;
         result.dOBMNGKDBGC_ = dOBMNGKDBGC_;
         result.lEHONJFIMMG_ = lEHONJFIMMG_;
@@ -567,8 +535,8 @@ public final class MOEJCPOJHJMOuterClass {
         if (other.getNameId() != 0) {
           setNameId(other.getNameId());
         }
-        if (other.getOOPKJKPOKCP() != 0) {
-          setOOPKJKPOKCP(other.getOOPKJKPOKCP());
+        if (other.getFungusId() != 0) {
+          setFungusId(other.getFungusId());
         }
         if (other.getHAMNPNGJECA() != false) {
           setHAMNPNGJECA(other.getHAMNPNGJECA());
@@ -610,10 +578,6 @@ public final class MOEJCPOJHJMOuterClass {
 
       private int nameId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 name_id = 12;</code>
        * @return The nameId.
        */
@@ -622,10 +586,6 @@ public final class MOEJCPOJHJMOuterClass {
         return nameId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 name_id = 12;</code>
        * @param value The nameId to set.
        * @return This builder for chaining.
@@ -637,10 +597,6 @@ public final class MOEJCPOJHJMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 name_id = 12;</code>
        * @return This builder for chaining.
        */
@@ -651,43 +607,39 @@ public final class MOEJCPOJHJMOuterClass {
         return this;
       }
 
-      private int oOPKJKPOKCP_ ;
+      private int fungusId_ ;
       /**
-       * <code>uint32 OOPKJKPOKCP = 4;</code>
-       * @return The oOPKJKPOKCP.
+       * <code>uint32 fungus_id = 4;</code>
+       * @return The fungusId.
        */
       @java.lang.Override
-      public int getOOPKJKPOKCP() {
-        return oOPKJKPOKCP_;
+      public int getFungusId() {
+        return fungusId_;
       }
       /**
-       * <code>uint32 OOPKJKPOKCP = 4;</code>
-       * @param value The oOPKJKPOKCP to set.
+       * <code>uint32 fungus_id = 4;</code>
+       * @param value The fungusId to set.
        * @return This builder for chaining.
        */
-      public Builder setOOPKJKPOKCP(int value) {
+      public Builder setFungusId(int value) {
         
-        oOPKJKPOKCP_ = value;
+        fungusId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OOPKJKPOKCP = 4;</code>
+       * <code>uint32 fungus_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOOPKJKPOKCP() {
+      public Builder clearFungusId() {
         
-        oOPKJKPOKCP_ = 0;
+        fungusId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean hAMNPNGJECA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HAMNPNGJECA = 10;</code>
        * @return The hAMNPNGJECA.
        */
@@ -696,10 +648,6 @@ public final class MOEJCPOJHJMOuterClass {
         return hAMNPNGJECA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HAMNPNGJECA = 10;</code>
        * @param value The hAMNPNGJECA to set.
        * @return This builder for chaining.
@@ -711,10 +659,6 @@ public final class MOEJCPOJHJMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HAMNPNGJECA = 10;</code>
        * @return This builder for chaining.
        */
@@ -727,10 +671,6 @@ public final class MOEJCPOJHJMOuterClass {
 
       private int dOBMNGKDBGC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DOBMNGKDBGC = 6;</code>
        * @return The dOBMNGKDBGC.
        */
@@ -739,10 +679,6 @@ public final class MOEJCPOJHJMOuterClass {
         return dOBMNGKDBGC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DOBMNGKDBGC = 6;</code>
        * @param value The dOBMNGKDBGC to set.
        * @return This builder for chaining.
@@ -754,10 +690,6 @@ public final class MOEJCPOJHJMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DOBMNGKDBGC = 6;</code>
        * @return This builder for chaining.
        */
@@ -770,10 +702,6 @@ public final class MOEJCPOJHJMOuterClass {
 
       private int lEHONJFIMMG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LEHONJFIMMG = 1;</code>
        * @return The lEHONJFIMMG.
        */
@@ -782,10 +710,6 @@ public final class MOEJCPOJHJMOuterClass {
         return lEHONJFIMMG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LEHONJFIMMG = 1;</code>
        * @param value The lEHONJFIMMG to set.
        * @return This builder for chaining.
@@ -797,10 +721,6 @@ public final class MOEJCPOJHJMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LEHONJFIMMG = 1;</code>
        * @return This builder for chaining.
        */
@@ -877,11 +797,11 @@ public final class MOEJCPOJHJMOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MOEJCPOJHJM.proto\"r\n\013MOEJCPOJHJM\022\017\n\007na" +
-      "me_id\030\014 \001(\r\022\023\n\013OOPKJKPOKCP\030\004 \001(\r\022\023\n\013HAMN" +
-      "PNGJECA\030\n \001(\010\022\023\n\013DOBMNGKDBGC\030\006 \001(\r\022\023\n\013LE" +
-      "HONJFIMMG\030\001 \001(\rB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n\021MOEJCPOJHJM.proto\"p\n\013MOEJCPOJHJM\022\017\n\007na" +
+      "me_id\030\014 \001(\r\022\021\n\tfungus_id\030\004 \001(\r\022\023\n\013HAMNPN" +
+      "GJECA\030\n \001(\010\022\023\n\013DOBMNGKDBGC\030\006 \001(\r\022\023\n\013LEHO" +
+      "NJFIMMG\030\001 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -892,7 +812,7 @@ public final class MOEJCPOJHJMOuterClass {
     internal_static_MOEJCPOJHJM_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MOEJCPOJHJM_descriptor,
-        new java.lang.String[] { "NameId", "OOPKJKPOKCP", "HAMNPNGJECA", "DOBMNGKDBGC", "LEHONJFIMMG", });
+        new java.lang.String[] { "NameId", "FungusId", "HAMNPNGJECA", "DOBMNGKDBGC", "LEHONJFIMMG", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

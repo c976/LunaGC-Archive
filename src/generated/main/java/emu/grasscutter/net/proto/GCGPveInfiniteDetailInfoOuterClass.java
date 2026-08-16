@@ -19,68 +19,44 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
      */
-    int getLNGKLAMPLEHCount();
+    int getNDOBLOJBCNJCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
      */
-    boolean containsLNGKLAMPLEH(
+    boolean containsNDOBLOJBCNJ(
         int key);
     /**
-     * Use {@link #getLNGKLAMPLEHMap()} instead.
+     * Use {@link #getNDOBLOJBCNJMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getLNGKLAMPLEH();
+    getNDOBLOJBCNJ();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getLNGKLAMPLEHMap();
+    getNDOBLOJBCNJMap();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
      */
 
-    int getLNGKLAMPLEHOrDefault(
+    int getNDOBLOJBCNJOrDefault(
         int key,
         int defaultValue);
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
      */
 
-    int getLNGKLAMPLEHOrThrow(
+    int getNDOBLOJBCNJOrThrow(
         int key);
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>bool AJFANLJEJEC = 7;</code>
-     * @return The aJFANLJEJEC.
+     * <code>bool OFLIIGMLKDI = 9;</code>
+     * @return The oFLIIGMLKDI.
      */
-    boolean getAJFANLJEJEC();
+    boolean getOFLIIGMLKDI();
   }
   /**
    * Protobuf type {@code GcgPveInfiniteDetailInfo}
@@ -128,22 +104,22 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 72: {
 
-              aJFANLJEJEC_ = input.readBool();
+              oFLIIGMLKDI_ = input.readBool();
               break;
             }
-            case 82: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                lNGKLAMPLEH_ = com.google.protobuf.MapField.newMapField(
-                    LNGKLAMPLEHDefaultEntryHolder.defaultEntry);
+                nDOBLOJBCNJ_ = com.google.protobuf.MapField.newMapField(
+                    NDOBLOJBCNJDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              lNGKLAMPLEH__ = input.readMessage(
-                  LNGKLAMPLEHDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              lNGKLAMPLEH_.getMutableMap().put(
-                  lNGKLAMPLEH__.getKey(), lNGKLAMPLEH__.getValue());
+              nDOBLOJBCNJ__ = input.readMessage(
+                  NDOBLOJBCNJDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              nDOBLOJBCNJ_.getMutableMap().put(
+                  nDOBLOJBCNJ__.getKey(), nDOBLOJBCNJ__.getValue());
               break;
             }
             default: {
@@ -175,8 +151,8 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 10:
-          return internalGetLNGKLAMPLEH();
+        case 13:
+          return internalGetNDOBLOJBCNJ();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -190,116 +166,96 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
               emu.grasscutter.net.proto.GcgPveInfiniteDetailInfoOuterClass.GcgPveInfiniteDetailInfo.class, emu.grasscutter.net.proto.GcgPveInfiniteDetailInfoOuterClass.GcgPveInfiniteDetailInfo.Builder.class);
     }
 
-    public static final int LNGKLAMPLEH_FIELD_NUMBER = 10;
-    private static final class LNGKLAMPLEHDefaultEntryHolder {
+    public static final int NDOBLOJBCNJ_FIELD_NUMBER = 13;
+    private static final class NDOBLOJBCNJDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.GcgPveInfiniteDetailInfoOuterClass.internal_static_GcgPveInfiniteDetailInfo_LNGKLAMPLEHEntry_descriptor, 
+                  emu.grasscutter.net.proto.GcgPveInfiniteDetailInfoOuterClass.internal_static_GcgPveInfiniteDetailInfo_NDOBLOJBCNJEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> lNGKLAMPLEH_;
+        java.lang.Integer, java.lang.Integer> nDOBLOJBCNJ_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetLNGKLAMPLEH() {
-      if (lNGKLAMPLEH_ == null) {
+    internalGetNDOBLOJBCNJ() {
+      if (nDOBLOJBCNJ_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            LNGKLAMPLEHDefaultEntryHolder.defaultEntry);
+            NDOBLOJBCNJDefaultEntryHolder.defaultEntry);
       }
-      return lNGKLAMPLEH_;
+      return nDOBLOJBCNJ_;
     }
 
-    public int getLNGKLAMPLEHCount() {
-      return internalGetLNGKLAMPLEH().getMap().size();
+    public int getNDOBLOJBCNJCount() {
+      return internalGetNDOBLOJBCNJ().getMap().size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
      */
 
     @java.lang.Override
-    public boolean containsLNGKLAMPLEH(
+    public boolean containsNDOBLOJBCNJ(
         int key) {
       
-      return internalGetLNGKLAMPLEH().getMap().containsKey(key);
+      return internalGetNDOBLOJBCNJ().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getLNGKLAMPLEHMap()} instead.
+     * Use {@link #getNDOBLOJBCNJMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getLNGKLAMPLEH() {
-      return getLNGKLAMPLEHMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getNDOBLOJBCNJ() {
+      return getNDOBLOJBCNJMap();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getLNGKLAMPLEHMap() {
-      return internalGetLNGKLAMPLEH().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getNDOBLOJBCNJMap() {
+      return internalGetNDOBLOJBCNJ().getMap();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
      */
     @java.lang.Override
 
-    public int getLNGKLAMPLEHOrDefault(
+    public int getNDOBLOJBCNJOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetLNGKLAMPLEH().getMap();
+          internalGetNDOBLOJBCNJ().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
      */
     @java.lang.Override
 
-    public int getLNGKLAMPLEHOrThrow(
+    public int getNDOBLOJBCNJOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetLNGKLAMPLEH().getMap();
+          internalGetNDOBLOJBCNJ().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public static final int AJFANLJEJEC_FIELD_NUMBER = 7;
-    private boolean aJFANLJEJEC_;
+    public static final int OFLIIGMLKDI_FIELD_NUMBER = 9;
+    private boolean oFLIIGMLKDI_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>bool AJFANLJEJEC = 7;</code>
-     * @return The aJFANLJEJEC.
+     * <code>bool OFLIIGMLKDI = 9;</code>
+     * @return The oFLIIGMLKDI.
      */
     @java.lang.Override
-    public boolean getAJFANLJEJEC() {
-      return aJFANLJEJEC_;
+    public boolean getOFLIIGMLKDI() {
+      return oFLIIGMLKDI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -316,15 +272,15 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aJFANLJEJEC_ != false) {
-        output.writeBool(7, aJFANLJEJEC_);
+      if (oFLIIGMLKDI_ != false) {
+        output.writeBool(9, oFLIIGMLKDI_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetLNGKLAMPLEH(),
-          LNGKLAMPLEHDefaultEntryHolder.defaultEntry,
-          10);
+          internalGetNDOBLOJBCNJ(),
+          NDOBLOJBCNJDefaultEntryHolder.defaultEntry,
+          13);
       unknownFields.writeTo(output);
     }
 
@@ -334,19 +290,19 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aJFANLJEJEC_ != false) {
+      if (oFLIIGMLKDI_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, aJFANLJEJEC_);
+          .computeBoolSize(9, oFLIIGMLKDI_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetLNGKLAMPLEH().getMap().entrySet()) {
+           : internalGetNDOBLOJBCNJ().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        lNGKLAMPLEH__ = LNGKLAMPLEHDefaultEntryHolder.defaultEntry.newBuilderForType()
+        nDOBLOJBCNJ__ = NDOBLOJBCNJDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(10, lNGKLAMPLEH__);
+            .computeMessageSize(13, nDOBLOJBCNJ__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -363,10 +319,10 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.GcgPveInfiniteDetailInfoOuterClass.GcgPveInfiniteDetailInfo other = (emu.grasscutter.net.proto.GcgPveInfiniteDetailInfoOuterClass.GcgPveInfiniteDetailInfo) obj;
 
-      if (!internalGetLNGKLAMPLEH().equals(
-          other.internalGetLNGKLAMPLEH())) return false;
-      if (getAJFANLJEJEC()
-          != other.getAJFANLJEJEC()) return false;
+      if (!internalGetNDOBLOJBCNJ().equals(
+          other.internalGetNDOBLOJBCNJ())) return false;
+      if (getOFLIIGMLKDI()
+          != other.getOFLIIGMLKDI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -378,13 +334,13 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetLNGKLAMPLEH().getMap().isEmpty()) {
-        hash = (37 * hash) + LNGKLAMPLEH_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetLNGKLAMPLEH().hashCode();
+      if (!internalGetNDOBLOJBCNJ().getMap().isEmpty()) {
+        hash = (37 * hash) + NDOBLOJBCNJ_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetNDOBLOJBCNJ().hashCode();
       }
-      hash = (37 * hash) + AJFANLJEJEC_FIELD_NUMBER;
+      hash = (37 * hash) + OFLIIGMLKDI_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getAJFANLJEJEC());
+          getOFLIIGMLKDI());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -496,8 +452,8 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 10:
-            return internalGetLNGKLAMPLEH();
+          case 13:
+            return internalGetNDOBLOJBCNJ();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -507,8 +463,8 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 10:
-            return internalGetMutableLNGKLAMPLEH();
+          case 13:
+            return internalGetMutableNDOBLOJBCNJ();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -540,8 +496,8 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableLNGKLAMPLEH().clear();
-        aJFANLJEJEC_ = false;
+        internalGetMutableNDOBLOJBCNJ().clear();
+        oFLIIGMLKDI_ = false;
 
         return this;
       }
@@ -570,9 +526,9 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
       public emu.grasscutter.net.proto.GcgPveInfiniteDetailInfoOuterClass.GcgPveInfiniteDetailInfo buildPartial() {
         emu.grasscutter.net.proto.GcgPveInfiniteDetailInfoOuterClass.GcgPveInfiniteDetailInfo result = new emu.grasscutter.net.proto.GcgPveInfiniteDetailInfoOuterClass.GcgPveInfiniteDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.lNGKLAMPLEH_ = internalGetLNGKLAMPLEH();
-        result.lNGKLAMPLEH_.makeImmutable();
-        result.aJFANLJEJEC_ = aJFANLJEJEC_;
+        result.nDOBLOJBCNJ_ = internalGetNDOBLOJBCNJ();
+        result.nDOBLOJBCNJ_.makeImmutable();
+        result.oFLIIGMLKDI_ = oFLIIGMLKDI_;
         onBuilt();
         return result;
       }
@@ -621,10 +577,10 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GcgPveInfiniteDetailInfoOuterClass.GcgPveInfiniteDetailInfo other) {
         if (other == emu.grasscutter.net.proto.GcgPveInfiniteDetailInfoOuterClass.GcgPveInfiniteDetailInfo.getDefaultInstance()) return this;
-        internalGetMutableLNGKLAMPLEH().mergeFrom(
-            other.internalGetLNGKLAMPLEH());
-        if (other.getAJFANLJEJEC() != false) {
-          setAJFANLJEJEC(other.getAJFANLJEJEC());
+        internalGetMutableNDOBLOJBCNJ().mergeFrom(
+            other.internalGetNDOBLOJBCNJ());
+        if (other.getOFLIIGMLKDI() != false) {
+          setOFLIIGMLKDI(other.getOFLIIGMLKDI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -657,119 +613,99 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> lNGKLAMPLEH_;
+          java.lang.Integer, java.lang.Integer> nDOBLOJBCNJ_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetLNGKLAMPLEH() {
-        if (lNGKLAMPLEH_ == null) {
+      internalGetNDOBLOJBCNJ() {
+        if (nDOBLOJBCNJ_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              LNGKLAMPLEHDefaultEntryHolder.defaultEntry);
+              NDOBLOJBCNJDefaultEntryHolder.defaultEntry);
         }
-        return lNGKLAMPLEH_;
+        return nDOBLOJBCNJ_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableLNGKLAMPLEH() {
+      internalGetMutableNDOBLOJBCNJ() {
         onChanged();;
-        if (lNGKLAMPLEH_ == null) {
-          lNGKLAMPLEH_ = com.google.protobuf.MapField.newMapField(
-              LNGKLAMPLEHDefaultEntryHolder.defaultEntry);
+        if (nDOBLOJBCNJ_ == null) {
+          nDOBLOJBCNJ_ = com.google.protobuf.MapField.newMapField(
+              NDOBLOJBCNJDefaultEntryHolder.defaultEntry);
         }
-        if (!lNGKLAMPLEH_.isMutable()) {
-          lNGKLAMPLEH_ = lNGKLAMPLEH_.copy();
+        if (!nDOBLOJBCNJ_.isMutable()) {
+          nDOBLOJBCNJ_ = nDOBLOJBCNJ_.copy();
         }
-        return lNGKLAMPLEH_;
+        return nDOBLOJBCNJ_;
       }
 
-      public int getLNGKLAMPLEHCount() {
-        return internalGetLNGKLAMPLEH().getMap().size();
+      public int getNDOBLOJBCNJCount() {
+        return internalGetNDOBLOJBCNJ().getMap().size();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
        */
 
       @java.lang.Override
-      public boolean containsLNGKLAMPLEH(
+      public boolean containsNDOBLOJBCNJ(
           int key) {
         
-        return internalGetLNGKLAMPLEH().getMap().containsKey(key);
+        return internalGetNDOBLOJBCNJ().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getLNGKLAMPLEHMap()} instead.
+       * Use {@link #getNDOBLOJBCNJMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getLNGKLAMPLEH() {
-        return getLNGKLAMPLEHMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getNDOBLOJBCNJ() {
+        return getNDOBLOJBCNJMap();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getLNGKLAMPLEHMap() {
-        return internalGetLNGKLAMPLEH().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getNDOBLOJBCNJMap() {
+        return internalGetNDOBLOJBCNJ().getMap();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
        */
       @java.lang.Override
 
-      public int getLNGKLAMPLEHOrDefault(
+      public int getNDOBLOJBCNJOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetLNGKLAMPLEH().getMap();
+            internalGetNDOBLOJBCNJ().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
        */
       @java.lang.Override
 
-      public int getLNGKLAMPLEHOrThrow(
+      public int getNDOBLOJBCNJOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetLNGKLAMPLEH().getMap();
+            internalGetNDOBLOJBCNJ().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearLNGKLAMPLEH() {
-        internalGetMutableLNGKLAMPLEH().getMutableMap()
+      public Builder clearNDOBLOJBCNJ() {
+        internalGetMutableNDOBLOJBCNJ().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
        */
 
-      public Builder removeLNGKLAMPLEH(
+      public Builder removeNDOBLOJBCNJ(
           int key) {
         
-        internalGetMutableLNGKLAMPLEH().getMutableMap()
+        internalGetMutableNDOBLOJBCNJ().getMutableMap()
             .remove(key);
         return this;
       }
@@ -778,79 +714,59 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableLNGKLAMPLEH() {
-        return internalGetMutableLNGKLAMPLEH().getMutableMap();
+      getMutableNDOBLOJBCNJ() {
+        return internalGetMutableNDOBLOJBCNJ().getMutableMap();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
        */
-      public Builder putLNGKLAMPLEH(
+      public Builder putNDOBLOJBCNJ(
           int key,
           int value) {
         
         
-        internalGetMutableLNGKLAMPLEH().getMutableMap()
+        internalGetMutableNDOBLOJBCNJ().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; LNGKLAMPLEH = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NDOBLOJBCNJ = 13;</code>
        */
 
-      public Builder putAllLNGKLAMPLEH(
+      public Builder putAllNDOBLOJBCNJ(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableLNGKLAMPLEH().getMutableMap()
+        internalGetMutableNDOBLOJBCNJ().getMutableMap()
             .putAll(values);
         return this;
       }
 
-      private boolean aJFANLJEJEC_ ;
+      private boolean oFLIIGMLKDI_ ;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool AJFANLJEJEC = 7;</code>
-       * @return The aJFANLJEJEC.
+       * <code>bool OFLIIGMLKDI = 9;</code>
+       * @return The oFLIIGMLKDI.
        */
       @java.lang.Override
-      public boolean getAJFANLJEJEC() {
-        return aJFANLJEJEC_;
+      public boolean getOFLIIGMLKDI() {
+        return oFLIIGMLKDI_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool AJFANLJEJEC = 7;</code>
-       * @param value The aJFANLJEJEC to set.
+       * <code>bool OFLIIGMLKDI = 9;</code>
+       * @param value The oFLIIGMLKDI to set.
        * @return This builder for chaining.
        */
-      public Builder setAJFANLJEJEC(boolean value) {
+      public Builder setOFLIIGMLKDI(boolean value) {
         
-        aJFANLJEJEC_ = value;
+        oFLIIGMLKDI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool AJFANLJEJEC = 7;</code>
+       * <code>bool OFLIIGMLKDI = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAJFANLJEJEC() {
+      public Builder clearOFLIIGMLKDI() {
         
-        aJFANLJEJEC_ = false;
+        oFLIIGMLKDI_ = false;
         onChanged();
         return this;
       }
@@ -913,10 +829,10 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GcgPveInfiniteDetailInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GcgPveInfiniteDetailInfo_LNGKLAMPLEHEntry_descriptor;
+    internal_static_GcgPveInfiniteDetailInfo_NDOBLOJBCNJEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GcgPveInfiniteDetailInfo_LNGKLAMPLEHEntry_fieldAccessorTable;
+      internal_static_GcgPveInfiniteDetailInfo_NDOBLOJBCNJEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -927,10 +843,10 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036GcgPveInfiniteDetailInfo.proto\"\244\001\n\030Gcg" +
-      "PveInfiniteDetailInfo\022?\n\013LNGKLAMPLEH\030\n \003" +
-      "(\0132*.GcgPveInfiniteDetailInfo.LNGKLAMPLE" +
-      "HEntry\022\023\n\013AJFANLJEJEC\030\007 \001(\010\0322\n\020LNGKLAMPL" +
-      "EHEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B" +
+      "PveInfiniteDetailInfo\022?\n\013NDOBLOJBCNJ\030\r \003" +
+      "(\0132*.GcgPveInfiniteDetailInfo.NDOBLOJBCN" +
+      "JEntry\022\023\n\013OFLIIGMLKDI\030\t \001(\010\0322\n\020NDOBLOJBC" +
+      "NJEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -942,12 +858,12 @@ public final class GcgPveInfiniteDetailInfoOuterClass {
     internal_static_GcgPveInfiniteDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GcgPveInfiniteDetailInfo_descriptor,
-        new java.lang.String[] { "LNGKLAMPLEH", "AJFANLJEJEC", });
-    internal_static_GcgPveInfiniteDetailInfo_LNGKLAMPLEHEntry_descriptor =
+        new java.lang.String[] { "NDOBLOJBCNJ", "OFLIIGMLKDI", });
+    internal_static_GcgPveInfiniteDetailInfo_NDOBLOJBCNJEntry_descriptor =
       internal_static_GcgPveInfiniteDetailInfo_descriptor.getNestedTypes().get(0);
-    internal_static_GcgPveInfiniteDetailInfo_LNGKLAMPLEHEntry_fieldAccessorTable = new
+    internal_static_GcgPveInfiniteDetailInfo_NDOBLOJBCNJEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GcgPveInfiniteDetailInfo_LNGKLAMPLEHEntry_descriptor,
+        internal_static_GcgPveInfiniteDetailInfo_NDOBLOJBCNJEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

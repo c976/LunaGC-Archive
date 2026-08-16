@@ -19,67 +19,39 @@ public final class PEJPFJEAAKAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
      * @return Whether the gDNDBGJNCMO field is set.
      */
     boolean hasGDNDBGJNCMO();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
      * @return The gDNDBGJNCMO.
      */
     emu.grasscutter.net.proto.LBLCBLNMOFMOuterClass.LBLCBLNMOFM getGDNDBGJNCMO();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
      */
     emu.grasscutter.net.proto.LBLCBLNMOFMOuterClass.LBLCBLNMOFMOrBuilder getGDNDBGJNCMOOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 2;</code>
      * @return The score.
      */
@@ -198,10 +170,6 @@ public final class PEJPFJEAAKAOuterClass {
     public static final int GDNDBGJNCMO_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.LBLCBLNMOFMOuterClass.LBLCBLNMOFM gDNDBGJNCMO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
      * @return Whether the gDNDBGJNCMO field is set.
      */
@@ -210,10 +178,6 @@ public final class PEJPFJEAAKAOuterClass {
       return gDNDBGJNCMO_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
      * @return The gDNDBGJNCMO.
      */
@@ -222,10 +186,6 @@ public final class PEJPFJEAAKAOuterClass {
       return gDNDBGJNCMO_ == null ? emu.grasscutter.net.proto.LBLCBLNMOFMOuterClass.LBLCBLNMOFM.getDefaultInstance() : gDNDBGJNCMO_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
      */
     @java.lang.Override
@@ -236,10 +196,6 @@ public final class PEJPFJEAAKAOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 10;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
@@ -251,10 +207,6 @@ public final class PEJPFJEAAKAOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -266,10 +218,6 @@ public final class PEJPFJEAAKAOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 3;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
@@ -281,10 +229,6 @@ public final class PEJPFJEAAKAOuterClass {
     public static final int SCORE_FIELD_NUMBER = 2;
     private int score_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 2;</code>
      * @return The score.
      */
@@ -682,10 +626,6 @@ public final class PEJPFJEAAKAOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.LBLCBLNMOFMOuterClass.LBLCBLNMOFM, emu.grasscutter.net.proto.LBLCBLNMOFMOuterClass.LBLCBLNMOFM.Builder, emu.grasscutter.net.proto.LBLCBLNMOFMOuterClass.LBLCBLNMOFMOrBuilder> gDNDBGJNCMOBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
        * @return Whether the gDNDBGJNCMO field is set.
        */
@@ -693,10 +633,6 @@ public final class PEJPFJEAAKAOuterClass {
         return gDNDBGJNCMOBuilder_ != null || gDNDBGJNCMO_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
        * @return The gDNDBGJNCMO.
        */
@@ -708,10 +644,6 @@ public final class PEJPFJEAAKAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
        */
       public Builder setGDNDBGJNCMO(emu.grasscutter.net.proto.LBLCBLNMOFMOuterClass.LBLCBLNMOFM value) {
@@ -728,10 +660,6 @@ public final class PEJPFJEAAKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
        */
       public Builder setGDNDBGJNCMO(
@@ -746,10 +674,6 @@ public final class PEJPFJEAAKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
        */
       public Builder mergeGDNDBGJNCMO(emu.grasscutter.net.proto.LBLCBLNMOFMOuterClass.LBLCBLNMOFM value) {
@@ -768,10 +692,6 @@ public final class PEJPFJEAAKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
        */
       public Builder clearGDNDBGJNCMO() {
@@ -786,10 +706,6 @@ public final class PEJPFJEAAKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
        */
       public emu.grasscutter.net.proto.LBLCBLNMOFMOuterClass.LBLCBLNMOFM.Builder getGDNDBGJNCMOBuilder() {
@@ -798,10 +714,6 @@ public final class PEJPFJEAAKAOuterClass {
         return getGDNDBGJNCMOFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
        */
       public emu.grasscutter.net.proto.LBLCBLNMOFMOuterClass.LBLCBLNMOFMOrBuilder getGDNDBGJNCMOOrBuilder() {
@@ -813,10 +725,6 @@ public final class PEJPFJEAAKAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LBLCBLNMOFM GDNDBGJNCMO = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -835,10 +743,6 @@ public final class PEJPFJEAAKAOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @return The isFinish.
        */
@@ -847,10 +751,6 @@ public final class PEJPFJEAAKAOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -862,10 +762,6 @@ public final class PEJPFJEAAKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @return This builder for chaining.
        */
@@ -878,10 +774,6 @@ public final class PEJPFJEAAKAOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
@@ -890,10 +782,6 @@ public final class PEJPFJEAAKAOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -905,10 +793,6 @@ public final class PEJPFJEAAKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
@@ -921,10 +805,6 @@ public final class PEJPFJEAAKAOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @return The levelId.
        */
@@ -933,10 +813,6 @@ public final class PEJPFJEAAKAOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -948,10 +824,6 @@ public final class PEJPFJEAAKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @return This builder for chaining.
        */
@@ -964,10 +836,6 @@ public final class PEJPFJEAAKAOuterClass {
 
       private int score_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 2;</code>
        * @return The score.
        */
@@ -976,10 +844,6 @@ public final class PEJPFJEAAKAOuterClass {
         return score_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 2;</code>
        * @param value The score to set.
        * @return This builder for chaining.
@@ -991,10 +855,6 @@ public final class PEJPFJEAAKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 2;</code>
        * @return This builder for chaining.
        */

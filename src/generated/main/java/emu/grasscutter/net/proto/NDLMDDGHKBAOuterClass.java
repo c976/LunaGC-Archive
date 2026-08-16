@@ -19,46 +19,30 @@ public final class NDLMDDGHKBAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FAFHBMGHMIP = 14;</code>
      * @return The fAFHBMGHMIP.
      */
     int getFAFHBMGHMIP();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 6;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 2;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 2;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 7;</code>
      * @return The lOHAJIABHDJ.
      */
@@ -111,7 +95,7 @@ public final class NDLMDDGHKBAOuterClass {
               break;
             case 16: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 48: {
@@ -169,10 +153,6 @@ public final class NDLMDDGHKBAOuterClass {
     public static final int FAFHBMGHMIP_FIELD_NUMBER = 14;
     private int fAFHBMGHMIP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FAFHBMGHMIP = 14;</code>
      * @return The fAFHBMGHMIP.
      */
@@ -184,10 +164,6 @@ public final class NDLMDDGHKBAOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 6;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 6;</code>
      * @return The isFinished.
      */
@@ -199,10 +175,6 @@ public final class NDLMDDGHKBAOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 10;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
@@ -211,24 +183,20 @@ public final class NDLMDDGHKBAOuterClass {
       return isOpen_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 2;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 2;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 2;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 2;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int LOHAJIABHDJ_FIELD_NUMBER = 7;
     private int lOHAJIABHDJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 7;</code>
      * @return The lOHAJIABHDJ.
      */
@@ -251,8 +219,8 @@ public final class NDLMDDGHKBAOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(2, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(2, stageId_);
       }
       if (isFinished_ != false) {
         output.writeBool(6, isFinished_);
@@ -275,9 +243,9 @@ public final class NDLMDDGHKBAOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, eGHGENOJNEK_);
+          .computeUInt32Size(2, stageId_);
       }
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -316,8 +284,8 @@ public final class NDLMDDGHKBAOuterClass {
           != other.getIsFinished()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getLOHAJIABHDJ()
           != other.getLOHAJIABHDJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -339,8 +307,8 @@ public final class NDLMDDGHKBAOuterClass {
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + LOHAJIABHDJ_FIELD_NUMBER;
       hash = (53 * hash) + getLOHAJIABHDJ();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -482,7 +450,7 @@ public final class NDLMDDGHKBAOuterClass {
 
         isOpen_ = false;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         lOHAJIABHDJ_ = 0;
 
@@ -515,7 +483,7 @@ public final class NDLMDDGHKBAOuterClass {
         result.fAFHBMGHMIP_ = fAFHBMGHMIP_;
         result.isFinished_ = isFinished_;
         result.isOpen_ = isOpen_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.lOHAJIABHDJ_ = lOHAJIABHDJ_;
         onBuilt();
         return result;
@@ -574,8 +542,8 @@ public final class NDLMDDGHKBAOuterClass {
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getLOHAJIABHDJ() != 0) {
           setLOHAJIABHDJ(other.getLOHAJIABHDJ());
@@ -611,10 +579,6 @@ public final class NDLMDDGHKBAOuterClass {
 
       private int fAFHBMGHMIP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FAFHBMGHMIP = 14;</code>
        * @return The fAFHBMGHMIP.
        */
@@ -623,10 +587,6 @@ public final class NDLMDDGHKBAOuterClass {
         return fAFHBMGHMIP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FAFHBMGHMIP = 14;</code>
        * @param value The fAFHBMGHMIP to set.
        * @return This builder for chaining.
@@ -638,10 +598,6 @@ public final class NDLMDDGHKBAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FAFHBMGHMIP = 14;</code>
        * @return This builder for chaining.
        */
@@ -654,10 +610,6 @@ public final class NDLMDDGHKBAOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 6;</code>
        * @return The isFinished.
        */
@@ -666,10 +618,6 @@ public final class NDLMDDGHKBAOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 6;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -681,10 +629,6 @@ public final class NDLMDDGHKBAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 6;</code>
        * @return This builder for chaining.
        */
@@ -697,10 +641,6 @@ public final class NDLMDDGHKBAOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @return The isOpen.
        */
@@ -709,10 +649,6 @@ public final class NDLMDDGHKBAOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -724,10 +660,6 @@ public final class NDLMDDGHKBAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @return This builder for chaining.
        */
@@ -738,43 +670,39 @@ public final class NDLMDDGHKBAOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 2;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 2;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
+       * <code>uint32 stage_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private int lOHAJIABHDJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 7;</code>
        * @return The lOHAJIABHDJ.
        */
@@ -783,10 +711,6 @@ public final class NDLMDDGHKBAOuterClass {
         return lOHAJIABHDJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 7;</code>
        * @param value The lOHAJIABHDJ to set.
        * @return This builder for chaining.
@@ -798,10 +722,6 @@ public final class NDLMDDGHKBAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 7;</code>
        * @return This builder for chaining.
        */
@@ -878,11 +798,11 @@ public final class NDLMDDGHKBAOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021NDLMDDGHKBA.proto\"r\n\013NDLMDDGHKBA\022\023\n\013FA" +
+      "\n\021NDLMDDGHKBA.proto\"o\n\013NDLMDDGHKBA\022\023\n\013FA" +
       "FHBMGHMIP\030\016 \001(\r\022\023\n\013is_finished\030\006 \001(\010\022\017\n\007" +
-      "is_open\030\n \001(\010\022\023\n\013EGHGENOJNEK\030\002 \001(\r\022\023\n\013LO" +
-      "HAJIABHDJ\030\007 \001(\rB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "is_open\030\n \001(\010\022\020\n\010stage_id\030\002 \001(\r\022\023\n\013LOHAJ" +
+      "IABHDJ\030\007 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -893,7 +813,7 @@ public final class NDLMDDGHKBAOuterClass {
     internal_static_NDLMDDGHKBA_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_NDLMDDGHKBA_descriptor,
-        new java.lang.String[] { "FAFHBMGHMIP", "IsFinished", "IsOpen", "EGHGENOJNEK", "LOHAJIABHDJ", });
+        new java.lang.String[] { "FAFHBMGHMIP", "IsFinished", "IsOpen", "StageId", "LOHAJIABHDJ", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

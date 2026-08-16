@@ -20,70 +20,70 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
 
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+     * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo> 
-        getMFFFDJCGFOCList();
+        getEvtBeingHitInfoListList();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+     * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
      */
-    emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo getMFFFDJCGFOC(int index);
+    emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo getEvtBeingHitInfoList(int index);
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+     * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
      */
-    int getMFFFDJCGFOCCount();
+    int getEvtBeingHitInfoListCount();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+     * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder> 
-        getMFFFDJCGFOCOrBuilderList();
+        getEvtBeingHitInfoListOrBuilderList();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+     * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
      */
-    emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder getMFFFDJCGFOCOrBuilder(
+    emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder getEvtBeingHitInfoListOrBuilder(
         int index);
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.ForwardType forward_type = 11;</code>
+     * <code>.ForwardType forward_type = 7;</code>
      * @return The enum numeric value on the wire for forwardType.
      */
     int getForwardTypeValue();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.ForwardType forward_type = 11;</code>
+     * <code>.ForwardType forward_type = 7;</code>
      * @return The forwardType.
      */
     emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType();
   }
   /**
    * <pre>
-   * CmdId: 9160
+   * CmdId: 2958
    * </pre>
    *
    * Protobuf type {@code EvtBeingHitsCombineNotify}
@@ -98,7 +98,7 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
       super(builder);
     }
     private EvtBeingHitsCombineNotify() {
-      mFFFDJCGFOC_ = java.util.Collections.emptyList();
+      evtBeingHitInfoList_ = java.util.Collections.emptyList();
       forwardType_ = 0;
     }
 
@@ -133,19 +133,19 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                evtBeingHitInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              evtBeingHitInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 56: {
               int rawValue = input.readEnum();
 
               forwardType_ = rawValue;
-              break;
-            }
-            case 114: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                mFFFDJCGFOC_ = new java.util.ArrayList<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              mFFFDJCGFOC_.add(
-                  input.readMessage(emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -164,7 +164,7 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          mFFFDJCGFOC_ = java.util.Collections.unmodifiableList(mFFFDJCGFOC_);
+          evtBeingHitInfoList_ = java.util.Collections.unmodifiableList(evtBeingHitInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -183,74 +183,74 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
               emu.grasscutter.net.proto.EvtBeingHitsCombineNotifyOuterClass.EvtBeingHitsCombineNotify.class, emu.grasscutter.net.proto.EvtBeingHitsCombineNotifyOuterClass.EvtBeingHitsCombineNotify.Builder.class);
     }
 
-    public static final int MFFFDJCGFOC_FIELD_NUMBER = 14;
-    private java.util.List<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo> mFFFDJCGFOC_;
+    public static final int EVT_BEING_HIT_INFO_LIST_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo> evtBeingHitInfoList_;
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+     * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo> getMFFFDJCGFOCList() {
-      return mFFFDJCGFOC_;
+    public java.util.List<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo> getEvtBeingHitInfoListList() {
+      return evtBeingHitInfoList_;
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+     * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder> 
-        getMFFFDJCGFOCOrBuilderList() {
-      return mFFFDJCGFOC_;
+        getEvtBeingHitInfoListOrBuilderList() {
+      return evtBeingHitInfoList_;
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+     * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
      */
     @java.lang.Override
-    public int getMFFFDJCGFOCCount() {
-      return mFFFDJCGFOC_.size();
+    public int getEvtBeingHitInfoListCount() {
+      return evtBeingHitInfoList_.size();
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+     * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo getMFFFDJCGFOC(int index) {
-      return mFFFDJCGFOC_.get(index);
+    public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo getEvtBeingHitInfoList(int index) {
+      return evtBeingHitInfoList_.get(index);
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+     * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder getMFFFDJCGFOCOrBuilder(
+    public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder getEvtBeingHitInfoListOrBuilder(
         int index) {
-      return mFFFDJCGFOC_.get(index);
+      return evtBeingHitInfoList_.get(index);
     }
 
-    public static final int FORWARD_TYPE_FIELD_NUMBER = 11;
+    public static final int FORWARD_TYPE_FIELD_NUMBER = 7;
     private int forwardType_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.ForwardType forward_type = 11;</code>
+     * <code>.ForwardType forward_type = 7;</code>
      * @return The enum numeric value on the wire for forwardType.
      */
     @java.lang.Override public int getForwardTypeValue() {
@@ -258,10 +258,10 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.ForwardType forward_type = 11;</code>
+     * <code>.ForwardType forward_type = 7;</code>
      * @return The forwardType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
@@ -284,11 +284,11 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
-        output.writeEnum(11, forwardType_);
+      for (int i = 0; i < evtBeingHitInfoList_.size(); i++) {
+        output.writeMessage(1, evtBeingHitInfoList_.get(i));
       }
-      for (int i = 0; i < mFFFDJCGFOC_.size(); i++) {
-        output.writeMessage(14, mFFFDJCGFOC_.get(i));
+      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.ForwardType_FORWARD_LOCAL.getNumber()) {
+        output.writeEnum(7, forwardType_);
       }
       unknownFields.writeTo(output);
     }
@@ -299,13 +299,13 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
+      for (int i = 0; i < evtBeingHitInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(11, forwardType_);
+          .computeMessageSize(1, evtBeingHitInfoList_.get(i));
       }
-      for (int i = 0; i < mFFFDJCGFOC_.size(); i++) {
+      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.ForwardType_FORWARD_LOCAL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, mFFFDJCGFOC_.get(i));
+          .computeEnumSize(7, forwardType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -322,8 +322,8 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EvtBeingHitsCombineNotifyOuterClass.EvtBeingHitsCombineNotify other = (emu.grasscutter.net.proto.EvtBeingHitsCombineNotifyOuterClass.EvtBeingHitsCombineNotify) obj;
 
-      if (!getMFFFDJCGFOCList()
-          .equals(other.getMFFFDJCGFOCList())) return false;
+      if (!getEvtBeingHitInfoListList()
+          .equals(other.getEvtBeingHitInfoListList())) return false;
       if (forwardType_ != other.forwardType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -336,9 +336,9 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getMFFFDJCGFOCCount() > 0) {
-        hash = (37 * hash) + MFFFDJCGFOC_FIELD_NUMBER;
-        hash = (53 * hash) + getMFFFDJCGFOCList().hashCode();
+      if (getEvtBeingHitInfoListCount() > 0) {
+        hash = (37 * hash) + EVT_BEING_HIT_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getEvtBeingHitInfoListList().hashCode();
       }
       hash = (37 * hash) + FORWARD_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + forwardType_;
@@ -439,7 +439,7 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9160
+     * CmdId: 2958
      * </pre>
      *
      * Protobuf type {@code EvtBeingHitsCombineNotify}
@@ -474,17 +474,17 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getMFFFDJCGFOCFieldBuilder();
+          getEvtBeingHitInfoListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (mFFFDJCGFOCBuilder_ == null) {
-          mFFFDJCGFOC_ = java.util.Collections.emptyList();
+        if (evtBeingHitInfoListBuilder_ == null) {
+          evtBeingHitInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          mFFFDJCGFOCBuilder_.clear();
+          evtBeingHitInfoListBuilder_.clear();
         }
         forwardType_ = 0;
 
@@ -515,14 +515,14 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
       public emu.grasscutter.net.proto.EvtBeingHitsCombineNotifyOuterClass.EvtBeingHitsCombineNotify buildPartial() {
         emu.grasscutter.net.proto.EvtBeingHitsCombineNotifyOuterClass.EvtBeingHitsCombineNotify result = new emu.grasscutter.net.proto.EvtBeingHitsCombineNotifyOuterClass.EvtBeingHitsCombineNotify(this);
         int from_bitField0_ = bitField0_;
-        if (mFFFDJCGFOCBuilder_ == null) {
+        if (evtBeingHitInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            mFFFDJCGFOC_ = java.util.Collections.unmodifiableList(mFFFDJCGFOC_);
+            evtBeingHitInfoList_ = java.util.Collections.unmodifiableList(evtBeingHitInfoList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.mFFFDJCGFOC_ = mFFFDJCGFOC_;
+          result.evtBeingHitInfoList_ = evtBeingHitInfoList_;
         } else {
-          result.mFFFDJCGFOC_ = mFFFDJCGFOCBuilder_.build();
+          result.evtBeingHitInfoList_ = evtBeingHitInfoListBuilder_.build();
         }
         result.forwardType_ = forwardType_;
         onBuilt();
@@ -573,29 +573,29 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtBeingHitsCombineNotifyOuterClass.EvtBeingHitsCombineNotify other) {
         if (other == emu.grasscutter.net.proto.EvtBeingHitsCombineNotifyOuterClass.EvtBeingHitsCombineNotify.getDefaultInstance()) return this;
-        if (mFFFDJCGFOCBuilder_ == null) {
-          if (!other.mFFFDJCGFOC_.isEmpty()) {
-            if (mFFFDJCGFOC_.isEmpty()) {
-              mFFFDJCGFOC_ = other.mFFFDJCGFOC_;
+        if (evtBeingHitInfoListBuilder_ == null) {
+          if (!other.evtBeingHitInfoList_.isEmpty()) {
+            if (evtBeingHitInfoList_.isEmpty()) {
+              evtBeingHitInfoList_ = other.evtBeingHitInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureMFFFDJCGFOCIsMutable();
-              mFFFDJCGFOC_.addAll(other.mFFFDJCGFOC_);
+              ensureEvtBeingHitInfoListIsMutable();
+              evtBeingHitInfoList_.addAll(other.evtBeingHitInfoList_);
             }
             onChanged();
           }
         } else {
-          if (!other.mFFFDJCGFOC_.isEmpty()) {
-            if (mFFFDJCGFOCBuilder_.isEmpty()) {
-              mFFFDJCGFOCBuilder_.dispose();
-              mFFFDJCGFOCBuilder_ = null;
-              mFFFDJCGFOC_ = other.mFFFDJCGFOC_;
+          if (!other.evtBeingHitInfoList_.isEmpty()) {
+            if (evtBeingHitInfoListBuilder_.isEmpty()) {
+              evtBeingHitInfoListBuilder_.dispose();
+              evtBeingHitInfoListBuilder_ = null;
+              evtBeingHitInfoList_ = other.evtBeingHitInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              mFFFDJCGFOCBuilder_ = 
+              evtBeingHitInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getMFFFDJCGFOCFieldBuilder() : null;
+                   getEvtBeingHitInfoListFieldBuilder() : null;
             } else {
-              mFFFDJCGFOCBuilder_.addAllMessages(other.mFFFDJCGFOC_);
+              evtBeingHitInfoListBuilder_.addAllMessages(other.evtBeingHitInfoList_);
             }
           }
         }
@@ -632,325 +632,325 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo> mFFFDJCGFOC_ =
+      private java.util.List<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo> evtBeingHitInfoList_ =
         java.util.Collections.emptyList();
-      private void ensureMFFFDJCGFOCIsMutable() {
+      private void ensureEvtBeingHitInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          mFFFDJCGFOC_ = new java.util.ArrayList<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo>(mFFFDJCGFOC_);
+          evtBeingHitInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo>(evtBeingHitInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder> mFFFDJCGFOCBuilder_;
+          emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder> evtBeingHitInfoListBuilder_;
 
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo> getMFFFDJCGFOCList() {
-        if (mFFFDJCGFOCBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(mFFFDJCGFOC_);
+      public java.util.List<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo> getEvtBeingHitInfoListList() {
+        if (evtBeingHitInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(evtBeingHitInfoList_);
         } else {
-          return mFFFDJCGFOCBuilder_.getMessageList();
+          return evtBeingHitInfoListBuilder_.getMessageList();
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public int getMFFFDJCGFOCCount() {
-        if (mFFFDJCGFOCBuilder_ == null) {
-          return mFFFDJCGFOC_.size();
+      public int getEvtBeingHitInfoListCount() {
+        if (evtBeingHitInfoListBuilder_ == null) {
+          return evtBeingHitInfoList_.size();
         } else {
-          return mFFFDJCGFOCBuilder_.getCount();
+          return evtBeingHitInfoListBuilder_.getCount();
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo getMFFFDJCGFOC(int index) {
-        if (mFFFDJCGFOCBuilder_ == null) {
-          return mFFFDJCGFOC_.get(index);
+      public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo getEvtBeingHitInfoList(int index) {
+        if (evtBeingHitInfoListBuilder_ == null) {
+          return evtBeingHitInfoList_.get(index);
         } else {
-          return mFFFDJCGFOCBuilder_.getMessage(index);
+          return evtBeingHitInfoListBuilder_.getMessage(index);
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public Builder setMFFFDJCGFOC(
+      public Builder setEvtBeingHitInfoList(
           int index, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo value) {
-        if (mFFFDJCGFOCBuilder_ == null) {
+        if (evtBeingHitInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMFFFDJCGFOCIsMutable();
-          mFFFDJCGFOC_.set(index, value);
+          ensureEvtBeingHitInfoListIsMutable();
+          evtBeingHitInfoList_.set(index, value);
           onChanged();
         } else {
-          mFFFDJCGFOCBuilder_.setMessage(index, value);
+          evtBeingHitInfoListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public Builder setMFFFDJCGFOC(
+      public Builder setEvtBeingHitInfoList(
           int index, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder builderForValue) {
-        if (mFFFDJCGFOCBuilder_ == null) {
-          ensureMFFFDJCGFOCIsMutable();
-          mFFFDJCGFOC_.set(index, builderForValue.build());
+        if (evtBeingHitInfoListBuilder_ == null) {
+          ensureEvtBeingHitInfoListIsMutable();
+          evtBeingHitInfoList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          mFFFDJCGFOCBuilder_.setMessage(index, builderForValue.build());
+          evtBeingHitInfoListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public Builder addMFFFDJCGFOC(emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo value) {
-        if (mFFFDJCGFOCBuilder_ == null) {
+      public Builder addEvtBeingHitInfoList(emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo value) {
+        if (evtBeingHitInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMFFFDJCGFOCIsMutable();
-          mFFFDJCGFOC_.add(value);
+          ensureEvtBeingHitInfoListIsMutable();
+          evtBeingHitInfoList_.add(value);
           onChanged();
         } else {
-          mFFFDJCGFOCBuilder_.addMessage(value);
+          evtBeingHitInfoListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public Builder addMFFFDJCGFOC(
+      public Builder addEvtBeingHitInfoList(
           int index, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo value) {
-        if (mFFFDJCGFOCBuilder_ == null) {
+        if (evtBeingHitInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMFFFDJCGFOCIsMutable();
-          mFFFDJCGFOC_.add(index, value);
+          ensureEvtBeingHitInfoListIsMutable();
+          evtBeingHitInfoList_.add(index, value);
           onChanged();
         } else {
-          mFFFDJCGFOCBuilder_.addMessage(index, value);
+          evtBeingHitInfoListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public Builder addMFFFDJCGFOC(
+      public Builder addEvtBeingHitInfoList(
           emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder builderForValue) {
-        if (mFFFDJCGFOCBuilder_ == null) {
-          ensureMFFFDJCGFOCIsMutable();
-          mFFFDJCGFOC_.add(builderForValue.build());
+        if (evtBeingHitInfoListBuilder_ == null) {
+          ensureEvtBeingHitInfoListIsMutable();
+          evtBeingHitInfoList_.add(builderForValue.build());
           onChanged();
         } else {
-          mFFFDJCGFOCBuilder_.addMessage(builderForValue.build());
+          evtBeingHitInfoListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public Builder addMFFFDJCGFOC(
+      public Builder addEvtBeingHitInfoList(
           int index, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder builderForValue) {
-        if (mFFFDJCGFOCBuilder_ == null) {
-          ensureMFFFDJCGFOCIsMutable();
-          mFFFDJCGFOC_.add(index, builderForValue.build());
+        if (evtBeingHitInfoListBuilder_ == null) {
+          ensureEvtBeingHitInfoListIsMutable();
+          evtBeingHitInfoList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          mFFFDJCGFOCBuilder_.addMessage(index, builderForValue.build());
+          evtBeingHitInfoListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public Builder addAllMFFFDJCGFOC(
+      public Builder addAllEvtBeingHitInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo> values) {
-        if (mFFFDJCGFOCBuilder_ == null) {
-          ensureMFFFDJCGFOCIsMutable();
+        if (evtBeingHitInfoListBuilder_ == null) {
+          ensureEvtBeingHitInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, mFFFDJCGFOC_);
+              values, evtBeingHitInfoList_);
           onChanged();
         } else {
-          mFFFDJCGFOCBuilder_.addAllMessages(values);
+          evtBeingHitInfoListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public Builder clearMFFFDJCGFOC() {
-        if (mFFFDJCGFOCBuilder_ == null) {
-          mFFFDJCGFOC_ = java.util.Collections.emptyList();
+      public Builder clearEvtBeingHitInfoList() {
+        if (evtBeingHitInfoListBuilder_ == null) {
+          evtBeingHitInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          mFFFDJCGFOCBuilder_.clear();
+          evtBeingHitInfoListBuilder_.clear();
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public Builder removeMFFFDJCGFOC(int index) {
-        if (mFFFDJCGFOCBuilder_ == null) {
-          ensureMFFFDJCGFOCIsMutable();
-          mFFFDJCGFOC_.remove(index);
+      public Builder removeEvtBeingHitInfoList(int index) {
+        if (evtBeingHitInfoListBuilder_ == null) {
+          ensureEvtBeingHitInfoListIsMutable();
+          evtBeingHitInfoList_.remove(index);
           onChanged();
         } else {
-          mFFFDJCGFOCBuilder_.remove(index);
+          evtBeingHitInfoListBuilder_.remove(index);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder getMFFFDJCGFOCBuilder(
+      public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder getEvtBeingHitInfoListBuilder(
           int index) {
-        return getMFFFDJCGFOCFieldBuilder().getBuilder(index);
+        return getEvtBeingHitInfoListFieldBuilder().getBuilder(index);
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder getMFFFDJCGFOCOrBuilder(
+      public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder getEvtBeingHitInfoListOrBuilder(
           int index) {
-        if (mFFFDJCGFOCBuilder_ == null) {
-          return mFFFDJCGFOC_.get(index);  } else {
-          return mFFFDJCGFOCBuilder_.getMessageOrBuilder(index);
+        if (evtBeingHitInfoListBuilder_ == null) {
+          return evtBeingHitInfoList_.get(index);  } else {
+          return evtBeingHitInfoListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder> 
-           getMFFFDJCGFOCOrBuilderList() {
-        if (mFFFDJCGFOCBuilder_ != null) {
-          return mFFFDJCGFOCBuilder_.getMessageOrBuilderList();
+           getEvtBeingHitInfoListOrBuilderList() {
+        if (evtBeingHitInfoListBuilder_ != null) {
+          return evtBeingHitInfoListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(mFFFDJCGFOC_);
+          return java.util.Collections.unmodifiableList(evtBeingHitInfoList_);
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder addMFFFDJCGFOCBuilder() {
-        return getMFFFDJCGFOCFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder addEvtBeingHitInfoListBuilder() {
+        return getEvtBeingHitInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.getDefaultInstance());
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
-      public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder addMFFFDJCGFOCBuilder(
+      public emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder addEvtBeingHitInfoListBuilder(
           int index) {
-        return getMFFFDJCGFOCFieldBuilder().addBuilder(
+        return getEvtBeingHitInfoListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.getDefaultInstance());
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .EvtBeingHitInfo MFFFDJCGFOC = 14;</code>
+       * <code>repeated .EvtBeingHitInfo evt_being_hit_info_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder> 
-           getMFFFDJCGFOCBuilderList() {
-        return getMFFFDJCGFOCFieldBuilder().getBuilderList();
+           getEvtBeingHitInfoListBuilderList() {
+        return getEvtBeingHitInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder> 
-          getMFFFDJCGFOCFieldBuilder() {
-        if (mFFFDJCGFOCBuilder_ == null) {
-          mFFFDJCGFOCBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getEvtBeingHitInfoListFieldBuilder() {
+        if (evtBeingHitInfoListBuilder_ == null) {
+          evtBeingHitInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder>(
-                  mFFFDJCGFOC_,
+                  evtBeingHitInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          mFFFDJCGFOC_ = null;
+          evtBeingHitInfoList_ = null;
         }
-        return mFFFDJCGFOCBuilder_;
+        return evtBeingHitInfoListBuilder_;
       }
 
       private int forwardType_ = 0;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.ForwardType forward_type = 11;</code>
+       * <code>.ForwardType forward_type = 7;</code>
        * @return The enum numeric value on the wire for forwardType.
        */
       @java.lang.Override public int getForwardTypeValue() {
@@ -958,10 +958,10 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.ForwardType forward_type = 11;</code>
+       * <code>.ForwardType forward_type = 7;</code>
        * @param value The enum numeric value on the wire for forwardType to set.
        * @return This builder for chaining.
        */
@@ -973,10 +973,10 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.ForwardType forward_type = 11;</code>
+       * <code>.ForwardType forward_type = 7;</code>
        * @return The forwardType.
        */
       @java.lang.Override
@@ -987,10 +987,10 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.ForwardType forward_type = 11;</code>
+       * <code>.ForwardType forward_type = 7;</code>
        * @param value The forwardType to set.
        * @return This builder for chaining.
        */
@@ -1005,10 +1005,10 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.ForwardType forward_type = 11;</code>
+       * <code>.ForwardType forward_type = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearForwardType() {
@@ -1085,11 +1085,11 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037EvtBeingHitsCombineNotify.proto\032\025EvtBe" +
-      "ingHitInfo.proto\032\021ForwardType.proto\"f\n\031E" +
-      "vtBeingHitsCombineNotify\022%\n\013MFFFDJCGFOC\030" +
-      "\016 \003(\0132\020.EvtBeingHitInfo\022\"\n\014forward_type\030" +
-      "\013 \001(\0162\014.ForwardTypeB\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "ingHitInfo.proto\032\021ForwardType.proto\"r\n\031E" +
+      "vtBeingHitsCombineNotify\0221\n\027evt_being_hi" +
+      "t_info_list\030\001 \003(\0132\020.EvtBeingHitInfo\022\"\n\014f" +
+      "orward_type\030\007 \001(\0162\014.ForwardTypeB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1102,7 +1102,7 @@ public final class EvtBeingHitsCombineNotifyOuterClass {
     internal_static_EvtBeingHitsCombineNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtBeingHitsCombineNotify_descriptor,
-        new java.lang.String[] { "MFFFDJCGFOC", "ForwardType", });
+        new java.lang.String[] { "EvtBeingHitInfoList", "ForwardType", });
     emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
   }

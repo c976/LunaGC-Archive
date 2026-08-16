@@ -19,10 +19,10 @@ public final class SorushWidgetDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_need_destroy = 6;</code>
-     * @return The isNeedDestroy.
+     * <code>bool is_need_destory = 4;</code>
+     * @return The isNeedDestory.
      */
-    boolean getIsNeedDestroy();
+    boolean getIsNeedDestory();
   }
   /**
    * Protobuf type {@code SorushWidgetData}
@@ -69,9 +69,9 @@ public final class SorushWidgetDataOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 32: {
 
-              isNeedDestroy_ = input.readBool();
+              isNeedDestory_ = input.readBool();
               break;
             }
             default: {
@@ -106,15 +106,15 @@ public final class SorushWidgetDataOuterClass {
               emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData.class, emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData.Builder.class);
     }
 
-    public static final int IS_NEED_DESTROY_FIELD_NUMBER = 6;
-    private boolean isNeedDestroy_;
+    public static final int IS_NEED_DESTORY_FIELD_NUMBER = 4;
+    private boolean isNeedDestory_;
     /**
-     * <code>bool is_need_destroy = 6;</code>
-     * @return The isNeedDestroy.
+     * <code>bool is_need_destory = 4;</code>
+     * @return The isNeedDestory.
      */
     @java.lang.Override
-    public boolean getIsNeedDestroy() {
-      return isNeedDestroy_;
+    public boolean getIsNeedDestory() {
+      return isNeedDestory_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -131,8 +131,8 @@ public final class SorushWidgetDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isNeedDestroy_ != false) {
-        output.writeBool(6, isNeedDestroy_);
+      if (isNeedDestory_ != false) {
+        output.writeBool(4, isNeedDestory_);
       }
       unknownFields.writeTo(output);
     }
@@ -143,9 +143,9 @@ public final class SorushWidgetDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isNeedDestroy_ != false) {
+      if (isNeedDestory_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isNeedDestroy_);
+          .computeBoolSize(4, isNeedDestory_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -162,8 +162,8 @@ public final class SorushWidgetDataOuterClass {
       }
       emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData other = (emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData) obj;
 
-      if (getIsNeedDestroy()
-          != other.getIsNeedDestroy()) return false;
+      if (getIsNeedDestory()
+          != other.getIsNeedDestory()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -175,9 +175,9 @@ public final class SorushWidgetDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_NEED_DESTROY_FIELD_NUMBER;
+      hash = (37 * hash) + IS_NEED_DESTORY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNeedDestroy());
+          getIsNeedDestory());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +311,7 @@ public final class SorushWidgetDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNeedDestroy_ = false;
+        isNeedDestory_ = false;
 
         return this;
       }
@@ -339,7 +339,7 @@ public final class SorushWidgetDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData buildPartial() {
         emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData result = new emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData(this);
-        result.isNeedDestroy_ = isNeedDestroy_;
+        result.isNeedDestory_ = isNeedDestory_;
         onBuilt();
         return result;
       }
@@ -388,8 +388,8 @@ public final class SorushWidgetDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData other) {
         if (other == emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData.getDefaultInstance()) return this;
-        if (other.getIsNeedDestroy() != false) {
-          setIsNeedDestroy(other.getIsNeedDestroy());
+        if (other.getIsNeedDestory() != false) {
+          setIsNeedDestory(other.getIsNeedDestory());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -420,33 +420,33 @@ public final class SorushWidgetDataOuterClass {
         return this;
       }
 
-      private boolean isNeedDestroy_ ;
+      private boolean isNeedDestory_ ;
       /**
-       * <code>bool is_need_destroy = 6;</code>
-       * @return The isNeedDestroy.
+       * <code>bool is_need_destory = 4;</code>
+       * @return The isNeedDestory.
        */
       @java.lang.Override
-      public boolean getIsNeedDestroy() {
-        return isNeedDestroy_;
+      public boolean getIsNeedDestory() {
+        return isNeedDestory_;
       }
       /**
-       * <code>bool is_need_destroy = 6;</code>
-       * @param value The isNeedDestroy to set.
+       * <code>bool is_need_destory = 4;</code>
+       * @param value The isNeedDestory to set.
        * @return This builder for chaining.
        */
-      public Builder setIsNeedDestroy(boolean value) {
+      public Builder setIsNeedDestory(boolean value) {
         
-        isNeedDestroy_ = value;
+        isNeedDestory_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_need_destroy = 6;</code>
+       * <code>bool is_need_destory = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsNeedDestroy() {
+      public Builder clearIsNeedDestory() {
         
-        isNeedDestroy_ = false;
+        isNeedDestory_ = false;
         onChanged();
         return this;
       }
@@ -518,7 +518,7 @@ public final class SorushWidgetDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026SorushWidgetData.proto\"+\n\020SorushWidget" +
-      "Data\022\027\n\017is_need_destroy\030\006 \001(\010B\033\n\031emu.gra" +
+      "Data\022\027\n\017is_need_destory\030\004 \001(\010B\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -530,7 +530,7 @@ public final class SorushWidgetDataOuterClass {
     internal_static_SorushWidgetData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SorushWidgetData_descriptor,
-        new java.lang.String[] { "IsNeedDestroy", });
+        new java.lang.String[] { "IsNeedDestory", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,28 +19,16 @@ public final class NPGMLKKPNGOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GMEBHEHENCI = 1;</code>
      * @return A list containing the gMEBHEHENCI.
      */
     java.util.List<java.lang.Integer> getGMEBHEHENCIList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GMEBHEHENCI = 1;</code>
      * @return The count of gMEBHEHENCI.
      */
     int getGMEBHEHENCICount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GMEBHEHENCI = 1;</code>
      * @param index The index of the element to return.
      * @return The gMEBHEHENCI at the given index.
@@ -48,28 +36,16 @@ public final class NPGMLKKPNGOOuterClass {
     int getGMEBHEHENCI(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFEFODOPFPN = 8;</code>
      * @return A list containing the cFEFODOPFPN.
      */
     java.util.List<java.lang.Integer> getCFEFODOPFPNList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFEFODOPFPN = 8;</code>
      * @return The count of cFEFODOPFPN.
      */
     int getCFEFODOPFPNCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFEFODOPFPN = 8;</code>
      * @param index The index of the element to return.
      * @return The cFEFODOPFPN at the given index.
@@ -77,28 +53,16 @@ public final class NPGMLKKPNGOOuterClass {
     int getCFEFODOPFPN(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 tag_list = 9;</code>
      * @return A list containing the tagList.
      */
     java.util.List<java.lang.Integer> getTagListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 tag_list = 9;</code>
      * @return The count of tagList.
      */
     int getTagListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 tag_list = 9;</code>
      * @param index The index of the element to return.
      * @return The tagList at the given index.
@@ -106,144 +70,84 @@ public final class NPGMLKKPNGOOuterClass {
     int getTagList(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE> 
         getGCFJJKEJKJGList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
      */
     emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE getGCFJJKEJKJG(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
      */
     int getGCFJJKEJKJGCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNEOrBuilder> 
         getGCFJJKEJKJGOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
      */
     emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNEOrBuilder getGCFJJKEJKJGOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BBCHMDOENKP = 3;</code>
      * @return The bBCHMDOENKP.
      */
     int getBBCHMDOENKP();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool CLLJGPPBDOP = 14;</code>
      * @return The cLLJGPPBDOP.
      */
     boolean getCLLJGPPBDOP();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JFNPIMPFMOG = 11;</code>
      * @return The jFNPIMPFMOG.
      */
     boolean getJFNPIMPFMOG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool EEMLNHLNIFA = 13;</code>
      * @return The eEMLNHLNIFA.
      */
     boolean getEEMLNHLNIFA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 guid = 12;</code>
      * @return The guid.
      */
     int getGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PDMECOHELAA = 2;</code>
      * @return The pDMECOHELAA.
      */
     int getPDMECOHELAA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LBPPPGOBEEJ = 7;</code>
      * @return The lBPPPGOBEEJ.
      */
     int getLBPPPGOBEEJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EAJHJEGLCOA = 10;</code>
      * @return The eAJHJEGLCOA.
      */
     int getEAJHJEGLCOA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level = 15;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 JPOHOJELPGO = 5;</code>
      * @return The jPOHOJELPGO.
      */
@@ -468,10 +372,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int GMEBHEHENCI_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList gMEBHEHENCI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GMEBHEHENCI = 1;</code>
      * @return A list containing the gMEBHEHENCI.
      */
@@ -481,10 +381,6 @@ public final class NPGMLKKPNGOOuterClass {
       return gMEBHEHENCI_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GMEBHEHENCI = 1;</code>
      * @return The count of gMEBHEHENCI.
      */
@@ -492,10 +388,6 @@ public final class NPGMLKKPNGOOuterClass {
       return gMEBHEHENCI_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GMEBHEHENCI = 1;</code>
      * @param index The index of the element to return.
      * @return The gMEBHEHENCI at the given index.
@@ -508,10 +400,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int CFEFODOPFPN_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList cFEFODOPFPN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFEFODOPFPN = 8;</code>
      * @return A list containing the cFEFODOPFPN.
      */
@@ -521,10 +409,6 @@ public final class NPGMLKKPNGOOuterClass {
       return cFEFODOPFPN_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFEFODOPFPN = 8;</code>
      * @return The count of cFEFODOPFPN.
      */
@@ -532,10 +416,6 @@ public final class NPGMLKKPNGOOuterClass {
       return cFEFODOPFPN_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFEFODOPFPN = 8;</code>
      * @param index The index of the element to return.
      * @return The cFEFODOPFPN at the given index.
@@ -548,10 +428,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int TAG_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList tagList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 tag_list = 9;</code>
      * @return A list containing the tagList.
      */
@@ -561,10 +437,6 @@ public final class NPGMLKKPNGOOuterClass {
       return tagList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 tag_list = 9;</code>
      * @return The count of tagList.
      */
@@ -572,10 +444,6 @@ public final class NPGMLKKPNGOOuterClass {
       return tagList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 tag_list = 9;</code>
      * @param index The index of the element to return.
      * @return The tagList at the given index.
@@ -588,10 +456,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int GCFJJKEJKJG_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE> gCFJJKEJKJG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
      */
     @java.lang.Override
@@ -599,10 +463,6 @@ public final class NPGMLKKPNGOOuterClass {
       return gCFJJKEJKJG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
      */
     @java.lang.Override
@@ -611,10 +471,6 @@ public final class NPGMLKKPNGOOuterClass {
       return gCFJJKEJKJG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
      */
     @java.lang.Override
@@ -622,10 +478,6 @@ public final class NPGMLKKPNGOOuterClass {
       return gCFJJKEJKJG_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
      */
     @java.lang.Override
@@ -633,10 +485,6 @@ public final class NPGMLKKPNGOOuterClass {
       return gCFJJKEJKJG_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
      */
     @java.lang.Override
@@ -648,10 +496,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int BBCHMDOENKP_FIELD_NUMBER = 3;
     private int bBCHMDOENKP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BBCHMDOENKP = 3;</code>
      * @return The bBCHMDOENKP.
      */
@@ -663,10 +507,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int CLLJGPPBDOP_FIELD_NUMBER = 14;
     private boolean cLLJGPPBDOP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool CLLJGPPBDOP = 14;</code>
      * @return The cLLJGPPBDOP.
      */
@@ -678,10 +518,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int JFNPIMPFMOG_FIELD_NUMBER = 11;
     private boolean jFNPIMPFMOG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JFNPIMPFMOG = 11;</code>
      * @return The jFNPIMPFMOG.
      */
@@ -693,10 +529,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int EEMLNHLNIFA_FIELD_NUMBER = 13;
     private boolean eEMLNHLNIFA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool EEMLNHLNIFA = 13;</code>
      * @return The eEMLNHLNIFA.
      */
@@ -708,10 +540,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int GUID_FIELD_NUMBER = 12;
     private int guid_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 guid = 12;</code>
      * @return The guid.
      */
@@ -723,10 +551,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int PDMECOHELAA_FIELD_NUMBER = 2;
     private int pDMECOHELAA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PDMECOHELAA = 2;</code>
      * @return The pDMECOHELAA.
      */
@@ -738,10 +562,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int LBPPPGOBEEJ_FIELD_NUMBER = 7;
     private int lBPPPGOBEEJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LBPPPGOBEEJ = 7;</code>
      * @return The lBPPPGOBEEJ.
      */
@@ -753,10 +573,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int EAJHJEGLCOA_FIELD_NUMBER = 10;
     private int eAJHJEGLCOA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EAJHJEGLCOA = 10;</code>
      * @return The eAJHJEGLCOA.
      */
@@ -768,10 +584,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int LEVEL_FIELD_NUMBER = 15;
     private int level_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level = 15;</code>
      * @return The level.
      */
@@ -783,10 +595,6 @@ public final class NPGMLKKPNGOOuterClass {
     public static final int JPOHOJELPGO_FIELD_NUMBER = 5;
     private int jPOHOJELPGO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 JPOHOJELPGO = 5;</code>
      * @return The jPOHOJELPGO.
      */
@@ -1451,10 +1259,6 @@ public final class NPGMLKKPNGOOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GMEBHEHENCI = 1;</code>
        * @return A list containing the gMEBHEHENCI.
        */
@@ -1464,10 +1268,6 @@ public final class NPGMLKKPNGOOuterClass {
                  java.util.Collections.unmodifiableList(gMEBHEHENCI_) : gMEBHEHENCI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GMEBHEHENCI = 1;</code>
        * @return The count of gMEBHEHENCI.
        */
@@ -1475,10 +1275,6 @@ public final class NPGMLKKPNGOOuterClass {
         return gMEBHEHENCI_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GMEBHEHENCI = 1;</code>
        * @param index The index of the element to return.
        * @return The gMEBHEHENCI at the given index.
@@ -1487,10 +1283,6 @@ public final class NPGMLKKPNGOOuterClass {
         return gMEBHEHENCI_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GMEBHEHENCI = 1;</code>
        * @param index The index to set the value at.
        * @param value The gMEBHEHENCI to set.
@@ -1504,10 +1296,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GMEBHEHENCI = 1;</code>
        * @param value The gMEBHEHENCI to add.
        * @return This builder for chaining.
@@ -1519,10 +1307,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GMEBHEHENCI = 1;</code>
        * @param values The gMEBHEHENCI to add.
        * @return This builder for chaining.
@@ -1536,10 +1320,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GMEBHEHENCI = 1;</code>
        * @return This builder for chaining.
        */
@@ -1558,10 +1338,6 @@ public final class NPGMLKKPNGOOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFEFODOPFPN = 8;</code>
        * @return A list containing the cFEFODOPFPN.
        */
@@ -1571,10 +1347,6 @@ public final class NPGMLKKPNGOOuterClass {
                  java.util.Collections.unmodifiableList(cFEFODOPFPN_) : cFEFODOPFPN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFEFODOPFPN = 8;</code>
        * @return The count of cFEFODOPFPN.
        */
@@ -1582,10 +1354,6 @@ public final class NPGMLKKPNGOOuterClass {
         return cFEFODOPFPN_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFEFODOPFPN = 8;</code>
        * @param index The index of the element to return.
        * @return The cFEFODOPFPN at the given index.
@@ -1594,10 +1362,6 @@ public final class NPGMLKKPNGOOuterClass {
         return cFEFODOPFPN_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFEFODOPFPN = 8;</code>
        * @param index The index to set the value at.
        * @param value The cFEFODOPFPN to set.
@@ -1611,10 +1375,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFEFODOPFPN = 8;</code>
        * @param value The cFEFODOPFPN to add.
        * @return This builder for chaining.
@@ -1626,10 +1386,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFEFODOPFPN = 8;</code>
        * @param values The cFEFODOPFPN to add.
        * @return This builder for chaining.
@@ -1643,10 +1399,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFEFODOPFPN = 8;</code>
        * @return This builder for chaining.
        */
@@ -1665,10 +1417,6 @@ public final class NPGMLKKPNGOOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 tag_list = 9;</code>
        * @return A list containing the tagList.
        */
@@ -1678,10 +1426,6 @@ public final class NPGMLKKPNGOOuterClass {
                  java.util.Collections.unmodifiableList(tagList_) : tagList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 tag_list = 9;</code>
        * @return The count of tagList.
        */
@@ -1689,10 +1433,6 @@ public final class NPGMLKKPNGOOuterClass {
         return tagList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 tag_list = 9;</code>
        * @param index The index of the element to return.
        * @return The tagList at the given index.
@@ -1701,10 +1441,6 @@ public final class NPGMLKKPNGOOuterClass {
         return tagList_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 tag_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The tagList to set.
@@ -1718,10 +1454,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 tag_list = 9;</code>
        * @param value The tagList to add.
        * @return This builder for chaining.
@@ -1733,10 +1465,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 tag_list = 9;</code>
        * @param values The tagList to add.
        * @return This builder for chaining.
@@ -1750,10 +1478,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 tag_list = 9;</code>
        * @return This builder for chaining.
        */
@@ -1777,10 +1501,6 @@ public final class NPGMLKKPNGOOuterClass {
           emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE, emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE.Builder, emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNEOrBuilder> gCFJJKEJKJGBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE> getGCFJJKEJKJGList() {
@@ -1791,10 +1511,6 @@ public final class NPGMLKKPNGOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public int getGCFJJKEJKJGCount() {
@@ -1805,10 +1521,6 @@ public final class NPGMLKKPNGOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE getGCFJJKEJKJG(int index) {
@@ -1819,10 +1531,6 @@ public final class NPGMLKKPNGOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public Builder setGCFJJKEJKJG(
@@ -1840,10 +1548,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public Builder setGCFJJKEJKJG(
@@ -1858,10 +1562,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public Builder addGCFJJKEJKJG(emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE value) {
@@ -1878,10 +1578,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public Builder addGCFJJKEJKJG(
@@ -1899,10 +1595,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public Builder addGCFJJKEJKJG(
@@ -1917,10 +1609,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public Builder addGCFJJKEJKJG(
@@ -1935,10 +1623,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public Builder addAllGCFJJKEJKJG(
@@ -1954,10 +1638,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public Builder clearGCFJJKEJKJG() {
@@ -1971,10 +1651,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public Builder removeGCFJJKEJKJG(int index) {
@@ -1988,10 +1664,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE.Builder getGCFJJKEJKJGBuilder(
@@ -1999,10 +1671,6 @@ public final class NPGMLKKPNGOOuterClass {
         return getGCFJJKEJKJGFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNEOrBuilder getGCFJJKEJKJGOrBuilder(
@@ -2013,10 +1681,6 @@ public final class NPGMLKKPNGOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNEOrBuilder> 
@@ -2028,10 +1692,6 @@ public final class NPGMLKKPNGOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE.Builder addGCFJJKEJKJGBuilder() {
@@ -2039,10 +1699,6 @@ public final class NPGMLKKPNGOOuterClass {
             emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE.Builder addGCFJJKEJKJGBuilder(
@@ -2051,10 +1707,6 @@ public final class NPGMLKKPNGOOuterClass {
             index, emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .INHJIGDLLNE GCFJJKEJKJG = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.INHJIGDLLNEOuterClass.INHJIGDLLNE.Builder> 
@@ -2078,10 +1730,6 @@ public final class NPGMLKKPNGOOuterClass {
 
       private int bBCHMDOENKP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BBCHMDOENKP = 3;</code>
        * @return The bBCHMDOENKP.
        */
@@ -2090,10 +1738,6 @@ public final class NPGMLKKPNGOOuterClass {
         return bBCHMDOENKP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BBCHMDOENKP = 3;</code>
        * @param value The bBCHMDOENKP to set.
        * @return This builder for chaining.
@@ -2105,10 +1749,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BBCHMDOENKP = 3;</code>
        * @return This builder for chaining.
        */
@@ -2121,10 +1761,6 @@ public final class NPGMLKKPNGOOuterClass {
 
       private boolean cLLJGPPBDOP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool CLLJGPPBDOP = 14;</code>
        * @return The cLLJGPPBDOP.
        */
@@ -2133,10 +1769,6 @@ public final class NPGMLKKPNGOOuterClass {
         return cLLJGPPBDOP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool CLLJGPPBDOP = 14;</code>
        * @param value The cLLJGPPBDOP to set.
        * @return This builder for chaining.
@@ -2148,10 +1780,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool CLLJGPPBDOP = 14;</code>
        * @return This builder for chaining.
        */
@@ -2164,10 +1792,6 @@ public final class NPGMLKKPNGOOuterClass {
 
       private boolean jFNPIMPFMOG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JFNPIMPFMOG = 11;</code>
        * @return The jFNPIMPFMOG.
        */
@@ -2176,10 +1800,6 @@ public final class NPGMLKKPNGOOuterClass {
         return jFNPIMPFMOG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JFNPIMPFMOG = 11;</code>
        * @param value The jFNPIMPFMOG to set.
        * @return This builder for chaining.
@@ -2191,10 +1811,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JFNPIMPFMOG = 11;</code>
        * @return This builder for chaining.
        */
@@ -2207,10 +1823,6 @@ public final class NPGMLKKPNGOOuterClass {
 
       private boolean eEMLNHLNIFA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool EEMLNHLNIFA = 13;</code>
        * @return The eEMLNHLNIFA.
        */
@@ -2219,10 +1831,6 @@ public final class NPGMLKKPNGOOuterClass {
         return eEMLNHLNIFA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool EEMLNHLNIFA = 13;</code>
        * @param value The eEMLNHLNIFA to set.
        * @return This builder for chaining.
@@ -2234,10 +1842,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool EEMLNHLNIFA = 13;</code>
        * @return This builder for chaining.
        */
@@ -2250,10 +1854,6 @@ public final class NPGMLKKPNGOOuterClass {
 
       private int guid_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 guid = 12;</code>
        * @return The guid.
        */
@@ -2262,10 +1862,6 @@ public final class NPGMLKKPNGOOuterClass {
         return guid_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 guid = 12;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
@@ -2277,10 +1873,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 guid = 12;</code>
        * @return This builder for chaining.
        */
@@ -2293,10 +1885,6 @@ public final class NPGMLKKPNGOOuterClass {
 
       private int pDMECOHELAA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PDMECOHELAA = 2;</code>
        * @return The pDMECOHELAA.
        */
@@ -2305,10 +1893,6 @@ public final class NPGMLKKPNGOOuterClass {
         return pDMECOHELAA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PDMECOHELAA = 2;</code>
        * @param value The pDMECOHELAA to set.
        * @return This builder for chaining.
@@ -2320,10 +1904,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PDMECOHELAA = 2;</code>
        * @return This builder for chaining.
        */
@@ -2336,10 +1916,6 @@ public final class NPGMLKKPNGOOuterClass {
 
       private int lBPPPGOBEEJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LBPPPGOBEEJ = 7;</code>
        * @return The lBPPPGOBEEJ.
        */
@@ -2348,10 +1924,6 @@ public final class NPGMLKKPNGOOuterClass {
         return lBPPPGOBEEJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LBPPPGOBEEJ = 7;</code>
        * @param value The lBPPPGOBEEJ to set.
        * @return This builder for chaining.
@@ -2363,10 +1935,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LBPPPGOBEEJ = 7;</code>
        * @return This builder for chaining.
        */
@@ -2379,10 +1947,6 @@ public final class NPGMLKKPNGOOuterClass {
 
       private int eAJHJEGLCOA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EAJHJEGLCOA = 10;</code>
        * @return The eAJHJEGLCOA.
        */
@@ -2391,10 +1955,6 @@ public final class NPGMLKKPNGOOuterClass {
         return eAJHJEGLCOA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EAJHJEGLCOA = 10;</code>
        * @param value The eAJHJEGLCOA to set.
        * @return This builder for chaining.
@@ -2406,10 +1966,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EAJHJEGLCOA = 10;</code>
        * @return This builder for chaining.
        */
@@ -2422,10 +1978,6 @@ public final class NPGMLKKPNGOOuterClass {
 
       private int level_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level = 15;</code>
        * @return The level.
        */
@@ -2434,10 +1986,6 @@ public final class NPGMLKKPNGOOuterClass {
         return level_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level = 15;</code>
        * @param value The level to set.
        * @return This builder for chaining.
@@ -2449,10 +1997,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level = 15;</code>
        * @return This builder for chaining.
        */
@@ -2465,10 +2009,6 @@ public final class NPGMLKKPNGOOuterClass {
 
       private int jPOHOJELPGO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JPOHOJELPGO = 5;</code>
        * @return The jPOHOJELPGO.
        */
@@ -2477,10 +2017,6 @@ public final class NPGMLKKPNGOOuterClass {
         return jPOHOJELPGO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JPOHOJELPGO = 5;</code>
        * @param value The jPOHOJELPGO to set.
        * @return This builder for chaining.
@@ -2492,10 +2028,6 @@ public final class NPGMLKKPNGOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JPOHOJELPGO = 5;</code>
        * @return This builder for chaining.
        */

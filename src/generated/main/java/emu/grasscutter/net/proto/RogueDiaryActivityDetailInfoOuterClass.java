@@ -20,91 +20,87 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.RogueDiaryProgress cur_progress = 1;</code>
+     * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD> 
+        getStageListList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
+     */
+    emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD getStageList(int index);
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
+     */
+    int getStageListCount();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHDOrBuilder> 
+        getStageListOrBuilderList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
+     */
+    emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHDOrBuilder getStageListOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.CHJOJKNAHLN cur_progress = 2;</code>
      * @return Whether the curProgress field is set.
      */
     boolean hasCurProgress();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>.RogueDiaryProgress cur_progress = 1;</code>
+     * <code>.CHJOJKNAHLN cur_progress = 2;</code>
      * @return The curProgress.
      */
-    emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress getCurProgress();
+    emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN getCurProgress();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>.RogueDiaryProgress cur_progress = 1;</code>
+     * <code>.CHJOJKNAHLN cur_progress = 2;</code>
      */
-    emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgressOrBuilder getCurProgressOrBuilder();
+    emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLNOrBuilder getCurProgressOrBuilder();
+
+    /**
+     * <code>bool EHBOJIJAGPG = 5;</code>
+     * @return The eHBOJIJAGPG.
+     */
+    boolean getEHBOJIJAGPG();
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE> 
-        getStageListList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
-     */
-    emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE getStageList(int index);
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
-     */
-    int getStageListCount();
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEEOrBuilder> 
-        getStageListOrBuilderList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
-     */
-    emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEEOrBuilder getStageListOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>bool GCIAJEEPHNM = 6123;</code>
-     * @return The gCIAJEEPHNM.
-     */
-    boolean getGCIAJEEPHNM();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 49
-     * </pre>
-     *
-     * <code>bool is_content_closed = 2;</code>
+     * <code>bool is_content_closed = 7;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
@@ -156,12 +152,12 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress.Builder subBuilder = null;
+            case 18: {
+              emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN.Builder subBuilder = null;
               if (curProgress_ != null) {
                 subBuilder = curProgress_.toBuilder();
               }
-              curProgress_ = input.readMessage(emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress.parser(), extensionRegistry);
+              curProgress_ = input.readMessage(emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(curProgress_);
                 curProgress_ = subBuilder.buildPartial();
@@ -169,23 +165,23 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
 
               break;
             }
-            case 16: {
+            case 40: {
+
+              eHBOJIJAGPG_ = input.readBool();
+              break;
+            }
+            case 56: {
 
               isContentClosed_ = input.readBool();
               break;
             }
-            case 50: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                stageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE>();
+                stageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD>();
                 mutable_bitField0_ |= 0x00000001;
               }
               stageList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.parser(), extensionRegistry));
-              break;
-            }
-            case 48984: {
-
-              gCIAJEEPHNM_ = input.readBool();
+                  input.readMessage(emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -223,14 +219,74 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.RogueDiaryActivityDetailInfoOuterClass.RogueDiaryActivityDetailInfo.class, emu.grasscutter.net.proto.RogueDiaryActivityDetailInfoOuterClass.RogueDiaryActivityDetailInfo.Builder.class);
     }
 
-    public static final int CUR_PROGRESS_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress curProgress_;
+    public static final int STAGE_LIST_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD> stageList_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.RogueDiaryProgress cur_progress = 1;</code>
+     * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD> getStageListList() {
+      return stageList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHDOrBuilder> 
+        getStageListOrBuilderList() {
+      return stageList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
+     */
+    @java.lang.Override
+    public int getStageListCount() {
+      return stageList_.size();
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD getStageList(int index) {
+      return stageList_.get(index);
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHDOrBuilder getStageListOrBuilder(
+        int index) {
+      return stageList_.get(index);
+    }
+
+    public static final int CUR_PROGRESS_FIELD_NUMBER = 2;
+    private emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN curProgress_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.CHJOJKNAHLN cur_progress = 2;</code>
      * @return Whether the curProgress field is set.
      */
     @java.lang.Override
@@ -239,111 +295,47 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>.RogueDiaryProgress cur_progress = 1;</code>
+     * <code>.CHJOJKNAHLN cur_progress = 2;</code>
      * @return The curProgress.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress getCurProgress() {
-      return curProgress_ == null ? emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress.getDefaultInstance() : curProgress_;
+    public emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN getCurProgress() {
+      return curProgress_ == null ? emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN.getDefaultInstance() : curProgress_;
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>.RogueDiaryProgress cur_progress = 1;</code>
+     * <code>.CHJOJKNAHLN cur_progress = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgressOrBuilder getCurProgressOrBuilder() {
+    public emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLNOrBuilder getCurProgressOrBuilder() {
       return getCurProgress();
     }
 
-    public static final int STAGE_LIST_FIELD_NUMBER = 6;
-    private java.util.List<emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE> stageList_;
+    public static final int EHBOJIJAGPG_FIELD_NUMBER = 5;
+    private boolean eHBOJIJAGPG_;
     /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+     * <code>bool EHBOJIJAGPG = 5;</code>
+     * @return The eHBOJIJAGPG.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE> getStageListList() {
-      return stageList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEEOrBuilder> 
-        getStageListOrBuilderList() {
-      return stageList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
-     */
-    @java.lang.Override
-    public int getStageListCount() {
-      return stageList_.size();
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE getStageList(int index) {
-      return stageList_.get(index);
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEEOrBuilder getStageListOrBuilder(
-        int index) {
-      return stageList_.get(index);
+    public boolean getEHBOJIJAGPG() {
+      return eHBOJIJAGPG_;
     }
 
-    public static final int GCIAJEEPHNM_FIELD_NUMBER = 6123;
-    private boolean gCIAJEEPHNM_;
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>bool GCIAJEEPHNM = 6123;</code>
-     * @return The gCIAJEEPHNM.
-     */
-    @java.lang.Override
-    public boolean getGCIAJEEPHNM() {
-      return gCIAJEEPHNM_;
-    }
-
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 2;
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 7;
     private boolean isContentClosed_;
     /**
      * <pre>
-     *6.3.0 // offset: 49
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>bool is_content_closed = 2;</code>
+     * <code>bool is_content_closed = 7;</code>
      * @return The isContentClosed.
      */
     @java.lang.Override
@@ -366,16 +358,16 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (curProgress_ != null) {
-        output.writeMessage(1, getCurProgress());
+        output.writeMessage(2, getCurProgress());
+      }
+      if (eHBOJIJAGPG_ != false) {
+        output.writeBool(5, eHBOJIJAGPG_);
       }
       if (isContentClosed_ != false) {
-        output.writeBool(2, isContentClosed_);
+        output.writeBool(7, isContentClosed_);
       }
       for (int i = 0; i < stageList_.size(); i++) {
-        output.writeMessage(6, stageList_.get(i));
-      }
-      if (gCIAJEEPHNM_ != false) {
-        output.writeBool(6123, gCIAJEEPHNM_);
+        output.writeMessage(9, stageList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -388,19 +380,19 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       size = 0;
       if (curProgress_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getCurProgress());
+          .computeMessageSize(2, getCurProgress());
+      }
+      if (eHBOJIJAGPG_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, eHBOJIJAGPG_);
       }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isContentClosed_);
+          .computeBoolSize(7, isContentClosed_);
       }
       for (int i = 0; i < stageList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, stageList_.get(i));
-      }
-      if (gCIAJEEPHNM_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6123, gCIAJEEPHNM_);
+          .computeMessageSize(9, stageList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -417,15 +409,15 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.RogueDiaryActivityDetailInfoOuterClass.RogueDiaryActivityDetailInfo other = (emu.grasscutter.net.proto.RogueDiaryActivityDetailInfoOuterClass.RogueDiaryActivityDetailInfo) obj;
 
+      if (!getStageListList()
+          .equals(other.getStageListList())) return false;
       if (hasCurProgress() != other.hasCurProgress()) return false;
       if (hasCurProgress()) {
         if (!getCurProgress()
             .equals(other.getCurProgress())) return false;
       }
-      if (!getStageListList()
-          .equals(other.getStageListList())) return false;
-      if (getGCIAJEEPHNM()
-          != other.getGCIAJEEPHNM()) return false;
+      if (getEHBOJIJAGPG()
+          != other.getEHBOJIJAGPG()) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -439,17 +431,17 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasCurProgress()) {
-        hash = (37 * hash) + CUR_PROGRESS_FIELD_NUMBER;
-        hash = (53 * hash) + getCurProgress().hashCode();
-      }
       if (getStageListCount() > 0) {
         hash = (37 * hash) + STAGE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getStageListList().hashCode();
       }
-      hash = (37 * hash) + GCIAJEEPHNM_FIELD_NUMBER;
+      if (hasCurProgress()) {
+        hash = (37 * hash) + CUR_PROGRESS_FIELD_NUMBER;
+        hash = (53 * hash) + getCurProgress().hashCode();
+      }
+      hash = (37 * hash) + EHBOJIJAGPG_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getGCIAJEEPHNM());
+          getEHBOJIJAGPG());
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
@@ -587,19 +579,19 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (curProgressBuilder_ == null) {
-          curProgress_ = null;
-        } else {
-          curProgress_ = null;
-          curProgressBuilder_ = null;
-        }
         if (stageListBuilder_ == null) {
           stageList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           stageListBuilder_.clear();
         }
-        gCIAJEEPHNM_ = false;
+        if (curProgressBuilder_ == null) {
+          curProgress_ = null;
+        } else {
+          curProgress_ = null;
+          curProgressBuilder_ = null;
+        }
+        eHBOJIJAGPG_ = false;
 
         isContentClosed_ = false;
 
@@ -630,11 +622,6 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.RogueDiaryActivityDetailInfoOuterClass.RogueDiaryActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.RogueDiaryActivityDetailInfoOuterClass.RogueDiaryActivityDetailInfo result = new emu.grasscutter.net.proto.RogueDiaryActivityDetailInfoOuterClass.RogueDiaryActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        if (curProgressBuilder_ == null) {
-          result.curProgress_ = curProgress_;
-        } else {
-          result.curProgress_ = curProgressBuilder_.build();
-        }
         if (stageListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             stageList_ = java.util.Collections.unmodifiableList(stageList_);
@@ -644,7 +631,12 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
         } else {
           result.stageList_ = stageListBuilder_.build();
         }
-        result.gCIAJEEPHNM_ = gCIAJEEPHNM_;
+        if (curProgressBuilder_ == null) {
+          result.curProgress_ = curProgress_;
+        } else {
+          result.curProgress_ = curProgressBuilder_.build();
+        }
+        result.eHBOJIJAGPG_ = eHBOJIJAGPG_;
         result.isContentClosed_ = isContentClosed_;
         onBuilt();
         return result;
@@ -694,9 +686,6 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RogueDiaryActivityDetailInfoOuterClass.RogueDiaryActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.RogueDiaryActivityDetailInfoOuterClass.RogueDiaryActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.hasCurProgress()) {
-          mergeCurProgress(other.getCurProgress());
-        }
         if (stageListBuilder_ == null) {
           if (!other.stageList_.isEmpty()) {
             if (stageList_.isEmpty()) {
@@ -723,8 +712,11 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
             }
           }
         }
-        if (other.getGCIAJEEPHNM() != false) {
-          setGCIAJEEPHNM(other.getGCIAJEEPHNM());
+        if (other.hasCurProgress()) {
+          mergeCurProgress(other.getCurProgress());
+        }
+        if (other.getEHBOJIJAGPG() != false) {
+          setEHBOJIJAGPG(other.getEHBOJIJAGPG());
         }
         if (other.getIsContentClosed() != false) {
           setIsContentClosed(other.getIsContentClosed());
@@ -759,181 +751,26 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress curProgress_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress, emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress.Builder, emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgressOrBuilder> curProgressBuilder_;
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.RogueDiaryProgress cur_progress = 1;</code>
-       * @return Whether the curProgress field is set.
-       */
-      public boolean hasCurProgress() {
-        return curProgressBuilder_ != null || curProgress_ != null;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.RogueDiaryProgress cur_progress = 1;</code>
-       * @return The curProgress.
-       */
-      public emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress getCurProgress() {
-        if (curProgressBuilder_ == null) {
-          return curProgress_ == null ? emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress.getDefaultInstance() : curProgress_;
-        } else {
-          return curProgressBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.RogueDiaryProgress cur_progress = 1;</code>
-       */
-      public Builder setCurProgress(emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress value) {
-        if (curProgressBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          curProgress_ = value;
-          onChanged();
-        } else {
-          curProgressBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.RogueDiaryProgress cur_progress = 1;</code>
-       */
-      public Builder setCurProgress(
-          emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress.Builder builderForValue) {
-        if (curProgressBuilder_ == null) {
-          curProgress_ = builderForValue.build();
-          onChanged();
-        } else {
-          curProgressBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.RogueDiaryProgress cur_progress = 1;</code>
-       */
-      public Builder mergeCurProgress(emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress value) {
-        if (curProgressBuilder_ == null) {
-          if (curProgress_ != null) {
-            curProgress_ =
-              emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress.newBuilder(curProgress_).mergeFrom(value).buildPartial();
-          } else {
-            curProgress_ = value;
-          }
-          onChanged();
-        } else {
-          curProgressBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.RogueDiaryProgress cur_progress = 1;</code>
-       */
-      public Builder clearCurProgress() {
-        if (curProgressBuilder_ == null) {
-          curProgress_ = null;
-          onChanged();
-        } else {
-          curProgress_ = null;
-          curProgressBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.RogueDiaryProgress cur_progress = 1;</code>
-       */
-      public emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress.Builder getCurProgressBuilder() {
-        
-        onChanged();
-        return getCurProgressFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.RogueDiaryProgress cur_progress = 1;</code>
-       */
-      public emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgressOrBuilder getCurProgressOrBuilder() {
-        if (curProgressBuilder_ != null) {
-          return curProgressBuilder_.getMessageOrBuilder();
-        } else {
-          return curProgress_ == null ?
-              emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress.getDefaultInstance() : curProgress_;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.RogueDiaryProgress cur_progress = 1;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress, emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress.Builder, emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgressOrBuilder> 
-          getCurProgressFieldBuilder() {
-        if (curProgressBuilder_ == null) {
-          curProgressBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress, emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgress.Builder, emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.RogueDiaryProgressOrBuilder>(
-                  getCurProgress(),
-                  getParentForChildren(),
-                  isClean());
-          curProgress_ = null;
-        }
-        return curProgressBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE> stageList_ =
+      private java.util.List<emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD> stageList_ =
         java.util.Collections.emptyList();
       private void ensureStageListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          stageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE>(stageList_);
+          stageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD>(stageList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE, emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.Builder, emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEEOrBuilder> stageListBuilder_;
+          emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD, emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.Builder, emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHDOrBuilder> stageListBuilder_;
 
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE> getStageListList() {
+      public java.util.List<emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD> getStageListList() {
         if (stageListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(stageList_);
         } else {
@@ -942,10 +779,10 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
       public int getStageListCount() {
         if (stageListBuilder_ == null) {
@@ -956,12 +793,12 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE getStageList(int index) {
+      public emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD getStageList(int index) {
         if (stageListBuilder_ == null) {
           return stageList_.get(index);
         } else {
@@ -970,13 +807,13 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
       public Builder setStageList(
-          int index, emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE value) {
+          int index, emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD value) {
         if (stageListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -991,13 +828,13 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
       public Builder setStageList(
-          int index, emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.Builder builderForValue) {
         if (stageListBuilder_ == null) {
           ensureStageListIsMutable();
           stageList_.set(index, builderForValue.build());
@@ -1009,12 +846,12 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
-      public Builder addStageList(emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE value) {
+      public Builder addStageList(emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD value) {
         if (stageListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1029,13 +866,13 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
       public Builder addStageList(
-          int index, emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE value) {
+          int index, emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD value) {
         if (stageListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1050,13 +887,13 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
       public Builder addStageList(
-          emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.Builder builderForValue) {
+          emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.Builder builderForValue) {
         if (stageListBuilder_ == null) {
           ensureStageListIsMutable();
           stageList_.add(builderForValue.build());
@@ -1068,13 +905,13 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
       public Builder addStageList(
-          int index, emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.Builder builderForValue) {
         if (stageListBuilder_ == null) {
           ensureStageListIsMutable();
           stageList_.add(index, builderForValue.build());
@@ -1086,13 +923,13 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
       public Builder addAllStageList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD> values) {
         if (stageListBuilder_ == null) {
           ensureStageListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1105,10 +942,10 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
       public Builder clearStageList() {
         if (stageListBuilder_ == null) {
@@ -1122,10 +959,10 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
       public Builder removeStageList(int index) {
         if (stageListBuilder_ == null) {
@@ -1139,23 +976,23 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.Builder getStageListBuilder(
+      public emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.Builder getStageListBuilder(
           int index) {
         return getStageListFieldBuilder().getBuilder(index);
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEEOrBuilder getStageListOrBuilder(
+      public emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHDOrBuilder getStageListOrBuilder(
           int index) {
         if (stageListBuilder_ == null) {
           return stageList_.get(index);  } else {
@@ -1164,12 +1001,12 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEEOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHDOrBuilder> 
            getStageListOrBuilderList() {
         if (stageListBuilder_ != null) {
           return stageListBuilder_.getMessageOrBuilderList();
@@ -1179,44 +1016,44 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.Builder addStageListBuilder() {
+      public emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.Builder addStageListBuilder() {
         return getStageListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.getDefaultInstance());
+            emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.getDefaultInstance());
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.Builder addStageListBuilder(
+      public emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.Builder addStageListBuilder(
           int index) {
         return getStageListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.getDefaultInstance());
+            index, emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.getDefaultInstance());
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .BGCHBABMIEE stage_list = 6;</code>
+       * <code>repeated .EFHMGIKJOHD stage_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.Builder> 
            getStageListBuilderList() {
         return getStageListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE, emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.Builder, emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEEOrBuilder> 
+          emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD, emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.Builder, emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHDOrBuilder> 
           getStageListFieldBuilder() {
         if (stageListBuilder_ == null) {
           stageListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE, emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEE.Builder, emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.BGCHBABMIEEOrBuilder>(
+              emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD, emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHD.Builder, emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.EFHMGIKJOHDOrBuilder>(
                   stageList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1226,45 +1063,188 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
         return stageListBuilder_;
       }
 
-      private boolean gCIAJEEPHNM_ ;
+      private emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN curProgress_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN, emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN.Builder, emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLNOrBuilder> curProgressBuilder_;
       /**
        * <pre>
-       * offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>bool GCIAJEEPHNM = 6123;</code>
-       * @return The gCIAJEEPHNM.
+       * <code>.CHJOJKNAHLN cur_progress = 2;</code>
+       * @return Whether the curProgress field is set.
        */
-      @java.lang.Override
-      public boolean getGCIAJEEPHNM() {
-        return gCIAJEEPHNM_;
+      public boolean hasCurProgress() {
+        return curProgressBuilder_ != null || curProgress_ != null;
       }
       /**
        * <pre>
-       * offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>bool GCIAJEEPHNM = 6123;</code>
-       * @param value The gCIAJEEPHNM to set.
-       * @return This builder for chaining.
+       * <code>.CHJOJKNAHLN cur_progress = 2;</code>
+       * @return The curProgress.
        */
-      public Builder setGCIAJEEPHNM(boolean value) {
-        
-        gCIAJEEPHNM_ = value;
-        onChanged();
+      public emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN getCurProgress() {
+        if (curProgressBuilder_ == null) {
+          return curProgress_ == null ? emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN.getDefaultInstance() : curProgress_;
+        } else {
+          return curProgressBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.CHJOJKNAHLN cur_progress = 2;</code>
+       */
+      public Builder setCurProgress(emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN value) {
+        if (curProgressBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          curProgress_ = value;
+          onChanged();
+        } else {
+          curProgressBuilder_.setMessage(value);
+        }
+
         return this;
       }
       /**
        * <pre>
-       * offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>bool GCIAJEEPHNM = 6123;</code>
+       * <code>.CHJOJKNAHLN cur_progress = 2;</code>
+       */
+      public Builder setCurProgress(
+          emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN.Builder builderForValue) {
+        if (curProgressBuilder_ == null) {
+          curProgress_ = builderForValue.build();
+          onChanged();
+        } else {
+          curProgressBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.CHJOJKNAHLN cur_progress = 2;</code>
+       */
+      public Builder mergeCurProgress(emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN value) {
+        if (curProgressBuilder_ == null) {
+          if (curProgress_ != null) {
+            curProgress_ =
+              emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN.newBuilder(curProgress_).mergeFrom(value).buildPartial();
+          } else {
+            curProgress_ = value;
+          }
+          onChanged();
+        } else {
+          curProgressBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.CHJOJKNAHLN cur_progress = 2;</code>
+       */
+      public Builder clearCurProgress() {
+        if (curProgressBuilder_ == null) {
+          curProgress_ = null;
+          onChanged();
+        } else {
+          curProgress_ = null;
+          curProgressBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.CHJOJKNAHLN cur_progress = 2;</code>
+       */
+      public emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN.Builder getCurProgressBuilder() {
+        
+        onChanged();
+        return getCurProgressFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.CHJOJKNAHLN cur_progress = 2;</code>
+       */
+      public emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLNOrBuilder getCurProgressOrBuilder() {
+        if (curProgressBuilder_ != null) {
+          return curProgressBuilder_.getMessageOrBuilder();
+        } else {
+          return curProgress_ == null ?
+              emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN.getDefaultInstance() : curProgress_;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.CHJOJKNAHLN cur_progress = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN, emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN.Builder, emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLNOrBuilder> 
+          getCurProgressFieldBuilder() {
+        if (curProgressBuilder_ == null) {
+          curProgressBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN, emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLN.Builder, emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.CHJOJKNAHLNOrBuilder>(
+                  getCurProgress(),
+                  getParentForChildren(),
+                  isClean());
+          curProgress_ = null;
+        }
+        return curProgressBuilder_;
+      }
+
+      private boolean eHBOJIJAGPG_ ;
+      /**
+       * <code>bool EHBOJIJAGPG = 5;</code>
+       * @return The eHBOJIJAGPG.
+       */
+      @java.lang.Override
+      public boolean getEHBOJIJAGPG() {
+        return eHBOJIJAGPG_;
+      }
+      /**
+       * <code>bool EHBOJIJAGPG = 5;</code>
+       * @param value The eHBOJIJAGPG to set.
        * @return This builder for chaining.
        */
-      public Builder clearGCIAJEEPHNM() {
+      public Builder setEHBOJIJAGPG(boolean value) {
         
-        gCIAJEEPHNM_ = false;
+        eHBOJIJAGPG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool EHBOJIJAGPG = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEHBOJIJAGPG() {
+        
+        eHBOJIJAGPG_ = false;
         onChanged();
         return this;
       }
@@ -1272,10 +1252,10 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       private boolean isContentClosed_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 49
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_content_closed = 2;</code>
+       * <code>bool is_content_closed = 7;</code>
        * @return The isContentClosed.
        */
       @java.lang.Override
@@ -1284,10 +1264,10 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 49
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_content_closed = 2;</code>
+       * <code>bool is_content_closed = 7;</code>
        * @param value The isContentClosed to set.
        * @return This builder for chaining.
        */
@@ -1299,10 +1279,10 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 49
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_content_closed = 2;</code>
+       * <code>bool is_content_closed = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsContentClosed() {
@@ -1378,28 +1358,28 @@ public final class RogueDiaryActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"RogueDiaryActivityDetailInfo.proto\032\021BG" +
-      "CHBABMIEE.proto\032\030RogueDiaryProgress.prot" +
-      "o\"\234\001\n\034RogueDiaryActivityDetailInfo\022)\n\014cu" +
-      "r_progress\030\001 \001(\0132\023.RogueDiaryProgress\022 \n" +
-      "\nstage_list\030\006 \003(\0132\014.BGCHBABMIEE\022\024\n\013GCIAJ" +
-      "EEPHNM\030\353/ \001(\010\022\031\n\021is_content_closed\030\002 \001(\010" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\"RogueDiaryActivityDetailInfo.proto\032\021EF" +
+      "HMGIKJOHD.proto\032\021CHJOJKNAHLN.proto\"\224\001\n\034R" +
+      "ogueDiaryActivityDetailInfo\022 \n\nstage_lis" +
+      "t\030\t \003(\0132\014.EFHMGIKJOHD\022\"\n\014cur_progress\030\002 " +
+      "\001(\0132\014.CHJOJKNAHLN\022\023\n\013EHBOJIJAGPG\030\005 \001(\010\022\031" +
+      "\n\021is_content_closed\030\007 \001(\010B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.getDescriptor(),
         });
     internal_static_RogueDiaryActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_RogueDiaryActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueDiaryActivityDetailInfo_descriptor,
-        new java.lang.String[] { "CurProgress", "StageList", "GCIAJEEPHNM", "IsContentClosed", });
-    emu.grasscutter.net.proto.BGCHBABMIEEOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.RogueDiaryProgressOuterClass.getDescriptor();
+        new java.lang.String[] { "StageList", "CurProgress", "EHBOJIJAGPG", "IsContentClosed", });
+    emu.grasscutter.net.proto.EFHMGIKJOHDOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.CHJOJKNAHLNOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

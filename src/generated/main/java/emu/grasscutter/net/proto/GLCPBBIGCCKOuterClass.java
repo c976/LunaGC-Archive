@@ -19,88 +19,48 @@ public final class GLCPBBIGCCKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG> 
         getHEKBEICEEBKList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
      */
     emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG getHEKBEICEEBK(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
      */
     int getHEKBEICEEBKCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOGOrBuilder> 
         getHEKBEICEEBKOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
      */
     emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOGOrBuilder getHEKBEICEEBKOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE> 
         getNGMHFHPAAMFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
      */
     emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE getNGMHFHPAAMF(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
      */
     int getNGMHFHPAAMFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIEOrBuilder> 
         getNGMHFHPAAMFOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
      */
     emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIEOrBuilder getNGMHFHPAAMFOrBuilder(
@@ -213,10 +173,6 @@ public final class GLCPBBIGCCKOuterClass {
     public static final int HEKBEICEEBK_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG> hEKBEICEEBK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
      */
     @java.lang.Override
@@ -224,10 +180,6 @@ public final class GLCPBBIGCCKOuterClass {
       return hEKBEICEEBK_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
      */
     @java.lang.Override
@@ -236,10 +188,6 @@ public final class GLCPBBIGCCKOuterClass {
       return hEKBEICEEBK_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
      */
     @java.lang.Override
@@ -247,10 +195,6 @@ public final class GLCPBBIGCCKOuterClass {
       return hEKBEICEEBK_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
      */
     @java.lang.Override
@@ -258,10 +202,6 @@ public final class GLCPBBIGCCKOuterClass {
       return hEKBEICEEBK_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
      */
     @java.lang.Override
@@ -273,10 +213,6 @@ public final class GLCPBBIGCCKOuterClass {
     public static final int NGMHFHPAAMF_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE> nGMHFHPAAMF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
      */
     @java.lang.Override
@@ -284,10 +220,6 @@ public final class GLCPBBIGCCKOuterClass {
       return nGMHFHPAAMF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
      */
     @java.lang.Override
@@ -296,10 +228,6 @@ public final class GLCPBBIGCCKOuterClass {
       return nGMHFHPAAMF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
      */
     @java.lang.Override
@@ -307,10 +235,6 @@ public final class GLCPBBIGCCKOuterClass {
       return nGMHFHPAAMF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
      */
     @java.lang.Override
@@ -318,10 +242,6 @@ public final class GLCPBBIGCCKOuterClass {
       return nGMHFHPAAMF_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
      */
     @java.lang.Override
@@ -740,10 +660,6 @@ public final class GLCPBBIGCCKOuterClass {
           emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG, emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG.Builder, emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOGOrBuilder> hEKBEICEEBKBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG> getHEKBEICEEBKList() {
@@ -754,10 +670,6 @@ public final class GLCPBBIGCCKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public int getHEKBEICEEBKCount() {
@@ -768,10 +680,6 @@ public final class GLCPBBIGCCKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG getHEKBEICEEBK(int index) {
@@ -782,10 +690,6 @@ public final class GLCPBBIGCCKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public Builder setHEKBEICEEBK(
@@ -803,10 +707,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public Builder setHEKBEICEEBK(
@@ -821,10 +721,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public Builder addHEKBEICEEBK(emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG value) {
@@ -841,10 +737,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public Builder addHEKBEICEEBK(
@@ -862,10 +754,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public Builder addHEKBEICEEBK(
@@ -880,10 +768,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public Builder addHEKBEICEEBK(
@@ -898,10 +782,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public Builder addAllHEKBEICEEBK(
@@ -917,10 +797,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public Builder clearHEKBEICEEBK() {
@@ -934,10 +810,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public Builder removeHEKBEICEEBK(int index) {
@@ -951,10 +823,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG.Builder getHEKBEICEEBKBuilder(
@@ -962,10 +830,6 @@ public final class GLCPBBIGCCKOuterClass {
         return getHEKBEICEEBKFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOGOrBuilder getHEKBEICEEBKOrBuilder(
@@ -976,10 +840,6 @@ public final class GLCPBBIGCCKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOGOrBuilder> 
@@ -991,10 +851,6 @@ public final class GLCPBBIGCCKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG.Builder addHEKBEICEEBKBuilder() {
@@ -1002,10 +858,6 @@ public final class GLCPBBIGCCKOuterClass {
             emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG.Builder addHEKBEICEEBKBuilder(
@@ -1014,10 +866,6 @@ public final class GLCPBBIGCCKOuterClass {
             index, emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CIHDNIJOBOG HEKBEICEEBK = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CIHDNIJOBOGOuterClass.CIHDNIJOBOG.Builder> 
@@ -1052,10 +900,6 @@ public final class GLCPBBIGCCKOuterClass {
           emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE, emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE.Builder, emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIEOrBuilder> nGMHFHPAAMFBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE> getNGMHFHPAAMFList() {
@@ -1066,10 +910,6 @@ public final class GLCPBBIGCCKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public int getNGMHFHPAAMFCount() {
@@ -1080,10 +920,6 @@ public final class GLCPBBIGCCKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE getNGMHFHPAAMF(int index) {
@@ -1094,10 +930,6 @@ public final class GLCPBBIGCCKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public Builder setNGMHFHPAAMF(
@@ -1115,10 +947,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public Builder setNGMHFHPAAMF(
@@ -1133,10 +961,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public Builder addNGMHFHPAAMF(emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE value) {
@@ -1153,10 +977,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -1174,10 +994,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -1192,10 +1008,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -1210,10 +1022,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public Builder addAllNGMHFHPAAMF(
@@ -1229,10 +1037,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public Builder clearNGMHFHPAAMF() {
@@ -1246,10 +1050,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public Builder removeNGMHFHPAAMF(int index) {
@@ -1263,10 +1063,6 @@ public final class GLCPBBIGCCKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE.Builder getNGMHFHPAAMFBuilder(
@@ -1274,10 +1070,6 @@ public final class GLCPBBIGCCKOuterClass {
         return getNGMHFHPAAMFFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIEOrBuilder getNGMHFHPAAMFOrBuilder(
@@ -1288,10 +1080,6 @@ public final class GLCPBBIGCCKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIEOrBuilder> 
@@ -1303,10 +1091,6 @@ public final class GLCPBBIGCCKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE.Builder addNGMHFHPAAMFBuilder() {
@@ -1314,10 +1098,6 @@ public final class GLCPBBIGCCKOuterClass {
             emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE.Builder addNGMHFHPAAMFBuilder(
@@ -1326,10 +1106,6 @@ public final class GLCPBBIGCCKOuterClass {
             index, emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFNIHPAJGIE NGMHFHPAAMF = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OFNIHPAJGIEOuterClass.OFNIHPAJGIE.Builder> 

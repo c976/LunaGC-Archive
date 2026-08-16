@@ -20,18 +20,18 @@ public final class MonsterSummonTagNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
      */
     int getSummonTagMapCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
      */
     boolean containsSummonTagMap(
         int key);
@@ -43,19 +43,19 @@ public final class MonsterSummonTagNotifyOuterClass {
     getSummonTagMap();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getSummonTagMapMap();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
      */
 
     int getSummonTagMapOrDefault(
@@ -63,10 +63,10 @@ public final class MonsterSummonTagNotifyOuterClass {
         int defaultValue);
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
      */
 
     int getSummonTagMapOrThrow(
@@ -74,17 +74,17 @@ public final class MonsterSummonTagNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>uint32 monster_entity_id = 6;</code>
+     * <code>uint32 monster_entity_id = 1;</code>
      * @return The monsterEntityId.
      */
     int getMonsterEntityId();
   }
   /**
    * <pre>
-   * CmdId: 8850
+   * CmdId: 23390
    * </pre>
    *
    * Protobuf type {@code MonsterSummonTagNotify}
@@ -132,12 +132,12 @@ public final class MonsterSummonTagNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               monsterEntityId_ = input.readUInt32();
               break;
             }
-            case 74: {
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 summonTagMap_ = com.google.protobuf.MapField.newMapField(
                     SummonTagMapDefaultEntryHolder.defaultEntry);
@@ -179,7 +179,7 @@ public final class MonsterSummonTagNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 9:
+        case 12:
           return internalGetSummonTagMap();
         default:
           throw new RuntimeException(
@@ -194,7 +194,7 @@ public final class MonsterSummonTagNotifyOuterClass {
               emu.grasscutter.net.proto.MonsterSummonTagNotifyOuterClass.MonsterSummonTagNotify.class, emu.grasscutter.net.proto.MonsterSummonTagNotifyOuterClass.MonsterSummonTagNotify.Builder.class);
     }
 
-    public static final int SUMMON_TAG_MAP_FIELD_NUMBER = 9;
+    public static final int SUMMON_TAG_MAP_FIELD_NUMBER = 12;
     private static final class SummonTagMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -222,10 +222,10 @@ public final class MonsterSummonTagNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
      */
 
     @java.lang.Override
@@ -244,10 +244,10 @@ public final class MonsterSummonTagNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
      */
     @java.lang.Override
 
@@ -256,10 +256,10 @@ public final class MonsterSummonTagNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
      */
     @java.lang.Override
 
@@ -273,10 +273,10 @@ public final class MonsterSummonTagNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
      */
     @java.lang.Override
 
@@ -291,14 +291,14 @@ public final class MonsterSummonTagNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int MONSTER_ENTITY_ID_FIELD_NUMBER = 6;
+    public static final int MONSTER_ENTITY_ID_FIELD_NUMBER = 1;
     private int monsterEntityId_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>uint32 monster_entity_id = 6;</code>
+     * <code>uint32 monster_entity_id = 1;</code>
      * @return The monsterEntityId.
      */
     @java.lang.Override
@@ -321,14 +321,14 @@ public final class MonsterSummonTagNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (monsterEntityId_ != 0) {
-        output.writeUInt32(6, monsterEntityId_);
+        output.writeUInt32(1, monsterEntityId_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetSummonTagMap(),
           SummonTagMapDefaultEntryHolder.defaultEntry,
-          9);
+          12);
       unknownFields.writeTo(output);
     }
 
@@ -340,7 +340,7 @@ public final class MonsterSummonTagNotifyOuterClass {
       size = 0;
       if (monsterEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, monsterEntityId_);
+          .computeUInt32Size(1, monsterEntityId_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetSummonTagMap().getMap().entrySet()) {
@@ -350,7 +350,7 @@ public final class MonsterSummonTagNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(9, summonTagMap__);
+            .computeMessageSize(12, summonTagMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -485,7 +485,7 @@ public final class MonsterSummonTagNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8850
+     * CmdId: 23390
      * </pre>
      *
      * Protobuf type {@code MonsterSummonTagNotify}
@@ -503,7 +503,7 @@ public final class MonsterSummonTagNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 9:
+          case 12:
             return internalGetSummonTagMap();
           default:
             throw new RuntimeException(
@@ -514,7 +514,7 @@ public final class MonsterSummonTagNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 9:
+          case 12:
             return internalGetMutableSummonTagMap();
           default:
             throw new RuntimeException(
@@ -691,10 +691,10 @@ public final class MonsterSummonTagNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
        */
 
       @java.lang.Override
@@ -713,10 +713,10 @@ public final class MonsterSummonTagNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
        */
       @java.lang.Override
 
@@ -725,10 +725,10 @@ public final class MonsterSummonTagNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
        */
       @java.lang.Override
 
@@ -742,10 +742,10 @@ public final class MonsterSummonTagNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
        */
       @java.lang.Override
 
@@ -767,10 +767,10 @@ public final class MonsterSummonTagNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
        */
 
       public Builder removeSummonTagMap(
@@ -790,10 +790,10 @@ public final class MonsterSummonTagNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
        */
       public Builder putSummonTagMap(
           int key,
@@ -806,10 +806,10 @@ public final class MonsterSummonTagNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; summon_tag_map = 12;</code>
        */
 
       public Builder putAllSummonTagMap(
@@ -822,10 +822,10 @@ public final class MonsterSummonTagNotifyOuterClass {
       private int monsterEntityId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 monster_entity_id = 6;</code>
+       * <code>uint32 monster_entity_id = 1;</code>
        * @return The monsterEntityId.
        */
       @java.lang.Override
@@ -834,10 +834,10 @@ public final class MonsterSummonTagNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 monster_entity_id = 6;</code>
+       * <code>uint32 monster_entity_id = 1;</code>
        * @param value The monsterEntityId to set.
        * @return This builder for chaining.
        */
@@ -849,10 +849,10 @@ public final class MonsterSummonTagNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 monster_entity_id = 6;</code>
+       * <code>uint32 monster_entity_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearMonsterEntityId() {
@@ -934,9 +934,9 @@ public final class MonsterSummonTagNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034MonsterSummonTagNotify.proto\"\253\001\n\026Monst" +
-      "erSummonTagNotify\022A\n\016summon_tag_map\030\t \003(" +
+      "erSummonTagNotify\022A\n\016summon_tag_map\030\014 \003(" +
       "\0132).MonsterSummonTagNotify.SummonTagMapE" +
-      "ntry\022\031\n\021monster_entity_id\030\006 \001(\r\0323\n\021Summo" +
+      "ntry\022\031\n\021monster_entity_id\030\001 \001(\r\0323\n\021Summo" +
       "nTagMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r" +
       ":\0028\001B\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"

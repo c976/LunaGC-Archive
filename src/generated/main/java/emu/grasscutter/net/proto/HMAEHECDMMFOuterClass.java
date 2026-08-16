@@ -19,30 +19,18 @@ public final class HMAEHECDMMFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JNBMFABFHGP = 14;</code>
      * @return The jNBMFABFHGP.
      */
     boolean getJNBMFABFHGP();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 dungeon_id = 5;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 reward_id = 13;</code>
      * @return The rewardId.
      */
@@ -143,10 +131,6 @@ public final class HMAEHECDMMFOuterClass {
     public static final int JNBMFABFHGP_FIELD_NUMBER = 14;
     private boolean jNBMFABFHGP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JNBMFABFHGP = 14;</code>
      * @return The jNBMFABFHGP.
      */
@@ -158,10 +142,6 @@ public final class HMAEHECDMMFOuterClass {
     public static final int DUNGEON_ID_FIELD_NUMBER = 5;
     private int dungeonId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 dungeon_id = 5;</code>
      * @return The dungeonId.
      */
@@ -173,10 +153,6 @@ public final class HMAEHECDMMFOuterClass {
     public static final int REWARD_ID_FIELD_NUMBER = 13;
     private int rewardId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 reward_id = 13;</code>
      * @return The rewardId.
      */
@@ -524,10 +500,6 @@ public final class HMAEHECDMMFOuterClass {
 
       private boolean jNBMFABFHGP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JNBMFABFHGP = 14;</code>
        * @return The jNBMFABFHGP.
        */
@@ -536,10 +508,6 @@ public final class HMAEHECDMMFOuterClass {
         return jNBMFABFHGP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JNBMFABFHGP = 14;</code>
        * @param value The jNBMFABFHGP to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class HMAEHECDMMFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JNBMFABFHGP = 14;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class HMAEHECDMMFOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 5;</code>
        * @return The dungeonId.
        */
@@ -579,10 +539,6 @@ public final class HMAEHECDMMFOuterClass {
         return dungeonId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 5;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class HMAEHECDMMFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 5;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class HMAEHECDMMFOuterClass {
 
       private int rewardId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 reward_id = 13;</code>
        * @return The rewardId.
        */
@@ -622,10 +570,6 @@ public final class HMAEHECDMMFOuterClass {
         return rewardId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 reward_id = 13;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class HMAEHECDMMFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 reward_id = 13;</code>
        * @return This builder for chaining.
        */

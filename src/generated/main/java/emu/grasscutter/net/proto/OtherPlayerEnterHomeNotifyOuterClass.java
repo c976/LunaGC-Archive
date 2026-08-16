@@ -19,47 +19,32 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>string nickname = 14;</code>
+     * <code>string nickname = 13;</code>
      * @return The nickname.
      */
     java.lang.String getNickname();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>string nickname = 14;</code>
+     * <code>string nickname = 13;</code>
      * @return The bytes for nickname.
      */
     com.google.protobuf.ByteString
         getNicknameBytes();
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.OtherPlayerEnterHomeNotify.Reason reason = 12;</code>
+     * <code>.OtherPlayerEnterHomeNotify.Reason reason = 14;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.OtherPlayerEnterHomeNotify.Reason reason = 12;</code>
+     * <code>.OtherPlayerEnterHomeNotify.Reason reason = 14;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.OtherPlayerEnterHomeNotifyOuterClass.OtherPlayerEnterHomeNotify.Reason getReason();
   }
   /**
    * <pre>
-   * CmdId: 9611
+   * CmdId: 25817
+   * Obf: MGNDPKIPKGO
    * </pre>
    *
    * Protobuf type {@code OtherPlayerEnterHomeNotify}
@@ -108,16 +93,16 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
-              int rawValue = input.readEnum();
-
-              reason_ = rawValue;
-              break;
-            }
-            case 114: {
+            case 106: {
               java.lang.String s = input.readStringRequireUtf8();
 
               nickname_ = s;
+              break;
+            }
+            case 112: {
+              int rawValue = input.readEnum();
+
+              reason_ = rawValue;
               break;
             }
             default: {
@@ -153,6 +138,10 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
     }
 
     /**
+     * <pre>
+     * Obf: CMPPPMNICGG
+     * </pre>
+     *
      * Protobuf enum {@code OtherPlayerEnterHomeNotify.Reason}
      */
     public enum Reason
@@ -269,14 +258,10 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:OtherPlayerEnterHomeNotify.Reason)
     }
 
-    public static final int NICKNAME_FIELD_NUMBER = 14;
+    public static final int NICKNAME_FIELD_NUMBER = 13;
     private volatile java.lang.Object nickname_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>string nickname = 14;</code>
+     * <code>string nickname = 13;</code>
      * @return The nickname.
      */
     @java.lang.Override
@@ -293,11 +278,7 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
       }
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>string nickname = 14;</code>
+     * <code>string nickname = 13;</code>
      * @return The bytes for nickname.
      */
     @java.lang.Override
@@ -315,25 +296,17 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
       }
     }
 
-    public static final int REASON_FIELD_NUMBER = 12;
+    public static final int REASON_FIELD_NUMBER = 14;
     private int reason_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.OtherPlayerEnterHomeNotify.Reason reason = 12;</code>
+     * <code>.OtherPlayerEnterHomeNotify.Reason reason = 14;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.OtherPlayerEnterHomeNotify.Reason reason = 12;</code>
+     * <code>.OtherPlayerEnterHomeNotify.Reason reason = 14;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.OtherPlayerEnterHomeNotifyOuterClass.OtherPlayerEnterHomeNotify.Reason getReason() {
@@ -356,11 +329,11 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reason_ != emu.grasscutter.net.proto.OtherPlayerEnterHomeNotifyOuterClass.OtherPlayerEnterHomeNotify.Reason.INVALID.getNumber()) {
-        output.writeEnum(12, reason_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, nickname_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, nickname_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.OtherPlayerEnterHomeNotifyOuterClass.OtherPlayerEnterHomeNotify.Reason.INVALID.getNumber()) {
+        output.writeEnum(14, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -371,12 +344,12 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, nickname_);
+      }
       if (reason_ != emu.grasscutter.net.proto.OtherPlayerEnterHomeNotifyOuterClass.OtherPlayerEnterHomeNotify.Reason.INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, reason_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, nickname_);
+          .computeEnumSize(14, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -508,7 +481,8 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9611
+     * CmdId: 25817
+     * Obf: MGNDPKIPKGO
      * </pre>
      *
      * Protobuf type {@code OtherPlayerEnterHomeNotify}
@@ -666,11 +640,7 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
 
       private java.lang.Object nickname_ = "";
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string nickname = 14;</code>
+       * <code>string nickname = 13;</code>
        * @return The nickname.
        */
       public java.lang.String getNickname() {
@@ -686,11 +656,7 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string nickname = 14;</code>
+       * <code>string nickname = 13;</code>
        * @return The bytes for nickname.
        */
       public com.google.protobuf.ByteString
@@ -707,11 +673,7 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string nickname = 14;</code>
+       * <code>string nickname = 13;</code>
        * @param value The nickname to set.
        * @return This builder for chaining.
        */
@@ -726,11 +688,7 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string nickname = 14;</code>
+       * <code>string nickname = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearNickname() {
@@ -740,11 +698,7 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string nickname = 14;</code>
+       * <code>string nickname = 13;</code>
        * @param value The bytes for nickname to set.
        * @return This builder for chaining.
        */
@@ -762,22 +716,14 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
 
       private int reason_ = 0;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.OtherPlayerEnterHomeNotify.Reason reason = 12;</code>
+       * <code>.OtherPlayerEnterHomeNotify.Reason reason = 14;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.OtherPlayerEnterHomeNotify.Reason reason = 12;</code>
+       * <code>.OtherPlayerEnterHomeNotify.Reason reason = 14;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -788,11 +734,7 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.OtherPlayerEnterHomeNotify.Reason reason = 12;</code>
+       * <code>.OtherPlayerEnterHomeNotify.Reason reason = 14;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -802,11 +744,7 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.OtherPlayerEnterHomeNotifyOuterClass.OtherPlayerEnterHomeNotify.Reason.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.OtherPlayerEnterHomeNotify.Reason reason = 12;</code>
+       * <code>.OtherPlayerEnterHomeNotify.Reason reason = 14;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -820,11 +758,7 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.OtherPlayerEnterHomeNotify.Reason reason = 12;</code>
+       * <code>.OtherPlayerEnterHomeNotify.Reason reason = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -900,17 +834,16 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n OtherPlayerEnterHomeNotify.proto\032\014Reas" +
-      "on.proto\"\217\001\n\032OtherPlayerEnterHomeNotify\022" +
-      "\020\n\010nickname\030\016 \001(\t\0222\n\006reason\030\014 \001(\0162\".Othe" +
-      "rPlayerEnterHomeNotify.Reason\"+\n\006Reason\022" +
-      "\013\n\007INVALID\020\000\022\t\n\005ENTER\020\001\022\t\n\005LEAVE\020\002B\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "\n OtherPlayerEnterHomeNotify.proto\"\217\001\n\032O" +
+      "therPlayerEnterHomeNotify\022\020\n\010nickname\030\r " +
+      "\001(\t\0222\n\006reason\030\016 \001(\0162\".OtherPlayerEnterHo" +
+      "meNotify.Reason\"+\n\006Reason\022\013\n\007INVALID\020\000\022\t" +
+      "\n\005ENTER\020\001\022\t\n\005LEAVE\020\002B\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.ReasonOuterClass.getDescriptor(),
         });
     internal_static_OtherPlayerEnterHomeNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -918,7 +851,6 @@ public final class OtherPlayerEnterHomeNotifyOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_OtherPlayerEnterHomeNotify_descriptor,
         new java.lang.String[] { "Nickname", "Reason", });
-    emu.grasscutter.net.proto.ReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,7 +20,7 @@ public final class GetActivityScheduleRspOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
      * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -29,7 +29,7 @@ public final class GetActivityScheduleRspOuterClass {
         getActivityScheduleListList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
      * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -37,7 +37,7 @@ public final class GetActivityScheduleRspOuterClass {
     emu.grasscutter.net.proto.ActivityScheduleInfoOuterClass.ActivityScheduleInfo getActivityScheduleList(int index);
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
      * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -45,7 +45,7 @@ public final class GetActivityScheduleRspOuterClass {
     int getActivityScheduleListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
      * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -54,7 +54,7 @@ public final class GetActivityScheduleRspOuterClass {
         getActivityScheduleListOrBuilderList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
      * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -64,27 +64,27 @@ public final class GetActivityScheduleRspOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
-     * <code>uint32 remain_fly_sea_lamp_num = 4;</code>
-     * @return The remainFlySeaLampNum.
-     */
-    int getRemainFlySeaLampNum();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 44
-     * </pre>
-     *
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0   
+     * </pre>
+     *
+     * <code>uint32 remain_fly_sea_lamp_num = 11;</code>
+     * @return The remainFlySeaLampNum.
+     */
+    int getRemainFlySeaLampNum();
   }
   /**
    * <pre>
-   * CmdId: 3704
+   * CmdId: 28706
    * </pre>
    *
    * Protobuf type {@code GetActivityScheduleRsp}
@@ -133,9 +133,9 @@ public final class GetActivityScheduleRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 40: {
 
-              remainFlySeaLampNum_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
             case 58: {
@@ -147,9 +147,9 @@ public final class GetActivityScheduleRspOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ActivityScheduleInfoOuterClass.ActivityScheduleInfo.parser(), extensionRegistry));
               break;
             }
-            case 80: {
+            case 88: {
 
-              retcode_ = input.readInt32();
+              remainFlySeaLampNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -191,7 +191,7 @@ public final class GetActivityScheduleRspOuterClass {
     private java.util.List<emu.grasscutter.net.proto.ActivityScheduleInfoOuterClass.ActivityScheduleInfo> activityScheduleList_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
      * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -202,7 +202,7 @@ public final class GetActivityScheduleRspOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
      * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -214,7 +214,7 @@ public final class GetActivityScheduleRspOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
      * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -225,7 +225,7 @@ public final class GetActivityScheduleRspOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
      * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -236,7 +236,7 @@ public final class GetActivityScheduleRspOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
      * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -247,34 +247,34 @@ public final class GetActivityScheduleRspOuterClass {
       return activityScheduleList_.get(index);
     }
 
-    public static final int REMAIN_FLY_SEA_LAMP_NUM_FIELD_NUMBER = 4;
-    private int remainFlySeaLampNum_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>uint32 remain_fly_sea_lamp_num = 4;</code>
-     * @return The remainFlySeaLampNum.
-     */
-    @java.lang.Override
-    public int getRemainFlySeaLampNum() {
-      return remainFlySeaLampNum_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 10;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
      * <pre>
-     *6.3.0 // offset: 44
+     *6.5.5 //6.4.0 //6.5.0   
      * </pre>
      *
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int REMAIN_FLY_SEA_LAMP_NUM_FIELD_NUMBER = 11;
+    private int remainFlySeaLampNum_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0   
+     * </pre>
+     *
+     * <code>uint32 remain_fly_sea_lamp_num = 11;</code>
+     * @return The remainFlySeaLampNum.
+     */
+    @java.lang.Override
+    public int getRemainFlySeaLampNum() {
+      return remainFlySeaLampNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -291,14 +291,14 @@ public final class GetActivityScheduleRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (remainFlySeaLampNum_ != 0) {
-        output.writeUInt32(4, remainFlySeaLampNum_);
+      if (retcode_ != 0) {
+        output.writeInt32(5, retcode_);
       }
       for (int i = 0; i < activityScheduleList_.size(); i++) {
         output.writeMessage(7, activityScheduleList_.get(i));
       }
-      if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+      if (remainFlySeaLampNum_ != 0) {
+        output.writeUInt32(11, remainFlySeaLampNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -309,17 +309,17 @@ public final class GetActivityScheduleRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (remainFlySeaLampNum_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, remainFlySeaLampNum_);
+          .computeInt32Size(5, retcode_);
       }
       for (int i = 0; i < activityScheduleList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, activityScheduleList_.get(i));
       }
-      if (retcode_ != 0) {
+      if (remainFlySeaLampNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeUInt32Size(11, remainFlySeaLampNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,10 +338,10 @@ public final class GetActivityScheduleRspOuterClass {
 
       if (!getActivityScheduleListList()
           .equals(other.getActivityScheduleListList())) return false;
-      if (getRemainFlySeaLampNum()
-          != other.getRemainFlySeaLampNum()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getRemainFlySeaLampNum()
+          != other.getRemainFlySeaLampNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -357,10 +357,10 @@ public final class GetActivityScheduleRspOuterClass {
         hash = (37 * hash) + ACTIVITY_SCHEDULE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getActivityScheduleListList().hashCode();
       }
-      hash = (37 * hash) + REMAIN_FLY_SEA_LAMP_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getRemainFlySeaLampNum();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + REMAIN_FLY_SEA_LAMP_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getRemainFlySeaLampNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -458,7 +458,7 @@ public final class GetActivityScheduleRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3704
+     * CmdId: 28706
      * </pre>
      *
      * Protobuf type {@code GetActivityScheduleRsp}
@@ -505,9 +505,9 @@ public final class GetActivityScheduleRspOuterClass {
         } else {
           activityScheduleListBuilder_.clear();
         }
-        remainFlySeaLampNum_ = 0;
-
         retcode_ = 0;
+
+        remainFlySeaLampNum_ = 0;
 
         return this;
       }
@@ -545,8 +545,8 @@ public final class GetActivityScheduleRspOuterClass {
         } else {
           result.activityScheduleList_ = activityScheduleListBuilder_.build();
         }
-        result.remainFlySeaLampNum_ = remainFlySeaLampNum_;
         result.retcode_ = retcode_;
+        result.remainFlySeaLampNum_ = remainFlySeaLampNum_;
         onBuilt();
         return result;
       }
@@ -621,11 +621,11 @@ public final class GetActivityScheduleRspOuterClass {
             }
           }
         }
-        if (other.getRemainFlySeaLampNum() != 0) {
-          setRemainFlySeaLampNum(other.getRemainFlySeaLampNum());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getRemainFlySeaLampNum() != 0) {
+          setRemainFlySeaLampNum(other.getRemainFlySeaLampNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -671,7 +671,7 @@ public final class GetActivityScheduleRspOuterClass {
 
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -685,7 +685,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -699,7 +699,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -713,7 +713,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -734,7 +734,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -752,7 +752,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -772,7 +772,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -793,7 +793,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -811,7 +811,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -829,7 +829,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -848,7 +848,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -865,7 +865,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -882,7 +882,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -893,7 +893,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -907,7 +907,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -922,7 +922,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -933,7 +933,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -945,7 +945,7 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
        * <code>repeated .ActivityScheduleInfo activity_schedule_list = 7;</code>
@@ -969,56 +969,13 @@ public final class GetActivityScheduleRspOuterClass {
         return activityScheduleListBuilder_;
       }
 
-      private int remainFlySeaLampNum_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 remain_fly_sea_lamp_num = 4;</code>
-       * @return The remainFlySeaLampNum.
-       */
-      @java.lang.Override
-      public int getRemainFlySeaLampNum() {
-        return remainFlySeaLampNum_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 remain_fly_sea_lamp_num = 4;</code>
-       * @param value The remainFlySeaLampNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRemainFlySeaLampNum(int value) {
-        
-        remainFlySeaLampNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 remain_fly_sea_lamp_num = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRemainFlySeaLampNum() {
-        
-        remainFlySeaLampNum_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -1027,10 +984,10 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -1042,15 +999,58 @@ public final class GetActivityScheduleRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0   
        * </pre>
        *
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int remainFlySeaLampNum_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0   
+       * </pre>
+       *
+       * <code>uint32 remain_fly_sea_lamp_num = 11;</code>
+       * @return The remainFlySeaLampNum.
+       */
+      @java.lang.Override
+      public int getRemainFlySeaLampNum() {
+        return remainFlySeaLampNum_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0   
+       * </pre>
+       *
+       * <code>uint32 remain_fly_sea_lamp_num = 11;</code>
+       * @param value The remainFlySeaLampNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRemainFlySeaLampNum(int value) {
+        
+        remainFlySeaLampNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0   
+       * </pre>
+       *
+       * <code>uint32 remain_fly_sea_lamp_num = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRemainFlySeaLampNum() {
+        
+        remainFlySeaLampNum_ = 0;
         onChanged();
         return this;
       }
@@ -1124,8 +1124,8 @@ public final class GetActivityScheduleRspOuterClass {
       "\n\034GetActivityScheduleRsp.proto\032\032Activity" +
       "ScheduleInfo.proto\"\201\001\n\026GetActivitySchedu" +
       "leRsp\0225\n\026activity_schedule_list\030\007 \003(\0132\025." +
-      "ActivityScheduleInfo\022\037\n\027remain_fly_sea_l" +
-      "amp_num\030\004 \001(\r\022\017\n\007retcode\030\n \001(\005B\033\n\031emu.gr" +
+      "ActivityScheduleInfo\022\017\n\007retcode\030\005 \001(\005\022\037\n" +
+      "\027remain_fly_sea_lamp_num\030\013 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1138,7 +1138,7 @@ public final class GetActivityScheduleRspOuterClass {
     internal_static_GetActivityScheduleRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetActivityScheduleRsp_descriptor,
-        new java.lang.String[] { "ActivityScheduleList", "RemainFlySeaLampNum", "Retcode", });
+        new java.lang.String[] { "ActivityScheduleList", "Retcode", "RemainFlySeaLampNum", });
     emu.grasscutter.net.proto.ActivityScheduleInfoOuterClass.getDescriptor();
   }
 

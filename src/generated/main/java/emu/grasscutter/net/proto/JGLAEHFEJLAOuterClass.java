@@ -19,28 +19,16 @@ public final class JGLAEHFEJLAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
      * @return A list containing the nEAEKJPMOKE.
      */
     java.util.List<java.lang.Integer> getNEAEKJPMOKEList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
      * @return The count of nEAEKJPMOKE.
      */
     int getNEAEKJPMOKECount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
      * @param index The index of the element to return.
      * @return The nEAEKJPMOKE at the given index.
@@ -48,72 +36,40 @@ public final class JGLAEHFEJLAOuterClass {
     int getNEAEKJPMOKE(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP> 
         getGGOKKDEKPJMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
      */
     emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP getGGOKKDEKPJM(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
      */
     int getGGOKKDEKPJMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNPOrBuilder> 
         getGGOKKDEKPJMOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
      */
     emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNPOrBuilder getGGOKKDEKPJMOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
      * @return A list containing the pDBGOGBKBJH.
      */
     java.util.List<java.lang.Integer> getPDBGOGBKBJHList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
      * @return The count of pDBGOGBKBJH.
      */
     int getPDBGOGBKBJHCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
      * @param index The index of the element to return.
      * @return The pDBGOGBKBJH at the given index.
@@ -121,28 +77,16 @@ public final class JGLAEHFEJLAOuterClass {
     int getPDBGOGBKBJH(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
      * @return A list containing the cEMLHOLDCKN.
      */
     java.util.List<java.lang.Integer> getCEMLHOLDCKNList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
      * @return The count of cEMLHOLDCKN.
      */
     int getCEMLHOLDCKNCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
      * @param index The index of the element to return.
      * @return The cEMLHOLDCKN at the given index.
@@ -150,72 +94,40 @@ public final class JGLAEHFEJLAOuterClass {
     int getCEMLHOLDCKN(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK> 
         getCGIHEALAKKEList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
      */
     emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK getCGIHEALAKKE(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
      */
     int getCGIHEALAKKECount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOKOrBuilder> 
         getCGIHEALAKKEOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
      */
     emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOKOrBuilder getCGIHEALAKKEOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
      * @return A list containing the hLKBIAMDKLD.
      */
     java.util.List<java.lang.Integer> getHLKBIAMDKLDList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
      * @return The count of hLKBIAMDKLD.
      */
     int getHLKBIAMDKLDCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
      * @param index The index of the element to return.
      * @return The hLKBIAMDKLD at the given index.
@@ -223,50 +135,30 @@ public final class JGLAEHFEJLAOuterClass {
     int getHLKBIAMDKLD(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool PNHPEBEMCAK = 8;</code>
      * @return The pNHPEBEMCAK.
      */
     boolean getPNHPEBEMCAK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool ENEOPALMIKE = 11;</code>
      * @return The eNEOPALMIKE.
      */
     boolean getENEOPALMIKE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool APCHBJGCKPM = 15;</code>
      * @return The aPCHBJGCKPM.
      */
     boolean getAPCHBJGCKPM();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BELLGDJJGCG = 9;</code>
      * @return The bELLGDJJGCG.
      */
     int getBELLGDJJGCG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EKABFBBDCCA = 10;</code>
      * @return The eKABFBBDCCA.
      */
@@ -504,10 +396,6 @@ public final class JGLAEHFEJLAOuterClass {
     public static final int NEAEKJPMOKE_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList nEAEKJPMOKE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
      * @return A list containing the nEAEKJPMOKE.
      */
@@ -517,10 +405,6 @@ public final class JGLAEHFEJLAOuterClass {
       return nEAEKJPMOKE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
      * @return The count of nEAEKJPMOKE.
      */
@@ -528,10 +412,6 @@ public final class JGLAEHFEJLAOuterClass {
       return nEAEKJPMOKE_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
      * @param index The index of the element to return.
      * @return The nEAEKJPMOKE at the given index.
@@ -544,10 +424,6 @@ public final class JGLAEHFEJLAOuterClass {
     public static final int GGOKKDEKPJM_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP> gGOKKDEKPJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
      */
     @java.lang.Override
@@ -555,10 +431,6 @@ public final class JGLAEHFEJLAOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
      */
     @java.lang.Override
@@ -567,10 +439,6 @@ public final class JGLAEHFEJLAOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
      */
     @java.lang.Override
@@ -578,10 +446,6 @@ public final class JGLAEHFEJLAOuterClass {
       return gGOKKDEKPJM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
      */
     @java.lang.Override
@@ -589,10 +453,6 @@ public final class JGLAEHFEJLAOuterClass {
       return gGOKKDEKPJM_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
      */
     @java.lang.Override
@@ -604,10 +464,6 @@ public final class JGLAEHFEJLAOuterClass {
     public static final int PDBGOGBKBJH_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList pDBGOGBKBJH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
      * @return A list containing the pDBGOGBKBJH.
      */
@@ -617,10 +473,6 @@ public final class JGLAEHFEJLAOuterClass {
       return pDBGOGBKBJH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
      * @return The count of pDBGOGBKBJH.
      */
@@ -628,10 +480,6 @@ public final class JGLAEHFEJLAOuterClass {
       return pDBGOGBKBJH_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
      * @param index The index of the element to return.
      * @return The pDBGOGBKBJH at the given index.
@@ -644,10 +492,6 @@ public final class JGLAEHFEJLAOuterClass {
     public static final int CEMLHOLDCKN_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList cEMLHOLDCKN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
      * @return A list containing the cEMLHOLDCKN.
      */
@@ -657,10 +501,6 @@ public final class JGLAEHFEJLAOuterClass {
       return cEMLHOLDCKN_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
      * @return The count of cEMLHOLDCKN.
      */
@@ -668,10 +508,6 @@ public final class JGLAEHFEJLAOuterClass {
       return cEMLHOLDCKN_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
      * @param index The index of the element to return.
      * @return The cEMLHOLDCKN at the given index.
@@ -684,10 +520,6 @@ public final class JGLAEHFEJLAOuterClass {
     public static final int CGIHEALAKKE_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK> cGIHEALAKKE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
      */
     @java.lang.Override
@@ -695,10 +527,6 @@ public final class JGLAEHFEJLAOuterClass {
       return cGIHEALAKKE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
      */
     @java.lang.Override
@@ -707,10 +535,6 @@ public final class JGLAEHFEJLAOuterClass {
       return cGIHEALAKKE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
      */
     @java.lang.Override
@@ -718,10 +542,6 @@ public final class JGLAEHFEJLAOuterClass {
       return cGIHEALAKKE_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
      */
     @java.lang.Override
@@ -729,10 +549,6 @@ public final class JGLAEHFEJLAOuterClass {
       return cGIHEALAKKE_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
      */
     @java.lang.Override
@@ -744,10 +560,6 @@ public final class JGLAEHFEJLAOuterClass {
     public static final int HLKBIAMDKLD_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList hLKBIAMDKLD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
      * @return A list containing the hLKBIAMDKLD.
      */
@@ -757,10 +569,6 @@ public final class JGLAEHFEJLAOuterClass {
       return hLKBIAMDKLD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
      * @return The count of hLKBIAMDKLD.
      */
@@ -768,10 +576,6 @@ public final class JGLAEHFEJLAOuterClass {
       return hLKBIAMDKLD_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
      * @param index The index of the element to return.
      * @return The hLKBIAMDKLD at the given index.
@@ -784,10 +588,6 @@ public final class JGLAEHFEJLAOuterClass {
     public static final int PNHPEBEMCAK_FIELD_NUMBER = 8;
     private boolean pNHPEBEMCAK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool PNHPEBEMCAK = 8;</code>
      * @return The pNHPEBEMCAK.
      */
@@ -799,10 +599,6 @@ public final class JGLAEHFEJLAOuterClass {
     public static final int ENEOPALMIKE_FIELD_NUMBER = 11;
     private boolean eNEOPALMIKE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool ENEOPALMIKE = 11;</code>
      * @return The eNEOPALMIKE.
      */
@@ -814,10 +610,6 @@ public final class JGLAEHFEJLAOuterClass {
     public static final int APCHBJGCKPM_FIELD_NUMBER = 15;
     private boolean aPCHBJGCKPM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool APCHBJGCKPM = 15;</code>
      * @return The aPCHBJGCKPM.
      */
@@ -829,10 +621,6 @@ public final class JGLAEHFEJLAOuterClass {
     public static final int BELLGDJJGCG_FIELD_NUMBER = 9;
     private int bELLGDJJGCG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BELLGDJJGCG = 9;</code>
      * @return The bELLGDJJGCG.
      */
@@ -844,10 +632,6 @@ public final class JGLAEHFEJLAOuterClass {
     public static final int EKABFBBDCCA_FIELD_NUMBER = 10;
     private int eKABFBBDCCA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EKABFBBDCCA = 10;</code>
      * @return The eKABFBBDCCA.
      */
@@ -1526,10 +1310,6 @@ public final class JGLAEHFEJLAOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
        * @return A list containing the nEAEKJPMOKE.
        */
@@ -1539,10 +1319,6 @@ public final class JGLAEHFEJLAOuterClass {
                  java.util.Collections.unmodifiableList(nEAEKJPMOKE_) : nEAEKJPMOKE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
        * @return The count of nEAEKJPMOKE.
        */
@@ -1550,10 +1326,6 @@ public final class JGLAEHFEJLAOuterClass {
         return nEAEKJPMOKE_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
        * @param index The index of the element to return.
        * @return The nEAEKJPMOKE at the given index.
@@ -1562,10 +1334,6 @@ public final class JGLAEHFEJLAOuterClass {
         return nEAEKJPMOKE_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
        * @param index The index to set the value at.
        * @param value The nEAEKJPMOKE to set.
@@ -1579,10 +1347,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
        * @param value The nEAEKJPMOKE to add.
        * @return This builder for chaining.
@@ -1594,10 +1358,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
        * @param values The nEAEKJPMOKE to add.
        * @return This builder for chaining.
@@ -1611,10 +1371,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NEAEKJPMOKE = 7;</code>
        * @return This builder for chaining.
        */
@@ -1638,10 +1394,6 @@ public final class JGLAEHFEJLAOuterClass {
           emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP, emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP.Builder, emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNPOrBuilder> gGOKKDEKPJMBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP> getGGOKKDEKPJMList() {
@@ -1652,10 +1404,6 @@ public final class JGLAEHFEJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public int getGGOKKDEKPJMCount() {
@@ -1666,10 +1414,6 @@ public final class JGLAEHFEJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP getGGOKKDEKPJM(int index) {
@@ -1680,10 +1424,6 @@ public final class JGLAEHFEJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -1701,10 +1441,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -1719,10 +1455,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public Builder addGGOKKDEKPJM(emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP value) {
@@ -1739,10 +1471,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -1760,10 +1488,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -1778,10 +1502,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -1796,10 +1516,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public Builder addAllGGOKKDEKPJM(
@@ -1815,10 +1531,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public Builder clearGGOKKDEKPJM() {
@@ -1832,10 +1544,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public Builder removeGGOKKDEKPJM(int index) {
@@ -1849,10 +1557,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP.Builder getGGOKKDEKPJMBuilder(
@@ -1860,10 +1564,6 @@ public final class JGLAEHFEJLAOuterClass {
         return getGGOKKDEKPJMFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNPOrBuilder getGGOKKDEKPJMOrBuilder(
@@ -1874,10 +1574,6 @@ public final class JGLAEHFEJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNPOrBuilder> 
@@ -1889,10 +1585,6 @@ public final class JGLAEHFEJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP.Builder addGGOKKDEKPJMBuilder() {
@@ -1900,10 +1592,6 @@ public final class JGLAEHFEJLAOuterClass {
             emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP.Builder addGGOKKDEKPJMBuilder(
@@ -1912,10 +1600,6 @@ public final class JGLAEHFEJLAOuterClass {
             index, emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EABCJHIGCNP GGOKKDEKPJM = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EABCJHIGCNPOuterClass.EABCJHIGCNP.Builder> 
@@ -1945,10 +1629,6 @@ public final class JGLAEHFEJLAOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
        * @return A list containing the pDBGOGBKBJH.
        */
@@ -1958,10 +1638,6 @@ public final class JGLAEHFEJLAOuterClass {
                  java.util.Collections.unmodifiableList(pDBGOGBKBJH_) : pDBGOGBKBJH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
        * @return The count of pDBGOGBKBJH.
        */
@@ -1969,10 +1645,6 @@ public final class JGLAEHFEJLAOuterClass {
         return pDBGOGBKBJH_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
        * @param index The index of the element to return.
        * @return The pDBGOGBKBJH at the given index.
@@ -1981,10 +1653,6 @@ public final class JGLAEHFEJLAOuterClass {
         return pDBGOGBKBJH_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
        * @param index The index to set the value at.
        * @param value The pDBGOGBKBJH to set.
@@ -1998,10 +1666,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
        * @param value The pDBGOGBKBJH to add.
        * @return This builder for chaining.
@@ -2013,10 +1677,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
        * @param values The pDBGOGBKBJH to add.
        * @return This builder for chaining.
@@ -2030,10 +1690,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PDBGOGBKBJH = 13;</code>
        * @return This builder for chaining.
        */
@@ -2052,10 +1708,6 @@ public final class JGLAEHFEJLAOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
        * @return A list containing the cEMLHOLDCKN.
        */
@@ -2065,10 +1717,6 @@ public final class JGLAEHFEJLAOuterClass {
                  java.util.Collections.unmodifiableList(cEMLHOLDCKN_) : cEMLHOLDCKN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
        * @return The count of cEMLHOLDCKN.
        */
@@ -2076,10 +1724,6 @@ public final class JGLAEHFEJLAOuterClass {
         return cEMLHOLDCKN_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
        * @param index The index of the element to return.
        * @return The cEMLHOLDCKN at the given index.
@@ -2088,10 +1732,6 @@ public final class JGLAEHFEJLAOuterClass {
         return cEMLHOLDCKN_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
        * @param index The index to set the value at.
        * @param value The cEMLHOLDCKN to set.
@@ -2105,10 +1745,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
        * @param value The cEMLHOLDCKN to add.
        * @return This builder for chaining.
@@ -2120,10 +1756,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
        * @param values The cEMLHOLDCKN to add.
        * @return This builder for chaining.
@@ -2137,10 +1769,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEMLHOLDCKN = 14;</code>
        * @return This builder for chaining.
        */
@@ -2164,10 +1792,6 @@ public final class JGLAEHFEJLAOuterClass {
           emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK, emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK.Builder, emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOKOrBuilder> cGIHEALAKKEBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK> getCGIHEALAKKEList() {
@@ -2178,10 +1802,6 @@ public final class JGLAEHFEJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public int getCGIHEALAKKECount() {
@@ -2192,10 +1812,6 @@ public final class JGLAEHFEJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK getCGIHEALAKKE(int index) {
@@ -2206,10 +1822,6 @@ public final class JGLAEHFEJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public Builder setCGIHEALAKKE(
@@ -2227,10 +1839,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public Builder setCGIHEALAKKE(
@@ -2245,10 +1853,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public Builder addCGIHEALAKKE(emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK value) {
@@ -2265,10 +1869,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public Builder addCGIHEALAKKE(
@@ -2286,10 +1886,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public Builder addCGIHEALAKKE(
@@ -2304,10 +1900,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public Builder addCGIHEALAKKE(
@@ -2322,10 +1914,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public Builder addAllCGIHEALAKKE(
@@ -2341,10 +1929,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public Builder clearCGIHEALAKKE() {
@@ -2358,10 +1942,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public Builder removeCGIHEALAKKE(int index) {
@@ -2375,10 +1955,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK.Builder getCGIHEALAKKEBuilder(
@@ -2386,10 +1962,6 @@ public final class JGLAEHFEJLAOuterClass {
         return getCGIHEALAKKEFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOKOrBuilder getCGIHEALAKKEOrBuilder(
@@ -2400,10 +1972,6 @@ public final class JGLAEHFEJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOKOrBuilder> 
@@ -2415,10 +1983,6 @@ public final class JGLAEHFEJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK.Builder addCGIHEALAKKEBuilder() {
@@ -2426,10 +1990,6 @@ public final class JGLAEHFEJLAOuterClass {
             emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK.Builder addCGIHEALAKKEBuilder(
@@ -2438,10 +1998,6 @@ public final class JGLAEHFEJLAOuterClass {
             index, emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .IOGDMNIJIOK CGIHEALAKKE = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.IOGDMNIJIOKOuterClass.IOGDMNIJIOK.Builder> 
@@ -2471,10 +2027,6 @@ public final class JGLAEHFEJLAOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
        * @return A list containing the hLKBIAMDKLD.
        */
@@ -2484,10 +2036,6 @@ public final class JGLAEHFEJLAOuterClass {
                  java.util.Collections.unmodifiableList(hLKBIAMDKLD_) : hLKBIAMDKLD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
        * @return The count of hLKBIAMDKLD.
        */
@@ -2495,10 +2043,6 @@ public final class JGLAEHFEJLAOuterClass {
         return hLKBIAMDKLD_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
        * @param index The index of the element to return.
        * @return The hLKBIAMDKLD at the given index.
@@ -2507,10 +2051,6 @@ public final class JGLAEHFEJLAOuterClass {
         return hLKBIAMDKLD_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
        * @param index The index to set the value at.
        * @param value The hLKBIAMDKLD to set.
@@ -2524,10 +2064,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
        * @param value The hLKBIAMDKLD to add.
        * @return This builder for chaining.
@@ -2539,10 +2075,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
        * @param values The hLKBIAMDKLD to add.
        * @return This builder for chaining.
@@ -2556,10 +2088,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLKBIAMDKLD = 3;</code>
        * @return This builder for chaining.
        */
@@ -2572,10 +2100,6 @@ public final class JGLAEHFEJLAOuterClass {
 
       private boolean pNHPEBEMCAK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool PNHPEBEMCAK = 8;</code>
        * @return The pNHPEBEMCAK.
        */
@@ -2584,10 +2108,6 @@ public final class JGLAEHFEJLAOuterClass {
         return pNHPEBEMCAK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool PNHPEBEMCAK = 8;</code>
        * @param value The pNHPEBEMCAK to set.
        * @return This builder for chaining.
@@ -2599,10 +2119,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool PNHPEBEMCAK = 8;</code>
        * @return This builder for chaining.
        */
@@ -2615,10 +2131,6 @@ public final class JGLAEHFEJLAOuterClass {
 
       private boolean eNEOPALMIKE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ENEOPALMIKE = 11;</code>
        * @return The eNEOPALMIKE.
        */
@@ -2627,10 +2139,6 @@ public final class JGLAEHFEJLAOuterClass {
         return eNEOPALMIKE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ENEOPALMIKE = 11;</code>
        * @param value The eNEOPALMIKE to set.
        * @return This builder for chaining.
@@ -2642,10 +2150,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ENEOPALMIKE = 11;</code>
        * @return This builder for chaining.
        */
@@ -2658,10 +2162,6 @@ public final class JGLAEHFEJLAOuterClass {
 
       private boolean aPCHBJGCKPM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool APCHBJGCKPM = 15;</code>
        * @return The aPCHBJGCKPM.
        */
@@ -2670,10 +2170,6 @@ public final class JGLAEHFEJLAOuterClass {
         return aPCHBJGCKPM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool APCHBJGCKPM = 15;</code>
        * @param value The aPCHBJGCKPM to set.
        * @return This builder for chaining.
@@ -2685,10 +2181,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool APCHBJGCKPM = 15;</code>
        * @return This builder for chaining.
        */
@@ -2701,10 +2193,6 @@ public final class JGLAEHFEJLAOuterClass {
 
       private int bELLGDJJGCG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BELLGDJJGCG = 9;</code>
        * @return The bELLGDJJGCG.
        */
@@ -2713,10 +2201,6 @@ public final class JGLAEHFEJLAOuterClass {
         return bELLGDJJGCG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BELLGDJJGCG = 9;</code>
        * @param value The bELLGDJJGCG to set.
        * @return This builder for chaining.
@@ -2728,10 +2212,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BELLGDJJGCG = 9;</code>
        * @return This builder for chaining.
        */
@@ -2744,10 +2224,6 @@ public final class JGLAEHFEJLAOuterClass {
 
       private int eKABFBBDCCA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EKABFBBDCCA = 10;</code>
        * @return The eKABFBBDCCA.
        */
@@ -2756,10 +2232,6 @@ public final class JGLAEHFEJLAOuterClass {
         return eKABFBBDCCA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EKABFBBDCCA = 10;</code>
        * @param value The eKABFBBDCCA to set.
        * @return This builder for chaining.
@@ -2771,10 +2243,6 @@ public final class JGLAEHFEJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EKABFBBDCCA = 10;</code>
        * @return This builder for chaining.
        */

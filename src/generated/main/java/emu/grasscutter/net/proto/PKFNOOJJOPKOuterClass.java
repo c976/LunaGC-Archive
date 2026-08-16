@@ -19,50 +19,30 @@ public final class PKFNOOJJOPKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool BDKPFEJCMGC = 4;</code>
      * @return The bDKPFEJCMGC.
      */
     boolean getBDKPFEJCMGC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 13;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool LHPDAMGALJL = 15;</code>
      * @return The lHPDAMGALJL.
      */
     boolean getLHPDAMGALJL();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 camp_id = 3;</code>
      * @return The campId.
      */
     int getCampId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
@@ -173,10 +153,6 @@ public final class PKFNOOJJOPKOuterClass {
     public static final int BDKPFEJCMGC_FIELD_NUMBER = 4;
     private boolean bDKPFEJCMGC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool BDKPFEJCMGC = 4;</code>
      * @return The bDKPFEJCMGC.
      */
@@ -188,10 +164,6 @@ public final class PKFNOOJJOPKOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 13;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 13;</code>
      * @return The isOpen.
      */
@@ -203,10 +175,6 @@ public final class PKFNOOJJOPKOuterClass {
     public static final int LHPDAMGALJL_FIELD_NUMBER = 15;
     private boolean lHPDAMGALJL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool LHPDAMGALJL = 15;</code>
      * @return The lHPDAMGALJL.
      */
@@ -218,10 +186,6 @@ public final class PKFNOOJJOPKOuterClass {
     public static final int CAMP_ID_FIELD_NUMBER = 3;
     private int campId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 camp_id = 3;</code>
      * @return The campId.
      */
@@ -233,10 +197,6 @@ public final class PKFNOOJJOPKOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 9;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
@@ -620,10 +580,6 @@ public final class PKFNOOJJOPKOuterClass {
 
       private boolean bDKPFEJCMGC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool BDKPFEJCMGC = 4;</code>
        * @return The bDKPFEJCMGC.
        */
@@ -632,10 +588,6 @@ public final class PKFNOOJJOPKOuterClass {
         return bDKPFEJCMGC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool BDKPFEJCMGC = 4;</code>
        * @param value The bDKPFEJCMGC to set.
        * @return This builder for chaining.
@@ -647,10 +599,6 @@ public final class PKFNOOJJOPKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool BDKPFEJCMGC = 4;</code>
        * @return This builder for chaining.
        */
@@ -663,10 +611,6 @@ public final class PKFNOOJJOPKOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 13;</code>
        * @return The isOpen.
        */
@@ -675,10 +619,6 @@ public final class PKFNOOJJOPKOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 13;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -690,10 +630,6 @@ public final class PKFNOOJJOPKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 13;</code>
        * @return This builder for chaining.
        */
@@ -706,10 +642,6 @@ public final class PKFNOOJJOPKOuterClass {
 
       private boolean lHPDAMGALJL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LHPDAMGALJL = 15;</code>
        * @return The lHPDAMGALJL.
        */
@@ -718,10 +650,6 @@ public final class PKFNOOJJOPKOuterClass {
         return lHPDAMGALJL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LHPDAMGALJL = 15;</code>
        * @param value The lHPDAMGALJL to set.
        * @return This builder for chaining.
@@ -733,10 +661,6 @@ public final class PKFNOOJJOPKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LHPDAMGALJL = 15;</code>
        * @return This builder for chaining.
        */
@@ -749,10 +673,6 @@ public final class PKFNOOJJOPKOuterClass {
 
       private int campId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 camp_id = 3;</code>
        * @return The campId.
        */
@@ -761,10 +681,6 @@ public final class PKFNOOJJOPKOuterClass {
         return campId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 camp_id = 3;</code>
        * @param value The campId to set.
        * @return This builder for chaining.
@@ -776,10 +692,6 @@ public final class PKFNOOJJOPKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 camp_id = 3;</code>
        * @return This builder for chaining.
        */
@@ -792,10 +704,6 @@ public final class PKFNOOJJOPKOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 9;</code>
        * @return The levelId.
        */
@@ -804,10 +712,6 @@ public final class PKFNOOJJOPKOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 9;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -819,10 +723,6 @@ public final class PKFNOOJJOPKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 9;</code>
        * @return This builder for chaining.
        */

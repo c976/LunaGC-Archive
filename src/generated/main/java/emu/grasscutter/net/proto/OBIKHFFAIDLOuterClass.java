@@ -19,40 +19,24 @@ public final class OBIKHFFAIDLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 COLMPMJINGC = 6;</code>
      * @return The cOLMPMJINGC.
      */
     int getCOLMPMJINGC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 13;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BMIOBNHGMHF = 9;</code>
      * @return The bMIOBNHGMHF.
      */
@@ -158,10 +142,6 @@ public final class OBIKHFFAIDLOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
@@ -173,10 +153,6 @@ public final class OBIKHFFAIDLOuterClass {
     public static final int COLMPMJINGC_FIELD_NUMBER = 6;
     private int cOLMPMJINGC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 COLMPMJINGC = 6;</code>
      * @return The cOLMPMJINGC.
      */
@@ -188,10 +164,6 @@ public final class OBIKHFFAIDLOuterClass {
     public static final int SCORE_FIELD_NUMBER = 13;
     private int score_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 13;</code>
      * @return The score.
      */
@@ -203,10 +175,6 @@ public final class OBIKHFFAIDLOuterClass {
     public static final int BMIOBNHGMHF_FIELD_NUMBER = 9;
     private int bMIOBNHGMHF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BMIOBNHGMHF = 9;</code>
      * @return The bMIOBNHGMHF.
      */
@@ -570,10 +538,6 @@ public final class OBIKHFFAIDLOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
@@ -582,10 +546,6 @@ public final class OBIKHFFAIDLOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -597,10 +557,6 @@ public final class OBIKHFFAIDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
@@ -613,10 +569,6 @@ public final class OBIKHFFAIDLOuterClass {
 
       private int cOLMPMJINGC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 COLMPMJINGC = 6;</code>
        * @return The cOLMPMJINGC.
        */
@@ -625,10 +577,6 @@ public final class OBIKHFFAIDLOuterClass {
         return cOLMPMJINGC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 COLMPMJINGC = 6;</code>
        * @param value The cOLMPMJINGC to set.
        * @return This builder for chaining.
@@ -640,10 +588,6 @@ public final class OBIKHFFAIDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 COLMPMJINGC = 6;</code>
        * @return This builder for chaining.
        */
@@ -656,10 +600,6 @@ public final class OBIKHFFAIDLOuterClass {
 
       private int score_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 13;</code>
        * @return The score.
        */
@@ -668,10 +608,6 @@ public final class OBIKHFFAIDLOuterClass {
         return score_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 13;</code>
        * @param value The score to set.
        * @return This builder for chaining.
@@ -683,10 +619,6 @@ public final class OBIKHFFAIDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 13;</code>
        * @return This builder for chaining.
        */
@@ -699,10 +631,6 @@ public final class OBIKHFFAIDLOuterClass {
 
       private int bMIOBNHGMHF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BMIOBNHGMHF = 9;</code>
        * @return The bMIOBNHGMHF.
        */
@@ -711,10 +639,6 @@ public final class OBIKHFFAIDLOuterClass {
         return bMIOBNHGMHF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BMIOBNHGMHF = 9;</code>
        * @param value The bMIOBNHGMHF to set.
        * @return This builder for chaining.
@@ -726,10 +650,6 @@ public final class OBIKHFFAIDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BMIOBNHGMHF = 9;</code>
        * @return This builder for chaining.
        */

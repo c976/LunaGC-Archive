@@ -19,70 +19,42 @@ public final class MOFMAFFHIFAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM> 
         getMAPMDPMECOBList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
      */
     emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM getMAPMDPMECOB(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
      */
     int getMAPMDPMECOBCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDMOrBuilder> 
         getMAPMDPMECOBOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
      */
     emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDMOrBuilder getMAPMDPMECOBOrBuilder(
         int index);
 
     /**
-     * <code>uint32 EGHGENOJNEK = 2;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 2;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 15;</code>
      * @return The isFinished.
      */
@@ -142,7 +114,7 @@ public final class MOFMAFFHIFAOuterClass {
             }
             case 16: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 66: {
@@ -197,10 +169,6 @@ public final class MOFMAFFHIFAOuterClass {
     public static final int MAPMDPMECOB_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM> mAPMDPMECOB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
      */
     @java.lang.Override
@@ -208,10 +176,6 @@ public final class MOFMAFFHIFAOuterClass {
       return mAPMDPMECOB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
      */
     @java.lang.Override
@@ -220,10 +184,6 @@ public final class MOFMAFFHIFAOuterClass {
       return mAPMDPMECOB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
      */
     @java.lang.Override
@@ -231,10 +191,6 @@ public final class MOFMAFFHIFAOuterClass {
       return mAPMDPMECOB_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
      */
     @java.lang.Override
@@ -242,10 +198,6 @@ public final class MOFMAFFHIFAOuterClass {
       return mAPMDPMECOB_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
      */
     @java.lang.Override
@@ -254,24 +206,20 @@ public final class MOFMAFFHIFAOuterClass {
       return mAPMDPMECOB_.get(index);
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 2;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 2;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 2;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 2;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -283,10 +231,6 @@ public final class MOFMAFFHIFAOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 15;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 15;</code>
      * @return The isFinished.
      */
@@ -312,8 +256,8 @@ public final class MOFMAFFHIFAOuterClass {
       if (isOpen_ != false) {
         output.writeBool(1, isOpen_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(2, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(2, stageId_);
       }
       for (int i = 0; i < mAPMDPMECOB_.size(); i++) {
         output.writeMessage(8, mAPMDPMECOB_.get(i));
@@ -334,9 +278,9 @@ public final class MOFMAFFHIFAOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(1, isOpen_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, eGHGENOJNEK_);
+          .computeUInt32Size(2, stageId_);
       }
       for (int i = 0; i < mAPMDPMECOB_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -363,8 +307,8 @@ public final class MOFMAFFHIFAOuterClass {
 
       if (!getMAPMDPMECOBList()
           .equals(other.getMAPMDPMECOBList())) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getIsFinished()
@@ -384,8 +328,8 @@ public final class MOFMAFFHIFAOuterClass {
         hash = (37 * hash) + MAPMDPMECOB_FIELD_NUMBER;
         hash = (53 * hash) + getMAPMDPMECOBList().hashCode();
       }
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -532,7 +476,7 @@ public final class MOFMAFFHIFAOuterClass {
         } else {
           mAPMDPMECOBBuilder_.clear();
         }
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         isOpen_ = false;
 
@@ -574,7 +518,7 @@ public final class MOFMAFFHIFAOuterClass {
         } else {
           result.mAPMDPMECOB_ = mAPMDPMECOBBuilder_.build();
         }
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.isOpen_ = isOpen_;
         result.isFinished_ = isFinished_;
         onBuilt();
@@ -651,8 +595,8 @@ public final class MOFMAFFHIFAOuterClass {
             }
           }
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -703,10 +647,6 @@ public final class MOFMAFFHIFAOuterClass {
           emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM, emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM.Builder, emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDMOrBuilder> mAPMDPMECOBBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM> getMAPMDPMECOBList() {
@@ -717,10 +657,6 @@ public final class MOFMAFFHIFAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public int getMAPMDPMECOBCount() {
@@ -731,10 +667,6 @@ public final class MOFMAFFHIFAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM getMAPMDPMECOB(int index) {
@@ -745,10 +677,6 @@ public final class MOFMAFFHIFAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public Builder setMAPMDPMECOB(
@@ -766,10 +694,6 @@ public final class MOFMAFFHIFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public Builder setMAPMDPMECOB(
@@ -784,10 +708,6 @@ public final class MOFMAFFHIFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public Builder addMAPMDPMECOB(emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM value) {
@@ -804,10 +724,6 @@ public final class MOFMAFFHIFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public Builder addMAPMDPMECOB(
@@ -825,10 +741,6 @@ public final class MOFMAFFHIFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public Builder addMAPMDPMECOB(
@@ -843,10 +755,6 @@ public final class MOFMAFFHIFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public Builder addMAPMDPMECOB(
@@ -861,10 +769,6 @@ public final class MOFMAFFHIFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public Builder addAllMAPMDPMECOB(
@@ -880,10 +784,6 @@ public final class MOFMAFFHIFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public Builder clearMAPMDPMECOB() {
@@ -897,10 +797,6 @@ public final class MOFMAFFHIFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public Builder removeMAPMDPMECOB(int index) {
@@ -914,10 +810,6 @@ public final class MOFMAFFHIFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM.Builder getMAPMDPMECOBBuilder(
@@ -925,10 +817,6 @@ public final class MOFMAFFHIFAOuterClass {
         return getMAPMDPMECOBFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDMOrBuilder getMAPMDPMECOBOrBuilder(
@@ -939,10 +827,6 @@ public final class MOFMAFFHIFAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDMOrBuilder> 
@@ -954,10 +838,6 @@ public final class MOFMAFFHIFAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM.Builder addMAPMDPMECOBBuilder() {
@@ -965,10 +845,6 @@ public final class MOFMAFFHIFAOuterClass {
             emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM.Builder addMAPMDPMECOBBuilder(
@@ -977,10 +853,6 @@ public final class MOFMAFFHIFAOuterClass {
             index, emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFLIKELEJDM MAPMDPMECOB = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.OFLIKELEJDM.Builder> 
@@ -1002,43 +874,39 @@ public final class MOFMAFFHIFAOuterClass {
         return mAPMDPMECOBBuilder_;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 2;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 2;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
+       * <code>uint32 stage_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
@@ -1047,10 +915,6 @@ public final class MOFMAFFHIFAOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1062,10 +926,6 @@ public final class MOFMAFFHIFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
@@ -1078,10 +938,6 @@ public final class MOFMAFFHIFAOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 15;</code>
        * @return The isFinished.
        */
@@ -1090,10 +946,6 @@ public final class MOFMAFFHIFAOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 15;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -1105,10 +957,6 @@ public final class MOFMAFFHIFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 15;</code>
        * @return This builder for chaining.
        */
@@ -1185,11 +1033,11 @@ public final class MOFMAFFHIFAOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MOFMAFFHIFA.proto\032\021OFLIKELEJDM.proto\"k" +
+      "\n\021MOFMAFFHIFA.proto\032\021OFLIKELEJDM.proto\"h" +
       "\n\013MOFMAFFHIFA\022!\n\013MAPMDPMECOB\030\010 \003(\0132\014.OFL" +
-      "IKELEJDM\022\023\n\013EGHGENOJNEK\030\002 \001(\r\022\017\n\007is_open" +
-      "\030\001 \001(\010\022\023\n\013is_finished\030\017 \001(\010B\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "IKELEJDM\022\020\n\010stage_id\030\002 \001(\r\022\017\n\007is_open\030\001 " +
+      "\001(\010\022\023\n\013is_finished\030\017 \001(\010B\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1201,7 +1049,7 @@ public final class MOFMAFFHIFAOuterClass {
     internal_static_MOFMAFFHIFA_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MOFMAFFHIFA_descriptor,
-        new java.lang.String[] { "MAPMDPMECOB", "EGHGENOJNEK", "IsOpen", "IsFinished", });
+        new java.lang.String[] { "MAPMDPMECOB", "StageId", "IsOpen", "IsFinished", });
     emu.grasscutter.net.proto.OFLIKELEJDMOuterClass.getDescriptor();
   }
 

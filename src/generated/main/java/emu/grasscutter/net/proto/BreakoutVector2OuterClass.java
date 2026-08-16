@@ -20,23 +20,23 @@ public final class BreakoutVector2OuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>int32 x = 1;</code>
-     * @return The x.
-     */
-    int getX();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>int32 y = 2;</code>
      * @return The y.
      */
     int getY();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>int32 x = 1;</code>
+     * @return The x.
+     */
+    int getX();
   }
   /**
    * Protobuf type {@code BreakoutVector2}
@@ -125,26 +125,11 @@ public final class BreakoutVector2OuterClass {
               emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.class, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder.class);
     }
 
-    public static final int X_FIELD_NUMBER = 1;
-    private int x_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>int32 x = 1;</code>
-     * @return The x.
-     */
-    @java.lang.Override
-    public int getX() {
-      return x_;
-    }
-
     public static final int Y_FIELD_NUMBER = 2;
     private int y_;
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>int32 y = 2;</code>
@@ -153,6 +138,21 @@ public final class BreakoutVector2OuterClass {
     @java.lang.Override
     public int getY() {
       return y_;
+    }
+
+    public static final int X_FIELD_NUMBER = 1;
+    private int x_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>int32 x = 1;</code>
+     * @return The x.
+     */
+    @java.lang.Override
+    public int getX() {
+      return x_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -207,10 +207,10 @@ public final class BreakoutVector2OuterClass {
       }
       emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 other = (emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2) obj;
 
-      if (getX()
-          != other.getX()) return false;
       if (getY()
           != other.getY()) return false;
+      if (getX()
+          != other.getX()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -222,10 +222,10 @@ public final class BreakoutVector2OuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + X_FIELD_NUMBER;
-      hash = (53 * hash) + getX();
       hash = (37 * hash) + Y_FIELD_NUMBER;
       hash = (53 * hash) + getY();
+      hash = (37 * hash) + X_FIELD_NUMBER;
+      hash = (53 * hash) + getX();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -359,9 +359,9 @@ public final class BreakoutVector2OuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        x_ = 0;
-
         y_ = 0;
+
+        x_ = 0;
 
         return this;
       }
@@ -389,8 +389,8 @@ public final class BreakoutVector2OuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 buildPartial() {
         emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 result = new emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2(this);
-        result.x_ = x_;
         result.y_ = y_;
+        result.x_ = x_;
         onBuilt();
         return result;
       }
@@ -439,11 +439,11 @@ public final class BreakoutVector2OuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 other) {
         if (other == emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance()) return this;
-        if (other.getX() != 0) {
-          setX(other.getX());
-        }
         if (other.getY() != 0) {
           setY(other.getY());
+        }
+        if (other.getX() != 0) {
+          setX(other.getX());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -474,53 +474,10 @@ public final class BreakoutVector2OuterClass {
         return this;
       }
 
-      private int x_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>int32 x = 1;</code>
-       * @return The x.
-       */
-      @java.lang.Override
-      public int getX() {
-        return x_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>int32 x = 1;</code>
-       * @param value The x to set.
-       * @return This builder for chaining.
-       */
-      public Builder setX(int value) {
-        
-        x_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>int32 x = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearX() {
-        
-        x_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int y_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>int32 y = 2;</code>
@@ -532,7 +489,7 @@ public final class BreakoutVector2OuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>int32 y = 2;</code>
@@ -547,7 +504,7 @@ public final class BreakoutVector2OuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>int32 y = 2;</code>
@@ -556,6 +513,49 @@ public final class BreakoutVector2OuterClass {
       public Builder clearY() {
         
         y_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int x_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>int32 x = 1;</code>
+       * @return The x.
+       */
+      @java.lang.Override
+      public int getX() {
+        return x_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>int32 x = 1;</code>
+       * @param value The x to set.
+       * @return This builder for chaining.
+       */
+      public Builder setX(int value) {
+        
+        x_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>int32 x = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearX() {
+        
+        x_ = 0;
         onChanged();
         return this;
       }
@@ -627,7 +627,7 @@ public final class BreakoutVector2OuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025BreakoutVector2.proto\"\'\n\017BreakoutVecto" +
-      "r2\022\t\n\001x\030\001 \001(\005\022\t\n\001y\030\002 \001(\005B\033\n\031emu.grasscut" +
+      "r2\022\t\n\001y\030\002 \001(\005\022\t\n\001x\030\001 \001(\005B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -639,7 +639,7 @@ public final class BreakoutVector2OuterClass {
     internal_static_BreakoutVector2_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BreakoutVector2_descriptor,
-        new java.lang.String[] { "X", "Y", });
+        new java.lang.String[] { "Y", "X", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

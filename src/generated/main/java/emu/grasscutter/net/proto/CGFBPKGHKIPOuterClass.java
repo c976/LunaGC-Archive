@@ -19,28 +19,16 @@ public final class CGFBPKGHKIPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
      * @return A list containing the ePOHDEDDMJM.
      */
     java.util.List<java.lang.Long> getEPOHDEDDMJMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
      * @return The count of ePOHDEDDMJM.
      */
     int getEPOHDEDDMJMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
      * @param index The index of the element to return.
      * @return The ePOHDEDDMJM at the given index.
@@ -48,26 +36,18 @@ public final class CGFBPKGHKIPOuterClass {
     long getEPOHDEDDMJM(int index);
 
     /**
-     * <code>uint32 IFADGMHEFHF = 4;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 4;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HGELHJOJEED = 6;</code>
      * @return The hGELHJOJEED.
      */
     int getHGELHJOJEED();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
@@ -122,7 +102,7 @@ public final class CGFBPKGHKIPOuterClass {
               break;
             case 32: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 40: {
@@ -194,10 +174,6 @@ public final class CGFBPKGHKIPOuterClass {
     public static final int EPOHDEDDMJM_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.LongList ePOHDEDDMJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
      * @return A list containing the ePOHDEDDMJM.
      */
@@ -207,10 +183,6 @@ public final class CGFBPKGHKIPOuterClass {
       return ePOHDEDDMJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
      * @return The count of ePOHDEDDMJM.
      */
@@ -218,10 +190,6 @@ public final class CGFBPKGHKIPOuterClass {
       return ePOHDEDDMJM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
      * @param index The index of the element to return.
      * @return The ePOHDEDDMJM at the given index.
@@ -231,24 +199,20 @@ public final class CGFBPKGHKIPOuterClass {
     }
     private int ePOHDEDDMJMMemoizedSerializedSize = -1;
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 4;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 4;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 4;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 4;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     public static final int HGELHJOJEED_FIELD_NUMBER = 6;
     private int hGELHJOJEED_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HGELHJOJEED = 6;</code>
      * @return The hGELHJOJEED.
      */
@@ -260,10 +224,6 @@ public final class CGFBPKGHKIPOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
@@ -287,8 +247,8 @@ public final class CGFBPKGHKIPOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(4, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(4, ugcGuid_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(5, levelId_);
@@ -312,9 +272,9 @@ public final class CGFBPKGHKIPOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, iFADGMHEFHF_);
+          .computeUInt32Size(4, ugcGuid_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -355,8 +315,8 @@ public final class CGFBPKGHKIPOuterClass {
 
       if (!getEPOHDEDDMJMList()
           .equals(other.getEPOHDEDDMJMList())) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (getHGELHJOJEED()
           != other.getHGELHJOJEED()) return false;
       if (getLevelId()
@@ -376,8 +336,8 @@ public final class CGFBPKGHKIPOuterClass {
         hash = (37 * hash) + EPOHDEDDMJM_FIELD_NUMBER;
         hash = (53 * hash) + getEPOHDEDDMJMList().hashCode();
       }
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (37 * hash) + HGELHJOJEED_FIELD_NUMBER;
       hash = (53 * hash) + getHGELHJOJEED();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
@@ -517,7 +477,7 @@ public final class CGFBPKGHKIPOuterClass {
         super.clear();
         ePOHDEDDMJM_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         hGELHJOJEED_ = 0;
 
@@ -555,7 +515,7 @@ public final class CGFBPKGHKIPOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.ePOHDEDDMJM_ = ePOHDEDDMJM_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         result.hGELHJOJEED_ = hGELHJOJEED_;
         result.levelId_ = levelId_;
         onBuilt();
@@ -616,8 +576,8 @@ public final class CGFBPKGHKIPOuterClass {
           }
           onChanged();
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         if (other.getHGELHJOJEED() != 0) {
           setHGELHJOJEED(other.getHGELHJOJEED());
@@ -663,10 +623,6 @@ public final class CGFBPKGHKIPOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
        * @return A list containing the ePOHDEDDMJM.
        */
@@ -676,10 +632,6 @@ public final class CGFBPKGHKIPOuterClass {
                  java.util.Collections.unmodifiableList(ePOHDEDDMJM_) : ePOHDEDDMJM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
        * @return The count of ePOHDEDDMJM.
        */
@@ -687,10 +639,6 @@ public final class CGFBPKGHKIPOuterClass {
         return ePOHDEDDMJM_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
        * @param index The index of the element to return.
        * @return The ePOHDEDDMJM at the given index.
@@ -699,10 +647,6 @@ public final class CGFBPKGHKIPOuterClass {
         return ePOHDEDDMJM_.getLong(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
        * @param index The index to set the value at.
        * @param value The ePOHDEDDMJM to set.
@@ -716,10 +660,6 @@ public final class CGFBPKGHKIPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
        * @param value The ePOHDEDDMJM to add.
        * @return This builder for chaining.
@@ -731,10 +671,6 @@ public final class CGFBPKGHKIPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
        * @param values The ePOHDEDDMJM to add.
        * @return This builder for chaining.
@@ -748,10 +684,6 @@ public final class CGFBPKGHKIPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 EPOHDEDDMJM = 13;</code>
        * @return This builder for chaining.
        */
@@ -762,43 +694,39 @@ public final class CGFBPKGHKIPOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 4;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 4;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 4;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 4;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 4;</code>
+       * <code>uint32 ugc_guid = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
       private int hGELHJOJEED_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HGELHJOJEED = 6;</code>
        * @return The hGELHJOJEED.
        */
@@ -807,10 +735,6 @@ public final class CGFBPKGHKIPOuterClass {
         return hGELHJOJEED_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HGELHJOJEED = 6;</code>
        * @param value The hGELHJOJEED to set.
        * @return This builder for chaining.
@@ -822,10 +746,6 @@ public final class CGFBPKGHKIPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HGELHJOJEED = 6;</code>
        * @return This builder for chaining.
        */
@@ -838,10 +758,6 @@ public final class CGFBPKGHKIPOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
@@ -850,10 +766,6 @@ public final class CGFBPKGHKIPOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -865,10 +777,6 @@ public final class CGFBPKGHKIPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
@@ -945,10 +853,10 @@ public final class CGFBPKGHKIPOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021CGFBPKGHKIP.proto\"^\n\013CGFBPKGHKIP\022\023\n\013EP" +
-      "OHDEDDMJM\030\r \003(\004\022\023\n\013IFADGMHEFHF\030\004 \001(\r\022\023\n\013" +
-      "HGELHJOJEED\030\006 \001(\r\022\020\n\010level_id\030\005 \001(\rB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n\021CGFBPKGHKIP.proto\"[\n\013CGFBPKGHKIP\022\023\n\013EP" +
+      "OHDEDDMJM\030\r \003(\004\022\020\n\010ugc_guid\030\004 \001(\r\022\023\n\013HGE" +
+      "LHJOJEED\030\006 \001(\r\022\020\n\010level_id\030\005 \001(\rB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -959,7 +867,7 @@ public final class CGFBPKGHKIPOuterClass {
     internal_static_CGFBPKGHKIP_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CGFBPKGHKIP_descriptor,
-        new java.lang.String[] { "EPOHDEDDMJM", "IFADGMHEFHF", "HGELHJOJEED", "LevelId", });
+        new java.lang.String[] { "EPOHDEDDMJM", "UgcGuid", "HGELHJOJEED", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

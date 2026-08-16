@@ -19,53 +19,37 @@ public final class DeliveryActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
-     * @return A list containing the finishedDeliveryQuestIndex.
+     * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
+     * @return A list containing the dLNHCKLJFMB.
      */
-    java.util.List<java.lang.Integer> getFinishedDeliveryQuestIndexList();
+    java.util.List<java.lang.Integer> getDLNHCKLJFMBList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
-     * @return The count of finishedDeliveryQuestIndex.
+     * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
+     * @return The count of dLNHCKLJFMB.
      */
-    int getFinishedDeliveryQuestIndexCount();
+    int getDLNHCKLJFMBCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
+     * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
      * @param index The index of the element to return.
-     * @return The finishedDeliveryQuestIndex at the given index.
+     * @return The dLNHCKLJFMB at the given index.
      */
-    int getFinishedDeliveryQuestIndex(int index);
+    int getDLNHCKLJFMB(int index);
+
+    /**
+     * <code>uint32 BMLIGIIELDE = 6;</code>
+     * @return The bMLIGIIELDE.
+     */
+    int getBMLIGIIELDE();
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>bool is_taken_reward = 11;</code>
+     * <code>bool is_taken_reward = 2;</code>
      * @return The isTakenReward.
      */
     boolean getIsTakenReward();
-
-    /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>uint32 day_index = 1;</code>
-     * @return The dayIndex.
-     */
-    int getDayIndex();
   }
   /**
    * Protobuf type {@code DeliveryActivityDetailInfo}
@@ -80,7 +64,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
       super(builder);
     }
     private DeliveryActivityDetailInfo() {
-      finishedDeliveryQuestIndex_ = emptyIntList();
+      dLNHCKLJFMB_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -114,35 +98,35 @@ public final class DeliveryActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              dayIndex_ = input.readUInt32();
+              isTakenReward_ = input.readBool();
               break;
             }
-            case 16: {
+            case 48: {
+
+              bMLIGIIELDE_ = input.readUInt32();
+              break;
+            }
+            case 128: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                finishedDeliveryQuestIndex_ = newIntList();
+                dLNHCKLJFMB_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              finishedDeliveryQuestIndex_.addInt(input.readUInt32());
+              dLNHCKLJFMB_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 130: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                finishedDeliveryQuestIndex_ = newIntList();
+                dLNHCKLJFMB_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                finishedDeliveryQuestIndex_.addInt(input.readUInt32());
+                dLNHCKLJFMB_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 88: {
-
-              isTakenReward_ = input.readBool();
               break;
             }
             default: {
@@ -161,7 +145,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          finishedDeliveryQuestIndex_.makeImmutable(); // C
+          dLNHCKLJFMB_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -180,74 +164,58 @@ public final class DeliveryActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo.class, emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo.Builder.class);
     }
 
-    public static final int FINISHED_DELIVERY_QUEST_INDEX_FIELD_NUMBER = 2;
-    private com.google.protobuf.Internal.IntList finishedDeliveryQuestIndex_;
+    public static final int DLNHCKLJFMB_FIELD_NUMBER = 16;
+    private com.google.protobuf.Internal.IntList dLNHCKLJFMB_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
-     * @return A list containing the finishedDeliveryQuestIndex.
+     * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
+     * @return A list containing the dLNHCKLJFMB.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getFinishedDeliveryQuestIndexList() {
-      return finishedDeliveryQuestIndex_;
+        getDLNHCKLJFMBList() {
+      return dLNHCKLJFMB_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
-     * @return The count of finishedDeliveryQuestIndex.
+     * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
+     * @return The count of dLNHCKLJFMB.
      */
-    public int getFinishedDeliveryQuestIndexCount() {
-      return finishedDeliveryQuestIndex_.size();
+    public int getDLNHCKLJFMBCount() {
+      return dLNHCKLJFMB_.size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
+     * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
      * @param index The index of the element to return.
-     * @return The finishedDeliveryQuestIndex at the given index.
+     * @return The dLNHCKLJFMB at the given index.
      */
-    public int getFinishedDeliveryQuestIndex(int index) {
-      return finishedDeliveryQuestIndex_.getInt(index);
+    public int getDLNHCKLJFMB(int index) {
+      return dLNHCKLJFMB_.getInt(index);
     }
-    private int finishedDeliveryQuestIndexMemoizedSerializedSize = -1;
+    private int dLNHCKLJFMBMemoizedSerializedSize = -1;
 
-    public static final int IS_TAKEN_REWARD_FIELD_NUMBER = 11;
+    public static final int BMLIGIIELDE_FIELD_NUMBER = 6;
+    private int bMLIGIIELDE_;
+    /**
+     * <code>uint32 BMLIGIIELDE = 6;</code>
+     * @return The bMLIGIIELDE.
+     */
+    @java.lang.Override
+    public int getBMLIGIIELDE() {
+      return bMLIGIIELDE_;
+    }
+
+    public static final int IS_TAKEN_REWARD_FIELD_NUMBER = 2;
     private boolean isTakenReward_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>bool is_taken_reward = 11;</code>
+     * <code>bool is_taken_reward = 2;</code>
      * @return The isTakenReward.
      */
     @java.lang.Override
     public boolean getIsTakenReward() {
       return isTakenReward_;
-    }
-
-    public static final int DAY_INDEX_FIELD_NUMBER = 1;
-    private int dayIndex_;
-    /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>uint32 day_index = 1;</code>
-     * @return The dayIndex.
-     */
-    @java.lang.Override
-    public int getDayIndex() {
-      return dayIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -265,18 +233,18 @@ public final class DeliveryActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (dayIndex_ != 0) {
-        output.writeUInt32(1, dayIndex_);
-      }
-      if (getFinishedDeliveryQuestIndexList().size() > 0) {
-        output.writeUInt32NoTag(18);
-        output.writeUInt32NoTag(finishedDeliveryQuestIndexMemoizedSerializedSize);
-      }
-      for (int i = 0; i < finishedDeliveryQuestIndex_.size(); i++) {
-        output.writeUInt32NoTag(finishedDeliveryQuestIndex_.getInt(i));
-      }
       if (isTakenReward_ != false) {
-        output.writeBool(11, isTakenReward_);
+        output.writeBool(2, isTakenReward_);
+      }
+      if (bMLIGIIELDE_ != 0) {
+        output.writeUInt32(6, bMLIGIIELDE_);
+      }
+      if (getDLNHCKLJFMBList().size() > 0) {
+        output.writeUInt32NoTag(130);
+        output.writeUInt32NoTag(dLNHCKLJFMBMemoizedSerializedSize);
+      }
+      for (int i = 0; i < dLNHCKLJFMB_.size(); i++) {
+        output.writeUInt32NoTag(dLNHCKLJFMB_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -287,27 +255,27 @@ public final class DeliveryActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dayIndex_ != 0) {
+      if (isTakenReward_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dayIndex_);
+          .computeBoolSize(2, isTakenReward_);
+      }
+      if (bMLIGIIELDE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, bMLIGIIELDE_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < finishedDeliveryQuestIndex_.size(); i++) {
+        for (int i = 0; i < dLNHCKLJFMB_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(finishedDeliveryQuestIndex_.getInt(i));
+            .computeUInt32SizeNoTag(dLNHCKLJFMB_.getInt(i));
         }
         size += dataSize;
-        if (!getFinishedDeliveryQuestIndexList().isEmpty()) {
-          size += 1;
+        if (!getDLNHCKLJFMBList().isEmpty()) {
+          size += 2;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        finishedDeliveryQuestIndexMemoizedSerializedSize = dataSize;
-      }
-      if (isTakenReward_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isTakenReward_);
+        dLNHCKLJFMBMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -324,12 +292,12 @@ public final class DeliveryActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo other = (emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo) obj;
 
-      if (!getFinishedDeliveryQuestIndexList()
-          .equals(other.getFinishedDeliveryQuestIndexList())) return false;
+      if (!getDLNHCKLJFMBList()
+          .equals(other.getDLNHCKLJFMBList())) return false;
+      if (getBMLIGIIELDE()
+          != other.getBMLIGIIELDE()) return false;
       if (getIsTakenReward()
           != other.getIsTakenReward()) return false;
-      if (getDayIndex()
-          != other.getDayIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -341,15 +309,15 @@ public final class DeliveryActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getFinishedDeliveryQuestIndexCount() > 0) {
-        hash = (37 * hash) + FINISHED_DELIVERY_QUEST_INDEX_FIELD_NUMBER;
-        hash = (53 * hash) + getFinishedDeliveryQuestIndexList().hashCode();
+      if (getDLNHCKLJFMBCount() > 0) {
+        hash = (37 * hash) + DLNHCKLJFMB_FIELD_NUMBER;
+        hash = (53 * hash) + getDLNHCKLJFMBList().hashCode();
       }
+      hash = (37 * hash) + BMLIGIIELDE_FIELD_NUMBER;
+      hash = (53 * hash) + getBMLIGIIELDE();
       hash = (37 * hash) + IS_TAKEN_REWARD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTakenReward());
-      hash = (37 * hash) + DAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getDayIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -483,11 +451,11 @@ public final class DeliveryActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        finishedDeliveryQuestIndex_ = emptyIntList();
+        dLNHCKLJFMB_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        isTakenReward_ = false;
+        bMLIGIIELDE_ = 0;
 
-        dayIndex_ = 0;
+        isTakenReward_ = false;
 
         return this;
       }
@@ -517,12 +485,12 @@ public final class DeliveryActivityDetailInfoOuterClass {
         emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo result = new emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          finishedDeliveryQuestIndex_.makeImmutable();
+          dLNHCKLJFMB_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.finishedDeliveryQuestIndex_ = finishedDeliveryQuestIndex_;
+        result.dLNHCKLJFMB_ = dLNHCKLJFMB_;
+        result.bMLIGIIELDE_ = bMLIGIIELDE_;
         result.isTakenReward_ = isTakenReward_;
-        result.dayIndex_ = dayIndex_;
         onBuilt();
         return result;
       }
@@ -571,21 +539,21 @@ public final class DeliveryActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.DeliveryActivityDetailInfoOuterClass.DeliveryActivityDetailInfo.getDefaultInstance()) return this;
-        if (!other.finishedDeliveryQuestIndex_.isEmpty()) {
-          if (finishedDeliveryQuestIndex_.isEmpty()) {
-            finishedDeliveryQuestIndex_ = other.finishedDeliveryQuestIndex_;
+        if (!other.dLNHCKLJFMB_.isEmpty()) {
+          if (dLNHCKLJFMB_.isEmpty()) {
+            dLNHCKLJFMB_ = other.dLNHCKLJFMB_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureFinishedDeliveryQuestIndexIsMutable();
-            finishedDeliveryQuestIndex_.addAll(other.finishedDeliveryQuestIndex_);
+            ensureDLNHCKLJFMBIsMutable();
+            dLNHCKLJFMB_.addAll(other.dLNHCKLJFMB_);
           }
           onChanged();
         }
+        if (other.getBMLIGIIELDE() != 0) {
+          setBMLIGIIELDE(other.getBMLIGIIELDE());
+        }
         if (other.getIsTakenReward() != false) {
           setIsTakenReward(other.getIsTakenReward());
-        }
-        if (other.getDayIndex() != 0) {
-          setDayIndex(other.getDayIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -617,109 +585,112 @@ public final class DeliveryActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList finishedDeliveryQuestIndex_ = emptyIntList();
-      private void ensureFinishedDeliveryQuestIndexIsMutable() {
+      private com.google.protobuf.Internal.IntList dLNHCKLJFMB_ = emptyIntList();
+      private void ensureDLNHCKLJFMBIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          finishedDeliveryQuestIndex_ = mutableCopy(finishedDeliveryQuestIndex_);
+          dLNHCKLJFMB_ = mutableCopy(dLNHCKLJFMB_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
-       * @return A list containing the finishedDeliveryQuestIndex.
+       * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
+       * @return A list containing the dLNHCKLJFMB.
        */
       public java.util.List<java.lang.Integer>
-          getFinishedDeliveryQuestIndexList() {
+          getDLNHCKLJFMBList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(finishedDeliveryQuestIndex_) : finishedDeliveryQuestIndex_;
+                 java.util.Collections.unmodifiableList(dLNHCKLJFMB_) : dLNHCKLJFMB_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
-       * @return The count of finishedDeliveryQuestIndex.
+       * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
+       * @return The count of dLNHCKLJFMB.
        */
-      public int getFinishedDeliveryQuestIndexCount() {
-        return finishedDeliveryQuestIndex_.size();
+      public int getDLNHCKLJFMBCount() {
+        return dLNHCKLJFMB_.size();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
+       * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
        * @param index The index of the element to return.
-       * @return The finishedDeliveryQuestIndex at the given index.
+       * @return The dLNHCKLJFMB at the given index.
        */
-      public int getFinishedDeliveryQuestIndex(int index) {
-        return finishedDeliveryQuestIndex_.getInt(index);
+      public int getDLNHCKLJFMB(int index) {
+        return dLNHCKLJFMB_.getInt(index);
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
+       * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
        * @param index The index to set the value at.
-       * @param value The finishedDeliveryQuestIndex to set.
+       * @param value The dLNHCKLJFMB to set.
        * @return This builder for chaining.
        */
-      public Builder setFinishedDeliveryQuestIndex(
+      public Builder setDLNHCKLJFMB(
           int index, int value) {
-        ensureFinishedDeliveryQuestIndexIsMutable();
-        finishedDeliveryQuestIndex_.setInt(index, value);
+        ensureDLNHCKLJFMBIsMutable();
+        dLNHCKLJFMB_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
-       * @param value The finishedDeliveryQuestIndex to add.
+       * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
+       * @param value The dLNHCKLJFMB to add.
        * @return This builder for chaining.
        */
-      public Builder addFinishedDeliveryQuestIndex(int value) {
-        ensureFinishedDeliveryQuestIndexIsMutable();
-        finishedDeliveryQuestIndex_.addInt(value);
+      public Builder addDLNHCKLJFMB(int value) {
+        ensureDLNHCKLJFMBIsMutable();
+        dLNHCKLJFMB_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
-       * @param values The finishedDeliveryQuestIndex to add.
+       * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
+       * @param values The dLNHCKLJFMB to add.
        * @return This builder for chaining.
        */
-      public Builder addAllFinishedDeliveryQuestIndex(
+      public Builder addAllDLNHCKLJFMB(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureFinishedDeliveryQuestIndexIsMutable();
+        ensureDLNHCKLJFMBIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, finishedDeliveryQuestIndex_);
+            values, dLNHCKLJFMB_);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 finished_delivery_quest_index = 2;</code>
+       * <code>repeated uint32 DLNHCKLJFMB = 16;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFinishedDeliveryQuestIndex() {
-        finishedDeliveryQuestIndex_ = emptyIntList();
+      public Builder clearDLNHCKLJFMB() {
+        dLNHCKLJFMB_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int bMLIGIIELDE_ ;
+      /**
+       * <code>uint32 BMLIGIIELDE = 6;</code>
+       * @return The bMLIGIIELDE.
+       */
+      @java.lang.Override
+      public int getBMLIGIIELDE() {
+        return bMLIGIIELDE_;
+      }
+      /**
+       * <code>uint32 BMLIGIIELDE = 6;</code>
+       * @param value The bMLIGIIELDE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBMLIGIIELDE(int value) {
+        
+        bMLIGIIELDE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BMLIGIIELDE = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBMLIGIIELDE() {
+        
+        bMLIGIIELDE_ = 0;
         onChanged();
         return this;
       }
@@ -727,10 +698,10 @@ public final class DeliveryActivityDetailInfoOuterClass {
       private boolean isTakenReward_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>bool is_taken_reward = 11;</code>
+       * <code>bool is_taken_reward = 2;</code>
        * @return The isTakenReward.
        */
       @java.lang.Override
@@ -739,10 +710,10 @@ public final class DeliveryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>bool is_taken_reward = 11;</code>
+       * <code>bool is_taken_reward = 2;</code>
        * @param value The isTakenReward to set.
        * @return This builder for chaining.
        */
@@ -754,58 +725,15 @@ public final class DeliveryActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>bool is_taken_reward = 11;</code>
+       * <code>bool is_taken_reward = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTakenReward() {
         
         isTakenReward_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int dayIndex_ ;
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 day_index = 1;</code>
-       * @return The dayIndex.
-       */
-      @java.lang.Override
-      public int getDayIndex() {
-        return dayIndex_;
-      }
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 day_index = 1;</code>
-       * @param value The dayIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDayIndex(int value) {
-        
-        dayIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 day_index = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDayIndex() {
-        
-        dayIndex_ = 0;
         onChanged();
         return this;
       }
@@ -876,11 +804,11 @@ public final class DeliveryActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n DeliveryActivityDetailInfo.proto\"o\n\032De" +
-      "liveryActivityDetailInfo\022%\n\035finished_del" +
-      "ivery_quest_index\030\002 \003(\r\022\027\n\017is_taken_rewa" +
-      "rd\030\013 \001(\010\022\021\n\tday_index\030\001 \001(\rB\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "\n DeliveryActivityDetailInfo.proto\"_\n\032De" +
+      "liveryActivityDetailInfo\022\023\n\013DLNHCKLJFMB\030" +
+      "\020 \003(\r\022\023\n\013BMLIGIIELDE\030\006 \001(\r\022\027\n\017is_taken_r" +
+      "eward\030\002 \001(\010B\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -891,7 +819,7 @@ public final class DeliveryActivityDetailInfoOuterClass {
     internal_static_DeliveryActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DeliveryActivityDetailInfo_descriptor,
-        new java.lang.String[] { "FinishedDeliveryQuestIndex", "IsTakenReward", "DayIndex", });
+        new java.lang.String[] { "DLNHCKLJFMB", "BMLIGIIELDE", "IsTakenReward", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

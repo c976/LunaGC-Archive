@@ -19,30 +19,18 @@ public final class AvatarChangeTraceEffectRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>uint64 avatar_guid = 7;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
      * <code>uint32 trace_effect_id = 6;</code>
      * @return The traceEffectId.
      */
     int getTraceEffectId();
 
     /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
      * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
@@ -50,6 +38,7 @@ public final class AvatarChangeTraceEffectRspOuterClass {
   }
   /**
    * <pre>
+   * Version: 5.7
    * CmdId: 9961
    * </pre>
    *
@@ -147,10 +136,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
     public static final int AVATAR_GUID_FIELD_NUMBER = 7;
     private long avatarGuid_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>uint64 avatar_guid = 7;</code>
      * @return The avatarGuid.
      */
@@ -162,10 +147,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
     public static final int TRACE_EFFECT_ID_FIELD_NUMBER = 6;
     private int traceEffectId_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
      * <code>uint32 trace_effect_id = 6;</code>
      * @return The traceEffectId.
      */
@@ -177,10 +158,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
     /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
      * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
@@ -369,6 +346,7 @@ public final class AvatarChangeTraceEffectRspOuterClass {
     }
     /**
      * <pre>
+     * Version: 5.7
      * CmdId: 9961
      * </pre>
      *
@@ -532,10 +510,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint64 avatar_guid = 7;</code>
        * @return The avatarGuid.
        */
@@ -544,10 +518,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
         return avatarGuid_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint64 avatar_guid = 7;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
@@ -559,10 +529,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint64 avatar_guid = 7;</code>
        * @return This builder for chaining.
        */
@@ -575,10 +541,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
 
       private int traceEffectId_ ;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
        * <code>uint32 trace_effect_id = 6;</code>
        * @return The traceEffectId.
        */
@@ -587,10 +549,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
         return traceEffectId_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
        * <code>uint32 trace_effect_id = 6;</code>
        * @param value The traceEffectId to set.
        * @return This builder for chaining.
@@ -602,10 +560,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
        * <code>uint32 trace_effect_id = 6;</code>
        * @return This builder for chaining.
        */
@@ -618,10 +572,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
        * <code>int32 retcode = 8;</code>
        * @return The retcode.
        */
@@ -630,10 +580,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
         return retcode_;
       }
       /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
        * <code>int32 retcode = 8;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
@@ -645,10 +591,6 @@ public final class AvatarChangeTraceEffectRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
        * <code>int32 retcode = 8;</code>
        * @return This builder for chaining.
        */

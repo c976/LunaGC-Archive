@@ -20,13 +20,13 @@ public final class RefreshNotifyOuterClass {
 
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 CMODHBBMGCO = 8;</code>
-     * @return The cMODHBBMGCO.
+     * <code>uint32 refresh_num = 10;</code>
+     * @return The refreshNum.
      */
-    int getCMODHBBMGCO();
+    int getRefreshNum();
   }
   /**
    * Protobuf type {@code RefreshNotify}
@@ -73,9 +73,9 @@ public final class RefreshNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 80: {
 
-              cMODHBBMGCO_ = input.readUInt32();
+              refreshNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -110,19 +110,19 @@ public final class RefreshNotifyOuterClass {
               emu.grasscutter.net.proto.RefreshNotifyOuterClass.RefreshNotify.class, emu.grasscutter.net.proto.RefreshNotifyOuterClass.RefreshNotify.Builder.class);
     }
 
-    public static final int CMODHBBMGCO_FIELD_NUMBER = 8;
-    private int cMODHBBMGCO_;
+    public static final int REFRESH_NUM_FIELD_NUMBER = 10;
+    private int refreshNum_;
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 CMODHBBMGCO = 8;</code>
-     * @return The cMODHBBMGCO.
+     * <code>uint32 refresh_num = 10;</code>
+     * @return The refreshNum.
      */
     @java.lang.Override
-    public int getCMODHBBMGCO() {
-      return cMODHBBMGCO_;
+    public int getRefreshNum() {
+      return refreshNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -139,8 +139,8 @@ public final class RefreshNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cMODHBBMGCO_ != 0) {
-        output.writeUInt32(8, cMODHBBMGCO_);
+      if (refreshNum_ != 0) {
+        output.writeUInt32(10, refreshNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -151,9 +151,9 @@ public final class RefreshNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cMODHBBMGCO_ != 0) {
+      if (refreshNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, cMODHBBMGCO_);
+          .computeUInt32Size(10, refreshNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -170,8 +170,8 @@ public final class RefreshNotifyOuterClass {
       }
       emu.grasscutter.net.proto.RefreshNotifyOuterClass.RefreshNotify other = (emu.grasscutter.net.proto.RefreshNotifyOuterClass.RefreshNotify) obj;
 
-      if (getCMODHBBMGCO()
-          != other.getCMODHBBMGCO()) return false;
+      if (getRefreshNum()
+          != other.getRefreshNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -183,8 +183,8 @@ public final class RefreshNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CMODHBBMGCO_FIELD_NUMBER;
-      hash = (53 * hash) + getCMODHBBMGCO();
+      hash = (37 * hash) + REFRESH_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getRefreshNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -318,7 +318,7 @@ public final class RefreshNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cMODHBBMGCO_ = 0;
+        refreshNum_ = 0;
 
         return this;
       }
@@ -346,7 +346,7 @@ public final class RefreshNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RefreshNotifyOuterClass.RefreshNotify buildPartial() {
         emu.grasscutter.net.proto.RefreshNotifyOuterClass.RefreshNotify result = new emu.grasscutter.net.proto.RefreshNotifyOuterClass.RefreshNotify(this);
-        result.cMODHBBMGCO_ = cMODHBBMGCO_;
+        result.refreshNum_ = refreshNum_;
         onBuilt();
         return result;
       }
@@ -395,8 +395,8 @@ public final class RefreshNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RefreshNotifyOuterClass.RefreshNotify other) {
         if (other == emu.grasscutter.net.proto.RefreshNotifyOuterClass.RefreshNotify.getDefaultInstance()) return this;
-        if (other.getCMODHBBMGCO() != 0) {
-          setCMODHBBMGCO(other.getCMODHBBMGCO());
+        if (other.getRefreshNum() != 0) {
+          setRefreshNum(other.getRefreshNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -427,45 +427,45 @@ public final class RefreshNotifyOuterClass {
         return this;
       }
 
-      private int cMODHBBMGCO_ ;
+      private int refreshNum_ ;
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 CMODHBBMGCO = 8;</code>
-       * @return The cMODHBBMGCO.
+       * <code>uint32 refresh_num = 10;</code>
+       * @return The refreshNum.
        */
       @java.lang.Override
-      public int getCMODHBBMGCO() {
-        return cMODHBBMGCO_;
+      public int getRefreshNum() {
+        return refreshNum_;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 CMODHBBMGCO = 8;</code>
-       * @param value The cMODHBBMGCO to set.
+       * <code>uint32 refresh_num = 10;</code>
+       * @param value The refreshNum to set.
        * @return This builder for chaining.
        */
-      public Builder setCMODHBBMGCO(int value) {
+      public Builder setRefreshNum(int value) {
         
-        cMODHBBMGCO_ = value;
+        refreshNum_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 CMODHBBMGCO = 8;</code>
+       * <code>uint32 refresh_num = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCMODHBBMGCO() {
+      public Builder clearRefreshNum() {
         
-        cMODHBBMGCO_ = 0;
+        refreshNum_ = 0;
         onChanged();
         return this;
       }
@@ -537,7 +537,7 @@ public final class RefreshNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023RefreshNotify.proto\"$\n\rRefreshNotify\022\023" +
-      "\n\013CMODHBBMGCO\030\010 \001(\rB\033\n\031emu.grasscutter.n" +
+      "\n\013refresh_num\030\n \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -549,7 +549,7 @@ public final class RefreshNotifyOuterClass {
     internal_static_RefreshNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RefreshNotify_descriptor,
-        new java.lang.String[] { "CMODHBBMGCO", });
+        new java.lang.String[] { "RefreshNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

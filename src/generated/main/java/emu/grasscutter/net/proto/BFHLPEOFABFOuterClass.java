@@ -19,28 +19,16 @@ public final class BFHLPEOFABFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
      * @return A list containing the lDMEFLKHCBC.
      */
     java.util.List<java.lang.Integer> getLDMEFLKHCBCList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
      * @return The count of lDMEFLKHCBC.
      */
     int getLDMEFLKHCBCCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
      * @param index The index of the element to return.
      * @return The lDMEFLKHCBC at the given index.
@@ -48,40 +36,24 @@ public final class BFHLPEOFABFOuterClass {
     int getLDMEFLKHCBC(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 9;</code>
      * @return The oMEBOHLACPH.
      */
     int getOMEBOHLACPH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 group_id = 2;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 start_time = 1;</code>
      * @return The startTime.
      */
     int getStartTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool IJJEPJJGOCI = 3;</code>
      * @return The iJJEPJJGOCI.
      */
@@ -213,10 +185,6 @@ public final class BFHLPEOFABFOuterClass {
     public static final int LDMEFLKHCBC_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList lDMEFLKHCBC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
      * @return A list containing the lDMEFLKHCBC.
      */
@@ -226,10 +194,6 @@ public final class BFHLPEOFABFOuterClass {
       return lDMEFLKHCBC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
      * @return The count of lDMEFLKHCBC.
      */
@@ -237,10 +201,6 @@ public final class BFHLPEOFABFOuterClass {
       return lDMEFLKHCBC_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
      * @param index The index of the element to return.
      * @return The lDMEFLKHCBC at the given index.
@@ -253,10 +213,6 @@ public final class BFHLPEOFABFOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 9;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 9;</code>
      * @return The oMEBOHLACPH.
      */
@@ -268,10 +224,6 @@ public final class BFHLPEOFABFOuterClass {
     public static final int GROUP_ID_FIELD_NUMBER = 2;
     private int groupId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 group_id = 2;</code>
      * @return The groupId.
      */
@@ -283,10 +235,6 @@ public final class BFHLPEOFABFOuterClass {
     public static final int START_TIME_FIELD_NUMBER = 1;
     private int startTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 start_time = 1;</code>
      * @return The startTime.
      */
@@ -298,10 +246,6 @@ public final class BFHLPEOFABFOuterClass {
     public static final int IJJEPJJGOCI_FIELD_NUMBER = 3;
     private boolean iJJEPJJGOCI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool IJJEPJJGOCI = 3;</code>
      * @return The iJJEPJJGOCI.
      */
@@ -719,10 +663,6 @@ public final class BFHLPEOFABFOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
        * @return A list containing the lDMEFLKHCBC.
        */
@@ -732,10 +672,6 @@ public final class BFHLPEOFABFOuterClass {
                  java.util.Collections.unmodifiableList(lDMEFLKHCBC_) : lDMEFLKHCBC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
        * @return The count of lDMEFLKHCBC.
        */
@@ -743,10 +679,6 @@ public final class BFHLPEOFABFOuterClass {
         return lDMEFLKHCBC_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
        * @param index The index of the element to return.
        * @return The lDMEFLKHCBC at the given index.
@@ -755,10 +687,6 @@ public final class BFHLPEOFABFOuterClass {
         return lDMEFLKHCBC_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
        * @param index The index to set the value at.
        * @param value The lDMEFLKHCBC to set.
@@ -772,10 +700,6 @@ public final class BFHLPEOFABFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
        * @param value The lDMEFLKHCBC to add.
        * @return This builder for chaining.
@@ -787,10 +711,6 @@ public final class BFHLPEOFABFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
        * @param values The lDMEFLKHCBC to add.
        * @return This builder for chaining.
@@ -804,10 +724,6 @@ public final class BFHLPEOFABFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LDMEFLKHCBC = 4;</code>
        * @return This builder for chaining.
        */
@@ -820,10 +736,6 @@ public final class BFHLPEOFABFOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 9;</code>
        * @return The oMEBOHLACPH.
        */
@@ -832,10 +744,6 @@ public final class BFHLPEOFABFOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 9;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -847,10 +755,6 @@ public final class BFHLPEOFABFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 9;</code>
        * @return This builder for chaining.
        */
@@ -863,10 +767,6 @@ public final class BFHLPEOFABFOuterClass {
 
       private int groupId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 2;</code>
        * @return The groupId.
        */
@@ -875,10 +775,6 @@ public final class BFHLPEOFABFOuterClass {
         return groupId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 2;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
@@ -890,10 +786,6 @@ public final class BFHLPEOFABFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 2;</code>
        * @return This builder for chaining.
        */
@@ -906,10 +798,6 @@ public final class BFHLPEOFABFOuterClass {
 
       private int startTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 1;</code>
        * @return The startTime.
        */
@@ -918,10 +806,6 @@ public final class BFHLPEOFABFOuterClass {
         return startTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 1;</code>
        * @param value The startTime to set.
        * @return This builder for chaining.
@@ -933,10 +817,6 @@ public final class BFHLPEOFABFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 1;</code>
        * @return This builder for chaining.
        */
@@ -949,10 +829,6 @@ public final class BFHLPEOFABFOuterClass {
 
       private boolean iJJEPJJGOCI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool IJJEPJJGOCI = 3;</code>
        * @return The iJJEPJJGOCI.
        */
@@ -961,10 +837,6 @@ public final class BFHLPEOFABFOuterClass {
         return iJJEPJJGOCI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool IJJEPJJGOCI = 3;</code>
        * @param value The iJJEPJJGOCI to set.
        * @return This builder for chaining.
@@ -976,10 +848,6 @@ public final class BFHLPEOFABFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool IJJEPJJGOCI = 3;</code>
        * @return This builder for chaining.
        */

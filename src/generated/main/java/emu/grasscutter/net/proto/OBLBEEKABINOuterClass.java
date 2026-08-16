@@ -19,30 +19,18 @@ public final class OBLBEEKABINOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 3;</code>
      * @return The finishTime.
      */
     int getFinishTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 13;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IPKIHLJFPEB = 10;</code>
      * @return The iPKIHLJFPEB.
      */
@@ -143,10 +131,6 @@ public final class OBLBEEKABINOuterClass {
     public static final int FINISH_TIME_FIELD_NUMBER = 3;
     private int finishTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 3;</code>
      * @return The finishTime.
      */
@@ -158,10 +142,6 @@ public final class OBLBEEKABINOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 13;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 13;</code>
      * @return The isFinish.
      */
@@ -173,10 +153,6 @@ public final class OBLBEEKABINOuterClass {
     public static final int IPKIHLJFPEB_FIELD_NUMBER = 10;
     private int iPKIHLJFPEB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IPKIHLJFPEB = 10;</code>
      * @return The iPKIHLJFPEB.
      */
@@ -524,10 +500,6 @@ public final class OBLBEEKABINOuterClass {
 
       private int finishTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 3;</code>
        * @return The finishTime.
        */
@@ -536,10 +508,6 @@ public final class OBLBEEKABINOuterClass {
         return finishTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 3;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class OBLBEEKABINOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 3;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class OBLBEEKABINOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 13;</code>
        * @return The isFinish.
        */
@@ -579,10 +539,6 @@ public final class OBLBEEKABINOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 13;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class OBLBEEKABINOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 13;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class OBLBEEKABINOuterClass {
 
       private int iPKIHLJFPEB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IPKIHLJFPEB = 10;</code>
        * @return The iPKIHLJFPEB.
        */
@@ -622,10 +570,6 @@ public final class OBLBEEKABINOuterClass {
         return iPKIHLJFPEB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IPKIHLJFPEB = 10;</code>
        * @param value The iPKIHLJFPEB to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class OBLBEEKABINOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IPKIHLJFPEB = 10;</code>
        * @return This builder for chaining.
        */

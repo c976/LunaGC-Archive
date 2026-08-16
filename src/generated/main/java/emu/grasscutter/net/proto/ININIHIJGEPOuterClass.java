@@ -19,20 +19,12 @@ public final class ININIHIJGEPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool MLENPIOBHAD = 6;</code>
      * @return The mLENPIOBHAD.
      */
     boolean getMLENPIOBHAD();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool CMKDALKGMIP = 4;</code>
      * @return The cMKDALKGMIP.
      */
@@ -128,10 +120,6 @@ public final class ININIHIJGEPOuterClass {
     public static final int MLENPIOBHAD_FIELD_NUMBER = 6;
     private boolean mLENPIOBHAD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool MLENPIOBHAD = 6;</code>
      * @return The mLENPIOBHAD.
      */
@@ -143,10 +131,6 @@ public final class ININIHIJGEPOuterClass {
     public static final int CMKDALKGMIP_FIELD_NUMBER = 4;
     private boolean cMKDALKGMIP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool CMKDALKGMIP = 4;</code>
      * @return The cMKDALKGMIP.
      */
@@ -478,10 +462,6 @@ public final class ININIHIJGEPOuterClass {
 
       private boolean mLENPIOBHAD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MLENPIOBHAD = 6;</code>
        * @return The mLENPIOBHAD.
        */
@@ -490,10 +470,6 @@ public final class ININIHIJGEPOuterClass {
         return mLENPIOBHAD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MLENPIOBHAD = 6;</code>
        * @param value The mLENPIOBHAD to set.
        * @return This builder for chaining.
@@ -505,10 +481,6 @@ public final class ININIHIJGEPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MLENPIOBHAD = 6;</code>
        * @return This builder for chaining.
        */
@@ -521,10 +493,6 @@ public final class ININIHIJGEPOuterClass {
 
       private boolean cMKDALKGMIP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool CMKDALKGMIP = 4;</code>
        * @return The cMKDALKGMIP.
        */
@@ -533,10 +501,6 @@ public final class ININIHIJGEPOuterClass {
         return cMKDALKGMIP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool CMKDALKGMIP = 4;</code>
        * @param value The cMKDALKGMIP to set.
        * @return This builder for chaining.
@@ -548,10 +512,6 @@ public final class ININIHIJGEPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool CMKDALKGMIP = 4;</code>
        * @return This builder for chaining.
        */

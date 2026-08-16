@@ -19,74 +19,42 @@ public final class LBLCBLNMOFMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO> 
         getCFOEJNCOHPKList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
      */
     emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO getCFOEJNCOHPK(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
      */
     int getCFOEJNCOHPKCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEOOrBuilder> 
         getCFOEJNCOHPKOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
      */
     emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEOOrBuilder getCFOEJNCOHPKOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PMLGPDOBJCK = 5;</code>
      * @return The pMLGPDOBJCK.
      */
     int getPMLGPDOBJCK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 6;</code>
      * @return The lOHAJIABHDJ.
      */
     int getLOHAJIABHDJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KFKAPAOHPIJ = 10;</code>
      * @return The kFKAPAOHPIJ.
      */
@@ -201,10 +169,6 @@ public final class LBLCBLNMOFMOuterClass {
     public static final int CFOEJNCOHPK_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO> cFOEJNCOHPK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
      */
     @java.lang.Override
@@ -212,10 +176,6 @@ public final class LBLCBLNMOFMOuterClass {
       return cFOEJNCOHPK_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
      */
     @java.lang.Override
@@ -224,10 +184,6 @@ public final class LBLCBLNMOFMOuterClass {
       return cFOEJNCOHPK_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
      */
     @java.lang.Override
@@ -235,10 +191,6 @@ public final class LBLCBLNMOFMOuterClass {
       return cFOEJNCOHPK_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
      */
     @java.lang.Override
@@ -246,10 +198,6 @@ public final class LBLCBLNMOFMOuterClass {
       return cFOEJNCOHPK_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
      */
     @java.lang.Override
@@ -261,10 +209,6 @@ public final class LBLCBLNMOFMOuterClass {
     public static final int PMLGPDOBJCK_FIELD_NUMBER = 5;
     private int pMLGPDOBJCK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PMLGPDOBJCK = 5;</code>
      * @return The pMLGPDOBJCK.
      */
@@ -276,10 +220,6 @@ public final class LBLCBLNMOFMOuterClass {
     public static final int LOHAJIABHDJ_FIELD_NUMBER = 6;
     private int lOHAJIABHDJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 6;</code>
      * @return The lOHAJIABHDJ.
      */
@@ -291,10 +231,6 @@ public final class LBLCBLNMOFMOuterClass {
     public static final int KFKAPAOHPIJ_FIELD_NUMBER = 10;
     private int kFKAPAOHPIJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KFKAPAOHPIJ = 10;</code>
      * @return The kFKAPAOHPIJ.
      */
@@ -709,10 +645,6 @@ public final class LBLCBLNMOFMOuterClass {
           emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO, emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO.Builder, emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEOOrBuilder> cFOEJNCOHPKBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO> getCFOEJNCOHPKList() {
@@ -723,10 +655,6 @@ public final class LBLCBLNMOFMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public int getCFOEJNCOHPKCount() {
@@ -737,10 +665,6 @@ public final class LBLCBLNMOFMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO getCFOEJNCOHPK(int index) {
@@ -751,10 +675,6 @@ public final class LBLCBLNMOFMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public Builder setCFOEJNCOHPK(
@@ -772,10 +692,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public Builder setCFOEJNCOHPK(
@@ -790,10 +706,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public Builder addCFOEJNCOHPK(emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO value) {
@@ -810,10 +722,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public Builder addCFOEJNCOHPK(
@@ -831,10 +739,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public Builder addCFOEJNCOHPK(
@@ -849,10 +753,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public Builder addCFOEJNCOHPK(
@@ -867,10 +767,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public Builder addAllCFOEJNCOHPK(
@@ -886,10 +782,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public Builder clearCFOEJNCOHPK() {
@@ -903,10 +795,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public Builder removeCFOEJNCOHPK(int index) {
@@ -920,10 +808,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO.Builder getCFOEJNCOHPKBuilder(
@@ -931,10 +815,6 @@ public final class LBLCBLNMOFMOuterClass {
         return getCFOEJNCOHPKFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEOOrBuilder getCFOEJNCOHPKOrBuilder(
@@ -945,10 +825,6 @@ public final class LBLCBLNMOFMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEOOrBuilder> 
@@ -960,10 +836,6 @@ public final class LBLCBLNMOFMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO.Builder addCFOEJNCOHPKBuilder() {
@@ -971,10 +843,6 @@ public final class LBLCBLNMOFMOuterClass {
             emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO.Builder addCFOEJNCOHPKBuilder(
@@ -983,10 +851,6 @@ public final class LBLCBLNMOFMOuterClass {
             index, emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGLIFLJGPEO CFOEJNCOHPK = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EGLIFLJGPEOOuterClass.EGLIFLJGPEO.Builder> 
@@ -1010,10 +874,6 @@ public final class LBLCBLNMOFMOuterClass {
 
       private int pMLGPDOBJCK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PMLGPDOBJCK = 5;</code>
        * @return The pMLGPDOBJCK.
        */
@@ -1022,10 +882,6 @@ public final class LBLCBLNMOFMOuterClass {
         return pMLGPDOBJCK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PMLGPDOBJCK = 5;</code>
        * @param value The pMLGPDOBJCK to set.
        * @return This builder for chaining.
@@ -1037,10 +893,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PMLGPDOBJCK = 5;</code>
        * @return This builder for chaining.
        */
@@ -1053,10 +905,6 @@ public final class LBLCBLNMOFMOuterClass {
 
       private int lOHAJIABHDJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 6;</code>
        * @return The lOHAJIABHDJ.
        */
@@ -1065,10 +913,6 @@ public final class LBLCBLNMOFMOuterClass {
         return lOHAJIABHDJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 6;</code>
        * @param value The lOHAJIABHDJ to set.
        * @return This builder for chaining.
@@ -1080,10 +924,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 6;</code>
        * @return This builder for chaining.
        */
@@ -1096,10 +936,6 @@ public final class LBLCBLNMOFMOuterClass {
 
       private int kFKAPAOHPIJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KFKAPAOHPIJ = 10;</code>
        * @return The kFKAPAOHPIJ.
        */
@@ -1108,10 +944,6 @@ public final class LBLCBLNMOFMOuterClass {
         return kFKAPAOHPIJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KFKAPAOHPIJ = 10;</code>
        * @param value The kFKAPAOHPIJ to set.
        * @return This builder for chaining.
@@ -1123,10 +955,6 @@ public final class LBLCBLNMOFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KFKAPAOHPIJ = 10;</code>
        * @return This builder for chaining.
        */

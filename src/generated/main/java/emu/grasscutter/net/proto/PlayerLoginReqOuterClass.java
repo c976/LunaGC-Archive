@@ -20,29 +20,29 @@ public final class PlayerLoginReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>bytes extra_bin_data = 867;</code>
+     * <code>bytes extra_bin_data = 295;</code>
      * @return The extraBinData.
      */
     com.google.protobuf.ByteString getExtraBinData();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string birthday = 1961;</code>
+     * <code>string birthday = 1129;</code>
      * @return The birthday.
      */
     java.lang.String getBirthday();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string birthday = 1961;</code>
+     * <code>string birthday = 1129;</code>
      * @return The bytes for birthday.
      */
     com.google.protobuf.ByteString
@@ -50,19 +50,19 @@ public final class PlayerLoginReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>string psn_id = 668;</code>
+     * <code>string psn_id = 382;</code>
      * @return The psnId.
      */
     java.lang.String getPsnId();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>string psn_id = 668;</code>
+     * <code>string psn_id = 382;</code>
      * @return The bytes for psnId.
      */
     com.google.protobuf.ByteString
@@ -70,19 +70,19 @@ public final class PlayerLoginReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>string security_library_md5 = 1197;</code>
+     * <code>string security_library_md5 = 254;</code>
      * @return The securityLibraryMd5.
      */
     java.lang.String getSecurityLibraryMd5();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>string security_library_md5 = 1197;</code>
+     * <code>string security_library_md5 = 254;</code>
      * @return The bytes for securityLibraryMd5.
      */
     com.google.protobuf.ByteString
@@ -90,19 +90,19 @@ public final class PlayerLoginReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string token = 9;</code>
+     * <code>string token = 3;</code>
      * @return The token.
      */
     java.lang.String getToken();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string token = 9;</code>
+     * <code>string token = 3;</code>
      * @return The bytes for token.
      */
     com.google.protobuf.ByteString
@@ -110,19 +110,19 @@ public final class PlayerLoginReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string platform = 3;</code>
+     * <code>string platform = 12;</code>
      * @return The platform.
      */
     java.lang.String getPlatform();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string platform = 3;</code>
+     * <code>string platform = 12;</code>
      * @return The bytes for platform.
      */
     com.google.protobuf.ByteString
@@ -130,19 +130,19 @@ public final class PlayerLoginReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string account_uid = 15;</code>
+     * <code>string account_uid = 11;</code>
      * @return The accountUid.
      */
     java.lang.String getAccountUid();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string account_uid = 15;</code>
+     * <code>string account_uid = 11;</code>
      * @return The bytes for accountUid.
      */
     com.google.protobuf.ByteString
@@ -150,39 +150,39 @@ public final class PlayerLoginReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>bytes security_cmd_reply = 878;</code>
+     * <code>bytes security_cmd_reply = 771;</code>
      * @return The securityCmdReply.
      */
     com.google.protobuf.ByteString getSecurityCmdReply();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>bytes environment_error_code = 1039;</code>
+     * <code>bytes environment_error_code = 1766;</code>
      * @return The environmentErrorCode.
      */
     com.google.protobuf.ByteString getEnvironmentErrorCode();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string online_id = 140;</code>
+     * <code>string online_id = 1068;</code>
      * @return The onlineId.
      */
     java.lang.String getOnlineId();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string online_id = 140;</code>
+     * <code>string online_id = 1068;</code>
      * @return The bytes for onlineId.
      */
     com.google.protobuf.ByteString
@@ -190,70 +190,70 @@ public final class PlayerLoginReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 target_uid = 2;</code>
+     * <code>uint32 target_uid = 5;</code>
      * @return The targetUid.
      */
     int getTargetUid();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 channel_id = 1107;</code>
+     * <code>uint32 channel_id = 1539;</code>
      * @return The channelId.
      */
     int getChannelId();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 client_data_version = 1531;</code>
+     * <code>uint32 client_data_version = 1729;</code>
      * @return The clientDataVersion.
      */
     int getClientDataVersion();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 tag = 282;</code>
+     * <code>uint32 tag = 1397;</code>
      * @return The tag.
      */
     int getTag();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 platform_type = 13;</code>
+     * <code>uint32 platform_type = 4;</code>
      * @return The platformType.
      */
     int getPlatformType();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>bool is_editor = 5;</code>
+     * <code>bool is_editor = 10;</code>
      * @return The isEditor.
      */
     boolean getIsEditor();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>bool is_guest = 4;</code>
+     * <code>bool is_guest = 2;</code>
      * @return The isGuest.
      */
     boolean getIsGuest();
@@ -279,39 +279,23 @@ public final class PlayerLoginReqOuterClass {
         getJNIDIOKAAJOBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>string ELNJLDLPCCG = 11;</code>
+     * <code>string ELNJLDLPCCG = 13;</code>
      * @return The eLNJLDLPCCG.
      */
     java.lang.String getELNJLDLPCCG();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>string ELNJLDLPCCG = 11;</code>
+     * <code>string ELNJLDLPCCG = 13;</code>
      * @return The bytes for eLNJLDLPCCG.
      */
     com.google.protobuf.ByteString
         getELNJLDLPCCGBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string PDIEJBEDDBN = 1357;</code>
      * @return The pDIEJBEDDBN.
      */
     java.lang.String getPDIEJBEDDBN();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string PDIEJBEDDBN = 1357;</code>
      * @return The bytes for pDIEJBEDDBN.
      */
@@ -319,19 +303,11 @@ public final class PlayerLoginReqOuterClass {
         getPDIEJBEDDBNBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string MGEJGMCKAEL = 506;</code>
      * @return The mGEJGMCKAEL.
      */
     java.lang.String getMGEJGMCKAEL();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string MGEJGMCKAEL = 506;</code>
      * @return The bytes for mGEJGMCKAEL.
      */
@@ -339,31 +315,11 @@ public final class PlayerLoginReqOuterClass {
         getMGEJGMCKAELBytes();
 
     /**
-     * <code>string MJPJBBLBKPO = 1;</code>
-     * @return The mJPJBBLBKPO.
-     */
-    java.lang.String getMJPJBBLBKPO();
-    /**
-     * <code>string MJPJBBLBKPO = 1;</code>
-     * @return The bytes for mJPJBBLBKPO.
-     */
-    com.google.protobuf.ByteString
-        getMJPJBBLBKPOBytes();
-
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string KLMBLNEPNFP = 565;</code>
      * @return The kLMBLNEPNFP.
      */
     java.lang.String getKLMBLNEPNFP();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string KLMBLNEPNFP = 565;</code>
      * @return The bytes for kLMBLNEPNFP.
      */
@@ -371,29 +327,17 @@ public final class PlayerLoginReqOuterClass {
         getKLMBLNEPNFPBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bytes BEGALCDJGIO = 359;</code>
      * @return The bEGALCDJGIO.
      */
     com.google.protobuf.ByteString getBEGALCDJGIO();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string FLEFHGMJIAF = 70;</code>
      * @return The fLEFHGMJIAF.
      */
     java.lang.String getFLEFHGMJIAF();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string FLEFHGMJIAF = 70;</code>
      * @return The bytes for fLEFHGMJIAF.
      */
@@ -401,19 +345,11 @@ public final class PlayerLoginReqOuterClass {
         getFLEFHGMJIAFBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string NFFIOJJIIIF = 1386;</code>
      * @return The nFFIOJJIIIF.
      */
     java.lang.String getNFFIOJJIIIF();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string NFFIOJJIIIF = 1386;</code>
      * @return The bytes for nFFIOJJIIIF.
      */
@@ -421,46 +357,26 @@ public final class PlayerLoginReqOuterClass {
         getNFFIOJJIIIFBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
      * @return Whether the hONOKEDICNE field is set.
      */
     boolean hasHONOKEDICNE();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
      * @return The hONOKEDICNE.
      */
     emu.grasscutter.net.proto.TrackingIOInfoOuterClass.TrackingIOInfo getHONOKEDICNE();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
      */
     emu.grasscutter.net.proto.TrackingIOInfoOuterClass.TrackingIOInfoOrBuilder getHONOKEDICNEOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string BNDLFGOJEHJ = 55;</code>
      * @return The bNDLFGOJEHJ.
      */
     java.lang.String getBNDLFGOJEHJ();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string BNDLFGOJEHJ = 55;</code>
      * @return The bytes for bNDLFGOJEHJ.
      */
@@ -468,82 +384,26 @@ public final class PlayerLoginReqOuterClass {
         getBNDLFGOJEHJBytes();
 
     /**
-     * <code>string FDKPAOHMIHO = 10;</code>
-     * @return The fDKPAOHMIHO.
-     */
-    java.lang.String getFDKPAOHMIHO();
-    /**
-     * <code>string FDKPAOHMIHO = 10;</code>
-     * @return The bytes for fDKPAOHMIHO.
-     */
-    com.google.protobuf.ByteString
-        getFDKPAOHMIHOBytes();
-
-    /**
-     * <code>string EIDHOGNGPNB = 119;</code>
-     * @return The eIDHOGNGPNB.
-     */
-    java.lang.String getEIDHOGNGPNB();
-    /**
-     * <code>string EIDHOGNGPNB = 119;</code>
-     * @return The bytes for eIDHOGNGPNB.
-     */
-    com.google.protobuf.ByteString
-        getEIDHOGNGPNBBytes();
-
-    /**
-     * <code>string ANOCOKNKFBA = 12;</code>
-     * @return The aNOCOKNKFBA.
-     */
-    java.lang.String getANOCOKNKFBA();
-    /**
-     * <code>string ANOCOKNKFBA = 12;</code>
-     * @return The bytes for aNOCOKNKFBA.
-     */
-    com.google.protobuf.ByteString
-        getANOCOKNKFBABytes();
-
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
      * @return Whether the hGAKECOGGME field is set.
      */
     boolean hasHGAKECOGGME();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
      * @return The hGAKECOGGME.
      */
     emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfo getHGAKECOGGME();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
      */
     emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfoOrBuilder getHGAKECOGGMEOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string FMNKCIABDMG = 1067;</code>
      * @return The fMNKCIABDMG.
      */
     java.lang.String getFMNKCIABDMG();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string FMNKCIABDMG = 1067;</code>
      * @return The bytes for fMNKCIABDMG.
      */
@@ -552,38 +412,30 @@ public final class PlayerLoginReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>string country_code = 329;</code>
+     * <code>string country_code = 1160;</code>
      * @return The countryCode.
      */
     java.lang.String getCountryCode();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>string country_code = 329;</code>
+     * <code>string country_code = 1160;</code>
      * @return The bytes for countryCode.
      */
     com.google.protobuf.ByteString
         getCountryCodeBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string NHOLEKOICFD = 1847;</code>
      * @return The nHOLEKOICFD.
      */
     java.lang.String getNHOLEKOICFD();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string NHOLEKOICFD = 1847;</code>
      * @return The bytes for nHOLEKOICFD.
      */
@@ -591,41 +443,17 @@ public final class PlayerLoginReqOuterClass {
         getNHOLEKOICFDBytes();
 
     /**
-     * <code>string NADDHCAGPLA = 8123;</code>
-     * @return The nADDHCAGPLA.
-     */
-    java.lang.String getNADDHCAGPLA();
-    /**
-     * <code>string NADDHCAGPLA = 8123;</code>
-     * @return The bytes for nADDHCAGPLA.
-     */
-    com.google.protobuf.ByteString
-        getNADDHCAGPLABytes();
-
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bytes OKKKAFOGAFF = 799;</code>
      * @return The oKKKAFOGAFF.
      */
     com.google.protobuf.ByteString getOKKKAFOGAFF();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string JMFFNLENHKG = 1212;</code>
      * @return The jMFFNLENHKG.
      */
     java.lang.String getJMFFNLENHKG();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string JMFFNLENHKG = 1212;</code>
      * @return The bytes for jMFFNLENHKG.
      */
@@ -633,19 +461,11 @@ public final class PlayerLoginReqOuterClass {
         getJMFFNLENHKGBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string BCADGGFKLCN = 979;</code>
      * @return The bCADGGFKLCN.
      */
     java.lang.String getBCADGGFKLCN();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string BCADGGFKLCN = 979;</code>
      * @return The bytes for bCADGGFKLCN.
      */
@@ -653,152 +473,84 @@ public final class PlayerLoginReqOuterClass {
         getBCADGGFKLCNBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 GGIBHFDCMKM = 16;</code>
      * @return The gGIBHFDCMKM.
      */
     long getGGIBHFDCMKM();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GGJPKAFNKJK = 466;</code>
      * @return The gGJPKAFNKJK.
      */
     int getGGJPKAFNKJK();
 
     /**
-     * <code>uint32 LDAPEBNGCAA = 7;</code>
-     * @return The lDAPEBNGCAA.
-     */
-    int getLDAPEBNGCAA();
-
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKPDHDJPOIH = 969;</code>
      * @return The cKPDHDJPOIH.
      */
     int getCKPDHDJPOIH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BDGHHHNGAID = 1641;</code>
      * @return The bDGHHHNGAID.
      */
     int getBDGHHHNGAID();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OCKCOOCKBEJ = 1481;</code>
      * @return The oCKCOOCKBEJ.
      */
     int getOCKCOOCKBEJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>uint32 IDOIOCBGBDD = 6;</code>
+     * <code>uint32 IDOIOCBGBDD = 14;</code>
      * @return The iDOIOCBGBDD.
      */
     int getIDOIOCBGBDD();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IMGHHFNKIIG = 1813;</code>
      * @return The iMGHHFNKIIG.
      */
     int getIMGHHFNKIIG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IIIBPEMHHGF = 763;</code>
      * @return The iIIBPEMHHGF.
      */
     int getIIIBPEMHHGF();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LLEPJKJHFNI = 1453;</code>
      * @return The lLEPJKJHFNI.
      */
     int getLLEPJKJHFNI();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HCPDJHFNEHE = 1341;</code>
      * @return The hCPDJHFNEHE.
      */
     int getHCPDJHFNEHE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BPLIJHLODFK = 234;</code>
      * @return The bPLIJHLODFK.
      */
     int getBPLIJHLODFK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MAECIMMDNEH = 1168;</code>
      * @return The mAECIMMDNEH.
      */
     int getMAECIMMDNEH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MLHECNKPBKK = 511;</code>
      * @return The mLHECNKPBKK.
      */
     int getMLHECNKPBKK();
 
     /**
-     * <code>bool PICMJCIPENM = 460;</code>
-     * @return The pICMJCIPENM.
-     */
-    boolean getPICMJCIPENM();
-
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OFAGNENPKBF = 785;</code>
      * @return The oFAGNENPKBF.
      */
@@ -835,19 +587,14 @@ public final class PlayerLoginReqOuterClass {
       eLNJLDLPCCG_ = "";
       pDIEJBEDDBN_ = "";
       mGEJGMCKAEL_ = "";
-      mJPJBBLBKPO_ = "";
       kLMBLNEPNFP_ = "";
       bEGALCDJGIO_ = com.google.protobuf.ByteString.EMPTY;
       fLEFHGMJIAF_ = "";
       nFFIOJJIIIF_ = "";
       bNDLFGOJEHJ_ = "";
-      fDKPAOHMIHO_ = "";
-      eIDHOGNGPNB_ = "";
-      aNOCOKNKFBA_ = "";
       fMNKCIABDMG_ = "";
       countryCode_ = "";
       nHOLEKOICFD_ = "";
-      nADDHCAGPLA_ = "";
       oKKKAFOGAFF_ = com.google.protobuf.ByteString.EMPTY;
       jMFFNLENHKG_ = "";
       bCADGGFKLCN_ = "";
@@ -883,76 +630,53 @@ public final class PlayerLoginReqOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              mJPJBBLBKPO_ = s;
-              break;
-            }
             case 16: {
 
-              targetUid_ = input.readUInt32();
+              isGuest_ = input.readBool();
               break;
             }
             case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              platform_ = s;
+              token_ = s;
               break;
             }
             case 32: {
 
-              isGuest_ = input.readBool();
+              platformType_ = input.readUInt32();
               break;
             }
             case 40: {
 
+              targetUid_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
               isEditor_ = input.readBool();
-              break;
-            }
-            case 48: {
-
-              iDOIOCBGBDD_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              lDAPEBNGCAA_ = input.readUInt32();
-              break;
-            }
-            case 74: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              token_ = s;
-              break;
-            }
-            case 82: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              fDKPAOHMIHO_ = s;
               break;
             }
             case 90: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              eLNJLDLPCCG_ = s;
+              accountUid_ = s;
               break;
             }
             case 98: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              aNOCOKNKFBA_ = s;
+              platform_ = s;
               break;
             }
-            case 104: {
-
-              platformType_ = input.readUInt32();
-              break;
-            }
-            case 122: {
+            case 106: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              accountUid_ = s;
+              eLNJLDLPCCG_ = s;
+              break;
+            }
+            case 112: {
+
+              iDOIOCBGBDD_ = input.readUInt32();
               break;
             }
             case 128: {
@@ -985,32 +709,20 @@ public final class PlayerLoginReqOuterClass {
 
               break;
             }
-            case 954: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              eIDHOGNGPNB_ = s;
-              break;
-            }
-            case 1122: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              onlineId_ = s;
-              break;
-            }
             case 1872: {
 
               bPLIJHLODFK_ = input.readUInt32();
               break;
             }
-            case 2256: {
-
-              tag_ = input.readUInt32();
-              break;
-            }
-            case 2634: {
+            case 2034: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              countryCode_ = s;
+              securityLibraryMd5_ = s;
+              break;
+            }
+            case 2362: {
+
+              extraBinData_ = input.readBytes();
               break;
             }
             case 2874: {
@@ -1018,9 +730,10 @@ public final class PlayerLoginReqOuterClass {
               bEGALCDJGIO_ = input.readBytes();
               break;
             }
-            case 3680: {
+            case 3058: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              pICMJCIPENM_ = input.readBool();
+              psnId_ = s;
               break;
             }
             case 3728: {
@@ -1045,15 +758,14 @@ public final class PlayerLoginReqOuterClass {
               kLMBLNEPNFP_ = s;
               break;
             }
-            case 5346: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              psnId_ = s;
-              break;
-            }
             case 6104: {
 
               iIIBPEMHHGF_ = input.readUInt32();
+              break;
+            }
+            case 6170: {
+
+              securityCmdReply_ = input.readBytes();
               break;
             }
             case 6280: {
@@ -1064,16 +776,6 @@ public final class PlayerLoginReqOuterClass {
             case 6394: {
 
               oKKKAFOGAFF_ = input.readBytes();
-              break;
-            }
-            case 6938: {
-
-              extraBinData_ = input.readBytes();
-              break;
-            }
-            case 7026: {
-
-              securityCmdReply_ = input.readBytes();
               break;
             }
             case 7752: {
@@ -1087,31 +789,33 @@ public final class PlayerLoginReqOuterClass {
               bCADGGFKLCN_ = s;
               break;
             }
-            case 8314: {
-
-              environmentErrorCode_ = input.readBytes();
-              break;
-            }
             case 8538: {
               java.lang.String s = input.readStringRequireUtf8();
 
               fMNKCIABDMG_ = s;
               break;
             }
-            case 8856: {
+            case 8546: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              channelId_ = input.readUInt32();
+              onlineId_ = s;
+              break;
+            }
+            case 9034: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              birthday_ = s;
+              break;
+            }
+            case 9282: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              countryCode_ = s;
               break;
             }
             case 9344: {
 
               mAECIMMDNEH_ = input.readUInt32();
-              break;
-            }
-            case 9578: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              securityLibraryMd5_ = s;
               break;
             }
             case 9698: {
@@ -1150,6 +854,11 @@ public final class PlayerLoginReqOuterClass {
               nFFIOJJIIIF_ = s;
               break;
             }
+            case 11176: {
+
+              tag_ = input.readUInt32();
+              break;
+            }
             case 11624: {
 
               lLEPJKJHFNI_ = input.readUInt32();
@@ -1160,14 +869,24 @@ public final class PlayerLoginReqOuterClass {
               oCKCOOCKBEJ_ = input.readUInt32();
               break;
             }
-            case 12248: {
+            case 12312: {
 
-              clientDataVersion_ = input.readUInt32();
+              channelId_ = input.readUInt32();
               break;
             }
             case 13128: {
 
               bDGHHHNGAID_ = input.readUInt32();
+              break;
+            }
+            case 13832: {
+
+              clientDataVersion_ = input.readUInt32();
+              break;
+            }
+            case 14130: {
+
+              environmentErrorCode_ = input.readBytes();
               break;
             }
             case 14504: {
@@ -1185,18 +904,6 @@ public final class PlayerLoginReqOuterClass {
               java.lang.String s = input.readStringRequireUtf8();
 
               jNIDIOKAAJO_ = s;
-              break;
-            }
-            case 15690: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              birthday_ = s;
-              break;
-            }
-            case 64986: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              nADDHCAGPLA_ = s;
               break;
             }
             default: {
@@ -1231,14 +938,14 @@ public final class PlayerLoginReqOuterClass {
               emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq.class, emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq.Builder.class);
     }
 
-    public static final int EXTRA_BIN_DATA_FIELD_NUMBER = 867;
+    public static final int EXTRA_BIN_DATA_FIELD_NUMBER = 295;
     private com.google.protobuf.ByteString extraBinData_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>bytes extra_bin_data = 867;</code>
+     * <code>bytes extra_bin_data = 295;</code>
      * @return The extraBinData.
      */
     @java.lang.Override
@@ -1246,14 +953,14 @@ public final class PlayerLoginReqOuterClass {
       return extraBinData_;
     }
 
-    public static final int BIRTHDAY_FIELD_NUMBER = 1961;
+    public static final int BIRTHDAY_FIELD_NUMBER = 1129;
     private volatile java.lang.Object birthday_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string birthday = 1961;</code>
+     * <code>string birthday = 1129;</code>
      * @return The birthday.
      */
     @java.lang.Override
@@ -1271,10 +978,10 @@ public final class PlayerLoginReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string birthday = 1961;</code>
+     * <code>string birthday = 1129;</code>
      * @return The bytes for birthday.
      */
     @java.lang.Override
@@ -1292,14 +999,14 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int PSN_ID_FIELD_NUMBER = 668;
+    public static final int PSN_ID_FIELD_NUMBER = 382;
     private volatile java.lang.Object psnId_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>string psn_id = 668;</code>
+     * <code>string psn_id = 382;</code>
      * @return The psnId.
      */
     @java.lang.Override
@@ -1317,10 +1024,10 @@ public final class PlayerLoginReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>string psn_id = 668;</code>
+     * <code>string psn_id = 382;</code>
      * @return The bytes for psnId.
      */
     @java.lang.Override
@@ -1338,14 +1045,14 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int SECURITY_LIBRARY_MD5_FIELD_NUMBER = 1197;
+    public static final int SECURITY_LIBRARY_MD5_FIELD_NUMBER = 254;
     private volatile java.lang.Object securityLibraryMd5_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>string security_library_md5 = 1197;</code>
+     * <code>string security_library_md5 = 254;</code>
      * @return The securityLibraryMd5.
      */
     @java.lang.Override
@@ -1363,10 +1070,10 @@ public final class PlayerLoginReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>string security_library_md5 = 1197;</code>
+     * <code>string security_library_md5 = 254;</code>
      * @return The bytes for securityLibraryMd5.
      */
     @java.lang.Override
@@ -1384,14 +1091,14 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int TOKEN_FIELD_NUMBER = 9;
+    public static final int TOKEN_FIELD_NUMBER = 3;
     private volatile java.lang.Object token_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string token = 9;</code>
+     * <code>string token = 3;</code>
      * @return The token.
      */
     @java.lang.Override
@@ -1409,10 +1116,10 @@ public final class PlayerLoginReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string token = 9;</code>
+     * <code>string token = 3;</code>
      * @return The bytes for token.
      */
     @java.lang.Override
@@ -1430,14 +1137,14 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int PLATFORM_FIELD_NUMBER = 3;
+    public static final int PLATFORM_FIELD_NUMBER = 12;
     private volatile java.lang.Object platform_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string platform = 3;</code>
+     * <code>string platform = 12;</code>
      * @return The platform.
      */
     @java.lang.Override
@@ -1455,10 +1162,10 @@ public final class PlayerLoginReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string platform = 3;</code>
+     * <code>string platform = 12;</code>
      * @return The bytes for platform.
      */
     @java.lang.Override
@@ -1476,14 +1183,14 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int ACCOUNT_UID_FIELD_NUMBER = 15;
+    public static final int ACCOUNT_UID_FIELD_NUMBER = 11;
     private volatile java.lang.Object accountUid_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string account_uid = 15;</code>
+     * <code>string account_uid = 11;</code>
      * @return The accountUid.
      */
     @java.lang.Override
@@ -1501,10 +1208,10 @@ public final class PlayerLoginReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string account_uid = 15;</code>
+     * <code>string account_uid = 11;</code>
      * @return The bytes for accountUid.
      */
     @java.lang.Override
@@ -1522,14 +1229,14 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int SECURITY_CMD_REPLY_FIELD_NUMBER = 878;
+    public static final int SECURITY_CMD_REPLY_FIELD_NUMBER = 771;
     private com.google.protobuf.ByteString securityCmdReply_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>bytes security_cmd_reply = 878;</code>
+     * <code>bytes security_cmd_reply = 771;</code>
      * @return The securityCmdReply.
      */
     @java.lang.Override
@@ -1537,14 +1244,14 @@ public final class PlayerLoginReqOuterClass {
       return securityCmdReply_;
     }
 
-    public static final int ENVIRONMENT_ERROR_CODE_FIELD_NUMBER = 1039;
+    public static final int ENVIRONMENT_ERROR_CODE_FIELD_NUMBER = 1766;
     private com.google.protobuf.ByteString environmentErrorCode_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>bytes environment_error_code = 1039;</code>
+     * <code>bytes environment_error_code = 1766;</code>
      * @return The environmentErrorCode.
      */
     @java.lang.Override
@@ -1552,14 +1259,14 @@ public final class PlayerLoginReqOuterClass {
       return environmentErrorCode_;
     }
 
-    public static final int ONLINE_ID_FIELD_NUMBER = 140;
+    public static final int ONLINE_ID_FIELD_NUMBER = 1068;
     private volatile java.lang.Object onlineId_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string online_id = 140;</code>
+     * <code>string online_id = 1068;</code>
      * @return The onlineId.
      */
     @java.lang.Override
@@ -1577,10 +1284,10 @@ public final class PlayerLoginReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string online_id = 140;</code>
+     * <code>string online_id = 1068;</code>
      * @return The bytes for onlineId.
      */
     @java.lang.Override
@@ -1598,14 +1305,14 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 2;
+    public static final int TARGET_UID_FIELD_NUMBER = 5;
     private int targetUid_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 target_uid = 2;</code>
+     * <code>uint32 target_uid = 5;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -1613,14 +1320,14 @@ public final class PlayerLoginReqOuterClass {
       return targetUid_;
     }
 
-    public static final int CHANNEL_ID_FIELD_NUMBER = 1107;
+    public static final int CHANNEL_ID_FIELD_NUMBER = 1539;
     private int channelId_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 channel_id = 1107;</code>
+     * <code>uint32 channel_id = 1539;</code>
      * @return The channelId.
      */
     @java.lang.Override
@@ -1628,14 +1335,14 @@ public final class PlayerLoginReqOuterClass {
       return channelId_;
     }
 
-    public static final int CLIENT_DATA_VERSION_FIELD_NUMBER = 1531;
+    public static final int CLIENT_DATA_VERSION_FIELD_NUMBER = 1729;
     private int clientDataVersion_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 client_data_version = 1531;</code>
+     * <code>uint32 client_data_version = 1729;</code>
      * @return The clientDataVersion.
      */
     @java.lang.Override
@@ -1643,14 +1350,14 @@ public final class PlayerLoginReqOuterClass {
       return clientDataVersion_;
     }
 
-    public static final int TAG_FIELD_NUMBER = 282;
+    public static final int TAG_FIELD_NUMBER = 1397;
     private int tag_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 tag = 282;</code>
+     * <code>uint32 tag = 1397;</code>
      * @return The tag.
      */
     @java.lang.Override
@@ -1658,14 +1365,14 @@ public final class PlayerLoginReqOuterClass {
       return tag_;
     }
 
-    public static final int PLATFORM_TYPE_FIELD_NUMBER = 13;
+    public static final int PLATFORM_TYPE_FIELD_NUMBER = 4;
     private int platformType_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 platform_type = 13;</code>
+     * <code>uint32 platform_type = 4;</code>
      * @return The platformType.
      */
     @java.lang.Override
@@ -1673,14 +1380,14 @@ public final class PlayerLoginReqOuterClass {
       return platformType_;
     }
 
-    public static final int IS_EDITOR_FIELD_NUMBER = 5;
+    public static final int IS_EDITOR_FIELD_NUMBER = 10;
     private boolean isEditor_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>bool is_editor = 5;</code>
+     * <code>bool is_editor = 10;</code>
      * @return The isEditor.
      */
     @java.lang.Override
@@ -1688,14 +1395,14 @@ public final class PlayerLoginReqOuterClass {
       return isEditor_;
     }
 
-    public static final int IS_GUEST_FIELD_NUMBER = 4;
+    public static final int IS_GUEST_FIELD_NUMBER = 2;
     private boolean isGuest_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>bool is_guest = 4;</code>
+     * <code>bool is_guest = 2;</code>
      * @return The isGuest.
      */
     @java.lang.Override
@@ -1749,14 +1456,10 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int ELNJLDLPCCG_FIELD_NUMBER = 11;
+    public static final int ELNJLDLPCCG_FIELD_NUMBER = 13;
     private volatile java.lang.Object eLNJLDLPCCG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>string ELNJLDLPCCG = 11;</code>
+     * <code>string ELNJLDLPCCG = 13;</code>
      * @return The eLNJLDLPCCG.
      */
     @java.lang.Override
@@ -1773,11 +1476,7 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>string ELNJLDLPCCG = 11;</code>
+     * <code>string ELNJLDLPCCG = 13;</code>
      * @return The bytes for eLNJLDLPCCG.
      */
     @java.lang.Override
@@ -1798,10 +1497,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int PDIEJBEDDBN_FIELD_NUMBER = 1357;
     private volatile java.lang.Object pDIEJBEDDBN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string PDIEJBEDDBN = 1357;</code>
      * @return The pDIEJBEDDBN.
      */
@@ -1819,10 +1514,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string PDIEJBEDDBN = 1357;</code>
      * @return The bytes for pDIEJBEDDBN.
      */
@@ -1844,10 +1535,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int MGEJGMCKAEL_FIELD_NUMBER = 506;
     private volatile java.lang.Object mGEJGMCKAEL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string MGEJGMCKAEL = 506;</code>
      * @return The mGEJGMCKAEL.
      */
@@ -1865,10 +1552,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string MGEJGMCKAEL = 506;</code>
      * @return The bytes for mGEJGMCKAEL.
      */
@@ -1887,51 +1570,9 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int MJPJBBLBKPO_FIELD_NUMBER = 1;
-    private volatile java.lang.Object mJPJBBLBKPO_;
-    /**
-     * <code>string MJPJBBLBKPO = 1;</code>
-     * @return The mJPJBBLBKPO.
-     */
-    @java.lang.Override
-    public java.lang.String getMJPJBBLBKPO() {
-      java.lang.Object ref = mJPJBBLBKPO_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        mJPJBBLBKPO_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string MJPJBBLBKPO = 1;</code>
-     * @return The bytes for mJPJBBLBKPO.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getMJPJBBLBKPOBytes() {
-      java.lang.Object ref = mJPJBBLBKPO_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        mJPJBBLBKPO_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     public static final int KLMBLNEPNFP_FIELD_NUMBER = 565;
     private volatile java.lang.Object kLMBLNEPNFP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string KLMBLNEPNFP = 565;</code>
      * @return The kLMBLNEPNFP.
      */
@@ -1949,10 +1590,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string KLMBLNEPNFP = 565;</code>
      * @return The bytes for kLMBLNEPNFP.
      */
@@ -1974,10 +1611,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int BEGALCDJGIO_FIELD_NUMBER = 359;
     private com.google.protobuf.ByteString bEGALCDJGIO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bytes BEGALCDJGIO = 359;</code>
      * @return The bEGALCDJGIO.
      */
@@ -1989,10 +1622,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int FLEFHGMJIAF_FIELD_NUMBER = 70;
     private volatile java.lang.Object fLEFHGMJIAF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string FLEFHGMJIAF = 70;</code>
      * @return The fLEFHGMJIAF.
      */
@@ -2010,10 +1639,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string FLEFHGMJIAF = 70;</code>
      * @return The bytes for fLEFHGMJIAF.
      */
@@ -2035,10 +1660,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int NFFIOJJIIIF_FIELD_NUMBER = 1386;
     private volatile java.lang.Object nFFIOJJIIIF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string NFFIOJJIIIF = 1386;</code>
      * @return The nFFIOJJIIIF.
      */
@@ -2056,10 +1677,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string NFFIOJJIIIF = 1386;</code>
      * @return The bytes for nFFIOJJIIIF.
      */
@@ -2081,10 +1698,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int HONOKEDICNE_FIELD_NUMBER = 1377;
     private emu.grasscutter.net.proto.TrackingIOInfoOuterClass.TrackingIOInfo hONOKEDICNE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
      * @return Whether the hONOKEDICNE field is set.
      */
@@ -2093,10 +1706,6 @@ public final class PlayerLoginReqOuterClass {
       return hONOKEDICNE_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
      * @return The hONOKEDICNE.
      */
@@ -2105,10 +1714,6 @@ public final class PlayerLoginReqOuterClass {
       return hONOKEDICNE_ == null ? emu.grasscutter.net.proto.TrackingIOInfoOuterClass.TrackingIOInfo.getDefaultInstance() : hONOKEDICNE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
      */
     @java.lang.Override
@@ -2119,10 +1724,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int BNDLFGOJEHJ_FIELD_NUMBER = 55;
     private volatile java.lang.Object bNDLFGOJEHJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string BNDLFGOJEHJ = 55;</code>
      * @return The bNDLFGOJEHJ.
      */
@@ -2140,10 +1741,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string BNDLFGOJEHJ = 55;</code>
      * @return The bytes for bNDLFGOJEHJ.
      */
@@ -2162,127 +1759,9 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int FDKPAOHMIHO_FIELD_NUMBER = 10;
-    private volatile java.lang.Object fDKPAOHMIHO_;
-    /**
-     * <code>string FDKPAOHMIHO = 10;</code>
-     * @return The fDKPAOHMIHO.
-     */
-    @java.lang.Override
-    public java.lang.String getFDKPAOHMIHO() {
-      java.lang.Object ref = fDKPAOHMIHO_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        fDKPAOHMIHO_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string FDKPAOHMIHO = 10;</code>
-     * @return The bytes for fDKPAOHMIHO.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getFDKPAOHMIHOBytes() {
-      java.lang.Object ref = fDKPAOHMIHO_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        fDKPAOHMIHO_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int EIDHOGNGPNB_FIELD_NUMBER = 119;
-    private volatile java.lang.Object eIDHOGNGPNB_;
-    /**
-     * <code>string EIDHOGNGPNB = 119;</code>
-     * @return The eIDHOGNGPNB.
-     */
-    @java.lang.Override
-    public java.lang.String getEIDHOGNGPNB() {
-      java.lang.Object ref = eIDHOGNGPNB_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        eIDHOGNGPNB_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string EIDHOGNGPNB = 119;</code>
-     * @return The bytes for eIDHOGNGPNB.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getEIDHOGNGPNBBytes() {
-      java.lang.Object ref = eIDHOGNGPNB_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        eIDHOGNGPNB_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int ANOCOKNKFBA_FIELD_NUMBER = 12;
-    private volatile java.lang.Object aNOCOKNKFBA_;
-    /**
-     * <code>string ANOCOKNKFBA = 12;</code>
-     * @return The aNOCOKNKFBA.
-     */
-    @java.lang.Override
-    public java.lang.String getANOCOKNKFBA() {
-      java.lang.Object ref = aNOCOKNKFBA_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        aNOCOKNKFBA_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string ANOCOKNKFBA = 12;</code>
-     * @return The bytes for aNOCOKNKFBA.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getANOCOKNKFBABytes() {
-      java.lang.Object ref = aNOCOKNKFBA_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        aNOCOKNKFBA_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     public static final int HGAKECOGGME_FIELD_NUMBER = 113;
     private emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfo hGAKECOGGME_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
      * @return Whether the hGAKECOGGME field is set.
      */
@@ -2291,10 +1770,6 @@ public final class PlayerLoginReqOuterClass {
       return hGAKECOGGME_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
      * @return The hGAKECOGGME.
      */
@@ -2303,10 +1778,6 @@ public final class PlayerLoginReqOuterClass {
       return hGAKECOGGME_ == null ? emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfo.getDefaultInstance() : hGAKECOGGME_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
      */
     @java.lang.Override
@@ -2317,10 +1788,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int FMNKCIABDMG_FIELD_NUMBER = 1067;
     private volatile java.lang.Object fMNKCIABDMG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string FMNKCIABDMG = 1067;</code>
      * @return The fMNKCIABDMG.
      */
@@ -2338,10 +1805,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string FMNKCIABDMG = 1067;</code>
      * @return The bytes for fMNKCIABDMG.
      */
@@ -2360,14 +1823,14 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int COUNTRY_CODE_FIELD_NUMBER = 329;
+    public static final int COUNTRY_CODE_FIELD_NUMBER = 1160;
     private volatile java.lang.Object countryCode_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>string country_code = 329;</code>
+     * <code>string country_code = 1160;</code>
      * @return The countryCode.
      */
     @java.lang.Override
@@ -2385,10 +1848,10 @@ public final class PlayerLoginReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>string country_code = 329;</code>
+     * <code>string country_code = 1160;</code>
      * @return The bytes for countryCode.
      */
     @java.lang.Override
@@ -2409,10 +1872,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int NHOLEKOICFD_FIELD_NUMBER = 1847;
     private volatile java.lang.Object nHOLEKOICFD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string NHOLEKOICFD = 1847;</code>
      * @return The nHOLEKOICFD.
      */
@@ -2430,10 +1889,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string NHOLEKOICFD = 1847;</code>
      * @return The bytes for nHOLEKOICFD.
      */
@@ -2452,51 +1907,9 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int NADDHCAGPLA_FIELD_NUMBER = 8123;
-    private volatile java.lang.Object nADDHCAGPLA_;
-    /**
-     * <code>string NADDHCAGPLA = 8123;</code>
-     * @return The nADDHCAGPLA.
-     */
-    @java.lang.Override
-    public java.lang.String getNADDHCAGPLA() {
-      java.lang.Object ref = nADDHCAGPLA_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        nADDHCAGPLA_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string NADDHCAGPLA = 8123;</code>
-     * @return The bytes for nADDHCAGPLA.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getNADDHCAGPLABytes() {
-      java.lang.Object ref = nADDHCAGPLA_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        nADDHCAGPLA_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     public static final int OKKKAFOGAFF_FIELD_NUMBER = 799;
     private com.google.protobuf.ByteString oKKKAFOGAFF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bytes OKKKAFOGAFF = 799;</code>
      * @return The oKKKAFOGAFF.
      */
@@ -2508,10 +1921,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int JMFFNLENHKG_FIELD_NUMBER = 1212;
     private volatile java.lang.Object jMFFNLENHKG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string JMFFNLENHKG = 1212;</code>
      * @return The jMFFNLENHKG.
      */
@@ -2529,10 +1938,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string JMFFNLENHKG = 1212;</code>
      * @return The bytes for jMFFNLENHKG.
      */
@@ -2554,10 +1959,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int BCADGGFKLCN_FIELD_NUMBER = 979;
     private volatile java.lang.Object bCADGGFKLCN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string BCADGGFKLCN = 979;</code>
      * @return The bCADGGFKLCN.
      */
@@ -2575,10 +1976,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string BCADGGFKLCN = 979;</code>
      * @return The bytes for bCADGGFKLCN.
      */
@@ -2600,10 +1997,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int GGIBHFDCMKM_FIELD_NUMBER = 16;
     private long gGIBHFDCMKM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 GGIBHFDCMKM = 16;</code>
      * @return The gGIBHFDCMKM.
      */
@@ -2615,10 +2008,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int GGJPKAFNKJK_FIELD_NUMBER = 466;
     private int gGJPKAFNKJK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GGJPKAFNKJK = 466;</code>
      * @return The gGJPKAFNKJK.
      */
@@ -2627,24 +2016,9 @@ public final class PlayerLoginReqOuterClass {
       return gGJPKAFNKJK_;
     }
 
-    public static final int LDAPEBNGCAA_FIELD_NUMBER = 7;
-    private int lDAPEBNGCAA_;
-    /**
-     * <code>uint32 LDAPEBNGCAA = 7;</code>
-     * @return The lDAPEBNGCAA.
-     */
-    @java.lang.Override
-    public int getLDAPEBNGCAA() {
-      return lDAPEBNGCAA_;
-    }
-
     public static final int CKPDHDJPOIH_FIELD_NUMBER = 969;
     private int cKPDHDJPOIH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKPDHDJPOIH = 969;</code>
      * @return The cKPDHDJPOIH.
      */
@@ -2656,10 +2030,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int BDGHHHNGAID_FIELD_NUMBER = 1641;
     private int bDGHHHNGAID_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BDGHHHNGAID = 1641;</code>
      * @return The bDGHHHNGAID.
      */
@@ -2671,10 +2041,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int OCKCOOCKBEJ_FIELD_NUMBER = 1481;
     private int oCKCOOCKBEJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OCKCOOCKBEJ = 1481;</code>
      * @return The oCKCOOCKBEJ.
      */
@@ -2683,14 +2049,10 @@ public final class PlayerLoginReqOuterClass {
       return oCKCOOCKBEJ_;
     }
 
-    public static final int IDOIOCBGBDD_FIELD_NUMBER = 6;
+    public static final int IDOIOCBGBDD_FIELD_NUMBER = 14;
     private int iDOIOCBGBDD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>uint32 IDOIOCBGBDD = 6;</code>
+     * <code>uint32 IDOIOCBGBDD = 14;</code>
      * @return The iDOIOCBGBDD.
      */
     @java.lang.Override
@@ -2701,10 +2063,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int IMGHHFNKIIG_FIELD_NUMBER = 1813;
     private int iMGHHFNKIIG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IMGHHFNKIIG = 1813;</code>
      * @return The iMGHHFNKIIG.
      */
@@ -2716,10 +2074,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int IIIBPEMHHGF_FIELD_NUMBER = 763;
     private int iIIBPEMHHGF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IIIBPEMHHGF = 763;</code>
      * @return The iIIBPEMHHGF.
      */
@@ -2731,10 +2085,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int LLEPJKJHFNI_FIELD_NUMBER = 1453;
     private int lLEPJKJHFNI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LLEPJKJHFNI = 1453;</code>
      * @return The lLEPJKJHFNI.
      */
@@ -2746,10 +2096,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int HCPDJHFNEHE_FIELD_NUMBER = 1341;
     private int hCPDJHFNEHE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HCPDJHFNEHE = 1341;</code>
      * @return The hCPDJHFNEHE.
      */
@@ -2761,10 +2107,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int BPLIJHLODFK_FIELD_NUMBER = 234;
     private int bPLIJHLODFK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BPLIJHLODFK = 234;</code>
      * @return The bPLIJHLODFK.
      */
@@ -2776,10 +2118,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int MAECIMMDNEH_FIELD_NUMBER = 1168;
     private int mAECIMMDNEH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MAECIMMDNEH = 1168;</code>
      * @return The mAECIMMDNEH.
      */
@@ -2791,10 +2129,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int MLHECNKPBKK_FIELD_NUMBER = 511;
     private int mLHECNKPBKK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MLHECNKPBKK = 511;</code>
      * @return The mLHECNKPBKK.
      */
@@ -2803,24 +2137,9 @@ public final class PlayerLoginReqOuterClass {
       return mLHECNKPBKK_;
     }
 
-    public static final int PICMJCIPENM_FIELD_NUMBER = 460;
-    private boolean pICMJCIPENM_;
-    /**
-     * <code>bool PICMJCIPENM = 460;</code>
-     * @return The pICMJCIPENM.
-     */
-    @java.lang.Override
-    public boolean getPICMJCIPENM() {
-      return pICMJCIPENM_;
-    }
-
     public static final int OFAGNENPKBF_FIELD_NUMBER = 785;
     private boolean oFAGNENPKBF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OFAGNENPKBF = 785;</code>
      * @return The oFAGNENPKBF.
      */
@@ -2843,44 +2162,32 @@ public final class PlayerLoginReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mJPJBBLBKPO_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, mJPJBBLBKPO_);
-      }
-      if (targetUid_ != 0) {
-        output.writeUInt32(2, targetUid_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(platform_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, platform_);
-      }
       if (isGuest_ != false) {
-        output.writeBool(4, isGuest_);
-      }
-      if (isEditor_ != false) {
-        output.writeBool(5, isEditor_);
-      }
-      if (iDOIOCBGBDD_ != 0) {
-        output.writeUInt32(6, iDOIOCBGBDD_);
-      }
-      if (lDAPEBNGCAA_ != 0) {
-        output.writeUInt32(7, lDAPEBNGCAA_);
+        output.writeBool(2, isGuest_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(token_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, token_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fDKPAOHMIHO_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, fDKPAOHMIHO_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eLNJLDLPCCG_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, eLNJLDLPCCG_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aNOCOKNKFBA_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, aNOCOKNKFBA_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, token_);
       }
       if (platformType_ != 0) {
-        output.writeUInt32(13, platformType_);
+        output.writeUInt32(4, platformType_);
+      }
+      if (targetUid_ != 0) {
+        output.writeUInt32(5, targetUid_);
+      }
+      if (isEditor_ != false) {
+        output.writeBool(10, isEditor_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(accountUid_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, accountUid_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, accountUid_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(platform_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, platform_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eLNJLDLPCCG_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, eLNJLDLPCCG_);
+      }
+      if (iDOIOCBGBDD_ != 0) {
+        output.writeUInt32(14, iDOIOCBGBDD_);
       }
       if (gGIBHFDCMKM_ != 0L) {
         output.writeUInt64(16, gGIBHFDCMKM_);
@@ -2894,26 +2201,20 @@ public final class PlayerLoginReqOuterClass {
       if (hGAKECOGGME_ != null) {
         output.writeMessage(113, getHGAKECOGGME());
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eIDHOGNGPNB_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 119, eIDHOGNGPNB_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 140, onlineId_);
-      }
       if (bPLIJHLODFK_ != 0) {
         output.writeUInt32(234, bPLIJHLODFK_);
       }
-      if (tag_ != 0) {
-        output.writeUInt32(282, tag_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(securityLibraryMd5_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 254, securityLibraryMd5_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 329, countryCode_);
+      if (!extraBinData_.isEmpty()) {
+        output.writeBytes(295, extraBinData_);
       }
       if (!bEGALCDJGIO_.isEmpty()) {
         output.writeBytes(359, bEGALCDJGIO_);
       }
-      if (pICMJCIPENM_ != false) {
-        output.writeBool(460, pICMJCIPENM_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 382, psnId_);
       }
       if (gGJPKAFNKJK_ != 0) {
         output.writeUInt32(466, gGJPKAFNKJK_);
@@ -2927,11 +2228,11 @@ public final class PlayerLoginReqOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(kLMBLNEPNFP_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 565, kLMBLNEPNFP_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 668, psnId_);
-      }
       if (iIIBPEMHHGF_ != 0) {
         output.writeUInt32(763, iIIBPEMHHGF_);
+      }
+      if (!securityCmdReply_.isEmpty()) {
+        output.writeBytes(771, securityCmdReply_);
       }
       if (oFAGNENPKBF_ != false) {
         output.writeBool(785, oFAGNENPKBF_);
@@ -2939,32 +2240,26 @@ public final class PlayerLoginReqOuterClass {
       if (!oKKKAFOGAFF_.isEmpty()) {
         output.writeBytes(799, oKKKAFOGAFF_);
       }
-      if (!extraBinData_.isEmpty()) {
-        output.writeBytes(867, extraBinData_);
-      }
-      if (!securityCmdReply_.isEmpty()) {
-        output.writeBytes(878, securityCmdReply_);
-      }
       if (cKPDHDJPOIH_ != 0) {
         output.writeUInt32(969, cKPDHDJPOIH_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(bCADGGFKLCN_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 979, bCADGGFKLCN_);
       }
-      if (!environmentErrorCode_.isEmpty()) {
-        output.writeBytes(1039, environmentErrorCode_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fMNKCIABDMG_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1067, fMNKCIABDMG_);
       }
-      if (channelId_ != 0) {
-        output.writeUInt32(1107, channelId_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1068, onlineId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(birthday_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1129, birthday_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1160, countryCode_);
       }
       if (mAECIMMDNEH_ != 0) {
         output.writeUInt32(1168, mAECIMMDNEH_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(securityLibraryMd5_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1197, securityLibraryMd5_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jMFFNLENHKG_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1212, jMFFNLENHKG_);
@@ -2981,17 +2276,26 @@ public final class PlayerLoginReqOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nFFIOJJIIIF_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1386, nFFIOJJIIIF_);
       }
+      if (tag_ != 0) {
+        output.writeUInt32(1397, tag_);
+      }
       if (lLEPJKJHFNI_ != 0) {
         output.writeUInt32(1453, lLEPJKJHFNI_);
       }
       if (oCKCOOCKBEJ_ != 0) {
         output.writeUInt32(1481, oCKCOOCKBEJ_);
       }
-      if (clientDataVersion_ != 0) {
-        output.writeUInt32(1531, clientDataVersion_);
+      if (channelId_ != 0) {
+        output.writeUInt32(1539, channelId_);
       }
       if (bDGHHHNGAID_ != 0) {
         output.writeUInt32(1641, bDGHHHNGAID_);
+      }
+      if (clientDataVersion_ != 0) {
+        output.writeUInt32(1729, clientDataVersion_);
+      }
+      if (!environmentErrorCode_.isEmpty()) {
+        output.writeBytes(1766, environmentErrorCode_);
       }
       if (iMGHHFNKIIG_ != 0) {
         output.writeUInt32(1813, iMGHHFNKIIG_);
@@ -3002,12 +2306,6 @@ public final class PlayerLoginReqOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jNIDIOKAAJO_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1883, jNIDIOKAAJO_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(birthday_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1961, birthday_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nADDHCAGPLA_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 8123, nADDHCAGPLA_);
-      }
       unknownFields.writeTo(output);
     }
 
@@ -3017,50 +2315,37 @@ public final class PlayerLoginReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mJPJBBLBKPO_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, mJPJBBLBKPO_);
-      }
-      if (targetUid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, targetUid_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(platform_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, platform_);
-      }
       if (isGuest_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isGuest_);
-      }
-      if (isEditor_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isEditor_);
-      }
-      if (iDOIOCBGBDD_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, iDOIOCBGBDD_);
-      }
-      if (lDAPEBNGCAA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, lDAPEBNGCAA_);
+          .computeBoolSize(2, isGuest_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(token_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, token_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fDKPAOHMIHO_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, fDKPAOHMIHO_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eLNJLDLPCCG_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, eLNJLDLPCCG_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aNOCOKNKFBA_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, aNOCOKNKFBA_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, token_);
       }
       if (platformType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, platformType_);
+          .computeUInt32Size(4, platformType_);
+      }
+      if (targetUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, targetUid_);
+      }
+      if (isEditor_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, isEditor_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(accountUid_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, accountUid_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, accountUid_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(platform_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, platform_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eLNJLDLPCCG_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, eLNJLDLPCCG_);
+      }
+      if (iDOIOCBGBDD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, iDOIOCBGBDD_);
       }
       if (gGIBHFDCMKM_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
@@ -3076,30 +2361,23 @@ public final class PlayerLoginReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(113, getHGAKECOGGME());
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eIDHOGNGPNB_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(119, eIDHOGNGPNB_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(140, onlineId_);
-      }
       if (bPLIJHLODFK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(234, bPLIJHLODFK_);
       }
-      if (tag_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(282, tag_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(securityLibraryMd5_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(254, securityLibraryMd5_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(329, countryCode_);
+      if (!extraBinData_.isEmpty()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(295, extraBinData_);
       }
       if (!bEGALCDJGIO_.isEmpty()) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(359, bEGALCDJGIO_);
       }
-      if (pICMJCIPENM_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(460, pICMJCIPENM_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(382, psnId_);
       }
       if (gGJPKAFNKJK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -3115,12 +2393,13 @@ public final class PlayerLoginReqOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(kLMBLNEPNFP_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(565, kLMBLNEPNFP_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(668, psnId_);
-      }
       if (iIIBPEMHHGF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(763, iIIBPEMHHGF_);
+      }
+      if (!securityCmdReply_.isEmpty()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(771, securityCmdReply_);
       }
       if (oFAGNENPKBF_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -3130,14 +2409,6 @@ public final class PlayerLoginReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(799, oKKKAFOGAFF_);
       }
-      if (!extraBinData_.isEmpty()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(867, extraBinData_);
-      }
-      if (!securityCmdReply_.isEmpty()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(878, securityCmdReply_);
-      }
       if (cKPDHDJPOIH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(969, cKPDHDJPOIH_);
@@ -3145,23 +2416,21 @@ public final class PlayerLoginReqOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(bCADGGFKLCN_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(979, bCADGGFKLCN_);
       }
-      if (!environmentErrorCode_.isEmpty()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1039, environmentErrorCode_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fMNKCIABDMG_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1067, fMNKCIABDMG_);
       }
-      if (channelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1107, channelId_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1068, onlineId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(birthday_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1129, birthday_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1160, countryCode_);
       }
       if (mAECIMMDNEH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1168, mAECIMMDNEH_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(securityLibraryMd5_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1197, securityLibraryMd5_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jMFFNLENHKG_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1212, jMFFNLENHKG_);
@@ -3180,6 +2449,10 @@ public final class PlayerLoginReqOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nFFIOJJIIIF_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1386, nFFIOJJIIIF_);
       }
+      if (tag_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1397, tag_);
+      }
       if (lLEPJKJHFNI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1453, lLEPJKJHFNI_);
@@ -3188,13 +2461,21 @@ public final class PlayerLoginReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1481, oCKCOOCKBEJ_);
       }
-      if (clientDataVersion_ != 0) {
+      if (channelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1531, clientDataVersion_);
+          .computeUInt32Size(1539, channelId_);
       }
       if (bDGHHHNGAID_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1641, bDGHHHNGAID_);
+      }
+      if (clientDataVersion_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1729, clientDataVersion_);
+      }
+      if (!environmentErrorCode_.isEmpty()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1766, environmentErrorCode_);
       }
       if (iMGHHFNKIIG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -3205,12 +2486,6 @@ public final class PlayerLoginReqOuterClass {
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jNIDIOKAAJO_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1883, jNIDIOKAAJO_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(birthday_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1961, birthday_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nADDHCAGPLA_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8123, nADDHCAGPLA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3269,8 +2544,6 @@ public final class PlayerLoginReqOuterClass {
           .equals(other.getPDIEJBEDDBN())) return false;
       if (!getMGEJGMCKAEL()
           .equals(other.getMGEJGMCKAEL())) return false;
-      if (!getMJPJBBLBKPO()
-          .equals(other.getMJPJBBLBKPO())) return false;
       if (!getKLMBLNEPNFP()
           .equals(other.getKLMBLNEPNFP())) return false;
       if (!getBEGALCDJGIO()
@@ -3286,12 +2559,6 @@ public final class PlayerLoginReqOuterClass {
       }
       if (!getBNDLFGOJEHJ()
           .equals(other.getBNDLFGOJEHJ())) return false;
-      if (!getFDKPAOHMIHO()
-          .equals(other.getFDKPAOHMIHO())) return false;
-      if (!getEIDHOGNGPNB()
-          .equals(other.getEIDHOGNGPNB())) return false;
-      if (!getANOCOKNKFBA()
-          .equals(other.getANOCOKNKFBA())) return false;
       if (hasHGAKECOGGME() != other.hasHGAKECOGGME()) return false;
       if (hasHGAKECOGGME()) {
         if (!getHGAKECOGGME()
@@ -3303,8 +2570,6 @@ public final class PlayerLoginReqOuterClass {
           .equals(other.getCountryCode())) return false;
       if (!getNHOLEKOICFD()
           .equals(other.getNHOLEKOICFD())) return false;
-      if (!getNADDHCAGPLA()
-          .equals(other.getNADDHCAGPLA())) return false;
       if (!getOKKKAFOGAFF()
           .equals(other.getOKKKAFOGAFF())) return false;
       if (!getJMFFNLENHKG()
@@ -3315,8 +2580,6 @@ public final class PlayerLoginReqOuterClass {
           != other.getGGIBHFDCMKM()) return false;
       if (getGGJPKAFNKJK()
           != other.getGGJPKAFNKJK()) return false;
-      if (getLDAPEBNGCAA()
-          != other.getLDAPEBNGCAA()) return false;
       if (getCKPDHDJPOIH()
           != other.getCKPDHDJPOIH()) return false;
       if (getBDGHHHNGAID()
@@ -3339,8 +2602,6 @@ public final class PlayerLoginReqOuterClass {
           != other.getMAECIMMDNEH()) return false;
       if (getMLHECNKPBKK()
           != other.getMLHECNKPBKK()) return false;
-      if (getPICMJCIPENM()
-          != other.getPICMJCIPENM()) return false;
       if (getOFAGNENPKBF()
           != other.getOFAGNENPKBF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -3398,8 +2659,6 @@ public final class PlayerLoginReqOuterClass {
       hash = (53 * hash) + getPDIEJBEDDBN().hashCode();
       hash = (37 * hash) + MGEJGMCKAEL_FIELD_NUMBER;
       hash = (53 * hash) + getMGEJGMCKAEL().hashCode();
-      hash = (37 * hash) + MJPJBBLBKPO_FIELD_NUMBER;
-      hash = (53 * hash) + getMJPJBBLBKPO().hashCode();
       hash = (37 * hash) + KLMBLNEPNFP_FIELD_NUMBER;
       hash = (53 * hash) + getKLMBLNEPNFP().hashCode();
       hash = (37 * hash) + BEGALCDJGIO_FIELD_NUMBER;
@@ -3414,12 +2673,6 @@ public final class PlayerLoginReqOuterClass {
       }
       hash = (37 * hash) + BNDLFGOJEHJ_FIELD_NUMBER;
       hash = (53 * hash) + getBNDLFGOJEHJ().hashCode();
-      hash = (37 * hash) + FDKPAOHMIHO_FIELD_NUMBER;
-      hash = (53 * hash) + getFDKPAOHMIHO().hashCode();
-      hash = (37 * hash) + EIDHOGNGPNB_FIELD_NUMBER;
-      hash = (53 * hash) + getEIDHOGNGPNB().hashCode();
-      hash = (37 * hash) + ANOCOKNKFBA_FIELD_NUMBER;
-      hash = (53 * hash) + getANOCOKNKFBA().hashCode();
       if (hasHGAKECOGGME()) {
         hash = (37 * hash) + HGAKECOGGME_FIELD_NUMBER;
         hash = (53 * hash) + getHGAKECOGGME().hashCode();
@@ -3430,8 +2683,6 @@ public final class PlayerLoginReqOuterClass {
       hash = (53 * hash) + getCountryCode().hashCode();
       hash = (37 * hash) + NHOLEKOICFD_FIELD_NUMBER;
       hash = (53 * hash) + getNHOLEKOICFD().hashCode();
-      hash = (37 * hash) + NADDHCAGPLA_FIELD_NUMBER;
-      hash = (53 * hash) + getNADDHCAGPLA().hashCode();
       hash = (37 * hash) + OKKKAFOGAFF_FIELD_NUMBER;
       hash = (53 * hash) + getOKKKAFOGAFF().hashCode();
       hash = (37 * hash) + JMFFNLENHKG_FIELD_NUMBER;
@@ -3443,8 +2694,6 @@ public final class PlayerLoginReqOuterClass {
           getGGIBHFDCMKM());
       hash = (37 * hash) + GGJPKAFNKJK_FIELD_NUMBER;
       hash = (53 * hash) + getGGJPKAFNKJK();
-      hash = (37 * hash) + LDAPEBNGCAA_FIELD_NUMBER;
-      hash = (53 * hash) + getLDAPEBNGCAA();
       hash = (37 * hash) + CKPDHDJPOIH_FIELD_NUMBER;
       hash = (53 * hash) + getCKPDHDJPOIH();
       hash = (37 * hash) + BDGHHHNGAID_FIELD_NUMBER;
@@ -3467,9 +2716,6 @@ public final class PlayerLoginReqOuterClass {
       hash = (53 * hash) + getMAECIMMDNEH();
       hash = (37 * hash) + MLHECNKPBKK_FIELD_NUMBER;
       hash = (53 * hash) + getMLHECNKPBKK();
-      hash = (37 * hash) + PICMJCIPENM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getPICMJCIPENM());
       hash = (37 * hash) + OFAGNENPKBF_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getOFAGNENPKBF());
@@ -3652,8 +2898,6 @@ public final class PlayerLoginReqOuterClass {
 
         mGEJGMCKAEL_ = "";
 
-        mJPJBBLBKPO_ = "";
-
         kLMBLNEPNFP_ = "";
 
         bEGALCDJGIO_ = com.google.protobuf.ByteString.EMPTY;
@@ -3670,12 +2914,6 @@ public final class PlayerLoginReqOuterClass {
         }
         bNDLFGOJEHJ_ = "";
 
-        fDKPAOHMIHO_ = "";
-
-        eIDHOGNGPNB_ = "";
-
-        aNOCOKNKFBA_ = "";
-
         if (hGAKECOGGMEBuilder_ == null) {
           hGAKECOGGME_ = null;
         } else {
@@ -3688,8 +2926,6 @@ public final class PlayerLoginReqOuterClass {
 
         nHOLEKOICFD_ = "";
 
-        nADDHCAGPLA_ = "";
-
         oKKKAFOGAFF_ = com.google.protobuf.ByteString.EMPTY;
 
         jMFFNLENHKG_ = "";
@@ -3699,8 +2935,6 @@ public final class PlayerLoginReqOuterClass {
         gGIBHFDCMKM_ = 0L;
 
         gGJPKAFNKJK_ = 0;
-
-        lDAPEBNGCAA_ = 0;
 
         cKPDHDJPOIH_ = 0;
 
@@ -3723,8 +2957,6 @@ public final class PlayerLoginReqOuterClass {
         mAECIMMDNEH_ = 0;
 
         mLHECNKPBKK_ = 0;
-
-        pICMJCIPENM_ = false;
 
         oFAGNENPKBF_ = false;
 
@@ -3775,7 +3007,6 @@ public final class PlayerLoginReqOuterClass {
         result.eLNJLDLPCCG_ = eLNJLDLPCCG_;
         result.pDIEJBEDDBN_ = pDIEJBEDDBN_;
         result.mGEJGMCKAEL_ = mGEJGMCKAEL_;
-        result.mJPJBBLBKPO_ = mJPJBBLBKPO_;
         result.kLMBLNEPNFP_ = kLMBLNEPNFP_;
         result.bEGALCDJGIO_ = bEGALCDJGIO_;
         result.fLEFHGMJIAF_ = fLEFHGMJIAF_;
@@ -3786,9 +3017,6 @@ public final class PlayerLoginReqOuterClass {
           result.hONOKEDICNE_ = hONOKEDICNEBuilder_.build();
         }
         result.bNDLFGOJEHJ_ = bNDLFGOJEHJ_;
-        result.fDKPAOHMIHO_ = fDKPAOHMIHO_;
-        result.eIDHOGNGPNB_ = eIDHOGNGPNB_;
-        result.aNOCOKNKFBA_ = aNOCOKNKFBA_;
         if (hGAKECOGGMEBuilder_ == null) {
           result.hGAKECOGGME_ = hGAKECOGGME_;
         } else {
@@ -3797,13 +3025,11 @@ public final class PlayerLoginReqOuterClass {
         result.fMNKCIABDMG_ = fMNKCIABDMG_;
         result.countryCode_ = countryCode_;
         result.nHOLEKOICFD_ = nHOLEKOICFD_;
-        result.nADDHCAGPLA_ = nADDHCAGPLA_;
         result.oKKKAFOGAFF_ = oKKKAFOGAFF_;
         result.jMFFNLENHKG_ = jMFFNLENHKG_;
         result.bCADGGFKLCN_ = bCADGGFKLCN_;
         result.gGIBHFDCMKM_ = gGIBHFDCMKM_;
         result.gGJPKAFNKJK_ = gGJPKAFNKJK_;
-        result.lDAPEBNGCAA_ = lDAPEBNGCAA_;
         result.cKPDHDJPOIH_ = cKPDHDJPOIH_;
         result.bDGHHHNGAID_ = bDGHHHNGAID_;
         result.oCKCOOCKBEJ_ = oCKCOOCKBEJ_;
@@ -3815,7 +3041,6 @@ public final class PlayerLoginReqOuterClass {
         result.bPLIJHLODFK_ = bPLIJHLODFK_;
         result.mAECIMMDNEH_ = mAECIMMDNEH_;
         result.mLHECNKPBKK_ = mLHECNKPBKK_;
-        result.pICMJCIPENM_ = pICMJCIPENM_;
         result.oFAGNENPKBF_ = oFAGNENPKBF_;
         onBuilt();
         return result;
@@ -3939,10 +3164,6 @@ public final class PlayerLoginReqOuterClass {
           mGEJGMCKAEL_ = other.mGEJGMCKAEL_;
           onChanged();
         }
-        if (!other.getMJPJBBLBKPO().isEmpty()) {
-          mJPJBBLBKPO_ = other.mJPJBBLBKPO_;
-          onChanged();
-        }
         if (!other.getKLMBLNEPNFP().isEmpty()) {
           kLMBLNEPNFP_ = other.kLMBLNEPNFP_;
           onChanged();
@@ -3965,18 +3186,6 @@ public final class PlayerLoginReqOuterClass {
           bNDLFGOJEHJ_ = other.bNDLFGOJEHJ_;
           onChanged();
         }
-        if (!other.getFDKPAOHMIHO().isEmpty()) {
-          fDKPAOHMIHO_ = other.fDKPAOHMIHO_;
-          onChanged();
-        }
-        if (!other.getEIDHOGNGPNB().isEmpty()) {
-          eIDHOGNGPNB_ = other.eIDHOGNGPNB_;
-          onChanged();
-        }
-        if (!other.getANOCOKNKFBA().isEmpty()) {
-          aNOCOKNKFBA_ = other.aNOCOKNKFBA_;
-          onChanged();
-        }
         if (other.hasHGAKECOGGME()) {
           mergeHGAKECOGGME(other.getHGAKECOGGME());
         }
@@ -3990,10 +3199,6 @@ public final class PlayerLoginReqOuterClass {
         }
         if (!other.getNHOLEKOICFD().isEmpty()) {
           nHOLEKOICFD_ = other.nHOLEKOICFD_;
-          onChanged();
-        }
-        if (!other.getNADDHCAGPLA().isEmpty()) {
-          nADDHCAGPLA_ = other.nADDHCAGPLA_;
           onChanged();
         }
         if (other.getOKKKAFOGAFF() != com.google.protobuf.ByteString.EMPTY) {
@@ -4012,9 +3217,6 @@ public final class PlayerLoginReqOuterClass {
         }
         if (other.getGGJPKAFNKJK() != 0) {
           setGGJPKAFNKJK(other.getGGJPKAFNKJK());
-        }
-        if (other.getLDAPEBNGCAA() != 0) {
-          setLDAPEBNGCAA(other.getLDAPEBNGCAA());
         }
         if (other.getCKPDHDJPOIH() != 0) {
           setCKPDHDJPOIH(other.getCKPDHDJPOIH());
@@ -4048,9 +3250,6 @@ public final class PlayerLoginReqOuterClass {
         }
         if (other.getMLHECNKPBKK() != 0) {
           setMLHECNKPBKK(other.getMLHECNKPBKK());
-        }
-        if (other.getPICMJCIPENM() != false) {
-          setPICMJCIPENM(other.getPICMJCIPENM());
         }
         if (other.getOFAGNENPKBF() != false) {
           setOFAGNENPKBF(other.getOFAGNENPKBF());
@@ -4087,10 +3286,10 @@ public final class PlayerLoginReqOuterClass {
       private com.google.protobuf.ByteString extraBinData_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>bytes extra_bin_data = 867;</code>
+       * <code>bytes extra_bin_data = 295;</code>
        * @return The extraBinData.
        */
       @java.lang.Override
@@ -4099,10 +3298,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>bytes extra_bin_data = 867;</code>
+       * <code>bytes extra_bin_data = 295;</code>
        * @param value The extraBinData to set.
        * @return This builder for chaining.
        */
@@ -4117,10 +3316,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>bytes extra_bin_data = 867;</code>
+       * <code>bytes extra_bin_data = 295;</code>
        * @return This builder for chaining.
        */
       public Builder clearExtraBinData() {
@@ -4133,10 +3332,10 @@ public final class PlayerLoginReqOuterClass {
       private java.lang.Object birthday_ = "";
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string birthday = 1961;</code>
+       * <code>string birthday = 1129;</code>
        * @return The birthday.
        */
       public java.lang.String getBirthday() {
@@ -4153,10 +3352,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string birthday = 1961;</code>
+       * <code>string birthday = 1129;</code>
        * @return The bytes for birthday.
        */
       public com.google.protobuf.ByteString
@@ -4174,10 +3373,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string birthday = 1961;</code>
+       * <code>string birthday = 1129;</code>
        * @param value The birthday to set.
        * @return This builder for chaining.
        */
@@ -4193,10 +3392,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string birthday = 1961;</code>
+       * <code>string birthday = 1129;</code>
        * @return This builder for chaining.
        */
       public Builder clearBirthday() {
@@ -4207,10 +3406,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string birthday = 1961;</code>
+       * <code>string birthday = 1129;</code>
        * @param value The bytes for birthday to set.
        * @return This builder for chaining.
        */
@@ -4229,10 +3428,10 @@ public final class PlayerLoginReqOuterClass {
       private java.lang.Object psnId_ = "";
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>string psn_id = 668;</code>
+       * <code>string psn_id = 382;</code>
        * @return The psnId.
        */
       public java.lang.String getPsnId() {
@@ -4249,10 +3448,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>string psn_id = 668;</code>
+       * <code>string psn_id = 382;</code>
        * @return The bytes for psnId.
        */
       public com.google.protobuf.ByteString
@@ -4270,10 +3469,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>string psn_id = 668;</code>
+       * <code>string psn_id = 382;</code>
        * @param value The psnId to set.
        * @return This builder for chaining.
        */
@@ -4289,10 +3488,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>string psn_id = 668;</code>
+       * <code>string psn_id = 382;</code>
        * @return This builder for chaining.
        */
       public Builder clearPsnId() {
@@ -4303,10 +3502,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>string psn_id = 668;</code>
+       * <code>string psn_id = 382;</code>
        * @param value The bytes for psnId to set.
        * @return This builder for chaining.
        */
@@ -4325,10 +3524,10 @@ public final class PlayerLoginReqOuterClass {
       private java.lang.Object securityLibraryMd5_ = "";
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>string security_library_md5 = 1197;</code>
+       * <code>string security_library_md5 = 254;</code>
        * @return The securityLibraryMd5.
        */
       public java.lang.String getSecurityLibraryMd5() {
@@ -4345,10 +3544,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>string security_library_md5 = 1197;</code>
+       * <code>string security_library_md5 = 254;</code>
        * @return The bytes for securityLibraryMd5.
        */
       public com.google.protobuf.ByteString
@@ -4366,10 +3565,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>string security_library_md5 = 1197;</code>
+       * <code>string security_library_md5 = 254;</code>
        * @param value The securityLibraryMd5 to set.
        * @return This builder for chaining.
        */
@@ -4385,10 +3584,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>string security_library_md5 = 1197;</code>
+       * <code>string security_library_md5 = 254;</code>
        * @return This builder for chaining.
        */
       public Builder clearSecurityLibraryMd5() {
@@ -4399,10 +3598,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>string security_library_md5 = 1197;</code>
+       * <code>string security_library_md5 = 254;</code>
        * @param value The bytes for securityLibraryMd5 to set.
        * @return This builder for chaining.
        */
@@ -4421,10 +3620,10 @@ public final class PlayerLoginReqOuterClass {
       private java.lang.Object token_ = "";
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string token = 9;</code>
+       * <code>string token = 3;</code>
        * @return The token.
        */
       public java.lang.String getToken() {
@@ -4441,10 +3640,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string token = 9;</code>
+       * <code>string token = 3;</code>
        * @return The bytes for token.
        */
       public com.google.protobuf.ByteString
@@ -4462,10 +3661,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string token = 9;</code>
+       * <code>string token = 3;</code>
        * @param value The token to set.
        * @return This builder for chaining.
        */
@@ -4481,10 +3680,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string token = 9;</code>
+       * <code>string token = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearToken() {
@@ -4495,10 +3694,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string token = 9;</code>
+       * <code>string token = 3;</code>
        * @param value The bytes for token to set.
        * @return This builder for chaining.
        */
@@ -4517,10 +3716,10 @@ public final class PlayerLoginReqOuterClass {
       private java.lang.Object platform_ = "";
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string platform = 3;</code>
+       * <code>string platform = 12;</code>
        * @return The platform.
        */
       public java.lang.String getPlatform() {
@@ -4537,10 +3736,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string platform = 3;</code>
+       * <code>string platform = 12;</code>
        * @return The bytes for platform.
        */
       public com.google.protobuf.ByteString
@@ -4558,10 +3757,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string platform = 3;</code>
+       * <code>string platform = 12;</code>
        * @param value The platform to set.
        * @return This builder for chaining.
        */
@@ -4577,10 +3776,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string platform = 3;</code>
+       * <code>string platform = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlatform() {
@@ -4591,10 +3790,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string platform = 3;</code>
+       * <code>string platform = 12;</code>
        * @param value The bytes for platform to set.
        * @return This builder for chaining.
        */
@@ -4613,10 +3812,10 @@ public final class PlayerLoginReqOuterClass {
       private java.lang.Object accountUid_ = "";
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_uid = 15;</code>
+       * <code>string account_uid = 11;</code>
        * @return The accountUid.
        */
       public java.lang.String getAccountUid() {
@@ -4633,10 +3832,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_uid = 15;</code>
+       * <code>string account_uid = 11;</code>
        * @return The bytes for accountUid.
        */
       public com.google.protobuf.ByteString
@@ -4654,10 +3853,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_uid = 15;</code>
+       * <code>string account_uid = 11;</code>
        * @param value The accountUid to set.
        * @return This builder for chaining.
        */
@@ -4673,10 +3872,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_uid = 15;</code>
+       * <code>string account_uid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearAccountUid() {
@@ -4687,10 +3886,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_uid = 15;</code>
+       * <code>string account_uid = 11;</code>
        * @param value The bytes for accountUid to set.
        * @return This builder for chaining.
        */
@@ -4709,10 +3908,10 @@ public final class PlayerLoginReqOuterClass {
       private com.google.protobuf.ByteString securityCmdReply_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>bytes security_cmd_reply = 878;</code>
+       * <code>bytes security_cmd_reply = 771;</code>
        * @return The securityCmdReply.
        */
       @java.lang.Override
@@ -4721,10 +3920,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>bytes security_cmd_reply = 878;</code>
+       * <code>bytes security_cmd_reply = 771;</code>
        * @param value The securityCmdReply to set.
        * @return This builder for chaining.
        */
@@ -4739,10 +3938,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>bytes security_cmd_reply = 878;</code>
+       * <code>bytes security_cmd_reply = 771;</code>
        * @return This builder for chaining.
        */
       public Builder clearSecurityCmdReply() {
@@ -4755,10 +3954,10 @@ public final class PlayerLoginReqOuterClass {
       private com.google.protobuf.ByteString environmentErrorCode_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>bytes environment_error_code = 1039;</code>
+       * <code>bytes environment_error_code = 1766;</code>
        * @return The environmentErrorCode.
        */
       @java.lang.Override
@@ -4767,10 +3966,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>bytes environment_error_code = 1039;</code>
+       * <code>bytes environment_error_code = 1766;</code>
        * @param value The environmentErrorCode to set.
        * @return This builder for chaining.
        */
@@ -4785,10 +3984,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>bytes environment_error_code = 1039;</code>
+       * <code>bytes environment_error_code = 1766;</code>
        * @return This builder for chaining.
        */
       public Builder clearEnvironmentErrorCode() {
@@ -4801,10 +4000,10 @@ public final class PlayerLoginReqOuterClass {
       private java.lang.Object onlineId_ = "";
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string online_id = 140;</code>
+       * <code>string online_id = 1068;</code>
        * @return The onlineId.
        */
       public java.lang.String getOnlineId() {
@@ -4821,10 +4020,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string online_id = 140;</code>
+       * <code>string online_id = 1068;</code>
        * @return The bytes for onlineId.
        */
       public com.google.protobuf.ByteString
@@ -4842,10 +4041,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string online_id = 140;</code>
+       * <code>string online_id = 1068;</code>
        * @param value The onlineId to set.
        * @return This builder for chaining.
        */
@@ -4861,10 +4060,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string online_id = 140;</code>
+       * <code>string online_id = 1068;</code>
        * @return This builder for chaining.
        */
       public Builder clearOnlineId() {
@@ -4875,10 +4074,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string online_id = 140;</code>
+       * <code>string online_id = 1068;</code>
        * @param value The bytes for onlineId to set.
        * @return This builder for chaining.
        */
@@ -4897,10 +4096,10 @@ public final class PlayerLoginReqOuterClass {
       private int targetUid_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 target_uid = 2;</code>
+       * <code>uint32 target_uid = 5;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -4909,10 +4108,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 target_uid = 2;</code>
+       * <code>uint32 target_uid = 5;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -4924,10 +4123,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 target_uid = 2;</code>
+       * <code>uint32 target_uid = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -4940,10 +4139,10 @@ public final class PlayerLoginReqOuterClass {
       private int channelId_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 channel_id = 1107;</code>
+       * <code>uint32 channel_id = 1539;</code>
        * @return The channelId.
        */
       @java.lang.Override
@@ -4952,10 +4151,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 channel_id = 1107;</code>
+       * <code>uint32 channel_id = 1539;</code>
        * @param value The channelId to set.
        * @return This builder for chaining.
        */
@@ -4967,10 +4166,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 channel_id = 1107;</code>
+       * <code>uint32 channel_id = 1539;</code>
        * @return This builder for chaining.
        */
       public Builder clearChannelId() {
@@ -4983,10 +4182,10 @@ public final class PlayerLoginReqOuterClass {
       private int clientDataVersion_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 client_data_version = 1531;</code>
+       * <code>uint32 client_data_version = 1729;</code>
        * @return The clientDataVersion.
        */
       @java.lang.Override
@@ -4995,10 +4194,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 client_data_version = 1531;</code>
+       * <code>uint32 client_data_version = 1729;</code>
        * @param value The clientDataVersion to set.
        * @return This builder for chaining.
        */
@@ -5010,10 +4209,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 client_data_version = 1531;</code>
+       * <code>uint32 client_data_version = 1729;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientDataVersion() {
@@ -5026,10 +4225,10 @@ public final class PlayerLoginReqOuterClass {
       private int tag_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 tag = 282;</code>
+       * <code>uint32 tag = 1397;</code>
        * @return The tag.
        */
       @java.lang.Override
@@ -5038,10 +4237,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 tag = 282;</code>
+       * <code>uint32 tag = 1397;</code>
        * @param value The tag to set.
        * @return This builder for chaining.
        */
@@ -5053,10 +4252,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 tag = 282;</code>
+       * <code>uint32 tag = 1397;</code>
        * @return This builder for chaining.
        */
       public Builder clearTag() {
@@ -5069,10 +4268,10 @@ public final class PlayerLoginReqOuterClass {
       private int platformType_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 platform_type = 13;</code>
+       * <code>uint32 platform_type = 4;</code>
        * @return The platformType.
        */
       @java.lang.Override
@@ -5081,10 +4280,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 platform_type = 13;</code>
+       * <code>uint32 platform_type = 4;</code>
        * @param value The platformType to set.
        * @return This builder for chaining.
        */
@@ -5096,10 +4295,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 platform_type = 13;</code>
+       * <code>uint32 platform_type = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlatformType() {
@@ -5112,10 +4311,10 @@ public final class PlayerLoginReqOuterClass {
       private boolean isEditor_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>bool is_editor = 5;</code>
+       * <code>bool is_editor = 10;</code>
        * @return The isEditor.
        */
       @java.lang.Override
@@ -5124,10 +4323,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>bool is_editor = 5;</code>
+       * <code>bool is_editor = 10;</code>
        * @param value The isEditor to set.
        * @return This builder for chaining.
        */
@@ -5139,10 +4338,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>bool is_editor = 5;</code>
+       * <code>bool is_editor = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsEditor() {
@@ -5155,10 +4354,10 @@ public final class PlayerLoginReqOuterClass {
       private boolean isGuest_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>bool is_guest = 4;</code>
+       * <code>bool is_guest = 2;</code>
        * @return The isGuest.
        */
       @java.lang.Override
@@ -5167,10 +4366,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>bool is_guest = 4;</code>
+       * <code>bool is_guest = 2;</code>
        * @param value The isGuest to set.
        * @return This builder for chaining.
        */
@@ -5182,10 +4381,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>bool is_guest = 4;</code>
+       * <code>bool is_guest = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsGuest() {
@@ -5293,11 +4492,7 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object eLNJLDLPCCG_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>string ELNJLDLPCCG = 11;</code>
+       * <code>string ELNJLDLPCCG = 13;</code>
        * @return The eLNJLDLPCCG.
        */
       public java.lang.String getELNJLDLPCCG() {
@@ -5313,11 +4508,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>string ELNJLDLPCCG = 11;</code>
+       * <code>string ELNJLDLPCCG = 13;</code>
        * @return The bytes for eLNJLDLPCCG.
        */
       public com.google.protobuf.ByteString
@@ -5334,11 +4525,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>string ELNJLDLPCCG = 11;</code>
+       * <code>string ELNJLDLPCCG = 13;</code>
        * @param value The eLNJLDLPCCG to set.
        * @return This builder for chaining.
        */
@@ -5353,11 +4540,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>string ELNJLDLPCCG = 11;</code>
+       * <code>string ELNJLDLPCCG = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearELNJLDLPCCG() {
@@ -5367,11 +4550,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>string ELNJLDLPCCG = 11;</code>
+       * <code>string ELNJLDLPCCG = 13;</code>
        * @param value The bytes for eLNJLDLPCCG to set.
        * @return This builder for chaining.
        */
@@ -5389,10 +4568,6 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object pDIEJBEDDBN_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string PDIEJBEDDBN = 1357;</code>
        * @return The pDIEJBEDDBN.
        */
@@ -5409,10 +4584,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string PDIEJBEDDBN = 1357;</code>
        * @return The bytes for pDIEJBEDDBN.
        */
@@ -5430,10 +4601,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string PDIEJBEDDBN = 1357;</code>
        * @param value The pDIEJBEDDBN to set.
        * @return This builder for chaining.
@@ -5449,10 +4616,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string PDIEJBEDDBN = 1357;</code>
        * @return This builder for chaining.
        */
@@ -5463,10 +4626,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string PDIEJBEDDBN = 1357;</code>
        * @param value The bytes for pDIEJBEDDBN to set.
        * @return This builder for chaining.
@@ -5485,10 +4644,6 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object mGEJGMCKAEL_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string MGEJGMCKAEL = 506;</code>
        * @return The mGEJGMCKAEL.
        */
@@ -5505,10 +4660,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string MGEJGMCKAEL = 506;</code>
        * @return The bytes for mGEJGMCKAEL.
        */
@@ -5526,10 +4677,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string MGEJGMCKAEL = 506;</code>
        * @param value The mGEJGMCKAEL to set.
        * @return This builder for chaining.
@@ -5545,10 +4692,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string MGEJGMCKAEL = 506;</code>
        * @return This builder for chaining.
        */
@@ -5559,10 +4702,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string MGEJGMCKAEL = 506;</code>
        * @param value The bytes for mGEJGMCKAEL to set.
        * @return This builder for chaining.
@@ -5579,88 +4718,8 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private java.lang.Object mJPJBBLBKPO_ = "";
-      /**
-       * <code>string MJPJBBLBKPO = 1;</code>
-       * @return The mJPJBBLBKPO.
-       */
-      public java.lang.String getMJPJBBLBKPO() {
-        java.lang.Object ref = mJPJBBLBKPO_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          mJPJBBLBKPO_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string MJPJBBLBKPO = 1;</code>
-       * @return The bytes for mJPJBBLBKPO.
-       */
-      public com.google.protobuf.ByteString
-          getMJPJBBLBKPOBytes() {
-        java.lang.Object ref = mJPJBBLBKPO_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          mJPJBBLBKPO_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string MJPJBBLBKPO = 1;</code>
-       * @param value The mJPJBBLBKPO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMJPJBBLBKPO(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        mJPJBBLBKPO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string MJPJBBLBKPO = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMJPJBBLBKPO() {
-        
-        mJPJBBLBKPO_ = getDefaultInstance().getMJPJBBLBKPO();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string MJPJBBLBKPO = 1;</code>
-       * @param value The bytes for mJPJBBLBKPO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMJPJBBLBKPOBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        mJPJBBLBKPO_ = value;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object kLMBLNEPNFP_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string KLMBLNEPNFP = 565;</code>
        * @return The kLMBLNEPNFP.
        */
@@ -5677,10 +4736,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string KLMBLNEPNFP = 565;</code>
        * @return The bytes for kLMBLNEPNFP.
        */
@@ -5698,10 +4753,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string KLMBLNEPNFP = 565;</code>
        * @param value The kLMBLNEPNFP to set.
        * @return This builder for chaining.
@@ -5717,10 +4768,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string KLMBLNEPNFP = 565;</code>
        * @return This builder for chaining.
        */
@@ -5731,10 +4778,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string KLMBLNEPNFP = 565;</code>
        * @param value The bytes for kLMBLNEPNFP to set.
        * @return This builder for chaining.
@@ -5753,10 +4796,6 @@ public final class PlayerLoginReqOuterClass {
 
       private com.google.protobuf.ByteString bEGALCDJGIO_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bytes BEGALCDJGIO = 359;</code>
        * @return The bEGALCDJGIO.
        */
@@ -5765,10 +4804,6 @@ public final class PlayerLoginReqOuterClass {
         return bEGALCDJGIO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bytes BEGALCDJGIO = 359;</code>
        * @param value The bEGALCDJGIO to set.
        * @return This builder for chaining.
@@ -5783,10 +4818,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bytes BEGALCDJGIO = 359;</code>
        * @return This builder for chaining.
        */
@@ -5799,10 +4830,6 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object fLEFHGMJIAF_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string FLEFHGMJIAF = 70;</code>
        * @return The fLEFHGMJIAF.
        */
@@ -5819,10 +4846,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string FLEFHGMJIAF = 70;</code>
        * @return The bytes for fLEFHGMJIAF.
        */
@@ -5840,10 +4863,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string FLEFHGMJIAF = 70;</code>
        * @param value The fLEFHGMJIAF to set.
        * @return This builder for chaining.
@@ -5859,10 +4878,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string FLEFHGMJIAF = 70;</code>
        * @return This builder for chaining.
        */
@@ -5873,10 +4888,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string FLEFHGMJIAF = 70;</code>
        * @param value The bytes for fLEFHGMJIAF to set.
        * @return This builder for chaining.
@@ -5895,10 +4906,6 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object nFFIOJJIIIF_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string NFFIOJJIIIF = 1386;</code>
        * @return The nFFIOJJIIIF.
        */
@@ -5915,10 +4922,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string NFFIOJJIIIF = 1386;</code>
        * @return The bytes for nFFIOJJIIIF.
        */
@@ -5936,10 +4939,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string NFFIOJJIIIF = 1386;</code>
        * @param value The nFFIOJJIIIF to set.
        * @return This builder for chaining.
@@ -5955,10 +4954,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string NFFIOJJIIIF = 1386;</code>
        * @return This builder for chaining.
        */
@@ -5969,10 +4964,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string NFFIOJJIIIF = 1386;</code>
        * @param value The bytes for nFFIOJJIIIF to set.
        * @return This builder for chaining.
@@ -5993,10 +4984,6 @@ public final class PlayerLoginReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TrackingIOInfoOuterClass.TrackingIOInfo, emu.grasscutter.net.proto.TrackingIOInfoOuterClass.TrackingIOInfo.Builder, emu.grasscutter.net.proto.TrackingIOInfoOuterClass.TrackingIOInfoOrBuilder> hONOKEDICNEBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
        * @return Whether the hONOKEDICNE field is set.
        */
@@ -6004,10 +4991,6 @@ public final class PlayerLoginReqOuterClass {
         return hONOKEDICNEBuilder_ != null || hONOKEDICNE_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
        * @return The hONOKEDICNE.
        */
@@ -6019,10 +5002,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
        */
       public Builder setHONOKEDICNE(emu.grasscutter.net.proto.TrackingIOInfoOuterClass.TrackingIOInfo value) {
@@ -6039,10 +5018,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
        */
       public Builder setHONOKEDICNE(
@@ -6057,10 +5032,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
        */
       public Builder mergeHONOKEDICNE(emu.grasscutter.net.proto.TrackingIOInfoOuterClass.TrackingIOInfo value) {
@@ -6079,10 +5050,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
        */
       public Builder clearHONOKEDICNE() {
@@ -6097,10 +5064,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
        */
       public emu.grasscutter.net.proto.TrackingIOInfoOuterClass.TrackingIOInfo.Builder getHONOKEDICNEBuilder() {
@@ -6109,10 +5072,6 @@ public final class PlayerLoginReqOuterClass {
         return getHONOKEDICNEFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
        */
       public emu.grasscutter.net.proto.TrackingIOInfoOuterClass.TrackingIOInfoOrBuilder getHONOKEDICNEOrBuilder() {
@@ -6124,10 +5083,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.TrackingIOInfo HONOKEDICNE = 1377;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -6146,10 +5101,6 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object bNDLFGOJEHJ_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string BNDLFGOJEHJ = 55;</code>
        * @return The bNDLFGOJEHJ.
        */
@@ -6166,10 +5117,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string BNDLFGOJEHJ = 55;</code>
        * @return The bytes for bNDLFGOJEHJ.
        */
@@ -6187,10 +5134,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string BNDLFGOJEHJ = 55;</code>
        * @param value The bNDLFGOJEHJ to set.
        * @return This builder for chaining.
@@ -6206,10 +5149,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string BNDLFGOJEHJ = 55;</code>
        * @return This builder for chaining.
        */
@@ -6220,10 +5159,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string BNDLFGOJEHJ = 55;</code>
        * @param value The bytes for bNDLFGOJEHJ to set.
        * @return This builder for chaining.
@@ -6240,242 +5175,10 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private java.lang.Object fDKPAOHMIHO_ = "";
-      /**
-       * <code>string FDKPAOHMIHO = 10;</code>
-       * @return The fDKPAOHMIHO.
-       */
-      public java.lang.String getFDKPAOHMIHO() {
-        java.lang.Object ref = fDKPAOHMIHO_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          fDKPAOHMIHO_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string FDKPAOHMIHO = 10;</code>
-       * @return The bytes for fDKPAOHMIHO.
-       */
-      public com.google.protobuf.ByteString
-          getFDKPAOHMIHOBytes() {
-        java.lang.Object ref = fDKPAOHMIHO_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          fDKPAOHMIHO_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string FDKPAOHMIHO = 10;</code>
-       * @param value The fDKPAOHMIHO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFDKPAOHMIHO(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        fDKPAOHMIHO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string FDKPAOHMIHO = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFDKPAOHMIHO() {
-        
-        fDKPAOHMIHO_ = getDefaultInstance().getFDKPAOHMIHO();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string FDKPAOHMIHO = 10;</code>
-       * @param value The bytes for fDKPAOHMIHO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFDKPAOHMIHOBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        fDKPAOHMIHO_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object eIDHOGNGPNB_ = "";
-      /**
-       * <code>string EIDHOGNGPNB = 119;</code>
-       * @return The eIDHOGNGPNB.
-       */
-      public java.lang.String getEIDHOGNGPNB() {
-        java.lang.Object ref = eIDHOGNGPNB_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          eIDHOGNGPNB_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string EIDHOGNGPNB = 119;</code>
-       * @return The bytes for eIDHOGNGPNB.
-       */
-      public com.google.protobuf.ByteString
-          getEIDHOGNGPNBBytes() {
-        java.lang.Object ref = eIDHOGNGPNB_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          eIDHOGNGPNB_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string EIDHOGNGPNB = 119;</code>
-       * @param value The eIDHOGNGPNB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEIDHOGNGPNB(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        eIDHOGNGPNB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string EIDHOGNGPNB = 119;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEIDHOGNGPNB() {
-        
-        eIDHOGNGPNB_ = getDefaultInstance().getEIDHOGNGPNB();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string EIDHOGNGPNB = 119;</code>
-       * @param value The bytes for eIDHOGNGPNB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEIDHOGNGPNBBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        eIDHOGNGPNB_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object aNOCOKNKFBA_ = "";
-      /**
-       * <code>string ANOCOKNKFBA = 12;</code>
-       * @return The aNOCOKNKFBA.
-       */
-      public java.lang.String getANOCOKNKFBA() {
-        java.lang.Object ref = aNOCOKNKFBA_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          aNOCOKNKFBA_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string ANOCOKNKFBA = 12;</code>
-       * @return The bytes for aNOCOKNKFBA.
-       */
-      public com.google.protobuf.ByteString
-          getANOCOKNKFBABytes() {
-        java.lang.Object ref = aNOCOKNKFBA_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          aNOCOKNKFBA_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string ANOCOKNKFBA = 12;</code>
-       * @param value The aNOCOKNKFBA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setANOCOKNKFBA(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        aNOCOKNKFBA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string ANOCOKNKFBA = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearANOCOKNKFBA() {
-        
-        aNOCOKNKFBA_ = getDefaultInstance().getANOCOKNKFBA();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string ANOCOKNKFBA = 12;</code>
-       * @param value The bytes for aNOCOKNKFBA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setANOCOKNKFBABytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        aNOCOKNKFBA_ = value;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfo hGAKECOGGME_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfo, emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfo.Builder, emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfoOrBuilder> hGAKECOGGMEBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
        * @return Whether the hGAKECOGGME field is set.
        */
@@ -6483,10 +5186,6 @@ public final class PlayerLoginReqOuterClass {
         return hGAKECOGGMEBuilder_ != null || hGAKECOGGME_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
        * @return The hGAKECOGGME.
        */
@@ -6498,10 +5197,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
        */
       public Builder setHGAKECOGGME(emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfo value) {
@@ -6518,10 +5213,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
        */
       public Builder setHGAKECOGGME(
@@ -6536,10 +5227,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
        */
       public Builder mergeHGAKECOGGME(emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfo value) {
@@ -6558,10 +5245,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
        */
       public Builder clearHGAKECOGGME() {
@@ -6576,10 +5259,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
        */
       public emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfo.Builder getHGAKECOGGMEBuilder() {
@@ -6588,10 +5267,6 @@ public final class PlayerLoginReqOuterClass {
         return getHGAKECOGGMEFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
        */
       public emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.AdjustTrackingInfoOrBuilder getHGAKECOGGMEOrBuilder() {
@@ -6603,10 +5278,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.AdjustTrackingInfo HGAKECOGGME = 113;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -6625,10 +5296,6 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object fMNKCIABDMG_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string FMNKCIABDMG = 1067;</code>
        * @return The fMNKCIABDMG.
        */
@@ -6645,10 +5312,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string FMNKCIABDMG = 1067;</code>
        * @return The bytes for fMNKCIABDMG.
        */
@@ -6666,10 +5329,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string FMNKCIABDMG = 1067;</code>
        * @param value The fMNKCIABDMG to set.
        * @return This builder for chaining.
@@ -6685,10 +5344,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string FMNKCIABDMG = 1067;</code>
        * @return This builder for chaining.
        */
@@ -6699,10 +5354,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string FMNKCIABDMG = 1067;</code>
        * @param value The bytes for fMNKCIABDMG to set.
        * @return This builder for chaining.
@@ -6722,10 +5373,10 @@ public final class PlayerLoginReqOuterClass {
       private java.lang.Object countryCode_ = "";
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>string country_code = 329;</code>
+       * <code>string country_code = 1160;</code>
        * @return The countryCode.
        */
       public java.lang.String getCountryCode() {
@@ -6742,10 +5393,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>string country_code = 329;</code>
+       * <code>string country_code = 1160;</code>
        * @return The bytes for countryCode.
        */
       public com.google.protobuf.ByteString
@@ -6763,10 +5414,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>string country_code = 329;</code>
+       * <code>string country_code = 1160;</code>
        * @param value The countryCode to set.
        * @return This builder for chaining.
        */
@@ -6782,10 +5433,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>string country_code = 329;</code>
+       * <code>string country_code = 1160;</code>
        * @return This builder for chaining.
        */
       public Builder clearCountryCode() {
@@ -6796,10 +5447,10 @@ public final class PlayerLoginReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>string country_code = 329;</code>
+       * <code>string country_code = 1160;</code>
        * @param value The bytes for countryCode to set.
        * @return This builder for chaining.
        */
@@ -6817,10 +5468,6 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object nHOLEKOICFD_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string NHOLEKOICFD = 1847;</code>
        * @return The nHOLEKOICFD.
        */
@@ -6837,10 +5484,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string NHOLEKOICFD = 1847;</code>
        * @return The bytes for nHOLEKOICFD.
        */
@@ -6858,10 +5501,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string NHOLEKOICFD = 1847;</code>
        * @param value The nHOLEKOICFD to set.
        * @return This builder for chaining.
@@ -6877,10 +5516,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string NHOLEKOICFD = 1847;</code>
        * @return This builder for chaining.
        */
@@ -6891,10 +5526,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string NHOLEKOICFD = 1847;</code>
        * @param value The bytes for nHOLEKOICFD to set.
        * @return This builder for chaining.
@@ -6911,88 +5542,8 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private java.lang.Object nADDHCAGPLA_ = "";
-      /**
-       * <code>string NADDHCAGPLA = 8123;</code>
-       * @return The nADDHCAGPLA.
-       */
-      public java.lang.String getNADDHCAGPLA() {
-        java.lang.Object ref = nADDHCAGPLA_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          nADDHCAGPLA_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string NADDHCAGPLA = 8123;</code>
-       * @return The bytes for nADDHCAGPLA.
-       */
-      public com.google.protobuf.ByteString
-          getNADDHCAGPLABytes() {
-        java.lang.Object ref = nADDHCAGPLA_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          nADDHCAGPLA_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string NADDHCAGPLA = 8123;</code>
-       * @param value The nADDHCAGPLA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNADDHCAGPLA(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        nADDHCAGPLA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string NADDHCAGPLA = 8123;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNADDHCAGPLA() {
-        
-        nADDHCAGPLA_ = getDefaultInstance().getNADDHCAGPLA();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string NADDHCAGPLA = 8123;</code>
-       * @param value The bytes for nADDHCAGPLA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNADDHCAGPLABytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        nADDHCAGPLA_ = value;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.ByteString oKKKAFOGAFF_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bytes OKKKAFOGAFF = 799;</code>
        * @return The oKKKAFOGAFF.
        */
@@ -7001,10 +5552,6 @@ public final class PlayerLoginReqOuterClass {
         return oKKKAFOGAFF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bytes OKKKAFOGAFF = 799;</code>
        * @param value The oKKKAFOGAFF to set.
        * @return This builder for chaining.
@@ -7019,10 +5566,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bytes OKKKAFOGAFF = 799;</code>
        * @return This builder for chaining.
        */
@@ -7035,10 +5578,6 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object jMFFNLENHKG_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string JMFFNLENHKG = 1212;</code>
        * @return The jMFFNLENHKG.
        */
@@ -7055,10 +5594,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string JMFFNLENHKG = 1212;</code>
        * @return The bytes for jMFFNLENHKG.
        */
@@ -7076,10 +5611,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string JMFFNLENHKG = 1212;</code>
        * @param value The jMFFNLENHKG to set.
        * @return This builder for chaining.
@@ -7095,10 +5626,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string JMFFNLENHKG = 1212;</code>
        * @return This builder for chaining.
        */
@@ -7109,10 +5636,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string JMFFNLENHKG = 1212;</code>
        * @param value The bytes for jMFFNLENHKG to set.
        * @return This builder for chaining.
@@ -7131,10 +5654,6 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object bCADGGFKLCN_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string BCADGGFKLCN = 979;</code>
        * @return The bCADGGFKLCN.
        */
@@ -7151,10 +5670,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string BCADGGFKLCN = 979;</code>
        * @return The bytes for bCADGGFKLCN.
        */
@@ -7172,10 +5687,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string BCADGGFKLCN = 979;</code>
        * @param value The bCADGGFKLCN to set.
        * @return This builder for chaining.
@@ -7191,10 +5702,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string BCADGGFKLCN = 979;</code>
        * @return This builder for chaining.
        */
@@ -7205,10 +5712,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string BCADGGFKLCN = 979;</code>
        * @param value The bytes for bCADGGFKLCN to set.
        * @return This builder for chaining.
@@ -7227,10 +5730,6 @@ public final class PlayerLoginReqOuterClass {
 
       private long gGIBHFDCMKM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 GGIBHFDCMKM = 16;</code>
        * @return The gGIBHFDCMKM.
        */
@@ -7239,10 +5738,6 @@ public final class PlayerLoginReqOuterClass {
         return gGIBHFDCMKM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 GGIBHFDCMKM = 16;</code>
        * @param value The gGIBHFDCMKM to set.
        * @return This builder for chaining.
@@ -7254,10 +5749,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 GGIBHFDCMKM = 16;</code>
        * @return This builder for chaining.
        */
@@ -7270,10 +5761,6 @@ public final class PlayerLoginReqOuterClass {
 
       private int gGJPKAFNKJK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GGJPKAFNKJK = 466;</code>
        * @return The gGJPKAFNKJK.
        */
@@ -7282,10 +5769,6 @@ public final class PlayerLoginReqOuterClass {
         return gGJPKAFNKJK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GGJPKAFNKJK = 466;</code>
        * @param value The gGJPKAFNKJK to set.
        * @return This builder for chaining.
@@ -7297,10 +5780,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GGJPKAFNKJK = 466;</code>
        * @return This builder for chaining.
        */
@@ -7311,43 +5790,8 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private int lDAPEBNGCAA_ ;
-      /**
-       * <code>uint32 LDAPEBNGCAA = 7;</code>
-       * @return The lDAPEBNGCAA.
-       */
-      @java.lang.Override
-      public int getLDAPEBNGCAA() {
-        return lDAPEBNGCAA_;
-      }
-      /**
-       * <code>uint32 LDAPEBNGCAA = 7;</code>
-       * @param value The lDAPEBNGCAA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLDAPEBNGCAA(int value) {
-        
-        lDAPEBNGCAA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 LDAPEBNGCAA = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLDAPEBNGCAA() {
-        
-        lDAPEBNGCAA_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int cKPDHDJPOIH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKPDHDJPOIH = 969;</code>
        * @return The cKPDHDJPOIH.
        */
@@ -7356,10 +5800,6 @@ public final class PlayerLoginReqOuterClass {
         return cKPDHDJPOIH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKPDHDJPOIH = 969;</code>
        * @param value The cKPDHDJPOIH to set.
        * @return This builder for chaining.
@@ -7371,10 +5811,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKPDHDJPOIH = 969;</code>
        * @return This builder for chaining.
        */
@@ -7387,10 +5823,6 @@ public final class PlayerLoginReqOuterClass {
 
       private int bDGHHHNGAID_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BDGHHHNGAID = 1641;</code>
        * @return The bDGHHHNGAID.
        */
@@ -7399,10 +5831,6 @@ public final class PlayerLoginReqOuterClass {
         return bDGHHHNGAID_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BDGHHHNGAID = 1641;</code>
        * @param value The bDGHHHNGAID to set.
        * @return This builder for chaining.
@@ -7414,10 +5842,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BDGHHHNGAID = 1641;</code>
        * @return This builder for chaining.
        */
@@ -7430,10 +5854,6 @@ public final class PlayerLoginReqOuterClass {
 
       private int oCKCOOCKBEJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCKCOOCKBEJ = 1481;</code>
        * @return The oCKCOOCKBEJ.
        */
@@ -7442,10 +5862,6 @@ public final class PlayerLoginReqOuterClass {
         return oCKCOOCKBEJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCKCOOCKBEJ = 1481;</code>
        * @param value The oCKCOOCKBEJ to set.
        * @return This builder for chaining.
@@ -7457,10 +5873,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCKCOOCKBEJ = 1481;</code>
        * @return This builder for chaining.
        */
@@ -7473,11 +5885,7 @@ public final class PlayerLoginReqOuterClass {
 
       private int iDOIOCBGBDD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>uint32 IDOIOCBGBDD = 6;</code>
+       * <code>uint32 IDOIOCBGBDD = 14;</code>
        * @return The iDOIOCBGBDD.
        */
       @java.lang.Override
@@ -7485,11 +5893,7 @@ public final class PlayerLoginReqOuterClass {
         return iDOIOCBGBDD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>uint32 IDOIOCBGBDD = 6;</code>
+       * <code>uint32 IDOIOCBGBDD = 14;</code>
        * @param value The iDOIOCBGBDD to set.
        * @return This builder for chaining.
        */
@@ -7500,11 +5904,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>uint32 IDOIOCBGBDD = 6;</code>
+       * <code>uint32 IDOIOCBGBDD = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIDOIOCBGBDD() {
@@ -7516,10 +5916,6 @@ public final class PlayerLoginReqOuterClass {
 
       private int iMGHHFNKIIG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IMGHHFNKIIG = 1813;</code>
        * @return The iMGHHFNKIIG.
        */
@@ -7528,10 +5924,6 @@ public final class PlayerLoginReqOuterClass {
         return iMGHHFNKIIG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IMGHHFNKIIG = 1813;</code>
        * @param value The iMGHHFNKIIG to set.
        * @return This builder for chaining.
@@ -7543,10 +5935,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IMGHHFNKIIG = 1813;</code>
        * @return This builder for chaining.
        */
@@ -7559,10 +5947,6 @@ public final class PlayerLoginReqOuterClass {
 
       private int iIIBPEMHHGF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IIIBPEMHHGF = 763;</code>
        * @return The iIIBPEMHHGF.
        */
@@ -7571,10 +5955,6 @@ public final class PlayerLoginReqOuterClass {
         return iIIBPEMHHGF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IIIBPEMHHGF = 763;</code>
        * @param value The iIIBPEMHHGF to set.
        * @return This builder for chaining.
@@ -7586,10 +5966,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IIIBPEMHHGF = 763;</code>
        * @return This builder for chaining.
        */
@@ -7602,10 +5978,6 @@ public final class PlayerLoginReqOuterClass {
 
       private int lLEPJKJHFNI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LLEPJKJHFNI = 1453;</code>
        * @return The lLEPJKJHFNI.
        */
@@ -7614,10 +5986,6 @@ public final class PlayerLoginReqOuterClass {
         return lLEPJKJHFNI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LLEPJKJHFNI = 1453;</code>
        * @param value The lLEPJKJHFNI to set.
        * @return This builder for chaining.
@@ -7629,10 +5997,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LLEPJKJHFNI = 1453;</code>
        * @return This builder for chaining.
        */
@@ -7645,10 +6009,6 @@ public final class PlayerLoginReqOuterClass {
 
       private int hCPDJHFNEHE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HCPDJHFNEHE = 1341;</code>
        * @return The hCPDJHFNEHE.
        */
@@ -7657,10 +6017,6 @@ public final class PlayerLoginReqOuterClass {
         return hCPDJHFNEHE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HCPDJHFNEHE = 1341;</code>
        * @param value The hCPDJHFNEHE to set.
        * @return This builder for chaining.
@@ -7672,10 +6028,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HCPDJHFNEHE = 1341;</code>
        * @return This builder for chaining.
        */
@@ -7688,10 +6040,6 @@ public final class PlayerLoginReqOuterClass {
 
       private int bPLIJHLODFK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BPLIJHLODFK = 234;</code>
        * @return The bPLIJHLODFK.
        */
@@ -7700,10 +6048,6 @@ public final class PlayerLoginReqOuterClass {
         return bPLIJHLODFK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BPLIJHLODFK = 234;</code>
        * @param value The bPLIJHLODFK to set.
        * @return This builder for chaining.
@@ -7715,10 +6059,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BPLIJHLODFK = 234;</code>
        * @return This builder for chaining.
        */
@@ -7731,10 +6071,6 @@ public final class PlayerLoginReqOuterClass {
 
       private int mAECIMMDNEH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MAECIMMDNEH = 1168;</code>
        * @return The mAECIMMDNEH.
        */
@@ -7743,10 +6079,6 @@ public final class PlayerLoginReqOuterClass {
         return mAECIMMDNEH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MAECIMMDNEH = 1168;</code>
        * @param value The mAECIMMDNEH to set.
        * @return This builder for chaining.
@@ -7758,10 +6090,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MAECIMMDNEH = 1168;</code>
        * @return This builder for chaining.
        */
@@ -7774,10 +6102,6 @@ public final class PlayerLoginReqOuterClass {
 
       private int mLHECNKPBKK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MLHECNKPBKK = 511;</code>
        * @return The mLHECNKPBKK.
        */
@@ -7786,10 +6110,6 @@ public final class PlayerLoginReqOuterClass {
         return mLHECNKPBKK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MLHECNKPBKK = 511;</code>
        * @param value The mLHECNKPBKK to set.
        * @return This builder for chaining.
@@ -7801,10 +6121,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MLHECNKPBKK = 511;</code>
        * @return This builder for chaining.
        */
@@ -7815,43 +6131,8 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private boolean pICMJCIPENM_ ;
-      /**
-       * <code>bool PICMJCIPENM = 460;</code>
-       * @return The pICMJCIPENM.
-       */
-      @java.lang.Override
-      public boolean getPICMJCIPENM() {
-        return pICMJCIPENM_;
-      }
-      /**
-       * <code>bool PICMJCIPENM = 460;</code>
-       * @param value The pICMJCIPENM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPICMJCIPENM(boolean value) {
-        
-        pICMJCIPENM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool PICMJCIPENM = 460;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPICMJCIPENM() {
-        
-        pICMJCIPENM_ = false;
-        onChanged();
-        return this;
-      }
-
       private boolean oFAGNENPKBF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OFAGNENPKBF = 785;</code>
        * @return The oFAGNENPKBF.
        */
@@ -7860,10 +6141,6 @@ public final class PlayerLoginReqOuterClass {
         return oFAGNENPKBF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OFAGNENPKBF = 785;</code>
        * @param value The oFAGNENPKBF to set.
        * @return This builder for chaining.
@@ -7875,10 +6152,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OFAGNENPKBF = 785;</code>
        * @return This builder for chaining.
        */
@@ -7956,40 +6229,36 @@ public final class PlayerLoginReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024PlayerLoginReq.proto\032\024TrackingIOInfo.p" +
-      "roto\032\030AdjustTrackingInfo.proto\"\345\t\n\016Playe" +
-      "rLoginReq\022\027\n\016extra_bin_data\030\343\006 \001(\014\022\021\n\010bi" +
-      "rthday\030\251\017 \001(\t\022\017\n\006psn_id\030\234\005 \001(\t\022\035\n\024securi" +
-      "ty_library_md5\030\255\t \001(\t\022\r\n\005token\030\t \001(\t\022\020\n\010" +
-      "platform\030\003 \001(\t\022\023\n\013account_uid\030\017 \001(\t\022\033\n\022s" +
-      "ecurity_cmd_reply\030\356\006 \001(\014\022\037\n\026environment_" +
-      "error_code\030\217\010 \001(\014\022\022\n\tonline_id\030\214\001 \001(\t\022\022\n" +
-      "\ntarget_uid\030\002 \001(\r\022\023\n\nchannel_id\030\323\010 \001(\r\022\034" +
-      "\n\023client_data_version\030\373\013 \001(\r\022\014\n\003tag\030\232\002 \001" +
-      "(\r\022\025\n\rplatform_type\030\r \001(\r\022\021\n\tis_editor\030\005" +
-      " \001(\010\022\020\n\010is_guest\030\004 \001(\010\022\024\n\013JNIDIOKAAJO\030\333\016" +
-      " \001(\t\022\023\n\013ELNJLDLPCCG\030\013 \001(\t\022\024\n\013PDIEJBEDDBN" +
-      "\030\315\n \001(\t\022\024\n\013MGEJGMCKAEL\030\372\003 \001(\t\022\023\n\013MJPJBBL" +
-      "BKPO\030\001 \001(\t\022\024\n\013KLMBLNEPNFP\030\265\004 \001(\t\022\024\n\013BEGA" +
-      "LCDJGIO\030\347\002 \001(\014\022\023\n\013FLEFHGMJIAF\030F \001(\t\022\024\n\013N" +
-      "FFIOJJIIIF\030\352\n \001(\t\022%\n\013HONOKEDICNE\030\341\n \001(\0132" +
-      "\017.TrackingIOInfo\022\023\n\013BNDLFGOJEHJ\0307 \001(\t\022\023\n" +
-      "\013FDKPAOHMIHO\030\n \001(\t\022\023\n\013EIDHOGNGPNB\030w \001(\t\022" +
-      "\023\n\013ANOCOKNKFBA\030\014 \001(\t\022(\n\013HGAKECOGGME\030q \001(" +
-      "\0132\023.AdjustTrackingInfo\022\024\n\013FMNKCIABDMG\030\253\010" +
-      " \001(\t\022\025\n\014country_code\030\311\002 \001(\t\022\024\n\013NHOLEKOIC" +
-      "FD\030\267\016 \001(\t\022\024\n\013NADDHCAGPLA\030\273? \001(\t\022\024\n\013OKKKA" +
-      "FOGAFF\030\237\006 \001(\014\022\024\n\013JMFFNLENHKG\030\274\t \001(\t\022\024\n\013B" +
-      "CADGGFKLCN\030\323\007 \001(\t\022\023\n\013GGIBHFDCMKM\030\020 \001(\004\022\024" +
-      "\n\013GGJPKAFNKJK\030\322\003 \001(\r\022\023\n\013LDAPEBNGCAA\030\007 \001(" +
-      "\r\022\024\n\013CKPDHDJPOIH\030\311\007 \001(\r\022\024\n\013BDGHHHNGAID\030\351" +
-      "\014 \001(\r\022\024\n\013OCKCOOCKBEJ\030\311\013 \001(\r\022\023\n\013IDOIOCBGB" +
-      "DD\030\006 \001(\r\022\024\n\013IMGHHFNKIIG\030\225\016 \001(\r\022\024\n\013IIIBPE" +
-      "MHHGF\030\373\005 \001(\r\022\024\n\013LLEPJKJHFNI\030\255\013 \001(\r\022\024\n\013HC" +
-      "PDJHFNEHE\030\275\n \001(\r\022\024\n\013BPLIJHLODFK\030\352\001 \001(\r\022\024" +
-      "\n\013MAECIMMDNEH\030\220\t \001(\r\022\024\n\013MLHECNKPBKK\030\377\003 \001" +
-      "(\r\022\024\n\013PICMJCIPENM\030\314\003 \001(\010\022\024\n\013OFAGNENPKBF\030" +
-      "\221\006 \001(\010B\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "roto\032\030AdjustTrackingInfo.proto\"\320\010\n\016Playe" +
+      "rLoginReq\022\027\n\016extra_bin_data\030\247\002 \001(\014\022\021\n\010bi" +
+      "rthday\030\351\010 \001(\t\022\017\n\006psn_id\030\376\002 \001(\t\022\035\n\024securi" +
+      "ty_library_md5\030\376\001 \001(\t\022\r\n\005token\030\003 \001(\t\022\020\n\010" +
+      "platform\030\014 \001(\t\022\023\n\013account_uid\030\013 \001(\t\022\033\n\022s" +
+      "ecurity_cmd_reply\030\203\006 \001(\014\022\037\n\026environment_" +
+      "error_code\030\346\r \001(\014\022\022\n\tonline_id\030\254\010 \001(\t\022\022\n" +
+      "\ntarget_uid\030\005 \001(\r\022\023\n\nchannel_id\030\203\014 \001(\r\022\034" +
+      "\n\023client_data_version\030\301\r \001(\r\022\014\n\003tag\030\365\n \001" +
+      "(\r\022\025\n\rplatform_type\030\004 \001(\r\022\021\n\tis_editor\030\n" +
+      " \001(\010\022\020\n\010is_guest\030\002 \001(\010\022\024\n\013JNIDIOKAAJO\030\333\016" +
+      " \001(\t\022\023\n\013ELNJLDLPCCG\030\r \001(\t\022\024\n\013PDIEJBEDDBN" +
+      "\030\315\n \001(\t\022\024\n\013MGEJGMCKAEL\030\372\003 \001(\t\022\024\n\013KLMBLNE" +
+      "PNFP\030\265\004 \001(\t\022\024\n\013BEGALCDJGIO\030\347\002 \001(\014\022\023\n\013FLE" +
+      "FHGMJIAF\030F \001(\t\022\024\n\013NFFIOJJIIIF\030\352\n \001(\t\022%\n\013" +
+      "HONOKEDICNE\030\341\n \001(\0132\017.TrackingIOInfo\022\023\n\013B" +
+      "NDLFGOJEHJ\0307 \001(\t\022(\n\013HGAKECOGGME\030q \001(\0132\023." +
+      "AdjustTrackingInfo\022\024\n\013FMNKCIABDMG\030\253\010 \001(\t" +
+      "\022\025\n\014country_code\030\210\t \001(\t\022\024\n\013NHOLEKOICFD\030\267" +
+      "\016 \001(\t\022\024\n\013OKKKAFOGAFF\030\237\006 \001(\014\022\024\n\013JMFFNLENH" +
+      "KG\030\274\t \001(\t\022\024\n\013BCADGGFKLCN\030\323\007 \001(\t\022\023\n\013GGIBH" +
+      "FDCMKM\030\020 \001(\004\022\024\n\013GGJPKAFNKJK\030\322\003 \001(\r\022\024\n\013CK" +
+      "PDHDJPOIH\030\311\007 \001(\r\022\024\n\013BDGHHHNGAID\030\351\014 \001(\r\022\024" +
+      "\n\013OCKCOOCKBEJ\030\311\013 \001(\r\022\023\n\013IDOIOCBGBDD\030\016 \001(" +
+      "\r\022\024\n\013IMGHHFNKIIG\030\225\016 \001(\r\022\024\n\013IIIBPEMHHGF\030\373" +
+      "\005 \001(\r\022\024\n\013LLEPJKJHFNI\030\255\013 \001(\r\022\024\n\013HCPDJHFNE" +
+      "HE\030\275\n \001(\r\022\024\n\013BPLIJHLODFK\030\352\001 \001(\r\022\024\n\013MAECI" +
+      "MMDNEH\030\220\t \001(\r\022\024\n\013MLHECNKPBKK\030\377\003 \001(\r\022\024\n\013O" +
+      "FAGNENPKBF\030\221\006 \001(\010B\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -8002,7 +6271,7 @@ public final class PlayerLoginReqOuterClass {
     internal_static_PlayerLoginReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerLoginReq_descriptor,
-        new java.lang.String[] { "ExtraBinData", "Birthday", "PsnId", "SecurityLibraryMd5", "Token", "Platform", "AccountUid", "SecurityCmdReply", "EnvironmentErrorCode", "OnlineId", "TargetUid", "ChannelId", "ClientDataVersion", "Tag", "PlatformType", "IsEditor", "IsGuest", "JNIDIOKAAJO", "ELNJLDLPCCG", "PDIEJBEDDBN", "MGEJGMCKAEL", "MJPJBBLBKPO", "KLMBLNEPNFP", "BEGALCDJGIO", "FLEFHGMJIAF", "NFFIOJJIIIF", "HONOKEDICNE", "BNDLFGOJEHJ", "FDKPAOHMIHO", "EIDHOGNGPNB", "ANOCOKNKFBA", "HGAKECOGGME", "FMNKCIABDMG", "CountryCode", "NHOLEKOICFD", "NADDHCAGPLA", "OKKKAFOGAFF", "JMFFNLENHKG", "BCADGGFKLCN", "GGIBHFDCMKM", "GGJPKAFNKJK", "LDAPEBNGCAA", "CKPDHDJPOIH", "BDGHHHNGAID", "OCKCOOCKBEJ", "IDOIOCBGBDD", "IMGHHFNKIIG", "IIIBPEMHHGF", "LLEPJKJHFNI", "HCPDJHFNEHE", "BPLIJHLODFK", "MAECIMMDNEH", "MLHECNKPBKK", "PICMJCIPENM", "OFAGNENPKBF", });
+        new java.lang.String[] { "ExtraBinData", "Birthday", "PsnId", "SecurityLibraryMd5", "Token", "Platform", "AccountUid", "SecurityCmdReply", "EnvironmentErrorCode", "OnlineId", "TargetUid", "ChannelId", "ClientDataVersion", "Tag", "PlatformType", "IsEditor", "IsGuest", "JNIDIOKAAJO", "ELNJLDLPCCG", "PDIEJBEDDBN", "MGEJGMCKAEL", "KLMBLNEPNFP", "BEGALCDJGIO", "FLEFHGMJIAF", "NFFIOJJIIIF", "HONOKEDICNE", "BNDLFGOJEHJ", "HGAKECOGGME", "FMNKCIABDMG", "CountryCode", "NHOLEKOICFD", "OKKKAFOGAFF", "JMFFNLENHKG", "BCADGGFKLCN", "GGIBHFDCMKM", "GGJPKAFNKJK", "CKPDHDJPOIH", "BDGHHHNGAID", "OCKCOOCKBEJ", "IDOIOCBGBDD", "IMGHHFNKIIG", "IIIBPEMHHGF", "LLEPJKJHFNI", "HCPDJHFNEHE", "BPLIJHLODFK", "MAECIMMDNEH", "MLHECNKPBKK", "OFAGNENPKBF", });
     emu.grasscutter.net.proto.TrackingIOInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.getDescriptor();
   }

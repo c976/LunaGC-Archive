@@ -19,14 +19,18 @@ public final class ServerDisconnectClientNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 floor_id = 12;</code>
-     * @return The floorId.
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0        
+     * </pre>
+     *
+     * <code>uint32 data = 3;</code>
+     * @return The data.
      */
-    int getFloorId();
+    int getData();
   }
   /**
    * <pre>
-   * CmdId: 1494
+   * CmdId: 26469
    * </pre>
    *
    * Protobuf type {@code ServerDisconnectClientNotify}
@@ -73,9 +77,9 @@ public final class ServerDisconnectClientNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 24: {
 
-              floorId_ = input.readUInt32();
+              data_ = input.readUInt32();
               break;
             }
             default: {
@@ -110,15 +114,19 @@ public final class ServerDisconnectClientNotifyOuterClass {
               emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.class, emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.Builder.class);
     }
 
-    public static final int FLOOR_ID_FIELD_NUMBER = 12;
-    private int floorId_;
+    public static final int DATA_FIELD_NUMBER = 3;
+    private int data_;
     /**
-     * <code>uint32 floor_id = 12;</code>
-     * @return The floorId.
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0        
+     * </pre>
+     *
+     * <code>uint32 data = 3;</code>
+     * @return The data.
      */
     @java.lang.Override
-    public int getFloorId() {
-      return floorId_;
+    public int getData() {
+      return data_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -135,8 +143,8 @@ public final class ServerDisconnectClientNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (floorId_ != 0) {
-        output.writeUInt32(12, floorId_);
+      if (data_ != 0) {
+        output.writeUInt32(3, data_);
       }
       unknownFields.writeTo(output);
     }
@@ -147,9 +155,9 @@ public final class ServerDisconnectClientNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (floorId_ != 0) {
+      if (data_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, floorId_);
+          .computeUInt32Size(3, data_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -166,8 +174,8 @@ public final class ServerDisconnectClientNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify other = (emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify) obj;
 
-      if (getFloorId()
-          != other.getFloorId()) return false;
+      if (getData()
+          != other.getData()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -179,8 +187,8 @@ public final class ServerDisconnectClientNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FLOOR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getFloorId();
+      hash = (37 * hash) + DATA_FIELD_NUMBER;
+      hash = (53 * hash) + getData();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -278,7 +286,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1494
+     * CmdId: 26469
      * </pre>
      *
      * Protobuf type {@code ServerDisconnectClientNotify}
@@ -318,7 +326,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        floorId_ = 0;
+        data_ = 0;
 
         return this;
       }
@@ -346,7 +354,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify buildPartial() {
         emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify result = new emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify(this);
-        result.floorId_ = floorId_;
+        result.data_ = data_;
         onBuilt();
         return result;
       }
@@ -395,8 +403,8 @@ public final class ServerDisconnectClientNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify other) {
         if (other == emu.grasscutter.net.proto.ServerDisconnectClientNotifyOuterClass.ServerDisconnectClientNotify.getDefaultInstance()) return this;
-        if (other.getFloorId() != 0) {
-          setFloorId(other.getFloorId());
+        if (other.getData() != 0) {
+          setData(other.getData());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -427,33 +435,45 @@ public final class ServerDisconnectClientNotifyOuterClass {
         return this;
       }
 
-      private int floorId_ ;
+      private int data_ ;
       /**
-       * <code>uint32 floor_id = 12;</code>
-       * @return The floorId.
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0        
+       * </pre>
+       *
+       * <code>uint32 data = 3;</code>
+       * @return The data.
        */
       @java.lang.Override
-      public int getFloorId() {
-        return floorId_;
+      public int getData() {
+        return data_;
       }
       /**
-       * <code>uint32 floor_id = 12;</code>
-       * @param value The floorId to set.
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0        
+       * </pre>
+       *
+       * <code>uint32 data = 3;</code>
+       * @param value The data to set.
        * @return This builder for chaining.
        */
-      public Builder setFloorId(int value) {
+      public Builder setData(int value) {
         
-        floorId_ = value;
+        data_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 floor_id = 12;</code>
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0        
+       * </pre>
+       *
+       * <code>uint32 data = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFloorId() {
+      public Builder clearData() {
         
-        floorId_ = 0;
+        data_ = 0;
         onChanged();
         return this;
       }
@@ -524,10 +544,9 @@ public final class ServerDisconnectClientNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"ServerDisconnectClientNotify.proto\"0\n\034" +
-      "ServerDisconnectClientNotify\022\020\n\010floor_id" +
-      "\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "\n\"ServerDisconnectClientNotify.proto\",\n\034" +
+      "ServerDisconnectClientNotify\022\014\n\004data\030\003 \001" +
+      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -538,7 +557,7 @@ public final class ServerDisconnectClientNotifyOuterClass {
     internal_static_ServerDisconnectClientNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ServerDisconnectClientNotify_descriptor,
-        new java.lang.String[] { "FloorId", });
+        new java.lang.String[] { "Data", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

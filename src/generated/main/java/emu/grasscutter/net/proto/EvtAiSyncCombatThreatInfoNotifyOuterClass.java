@@ -20,7 +20,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
      * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -28,7 +28,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
     int getCombatThreatInfoMapCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
      * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -43,7 +43,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
     getCombatThreatInfoMap();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
      * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -52,7 +52,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
     getCombatThreatInfoMapMap();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
      * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -63,7 +63,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
         emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo defaultValue);
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
      * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -73,10 +73,6 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
         int key);
   }
   /**
-   * <pre>
-   * CmdId: 28471
-   * </pre>
-   *
    * Protobuf type {@code EvtAiSyncCombatThreatInfoNotify}
    */
   public static final class EvtAiSyncCombatThreatInfoNotify extends
@@ -207,7 +203,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
      * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -229,7 +225,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
      * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -241,7 +237,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
      * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -258,7 +254,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
      * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -443,10 +439,6 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 28471
-     * </pre>
-     *
      * Protobuf type {@code EvtAiSyncCombatThreatInfoNotify}
      */
     public static final class Builder extends
@@ -644,7 +636,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
        * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -666,7 +658,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
        * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -678,7 +670,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
        * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -695,7 +687,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
        * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -720,7 +712,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
        * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -743,7 +735,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
        * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>
@@ -759,7 +751,7 @@ public final class EvtAiSyncCombatThreatInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
        * <code>map&lt;uint32, .AiThreatInfo&gt; combat_threat_info_map = 10;</code>

@@ -20,7 +20,7 @@ public final class ServerTimeNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
      * <code>uint64 server_time = 1;</code>
@@ -30,7 +30,7 @@ public final class ServerTimeNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 7434
+   * CmdId: 24474
    * </pre>
    *
    * Protobuf type {@code ServerTimeNotify}
@@ -118,7 +118,7 @@ public final class ServerTimeNotifyOuterClass {
     private long serverTime_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
      * <code>uint64 server_time = 1;</code>
@@ -287,7 +287,7 @@ public final class ServerTimeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7434
+     * CmdId: 24474
      * </pre>
      *
      * Protobuf type {@code ServerTimeNotify}
@@ -439,7 +439,7 @@ public final class ServerTimeNotifyOuterClass {
       private long serverTime_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
        * <code>uint64 server_time = 1;</code>
@@ -451,7 +451,7 @@ public final class ServerTimeNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
        * <code>uint64 server_time = 1;</code>
@@ -466,7 +466,7 @@ public final class ServerTimeNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
        * <code>uint64 server_time = 1;</code>

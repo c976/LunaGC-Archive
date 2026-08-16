@@ -19,20 +19,16 @@ public final class JIOFFBEHGCLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 2;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 2;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
   }
   /**
    * Protobuf type {@code JIOFFBEHGCL}
@@ -81,7 +77,7 @@ public final class JIOFFBEHGCLOuterClass {
               break;
             case 16: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 112: {
@@ -124,10 +120,6 @@ public final class JIOFFBEHGCLOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -136,15 +128,15 @@ public final class JIOFFBEHGCLOuterClass {
       return levelId_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 2;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 2;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 2;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 2;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -161,8 +153,8 @@ public final class JIOFFBEHGCLOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(2, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(2, ugcGuid_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(14, levelId_);
@@ -176,9 +168,9 @@ public final class JIOFFBEHGCLOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, iFADGMHEFHF_);
+          .computeUInt32Size(2, ugcGuid_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -201,8 +193,8 @@ public final class JIOFFBEHGCLOuterClass {
 
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -216,8 +208,8 @@ public final class JIOFFBEHGCLOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -353,7 +345,7 @@ public final class JIOFFBEHGCLOuterClass {
         super.clear();
         levelId_ = 0;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         return this;
       }
@@ -382,7 +374,7 @@ public final class JIOFFBEHGCLOuterClass {
       public emu.grasscutter.net.proto.JIOFFBEHGCLOuterClass.JIOFFBEHGCL buildPartial() {
         emu.grasscutter.net.proto.JIOFFBEHGCLOuterClass.JIOFFBEHGCL result = new emu.grasscutter.net.proto.JIOFFBEHGCLOuterClass.JIOFFBEHGCL(this);
         result.levelId_ = levelId_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         onBuilt();
         return result;
       }
@@ -434,8 +426,8 @@ public final class JIOFFBEHGCLOuterClass {
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,10 +460,6 @@ public final class JIOFFBEHGCLOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
@@ -480,10 +468,6 @@ public final class JIOFFBEHGCLOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -495,10 +479,6 @@ public final class JIOFFBEHGCLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
@@ -509,33 +489,33 @@ public final class JIOFFBEHGCLOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 2;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 2;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 2;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 2;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 2;</code>
+       * <code>uint32 ugc_guid = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
@@ -606,9 +586,9 @@ public final class JIOFFBEHGCLOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021JIOFFBEHGCL.proto\"4\n\013JIOFFBEHGCL\022\020\n\010le" +
-      "vel_id\030\016 \001(\r\022\023\n\013IFADGMHEFHF\030\002 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n\021JIOFFBEHGCL.proto\"1\n\013JIOFFBEHGCL\022\020\n\010le" +
+      "vel_id\030\016 \001(\r\022\020\n\010ugc_guid\030\002 \001(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -619,7 +599,7 @@ public final class JIOFFBEHGCLOuterClass {
     internal_static_JIOFFBEHGCL_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_JIOFFBEHGCL_descriptor,
-        new java.lang.String[] { "LevelId", "IFADGMHEFHF", });
+        new java.lang.String[] { "LevelId", "UgcGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,30 +19,18 @@ public final class LOFHHGIFANIOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PFKIOIBNOCC = 10;</code>
      * @return The pFKIOIBNOCC.
      */
     int getPFKIOIBNOCC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 uid = 13;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_id = 8;</code>
      * @return The avatarId.
      */
@@ -143,10 +131,6 @@ public final class LOFHHGIFANIOuterClass {
     public static final int PFKIOIBNOCC_FIELD_NUMBER = 10;
     private int pFKIOIBNOCC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PFKIOIBNOCC = 10;</code>
      * @return The pFKIOIBNOCC.
      */
@@ -158,10 +142,6 @@ public final class LOFHHGIFANIOuterClass {
     public static final int UID_FIELD_NUMBER = 13;
     private int uid_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 uid = 13;</code>
      * @return The uid.
      */
@@ -173,10 +153,6 @@ public final class LOFHHGIFANIOuterClass {
     public static final int AVATAR_ID_FIELD_NUMBER = 8;
     private int avatarId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_id = 8;</code>
      * @return The avatarId.
      */
@@ -523,10 +499,6 @@ public final class LOFHHGIFANIOuterClass {
 
       private int pFKIOIBNOCC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PFKIOIBNOCC = 10;</code>
        * @return The pFKIOIBNOCC.
        */
@@ -535,10 +507,6 @@ public final class LOFHHGIFANIOuterClass {
         return pFKIOIBNOCC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PFKIOIBNOCC = 10;</code>
        * @param value The pFKIOIBNOCC to set.
        * @return This builder for chaining.
@@ -550,10 +518,6 @@ public final class LOFHHGIFANIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PFKIOIBNOCC = 10;</code>
        * @return This builder for chaining.
        */
@@ -566,10 +530,6 @@ public final class LOFHHGIFANIOuterClass {
 
       private int uid_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 uid = 13;</code>
        * @return The uid.
        */
@@ -578,10 +538,6 @@ public final class LOFHHGIFANIOuterClass {
         return uid_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 uid = 13;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
@@ -593,10 +549,6 @@ public final class LOFHHGIFANIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 uid = 13;</code>
        * @return This builder for chaining.
        */
@@ -609,10 +561,6 @@ public final class LOFHHGIFANIOuterClass {
 
       private int avatarId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 8;</code>
        * @return The avatarId.
        */
@@ -621,10 +569,6 @@ public final class LOFHHGIFANIOuterClass {
         return avatarId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 8;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
@@ -636,10 +580,6 @@ public final class LOFHHGIFANIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 8;</code>
        * @return This builder for chaining.
        */

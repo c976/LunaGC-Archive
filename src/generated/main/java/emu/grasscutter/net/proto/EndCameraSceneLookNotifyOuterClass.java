@@ -20,7 +20,8 @@ public final class EndCameraSceneLookNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 23527
+   * CmdId: 4771
+   * Obf: ENEFGMFFKJI
    * </pre>
    *
    * Protobuf type {@code EndCameraSceneLookNotify}
@@ -245,7 +246,8 @@ public final class EndCameraSceneLookNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23527
+     * CmdId: 4771
+     * Obf: ENEFGMFFKJI
      * </pre>
      *
      * Protobuf type {@code EndCameraSceneLookNotify}

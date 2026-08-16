@@ -20,51 +20,51 @@ public final class ServerAnnounceNotifyOuterClass {
 
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> 
-        getFGCCCPPMLOCList();
+        getAnnounceDataListList();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
-    emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData getFGCCCPPMLOC(int index);
+    emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData getAnnounceDataList(int index);
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
-    int getFGCCCPPMLOCCount();
+    int getAnnounceDataListCount();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder> 
-        getFGCCCPPMLOCOrBuilderList();
+        getAnnounceDataListOrBuilderList();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
-    emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder getFGCCCPPMLOCOrBuilder(
+    emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder getAnnounceDataListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 4544
+   * CmdId: 21475
    * </pre>
    *
    * Protobuf type {@code ServerAnnounceNotify}
@@ -79,7 +79,7 @@ public final class ServerAnnounceNotifyOuterClass {
       super(builder);
     }
     private ServerAnnounceNotify() {
-      fGCCCPPMLOC_ = java.util.Collections.emptyList();
+      announceDataList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -113,12 +113,12 @@ public final class ServerAnnounceNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 114: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                fGCCCPPMLOC_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData>();
+                announceDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              fGCCCPPMLOC_.add(
+              announceDataList_.add(
                   input.readMessage(emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.parser(), extensionRegistry));
               break;
             }
@@ -138,7 +138,7 @@ public final class ServerAnnounceNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          fGCCCPPMLOC_ = java.util.Collections.unmodifiableList(fGCCCPPMLOC_);
+          announceDataList_ = java.util.Collections.unmodifiableList(announceDataList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -157,64 +157,64 @@ public final class ServerAnnounceNotifyOuterClass {
               emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify.class, emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify.Builder.class);
     }
 
-    public static final int FGCCCPPMLOC_FIELD_NUMBER = 14;
-    private java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> fGCCCPPMLOC_;
+    public static final int ANNOUNCE_DATA_LIST_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> announceDataList_;
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> getFGCCCPPMLOCList() {
-      return fGCCCPPMLOC_;
+    public java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> getAnnounceDataListList() {
+      return announceDataList_;
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder> 
-        getFGCCCPPMLOCOrBuilderList() {
-      return fGCCCPPMLOC_;
+        getAnnounceDataListOrBuilderList() {
+      return announceDataList_;
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     @java.lang.Override
-    public int getFGCCCPPMLOCCount() {
-      return fGCCCPPMLOC_.size();
+    public int getAnnounceDataListCount() {
+      return announceDataList_.size();
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData getFGCCCPPMLOC(int index) {
-      return fGCCCPPMLOC_.get(index);
+    public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData getAnnounceDataList(int index) {
+      return announceDataList_.get(index);
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder getFGCCCPPMLOCOrBuilder(
+    public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder getAnnounceDataListOrBuilder(
         int index) {
-      return fGCCCPPMLOC_.get(index);
+      return announceDataList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -231,8 +231,8 @@ public final class ServerAnnounceNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < fGCCCPPMLOC_.size(); i++) {
-        output.writeMessage(14, fGCCCPPMLOC_.get(i));
+      for (int i = 0; i < announceDataList_.size(); i++) {
+        output.writeMessage(2, announceDataList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -243,9 +243,9 @@ public final class ServerAnnounceNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < fGCCCPPMLOC_.size(); i++) {
+      for (int i = 0; i < announceDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, fGCCCPPMLOC_.get(i));
+          .computeMessageSize(2, announceDataList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -262,8 +262,8 @@ public final class ServerAnnounceNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify other = (emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify) obj;
 
-      if (!getFGCCCPPMLOCList()
-          .equals(other.getFGCCCPPMLOCList())) return false;
+      if (!getAnnounceDataListList()
+          .equals(other.getAnnounceDataListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,9 +275,9 @@ public final class ServerAnnounceNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getFGCCCPPMLOCCount() > 0) {
-        hash = (37 * hash) + FGCCCPPMLOC_FIELD_NUMBER;
-        hash = (53 * hash) + getFGCCCPPMLOCList().hashCode();
+      if (getAnnounceDataListCount() > 0) {
+        hash = (37 * hash) + ANNOUNCE_DATA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getAnnounceDataListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -376,7 +376,7 @@ public final class ServerAnnounceNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4544
+     * CmdId: 21475
      * </pre>
      *
      * Protobuf type {@code ServerAnnounceNotify}
@@ -411,17 +411,17 @@ public final class ServerAnnounceNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getFGCCCPPMLOCFieldBuilder();
+          getAnnounceDataListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (fGCCCPPMLOCBuilder_ == null) {
-          fGCCCPPMLOC_ = java.util.Collections.emptyList();
+        if (announceDataListBuilder_ == null) {
+          announceDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          fGCCCPPMLOCBuilder_.clear();
+          announceDataListBuilder_.clear();
         }
         return this;
       }
@@ -450,14 +450,14 @@ public final class ServerAnnounceNotifyOuterClass {
       public emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify buildPartial() {
         emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify result = new emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify(this);
         int from_bitField0_ = bitField0_;
-        if (fGCCCPPMLOCBuilder_ == null) {
+        if (announceDataListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            fGCCCPPMLOC_ = java.util.Collections.unmodifiableList(fGCCCPPMLOC_);
+            announceDataList_ = java.util.Collections.unmodifiableList(announceDataList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.fGCCCPPMLOC_ = fGCCCPPMLOC_;
+          result.announceDataList_ = announceDataList_;
         } else {
-          result.fGCCCPPMLOC_ = fGCCCPPMLOCBuilder_.build();
+          result.announceDataList_ = announceDataListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -507,29 +507,29 @@ public final class ServerAnnounceNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify other) {
         if (other == emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify.getDefaultInstance()) return this;
-        if (fGCCCPPMLOCBuilder_ == null) {
-          if (!other.fGCCCPPMLOC_.isEmpty()) {
-            if (fGCCCPPMLOC_.isEmpty()) {
-              fGCCCPPMLOC_ = other.fGCCCPPMLOC_;
+        if (announceDataListBuilder_ == null) {
+          if (!other.announceDataList_.isEmpty()) {
+            if (announceDataList_.isEmpty()) {
+              announceDataList_ = other.announceDataList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureFGCCCPPMLOCIsMutable();
-              fGCCCPPMLOC_.addAll(other.fGCCCPPMLOC_);
+              ensureAnnounceDataListIsMutable();
+              announceDataList_.addAll(other.announceDataList_);
             }
             onChanged();
           }
         } else {
-          if (!other.fGCCCPPMLOC_.isEmpty()) {
-            if (fGCCCPPMLOCBuilder_.isEmpty()) {
-              fGCCCPPMLOCBuilder_.dispose();
-              fGCCCPPMLOCBuilder_ = null;
-              fGCCCPPMLOC_ = other.fGCCCPPMLOC_;
+          if (!other.announceDataList_.isEmpty()) {
+            if (announceDataListBuilder_.isEmpty()) {
+              announceDataListBuilder_.dispose();
+              announceDataListBuilder_ = null;
+              announceDataList_ = other.announceDataList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              fGCCCPPMLOCBuilder_ = 
+              announceDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getFGCCCPPMLOCFieldBuilder() : null;
+                   getAnnounceDataListFieldBuilder() : null;
             } else {
-              fGCCCPPMLOCBuilder_.addAllMessages(other.fGCCCPPMLOC_);
+              announceDataListBuilder_.addAllMessages(other.announceDataList_);
             }
           }
         }
@@ -563,316 +563,316 @@ public final class ServerAnnounceNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> fGCCCPPMLOC_ =
+      private java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> announceDataList_ =
         java.util.Collections.emptyList();
-      private void ensureFGCCCPPMLOCIsMutable() {
+      private void ensureAnnounceDataListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          fGCCCPPMLOC_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData>(fGCCCPPMLOC_);
+          announceDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData>(announceDataList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder> fGCCCPPMLOCBuilder_;
+          emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder> announceDataListBuilder_;
 
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> getFGCCCPPMLOCList() {
-        if (fGCCCPPMLOCBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(fGCCCPPMLOC_);
+      public java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> getAnnounceDataListList() {
+        if (announceDataListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(announceDataList_);
         } else {
-          return fGCCCPPMLOCBuilder_.getMessageList();
+          return announceDataListBuilder_.getMessageList();
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public int getFGCCCPPMLOCCount() {
-        if (fGCCCPPMLOCBuilder_ == null) {
-          return fGCCCPPMLOC_.size();
+      public int getAnnounceDataListCount() {
+        if (announceDataListBuilder_ == null) {
+          return announceDataList_.size();
         } else {
-          return fGCCCPPMLOCBuilder_.getCount();
+          return announceDataListBuilder_.getCount();
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData getFGCCCPPMLOC(int index) {
-        if (fGCCCPPMLOCBuilder_ == null) {
-          return fGCCCPPMLOC_.get(index);
+      public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData getAnnounceDataList(int index) {
+        if (announceDataListBuilder_ == null) {
+          return announceDataList_.get(index);
         } else {
-          return fGCCCPPMLOCBuilder_.getMessage(index);
+          return announceDataListBuilder_.getMessage(index);
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public Builder setFGCCCPPMLOC(
+      public Builder setAnnounceDataList(
           int index, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData value) {
-        if (fGCCCPPMLOCBuilder_ == null) {
+        if (announceDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureFGCCCPPMLOCIsMutable();
-          fGCCCPPMLOC_.set(index, value);
+          ensureAnnounceDataListIsMutable();
+          announceDataList_.set(index, value);
           onChanged();
         } else {
-          fGCCCPPMLOCBuilder_.setMessage(index, value);
+          announceDataListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public Builder setFGCCCPPMLOC(
+      public Builder setAnnounceDataList(
           int index, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder builderForValue) {
-        if (fGCCCPPMLOCBuilder_ == null) {
-          ensureFGCCCPPMLOCIsMutable();
-          fGCCCPPMLOC_.set(index, builderForValue.build());
+        if (announceDataListBuilder_ == null) {
+          ensureAnnounceDataListIsMutable();
+          announceDataList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          fGCCCPPMLOCBuilder_.setMessage(index, builderForValue.build());
+          announceDataListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public Builder addFGCCCPPMLOC(emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData value) {
-        if (fGCCCPPMLOCBuilder_ == null) {
+      public Builder addAnnounceDataList(emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData value) {
+        if (announceDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureFGCCCPPMLOCIsMutable();
-          fGCCCPPMLOC_.add(value);
+          ensureAnnounceDataListIsMutable();
+          announceDataList_.add(value);
           onChanged();
         } else {
-          fGCCCPPMLOCBuilder_.addMessage(value);
+          announceDataListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public Builder addFGCCCPPMLOC(
+      public Builder addAnnounceDataList(
           int index, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData value) {
-        if (fGCCCPPMLOCBuilder_ == null) {
+        if (announceDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureFGCCCPPMLOCIsMutable();
-          fGCCCPPMLOC_.add(index, value);
+          ensureAnnounceDataListIsMutable();
+          announceDataList_.add(index, value);
           onChanged();
         } else {
-          fGCCCPPMLOCBuilder_.addMessage(index, value);
+          announceDataListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public Builder addFGCCCPPMLOC(
+      public Builder addAnnounceDataList(
           emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder builderForValue) {
-        if (fGCCCPPMLOCBuilder_ == null) {
-          ensureFGCCCPPMLOCIsMutable();
-          fGCCCPPMLOC_.add(builderForValue.build());
+        if (announceDataListBuilder_ == null) {
+          ensureAnnounceDataListIsMutable();
+          announceDataList_.add(builderForValue.build());
           onChanged();
         } else {
-          fGCCCPPMLOCBuilder_.addMessage(builderForValue.build());
+          announceDataListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public Builder addFGCCCPPMLOC(
+      public Builder addAnnounceDataList(
           int index, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder builderForValue) {
-        if (fGCCCPPMLOCBuilder_ == null) {
-          ensureFGCCCPPMLOCIsMutable();
-          fGCCCPPMLOC_.add(index, builderForValue.build());
+        if (announceDataListBuilder_ == null) {
+          ensureAnnounceDataListIsMutable();
+          announceDataList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          fGCCCPPMLOCBuilder_.addMessage(index, builderForValue.build());
+          announceDataListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public Builder addAllFGCCCPPMLOC(
+      public Builder addAllAnnounceDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> values) {
-        if (fGCCCPPMLOCBuilder_ == null) {
-          ensureFGCCCPPMLOCIsMutable();
+        if (announceDataListBuilder_ == null) {
+          ensureAnnounceDataListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, fGCCCPPMLOC_);
+              values, announceDataList_);
           onChanged();
         } else {
-          fGCCCPPMLOCBuilder_.addAllMessages(values);
+          announceDataListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public Builder clearFGCCCPPMLOC() {
-        if (fGCCCPPMLOCBuilder_ == null) {
-          fGCCCPPMLOC_ = java.util.Collections.emptyList();
+      public Builder clearAnnounceDataList() {
+        if (announceDataListBuilder_ == null) {
+          announceDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          fGCCCPPMLOCBuilder_.clear();
+          announceDataListBuilder_.clear();
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public Builder removeFGCCCPPMLOC(int index) {
-        if (fGCCCPPMLOCBuilder_ == null) {
-          ensureFGCCCPPMLOCIsMutable();
-          fGCCCPPMLOC_.remove(index);
+      public Builder removeAnnounceDataList(int index) {
+        if (announceDataListBuilder_ == null) {
+          ensureAnnounceDataListIsMutable();
+          announceDataList_.remove(index);
           onChanged();
         } else {
-          fGCCCPPMLOCBuilder_.remove(index);
+          announceDataListBuilder_.remove(index);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder getFGCCCPPMLOCBuilder(
+      public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder getAnnounceDataListBuilder(
           int index) {
-        return getFGCCCPPMLOCFieldBuilder().getBuilder(index);
+        return getAnnounceDataListFieldBuilder().getBuilder(index);
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder getFGCCCPPMLOCOrBuilder(
+      public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder getAnnounceDataListOrBuilder(
           int index) {
-        if (fGCCCPPMLOCBuilder_ == null) {
-          return fGCCCPPMLOC_.get(index);  } else {
-          return fGCCCPPMLOCBuilder_.getMessageOrBuilder(index);
+        if (announceDataListBuilder_ == null) {
+          return announceDataList_.get(index);  } else {
+          return announceDataListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder> 
-           getFGCCCPPMLOCOrBuilderList() {
-        if (fGCCCPPMLOCBuilder_ != null) {
-          return fGCCCPPMLOCBuilder_.getMessageOrBuilderList();
+           getAnnounceDataListOrBuilderList() {
+        if (announceDataListBuilder_ != null) {
+          return announceDataListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(fGCCCPPMLOC_);
+          return java.util.Collections.unmodifiableList(announceDataList_);
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder addFGCCCPPMLOCBuilder() {
-        return getFGCCCPPMLOCFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder addAnnounceDataListBuilder() {
+        return getAnnounceDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.getDefaultInstance());
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder addFGCCCPPMLOCBuilder(
+      public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder addAnnounceDataListBuilder(
           int index) {
-        return getFGCCCPPMLOCFieldBuilder().addBuilder(
+        return getAnnounceDataListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.getDefaultInstance());
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .AnnounceData FGCCCPPMLOC = 14;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder> 
-           getFGCCCPPMLOCBuilderList() {
-        return getFGCCCPPMLOCFieldBuilder().getBuilderList();
+           getAnnounceDataListBuilderList() {
+        return getAnnounceDataListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder> 
-          getFGCCCPPMLOCFieldBuilder() {
-        if (fGCCCPPMLOCBuilder_ == null) {
-          fGCCCPPMLOCBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getAnnounceDataListFieldBuilder() {
+        if (announceDataListBuilder_ == null) {
+          announceDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder>(
-                  fGCCCPPMLOC_,
+                  announceDataList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          fGCCCPPMLOC_ = null;
+          announceDataList_ = null;
         }
-        return fGCCCPPMLOCBuilder_;
+        return announceDataListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -942,9 +942,9 @@ public final class ServerAnnounceNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ServerAnnounceNotify.proto\032\022AnnounceDa" +
-      "ta.proto\":\n\024ServerAnnounceNotify\022\"\n\013FGCC" +
-      "CPPMLOC\030\016 \003(\0132\r.AnnounceDataB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "ta.proto\"A\n\024ServerAnnounceNotify\022)\n\022anno" +
+      "unce_data_list\030\002 \003(\0132\r.AnnounceDataB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -956,7 +956,7 @@ public final class ServerAnnounceNotifyOuterClass {
     internal_static_ServerAnnounceNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ServerAnnounceNotify_descriptor,
-        new java.lang.String[] { "FGCCCPPMLOC", });
+        new java.lang.String[] { "AnnounceDataList", });
     emu.grasscutter.net.proto.AnnounceDataOuterClass.getDescriptor();
   }
 

@@ -20,98 +20,98 @@ public final class AranaraCollectionSuiteOuterClass {
 
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
-    int getIAHBKNBDKHCCount();
+    int getCollectionIdStateMapCount();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
-    boolean containsIAHBKNBDKHC(
+    boolean containsCollectionIdStateMap(
         int key);
     /**
-     * Use {@link #getIAHBKNBDKHCMap()} instead.
+     * Use {@link #getCollectionIdStateMapMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState>
-    getIAHBKNBDKHC();
+    getCollectionIdStateMap();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState>
-    getIAHBKNBDKHCMap();
+    getCollectionIdStateMapMap();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
-    emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getIAHBKNBDKHCOrDefault(
+    emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getCollectionIdStateMapOrDefault(
         int key,
         emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState defaultValue);
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
-    emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getIAHBKNBDKHCOrThrow(
+    emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getCollectionIdStateMapOrThrow(
         int key);
     /**
-     * Use {@link #getIAHBKNBDKHCValueMap()} instead.
+     * Use {@link #getCollectionIdStateMapValueMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getIAHBKNBDKHCValue();
+    getCollectionIdStateMapValue();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getIAHBKNBDKHCValueMap();
+    getCollectionIdStateMapValueMap();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
 
-    int getIAHBKNBDKHCValueOrDefault(
+    int getCollectionIdStateMapValueOrDefault(
         int key,
         int defaultValue);
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
 
-    int getIAHBKNBDKHCValueOrThrow(
+    int getCollectionIdStateMapValueOrThrow(
         int key);
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 collection_type = 11;</code>
+     * <code>uint32 collection_type = 7;</code>
      * @return The collectionType.
      */
     int getCollectionType();
@@ -162,22 +162,22 @@ public final class AranaraCollectionSuiteOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 56: {
 
               collectionType_ = input.readUInt32();
               break;
             }
-            case 106: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                iAHBKNBDKHC_ = com.google.protobuf.MapField.newMapField(
-                    IAHBKNBDKHCDefaultEntryHolder.defaultEntry);
+                collectionIdStateMap_ = com.google.protobuf.MapField.newMapField(
+                    CollectionIdStateMapDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              iAHBKNBDKHC__ = input.readMessage(
-                  IAHBKNBDKHCDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              iAHBKNBDKHC_.getMutableMap().put(
-                  iAHBKNBDKHC__.getKey(), iAHBKNBDKHC__.getValue());
+              collectionIdStateMap__ = input.readMessage(
+                  CollectionIdStateMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              collectionIdStateMap_.getMutableMap().put(
+                  collectionIdStateMap__.getKey(), collectionIdStateMap__.getValue());
               break;
             }
             default: {
@@ -209,8 +209,8 @@ public final class AranaraCollectionSuiteOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 13:
-          return internalGetIAHBKNBDKHC();
+        case 10:
+          return internalGetCollectionIdStateMap();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -224,186 +224,186 @@ public final class AranaraCollectionSuiteOuterClass {
               emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.class, emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.Builder.class);
     }
 
-    public static final int IAHBKNBDKHC_FIELD_NUMBER = 13;
-    private static final class IAHBKNBDKHCDefaultEntryHolder {
+    public static final int COLLECTION_ID_STATE_MAP_FIELD_NUMBER = 10;
+    private static final class CollectionIdStateMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.internal_static_AranaraCollectionSuite_IAHBKNBDKHCEntry_descriptor, 
+                  emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.internal_static_AranaraCollectionSuite_CollectionIdStateMapEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.ENUM,
                   emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.AranaraCollectionState_NONE.getNumber());
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> iAHBKNBDKHC_;
+        java.lang.Integer, java.lang.Integer> collectionIdStateMap_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetIAHBKNBDKHC() {
-      if (iAHBKNBDKHC_ == null) {
+    internalGetCollectionIdStateMap() {
+      if (collectionIdStateMap_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            IAHBKNBDKHCDefaultEntryHolder.defaultEntry);
+            CollectionIdStateMapDefaultEntryHolder.defaultEntry);
       }
-      return iAHBKNBDKHC_;
+      return collectionIdStateMap_;
     }
     private static final
     com.google.protobuf.Internal.MapAdapter.Converter<
-        java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState> iAHBKNBDKHCValueConverter =
+        java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState> collectionIdStateMapValueConverter =
             com.google.protobuf.Internal.MapAdapter.newEnumConverter(
                 emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.internalGetValueMap(),
                 emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.UNRECOGNIZED);
     private static final java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState>
-    internalGetAdaptedIAHBKNBDKHCMap(
+    internalGetAdaptedCollectionIdStateMapMap(
         java.util.Map<java.lang.Integer, java.lang.Integer> map) {
       return new com.google.protobuf.Internal.MapAdapter<
           java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState, java.lang.Integer>(
-              map, iAHBKNBDKHCValueConverter);
+              map, collectionIdStateMapValueConverter);
     }
 
-    public int getIAHBKNBDKHCCount() {
-      return internalGetIAHBKNBDKHC().getMap().size();
+    public int getCollectionIdStateMapCount() {
+      return internalGetCollectionIdStateMap().getMap().size();
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
 
     @java.lang.Override
-    public boolean containsIAHBKNBDKHC(
+    public boolean containsCollectionIdStateMap(
         int key) {
       
-      return internalGetIAHBKNBDKHC().getMap().containsKey(key);
+      return internalGetCollectionIdStateMap().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getIAHBKNBDKHCMap()} instead.
+     * Use {@link #getCollectionIdStateMapMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState>
-    getIAHBKNBDKHC() {
-      return getIAHBKNBDKHCMap();
+    getCollectionIdStateMap() {
+      return getCollectionIdStateMapMap();
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
     @java.lang.Override
 
     public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState>
-    getIAHBKNBDKHCMap() {
-      return internalGetAdaptedIAHBKNBDKHCMap(
-          internalGetIAHBKNBDKHC().getMap());}
+    getCollectionIdStateMapMap() {
+      return internalGetAdaptedCollectionIdStateMapMap(
+          internalGetCollectionIdStateMap().getMap());}
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getIAHBKNBDKHCOrDefault(
+    public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getCollectionIdStateMapOrDefault(
         int key,
         emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetIAHBKNBDKHC().getMap();
+          internalGetCollectionIdStateMap().getMap();
       return map.containsKey(key)
-             ? iAHBKNBDKHCValueConverter.doForward(map.get(key))
+             ? collectionIdStateMapValueConverter.doForward(map.get(key))
              : defaultValue;
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getIAHBKNBDKHCOrThrow(
+    public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getCollectionIdStateMapOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetIAHBKNBDKHC().getMap();
+          internalGetCollectionIdStateMap().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
-      return iAHBKNBDKHCValueConverter.doForward(map.get(key));
+      return collectionIdStateMapValueConverter.doForward(map.get(key));
     }
     /**
-     * Use {@link #getIAHBKNBDKHCValueMap()} instead.
+     * Use {@link #getCollectionIdStateMapValueMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.Integer, java.lang.Integer>
-    getIAHBKNBDKHCValue() {
-      return getIAHBKNBDKHCValueMap();
+    getCollectionIdStateMapValue() {
+      return getCollectionIdStateMapValueMap();
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
     @java.lang.Override
 
     public java.util.Map<java.lang.Integer, java.lang.Integer>
-    getIAHBKNBDKHCValueMap() {
-      return internalGetIAHBKNBDKHC().getMap();
+    getCollectionIdStateMapValueMap() {
+      return internalGetCollectionIdStateMap().getMap();
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
     @java.lang.Override
 
-    public int getIAHBKNBDKHCValueOrDefault(
+    public int getCollectionIdStateMapValueOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetIAHBKNBDKHC().getMap();
+          internalGetCollectionIdStateMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+     * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
      */
     @java.lang.Override
 
-    public int getIAHBKNBDKHCValueOrThrow(
+    public int getCollectionIdStateMapValueOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetIAHBKNBDKHC().getMap();
+          internalGetCollectionIdStateMap().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public static final int COLLECTION_TYPE_FIELD_NUMBER = 11;
+    public static final int COLLECTION_TYPE_FIELD_NUMBER = 7;
     private int collectionType_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 collection_type = 11;</code>
+     * <code>uint32 collection_type = 7;</code>
      * @return The collectionType.
      */
     @java.lang.Override
@@ -426,14 +426,14 @@ public final class AranaraCollectionSuiteOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (collectionType_ != 0) {
-        output.writeUInt32(11, collectionType_);
+        output.writeUInt32(7, collectionType_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetIAHBKNBDKHC(),
-          IAHBKNBDKHCDefaultEntryHolder.defaultEntry,
-          13);
+          internalGetCollectionIdStateMap(),
+          CollectionIdStateMapDefaultEntryHolder.defaultEntry,
+          10);
       unknownFields.writeTo(output);
     }
 
@@ -445,17 +445,17 @@ public final class AranaraCollectionSuiteOuterClass {
       size = 0;
       if (collectionType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, collectionType_);
+          .computeUInt32Size(7, collectionType_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetIAHBKNBDKHC().getMap().entrySet()) {
+           : internalGetCollectionIdStateMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        iAHBKNBDKHC__ = IAHBKNBDKHCDefaultEntryHolder.defaultEntry.newBuilderForType()
+        collectionIdStateMap__ = CollectionIdStateMapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(13, iAHBKNBDKHC__);
+            .computeMessageSize(10, collectionIdStateMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -472,8 +472,8 @@ public final class AranaraCollectionSuiteOuterClass {
       }
       emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite other = (emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite) obj;
 
-      if (!internalGetIAHBKNBDKHC().equals(
-          other.internalGetIAHBKNBDKHC())) return false;
+      if (!internalGetCollectionIdStateMap().equals(
+          other.internalGetCollectionIdStateMap())) return false;
       if (getCollectionType()
           != other.getCollectionType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -487,9 +487,9 @@ public final class AranaraCollectionSuiteOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetIAHBKNBDKHC().getMap().isEmpty()) {
-        hash = (37 * hash) + IAHBKNBDKHC_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetIAHBKNBDKHC().hashCode();
+      if (!internalGetCollectionIdStateMap().getMap().isEmpty()) {
+        hash = (37 * hash) + COLLECTION_ID_STATE_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetCollectionIdStateMap().hashCode();
       }
       hash = (37 * hash) + COLLECTION_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getCollectionType();
@@ -604,8 +604,8 @@ public final class AranaraCollectionSuiteOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 13:
-            return internalGetIAHBKNBDKHC();
+          case 10:
+            return internalGetCollectionIdStateMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -615,8 +615,8 @@ public final class AranaraCollectionSuiteOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 13:
-            return internalGetMutableIAHBKNBDKHC();
+          case 10:
+            return internalGetMutableCollectionIdStateMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -648,7 +648,7 @@ public final class AranaraCollectionSuiteOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableIAHBKNBDKHC().clear();
+        internalGetMutableCollectionIdStateMap().clear();
         collectionType_ = 0;
 
         return this;
@@ -678,8 +678,8 @@ public final class AranaraCollectionSuiteOuterClass {
       public emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite buildPartial() {
         emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite result = new emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite(this);
         int from_bitField0_ = bitField0_;
-        result.iAHBKNBDKHC_ = internalGetIAHBKNBDKHC();
-        result.iAHBKNBDKHC_.makeImmutable();
+        result.collectionIdStateMap_ = internalGetCollectionIdStateMap();
+        result.collectionIdStateMap_.makeImmutable();
         result.collectionType_ = collectionType_;
         onBuilt();
         return result;
@@ -729,8 +729,8 @@ public final class AranaraCollectionSuiteOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite other) {
         if (other == emu.grasscutter.net.proto.AranaraCollectionSuiteOuterClass.AranaraCollectionSuite.getDefaultInstance()) return this;
-        internalGetMutableIAHBKNBDKHC().mergeFrom(
-            other.internalGetIAHBKNBDKHC());
+        internalGetMutableCollectionIdStateMap().mergeFrom(
+            other.internalGetCollectionIdStateMap());
         if (other.getCollectionType() != 0) {
           setCollectionType(other.getCollectionType());
         }
@@ -765,181 +765,181 @@ public final class AranaraCollectionSuiteOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> iAHBKNBDKHC_;
+          java.lang.Integer, java.lang.Integer> collectionIdStateMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetIAHBKNBDKHC() {
-        if (iAHBKNBDKHC_ == null) {
+      internalGetCollectionIdStateMap() {
+        if (collectionIdStateMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              IAHBKNBDKHCDefaultEntryHolder.defaultEntry);
+              CollectionIdStateMapDefaultEntryHolder.defaultEntry);
         }
-        return iAHBKNBDKHC_;
+        return collectionIdStateMap_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableIAHBKNBDKHC() {
+      internalGetMutableCollectionIdStateMap() {
         onChanged();;
-        if (iAHBKNBDKHC_ == null) {
-          iAHBKNBDKHC_ = com.google.protobuf.MapField.newMapField(
-              IAHBKNBDKHCDefaultEntryHolder.defaultEntry);
+        if (collectionIdStateMap_ == null) {
+          collectionIdStateMap_ = com.google.protobuf.MapField.newMapField(
+              CollectionIdStateMapDefaultEntryHolder.defaultEntry);
         }
-        if (!iAHBKNBDKHC_.isMutable()) {
-          iAHBKNBDKHC_ = iAHBKNBDKHC_.copy();
+        if (!collectionIdStateMap_.isMutable()) {
+          collectionIdStateMap_ = collectionIdStateMap_.copy();
         }
-        return iAHBKNBDKHC_;
+        return collectionIdStateMap_;
       }
 
-      public int getIAHBKNBDKHCCount() {
-        return internalGetIAHBKNBDKHC().getMap().size();
+      public int getCollectionIdStateMapCount() {
+        return internalGetCollectionIdStateMap().getMap().size();
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
 
       @java.lang.Override
-      public boolean containsIAHBKNBDKHC(
+      public boolean containsCollectionIdStateMap(
           int key) {
         
-        return internalGetIAHBKNBDKHC().getMap().containsKey(key);
+        return internalGetCollectionIdStateMap().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getIAHBKNBDKHCMap()} instead.
+       * Use {@link #getCollectionIdStateMapMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState>
-      getIAHBKNBDKHC() {
-        return getIAHBKNBDKHCMap();
+      getCollectionIdStateMap() {
+        return getCollectionIdStateMapMap();
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
       @java.lang.Override
 
       public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState>
-      getIAHBKNBDKHCMap() {
-        return internalGetAdaptedIAHBKNBDKHCMap(
-            internalGetIAHBKNBDKHC().getMap());}
+      getCollectionIdStateMapMap() {
+        return internalGetAdaptedCollectionIdStateMapMap(
+            internalGetCollectionIdStateMap().getMap());}
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getIAHBKNBDKHCOrDefault(
+      public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getCollectionIdStateMapOrDefault(
           int key,
           emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetIAHBKNBDKHC().getMap();
+            internalGetCollectionIdStateMap().getMap();
         return map.containsKey(key)
-               ? iAHBKNBDKHCValueConverter.doForward(map.get(key))
+               ? collectionIdStateMapValueConverter.doForward(map.get(key))
                : defaultValue;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getIAHBKNBDKHCOrThrow(
+      public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getCollectionIdStateMapOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetIAHBKNBDKHC().getMap();
+            internalGetCollectionIdStateMap().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
-        return iAHBKNBDKHCValueConverter.doForward(map.get(key));
+        return collectionIdStateMapValueConverter.doForward(map.get(key));
       }
       /**
-       * Use {@link #getIAHBKNBDKHCValueMap()} instead.
+       * Use {@link #getCollectionIdStateMapValueMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getIAHBKNBDKHCValue() {
-        return getIAHBKNBDKHCValueMap();
+      getCollectionIdStateMapValue() {
+        return getCollectionIdStateMapValueMap();
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
       @java.lang.Override
 
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getIAHBKNBDKHCValueMap() {
-        return internalGetIAHBKNBDKHC().getMap();
+      getCollectionIdStateMapValueMap() {
+        return internalGetCollectionIdStateMap().getMap();
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
       @java.lang.Override
 
-      public int getIAHBKNBDKHCValueOrDefault(
+      public int getCollectionIdStateMapValueOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetIAHBKNBDKHC().getMap();
+            internalGetCollectionIdStateMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
       @java.lang.Override
 
-      public int getIAHBKNBDKHCValueOrThrow(
+      public int getCollectionIdStateMapValueOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetIAHBKNBDKHC().getMap();
+            internalGetCollectionIdStateMap().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearIAHBKNBDKHC() {
-        internalGetMutableIAHBKNBDKHC().getMutableMap()
+      public Builder clearCollectionIdStateMap() {
+        internalGetMutableCollectionIdStateMap().getMutableMap()
             .clear();
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
 
-      public Builder removeIAHBKNBDKHC(
+      public Builder removeCollectionIdStateMap(
           int key) {
         
-        internalGetMutableIAHBKNBDKHC().getMutableMap()
+        internalGetMutableCollectionIdStateMap().getMutableMap()
             .remove(key);
         return this;
       }
@@ -948,37 +948,37 @@ public final class AranaraCollectionSuiteOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState>
-      getMutableIAHBKNBDKHC() {
-        return internalGetAdaptedIAHBKNBDKHCMap(
-             internalGetMutableIAHBKNBDKHC().getMutableMap());
+      getMutableCollectionIdStateMap() {
+        return internalGetAdaptedCollectionIdStateMapMap(
+             internalGetMutableCollectionIdStateMap().getMutableMap());
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
-      public Builder putIAHBKNBDKHC(
+      public Builder putCollectionIdStateMap(
           int key,
           emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState value) {
         
         if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableIAHBKNBDKHC().getMutableMap()
-            .put(key, iAHBKNBDKHCValueConverter.doBackward(value));
+        internalGetMutableCollectionIdStateMap().getMutableMap()
+            .put(key, collectionIdStateMapValueConverter.doBackward(value));
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
-      public Builder putAllIAHBKNBDKHC(
+      public Builder putAllCollectionIdStateMap(
           java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState> values) {
-        internalGetAdaptedIAHBKNBDKHCMap(
-            internalGetMutableIAHBKNBDKHC().getMutableMap())
+        internalGetAdaptedCollectionIdStateMapMap(
+            internalGetMutableCollectionIdStateMap().getMutableMap())
                 .putAll(values);
         return this;
       }
@@ -987,34 +987,34 @@ public final class AranaraCollectionSuiteOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableIAHBKNBDKHCValue() {
-        return internalGetMutableIAHBKNBDKHC().getMutableMap();
+      getMutableCollectionIdStateMapValue() {
+        return internalGetMutableCollectionIdStateMap().getMutableMap();
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
-      public Builder putIAHBKNBDKHCValue(
+      public Builder putCollectionIdStateMapValue(
           int key,
           int value) {
         
-        internalGetMutableIAHBKNBDKHC().getMutableMap()
+        internalGetMutableCollectionIdStateMap().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>map&lt;uint32, .AranaraCollectionState&gt; IAHBKNBDKHC = 13;</code>
+       * <code>map&lt;uint32, .AranaraCollectionState&gt; collection_id_state_map = 10;</code>
        */
-      public Builder putAllIAHBKNBDKHCValue(
+      public Builder putAllCollectionIdStateMapValue(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableIAHBKNBDKHC().getMutableMap()
+        internalGetMutableCollectionIdStateMap().getMutableMap()
             .putAll(values);
         return this;
       }
@@ -1022,10 +1022,10 @@ public final class AranaraCollectionSuiteOuterClass {
       private int collectionType_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 collection_type = 11;</code>
+       * <code>uint32 collection_type = 7;</code>
        * @return The collectionType.
        */
       @java.lang.Override
@@ -1034,10 +1034,10 @@ public final class AranaraCollectionSuiteOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 collection_type = 11;</code>
+       * <code>uint32 collection_type = 7;</code>
        * @param value The collectionType to set.
        * @return This builder for chaining.
        */
@@ -1049,10 +1049,10 @@ public final class AranaraCollectionSuiteOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 collection_type = 11;</code>
+       * <code>uint32 collection_type = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCollectionType() {
@@ -1120,10 +1120,10 @@ public final class AranaraCollectionSuiteOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AranaraCollectionSuite_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_AranaraCollectionSuite_IAHBKNBDKHCEntry_descriptor;
+    internal_static_AranaraCollectionSuite_CollectionIdStateMapEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_AranaraCollectionSuite_IAHBKNBDKHCEntry_fieldAccessorTable;
+      internal_static_AranaraCollectionSuite_CollectionIdStateMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1134,13 +1134,13 @@ public final class AranaraCollectionSuiteOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034AranaraCollectionSuite.proto\032\034AranaraC" +
-      "ollectionState.proto\"\275\001\n\026AranaraCollecti" +
-      "onSuite\022=\n\013IAHBKNBDKHC\030\r \003(\0132(.AranaraCo" +
-      "llectionSuite.IAHBKNBDKHCEntry\022\027\n\017collec" +
-      "tion_type\030\013 \001(\r\032K\n\020IAHBKNBDKHCEntry\022\013\n\003k" +
-      "ey\030\001 \001(\r\022&\n\005value\030\002 \001(\0162\027.AranaraCollect" +
-      "ionState:\0028\001B\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "ollectionState.proto\"\333\001\n\026AranaraCollecti" +
+      "onSuite\022R\n\027collection_id_state_map\030\n \003(\013" +
+      "21.AranaraCollectionSuite.CollectionIdSt" +
+      "ateMapEntry\022\027\n\017collection_type\030\007 \001(\r\032T\n\031" +
+      "CollectionIdStateMapEntry\022\013\n\003key\030\001 \001(\r\022&" +
+      "\n\005value\030\002 \001(\0162\027.AranaraCollectionState:\002" +
+      "8\001B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1152,12 +1152,12 @@ public final class AranaraCollectionSuiteOuterClass {
     internal_static_AranaraCollectionSuite_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AranaraCollectionSuite_descriptor,
-        new java.lang.String[] { "IAHBKNBDKHC", "CollectionType", });
-    internal_static_AranaraCollectionSuite_IAHBKNBDKHCEntry_descriptor =
+        new java.lang.String[] { "CollectionIdStateMap", "CollectionType", });
+    internal_static_AranaraCollectionSuite_CollectionIdStateMapEntry_descriptor =
       internal_static_AranaraCollectionSuite_descriptor.getNestedTypes().get(0);
-    internal_static_AranaraCollectionSuite_IAHBKNBDKHCEntry_fieldAccessorTable = new
+    internal_static_AranaraCollectionSuite_CollectionIdStateMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_AranaraCollectionSuite_IAHBKNBDKHCEntry_descriptor,
+        internal_static_AranaraCollectionSuite_CollectionIdStateMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.getDescriptor();
   }

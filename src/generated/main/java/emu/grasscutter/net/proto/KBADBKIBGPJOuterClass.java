@@ -19,20 +19,12 @@ public final class KBADBKIBGPJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 POLJBHACKGB = 2;</code>
      * @return The pOLJBHACKGB.
      */
     int getPOLJBHACKGB();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IPKIHLJFPEB = 12;</code>
      * @return The iPKIHLJFPEB.
      */
@@ -128,10 +120,6 @@ public final class KBADBKIBGPJOuterClass {
     public static final int POLJBHACKGB_FIELD_NUMBER = 2;
     private int pOLJBHACKGB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 POLJBHACKGB = 2;</code>
      * @return The pOLJBHACKGB.
      */
@@ -143,10 +131,6 @@ public final class KBADBKIBGPJOuterClass {
     public static final int IPKIHLJFPEB_FIELD_NUMBER = 12;
     private int iPKIHLJFPEB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IPKIHLJFPEB = 12;</code>
      * @return The iPKIHLJFPEB.
      */
@@ -476,10 +460,6 @@ public final class KBADBKIBGPJOuterClass {
 
       private int pOLJBHACKGB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 POLJBHACKGB = 2;</code>
        * @return The pOLJBHACKGB.
        */
@@ -488,10 +468,6 @@ public final class KBADBKIBGPJOuterClass {
         return pOLJBHACKGB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 POLJBHACKGB = 2;</code>
        * @param value The pOLJBHACKGB to set.
        * @return This builder for chaining.
@@ -503,10 +479,6 @@ public final class KBADBKIBGPJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 POLJBHACKGB = 2;</code>
        * @return This builder for chaining.
        */
@@ -519,10 +491,6 @@ public final class KBADBKIBGPJOuterClass {
 
       private int iPKIHLJFPEB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IPKIHLJFPEB = 12;</code>
        * @return The iPKIHLJFPEB.
        */
@@ -531,10 +499,6 @@ public final class KBADBKIBGPJOuterClass {
         return iPKIHLJFPEB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IPKIHLJFPEB = 12;</code>
        * @param value The iPKIHLJFPEB to set.
        * @return This builder for chaining.
@@ -546,10 +510,6 @@ public final class KBADBKIBGPJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IPKIHLJFPEB = 12;</code>
        * @return This builder for chaining.
        */

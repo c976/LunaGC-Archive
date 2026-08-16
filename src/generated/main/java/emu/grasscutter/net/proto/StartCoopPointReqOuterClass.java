@@ -19,10 +19,6 @@ public final class StartCoopPointReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>uint32 coop_point = 8;</code>
      * @return The coopPoint.
      */
@@ -30,7 +26,8 @@ public final class StartCoopPointReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 27933
+   * CmdId: 22463
+   * Obf: NEHKCPAFDAI
    * </pre>
    *
    * Protobuf type {@code StartCoopPointReq}
@@ -117,10 +114,6 @@ public final class StartCoopPointReqOuterClass {
     public static final int COOP_POINT_FIELD_NUMBER = 8;
     private int coopPoint_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>uint32 coop_point = 8;</code>
      * @return The coopPoint.
      */
@@ -286,7 +279,8 @@ public final class StartCoopPointReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27933
+     * CmdId: 22463
+     * Obf: NEHKCPAFDAI
      * </pre>
      *
      * Protobuf type {@code StartCoopPointReq}
@@ -437,10 +431,6 @@ public final class StartCoopPointReqOuterClass {
 
       private int coopPoint_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint32 coop_point = 8;</code>
        * @return The coopPoint.
        */
@@ -449,10 +439,6 @@ public final class StartCoopPointReqOuterClass {
         return coopPoint_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint32 coop_point = 8;</code>
        * @param value The coopPoint to set.
        * @return This builder for chaining.
@@ -464,10 +450,6 @@ public final class StartCoopPointReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint32 coop_point = 8;</code>
        * @return This builder for chaining.
        */

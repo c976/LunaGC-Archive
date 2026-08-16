@@ -19,30 +19,18 @@ public final class OKNGLANHPLDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 6;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 2;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 1;</code>
      * @return The openTime.
      */
@@ -143,10 +131,6 @@ public final class OKNGLANHPLDOuterClass {
     public static final int ID_FIELD_NUMBER = 6;
     private int id_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 6;</code>
      * @return The id.
      */
@@ -158,10 +142,6 @@ public final class OKNGLANHPLDOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 2;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 2;</code>
      * @return The isFinished.
      */
@@ -173,10 +153,6 @@ public final class OKNGLANHPLDOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 1;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 1;</code>
      * @return The openTime.
      */
@@ -524,10 +500,6 @@ public final class OKNGLANHPLDOuterClass {
 
       private int id_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 6;</code>
        * @return The id.
        */
@@ -536,10 +508,6 @@ public final class OKNGLANHPLDOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 6;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class OKNGLANHPLDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 6;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class OKNGLANHPLDOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 2;</code>
        * @return The isFinished.
        */
@@ -579,10 +539,6 @@ public final class OKNGLANHPLDOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 2;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class OKNGLANHPLDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 2;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class OKNGLANHPLDOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 1;</code>
        * @return The openTime.
        */
@@ -622,10 +570,6 @@ public final class OKNGLANHPLDOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 1;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class OKNGLANHPLDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 1;</code>
        * @return This builder for chaining.
        */

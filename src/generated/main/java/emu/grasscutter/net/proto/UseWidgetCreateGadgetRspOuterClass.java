@@ -19,22 +19,18 @@ public final class UseWidgetCreateGadgetRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 material_id = 1;</code>
+     * <code>uint32 material_id = 14;</code>
      * @return The materialId.
      */
     int getMaterialId();
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 27023
-   * </pre>
-   *
    * Protobuf type {@code UseWidgetCreateGadgetRsp}
    */
   public static final class UseWidgetCreateGadgetRsp extends
@@ -79,14 +75,14 @@ public final class UseWidgetCreateGadgetRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              materialId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 96: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 112: {
+
+              materialId_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,10 +117,10 @@ public final class UseWidgetCreateGadgetRspOuterClass {
               emu.grasscutter.net.proto.UseWidgetCreateGadgetRspOuterClass.UseWidgetCreateGadgetRsp.class, emu.grasscutter.net.proto.UseWidgetCreateGadgetRspOuterClass.UseWidgetCreateGadgetRsp.Builder.class);
     }
 
-    public static final int MATERIAL_ID_FIELD_NUMBER = 1;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 14;
     private int materialId_;
     /**
-     * <code>uint32 material_id = 1;</code>
+     * <code>uint32 material_id = 14;</code>
      * @return The materialId.
      */
     @java.lang.Override
@@ -132,10 +128,10 @@ public final class UseWidgetCreateGadgetRspOuterClass {
       return materialId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -157,11 +153,11 @@ public final class UseWidgetCreateGadgetRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (materialId_ != 0) {
-        output.writeUInt32(1, materialId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(12, retcode_);
+      }
+      if (materialId_ != 0) {
+        output.writeUInt32(14, materialId_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +168,13 @@ public final class UseWidgetCreateGadgetRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (materialId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, materialId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(12, retcode_);
+      }
+      if (materialId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, materialId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,10 +306,6 @@ public final class UseWidgetCreateGadgetRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 27023
-     * </pre>
-     *
      * Protobuf type {@code UseWidgetCreateGadgetRsp}
      */
     public static final class Builder extends
@@ -468,7 +460,7 @@ public final class UseWidgetCreateGadgetRspOuterClass {
 
       private int materialId_ ;
       /**
-       * <code>uint32 material_id = 1;</code>
+       * <code>uint32 material_id = 14;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -476,7 +468,7 @@ public final class UseWidgetCreateGadgetRspOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 material_id = 1;</code>
+       * <code>uint32 material_id = 14;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -487,7 +479,7 @@ public final class UseWidgetCreateGadgetRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 material_id = 1;</code>
+       * <code>uint32 material_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
@@ -499,7 +491,7 @@ public final class UseWidgetCreateGadgetRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -507,7 +499,7 @@ public final class UseWidgetCreateGadgetRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -518,7 +510,7 @@ public final class UseWidgetCreateGadgetRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -595,8 +587,8 @@ public final class UseWidgetCreateGadgetRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036UseWidgetCreateGadgetRsp.proto\"@\n\030UseW" +
-      "idgetCreateGadgetRsp\022\023\n\013material_id\030\001 \001(" +
-      "\r\022\017\n\007retcode\030\005 \001(\005B\033\n\031emu.grasscutter.ne" +
+      "idgetCreateGadgetRsp\022\023\n\013material_id\030\016 \001(" +
+      "\r\022\017\n\007retcode\030\014 \001(\005B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

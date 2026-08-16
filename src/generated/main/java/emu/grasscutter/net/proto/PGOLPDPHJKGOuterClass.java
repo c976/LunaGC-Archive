@@ -19,20 +19,12 @@ public final class PGOLPDPHJKGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 gadget_id = 6;</code>
      * @return The gadgetId.
      */
@@ -128,10 +120,6 @@ public final class PGOLPDPHJKGOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 3;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
@@ -143,10 +131,6 @@ public final class PGOLPDPHJKGOuterClass {
     public static final int GADGET_ID_FIELD_NUMBER = 6;
     private int gadgetId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 gadget_id = 6;</code>
      * @return The gadgetId.
      */
@@ -477,10 +461,6 @@ public final class PGOLPDPHJKGOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return The isOpen.
        */
@@ -489,10 +469,6 @@ public final class PGOLPDPHJKGOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -504,10 +480,6 @@ public final class PGOLPDPHJKGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return This builder for chaining.
        */
@@ -520,10 +492,6 @@ public final class PGOLPDPHJKGOuterClass {
 
       private int gadgetId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 gadget_id = 6;</code>
        * @return The gadgetId.
        */
@@ -532,10 +500,6 @@ public final class PGOLPDPHJKGOuterClass {
         return gadgetId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 gadget_id = 6;</code>
        * @param value The gadgetId to set.
        * @return This builder for chaining.
@@ -547,10 +511,6 @@ public final class PGOLPDPHJKGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 gadget_id = 6;</code>
        * @return This builder for chaining.
        */

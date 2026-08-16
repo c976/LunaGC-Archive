@@ -19,28 +19,16 @@ public final class BAAGJLIGKMDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
      * @return A list containing the pEDBPLCNCIP.
      */
     java.util.List<java.lang.Integer> getPEDBPLCNCIPList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
      * @return The count of pEDBPLCNCIP.
      */
     int getPEDBPLCNCIPCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
      * @param index The index of the element to return.
      * @return The pEDBPLCNCIP at the given index.
@@ -48,28 +36,16 @@ public final class BAAGJLIGKMDOuterClass {
     int getPEDBPLCNCIP(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEILNLBMLNA = 15;</code>
      * @return A list containing the cEILNLBMLNA.
      */
     java.util.List<java.lang.Integer> getCEILNLBMLNAList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEILNLBMLNA = 15;</code>
      * @return The count of cEILNLBMLNA.
      */
     int getCEILNLBMLNACount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEILNLBMLNA = 15;</code>
      * @param index The index of the element to return.
      * @return The cEILNLBMLNA at the given index.
@@ -77,16 +53,12 @@ public final class BAAGJLIGKMDOuterClass {
     int getCEILNLBMLNA(int index);
 
     /**
-     * <code>uint32 EGHGENOJNEK = 14;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 14;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -168,7 +140,7 @@ public final class BAAGJLIGKMDOuterClass {
             }
             case 112: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 120: {
@@ -233,10 +205,6 @@ public final class BAAGJLIGKMDOuterClass {
     public static final int PEDBPLCNCIP_FIELD_NUMBER = 11;
     private com.google.protobuf.Internal.IntList pEDBPLCNCIP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
      * @return A list containing the pEDBPLCNCIP.
      */
@@ -246,10 +214,6 @@ public final class BAAGJLIGKMDOuterClass {
       return pEDBPLCNCIP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
      * @return The count of pEDBPLCNCIP.
      */
@@ -257,10 +221,6 @@ public final class BAAGJLIGKMDOuterClass {
       return pEDBPLCNCIP_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
      * @param index The index of the element to return.
      * @return The pEDBPLCNCIP at the given index.
@@ -273,10 +233,6 @@ public final class BAAGJLIGKMDOuterClass {
     public static final int CEILNLBMLNA_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList cEILNLBMLNA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEILNLBMLNA = 15;</code>
      * @return A list containing the cEILNLBMLNA.
      */
@@ -286,10 +242,6 @@ public final class BAAGJLIGKMDOuterClass {
       return cEILNLBMLNA_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEILNLBMLNA = 15;</code>
      * @return The count of cEILNLBMLNA.
      */
@@ -297,10 +249,6 @@ public final class BAAGJLIGKMDOuterClass {
       return cEILNLBMLNA_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEILNLBMLNA = 15;</code>
      * @param index The index of the element to return.
      * @return The cEILNLBMLNA at the given index.
@@ -310,24 +258,20 @@ public final class BAAGJLIGKMDOuterClass {
     }
     private int cEILNLBMLNAMemoizedSerializedSize = -1;
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 14;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 14;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 14;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 14;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -361,8 +305,8 @@ public final class BAAGJLIGKMDOuterClass {
       for (int i = 0; i < pEDBPLCNCIP_.size(); i++) {
         output.writeUInt32NoTag(pEDBPLCNCIP_.getInt(i));
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(14, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(14, stageId_);
       }
       if (getCEILNLBMLNAList().size() > 0) {
         output.writeUInt32NoTag(122);
@@ -398,9 +342,9 @@ public final class BAAGJLIGKMDOuterClass {
         }
         pEDBPLCNCIPMemoizedSerializedSize = dataSize;
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, eGHGENOJNEK_);
+          .computeUInt32Size(14, stageId_);
       }
       {
         int dataSize = 0;
@@ -435,8 +379,8 @@ public final class BAAGJLIGKMDOuterClass {
           .equals(other.getPEDBPLCNCIPList())) return false;
       if (!getCEILNLBMLNAList()
           .equals(other.getCEILNLBMLNAList())) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -458,8 +402,8 @@ public final class BAAGJLIGKMDOuterClass {
         hash = (37 * hash) + CEILNLBMLNA_FIELD_NUMBER;
         hash = (53 * hash) + getCEILNLBMLNAList().hashCode();
       }
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -600,7 +544,7 @@ public final class BAAGJLIGKMDOuterClass {
         bitField0_ = (bitField0_ & ~0x00000001);
         cEILNLBMLNA_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         isOpen_ = false;
 
@@ -641,7 +585,7 @@ public final class BAAGJLIGKMDOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.cEILNLBMLNA_ = cEILNLBMLNA_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.isOpen_ = isOpen_;
         onBuilt();
         return result;
@@ -711,8 +655,8 @@ public final class BAAGJLIGKMDOuterClass {
           }
           onChanged();
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -755,10 +699,6 @@ public final class BAAGJLIGKMDOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
        * @return A list containing the pEDBPLCNCIP.
        */
@@ -768,10 +708,6 @@ public final class BAAGJLIGKMDOuterClass {
                  java.util.Collections.unmodifiableList(pEDBPLCNCIP_) : pEDBPLCNCIP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
        * @return The count of pEDBPLCNCIP.
        */
@@ -779,10 +715,6 @@ public final class BAAGJLIGKMDOuterClass {
         return pEDBPLCNCIP_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
        * @param index The index of the element to return.
        * @return The pEDBPLCNCIP at the given index.
@@ -791,10 +723,6 @@ public final class BAAGJLIGKMDOuterClass {
         return pEDBPLCNCIP_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
        * @param index The index to set the value at.
        * @param value The pEDBPLCNCIP to set.
@@ -808,10 +736,6 @@ public final class BAAGJLIGKMDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
        * @param value The pEDBPLCNCIP to add.
        * @return This builder for chaining.
@@ -823,10 +747,6 @@ public final class BAAGJLIGKMDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
        * @param values The pEDBPLCNCIP to add.
        * @return This builder for chaining.
@@ -840,10 +760,6 @@ public final class BAAGJLIGKMDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 PEDBPLCNCIP = 11;</code>
        * @return This builder for chaining.
        */
@@ -862,10 +778,6 @@ public final class BAAGJLIGKMDOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEILNLBMLNA = 15;</code>
        * @return A list containing the cEILNLBMLNA.
        */
@@ -875,10 +787,6 @@ public final class BAAGJLIGKMDOuterClass {
                  java.util.Collections.unmodifiableList(cEILNLBMLNA_) : cEILNLBMLNA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEILNLBMLNA = 15;</code>
        * @return The count of cEILNLBMLNA.
        */
@@ -886,10 +794,6 @@ public final class BAAGJLIGKMDOuterClass {
         return cEILNLBMLNA_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEILNLBMLNA = 15;</code>
        * @param index The index of the element to return.
        * @return The cEILNLBMLNA at the given index.
@@ -898,10 +802,6 @@ public final class BAAGJLIGKMDOuterClass {
         return cEILNLBMLNA_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEILNLBMLNA = 15;</code>
        * @param index The index to set the value at.
        * @param value The cEILNLBMLNA to set.
@@ -915,10 +815,6 @@ public final class BAAGJLIGKMDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEILNLBMLNA = 15;</code>
        * @param value The cEILNLBMLNA to add.
        * @return This builder for chaining.
@@ -930,10 +826,6 @@ public final class BAAGJLIGKMDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEILNLBMLNA = 15;</code>
        * @param values The cEILNLBMLNA to add.
        * @return This builder for chaining.
@@ -947,10 +839,6 @@ public final class BAAGJLIGKMDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEILNLBMLNA = 15;</code>
        * @return This builder for chaining.
        */
@@ -961,43 +849,39 @@ public final class BAAGJLIGKMDOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 14;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 14;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 14;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 14;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 14;</code>
+       * <code>uint32 stage_id = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
@@ -1006,10 +890,6 @@ public final class BAAGJLIGKMDOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1021,10 +901,6 @@ public final class BAAGJLIGKMDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
@@ -1101,10 +977,10 @@ public final class BAAGJLIGKMDOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021BAAGJLIGKMD.proto\"]\n\013BAAGJLIGKMD\022\023\n\013PE" +
-      "DBPLCNCIP\030\013 \003(\r\022\023\n\013CEILNLBMLNA\030\017 \003(\r\022\023\n\013" +
-      "EGHGENOJNEK\030\016 \001(\r\022\017\n\007is_open\030\001 \001(\010B\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "\n\021BAAGJLIGKMD.proto\"Z\n\013BAAGJLIGKMD\022\023\n\013PE" +
+      "DBPLCNCIP\030\013 \003(\r\022\023\n\013CEILNLBMLNA\030\017 \003(\r\022\020\n\010" +
+      "stage_id\030\016 \001(\r\022\017\n\007is_open\030\001 \001(\010B\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1115,7 +991,7 @@ public final class BAAGJLIGKMDOuterClass {
     internal_static_BAAGJLIGKMD_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BAAGJLIGKMD_descriptor,
-        new java.lang.String[] { "PEDBPLCNCIP", "CEILNLBMLNA", "EGHGENOJNEK", "IsOpen", });
+        new java.lang.String[] { "PEDBPLCNCIP", "CEILNLBMLNA", "StageId", "IsOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,27 +20,27 @@ public final class HostPlayerNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>uint32 host_peer_id = 9;</code>
+     * <code>uint32 host_peer_id = 12;</code>
      * @return The hostPeerId.
      */
     int getHostPeerId();
 
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>uint32 host_uid = 2;</code>
+     * <code>uint32 host_uid = 5;</code>
      * @return The hostUid.
      */
     int getHostUid();
   }
   /**
    * <pre>
-   * CmdId: 8634
+   * CmdId: 1525
    * </pre>
    *
    * Protobuf type {@code HostPlayerNotify}
@@ -87,12 +87,12 @@ public final class HostPlayerNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 40: {
 
               hostUid_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 96: {
 
               hostPeerId_ = input.readUInt32();
               break;
@@ -129,14 +129,14 @@ public final class HostPlayerNotifyOuterClass {
               emu.grasscutter.net.proto.HostPlayerNotifyOuterClass.HostPlayerNotify.class, emu.grasscutter.net.proto.HostPlayerNotifyOuterClass.HostPlayerNotify.Builder.class);
     }
 
-    public static final int HOST_PEER_ID_FIELD_NUMBER = 9;
+    public static final int HOST_PEER_ID_FIELD_NUMBER = 12;
     private int hostPeerId_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>uint32 host_peer_id = 9;</code>
+     * <code>uint32 host_peer_id = 12;</code>
      * @return The hostPeerId.
      */
     @java.lang.Override
@@ -144,14 +144,14 @@ public final class HostPlayerNotifyOuterClass {
       return hostPeerId_;
     }
 
-    public static final int HOST_UID_FIELD_NUMBER = 2;
+    public static final int HOST_UID_FIELD_NUMBER = 5;
     private int hostUid_;
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>uint32 host_uid = 2;</code>
+     * <code>uint32 host_uid = 5;</code>
      * @return The hostUid.
      */
     @java.lang.Override
@@ -174,10 +174,10 @@ public final class HostPlayerNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (hostUid_ != 0) {
-        output.writeUInt32(2, hostUid_);
+        output.writeUInt32(5, hostUid_);
       }
       if (hostPeerId_ != 0) {
-        output.writeUInt32(9, hostPeerId_);
+        output.writeUInt32(12, hostPeerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -190,11 +190,11 @@ public final class HostPlayerNotifyOuterClass {
       size = 0;
       if (hostUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, hostUid_);
+          .computeUInt32Size(5, hostUid_);
       }
       if (hostPeerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, hostPeerId_);
+          .computeUInt32Size(12, hostPeerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -327,7 +327,7 @@ public final class HostPlayerNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8634
+     * CmdId: 1525
      * </pre>
      *
      * Protobuf type {@code HostPlayerNotify}
@@ -485,10 +485,10 @@ public final class HostPlayerNotifyOuterClass {
       private int hostPeerId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 host_peer_id = 9;</code>
+       * <code>uint32 host_peer_id = 12;</code>
        * @return The hostPeerId.
        */
       @java.lang.Override
@@ -497,10 +497,10 @@ public final class HostPlayerNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 host_peer_id = 9;</code>
+       * <code>uint32 host_peer_id = 12;</code>
        * @param value The hostPeerId to set.
        * @return This builder for chaining.
        */
@@ -512,10 +512,10 @@ public final class HostPlayerNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 host_peer_id = 9;</code>
+       * <code>uint32 host_peer_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearHostPeerId() {
@@ -528,10 +528,10 @@ public final class HostPlayerNotifyOuterClass {
       private int hostUid_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 host_uid = 2;</code>
+       * <code>uint32 host_uid = 5;</code>
        * @return The hostUid.
        */
       @java.lang.Override
@@ -540,10 +540,10 @@ public final class HostPlayerNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 host_uid = 2;</code>
+       * <code>uint32 host_uid = 5;</code>
        * @param value The hostUid to set.
        * @return This builder for chaining.
        */
@@ -555,10 +555,10 @@ public final class HostPlayerNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 host_uid = 2;</code>
+       * <code>uint32 host_uid = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearHostUid() {
@@ -635,7 +635,7 @@ public final class HostPlayerNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026HostPlayerNotify.proto\":\n\020HostPlayerNo" +
-      "tify\022\024\n\014host_peer_id\030\t \001(\r\022\020\n\010host_uid\030\002" +
+      "tify\022\024\n\014host_peer_id\030\014 \001(\r\022\020\n\010host_uid\030\005" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

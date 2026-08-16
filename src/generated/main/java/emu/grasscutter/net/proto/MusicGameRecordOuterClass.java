@@ -25,7 +25,11 @@ public final class MusicGameRecordOuterClass {
     int getUgcGuid();
 
     /**
-     * <code>uint32 max_combo = 10;</code>
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>uint32 max_combo = 9;</code>
      * @return The maxCombo.
      */
     int getMaxCombo();
@@ -86,7 +90,7 @@ public final class MusicGameRecordOuterClass {
               ugcGuid_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 72: {
 
               maxCombo_ = input.readUInt32();
               break;
@@ -139,10 +143,14 @@ public final class MusicGameRecordOuterClass {
       return ugcGuid_;
     }
 
-    public static final int MAX_COMBO_FIELD_NUMBER = 10;
+    public static final int MAX_COMBO_FIELD_NUMBER = 9;
     private int maxCombo_;
     /**
-     * <code>uint32 max_combo = 10;</code>
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>uint32 max_combo = 9;</code>
      * @return The maxCombo.
      */
     @java.lang.Override
@@ -179,7 +187,7 @@ public final class MusicGameRecordOuterClass {
         output.writeUInt32(5, ugcGuid_);
       }
       if (maxCombo_ != 0) {
-        output.writeUInt32(10, maxCombo_);
+        output.writeUInt32(9, maxCombo_);
       }
       if (hDIKBBEMGGA_ != false) {
         output.writeBool(13, hDIKBBEMGGA_);
@@ -199,7 +207,7 @@ public final class MusicGameRecordOuterClass {
       }
       if (maxCombo_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, maxCombo_);
+          .computeUInt32Size(9, maxCombo_);
       }
       if (hDIKBBEMGGA_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -531,7 +539,11 @@ public final class MusicGameRecordOuterClass {
 
       private int maxCombo_ ;
       /**
-       * <code>uint32 max_combo = 10;</code>
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0       
+       * </pre>
+       *
+       * <code>uint32 max_combo = 9;</code>
        * @return The maxCombo.
        */
       @java.lang.Override
@@ -539,7 +551,11 @@ public final class MusicGameRecordOuterClass {
         return maxCombo_;
       }
       /**
-       * <code>uint32 max_combo = 10;</code>
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0       
+       * </pre>
+       *
+       * <code>uint32 max_combo = 9;</code>
        * @param value The maxCombo to set.
        * @return This builder for chaining.
        */
@@ -550,7 +566,11 @@ public final class MusicGameRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_combo = 10;</code>
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0       
+       * </pre>
+       *
+       * <code>uint32 max_combo = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxCombo() {
@@ -658,7 +678,7 @@ public final class MusicGameRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025MusicGameRecord.proto\"K\n\017MusicGameReco" +
-      "rd\022\020\n\010ugc_guid\030\005 \001(\r\022\021\n\tmax_combo\030\n \001(\r\022" +
+      "rd\022\020\n\010ugc_guid\030\005 \001(\r\022\021\n\tmax_combo\030\t \001(\r\022" +
       "\023\n\013HDIKBBEMGGA\030\r \001(\010B\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };

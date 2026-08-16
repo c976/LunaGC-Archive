@@ -19,40 +19,28 @@ public final class BLLIOILJBGFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 3;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 3;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
   }
   /**
    * Protobuf type {@code BLLIOILJBGF}
@@ -106,7 +94,7 @@ public final class BLLIOILJBGFOuterClass {
             }
             case 24: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 80: {
@@ -154,10 +142,6 @@ public final class BLLIOILJBGFOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 14;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
@@ -169,10 +153,6 @@ public final class BLLIOILJBGFOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
@@ -184,10 +164,6 @@ public final class BLLIOILJBGFOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
@@ -196,15 +172,15 @@ public final class BLLIOILJBGFOuterClass {
       return levelId_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 3;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 3;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 3;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 3;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -224,8 +200,8 @@ public final class BLLIOILJBGFOuterClass {
       if (isOpen_ != false) {
         output.writeBool(2, isOpen_);
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(3, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(3, ugcGuid_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(10, levelId_);
@@ -246,9 +222,9 @@ public final class BLLIOILJBGFOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, isOpen_);
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, iFADGMHEFHF_);
+          .computeUInt32Size(3, ugcGuid_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -279,8 +255,8 @@ public final class BLLIOILJBGFOuterClass {
           != other.getIsOpen()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -300,8 +276,8 @@ public final class BLLIOILJBGFOuterClass {
           getIsOpen());
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -441,7 +417,7 @@ public final class BLLIOILJBGFOuterClass {
 
         levelId_ = 0;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         return this;
       }
@@ -472,7 +448,7 @@ public final class BLLIOILJBGFOuterClass {
         result.isFinish_ = isFinish_;
         result.isOpen_ = isOpen_;
         result.levelId_ = levelId_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         onBuilt();
         return result;
       }
@@ -530,8 +506,8 @@ public final class BLLIOILJBGFOuterClass {
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -564,10 +540,6 @@ public final class BLLIOILJBGFOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return The isFinish.
        */
@@ -576,10 +548,6 @@ public final class BLLIOILJBGFOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -591,10 +559,6 @@ public final class BLLIOILJBGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return This builder for chaining.
        */
@@ -607,10 +571,6 @@ public final class BLLIOILJBGFOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
@@ -619,10 +579,6 @@ public final class BLLIOILJBGFOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -634,10 +590,6 @@ public final class BLLIOILJBGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
@@ -650,10 +602,6 @@ public final class BLLIOILJBGFOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
@@ -662,10 +610,6 @@ public final class BLLIOILJBGFOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -677,10 +621,6 @@ public final class BLLIOILJBGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
@@ -691,33 +631,33 @@ public final class BLLIOILJBGFOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 3;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 3;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 3;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 3;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 3;</code>
+       * <code>uint32 ugc_guid = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
@@ -788,10 +728,10 @@ public final class BLLIOILJBGFOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021BLLIOILJBGF.proto\"X\n\013BLLIOILJBGF\022\021\n\tis" +
+      "\n\021BLLIOILJBGF.proto\"U\n\013BLLIOILJBGF\022\021\n\tis" +
       "_finish\030\016 \001(\010\022\017\n\007is_open\030\002 \001(\010\022\020\n\010level_" +
-      "id\030\n \001(\r\022\023\n\013IFADGMHEFHF\030\003 \001(\rB\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "id\030\n \001(\r\022\020\n\010ugc_guid\030\003 \001(\rB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -802,7 +742,7 @@ public final class BLLIOILJBGFOuterClass {
     internal_static_BLLIOILJBGF_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BLLIOILJBGF_descriptor,
-        new java.lang.String[] { "IsFinish", "IsOpen", "LevelId", "IFADGMHEFHF", });
+        new java.lang.String[] { "IsFinish", "IsOpen", "LevelId", "UgcGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

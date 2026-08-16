@@ -20,37 +20,37 @@ public final class QuestDestroyNpcRspOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          // offset: 32
      * </pre>
      *
-     * <code>uint32 npc_id = 9;</code>
+     * <code>uint32 npc_id = 11;</code>
      * @return The npcId.
      */
     int getNpcId();
 
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0          // offset: 36
      * </pre>
      *
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          // offset: 40
      * </pre>
      *
-     * <code>uint32 parent_quest_id = 3;</code>
+     * <code>uint32 parent_quest_id = 5;</code>
      * @return The parentQuestId.
      */
     int getParentQuestId();
   }
   /**
    * <pre>
-   * CmdId: 29090
+   * CmdId: 3683
    * </pre>
    *
    * Protobuf type {@code QuestDestroyNpcRsp}
@@ -97,17 +97,17 @@ public final class QuestDestroyNpcRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              parentQuestId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 72: {
+            case 40: {
+
+              parentQuestId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
 
               npcId_ = input.readUInt32();
               break;
@@ -144,14 +144,14 @@ public final class QuestDestroyNpcRspOuterClass {
               emu.grasscutter.net.proto.QuestDestroyNpcRspOuterClass.QuestDestroyNpcRsp.class, emu.grasscutter.net.proto.QuestDestroyNpcRspOuterClass.QuestDestroyNpcRsp.Builder.class);
     }
 
-    public static final int NPC_ID_FIELD_NUMBER = 9;
+    public static final int NPC_ID_FIELD_NUMBER = 11;
     private int npcId_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          // offset: 32
      * </pre>
      *
-     * <code>uint32 npc_id = 9;</code>
+     * <code>uint32 npc_id = 11;</code>
      * @return The npcId.
      */
     @java.lang.Override
@@ -159,14 +159,14 @@ public final class QuestDestroyNpcRspOuterClass {
       return npcId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0          // offset: 36
      * </pre>
      *
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -174,14 +174,14 @@ public final class QuestDestroyNpcRspOuterClass {
       return retcode_;
     }
 
-    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 3;
+    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 5;
     private int parentQuestId_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          // offset: 40
      * </pre>
      *
-     * <code>uint32 parent_quest_id = 3;</code>
+     * <code>uint32 parent_quest_id = 5;</code>
      * @return The parentQuestId.
      */
     @java.lang.Override
@@ -203,14 +203,14 @@ public final class QuestDestroyNpcRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (parentQuestId_ != 0) {
-        output.writeUInt32(3, parentQuestId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(1, retcode_);
+      }
+      if (parentQuestId_ != 0) {
+        output.writeUInt32(5, parentQuestId_);
       }
       if (npcId_ != 0) {
-        output.writeUInt32(9, npcId_);
+        output.writeUInt32(11, npcId_);
       }
       unknownFields.writeTo(output);
     }
@@ -221,17 +221,17 @@ public final class QuestDestroyNpcRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (parentQuestId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, parentQuestId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(1, retcode_);
+      }
+      if (parentQuestId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, parentQuestId_);
       }
       if (npcId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, npcId_);
+          .computeUInt32Size(11, npcId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -368,7 +368,7 @@ public final class QuestDestroyNpcRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29090
+     * CmdId: 3683
      * </pre>
      *
      * Protobuf type {@code QuestDestroyNpcRsp}
@@ -532,10 +532,10 @@ public final class QuestDestroyNpcRspOuterClass {
       private int npcId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          // offset: 32
        * </pre>
        *
-       * <code>uint32 npc_id = 9;</code>
+       * <code>uint32 npc_id = 11;</code>
        * @return The npcId.
        */
       @java.lang.Override
@@ -544,10 +544,10 @@ public final class QuestDestroyNpcRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          // offset: 32
        * </pre>
        *
-       * <code>uint32 npc_id = 9;</code>
+       * <code>uint32 npc_id = 11;</code>
        * @param value The npcId to set.
        * @return This builder for chaining.
        */
@@ -559,10 +559,10 @@ public final class QuestDestroyNpcRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          // offset: 32
        * </pre>
        *
-       * <code>uint32 npc_id = 9;</code>
+       * <code>uint32 npc_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearNpcId() {
@@ -575,10 +575,10 @@ public final class QuestDestroyNpcRspOuterClass {
       private int retcode_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0          // offset: 36
        * </pre>
        *
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -587,10 +587,10 @@ public final class QuestDestroyNpcRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0          // offset: 36
        * </pre>
        *
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -602,10 +602,10 @@ public final class QuestDestroyNpcRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0          // offset: 36
        * </pre>
        *
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -618,10 +618,10 @@ public final class QuestDestroyNpcRspOuterClass {
       private int parentQuestId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          // offset: 40
        * </pre>
        *
-       * <code>uint32 parent_quest_id = 3;</code>
+       * <code>uint32 parent_quest_id = 5;</code>
        * @return The parentQuestId.
        */
       @java.lang.Override
@@ -630,10 +630,10 @@ public final class QuestDestroyNpcRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          // offset: 40
        * </pre>
        *
-       * <code>uint32 parent_quest_id = 3;</code>
+       * <code>uint32 parent_quest_id = 5;</code>
        * @param value The parentQuestId to set.
        * @return This builder for chaining.
        */
@@ -645,10 +645,10 @@ public final class QuestDestroyNpcRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          // offset: 40
        * </pre>
        *
-       * <code>uint32 parent_quest_id = 3;</code>
+       * <code>uint32 parent_quest_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearParentQuestId() {
@@ -725,8 +725,8 @@ public final class QuestDestroyNpcRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030QuestDestroyNpcRsp.proto\"N\n\022QuestDestr" +
-      "oyNpcRsp\022\016\n\006npc_id\030\t \001(\r\022\017\n\007retcode\030\004 \001(" +
-      "\005\022\027\n\017parent_quest_id\030\003 \001(\rB\033\n\031emu.grassc" +
+      "oyNpcRsp\022\016\n\006npc_id\030\013 \001(\r\022\017\n\007retcode\030\001 \001(" +
+      "\005\022\027\n\017parent_quest_id\030\005 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

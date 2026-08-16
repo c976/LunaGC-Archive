@@ -20,50 +20,42 @@ public final class AddWindBulletNotifyOuterClass {
 
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.Vector LGBIGKCNFBD = 3;</code>
-     * @return Whether the lGBIGKCNFBD field is set.
+     * <code>.Vector seed_pos = 10;</code>
+     * @return Whether the seedPos field is set.
      */
-    boolean hasLGBIGKCNFBD();
+    boolean hasSeedPos();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.Vector LGBIGKCNFBD = 3;</code>
-     * @return The lGBIGKCNFBD.
+     * <code>.Vector seed_pos = 10;</code>
+     * @return The seedPos.
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getLGBIGKCNFBD();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getSeedPos();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.Vector LGBIGKCNFBD = 3;</code>
+     * <code>.Vector seed_pos = 10;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getLGBIGKCNFBDOrBuilder();
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSeedPosOrBuilder();
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 OHMOJMJIFKG = 6;</code>
-     * @return The oHMOJMJIFKG.
+     * <code>uint32 EGJKBDLBGIK = 15;</code>
+     * @return The eGJKBDLBGIK.
      */
-    int getOHMOJMJIFKG();
+    int getEGJKBDLBGIK();
 
     /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>uint32 KDHFFGJJNHH = 5;</code>
-     * @return The kDHFFGJJNHH.
+     * <code>uint32 AJBPDBIMHIP = 12;</code>
+     * @return The aJBPDBIMHIP.
      */
-    int getKDHFFGJJNHH();
+    int getAJBPDBIMHIP();
   }
   /**
    * Protobuf type {@code AddWindBulletNotify}
@@ -110,27 +102,27 @@ public final class AddWindBulletNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 82: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (lGBIGKCNFBD_ != null) {
-                subBuilder = lGBIGKCNFBD_.toBuilder();
+              if (seedPos_ != null) {
+                subBuilder = seedPos_.toBuilder();
               }
-              lGBIGKCNFBD_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              seedPos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(lGBIGKCNFBD_);
-                lGBIGKCNFBD_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(seedPos_);
+                seedPos_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 40: {
+            case 96: {
 
-              kDHFFGJJNHH_ = input.readUInt32();
+              aJBPDBIMHIP_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 120: {
 
-              oHMOJMJIFKG_ = input.readUInt32();
+              eGJKBDLBGIK_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,72 +157,64 @@ public final class AddWindBulletNotifyOuterClass {
               emu.grasscutter.net.proto.AddWindBulletNotifyOuterClass.AddWindBulletNotify.class, emu.grasscutter.net.proto.AddWindBulletNotifyOuterClass.AddWindBulletNotify.Builder.class);
     }
 
-    public static final int LGBIGKCNFBD_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector lGBIGKCNFBD_;
+    public static final int SEED_POS_FIELD_NUMBER = 10;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector seedPos_;
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.Vector LGBIGKCNFBD = 3;</code>
-     * @return Whether the lGBIGKCNFBD field is set.
+     * <code>.Vector seed_pos = 10;</code>
+     * @return Whether the seedPos field is set.
      */
     @java.lang.Override
-    public boolean hasLGBIGKCNFBD() {
-      return lGBIGKCNFBD_ != null;
+    public boolean hasSeedPos() {
+      return seedPos_ != null;
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.Vector LGBIGKCNFBD = 3;</code>
-     * @return The lGBIGKCNFBD.
+     * <code>.Vector seed_pos = 10;</code>
+     * @return The seedPos.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getLGBIGKCNFBD() {
-      return lGBIGKCNFBD_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : lGBIGKCNFBD_;
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getSeedPos() {
+      return seedPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : seedPos_;
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.Vector LGBIGKCNFBD = 3;</code>
+     * <code>.Vector seed_pos = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getLGBIGKCNFBDOrBuilder() {
-      return getLGBIGKCNFBD();
-    }
-
-    public static final int OHMOJMJIFKG_FIELD_NUMBER = 6;
-    private int oHMOJMJIFKG_;
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 OHMOJMJIFKG = 6;</code>
-     * @return The oHMOJMJIFKG.
-     */
-    @java.lang.Override
-    public int getOHMOJMJIFKG() {
-      return oHMOJMJIFKG_;
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSeedPosOrBuilder() {
+      return getSeedPos();
     }
 
-    public static final int KDHFFGJJNHH_FIELD_NUMBER = 5;
-    private int kDHFFGJJNHH_;
+    public static final int EGJKBDLBGIK_FIELD_NUMBER = 15;
+    private int eGJKBDLBGIK_;
     /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>uint32 KDHFFGJJNHH = 5;</code>
-     * @return The kDHFFGJJNHH.
+     * <code>uint32 EGJKBDLBGIK = 15;</code>
+     * @return The eGJKBDLBGIK.
      */
     @java.lang.Override
-    public int getKDHFFGJJNHH() {
-      return kDHFFGJJNHH_;
+    public int getEGJKBDLBGIK() {
+      return eGJKBDLBGIK_;
+    }
+
+    public static final int AJBPDBIMHIP_FIELD_NUMBER = 12;
+    private int aJBPDBIMHIP_;
+    /**
+     * <code>uint32 AJBPDBIMHIP = 12;</code>
+     * @return The aJBPDBIMHIP.
+     */
+    @java.lang.Override
+    public int getAJBPDBIMHIP() {
+      return aJBPDBIMHIP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -247,14 +231,14 @@ public final class AddWindBulletNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lGBIGKCNFBD_ != null) {
-        output.writeMessage(3, getLGBIGKCNFBD());
+      if (seedPos_ != null) {
+        output.writeMessage(10, getSeedPos());
       }
-      if (kDHFFGJJNHH_ != 0) {
-        output.writeUInt32(5, kDHFFGJJNHH_);
+      if (aJBPDBIMHIP_ != 0) {
+        output.writeUInt32(12, aJBPDBIMHIP_);
       }
-      if (oHMOJMJIFKG_ != 0) {
-        output.writeUInt32(6, oHMOJMJIFKG_);
+      if (eGJKBDLBGIK_ != 0) {
+        output.writeUInt32(15, eGJKBDLBGIK_);
       }
       unknownFields.writeTo(output);
     }
@@ -265,17 +249,17 @@ public final class AddWindBulletNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lGBIGKCNFBD_ != null) {
+      if (seedPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getLGBIGKCNFBD());
+          .computeMessageSize(10, getSeedPos());
       }
-      if (kDHFFGJJNHH_ != 0) {
+      if (aJBPDBIMHIP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, kDHFFGJJNHH_);
+          .computeUInt32Size(12, aJBPDBIMHIP_);
       }
-      if (oHMOJMJIFKG_ != 0) {
+      if (eGJKBDLBGIK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, oHMOJMJIFKG_);
+          .computeUInt32Size(15, eGJKBDLBGIK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -292,15 +276,15 @@ public final class AddWindBulletNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AddWindBulletNotifyOuterClass.AddWindBulletNotify other = (emu.grasscutter.net.proto.AddWindBulletNotifyOuterClass.AddWindBulletNotify) obj;
 
-      if (hasLGBIGKCNFBD() != other.hasLGBIGKCNFBD()) return false;
-      if (hasLGBIGKCNFBD()) {
-        if (!getLGBIGKCNFBD()
-            .equals(other.getLGBIGKCNFBD())) return false;
+      if (hasSeedPos() != other.hasSeedPos()) return false;
+      if (hasSeedPos()) {
+        if (!getSeedPos()
+            .equals(other.getSeedPos())) return false;
       }
-      if (getOHMOJMJIFKG()
-          != other.getOHMOJMJIFKG()) return false;
-      if (getKDHFFGJJNHH()
-          != other.getKDHFFGJJNHH()) return false;
+      if (getEGJKBDLBGIK()
+          != other.getEGJKBDLBGIK()) return false;
+      if (getAJBPDBIMHIP()
+          != other.getAJBPDBIMHIP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -312,14 +296,14 @@ public final class AddWindBulletNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasLGBIGKCNFBD()) {
-        hash = (37 * hash) + LGBIGKCNFBD_FIELD_NUMBER;
-        hash = (53 * hash) + getLGBIGKCNFBD().hashCode();
+      if (hasSeedPos()) {
+        hash = (37 * hash) + SEED_POS_FIELD_NUMBER;
+        hash = (53 * hash) + getSeedPos().hashCode();
       }
-      hash = (37 * hash) + OHMOJMJIFKG_FIELD_NUMBER;
-      hash = (53 * hash) + getOHMOJMJIFKG();
-      hash = (37 * hash) + KDHFFGJJNHH_FIELD_NUMBER;
-      hash = (53 * hash) + getKDHFFGJJNHH();
+      hash = (37 * hash) + EGJKBDLBGIK_FIELD_NUMBER;
+      hash = (53 * hash) + getEGJKBDLBGIK();
+      hash = (37 * hash) + AJBPDBIMHIP_FIELD_NUMBER;
+      hash = (53 * hash) + getAJBPDBIMHIP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -453,15 +437,15 @@ public final class AddWindBulletNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (lGBIGKCNFBDBuilder_ == null) {
-          lGBIGKCNFBD_ = null;
+        if (seedPosBuilder_ == null) {
+          seedPos_ = null;
         } else {
-          lGBIGKCNFBD_ = null;
-          lGBIGKCNFBDBuilder_ = null;
+          seedPos_ = null;
+          seedPosBuilder_ = null;
         }
-        oHMOJMJIFKG_ = 0;
+        eGJKBDLBGIK_ = 0;
 
-        kDHFFGJJNHH_ = 0;
+        aJBPDBIMHIP_ = 0;
 
         return this;
       }
@@ -489,13 +473,13 @@ public final class AddWindBulletNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AddWindBulletNotifyOuterClass.AddWindBulletNotify buildPartial() {
         emu.grasscutter.net.proto.AddWindBulletNotifyOuterClass.AddWindBulletNotify result = new emu.grasscutter.net.proto.AddWindBulletNotifyOuterClass.AddWindBulletNotify(this);
-        if (lGBIGKCNFBDBuilder_ == null) {
-          result.lGBIGKCNFBD_ = lGBIGKCNFBD_;
+        if (seedPosBuilder_ == null) {
+          result.seedPos_ = seedPos_;
         } else {
-          result.lGBIGKCNFBD_ = lGBIGKCNFBDBuilder_.build();
+          result.seedPos_ = seedPosBuilder_.build();
         }
-        result.oHMOJMJIFKG_ = oHMOJMJIFKG_;
-        result.kDHFFGJJNHH_ = kDHFFGJJNHH_;
+        result.eGJKBDLBGIK_ = eGJKBDLBGIK_;
+        result.aJBPDBIMHIP_ = aJBPDBIMHIP_;
         onBuilt();
         return result;
       }
@@ -544,14 +528,14 @@ public final class AddWindBulletNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AddWindBulletNotifyOuterClass.AddWindBulletNotify other) {
         if (other == emu.grasscutter.net.proto.AddWindBulletNotifyOuterClass.AddWindBulletNotify.getDefaultInstance()) return this;
-        if (other.hasLGBIGKCNFBD()) {
-          mergeLGBIGKCNFBD(other.getLGBIGKCNFBD());
+        if (other.hasSeedPos()) {
+          mergeSeedPos(other.getSeedPos());
         }
-        if (other.getOHMOJMJIFKG() != 0) {
-          setOHMOJMJIFKG(other.getOHMOJMJIFKG());
+        if (other.getEGJKBDLBGIK() != 0) {
+          setEGJKBDLBGIK(other.getEGJKBDLBGIK());
         }
-        if (other.getKDHFFGJJNHH() != 0) {
-          setKDHFFGJJNHH(other.getKDHFFGJJNHH());
+        if (other.getAJBPDBIMHIP() != 0) {
+          setAJBPDBIMHIP(other.getAJBPDBIMHIP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -582,243 +566,219 @@ public final class AddWindBulletNotifyOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector lGBIGKCNFBD_;
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector seedPos_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> lGBIGKCNFBDBuilder_;
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> seedPosBuilder_;
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.Vector LGBIGKCNFBD = 3;</code>
-       * @return Whether the lGBIGKCNFBD field is set.
+       * <code>.Vector seed_pos = 10;</code>
+       * @return Whether the seedPos field is set.
        */
-      public boolean hasLGBIGKCNFBD() {
-        return lGBIGKCNFBDBuilder_ != null || lGBIGKCNFBD_ != null;
+      public boolean hasSeedPos() {
+        return seedPosBuilder_ != null || seedPos_ != null;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.Vector LGBIGKCNFBD = 3;</code>
-       * @return The lGBIGKCNFBD.
+       * <code>.Vector seed_pos = 10;</code>
+       * @return The seedPos.
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getLGBIGKCNFBD() {
-        if (lGBIGKCNFBDBuilder_ == null) {
-          return lGBIGKCNFBD_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : lGBIGKCNFBD_;
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getSeedPos() {
+        if (seedPosBuilder_ == null) {
+          return seedPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : seedPos_;
         } else {
-          return lGBIGKCNFBDBuilder_.getMessage();
+          return seedPosBuilder_.getMessage();
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.Vector LGBIGKCNFBD = 3;</code>
+       * <code>.Vector seed_pos = 10;</code>
        */
-      public Builder setLGBIGKCNFBD(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (lGBIGKCNFBDBuilder_ == null) {
+      public Builder setSeedPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (seedPosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          lGBIGKCNFBD_ = value;
+          seedPos_ = value;
           onChanged();
         } else {
-          lGBIGKCNFBDBuilder_.setMessage(value);
+          seedPosBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.Vector LGBIGKCNFBD = 3;</code>
+       * <code>.Vector seed_pos = 10;</code>
        */
-      public Builder setLGBIGKCNFBD(
+      public Builder setSeedPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (lGBIGKCNFBDBuilder_ == null) {
-          lGBIGKCNFBD_ = builderForValue.build();
+        if (seedPosBuilder_ == null) {
+          seedPos_ = builderForValue.build();
           onChanged();
         } else {
-          lGBIGKCNFBDBuilder_.setMessage(builderForValue.build());
+          seedPosBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.Vector LGBIGKCNFBD = 3;</code>
+       * <code>.Vector seed_pos = 10;</code>
        */
-      public Builder mergeLGBIGKCNFBD(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (lGBIGKCNFBDBuilder_ == null) {
-          if (lGBIGKCNFBD_ != null) {
-            lGBIGKCNFBD_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(lGBIGKCNFBD_).mergeFrom(value).buildPartial();
+      public Builder mergeSeedPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (seedPosBuilder_ == null) {
+          if (seedPos_ != null) {
+            seedPos_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(seedPos_).mergeFrom(value).buildPartial();
           } else {
-            lGBIGKCNFBD_ = value;
+            seedPos_ = value;
           }
           onChanged();
         } else {
-          lGBIGKCNFBDBuilder_.mergeFrom(value);
+          seedPosBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.Vector LGBIGKCNFBD = 3;</code>
+       * <code>.Vector seed_pos = 10;</code>
        */
-      public Builder clearLGBIGKCNFBD() {
-        if (lGBIGKCNFBDBuilder_ == null) {
-          lGBIGKCNFBD_ = null;
+      public Builder clearSeedPos() {
+        if (seedPosBuilder_ == null) {
+          seedPos_ = null;
           onChanged();
         } else {
-          lGBIGKCNFBD_ = null;
-          lGBIGKCNFBDBuilder_ = null;
+          seedPos_ = null;
+          seedPosBuilder_ = null;
         }
 
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.Vector LGBIGKCNFBD = 3;</code>
+       * <code>.Vector seed_pos = 10;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getLGBIGKCNFBDBuilder() {
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getSeedPosBuilder() {
         
         onChanged();
-        return getLGBIGKCNFBDFieldBuilder().getBuilder();
+        return getSeedPosFieldBuilder().getBuilder();
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.Vector LGBIGKCNFBD = 3;</code>
+       * <code>.Vector seed_pos = 10;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getLGBIGKCNFBDOrBuilder() {
-        if (lGBIGKCNFBDBuilder_ != null) {
-          return lGBIGKCNFBDBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSeedPosOrBuilder() {
+        if (seedPosBuilder_ != null) {
+          return seedPosBuilder_.getMessageOrBuilder();
         } else {
-          return lGBIGKCNFBD_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : lGBIGKCNFBD_;
+          return seedPos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : seedPos_;
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.Vector LGBIGKCNFBD = 3;</code>
+       * <code>.Vector seed_pos = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getLGBIGKCNFBDFieldBuilder() {
-        if (lGBIGKCNFBDBuilder_ == null) {
-          lGBIGKCNFBDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getSeedPosFieldBuilder() {
+        if (seedPosBuilder_ == null) {
+          seedPosBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getLGBIGKCNFBD(),
+                  getSeedPos(),
                   getParentForChildren(),
                   isClean());
-          lGBIGKCNFBD_ = null;
+          seedPos_ = null;
         }
-        return lGBIGKCNFBDBuilder_;
+        return seedPosBuilder_;
       }
 
-      private int oHMOJMJIFKG_ ;
+      private int eGJKBDLBGIK_ ;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 OHMOJMJIFKG = 6;</code>
-       * @return The oHMOJMJIFKG.
+       * <code>uint32 EGJKBDLBGIK = 15;</code>
+       * @return The eGJKBDLBGIK.
        */
       @java.lang.Override
-      public int getOHMOJMJIFKG() {
-        return oHMOJMJIFKG_;
+      public int getEGJKBDLBGIK() {
+        return eGJKBDLBGIK_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 OHMOJMJIFKG = 6;</code>
-       * @param value The oHMOJMJIFKG to set.
+       * <code>uint32 EGJKBDLBGIK = 15;</code>
+       * @param value The eGJKBDLBGIK to set.
        * @return This builder for chaining.
        */
-      public Builder setOHMOJMJIFKG(int value) {
+      public Builder setEGJKBDLBGIK(int value) {
         
-        oHMOJMJIFKG_ = value;
+        eGJKBDLBGIK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 OHMOJMJIFKG = 6;</code>
+       * <code>uint32 EGJKBDLBGIK = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOHMOJMJIFKG() {
+      public Builder clearEGJKBDLBGIK() {
         
-        oHMOJMJIFKG_ = 0;
+        eGJKBDLBGIK_ = 0;
         onChanged();
         return this;
       }
 
-      private int kDHFFGJJNHH_ ;
+      private int aJBPDBIMHIP_ ;
       /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 KDHFFGJJNHH = 5;</code>
-       * @return The kDHFFGJJNHH.
+       * <code>uint32 AJBPDBIMHIP = 12;</code>
+       * @return The aJBPDBIMHIP.
        */
       @java.lang.Override
-      public int getKDHFFGJJNHH() {
-        return kDHFFGJJNHH_;
+      public int getAJBPDBIMHIP() {
+        return aJBPDBIMHIP_;
       }
       /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 KDHFFGJJNHH = 5;</code>
-       * @param value The kDHFFGJJNHH to set.
+       * <code>uint32 AJBPDBIMHIP = 12;</code>
+       * @param value The aJBPDBIMHIP to set.
        * @return This builder for chaining.
        */
-      public Builder setKDHFFGJJNHH(int value) {
+      public Builder setAJBPDBIMHIP(int value) {
         
-        kDHFFGJJNHH_ = value;
+        aJBPDBIMHIP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 KDHFFGJJNHH = 5;</code>
+       * <code>uint32 AJBPDBIMHIP = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKDHFFGJJNHH() {
+      public Builder clearAJBPDBIMHIP() {
         
-        kDHFFGJJNHH_ = 0;
+        aJBPDBIMHIP_ = 0;
         onChanged();
         return this;
       }
@@ -890,10 +850,10 @@ public final class AddWindBulletNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031AddWindBulletNotify.proto\032\014Vector.prot" +
-      "o\"]\n\023AddWindBulletNotify\022\034\n\013LGBIGKCNFBD\030" +
-      "\003 \001(\0132\007.Vector\022\023\n\013OHMOJMJIFKG\030\006 \001(\r\022\023\n\013K" +
-      "DHFFGJJNHH\030\005 \001(\rB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "o\"Z\n\023AddWindBulletNotify\022\031\n\010seed_pos\030\n \001" +
+      "(\0132\007.Vector\022\023\n\013EGJKBDLBGIK\030\017 \001(\r\022\023\n\013AJBP" +
+      "DBIMHIP\030\014 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -905,7 +865,7 @@ public final class AddWindBulletNotifyOuterClass {
     internal_static_AddWindBulletNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AddWindBulletNotify_descriptor,
-        new java.lang.String[] { "LGBIGKCNFBD", "OHMOJMJIFKG", "KDHFFGJJNHH", });
+        new java.lang.String[] { "SeedPos", "EGJKBDLBGIK", "AJBPDBIMHIP", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

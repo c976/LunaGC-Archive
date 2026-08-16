@@ -19,12 +19,12 @@ public final class GetUgcBriefInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.UgcType ugc_type = 8;</code>
+     * <code>.UgcType ugc_type = 2;</code>
      * @return The enum numeric value on the wire for ugcType.
      */
     int getUgcTypeValue();
     /**
-     * <code>.UgcType ugc_type = 8;</code>
+     * <code>.UgcType ugc_type = 2;</code>
      * @return The ugcType.
      */
     emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType();
@@ -37,7 +37,8 @@ public final class GetUgcBriefInfoReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 24729
+   * CmdId: 4301
+   * Obf: EJECIPEHCFC
    * </pre>
    *
    * Protobuf type {@code GetUgcBriefInfoReq}
@@ -85,15 +86,15 @@ public final class GetUgcBriefInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              ugcGuid_ = input.readUInt64();
-              break;
-            }
-            case 64: {
+            case 16: {
               int rawValue = input.readEnum();
 
               ugcType_ = rawValue;
+              break;
+            }
+            case 56: {
+
+              ugcGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -128,17 +129,17 @@ public final class GetUgcBriefInfoReqOuterClass {
               emu.grasscutter.net.proto.GetUgcBriefInfoReqOuterClass.GetUgcBriefInfoReq.class, emu.grasscutter.net.proto.GetUgcBriefInfoReqOuterClass.GetUgcBriefInfoReq.Builder.class);
     }
 
-    public static final int UGC_TYPE_FIELD_NUMBER = 8;
+    public static final int UgcType_FIELD_NUMBER = 2;
     private int ugcType_;
     /**
-     * <code>.UgcType ugc_type = 8;</code>
+     * <code>.UgcType ugc_type = 2;</code>
      * @return The enum numeric value on the wire for ugcType.
      */
     @java.lang.Override public int getUgcTypeValue() {
       return ugcType_;
     }
     /**
-     * <code>.UgcType ugc_type = 8;</code>
+     * <code>.UgcType ugc_type = 2;</code>
      * @return The ugcType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
@@ -172,11 +173,11 @@ public final class GetUgcBriefInfoReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UgcType_NONE.getNumber()) {
+        output.writeEnum(2, ugcType_);
+      }
       if (ugcGuid_ != 0L) {
         output.writeUInt64(7, ugcGuid_);
-      }
-      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
-        output.writeEnum(8, ugcType_);
       }
       unknownFields.writeTo(output);
     }
@@ -187,13 +188,13 @@ public final class GetUgcBriefInfoReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UgcType_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, ugcType_);
+      }
       if (ugcGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(7, ugcGuid_);
-      }
-      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(8, ugcType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,7 +225,7 @@ public final class GetUgcBriefInfoReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UGC_TYPE_FIELD_NUMBER;
+      hash = (37 * hash) + UgcType_FIELD_NUMBER;
       hash = (53 * hash) + ugcType_;
       hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
@@ -326,7 +327,8 @@ public final class GetUgcBriefInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24729
+     * CmdId: 4301
+     * Obf: EJECIPEHCFC
      * </pre>
      *
      * Protobuf type {@code GetUgcBriefInfoReq}
@@ -483,25 +485,25 @@ public final class GetUgcBriefInfoReqOuterClass {
 
       private int ugcType_ = 0;
       /**
-       * <code>.UgcType ugc_type = 8;</code>
+       * <code>.UgcType ugc_type = 2;</code>
        * @return The enum numeric value on the wire for ugcType.
        */
       @java.lang.Override public int getUgcTypeValue() {
         return ugcType_;
       }
       /**
-       * <code>.UgcType ugc_type = 8;</code>
+       * <code>.UgcType ugc_type = 2;</code>
        * @param value The enum numeric value on the wire for ugcType to set.
        * @return This builder for chaining.
        */
       public Builder setUgcTypeValue(int value) {
-        
+
         ugcType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.UgcType ugc_type = 8;</code>
+       * <code>.UgcType ugc_type = 2;</code>
        * @return The ugcType.
        */
       @java.lang.Override
@@ -511,7 +513,7 @@ public final class GetUgcBriefInfoReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.UgcType ugc_type = 8;</code>
+       * <code>.UgcType ugc_type = 2;</code>
        * @param value The ugcType to set.
        * @return This builder for chaining.
        */
@@ -519,17 +521,17 @@ public final class GetUgcBriefInfoReqOuterClass {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         ugcType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.UgcType ugc_type = 8;</code>
+       * <code>.UgcType ugc_type = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearUgcType() {
-        
+
         ugcType_ = 0;
         onChanged();
         return this;
@@ -550,7 +552,7 @@ public final class GetUgcBriefInfoReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder setUgcGuid(long value) {
-        
+
         ugcGuid_ = value;
         onChanged();
         return this;
@@ -560,7 +562,7 @@ public final class GetUgcBriefInfoReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearUgcGuid() {
-        
+
         ugcGuid_ = 0L;
         onChanged();
         return this;
@@ -620,7 +622,7 @@ public final class GetUgcBriefInfoReqOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_GetUgcBriefInfoReq_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GetUgcBriefInfoReq_fieldAccessorTable;
 
@@ -633,7 +635,7 @@ public final class GetUgcBriefInfoReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GetUgcBriefInfoReq.proto\032\rUgcType.prot" +
-      "o\"B\n\022GetUgcBriefInfoReq\022\032\n\010ugc_type\030\010 \001(" +
+      "o\"B\n\022GetUgcBriefInfoReq\022\032\n\010ugc_type\030\002 \001(" +
       "\0162\010.UgcType\022\020\n\010ugc_guid\030\007 \001(\004B\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };

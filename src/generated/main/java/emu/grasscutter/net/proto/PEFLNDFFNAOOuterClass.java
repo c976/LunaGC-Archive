@@ -19,50 +19,30 @@ public final class PEFLNDFFNAOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 ACKIIKLAPNL = 13;</code>
      * @return The aCKIIKLAPNL.
      */
     long getACKIIKLAPNL();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 10;</code>
      * @return The oMEBOHLACPH.
      */
     int getOMEBOHLACPH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 15;</code>
      * @return The dALMDMCJNNK.
      */
     boolean getDALMDMCJNNK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 8;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
@@ -173,10 +153,6 @@ public final class PEFLNDFFNAOOuterClass {
     public static final int ACKIIKLAPNL_FIELD_NUMBER = 13;
     private long aCKIIKLAPNL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 ACKIIKLAPNL = 13;</code>
      * @return The aCKIIKLAPNL.
      */
@@ -188,10 +164,6 @@ public final class PEFLNDFFNAOOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 10;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 10;</code>
      * @return The oMEBOHLACPH.
      */
@@ -203,10 +175,6 @@ public final class PEFLNDFFNAOOuterClass {
     public static final int DALMDMCJNNK_FIELD_NUMBER = 15;
     private boolean dALMDMCJNNK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 15;</code>
      * @return The dALMDMCJNNK.
      */
@@ -218,10 +186,6 @@ public final class PEFLNDFFNAOOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 8;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 8;</code>
      * @return The isFinished.
      */
@@ -233,10 +197,6 @@ public final class PEFLNDFFNAOOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
@@ -620,10 +580,6 @@ public final class PEFLNDFFNAOOuterClass {
 
       private long aCKIIKLAPNL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 ACKIIKLAPNL = 13;</code>
        * @return The aCKIIKLAPNL.
        */
@@ -632,10 +588,6 @@ public final class PEFLNDFFNAOOuterClass {
         return aCKIIKLAPNL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 ACKIIKLAPNL = 13;</code>
        * @param value The aCKIIKLAPNL to set.
        * @return This builder for chaining.
@@ -647,10 +599,6 @@ public final class PEFLNDFFNAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 ACKIIKLAPNL = 13;</code>
        * @return This builder for chaining.
        */
@@ -663,10 +611,6 @@ public final class PEFLNDFFNAOOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 10;</code>
        * @return The oMEBOHLACPH.
        */
@@ -675,10 +619,6 @@ public final class PEFLNDFFNAOOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 10;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -690,10 +630,6 @@ public final class PEFLNDFFNAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 10;</code>
        * @return This builder for chaining.
        */
@@ -706,10 +642,6 @@ public final class PEFLNDFFNAOOuterClass {
 
       private boolean dALMDMCJNNK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 15;</code>
        * @return The dALMDMCJNNK.
        */
@@ -718,10 +650,6 @@ public final class PEFLNDFFNAOOuterClass {
         return dALMDMCJNNK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 15;</code>
        * @param value The dALMDMCJNNK to set.
        * @return This builder for chaining.
@@ -733,10 +661,6 @@ public final class PEFLNDFFNAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 15;</code>
        * @return This builder for chaining.
        */
@@ -749,10 +673,6 @@ public final class PEFLNDFFNAOOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 8;</code>
        * @return The isFinished.
        */
@@ -761,10 +681,6 @@ public final class PEFLNDFFNAOOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 8;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -776,10 +692,6 @@ public final class PEFLNDFFNAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 8;</code>
        * @return This builder for chaining.
        */
@@ -792,10 +704,6 @@ public final class PEFLNDFFNAOOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
@@ -804,10 +712,6 @@ public final class PEFLNDFFNAOOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -819,10 +723,6 @@ public final class PEFLNDFFNAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */

@@ -19,44 +19,24 @@ public final class DNGKNIPCAPPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF> 
         getDMGNNLACCKGList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
      */
     emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF getDMGNNLACCKG(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
      */
     int getDMGNNLACCKGCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABFOrBuilder> 
         getDMGNNLACCKGOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
      */
     emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABFOrBuilder getDMGNNLACCKGOrBuilder(
@@ -156,10 +136,6 @@ public final class DNGKNIPCAPPOuterClass {
     public static final int DMGNNLACCKG_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF> dMGNNLACCKG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class DNGKNIPCAPPOuterClass {
       return dMGNNLACCKG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class DNGKNIPCAPPOuterClass {
       return dMGNNLACCKG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class DNGKNIPCAPPOuterClass {
       return dMGNNLACCKG_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class DNGKNIPCAPPOuterClass {
       return dMGNNLACCKG_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class DNGKNIPCAPPOuterClass {
           emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF, emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF.Builder, emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABFOrBuilder> dMGNNLACCKGBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF> getDMGNNLACCKGList() {
@@ -582,10 +538,6 @@ public final class DNGKNIPCAPPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public int getDMGNNLACCKGCount() {
@@ -596,10 +548,6 @@ public final class DNGKNIPCAPPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF getDMGNNLACCKG(int index) {
@@ -610,10 +558,6 @@ public final class DNGKNIPCAPPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public Builder setDMGNNLACCKG(
@@ -631,10 +575,6 @@ public final class DNGKNIPCAPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public Builder setDMGNNLACCKG(
@@ -649,10 +589,6 @@ public final class DNGKNIPCAPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public Builder addDMGNNLACCKG(emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF value) {
@@ -669,10 +605,6 @@ public final class DNGKNIPCAPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public Builder addDMGNNLACCKG(
@@ -690,10 +622,6 @@ public final class DNGKNIPCAPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public Builder addDMGNNLACCKG(
@@ -708,10 +636,6 @@ public final class DNGKNIPCAPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public Builder addDMGNNLACCKG(
@@ -726,10 +650,6 @@ public final class DNGKNIPCAPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public Builder addAllDMGNNLACCKG(
@@ -745,10 +665,6 @@ public final class DNGKNIPCAPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public Builder clearDMGNNLACCKG() {
@@ -762,10 +678,6 @@ public final class DNGKNIPCAPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public Builder removeDMGNNLACCKG(int index) {
@@ -779,10 +691,6 @@ public final class DNGKNIPCAPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF.Builder getDMGNNLACCKGBuilder(
@@ -790,10 +698,6 @@ public final class DNGKNIPCAPPOuterClass {
         return getDMGNNLACCKGFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABFOrBuilder getDMGNNLACCKGOrBuilder(
@@ -804,10 +708,6 @@ public final class DNGKNIPCAPPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABFOrBuilder> 
@@ -819,10 +719,6 @@ public final class DNGKNIPCAPPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF.Builder addDMGNNLACCKGBuilder() {
@@ -830,10 +726,6 @@ public final class DNGKNIPCAPPOuterClass {
             emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF.Builder addDMGNNLACCKGBuilder(
@@ -842,10 +734,6 @@ public final class DNGKNIPCAPPOuterClass {
             index, emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BFHLPEOFABF DMGNNLACCKG = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BFHLPEOFABFOuterClass.BFHLPEOFABF.Builder> 

@@ -19,20 +19,12 @@ public final class LAGAFOGNLEKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 15;</code>
      * @return The openTime.
      */
@@ -128,10 +120,6 @@ public final class LAGAFOGNLEKOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 4;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
@@ -143,10 +131,6 @@ public final class LAGAFOGNLEKOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 15;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 15;</code>
      * @return The openTime.
      */
@@ -477,10 +461,6 @@ public final class LAGAFOGNLEKOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return The isOpen.
        */
@@ -489,10 +469,6 @@ public final class LAGAFOGNLEKOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -504,10 +480,6 @@ public final class LAGAFOGNLEKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return This builder for chaining.
        */
@@ -520,10 +492,6 @@ public final class LAGAFOGNLEKOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 15;</code>
        * @return The openTime.
        */
@@ -532,10 +500,6 @@ public final class LAGAFOGNLEKOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 15;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -547,10 +511,6 @@ public final class LAGAFOGNLEKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 15;</code>
        * @return This builder for chaining.
        */

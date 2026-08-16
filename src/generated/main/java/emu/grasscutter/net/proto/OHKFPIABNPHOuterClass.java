@@ -19,46 +19,30 @@ public final class OHKFPIABNPHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 2;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 1;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 1;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EJOJHAKNCCB = 9;</code>
      * @return The eJOJHAKNCCB.
      */
     int getEJOJHAKNCCB();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -111,7 +95,7 @@ public final class OHKFPIABNPHOuterClass {
               break;
             case 8: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 16: {
@@ -169,10 +153,6 @@ public final class OHKFPIABNPHOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 15;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
@@ -184,10 +164,6 @@ public final class OHKFPIABNPHOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 2;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 2;</code>
      * @return The isFinish.
      */
@@ -196,24 +172,20 @@ public final class OHKFPIABNPHOuterClass {
       return isFinish_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 1;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 1;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 1;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 1;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     public static final int EJOJHAKNCCB_FIELD_NUMBER = 9;
     private int eJOJHAKNCCB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EJOJHAKNCCB = 9;</code>
      * @return The eJOJHAKNCCB.
      */
@@ -225,10 +197,6 @@ public final class OHKFPIABNPHOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -251,8 +219,8 @@ public final class OHKFPIABNPHOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(1, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(1, ugcGuid_);
       }
       if (isFinish_ != false) {
         output.writeBool(2, isFinish_);
@@ -275,9 +243,9 @@ public final class OHKFPIABNPHOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, iFADGMHEFHF_);
+          .computeUInt32Size(1, ugcGuid_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -314,8 +282,8 @@ public final class OHKFPIABNPHOuterClass {
           != other.getIsOpen()) return false;
       if (getIsFinish()
           != other.getIsFinish()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (getEJOJHAKNCCB()
           != other.getEJOJHAKNCCB()) return false;
       if (getLevelId()
@@ -337,8 +305,8 @@ public final class OHKFPIABNPHOuterClass {
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (37 * hash) + EJOJHAKNCCB_FIELD_NUMBER;
       hash = (53 * hash) + getEJOJHAKNCCB();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
@@ -480,7 +448,7 @@ public final class OHKFPIABNPHOuterClass {
 
         isFinish_ = false;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         eJOJHAKNCCB_ = 0;
 
@@ -514,7 +482,7 @@ public final class OHKFPIABNPHOuterClass {
         emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH result = new emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH(this);
         result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         result.eJOJHAKNCCB_ = eJOJHAKNCCB_;
         result.levelId_ = levelId_;
         onBuilt();
@@ -571,8 +539,8 @@ public final class OHKFPIABNPHOuterClass {
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         if (other.getEJOJHAKNCCB() != 0) {
           setEJOJHAKNCCB(other.getEJOJHAKNCCB());
@@ -611,10 +579,6 @@ public final class OHKFPIABNPHOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return The isOpen.
        */
@@ -623,10 +587,6 @@ public final class OHKFPIABNPHOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -638,10 +598,6 @@ public final class OHKFPIABNPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return This builder for chaining.
        */
@@ -654,10 +610,6 @@ public final class OHKFPIABNPHOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 2;</code>
        * @return The isFinish.
        */
@@ -666,10 +618,6 @@ public final class OHKFPIABNPHOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 2;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -681,10 +629,6 @@ public final class OHKFPIABNPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 2;</code>
        * @return This builder for chaining.
        */
@@ -695,43 +639,39 @@ public final class OHKFPIABNPHOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 1;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 1;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 1;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 1;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 1;</code>
+       * <code>uint32 ugc_guid = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
       private int eJOJHAKNCCB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EJOJHAKNCCB = 9;</code>
        * @return The eJOJHAKNCCB.
        */
@@ -740,10 +680,6 @@ public final class OHKFPIABNPHOuterClass {
         return eJOJHAKNCCB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EJOJHAKNCCB = 9;</code>
        * @param value The eJOJHAKNCCB to set.
        * @return This builder for chaining.
@@ -755,10 +691,6 @@ public final class OHKFPIABNPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EJOJHAKNCCB = 9;</code>
        * @return This builder for chaining.
        */
@@ -771,10 +703,6 @@ public final class OHKFPIABNPHOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
@@ -783,10 +711,6 @@ public final class OHKFPIABNPHOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -798,10 +722,6 @@ public final class OHKFPIABNPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
@@ -878,11 +798,11 @@ public final class OHKFPIABNPHOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021OHKFPIABNPH.proto\"m\n\013OHKFPIABNPH\022\017\n\007is" +
-      "_open\030\017 \001(\010\022\021\n\tis_finish\030\002 \001(\010\022\023\n\013IFADGM" +
-      "HEFHF\030\001 \001(\r\022\023\n\013EJOJHAKNCCB\030\t \001(\r\022\020\n\010leve" +
-      "l_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\021OHKFPIABNPH.proto\"j\n\013OHKFPIABNPH\022\017\n\007is" +
+      "_open\030\017 \001(\010\022\021\n\tis_finish\030\002 \001(\010\022\020\n\010ugc_gu" +
+      "id\030\001 \001(\r\022\023\n\013EJOJHAKNCCB\030\t \001(\r\022\020\n\010level_i" +
+      "d\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -893,7 +813,7 @@ public final class OHKFPIABNPHOuterClass {
     internal_static_OHKFPIABNPH_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_OHKFPIABNPH_descriptor,
-        new java.lang.String[] { "IsOpen", "IsFinish", "IFADGMHEFHF", "EJOJHAKNCCB", "LevelId", });
+        new java.lang.String[] { "IsOpen", "IsFinish", "UgcGuid", "EJOJHAKNCCB", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

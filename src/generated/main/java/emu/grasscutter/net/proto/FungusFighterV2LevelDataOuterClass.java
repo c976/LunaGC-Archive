@@ -19,24 +19,28 @@ public final class FungusFighterV2LevelDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_level_open = 6;</code>
+     * <code>bool is_level_open = 2;</code>
      * @return The isLevelOpen.
      */
     boolean getIsLevelOpen();
 
     /**
-     * <code>uint32 level_id = 9;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 MBHMNAHKAFK = 15;</code>
-     * @return The mBHMNAHKAFK.
+     * <code>uint32 NPLPFHEKCIH = 13;</code>
+     * @return The nPLPFHEKCIH.
      */
-    int getMBHMNAHKAFK();
+    int getNPLPFHEKCIH();
   }
   /**
+   * <pre>
+   * Obf: DAHFOONKPOM
+   * </pre>
+   *
    * Protobuf type {@code FungusFighterV2LevelData}
    */
   public static final class FungusFighterV2LevelData extends
@@ -81,19 +85,19 @@ public final class FungusFighterV2LevelDataOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
 
               isLevelOpen_ = input.readBool();
               break;
             }
-            case 72: {
+            case 56: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 104: {
 
-              mBHMNAHKAFK_ = input.readUInt32();
+              nPLPFHEKCIH_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +132,10 @@ public final class FungusFighterV2LevelDataOuterClass {
               emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.class, emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData.Builder.class);
     }
 
-    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 6;
+    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 2;
     private boolean isLevelOpen_;
     /**
-     * <code>bool is_level_open = 6;</code>
+     * <code>bool is_level_open = 2;</code>
      * @return The isLevelOpen.
      */
     @java.lang.Override
@@ -139,10 +143,10 @@ public final class FungusFighterV2LevelDataOuterClass {
       return isLevelOpen_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 9;
+    public static final int LEVEL_ID_FIELD_NUMBER = 7;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 9;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -150,15 +154,15 @@ public final class FungusFighterV2LevelDataOuterClass {
       return levelId_;
     }
 
-    public static final int MBHMNAHKAFK_FIELD_NUMBER = 15;
-    private int mBHMNAHKAFK_;
+    public static final int NPLPFHEKCIH_FIELD_NUMBER = 13;
+    private int nPLPFHEKCIH_;
     /**
-     * <code>uint32 MBHMNAHKAFK = 15;</code>
-     * @return The mBHMNAHKAFK.
+     * <code>uint32 NPLPFHEKCIH = 13;</code>
+     * @return The nPLPFHEKCIH.
      */
     @java.lang.Override
-    public int getMBHMNAHKAFK() {
-      return mBHMNAHKAFK_;
+    public int getNPLPFHEKCIH() {
+      return nPLPFHEKCIH_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -176,13 +180,13 @@ public final class FungusFighterV2LevelDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isLevelOpen_ != false) {
-        output.writeBool(6, isLevelOpen_);
+        output.writeBool(2, isLevelOpen_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(9, levelId_);
+        output.writeUInt32(7, levelId_);
       }
-      if (mBHMNAHKAFK_ != 0) {
-        output.writeUInt32(15, mBHMNAHKAFK_);
+      if (nPLPFHEKCIH_ != 0) {
+        output.writeUInt32(13, nPLPFHEKCIH_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +199,15 @@ public final class FungusFighterV2LevelDataOuterClass {
       size = 0;
       if (isLevelOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isLevelOpen_);
+          .computeBoolSize(2, isLevelOpen_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, levelId_);
+          .computeUInt32Size(7, levelId_);
       }
-      if (mBHMNAHKAFK_ != 0) {
+      if (nPLPFHEKCIH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, mBHMNAHKAFK_);
+          .computeUInt32Size(13, nPLPFHEKCIH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,8 +228,8 @@ public final class FungusFighterV2LevelDataOuterClass {
           != other.getIsLevelOpen()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getMBHMNAHKAFK()
-          != other.getMBHMNAHKAFK()) return false;
+      if (getNPLPFHEKCIH()
+          != other.getNPLPFHEKCIH()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,8 +246,8 @@ public final class FungusFighterV2LevelDataOuterClass {
           getIsLevelOpen());
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + MBHMNAHKAFK_FIELD_NUMBER;
-      hash = (53 * hash) + getMBHMNAHKAFK();
+      hash = (37 * hash) + NPLPFHEKCIH_FIELD_NUMBER;
+      hash = (53 * hash) + getNPLPFHEKCIH();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -340,6 +344,10 @@ public final class FungusFighterV2LevelDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: DAHFOONKPOM
+     * </pre>
+     *
      * Protobuf type {@code FungusFighterV2LevelData}
      */
     public static final class Builder extends
@@ -381,7 +389,7 @@ public final class FungusFighterV2LevelDataOuterClass {
 
         levelId_ = 0;
 
-        mBHMNAHKAFK_ = 0;
+        nPLPFHEKCIH_ = 0;
 
         return this;
       }
@@ -411,7 +419,7 @@ public final class FungusFighterV2LevelDataOuterClass {
         emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData result = new emu.grasscutter.net.proto.FungusFighterV2LevelDataOuterClass.FungusFighterV2LevelData(this);
         result.isLevelOpen_ = isLevelOpen_;
         result.levelId_ = levelId_;
-        result.mBHMNAHKAFK_ = mBHMNAHKAFK_;
+        result.nPLPFHEKCIH_ = nPLPFHEKCIH_;
         onBuilt();
         return result;
       }
@@ -466,8 +474,8 @@ public final class FungusFighterV2LevelDataOuterClass {
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getMBHMNAHKAFK() != 0) {
-          setMBHMNAHKAFK(other.getMBHMNAHKAFK());
+        if (other.getNPLPFHEKCIH() != 0) {
+          setNPLPFHEKCIH(other.getNPLPFHEKCIH());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -500,7 +508,7 @@ public final class FungusFighterV2LevelDataOuterClass {
 
       private boolean isLevelOpen_ ;
       /**
-       * <code>bool is_level_open = 6;</code>
+       * <code>bool is_level_open = 2;</code>
        * @return The isLevelOpen.
        */
       @java.lang.Override
@@ -508,7 +516,7 @@ public final class FungusFighterV2LevelDataOuterClass {
         return isLevelOpen_;
       }
       /**
-       * <code>bool is_level_open = 6;</code>
+       * <code>bool is_level_open = 2;</code>
        * @param value The isLevelOpen to set.
        * @return This builder for chaining.
        */
@@ -519,7 +527,7 @@ public final class FungusFighterV2LevelDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_level_open = 6;</code>
+       * <code>bool is_level_open = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsLevelOpen() {
@@ -531,7 +539,7 @@ public final class FungusFighterV2LevelDataOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -539,7 +547,7 @@ public final class FungusFighterV2LevelDataOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 7;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -550,7 +558,7 @@ public final class FungusFighterV2LevelDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -560,33 +568,33 @@ public final class FungusFighterV2LevelDataOuterClass {
         return this;
       }
 
-      private int mBHMNAHKAFK_ ;
+      private int nPLPFHEKCIH_ ;
       /**
-       * <code>uint32 MBHMNAHKAFK = 15;</code>
-       * @return The mBHMNAHKAFK.
+       * <code>uint32 NPLPFHEKCIH = 13;</code>
+       * @return The nPLPFHEKCIH.
        */
       @java.lang.Override
-      public int getMBHMNAHKAFK() {
-        return mBHMNAHKAFK_;
+      public int getNPLPFHEKCIH() {
+        return nPLPFHEKCIH_;
       }
       /**
-       * <code>uint32 MBHMNAHKAFK = 15;</code>
-       * @param value The mBHMNAHKAFK to set.
+       * <code>uint32 NPLPFHEKCIH = 13;</code>
+       * @param value The nPLPFHEKCIH to set.
        * @return This builder for chaining.
        */
-      public Builder setMBHMNAHKAFK(int value) {
+      public Builder setNPLPFHEKCIH(int value) {
         
-        mBHMNAHKAFK_ = value;
+        nPLPFHEKCIH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MBHMNAHKAFK = 15;</code>
+       * <code>uint32 NPLPFHEKCIH = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMBHMNAHKAFK() {
+      public Builder clearNPLPFHEKCIH() {
         
-        mBHMNAHKAFK_ = 0;
+        nPLPFHEKCIH_ = 0;
         onChanged();
         return this;
       }
@@ -658,8 +666,8 @@ public final class FungusFighterV2LevelDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036FungusFighterV2LevelData.proto\"X\n\030Fung" +
-      "usFighterV2LevelData\022\025\n\ris_level_open\030\006 " +
-      "\001(\010\022\020\n\010level_id\030\t \001(\r\022\023\n\013MBHMNAHKAFK\030\017 \001" +
+      "usFighterV2LevelData\022\025\n\ris_level_open\030\002 " +
+      "\001(\010\022\020\n\010level_id\030\007 \001(\r\022\023\n\013NPLPFHEKCIH\030\r \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -671,7 +679,7 @@ public final class FungusFighterV2LevelDataOuterClass {
     internal_static_FungusFighterV2LevelData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusFighterV2LevelData_descriptor,
-        new java.lang.String[] { "IsLevelOpen", "LevelId", "MBHMNAHKAFK", });
+        new java.lang.String[] { "IsLevelOpen", "LevelId", "NPLPFHEKCIH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

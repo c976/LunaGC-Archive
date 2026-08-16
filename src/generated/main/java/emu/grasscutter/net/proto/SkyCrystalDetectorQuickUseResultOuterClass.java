@@ -20,37 +20,37 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
      * @return Whether the skyCrystalDetectorData field is set.
      */
     boolean hasSkyCrystalDetectorData();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
      * @return The skyCrystalDetectorData.
      */
     emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData getSkyCrystalDetectorData();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
      */
     emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorDataOrBuilder getSkyCrystalDetectorDataOrBuilder();
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -100,12 +100,12 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 88: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 106: {
+            case 98: {
               emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData.Builder subBuilder = null;
               if (skyCrystalDetectorData_ != null) {
                 subBuilder = skyCrystalDetectorData_.toBuilder();
@@ -150,14 +150,14 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
               emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.class, emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.Builder.class);
     }
 
-    public static final int SKY_CRYSTAL_DETECTOR_DATA_FIELD_NUMBER = 13;
+    public static final int SKY_CRYSTAL_DETECTOR_DATA_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData skyCrystalDetectorData_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
      * @return Whether the skyCrystalDetectorData field is set.
      */
     @java.lang.Override
@@ -166,10 +166,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
      * @return The skyCrystalDetectorData.
      */
     @java.lang.Override
@@ -178,24 +178,24 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+     * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorDataOrBuilder getSkyCrystalDetectorDataOrBuilder() {
       return getSkyCrystalDetectorData();
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -218,10 +218,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(11, retcode_);
       }
       if (skyCrystalDetectorData_ != null) {
-        output.writeMessage(13, getSkyCrystalDetectorData());
+        output.writeMessage(12, getSkyCrystalDetectorData());
       }
       unknownFields.writeTo(output);
     }
@@ -234,11 +234,11 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(11, retcode_);
       }
       if (skyCrystalDetectorData_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getSkyCrystalDetectorData());
+          .computeMessageSize(12, getSkyCrystalDetectorData());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,10 +540,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
           emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData, emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData.Builder, emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorDataOrBuilder> skyCrystalDetectorDataBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
        * @return Whether the skyCrystalDetectorData field is set.
        */
       public boolean hasSkyCrystalDetectorData() {
@@ -551,10 +551,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
        * @return The skyCrystalDetectorData.
        */
       public emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData getSkyCrystalDetectorData() {
@@ -566,10 +566,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
        */
       public Builder setSkyCrystalDetectorData(emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData value) {
         if (skyCrystalDetectorDataBuilder_ == null) {
@@ -586,10 +586,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
        */
       public Builder setSkyCrystalDetectorData(
           emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData.Builder builderForValue) {
@@ -604,10 +604,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
        */
       public Builder mergeSkyCrystalDetectorData(emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData value) {
         if (skyCrystalDetectorDataBuilder_ == null) {
@@ -626,10 +626,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
        */
       public Builder clearSkyCrystalDetectorData() {
         if (skyCrystalDetectorDataBuilder_ == null) {
@@ -644,10 +644,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
        */
       public emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData.Builder getSkyCrystalDetectorDataBuilder() {
         
@@ -656,10 +656,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
        */
       public emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorDataOrBuilder getSkyCrystalDetectorDataOrBuilder() {
         if (skyCrystalDetectorDataBuilder_ != null) {
@@ -671,10 +671,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 13;</code>
+       * <code>.SkyCrystalDetectorData sky_crystal_detector_data = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData, emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData.Builder, emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorDataOrBuilder> 
@@ -693,10 +693,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       private int retcode_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -705,10 +705,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -720,10 +720,10 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -802,8 +802,8 @@ public final class SkyCrystalDetectorQuickUseResultOuterClass {
       "\n&SkyCrystalDetectorQuickUseResult.proto" +
       "\032\034SkyCrystalDetectorData.proto\"o\n SkyCry" +
       "stalDetectorQuickUseResult\022:\n\031sky_crysta" +
-      "l_detector_data\030\r \001(\0132\027.SkyCrystalDetect" +
-      "orData\022\017\n\007retcode\030\010 \001(\005B\033\n\031emu.grasscutt" +
+      "l_detector_data\030\014 \001(\0132\027.SkyCrystalDetect" +
+      "orData\022\017\n\007retcode\030\013 \001(\005B\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

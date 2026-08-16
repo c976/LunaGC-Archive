@@ -19,40 +19,24 @@ public final class PEDOKCODPNBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FFHGPGIHBOO = 9;</code>
      * @return The fFHGPGIHBOO.
      */
     int getFFHGPGIHBOO();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 11;</code>
      * @return The hBILFAMJDKG.
      */
     int getHBILFAMJDKG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JPLOABGPFCA = 10;</code>
      * @return The jPLOABGPFCA.
      */
     boolean getJPLOABGPFCA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
@@ -158,10 +142,6 @@ public final class PEDOKCODPNBOuterClass {
     public static final int FFHGPGIHBOO_FIELD_NUMBER = 9;
     private int fFHGPGIHBOO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FFHGPGIHBOO = 9;</code>
      * @return The fFHGPGIHBOO.
      */
@@ -173,10 +153,6 @@ public final class PEDOKCODPNBOuterClass {
     public static final int HBILFAMJDKG_FIELD_NUMBER = 11;
     private int hBILFAMJDKG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 11;</code>
      * @return The hBILFAMJDKG.
      */
@@ -188,10 +164,6 @@ public final class PEDOKCODPNBOuterClass {
     public static final int JPLOABGPFCA_FIELD_NUMBER = 10;
     private boolean jPLOABGPFCA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JPLOABGPFCA = 10;</code>
      * @return The jPLOABGPFCA.
      */
@@ -203,10 +175,6 @@ public final class PEDOKCODPNBOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 3;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
@@ -572,10 +540,6 @@ public final class PEDOKCODPNBOuterClass {
 
       private int fFHGPGIHBOO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FFHGPGIHBOO = 9;</code>
        * @return The fFHGPGIHBOO.
        */
@@ -584,10 +548,6 @@ public final class PEDOKCODPNBOuterClass {
         return fFHGPGIHBOO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FFHGPGIHBOO = 9;</code>
        * @param value The fFHGPGIHBOO to set.
        * @return This builder for chaining.
@@ -599,10 +559,6 @@ public final class PEDOKCODPNBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FFHGPGIHBOO = 9;</code>
        * @return This builder for chaining.
        */
@@ -615,10 +571,6 @@ public final class PEDOKCODPNBOuterClass {
 
       private int hBILFAMJDKG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 11;</code>
        * @return The hBILFAMJDKG.
        */
@@ -627,10 +579,6 @@ public final class PEDOKCODPNBOuterClass {
         return hBILFAMJDKG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 11;</code>
        * @param value The hBILFAMJDKG to set.
        * @return This builder for chaining.
@@ -642,10 +590,6 @@ public final class PEDOKCODPNBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 11;</code>
        * @return This builder for chaining.
        */
@@ -658,10 +602,6 @@ public final class PEDOKCODPNBOuterClass {
 
       private boolean jPLOABGPFCA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JPLOABGPFCA = 10;</code>
        * @return The jPLOABGPFCA.
        */
@@ -670,10 +610,6 @@ public final class PEDOKCODPNBOuterClass {
         return jPLOABGPFCA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JPLOABGPFCA = 10;</code>
        * @param value The jPLOABGPFCA to set.
        * @return This builder for chaining.
@@ -685,10 +621,6 @@ public final class PEDOKCODPNBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JPLOABGPFCA = 10;</code>
        * @return This builder for chaining.
        */
@@ -701,10 +633,6 @@ public final class PEDOKCODPNBOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 3;</code>
        * @return The isFinish.
        */
@@ -713,10 +641,6 @@ public final class PEDOKCODPNBOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 3;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -728,10 +652,6 @@ public final class PEDOKCODPNBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 3;</code>
        * @return This builder for chaining.
        */

@@ -19,28 +19,16 @@ public final class MLKEPALIBDLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 1;</code>
      * @return A list containing the buffIdList.
      */
     java.util.List<java.lang.Integer> getBuffIdListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 1;</code>
      * @return The count of buffIdList.
      */
     int getBuffIdListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The buffIdList at the given index.
@@ -48,84 +36,48 @@ public final class MLKEPALIBDLOuterClass {
     int getBuffIdList(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB> 
         getOGDCFMHPMOAList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
      */
     emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB getOGDCFMHPMOA(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
      */
     int getOGDCFMHPMOACount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFABOrBuilder> 
         getOGDCFMHPMOAOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
      */
     emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFABOrBuilder getOGDCFMHPMOAOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GEADDCLGIEG = 12;</code>
      * @return The gEADDCLGIEG.
      */
     int getGEADDCLGIEG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool EGCKMPLDFNE = 9;</code>
      * @return The eGCKMPLDFNE.
      */
     boolean getEGCKMPLDFNE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool EPGCCPAAKJJ = 10;</code>
      * @return The ePGCCPAAKJJ.
      */
     boolean getEPGCCPAAKJJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DELMJNOKJMF = 14;</code>
      * @return The dELMJNOKJMF.
      */
@@ -270,10 +222,6 @@ public final class MLKEPALIBDLOuterClass {
     public static final int BUFF_ID_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList buffIdList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 1;</code>
      * @return A list containing the buffIdList.
      */
@@ -283,10 +231,6 @@ public final class MLKEPALIBDLOuterClass {
       return buffIdList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 1;</code>
      * @return The count of buffIdList.
      */
@@ -294,10 +238,6 @@ public final class MLKEPALIBDLOuterClass {
       return buffIdList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The buffIdList at the given index.
@@ -310,10 +250,6 @@ public final class MLKEPALIBDLOuterClass {
     public static final int OGDCFMHPMOA_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB> oGDCFMHPMOA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
      */
     @java.lang.Override
@@ -321,10 +257,6 @@ public final class MLKEPALIBDLOuterClass {
       return oGDCFMHPMOA_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
      */
     @java.lang.Override
@@ -333,10 +265,6 @@ public final class MLKEPALIBDLOuterClass {
       return oGDCFMHPMOA_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
      */
     @java.lang.Override
@@ -344,10 +272,6 @@ public final class MLKEPALIBDLOuterClass {
       return oGDCFMHPMOA_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
      */
     @java.lang.Override
@@ -355,10 +279,6 @@ public final class MLKEPALIBDLOuterClass {
       return oGDCFMHPMOA_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
      */
     @java.lang.Override
@@ -370,10 +290,6 @@ public final class MLKEPALIBDLOuterClass {
     public static final int GEADDCLGIEG_FIELD_NUMBER = 12;
     private int gEADDCLGIEG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GEADDCLGIEG = 12;</code>
      * @return The gEADDCLGIEG.
      */
@@ -385,10 +301,6 @@ public final class MLKEPALIBDLOuterClass {
     public static final int EGCKMPLDFNE_FIELD_NUMBER = 9;
     private boolean eGCKMPLDFNE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool EGCKMPLDFNE = 9;</code>
      * @return The eGCKMPLDFNE.
      */
@@ -400,10 +312,6 @@ public final class MLKEPALIBDLOuterClass {
     public static final int EPGCCPAAKJJ_FIELD_NUMBER = 10;
     private boolean ePGCCPAAKJJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool EPGCCPAAKJJ = 10;</code>
      * @return The ePGCCPAAKJJ.
      */
@@ -415,10 +323,6 @@ public final class MLKEPALIBDLOuterClass {
     public static final int DELMJNOKJMF_FIELD_NUMBER = 14;
     private int dELMJNOKJMF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DELMJNOKJMF = 14;</code>
      * @return The dELMJNOKJMF.
      */
@@ -892,10 +796,6 @@ public final class MLKEPALIBDLOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 1;</code>
        * @return A list containing the buffIdList.
        */
@@ -905,10 +805,6 @@ public final class MLKEPALIBDLOuterClass {
                  java.util.Collections.unmodifiableList(buffIdList_) : buffIdList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 1;</code>
        * @return The count of buffIdList.
        */
@@ -916,10 +812,6 @@ public final class MLKEPALIBDLOuterClass {
         return buffIdList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 1;</code>
        * @param index The index of the element to return.
        * @return The buffIdList at the given index.
@@ -928,10 +820,6 @@ public final class MLKEPALIBDLOuterClass {
         return buffIdList_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The buffIdList to set.
@@ -945,10 +833,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 1;</code>
        * @param value The buffIdList to add.
        * @return This builder for chaining.
@@ -960,10 +844,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 1;</code>
        * @param values The buffIdList to add.
        * @return This builder for chaining.
@@ -977,10 +857,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 1;</code>
        * @return This builder for chaining.
        */
@@ -1004,10 +880,6 @@ public final class MLKEPALIBDLOuterClass {
           emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB, emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB.Builder, emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFABOrBuilder> oGDCFMHPMOABuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB> getOGDCFMHPMOAList() {
@@ -1018,10 +890,6 @@ public final class MLKEPALIBDLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public int getOGDCFMHPMOACount() {
@@ -1032,10 +900,6 @@ public final class MLKEPALIBDLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB getOGDCFMHPMOA(int index) {
@@ -1046,10 +910,6 @@ public final class MLKEPALIBDLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public Builder setOGDCFMHPMOA(
@@ -1067,10 +927,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public Builder setOGDCFMHPMOA(
@@ -1085,10 +941,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public Builder addOGDCFMHPMOA(emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB value) {
@@ -1105,10 +957,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public Builder addOGDCFMHPMOA(
@@ -1126,10 +974,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public Builder addOGDCFMHPMOA(
@@ -1144,10 +988,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public Builder addOGDCFMHPMOA(
@@ -1162,10 +1002,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public Builder addAllOGDCFMHPMOA(
@@ -1181,10 +1017,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public Builder clearOGDCFMHPMOA() {
@@ -1198,10 +1030,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public Builder removeOGDCFMHPMOA(int index) {
@@ -1215,10 +1043,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB.Builder getOGDCFMHPMOABuilder(
@@ -1226,10 +1050,6 @@ public final class MLKEPALIBDLOuterClass {
         return getOGDCFMHPMOAFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFABOrBuilder getOGDCFMHPMOAOrBuilder(
@@ -1240,10 +1060,6 @@ public final class MLKEPALIBDLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFABOrBuilder> 
@@ -1255,10 +1071,6 @@ public final class MLKEPALIBDLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB.Builder addOGDCFMHPMOABuilder() {
@@ -1266,10 +1078,6 @@ public final class MLKEPALIBDLOuterClass {
             emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB.Builder addOGDCFMHPMOABuilder(
@@ -1278,10 +1086,6 @@ public final class MLKEPALIBDLOuterClass {
             index, emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NODKKPOIFAB OGDCFMHPMOA = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NODKKPOIFABOuterClass.NODKKPOIFAB.Builder> 
@@ -1305,10 +1109,6 @@ public final class MLKEPALIBDLOuterClass {
 
       private int gEADDCLGIEG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GEADDCLGIEG = 12;</code>
        * @return The gEADDCLGIEG.
        */
@@ -1317,10 +1117,6 @@ public final class MLKEPALIBDLOuterClass {
         return gEADDCLGIEG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GEADDCLGIEG = 12;</code>
        * @param value The gEADDCLGIEG to set.
        * @return This builder for chaining.
@@ -1332,10 +1128,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GEADDCLGIEG = 12;</code>
        * @return This builder for chaining.
        */
@@ -1348,10 +1140,6 @@ public final class MLKEPALIBDLOuterClass {
 
       private boolean eGCKMPLDFNE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool EGCKMPLDFNE = 9;</code>
        * @return The eGCKMPLDFNE.
        */
@@ -1360,10 +1148,6 @@ public final class MLKEPALIBDLOuterClass {
         return eGCKMPLDFNE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool EGCKMPLDFNE = 9;</code>
        * @param value The eGCKMPLDFNE to set.
        * @return This builder for chaining.
@@ -1375,10 +1159,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool EGCKMPLDFNE = 9;</code>
        * @return This builder for chaining.
        */
@@ -1391,10 +1171,6 @@ public final class MLKEPALIBDLOuterClass {
 
       private boolean ePGCCPAAKJJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool EPGCCPAAKJJ = 10;</code>
        * @return The ePGCCPAAKJJ.
        */
@@ -1403,10 +1179,6 @@ public final class MLKEPALIBDLOuterClass {
         return ePGCCPAAKJJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool EPGCCPAAKJJ = 10;</code>
        * @param value The ePGCCPAAKJJ to set.
        * @return This builder for chaining.
@@ -1418,10 +1190,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool EPGCCPAAKJJ = 10;</code>
        * @return This builder for chaining.
        */
@@ -1434,10 +1202,6 @@ public final class MLKEPALIBDLOuterClass {
 
       private int dELMJNOKJMF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DELMJNOKJMF = 14;</code>
        * @return The dELMJNOKJMF.
        */
@@ -1446,10 +1210,6 @@ public final class MLKEPALIBDLOuterClass {
         return dELMJNOKJMF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DELMJNOKJMF = 14;</code>
        * @param value The dELMJNOKJMF to set.
        * @return This builder for chaining.
@@ -1461,10 +1221,6 @@ public final class MLKEPALIBDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DELMJNOKJMF = 14;</code>
        * @return This builder for chaining.
        */

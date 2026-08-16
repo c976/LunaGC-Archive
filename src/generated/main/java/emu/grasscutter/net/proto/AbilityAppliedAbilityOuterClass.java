@@ -20,7 +20,7 @@ public final class AbilityAppliedAbilityOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -29,7 +29,7 @@ public final class AbilityAppliedAbilityOuterClass {
         getOverrideMapList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -37,7 +37,7 @@ public final class AbilityAppliedAbilityOuterClass {
     emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry getOverrideMap(int index);
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -45,7 +45,7 @@ public final class AbilityAppliedAbilityOuterClass {
     int getOverrideMapCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -54,7 +54,7 @@ public final class AbilityAppliedAbilityOuterClass {
         getOverrideMapOrBuilderList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -64,34 +64,7 @@ public final class AbilityAppliedAbilityOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>.AbilityString ability_name = 1;</code>
-     * @return Whether the abilityName field is set.
-     */
-    boolean hasAbilityName();
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>.AbilityString ability_name = 1;</code>
-     * @return The abilityName.
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName();
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>.AbilityString ability_name = 1;</code>
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString ability_override = 2;</code>
@@ -100,7 +73,7 @@ public final class AbilityAppliedAbilityOuterClass {
     boolean hasAbilityOverride();
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString ability_override = 2;</code>
@@ -109,7 +82,7 @@ public final class AbilityAppliedAbilityOuterClass {
     emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityOverride();
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString ability_override = 2;</code>
@@ -118,7 +91,34 @@ public final class AbilityAppliedAbilityOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 56
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilityString ability_name = 1;</code>
+     * @return Whether the abilityName field is set.
+     */
+    boolean hasAbilityName();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilityString ability_name = 1;</code>
+     * @return The abilityName.
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilityString ability_name = 1;</code>
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 instanced_ability_id = 4;</code>
@@ -252,7 +252,7 @@ public final class AbilityAppliedAbilityOuterClass {
     private java.util.List<emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry> overrideMap_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -263,7 +263,7 @@ public final class AbilityAppliedAbilityOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -275,7 +275,7 @@ public final class AbilityAppliedAbilityOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -286,7 +286,7 @@ public final class AbilityAppliedAbilityOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -297,7 +297,7 @@ public final class AbilityAppliedAbilityOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -308,49 +308,11 @@ public final class AbilityAppliedAbilityOuterClass {
       return overrideMap_.get(index);
     }
 
-    public static final int ABILITY_NAME_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityName_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>.AbilityString ability_name = 1;</code>
-     * @return Whether the abilityName field is set.
-     */
-    @java.lang.Override
-    public boolean hasAbilityName() {
-      return abilityName_ != null;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>.AbilityString ability_name = 1;</code>
-     * @return The abilityName.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName() {
-      return abilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : abilityName_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>.AbilityString ability_name = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder() {
-      return getAbilityName();
-    }
-
     public static final int ABILITY_OVERRIDE_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityOverride_;
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString ability_override = 2;</code>
@@ -362,7 +324,7 @@ public final class AbilityAppliedAbilityOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString ability_override = 2;</code>
@@ -374,7 +336,7 @@ public final class AbilityAppliedAbilityOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString ability_override = 2;</code>
@@ -384,11 +346,49 @@ public final class AbilityAppliedAbilityOuterClass {
       return getAbilityOverride();
     }
 
+    public static final int ABILITY_NAME_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityName_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilityString ability_name = 1;</code>
+     * @return Whether the abilityName field is set.
+     */
+    @java.lang.Override
+    public boolean hasAbilityName() {
+      return abilityName_ != null;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilityString ability_name = 1;</code>
+     * @return The abilityName.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName() {
+      return abilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : abilityName_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilityString ability_name = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder() {
+      return getAbilityName();
+    }
+
     public static final int INSTANCED_ABILITY_ID_FIELD_NUMBER = 4;
     private int instancedAbilityId_;
     /**
      * <pre>
-     *6.3.0 // offset: 56
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 instanced_ability_id = 4;</code>
@@ -467,15 +467,15 @@ public final class AbilityAppliedAbilityOuterClass {
 
       if (!getOverrideMapList()
           .equals(other.getOverrideMapList())) return false;
-      if (hasAbilityName() != other.hasAbilityName()) return false;
-      if (hasAbilityName()) {
-        if (!getAbilityName()
-            .equals(other.getAbilityName())) return false;
-      }
       if (hasAbilityOverride() != other.hasAbilityOverride()) return false;
       if (hasAbilityOverride()) {
         if (!getAbilityOverride()
             .equals(other.getAbilityOverride())) return false;
+      }
+      if (hasAbilityName() != other.hasAbilityName()) return false;
+      if (hasAbilityName()) {
+        if (!getAbilityName()
+            .equals(other.getAbilityName())) return false;
       }
       if (getInstancedAbilityId()
           != other.getInstancedAbilityId()) return false;
@@ -494,13 +494,13 @@ public final class AbilityAppliedAbilityOuterClass {
         hash = (37 * hash) + OVERRIDE_MAP_FIELD_NUMBER;
         hash = (53 * hash) + getOverrideMapList().hashCode();
       }
-      if (hasAbilityName()) {
-        hash = (37 * hash) + ABILITY_NAME_FIELD_NUMBER;
-        hash = (53 * hash) + getAbilityName().hashCode();
-      }
       if (hasAbilityOverride()) {
         hash = (37 * hash) + ABILITY_OVERRIDE_FIELD_NUMBER;
         hash = (53 * hash) + getAbilityOverride().hashCode();
+      }
+      if (hasAbilityName()) {
+        hash = (37 * hash) + ABILITY_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getAbilityName().hashCode();
       }
       hash = (37 * hash) + INSTANCED_ABILITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getInstancedAbilityId();
@@ -644,17 +644,17 @@ public final class AbilityAppliedAbilityOuterClass {
         } else {
           overrideMapBuilder_.clear();
         }
-        if (abilityNameBuilder_ == null) {
-          abilityName_ = null;
-        } else {
-          abilityName_ = null;
-          abilityNameBuilder_ = null;
-        }
         if (abilityOverrideBuilder_ == null) {
           abilityOverride_ = null;
         } else {
           abilityOverride_ = null;
           abilityOverrideBuilder_ = null;
+        }
+        if (abilityNameBuilder_ == null) {
+          abilityName_ = null;
+        } else {
+          abilityName_ = null;
+          abilityNameBuilder_ = null;
         }
         instancedAbilityId_ = 0;
 
@@ -694,15 +694,15 @@ public final class AbilityAppliedAbilityOuterClass {
         } else {
           result.overrideMap_ = overrideMapBuilder_.build();
         }
-        if (abilityNameBuilder_ == null) {
-          result.abilityName_ = abilityName_;
-        } else {
-          result.abilityName_ = abilityNameBuilder_.build();
-        }
         if (abilityOverrideBuilder_ == null) {
           result.abilityOverride_ = abilityOverride_;
         } else {
           result.abilityOverride_ = abilityOverrideBuilder_.build();
+        }
+        if (abilityNameBuilder_ == null) {
+          result.abilityName_ = abilityName_;
+        } else {
+          result.abilityName_ = abilityNameBuilder_.build();
         }
         result.instancedAbilityId_ = instancedAbilityId_;
         onBuilt();
@@ -779,11 +779,11 @@ public final class AbilityAppliedAbilityOuterClass {
             }
           }
         }
-        if (other.hasAbilityName()) {
-          mergeAbilityName(other.getAbilityName());
-        }
         if (other.hasAbilityOverride()) {
           mergeAbilityOverride(other.getAbilityOverride());
+        }
+        if (other.hasAbilityName()) {
+          mergeAbilityName(other.getAbilityName());
         }
         if (other.getInstancedAbilityId() != 0) {
           setInstancedAbilityId(other.getInstancedAbilityId());
@@ -832,7 +832,7 @@ public final class AbilityAppliedAbilityOuterClass {
 
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -846,7 +846,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -860,7 +860,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -874,7 +874,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -895,7 +895,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -913,7 +913,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -933,7 +933,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -954,7 +954,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -972,7 +972,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -990,7 +990,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -1009,7 +1009,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -1026,7 +1026,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -1043,7 +1043,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -1054,7 +1054,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -1068,7 +1068,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -1083,7 +1083,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -1094,7 +1094,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -1106,7 +1106,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated .AbilityScalarValueEntry override_map = 3;</code>
@@ -1130,167 +1130,12 @@ public final class AbilityAppliedAbilityOuterClass {
         return overrideMapBuilder_;
       }
 
-      private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityName_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> abilityNameBuilder_;
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>.AbilityString ability_name = 1;</code>
-       * @return Whether the abilityName field is set.
-       */
-      public boolean hasAbilityName() {
-        return abilityNameBuilder_ != null || abilityName_ != null;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>.AbilityString ability_name = 1;</code>
-       * @return The abilityName.
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName() {
-        if (abilityNameBuilder_ == null) {
-          return abilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : abilityName_;
-        } else {
-          return abilityNameBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>.AbilityString ability_name = 1;</code>
-       */
-      public Builder setAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
-        if (abilityNameBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          abilityName_ = value;
-          onChanged();
-        } else {
-          abilityNameBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>.AbilityString ability_name = 1;</code>
-       */
-      public Builder setAbilityName(
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
-        if (abilityNameBuilder_ == null) {
-          abilityName_ = builderForValue.build();
-          onChanged();
-        } else {
-          abilityNameBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>.AbilityString ability_name = 1;</code>
-       */
-      public Builder mergeAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
-        if (abilityNameBuilder_ == null) {
-          if (abilityName_ != null) {
-            abilityName_ =
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.newBuilder(abilityName_).mergeFrom(value).buildPartial();
-          } else {
-            abilityName_ = value;
-          }
-          onChanged();
-        } else {
-          abilityNameBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>.AbilityString ability_name = 1;</code>
-       */
-      public Builder clearAbilityName() {
-        if (abilityNameBuilder_ == null) {
-          abilityName_ = null;
-          onChanged();
-        } else {
-          abilityName_ = null;
-          abilityNameBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>.AbilityString ability_name = 1;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getAbilityNameBuilder() {
-        
-        onChanged();
-        return getAbilityNameFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>.AbilityString ability_name = 1;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder() {
-        if (abilityNameBuilder_ != null) {
-          return abilityNameBuilder_.getMessageOrBuilder();
-        } else {
-          return abilityName_ == null ?
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : abilityName_;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>.AbilityString ability_name = 1;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
-          getAbilityNameFieldBuilder() {
-        if (abilityNameBuilder_ == null) {
-          abilityNameBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder>(
-                  getAbilityName(),
-                  getParentForChildren(),
-                  isClean());
-          abilityName_ = null;
-        }
-        return abilityNameBuilder_;
-      }
-
       private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityOverride_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> abilityOverrideBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString ability_override = 2;</code>
@@ -1301,7 +1146,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString ability_override = 2;</code>
@@ -1316,7 +1161,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString ability_override = 2;</code>
@@ -1336,7 +1181,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString ability_override = 2;</code>
@@ -1354,7 +1199,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString ability_override = 2;</code>
@@ -1376,7 +1221,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString ability_override = 2;</code>
@@ -1394,7 +1239,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString ability_override = 2;</code>
@@ -1406,7 +1251,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString ability_override = 2;</code>
@@ -1421,7 +1266,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString ability_override = 2;</code>
@@ -1440,10 +1285,165 @@ public final class AbilityAppliedAbilityOuterClass {
         return abilityOverrideBuilder_;
       }
 
+      private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityName_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> abilityNameBuilder_;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilityString ability_name = 1;</code>
+       * @return Whether the abilityName field is set.
+       */
+      public boolean hasAbilityName() {
+        return abilityNameBuilder_ != null || abilityName_ != null;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilityString ability_name = 1;</code>
+       * @return The abilityName.
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName() {
+        if (abilityNameBuilder_ == null) {
+          return abilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : abilityName_;
+        } else {
+          return abilityNameBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilityString ability_name = 1;</code>
+       */
+      public Builder setAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
+        if (abilityNameBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          abilityName_ = value;
+          onChanged();
+        } else {
+          abilityNameBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilityString ability_name = 1;</code>
+       */
+      public Builder setAbilityName(
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
+        if (abilityNameBuilder_ == null) {
+          abilityName_ = builderForValue.build();
+          onChanged();
+        } else {
+          abilityNameBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilityString ability_name = 1;</code>
+       */
+      public Builder mergeAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
+        if (abilityNameBuilder_ == null) {
+          if (abilityName_ != null) {
+            abilityName_ =
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.newBuilder(abilityName_).mergeFrom(value).buildPartial();
+          } else {
+            abilityName_ = value;
+          }
+          onChanged();
+        } else {
+          abilityNameBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilityString ability_name = 1;</code>
+       */
+      public Builder clearAbilityName() {
+        if (abilityNameBuilder_ == null) {
+          abilityName_ = null;
+          onChanged();
+        } else {
+          abilityName_ = null;
+          abilityNameBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilityString ability_name = 1;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getAbilityNameBuilder() {
+        
+        onChanged();
+        return getAbilityNameFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilityString ability_name = 1;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder() {
+        if (abilityNameBuilder_ != null) {
+          return abilityNameBuilder_.getMessageOrBuilder();
+        } else {
+          return abilityName_ == null ?
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : abilityName_;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilityString ability_name = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
+          getAbilityNameFieldBuilder() {
+        if (abilityNameBuilder_ == null) {
+          abilityNameBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder>(
+                  getAbilityName(),
+                  getParentForChildren(),
+                  isClean());
+          abilityName_ = null;
+        }
+        return abilityNameBuilder_;
+      }
+
       private int instancedAbilityId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 56
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 instanced_ability_id = 4;</code>
@@ -1455,7 +1455,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 56
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 instanced_ability_id = 4;</code>
@@ -1470,7 +1470,7 @@ public final class AbilityAppliedAbilityOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 56
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 instanced_ability_id = 4;</code>
@@ -1552,9 +1552,9 @@ public final class AbilityAppliedAbilityOuterClass {
       "\n\033AbilityAppliedAbility.proto\032\035AbilitySc" +
       "alarValueEntry.proto\032\023AbilityString.prot" +
       "o\"\265\001\n\025AbilityAppliedAbility\022.\n\014override_" +
-      "map\030\003 \003(\0132\030.AbilityScalarValueEntry\022$\n\014a" +
-      "bility_name\030\001 \001(\0132\016.AbilityString\022(\n\020abi" +
-      "lity_override\030\002 \001(\0132\016.AbilityString\022\034\n\024i" +
+      "map\030\003 \003(\0132\030.AbilityScalarValueEntry\022(\n\020a" +
+      "bility_override\030\002 \001(\0132\016.AbilityString\022$\n" +
+      "\014ability_name\030\001 \001(\0132\016.AbilityString\022\034\n\024i" +
       "nstanced_ability_id\030\004 \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
@@ -1569,7 +1569,7 @@ public final class AbilityAppliedAbilityOuterClass {
     internal_static_AbilityAppliedAbility_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityAppliedAbility_descriptor,
-        new java.lang.String[] { "OverrideMap", "AbilityName", "AbilityOverride", "InstancedAbilityId", });
+        new java.lang.String[] { "OverrideMap", "AbilityOverride", "AbilityName", "InstancedAbilityId", });
     emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
   }

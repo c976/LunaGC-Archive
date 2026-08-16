@@ -19,40 +19,24 @@ public final class EABCJHIGCNPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 AAHNFINJFAF = 2;</code>
      * @return The aAHNFINJFAF.
      */
     long getAAHNFINJFAF();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 6;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
@@ -158,10 +142,6 @@ public final class EABCJHIGCNPOuterClass {
     public static final int AAHNFINJFAF_FIELD_NUMBER = 2;
     private long aAHNFINJFAF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 AAHNFINJFAF = 2;</code>
      * @return The aAHNFINJFAF.
      */
@@ -173,10 +153,6 @@ public final class EABCJHIGCNPOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 6;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 6;</code>
      * @return The isFinish.
      */
@@ -188,10 +164,6 @@ public final class EABCJHIGCNPOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 4;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
@@ -203,10 +175,6 @@ public final class EABCJHIGCNPOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
@@ -573,10 +541,6 @@ public final class EABCJHIGCNPOuterClass {
 
       private long aAHNFINJFAF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 AAHNFINJFAF = 2;</code>
        * @return The aAHNFINJFAF.
        */
@@ -585,10 +549,6 @@ public final class EABCJHIGCNPOuterClass {
         return aAHNFINJFAF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 AAHNFINJFAF = 2;</code>
        * @param value The aAHNFINJFAF to set.
        * @return This builder for chaining.
@@ -600,10 +560,6 @@ public final class EABCJHIGCNPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 AAHNFINJFAF = 2;</code>
        * @return This builder for chaining.
        */
@@ -616,10 +572,6 @@ public final class EABCJHIGCNPOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 6;</code>
        * @return The isFinish.
        */
@@ -628,10 +580,6 @@ public final class EABCJHIGCNPOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 6;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -643,10 +591,6 @@ public final class EABCJHIGCNPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 6;</code>
        * @return This builder for chaining.
        */
@@ -659,10 +603,6 @@ public final class EABCJHIGCNPOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return The isOpen.
        */
@@ -671,10 +611,6 @@ public final class EABCJHIGCNPOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -686,10 +622,6 @@ public final class EABCJHIGCNPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return This builder for chaining.
        */
@@ -702,10 +634,6 @@ public final class EABCJHIGCNPOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
@@ -714,10 +642,6 @@ public final class EABCJHIGCNPOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -729,10 +653,6 @@ public final class EABCJHIGCNPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */

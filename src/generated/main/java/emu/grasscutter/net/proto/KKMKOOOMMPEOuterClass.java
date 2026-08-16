@@ -19,30 +19,18 @@ public final class KKMKOOOMMPEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 3;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HIGMOFMFNJM = 2;</code>
      * @return The hIGMOFMFNJM.
      */
@@ -143,10 +131,6 @@ public final class KKMKOOOMMPEOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 3;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 3;</code>
      * @return The openTime.
      */
@@ -158,10 +142,6 @@ public final class KKMKOOOMMPEOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 14;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
@@ -173,10 +153,6 @@ public final class KKMKOOOMMPEOuterClass {
     public static final int HIGMOFMFNJM_FIELD_NUMBER = 2;
     private int hIGMOFMFNJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HIGMOFMFNJM = 2;</code>
      * @return The hIGMOFMFNJM.
      */
@@ -524,10 +500,6 @@ public final class KKMKOOOMMPEOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 3;</code>
        * @return The openTime.
        */
@@ -536,10 +508,6 @@ public final class KKMKOOOMMPEOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 3;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class KKMKOOOMMPEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 3;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class KKMKOOOMMPEOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 14;</code>
        * @return The isOpen.
        */
@@ -579,10 +539,6 @@ public final class KKMKOOOMMPEOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 14;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class KKMKOOOMMPEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 14;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class KKMKOOOMMPEOuterClass {
 
       private int hIGMOFMFNJM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HIGMOFMFNJM = 2;</code>
        * @return The hIGMOFMFNJM.
        */
@@ -622,10 +570,6 @@ public final class KKMKOOOMMPEOuterClass {
         return hIGMOFMFNJM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HIGMOFMFNJM = 2;</code>
        * @param value The hIGMOFMFNJM to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class KKMKOOOMMPEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HIGMOFMFNJM = 2;</code>
        * @return This builder for chaining.
        */

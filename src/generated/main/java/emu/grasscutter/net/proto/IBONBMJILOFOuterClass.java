@@ -19,54 +19,30 @@ public final class IBONBMJILOFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL> 
         getILMJFKCGPODList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
      */
     emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL getILMJFKCGPOD(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
      */
     int getILMJFKCGPODCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEALOrBuilder> 
         getILMJFKCGPODOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
      */
     emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEALOrBuilder getILMJFKCGPODOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IKHGLOCOGOI = 13;</code>
      * @return The iKHGLOCOGOI.
      */
@@ -171,10 +147,6 @@ public final class IBONBMJILOFOuterClass {
     public static final int ILMJFKCGPOD_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL> iLMJFKCGPOD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
      */
     @java.lang.Override
@@ -182,10 +154,6 @@ public final class IBONBMJILOFOuterClass {
       return iLMJFKCGPOD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
      */
     @java.lang.Override
@@ -194,10 +162,6 @@ public final class IBONBMJILOFOuterClass {
       return iLMJFKCGPOD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
      */
     @java.lang.Override
@@ -205,10 +169,6 @@ public final class IBONBMJILOFOuterClass {
       return iLMJFKCGPOD_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
      */
     @java.lang.Override
@@ -216,10 +176,6 @@ public final class IBONBMJILOFOuterClass {
       return iLMJFKCGPOD_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
      */
     @java.lang.Override
@@ -231,10 +187,6 @@ public final class IBONBMJILOFOuterClass {
     public static final int IKHGLOCOGOI_FIELD_NUMBER = 13;
     private int iKHGLOCOGOI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IKHGLOCOGOI = 13;</code>
      * @return The iKHGLOCOGOI.
      */
@@ -615,10 +567,6 @@ public final class IBONBMJILOFOuterClass {
           emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL, emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL.Builder, emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEALOrBuilder> iLMJFKCGPODBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL> getILMJFKCGPODList() {
@@ -629,10 +577,6 @@ public final class IBONBMJILOFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public int getILMJFKCGPODCount() {
@@ -643,10 +587,6 @@ public final class IBONBMJILOFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL getILMJFKCGPOD(int index) {
@@ -657,10 +597,6 @@ public final class IBONBMJILOFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public Builder setILMJFKCGPOD(
@@ -678,10 +614,6 @@ public final class IBONBMJILOFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public Builder setILMJFKCGPOD(
@@ -696,10 +628,6 @@ public final class IBONBMJILOFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public Builder addILMJFKCGPOD(emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL value) {
@@ -716,10 +644,6 @@ public final class IBONBMJILOFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public Builder addILMJFKCGPOD(
@@ -737,10 +661,6 @@ public final class IBONBMJILOFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public Builder addILMJFKCGPOD(
@@ -755,10 +675,6 @@ public final class IBONBMJILOFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public Builder addILMJFKCGPOD(
@@ -773,10 +689,6 @@ public final class IBONBMJILOFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public Builder addAllILMJFKCGPOD(
@@ -792,10 +704,6 @@ public final class IBONBMJILOFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public Builder clearILMJFKCGPOD() {
@@ -809,10 +717,6 @@ public final class IBONBMJILOFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public Builder removeILMJFKCGPOD(int index) {
@@ -826,10 +730,6 @@ public final class IBONBMJILOFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL.Builder getILMJFKCGPODBuilder(
@@ -837,10 +737,6 @@ public final class IBONBMJILOFOuterClass {
         return getILMJFKCGPODFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEALOrBuilder getILMJFKCGPODOrBuilder(
@@ -851,10 +747,6 @@ public final class IBONBMJILOFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEALOrBuilder> 
@@ -866,10 +758,6 @@ public final class IBONBMJILOFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL.Builder addILMJFKCGPODBuilder() {
@@ -877,10 +765,6 @@ public final class IBONBMJILOFOuterClass {
             emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL.Builder addILMJFKCGPODBuilder(
@@ -889,10 +773,6 @@ public final class IBONBMJILOFOuterClass {
             index, emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIOLDMCFEAL ILMJFKCGPOD = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MIOLDMCFEALOuterClass.MIOLDMCFEAL.Builder> 
@@ -916,10 +796,6 @@ public final class IBONBMJILOFOuterClass {
 
       private int iKHGLOCOGOI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IKHGLOCOGOI = 13;</code>
        * @return The iKHGLOCOGOI.
        */
@@ -928,10 +804,6 @@ public final class IBONBMJILOFOuterClass {
         return iKHGLOCOGOI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IKHGLOCOGOI = 13;</code>
        * @param value The iKHGLOCOGOI to set.
        * @return This builder for chaining.
@@ -943,10 +815,6 @@ public final class IBONBMJILOFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IKHGLOCOGOI = 13;</code>
        * @return This builder for chaining.
        */

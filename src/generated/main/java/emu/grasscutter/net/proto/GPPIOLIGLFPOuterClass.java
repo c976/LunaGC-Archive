@@ -19,44 +19,24 @@ public final class GPPIOLIGLFPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK> 
         getNGMHFHPAAMFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
      */
     emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK getNGMHFHPAAMF(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
      */
     int getNGMHFHPAAMFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDKOrBuilder> 
         getNGMHFHPAAMFOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
      */
     emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDKOrBuilder getNGMHFHPAAMFOrBuilder(
@@ -156,10 +136,6 @@ public final class GPPIOLIGLFPOuterClass {
     public static final int NGMHFHPAAMF_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK> nGMHFHPAAMF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class GPPIOLIGLFPOuterClass {
       return nGMHFHPAAMF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class GPPIOLIGLFPOuterClass {
       return nGMHFHPAAMF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class GPPIOLIGLFPOuterClass {
       return nGMHFHPAAMF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class GPPIOLIGLFPOuterClass {
       return nGMHFHPAAMF_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class GPPIOLIGLFPOuterClass {
           emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK, emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK.Builder, emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDKOrBuilder> nGMHFHPAAMFBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK> getNGMHFHPAAMFList() {
@@ -582,10 +538,6 @@ public final class GPPIOLIGLFPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public int getNGMHFHPAAMFCount() {
@@ -596,10 +548,6 @@ public final class GPPIOLIGLFPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK getNGMHFHPAAMF(int index) {
@@ -610,10 +558,6 @@ public final class GPPIOLIGLFPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public Builder setNGMHFHPAAMF(
@@ -631,10 +575,6 @@ public final class GPPIOLIGLFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public Builder setNGMHFHPAAMF(
@@ -649,10 +589,6 @@ public final class GPPIOLIGLFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public Builder addNGMHFHPAAMF(emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK value) {
@@ -669,10 +605,6 @@ public final class GPPIOLIGLFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -690,10 +622,6 @@ public final class GPPIOLIGLFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -708,10 +636,6 @@ public final class GPPIOLIGLFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -726,10 +650,6 @@ public final class GPPIOLIGLFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public Builder addAllNGMHFHPAAMF(
@@ -745,10 +665,6 @@ public final class GPPIOLIGLFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public Builder clearNGMHFHPAAMF() {
@@ -762,10 +678,6 @@ public final class GPPIOLIGLFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public Builder removeNGMHFHPAAMF(int index) {
@@ -779,10 +691,6 @@ public final class GPPIOLIGLFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK.Builder getNGMHFHPAAMFBuilder(
@@ -790,10 +698,6 @@ public final class GPPIOLIGLFPOuterClass {
         return getNGMHFHPAAMFFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDKOrBuilder getNGMHFHPAAMFOrBuilder(
@@ -804,10 +708,6 @@ public final class GPPIOLIGLFPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDKOrBuilder> 
@@ -819,10 +719,6 @@ public final class GPPIOLIGLFPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK.Builder addNGMHFHPAAMFBuilder() {
@@ -830,10 +726,6 @@ public final class GPPIOLIGLFPOuterClass {
             emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK.Builder addNGMHFHPAAMFBuilder(
@@ -842,10 +734,6 @@ public final class GPPIOLIGLFPOuterClass {
             index, emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DFONILLNEDK NGMHFHPAAMF = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DFONILLNEDKOuterClass.DFONILLNEDK.Builder> 

@@ -19,74 +19,42 @@ public final class LHAGNAJBOEHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO> 
         getKMBLDHOEOELList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
      */
     emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO getKMBLDHOEOEL(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
      */
     int getKMBLDHOEOELCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJOOrBuilder> 
         getKMBLDHOEOELOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
      */
     emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJOOrBuilder getKMBLDHOEOELOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool NLAEPBLMKDO = 15;</code>
      * @return The nLAEPBLMKDO.
      */
@@ -201,10 +169,6 @@ public final class LHAGNAJBOEHOuterClass {
     public static final int KMBLDHOEOEL_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO> kMBLDHOEOEL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
      */
     @java.lang.Override
@@ -212,10 +176,6 @@ public final class LHAGNAJBOEHOuterClass {
       return kMBLDHOEOEL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
      */
     @java.lang.Override
@@ -224,10 +184,6 @@ public final class LHAGNAJBOEHOuterClass {
       return kMBLDHOEOEL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
      */
     @java.lang.Override
@@ -235,10 +191,6 @@ public final class LHAGNAJBOEHOuterClass {
       return kMBLDHOEOEL_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
      */
     @java.lang.Override
@@ -246,10 +198,6 @@ public final class LHAGNAJBOEHOuterClass {
       return kMBLDHOEOEL_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
      */
     @java.lang.Override
@@ -261,10 +209,6 @@ public final class LHAGNAJBOEHOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 3;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
@@ -276,10 +220,6 @@ public final class LHAGNAJBOEHOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 10;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
@@ -291,10 +231,6 @@ public final class LHAGNAJBOEHOuterClass {
     public static final int NLAEPBLMKDO_FIELD_NUMBER = 15;
     private boolean nLAEPBLMKDO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool NLAEPBLMKDO = 15;</code>
      * @return The nLAEPBLMKDO.
      */
@@ -711,10 +647,6 @@ public final class LHAGNAJBOEHOuterClass {
           emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO, emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO.Builder, emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJOOrBuilder> kMBLDHOEOELBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO> getKMBLDHOEOELList() {
@@ -725,10 +657,6 @@ public final class LHAGNAJBOEHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public int getKMBLDHOEOELCount() {
@@ -739,10 +667,6 @@ public final class LHAGNAJBOEHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO getKMBLDHOEOEL(int index) {
@@ -753,10 +677,6 @@ public final class LHAGNAJBOEHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public Builder setKMBLDHOEOEL(
@@ -774,10 +694,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public Builder setKMBLDHOEOEL(
@@ -792,10 +708,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public Builder addKMBLDHOEOEL(emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO value) {
@@ -812,10 +724,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public Builder addKMBLDHOEOEL(
@@ -833,10 +741,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public Builder addKMBLDHOEOEL(
@@ -851,10 +755,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public Builder addKMBLDHOEOEL(
@@ -869,10 +769,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public Builder addAllKMBLDHOEOEL(
@@ -888,10 +784,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public Builder clearKMBLDHOEOEL() {
@@ -905,10 +797,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public Builder removeKMBLDHOEOEL(int index) {
@@ -922,10 +810,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO.Builder getKMBLDHOEOELBuilder(
@@ -933,10 +817,6 @@ public final class LHAGNAJBOEHOuterClass {
         return getKMBLDHOEOELFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJOOrBuilder getKMBLDHOEOELOrBuilder(
@@ -947,10 +827,6 @@ public final class LHAGNAJBOEHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJOOrBuilder> 
@@ -962,10 +838,6 @@ public final class LHAGNAJBOEHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO.Builder addKMBLDHOEOELBuilder() {
@@ -973,10 +845,6 @@ public final class LHAGNAJBOEHOuterClass {
             emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO.Builder addKMBLDHOEOELBuilder(
@@ -985,10 +853,6 @@ public final class LHAGNAJBOEHOuterClass {
             index, emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMKFPEIMOJO KMBLDHOEOEL = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JMKFPEIMOJOOuterClass.JMKFPEIMOJO.Builder> 
@@ -1012,10 +876,6 @@ public final class LHAGNAJBOEHOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @return The levelId.
        */
@@ -1024,10 +884,6 @@ public final class LHAGNAJBOEHOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1039,10 +895,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @return This builder for chaining.
        */
@@ -1055,10 +907,6 @@ public final class LHAGNAJBOEHOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @return The isOpen.
        */
@@ -1067,10 +915,6 @@ public final class LHAGNAJBOEHOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1082,10 +926,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @return This builder for chaining.
        */
@@ -1098,10 +938,6 @@ public final class LHAGNAJBOEHOuterClass {
 
       private boolean nLAEPBLMKDO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool NLAEPBLMKDO = 15;</code>
        * @return The nLAEPBLMKDO.
        */
@@ -1110,10 +946,6 @@ public final class LHAGNAJBOEHOuterClass {
         return nLAEPBLMKDO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool NLAEPBLMKDO = 15;</code>
        * @param value The nLAEPBLMKDO to set.
        * @return This builder for chaining.
@@ -1125,10 +957,6 @@ public final class LHAGNAJBOEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool NLAEPBLMKDO = 15;</code>
        * @return This builder for chaining.
        */

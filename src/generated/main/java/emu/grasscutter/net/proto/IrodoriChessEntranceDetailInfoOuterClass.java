@@ -19,50 +19,34 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+     * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG> 
+    java.util.List<emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo> 
         getInfoListList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+     * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
      */
-    emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG getInfoList(int index);
+    emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo getInfoList(int index);
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+     * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
      */
     int getInfoListCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+     * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJGOrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfoOrBuilder> 
         getInfoListOrBuilderList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+     * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
      */
-    emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJGOrBuilder getInfoListOrBuilder(
+    emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfoOrBuilder getInfoListOrBuilder(
         int index);
   }
   /**
+   * <pre>
+   * Obf: ABNNHPELNPH
+   * </pre>
+   *
    * Protobuf type {@code IrodoriChessEntranceDetailInfo}
    */
   public static final class IrodoriChessEntranceDetailInfo extends
@@ -111,11 +95,11 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
               break;
             case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                infoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG>();
+                infoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               infoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -154,61 +138,41 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
     }
 
     public static final int INFO_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG> infoList_;
+    private java.util.List<emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo> infoList_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+     * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG> getInfoListList() {
+    public java.util.List<emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo> getInfoListList() {
       return infoList_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+     * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJGOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfoOrBuilder> 
         getInfoListOrBuilderList() {
       return infoList_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+     * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
      */
     @java.lang.Override
     public int getInfoListCount() {
       return infoList_.size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+     * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG getInfoList(int index) {
+    public emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo getInfoList(int index) {
       return infoList_.get(index);
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+     * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJGOrBuilder getInfoListOrBuilder(
+    public emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfoOrBuilder getInfoListOrBuilder(
         int index) {
       return infoList_.get(index);
     }
@@ -371,6 +335,10 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: ABNNHPELNPH
+     * </pre>
+     *
      * Protobuf type {@code IrodoriChessEntranceDetailInfo}
      */
     public static final class Builder extends
@@ -555,26 +523,22 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG> infoList_ =
+      private java.util.List<emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo> infoList_ =
         java.util.Collections.emptyList();
       private void ensureInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          infoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG>(infoList_);
+          infoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo>(infoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG, emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.Builder, emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJGOrBuilder> infoListBuilder_;
+          emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo, emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.Builder, emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfoOrBuilder> infoListBuilder_;
 
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG> getInfoListList() {
+      public java.util.List<emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo> getInfoListList() {
         if (infoListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(infoList_);
         } else {
@@ -582,11 +546,7 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
       public int getInfoListCount() {
         if (infoListBuilder_ == null) {
@@ -596,13 +556,9 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG getInfoList(int index) {
+      public emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo getInfoList(int index) {
         if (infoListBuilder_ == null) {
           return infoList_.get(index);
         } else {
@@ -610,14 +566,10 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
       public Builder setInfoList(
-          int index, emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG value) {
+          int index, emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo value) {
         if (infoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -631,14 +583,10 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
       public Builder setInfoList(
-          int index, emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.Builder builderForValue) {
         if (infoListBuilder_ == null) {
           ensureInfoListIsMutable();
           infoList_.set(index, builderForValue.build());
@@ -649,13 +597,9 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
-      public Builder addInfoList(emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG value) {
+      public Builder addInfoList(emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo value) {
         if (infoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -669,14 +613,10 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
       public Builder addInfoList(
-          int index, emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG value) {
+          int index, emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo value) {
         if (infoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -690,14 +630,10 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
       public Builder addInfoList(
-          emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.Builder builderForValue) {
+          emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.Builder builderForValue) {
         if (infoListBuilder_ == null) {
           ensureInfoListIsMutable();
           infoList_.add(builderForValue.build());
@@ -708,14 +644,10 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
       public Builder addInfoList(
-          int index, emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.Builder builderForValue) {
         if (infoListBuilder_ == null) {
           ensureInfoListIsMutable();
           infoList_.add(index, builderForValue.build());
@@ -726,14 +658,10 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
       public Builder addAllInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo> values) {
         if (infoListBuilder_ == null) {
           ensureInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -745,11 +673,7 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
       public Builder clearInfoList() {
         if (infoListBuilder_ == null) {
@@ -762,11 +686,7 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
       public Builder removeInfoList(int index) {
         if (infoListBuilder_ == null) {
@@ -779,24 +699,16 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.Builder getInfoListBuilder(
+      public emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.Builder getInfoListBuilder(
           int index) {
         return getInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJGOrBuilder getInfoListOrBuilder(
+      public emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfoOrBuilder getInfoListOrBuilder(
           int index) {
         if (infoListBuilder_ == null) {
           return infoList_.get(index);  } else {
@@ -804,13 +716,9 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJGOrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfoOrBuilder> 
            getInfoListOrBuilderList() {
         if (infoListBuilder_ != null) {
           return infoListBuilder_.getMessageOrBuilderList();
@@ -819,45 +727,33 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.Builder addInfoListBuilder() {
+      public emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.Builder addInfoListBuilder() {
         return getInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.getDefaultInstance());
+            emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.Builder addInfoListBuilder(
+      public emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.Builder addInfoListBuilder(
           int index) {
         return getInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.getDefaultInstance());
+            index, emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .CLNHGPEMPJG info_list = 9;</code>
+       * <code>repeated .IrodoriChessEntranceInfo info_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.Builder> 
            getInfoListBuilderList() {
         return getInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG, emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.Builder, emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJGOrBuilder> 
+          emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo, emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.Builder, emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfoOrBuilder> 
           getInfoListFieldBuilder() {
         if (infoListBuilder_ == null) {
           infoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG, emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJG.Builder, emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.CLNHGPEMPJGOrBuilder>(
+              emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo, emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfo.Builder, emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.IrodoriChessEntranceInfoOrBuilder>(
                   infoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -933,16 +829,16 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$IrodoriChessEntranceDetailInfo.proto\032\021" +
-      "CLNHGPEMPJG.proto\"A\n\036IrodoriChessEntranc" +
-      "eDetailInfo\022\037\n\tinfo_list\030\t \003(\0132\014.CLNHGPE" +
-      "MPJGB\033\n\031emu.grasscutter.net.protob\006proto" +
-      "3"
+      "\n$IrodoriChessEntranceDetailInfo.proto\032\036" +
+      "IrodoriChessEntranceInfo.proto\"N\n\036Irodor" +
+      "iChessEntranceDetailInfo\022,\n\tinfo_list\030\t " +
+      "\003(\0132\031.IrodoriChessEntranceInfoB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.getDescriptor(),
         });
     internal_static_IrodoriChessEntranceDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -950,7 +846,7 @@ public final class IrodoriChessEntranceDetailInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IrodoriChessEntranceDetailInfo_descriptor,
         new java.lang.String[] { "InfoList", });
-    emu.grasscutter.net.proto.CLNHGPEMPJGOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.IrodoriChessEntranceInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

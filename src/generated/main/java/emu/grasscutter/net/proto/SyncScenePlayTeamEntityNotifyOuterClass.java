@@ -19,62 +19,42 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+     * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo> 
-        getCDGJOMNGIHFList();
+        getDCBANMCKCMPList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+     * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
      */
-    emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo getCDGJOMNGIHF(int index);
+    emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo getDCBANMCKCMP(int index);
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+     * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
      */
-    int getCDGJOMNGIHFCount();
+    int getDCBANMCKCMPCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+     * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder> 
-        getCDGJOMNGIHFOrBuilderList();
+        getDCBANMCKCMPOrBuilderList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+     * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
      */
-    emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder getCDGJOMNGIHFOrBuilder(
+    emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder getDCBANMCKCMPOrBuilder(
         int index);
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 scene_id = 15;</code>
+     * <code>uint32 scene_id = 11;</code>
      * @return The sceneId.
      */
     int getSceneId();
   }
   /**
    * <pre>
-   * CmdId: 2142
+   * CmdId: 28714
    * </pre>
    *
    * Protobuf type {@code SyncScenePlayTeamEntityNotify}
@@ -89,7 +69,7 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
       super(builder);
     }
     private SyncScenePlayTeamEntityNotify() {
-      cDGJOMNGIHF_ = java.util.Collections.emptyList();
+      dCBANMCKCMP_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -125,14 +105,14 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
               break;
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cDGJOMNGIHF_ = new java.util.ArrayList<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo>();
+                dCBANMCKCMP_ = new java.util.ArrayList<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              cDGJOMNGIHF_.add(
+              dCBANMCKCMP_.add(
                   input.readMessage(emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.parser(), extensionRegistry));
               break;
             }
-            case 120: {
+            case 88: {
 
               sceneId_ = input.readUInt32();
               break;
@@ -153,7 +133,7 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          cDGJOMNGIHF_ = java.util.Collections.unmodifiableList(cDGJOMNGIHF_);
+          dCBANMCKCMP_ = java.util.Collections.unmodifiableList(dCBANMCKCMP_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -172,74 +152,54 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
               emu.grasscutter.net.proto.SyncScenePlayTeamEntityNotifyOuterClass.SyncScenePlayTeamEntityNotify.class, emu.grasscutter.net.proto.SyncScenePlayTeamEntityNotifyOuterClass.SyncScenePlayTeamEntityNotify.Builder.class);
     }
 
-    public static final int CDGJOMNGIHF_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo> cDGJOMNGIHF_;
+    public static final int DCBANMCKCMP_FIELD_NUMBER = 3;
+    private java.util.List<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo> dCBANMCKCMP_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+     * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo> getCDGJOMNGIHFList() {
-      return cDGJOMNGIHF_;
+    public java.util.List<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo> getDCBANMCKCMPList() {
+      return dCBANMCKCMP_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+     * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder> 
-        getCDGJOMNGIHFOrBuilderList() {
-      return cDGJOMNGIHF_;
+        getDCBANMCKCMPOrBuilderList() {
+      return dCBANMCKCMP_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+     * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
      */
     @java.lang.Override
-    public int getCDGJOMNGIHFCount() {
-      return cDGJOMNGIHF_.size();
+    public int getDCBANMCKCMPCount() {
+      return dCBANMCKCMP_.size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+     * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo getCDGJOMNGIHF(int index) {
-      return cDGJOMNGIHF_.get(index);
+    public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo getDCBANMCKCMP(int index) {
+      return dCBANMCKCMP_.get(index);
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+     * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder getCDGJOMNGIHFOrBuilder(
+    public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder getDCBANMCKCMPOrBuilder(
         int index) {
-      return cDGJOMNGIHF_.get(index);
+      return dCBANMCKCMP_.get(index);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 15;
+    public static final int SCENE_ID_FIELD_NUMBER = 11;
     private int sceneId_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 scene_id = 15;</code>
+     * <code>uint32 scene_id = 11;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -261,11 +221,11 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < cDGJOMNGIHF_.size(); i++) {
-        output.writeMessage(3, cDGJOMNGIHF_.get(i));
+      for (int i = 0; i < dCBANMCKCMP_.size(); i++) {
+        output.writeMessage(3, dCBANMCKCMP_.get(i));
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(15, sceneId_);
+        output.writeUInt32(11, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -276,13 +236,13 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < cDGJOMNGIHF_.size(); i++) {
+      for (int i = 0; i < dCBANMCKCMP_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, cDGJOMNGIHF_.get(i));
+          .computeMessageSize(3, dCBANMCKCMP_.get(i));
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, sceneId_);
+          .computeUInt32Size(11, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -299,8 +259,8 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SyncScenePlayTeamEntityNotifyOuterClass.SyncScenePlayTeamEntityNotify other = (emu.grasscutter.net.proto.SyncScenePlayTeamEntityNotifyOuterClass.SyncScenePlayTeamEntityNotify) obj;
 
-      if (!getCDGJOMNGIHFList()
-          .equals(other.getCDGJOMNGIHFList())) return false;
+      if (!getDCBANMCKCMPList()
+          .equals(other.getDCBANMCKCMPList())) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -314,9 +274,9 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getCDGJOMNGIHFCount() > 0) {
-        hash = (37 * hash) + CDGJOMNGIHF_FIELD_NUMBER;
-        hash = (53 * hash) + getCDGJOMNGIHFList().hashCode();
+      if (getDCBANMCKCMPCount() > 0) {
+        hash = (37 * hash) + DCBANMCKCMP_FIELD_NUMBER;
+        hash = (53 * hash) + getDCBANMCKCMPList().hashCode();
       }
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
@@ -417,7 +377,7 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2142
+     * CmdId: 28714
      * </pre>
      *
      * Protobuf type {@code SyncScenePlayTeamEntityNotify}
@@ -452,17 +412,17 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getCDGJOMNGIHFFieldBuilder();
+          getDCBANMCKCMPFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (cDGJOMNGIHFBuilder_ == null) {
-          cDGJOMNGIHF_ = java.util.Collections.emptyList();
+        if (dCBANMCKCMPBuilder_ == null) {
+          dCBANMCKCMP_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          cDGJOMNGIHFBuilder_.clear();
+          dCBANMCKCMPBuilder_.clear();
         }
         sceneId_ = 0;
 
@@ -493,14 +453,14 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
       public emu.grasscutter.net.proto.SyncScenePlayTeamEntityNotifyOuterClass.SyncScenePlayTeamEntityNotify buildPartial() {
         emu.grasscutter.net.proto.SyncScenePlayTeamEntityNotifyOuterClass.SyncScenePlayTeamEntityNotify result = new emu.grasscutter.net.proto.SyncScenePlayTeamEntityNotifyOuterClass.SyncScenePlayTeamEntityNotify(this);
         int from_bitField0_ = bitField0_;
-        if (cDGJOMNGIHFBuilder_ == null) {
+        if (dCBANMCKCMPBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            cDGJOMNGIHF_ = java.util.Collections.unmodifiableList(cDGJOMNGIHF_);
+            dCBANMCKCMP_ = java.util.Collections.unmodifiableList(dCBANMCKCMP_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.cDGJOMNGIHF_ = cDGJOMNGIHF_;
+          result.dCBANMCKCMP_ = dCBANMCKCMP_;
         } else {
-          result.cDGJOMNGIHF_ = cDGJOMNGIHFBuilder_.build();
+          result.dCBANMCKCMP_ = dCBANMCKCMPBuilder_.build();
         }
         result.sceneId_ = sceneId_;
         onBuilt();
@@ -551,29 +511,29 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SyncScenePlayTeamEntityNotifyOuterClass.SyncScenePlayTeamEntityNotify other) {
         if (other == emu.grasscutter.net.proto.SyncScenePlayTeamEntityNotifyOuterClass.SyncScenePlayTeamEntityNotify.getDefaultInstance()) return this;
-        if (cDGJOMNGIHFBuilder_ == null) {
-          if (!other.cDGJOMNGIHF_.isEmpty()) {
-            if (cDGJOMNGIHF_.isEmpty()) {
-              cDGJOMNGIHF_ = other.cDGJOMNGIHF_;
+        if (dCBANMCKCMPBuilder_ == null) {
+          if (!other.dCBANMCKCMP_.isEmpty()) {
+            if (dCBANMCKCMP_.isEmpty()) {
+              dCBANMCKCMP_ = other.dCBANMCKCMP_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureCDGJOMNGIHFIsMutable();
-              cDGJOMNGIHF_.addAll(other.cDGJOMNGIHF_);
+              ensureDCBANMCKCMPIsMutable();
+              dCBANMCKCMP_.addAll(other.dCBANMCKCMP_);
             }
             onChanged();
           }
         } else {
-          if (!other.cDGJOMNGIHF_.isEmpty()) {
-            if (cDGJOMNGIHFBuilder_.isEmpty()) {
-              cDGJOMNGIHFBuilder_.dispose();
-              cDGJOMNGIHFBuilder_ = null;
-              cDGJOMNGIHF_ = other.cDGJOMNGIHF_;
+          if (!other.dCBANMCKCMP_.isEmpty()) {
+            if (dCBANMCKCMPBuilder_.isEmpty()) {
+              dCBANMCKCMPBuilder_.dispose();
+              dCBANMCKCMPBuilder_ = null;
+              dCBANMCKCMP_ = other.dCBANMCKCMP_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              cDGJOMNGIHFBuilder_ = 
+              dCBANMCKCMPBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getCDGJOMNGIHFFieldBuilder() : null;
+                   getDCBANMCKCMPFieldBuilder() : null;
             } else {
-              cDGJOMNGIHFBuilder_.addAllMessages(other.cDGJOMNGIHF_);
+              dCBANMCKCMPBuilder_.addAllMessages(other.dCBANMCKCMP_);
             }
           }
         }
@@ -610,325 +570,253 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo> cDGJOMNGIHF_ =
+      private java.util.List<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo> dCBANMCKCMP_ =
         java.util.Collections.emptyList();
-      private void ensureCDGJOMNGIHFIsMutable() {
+      private void ensureDCBANMCKCMPIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          cDGJOMNGIHF_ = new java.util.ArrayList<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo>(cDGJOMNGIHF_);
+          dCBANMCKCMP_ = new java.util.ArrayList<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo>(dCBANMCKCMP_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder> cDGJOMNGIHFBuilder_;
+          emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder> dCBANMCKCMPBuilder_;
 
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo> getCDGJOMNGIHFList() {
-        if (cDGJOMNGIHFBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(cDGJOMNGIHF_);
+      public java.util.List<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo> getDCBANMCKCMPList() {
+        if (dCBANMCKCMPBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(dCBANMCKCMP_);
         } else {
-          return cDGJOMNGIHFBuilder_.getMessageList();
+          return dCBANMCKCMPBuilder_.getMessageList();
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public int getCDGJOMNGIHFCount() {
-        if (cDGJOMNGIHFBuilder_ == null) {
-          return cDGJOMNGIHF_.size();
+      public int getDCBANMCKCMPCount() {
+        if (dCBANMCKCMPBuilder_ == null) {
+          return dCBANMCKCMP_.size();
         } else {
-          return cDGJOMNGIHFBuilder_.getCount();
+          return dCBANMCKCMPBuilder_.getCount();
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo getCDGJOMNGIHF(int index) {
-        if (cDGJOMNGIHFBuilder_ == null) {
-          return cDGJOMNGIHF_.get(index);
+      public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo getDCBANMCKCMP(int index) {
+        if (dCBANMCKCMPBuilder_ == null) {
+          return dCBANMCKCMP_.get(index);
         } else {
-          return cDGJOMNGIHFBuilder_.getMessage(index);
+          return dCBANMCKCMPBuilder_.getMessage(index);
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public Builder setCDGJOMNGIHF(
+      public Builder setDCBANMCKCMP(
           int index, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo value) {
-        if (cDGJOMNGIHFBuilder_ == null) {
+        if (dCBANMCKCMPBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCDGJOMNGIHFIsMutable();
-          cDGJOMNGIHF_.set(index, value);
+          ensureDCBANMCKCMPIsMutable();
+          dCBANMCKCMP_.set(index, value);
           onChanged();
         } else {
-          cDGJOMNGIHFBuilder_.setMessage(index, value);
+          dCBANMCKCMPBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public Builder setCDGJOMNGIHF(
+      public Builder setDCBANMCKCMP(
           int index, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder builderForValue) {
-        if (cDGJOMNGIHFBuilder_ == null) {
-          ensureCDGJOMNGIHFIsMutable();
-          cDGJOMNGIHF_.set(index, builderForValue.build());
+        if (dCBANMCKCMPBuilder_ == null) {
+          ensureDCBANMCKCMPIsMutable();
+          dCBANMCKCMP_.set(index, builderForValue.build());
           onChanged();
         } else {
-          cDGJOMNGIHFBuilder_.setMessage(index, builderForValue.build());
+          dCBANMCKCMPBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public Builder addCDGJOMNGIHF(emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo value) {
-        if (cDGJOMNGIHFBuilder_ == null) {
+      public Builder addDCBANMCKCMP(emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo value) {
+        if (dCBANMCKCMPBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCDGJOMNGIHFIsMutable();
-          cDGJOMNGIHF_.add(value);
+          ensureDCBANMCKCMPIsMutable();
+          dCBANMCKCMP_.add(value);
           onChanged();
         } else {
-          cDGJOMNGIHFBuilder_.addMessage(value);
+          dCBANMCKCMPBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public Builder addCDGJOMNGIHF(
+      public Builder addDCBANMCKCMP(
           int index, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo value) {
-        if (cDGJOMNGIHFBuilder_ == null) {
+        if (dCBANMCKCMPBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCDGJOMNGIHFIsMutable();
-          cDGJOMNGIHF_.add(index, value);
+          ensureDCBANMCKCMPIsMutable();
+          dCBANMCKCMP_.add(index, value);
           onChanged();
         } else {
-          cDGJOMNGIHFBuilder_.addMessage(index, value);
+          dCBANMCKCMPBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public Builder addCDGJOMNGIHF(
+      public Builder addDCBANMCKCMP(
           emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder builderForValue) {
-        if (cDGJOMNGIHFBuilder_ == null) {
-          ensureCDGJOMNGIHFIsMutable();
-          cDGJOMNGIHF_.add(builderForValue.build());
+        if (dCBANMCKCMPBuilder_ == null) {
+          ensureDCBANMCKCMPIsMutable();
+          dCBANMCKCMP_.add(builderForValue.build());
           onChanged();
         } else {
-          cDGJOMNGIHFBuilder_.addMessage(builderForValue.build());
+          dCBANMCKCMPBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public Builder addCDGJOMNGIHF(
+      public Builder addDCBANMCKCMP(
           int index, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder builderForValue) {
-        if (cDGJOMNGIHFBuilder_ == null) {
-          ensureCDGJOMNGIHFIsMutable();
-          cDGJOMNGIHF_.add(index, builderForValue.build());
+        if (dCBANMCKCMPBuilder_ == null) {
+          ensureDCBANMCKCMPIsMutable();
+          dCBANMCKCMP_.add(index, builderForValue.build());
           onChanged();
         } else {
-          cDGJOMNGIHFBuilder_.addMessage(index, builderForValue.build());
+          dCBANMCKCMPBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public Builder addAllCDGJOMNGIHF(
+      public Builder addAllDCBANMCKCMP(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo> values) {
-        if (cDGJOMNGIHFBuilder_ == null) {
-          ensureCDGJOMNGIHFIsMutable();
+        if (dCBANMCKCMPBuilder_ == null) {
+          ensureDCBANMCKCMPIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, cDGJOMNGIHF_);
+              values, dCBANMCKCMP_);
           onChanged();
         } else {
-          cDGJOMNGIHFBuilder_.addAllMessages(values);
+          dCBANMCKCMPBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public Builder clearCDGJOMNGIHF() {
-        if (cDGJOMNGIHFBuilder_ == null) {
-          cDGJOMNGIHF_ = java.util.Collections.emptyList();
+      public Builder clearDCBANMCKCMP() {
+        if (dCBANMCKCMPBuilder_ == null) {
+          dCBANMCKCMP_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          cDGJOMNGIHFBuilder_.clear();
+          dCBANMCKCMPBuilder_.clear();
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public Builder removeCDGJOMNGIHF(int index) {
-        if (cDGJOMNGIHFBuilder_ == null) {
-          ensureCDGJOMNGIHFIsMutable();
-          cDGJOMNGIHF_.remove(index);
+      public Builder removeDCBANMCKCMP(int index) {
+        if (dCBANMCKCMPBuilder_ == null) {
+          ensureDCBANMCKCMPIsMutable();
+          dCBANMCKCMP_.remove(index);
           onChanged();
         } else {
-          cDGJOMNGIHFBuilder_.remove(index);
+          dCBANMCKCMPBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder getCDGJOMNGIHFBuilder(
+      public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder getDCBANMCKCMPBuilder(
           int index) {
-        return getCDGJOMNGIHFFieldBuilder().getBuilder(index);
+        return getDCBANMCKCMPFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder getCDGJOMNGIHFOrBuilder(
+      public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder getDCBANMCKCMPOrBuilder(
           int index) {
-        if (cDGJOMNGIHFBuilder_ == null) {
-          return cDGJOMNGIHF_.get(index);  } else {
-          return cDGJOMNGIHFBuilder_.getMessageOrBuilder(index);
+        if (dCBANMCKCMPBuilder_ == null) {
+          return dCBANMCKCMP_.get(index);  } else {
+          return dCBANMCKCMPBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder> 
-           getCDGJOMNGIHFOrBuilderList() {
-        if (cDGJOMNGIHFBuilder_ != null) {
-          return cDGJOMNGIHFBuilder_.getMessageOrBuilderList();
+           getDCBANMCKCMPOrBuilderList() {
+        if (dCBANMCKCMPBuilder_ != null) {
+          return dCBANMCKCMPBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(cDGJOMNGIHF_);
+          return java.util.Collections.unmodifiableList(dCBANMCKCMP_);
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder addCDGJOMNGIHFBuilder() {
-        return getCDGJOMNGIHFFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder addDCBANMCKCMPBuilder() {
+        return getDCBANMCKCMPFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
-      public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder addCDGJOMNGIHFBuilder(
+      public emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder addDCBANMCKCMPBuilder(
           int index) {
-        return getCDGJOMNGIHFFieldBuilder().addBuilder(
+        return getDCBANMCKCMPFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PlayTeamEntityInfo CDGJOMNGIHF = 3;</code>
+       * <code>repeated .PlayTeamEntityInfo DCBANMCKCMP = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder> 
-           getCDGJOMNGIHFBuilderList() {
-        return getCDGJOMNGIHFFieldBuilder().getBuilderList();
+           getDCBANMCKCMPBuilderList() {
+        return getDCBANMCKCMPFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder> 
-          getCDGJOMNGIHFFieldBuilder() {
-        if (cDGJOMNGIHFBuilder_ == null) {
-          cDGJOMNGIHFBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getDCBANMCKCMPFieldBuilder() {
+        if (dCBANMCKCMPBuilder_ == null) {
+          dCBANMCKCMPBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfo.Builder, emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.PlayTeamEntityInfoOrBuilder>(
-                  cDGJOMNGIHF_,
+                  dCBANMCKCMP_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          cDGJOMNGIHF_ = null;
+          dCBANMCKCMP_ = null;
         }
-        return cDGJOMNGIHFBuilder_;
+        return dCBANMCKCMPBuilder_;
       }
 
       private int sceneId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 scene_id = 15;</code>
+       * <code>uint32 scene_id = 11;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -937,10 +825,10 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 scene_id = 15;</code>
+       * <code>uint32 scene_id = 11;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -952,10 +840,10 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 scene_id = 15;</code>
+       * <code>uint32 scene_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -1033,8 +921,8 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#SyncScenePlayTeamEntityNotify.proto\032\030P" +
       "layTeamEntityInfo.proto\"[\n\035SyncScenePlay" +
-      "TeamEntityNotify\022(\n\013CDGJOMNGIHF\030\003 \003(\0132\023." +
-      "PlayTeamEntityInfo\022\020\n\010scene_id\030\017 \001(\rB\033\n\031" +
+      "TeamEntityNotify\022(\n\013DCBANMCKCMP\030\003 \003(\0132\023." +
+      "PlayTeamEntityInfo\022\020\n\010scene_id\030\013 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1047,7 +935,7 @@ public final class SyncScenePlayTeamEntityNotifyOuterClass {
     internal_static_SyncScenePlayTeamEntityNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SyncScenePlayTeamEntityNotify_descriptor,
-        new java.lang.String[] { "CDGJOMNGIHF", "SceneId", });
+        new java.lang.String[] { "DCBANMCKCMP", "SceneId", });
     emu.grasscutter.net.proto.PlayTeamEntityInfoOuterClass.getDescriptor();
   }
 

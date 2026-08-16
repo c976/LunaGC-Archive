@@ -19,26 +19,18 @@ public final class JLDEGMCAOCMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 IFADGMHEFHF = 7;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 7;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
@@ -96,7 +88,7 @@ public final class JLDEGMCAOCMOuterClass {
             }
             case 56: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 64: {
@@ -136,24 +128,20 @@ public final class JLDEGMCAOCMOuterClass {
               emu.grasscutter.net.proto.JLDEGMCAOCMOuterClass.JLDEGMCAOCM.class, emu.grasscutter.net.proto.JLDEGMCAOCMOuterClass.JLDEGMCAOCM.Builder.class);
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 7;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 7;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 7;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 7;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
@@ -165,10 +153,6 @@ public final class JLDEGMCAOCMOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 8;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
@@ -194,8 +178,8 @@ public final class JLDEGMCAOCMOuterClass {
       if (isOpen_ != false) {
         output.writeBool(2, isOpen_);
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(7, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(7, ugcGuid_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(8, levelId_);
@@ -213,9 +197,9 @@ public final class JLDEGMCAOCMOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, isOpen_);
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, iFADGMHEFHF_);
+          .computeUInt32Size(7, ugcGuid_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -236,8 +220,8 @@ public final class JLDEGMCAOCMOuterClass {
       }
       emu.grasscutter.net.proto.JLDEGMCAOCMOuterClass.JLDEGMCAOCM other = (emu.grasscutter.net.proto.JLDEGMCAOCMOuterClass.JLDEGMCAOCM) obj;
 
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getLevelId()
@@ -253,8 +237,8 @@ public final class JLDEGMCAOCMOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -393,7 +377,7 @@ public final class JLDEGMCAOCMOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         isOpen_ = false;
 
@@ -425,7 +409,7 @@ public final class JLDEGMCAOCMOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.JLDEGMCAOCMOuterClass.JLDEGMCAOCM buildPartial() {
         emu.grasscutter.net.proto.JLDEGMCAOCMOuterClass.JLDEGMCAOCM result = new emu.grasscutter.net.proto.JLDEGMCAOCMOuterClass.JLDEGMCAOCM(this);
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         result.isOpen_ = isOpen_;
         result.levelId_ = levelId_;
         onBuilt();
@@ -476,8 +460,8 @@ public final class JLDEGMCAOCMOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.JLDEGMCAOCMOuterClass.JLDEGMCAOCM other) {
         if (other == emu.grasscutter.net.proto.JLDEGMCAOCMOuterClass.JLDEGMCAOCM.getDefaultInstance()) return this;
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -514,43 +498,39 @@ public final class JLDEGMCAOCMOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 7;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 7;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 7;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 7;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 7;</code>
+       * <code>uint32 ugc_guid = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
@@ -559,10 +539,6 @@ public final class JLDEGMCAOCMOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -574,10 +550,6 @@ public final class JLDEGMCAOCMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
@@ -590,10 +562,6 @@ public final class JLDEGMCAOCMOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @return The levelId.
        */
@@ -602,10 +570,6 @@ public final class JLDEGMCAOCMOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -617,10 +581,6 @@ public final class JLDEGMCAOCMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @return This builder for chaining.
        */
@@ -697,10 +657,10 @@ public final class JLDEGMCAOCMOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021JLDEGMCAOCM.proto\"E\n\013JLDEGMCAOCM\022\023\n\013IF" +
-      "ADGMHEFHF\030\007 \001(\r\022\017\n\007is_open\030\002 \001(\010\022\020\n\010leve" +
-      "l_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\021JLDEGMCAOCM.proto\"B\n\013JLDEGMCAOCM\022\020\n\010ug" +
+      "c_guid\030\007 \001(\r\022\017\n\007is_open\030\002 \001(\010\022\020\n\010level_i" +
+      "d\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -711,7 +671,7 @@ public final class JLDEGMCAOCMOuterClass {
     internal_static_JLDEGMCAOCM_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_JLDEGMCAOCM_descriptor,
-        new java.lang.String[] { "IFADGMHEFHF", "IsOpen", "LevelId", });
+        new java.lang.String[] { "UgcGuid", "IsOpen", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,30 +19,18 @@ public final class GALEFHAGNCDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool LHPDAMGALJL = 12;</code>
      * @return The lHPDAMGALJL.
      */
     boolean getLHPDAMGALJL();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
@@ -143,10 +131,6 @@ public final class GALEFHAGNCDOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
@@ -158,10 +142,6 @@ public final class GALEFHAGNCDOuterClass {
     public static final int LHPDAMGALJL_FIELD_NUMBER = 12;
     private boolean lHPDAMGALJL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool LHPDAMGALJL = 12;</code>
      * @return The lHPDAMGALJL.
      */
@@ -173,10 +153,6 @@ public final class GALEFHAGNCDOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 15;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
@@ -525,10 +501,6 @@ public final class GALEFHAGNCDOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
@@ -537,10 +509,6 @@ public final class GALEFHAGNCDOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -552,10 +520,6 @@ public final class GALEFHAGNCDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
@@ -568,10 +532,6 @@ public final class GALEFHAGNCDOuterClass {
 
       private boolean lHPDAMGALJL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LHPDAMGALJL = 12;</code>
        * @return The lHPDAMGALJL.
        */
@@ -580,10 +540,6 @@ public final class GALEFHAGNCDOuterClass {
         return lHPDAMGALJL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LHPDAMGALJL = 12;</code>
        * @param value The lHPDAMGALJL to set.
        * @return This builder for chaining.
@@ -595,10 +551,6 @@ public final class GALEFHAGNCDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LHPDAMGALJL = 12;</code>
        * @return This builder for chaining.
        */
@@ -611,10 +563,6 @@ public final class GALEFHAGNCDOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return The isOpen.
        */
@@ -623,10 +571,6 @@ public final class GALEFHAGNCDOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -638,10 +582,6 @@ public final class GALEFHAGNCDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return This builder for chaining.
        */

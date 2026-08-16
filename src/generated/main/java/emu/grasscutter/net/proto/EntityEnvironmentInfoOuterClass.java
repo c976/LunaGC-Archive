@@ -20,23 +20,23 @@ public final class EntityEnvironmentInfoOuterClass {
 
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 OIICNIJCPAG = 2;</code>
-     * @return The oIICNIJCPAG.
+     * <code>uint32 json_climate_type = 1;</code>
+     * @return The jsonClimateType.
      */
-    int getOIICNIJCPAG();
+    int getJsonClimateType();
 
     /**
      * <pre>
-     * offset: 36
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 BAGCJLAOEDK = 1;</code>
-     * @return The bAGCJLAOEDK.
+     * <code>uint32 climate_area_id = 2;</code>
+     * @return The climateAreaId.
      */
-    int getBAGCJLAOEDK();
+    int getClimateAreaId();
   }
   /**
    * Protobuf type {@code EntityEnvironmentInfo}
@@ -85,12 +85,12 @@ public final class EntityEnvironmentInfoOuterClass {
               break;
             case 8: {
 
-              bAGCJLAOEDK_ = input.readUInt32();
+              jsonClimateType_ = input.readUInt32();
               break;
             }
             case 16: {
 
-              oIICNIJCPAG_ = input.readUInt32();
+              climateAreaId_ = input.readUInt32();
               break;
             }
             default: {
@@ -125,34 +125,34 @@ public final class EntityEnvironmentInfoOuterClass {
               emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.class, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder.class);
     }
 
-    public static final int OIICNIJCPAG_FIELD_NUMBER = 2;
-    private int oIICNIJCPAG_;
+    public static final int JSON_CLIMATE_TYPE_FIELD_NUMBER = 1;
+    private int jsonClimateType_;
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 OIICNIJCPAG = 2;</code>
-     * @return The oIICNIJCPAG.
+     * <code>uint32 json_climate_type = 1;</code>
+     * @return The jsonClimateType.
      */
     @java.lang.Override
-    public int getOIICNIJCPAG() {
-      return oIICNIJCPAG_;
+    public int getJsonClimateType() {
+      return jsonClimateType_;
     }
 
-    public static final int BAGCJLAOEDK_FIELD_NUMBER = 1;
-    private int bAGCJLAOEDK_;
+    public static final int CLIMATE_AREA_ID_FIELD_NUMBER = 2;
+    private int climateAreaId_;
     /**
      * <pre>
-     * offset: 36
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 BAGCJLAOEDK = 1;</code>
-     * @return The bAGCJLAOEDK.
+     * <code>uint32 climate_area_id = 2;</code>
+     * @return The climateAreaId.
      */
     @java.lang.Override
-    public int getBAGCJLAOEDK() {
-      return bAGCJLAOEDK_;
+    public int getClimateAreaId() {
+      return climateAreaId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -169,11 +169,11 @@ public final class EntityEnvironmentInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bAGCJLAOEDK_ != 0) {
-        output.writeUInt32(1, bAGCJLAOEDK_);
+      if (jsonClimateType_ != 0) {
+        output.writeUInt32(1, jsonClimateType_);
       }
-      if (oIICNIJCPAG_ != 0) {
-        output.writeUInt32(2, oIICNIJCPAG_);
+      if (climateAreaId_ != 0) {
+        output.writeUInt32(2, climateAreaId_);
       }
       unknownFields.writeTo(output);
     }
@@ -184,13 +184,13 @@ public final class EntityEnvironmentInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bAGCJLAOEDK_ != 0) {
+      if (jsonClimateType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, bAGCJLAOEDK_);
+          .computeUInt32Size(1, jsonClimateType_);
       }
-      if (oIICNIJCPAG_ != 0) {
+      if (climateAreaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, oIICNIJCPAG_);
+          .computeUInt32Size(2, climateAreaId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -207,10 +207,10 @@ public final class EntityEnvironmentInfoOuterClass {
       }
       emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo other = (emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo) obj;
 
-      if (getOIICNIJCPAG()
-          != other.getOIICNIJCPAG()) return false;
-      if (getBAGCJLAOEDK()
-          != other.getBAGCJLAOEDK()) return false;
+      if (getJsonClimateType()
+          != other.getJsonClimateType()) return false;
+      if (getClimateAreaId()
+          != other.getClimateAreaId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -222,10 +222,10 @@ public final class EntityEnvironmentInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OIICNIJCPAG_FIELD_NUMBER;
-      hash = (53 * hash) + getOIICNIJCPAG();
-      hash = (37 * hash) + BAGCJLAOEDK_FIELD_NUMBER;
-      hash = (53 * hash) + getBAGCJLAOEDK();
+      hash = (37 * hash) + JSON_CLIMATE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getJsonClimateType();
+      hash = (37 * hash) + CLIMATE_AREA_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getClimateAreaId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -359,9 +359,9 @@ public final class EntityEnvironmentInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oIICNIJCPAG_ = 0;
+        jsonClimateType_ = 0;
 
-        bAGCJLAOEDK_ = 0;
+        climateAreaId_ = 0;
 
         return this;
       }
@@ -389,8 +389,8 @@ public final class EntityEnvironmentInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo buildPartial() {
         emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo result = new emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo(this);
-        result.oIICNIJCPAG_ = oIICNIJCPAG_;
-        result.bAGCJLAOEDK_ = bAGCJLAOEDK_;
+        result.jsonClimateType_ = jsonClimateType_;
+        result.climateAreaId_ = climateAreaId_;
         onBuilt();
         return result;
       }
@@ -439,11 +439,11 @@ public final class EntityEnvironmentInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo other) {
         if (other == emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.getDefaultInstance()) return this;
-        if (other.getOIICNIJCPAG() != 0) {
-          setOIICNIJCPAG(other.getOIICNIJCPAG());
+        if (other.getJsonClimateType() != 0) {
+          setJsonClimateType(other.getJsonClimateType());
         }
-        if (other.getBAGCJLAOEDK() != 0) {
-          setBAGCJLAOEDK(other.getBAGCJLAOEDK());
+        if (other.getClimateAreaId() != 0) {
+          setClimateAreaId(other.getClimateAreaId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -474,88 +474,88 @@ public final class EntityEnvironmentInfoOuterClass {
         return this;
       }
 
-      private int oIICNIJCPAG_ ;
+      private int jsonClimateType_ ;
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 OIICNIJCPAG = 2;</code>
-       * @return The oIICNIJCPAG.
+       * <code>uint32 json_climate_type = 1;</code>
+       * @return The jsonClimateType.
        */
       @java.lang.Override
-      public int getOIICNIJCPAG() {
-        return oIICNIJCPAG_;
+      public int getJsonClimateType() {
+        return jsonClimateType_;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 OIICNIJCPAG = 2;</code>
-       * @param value The oIICNIJCPAG to set.
+       * <code>uint32 json_climate_type = 1;</code>
+       * @param value The jsonClimateType to set.
        * @return This builder for chaining.
        */
-      public Builder setOIICNIJCPAG(int value) {
+      public Builder setJsonClimateType(int value) {
         
-        oIICNIJCPAG_ = value;
+        jsonClimateType_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 OIICNIJCPAG = 2;</code>
+       * <code>uint32 json_climate_type = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOIICNIJCPAG() {
+      public Builder clearJsonClimateType() {
         
-        oIICNIJCPAG_ = 0;
+        jsonClimateType_ = 0;
         onChanged();
         return this;
       }
 
-      private int bAGCJLAOEDK_ ;
+      private int climateAreaId_ ;
       /**
        * <pre>
-       * offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 BAGCJLAOEDK = 1;</code>
-       * @return The bAGCJLAOEDK.
+       * <code>uint32 climate_area_id = 2;</code>
+       * @return The climateAreaId.
        */
       @java.lang.Override
-      public int getBAGCJLAOEDK() {
-        return bAGCJLAOEDK_;
+      public int getClimateAreaId() {
+        return climateAreaId_;
       }
       /**
        * <pre>
-       * offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 BAGCJLAOEDK = 1;</code>
-       * @param value The bAGCJLAOEDK to set.
+       * <code>uint32 climate_area_id = 2;</code>
+       * @param value The climateAreaId to set.
        * @return This builder for chaining.
        */
-      public Builder setBAGCJLAOEDK(int value) {
+      public Builder setClimateAreaId(int value) {
         
-        bAGCJLAOEDK_ = value;
+        climateAreaId_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 BAGCJLAOEDK = 1;</code>
+       * <code>uint32 climate_area_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBAGCJLAOEDK() {
+      public Builder clearClimateAreaId() {
         
-        bAGCJLAOEDK_ = 0;
+        climateAreaId_ = 0;
         onChanged();
         return this;
       }
@@ -626,10 +626,10 @@ public final class EntityEnvironmentInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033EntityEnvironmentInfo.proto\"A\n\025EntityE" +
-      "nvironmentInfo\022\023\n\013OIICNIJCPAG\030\002 \001(\r\022\023\n\013B" +
-      "AGCJLAOEDK\030\001 \001(\rB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "\n\033EntityEnvironmentInfo.proto\"K\n\025EntityE" +
+      "nvironmentInfo\022\031\n\021json_climate_type\030\001 \001(" +
+      "\r\022\027\n\017climate_area_id\030\002 \001(\rB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -640,7 +640,7 @@ public final class EntityEnvironmentInfoOuterClass {
     internal_static_EntityEnvironmentInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EntityEnvironmentInfo_descriptor,
-        new java.lang.String[] { "OIICNIJCPAG", "BAGCJLAOEDK", });
+        new java.lang.String[] { "JsonClimateType", "ClimateAreaId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

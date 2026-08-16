@@ -19,16 +19,12 @@ public final class CAHBJDIMOEGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 IFADGMHEFHF = 2;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 2;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AFHFEKMFIIL = 9;</code>
      * @return The aFHFEKMFIIL.
      */
@@ -81,7 +77,7 @@ public final class CAHBJDIMOEGOuterClass {
               break;
             case 16: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 72: {
@@ -121,24 +117,20 @@ public final class CAHBJDIMOEGOuterClass {
               emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG.class, emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG.Builder.class);
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 2;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 2;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 2;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 2;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     public static final int AFHFEKMFIIL_FIELD_NUMBER = 9;
     private int aFHFEKMFIIL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AFHFEKMFIIL = 9;</code>
      * @return The aFHFEKMFIIL.
      */
@@ -161,8 +153,8 @@ public final class CAHBJDIMOEGOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(2, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(2, ugcGuid_);
       }
       if (aFHFEKMFIIL_ != 0) {
         output.writeUInt32(9, aFHFEKMFIIL_);
@@ -176,9 +168,9 @@ public final class CAHBJDIMOEGOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, iFADGMHEFHF_);
+          .computeUInt32Size(2, ugcGuid_);
       }
       if (aFHFEKMFIIL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -199,8 +191,8 @@ public final class CAHBJDIMOEGOuterClass {
       }
       emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG other = (emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG) obj;
 
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (getAFHFEKMFIIL()
           != other.getAFHFEKMFIIL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -214,8 +206,8 @@ public final class CAHBJDIMOEGOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (37 * hash) + AFHFEKMFIIL_FIELD_NUMBER;
       hash = (53 * hash) + getAFHFEKMFIIL();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -351,7 +343,7 @@ public final class CAHBJDIMOEGOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         aFHFEKMFIIL_ = 0;
 
@@ -381,7 +373,7 @@ public final class CAHBJDIMOEGOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG buildPartial() {
         emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG result = new emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG(this);
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         result.aFHFEKMFIIL_ = aFHFEKMFIIL_;
         onBuilt();
         return result;
@@ -431,8 +423,8 @@ public final class CAHBJDIMOEGOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG other) {
         if (other == emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG.getDefaultInstance()) return this;
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         if (other.getAFHFEKMFIIL() != 0) {
           setAFHFEKMFIIL(other.getAFHFEKMFIIL());
@@ -466,43 +458,39 @@ public final class CAHBJDIMOEGOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 2;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 2;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 2;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 2;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 2;</code>
+       * <code>uint32 ugc_guid = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
       private int aFHFEKMFIIL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AFHFEKMFIIL = 9;</code>
        * @return The aFHFEKMFIIL.
        */
@@ -511,10 +499,6 @@ public final class CAHBJDIMOEGOuterClass {
         return aFHFEKMFIIL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AFHFEKMFIIL = 9;</code>
        * @param value The aFHFEKMFIIL to set.
        * @return This builder for chaining.
@@ -526,10 +510,6 @@ public final class CAHBJDIMOEGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AFHFEKMFIIL = 9;</code>
        * @return This builder for chaining.
        */
@@ -606,9 +586,9 @@ public final class CAHBJDIMOEGOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021CAHBJDIMOEG.proto\"7\n\013CAHBJDIMOEG\022\023\n\013IF" +
-      "ADGMHEFHF\030\002 \001(\r\022\023\n\013AFHFEKMFIIL\030\t \001(\rB\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "\n\021CAHBJDIMOEG.proto\"4\n\013CAHBJDIMOEG\022\020\n\010ug" +
+      "c_guid\030\002 \001(\r\022\023\n\013AFHFEKMFIIL\030\t \001(\rB\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -619,7 +599,7 @@ public final class CAHBJDIMOEGOuterClass {
     internal_static_CAHBJDIMOEG_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CAHBJDIMOEG_descriptor,
-        new java.lang.String[] { "IFADGMHEFHF", "AFHFEKMFIIL", });
+        new java.lang.String[] { "UgcGuid", "AFHFEKMFIIL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

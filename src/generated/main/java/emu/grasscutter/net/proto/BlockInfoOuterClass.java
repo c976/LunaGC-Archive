@@ -19,28 +19,20 @@ public final class BlockInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>bytes bin_data = 3;</code>
-     * @return The binData.
+     * <code>bytes HPOGBMJDMIN = 3;</code>
+     * @return The hPOGBMJDMIN.
      */
-    com.google.protobuf.ByteString getBinData();
+    com.google.protobuf.ByteString getHPOGBMJDMIN();
+
+    /**
+     * <code>bool NBGFPNHGBJI = 4;</code>
+     * @return The nBGFPNHGBJI.
+     */
+    boolean getNBGFPNHGBJI();
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>uint32 block_id = 1;</code>
-     * @return The blockId.
-     */
-    int getBlockId();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 44
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 data_version = 2;</code>
@@ -50,13 +42,13 @@ public final class BlockInfoOuterClass {
 
     /**
      * <pre>
-     * offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>bool is_dirty = 4;</code>
-     * @return The isDirty.
+     * <code>uint32 block_id = 1;</code>
+     * @return The blockId.
      */
-    boolean getIsDirty();
+    int getBlockId();
   }
   /**
    * Protobuf type {@code BlockInfo}
@@ -71,7 +63,7 @@ public final class BlockInfoOuterClass {
       super(builder);
     }
     private BlockInfo() {
-      binData_ = com.google.protobuf.ByteString.EMPTY;
+      hPOGBMJDMIN_ = com.google.protobuf.ByteString.EMPTY;
     }
 
     @java.lang.Override
@@ -116,12 +108,12 @@ public final class BlockInfoOuterClass {
             }
             case 26: {
 
-              binData_ = input.readBytes();
+              hPOGBMJDMIN_ = input.readBytes();
               break;
             }
             case 32: {
 
-              isDirty_ = input.readBool();
+              nBGFPNHGBJI_ = input.readBool();
               break;
             }
             default: {
@@ -156,41 +148,33 @@ public final class BlockInfoOuterClass {
               emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo.class, emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo.Builder.class);
     }
 
-    public static final int BIN_DATA_FIELD_NUMBER = 3;
-    private com.google.protobuf.ByteString binData_;
+    public static final int HPOGBMJDMIN_FIELD_NUMBER = 3;
+    private com.google.protobuf.ByteString hPOGBMJDMIN_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>bytes bin_data = 3;</code>
-     * @return The binData.
+     * <code>bytes HPOGBMJDMIN = 3;</code>
+     * @return The hPOGBMJDMIN.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString getBinData() {
-      return binData_;
+    public com.google.protobuf.ByteString getHPOGBMJDMIN() {
+      return hPOGBMJDMIN_;
     }
 
-    public static final int BLOCK_ID_FIELD_NUMBER = 1;
-    private int blockId_;
+    public static final int NBGFPNHGBJI_FIELD_NUMBER = 4;
+    private boolean nBGFPNHGBJI_;
     /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>uint32 block_id = 1;</code>
-     * @return The blockId.
+     * <code>bool NBGFPNHGBJI = 4;</code>
+     * @return The nBGFPNHGBJI.
      */
     @java.lang.Override
-    public int getBlockId() {
-      return blockId_;
+    public boolean getNBGFPNHGBJI() {
+      return nBGFPNHGBJI_;
     }
 
     public static final int DATA_VERSION_FIELD_NUMBER = 2;
     private int dataVersion_;
     /**
      * <pre>
-     *6.3.0 // offset: 44
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 data_version = 2;</code>
@@ -201,19 +185,19 @@ public final class BlockInfoOuterClass {
       return dataVersion_;
     }
 
-    public static final int IS_DIRTY_FIELD_NUMBER = 4;
-    private boolean isDirty_;
+    public static final int BLOCK_ID_FIELD_NUMBER = 1;
+    private int blockId_;
     /**
      * <pre>
-     * offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>bool is_dirty = 4;</code>
-     * @return The isDirty.
+     * <code>uint32 block_id = 1;</code>
+     * @return The blockId.
      */
     @java.lang.Override
-    public boolean getIsDirty() {
-      return isDirty_;
+    public int getBlockId() {
+      return blockId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -236,11 +220,11 @@ public final class BlockInfoOuterClass {
       if (dataVersion_ != 0) {
         output.writeUInt32(2, dataVersion_);
       }
-      if (!binData_.isEmpty()) {
-        output.writeBytes(3, binData_);
+      if (!hPOGBMJDMIN_.isEmpty()) {
+        output.writeBytes(3, hPOGBMJDMIN_);
       }
-      if (isDirty_ != false) {
-        output.writeBool(4, isDirty_);
+      if (nBGFPNHGBJI_ != false) {
+        output.writeBool(4, nBGFPNHGBJI_);
       }
       unknownFields.writeTo(output);
     }
@@ -259,13 +243,13 @@ public final class BlockInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, dataVersion_);
       }
-      if (!binData_.isEmpty()) {
+      if (!hPOGBMJDMIN_.isEmpty()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, binData_);
+          .computeBytesSize(3, hPOGBMJDMIN_);
       }
-      if (isDirty_ != false) {
+      if (nBGFPNHGBJI_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isDirty_);
+          .computeBoolSize(4, nBGFPNHGBJI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,14 +266,14 @@ public final class BlockInfoOuterClass {
       }
       emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo other = (emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo) obj;
 
-      if (!getBinData()
-          .equals(other.getBinData())) return false;
-      if (getBlockId()
-          != other.getBlockId()) return false;
+      if (!getHPOGBMJDMIN()
+          .equals(other.getHPOGBMJDMIN())) return false;
+      if (getNBGFPNHGBJI()
+          != other.getNBGFPNHGBJI()) return false;
       if (getDataVersion()
           != other.getDataVersion()) return false;
-      if (getIsDirty()
-          != other.getIsDirty()) return false;
+      if (getBlockId()
+          != other.getBlockId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -301,15 +285,15 @@ public final class BlockInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BIN_DATA_FIELD_NUMBER;
-      hash = (53 * hash) + getBinData().hashCode();
-      hash = (37 * hash) + BLOCK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBlockId();
+      hash = (37 * hash) + HPOGBMJDMIN_FIELD_NUMBER;
+      hash = (53 * hash) + getHPOGBMJDMIN().hashCode();
+      hash = (37 * hash) + NBGFPNHGBJI_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getNBGFPNHGBJI());
       hash = (37 * hash) + DATA_VERSION_FIELD_NUMBER;
       hash = (53 * hash) + getDataVersion();
-      hash = (37 * hash) + IS_DIRTY_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsDirty());
+      hash = (37 * hash) + BLOCK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBlockId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -443,13 +427,13 @@ public final class BlockInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        binData_ = com.google.protobuf.ByteString.EMPTY;
+        hPOGBMJDMIN_ = com.google.protobuf.ByteString.EMPTY;
 
-        blockId_ = 0;
+        nBGFPNHGBJI_ = false;
 
         dataVersion_ = 0;
 
-        isDirty_ = false;
+        blockId_ = 0;
 
         return this;
       }
@@ -477,10 +461,10 @@ public final class BlockInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo buildPartial() {
         emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo result = new emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo(this);
-        result.binData_ = binData_;
-        result.blockId_ = blockId_;
+        result.hPOGBMJDMIN_ = hPOGBMJDMIN_;
+        result.nBGFPNHGBJI_ = nBGFPNHGBJI_;
         result.dataVersion_ = dataVersion_;
-        result.isDirty_ = isDirty_;
+        result.blockId_ = blockId_;
         onBuilt();
         return result;
       }
@@ -529,17 +513,17 @@ public final class BlockInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo other) {
         if (other == emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo.getDefaultInstance()) return this;
-        if (other.getBinData() != com.google.protobuf.ByteString.EMPTY) {
-          setBinData(other.getBinData());
+        if (other.getHPOGBMJDMIN() != com.google.protobuf.ByteString.EMPTY) {
+          setHPOGBMJDMIN(other.getHPOGBMJDMIN());
         }
-        if (other.getBlockId() != 0) {
-          setBlockId(other.getBlockId());
+        if (other.getNBGFPNHGBJI() != false) {
+          setNBGFPNHGBJI(other.getNBGFPNHGBJI());
         }
         if (other.getDataVersion() != 0) {
           setDataVersion(other.getDataVersion());
         }
-        if (other.getIsDirty() != false) {
-          setIsDirty(other.getIsDirty());
+        if (other.getBlockId() != 0) {
+          setBlockId(other.getBlockId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -570,91 +554,67 @@ public final class BlockInfoOuterClass {
         return this;
       }
 
-      private com.google.protobuf.ByteString binData_ = com.google.protobuf.ByteString.EMPTY;
+      private com.google.protobuf.ByteString hPOGBMJDMIN_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>bytes bin_data = 3;</code>
-       * @return The binData.
+       * <code>bytes HPOGBMJDMIN = 3;</code>
+       * @return The hPOGBMJDMIN.
        */
       @java.lang.Override
-      public com.google.protobuf.ByteString getBinData() {
-        return binData_;
+      public com.google.protobuf.ByteString getHPOGBMJDMIN() {
+        return hPOGBMJDMIN_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>bytes bin_data = 3;</code>
-       * @param value The binData to set.
+       * <code>bytes HPOGBMJDMIN = 3;</code>
+       * @param value The hPOGBMJDMIN to set.
        * @return This builder for chaining.
        */
-      public Builder setBinData(com.google.protobuf.ByteString value) {
+      public Builder setHPOGBMJDMIN(com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        binData_ = value;
+        hPOGBMJDMIN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>bytes bin_data = 3;</code>
+       * <code>bytes HPOGBMJDMIN = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBinData() {
+      public Builder clearHPOGBMJDMIN() {
         
-        binData_ = getDefaultInstance().getBinData();
+        hPOGBMJDMIN_ = getDefaultInstance().getHPOGBMJDMIN();
         onChanged();
         return this;
       }
 
-      private int blockId_ ;
+      private boolean nBGFPNHGBJI_ ;
       /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 block_id = 1;</code>
-       * @return The blockId.
+       * <code>bool NBGFPNHGBJI = 4;</code>
+       * @return The nBGFPNHGBJI.
        */
       @java.lang.Override
-      public int getBlockId() {
-        return blockId_;
+      public boolean getNBGFPNHGBJI() {
+        return nBGFPNHGBJI_;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 block_id = 1;</code>
-       * @param value The blockId to set.
+       * <code>bool NBGFPNHGBJI = 4;</code>
+       * @param value The nBGFPNHGBJI to set.
        * @return This builder for chaining.
        */
-      public Builder setBlockId(int value) {
+      public Builder setNBGFPNHGBJI(boolean value) {
         
-        blockId_ = value;
+        nBGFPNHGBJI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 block_id = 1;</code>
+       * <code>bool NBGFPNHGBJI = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBlockId() {
+      public Builder clearNBGFPNHGBJI() {
         
-        blockId_ = 0;
+        nBGFPNHGBJI_ = false;
         onChanged();
         return this;
       }
@@ -662,7 +622,7 @@ public final class BlockInfoOuterClass {
       private int dataVersion_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 data_version = 2;</code>
@@ -674,7 +634,7 @@ public final class BlockInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 data_version = 2;</code>
@@ -689,7 +649,7 @@ public final class BlockInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 data_version = 2;</code>
@@ -702,45 +662,45 @@ public final class BlockInfoOuterClass {
         return this;
       }
 
-      private boolean isDirty_ ;
+      private int blockId_ ;
       /**
        * <pre>
-       * offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>bool is_dirty = 4;</code>
-       * @return The isDirty.
+       * <code>uint32 block_id = 1;</code>
+       * @return The blockId.
        */
       @java.lang.Override
-      public boolean getIsDirty() {
-        return isDirty_;
+      public int getBlockId() {
+        return blockId_;
       }
       /**
        * <pre>
-       * offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>bool is_dirty = 4;</code>
-       * @param value The isDirty to set.
+       * <code>uint32 block_id = 1;</code>
+       * @param value The blockId to set.
        * @return This builder for chaining.
        */
-      public Builder setIsDirty(boolean value) {
+      public Builder setBlockId(int value) {
         
-        isDirty_ = value;
+        blockId_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>bool is_dirty = 4;</code>
+       * <code>uint32 block_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsDirty() {
+      public Builder clearBlockId() {
         
-        isDirty_ = false;
+        blockId_ = 0;
         onChanged();
         return this;
       }
@@ -811,10 +771,10 @@ public final class BlockInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017BlockInfo.proto\"W\n\tBlockInfo\022\020\n\010bin_da" +
-      "ta\030\003 \001(\014\022\020\n\010block_id\030\001 \001(\r\022\024\n\014data_versi" +
-      "on\030\002 \001(\r\022\020\n\010is_dirty\030\004 \001(\010B\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\n\017BlockInfo.proto\"]\n\tBlockInfo\022\023\n\013HPOGBM" +
+      "JDMIN\030\003 \001(\014\022\023\n\013NBGFPNHGBJI\030\004 \001(\010\022\024\n\014data" +
+      "_version\030\002 \001(\r\022\020\n\010block_id\030\001 \001(\rB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -825,7 +785,7 @@ public final class BlockInfoOuterClass {
     internal_static_BlockInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlockInfo_descriptor,
-        new java.lang.String[] { "BinData", "BlockId", "DataVersion", "IsDirty", });
+        new java.lang.String[] { "HPOGBMJDMIN", "NBGFPNHGBJI", "DataVersion", "BlockId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

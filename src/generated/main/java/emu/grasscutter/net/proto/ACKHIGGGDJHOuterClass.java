@@ -19,94 +19,54 @@ public final class ACKHIGGGDJHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KBICANLBEOI = 1;</code>
      * @return The kBICANLBEOI.
      */
     int getKBICANLBEOI();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HDIKBBEMGGA = 9;</code>
      * @return The hDIKBBEMGGA.
      */
     boolean getHDIKBBEMGGA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 boss_challenge_id = 2;</code>
      * @return Whether the bossChallengeId field is set.
      */
     boolean hasBossChallengeId();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 boss_challenge_id = 2;</code>
      * @return The bossChallengeId.
      */
     int getBossChallengeId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LFEENJGNFLK bundle_info = 10;</code>
      * @return Whether the bundleInfo field is set.
      */
     boolean hasBundleInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LFEENJGNFLK bundle_info = 10;</code>
      * @return The bundleInfo.
      */
     emu.grasscutter.net.proto.LFEENJGNFLKOuterClass.LFEENJGNFLK getBundleInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LFEENJGNFLK bundle_info = 10;</code>
      */
     emu.grasscutter.net.proto.LFEENJGNFLKOuterClass.LFEENJGNFLKOrBuilder getBundleInfoOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
      * @return Whether the scoreChallengeInfo field is set.
      */
     boolean hasScoreChallengeInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
      * @return The scoreChallengeInfo.
      */
     emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG getScoreChallengeInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
      */
     emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEGOrBuilder getScoreChallengeInfoOrBuilder();
@@ -279,10 +239,6 @@ public final class ACKHIGGGDJHOuterClass {
     public static final int KBICANLBEOI_FIELD_NUMBER = 1;
     private int kBICANLBEOI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KBICANLBEOI = 1;</code>
      * @return The kBICANLBEOI.
      */
@@ -294,10 +250,6 @@ public final class ACKHIGGGDJHOuterClass {
     public static final int HDIKBBEMGGA_FIELD_NUMBER = 9;
     private boolean hDIKBBEMGGA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HDIKBBEMGGA = 9;</code>
      * @return The hDIKBBEMGGA.
      */
@@ -308,10 +260,6 @@ public final class ACKHIGGGDJHOuterClass {
 
     public static final int BOSS_CHALLENGE_ID_FIELD_NUMBER = 2;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 boss_challenge_id = 2;</code>
      * @return Whether the bossChallengeId field is set.
      */
@@ -320,10 +268,6 @@ public final class ACKHIGGGDJHOuterClass {
       return lOFOAFAPGDCCase_ == 2;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 boss_challenge_id = 2;</code>
      * @return The bossChallengeId.
      */
@@ -337,10 +281,6 @@ public final class ACKHIGGGDJHOuterClass {
 
     public static final int BUNDLE_INFO_FIELD_NUMBER = 10;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LFEENJGNFLK bundle_info = 10;</code>
      * @return Whether the bundleInfo field is set.
      */
@@ -349,10 +289,6 @@ public final class ACKHIGGGDJHOuterClass {
       return lOFOAFAPGDCCase_ == 10;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LFEENJGNFLK bundle_info = 10;</code>
      * @return The bundleInfo.
      */
@@ -364,10 +300,6 @@ public final class ACKHIGGGDJHOuterClass {
       return emu.grasscutter.net.proto.LFEENJGNFLKOuterClass.LFEENJGNFLK.getDefaultInstance();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.LFEENJGNFLK bundle_info = 10;</code>
      */
     @java.lang.Override
@@ -380,10 +312,6 @@ public final class ACKHIGGGDJHOuterClass {
 
     public static final int SCORE_CHALLENGE_INFO_FIELD_NUMBER = 11;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
      * @return Whether the scoreChallengeInfo field is set.
      */
@@ -392,10 +320,6 @@ public final class ACKHIGGGDJHOuterClass {
       return lOFOAFAPGDCCase_ == 11;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
      * @return The scoreChallengeInfo.
      */
@@ -407,10 +331,6 @@ public final class ACKHIGGGDJHOuterClass {
       return emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG.getDefaultInstance();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
      */
     @java.lang.Override
@@ -851,10 +771,6 @@ public final class ACKHIGGGDJHOuterClass {
 
       private int kBICANLBEOI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KBICANLBEOI = 1;</code>
        * @return The kBICANLBEOI.
        */
@@ -863,10 +779,6 @@ public final class ACKHIGGGDJHOuterClass {
         return kBICANLBEOI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KBICANLBEOI = 1;</code>
        * @param value The kBICANLBEOI to set.
        * @return This builder for chaining.
@@ -878,10 +790,6 @@ public final class ACKHIGGGDJHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KBICANLBEOI = 1;</code>
        * @return This builder for chaining.
        */
@@ -894,10 +802,6 @@ public final class ACKHIGGGDJHOuterClass {
 
       private boolean hDIKBBEMGGA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HDIKBBEMGGA = 9;</code>
        * @return The hDIKBBEMGGA.
        */
@@ -906,10 +810,6 @@ public final class ACKHIGGGDJHOuterClass {
         return hDIKBBEMGGA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HDIKBBEMGGA = 9;</code>
        * @param value The hDIKBBEMGGA to set.
        * @return This builder for chaining.
@@ -921,10 +821,6 @@ public final class ACKHIGGGDJHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HDIKBBEMGGA = 9;</code>
        * @return This builder for chaining.
        */
@@ -936,10 +832,6 @@ public final class ACKHIGGGDJHOuterClass {
       }
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 boss_challenge_id = 2;</code>
        * @return Whether the bossChallengeId field is set.
        */
@@ -947,10 +839,6 @@ public final class ACKHIGGGDJHOuterClass {
         return lOFOAFAPGDCCase_ == 2;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 boss_challenge_id = 2;</code>
        * @return The bossChallengeId.
        */
@@ -961,10 +849,6 @@ public final class ACKHIGGGDJHOuterClass {
         return 0;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 boss_challenge_id = 2;</code>
        * @param value The bossChallengeId to set.
        * @return This builder for chaining.
@@ -976,10 +860,6 @@ public final class ACKHIGGGDJHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 boss_challenge_id = 2;</code>
        * @return This builder for chaining.
        */
@@ -995,10 +875,6 @@ public final class ACKHIGGGDJHOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.LFEENJGNFLKOuterClass.LFEENJGNFLK, emu.grasscutter.net.proto.LFEENJGNFLKOuterClass.LFEENJGNFLK.Builder, emu.grasscutter.net.proto.LFEENJGNFLKOuterClass.LFEENJGNFLKOrBuilder> bundleInfoBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LFEENJGNFLK bundle_info = 10;</code>
        * @return Whether the bundleInfo field is set.
        */
@@ -1007,10 +883,6 @@ public final class ACKHIGGGDJHOuterClass {
         return lOFOAFAPGDCCase_ == 10;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LFEENJGNFLK bundle_info = 10;</code>
        * @return The bundleInfo.
        */
@@ -1029,10 +901,6 @@ public final class ACKHIGGGDJHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LFEENJGNFLK bundle_info = 10;</code>
        */
       public Builder setBundleInfo(emu.grasscutter.net.proto.LFEENJGNFLKOuterClass.LFEENJGNFLK value) {
@@ -1049,10 +917,6 @@ public final class ACKHIGGGDJHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LFEENJGNFLK bundle_info = 10;</code>
        */
       public Builder setBundleInfo(
@@ -1067,10 +931,6 @@ public final class ACKHIGGGDJHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LFEENJGNFLK bundle_info = 10;</code>
        */
       public Builder mergeBundleInfo(emu.grasscutter.net.proto.LFEENJGNFLKOuterClass.LFEENJGNFLK value) {
@@ -1093,10 +953,6 @@ public final class ACKHIGGGDJHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LFEENJGNFLK bundle_info = 10;</code>
        */
       public Builder clearBundleInfo() {
@@ -1116,20 +972,12 @@ public final class ACKHIGGGDJHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LFEENJGNFLK bundle_info = 10;</code>
        */
       public emu.grasscutter.net.proto.LFEENJGNFLKOuterClass.LFEENJGNFLK.Builder getBundleInfoBuilder() {
         return getBundleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LFEENJGNFLK bundle_info = 10;</code>
        */
       @java.lang.Override
@@ -1144,10 +992,6 @@ public final class ACKHIGGGDJHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.LFEENJGNFLK bundle_info = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1172,10 +1016,6 @@ public final class ACKHIGGGDJHOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG, emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG.Builder, emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEGOrBuilder> scoreChallengeInfoBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
        * @return Whether the scoreChallengeInfo field is set.
        */
@@ -1184,10 +1024,6 @@ public final class ACKHIGGGDJHOuterClass {
         return lOFOAFAPGDCCase_ == 11;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
        * @return The scoreChallengeInfo.
        */
@@ -1206,10 +1042,6 @@ public final class ACKHIGGGDJHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
        */
       public Builder setScoreChallengeInfo(emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG value) {
@@ -1226,10 +1058,6 @@ public final class ACKHIGGGDJHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
        */
       public Builder setScoreChallengeInfo(
@@ -1244,10 +1072,6 @@ public final class ACKHIGGGDJHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
        */
       public Builder mergeScoreChallengeInfo(emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG value) {
@@ -1270,10 +1094,6 @@ public final class ACKHIGGGDJHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
        */
       public Builder clearScoreChallengeInfo() {
@@ -1293,20 +1113,12 @@ public final class ACKHIGGGDJHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
        */
       public emu.grasscutter.net.proto.CAHBJDIMOEGOuterClass.CAHBJDIMOEG.Builder getScoreChallengeInfoBuilder() {
         return getScoreChallengeInfoFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
        */
       @java.lang.Override
@@ -1321,10 +1133,6 @@ public final class ACKHIGGGDJHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.CAHBJDIMOEG score_challenge_info = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<

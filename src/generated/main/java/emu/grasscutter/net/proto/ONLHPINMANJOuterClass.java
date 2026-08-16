@@ -19,26 +19,18 @@ public final class ONLHPINMANJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 EGHGENOJNEK = 1;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 13;</code>
      * @return The oMEBOHLACPH.
      */
@@ -91,7 +83,7 @@ public final class ONLHPINMANJOuterClass {
               break;
             case 8: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 104: {
@@ -136,24 +128,20 @@ public final class ONLHPINMANJOuterClass {
               emu.grasscutter.net.proto.ONLHPINMANJOuterClass.ONLHPINMANJ.class, emu.grasscutter.net.proto.ONLHPINMANJOuterClass.ONLHPINMANJ.Builder.class);
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 1;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 1;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 15;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
@@ -165,10 +153,6 @@ public final class ONLHPINMANJOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 13;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 13;</code>
      * @return The oMEBOHLACPH.
      */
@@ -191,8 +175,8 @@ public final class ONLHPINMANJOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(1, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(1, stageId_);
       }
       if (oMEBOHLACPH_ != 0) {
         output.writeUInt32(13, oMEBOHLACPH_);
@@ -209,9 +193,9 @@ public final class ONLHPINMANJOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, eGHGENOJNEK_);
+          .computeUInt32Size(1, stageId_);
       }
       if (oMEBOHLACPH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -236,8 +220,8 @@ public final class ONLHPINMANJOuterClass {
       }
       emu.grasscutter.net.proto.ONLHPINMANJOuterClass.ONLHPINMANJ other = (emu.grasscutter.net.proto.ONLHPINMANJOuterClass.ONLHPINMANJ) obj;
 
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getOMEBOHLACPH()
@@ -253,8 +237,8 @@ public final class ONLHPINMANJOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -393,7 +377,7 @@ public final class ONLHPINMANJOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         isOpen_ = false;
 
@@ -425,7 +409,7 @@ public final class ONLHPINMANJOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ONLHPINMANJOuterClass.ONLHPINMANJ buildPartial() {
         emu.grasscutter.net.proto.ONLHPINMANJOuterClass.ONLHPINMANJ result = new emu.grasscutter.net.proto.ONLHPINMANJOuterClass.ONLHPINMANJ(this);
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.isOpen_ = isOpen_;
         result.oMEBOHLACPH_ = oMEBOHLACPH_;
         onBuilt();
@@ -476,8 +460,8 @@ public final class ONLHPINMANJOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ONLHPINMANJOuterClass.ONLHPINMANJ other) {
         if (other == emu.grasscutter.net.proto.ONLHPINMANJOuterClass.ONLHPINMANJ.getDefaultInstance()) return this;
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -514,43 +498,39 @@ public final class ONLHPINMANJOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 1;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 1;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 1;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 1;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 1;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return The isOpen.
        */
@@ -559,10 +539,6 @@ public final class ONLHPINMANJOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -574,10 +550,6 @@ public final class ONLHPINMANJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return This builder for chaining.
        */
@@ -590,10 +562,6 @@ public final class ONLHPINMANJOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 13;</code>
        * @return The oMEBOHLACPH.
        */
@@ -602,10 +570,6 @@ public final class ONLHPINMANJOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 13;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -617,10 +581,6 @@ public final class ONLHPINMANJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 13;</code>
        * @return This builder for chaining.
        */
@@ -697,10 +657,10 @@ public final class ONLHPINMANJOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021ONLHPINMANJ.proto\"H\n\013ONLHPINMANJ\022\023\n\013EG" +
-      "HGENOJNEK\030\001 \001(\r\022\017\n\007is_open\030\017 \001(\010\022\023\n\013OMEB" +
-      "OHLACPH\030\r \001(\rB\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n\021ONLHPINMANJ.proto\"E\n\013ONLHPINMANJ\022\020\n\010st" +
+      "age_id\030\001 \001(\r\022\017\n\007is_open\030\017 \001(\010\022\023\n\013OMEBOHL" +
+      "ACPH\030\r \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -711,7 +671,7 @@ public final class ONLHPINMANJOuterClass {
     internal_static_ONLHPINMANJ_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ONLHPINMANJ_descriptor,
-        new java.lang.String[] { "EGHGENOJNEK", "IsOpen", "OMEBOHLACPH", });
+        new java.lang.String[] { "StageId", "IsOpen", "OMEBOHLACPH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

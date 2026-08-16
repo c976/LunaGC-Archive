@@ -19,18 +19,10 @@ public final class FBINEKMHLNDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
      */
     int getJBMNPKNJNAKCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
      */
     boolean containsJBMNPKNJNAK(
@@ -42,19 +34,11 @@ public final class FBINEKMHLNDOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO>
     getJBMNPKNJNAK();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO>
     getJBMNPKNJNAKMap();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
      */
 
@@ -62,10 +46,6 @@ public final class FBINEKMHLNDOuterClass {
         int key,
         emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO defaultValue);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
      */
 
@@ -73,50 +53,34 @@ public final class FBINEKMHLNDOuterClass {
         int key);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 13;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BMEFBFDABBJ = 3;</code>
      * @return The bMEFBFDABBJ.
      */
     int getBMEFBFDABBJ();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 6;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 6;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
   }
   /**
    * Protobuf type {@code FBINEKMHLND}
@@ -181,7 +145,7 @@ public final class FBINEKMHLNDOuterClass {
             }
             case 48: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 58: {
@@ -273,10 +237,6 @@ public final class FBINEKMHLNDOuterClass {
       return internalGetJBMNPKNJNAK().getMap().size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
      */
 
@@ -295,10 +255,6 @@ public final class FBINEKMHLNDOuterClass {
       return getJBMNPKNJNAKMap();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
      */
     @java.lang.Override
@@ -307,10 +263,6 @@ public final class FBINEKMHLNDOuterClass {
       return internalGetJBMNPKNJNAK().getMap();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
      */
     @java.lang.Override
@@ -324,10 +276,6 @@ public final class FBINEKMHLNDOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
      */
     @java.lang.Override
@@ -346,10 +294,6 @@ public final class FBINEKMHLNDOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 13;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 13;</code>
      * @return The openTime.
      */
@@ -361,10 +305,6 @@ public final class FBINEKMHLNDOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -376,10 +316,6 @@ public final class FBINEKMHLNDOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 4;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
@@ -391,10 +327,6 @@ public final class FBINEKMHLNDOuterClass {
     public static final int BMEFBFDABBJ_FIELD_NUMBER = 3;
     private int bMEFBFDABBJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BMEFBFDABBJ = 3;</code>
      * @return The bMEFBFDABBJ.
      */
@@ -403,15 +335,15 @@ public final class FBINEKMHLNDOuterClass {
       return bMEFBFDABBJ_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 6;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 6;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 6;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 6;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -437,8 +369,8 @@ public final class FBINEKMHLNDOuterClass {
       if (isFinish_ != false) {
         output.writeBool(4, isFinish_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(6, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(6, stageId_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
@@ -470,9 +402,9 @@ public final class FBINEKMHLNDOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(4, isFinish_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, eGHGENOJNEK_);
+          .computeUInt32Size(6, stageId_);
       }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO> entry
            : internalGetJBMNPKNJNAK().getMap().entrySet()) {
@@ -513,8 +445,8 @@ public final class FBINEKMHLNDOuterClass {
           != other.getIsFinish()) return false;
       if (getBMEFBFDABBJ()
           != other.getBMEFBFDABBJ()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -540,8 +472,8 @@ public final class FBINEKMHLNDOuterClass {
           getIsFinish());
       hash = (37 * hash) + BMEFBFDABBJ_FIELD_NUMBER;
       hash = (53 * hash) + getBMEFBFDABBJ();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -706,7 +638,7 @@ public final class FBINEKMHLNDOuterClass {
 
         bMEFBFDABBJ_ = 0;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         return this;
       }
@@ -741,7 +673,7 @@ public final class FBINEKMHLNDOuterClass {
         result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
         result.bMEFBFDABBJ_ = bMEFBFDABBJ_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -804,8 +736,8 @@ public final class FBINEKMHLNDOuterClass {
         if (other.getBMEFBFDABBJ() != 0) {
           setBMEFBFDABBJ(other.getBMEFBFDABBJ());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -864,10 +796,6 @@ public final class FBINEKMHLNDOuterClass {
         return internalGetJBMNPKNJNAK().getMap().size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
        */
 
@@ -886,10 +814,6 @@ public final class FBINEKMHLNDOuterClass {
         return getJBMNPKNJNAKMap();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
        */
       @java.lang.Override
@@ -898,10 +822,6 @@ public final class FBINEKMHLNDOuterClass {
         return internalGetJBMNPKNJNAK().getMap();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
        */
       @java.lang.Override
@@ -915,10 +835,6 @@ public final class FBINEKMHLNDOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
        */
       @java.lang.Override
@@ -940,10 +856,6 @@ public final class FBINEKMHLNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
        */
 
@@ -963,10 +875,6 @@ public final class FBINEKMHLNDOuterClass {
         return internalGetMutableJBMNPKNJNAK().getMutableMap();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
        */
       public Builder putJBMNPKNJNAK(
@@ -979,10 +887,6 @@ public final class FBINEKMHLNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .KALFHGHCCMO&gt; JBMNPKNJNAK = 7;</code>
        */
 
@@ -995,10 +899,6 @@ public final class FBINEKMHLNDOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @return The openTime.
        */
@@ -1007,10 +907,6 @@ public final class FBINEKMHLNDOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -1022,10 +918,6 @@ public final class FBINEKMHLNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @return This builder for chaining.
        */
@@ -1038,10 +930,6 @@ public final class FBINEKMHLNDOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
@@ -1050,10 +938,6 @@ public final class FBINEKMHLNDOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1065,10 +949,6 @@ public final class FBINEKMHLNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
@@ -1081,10 +961,6 @@ public final class FBINEKMHLNDOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return The isFinish.
        */
@@ -1093,10 +969,6 @@ public final class FBINEKMHLNDOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1108,10 +980,6 @@ public final class FBINEKMHLNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return This builder for chaining.
        */
@@ -1124,10 +992,6 @@ public final class FBINEKMHLNDOuterClass {
 
       private int bMEFBFDABBJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BMEFBFDABBJ = 3;</code>
        * @return The bMEFBFDABBJ.
        */
@@ -1136,10 +1000,6 @@ public final class FBINEKMHLNDOuterClass {
         return bMEFBFDABBJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BMEFBFDABBJ = 3;</code>
        * @param value The bMEFBFDABBJ to set.
        * @return This builder for chaining.
@@ -1151,10 +1011,6 @@ public final class FBINEKMHLNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BMEFBFDABBJ = 3;</code>
        * @return This builder for chaining.
        */
@@ -1165,33 +1021,33 @@ public final class FBINEKMHLNDOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 6;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 6;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 6;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 6;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 6;</code>
+       * <code>uint32 stage_id = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -1267,14 +1123,14 @@ public final class FBINEKMHLNDOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021FBINEKMHLND.proto\032\021KALFHGHCCMO.proto\"\344" +
+      "\n\021FBINEKMHLND.proto\032\021KALFHGHCCMO.proto\"\341" +
       "\001\n\013FBINEKMHLND\0222\n\013JBMNPKNJNAK\030\007 \003(\0132\035.FB" +
       "INEKMHLND.JBMNPKNJNAKEntry\022\021\n\topen_time\030" +
       "\r \001(\r\022\017\n\007is_open\030\001 \001(\010\022\021\n\tis_finish\030\004 \001(" +
-      "\010\022\023\n\013BMEFBFDABBJ\030\003 \001(\r\022\023\n\013EGHGENOJNEK\030\006 " +
-      "\001(\r\032@\n\020JBMNPKNJNAKEntry\022\013\n\003key\030\001 \001(\r\022\033\n\005" +
-      "value\030\002 \001(\0132\014.KALFHGHCCMO:\0028\001B\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "\010\022\023\n\013BMEFBFDABBJ\030\003 \001(\r\022\020\n\010stage_id\030\006 \001(\r" +
+      "\032@\n\020JBMNPKNJNAKEntry\022\013\n\003key\030\001 \001(\r\022\033\n\005val" +
+      "ue\030\002 \001(\0132\014.KALFHGHCCMO:\0028\001B\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1286,7 +1142,7 @@ public final class FBINEKMHLNDOuterClass {
     internal_static_FBINEKMHLND_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FBINEKMHLND_descriptor,
-        new java.lang.String[] { "JBMNPKNJNAK", "OpenTime", "IsOpen", "IsFinish", "BMEFBFDABBJ", "EGHGENOJNEK", });
+        new java.lang.String[] { "JBMNPKNJNAK", "OpenTime", "IsOpen", "IsFinish", "BMEFBFDABBJ", "StageId", });
     internal_static_FBINEKMHLND_JBMNPKNJNAKEntry_descriptor =
       internal_static_FBINEKMHLND_descriptor.getNestedTypes().get(0);
     internal_static_FBINEKMHLND_JBMNPKNJNAKEntry_fieldAccessorTable = new

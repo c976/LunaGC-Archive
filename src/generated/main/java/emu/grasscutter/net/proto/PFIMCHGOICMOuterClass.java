@@ -19,54 +19,30 @@ public final class PFIMCHGOICMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF> 
         getCIAOIGFGPMJList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
      */
     emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF getCIAOIGFGPMJ(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
      */
     int getCIAOIGFGPMJCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNFOrBuilder> 
         getCIAOIGFGPMJOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
      */
     emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNFOrBuilder getCIAOIGFGPMJOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -171,10 +147,6 @@ public final class PFIMCHGOICMOuterClass {
     public static final int CIAOIGFGPMJ_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF> cIAOIGFGPMJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
      */
     @java.lang.Override
@@ -182,10 +154,6 @@ public final class PFIMCHGOICMOuterClass {
       return cIAOIGFGPMJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
      */
     @java.lang.Override
@@ -194,10 +162,6 @@ public final class PFIMCHGOICMOuterClass {
       return cIAOIGFGPMJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
      */
     @java.lang.Override
@@ -205,10 +169,6 @@ public final class PFIMCHGOICMOuterClass {
       return cIAOIGFGPMJ_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
      */
     @java.lang.Override
@@ -216,10 +176,6 @@ public final class PFIMCHGOICMOuterClass {
       return cIAOIGFGPMJ_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
      */
     @java.lang.Override
@@ -231,10 +187,6 @@ public final class PFIMCHGOICMOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -616,10 +568,6 @@ public final class PFIMCHGOICMOuterClass {
           emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF, emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF.Builder, emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNFOrBuilder> cIAOIGFGPMJBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF> getCIAOIGFGPMJList() {
@@ -630,10 +578,6 @@ public final class PFIMCHGOICMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public int getCIAOIGFGPMJCount() {
@@ -644,10 +588,6 @@ public final class PFIMCHGOICMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF getCIAOIGFGPMJ(int index) {
@@ -658,10 +598,6 @@ public final class PFIMCHGOICMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public Builder setCIAOIGFGPMJ(
@@ -679,10 +615,6 @@ public final class PFIMCHGOICMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public Builder setCIAOIGFGPMJ(
@@ -697,10 +629,6 @@ public final class PFIMCHGOICMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public Builder addCIAOIGFGPMJ(emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF value) {
@@ -717,10 +645,6 @@ public final class PFIMCHGOICMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public Builder addCIAOIGFGPMJ(
@@ -738,10 +662,6 @@ public final class PFIMCHGOICMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public Builder addCIAOIGFGPMJ(
@@ -756,10 +676,6 @@ public final class PFIMCHGOICMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public Builder addCIAOIGFGPMJ(
@@ -774,10 +690,6 @@ public final class PFIMCHGOICMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public Builder addAllCIAOIGFGPMJ(
@@ -793,10 +705,6 @@ public final class PFIMCHGOICMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public Builder clearCIAOIGFGPMJ() {
@@ -810,10 +718,6 @@ public final class PFIMCHGOICMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public Builder removeCIAOIGFGPMJ(int index) {
@@ -827,10 +731,6 @@ public final class PFIMCHGOICMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF.Builder getCIAOIGFGPMJBuilder(
@@ -838,10 +738,6 @@ public final class PFIMCHGOICMOuterClass {
         return getCIAOIGFGPMJFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNFOrBuilder getCIAOIGFGPMJOrBuilder(
@@ -852,10 +748,6 @@ public final class PFIMCHGOICMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNFOrBuilder> 
@@ -867,10 +759,6 @@ public final class PFIMCHGOICMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF.Builder addCIAOIGFGPMJBuilder() {
@@ -878,10 +766,6 @@ public final class PFIMCHGOICMOuterClass {
             emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF.Builder addCIAOIGFGPMJBuilder(
@@ -890,10 +774,6 @@ public final class PFIMCHGOICMOuterClass {
             index, emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BNIEONFIPNF CIAOIGFGPMJ = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BNIEONFIPNFOuterClass.BNIEONFIPNF.Builder> 
@@ -917,10 +797,6 @@ public final class PFIMCHGOICMOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
@@ -929,10 +805,6 @@ public final class PFIMCHGOICMOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -944,10 +816,6 @@ public final class PFIMCHGOICMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */

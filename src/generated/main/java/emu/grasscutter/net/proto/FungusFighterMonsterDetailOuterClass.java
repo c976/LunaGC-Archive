@@ -20,27 +20,27 @@ public final class FungusFighterMonsterDetailOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>float cur_hp_percentage = 6;</code>
-     * @return The curHpPercentage.
-     */
-    float getCurHpPercentage();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 36
-     * </pre>
-     *
-     * <code>bool is_alive = 1;</code>
+     * <code>bool is_alive = 7;</code>
      * @return The isAlive.
      */
     boolean getIsAlive();
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>float cur_hp_percentage = 14;</code>
+     * @return The curHpPercentage.
+     */
+    float getCurHpPercentage();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>uint32 fungus_id = 13;</code>
@@ -93,19 +93,19 @@ public final class FungusFighterMonsterDetailOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 56: {
 
               isAlive_ = input.readBool();
-              break;
-            }
-            case 53: {
-
-              curHpPercentage_ = input.readFloat();
               break;
             }
             case 104: {
 
               fungusId_ = input.readUInt32();
+              break;
+            }
+            case 117: {
+
+              curHpPercentage_ = input.readFloat();
               break;
             }
             default: {
@@ -140,29 +140,14 @@ public final class FungusFighterMonsterDetailOuterClass {
               emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.class, emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.Builder.class);
     }
 
-    public static final int CUR_HP_PERCENTAGE_FIELD_NUMBER = 6;
-    private float curHpPercentage_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>float cur_hp_percentage = 6;</code>
-     * @return The curHpPercentage.
-     */
-    @java.lang.Override
-    public float getCurHpPercentage() {
-      return curHpPercentage_;
-    }
-
-    public static final int IS_ALIVE_FIELD_NUMBER = 1;
+    public static final int IS_ALIVE_FIELD_NUMBER = 7;
     private boolean isAlive_;
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>bool is_alive = 1;</code>
+     * <code>bool is_alive = 7;</code>
      * @return The isAlive.
      */
     @java.lang.Override
@@ -170,11 +155,26 @@ public final class FungusFighterMonsterDetailOuterClass {
       return isAlive_;
     }
 
+    public static final int CUR_HP_PERCENTAGE_FIELD_NUMBER = 14;
+    private float curHpPercentage_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>float cur_hp_percentage = 14;</code>
+     * @return The curHpPercentage.
+     */
+    @java.lang.Override
+    public float getCurHpPercentage() {
+      return curHpPercentage_;
+    }
+
     public static final int FUNGUS_ID_FIELD_NUMBER = 13;
     private int fungusId_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>uint32 fungus_id = 13;</code>
@@ -200,13 +200,13 @@ public final class FungusFighterMonsterDetailOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isAlive_ != false) {
-        output.writeBool(1, isAlive_);
-      }
-      if (curHpPercentage_ != 0F) {
-        output.writeFloat(6, curHpPercentage_);
+        output.writeBool(7, isAlive_);
       }
       if (fungusId_ != 0) {
         output.writeUInt32(13, fungusId_);
+      }
+      if (curHpPercentage_ != 0F) {
+        output.writeFloat(14, curHpPercentage_);
       }
       unknownFields.writeTo(output);
     }
@@ -219,15 +219,15 @@ public final class FungusFighterMonsterDetailOuterClass {
       size = 0;
       if (isAlive_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isAlive_);
-      }
-      if (curHpPercentage_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, curHpPercentage_);
+          .computeBoolSize(7, isAlive_);
       }
       if (fungusId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(13, fungusId_);
+      }
+      if (curHpPercentage_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(14, curHpPercentage_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -244,11 +244,11 @@ public final class FungusFighterMonsterDetailOuterClass {
       }
       emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail other = (emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail) obj;
 
+      if (getIsAlive()
+          != other.getIsAlive()) return false;
       if (java.lang.Float.floatToIntBits(getCurHpPercentage())
           != java.lang.Float.floatToIntBits(
               other.getCurHpPercentage())) return false;
-      if (getIsAlive()
-          != other.getIsAlive()) return false;
       if (getFungusId()
           != other.getFungusId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -262,12 +262,12 @@ public final class FungusFighterMonsterDetailOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_HP_PERCENTAGE_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getCurHpPercentage());
       hash = (37 * hash) + IS_ALIVE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAlive());
+      hash = (37 * hash) + CUR_HP_PERCENTAGE_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getCurHpPercentage());
       hash = (37 * hash) + FUNGUS_ID_FIELD_NUMBER;
       hash = (53 * hash) + getFungusId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -403,9 +403,9 @@ public final class FungusFighterMonsterDetailOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        curHpPercentage_ = 0F;
-
         isAlive_ = false;
+
+        curHpPercentage_ = 0F;
 
         fungusId_ = 0;
 
@@ -435,8 +435,8 @@ public final class FungusFighterMonsterDetailOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail buildPartial() {
         emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail result = new emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail(this);
-        result.curHpPercentage_ = curHpPercentage_;
         result.isAlive_ = isAlive_;
+        result.curHpPercentage_ = curHpPercentage_;
         result.fungusId_ = fungusId_;
         onBuilt();
         return result;
@@ -486,11 +486,11 @@ public final class FungusFighterMonsterDetailOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail other) {
         if (other == emu.grasscutter.net.proto.FungusFighterMonsterDetailOuterClass.FungusFighterMonsterDetail.getDefaultInstance()) return this;
-        if (other.getCurHpPercentage() != 0F) {
-          setCurHpPercentage(other.getCurHpPercentage());
-        }
         if (other.getIsAlive() != false) {
           setIsAlive(other.getIsAlive());
+        }
+        if (other.getCurHpPercentage() != 0F) {
+          setCurHpPercentage(other.getCurHpPercentage());
         }
         if (other.getFungusId() != 0) {
           setFungusId(other.getFungusId());
@@ -524,56 +524,13 @@ public final class FungusFighterMonsterDetailOuterClass {
         return this;
       }
 
-      private float curHpPercentage_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>float cur_hp_percentage = 6;</code>
-       * @return The curHpPercentage.
-       */
-      @java.lang.Override
-      public float getCurHpPercentage() {
-        return curHpPercentage_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>float cur_hp_percentage = 6;</code>
-       * @param value The curHpPercentage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurHpPercentage(float value) {
-        
-        curHpPercentage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>float cur_hp_percentage = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurHpPercentage() {
-        
-        curHpPercentage_ = 0F;
-        onChanged();
-        return this;
-      }
-
       private boolean isAlive_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_alive = 1;</code>
+       * <code>bool is_alive = 7;</code>
        * @return The isAlive.
        */
       @java.lang.Override
@@ -582,10 +539,10 @@ public final class FungusFighterMonsterDetailOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_alive = 1;</code>
+       * <code>bool is_alive = 7;</code>
        * @param value The isAlive to set.
        * @return This builder for chaining.
        */
@@ -597,10 +554,10 @@ public final class FungusFighterMonsterDetailOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_alive = 1;</code>
+       * <code>bool is_alive = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAlive() {
@@ -610,10 +567,53 @@ public final class FungusFighterMonsterDetailOuterClass {
         return this;
       }
 
+      private float curHpPercentage_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0       
+       * </pre>
+       *
+       * <code>float cur_hp_percentage = 14;</code>
+       * @return The curHpPercentage.
+       */
+      @java.lang.Override
+      public float getCurHpPercentage() {
+        return curHpPercentage_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0       
+       * </pre>
+       *
+       * <code>float cur_hp_percentage = 14;</code>
+       * @param value The curHpPercentage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurHpPercentage(float value) {
+        
+        curHpPercentage_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0       
+       * </pre>
+       *
+       * <code>float cur_hp_percentage = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurHpPercentage() {
+        
+        curHpPercentage_ = 0F;
+        onChanged();
+        return this;
+      }
+
       private int fungusId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>uint32 fungus_id = 13;</code>
@@ -625,7 +625,7 @@ public final class FungusFighterMonsterDetailOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>uint32 fungus_id = 13;</code>
@@ -640,7 +640,7 @@ public final class FungusFighterMonsterDetailOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>uint32 fungus_id = 13;</code>
@@ -720,8 +720,8 @@ public final class FungusFighterMonsterDetailOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n FungusFighterMonsterDetail.proto\"\\\n\032Fu" +
-      "ngusFighterMonsterDetail\022\031\n\021cur_hp_perce" +
-      "ntage\030\006 \001(\002\022\020\n\010is_alive\030\001 \001(\010\022\021\n\tfungus_" +
+      "ngusFighterMonsterDetail\022\020\n\010is_alive\030\007 \001" +
+      "(\010\022\031\n\021cur_hp_percentage\030\016 \001(\002\022\021\n\tfungus_" +
       "id\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
@@ -734,7 +734,7 @@ public final class FungusFighterMonsterDetailOuterClass {
     internal_static_FungusFighterMonsterDetail_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusFighterMonsterDetail_descriptor,
-        new java.lang.String[] { "CurHpPercentage", "IsAlive", "FungusId", });
+        new java.lang.String[] { "IsAlive", "CurHpPercentage", "FungusId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

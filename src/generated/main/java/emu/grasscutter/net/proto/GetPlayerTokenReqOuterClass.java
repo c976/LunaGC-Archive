@@ -20,219 +20,19 @@ public final class GetPlayerTokenReqOuterClass {
 
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string HJOEBCIDJCD = 80;</code>
-     * @return The hJOEBCIDJCD.
-     */
-    java.lang.String getHJOEBCIDJCD();
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>string HJOEBCIDJCD = 80;</code>
-     * @return The bytes for hJOEBCIDJCD.
-     */
-    com.google.protobuf.ByteString
-        getHJOEBCIDJCDBytes();
-
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>string PJMKDOCDKLH = 989;</code>
-     * @return The pJMKDOCDKLH.
-     */
-    java.lang.String getPJMKDOCDKLH();
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>string PJMKDOCDKLH = 989;</code>
-     * @return The bytes for pJMKDOCDKLH.
-     */
-    com.google.protobuf.ByteString
-        getPJMKDOCDKLHBytes();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>string online_id = 7;</code>
-     * @return The onlineId.
-     */
-    java.lang.String getOnlineId();
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>string online_id = 7;</code>
-     * @return The bytes for onlineId.
-     */
-    com.google.protobuf.ByteString
-        getOnlineIdBytes();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>string client_rand_key = 347;</code>
-     * @return The clientRandKey.
-     */
-    java.lang.String getClientRandKey();
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>string client_rand_key = 347;</code>
-     * @return The bytes for clientRandKey.
-     */
-    com.google.protobuf.ByteString
-        getClientRandKeyBytes();
-
-    /**
-     * <pre>
-     * offset: 64
-     * </pre>
-     *
-     * <code>string IFCGGHCMKEB = 13;</code>
-     * @return The iFCGGHCMKEB.
-     */
-    java.lang.String getIFCGGHCMKEB();
-    /**
-     * <pre>
-     * offset: 64
-     * </pre>
-     *
-     * <code>string IFCGGHCMKEB = 13;</code>
-     * @return The bytes for iFCGGHCMKEB.
-     */
-    com.google.protobuf.ByteString
-        getIFCGGHCMKEBBytes();
-
-    /**
-     * <pre>
-     * offset: 72
-     * </pre>
-     *
-     * <code>string CCEGIMNLNMB = 1340;</code>
-     * @return The cCEGIMNLNMB.
-     */
-    java.lang.String getCCEGIMNLNMB();
-    /**
-     * <pre>
-     * offset: 72
-     * </pre>
-     *
-     * <code>string CCEGIMNLNMB = 1340;</code>
-     * @return The bytes for cCEGIMNLNMB.
-     */
-    com.google.protobuf.ByteString
-        getCCEGIMNLNMBBytes();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>string psn_id = 14;</code>
-     * @return The psnId.
-     */
-    java.lang.String getPsnId();
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>string psn_id = 14;</code>
-     * @return The bytes for psnId.
-     */
-    com.google.protobuf.ByteString
-        getPsnIdBytes();
-
-    /**
-     * <pre>
-     * offset: 88
-     * </pre>
-     *
-     * <code>string OJFMHPMFCEC = 17;</code>
-     * @return The oJFMHPMFCEC.
-     */
-    java.lang.String getOJFMHPMFCEC();
-    /**
-     * <pre>
-     * offset: 88
-     * </pre>
-     *
-     * <code>string OJFMHPMFCEC = 17;</code>
-     * @return The bytes for oJFMHPMFCEC.
-     */
-    com.google.protobuf.ByteString
-        getOJFMHPMFCECBytes();
-
-    /**
-     * <pre>
-     * offset: 96
-     * </pre>
-     *
-     * <code>string ADDELLGIEED = 98;</code>
-     * @return The aDDELLGIEED.
-     */
-    java.lang.String getADDELLGIEED();
-    /**
-     * <pre>
-     * offset: 96
-     * </pre>
-     *
-     * <code>string ADDELLGIEED = 98;</code>
-     * @return The bytes for aDDELLGIEED.
-     */
-    com.google.protobuf.ByteString
-        getADDELLGIEEDBytes();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 104
-     * </pre>
-     *
-     * <code>string client_ip_str = 9;</code>
-     * @return The clientIpStr.
-     */
-    java.lang.String getClientIpStr();
-    /**
-     * <pre>
-     *6.3.0 // offset: 104
-     * </pre>
-     *
-     * <code>string client_ip_str = 9;</code>
-     * @return The bytes for clientIpStr.
-     */
-    com.google.protobuf.ByteString
-        getClientIpStrBytes();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 112
-     * </pre>
-     *
-     * <code>string birthday = 1499;</code>
+     * <code>string birthday = 646;</code>
      * @return The birthday.
      */
     java.lang.String getBirthday();
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string birthday = 1499;</code>
+     * <code>string birthday = 646;</code>
      * @return The bytes for birthday.
      */
     com.google.protobuf.ByteString
@@ -240,79 +40,51 @@ public final class GetPlayerTokenReqOuterClass {
 
     /**
      * <pre>
-     * offset: 120
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string JKHNJHPKNPB = 1213;</code>
-     * @return The jKHNJHPKNPB.
-     */
-    java.lang.String getJKHNJHPKNPB();
-    /**
-     * <pre>
-     * offset: 120
-     * </pre>
-     *
-     * <code>string JKHNJHPKNPB = 1213;</code>
-     * @return The bytes for jKHNJHPKNPB.
-     */
-    com.google.protobuf.ByteString
-        getJKHNJHPKNPBBytes();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 128
-     * </pre>
-     *
-     * <code>string country_code = 3;</code>
-     * @return The countryCode.
-     */
-    java.lang.String getCountryCode();
-    /**
-     * <pre>
-     *6.3.0 // offset: 128
-     * </pre>
-     *
-     * <code>string country_code = 3;</code>
-     * @return The bytes for countryCode.
-     */
-    com.google.protobuf.ByteString
-        getCountryCodeBytes();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 136
-     * </pre>
-     *
-     * <code>string account_uid = 12;</code>
+     * <code>string account_uid = 1;</code>
      * @return The accountUid.
      */
     java.lang.String getAccountUid();
     /**
      * <pre>
-     *6.3.0 // offset: 136
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string account_uid = 12;</code>
+     * <code>string account_uid = 1;</code>
      * @return The bytes for accountUid.
      */
     com.google.protobuf.ByteString
         getAccountUidBytes();
 
     /**
+     * <code>string DDBGGGCJKDF = 790;</code>
+     * @return The dDBGGGCJKDF.
+     */
+    java.lang.String getDDBGGGCJKDF();
+    /**
+     * <code>string DDBGGGCJKDF = 790;</code>
+     * @return The bytes for dDBGGGCJKDF.
+     */
+    com.google.protobuf.ByteString
+        getDDBGGGCJKDFBytes();
+
+    /**
      * <pre>
-     *6.3.0 // offset: 144
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string account_token = 15;</code>
+     * <code>string account_token = 10;</code>
      * @return The accountToken.
      */
     java.lang.String getAccountToken();
     /**
      * <pre>
-     *6.3.0 // offset: 144
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string account_token = 15;</code>
+     * <code>string account_token = 10;</code>
      * @return The bytes for accountToken.
      */
     com.google.protobuf.ByteString
@@ -320,147 +92,235 @@ public final class GetPlayerTokenReqOuterClass {
 
     /**
      * <pre>
-     * offset: 152
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string JOGOIEEJJHF = 1768;</code>
-     * @return The jOGOIEEJJHF.
+     * <code>string online_id = 3;</code>
+     * @return The onlineId.
      */
-    java.lang.String getJOGOIEEJJHF();
+    java.lang.String getOnlineId();
     /**
      * <pre>
-     * offset: 152
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string JOGOIEEJJHF = 1768;</code>
-     * @return The bytes for jOGOIEEJJHF.
+     * <code>string online_id = 3;</code>
+     * @return The bytes for onlineId.
      */
     com.google.protobuf.ByteString
-        getJOGOIEEJJHFBytes();
+        getOnlineIdBytes();
 
     /**
-     * <pre>
-     * offset: 160
-     * </pre>
-     *
-     * <code>uint32 EKIIEJBONAE = 411;</code>
-     * @return The eKIIEJBONAE.
+     * <code>string JNJMAGKBOMP = 1568;</code>
+     * @return The jNJMAGKBOMP.
      */
-    int getEKIIEJBONAE();
-
+    java.lang.String getJNJMAGKBOMP();
     /**
-     * <pre>
-     * offset: 164
-     * </pre>
-     *
-     * <code>uint32 GAFPBLLJLBI = 569;</code>
-     * @return The gAFPBLLJLBI.
+     * <code>string JNJMAGKBOMP = 1568;</code>
+     * @return The bytes for jNJMAGKBOMP.
      */
-    int getGAFPBLLJLBI();
+    com.google.protobuf.ByteString
+        getJNJMAGKBOMPBytes();
 
     /**
      * <pre>
-     *6.3.0 // offset: 168
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>bool is_guest = 8;</code>
+     * <code>string psn_id = 5;</code>
+     * @return The psnId.
+     */
+    java.lang.String getPsnId();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>string psn_id = 5;</code>
+     * @return The bytes for psnId.
+     */
+    com.google.protobuf.ByteString
+        getPsnIdBytes();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>string client_rand_key = 2015;</code>
+     * @return The clientRandKey.
+     */
+    java.lang.String getClientRandKey();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>string client_rand_key = 2015;</code>
+     * @return The bytes for clientRandKey.
+     */
+    com.google.protobuf.ByteString
+        getClientRandKeyBytes();
+
+    /**
+     * <code>string JMFFNLENHKG = 1806;</code>
+     * @return The jMFFNLENHKG.
+     */
+    java.lang.String getJMFFNLENHKG();
+    /**
+     * <code>string JMFFNLENHKG = 1806;</code>
+     * @return The bytes for jMFFNLENHKG.
+     */
+    com.google.protobuf.ByteString
+        getJMFFNLENHKGBytes();
+
+    /**
+     * <code>string FLEFHGMJIAF = 1261;</code>
+     * @return The fLEFHGMJIAF.
+     */
+    java.lang.String getFLEFHGMJIAF();
+    /**
+     * <code>string FLEFHGMJIAF = 1261;</code>
+     * @return The bytes for fLEFHGMJIAF.
+     */
+    com.google.protobuf.ByteString
+        getFLEFHGMJIAFBytes();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>string country_code = 7;</code>
+     * @return The countryCode.
+     */
+    java.lang.String getCountryCode();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>string country_code = 7;</code>
+     * @return The bytes for countryCode.
+     */
+    com.google.protobuf.ByteString
+        getCountryCodeBytes();
+
+    /**
+     * <code>string MGEJGMCKAEL = 688;</code>
+     * @return The mGEJGMCKAEL.
+     */
+    java.lang.String getMGEJGMCKAEL();
+    /**
+     * <code>string MGEJGMCKAEL = 688;</code>
+     * @return The bytes for mGEJGMCKAEL.
+     */
+    com.google.protobuf.ByteString
+        getMGEJGMCKAELBytes();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>string client_ip_str = 13;</code>
+     * @return The clientIpStr.
+     */
+    java.lang.String getClientIpStr();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>string client_ip_str = 13;</code>
+     * @return The bytes for clientIpStr.
+     */
+    com.google.protobuf.ByteString
+        getClientIpStrBytes();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 channel_id = 9;</code>
+     * @return The channelId.
+     */
+    int getChannelId();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0        
+     * </pre>
+     *
+     * <code>bool is_guest = 11;</code>
      * @return The isGuest.
      */
     boolean getIsGuest();
 
     /**
      * <pre>
-     * offset: 172
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 HGHDGPOFCGJ = 1037;</code>
-     * @return The hGHDGPOFCGJ.
+     * <code>uint32 key_id = 929;</code>
+     * @return The keyId.
      */
-    int getHGHDGPOFCGJ();
+    int getKeyId();
+
+    /**
+     * <code>uint32 LGKIIKDAINK = 1270;</code>
+     * @return The lGKIIKDAINK.
+     */
+    int getLGKIIKDAINK();
+
+    /**
+     * <code>uint32 BPLIJHLODFK = 16;</code>
+     * @return The bPLIJHLODFK.
+     */
+    int getBPLIJHLODFK();
+
+    /**
+     * <code>uint32 MNJMONIDKBF = 1510;</code>
+     * @return The mNJMONIDKBF.
+     */
+    int getMNJMONIDKBF();
 
     /**
      * <pre>
-     * offset: 176
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 MCEFDICOAEG = 18;</code>
-     * @return The mCEFDICOAEG.
-     */
-    int getMCEFDICOAEG();
-
-    /**
-     * <pre>
-     * offset: 180
-     * </pre>
-     *
-     * <code>uint32 BMAIEGBOOAH = 96;</code>
-     * @return The bMAIEGBOOAH.
-     */
-    int getBMAIEGBOOAH();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 184
-     * </pre>
-     *
-     * <code>uint32 uid = 2;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 188
-     * </pre>
-     *
-     * <code>uint32 platform_type = 10;</code>
+     * <code>uint32 platform_type = 8;</code>
      * @return The platformType.
      */
     int getPlatformType();
 
     /**
      * <pre>
-     * offset: 192
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 JMMJGHEGMKA = 8123;</code>
-     * @return The jMMJGHEGMKA.
+     * <code>uint32 uid = 12;</code>
+     * @return The uid.
      */
-    int getJMMJGHEGMKA();
+    int getUid();
 
     /**
-     * <pre>
-     * offset: 196
-     * </pre>
-     *
-     * <code>uint32 EJENLJFEOKP = 11;</code>
-     * @return The eJENLJFEOKP.
+     * <code>uint32 HBOFDEAOECD = 1571;</code>
+     * @return The hBOFDEAOECD.
      */
-    int getEJENLJFEOKP();
+    int getHBOFDEAOECD();
 
     /**
-     * <pre>
-     *6.3.0 // offset: 200
-     * </pre>
-     *
-     * <code>uint32 key_id = 1443;</code>
-     * @return The keyId.
+     * <code>uint32 MBNBPHEOAKC = 570;</code>
+     * @return The mBNBPHEOAKC.
      */
-    int getKeyId();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 204
-     * </pre>
-     *
-     * <code>uint32 channel_id = 6;</code>
-     * @return The channelId.
-     */
-    int getChannelId();
+    int getMBNBPHEOAKC();
   }
   /**
    * <pre>
-   * CmdId: 23191
+   * CmdId: 29482
    * </pre>
    *
    * Protobuf type {@code GetPlayerTokenReq}
@@ -475,22 +335,19 @@ public final class GetPlayerTokenReqOuterClass {
       super(builder);
     }
     private GetPlayerTokenReq() {
-      hJOEBCIDJCD_ = "";
-      pJMKDOCDKLH_ = "";
-      onlineId_ = "";
-      clientRandKey_ = "";
-      iFCGGHCMKEB_ = "";
-      cCEGIMNLNMB_ = "";
-      psnId_ = "";
-      oJFMHPMFCEC_ = "";
-      aDDELLGIEED_ = "";
-      clientIpStr_ = "";
       birthday_ = "";
-      jKHNJHPKNPB_ = "";
-      countryCode_ = "";
       accountUid_ = "";
+      dDBGGGCJKDF_ = "";
       accountToken_ = "";
-      jOGOIEEJJHF_ = "";
+      onlineId_ = "";
+      jNJMAGKBOMP_ = "";
+      psnId_ = "";
+      clientRandKey_ = "";
+      jMFFNLENHKG_ = "";
+      fLEFHGMJIAF_ = "";
+      countryCode_ = "";
+      mGEJGMCKAEL_ = "";
+      clientIpStr_ = "";
     }
 
     @java.lang.Override
@@ -523,160 +380,132 @@ public final class GetPlayerTokenReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              countryCode_ = s;
-              break;
-            }
-            case 48: {
-
-              channelId_ = input.readUInt32();
-              break;
-            }
-            case 58: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              onlineId_ = s;
-              break;
-            }
-            case 64: {
-
-              isGuest_ = input.readBool();
-              break;
-            }
-            case 74: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              clientIpStr_ = s;
-              break;
-            }
-            case 80: {
-
-              platformType_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              eJENLJFEOKP_ = input.readUInt32();
-              break;
-            }
-            case 98: {
+            case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
               accountUid_ = s;
               break;
             }
-            case 106: {
+            case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              iFCGGHCMKEB_ = s;
+              onlineId_ = s;
               break;
             }
-            case 114: {
+            case 42: {
               java.lang.String s = input.readStringRequireUtf8();
 
               psnId_ = s;
               break;
             }
-            case 122: {
+            case 58: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              countryCode_ = s;
+              break;
+            }
+            case 64: {
+
+              platformType_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              channelId_ = input.readUInt32();
+              break;
+            }
+            case 82: {
               java.lang.String s = input.readStringRequireUtf8();
 
               accountToken_ = s;
               break;
             }
-            case 138: {
+            case 88: {
+
+              isGuest_ = input.readBool();
+              break;
+            }
+            case 96: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
+            case 106: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              oJFMHPMFCEC_ = s;
+              clientIpStr_ = s;
               break;
             }
-            case 144: {
+            case 128: {
 
-              mCEFDICOAEG_ = input.readUInt32();
+              bPLIJHLODFK_ = input.readUInt32();
               break;
             }
-            case 642: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 4560: {
 
-              hJOEBCIDJCD_ = s;
+              mBNBPHEOAKC_ = input.readUInt32();
               break;
             }
-            case 768: {
-
-              bMAIEGBOOAH_ = input.readUInt32();
-              break;
-            }
-            case 786: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              aDDELLGIEED_ = s;
-              break;
-            }
-            case 2778: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              clientRandKey_ = s;
-              break;
-            }
-            case 3288: {
-
-              eKIIEJBONAE_ = input.readUInt32();
-              break;
-            }
-            case 4552: {
-
-              gAFPBLLJLBI_ = input.readUInt32();
-              break;
-            }
-            case 7914: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              pJMKDOCDKLH_ = s;
-              break;
-            }
-            case 8296: {
-
-              hGHDGPOFCGJ_ = input.readUInt32();
-              break;
-            }
-            case 9706: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              jKHNJHPKNPB_ = s;
-              break;
-            }
-            case 10722: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              cCEGIMNLNMB_ = s;
-              break;
-            }
-            case 11544: {
-
-              keyId_ = input.readUInt32();
-              break;
-            }
-            case 11994: {
+            case 5170: {
               java.lang.String s = input.readStringRequireUtf8();
 
               birthday_ = s;
               break;
             }
-            case 14146: {
+            case 5506: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              jOGOIEEJJHF_ = s;
+              mGEJGMCKAEL_ = s;
               break;
             }
-            case 64984: {
+            case 6322: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              jMMJGHEGMKA_ = input.readUInt32();
+              dDBGGGCJKDF_ = s;
+              break;
+            }
+            case 7432: {
+
+              keyId_ = input.readUInt32();
+              break;
+            }
+            case 10090: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              fLEFHGMJIAF_ = s;
+              break;
+            }
+            case 10160: {
+
+              lGKIIKDAINK_ = input.readUInt32();
+              break;
+            }
+            case 12080: {
+
+              mNJMONIDKBF_ = input.readUInt32();
+              break;
+            }
+            case 12546: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              jNJMAGKBOMP_ = s;
+              break;
+            }
+            case 12568: {
+
+              hBOFDEAOECD_ = input.readUInt32();
+              break;
+            }
+            case 14450: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              jMFFNLENHKG_ = s;
+              break;
+            }
+            case 16122: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              clientRandKey_ = s;
               break;
             }
             default: {
@@ -711,474 +540,14 @@ public final class GetPlayerTokenReqOuterClass {
               emu.grasscutter.net.proto.GetPlayerTokenReqOuterClass.GetPlayerTokenReq.class, emu.grasscutter.net.proto.GetPlayerTokenReqOuterClass.GetPlayerTokenReq.Builder.class);
     }
 
-    public static final int HJOEBCIDJCD_FIELD_NUMBER = 80;
-    private volatile java.lang.Object hJOEBCIDJCD_;
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>string HJOEBCIDJCD = 80;</code>
-     * @return The hJOEBCIDJCD.
-     */
-    @java.lang.Override
-    public java.lang.String getHJOEBCIDJCD() {
-      java.lang.Object ref = hJOEBCIDJCD_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        hJOEBCIDJCD_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>string HJOEBCIDJCD = 80;</code>
-     * @return The bytes for hJOEBCIDJCD.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getHJOEBCIDJCDBytes() {
-      java.lang.Object ref = hJOEBCIDJCD_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        hJOEBCIDJCD_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int PJMKDOCDKLH_FIELD_NUMBER = 989;
-    private volatile java.lang.Object pJMKDOCDKLH_;
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>string PJMKDOCDKLH = 989;</code>
-     * @return The pJMKDOCDKLH.
-     */
-    @java.lang.Override
-    public java.lang.String getPJMKDOCDKLH() {
-      java.lang.Object ref = pJMKDOCDKLH_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        pJMKDOCDKLH_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>string PJMKDOCDKLH = 989;</code>
-     * @return The bytes for pJMKDOCDKLH.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getPJMKDOCDKLHBytes() {
-      java.lang.Object ref = pJMKDOCDKLH_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        pJMKDOCDKLH_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int ONLINE_ID_FIELD_NUMBER = 7;
-    private volatile java.lang.Object onlineId_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>string online_id = 7;</code>
-     * @return The onlineId.
-     */
-    @java.lang.Override
-    public java.lang.String getOnlineId() {
-      java.lang.Object ref = onlineId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        onlineId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>string online_id = 7;</code>
-     * @return The bytes for onlineId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getOnlineIdBytes() {
-      java.lang.Object ref = onlineId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        onlineId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CLIENT_RAND_KEY_FIELD_NUMBER = 347;
-    private volatile java.lang.Object clientRandKey_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>string client_rand_key = 347;</code>
-     * @return The clientRandKey.
-     */
-    @java.lang.Override
-    public java.lang.String getClientRandKey() {
-      java.lang.Object ref = clientRandKey_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        clientRandKey_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>string client_rand_key = 347;</code>
-     * @return The bytes for clientRandKey.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getClientRandKeyBytes() {
-      java.lang.Object ref = clientRandKey_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        clientRandKey_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int IFCGGHCMKEB_FIELD_NUMBER = 13;
-    private volatile java.lang.Object iFCGGHCMKEB_;
-    /**
-     * <pre>
-     * offset: 64
-     * </pre>
-     *
-     * <code>string IFCGGHCMKEB = 13;</code>
-     * @return The iFCGGHCMKEB.
-     */
-    @java.lang.Override
-    public java.lang.String getIFCGGHCMKEB() {
-      java.lang.Object ref = iFCGGHCMKEB_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        iFCGGHCMKEB_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * offset: 64
-     * </pre>
-     *
-     * <code>string IFCGGHCMKEB = 13;</code>
-     * @return The bytes for iFCGGHCMKEB.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getIFCGGHCMKEBBytes() {
-      java.lang.Object ref = iFCGGHCMKEB_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        iFCGGHCMKEB_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CCEGIMNLNMB_FIELD_NUMBER = 1340;
-    private volatile java.lang.Object cCEGIMNLNMB_;
-    /**
-     * <pre>
-     * offset: 72
-     * </pre>
-     *
-     * <code>string CCEGIMNLNMB = 1340;</code>
-     * @return The cCEGIMNLNMB.
-     */
-    @java.lang.Override
-    public java.lang.String getCCEGIMNLNMB() {
-      java.lang.Object ref = cCEGIMNLNMB_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        cCEGIMNLNMB_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * offset: 72
-     * </pre>
-     *
-     * <code>string CCEGIMNLNMB = 1340;</code>
-     * @return The bytes for cCEGIMNLNMB.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getCCEGIMNLNMBBytes() {
-      java.lang.Object ref = cCEGIMNLNMB_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        cCEGIMNLNMB_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int PSN_ID_FIELD_NUMBER = 14;
-    private volatile java.lang.Object psnId_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>string psn_id = 14;</code>
-     * @return The psnId.
-     */
-    @java.lang.Override
-    public java.lang.String getPsnId() {
-      java.lang.Object ref = psnId_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        psnId_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>string psn_id = 14;</code>
-     * @return The bytes for psnId.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getPsnIdBytes() {
-      java.lang.Object ref = psnId_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        psnId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int OJFMHPMFCEC_FIELD_NUMBER = 17;
-    private volatile java.lang.Object oJFMHPMFCEC_;
-    /**
-     * <pre>
-     * offset: 88
-     * </pre>
-     *
-     * <code>string OJFMHPMFCEC = 17;</code>
-     * @return The oJFMHPMFCEC.
-     */
-    @java.lang.Override
-    public java.lang.String getOJFMHPMFCEC() {
-      java.lang.Object ref = oJFMHPMFCEC_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        oJFMHPMFCEC_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * offset: 88
-     * </pre>
-     *
-     * <code>string OJFMHPMFCEC = 17;</code>
-     * @return The bytes for oJFMHPMFCEC.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getOJFMHPMFCECBytes() {
-      java.lang.Object ref = oJFMHPMFCEC_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        oJFMHPMFCEC_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int ADDELLGIEED_FIELD_NUMBER = 98;
-    private volatile java.lang.Object aDDELLGIEED_;
-    /**
-     * <pre>
-     * offset: 96
-     * </pre>
-     *
-     * <code>string ADDELLGIEED = 98;</code>
-     * @return The aDDELLGIEED.
-     */
-    @java.lang.Override
-    public java.lang.String getADDELLGIEED() {
-      java.lang.Object ref = aDDELLGIEED_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        aDDELLGIEED_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * offset: 96
-     * </pre>
-     *
-     * <code>string ADDELLGIEED = 98;</code>
-     * @return The bytes for aDDELLGIEED.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getADDELLGIEEDBytes() {
-      java.lang.Object ref = aDDELLGIEED_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        aDDELLGIEED_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CLIENT_IP_STR_FIELD_NUMBER = 9;
-    private volatile java.lang.Object clientIpStr_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 104
-     * </pre>
-     *
-     * <code>string client_ip_str = 9;</code>
-     * @return The clientIpStr.
-     */
-    @java.lang.Override
-    public java.lang.String getClientIpStr() {
-      java.lang.Object ref = clientIpStr_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        clientIpStr_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 104
-     * </pre>
-     *
-     * <code>string client_ip_str = 9;</code>
-     * @return The bytes for clientIpStr.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getClientIpStrBytes() {
-      java.lang.Object ref = clientIpStr_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        clientIpStr_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int BIRTHDAY_FIELD_NUMBER = 1499;
+    public static final int BIRTHDAY_FIELD_NUMBER = 646;
     private volatile java.lang.Object birthday_;
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string birthday = 1499;</code>
+     * <code>string birthday = 646;</code>
      * @return The birthday.
      */
     @java.lang.Override
@@ -1196,10 +565,10 @@ public final class GetPlayerTokenReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string birthday = 1499;</code>
+     * <code>string birthday = 646;</code>
      * @return The bytes for birthday.
      */
     @java.lang.Override
@@ -1217,106 +586,14 @@ public final class GetPlayerTokenReqOuterClass {
       }
     }
 
-    public static final int JKHNJHPKNPB_FIELD_NUMBER = 1213;
-    private volatile java.lang.Object jKHNJHPKNPB_;
-    /**
-     * <pre>
-     * offset: 120
-     * </pre>
-     *
-     * <code>string JKHNJHPKNPB = 1213;</code>
-     * @return The jKHNJHPKNPB.
-     */
-    @java.lang.Override
-    public java.lang.String getJKHNJHPKNPB() {
-      java.lang.Object ref = jKHNJHPKNPB_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        jKHNJHPKNPB_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * offset: 120
-     * </pre>
-     *
-     * <code>string JKHNJHPKNPB = 1213;</code>
-     * @return The bytes for jKHNJHPKNPB.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getJKHNJHPKNPBBytes() {
-      java.lang.Object ref = jKHNJHPKNPB_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        jKHNJHPKNPB_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int COUNTRY_CODE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object countryCode_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 128
-     * </pre>
-     *
-     * <code>string country_code = 3;</code>
-     * @return The countryCode.
-     */
-    @java.lang.Override
-    public java.lang.String getCountryCode() {
-      java.lang.Object ref = countryCode_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        countryCode_ = s;
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 128
-     * </pre>
-     *
-     * <code>string country_code = 3;</code>
-     * @return The bytes for countryCode.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getCountryCodeBytes() {
-      java.lang.Object ref = countryCode_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        countryCode_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int ACCOUNT_UID_FIELD_NUMBER = 12;
+    public static final int ACCOUNT_UID_FIELD_NUMBER = 1;
     private volatile java.lang.Object accountUid_;
     /**
      * <pre>
-     *6.3.0 // offset: 136
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string account_uid = 12;</code>
+     * <code>string account_uid = 1;</code>
      * @return The accountUid.
      */
     @java.lang.Override
@@ -1334,10 +611,10 @@ public final class GetPlayerTokenReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 136
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string account_uid = 12;</code>
+     * <code>string account_uid = 1;</code>
      * @return The bytes for accountUid.
      */
     @java.lang.Override
@@ -1355,14 +632,52 @@ public final class GetPlayerTokenReqOuterClass {
       }
     }
 
-    public static final int ACCOUNT_TOKEN_FIELD_NUMBER = 15;
+    public static final int DDBGGGCJKDF_FIELD_NUMBER = 790;
+    private volatile java.lang.Object dDBGGGCJKDF_;
+    /**
+     * <code>string DDBGGGCJKDF = 790;</code>
+     * @return The dDBGGGCJKDF.
+     */
+    @java.lang.Override
+    public java.lang.String getDDBGGGCJKDF() {
+      java.lang.Object ref = dDBGGGCJKDF_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        dDBGGGCJKDF_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string DDBGGGCJKDF = 790;</code>
+     * @return The bytes for dDBGGGCJKDF.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getDDBGGGCJKDFBytes() {
+      java.lang.Object ref = dDBGGGCJKDF_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        dDBGGGCJKDF_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int ACCOUNT_TOKEN_FIELD_NUMBER = 10;
     private volatile java.lang.Object accountToken_;
     /**
      * <pre>
-     *6.3.0 // offset: 144
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string account_token = 15;</code>
+     * <code>string account_token = 10;</code>
      * @return The accountToken.
      */
     @java.lang.Override
@@ -1380,10 +695,10 @@ public final class GetPlayerTokenReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 144
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>string account_token = 15;</code>
+     * <code>string account_token = 10;</code>
      * @return The bytes for accountToken.
      */
     @java.lang.Override
@@ -1401,90 +716,411 @@ public final class GetPlayerTokenReqOuterClass {
       }
     }
 
-    public static final int JOGOIEEJJHF_FIELD_NUMBER = 1768;
-    private volatile java.lang.Object jOGOIEEJJHF_;
+    public static final int ONLINE_ID_FIELD_NUMBER = 3;
+    private volatile java.lang.Object onlineId_;
     /**
      * <pre>
-     * offset: 152
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string JOGOIEEJJHF = 1768;</code>
-     * @return The jOGOIEEJJHF.
+     * <code>string online_id = 3;</code>
+     * @return The onlineId.
      */
     @java.lang.Override
-    public java.lang.String getJOGOIEEJJHF() {
-      java.lang.Object ref = jOGOIEEJJHF_;
+    public java.lang.String getOnlineId() {
+      java.lang.Object ref = onlineId_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        jOGOIEEJJHF_ = s;
+        onlineId_ = s;
         return s;
       }
     }
     /**
      * <pre>
-     * offset: 152
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>string JOGOIEEJJHF = 1768;</code>
-     * @return The bytes for jOGOIEEJJHF.
+     * <code>string online_id = 3;</code>
+     * @return The bytes for onlineId.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getJOGOIEEJJHFBytes() {
-      java.lang.Object ref = jOGOIEEJJHF_;
+        getOnlineIdBytes() {
+      java.lang.Object ref = onlineId_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        jOGOIEEJJHF_ = b;
+        onlineId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int EKIIEJBONAE_FIELD_NUMBER = 411;
-    private int eKIIEJBONAE_;
+    public static final int JNJMAGKBOMP_FIELD_NUMBER = 1568;
+    private volatile java.lang.Object jNJMAGKBOMP_;
     /**
-     * <pre>
-     * offset: 160
-     * </pre>
-     *
-     * <code>uint32 EKIIEJBONAE = 411;</code>
-     * @return The eKIIEJBONAE.
+     * <code>string JNJMAGKBOMP = 1568;</code>
+     * @return The jNJMAGKBOMP.
      */
     @java.lang.Override
-    public int getEKIIEJBONAE() {
-      return eKIIEJBONAE_;
+    public java.lang.String getJNJMAGKBOMP() {
+      java.lang.Object ref = jNJMAGKBOMP_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        jNJMAGKBOMP_ = s;
+        return s;
+      }
     }
-
-    public static final int GAFPBLLJLBI_FIELD_NUMBER = 569;
-    private int gAFPBLLJLBI_;
     /**
-     * <pre>
-     * offset: 164
-     * </pre>
-     *
-     * <code>uint32 GAFPBLLJLBI = 569;</code>
-     * @return The gAFPBLLJLBI.
+     * <code>string JNJMAGKBOMP = 1568;</code>
+     * @return The bytes for jNJMAGKBOMP.
      */
     @java.lang.Override
-    public int getGAFPBLLJLBI() {
-      return gAFPBLLJLBI_;
+    public com.google.protobuf.ByteString
+        getJNJMAGKBOMPBytes() {
+      java.lang.Object ref = jNJMAGKBOMP_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        jNJMAGKBOMP_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
-    public static final int IS_GUEST_FIELD_NUMBER = 8;
+    public static final int PSN_ID_FIELD_NUMBER = 5;
+    private volatile java.lang.Object psnId_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>string psn_id = 5;</code>
+     * @return The psnId.
+     */
+    @java.lang.Override
+    public java.lang.String getPsnId() {
+      java.lang.Object ref = psnId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        psnId_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>string psn_id = 5;</code>
+     * @return The bytes for psnId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getPsnIdBytes() {
+      java.lang.Object ref = psnId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        psnId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CLIENT_RAND_KEY_FIELD_NUMBER = 2015;
+    private volatile java.lang.Object clientRandKey_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>string client_rand_key = 2015;</code>
+     * @return The clientRandKey.
+     */
+    @java.lang.Override
+    public java.lang.String getClientRandKey() {
+      java.lang.Object ref = clientRandKey_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientRandKey_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>string client_rand_key = 2015;</code>
+     * @return The bytes for clientRandKey.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getClientRandKeyBytes() {
+      java.lang.Object ref = clientRandKey_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientRandKey_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int JMFFNLENHKG_FIELD_NUMBER = 1806;
+    private volatile java.lang.Object jMFFNLENHKG_;
+    /**
+     * <code>string JMFFNLENHKG = 1806;</code>
+     * @return The jMFFNLENHKG.
+     */
+    @java.lang.Override
+    public java.lang.String getJMFFNLENHKG() {
+      java.lang.Object ref = jMFFNLENHKG_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        jMFFNLENHKG_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string JMFFNLENHKG = 1806;</code>
+     * @return The bytes for jMFFNLENHKG.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getJMFFNLENHKGBytes() {
+      java.lang.Object ref = jMFFNLENHKG_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        jMFFNLENHKG_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int FLEFHGMJIAF_FIELD_NUMBER = 1261;
+    private volatile java.lang.Object fLEFHGMJIAF_;
+    /**
+     * <code>string FLEFHGMJIAF = 1261;</code>
+     * @return The fLEFHGMJIAF.
+     */
+    @java.lang.Override
+    public java.lang.String getFLEFHGMJIAF() {
+      java.lang.Object ref = fLEFHGMJIAF_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        fLEFHGMJIAF_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string FLEFHGMJIAF = 1261;</code>
+     * @return The bytes for fLEFHGMJIAF.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getFLEFHGMJIAFBytes() {
+      java.lang.Object ref = fLEFHGMJIAF_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        fLEFHGMJIAF_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int COUNTRY_CODE_FIELD_NUMBER = 7;
+    private volatile java.lang.Object countryCode_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>string country_code = 7;</code>
+     * @return The countryCode.
+     */
+    @java.lang.Override
+    public java.lang.String getCountryCode() {
+      java.lang.Object ref = countryCode_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        countryCode_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>string country_code = 7;</code>
+     * @return The bytes for countryCode.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getCountryCodeBytes() {
+      java.lang.Object ref = countryCode_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        countryCode_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int MGEJGMCKAEL_FIELD_NUMBER = 688;
+    private volatile java.lang.Object mGEJGMCKAEL_;
+    /**
+     * <code>string MGEJGMCKAEL = 688;</code>
+     * @return The mGEJGMCKAEL.
+     */
+    @java.lang.Override
+    public java.lang.String getMGEJGMCKAEL() {
+      java.lang.Object ref = mGEJGMCKAEL_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        mGEJGMCKAEL_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string MGEJGMCKAEL = 688;</code>
+     * @return The bytes for mGEJGMCKAEL.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getMGEJGMCKAELBytes() {
+      java.lang.Object ref = mGEJGMCKAEL_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        mGEJGMCKAEL_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CLIENT_IP_STR_FIELD_NUMBER = 13;
+    private volatile java.lang.Object clientIpStr_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>string client_ip_str = 13;</code>
+     * @return The clientIpStr.
+     */
+    @java.lang.Override
+    public java.lang.String getClientIpStr() {
+      java.lang.Object ref = clientIpStr_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientIpStr_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>string client_ip_str = 13;</code>
+     * @return The bytes for clientIpStr.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getClientIpStrBytes() {
+      java.lang.Object ref = clientIpStr_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientIpStr_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CHANNEL_ID_FIELD_NUMBER = 9;
+    private int channelId_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 channel_id = 9;</code>
+     * @return The channelId.
+     */
+    @java.lang.Override
+    public int getChannelId() {
+      return channelId_;
+    }
+
+    public static final int IS_GUEST_FIELD_NUMBER = 11;
     private boolean isGuest_;
     /**
      * <pre>
-     *6.3.0 // offset: 168
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>bool is_guest = 8;</code>
+     * <code>bool is_guest = 11;</code>
      * @return The isGuest.
      */
     @java.lang.Override
@@ -1492,119 +1128,14 @@ public final class GetPlayerTokenReqOuterClass {
       return isGuest_;
     }
 
-    public static final int HGHDGPOFCGJ_FIELD_NUMBER = 1037;
-    private int hGHDGPOFCGJ_;
-    /**
-     * <pre>
-     * offset: 172
-     * </pre>
-     *
-     * <code>uint32 HGHDGPOFCGJ = 1037;</code>
-     * @return The hGHDGPOFCGJ.
-     */
-    @java.lang.Override
-    public int getHGHDGPOFCGJ() {
-      return hGHDGPOFCGJ_;
-    }
-
-    public static final int MCEFDICOAEG_FIELD_NUMBER = 18;
-    private int mCEFDICOAEG_;
-    /**
-     * <pre>
-     * offset: 176
-     * </pre>
-     *
-     * <code>uint32 MCEFDICOAEG = 18;</code>
-     * @return The mCEFDICOAEG.
-     */
-    @java.lang.Override
-    public int getMCEFDICOAEG() {
-      return mCEFDICOAEG_;
-    }
-
-    public static final int BMAIEGBOOAH_FIELD_NUMBER = 96;
-    private int bMAIEGBOOAH_;
-    /**
-     * <pre>
-     * offset: 180
-     * </pre>
-     *
-     * <code>uint32 BMAIEGBOOAH = 96;</code>
-     * @return The bMAIEGBOOAH.
-     */
-    @java.lang.Override
-    public int getBMAIEGBOOAH() {
-      return bMAIEGBOOAH_;
-    }
-
-    public static final int UID_FIELD_NUMBER = 2;
-    private int uid_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 184
-     * </pre>
-     *
-     * <code>uint32 uid = 2;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
-    public static final int PLATFORM_TYPE_FIELD_NUMBER = 10;
-    private int platformType_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 188
-     * </pre>
-     *
-     * <code>uint32 platform_type = 10;</code>
-     * @return The platformType.
-     */
-    @java.lang.Override
-    public int getPlatformType() {
-      return platformType_;
-    }
-
-    public static final int JMMJGHEGMKA_FIELD_NUMBER = 8123;
-    private int jMMJGHEGMKA_;
-    /**
-     * <pre>
-     * offset: 192
-     * </pre>
-     *
-     * <code>uint32 JMMJGHEGMKA = 8123;</code>
-     * @return The jMMJGHEGMKA.
-     */
-    @java.lang.Override
-    public int getJMMJGHEGMKA() {
-      return jMMJGHEGMKA_;
-    }
-
-    public static final int EJENLJFEOKP_FIELD_NUMBER = 11;
-    private int eJENLJFEOKP_;
-    /**
-     * <pre>
-     * offset: 196
-     * </pre>
-     *
-     * <code>uint32 EJENLJFEOKP = 11;</code>
-     * @return The eJENLJFEOKP.
-     */
-    @java.lang.Override
-    public int getEJENLJFEOKP() {
-      return eJENLJFEOKP_;
-    }
-
-    public static final int KEY_ID_FIELD_NUMBER = 1443;
+    public static final int KEY_ID_FIELD_NUMBER = 929;
     private int keyId_;
     /**
      * <pre>
-     *6.3.0 // offset: 200
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 key_id = 1443;</code>
+     * <code>uint32 key_id = 929;</code>
      * @return The keyId.
      */
     @java.lang.Override
@@ -1612,19 +1143,89 @@ public final class GetPlayerTokenReqOuterClass {
       return keyId_;
     }
 
-    public static final int CHANNEL_ID_FIELD_NUMBER = 6;
-    private int channelId_;
+    public static final int LGKIIKDAINK_FIELD_NUMBER = 1270;
+    private int lGKIIKDAINK_;
     /**
-     * <pre>
-     *6.3.0 // offset: 204
-     * </pre>
-     *
-     * <code>uint32 channel_id = 6;</code>
-     * @return The channelId.
+     * <code>uint32 LGKIIKDAINK = 1270;</code>
+     * @return The lGKIIKDAINK.
      */
     @java.lang.Override
-    public int getChannelId() {
-      return channelId_;
+    public int getLGKIIKDAINK() {
+      return lGKIIKDAINK_;
+    }
+
+    public static final int BPLIJHLODFK_FIELD_NUMBER = 16;
+    private int bPLIJHLODFK_;
+    /**
+     * <code>uint32 BPLIJHLODFK = 16;</code>
+     * @return The bPLIJHLODFK.
+     */
+    @java.lang.Override
+    public int getBPLIJHLODFK() {
+      return bPLIJHLODFK_;
+    }
+
+    public static final int MNJMONIDKBF_FIELD_NUMBER = 1510;
+    private int mNJMONIDKBF_;
+    /**
+     * <code>uint32 MNJMONIDKBF = 1510;</code>
+     * @return The mNJMONIDKBF.
+     */
+    @java.lang.Override
+    public int getMNJMONIDKBF() {
+      return mNJMONIDKBF_;
+    }
+
+    public static final int PLATFORM_TYPE_FIELD_NUMBER = 8;
+    private int platformType_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 platform_type = 8;</code>
+     * @return The platformType.
+     */
+    @java.lang.Override
+    public int getPlatformType() {
+      return platformType_;
+    }
+
+    public static final int UID_FIELD_NUMBER = 12;
+    private int uid_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 uid = 12;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int HBOFDEAOECD_FIELD_NUMBER = 1571;
+    private int hBOFDEAOECD_;
+    /**
+     * <code>uint32 HBOFDEAOECD = 1571;</code>
+     * @return The hBOFDEAOECD.
+     */
+    @java.lang.Override
+    public int getHBOFDEAOECD() {
+      return hBOFDEAOECD_;
+    }
+
+    public static final int MBNBPHEOAKC_FIELD_NUMBER = 570;
+    private int mBNBPHEOAKC_;
+    /**
+     * <code>uint32 MBNBPHEOAKC = 570;</code>
+     * @return The mBNBPHEOAKC.
+     */
+    @java.lang.Override
+    public int getMBNBPHEOAKC() {
+      return mBNBPHEOAKC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1641,89 +1242,74 @@ public final class GetPlayerTokenReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (uid_ != 0) {
-        output.writeUInt32(2, uid_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, countryCode_);
-      }
-      if (channelId_ != 0) {
-        output.writeUInt32(6, channelId_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(accountUid_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, accountUid_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, onlineId_);
-      }
-      if (isGuest_ != false) {
-        output.writeBool(8, isGuest_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientIpStr_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, clientIpStr_);
-      }
-      if (platformType_ != 0) {
-        output.writeUInt32(10, platformType_);
-      }
-      if (eJENLJFEOKP_ != 0) {
-        output.writeUInt32(11, eJENLJFEOKP_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(accountUid_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, accountUid_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(iFCGGHCMKEB_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, iFCGGHCMKEB_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, onlineId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, psnId_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, psnId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, countryCode_);
+      }
+      if (platformType_ != 0) {
+        output.writeUInt32(8, platformType_);
+      }
+      if (channelId_ != 0) {
+        output.writeUInt32(9, channelId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(accountToken_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, accountToken_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, accountToken_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(oJFMHPMFCEC_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 17, oJFMHPMFCEC_);
+      if (isGuest_ != false) {
+        output.writeBool(11, isGuest_);
       }
-      if (mCEFDICOAEG_ != 0) {
-        output.writeUInt32(18, mCEFDICOAEG_);
+      if (uid_ != 0) {
+        output.writeUInt32(12, uid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(hJOEBCIDJCD_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 80, hJOEBCIDJCD_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientIpStr_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, clientIpStr_);
       }
-      if (bMAIEGBOOAH_ != 0) {
-        output.writeUInt32(96, bMAIEGBOOAH_);
+      if (bPLIJHLODFK_ != 0) {
+        output.writeUInt32(16, bPLIJHLODFK_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aDDELLGIEED_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 98, aDDELLGIEED_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientRandKey_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 347, clientRandKey_);
-      }
-      if (eKIIEJBONAE_ != 0) {
-        output.writeUInt32(411, eKIIEJBONAE_);
-      }
-      if (gAFPBLLJLBI_ != 0) {
-        output.writeUInt32(569, gAFPBLLJLBI_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pJMKDOCDKLH_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 989, pJMKDOCDKLH_);
-      }
-      if (hGHDGPOFCGJ_ != 0) {
-        output.writeUInt32(1037, hGHDGPOFCGJ_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jKHNJHPKNPB_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1213, jKHNJHPKNPB_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(cCEGIMNLNMB_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1340, cCEGIMNLNMB_);
-      }
-      if (keyId_ != 0) {
-        output.writeUInt32(1443, keyId_);
+      if (mBNBPHEOAKC_ != 0) {
+        output.writeUInt32(570, mBNBPHEOAKC_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(birthday_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1499, birthday_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 646, birthday_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jOGOIEEJJHF_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1768, jOGOIEEJJHF_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mGEJGMCKAEL_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 688, mGEJGMCKAEL_);
       }
-      if (jMMJGHEGMKA_ != 0) {
-        output.writeUInt32(8123, jMMJGHEGMKA_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dDBGGGCJKDF_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 790, dDBGGGCJKDF_);
+      }
+      if (keyId_ != 0) {
+        output.writeUInt32(929, keyId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fLEFHGMJIAF_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1261, fLEFHGMJIAF_);
+      }
+      if (lGKIIKDAINK_ != 0) {
+        output.writeUInt32(1270, lGKIIKDAINK_);
+      }
+      if (mNJMONIDKBF_ != 0) {
+        output.writeUInt32(1510, mNJMONIDKBF_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jNJMAGKBOMP_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1568, jNJMAGKBOMP_);
+      }
+      if (hBOFDEAOECD_ != 0) {
+        output.writeUInt32(1571, hBOFDEAOECD_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jMFFNLENHKG_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1806, jMFFNLENHKG_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientRandKey_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2015, clientRandKey_);
       }
       unknownFields.writeTo(output);
     }
@@ -1734,101 +1320,84 @@ public final class GetPlayerTokenReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, uid_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, countryCode_);
-      }
-      if (channelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, channelId_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(accountUid_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, accountUid_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, onlineId_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, onlineId_);
       }
-      if (isGuest_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isGuest_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, psnId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientIpStr_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, clientIpStr_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, countryCode_);
       }
       if (platformType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, platformType_);
+          .computeUInt32Size(8, platformType_);
       }
-      if (eJENLJFEOKP_ != 0) {
+      if (channelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, eJENLJFEOKP_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(accountUid_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, accountUid_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(iFCGGHCMKEB_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, iFCGGHCMKEB_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, psnId_);
+          .computeUInt32Size(9, channelId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(accountToken_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, accountToken_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, accountToken_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(oJFMHPMFCEC_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(17, oJFMHPMFCEC_);
-      }
-      if (mCEFDICOAEG_ != 0) {
+      if (isGuest_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(18, mCEFDICOAEG_);
+          .computeBoolSize(11, isGuest_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(hJOEBCIDJCD_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(80, hJOEBCIDJCD_);
-      }
-      if (bMAIEGBOOAH_ != 0) {
+      if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(96, bMAIEGBOOAH_);
+          .computeUInt32Size(12, uid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aDDELLGIEED_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(98, aDDELLGIEED_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientIpStr_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, clientIpStr_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientRandKey_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(347, clientRandKey_);
-      }
-      if (eKIIEJBONAE_ != 0) {
+      if (bPLIJHLODFK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(411, eKIIEJBONAE_);
+          .computeUInt32Size(16, bPLIJHLODFK_);
       }
-      if (gAFPBLLJLBI_ != 0) {
+      if (mBNBPHEOAKC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(569, gAFPBLLJLBI_);
+          .computeUInt32Size(570, mBNBPHEOAKC_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pJMKDOCDKLH_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(989, pJMKDOCDKLH_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(birthday_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(646, birthday_);
       }
-      if (hGHDGPOFCGJ_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1037, hGHDGPOFCGJ_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mGEJGMCKAEL_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(688, mGEJGMCKAEL_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jKHNJHPKNPB_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1213, jKHNJHPKNPB_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(cCEGIMNLNMB_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1340, cCEGIMNLNMB_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dDBGGGCJKDF_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(790, dDBGGGCJKDF_);
       }
       if (keyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1443, keyId_);
+          .computeUInt32Size(929, keyId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(birthday_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1499, birthday_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fLEFHGMJIAF_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1261, fLEFHGMJIAF_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jOGOIEEJJHF_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1768, jOGOIEEJJHF_);
-      }
-      if (jMMJGHEGMKA_ != 0) {
+      if (lGKIIKDAINK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8123, jMMJGHEGMKA_);
+          .computeUInt32Size(1270, lGKIIKDAINK_);
+      }
+      if (mNJMONIDKBF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1510, mNJMONIDKBF_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jNJMAGKBOMP_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1568, jNJMAGKBOMP_);
+      }
+      if (hBOFDEAOECD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1571, hBOFDEAOECD_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(jMFFNLENHKG_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1806, jMFFNLENHKG_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientRandKey_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2015, clientRandKey_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1845,62 +1414,52 @@ public final class GetPlayerTokenReqOuterClass {
       }
       emu.grasscutter.net.proto.GetPlayerTokenReqOuterClass.GetPlayerTokenReq other = (emu.grasscutter.net.proto.GetPlayerTokenReqOuterClass.GetPlayerTokenReq) obj;
 
-      if (!getHJOEBCIDJCD()
-          .equals(other.getHJOEBCIDJCD())) return false;
-      if (!getPJMKDOCDKLH()
-          .equals(other.getPJMKDOCDKLH())) return false;
-      if (!getOnlineId()
-          .equals(other.getOnlineId())) return false;
-      if (!getClientRandKey()
-          .equals(other.getClientRandKey())) return false;
-      if (!getIFCGGHCMKEB()
-          .equals(other.getIFCGGHCMKEB())) return false;
-      if (!getCCEGIMNLNMB()
-          .equals(other.getCCEGIMNLNMB())) return false;
-      if (!getPsnId()
-          .equals(other.getPsnId())) return false;
-      if (!getOJFMHPMFCEC()
-          .equals(other.getOJFMHPMFCEC())) return false;
-      if (!getADDELLGIEED()
-          .equals(other.getADDELLGIEED())) return false;
-      if (!getClientIpStr()
-          .equals(other.getClientIpStr())) return false;
       if (!getBirthday()
           .equals(other.getBirthday())) return false;
-      if (!getJKHNJHPKNPB()
-          .equals(other.getJKHNJHPKNPB())) return false;
-      if (!getCountryCode()
-          .equals(other.getCountryCode())) return false;
       if (!getAccountUid()
           .equals(other.getAccountUid())) return false;
+      if (!getDDBGGGCJKDF()
+          .equals(other.getDDBGGGCJKDF())) return false;
       if (!getAccountToken()
           .equals(other.getAccountToken())) return false;
-      if (!getJOGOIEEJJHF()
-          .equals(other.getJOGOIEEJJHF())) return false;
-      if (getEKIIEJBONAE()
-          != other.getEKIIEJBONAE()) return false;
-      if (getGAFPBLLJLBI()
-          != other.getGAFPBLLJLBI()) return false;
-      if (getIsGuest()
-          != other.getIsGuest()) return false;
-      if (getHGHDGPOFCGJ()
-          != other.getHGHDGPOFCGJ()) return false;
-      if (getMCEFDICOAEG()
-          != other.getMCEFDICOAEG()) return false;
-      if (getBMAIEGBOOAH()
-          != other.getBMAIEGBOOAH()) return false;
-      if (getUid()
-          != other.getUid()) return false;
-      if (getPlatformType()
-          != other.getPlatformType()) return false;
-      if (getJMMJGHEGMKA()
-          != other.getJMMJGHEGMKA()) return false;
-      if (getEJENLJFEOKP()
-          != other.getEJENLJFEOKP()) return false;
-      if (getKeyId()
-          != other.getKeyId()) return false;
+      if (!getOnlineId()
+          .equals(other.getOnlineId())) return false;
+      if (!getJNJMAGKBOMP()
+          .equals(other.getJNJMAGKBOMP())) return false;
+      if (!getPsnId()
+          .equals(other.getPsnId())) return false;
+      if (!getClientRandKey()
+          .equals(other.getClientRandKey())) return false;
+      if (!getJMFFNLENHKG()
+          .equals(other.getJMFFNLENHKG())) return false;
+      if (!getFLEFHGMJIAF()
+          .equals(other.getFLEFHGMJIAF())) return false;
+      if (!getCountryCode()
+          .equals(other.getCountryCode())) return false;
+      if (!getMGEJGMCKAEL()
+          .equals(other.getMGEJGMCKAEL())) return false;
+      if (!getClientIpStr()
+          .equals(other.getClientIpStr())) return false;
       if (getChannelId()
           != other.getChannelId()) return false;
+      if (getIsGuest()
+          != other.getIsGuest()) return false;
+      if (getKeyId()
+          != other.getKeyId()) return false;
+      if (getLGKIIKDAINK()
+          != other.getLGKIIKDAINK()) return false;
+      if (getBPLIJHLODFK()
+          != other.getBPLIJHLODFK()) return false;
+      if (getMNJMONIDKBF()
+          != other.getMNJMONIDKBF()) return false;
+      if (getPlatformType()
+          != other.getPlatformType()) return false;
+      if (getUid()
+          != other.getUid()) return false;
+      if (getHBOFDEAOECD()
+          != other.getHBOFDEAOECD()) return false;
+      if (getMBNBPHEOAKC()
+          != other.getMBNBPHEOAKC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1912,63 +1471,53 @@ public final class GetPlayerTokenReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HJOEBCIDJCD_FIELD_NUMBER;
-      hash = (53 * hash) + getHJOEBCIDJCD().hashCode();
-      hash = (37 * hash) + PJMKDOCDKLH_FIELD_NUMBER;
-      hash = (53 * hash) + getPJMKDOCDKLH().hashCode();
-      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getOnlineId().hashCode();
-      hash = (37 * hash) + CLIENT_RAND_KEY_FIELD_NUMBER;
-      hash = (53 * hash) + getClientRandKey().hashCode();
-      hash = (37 * hash) + IFCGGHCMKEB_FIELD_NUMBER;
-      hash = (53 * hash) + getIFCGGHCMKEB().hashCode();
-      hash = (37 * hash) + CCEGIMNLNMB_FIELD_NUMBER;
-      hash = (53 * hash) + getCCEGIMNLNMB().hashCode();
-      hash = (37 * hash) + PSN_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPsnId().hashCode();
-      hash = (37 * hash) + OJFMHPMFCEC_FIELD_NUMBER;
-      hash = (53 * hash) + getOJFMHPMFCEC().hashCode();
-      hash = (37 * hash) + ADDELLGIEED_FIELD_NUMBER;
-      hash = (53 * hash) + getADDELLGIEED().hashCode();
-      hash = (37 * hash) + CLIENT_IP_STR_FIELD_NUMBER;
-      hash = (53 * hash) + getClientIpStr().hashCode();
       hash = (37 * hash) + BIRTHDAY_FIELD_NUMBER;
       hash = (53 * hash) + getBirthday().hashCode();
-      hash = (37 * hash) + JKHNJHPKNPB_FIELD_NUMBER;
-      hash = (53 * hash) + getJKHNJHPKNPB().hashCode();
-      hash = (37 * hash) + COUNTRY_CODE_FIELD_NUMBER;
-      hash = (53 * hash) + getCountryCode().hashCode();
       hash = (37 * hash) + ACCOUNT_UID_FIELD_NUMBER;
       hash = (53 * hash) + getAccountUid().hashCode();
+      hash = (37 * hash) + DDBGGGCJKDF_FIELD_NUMBER;
+      hash = (53 * hash) + getDDBGGGCJKDF().hashCode();
       hash = (37 * hash) + ACCOUNT_TOKEN_FIELD_NUMBER;
       hash = (53 * hash) + getAccountToken().hashCode();
-      hash = (37 * hash) + JOGOIEEJJHF_FIELD_NUMBER;
-      hash = (53 * hash) + getJOGOIEEJJHF().hashCode();
-      hash = (37 * hash) + EKIIEJBONAE_FIELD_NUMBER;
-      hash = (53 * hash) + getEKIIEJBONAE();
-      hash = (37 * hash) + GAFPBLLJLBI_FIELD_NUMBER;
-      hash = (53 * hash) + getGAFPBLLJLBI();
+      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getOnlineId().hashCode();
+      hash = (37 * hash) + JNJMAGKBOMP_FIELD_NUMBER;
+      hash = (53 * hash) + getJNJMAGKBOMP().hashCode();
+      hash = (37 * hash) + PSN_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPsnId().hashCode();
+      hash = (37 * hash) + CLIENT_RAND_KEY_FIELD_NUMBER;
+      hash = (53 * hash) + getClientRandKey().hashCode();
+      hash = (37 * hash) + JMFFNLENHKG_FIELD_NUMBER;
+      hash = (53 * hash) + getJMFFNLENHKG().hashCode();
+      hash = (37 * hash) + FLEFHGMJIAF_FIELD_NUMBER;
+      hash = (53 * hash) + getFLEFHGMJIAF().hashCode();
+      hash = (37 * hash) + COUNTRY_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + getCountryCode().hashCode();
+      hash = (37 * hash) + MGEJGMCKAEL_FIELD_NUMBER;
+      hash = (53 * hash) + getMGEJGMCKAEL().hashCode();
+      hash = (37 * hash) + CLIENT_IP_STR_FIELD_NUMBER;
+      hash = (53 * hash) + getClientIpStr().hashCode();
+      hash = (37 * hash) + CHANNEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getChannelId();
       hash = (37 * hash) + IS_GUEST_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsGuest());
-      hash = (37 * hash) + HGHDGPOFCGJ_FIELD_NUMBER;
-      hash = (53 * hash) + getHGHDGPOFCGJ();
-      hash = (37 * hash) + MCEFDICOAEG_FIELD_NUMBER;
-      hash = (53 * hash) + getMCEFDICOAEG();
-      hash = (37 * hash) + BMAIEGBOOAH_FIELD_NUMBER;
-      hash = (53 * hash) + getBMAIEGBOOAH();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
-      hash = (37 * hash) + PLATFORM_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getPlatformType();
-      hash = (37 * hash) + JMMJGHEGMKA_FIELD_NUMBER;
-      hash = (53 * hash) + getJMMJGHEGMKA();
-      hash = (37 * hash) + EJENLJFEOKP_FIELD_NUMBER;
-      hash = (53 * hash) + getEJENLJFEOKP();
       hash = (37 * hash) + KEY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getKeyId();
-      hash = (37 * hash) + CHANNEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getChannelId();
+      hash = (37 * hash) + LGKIIKDAINK_FIELD_NUMBER;
+      hash = (53 * hash) + getLGKIIKDAINK();
+      hash = (37 * hash) + BPLIJHLODFK_FIELD_NUMBER;
+      hash = (53 * hash) + getBPLIJHLODFK();
+      hash = (37 * hash) + MNJMONIDKBF_FIELD_NUMBER;
+      hash = (53 * hash) + getMNJMONIDKBF();
+      hash = (37 * hash) + PLATFORM_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getPlatformType();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + HBOFDEAOECD_FIELD_NUMBER;
+      hash = (53 * hash) + getHBOFDEAOECD();
+      hash = (37 * hash) + MBNBPHEOAKC_FIELD_NUMBER;
+      hash = (53 * hash) + getMBNBPHEOAKC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -2066,7 +1615,7 @@ public final class GetPlayerTokenReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23191
+     * CmdId: 29482
      * </pre>
      *
      * Protobuf type {@code GetPlayerTokenReq}
@@ -2106,61 +1655,51 @@ public final class GetPlayerTokenReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hJOEBCIDJCD_ = "";
-
-        pJMKDOCDKLH_ = "";
-
-        onlineId_ = "";
-
-        clientRandKey_ = "";
-
-        iFCGGHCMKEB_ = "";
-
-        cCEGIMNLNMB_ = "";
-
-        psnId_ = "";
-
-        oJFMHPMFCEC_ = "";
-
-        aDDELLGIEED_ = "";
-
-        clientIpStr_ = "";
-
         birthday_ = "";
-
-        jKHNJHPKNPB_ = "";
-
-        countryCode_ = "";
 
         accountUid_ = "";
 
+        dDBGGGCJKDF_ = "";
+
         accountToken_ = "";
 
-        jOGOIEEJJHF_ = "";
+        onlineId_ = "";
 
-        eKIIEJBONAE_ = 0;
+        jNJMAGKBOMP_ = "";
 
-        gAFPBLLJLBI_ = 0;
+        psnId_ = "";
+
+        clientRandKey_ = "";
+
+        jMFFNLENHKG_ = "";
+
+        fLEFHGMJIAF_ = "";
+
+        countryCode_ = "";
+
+        mGEJGMCKAEL_ = "";
+
+        clientIpStr_ = "";
+
+        channelId_ = 0;
 
         isGuest_ = false;
 
-        hGHDGPOFCGJ_ = 0;
+        keyId_ = 0;
 
-        mCEFDICOAEG_ = 0;
+        lGKIIKDAINK_ = 0;
 
-        bMAIEGBOOAH_ = 0;
+        bPLIJHLODFK_ = 0;
 
-        uid_ = 0;
+        mNJMONIDKBF_ = 0;
 
         platformType_ = 0;
 
-        jMMJGHEGMKA_ = 0;
+        uid_ = 0;
 
-        eJENLJFEOKP_ = 0;
+        hBOFDEAOECD_ = 0;
 
-        keyId_ = 0;
-
-        channelId_ = 0;
+        mBNBPHEOAKC_ = 0;
 
         return this;
       }
@@ -2188,34 +1727,29 @@ public final class GetPlayerTokenReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetPlayerTokenReqOuterClass.GetPlayerTokenReq buildPartial() {
         emu.grasscutter.net.proto.GetPlayerTokenReqOuterClass.GetPlayerTokenReq result = new emu.grasscutter.net.proto.GetPlayerTokenReqOuterClass.GetPlayerTokenReq(this);
-        result.hJOEBCIDJCD_ = hJOEBCIDJCD_;
-        result.pJMKDOCDKLH_ = pJMKDOCDKLH_;
-        result.onlineId_ = onlineId_;
-        result.clientRandKey_ = clientRandKey_;
-        result.iFCGGHCMKEB_ = iFCGGHCMKEB_;
-        result.cCEGIMNLNMB_ = cCEGIMNLNMB_;
-        result.psnId_ = psnId_;
-        result.oJFMHPMFCEC_ = oJFMHPMFCEC_;
-        result.aDDELLGIEED_ = aDDELLGIEED_;
-        result.clientIpStr_ = clientIpStr_;
         result.birthday_ = birthday_;
-        result.jKHNJHPKNPB_ = jKHNJHPKNPB_;
-        result.countryCode_ = countryCode_;
         result.accountUid_ = accountUid_;
+        result.dDBGGGCJKDF_ = dDBGGGCJKDF_;
         result.accountToken_ = accountToken_;
-        result.jOGOIEEJJHF_ = jOGOIEEJJHF_;
-        result.eKIIEJBONAE_ = eKIIEJBONAE_;
-        result.gAFPBLLJLBI_ = gAFPBLLJLBI_;
-        result.isGuest_ = isGuest_;
-        result.hGHDGPOFCGJ_ = hGHDGPOFCGJ_;
-        result.mCEFDICOAEG_ = mCEFDICOAEG_;
-        result.bMAIEGBOOAH_ = bMAIEGBOOAH_;
-        result.uid_ = uid_;
-        result.platformType_ = platformType_;
-        result.jMMJGHEGMKA_ = jMMJGHEGMKA_;
-        result.eJENLJFEOKP_ = eJENLJFEOKP_;
-        result.keyId_ = keyId_;
+        result.onlineId_ = onlineId_;
+        result.jNJMAGKBOMP_ = jNJMAGKBOMP_;
+        result.psnId_ = psnId_;
+        result.clientRandKey_ = clientRandKey_;
+        result.jMFFNLENHKG_ = jMFFNLENHKG_;
+        result.fLEFHGMJIAF_ = fLEFHGMJIAF_;
+        result.countryCode_ = countryCode_;
+        result.mGEJGMCKAEL_ = mGEJGMCKAEL_;
+        result.clientIpStr_ = clientIpStr_;
         result.channelId_ = channelId_;
+        result.isGuest_ = isGuest_;
+        result.keyId_ = keyId_;
+        result.lGKIIKDAINK_ = lGKIIKDAINK_;
+        result.bPLIJHLODFK_ = bPLIJHLODFK_;
+        result.mNJMONIDKBF_ = mNJMONIDKBF_;
+        result.platformType_ = platformType_;
+        result.uid_ = uid_;
+        result.hBOFDEAOECD_ = hBOFDEAOECD_;
+        result.mBNBPHEOAKC_ = mBNBPHEOAKC_;
         onBuilt();
         return result;
       }
@@ -2264,105 +1798,87 @@ public final class GetPlayerTokenReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetPlayerTokenReqOuterClass.GetPlayerTokenReq other) {
         if (other == emu.grasscutter.net.proto.GetPlayerTokenReqOuterClass.GetPlayerTokenReq.getDefaultInstance()) return this;
-        if (!other.getHJOEBCIDJCD().isEmpty()) {
-          hJOEBCIDJCD_ = other.hJOEBCIDJCD_;
-          onChanged();
-        }
-        if (!other.getPJMKDOCDKLH().isEmpty()) {
-          pJMKDOCDKLH_ = other.pJMKDOCDKLH_;
-          onChanged();
-        }
-        if (!other.getOnlineId().isEmpty()) {
-          onlineId_ = other.onlineId_;
-          onChanged();
-        }
-        if (!other.getClientRandKey().isEmpty()) {
-          clientRandKey_ = other.clientRandKey_;
-          onChanged();
-        }
-        if (!other.getIFCGGHCMKEB().isEmpty()) {
-          iFCGGHCMKEB_ = other.iFCGGHCMKEB_;
-          onChanged();
-        }
-        if (!other.getCCEGIMNLNMB().isEmpty()) {
-          cCEGIMNLNMB_ = other.cCEGIMNLNMB_;
-          onChanged();
-        }
-        if (!other.getPsnId().isEmpty()) {
-          psnId_ = other.psnId_;
-          onChanged();
-        }
-        if (!other.getOJFMHPMFCEC().isEmpty()) {
-          oJFMHPMFCEC_ = other.oJFMHPMFCEC_;
-          onChanged();
-        }
-        if (!other.getADDELLGIEED().isEmpty()) {
-          aDDELLGIEED_ = other.aDDELLGIEED_;
-          onChanged();
-        }
-        if (!other.getClientIpStr().isEmpty()) {
-          clientIpStr_ = other.clientIpStr_;
-          onChanged();
-        }
         if (!other.getBirthday().isEmpty()) {
           birthday_ = other.birthday_;
-          onChanged();
-        }
-        if (!other.getJKHNJHPKNPB().isEmpty()) {
-          jKHNJHPKNPB_ = other.jKHNJHPKNPB_;
-          onChanged();
-        }
-        if (!other.getCountryCode().isEmpty()) {
-          countryCode_ = other.countryCode_;
           onChanged();
         }
         if (!other.getAccountUid().isEmpty()) {
           accountUid_ = other.accountUid_;
           onChanged();
         }
+        if (!other.getDDBGGGCJKDF().isEmpty()) {
+          dDBGGGCJKDF_ = other.dDBGGGCJKDF_;
+          onChanged();
+        }
         if (!other.getAccountToken().isEmpty()) {
           accountToken_ = other.accountToken_;
           onChanged();
         }
-        if (!other.getJOGOIEEJJHF().isEmpty()) {
-          jOGOIEEJJHF_ = other.jOGOIEEJJHF_;
+        if (!other.getOnlineId().isEmpty()) {
+          onlineId_ = other.onlineId_;
           onChanged();
         }
-        if (other.getEKIIEJBONAE() != 0) {
-          setEKIIEJBONAE(other.getEKIIEJBONAE());
+        if (!other.getJNJMAGKBOMP().isEmpty()) {
+          jNJMAGKBOMP_ = other.jNJMAGKBOMP_;
+          onChanged();
         }
-        if (other.getGAFPBLLJLBI() != 0) {
-          setGAFPBLLJLBI(other.getGAFPBLLJLBI());
+        if (!other.getPsnId().isEmpty()) {
+          psnId_ = other.psnId_;
+          onChanged();
+        }
+        if (!other.getClientRandKey().isEmpty()) {
+          clientRandKey_ = other.clientRandKey_;
+          onChanged();
+        }
+        if (!other.getJMFFNLENHKG().isEmpty()) {
+          jMFFNLENHKG_ = other.jMFFNLENHKG_;
+          onChanged();
+        }
+        if (!other.getFLEFHGMJIAF().isEmpty()) {
+          fLEFHGMJIAF_ = other.fLEFHGMJIAF_;
+          onChanged();
+        }
+        if (!other.getCountryCode().isEmpty()) {
+          countryCode_ = other.countryCode_;
+          onChanged();
+        }
+        if (!other.getMGEJGMCKAEL().isEmpty()) {
+          mGEJGMCKAEL_ = other.mGEJGMCKAEL_;
+          onChanged();
+        }
+        if (!other.getClientIpStr().isEmpty()) {
+          clientIpStr_ = other.clientIpStr_;
+          onChanged();
+        }
+        if (other.getChannelId() != 0) {
+          setChannelId(other.getChannelId());
         }
         if (other.getIsGuest() != false) {
           setIsGuest(other.getIsGuest());
         }
-        if (other.getHGHDGPOFCGJ() != 0) {
-          setHGHDGPOFCGJ(other.getHGHDGPOFCGJ());
+        if (other.getKeyId() != 0) {
+          setKeyId(other.getKeyId());
         }
-        if (other.getMCEFDICOAEG() != 0) {
-          setMCEFDICOAEG(other.getMCEFDICOAEG());
+        if (other.getLGKIIKDAINK() != 0) {
+          setLGKIIKDAINK(other.getLGKIIKDAINK());
         }
-        if (other.getBMAIEGBOOAH() != 0) {
-          setBMAIEGBOOAH(other.getBMAIEGBOOAH());
+        if (other.getBPLIJHLODFK() != 0) {
+          setBPLIJHLODFK(other.getBPLIJHLODFK());
         }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
+        if (other.getMNJMONIDKBF() != 0) {
+          setMNJMONIDKBF(other.getMNJMONIDKBF());
         }
         if (other.getPlatformType() != 0) {
           setPlatformType(other.getPlatformType());
         }
-        if (other.getJMMJGHEGMKA() != 0) {
-          setJMMJGHEGMKA(other.getJMMJGHEGMKA());
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
         }
-        if (other.getEJENLJFEOKP() != 0) {
-          setEJENLJFEOKP(other.getEJENLJFEOKP());
+        if (other.getHBOFDEAOECD() != 0) {
+          setHBOFDEAOECD(other.getHBOFDEAOECD());
         }
-        if (other.getKeyId() != 0) {
-          setKeyId(other.getKeyId());
-        }
-        if (other.getChannelId() != 0) {
-          setChannelId(other.getChannelId());
+        if (other.getMBNBPHEOAKC() != 0) {
+          setMBNBPHEOAKC(other.getMBNBPHEOAKC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2393,973 +1909,13 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
 
-      private java.lang.Object hJOEBCIDJCD_ = "";
-      /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string HJOEBCIDJCD = 80;</code>
-       * @return The hJOEBCIDJCD.
-       */
-      public java.lang.String getHJOEBCIDJCD() {
-        java.lang.Object ref = hJOEBCIDJCD_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          hJOEBCIDJCD_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string HJOEBCIDJCD = 80;</code>
-       * @return The bytes for hJOEBCIDJCD.
-       */
-      public com.google.protobuf.ByteString
-          getHJOEBCIDJCDBytes() {
-        java.lang.Object ref = hJOEBCIDJCD_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          hJOEBCIDJCD_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string HJOEBCIDJCD = 80;</code>
-       * @param value The hJOEBCIDJCD to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHJOEBCIDJCD(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        hJOEBCIDJCD_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string HJOEBCIDJCD = 80;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHJOEBCIDJCD() {
-        
-        hJOEBCIDJCD_ = getDefaultInstance().getHJOEBCIDJCD();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string HJOEBCIDJCD = 80;</code>
-       * @param value The bytes for hJOEBCIDJCD to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHJOEBCIDJCDBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        hJOEBCIDJCD_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object pJMKDOCDKLH_ = "";
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>string PJMKDOCDKLH = 989;</code>
-       * @return The pJMKDOCDKLH.
-       */
-      public java.lang.String getPJMKDOCDKLH() {
-        java.lang.Object ref = pJMKDOCDKLH_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          pJMKDOCDKLH_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>string PJMKDOCDKLH = 989;</code>
-       * @return The bytes for pJMKDOCDKLH.
-       */
-      public com.google.protobuf.ByteString
-          getPJMKDOCDKLHBytes() {
-        java.lang.Object ref = pJMKDOCDKLH_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          pJMKDOCDKLH_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>string PJMKDOCDKLH = 989;</code>
-       * @param value The pJMKDOCDKLH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPJMKDOCDKLH(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        pJMKDOCDKLH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>string PJMKDOCDKLH = 989;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPJMKDOCDKLH() {
-        
-        pJMKDOCDKLH_ = getDefaultInstance().getPJMKDOCDKLH();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>string PJMKDOCDKLH = 989;</code>
-       * @param value The bytes for pJMKDOCDKLH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPJMKDOCDKLHBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        pJMKDOCDKLH_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object onlineId_ = "";
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>string online_id = 7;</code>
-       * @return The onlineId.
-       */
-      public java.lang.String getOnlineId() {
-        java.lang.Object ref = onlineId_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          onlineId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>string online_id = 7;</code>
-       * @return The bytes for onlineId.
-       */
-      public com.google.protobuf.ByteString
-          getOnlineIdBytes() {
-        java.lang.Object ref = onlineId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          onlineId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>string online_id = 7;</code>
-       * @param value The onlineId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOnlineId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        onlineId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>string online_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOnlineId() {
-        
-        onlineId_ = getDefaultInstance().getOnlineId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>string online_id = 7;</code>
-       * @param value The bytes for onlineId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOnlineIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        onlineId_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object clientRandKey_ = "";
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>string client_rand_key = 347;</code>
-       * @return The clientRandKey.
-       */
-      public java.lang.String getClientRandKey() {
-        java.lang.Object ref = clientRandKey_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          clientRandKey_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>string client_rand_key = 347;</code>
-       * @return The bytes for clientRandKey.
-       */
-      public com.google.protobuf.ByteString
-          getClientRandKeyBytes() {
-        java.lang.Object ref = clientRandKey_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          clientRandKey_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>string client_rand_key = 347;</code>
-       * @param value The clientRandKey to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientRandKey(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        clientRandKey_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>string client_rand_key = 347;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearClientRandKey() {
-        
-        clientRandKey_ = getDefaultInstance().getClientRandKey();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>string client_rand_key = 347;</code>
-       * @param value The bytes for clientRandKey to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientRandKeyBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        clientRandKey_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object iFCGGHCMKEB_ = "";
-      /**
-       * <pre>
-       * offset: 64
-       * </pre>
-       *
-       * <code>string IFCGGHCMKEB = 13;</code>
-       * @return The iFCGGHCMKEB.
-       */
-      public java.lang.String getIFCGGHCMKEB() {
-        java.lang.Object ref = iFCGGHCMKEB_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          iFCGGHCMKEB_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 64
-       * </pre>
-       *
-       * <code>string IFCGGHCMKEB = 13;</code>
-       * @return The bytes for iFCGGHCMKEB.
-       */
-      public com.google.protobuf.ByteString
-          getIFCGGHCMKEBBytes() {
-        java.lang.Object ref = iFCGGHCMKEB_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          iFCGGHCMKEB_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 64
-       * </pre>
-       *
-       * <code>string IFCGGHCMKEB = 13;</code>
-       * @param value The iFCGGHCMKEB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIFCGGHCMKEB(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        iFCGGHCMKEB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 64
-       * </pre>
-       *
-       * <code>string IFCGGHCMKEB = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIFCGGHCMKEB() {
-        
-        iFCGGHCMKEB_ = getDefaultInstance().getIFCGGHCMKEB();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 64
-       * </pre>
-       *
-       * <code>string IFCGGHCMKEB = 13;</code>
-       * @param value The bytes for iFCGGHCMKEB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIFCGGHCMKEBBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        iFCGGHCMKEB_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object cCEGIMNLNMB_ = "";
-      /**
-       * <pre>
-       * offset: 72
-       * </pre>
-       *
-       * <code>string CCEGIMNLNMB = 1340;</code>
-       * @return The cCEGIMNLNMB.
-       */
-      public java.lang.String getCCEGIMNLNMB() {
-        java.lang.Object ref = cCEGIMNLNMB_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          cCEGIMNLNMB_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 72
-       * </pre>
-       *
-       * <code>string CCEGIMNLNMB = 1340;</code>
-       * @return The bytes for cCEGIMNLNMB.
-       */
-      public com.google.protobuf.ByteString
-          getCCEGIMNLNMBBytes() {
-        java.lang.Object ref = cCEGIMNLNMB_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          cCEGIMNLNMB_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 72
-       * </pre>
-       *
-       * <code>string CCEGIMNLNMB = 1340;</code>
-       * @param value The cCEGIMNLNMB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCCEGIMNLNMB(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        cCEGIMNLNMB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 72
-       * </pre>
-       *
-       * <code>string CCEGIMNLNMB = 1340;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCCEGIMNLNMB() {
-        
-        cCEGIMNLNMB_ = getDefaultInstance().getCCEGIMNLNMB();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 72
-       * </pre>
-       *
-       * <code>string CCEGIMNLNMB = 1340;</code>
-       * @param value The bytes for cCEGIMNLNMB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCCEGIMNLNMBBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        cCEGIMNLNMB_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object psnId_ = "";
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>string psn_id = 14;</code>
-       * @return The psnId.
-       */
-      public java.lang.String getPsnId() {
-        java.lang.Object ref = psnId_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          psnId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>string psn_id = 14;</code>
-       * @return The bytes for psnId.
-       */
-      public com.google.protobuf.ByteString
-          getPsnIdBytes() {
-        java.lang.Object ref = psnId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          psnId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>string psn_id = 14;</code>
-       * @param value The psnId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPsnId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        psnId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>string psn_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPsnId() {
-        
-        psnId_ = getDefaultInstance().getPsnId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>string psn_id = 14;</code>
-       * @param value The bytes for psnId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPsnIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        psnId_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object oJFMHPMFCEC_ = "";
-      /**
-       * <pre>
-       * offset: 88
-       * </pre>
-       *
-       * <code>string OJFMHPMFCEC = 17;</code>
-       * @return The oJFMHPMFCEC.
-       */
-      public java.lang.String getOJFMHPMFCEC() {
-        java.lang.Object ref = oJFMHPMFCEC_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          oJFMHPMFCEC_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 88
-       * </pre>
-       *
-       * <code>string OJFMHPMFCEC = 17;</code>
-       * @return The bytes for oJFMHPMFCEC.
-       */
-      public com.google.protobuf.ByteString
-          getOJFMHPMFCECBytes() {
-        java.lang.Object ref = oJFMHPMFCEC_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          oJFMHPMFCEC_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 88
-       * </pre>
-       *
-       * <code>string OJFMHPMFCEC = 17;</code>
-       * @param value The oJFMHPMFCEC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOJFMHPMFCEC(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        oJFMHPMFCEC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 88
-       * </pre>
-       *
-       * <code>string OJFMHPMFCEC = 17;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOJFMHPMFCEC() {
-        
-        oJFMHPMFCEC_ = getDefaultInstance().getOJFMHPMFCEC();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 88
-       * </pre>
-       *
-       * <code>string OJFMHPMFCEC = 17;</code>
-       * @param value The bytes for oJFMHPMFCEC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOJFMHPMFCECBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        oJFMHPMFCEC_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object aDDELLGIEED_ = "";
-      /**
-       * <pre>
-       * offset: 96
-       * </pre>
-       *
-       * <code>string ADDELLGIEED = 98;</code>
-       * @return The aDDELLGIEED.
-       */
-      public java.lang.String getADDELLGIEED() {
-        java.lang.Object ref = aDDELLGIEED_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          aDDELLGIEED_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 96
-       * </pre>
-       *
-       * <code>string ADDELLGIEED = 98;</code>
-       * @return The bytes for aDDELLGIEED.
-       */
-      public com.google.protobuf.ByteString
-          getADDELLGIEEDBytes() {
-        java.lang.Object ref = aDDELLGIEED_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          aDDELLGIEED_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 96
-       * </pre>
-       *
-       * <code>string ADDELLGIEED = 98;</code>
-       * @param value The aDDELLGIEED to set.
-       * @return This builder for chaining.
-       */
-      public Builder setADDELLGIEED(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        aDDELLGIEED_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 96
-       * </pre>
-       *
-       * <code>string ADDELLGIEED = 98;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearADDELLGIEED() {
-        
-        aDDELLGIEED_ = getDefaultInstance().getADDELLGIEED();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 96
-       * </pre>
-       *
-       * <code>string ADDELLGIEED = 98;</code>
-       * @param value The bytes for aDDELLGIEED to set.
-       * @return This builder for chaining.
-       */
-      public Builder setADDELLGIEEDBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        aDDELLGIEED_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object clientIpStr_ = "";
-      /**
-       * <pre>
-       *6.3.0 // offset: 104
-       * </pre>
-       *
-       * <code>string client_ip_str = 9;</code>
-       * @return The clientIpStr.
-       */
-      public java.lang.String getClientIpStr() {
-        java.lang.Object ref = clientIpStr_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          clientIpStr_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 104
-       * </pre>
-       *
-       * <code>string client_ip_str = 9;</code>
-       * @return The bytes for clientIpStr.
-       */
-      public com.google.protobuf.ByteString
-          getClientIpStrBytes() {
-        java.lang.Object ref = clientIpStr_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          clientIpStr_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 104
-       * </pre>
-       *
-       * <code>string client_ip_str = 9;</code>
-       * @param value The clientIpStr to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientIpStr(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        clientIpStr_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 104
-       * </pre>
-       *
-       * <code>string client_ip_str = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearClientIpStr() {
-        
-        clientIpStr_ = getDefaultInstance().getClientIpStr();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 104
-       * </pre>
-       *
-       * <code>string client_ip_str = 9;</code>
-       * @param value The bytes for clientIpStr to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientIpStrBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        clientIpStr_ = value;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object birthday_ = "";
       /**
        * <pre>
-       *6.3.0 // offset: 112
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string birthday = 1499;</code>
+       * <code>string birthday = 646;</code>
        * @return The birthday.
        */
       public java.lang.String getBirthday() {
@@ -3376,10 +1932,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 112
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string birthday = 1499;</code>
+       * <code>string birthday = 646;</code>
        * @return The bytes for birthday.
        */
       public com.google.protobuf.ByteString
@@ -3397,10 +1953,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 112
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string birthday = 1499;</code>
+       * <code>string birthday = 646;</code>
        * @param value The birthday to set.
        * @return This builder for chaining.
        */
@@ -3416,10 +1972,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 112
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string birthday = 1499;</code>
+       * <code>string birthday = 646;</code>
        * @return This builder for chaining.
        */
       public Builder clearBirthday() {
@@ -3430,10 +1986,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 112
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string birthday = 1499;</code>
+       * <code>string birthday = 646;</code>
        * @param value The bytes for birthday to set.
        * @return This builder for chaining.
        */
@@ -3449,205 +2005,13 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
 
-      private java.lang.Object jKHNJHPKNPB_ = "";
-      /**
-       * <pre>
-       * offset: 120
-       * </pre>
-       *
-       * <code>string JKHNJHPKNPB = 1213;</code>
-       * @return The jKHNJHPKNPB.
-       */
-      public java.lang.String getJKHNJHPKNPB() {
-        java.lang.Object ref = jKHNJHPKNPB_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          jKHNJHPKNPB_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 120
-       * </pre>
-       *
-       * <code>string JKHNJHPKNPB = 1213;</code>
-       * @return The bytes for jKHNJHPKNPB.
-       */
-      public com.google.protobuf.ByteString
-          getJKHNJHPKNPBBytes() {
-        java.lang.Object ref = jKHNJHPKNPB_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          jKHNJHPKNPB_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 120
-       * </pre>
-       *
-       * <code>string JKHNJHPKNPB = 1213;</code>
-       * @param value The jKHNJHPKNPB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJKHNJHPKNPB(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        jKHNJHPKNPB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 120
-       * </pre>
-       *
-       * <code>string JKHNJHPKNPB = 1213;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJKHNJHPKNPB() {
-        
-        jKHNJHPKNPB_ = getDefaultInstance().getJKHNJHPKNPB();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 120
-       * </pre>
-       *
-       * <code>string JKHNJHPKNPB = 1213;</code>
-       * @param value The bytes for jKHNJHPKNPB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJKHNJHPKNPBBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        jKHNJHPKNPB_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object countryCode_ = "";
-      /**
-       * <pre>
-       *6.3.0 // offset: 128
-       * </pre>
-       *
-       * <code>string country_code = 3;</code>
-       * @return The countryCode.
-       */
-      public java.lang.String getCountryCode() {
-        java.lang.Object ref = countryCode_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          countryCode_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 128
-       * </pre>
-       *
-       * <code>string country_code = 3;</code>
-       * @return The bytes for countryCode.
-       */
-      public com.google.protobuf.ByteString
-          getCountryCodeBytes() {
-        java.lang.Object ref = countryCode_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          countryCode_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 128
-       * </pre>
-       *
-       * <code>string country_code = 3;</code>
-       * @param value The countryCode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCountryCode(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        countryCode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 128
-       * </pre>
-       *
-       * <code>string country_code = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCountryCode() {
-        
-        countryCode_ = getDefaultInstance().getCountryCode();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 128
-       * </pre>
-       *
-       * <code>string country_code = 3;</code>
-       * @param value The bytes for countryCode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCountryCodeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        countryCode_ = value;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object accountUid_ = "";
       /**
        * <pre>
-       *6.3.0 // offset: 136
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_uid = 12;</code>
+       * <code>string account_uid = 1;</code>
        * @return The accountUid.
        */
       public java.lang.String getAccountUid() {
@@ -3664,10 +2028,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 136
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_uid = 12;</code>
+       * <code>string account_uid = 1;</code>
        * @return The bytes for accountUid.
        */
       public com.google.protobuf.ByteString
@@ -3685,10 +2049,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 136
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_uid = 12;</code>
+       * <code>string account_uid = 1;</code>
        * @param value The accountUid to set.
        * @return This builder for chaining.
        */
@@ -3704,10 +2068,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 136
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_uid = 12;</code>
+       * <code>string account_uid = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearAccountUid() {
@@ -3718,10 +2082,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 136
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_uid = 12;</code>
+       * <code>string account_uid = 1;</code>
        * @param value The bytes for accountUid to set.
        * @return This builder for chaining.
        */
@@ -3737,13 +2101,89 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
 
+      private java.lang.Object dDBGGGCJKDF_ = "";
+      /**
+       * <code>string DDBGGGCJKDF = 790;</code>
+       * @return The dDBGGGCJKDF.
+       */
+      public java.lang.String getDDBGGGCJKDF() {
+        java.lang.Object ref = dDBGGGCJKDF_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          dDBGGGCJKDF_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string DDBGGGCJKDF = 790;</code>
+       * @return The bytes for dDBGGGCJKDF.
+       */
+      public com.google.protobuf.ByteString
+          getDDBGGGCJKDFBytes() {
+        java.lang.Object ref = dDBGGGCJKDF_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          dDBGGGCJKDF_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string DDBGGGCJKDF = 790;</code>
+       * @param value The dDBGGGCJKDF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDDBGGGCJKDF(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        dDBGGGCJKDF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string DDBGGGCJKDF = 790;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDDBGGGCJKDF() {
+        
+        dDBGGGCJKDF_ = getDefaultInstance().getDDBGGGCJKDF();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string DDBGGGCJKDF = 790;</code>
+       * @param value The bytes for dDBGGGCJKDF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDDBGGGCJKDFBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        dDBGGGCJKDF_ = value;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object accountToken_ = "";
       /**
        * <pre>
-       *6.3.0 // offset: 144
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_token = 15;</code>
+       * <code>string account_token = 10;</code>
        * @return The accountToken.
        */
       public java.lang.String getAccountToken() {
@@ -3760,10 +2200,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 144
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_token = 15;</code>
+       * <code>string account_token = 10;</code>
        * @return The bytes for accountToken.
        */
       public com.google.protobuf.ByteString
@@ -3781,10 +2221,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 144
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_token = 15;</code>
+       * <code>string account_token = 10;</code>
        * @param value The accountToken to set.
        * @return This builder for chaining.
        */
@@ -3800,10 +2240,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 144
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_token = 15;</code>
+       * <code>string account_token = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearAccountToken() {
@@ -3814,10 +2254,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 144
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>string account_token = 15;</code>
+       * <code>string account_token = 10;</code>
        * @param value The bytes for accountToken to set.
        * @return This builder for chaining.
        */
@@ -3833,22 +2273,22 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
 
-      private java.lang.Object jOGOIEEJJHF_ = "";
+      private java.lang.Object onlineId_ = "";
       /**
        * <pre>
-       * offset: 152
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string JOGOIEEJJHF = 1768;</code>
-       * @return The jOGOIEEJJHF.
+       * <code>string online_id = 3;</code>
+       * @return The onlineId.
        */
-      public java.lang.String getJOGOIEEJJHF() {
-        java.lang.Object ref = jOGOIEEJJHF_;
+      public java.lang.String getOnlineId() {
+        java.lang.Object ref = onlineId_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          jOGOIEEJJHF_ = s;
+          onlineId_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
@@ -3856,20 +2296,20 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       * offset: 152
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string JOGOIEEJJHF = 1768;</code>
-       * @return The bytes for jOGOIEEJJHF.
+       * <code>string online_id = 3;</code>
+       * @return The bytes for onlineId.
        */
       public com.google.protobuf.ByteString
-          getJOGOIEEJJHFBytes() {
-        java.lang.Object ref = jOGOIEEJJHF_;
+          getOnlineIdBytes() {
+        java.lang.Object ref = onlineId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          jOGOIEEJJHF_ = b;
+          onlineId_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
@@ -3877,527 +2317,742 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       * offset: 152
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string JOGOIEEJJHF = 1768;</code>
-       * @param value The jOGOIEEJJHF to set.
+       * <code>string online_id = 3;</code>
+       * @param value The onlineId to set.
        * @return This builder for chaining.
        */
-      public Builder setJOGOIEEJJHF(
+      public Builder setOnlineId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        jOGOIEEJJHF_ = value;
+        onlineId_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 152
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string JOGOIEEJJHF = 1768;</code>
+       * <code>string online_id = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJOGOIEEJJHF() {
+      public Builder clearOnlineId() {
         
-        jOGOIEEJJHF_ = getDefaultInstance().getJOGOIEEJJHF();
+        onlineId_ = getDefaultInstance().getOnlineId();
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 152
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>string JOGOIEEJJHF = 1768;</code>
-       * @param value The bytes for jOGOIEEJJHF to set.
+       * <code>string online_id = 3;</code>
+       * @param value The bytes for onlineId to set.
        * @return This builder for chaining.
        */
-      public Builder setJOGOIEEJJHFBytes(
+      public Builder setOnlineIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        jOGOIEEJJHF_ = value;
+        onlineId_ = value;
         onChanged();
         return this;
       }
 
-      private int eKIIEJBONAE_ ;
+      private java.lang.Object jNJMAGKBOMP_ = "";
       /**
-       * <pre>
-       * offset: 160
-       * </pre>
-       *
-       * <code>uint32 EKIIEJBONAE = 411;</code>
-       * @return The eKIIEJBONAE.
+       * <code>string JNJMAGKBOMP = 1568;</code>
+       * @return The jNJMAGKBOMP.
        */
-      @java.lang.Override
-      public int getEKIIEJBONAE() {
-        return eKIIEJBONAE_;
+      public java.lang.String getJNJMAGKBOMP() {
+        java.lang.Object ref = jNJMAGKBOMP_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          jNJMAGKBOMP_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <pre>
-       * offset: 160
-       * </pre>
-       *
-       * <code>uint32 EKIIEJBONAE = 411;</code>
-       * @param value The eKIIEJBONAE to set.
+       * <code>string JNJMAGKBOMP = 1568;</code>
+       * @return The bytes for jNJMAGKBOMP.
+       */
+      public com.google.protobuf.ByteString
+          getJNJMAGKBOMPBytes() {
+        java.lang.Object ref = jNJMAGKBOMP_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          jNJMAGKBOMP_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string JNJMAGKBOMP = 1568;</code>
+       * @param value The jNJMAGKBOMP to set.
        * @return This builder for chaining.
        */
-      public Builder setEKIIEJBONAE(int value) {
-        
-        eKIIEJBONAE_ = value;
+      public Builder setJNJMAGKBOMP(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        jNJMAGKBOMP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 160
-       * </pre>
-       *
-       * <code>uint32 EKIIEJBONAE = 411;</code>
+       * <code>string JNJMAGKBOMP = 1568;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEKIIEJBONAE() {
+      public Builder clearJNJMAGKBOMP() {
         
-        eKIIEJBONAE_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int gAFPBLLJLBI_ ;
-      /**
-       * <pre>
-       * offset: 164
-       * </pre>
-       *
-       * <code>uint32 GAFPBLLJLBI = 569;</code>
-       * @return The gAFPBLLJLBI.
-       */
-      @java.lang.Override
-      public int getGAFPBLLJLBI() {
-        return gAFPBLLJLBI_;
-      }
-      /**
-       * <pre>
-       * offset: 164
-       * </pre>
-       *
-       * <code>uint32 GAFPBLLJLBI = 569;</code>
-       * @param value The gAFPBLLJLBI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGAFPBLLJLBI(int value) {
-        
-        gAFPBLLJLBI_ = value;
+        jNJMAGKBOMP_ = getDefaultInstance().getJNJMAGKBOMP();
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 164
-       * </pre>
-       *
-       * <code>uint32 GAFPBLLJLBI = 569;</code>
+       * <code>string JNJMAGKBOMP = 1568;</code>
+       * @param value The bytes for jNJMAGKBOMP to set.
        * @return This builder for chaining.
        */
-      public Builder clearGAFPBLLJLBI() {
+      public Builder setJNJMAGKBOMPBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
         
-        gAFPBLLJLBI_ = 0;
+        jNJMAGKBOMP_ = value;
         onChanged();
         return this;
       }
 
-      private boolean isGuest_ ;
+      private java.lang.Object psnId_ = "";
       /**
        * <pre>
-       *6.3.0 // offset: 168
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_guest = 8;</code>
-       * @return The isGuest.
+       * <code>string psn_id = 5;</code>
+       * @return The psnId.
        */
-      @java.lang.Override
-      public boolean getIsGuest() {
-        return isGuest_;
+      public java.lang.String getPsnId() {
+        java.lang.Object ref = psnId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          psnId_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
        * <pre>
-       *6.3.0 // offset: 168
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_guest = 8;</code>
-       * @param value The isGuest to set.
+       * <code>string psn_id = 5;</code>
+       * @return The bytes for psnId.
+       */
+      public com.google.protobuf.ByteString
+          getPsnIdBytes() {
+        java.lang.Object ref = psnId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          psnId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0       
+       * </pre>
+       *
+       * <code>string psn_id = 5;</code>
+       * @param value The psnId to set.
        * @return This builder for chaining.
        */
-      public Builder setIsGuest(boolean value) {
-        
-        isGuest_ = value;
+      public Builder setPsnId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        psnId_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 168
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_guest = 8;</code>
+       * <code>string psn_id = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsGuest() {
+      public Builder clearPsnId() {
         
-        isGuest_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int hGHDGPOFCGJ_ ;
-      /**
-       * <pre>
-       * offset: 172
-       * </pre>
-       *
-       * <code>uint32 HGHDGPOFCGJ = 1037;</code>
-       * @return The hGHDGPOFCGJ.
-       */
-      @java.lang.Override
-      public int getHGHDGPOFCGJ() {
-        return hGHDGPOFCGJ_;
-      }
-      /**
-       * <pre>
-       * offset: 172
-       * </pre>
-       *
-       * <code>uint32 HGHDGPOFCGJ = 1037;</code>
-       * @param value The hGHDGPOFCGJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHGHDGPOFCGJ(int value) {
-        
-        hGHDGPOFCGJ_ = value;
+        psnId_ = getDefaultInstance().getPsnId();
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 172
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 HGHDGPOFCGJ = 1037;</code>
+       * <code>string psn_id = 5;</code>
+       * @param value The bytes for psnId to set.
        * @return This builder for chaining.
        */
-      public Builder clearHGHDGPOFCGJ() {
+      public Builder setPsnIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
         
-        hGHDGPOFCGJ_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mCEFDICOAEG_ ;
-      /**
-       * <pre>
-       * offset: 176
-       * </pre>
-       *
-       * <code>uint32 MCEFDICOAEG = 18;</code>
-       * @return The mCEFDICOAEG.
-       */
-      @java.lang.Override
-      public int getMCEFDICOAEG() {
-        return mCEFDICOAEG_;
-      }
-      /**
-       * <pre>
-       * offset: 176
-       * </pre>
-       *
-       * <code>uint32 MCEFDICOAEG = 18;</code>
-       * @param value The mCEFDICOAEG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMCEFDICOAEG(int value) {
-        
-        mCEFDICOAEG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 176
-       * </pre>
-       *
-       * <code>uint32 MCEFDICOAEG = 18;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMCEFDICOAEG() {
-        
-        mCEFDICOAEG_ = 0;
+        psnId_ = value;
         onChanged();
         return this;
       }
 
-      private int bMAIEGBOOAH_ ;
+      private java.lang.Object clientRandKey_ = "";
       /**
        * <pre>
-       * offset: 180
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 BMAIEGBOOAH = 96;</code>
-       * @return The bMAIEGBOOAH.
+       * <code>string client_rand_key = 2015;</code>
+       * @return The clientRandKey.
        */
-      @java.lang.Override
-      public int getBMAIEGBOOAH() {
-        return bMAIEGBOOAH_;
+      public java.lang.String getClientRandKey() {
+        java.lang.Object ref = clientRandKey_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientRandKey_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
        * <pre>
-       * offset: 180
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 BMAIEGBOOAH = 96;</code>
-       * @param value The bMAIEGBOOAH to set.
+       * <code>string client_rand_key = 2015;</code>
+       * @return The bytes for clientRandKey.
+       */
+      public com.google.protobuf.ByteString
+          getClientRandKeyBytes() {
+        java.lang.Object ref = clientRandKey_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientRandKey_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>string client_rand_key = 2015;</code>
+       * @param value The clientRandKey to set.
        * @return This builder for chaining.
        */
-      public Builder setBMAIEGBOOAH(int value) {
-        
-        bMAIEGBOOAH_ = value;
+      public Builder setClientRandKey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        clientRandKey_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 180
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 BMAIEGBOOAH = 96;</code>
+       * <code>string client_rand_key = 2015;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBMAIEGBOOAH() {
+      public Builder clearClientRandKey() {
         
-        bMAIEGBOOAH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int uid_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 184
-       * </pre>
-       *
-       * <code>uint32 uid = 2;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 184
-       * </pre>
-       *
-       * <code>uint32 uid = 2;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
+        clientRandKey_ = getDefaultInstance().getClientRandKey();
         onChanged();
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 184
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 uid = 2;</code>
+       * <code>string client_rand_key = 2015;</code>
+       * @param value The bytes for clientRandKey to set.
        * @return This builder for chaining.
        */
-      public Builder clearUid() {
+      public Builder setClientRandKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
         
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int platformType_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 188
-       * </pre>
-       *
-       * <code>uint32 platform_type = 10;</code>
-       * @return The platformType.
-       */
-      @java.lang.Override
-      public int getPlatformType() {
-        return platformType_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 188
-       * </pre>
-       *
-       * <code>uint32 platform_type = 10;</code>
-       * @param value The platformType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlatformType(int value) {
-        
-        platformType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 188
-       * </pre>
-       *
-       * <code>uint32 platform_type = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlatformType() {
-        
-        platformType_ = 0;
+        clientRandKey_ = value;
         onChanged();
         return this;
       }
 
-      private int jMMJGHEGMKA_ ;
+      private java.lang.Object jMFFNLENHKG_ = "";
       /**
-       * <pre>
-       * offset: 192
-       * </pre>
-       *
-       * <code>uint32 JMMJGHEGMKA = 8123;</code>
-       * @return The jMMJGHEGMKA.
+       * <code>string JMFFNLENHKG = 1806;</code>
+       * @return The jMFFNLENHKG.
        */
-      @java.lang.Override
-      public int getJMMJGHEGMKA() {
-        return jMMJGHEGMKA_;
+      public java.lang.String getJMFFNLENHKG() {
+        java.lang.Object ref = jMFFNLENHKG_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          jMFFNLENHKG_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <pre>
-       * offset: 192
-       * </pre>
-       *
-       * <code>uint32 JMMJGHEGMKA = 8123;</code>
-       * @param value The jMMJGHEGMKA to set.
+       * <code>string JMFFNLENHKG = 1806;</code>
+       * @return The bytes for jMFFNLENHKG.
+       */
+      public com.google.protobuf.ByteString
+          getJMFFNLENHKGBytes() {
+        java.lang.Object ref = jMFFNLENHKG_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          jMFFNLENHKG_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string JMFFNLENHKG = 1806;</code>
+       * @param value The jMFFNLENHKG to set.
        * @return This builder for chaining.
        */
-      public Builder setJMMJGHEGMKA(int value) {
-        
-        jMMJGHEGMKA_ = value;
+      public Builder setJMFFNLENHKG(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        jMFFNLENHKG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 192
-       * </pre>
-       *
-       * <code>uint32 JMMJGHEGMKA = 8123;</code>
+       * <code>string JMFFNLENHKG = 1806;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJMMJGHEGMKA() {
+      public Builder clearJMFFNLENHKG() {
         
-        jMMJGHEGMKA_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int eJENLJFEOKP_ ;
-      /**
-       * <pre>
-       * offset: 196
-       * </pre>
-       *
-       * <code>uint32 EJENLJFEOKP = 11;</code>
-       * @return The eJENLJFEOKP.
-       */
-      @java.lang.Override
-      public int getEJENLJFEOKP() {
-        return eJENLJFEOKP_;
-      }
-      /**
-       * <pre>
-       * offset: 196
-       * </pre>
-       *
-       * <code>uint32 EJENLJFEOKP = 11;</code>
-       * @param value The eJENLJFEOKP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEJENLJFEOKP(int value) {
-        
-        eJENLJFEOKP_ = value;
+        jMFFNLENHKG_ = getDefaultInstance().getJMFFNLENHKG();
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 196
-       * </pre>
-       *
-       * <code>uint32 EJENLJFEOKP = 11;</code>
+       * <code>string JMFFNLENHKG = 1806;</code>
+       * @param value The bytes for jMFFNLENHKG to set.
        * @return This builder for chaining.
        */
-      public Builder clearEJENLJFEOKP() {
+      public Builder setJMFFNLENHKGBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
         
-        eJENLJFEOKP_ = 0;
+        jMFFNLENHKG_ = value;
         onChanged();
         return this;
       }
 
-      private int keyId_ ;
+      private java.lang.Object fLEFHGMJIAF_ = "";
+      /**
+       * <code>string FLEFHGMJIAF = 1261;</code>
+       * @return The fLEFHGMJIAF.
+       */
+      public java.lang.String getFLEFHGMJIAF() {
+        java.lang.Object ref = fLEFHGMJIAF_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          fLEFHGMJIAF_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string FLEFHGMJIAF = 1261;</code>
+       * @return The bytes for fLEFHGMJIAF.
+       */
+      public com.google.protobuf.ByteString
+          getFLEFHGMJIAFBytes() {
+        java.lang.Object ref = fLEFHGMJIAF_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          fLEFHGMJIAF_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string FLEFHGMJIAF = 1261;</code>
+       * @param value The fLEFHGMJIAF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFLEFHGMJIAF(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        fLEFHGMJIAF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string FLEFHGMJIAF = 1261;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFLEFHGMJIAF() {
+        
+        fLEFHGMJIAF_ = getDefaultInstance().getFLEFHGMJIAF();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string FLEFHGMJIAF = 1261;</code>
+       * @param value The bytes for fLEFHGMJIAF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFLEFHGMJIAFBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        fLEFHGMJIAF_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object countryCode_ = "";
       /**
        * <pre>
-       *6.3.0 // offset: 200
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 key_id = 1443;</code>
-       * @return The keyId.
+       * <code>string country_code = 7;</code>
+       * @return The countryCode.
        */
-      @java.lang.Override
-      public int getKeyId() {
-        return keyId_;
+      public java.lang.String getCountryCode() {
+        java.lang.Object ref = countryCode_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          countryCode_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
        * <pre>
-       *6.3.0 // offset: 200
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 key_id = 1443;</code>
-       * @param value The keyId to set.
+       * <code>string country_code = 7;</code>
+       * @return The bytes for countryCode.
+       */
+      public com.google.protobuf.ByteString
+          getCountryCodeBytes() {
+        java.lang.Object ref = countryCode_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          countryCode_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>string country_code = 7;</code>
+       * @param value The countryCode to set.
        * @return This builder for chaining.
        */
-      public Builder setKeyId(int value) {
-        
-        keyId_ = value;
+      public Builder setCountryCode(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        countryCode_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 200
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 key_id = 1443;</code>
+       * <code>string country_code = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKeyId() {
+      public Builder clearCountryCode() {
         
-        keyId_ = 0;
+        countryCode_ = getDefaultInstance().getCountryCode();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>string country_code = 7;</code>
+       * @param value The bytes for countryCode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCountryCodeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        countryCode_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object mGEJGMCKAEL_ = "";
+      /**
+       * <code>string MGEJGMCKAEL = 688;</code>
+       * @return The mGEJGMCKAEL.
+       */
+      public java.lang.String getMGEJGMCKAEL() {
+        java.lang.Object ref = mGEJGMCKAEL_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          mGEJGMCKAEL_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string MGEJGMCKAEL = 688;</code>
+       * @return The bytes for mGEJGMCKAEL.
+       */
+      public com.google.protobuf.ByteString
+          getMGEJGMCKAELBytes() {
+        java.lang.Object ref = mGEJGMCKAEL_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          mGEJGMCKAEL_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string MGEJGMCKAEL = 688;</code>
+       * @param value The mGEJGMCKAEL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMGEJGMCKAEL(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        mGEJGMCKAEL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string MGEJGMCKAEL = 688;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMGEJGMCKAEL() {
+        
+        mGEJGMCKAEL_ = getDefaultInstance().getMGEJGMCKAEL();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string MGEJGMCKAEL = 688;</code>
+       * @param value The bytes for mGEJGMCKAEL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMGEJGMCKAELBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        mGEJGMCKAEL_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object clientIpStr_ = "";
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>string client_ip_str = 13;</code>
+       * @return The clientIpStr.
+       */
+      public java.lang.String getClientIpStr() {
+        java.lang.Object ref = clientIpStr_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientIpStr_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>string client_ip_str = 13;</code>
+       * @return The bytes for clientIpStr.
+       */
+      public com.google.protobuf.ByteString
+          getClientIpStrBytes() {
+        java.lang.Object ref = clientIpStr_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientIpStr_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>string client_ip_str = 13;</code>
+       * @param value The clientIpStr to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientIpStr(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        clientIpStr_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>string client_ip_str = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearClientIpStr() {
+        
+        clientIpStr_ = getDefaultInstance().getClientIpStr();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>string client_ip_str = 13;</code>
+       * @param value The bytes for clientIpStr to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientIpStrBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        clientIpStr_ = value;
         onChanged();
         return this;
       }
@@ -4405,10 +3060,10 @@ public final class GetPlayerTokenReqOuterClass {
       private int channelId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 204
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 channel_id = 6;</code>
+       * <code>uint32 channel_id = 9;</code>
        * @return The channelId.
        */
       @java.lang.Override
@@ -4417,10 +3072,10 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 204
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 channel_id = 6;</code>
+       * <code>uint32 channel_id = 9;</code>
        * @param value The channelId to set.
        * @return This builder for chaining.
        */
@@ -4432,15 +3087,342 @@ public final class GetPlayerTokenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 204
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 channel_id = 6;</code>
+       * <code>uint32 channel_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearChannelId() {
         
         channelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isGuest_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0        
+       * </pre>
+       *
+       * <code>bool is_guest = 11;</code>
+       * @return The isGuest.
+       */
+      @java.lang.Override
+      public boolean getIsGuest() {
+        return isGuest_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0        
+       * </pre>
+       *
+       * <code>bool is_guest = 11;</code>
+       * @param value The isGuest to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsGuest(boolean value) {
+        
+        isGuest_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0        
+       * </pre>
+       *
+       * <code>bool is_guest = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsGuest() {
+        
+        isGuest_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int keyId_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 key_id = 929;</code>
+       * @return The keyId.
+       */
+      @java.lang.Override
+      public int getKeyId() {
+        return keyId_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 key_id = 929;</code>
+       * @param value The keyId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKeyId(int value) {
+        
+        keyId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 key_id = 929;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKeyId() {
+        
+        keyId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lGKIIKDAINK_ ;
+      /**
+       * <code>uint32 LGKIIKDAINK = 1270;</code>
+       * @return The lGKIIKDAINK.
+       */
+      @java.lang.Override
+      public int getLGKIIKDAINK() {
+        return lGKIIKDAINK_;
+      }
+      /**
+       * <code>uint32 LGKIIKDAINK = 1270;</code>
+       * @param value The lGKIIKDAINK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLGKIIKDAINK(int value) {
+        
+        lGKIIKDAINK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LGKIIKDAINK = 1270;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLGKIIKDAINK() {
+        
+        lGKIIKDAINK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bPLIJHLODFK_ ;
+      /**
+       * <code>uint32 BPLIJHLODFK = 16;</code>
+       * @return The bPLIJHLODFK.
+       */
+      @java.lang.Override
+      public int getBPLIJHLODFK() {
+        return bPLIJHLODFK_;
+      }
+      /**
+       * <code>uint32 BPLIJHLODFK = 16;</code>
+       * @param value The bPLIJHLODFK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBPLIJHLODFK(int value) {
+        
+        bPLIJHLODFK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BPLIJHLODFK = 16;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBPLIJHLODFK() {
+        
+        bPLIJHLODFK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mNJMONIDKBF_ ;
+      /**
+       * <code>uint32 MNJMONIDKBF = 1510;</code>
+       * @return The mNJMONIDKBF.
+       */
+      @java.lang.Override
+      public int getMNJMONIDKBF() {
+        return mNJMONIDKBF_;
+      }
+      /**
+       * <code>uint32 MNJMONIDKBF = 1510;</code>
+       * @param value The mNJMONIDKBF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMNJMONIDKBF(int value) {
+        
+        mNJMONIDKBF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MNJMONIDKBF = 1510;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMNJMONIDKBF() {
+        
+        mNJMONIDKBF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int platformType_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 platform_type = 8;</code>
+       * @return The platformType.
+       */
+      @java.lang.Override
+      public int getPlatformType() {
+        return platformType_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 platform_type = 8;</code>
+       * @param value The platformType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlatformType(int value) {
+        
+        platformType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 platform_type = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlatformType() {
+        
+        platformType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int uid_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 uid = 12;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 uid = 12;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 uid = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hBOFDEAOECD_ ;
+      /**
+       * <code>uint32 HBOFDEAOECD = 1571;</code>
+       * @return The hBOFDEAOECD.
+       */
+      @java.lang.Override
+      public int getHBOFDEAOECD() {
+        return hBOFDEAOECD_;
+      }
+      /**
+       * <code>uint32 HBOFDEAOECD = 1571;</code>
+       * @param value The hBOFDEAOECD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHBOFDEAOECD(int value) {
+        
+        hBOFDEAOECD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 HBOFDEAOECD = 1571;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHBOFDEAOECD() {
+        
+        hBOFDEAOECD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mBNBPHEOAKC_ ;
+      /**
+       * <code>uint32 MBNBPHEOAKC = 570;</code>
+       * @return The mBNBPHEOAKC.
+       */
+      @java.lang.Override
+      public int getMBNBPHEOAKC() {
+        return mBNBPHEOAKC_;
+      }
+      /**
+       * <code>uint32 MBNBPHEOAKC = 570;</code>
+       * @param value The mBNBPHEOAKC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMBNBPHEOAKC(int value) {
+        
+        mBNBPHEOAKC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MBNBPHEOAKC = 570;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMBNBPHEOAKC() {
+        
+        mBNBPHEOAKC_ = 0;
         onChanged();
         return this;
       }
@@ -4511,23 +3493,21 @@ public final class GetPlayerTokenReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027GetPlayerTokenReq.proto\"\332\004\n\021GetPlayerT" +
-      "okenReq\022\023\n\013HJOEBCIDJCD\030P \001(\t\022\024\n\013PJMKDOCD" +
-      "KLH\030\335\007 \001(\t\022\021\n\tonline_id\030\007 \001(\t\022\030\n\017client_" +
-      "rand_key\030\333\002 \001(\t\022\023\n\013IFCGGHCMKEB\030\r \001(\t\022\024\n\013" +
-      "CCEGIMNLNMB\030\274\n \001(\t\022\016\n\006psn_id\030\016 \001(\t\022\023\n\013OJ" +
-      "FMHPMFCEC\030\021 \001(\t\022\023\n\013ADDELLGIEED\030b \001(\t\022\025\n\r" +
-      "client_ip_str\030\t \001(\t\022\021\n\010birthday\030\333\013 \001(\t\022\024" +
-      "\n\013JKHNJHPKNPB\030\275\t \001(\t\022\024\n\014country_code\030\003 \001" +
-      "(\t\022\023\n\013account_uid\030\014 \001(\t\022\025\n\raccount_token" +
-      "\030\017 \001(\t\022\024\n\013JOGOIEEJJHF\030\350\r \001(\t\022\024\n\013EKIIEJBO" +
-      "NAE\030\233\003 \001(\r\022\024\n\013GAFPBLLJLBI\030\271\004 \001(\r\022\020\n\010is_g" +
-      "uest\030\010 \001(\010\022\024\n\013HGHDGPOFCGJ\030\215\010 \001(\r\022\023\n\013MCEF" +
-      "DICOAEG\030\022 \001(\r\022\023\n\013BMAIEGBOOAH\030` \001(\r\022\013\n\003ui" +
-      "d\030\002 \001(\r\022\025\n\rplatform_type\030\n \001(\r\022\024\n\013JMMJGH" +
-      "EGMKA\030\273? \001(\r\022\023\n\013EJENLJFEOKP\030\013 \001(\r\022\017\n\006key" +
-      "_id\030\243\013 \001(\r\022\022\n\nchannel_id\030\006 \001(\rB\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n\027GetPlayerTokenReq.proto\"\362\003\n\021GetPlayerT" +
+      "okenReq\022\021\n\010birthday\030\206\005 \001(\t\022\023\n\013account_ui" +
+      "d\030\001 \001(\t\022\024\n\013DDBGGGCJKDF\030\226\006 \001(\t\022\025\n\raccount" +
+      "_token\030\n \001(\t\022\021\n\tonline_id\030\003 \001(\t\022\024\n\013JNJMA" +
+      "GKBOMP\030\240\014 \001(\t\022\016\n\006psn_id\030\005 \001(\t\022\030\n\017client_" +
+      "rand_key\030\337\017 \001(\t\022\024\n\013JMFFNLENHKG\030\216\016 \001(\t\022\024\n" +
+      "\013FLEFHGMJIAF\030\355\t \001(\t\022\024\n\014country_code\030\007 \001(" +
+      "\t\022\024\n\013MGEJGMCKAEL\030\260\005 \001(\t\022\025\n\rclient_ip_str" +
+      "\030\r \001(\t\022\022\n\nchannel_id\030\t \001(\r\022\020\n\010is_guest\030\013" +
+      " \001(\010\022\017\n\006key_id\030\241\007 \001(\r\022\024\n\013LGKIIKDAINK\030\366\t " +
+      "\001(\r\022\023\n\013BPLIJHLODFK\030\020 \001(\r\022\024\n\013MNJMONIDKBF\030" +
+      "\346\013 \001(\r\022\025\n\rplatform_type\030\010 \001(\r\022\013\n\003uid\030\014 \001" +
+      "(\r\022\024\n\013HBOFDEAOECD\030\243\014 \001(\r\022\024\n\013MBNBPHEOAKC\030" +
+      "\272\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -4538,7 +3518,7 @@ public final class GetPlayerTokenReqOuterClass {
     internal_static_GetPlayerTokenReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetPlayerTokenReq_descriptor,
-        new java.lang.String[] { "HJOEBCIDJCD", "PJMKDOCDKLH", "OnlineId", "ClientRandKey", "IFCGGHCMKEB", "CCEGIMNLNMB", "PsnId", "OJFMHPMFCEC", "ADDELLGIEED", "ClientIpStr", "Birthday", "JKHNJHPKNPB", "CountryCode", "AccountUid", "AccountToken", "JOGOIEEJJHF", "EKIIEJBONAE", "GAFPBLLJLBI", "IsGuest", "HGHDGPOFCGJ", "MCEFDICOAEG", "BMAIEGBOOAH", "Uid", "PlatformType", "JMMJGHEGMKA", "EJENLJFEOKP", "KeyId", "ChannelId", });
+        new java.lang.String[] { "Birthday", "AccountUid", "DDBGGGCJKDF", "AccountToken", "OnlineId", "JNJMAGKBOMP", "PsnId", "ClientRandKey", "JMFFNLENHKG", "FLEFHGMJIAF", "CountryCode", "MGEJGMCKAEL", "ClientIpStr", "ChannelId", "IsGuest", "KeyId", "LGKIIKDAINK", "BPLIJHLODFK", "MNJMONIDKBF", "PlatformType", "Uid", "HBOFDEAOECD", "MBNBPHEOAKC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

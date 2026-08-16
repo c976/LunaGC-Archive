@@ -19,40 +19,24 @@ public final class HMNFHHAKOJBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 start_time = 1;</code>
      * @return The startTime.
      */
     int getStartTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ODJLLLPLBHE = 3;</code>
      * @return The oDJLLLPLBHE.
      */
     int getODJLLLPLBHE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 end_time = 2;</code>
      * @return The endTime.
      */
     int getEndTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 cur_value = 4;</code>
      * @return The curValue.
      */
@@ -158,10 +142,6 @@ public final class HMNFHHAKOJBOuterClass {
     public static final int START_TIME_FIELD_NUMBER = 1;
     private int startTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 start_time = 1;</code>
      * @return The startTime.
      */
@@ -173,10 +153,6 @@ public final class HMNFHHAKOJBOuterClass {
     public static final int ODJLLLPLBHE_FIELD_NUMBER = 3;
     private int oDJLLLPLBHE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ODJLLLPLBHE = 3;</code>
      * @return The oDJLLLPLBHE.
      */
@@ -188,10 +164,6 @@ public final class HMNFHHAKOJBOuterClass {
     public static final int END_TIME_FIELD_NUMBER = 2;
     private int endTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 end_time = 2;</code>
      * @return The endTime.
      */
@@ -203,10 +175,6 @@ public final class HMNFHHAKOJBOuterClass {
     public static final int CUR_VALUE_FIELD_NUMBER = 4;
     private int curValue_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 cur_value = 4;</code>
      * @return The curValue.
      */
@@ -570,10 +538,6 @@ public final class HMNFHHAKOJBOuterClass {
 
       private int startTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 start_time = 1;</code>
        * @return The startTime.
        */
@@ -582,10 +546,6 @@ public final class HMNFHHAKOJBOuterClass {
         return startTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 start_time = 1;</code>
        * @param value The startTime to set.
        * @return This builder for chaining.
@@ -597,10 +557,6 @@ public final class HMNFHHAKOJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 start_time = 1;</code>
        * @return This builder for chaining.
        */
@@ -613,10 +569,6 @@ public final class HMNFHHAKOJBOuterClass {
 
       private int oDJLLLPLBHE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ODJLLLPLBHE = 3;</code>
        * @return The oDJLLLPLBHE.
        */
@@ -625,10 +577,6 @@ public final class HMNFHHAKOJBOuterClass {
         return oDJLLLPLBHE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ODJLLLPLBHE = 3;</code>
        * @param value The oDJLLLPLBHE to set.
        * @return This builder for chaining.
@@ -640,10 +588,6 @@ public final class HMNFHHAKOJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ODJLLLPLBHE = 3;</code>
        * @return This builder for chaining.
        */
@@ -656,10 +600,6 @@ public final class HMNFHHAKOJBOuterClass {
 
       private int endTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 end_time = 2;</code>
        * @return The endTime.
        */
@@ -668,10 +608,6 @@ public final class HMNFHHAKOJBOuterClass {
         return endTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 end_time = 2;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
@@ -683,10 +619,6 @@ public final class HMNFHHAKOJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 end_time = 2;</code>
        * @return This builder for chaining.
        */
@@ -699,10 +631,6 @@ public final class HMNFHHAKOJBOuterClass {
 
       private int curValue_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 cur_value = 4;</code>
        * @return The curValue.
        */
@@ -711,10 +639,6 @@ public final class HMNFHHAKOJBOuterClass {
         return curValue_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 cur_value = 4;</code>
        * @param value The curValue to set.
        * @return This builder for chaining.
@@ -726,10 +650,6 @@ public final class HMNFHHAKOJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 cur_value = 4;</code>
        * @return This builder for chaining.
        */

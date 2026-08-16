@@ -19,47 +19,27 @@ public final class OKGNJOGFCEBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 group_id = 14;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 config_id = 13;</code>
      * @return The configId.
      */
@@ -168,10 +148,6 @@ public final class OKGNJOGFCEBOuterClass {
     public static final int POS_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return Whether the pos field is set.
      */
@@ -180,10 +156,6 @@ public final class OKGNJOGFCEBOuterClass {
       return pos_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return The pos.
      */
@@ -192,10 +164,6 @@ public final class OKGNJOGFCEBOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      */
     @java.lang.Override
@@ -206,10 +174,6 @@ public final class OKGNJOGFCEBOuterClass {
     public static final int GROUP_ID_FIELD_NUMBER = 14;
     private int groupId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 group_id = 14;</code>
      * @return The groupId.
      */
@@ -221,10 +185,6 @@ public final class OKGNJOGFCEBOuterClass {
     public static final int CONFIG_ID_FIELD_NUMBER = 13;
     private int configId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 config_id = 13;</code>
      * @return The configId.
      */
@@ -586,10 +546,6 @@ public final class OKGNJOGFCEBOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        * @return Whether the pos field is set.
        */
@@ -597,10 +553,6 @@ public final class OKGNJOGFCEBOuterClass {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        * @return The pos.
        */
@@ -612,10 +564,6 @@ public final class OKGNJOGFCEBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -632,10 +580,6 @@ public final class OKGNJOGFCEBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder setPos(
@@ -650,10 +594,6 @@ public final class OKGNJOGFCEBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -672,10 +612,6 @@ public final class OKGNJOGFCEBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder clearPos() {
@@ -690,10 +626,6 @@ public final class OKGNJOGFCEBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
@@ -702,10 +634,6 @@ public final class OKGNJOGFCEBOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -717,10 +645,6 @@ public final class OKGNJOGFCEBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -739,10 +663,6 @@ public final class OKGNJOGFCEBOuterClass {
 
       private int groupId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 14;</code>
        * @return The groupId.
        */
@@ -751,10 +671,6 @@ public final class OKGNJOGFCEBOuterClass {
         return groupId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 14;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
@@ -766,10 +682,6 @@ public final class OKGNJOGFCEBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 14;</code>
        * @return This builder for chaining.
        */
@@ -782,10 +694,6 @@ public final class OKGNJOGFCEBOuterClass {
 
       private int configId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 13;</code>
        * @return The configId.
        */
@@ -794,10 +702,6 @@ public final class OKGNJOGFCEBOuterClass {
         return configId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 13;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
@@ -809,10 +713,6 @@ public final class OKGNJOGFCEBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 13;</code>
        * @return This builder for chaining.
        */

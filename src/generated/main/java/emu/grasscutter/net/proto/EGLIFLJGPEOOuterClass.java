@@ -19,74 +19,42 @@ public final class EGLIFLJGPEOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA> 
         getAvatarListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
      */
     emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA getAvatarList(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
      */
     int getAvatarListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLAOrBuilder> 
         getAvatarListOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
      */
     emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLAOrBuilder getAvatarListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PDPHEIDOHAL = 15;</code>
      * @return The pDPHEIDOHAL.
      */
     int getPDPHEIDOHAL();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LPFOKDCDGAC = 4;</code>
      * @return The lPFOKDCDGAC.
      */
     int getLPFOKDCDGAC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MMNEBDPOJCN = 8;</code>
      * @return The mMNEBDPOJCN.
      */
@@ -201,10 +169,6 @@ public final class EGLIFLJGPEOOuterClass {
     public static final int AVATAR_LIST_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA> avatarList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
      */
     @java.lang.Override
@@ -212,10 +176,6 @@ public final class EGLIFLJGPEOOuterClass {
       return avatarList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
      */
     @java.lang.Override
@@ -224,10 +184,6 @@ public final class EGLIFLJGPEOOuterClass {
       return avatarList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
      */
     @java.lang.Override
@@ -235,10 +191,6 @@ public final class EGLIFLJGPEOOuterClass {
       return avatarList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
      */
     @java.lang.Override
@@ -246,10 +198,6 @@ public final class EGLIFLJGPEOOuterClass {
       return avatarList_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
      */
     @java.lang.Override
@@ -261,10 +209,6 @@ public final class EGLIFLJGPEOOuterClass {
     public static final int PDPHEIDOHAL_FIELD_NUMBER = 15;
     private int pDPHEIDOHAL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PDPHEIDOHAL = 15;</code>
      * @return The pDPHEIDOHAL.
      */
@@ -276,10 +220,6 @@ public final class EGLIFLJGPEOOuterClass {
     public static final int LPFOKDCDGAC_FIELD_NUMBER = 4;
     private int lPFOKDCDGAC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LPFOKDCDGAC = 4;</code>
      * @return The lPFOKDCDGAC.
      */
@@ -291,10 +231,6 @@ public final class EGLIFLJGPEOOuterClass {
     public static final int MMNEBDPOJCN_FIELD_NUMBER = 8;
     private int mMNEBDPOJCN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MMNEBDPOJCN = 8;</code>
      * @return The mMNEBDPOJCN.
      */
@@ -709,10 +645,6 @@ public final class EGLIFLJGPEOOuterClass {
           emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA, emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA.Builder, emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLAOrBuilder> avatarListBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA> getAvatarListList() {
@@ -723,10 +655,6 @@ public final class EGLIFLJGPEOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public int getAvatarListCount() {
@@ -737,10 +665,6 @@ public final class EGLIFLJGPEOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA getAvatarList(int index) {
@@ -751,10 +675,6 @@ public final class EGLIFLJGPEOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public Builder setAvatarList(
@@ -772,10 +692,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public Builder setAvatarList(
@@ -790,10 +706,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public Builder addAvatarList(emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA value) {
@@ -810,10 +722,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public Builder addAvatarList(
@@ -831,10 +739,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public Builder addAvatarList(
@@ -849,10 +753,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public Builder addAvatarList(
@@ -867,10 +767,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public Builder addAllAvatarList(
@@ -886,10 +782,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public Builder clearAvatarList() {
@@ -903,10 +795,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public Builder removeAvatarList(int index) {
@@ -920,10 +808,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA.Builder getAvatarListBuilder(
@@ -931,10 +815,6 @@ public final class EGLIFLJGPEOOuterClass {
         return getAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLAOrBuilder getAvatarListOrBuilder(
@@ -945,10 +825,6 @@ public final class EGLIFLJGPEOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLAOrBuilder> 
@@ -960,10 +836,6 @@ public final class EGLIFLJGPEOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA.Builder addAvatarListBuilder() {
@@ -971,10 +843,6 @@ public final class EGLIFLJGPEOOuterClass {
             emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA.Builder addAvatarListBuilder(
@@ -983,10 +851,6 @@ public final class EGLIFLJGPEOOuterClass {
             index, emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JMFALKNKBLA avatar_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JMFALKNKBLAOuterClass.JMFALKNKBLA.Builder> 
@@ -1010,10 +874,6 @@ public final class EGLIFLJGPEOOuterClass {
 
       private int pDPHEIDOHAL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PDPHEIDOHAL = 15;</code>
        * @return The pDPHEIDOHAL.
        */
@@ -1022,10 +882,6 @@ public final class EGLIFLJGPEOOuterClass {
         return pDPHEIDOHAL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PDPHEIDOHAL = 15;</code>
        * @param value The pDPHEIDOHAL to set.
        * @return This builder for chaining.
@@ -1037,10 +893,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PDPHEIDOHAL = 15;</code>
        * @return This builder for chaining.
        */
@@ -1053,10 +905,6 @@ public final class EGLIFLJGPEOOuterClass {
 
       private int lPFOKDCDGAC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LPFOKDCDGAC = 4;</code>
        * @return The lPFOKDCDGAC.
        */
@@ -1065,10 +913,6 @@ public final class EGLIFLJGPEOOuterClass {
         return lPFOKDCDGAC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LPFOKDCDGAC = 4;</code>
        * @param value The lPFOKDCDGAC to set.
        * @return This builder for chaining.
@@ -1080,10 +924,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LPFOKDCDGAC = 4;</code>
        * @return This builder for chaining.
        */
@@ -1096,10 +936,6 @@ public final class EGLIFLJGPEOOuterClass {
 
       private int mMNEBDPOJCN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MMNEBDPOJCN = 8;</code>
        * @return The mMNEBDPOJCN.
        */
@@ -1108,10 +944,6 @@ public final class EGLIFLJGPEOOuterClass {
         return mMNEBDPOJCN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MMNEBDPOJCN = 8;</code>
        * @param value The mMNEBDPOJCN to set.
        * @return This builder for chaining.
@@ -1123,10 +955,6 @@ public final class EGLIFLJGPEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MMNEBDPOJCN = 8;</code>
        * @return This builder for chaining.
        */

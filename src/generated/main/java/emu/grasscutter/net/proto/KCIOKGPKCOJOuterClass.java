@@ -19,116 +19,64 @@ public final class KCIOKGPKCOJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI> 
         getHABBFDFOENLList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
      */
     emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI getHABBFDFOENL(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
      */
     int getHABBFDFOENLCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHIOrBuilder> 
         getHABBFDFOENLOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
      */
     emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHIOrBuilder getHABBFDFOENLOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD> 
         getShowAvatarInfoListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
      */
     emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD getShowAvatarInfoList(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
      */
     int getShowAvatarInfoListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMDOrBuilder> 
         getShowAvatarInfoListOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
      */
     emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMDOrBuilder getShowAvatarInfoListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
      * @return A list containing the eMKCGKHEDBL.
      */
     java.util.List<java.lang.Integer> getEMKCGKHEDBLList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
      * @return The count of eMKCGKHEDBL.
      */
     int getEMKCGKHEDBLCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
      * @param index The index of the element to return.
      * @return The eMKCGKHEDBL at the given index.
@@ -136,28 +84,16 @@ public final class KCIOKGPKCOJOuterClass {
     int getEMKCGKHEDBL(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
      * @return A list containing the eNPIFHJFFGD.
      */
     java.util.List<java.lang.Integer> getENPIFHJFFGDList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
      * @return The count of eNPIFHJFFGD.
      */
     int getENPIFHJFFGDCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
      * @param index The index of the element to return.
      * @return The eNPIFHJFFGD at the given index.
@@ -165,80 +101,48 @@ public final class KCIOKGPKCOJOuterClass {
     int getENPIFHJFFGD(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FFBIBMEBAHJ = 7;</code>
      * @return The fFBIBMEBAHJ.
      */
     int getFFBIBMEBAHJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OLJMLPBFGLD = 14;</code>
      * @return The oLJMLPBFGLD.
      */
     int getOLJMLPBFGLD();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cost_time = 4;</code>
      * @return The costTime.
      */
     int getCostTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 1;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool AJNMBHGPLNI = 6;</code>
      * @return The aJNMBHGPLNI.
      */
     boolean getAJNMBHGPLNI();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GCBELODNLFA = 10;</code>
      * @return The gCBELODNLFA.
      */
@@ -441,10 +345,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int HABBFDFOENL_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI> hABBFDFOENL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
      */
     @java.lang.Override
@@ -452,10 +352,6 @@ public final class KCIOKGPKCOJOuterClass {
       return hABBFDFOENL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
      */
     @java.lang.Override
@@ -464,10 +360,6 @@ public final class KCIOKGPKCOJOuterClass {
       return hABBFDFOENL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
      */
     @java.lang.Override
@@ -475,10 +367,6 @@ public final class KCIOKGPKCOJOuterClass {
       return hABBFDFOENL_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
      */
     @java.lang.Override
@@ -486,10 +374,6 @@ public final class KCIOKGPKCOJOuterClass {
       return hABBFDFOENL_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
      */
     @java.lang.Override
@@ -501,10 +385,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int SHOW_AVATAR_INFO_LIST_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD> showAvatarInfoList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
      */
     @java.lang.Override
@@ -512,10 +392,6 @@ public final class KCIOKGPKCOJOuterClass {
       return showAvatarInfoList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
      */
     @java.lang.Override
@@ -524,10 +400,6 @@ public final class KCIOKGPKCOJOuterClass {
       return showAvatarInfoList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
      */
     @java.lang.Override
@@ -535,10 +407,6 @@ public final class KCIOKGPKCOJOuterClass {
       return showAvatarInfoList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
      */
     @java.lang.Override
@@ -546,10 +414,6 @@ public final class KCIOKGPKCOJOuterClass {
       return showAvatarInfoList_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
      */
     @java.lang.Override
@@ -561,10 +425,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int EMKCGKHEDBL_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList eMKCGKHEDBL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
      * @return A list containing the eMKCGKHEDBL.
      */
@@ -574,10 +434,6 @@ public final class KCIOKGPKCOJOuterClass {
       return eMKCGKHEDBL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
      * @return The count of eMKCGKHEDBL.
      */
@@ -585,10 +441,6 @@ public final class KCIOKGPKCOJOuterClass {
       return eMKCGKHEDBL_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
      * @param index The index of the element to return.
      * @return The eMKCGKHEDBL at the given index.
@@ -601,10 +453,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int ENPIFHJFFGD_FIELD_NUMBER = 11;
     private com.google.protobuf.Internal.IntList eNPIFHJFFGD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
      * @return A list containing the eNPIFHJFFGD.
      */
@@ -614,10 +462,6 @@ public final class KCIOKGPKCOJOuterClass {
       return eNPIFHJFFGD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
      * @return The count of eNPIFHJFFGD.
      */
@@ -625,10 +469,6 @@ public final class KCIOKGPKCOJOuterClass {
       return eNPIFHJFFGD_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
      * @param index The index of the element to return.
      * @return The eNPIFHJFFGD at the given index.
@@ -641,10 +481,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int FFBIBMEBAHJ_FIELD_NUMBER = 7;
     private int fFBIBMEBAHJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FFBIBMEBAHJ = 7;</code>
      * @return The fFBIBMEBAHJ.
      */
@@ -656,10 +492,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int OLJMLPBFGLD_FIELD_NUMBER = 14;
     private int oLJMLPBFGLD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OLJMLPBFGLD = 14;</code>
      * @return The oLJMLPBFGLD.
      */
@@ -671,10 +503,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int COST_TIME_FIELD_NUMBER = 4;
     private int costTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cost_time = 4;</code>
      * @return The costTime.
      */
@@ -686,10 +514,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 8;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
@@ -701,10 +525,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 1;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 1;</code>
      * @return The isFinish.
      */
@@ -716,10 +536,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 15;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
@@ -731,10 +547,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int AJNMBHGPLNI_FIELD_NUMBER = 6;
     private boolean aJNMBHGPLNI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool AJNMBHGPLNI = 6;</code>
      * @return The aJNMBHGPLNI.
      */
@@ -746,10 +558,6 @@ public final class KCIOKGPKCOJOuterClass {
     public static final int GCBELODNLFA_FIELD_NUMBER = 10;
     private int gCBELODNLFA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GCBELODNLFA = 10;</code>
      * @return The gCBELODNLFA.
      */
@@ -1396,10 +1204,6 @@ public final class KCIOKGPKCOJOuterClass {
           emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI, emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI.Builder, emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHIOrBuilder> hABBFDFOENLBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI> getHABBFDFOENLList() {
@@ -1410,10 +1214,6 @@ public final class KCIOKGPKCOJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public int getHABBFDFOENLCount() {
@@ -1424,10 +1224,6 @@ public final class KCIOKGPKCOJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI getHABBFDFOENL(int index) {
@@ -1438,10 +1234,6 @@ public final class KCIOKGPKCOJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public Builder setHABBFDFOENL(
@@ -1459,10 +1251,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public Builder setHABBFDFOENL(
@@ -1477,10 +1265,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public Builder addHABBFDFOENL(emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI value) {
@@ -1497,10 +1281,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public Builder addHABBFDFOENL(
@@ -1518,10 +1298,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public Builder addHABBFDFOENL(
@@ -1536,10 +1312,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public Builder addHABBFDFOENL(
@@ -1554,10 +1326,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public Builder addAllHABBFDFOENL(
@@ -1573,10 +1341,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public Builder clearHABBFDFOENL() {
@@ -1590,10 +1354,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public Builder removeHABBFDFOENL(int index) {
@@ -1607,10 +1367,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI.Builder getHABBFDFOENLBuilder(
@@ -1618,10 +1374,6 @@ public final class KCIOKGPKCOJOuterClass {
         return getHABBFDFOENLFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHIOrBuilder getHABBFDFOENLOrBuilder(
@@ -1632,10 +1384,6 @@ public final class KCIOKGPKCOJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHIOrBuilder> 
@@ -1647,10 +1395,6 @@ public final class KCIOKGPKCOJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI.Builder addHABBFDFOENLBuilder() {
@@ -1658,10 +1402,6 @@ public final class KCIOKGPKCOJOuterClass {
             emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI.Builder addHABBFDFOENLBuilder(
@@ -1670,10 +1410,6 @@ public final class KCIOKGPKCOJOuterClass {
             index, emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CBAGDKGAHHI HABBFDFOENL = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CBAGDKGAHHIOuterClass.CBAGDKGAHHI.Builder> 
@@ -1708,10 +1444,6 @@ public final class KCIOKGPKCOJOuterClass {
           emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD, emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.Builder, emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMDOrBuilder> showAvatarInfoListBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD> getShowAvatarInfoListList() {
@@ -1722,10 +1454,6 @@ public final class KCIOKGPKCOJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public int getShowAvatarInfoListCount() {
@@ -1736,10 +1464,6 @@ public final class KCIOKGPKCOJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD getShowAvatarInfoList(int index) {
@@ -1750,10 +1474,6 @@ public final class KCIOKGPKCOJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public Builder setShowAvatarInfoList(
@@ -1771,10 +1491,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public Builder setShowAvatarInfoList(
@@ -1789,10 +1505,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public Builder addShowAvatarInfoList(emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD value) {
@@ -1809,10 +1521,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public Builder addShowAvatarInfoList(
@@ -1830,10 +1538,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public Builder addShowAvatarInfoList(
@@ -1848,10 +1552,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public Builder addShowAvatarInfoList(
@@ -1866,10 +1566,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public Builder addAllShowAvatarInfoList(
@@ -1885,10 +1581,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public Builder clearShowAvatarInfoList() {
@@ -1902,10 +1594,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public Builder removeShowAvatarInfoList(int index) {
@@ -1919,10 +1607,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.Builder getShowAvatarInfoListBuilder(
@@ -1930,10 +1614,6 @@ public final class KCIOKGPKCOJOuterClass {
         return getShowAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMDOrBuilder getShowAvatarInfoListOrBuilder(
@@ -1944,10 +1624,6 @@ public final class KCIOKGPKCOJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMDOrBuilder> 
@@ -1959,10 +1635,6 @@ public final class KCIOKGPKCOJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.Builder addShowAvatarInfoListBuilder() {
@@ -1970,10 +1642,6 @@ public final class KCIOKGPKCOJOuterClass {
             emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.Builder addShowAvatarInfoListBuilder(
@@ -1982,10 +1650,6 @@ public final class KCIOKGPKCOJOuterClass {
             index, emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD show_avatar_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.Builder> 
@@ -2015,10 +1679,6 @@ public final class KCIOKGPKCOJOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
        * @return A list containing the eMKCGKHEDBL.
        */
@@ -2028,10 +1688,6 @@ public final class KCIOKGPKCOJOuterClass {
                  java.util.Collections.unmodifiableList(eMKCGKHEDBL_) : eMKCGKHEDBL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
        * @return The count of eMKCGKHEDBL.
        */
@@ -2039,10 +1695,6 @@ public final class KCIOKGPKCOJOuterClass {
         return eMKCGKHEDBL_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
        * @param index The index of the element to return.
        * @return The eMKCGKHEDBL at the given index.
@@ -2051,10 +1703,6 @@ public final class KCIOKGPKCOJOuterClass {
         return eMKCGKHEDBL_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
        * @param index The index to set the value at.
        * @param value The eMKCGKHEDBL to set.
@@ -2068,10 +1716,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
        * @param value The eMKCGKHEDBL to add.
        * @return This builder for chaining.
@@ -2083,10 +1727,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
        * @param values The eMKCGKHEDBL to add.
        * @return This builder for chaining.
@@ -2100,10 +1740,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EMKCGKHEDBL = 2;</code>
        * @return This builder for chaining.
        */
@@ -2122,10 +1758,6 @@ public final class KCIOKGPKCOJOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
        * @return A list containing the eNPIFHJFFGD.
        */
@@ -2135,10 +1767,6 @@ public final class KCIOKGPKCOJOuterClass {
                  java.util.Collections.unmodifiableList(eNPIFHJFFGD_) : eNPIFHJFFGD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
        * @return The count of eNPIFHJFFGD.
        */
@@ -2146,10 +1774,6 @@ public final class KCIOKGPKCOJOuterClass {
         return eNPIFHJFFGD_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
        * @param index The index of the element to return.
        * @return The eNPIFHJFFGD at the given index.
@@ -2158,10 +1782,6 @@ public final class KCIOKGPKCOJOuterClass {
         return eNPIFHJFFGD_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
        * @param index The index to set the value at.
        * @param value The eNPIFHJFFGD to set.
@@ -2175,10 +1795,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
        * @param value The eNPIFHJFFGD to add.
        * @return This builder for chaining.
@@ -2190,10 +1806,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
        * @param values The eNPIFHJFFGD to add.
        * @return This builder for chaining.
@@ -2207,10 +1819,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ENPIFHJFFGD = 11;</code>
        * @return This builder for chaining.
        */
@@ -2223,10 +1831,6 @@ public final class KCIOKGPKCOJOuterClass {
 
       private int fFBIBMEBAHJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FFBIBMEBAHJ = 7;</code>
        * @return The fFBIBMEBAHJ.
        */
@@ -2235,10 +1839,6 @@ public final class KCIOKGPKCOJOuterClass {
         return fFBIBMEBAHJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FFBIBMEBAHJ = 7;</code>
        * @param value The fFBIBMEBAHJ to set.
        * @return This builder for chaining.
@@ -2250,10 +1850,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FFBIBMEBAHJ = 7;</code>
        * @return This builder for chaining.
        */
@@ -2266,10 +1862,6 @@ public final class KCIOKGPKCOJOuterClass {
 
       private int oLJMLPBFGLD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OLJMLPBFGLD = 14;</code>
        * @return The oLJMLPBFGLD.
        */
@@ -2278,10 +1870,6 @@ public final class KCIOKGPKCOJOuterClass {
         return oLJMLPBFGLD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OLJMLPBFGLD = 14;</code>
        * @param value The oLJMLPBFGLD to set.
        * @return This builder for chaining.
@@ -2293,10 +1881,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OLJMLPBFGLD = 14;</code>
        * @return This builder for chaining.
        */
@@ -2309,10 +1893,6 @@ public final class KCIOKGPKCOJOuterClass {
 
       private int costTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 4;</code>
        * @return The costTime.
        */
@@ -2321,10 +1901,6 @@ public final class KCIOKGPKCOJOuterClass {
         return costTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 4;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
@@ -2336,10 +1912,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 4;</code>
        * @return This builder for chaining.
        */
@@ -2352,10 +1924,6 @@ public final class KCIOKGPKCOJOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @return The levelId.
        */
@@ -2364,10 +1932,6 @@ public final class KCIOKGPKCOJOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -2379,10 +1943,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @return This builder for chaining.
        */
@@ -2395,10 +1955,6 @@ public final class KCIOKGPKCOJOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 1;</code>
        * @return The isFinish.
        */
@@ -2407,10 +1963,6 @@ public final class KCIOKGPKCOJOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 1;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -2422,10 +1974,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 1;</code>
        * @return This builder for chaining.
        */
@@ -2438,10 +1986,6 @@ public final class KCIOKGPKCOJOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return The isOpen.
        */
@@ -2450,10 +1994,6 @@ public final class KCIOKGPKCOJOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -2465,10 +2005,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return This builder for chaining.
        */
@@ -2481,10 +2017,6 @@ public final class KCIOKGPKCOJOuterClass {
 
       private boolean aJNMBHGPLNI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool AJNMBHGPLNI = 6;</code>
        * @return The aJNMBHGPLNI.
        */
@@ -2493,10 +2025,6 @@ public final class KCIOKGPKCOJOuterClass {
         return aJNMBHGPLNI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool AJNMBHGPLNI = 6;</code>
        * @param value The aJNMBHGPLNI to set.
        * @return This builder for chaining.
@@ -2508,10 +2036,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool AJNMBHGPLNI = 6;</code>
        * @return This builder for chaining.
        */
@@ -2524,10 +2048,6 @@ public final class KCIOKGPKCOJOuterClass {
 
       private int gCBELODNLFA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GCBELODNLFA = 10;</code>
        * @return The gCBELODNLFA.
        */
@@ -2536,10 +2056,6 @@ public final class KCIOKGPKCOJOuterClass {
         return gCBELODNLFA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GCBELODNLFA = 10;</code>
        * @param value The gCBELODNLFA to set.
        * @return This builder for chaining.
@@ -2551,10 +2067,6 @@ public final class KCIOKGPKCOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GCBELODNLFA = 10;</code>
        * @return This builder for chaining.
        */

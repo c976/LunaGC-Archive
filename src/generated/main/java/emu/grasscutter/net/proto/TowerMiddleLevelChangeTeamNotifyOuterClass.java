@@ -20,7 +20,8 @@ public final class TowerMiddleLevelChangeTeamNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5074
+   * CmdId: 2027
+   * Obf: NMHAKMEJMMM
    * </pre>
    *
    * Protobuf type {@code TowerMiddleLevelChangeTeamNotify}
@@ -245,7 +246,8 @@ public final class TowerMiddleLevelChangeTeamNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5074
+     * CmdId: 2027
+     * Obf: NMHAKMEJMMM
      * </pre>
      *
      * Protobuf type {@code TowerMiddleLevelChangeTeamNotify}

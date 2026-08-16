@@ -19,28 +19,16 @@ public final class LLNNPDEJOICOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 3;</code>
      * @return A list containing the affixList.
      */
     java.util.List<java.lang.Integer> getAffixListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 3;</code>
      * @return The count of affixList.
      */
     int getAffixListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 3;</code>
      * @param index The index of the element to return.
      * @return The affixList at the given index.
@@ -48,30 +36,18 @@ public final class LLNNPDEJOICOuterClass {
     int getAffixList(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 monster_id = 11;</code>
      * @return The monsterId.
      */
     int getMonsterId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMGHGCHPJEH = 13;</code>
      * @return The oMGHGCHPJEH.
      */
     int getOMGHGCHPJEH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level = 12;</code>
      * @return The level.
      */
@@ -198,10 +174,6 @@ public final class LLNNPDEJOICOuterClass {
     public static final int AFFIX_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList affixList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 3;</code>
      * @return A list containing the affixList.
      */
@@ -211,10 +183,6 @@ public final class LLNNPDEJOICOuterClass {
       return affixList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 3;</code>
      * @return The count of affixList.
      */
@@ -222,10 +190,6 @@ public final class LLNNPDEJOICOuterClass {
       return affixList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 3;</code>
      * @param index The index of the element to return.
      * @return The affixList at the given index.
@@ -238,10 +202,6 @@ public final class LLNNPDEJOICOuterClass {
     public static final int MONSTER_ID_FIELD_NUMBER = 11;
     private int monsterId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 monster_id = 11;</code>
      * @return The monsterId.
      */
@@ -253,10 +213,6 @@ public final class LLNNPDEJOICOuterClass {
     public static final int OMGHGCHPJEH_FIELD_NUMBER = 13;
     private int oMGHGCHPJEH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMGHGCHPJEH = 13;</code>
      * @return The oMGHGCHPJEH.
      */
@@ -268,10 +224,6 @@ public final class LLNNPDEJOICOuterClass {
     public static final int LEVEL_FIELD_NUMBER = 12;
     private int level_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level = 12;</code>
      * @return The level.
      */
@@ -671,10 +623,6 @@ public final class LLNNPDEJOICOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 3;</code>
        * @return A list containing the affixList.
        */
@@ -684,10 +632,6 @@ public final class LLNNPDEJOICOuterClass {
                  java.util.Collections.unmodifiableList(affixList_) : affixList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 3;</code>
        * @return The count of affixList.
        */
@@ -695,10 +639,6 @@ public final class LLNNPDEJOICOuterClass {
         return affixList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 3;</code>
        * @param index The index of the element to return.
        * @return The affixList at the given index.
@@ -707,10 +647,6 @@ public final class LLNNPDEJOICOuterClass {
         return affixList_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The affixList to set.
@@ -724,10 +660,6 @@ public final class LLNNPDEJOICOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 3;</code>
        * @param value The affixList to add.
        * @return This builder for chaining.
@@ -739,10 +671,6 @@ public final class LLNNPDEJOICOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 3;</code>
        * @param values The affixList to add.
        * @return This builder for chaining.
@@ -756,10 +684,6 @@ public final class LLNNPDEJOICOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 3;</code>
        * @return This builder for chaining.
        */
@@ -772,10 +696,6 @@ public final class LLNNPDEJOICOuterClass {
 
       private int monsterId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 monster_id = 11;</code>
        * @return The monsterId.
        */
@@ -784,10 +704,6 @@ public final class LLNNPDEJOICOuterClass {
         return monsterId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 monster_id = 11;</code>
        * @param value The monsterId to set.
        * @return This builder for chaining.
@@ -799,10 +715,6 @@ public final class LLNNPDEJOICOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 monster_id = 11;</code>
        * @return This builder for chaining.
        */
@@ -815,10 +727,6 @@ public final class LLNNPDEJOICOuterClass {
 
       private int oMGHGCHPJEH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMGHGCHPJEH = 13;</code>
        * @return The oMGHGCHPJEH.
        */
@@ -827,10 +735,6 @@ public final class LLNNPDEJOICOuterClass {
         return oMGHGCHPJEH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMGHGCHPJEH = 13;</code>
        * @param value The oMGHGCHPJEH to set.
        * @return This builder for chaining.
@@ -842,10 +746,6 @@ public final class LLNNPDEJOICOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMGHGCHPJEH = 13;</code>
        * @return This builder for chaining.
        */
@@ -858,10 +758,6 @@ public final class LLNNPDEJOICOuterClass {
 
       private int level_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level = 12;</code>
        * @return The level.
        */
@@ -870,10 +766,6 @@ public final class LLNNPDEJOICOuterClass {
         return level_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level = 12;</code>
        * @param value The level to set.
        * @return This builder for chaining.
@@ -885,10 +777,6 @@ public final class LLNNPDEJOICOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level = 12;</code>
        * @return This builder for chaining.
        */

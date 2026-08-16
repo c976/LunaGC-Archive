@@ -19,34 +19,22 @@ public final class FishingJoyDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 AOIABLNLDAG = 2;</code>
-     * @return The aOIABLNLDAG.
+     * <code>uint32 JEJKILGBCOL = 15;</code>
+     * @return The jEJKILGBCOL.
      */
-    int getAOIABLNLDAG();
+    int getJEJKILGBCOL();
 
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>bool AOFKDNCFPKE = 13;</code>
-     * @return The aOFKDNCFPKE.
+     * <code>bool FHDJCEAAKNN = 11;</code>
+     * @return The fHDJCEAAKNN.
      */
-    boolean getAOFKDNCFPKE();
+    boolean getFHDJCEAAKNN();
 
     /**
-     * <pre>
-     * offset: 37
-     * </pre>
-     *
-     * <code>bool MDIPEMEFKPI = 12;</code>
-     * @return The mDIPEMEFKPI.
+     * <code>bool HNHLLEGDOLP = 9;</code>
+     * @return The hNHLLEGDOLP.
      */
-    boolean getMDIPEMEFKPI();
+    boolean getHNHLLEGDOLP();
   }
   /**
    * Protobuf type {@code FishingJoyDetailInfo}
@@ -93,19 +81,19 @@ public final class FishingJoyDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 72: {
 
-              aOIABLNLDAG_ = input.readUInt32();
+              hNHLLEGDOLP_ = input.readBool();
               break;
             }
-            case 96: {
+            case 88: {
 
-              mDIPEMEFKPI_ = input.readBool();
+              fHDJCEAAKNN_ = input.readBool();
               break;
             }
-            case 104: {
+            case 120: {
 
-              aOFKDNCFPKE_ = input.readBool();
+              jEJKILGBCOL_ = input.readUInt32();
               break;
             }
             default: {
@@ -140,49 +128,37 @@ public final class FishingJoyDetailInfoOuterClass {
               emu.grasscutter.net.proto.FishingJoyDetailInfoOuterClass.FishingJoyDetailInfo.class, emu.grasscutter.net.proto.FishingJoyDetailInfoOuterClass.FishingJoyDetailInfo.Builder.class);
     }
 
-    public static final int AOIABLNLDAG_FIELD_NUMBER = 2;
-    private int aOIABLNLDAG_;
+    public static final int JEJKILGBCOL_FIELD_NUMBER = 15;
+    private int jEJKILGBCOL_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 AOIABLNLDAG = 2;</code>
-     * @return The aOIABLNLDAG.
+     * <code>uint32 JEJKILGBCOL = 15;</code>
+     * @return The jEJKILGBCOL.
      */
     @java.lang.Override
-    public int getAOIABLNLDAG() {
-      return aOIABLNLDAG_;
+    public int getJEJKILGBCOL() {
+      return jEJKILGBCOL_;
     }
 
-    public static final int AOFKDNCFPKE_FIELD_NUMBER = 13;
-    private boolean aOFKDNCFPKE_;
+    public static final int FHDJCEAAKNN_FIELD_NUMBER = 11;
+    private boolean fHDJCEAAKNN_;
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>bool AOFKDNCFPKE = 13;</code>
-     * @return The aOFKDNCFPKE.
+     * <code>bool FHDJCEAAKNN = 11;</code>
+     * @return The fHDJCEAAKNN.
      */
     @java.lang.Override
-    public boolean getAOFKDNCFPKE() {
-      return aOFKDNCFPKE_;
+    public boolean getFHDJCEAAKNN() {
+      return fHDJCEAAKNN_;
     }
 
-    public static final int MDIPEMEFKPI_FIELD_NUMBER = 12;
-    private boolean mDIPEMEFKPI_;
+    public static final int HNHLLEGDOLP_FIELD_NUMBER = 9;
+    private boolean hNHLLEGDOLP_;
     /**
-     * <pre>
-     * offset: 37
-     * </pre>
-     *
-     * <code>bool MDIPEMEFKPI = 12;</code>
-     * @return The mDIPEMEFKPI.
+     * <code>bool HNHLLEGDOLP = 9;</code>
+     * @return The hNHLLEGDOLP.
      */
     @java.lang.Override
-    public boolean getMDIPEMEFKPI() {
-      return mDIPEMEFKPI_;
+    public boolean getHNHLLEGDOLP() {
+      return hNHLLEGDOLP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -199,14 +175,14 @@ public final class FishingJoyDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aOIABLNLDAG_ != 0) {
-        output.writeUInt32(2, aOIABLNLDAG_);
+      if (hNHLLEGDOLP_ != false) {
+        output.writeBool(9, hNHLLEGDOLP_);
       }
-      if (mDIPEMEFKPI_ != false) {
-        output.writeBool(12, mDIPEMEFKPI_);
+      if (fHDJCEAAKNN_ != false) {
+        output.writeBool(11, fHDJCEAAKNN_);
       }
-      if (aOFKDNCFPKE_ != false) {
-        output.writeBool(13, aOFKDNCFPKE_);
+      if (jEJKILGBCOL_ != 0) {
+        output.writeUInt32(15, jEJKILGBCOL_);
       }
       unknownFields.writeTo(output);
     }
@@ -217,17 +193,17 @@ public final class FishingJoyDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aOIABLNLDAG_ != 0) {
+      if (hNHLLEGDOLP_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, aOIABLNLDAG_);
+          .computeBoolSize(9, hNHLLEGDOLP_);
       }
-      if (mDIPEMEFKPI_ != false) {
+      if (fHDJCEAAKNN_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, mDIPEMEFKPI_);
+          .computeBoolSize(11, fHDJCEAAKNN_);
       }
-      if (aOFKDNCFPKE_ != false) {
+      if (jEJKILGBCOL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, aOFKDNCFPKE_);
+          .computeUInt32Size(15, jEJKILGBCOL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -244,12 +220,12 @@ public final class FishingJoyDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.FishingJoyDetailInfoOuterClass.FishingJoyDetailInfo other = (emu.grasscutter.net.proto.FishingJoyDetailInfoOuterClass.FishingJoyDetailInfo) obj;
 
-      if (getAOIABLNLDAG()
-          != other.getAOIABLNLDAG()) return false;
-      if (getAOFKDNCFPKE()
-          != other.getAOFKDNCFPKE()) return false;
-      if (getMDIPEMEFKPI()
-          != other.getMDIPEMEFKPI()) return false;
+      if (getJEJKILGBCOL()
+          != other.getJEJKILGBCOL()) return false;
+      if (getFHDJCEAAKNN()
+          != other.getFHDJCEAAKNN()) return false;
+      if (getHNHLLEGDOLP()
+          != other.getHNHLLEGDOLP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -261,14 +237,14 @@ public final class FishingJoyDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AOIABLNLDAG_FIELD_NUMBER;
-      hash = (53 * hash) + getAOIABLNLDAG();
-      hash = (37 * hash) + AOFKDNCFPKE_FIELD_NUMBER;
+      hash = (37 * hash) + JEJKILGBCOL_FIELD_NUMBER;
+      hash = (53 * hash) + getJEJKILGBCOL();
+      hash = (37 * hash) + FHDJCEAAKNN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getAOFKDNCFPKE());
-      hash = (37 * hash) + MDIPEMEFKPI_FIELD_NUMBER;
+          getFHDJCEAAKNN());
+      hash = (37 * hash) + HNHLLEGDOLP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getMDIPEMEFKPI());
+          getHNHLLEGDOLP());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -402,11 +378,11 @@ public final class FishingJoyDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        aOIABLNLDAG_ = 0;
+        jEJKILGBCOL_ = 0;
 
-        aOFKDNCFPKE_ = false;
+        fHDJCEAAKNN_ = false;
 
-        mDIPEMEFKPI_ = false;
+        hNHLLEGDOLP_ = false;
 
         return this;
       }
@@ -434,9 +410,9 @@ public final class FishingJoyDetailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FishingJoyDetailInfoOuterClass.FishingJoyDetailInfo buildPartial() {
         emu.grasscutter.net.proto.FishingJoyDetailInfoOuterClass.FishingJoyDetailInfo result = new emu.grasscutter.net.proto.FishingJoyDetailInfoOuterClass.FishingJoyDetailInfo(this);
-        result.aOIABLNLDAG_ = aOIABLNLDAG_;
-        result.aOFKDNCFPKE_ = aOFKDNCFPKE_;
-        result.mDIPEMEFKPI_ = mDIPEMEFKPI_;
+        result.jEJKILGBCOL_ = jEJKILGBCOL_;
+        result.fHDJCEAAKNN_ = fHDJCEAAKNN_;
+        result.hNHLLEGDOLP_ = hNHLLEGDOLP_;
         onBuilt();
         return result;
       }
@@ -485,14 +461,14 @@ public final class FishingJoyDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FishingJoyDetailInfoOuterClass.FishingJoyDetailInfo other) {
         if (other == emu.grasscutter.net.proto.FishingJoyDetailInfoOuterClass.FishingJoyDetailInfo.getDefaultInstance()) return this;
-        if (other.getAOIABLNLDAG() != 0) {
-          setAOIABLNLDAG(other.getAOIABLNLDAG());
+        if (other.getJEJKILGBCOL() != 0) {
+          setJEJKILGBCOL(other.getJEJKILGBCOL());
         }
-        if (other.getAOFKDNCFPKE() != false) {
-          setAOFKDNCFPKE(other.getAOFKDNCFPKE());
+        if (other.getFHDJCEAAKNN() != false) {
+          setFHDJCEAAKNN(other.getFHDJCEAAKNN());
         }
-        if (other.getMDIPEMEFKPI() != false) {
-          setMDIPEMEFKPI(other.getMDIPEMEFKPI());
+        if (other.getHNHLLEGDOLP() != false) {
+          setHNHLLEGDOLP(other.getHNHLLEGDOLP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -523,131 +499,95 @@ public final class FishingJoyDetailInfoOuterClass {
         return this;
       }
 
-      private int aOIABLNLDAG_ ;
+      private int jEJKILGBCOL_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 AOIABLNLDAG = 2;</code>
-       * @return The aOIABLNLDAG.
+       * <code>uint32 JEJKILGBCOL = 15;</code>
+       * @return The jEJKILGBCOL.
        */
       @java.lang.Override
-      public int getAOIABLNLDAG() {
-        return aOIABLNLDAG_;
+      public int getJEJKILGBCOL() {
+        return jEJKILGBCOL_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 AOIABLNLDAG = 2;</code>
-       * @param value The aOIABLNLDAG to set.
+       * <code>uint32 JEJKILGBCOL = 15;</code>
+       * @param value The jEJKILGBCOL to set.
        * @return This builder for chaining.
        */
-      public Builder setAOIABLNLDAG(int value) {
+      public Builder setJEJKILGBCOL(int value) {
         
-        aOIABLNLDAG_ = value;
+        jEJKILGBCOL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 AOIABLNLDAG = 2;</code>
+       * <code>uint32 JEJKILGBCOL = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAOIABLNLDAG() {
+      public Builder clearJEJKILGBCOL() {
         
-        aOIABLNLDAG_ = 0;
+        jEJKILGBCOL_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean aOFKDNCFPKE_ ;
+      private boolean fHDJCEAAKNN_ ;
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>bool AOFKDNCFPKE = 13;</code>
-       * @return The aOFKDNCFPKE.
+       * <code>bool FHDJCEAAKNN = 11;</code>
+       * @return The fHDJCEAAKNN.
        */
       @java.lang.Override
-      public boolean getAOFKDNCFPKE() {
-        return aOFKDNCFPKE_;
+      public boolean getFHDJCEAAKNN() {
+        return fHDJCEAAKNN_;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>bool AOFKDNCFPKE = 13;</code>
-       * @param value The aOFKDNCFPKE to set.
+       * <code>bool FHDJCEAAKNN = 11;</code>
+       * @param value The fHDJCEAAKNN to set.
        * @return This builder for chaining.
        */
-      public Builder setAOFKDNCFPKE(boolean value) {
+      public Builder setFHDJCEAAKNN(boolean value) {
         
-        aOFKDNCFPKE_ = value;
+        fHDJCEAAKNN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>bool AOFKDNCFPKE = 13;</code>
+       * <code>bool FHDJCEAAKNN = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAOFKDNCFPKE() {
+      public Builder clearFHDJCEAAKNN() {
         
-        aOFKDNCFPKE_ = false;
+        fHDJCEAAKNN_ = false;
         onChanged();
         return this;
       }
 
-      private boolean mDIPEMEFKPI_ ;
+      private boolean hNHLLEGDOLP_ ;
       /**
-       * <pre>
-       * offset: 37
-       * </pre>
-       *
-       * <code>bool MDIPEMEFKPI = 12;</code>
-       * @return The mDIPEMEFKPI.
+       * <code>bool HNHLLEGDOLP = 9;</code>
+       * @return The hNHLLEGDOLP.
        */
       @java.lang.Override
-      public boolean getMDIPEMEFKPI() {
-        return mDIPEMEFKPI_;
+      public boolean getHNHLLEGDOLP() {
+        return hNHLLEGDOLP_;
       }
       /**
-       * <pre>
-       * offset: 37
-       * </pre>
-       *
-       * <code>bool MDIPEMEFKPI = 12;</code>
-       * @param value The mDIPEMEFKPI to set.
+       * <code>bool HNHLLEGDOLP = 9;</code>
+       * @param value The hNHLLEGDOLP to set.
        * @return This builder for chaining.
        */
-      public Builder setMDIPEMEFKPI(boolean value) {
+      public Builder setHNHLLEGDOLP(boolean value) {
         
-        mDIPEMEFKPI_ = value;
+        hNHLLEGDOLP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 37
-       * </pre>
-       *
-       * <code>bool MDIPEMEFKPI = 12;</code>
+       * <code>bool HNHLLEGDOLP = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMDIPEMEFKPI() {
+      public Builder clearHNHLLEGDOLP() {
         
-        mDIPEMEFKPI_ = false;
+        hNHLLEGDOLP_ = false;
         onChanged();
         return this;
       }
@@ -719,8 +659,8 @@ public final class FishingJoyDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032FishingJoyDetailInfo.proto\"U\n\024FishingJ" +
-      "oyDetailInfo\022\023\n\013AOIABLNLDAG\030\002 \001(\r\022\023\n\013AOF" +
-      "KDNCFPKE\030\r \001(\010\022\023\n\013MDIPEMEFKPI\030\014 \001(\010B\033\n\031e" +
+      "oyDetailInfo\022\023\n\013JEJKILGBCOL\030\017 \001(\r\022\023\n\013FHD" +
+      "JCEAAKNN\030\013 \001(\010\022\023\n\013HNHLLEGDOLP\030\t \001(\010B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -732,7 +672,7 @@ public final class FishingJoyDetailInfoOuterClass {
     internal_static_FishingJoyDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FishingJoyDetailInfo_descriptor,
-        new java.lang.String[] { "AOIABLNLDAG", "AOFKDNCFPKE", "MDIPEMEFKPI", });
+        new java.lang.String[] { "JEJKILGBCOL", "FHDJCEAAKNN", "HNHLLEGDOLP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

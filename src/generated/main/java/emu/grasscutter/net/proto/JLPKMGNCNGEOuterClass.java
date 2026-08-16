@@ -19,80 +19,48 @@ public final class JLPKMGNCNGEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC> 
         getKBGJCPOKLFBList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
      */
     emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC getKBGJCPOKLFB(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
      */
     int getKBGJCPOKLFBCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNCOrBuilder> 
         getKBGJCPOKLFBOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
      */
     emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNCOrBuilder getKBGJCPOKLFBOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 10;</code>
      * @return The cKOCCKMBGJN.
      */
     int getCKOCCKMBGJN();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 7;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 7;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DDHKLPIHBJE = 14;</code>
      * @return The dDHKLPIHBJE.
      */
@@ -156,7 +124,7 @@ public final class JLPKMGNCNGEOuterClass {
             }
             case 56: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 64: {
@@ -212,10 +180,6 @@ public final class JLPKMGNCNGEOuterClass {
     public static final int KBGJCPOKLFB_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC> kBGJCPOKLFB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
      */
     @java.lang.Override
@@ -223,10 +187,6 @@ public final class JLPKMGNCNGEOuterClass {
       return kBGJCPOKLFB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
      */
     @java.lang.Override
@@ -235,10 +195,6 @@ public final class JLPKMGNCNGEOuterClass {
       return kBGJCPOKLFB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
      */
     @java.lang.Override
@@ -246,10 +202,6 @@ public final class JLPKMGNCNGEOuterClass {
       return kBGJCPOKLFB_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
      */
     @java.lang.Override
@@ -257,10 +209,6 @@ public final class JLPKMGNCNGEOuterClass {
       return kBGJCPOKLFB_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
      */
     @java.lang.Override
@@ -272,10 +220,6 @@ public final class JLPKMGNCNGEOuterClass {
     public static final int CKOCCKMBGJN_FIELD_NUMBER = 10;
     private int cKOCCKMBGJN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 10;</code>
      * @return The cKOCCKMBGJN.
      */
@@ -284,24 +228,20 @@ public final class JLPKMGNCNGEOuterClass {
       return cKOCCKMBGJN_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 7;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 7;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 7;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 7;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 8;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
@@ -313,10 +253,6 @@ public final class JLPKMGNCNGEOuterClass {
     public static final int DDHKLPIHBJE_FIELD_NUMBER = 14;
     private int dDHKLPIHBJE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DDHKLPIHBJE = 14;</code>
      * @return The dDHKLPIHBJE.
      */
@@ -342,8 +278,8 @@ public final class JLPKMGNCNGEOuterClass {
       for (int i = 0; i < kBGJCPOKLFB_.size(); i++) {
         output.writeMessage(5, kBGJCPOKLFB_.get(i));
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(7, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(7, stageId_);
       }
       if (isOpen_ != false) {
         output.writeBool(8, isOpen_);
@@ -367,9 +303,9 @@ public final class JLPKMGNCNGEOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, kBGJCPOKLFB_.get(i));
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, eGHGENOJNEK_);
+          .computeUInt32Size(7, stageId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -402,8 +338,8 @@ public final class JLPKMGNCNGEOuterClass {
           .equals(other.getKBGJCPOKLFBList())) return false;
       if (getCKOCCKMBGJN()
           != other.getCKOCCKMBGJN()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getDDHKLPIHBJE()
@@ -425,8 +361,8 @@ public final class JLPKMGNCNGEOuterClass {
       }
       hash = (37 * hash) + CKOCCKMBGJN_FIELD_NUMBER;
       hash = (53 * hash) + getCKOCCKMBGJN();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -574,7 +510,7 @@ public final class JLPKMGNCNGEOuterClass {
         }
         cKOCCKMBGJN_ = 0;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         isOpen_ = false;
 
@@ -617,7 +553,7 @@ public final class JLPKMGNCNGEOuterClass {
           result.kBGJCPOKLFB_ = kBGJCPOKLFBBuilder_.build();
         }
         result.cKOCCKMBGJN_ = cKOCCKMBGJN_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.isOpen_ = isOpen_;
         result.dDHKLPIHBJE_ = dDHKLPIHBJE_;
         onBuilt();
@@ -697,8 +633,8 @@ public final class JLPKMGNCNGEOuterClass {
         if (other.getCKOCCKMBGJN() != 0) {
           setCKOCCKMBGJN(other.getCKOCCKMBGJN());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -749,10 +685,6 @@ public final class JLPKMGNCNGEOuterClass {
           emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC, emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC.Builder, emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNCOrBuilder> kBGJCPOKLFBBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC> getKBGJCPOKLFBList() {
@@ -763,10 +695,6 @@ public final class JLPKMGNCNGEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public int getKBGJCPOKLFBCount() {
@@ -777,10 +705,6 @@ public final class JLPKMGNCNGEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC getKBGJCPOKLFB(int index) {
@@ -791,10 +715,6 @@ public final class JLPKMGNCNGEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public Builder setKBGJCPOKLFB(
@@ -812,10 +732,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public Builder setKBGJCPOKLFB(
@@ -830,10 +746,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public Builder addKBGJCPOKLFB(emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC value) {
@@ -850,10 +762,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -871,10 +779,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -889,10 +793,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -907,10 +807,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public Builder addAllKBGJCPOKLFB(
@@ -926,10 +822,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public Builder clearKBGJCPOKLFB() {
@@ -943,10 +835,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public Builder removeKBGJCPOKLFB(int index) {
@@ -960,10 +848,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC.Builder getKBGJCPOKLFBBuilder(
@@ -971,10 +855,6 @@ public final class JLPKMGNCNGEOuterClass {
         return getKBGJCPOKLFBFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNCOrBuilder getKBGJCPOKLFBOrBuilder(
@@ -985,10 +865,6 @@ public final class JLPKMGNCNGEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNCOrBuilder> 
@@ -1000,10 +876,6 @@ public final class JLPKMGNCNGEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC.Builder addKBGJCPOKLFBBuilder() {
@@ -1011,10 +883,6 @@ public final class JLPKMGNCNGEOuterClass {
             emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC.Builder addKBGJCPOKLFBBuilder(
@@ -1023,10 +891,6 @@ public final class JLPKMGNCNGEOuterClass {
             index, emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HECIAPHEJNC KBGJCPOKLFB = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.HECIAPHEJNC.Builder> 
@@ -1050,10 +914,6 @@ public final class JLPKMGNCNGEOuterClass {
 
       private int cKOCCKMBGJN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 10;</code>
        * @return The cKOCCKMBGJN.
        */
@@ -1062,10 +922,6 @@ public final class JLPKMGNCNGEOuterClass {
         return cKOCCKMBGJN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 10;</code>
        * @param value The cKOCCKMBGJN to set.
        * @return This builder for chaining.
@@ -1077,10 +933,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 10;</code>
        * @return This builder for chaining.
        */
@@ -1091,43 +943,39 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 7;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 7;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 7;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 7;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 7;</code>
+       * <code>uint32 stage_id = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @return The isOpen.
        */
@@ -1136,10 +984,6 @@ public final class JLPKMGNCNGEOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1151,10 +995,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @return This builder for chaining.
        */
@@ -1167,10 +1007,6 @@ public final class JLPKMGNCNGEOuterClass {
 
       private int dDHKLPIHBJE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DDHKLPIHBJE = 14;</code>
        * @return The dDHKLPIHBJE.
        */
@@ -1179,10 +1015,6 @@ public final class JLPKMGNCNGEOuterClass {
         return dDHKLPIHBJE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DDHKLPIHBJE = 14;</code>
        * @param value The dDHKLPIHBJE to set.
        * @return This builder for chaining.
@@ -1194,10 +1026,6 @@ public final class JLPKMGNCNGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DDHKLPIHBJE = 14;</code>
        * @return This builder for chaining.
        */
@@ -1274,12 +1102,12 @@ public final class JLPKMGNCNGEOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021JLPKMGNCNGE.proto\032\021HECIAPHEJNC.proto\"\200" +
-      "\001\n\013JLPKMGNCNGE\022!\n\013KBGJCPOKLFB\030\005 \003(\0132\014.HE" +
-      "CIAPHEJNC\022\023\n\013CKOCCKMBGJN\030\n \001(\r\022\023\n\013EGHGEN" +
-      "OJNEK\030\007 \001(\r\022\017\n\007is_open\030\010 \001(\010\022\023\n\013DDHKLPIH" +
-      "BJE\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\021JLPKMGNCNGE.proto\032\021HECIAPHEJNC.proto\"}" +
+      "\n\013JLPKMGNCNGE\022!\n\013KBGJCPOKLFB\030\005 \003(\0132\014.HEC" +
+      "IAPHEJNC\022\023\n\013CKOCCKMBGJN\030\n \001(\r\022\020\n\010stage_i" +
+      "d\030\007 \001(\r\022\017\n\007is_open\030\010 \001(\010\022\023\n\013DDHKLPIHBJE\030" +
+      "\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1291,7 +1119,7 @@ public final class JLPKMGNCNGEOuterClass {
     internal_static_JLPKMGNCNGE_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_JLPKMGNCNGE_descriptor,
-        new java.lang.String[] { "KBGJCPOKLFB", "CKOCCKMBGJN", "EGHGENOJNEK", "IsOpen", "DDHKLPIHBJE", });
+        new java.lang.String[] { "KBGJCPOKLFB", "CKOCCKMBGJN", "StageId", "IsOpen", "DDHKLPIHBJE", });
     emu.grasscutter.net.proto.HECIAPHEJNCOuterClass.getDescriptor();
   }
 

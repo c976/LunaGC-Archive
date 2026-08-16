@@ -19,28 +19,16 @@ public final class BMGBEHFPFDFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 10;</code>
      * @return A list containing the cEFGIMINOOB.
      */
     java.util.List<java.lang.Integer> getCEFGIMINOOBList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 10;</code>
      * @return The count of cEFGIMINOOB.
      */
     int getCEFGIMINOOBCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 10;</code>
      * @param index The index of the element to return.
      * @return The cEFGIMINOOB at the given index.
@@ -48,20 +36,12 @@ public final class BMGBEHFPFDFOuterClass {
     int getCEFGIMINOOB(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>fixed32 begin_time = 4;</code>
      * @return The beginTime.
      */
     int getBeginTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>fixed32 end_time = 1;</code>
      * @return The endTime.
      */
@@ -183,10 +163,6 @@ public final class BMGBEHFPFDFOuterClass {
     public static final int CEFGIMINOOB_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList cEFGIMINOOB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 10;</code>
      * @return A list containing the cEFGIMINOOB.
      */
@@ -196,10 +172,6 @@ public final class BMGBEHFPFDFOuterClass {
       return cEFGIMINOOB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 10;</code>
      * @return The count of cEFGIMINOOB.
      */
@@ -207,10 +179,6 @@ public final class BMGBEHFPFDFOuterClass {
       return cEFGIMINOOB_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 10;</code>
      * @param index The index of the element to return.
      * @return The cEFGIMINOOB at the given index.
@@ -223,10 +191,6 @@ public final class BMGBEHFPFDFOuterClass {
     public static final int BEGIN_TIME_FIELD_NUMBER = 4;
     private int beginTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>fixed32 begin_time = 4;</code>
      * @return The beginTime.
      */
@@ -238,10 +202,6 @@ public final class BMGBEHFPFDFOuterClass {
     public static final int END_TIME_FIELD_NUMBER = 1;
     private int endTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>fixed32 end_time = 1;</code>
      * @return The endTime.
      */
@@ -624,10 +584,6 @@ public final class BMGBEHFPFDFOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 10;</code>
        * @return A list containing the cEFGIMINOOB.
        */
@@ -637,10 +593,6 @@ public final class BMGBEHFPFDFOuterClass {
                  java.util.Collections.unmodifiableList(cEFGIMINOOB_) : cEFGIMINOOB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 10;</code>
        * @return The count of cEFGIMINOOB.
        */
@@ -648,10 +600,6 @@ public final class BMGBEHFPFDFOuterClass {
         return cEFGIMINOOB_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 10;</code>
        * @param index The index of the element to return.
        * @return The cEFGIMINOOB at the given index.
@@ -660,10 +608,6 @@ public final class BMGBEHFPFDFOuterClass {
         return cEFGIMINOOB_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 10;</code>
        * @param index The index to set the value at.
        * @param value The cEFGIMINOOB to set.
@@ -677,10 +621,6 @@ public final class BMGBEHFPFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 10;</code>
        * @param value The cEFGIMINOOB to add.
        * @return This builder for chaining.
@@ -692,10 +632,6 @@ public final class BMGBEHFPFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 10;</code>
        * @param values The cEFGIMINOOB to add.
        * @return This builder for chaining.
@@ -709,10 +645,6 @@ public final class BMGBEHFPFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 10;</code>
        * @return This builder for chaining.
        */
@@ -725,10 +657,6 @@ public final class BMGBEHFPFDFOuterClass {
 
       private int beginTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>fixed32 begin_time = 4;</code>
        * @return The beginTime.
        */
@@ -737,10 +665,6 @@ public final class BMGBEHFPFDFOuterClass {
         return beginTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>fixed32 begin_time = 4;</code>
        * @param value The beginTime to set.
        * @return This builder for chaining.
@@ -752,10 +676,6 @@ public final class BMGBEHFPFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>fixed32 begin_time = 4;</code>
        * @return This builder for chaining.
        */
@@ -768,10 +688,6 @@ public final class BMGBEHFPFDFOuterClass {
 
       private int endTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>fixed32 end_time = 1;</code>
        * @return The endTime.
        */
@@ -780,10 +696,6 @@ public final class BMGBEHFPFDFOuterClass {
         return endTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>fixed32 end_time = 1;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
@@ -795,10 +707,6 @@ public final class BMGBEHFPFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>fixed32 end_time = 1;</code>
        * @return This builder for chaining.
        */

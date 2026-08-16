@@ -19,64 +19,36 @@ public final class ELILJMMOGLGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
         getAIOAAPOOOHEList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAIOAAPOOOHE(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
      */
     int getAIOAAPOOOHECount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
         getAIOAAPOOOHEOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAIOAAPOOOHEOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OBPKPDKNJLD = 7;</code>
      * @return The oBPKPDKNJLD.
      */
     boolean getOBPKPDKNJLD();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 4;</code>
      * @return The finishTime.
      */
@@ -186,10 +158,6 @@ public final class ELILJMMOGLGOuterClass {
     public static final int AIOAAPOOOHE_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> aIOAAPOOOHE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
      */
     @java.lang.Override
@@ -197,10 +165,6 @@ public final class ELILJMMOGLGOuterClass {
       return aIOAAPOOOHE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
      */
     @java.lang.Override
@@ -209,10 +173,6 @@ public final class ELILJMMOGLGOuterClass {
       return aIOAAPOOOHE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
      */
     @java.lang.Override
@@ -220,10 +180,6 @@ public final class ELILJMMOGLGOuterClass {
       return aIOAAPOOOHE_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
      */
     @java.lang.Override
@@ -231,10 +187,6 @@ public final class ELILJMMOGLGOuterClass {
       return aIOAAPOOOHE_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
      */
     @java.lang.Override
@@ -246,10 +198,6 @@ public final class ELILJMMOGLGOuterClass {
     public static final int OBPKPDKNJLD_FIELD_NUMBER = 7;
     private boolean oBPKPDKNJLD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OBPKPDKNJLD = 7;</code>
      * @return The oBPKPDKNJLD.
      */
@@ -261,10 +209,6 @@ public final class ELILJMMOGLGOuterClass {
     public static final int FINISH_TIME_FIELD_NUMBER = 4;
     private int finishTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 4;</code>
      * @return The finishTime.
      */
@@ -663,10 +607,6 @@ public final class ELILJMMOGLGOuterClass {
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> aIOAAPOOOHEBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getAIOAAPOOOHEList() {
@@ -677,10 +617,6 @@ public final class ELILJMMOGLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public int getAIOAAPOOOHECount() {
@@ -691,10 +627,6 @@ public final class ELILJMMOGLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAIOAAPOOOHE(int index) {
@@ -705,10 +637,6 @@ public final class ELILJMMOGLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public Builder setAIOAAPOOOHE(
@@ -726,10 +654,6 @@ public final class ELILJMMOGLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public Builder setAIOAAPOOOHE(
@@ -744,10 +668,6 @@ public final class ELILJMMOGLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public Builder addAIOAAPOOOHE(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -764,10 +684,6 @@ public final class ELILJMMOGLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public Builder addAIOAAPOOOHE(
@@ -785,10 +701,6 @@ public final class ELILJMMOGLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public Builder addAIOAAPOOOHE(
@@ -803,10 +715,6 @@ public final class ELILJMMOGLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public Builder addAIOAAPOOOHE(
@@ -821,10 +729,6 @@ public final class ELILJMMOGLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public Builder addAllAIOAAPOOOHE(
@@ -840,10 +744,6 @@ public final class ELILJMMOGLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public Builder clearAIOAAPOOOHE() {
@@ -857,10 +757,6 @@ public final class ELILJMMOGLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public Builder removeAIOAAPOOOHE(int index) {
@@ -874,10 +770,6 @@ public final class ELILJMMOGLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getAIOAAPOOOHEBuilder(
@@ -885,10 +777,6 @@ public final class ELILJMMOGLGOuterClass {
         return getAIOAAPOOOHEFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAIOAAPOOOHEOrBuilder(
@@ -899,10 +787,6 @@ public final class ELILJMMOGLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
@@ -914,10 +798,6 @@ public final class ELILJMMOGLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addAIOAAPOOOHEBuilder() {
@@ -925,10 +805,6 @@ public final class ELILJMMOGLGOuterClass {
             emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addAIOAAPOOOHEBuilder(
@@ -937,10 +813,6 @@ public final class ELILJMMOGLGOuterClass {
             index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .Uint32Pair AIOAAPOOOHE = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
@@ -964,10 +836,6 @@ public final class ELILJMMOGLGOuterClass {
 
       private boolean oBPKPDKNJLD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OBPKPDKNJLD = 7;</code>
        * @return The oBPKPDKNJLD.
        */
@@ -976,10 +844,6 @@ public final class ELILJMMOGLGOuterClass {
         return oBPKPDKNJLD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OBPKPDKNJLD = 7;</code>
        * @param value The oBPKPDKNJLD to set.
        * @return This builder for chaining.
@@ -991,10 +855,6 @@ public final class ELILJMMOGLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OBPKPDKNJLD = 7;</code>
        * @return This builder for chaining.
        */
@@ -1007,10 +867,6 @@ public final class ELILJMMOGLGOuterClass {
 
       private int finishTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 4;</code>
        * @return The finishTime.
        */
@@ -1019,10 +875,6 @@ public final class ELILJMMOGLGOuterClass {
         return finishTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 4;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
@@ -1034,10 +886,6 @@ public final class ELILJMMOGLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 4;</code>
        * @return This builder for chaining.
        */

@@ -19,26 +19,18 @@ public final class CLPMEKIBGKOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 EGHGENOJNEK = 12;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 12;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 8;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
@@ -101,7 +93,7 @@ public final class CLPMEKIBGKOOuterClass {
             }
             case 96: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -136,24 +128,20 @@ public final class CLPMEKIBGKOOuterClass {
               emu.grasscutter.net.proto.CLPMEKIBGKOOuterClass.CLPMEKIBGKO.class, emu.grasscutter.net.proto.CLPMEKIBGKOOuterClass.CLPMEKIBGKO.Builder.class);
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 12;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 12;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 12;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 12;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int OPEN_TIME_FIELD_NUMBER = 8;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 8;</code>
      * @return The openTime.
      */
@@ -165,10 +153,6 @@ public final class CLPMEKIBGKOOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 9;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
@@ -197,8 +181,8 @@ public final class CLPMEKIBGKOOuterClass {
       if (isOpen_ != false) {
         output.writeBool(9, isOpen_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(12, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(12, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -217,9 +201,9 @@ public final class CLPMEKIBGKOOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(9, isOpen_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, eGHGENOJNEK_);
+          .computeUInt32Size(12, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -236,8 +220,8 @@ public final class CLPMEKIBGKOOuterClass {
       }
       emu.grasscutter.net.proto.CLPMEKIBGKOOuterClass.CLPMEKIBGKO other = (emu.grasscutter.net.proto.CLPMEKIBGKOOuterClass.CLPMEKIBGKO) obj;
 
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getOpenTime()
           != other.getOpenTime()) return false;
       if (getIsOpen()
@@ -253,8 +237,8 @@ public final class CLPMEKIBGKOOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getOpenTime();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
@@ -393,7 +377,7 @@ public final class CLPMEKIBGKOOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         openTime_ = 0;
 
@@ -425,7 +409,7 @@ public final class CLPMEKIBGKOOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CLPMEKIBGKOOuterClass.CLPMEKIBGKO buildPartial() {
         emu.grasscutter.net.proto.CLPMEKIBGKOOuterClass.CLPMEKIBGKO result = new emu.grasscutter.net.proto.CLPMEKIBGKOOuterClass.CLPMEKIBGKO(this);
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.openTime_ = openTime_;
         result.isOpen_ = isOpen_;
         onBuilt();
@@ -476,8 +460,8 @@ public final class CLPMEKIBGKOOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CLPMEKIBGKOOuterClass.CLPMEKIBGKO other) {
         if (other == emu.grasscutter.net.proto.CLPMEKIBGKOOuterClass.CLPMEKIBGKO.getDefaultInstance()) return this;
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getOpenTime() != 0) {
           setOpenTime(other.getOpenTime());
@@ -514,43 +498,39 @@ public final class CLPMEKIBGKOOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 12;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 12;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
+       * <code>uint32 stage_id = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 8;</code>
        * @return The openTime.
        */
@@ -559,10 +539,6 @@ public final class CLPMEKIBGKOOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 8;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -574,10 +550,6 @@ public final class CLPMEKIBGKOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 8;</code>
        * @return This builder for chaining.
        */
@@ -590,10 +562,6 @@ public final class CLPMEKIBGKOOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @return The isOpen.
        */
@@ -602,10 +570,6 @@ public final class CLPMEKIBGKOOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -617,10 +581,6 @@ public final class CLPMEKIBGKOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @return This builder for chaining.
        */
@@ -697,10 +657,10 @@ public final class CLPMEKIBGKOOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021CLPMEKIBGKO.proto\"F\n\013CLPMEKIBGKO\022\023\n\013EG" +
-      "HGENOJNEK\030\014 \001(\r\022\021\n\topen_time\030\010 \001(\r\022\017\n\007is" +
-      "_open\030\t \001(\010B\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\021CLPMEKIBGKO.proto\"C\n\013CLPMEKIBGKO\022\020\n\010st" +
+      "age_id\030\014 \001(\r\022\021\n\topen_time\030\010 \001(\r\022\017\n\007is_op" +
+      "en\030\t \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -711,7 +671,7 @@ public final class CLPMEKIBGKOOuterClass {
     internal_static_CLPMEKIBGKO_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CLPMEKIBGKO_descriptor,
-        new java.lang.String[] { "EGHGENOJNEK", "OpenTime", "IsOpen", });
+        new java.lang.String[] { "StageId", "OpenTime", "IsOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

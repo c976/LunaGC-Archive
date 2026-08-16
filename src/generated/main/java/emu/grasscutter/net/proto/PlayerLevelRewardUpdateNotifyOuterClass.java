@@ -19,29 +19,17 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 level_list = 6;</code>
+     * <code>repeated uint32 level_list = 12;</code>
      * @return A list containing the levelList.
      */
     java.util.List<java.lang.Integer> getLevelListList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 level_list = 6;</code>
+     * <code>repeated uint32 level_list = 12;</code>
      * @return The count of levelList.
      */
     int getLevelListCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 level_list = 6;</code>
+     * <code>repeated uint32 level_list = 12;</code>
      * @param index The index of the element to return.
      * @return The levelList at the given index.
      */
@@ -49,7 +37,8 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 22027
+   * CmdId: 3756
+   * Obf: PNADDINCDLE
    * </pre>
    *
    * Protobuf type {@code PlayerLevelRewardUpdateNotify}
@@ -98,7 +87,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +95,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
               levelList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -154,14 +143,10 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify.class, emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify.Builder.class);
     }
 
-    public static final int LEVEL_LIST_FIELD_NUMBER = 6;
+    public static final int LEVEL_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList levelList_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 level_list = 6;</code>
+     * <code>repeated uint32 level_list = 12;</code>
      * @return A list containing the levelList.
      */
     @java.lang.Override
@@ -170,22 +155,14 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
       return levelList_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 level_list = 6;</code>
+     * <code>repeated uint32 level_list = 12;</code>
      * @return The count of levelList.
      */
     public int getLevelListCount() {
       return levelList_.size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 level_list = 6;</code>
+     * <code>repeated uint32 level_list = 12;</code>
      * @param index The index of the element to return.
      * @return The levelList at the given index.
      */
@@ -210,7 +187,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getLevelListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(levelListMemoizedSerializedSize);
       }
       for (int i = 0; i < levelList_.size(); i++) {
@@ -368,7 +345,8 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22027
+     * CmdId: 3756
+     * Obf: PNADDINCDLE
      * </pre>
      *
      * Protobuf type {@code PlayerLevelRewardUpdateNotify}
@@ -538,11 +516,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
          }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 level_list = 6;</code>
+       * <code>repeated uint32 level_list = 12;</code>
        * @return A list containing the levelList.
        */
       public java.util.List<java.lang.Integer>
@@ -551,22 +525,14 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
                  java.util.Collections.unmodifiableList(levelList_) : levelList_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 level_list = 6;</code>
+       * <code>repeated uint32 level_list = 12;</code>
        * @return The count of levelList.
        */
       public int getLevelListCount() {
         return levelList_.size();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 level_list = 6;</code>
+       * <code>repeated uint32 level_list = 12;</code>
        * @param index The index of the element to return.
        * @return The levelList at the given index.
        */
@@ -574,11 +540,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
         return levelList_.getInt(index);
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 level_list = 6;</code>
+       * <code>repeated uint32 level_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The levelList to set.
        * @return This builder for chaining.
@@ -591,11 +553,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 level_list = 6;</code>
+       * <code>repeated uint32 level_list = 12;</code>
        * @param value The levelList to add.
        * @return This builder for chaining.
        */
@@ -606,11 +564,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 level_list = 6;</code>
+       * <code>repeated uint32 level_list = 12;</code>
        * @param values The levelList to add.
        * @return This builder for chaining.
        */
@@ -623,11 +577,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 level_list = 6;</code>
+       * <code>repeated uint32 level_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelList() {
@@ -705,7 +655,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#PlayerLevelRewardUpdateNotify.proto\"3\n" +
       "\035PlayerLevelRewardUpdateNotify\022\022\n\nlevel_" +
-      "list\030\006 \003(\rB\033\n\031emu.grasscutter.net.protob" +
+      "list\030\014 \003(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

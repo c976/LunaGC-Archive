@@ -19,60 +19,36 @@ public final class EMOOPIJJMDLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_started = 6;</code>
      * @return The isStarted.
      */
     boolean getIsStarted();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float speed = 5;</code>
      * @return The speed.
      */
     float getSpeed();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HPAMMHBLJKG = 2;</code>
      * @return The hPAMMHBLJKG.
      */
     int getHPAMMHBLJKG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KGNFJLOFKEM = 3;</code>
      * @return The kGNFJLOFKEM.
      */
     int getKGNFJLOFKEM();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float EFEHGJOPKJO = 4;</code>
      * @return The eFEHGJOPKJO.
      */
     float getEFEHGJOPKJO();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 start_time = 1;</code>
      * @return The startTime.
      */
@@ -188,10 +164,6 @@ public final class EMOOPIJJMDLOuterClass {
     public static final int IS_STARTED_FIELD_NUMBER = 6;
     private boolean isStarted_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_started = 6;</code>
      * @return The isStarted.
      */
@@ -203,10 +175,6 @@ public final class EMOOPIJJMDLOuterClass {
     public static final int SPEED_FIELD_NUMBER = 5;
     private float speed_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float speed = 5;</code>
      * @return The speed.
      */
@@ -218,10 +186,6 @@ public final class EMOOPIJJMDLOuterClass {
     public static final int HPAMMHBLJKG_FIELD_NUMBER = 2;
     private int hPAMMHBLJKG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HPAMMHBLJKG = 2;</code>
      * @return The hPAMMHBLJKG.
      */
@@ -233,10 +197,6 @@ public final class EMOOPIJJMDLOuterClass {
     public static final int KGNFJLOFKEM_FIELD_NUMBER = 3;
     private int kGNFJLOFKEM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KGNFJLOFKEM = 3;</code>
      * @return The kGNFJLOFKEM.
      */
@@ -248,10 +208,6 @@ public final class EMOOPIJJMDLOuterClass {
     public static final int EFEHGJOPKJO_FIELD_NUMBER = 4;
     private float eFEHGJOPKJO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float EFEHGJOPKJO = 4;</code>
      * @return The eFEHGJOPKJO.
      */
@@ -263,10 +219,6 @@ public final class EMOOPIJJMDLOuterClass {
     public static final int START_TIME_FIELD_NUMBER = 1;
     private long startTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 start_time = 1;</code>
      * @return The startTime.
      */
@@ -670,10 +622,6 @@ public final class EMOOPIJJMDLOuterClass {
 
       private boolean isStarted_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_started = 6;</code>
        * @return The isStarted.
        */
@@ -682,10 +630,6 @@ public final class EMOOPIJJMDLOuterClass {
         return isStarted_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_started = 6;</code>
        * @param value The isStarted to set.
        * @return This builder for chaining.
@@ -697,10 +641,6 @@ public final class EMOOPIJJMDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_started = 6;</code>
        * @return This builder for chaining.
        */
@@ -713,10 +653,6 @@ public final class EMOOPIJJMDLOuterClass {
 
       private float speed_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float speed = 5;</code>
        * @return The speed.
        */
@@ -725,10 +661,6 @@ public final class EMOOPIJJMDLOuterClass {
         return speed_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float speed = 5;</code>
        * @param value The speed to set.
        * @return This builder for chaining.
@@ -740,10 +672,6 @@ public final class EMOOPIJJMDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float speed = 5;</code>
        * @return This builder for chaining.
        */
@@ -756,10 +684,6 @@ public final class EMOOPIJJMDLOuterClass {
 
       private int hPAMMHBLJKG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPAMMHBLJKG = 2;</code>
        * @return The hPAMMHBLJKG.
        */
@@ -768,10 +692,6 @@ public final class EMOOPIJJMDLOuterClass {
         return hPAMMHBLJKG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPAMMHBLJKG = 2;</code>
        * @param value The hPAMMHBLJKG to set.
        * @return This builder for chaining.
@@ -783,10 +703,6 @@ public final class EMOOPIJJMDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPAMMHBLJKG = 2;</code>
        * @return This builder for chaining.
        */
@@ -799,10 +715,6 @@ public final class EMOOPIJJMDLOuterClass {
 
       private int kGNFJLOFKEM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KGNFJLOFKEM = 3;</code>
        * @return The kGNFJLOFKEM.
        */
@@ -811,10 +723,6 @@ public final class EMOOPIJJMDLOuterClass {
         return kGNFJLOFKEM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KGNFJLOFKEM = 3;</code>
        * @param value The kGNFJLOFKEM to set.
        * @return This builder for chaining.
@@ -826,10 +734,6 @@ public final class EMOOPIJJMDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KGNFJLOFKEM = 3;</code>
        * @return This builder for chaining.
        */
@@ -842,10 +746,6 @@ public final class EMOOPIJJMDLOuterClass {
 
       private float eFEHGJOPKJO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float EFEHGJOPKJO = 4;</code>
        * @return The eFEHGJOPKJO.
        */
@@ -854,10 +754,6 @@ public final class EMOOPIJJMDLOuterClass {
         return eFEHGJOPKJO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float EFEHGJOPKJO = 4;</code>
        * @param value The eFEHGJOPKJO to set.
        * @return This builder for chaining.
@@ -869,10 +765,6 @@ public final class EMOOPIJJMDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float EFEHGJOPKJO = 4;</code>
        * @return This builder for chaining.
        */
@@ -885,10 +777,6 @@ public final class EMOOPIJJMDLOuterClass {
 
       private long startTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 start_time = 1;</code>
        * @return The startTime.
        */
@@ -897,10 +785,6 @@ public final class EMOOPIJJMDLOuterClass {
         return startTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 start_time = 1;</code>
        * @param value The startTime to set.
        * @return This builder for chaining.
@@ -912,10 +796,6 @@ public final class EMOOPIJJMDLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 start_time = 1;</code>
        * @return This builder for chaining.
        */

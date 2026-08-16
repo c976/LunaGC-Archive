@@ -19,24 +19,16 @@ public final class QueryFilterOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>int32 DNEKNIHBEKE = 13;</code>
-     * @return The dNEKNIHBEKE.
+     * <code>int32 FLNHJCJGPCP = 4;</code>
+     * @return The fLNHJCJGPCP.
      */
-    int getDNEKNIHBEKE();
+    int getFLNHJCJGPCP();
 
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>int32 CBIOIPIGNIE = 9;</code>
-     * @return The cBIOIPIGNIE.
+     * <code>int32 CIFKAGIKPGN = 2;</code>
+     * @return The cIFKAGIKPGN.
      */
-    int getCBIOIPIGNIE();
+    int getCIFKAGIKPGN();
   }
   /**
    * Protobuf type {@code QueryFilter}
@@ -83,14 +75,14 @@ public final class QueryFilterOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 16: {
 
-              cBIOIPIGNIE_ = input.readInt32();
+              cIFKAGIKPGN_ = input.readInt32();
               break;
             }
-            case 104: {
+            case 32: {
 
-              dNEKNIHBEKE_ = input.readInt32();
+              fLNHJCJGPCP_ = input.readInt32();
               break;
             }
             default: {
@@ -125,34 +117,26 @@ public final class QueryFilterOuterClass {
               emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter.class, emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter.Builder.class);
     }
 
-    public static final int DNEKNIHBEKE_FIELD_NUMBER = 13;
-    private int dNEKNIHBEKE_;
+    public static final int FLNHJCJGPCP_FIELD_NUMBER = 4;
+    private int fLNHJCJGPCP_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>int32 DNEKNIHBEKE = 13;</code>
-     * @return The dNEKNIHBEKE.
+     * <code>int32 FLNHJCJGPCP = 4;</code>
+     * @return The fLNHJCJGPCP.
      */
     @java.lang.Override
-    public int getDNEKNIHBEKE() {
-      return dNEKNIHBEKE_;
+    public int getFLNHJCJGPCP() {
+      return fLNHJCJGPCP_;
     }
 
-    public static final int CBIOIPIGNIE_FIELD_NUMBER = 9;
-    private int cBIOIPIGNIE_;
+    public static final int CIFKAGIKPGN_FIELD_NUMBER = 2;
+    private int cIFKAGIKPGN_;
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>int32 CBIOIPIGNIE = 9;</code>
-     * @return The cBIOIPIGNIE.
+     * <code>int32 CIFKAGIKPGN = 2;</code>
+     * @return The cIFKAGIKPGN.
      */
     @java.lang.Override
-    public int getCBIOIPIGNIE() {
-      return cBIOIPIGNIE_;
+    public int getCIFKAGIKPGN() {
+      return cIFKAGIKPGN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -169,11 +153,11 @@ public final class QueryFilterOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cBIOIPIGNIE_ != 0) {
-        output.writeInt32(9, cBIOIPIGNIE_);
+      if (cIFKAGIKPGN_ != 0) {
+        output.writeInt32(2, cIFKAGIKPGN_);
       }
-      if (dNEKNIHBEKE_ != 0) {
-        output.writeInt32(13, dNEKNIHBEKE_);
+      if (fLNHJCJGPCP_ != 0) {
+        output.writeInt32(4, fLNHJCJGPCP_);
       }
       unknownFields.writeTo(output);
     }
@@ -184,13 +168,13 @@ public final class QueryFilterOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cBIOIPIGNIE_ != 0) {
+      if (cIFKAGIKPGN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, cBIOIPIGNIE_);
+          .computeInt32Size(2, cIFKAGIKPGN_);
       }
-      if (dNEKNIHBEKE_ != 0) {
+      if (fLNHJCJGPCP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, dNEKNIHBEKE_);
+          .computeInt32Size(4, fLNHJCJGPCP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -207,10 +191,10 @@ public final class QueryFilterOuterClass {
       }
       emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter other = (emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter) obj;
 
-      if (getDNEKNIHBEKE()
-          != other.getDNEKNIHBEKE()) return false;
-      if (getCBIOIPIGNIE()
-          != other.getCBIOIPIGNIE()) return false;
+      if (getFLNHJCJGPCP()
+          != other.getFLNHJCJGPCP()) return false;
+      if (getCIFKAGIKPGN()
+          != other.getCIFKAGIKPGN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -222,10 +206,10 @@ public final class QueryFilterOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DNEKNIHBEKE_FIELD_NUMBER;
-      hash = (53 * hash) + getDNEKNIHBEKE();
-      hash = (37 * hash) + CBIOIPIGNIE_FIELD_NUMBER;
-      hash = (53 * hash) + getCBIOIPIGNIE();
+      hash = (37 * hash) + FLNHJCJGPCP_FIELD_NUMBER;
+      hash = (53 * hash) + getFLNHJCJGPCP();
+      hash = (37 * hash) + CIFKAGIKPGN_FIELD_NUMBER;
+      hash = (53 * hash) + getCIFKAGIKPGN();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -359,9 +343,9 @@ public final class QueryFilterOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dNEKNIHBEKE_ = 0;
+        fLNHJCJGPCP_ = 0;
 
-        cBIOIPIGNIE_ = 0;
+        cIFKAGIKPGN_ = 0;
 
         return this;
       }
@@ -389,8 +373,8 @@ public final class QueryFilterOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter buildPartial() {
         emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter result = new emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter(this);
-        result.dNEKNIHBEKE_ = dNEKNIHBEKE_;
-        result.cBIOIPIGNIE_ = cBIOIPIGNIE_;
+        result.fLNHJCJGPCP_ = fLNHJCJGPCP_;
+        result.cIFKAGIKPGN_ = cIFKAGIKPGN_;
         onBuilt();
         return result;
       }
@@ -439,11 +423,11 @@ public final class QueryFilterOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter other) {
         if (other == emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter.getDefaultInstance()) return this;
-        if (other.getDNEKNIHBEKE() != 0) {
-          setDNEKNIHBEKE(other.getDNEKNIHBEKE());
+        if (other.getFLNHJCJGPCP() != 0) {
+          setFLNHJCJGPCP(other.getFLNHJCJGPCP());
         }
-        if (other.getCBIOIPIGNIE() != 0) {
-          setCBIOIPIGNIE(other.getCBIOIPIGNIE());
+        if (other.getCIFKAGIKPGN() != 0) {
+          setCIFKAGIKPGN(other.getCIFKAGIKPGN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -474,88 +458,64 @@ public final class QueryFilterOuterClass {
         return this;
       }
 
-      private int dNEKNIHBEKE_ ;
+      private int fLNHJCJGPCP_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>int32 DNEKNIHBEKE = 13;</code>
-       * @return The dNEKNIHBEKE.
+       * <code>int32 FLNHJCJGPCP = 4;</code>
+       * @return The fLNHJCJGPCP.
        */
       @java.lang.Override
-      public int getDNEKNIHBEKE() {
-        return dNEKNIHBEKE_;
+      public int getFLNHJCJGPCP() {
+        return fLNHJCJGPCP_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>int32 DNEKNIHBEKE = 13;</code>
-       * @param value The dNEKNIHBEKE to set.
+       * <code>int32 FLNHJCJGPCP = 4;</code>
+       * @param value The fLNHJCJGPCP to set.
        * @return This builder for chaining.
        */
-      public Builder setDNEKNIHBEKE(int value) {
+      public Builder setFLNHJCJGPCP(int value) {
         
-        dNEKNIHBEKE_ = value;
+        fLNHJCJGPCP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>int32 DNEKNIHBEKE = 13;</code>
+       * <code>int32 FLNHJCJGPCP = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDNEKNIHBEKE() {
+      public Builder clearFLNHJCJGPCP() {
         
-        dNEKNIHBEKE_ = 0;
+        fLNHJCJGPCP_ = 0;
         onChanged();
         return this;
       }
 
-      private int cBIOIPIGNIE_ ;
+      private int cIFKAGIKPGN_ ;
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>int32 CBIOIPIGNIE = 9;</code>
-       * @return The cBIOIPIGNIE.
+       * <code>int32 CIFKAGIKPGN = 2;</code>
+       * @return The cIFKAGIKPGN.
        */
       @java.lang.Override
-      public int getCBIOIPIGNIE() {
-        return cBIOIPIGNIE_;
+      public int getCIFKAGIKPGN() {
+        return cIFKAGIKPGN_;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>int32 CBIOIPIGNIE = 9;</code>
-       * @param value The cBIOIPIGNIE to set.
+       * <code>int32 CIFKAGIKPGN = 2;</code>
+       * @param value The cIFKAGIKPGN to set.
        * @return This builder for chaining.
        */
-      public Builder setCBIOIPIGNIE(int value) {
+      public Builder setCIFKAGIKPGN(int value) {
         
-        cBIOIPIGNIE_ = value;
+        cIFKAGIKPGN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>int32 CBIOIPIGNIE = 9;</code>
+       * <code>int32 CIFKAGIKPGN = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCBIOIPIGNIE() {
+      public Builder clearCIFKAGIKPGN() {
         
-        cBIOIPIGNIE_ = 0;
+        cIFKAGIKPGN_ = 0;
         onChanged();
         return this;
       }
@@ -626,8 +586,8 @@ public final class QueryFilterOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021QueryFilter.proto\"7\n\013QueryFilter\022\023\n\013DN" +
-      "EKNIHBEKE\030\r \001(\005\022\023\n\013CBIOIPIGNIE\030\t \001(\005B\033\n\031" +
+      "\n\021QueryFilter.proto\"7\n\013QueryFilter\022\023\n\013FL" +
+      "NHJCJGPCP\030\004 \001(\005\022\023\n\013CIFKAGIKPGN\030\002 \001(\005B\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -639,7 +599,7 @@ public final class QueryFilterOuterClass {
     internal_static_QueryFilter_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QueryFilter_descriptor,
-        new java.lang.String[] { "DNEKNIHBEKE", "CBIOIPIGNIE", });
+        new java.lang.String[] { "FLNHJCJGPCP", "CIFKAGIKPGN", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

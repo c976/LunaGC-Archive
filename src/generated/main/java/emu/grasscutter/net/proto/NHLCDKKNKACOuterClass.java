@@ -19,40 +19,24 @@ public final class NHLCDKKNKACOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PGPBKFJHFFP = 6;</code>
      * @return The pGPBKFJHFFP.
      */
     int getPGPBKFJHFFP();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
@@ -158,10 +142,6 @@ public final class NHLCDKKNKACOuterClass {
     public static final int PGPBKFJHFFP_FIELD_NUMBER = 6;
     private int pGPBKFJHFFP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PGPBKFJHFFP = 6;</code>
      * @return The pGPBKFJHFFP.
      */
@@ -173,10 +153,6 @@ public final class NHLCDKKNKACOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 8;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
@@ -188,10 +164,6 @@ public final class NHLCDKKNKACOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 7;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
@@ -203,10 +175,6 @@ public final class NHLCDKKNKACOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 4;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
@@ -572,10 +540,6 @@ public final class NHLCDKKNKACOuterClass {
 
       private int pGPBKFJHFFP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGPBKFJHFFP = 6;</code>
        * @return The pGPBKFJHFFP.
        */
@@ -584,10 +548,6 @@ public final class NHLCDKKNKACOuterClass {
         return pGPBKFJHFFP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGPBKFJHFFP = 6;</code>
        * @param value The pGPBKFJHFFP to set.
        * @return This builder for chaining.
@@ -599,10 +559,6 @@ public final class NHLCDKKNKACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGPBKFJHFFP = 6;</code>
        * @return This builder for chaining.
        */
@@ -615,10 +571,6 @@ public final class NHLCDKKNKACOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return The isFinish.
        */
@@ -627,10 +579,6 @@ public final class NHLCDKKNKACOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -642,10 +590,6 @@ public final class NHLCDKKNKACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return This builder for chaining.
        */
@@ -658,10 +602,6 @@ public final class NHLCDKKNKACOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return The isOpen.
        */
@@ -670,10 +610,6 @@ public final class NHLCDKKNKACOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -685,10 +621,6 @@ public final class NHLCDKKNKACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return This builder for chaining.
        */
@@ -701,10 +633,6 @@ public final class NHLCDKKNKACOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 4;</code>
        * @return The levelId.
        */
@@ -713,10 +641,6 @@ public final class NHLCDKKNKACOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 4;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -728,10 +652,6 @@ public final class NHLCDKKNKACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 4;</code>
        * @return This builder for chaining.
        */

@@ -19,40 +19,24 @@ public final class DEKFPDLCJIFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 9;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 13;</code>
      * @return The dALMDMCJNNK.
      */
     boolean getDALMDMCJNNK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 11;</code>
      * @return The cKOCCKMBGJN.
      */
@@ -158,10 +142,6 @@ public final class DEKFPDLCJIFOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 9;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 9;</code>
      * @return The isFinished.
      */
@@ -173,10 +153,6 @@ public final class DEKFPDLCJIFOuterClass {
     public static final int DALMDMCJNNK_FIELD_NUMBER = 13;
     private boolean dALMDMCJNNK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 13;</code>
      * @return The dALMDMCJNNK.
      */
@@ -188,10 +164,6 @@ public final class DEKFPDLCJIFOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
@@ -203,10 +175,6 @@ public final class DEKFPDLCJIFOuterClass {
     public static final int CKOCCKMBGJN_FIELD_NUMBER = 11;
     private int cKOCCKMBGJN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 11;</code>
      * @return The cKOCCKMBGJN.
      */
@@ -572,10 +540,6 @@ public final class DEKFPDLCJIFOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 9;</code>
        * @return The isFinished.
        */
@@ -584,10 +548,6 @@ public final class DEKFPDLCJIFOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 9;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -599,10 +559,6 @@ public final class DEKFPDLCJIFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 9;</code>
        * @return This builder for chaining.
        */
@@ -615,10 +571,6 @@ public final class DEKFPDLCJIFOuterClass {
 
       private boolean dALMDMCJNNK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 13;</code>
        * @return The dALMDMCJNNK.
        */
@@ -627,10 +579,6 @@ public final class DEKFPDLCJIFOuterClass {
         return dALMDMCJNNK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 13;</code>
        * @param value The dALMDMCJNNK to set.
        * @return This builder for chaining.
@@ -642,10 +590,6 @@ public final class DEKFPDLCJIFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 13;</code>
        * @return This builder for chaining.
        */
@@ -658,10 +602,6 @@ public final class DEKFPDLCJIFOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
@@ -670,10 +610,6 @@ public final class DEKFPDLCJIFOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -685,10 +621,6 @@ public final class DEKFPDLCJIFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
@@ -701,10 +633,6 @@ public final class DEKFPDLCJIFOuterClass {
 
       private int cKOCCKMBGJN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 11;</code>
        * @return The cKOCCKMBGJN.
        */
@@ -713,10 +641,6 @@ public final class DEKFPDLCJIFOuterClass {
         return cKOCCKMBGJN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 11;</code>
        * @param value The cKOCCKMBGJN to set.
        * @return This builder for chaining.
@@ -728,10 +652,6 @@ public final class DEKFPDLCJIFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 11;</code>
        * @return This builder for chaining.
        */

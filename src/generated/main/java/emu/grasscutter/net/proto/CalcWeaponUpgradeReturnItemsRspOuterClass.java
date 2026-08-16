@@ -19,72 +19,45 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .ItemParam item_param_list = 14;</code>
+     * <code>repeated .ItemParam item_param_list = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getItemParamListList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .ItemParam item_param_list = 14;</code>
+     * <code>repeated .ItemParam item_param_list = 10;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParamList(int index);
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .ItemParam item_param_list = 14;</code>
+     * <code>repeated .ItemParam item_param_list = 10;</code>
      */
     int getItemParamListCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .ItemParam item_param_list = 14;</code>
+     * <code>repeated .ItemParam item_param_list = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getItemParamListOrBuilderList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .ItemParam item_param_list = 14;</code>
+     * <code>repeated .ItemParam item_param_list = 10;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint64 target_weapon_guid = 12;</code>
+     * <code>uint64 target_weapon_guid = 15;</code>
      * @return The targetWeaponGuid.
      */
     long getTargetWeaponGuid();
 
     /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 7811
+   * CmdId: 24299
+   * Obf: EFEMOPJBOBD
    * </pre>
    *
    * Protobuf type {@code CalcWeaponUpgradeReturnItemsRsp}
@@ -133,23 +106,23 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 96: {
-
-              targetWeaponGuid_ = input.readUInt64();
-              break;
-            }
-            case 114: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemParamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000001;
               }
               itemParamList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
+              break;
+            }
+            case 112: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 120: {
+
+              targetWeaponGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -187,25 +160,17 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
               emu.grasscutter.net.proto.CalcWeaponUpgradeReturnItemsRspOuterClass.CalcWeaponUpgradeReturnItemsRsp.class, emu.grasscutter.net.proto.CalcWeaponUpgradeReturnItemsRspOuterClass.CalcWeaponUpgradeReturnItemsRsp.Builder.class);
     }
 
-    public static final int ITEM_PARAM_LIST_FIELD_NUMBER = 14;
+    public static final int ITEM_PARAM_LIST_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemParamList_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .ItemParam item_param_list = 14;</code>
+     * <code>repeated .ItemParam item_param_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemParamListList() {
       return itemParamList_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .ItemParam item_param_list = 14;</code>
+     * <code>repeated .ItemParam item_param_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -213,33 +178,21 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
       return itemParamList_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .ItemParam item_param_list = 14;</code>
+     * <code>repeated .ItemParam item_param_list = 10;</code>
      */
     @java.lang.Override
     public int getItemParamListCount() {
       return itemParamList_.size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .ItemParam item_param_list = 14;</code>
+     * <code>repeated .ItemParam item_param_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParamList(int index) {
       return itemParamList_.get(index);
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .ItemParam item_param_list = 14;</code>
+     * <code>repeated .ItemParam item_param_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamListOrBuilder(
@@ -247,14 +200,10 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
       return itemParamList_.get(index);
     }
 
-    public static final int TARGET_WEAPON_GUID_FIELD_NUMBER = 12;
+    public static final int TARGET_WEAPON_GUID_FIELD_NUMBER = 15;
     private long targetWeaponGuid_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint64 target_weapon_guid = 12;</code>
+     * <code>uint64 target_weapon_guid = 15;</code>
      * @return The targetWeaponGuid.
      */
     @java.lang.Override
@@ -262,14 +211,10 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
       return targetWeaponGuid_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -291,14 +236,14 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      for (int i = 0; i < itemParamList_.size(); i++) {
+        output.writeMessage(10, itemParamList_.get(i));
+      }
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(14, retcode_);
       }
       if (targetWeaponGuid_ != 0L) {
-        output.writeUInt64(12, targetWeaponGuid_);
-      }
-      for (int i = 0; i < itemParamList_.size(); i++) {
-        output.writeMessage(14, itemParamList_.get(i));
+        output.writeUInt64(15, targetWeaponGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -309,17 +254,17 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < itemParamList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, itemParamList_.get(i));
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(14, retcode_);
       }
       if (targetWeaponGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, targetWeaponGuid_);
-      }
-      for (int i = 0; i < itemParamList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, itemParamList_.get(i));
+          .computeUInt64Size(15, targetWeaponGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -459,7 +404,8 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7811
+     * CmdId: 24299
+     * Obf: EFEMOPJBOBD
      * </pre>
      *
      * Protobuf type {@code CalcWeaponUpgradeReturnItemsRsp}
@@ -671,11 +617,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemParamListBuilder_;
 
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemParamListList() {
         if (itemParamListBuilder_ == null) {
@@ -685,11 +627,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public int getItemParamListCount() {
         if (itemParamListBuilder_ == null) {
@@ -699,11 +637,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParamList(int index) {
         if (itemParamListBuilder_ == null) {
@@ -713,11 +647,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public Builder setItemParamList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -734,11 +664,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public Builder setItemParamList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -752,11 +678,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public Builder addItemParamList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (itemParamListBuilder_ == null) {
@@ -772,11 +694,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public Builder addItemParamList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -793,11 +711,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public Builder addItemParamList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -811,11 +725,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public Builder addItemParamList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -829,11 +739,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public Builder addAllItemParamList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -848,11 +754,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public Builder clearItemParamList() {
         if (itemParamListBuilder_ == null) {
@@ -865,11 +767,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public Builder removeItemParamList(int index) {
         if (itemParamListBuilder_ == null) {
@@ -882,22 +780,14 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemParamListBuilder(
           int index) {
         return getItemParamListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamListOrBuilder(
           int index) {
@@ -907,11 +797,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getItemParamListOrBuilderList() {
@@ -922,22 +808,14 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemParamListBuilder() {
         return getItemParamListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemParamListBuilder(
           int index) {
@@ -945,11 +823,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .ItemParam item_param_list = 14;</code>
+       * <code>repeated .ItemParam item_param_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getItemParamListBuilderList() {
@@ -972,11 +846,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
 
       private long targetWeaponGuid_ ;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint64 target_weapon_guid = 12;</code>
+       * <code>uint64 target_weapon_guid = 15;</code>
        * @return The targetWeaponGuid.
        */
       @java.lang.Override
@@ -984,11 +854,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return targetWeaponGuid_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint64 target_weapon_guid = 12;</code>
+       * <code>uint64 target_weapon_guid = 15;</code>
        * @param value The targetWeaponGuid to set.
        * @return This builder for chaining.
        */
@@ -999,11 +865,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint64 target_weapon_guid = 12;</code>
+       * <code>uint64 target_weapon_guid = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetWeaponGuid() {
@@ -1015,11 +877,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -1027,11 +885,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return retcode_;
       }
       /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -1042,11 +896,7 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -1124,9 +974,9 @@ public final class CalcWeaponUpgradeReturnItemsRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n%CalcWeaponUpgradeReturnItemsRsp.proto\032" +
       "\017ItemParam.proto\"s\n\037CalcWeaponUpgradeRet" +
-      "urnItemsRsp\022#\n\017item_param_list\030\016 \003(\0132\n.I" +
-      "temParam\022\032\n\022target_weapon_guid\030\014 \001(\004\022\017\n\007" +
-      "retcode\030\007 \001(\005B\033\n\031emu.grasscutter.net.pro" +
+      "urnItemsRsp\022#\n\017item_param_list\030\n \003(\0132\n.I" +
+      "temParam\022\032\n\022target_weapon_guid\030\017 \001(\004\022\017\n\007" +
+      "retcode\030\016 \001(\005B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

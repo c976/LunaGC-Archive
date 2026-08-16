@@ -20,7 +20,17 @@ public final class VectorOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>float x = 1;</code>
+     * @return The x.
+     */
+    float getX();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>float y = 2;</code>
@@ -30,25 +40,19 @@ public final class VectorOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>float z = 3;</code>
      * @return The z.
      */
     float getZ();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>float x = 1;</code>
-     * @return The x.
-     */
-    float getX();
   }
   /**
+   * <pre>
+   * Obf: PBDDPMHLPJG
+   * </pre>
+   *
    * Protobuf type {@code Vector}
    */
   public static final class Vector extends
@@ -140,11 +144,26 @@ public final class VectorOuterClass {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.class, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder.class);
     }
 
+    public static final int X_FIELD_NUMBER = 1;
+    private float x_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>float x = 1;</code>
+     * @return The x.
+     */
+    @java.lang.Override
+    public float getX() {
+      return x_;
+    }
+
     public static final int Y_FIELD_NUMBER = 2;
     private float y_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>float y = 2;</code>
@@ -159,7 +178,7 @@ public final class VectorOuterClass {
     private float z_;
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>float z = 3;</code>
@@ -168,21 +187,6 @@ public final class VectorOuterClass {
     @java.lang.Override
     public float getZ() {
       return z_;
-    }
-
-    public static final int X_FIELD_NUMBER = 1;
-    private float x_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>float x = 1;</code>
-     * @return The x.
-     */
-    @java.lang.Override
-    public float getX() {
-      return x_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -244,15 +248,15 @@ public final class VectorOuterClass {
       }
       emu.grasscutter.net.proto.VectorOuterClass.Vector other = (emu.grasscutter.net.proto.VectorOuterClass.Vector) obj;
 
+      if (java.lang.Float.floatToIntBits(getX())
+          != java.lang.Float.floatToIntBits(
+              other.getX())) return false;
       if (java.lang.Float.floatToIntBits(getY())
           != java.lang.Float.floatToIntBits(
               other.getY())) return false;
       if (java.lang.Float.floatToIntBits(getZ())
           != java.lang.Float.floatToIntBits(
               other.getZ())) return false;
-      if (java.lang.Float.floatToIntBits(getX())
-          != java.lang.Float.floatToIntBits(
-              other.getX())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -264,15 +268,15 @@ public final class VectorOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + X_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getX());
       hash = (37 * hash) + Y_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getY());
       hash = (37 * hash) + Z_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getZ());
-      hash = (37 * hash) + X_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getX());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -369,6 +373,10 @@ public final class VectorOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: PBDDPMHLPJG
+     * </pre>
+     *
      * Protobuf type {@code Vector}
      */
     public static final class Builder extends
@@ -406,11 +414,11 @@ public final class VectorOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        x_ = 0F;
+
         y_ = 0F;
 
         z_ = 0F;
-
-        x_ = 0F;
 
         return this;
       }
@@ -438,9 +446,9 @@ public final class VectorOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VectorOuterClass.Vector buildPartial() {
         emu.grasscutter.net.proto.VectorOuterClass.Vector result = new emu.grasscutter.net.proto.VectorOuterClass.Vector(this);
+        result.x_ = x_;
         result.y_ = y_;
         result.z_ = z_;
-        result.x_ = x_;
         onBuilt();
         return result;
       }
@@ -489,14 +497,14 @@ public final class VectorOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VectorOuterClass.Vector other) {
         if (other == emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) return this;
+        if (other.getX() != 0F) {
+          setX(other.getX());
+        }
         if (other.getY() != 0F) {
           setY(other.getY());
         }
         if (other.getZ() != 0F) {
           setZ(other.getZ());
-        }
-        if (other.getX() != 0F) {
-          setX(other.getX());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -527,10 +535,53 @@ public final class VectorOuterClass {
         return this;
       }
 
+      private float x_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>float x = 1;</code>
+       * @return The x.
+       */
+      @java.lang.Override
+      public float getX() {
+        return x_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>float x = 1;</code>
+       * @param value The x to set.
+       * @return This builder for chaining.
+       */
+      public Builder setX(float value) {
+        
+        x_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>float x = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearX() {
+        
+        x_ = 0F;
+        onChanged();
+        return this;
+      }
+
       private float y_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>float y = 2;</code>
@@ -542,7 +593,7 @@ public final class VectorOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>float y = 2;</code>
@@ -557,7 +608,7 @@ public final class VectorOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>float y = 2;</code>
@@ -573,7 +624,7 @@ public final class VectorOuterClass {
       private float z_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>float z = 3;</code>
@@ -585,7 +636,7 @@ public final class VectorOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>float z = 3;</code>
@@ -600,7 +651,7 @@ public final class VectorOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>float z = 3;</code>
@@ -609,49 +660,6 @@ public final class VectorOuterClass {
       public Builder clearZ() {
         
         z_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private float x_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>float x = 1;</code>
-       * @return The x.
-       */
-      @java.lang.Override
-      public float getX() {
-        return x_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>float x = 1;</code>
-       * @param value The x to set.
-       * @return This builder for chaining.
-       */
-      public Builder setX(float value) {
-        
-        x_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>float x = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearX() {
-        
-        x_ = 0F;
         onChanged();
         return this;
       }
@@ -722,8 +730,8 @@ public final class VectorOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014Vector.proto\")\n\006Vector\022\t\n\001y\030\002 \001(\002\022\t\n\001z" +
-      "\030\003 \001(\002\022\t\n\001x\030\001 \001(\002B\033\n\031emu.grasscutter.net" +
+      "\n\014Vector.proto\")\n\006Vector\022\t\n\001x\030\001 \001(\002\022\t\n\001y" +
+      "\030\002 \001(\002\022\t\n\001z\030\003 \001(\002B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -735,7 +743,7 @@ public final class VectorOuterClass {
     internal_static_Vector_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Vector_descriptor,
-        new java.lang.String[] { "Y", "Z", "X", });
+        new java.lang.String[] { "X", "Y", "Z", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,20 +19,21 @@ public final class BuyBattlePassLevelRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 buy_level = 5;</code>
+     * <code>uint32 buy_level = 7;</code>
      * @return The buyLevel.
      */
     int getBuyLevel();
 
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 29056
+   * CmdId: 26570
+   * Obf: JLNMDHMIKAE
    * </pre>
    *
    * Protobuf type {@code BuyBattlePassLevelRsp}
@@ -79,12 +80,12 @@ public final class BuyBattlePassLevelRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 56: {
 
               buyLevel_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 88: {
 
               retcode_ = input.readInt32();
               break;
@@ -121,10 +122,10 @@ public final class BuyBattlePassLevelRspOuterClass {
               emu.grasscutter.net.proto.BuyBattlePassLevelRspOuterClass.BuyBattlePassLevelRsp.class, emu.grasscutter.net.proto.BuyBattlePassLevelRspOuterClass.BuyBattlePassLevelRsp.Builder.class);
     }
 
-    public static final int BUY_LEVEL_FIELD_NUMBER = 5;
+    public static final int BUY_LEVEL_FIELD_NUMBER = 7;
     private int buyLevel_;
     /**
-     * <code>uint32 buy_level = 5;</code>
+     * <code>uint32 buy_level = 7;</code>
      * @return The buyLevel.
      */
     @java.lang.Override
@@ -132,10 +133,10 @@ public final class BuyBattlePassLevelRspOuterClass {
       return buyLevel_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -158,10 +159,10 @@ public final class BuyBattlePassLevelRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (buyLevel_ != 0) {
-        output.writeUInt32(5, buyLevel_);
+        output.writeUInt32(7, buyLevel_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +175,11 @@ public final class BuyBattlePassLevelRspOuterClass {
       size = 0;
       if (buyLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, buyLevel_);
+          .computeUInt32Size(7, buyLevel_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +312,8 @@ public final class BuyBattlePassLevelRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29056
+     * CmdId: 26570
+     * Obf: JLNMDHMIKAE
      * </pre>
      *
      * Protobuf type {@code BuyBattlePassLevelRsp}
@@ -468,7 +470,7 @@ public final class BuyBattlePassLevelRspOuterClass {
 
       private int buyLevel_ ;
       /**
-       * <code>uint32 buy_level = 5;</code>
+       * <code>uint32 buy_level = 7;</code>
        * @return The buyLevel.
        */
       @java.lang.Override
@@ -476,7 +478,7 @@ public final class BuyBattlePassLevelRspOuterClass {
         return buyLevel_;
       }
       /**
-       * <code>uint32 buy_level = 5;</code>
+       * <code>uint32 buy_level = 7;</code>
        * @param value The buyLevel to set.
        * @return This builder for chaining.
        */
@@ -487,7 +489,7 @@ public final class BuyBattlePassLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 buy_level = 5;</code>
+       * <code>uint32 buy_level = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearBuyLevel() {
@@ -499,7 +501,7 @@ public final class BuyBattlePassLevelRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -507,7 +509,7 @@ public final class BuyBattlePassLevelRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -518,7 +520,7 @@ public final class BuyBattlePassLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -595,8 +597,8 @@ public final class BuyBattlePassLevelRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033BuyBattlePassLevelRsp.proto\";\n\025BuyBatt" +
-      "lePassLevelRsp\022\021\n\tbuy_level\030\005 \001(\r\022\017\n\007ret" +
-      "code\030\007 \001(\005B\033\n\031emu.grasscutter.net.protob" +
+      "lePassLevelRsp\022\021\n\tbuy_level\030\007 \001(\r\022\017\n\007ret" +
+      "code\030\013 \001(\005B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

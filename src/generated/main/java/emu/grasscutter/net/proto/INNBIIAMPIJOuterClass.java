@@ -19,72 +19,40 @@ public final class INNBIIAMPIJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN> 
         getEFCBOGGBKMEList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
      */
     emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN getEFCBOGGBKME(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
      */
     int getEFCBOGGBKMECount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNNOrBuilder> 
         getEFCBOGGBKMEOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
      */
     emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNNOrBuilder getEFCBOGGBKMEOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GCICECFCMAJ = 1;</code>
      * @return A list containing the gCICECFCMAJ.
      */
     java.util.List<java.lang.Integer> getGCICECFCMAJList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GCICECFCMAJ = 1;</code>
      * @return The count of gCICECFCMAJ.
      */
     int getGCICECFCMAJCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GCICECFCMAJ = 1;</code>
      * @param index The index of the element to return.
      * @return The gCICECFCMAJ at the given index.
@@ -92,10 +60,6 @@ public final class INNBIIAMPIJOuterClass {
     int getGCICECFCMAJ(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MHFJECOPLCJ = 12;</code>
      * @return The mHFJECOPLCJ.
      */
@@ -225,10 +189,6 @@ public final class INNBIIAMPIJOuterClass {
     public static final int EFCBOGGBKME_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN> eFCBOGGBKME_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
      */
     @java.lang.Override
@@ -236,10 +196,6 @@ public final class INNBIIAMPIJOuterClass {
       return eFCBOGGBKME_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
      */
     @java.lang.Override
@@ -248,10 +204,6 @@ public final class INNBIIAMPIJOuterClass {
       return eFCBOGGBKME_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
      */
     @java.lang.Override
@@ -259,10 +211,6 @@ public final class INNBIIAMPIJOuterClass {
       return eFCBOGGBKME_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
      */
     @java.lang.Override
@@ -270,10 +218,6 @@ public final class INNBIIAMPIJOuterClass {
       return eFCBOGGBKME_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
      */
     @java.lang.Override
@@ -285,10 +229,6 @@ public final class INNBIIAMPIJOuterClass {
     public static final int GCICECFCMAJ_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList gCICECFCMAJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GCICECFCMAJ = 1;</code>
      * @return A list containing the gCICECFCMAJ.
      */
@@ -298,10 +238,6 @@ public final class INNBIIAMPIJOuterClass {
       return gCICECFCMAJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GCICECFCMAJ = 1;</code>
      * @return The count of gCICECFCMAJ.
      */
@@ -309,10 +245,6 @@ public final class INNBIIAMPIJOuterClass {
       return gCICECFCMAJ_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GCICECFCMAJ = 1;</code>
      * @param index The index of the element to return.
      * @return The gCICECFCMAJ at the given index.
@@ -325,10 +257,6 @@ public final class INNBIIAMPIJOuterClass {
     public static final int MHFJECOPLCJ_FIELD_NUMBER = 12;
     private int mHFJECOPLCJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MHFJECOPLCJ = 12;</code>
      * @return The mHFJECOPLCJ.
      */
@@ -754,10 +682,6 @@ public final class INNBIIAMPIJOuterClass {
           emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN, emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN.Builder, emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNNOrBuilder> eFCBOGGBKMEBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN> getEFCBOGGBKMEList() {
@@ -768,10 +692,6 @@ public final class INNBIIAMPIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public int getEFCBOGGBKMECount() {
@@ -782,10 +702,6 @@ public final class INNBIIAMPIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN getEFCBOGGBKME(int index) {
@@ -796,10 +712,6 @@ public final class INNBIIAMPIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public Builder setEFCBOGGBKME(
@@ -817,10 +729,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public Builder setEFCBOGGBKME(
@@ -835,10 +743,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public Builder addEFCBOGGBKME(emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN value) {
@@ -855,10 +759,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public Builder addEFCBOGGBKME(
@@ -876,10 +776,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public Builder addEFCBOGGBKME(
@@ -894,10 +790,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public Builder addEFCBOGGBKME(
@@ -912,10 +804,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public Builder addAllEFCBOGGBKME(
@@ -931,10 +819,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public Builder clearEFCBOGGBKME() {
@@ -948,10 +832,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public Builder removeEFCBOGGBKME(int index) {
@@ -965,10 +845,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN.Builder getEFCBOGGBKMEBuilder(
@@ -976,10 +852,6 @@ public final class INNBIIAMPIJOuterClass {
         return getEFCBOGGBKMEFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNNOrBuilder getEFCBOGGBKMEOrBuilder(
@@ -990,10 +862,6 @@ public final class INNBIIAMPIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNNOrBuilder> 
@@ -1005,10 +873,6 @@ public final class INNBIIAMPIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN.Builder addEFCBOGGBKMEBuilder() {
@@ -1016,10 +880,6 @@ public final class INNBIIAMPIJOuterClass {
             emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN.Builder addEFCBOGGBKMEBuilder(
@@ -1028,10 +888,6 @@ public final class INNBIIAMPIJOuterClass {
             index, emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EOEFFJJJDNN EFCBOGGBKME = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EOEFFJJJDNNOuterClass.EOEFFJJJDNN.Builder> 
@@ -1061,10 +917,6 @@ public final class INNBIIAMPIJOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GCICECFCMAJ = 1;</code>
        * @return A list containing the gCICECFCMAJ.
        */
@@ -1074,10 +926,6 @@ public final class INNBIIAMPIJOuterClass {
                  java.util.Collections.unmodifiableList(gCICECFCMAJ_) : gCICECFCMAJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GCICECFCMAJ = 1;</code>
        * @return The count of gCICECFCMAJ.
        */
@@ -1085,10 +933,6 @@ public final class INNBIIAMPIJOuterClass {
         return gCICECFCMAJ_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GCICECFCMAJ = 1;</code>
        * @param index The index of the element to return.
        * @return The gCICECFCMAJ at the given index.
@@ -1097,10 +941,6 @@ public final class INNBIIAMPIJOuterClass {
         return gCICECFCMAJ_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GCICECFCMAJ = 1;</code>
        * @param index The index to set the value at.
        * @param value The gCICECFCMAJ to set.
@@ -1114,10 +954,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GCICECFCMAJ = 1;</code>
        * @param value The gCICECFCMAJ to add.
        * @return This builder for chaining.
@@ -1129,10 +965,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GCICECFCMAJ = 1;</code>
        * @param values The gCICECFCMAJ to add.
        * @return This builder for chaining.
@@ -1146,10 +978,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GCICECFCMAJ = 1;</code>
        * @return This builder for chaining.
        */
@@ -1162,10 +990,6 @@ public final class INNBIIAMPIJOuterClass {
 
       private int mHFJECOPLCJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MHFJECOPLCJ = 12;</code>
        * @return The mHFJECOPLCJ.
        */
@@ -1174,10 +998,6 @@ public final class INNBIIAMPIJOuterClass {
         return mHFJECOPLCJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MHFJECOPLCJ = 12;</code>
        * @param value The mHFJECOPLCJ to set.
        * @return This builder for chaining.
@@ -1189,10 +1009,6 @@ public final class INNBIIAMPIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MHFJECOPLCJ = 12;</code>
        * @return This builder for chaining.
        */

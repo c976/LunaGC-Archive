@@ -19,54 +19,30 @@ public final class BPCIAMCPMCGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC> 
         getGGOKKDEKPJMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
      */
     emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC getGGOKKDEKPJM(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
      */
     int getGGOKKDEKPJMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFCOrBuilder> 
         getGGOKKDEKPJMOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
      */
     emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFCOrBuilder getGGOKKDEKPJMOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 play_type = 14;</code>
      * @return The playType.
      */
@@ -171,10 +147,6 @@ public final class BPCIAMCPMCGOuterClass {
     public static final int GGOKKDEKPJM_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC> gGOKKDEKPJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
      */
     @java.lang.Override
@@ -182,10 +154,6 @@ public final class BPCIAMCPMCGOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
      */
     @java.lang.Override
@@ -194,10 +162,6 @@ public final class BPCIAMCPMCGOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
      */
     @java.lang.Override
@@ -205,10 +169,6 @@ public final class BPCIAMCPMCGOuterClass {
       return gGOKKDEKPJM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
      */
     @java.lang.Override
@@ -216,10 +176,6 @@ public final class BPCIAMCPMCGOuterClass {
       return gGOKKDEKPJM_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
      */
     @java.lang.Override
@@ -231,10 +187,6 @@ public final class BPCIAMCPMCGOuterClass {
     public static final int PLAY_TYPE_FIELD_NUMBER = 14;
     private int playType_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 play_type = 14;</code>
      * @return The playType.
      */
@@ -615,10 +567,6 @@ public final class BPCIAMCPMCGOuterClass {
           emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC, emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC.Builder, emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFCOrBuilder> gGOKKDEKPJMBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC> getGGOKKDEKPJMList() {
@@ -629,10 +577,6 @@ public final class BPCIAMCPMCGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public int getGGOKKDEKPJMCount() {
@@ -643,10 +587,6 @@ public final class BPCIAMCPMCGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC getGGOKKDEKPJM(int index) {
@@ -657,10 +597,6 @@ public final class BPCIAMCPMCGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -678,10 +614,6 @@ public final class BPCIAMCPMCGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -696,10 +628,6 @@ public final class BPCIAMCPMCGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public Builder addGGOKKDEKPJM(emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC value) {
@@ -716,10 +644,6 @@ public final class BPCIAMCPMCGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -737,10 +661,6 @@ public final class BPCIAMCPMCGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -755,10 +675,6 @@ public final class BPCIAMCPMCGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -773,10 +689,6 @@ public final class BPCIAMCPMCGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public Builder addAllGGOKKDEKPJM(
@@ -792,10 +704,6 @@ public final class BPCIAMCPMCGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public Builder clearGGOKKDEKPJM() {
@@ -809,10 +717,6 @@ public final class BPCIAMCPMCGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public Builder removeGGOKKDEKPJM(int index) {
@@ -826,10 +730,6 @@ public final class BPCIAMCPMCGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC.Builder getGGOKKDEKPJMBuilder(
@@ -837,10 +737,6 @@ public final class BPCIAMCPMCGOuterClass {
         return getGGOKKDEKPJMFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFCOrBuilder getGGOKKDEKPJMOrBuilder(
@@ -851,10 +747,6 @@ public final class BPCIAMCPMCGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFCOrBuilder> 
@@ -866,10 +758,6 @@ public final class BPCIAMCPMCGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC.Builder addGGOKKDEKPJMBuilder() {
@@ -877,10 +765,6 @@ public final class BPCIAMCPMCGOuterClass {
             emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC.Builder addGGOKKDEKPJMBuilder(
@@ -889,10 +773,6 @@ public final class BPCIAMCPMCGOuterClass {
             index, emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHNIPGHEPFC GGOKKDEKPJM = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GHNIPGHEPFCOuterClass.GHNIPGHEPFC.Builder> 
@@ -916,10 +796,6 @@ public final class BPCIAMCPMCGOuterClass {
 
       private int playType_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 play_type = 14;</code>
        * @return The playType.
        */
@@ -928,10 +804,6 @@ public final class BPCIAMCPMCGOuterClass {
         return playType_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 play_type = 14;</code>
        * @param value The playType to set.
        * @return This builder for chaining.
@@ -943,10 +815,6 @@ public final class BPCIAMCPMCGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 play_type = 14;</code>
        * @return This builder for chaining.
        */

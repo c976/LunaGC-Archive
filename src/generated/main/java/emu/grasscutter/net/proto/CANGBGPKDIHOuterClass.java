@@ -19,28 +19,16 @@ public final class CANGBGPKDIHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
      * @return A list containing the hKCFNKLCCAG.
      */
     java.util.List<java.lang.Integer> getHKCFNKLCCAGList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
      * @return The count of hKCFNKLCCAG.
      */
     int getHKCFNKLCCAGCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
      * @param index The index of the element to return.
      * @return The hKCFNKLCCAG at the given index.
@@ -48,10 +36,6 @@ public final class CANGBGPKDIHOuterClass {
     int getHKCFNKLCCAG(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 3;</code>
      * @return The id.
      */
@@ -168,10 +152,6 @@ public final class CANGBGPKDIHOuterClass {
     public static final int HKCFNKLCCAG_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList hKCFNKLCCAG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
      * @return A list containing the hKCFNKLCCAG.
      */
@@ -181,10 +161,6 @@ public final class CANGBGPKDIHOuterClass {
       return hKCFNKLCCAG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
      * @return The count of hKCFNKLCCAG.
      */
@@ -192,10 +168,6 @@ public final class CANGBGPKDIHOuterClass {
       return hKCFNKLCCAG_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
      * @param index The index of the element to return.
      * @return The hKCFNKLCCAG at the given index.
@@ -208,10 +180,6 @@ public final class CANGBGPKDIHOuterClass {
     public static final int ID_FIELD_NUMBER = 3;
     private int id_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 3;</code>
      * @return The id.
      */
@@ -577,10 +545,6 @@ public final class CANGBGPKDIHOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
        * @return A list containing the hKCFNKLCCAG.
        */
@@ -590,10 +554,6 @@ public final class CANGBGPKDIHOuterClass {
                  java.util.Collections.unmodifiableList(hKCFNKLCCAG_) : hKCFNKLCCAG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
        * @return The count of hKCFNKLCCAG.
        */
@@ -601,10 +561,6 @@ public final class CANGBGPKDIHOuterClass {
         return hKCFNKLCCAG_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
        * @param index The index of the element to return.
        * @return The hKCFNKLCCAG at the given index.
@@ -613,10 +569,6 @@ public final class CANGBGPKDIHOuterClass {
         return hKCFNKLCCAG_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
        * @param index The index to set the value at.
        * @param value The hKCFNKLCCAG to set.
@@ -630,10 +582,6 @@ public final class CANGBGPKDIHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
        * @param value The hKCFNKLCCAG to add.
        * @return This builder for chaining.
@@ -645,10 +593,6 @@ public final class CANGBGPKDIHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
        * @param values The hKCFNKLCCAG to add.
        * @return This builder for chaining.
@@ -662,10 +606,6 @@ public final class CANGBGPKDIHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HKCFNKLCCAG = 12;</code>
        * @return This builder for chaining.
        */
@@ -678,10 +618,6 @@ public final class CANGBGPKDIHOuterClass {
 
       private int id_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 3;</code>
        * @return The id.
        */
@@ -690,10 +626,6 @@ public final class CANGBGPKDIHOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 3;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -705,10 +637,6 @@ public final class CANGBGPKDIHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 3;</code>
        * @return This builder for chaining.
        */

@@ -19,57 +19,33 @@ public final class FLLPPLCPKBAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 2;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 2;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 2;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 12;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PCFKHMFDNPI = 4;</code>
      * @return The pCFKHMFDNPI.
      */
     int getPCFKHMFDNPI();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -183,10 +159,6 @@ public final class FLLPPLCPKBAOuterClass {
     public static final int POS_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 2;</code>
      * @return Whether the pos field is set.
      */
@@ -195,10 +167,6 @@ public final class FLLPPLCPKBAOuterClass {
       return pos_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 2;</code>
      * @return The pos.
      */
@@ -207,10 +175,6 @@ public final class FLLPPLCPKBAOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 2;</code>
      */
     @java.lang.Override
@@ -221,10 +185,6 @@ public final class FLLPPLCPKBAOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 12;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 12;</code>
      * @return The openTime.
      */
@@ -236,10 +196,6 @@ public final class FLLPPLCPKBAOuterClass {
     public static final int PCFKHMFDNPI_FIELD_NUMBER = 4;
     private int pCFKHMFDNPI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PCFKHMFDNPI = 4;</code>
      * @return The pCFKHMFDNPI.
      */
@@ -251,10 +207,6 @@ public final class FLLPPLCPKBAOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -634,10 +586,6 @@ public final class FLLPPLCPKBAOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 2;</code>
        * @return Whether the pos field is set.
        */
@@ -645,10 +593,6 @@ public final class FLLPPLCPKBAOuterClass {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 2;</code>
        * @return The pos.
        */
@@ -660,10 +604,6 @@ public final class FLLPPLCPKBAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 2;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -680,10 +620,6 @@ public final class FLLPPLCPKBAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 2;</code>
        */
       public Builder setPos(
@@ -698,10 +634,6 @@ public final class FLLPPLCPKBAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 2;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -720,10 +652,6 @@ public final class FLLPPLCPKBAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 2;</code>
        */
       public Builder clearPos() {
@@ -738,10 +666,6 @@ public final class FLLPPLCPKBAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
@@ -750,10 +674,6 @@ public final class FLLPPLCPKBAOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -765,10 +685,6 @@ public final class FLLPPLCPKBAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -787,10 +703,6 @@ public final class FLLPPLCPKBAOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 12;</code>
        * @return The openTime.
        */
@@ -799,10 +711,6 @@ public final class FLLPPLCPKBAOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 12;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -814,10 +722,6 @@ public final class FLLPPLCPKBAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 12;</code>
        * @return This builder for chaining.
        */
@@ -830,10 +734,6 @@ public final class FLLPPLCPKBAOuterClass {
 
       private int pCFKHMFDNPI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PCFKHMFDNPI = 4;</code>
        * @return The pCFKHMFDNPI.
        */
@@ -842,10 +742,6 @@ public final class FLLPPLCPKBAOuterClass {
         return pCFKHMFDNPI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PCFKHMFDNPI = 4;</code>
        * @param value The pCFKHMFDNPI to set.
        * @return This builder for chaining.
@@ -857,10 +753,6 @@ public final class FLLPPLCPKBAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PCFKHMFDNPI = 4;</code>
        * @return This builder for chaining.
        */
@@ -873,10 +765,6 @@ public final class FLLPPLCPKBAOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
@@ -885,10 +773,6 @@ public final class FLLPPLCPKBAOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -900,10 +784,6 @@ public final class FLLPPLCPKBAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */

@@ -19,28 +19,16 @@ public final class IOFFGIJBPMOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MPONOCEGOJF = 2;</code>
      * @return A list containing the mPONOCEGOJF.
      */
     java.util.List<java.lang.Integer> getMPONOCEGOJFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MPONOCEGOJF = 2;</code>
      * @return The count of mPONOCEGOJF.
      */
     int getMPONOCEGOJFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MPONOCEGOJF = 2;</code>
      * @param index The index of the element to return.
      * @return The mPONOCEGOJF at the given index.
@@ -48,47 +36,27 @@ public final class IOFFGIJBPMOOuterClass {
     int getMPONOCEGOJF(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
      * @return Whether the eNPPHCMALKD field is set.
      */
     boolean hasENPPHCMALKD();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
      * @return The eNPPHCMALKD.
      */
     emu.grasscutter.net.proto.IFONDMLOGFPOuterClass.IFONDMLOGFP getENPPHCMALKD();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
      */
     emu.grasscutter.net.proto.IFONDMLOGFPOuterClass.IFONDMLOGFPOrBuilder getENPPHCMALKDOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 NBEPCHBMAFI = 1;</code>
      * @return The nBEPCHBMAFI.
      */
     int getNBEPCHBMAFI();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 14;</code>
      * @return The oMEBOHLACPH.
      */
@@ -223,10 +191,6 @@ public final class IOFFGIJBPMOOuterClass {
     public static final int MPONOCEGOJF_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList mPONOCEGOJF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MPONOCEGOJF = 2;</code>
      * @return A list containing the mPONOCEGOJF.
      */
@@ -236,10 +200,6 @@ public final class IOFFGIJBPMOOuterClass {
       return mPONOCEGOJF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MPONOCEGOJF = 2;</code>
      * @return The count of mPONOCEGOJF.
      */
@@ -247,10 +207,6 @@ public final class IOFFGIJBPMOOuterClass {
       return mPONOCEGOJF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MPONOCEGOJF = 2;</code>
      * @param index The index of the element to return.
      * @return The mPONOCEGOJF at the given index.
@@ -263,10 +219,6 @@ public final class IOFFGIJBPMOOuterClass {
     public static final int ENPPHCMALKD_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.IFONDMLOGFPOuterClass.IFONDMLOGFP eNPPHCMALKD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
      * @return Whether the eNPPHCMALKD field is set.
      */
@@ -275,10 +227,6 @@ public final class IOFFGIJBPMOOuterClass {
       return eNPPHCMALKD_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
      * @return The eNPPHCMALKD.
      */
@@ -287,10 +235,6 @@ public final class IOFFGIJBPMOOuterClass {
       return eNPPHCMALKD_ == null ? emu.grasscutter.net.proto.IFONDMLOGFPOuterClass.IFONDMLOGFP.getDefaultInstance() : eNPPHCMALKD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
      */
     @java.lang.Override
@@ -301,10 +245,6 @@ public final class IOFFGIJBPMOOuterClass {
     public static final int NBEPCHBMAFI_FIELD_NUMBER = 1;
     private int nBEPCHBMAFI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 NBEPCHBMAFI = 1;</code>
      * @return The nBEPCHBMAFI.
      */
@@ -316,10 +256,6 @@ public final class IOFFGIJBPMOOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 14;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 14;</code>
      * @return The oMEBOHLACPH.
      */
@@ -732,10 +668,6 @@ public final class IOFFGIJBPMOOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MPONOCEGOJF = 2;</code>
        * @return A list containing the mPONOCEGOJF.
        */
@@ -745,10 +677,6 @@ public final class IOFFGIJBPMOOuterClass {
                  java.util.Collections.unmodifiableList(mPONOCEGOJF_) : mPONOCEGOJF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MPONOCEGOJF = 2;</code>
        * @return The count of mPONOCEGOJF.
        */
@@ -756,10 +684,6 @@ public final class IOFFGIJBPMOOuterClass {
         return mPONOCEGOJF_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MPONOCEGOJF = 2;</code>
        * @param index The index of the element to return.
        * @return The mPONOCEGOJF at the given index.
@@ -768,10 +692,6 @@ public final class IOFFGIJBPMOOuterClass {
         return mPONOCEGOJF_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MPONOCEGOJF = 2;</code>
        * @param index The index to set the value at.
        * @param value The mPONOCEGOJF to set.
@@ -785,10 +705,6 @@ public final class IOFFGIJBPMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MPONOCEGOJF = 2;</code>
        * @param value The mPONOCEGOJF to add.
        * @return This builder for chaining.
@@ -800,10 +716,6 @@ public final class IOFFGIJBPMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MPONOCEGOJF = 2;</code>
        * @param values The mPONOCEGOJF to add.
        * @return This builder for chaining.
@@ -817,10 +729,6 @@ public final class IOFFGIJBPMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MPONOCEGOJF = 2;</code>
        * @return This builder for chaining.
        */
@@ -835,10 +743,6 @@ public final class IOFFGIJBPMOOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IFONDMLOGFPOuterClass.IFONDMLOGFP, emu.grasscutter.net.proto.IFONDMLOGFPOuterClass.IFONDMLOGFP.Builder, emu.grasscutter.net.proto.IFONDMLOGFPOuterClass.IFONDMLOGFPOrBuilder> eNPPHCMALKDBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
        * @return Whether the eNPPHCMALKD field is set.
        */
@@ -846,10 +750,6 @@ public final class IOFFGIJBPMOOuterClass {
         return eNPPHCMALKDBuilder_ != null || eNPPHCMALKD_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
        * @return The eNPPHCMALKD.
        */
@@ -861,10 +761,6 @@ public final class IOFFGIJBPMOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
        */
       public Builder setENPPHCMALKD(emu.grasscutter.net.proto.IFONDMLOGFPOuterClass.IFONDMLOGFP value) {
@@ -881,10 +777,6 @@ public final class IOFFGIJBPMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
        */
       public Builder setENPPHCMALKD(
@@ -899,10 +791,6 @@ public final class IOFFGIJBPMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
        */
       public Builder mergeENPPHCMALKD(emu.grasscutter.net.proto.IFONDMLOGFPOuterClass.IFONDMLOGFP value) {
@@ -921,10 +809,6 @@ public final class IOFFGIJBPMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
        */
       public Builder clearENPPHCMALKD() {
@@ -939,10 +823,6 @@ public final class IOFFGIJBPMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
        */
       public emu.grasscutter.net.proto.IFONDMLOGFPOuterClass.IFONDMLOGFP.Builder getENPPHCMALKDBuilder() {
@@ -951,10 +831,6 @@ public final class IOFFGIJBPMOOuterClass {
         return getENPPHCMALKDFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
        */
       public emu.grasscutter.net.proto.IFONDMLOGFPOuterClass.IFONDMLOGFPOrBuilder getENPPHCMALKDOrBuilder() {
@@ -966,10 +842,6 @@ public final class IOFFGIJBPMOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFONDMLOGFP ENPPHCMALKD = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -988,10 +860,6 @@ public final class IOFFGIJBPMOOuterClass {
 
       private int nBEPCHBMAFI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NBEPCHBMAFI = 1;</code>
        * @return The nBEPCHBMAFI.
        */
@@ -1000,10 +868,6 @@ public final class IOFFGIJBPMOOuterClass {
         return nBEPCHBMAFI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NBEPCHBMAFI = 1;</code>
        * @param value The nBEPCHBMAFI to set.
        * @return This builder for chaining.
@@ -1015,10 +879,6 @@ public final class IOFFGIJBPMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NBEPCHBMAFI = 1;</code>
        * @return This builder for chaining.
        */
@@ -1031,10 +891,6 @@ public final class IOFFGIJBPMOOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @return The oMEBOHLACPH.
        */
@@ -1043,10 +899,6 @@ public final class IOFFGIJBPMOOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -1058,10 +910,6 @@ public final class IOFFGIJBPMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @return This builder for chaining.
        */

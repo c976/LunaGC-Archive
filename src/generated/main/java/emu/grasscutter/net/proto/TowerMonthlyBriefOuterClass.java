@@ -19,44 +19,26 @@ public final class TowerMonthlyBriefOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 CNKJPIBOAGK = 4;</code>
-     * @return The cNKJPIBOAGK.
+     * <code>uint32 EPPJPCMDGEK = 4;</code>
+     * @return The ePPJPCMDGEK.
      */
-    int getCNKJPIBOAGK();
+    int getEPPJPCMDGEK();
 
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 tower_schedule_id = 11;</code>
+     * <code>uint32 tower_schedule_id = 15;</code>
      * @return The towerScheduleId.
      */
     int getTowerScheduleId();
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 GIECDGPHKEE = 2;</code>
-     * @return The gIECDGPHKEE.
+     * <code>uint32 FFJJEFKCJEC = 12;</code>
+     * @return The fFJJEFKCJEC.
      */
-    int getGIECDGPHKEE();
-
-    /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>uint32 IHJNGEMCPAG = 6;</code>
-     * @return The iHJNGEMCPAG.
-     */
-    int getIHJNGEMCPAG();
+    int getFFJJEFKCJEC();
   }
   /**
    * Protobuf type {@code TowerMonthlyBrief}
@@ -103,22 +85,17 @@ public final class TowerMonthlyBriefOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              gIECDGPHKEE_ = input.readUInt32();
-              break;
-            }
             case 32: {
 
-              cNKJPIBOAGK_ = input.readUInt32();
+              ePPJPCMDGEK_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 96: {
 
-              iHJNGEMCPAG_ = input.readUInt32();
+              fFJJEFKCJEC_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 120: {
 
               towerScheduleId_ = input.readUInt32();
               break;
@@ -155,29 +132,25 @@ public final class TowerMonthlyBriefOuterClass {
               emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.class, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder.class);
     }
 
-    public static final int CNKJPIBOAGK_FIELD_NUMBER = 4;
-    private int cNKJPIBOAGK_;
+    public static final int EPPJPCMDGEK_FIELD_NUMBER = 4;
+    private int ePPJPCMDGEK_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 CNKJPIBOAGK = 4;</code>
-     * @return The cNKJPIBOAGK.
+     * <code>uint32 EPPJPCMDGEK = 4;</code>
+     * @return The ePPJPCMDGEK.
      */
     @java.lang.Override
-    public int getCNKJPIBOAGK() {
-      return cNKJPIBOAGK_;
+    public int getEPPJPCMDGEK() {
+      return ePPJPCMDGEK_;
     }
 
-    public static final int TOWER_SCHEDULE_ID_FIELD_NUMBER = 11;
+    public static final int TOWER_SCHEDULE_ID_FIELD_NUMBER = 15;
     private int towerScheduleId_;
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 tower_schedule_id = 11;</code>
+     * <code>uint32 tower_schedule_id = 15;</code>
      * @return The towerScheduleId.
      */
     @java.lang.Override
@@ -185,34 +158,15 @@ public final class TowerMonthlyBriefOuterClass {
       return towerScheduleId_;
     }
 
-    public static final int GIECDGPHKEE_FIELD_NUMBER = 2;
-    private int gIECDGPHKEE_;
+    public static final int FFJJEFKCJEC_FIELD_NUMBER = 12;
+    private int fFJJEFKCJEC_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 GIECDGPHKEE = 2;</code>
-     * @return The gIECDGPHKEE.
+     * <code>uint32 FFJJEFKCJEC = 12;</code>
+     * @return The fFJJEFKCJEC.
      */
     @java.lang.Override
-    public int getGIECDGPHKEE() {
-      return gIECDGPHKEE_;
-    }
-
-    public static final int IHJNGEMCPAG_FIELD_NUMBER = 6;
-    private int iHJNGEMCPAG_;
-    /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>uint32 IHJNGEMCPAG = 6;</code>
-     * @return The iHJNGEMCPAG.
-     */
-    @java.lang.Override
-    public int getIHJNGEMCPAG() {
-      return iHJNGEMCPAG_;
+    public int getFFJJEFKCJEC() {
+      return fFJJEFKCJEC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -229,17 +183,14 @@ public final class TowerMonthlyBriefOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gIECDGPHKEE_ != 0) {
-        output.writeUInt32(2, gIECDGPHKEE_);
+      if (ePPJPCMDGEK_ != 0) {
+        output.writeUInt32(4, ePPJPCMDGEK_);
       }
-      if (cNKJPIBOAGK_ != 0) {
-        output.writeUInt32(4, cNKJPIBOAGK_);
-      }
-      if (iHJNGEMCPAG_ != 0) {
-        output.writeUInt32(6, iHJNGEMCPAG_);
+      if (fFJJEFKCJEC_ != 0) {
+        output.writeUInt32(12, fFJJEFKCJEC_);
       }
       if (towerScheduleId_ != 0) {
-        output.writeUInt32(11, towerScheduleId_);
+        output.writeUInt32(15, towerScheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -250,21 +201,17 @@ public final class TowerMonthlyBriefOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gIECDGPHKEE_ != 0) {
+      if (ePPJPCMDGEK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, gIECDGPHKEE_);
+          .computeUInt32Size(4, ePPJPCMDGEK_);
       }
-      if (cNKJPIBOAGK_ != 0) {
+      if (fFJJEFKCJEC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, cNKJPIBOAGK_);
-      }
-      if (iHJNGEMCPAG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, iHJNGEMCPAG_);
+          .computeUInt32Size(12, fFJJEFKCJEC_);
       }
       if (towerScheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, towerScheduleId_);
+          .computeUInt32Size(15, towerScheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,14 +228,12 @@ public final class TowerMonthlyBriefOuterClass {
       }
       emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief other = (emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief) obj;
 
-      if (getCNKJPIBOAGK()
-          != other.getCNKJPIBOAGK()) return false;
+      if (getEPPJPCMDGEK()
+          != other.getEPPJPCMDGEK()) return false;
       if (getTowerScheduleId()
           != other.getTowerScheduleId()) return false;
-      if (getGIECDGPHKEE()
-          != other.getGIECDGPHKEE()) return false;
-      if (getIHJNGEMCPAG()
-          != other.getIHJNGEMCPAG()) return false;
+      if (getFFJJEFKCJEC()
+          != other.getFFJJEFKCJEC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -300,14 +245,12 @@ public final class TowerMonthlyBriefOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CNKJPIBOAGK_FIELD_NUMBER;
-      hash = (53 * hash) + getCNKJPIBOAGK();
+      hash = (37 * hash) + EPPJPCMDGEK_FIELD_NUMBER;
+      hash = (53 * hash) + getEPPJPCMDGEK();
       hash = (37 * hash) + TOWER_SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTowerScheduleId();
-      hash = (37 * hash) + GIECDGPHKEE_FIELD_NUMBER;
-      hash = (53 * hash) + getGIECDGPHKEE();
-      hash = (37 * hash) + IHJNGEMCPAG_FIELD_NUMBER;
-      hash = (53 * hash) + getIHJNGEMCPAG();
+      hash = (37 * hash) + FFJJEFKCJEC_FIELD_NUMBER;
+      hash = (53 * hash) + getFFJJEFKCJEC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -441,13 +384,11 @@ public final class TowerMonthlyBriefOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cNKJPIBOAGK_ = 0;
+        ePPJPCMDGEK_ = 0;
 
         towerScheduleId_ = 0;
 
-        gIECDGPHKEE_ = 0;
-
-        iHJNGEMCPAG_ = 0;
+        fFJJEFKCJEC_ = 0;
 
         return this;
       }
@@ -475,10 +416,9 @@ public final class TowerMonthlyBriefOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief buildPartial() {
         emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief result = new emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief(this);
-        result.cNKJPIBOAGK_ = cNKJPIBOAGK_;
+        result.ePPJPCMDGEK_ = ePPJPCMDGEK_;
         result.towerScheduleId_ = towerScheduleId_;
-        result.gIECDGPHKEE_ = gIECDGPHKEE_;
-        result.iHJNGEMCPAG_ = iHJNGEMCPAG_;
+        result.fFJJEFKCJEC_ = fFJJEFKCJEC_;
         onBuilt();
         return result;
       }
@@ -527,17 +467,14 @@ public final class TowerMonthlyBriefOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief other) {
         if (other == emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.getDefaultInstance()) return this;
-        if (other.getCNKJPIBOAGK() != 0) {
-          setCNKJPIBOAGK(other.getCNKJPIBOAGK());
+        if (other.getEPPJPCMDGEK() != 0) {
+          setEPPJPCMDGEK(other.getEPPJPCMDGEK());
         }
         if (other.getTowerScheduleId() != 0) {
           setTowerScheduleId(other.getTowerScheduleId());
         }
-        if (other.getGIECDGPHKEE() != 0) {
-          setGIECDGPHKEE(other.getGIECDGPHKEE());
-        }
-        if (other.getIHJNGEMCPAG() != 0) {
-          setIHJNGEMCPAG(other.getIHJNGEMCPAG());
+        if (other.getFFJJEFKCJEC() != 0) {
+          setFFJJEFKCJEC(other.getFFJJEFKCJEC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -568,45 +505,33 @@ public final class TowerMonthlyBriefOuterClass {
         return this;
       }
 
-      private int cNKJPIBOAGK_ ;
+      private int ePPJPCMDGEK_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 CNKJPIBOAGK = 4;</code>
-       * @return The cNKJPIBOAGK.
+       * <code>uint32 EPPJPCMDGEK = 4;</code>
+       * @return The ePPJPCMDGEK.
        */
       @java.lang.Override
-      public int getCNKJPIBOAGK() {
-        return cNKJPIBOAGK_;
+      public int getEPPJPCMDGEK() {
+        return ePPJPCMDGEK_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 CNKJPIBOAGK = 4;</code>
-       * @param value The cNKJPIBOAGK to set.
+       * <code>uint32 EPPJPCMDGEK = 4;</code>
+       * @param value The ePPJPCMDGEK to set.
        * @return This builder for chaining.
        */
-      public Builder setCNKJPIBOAGK(int value) {
+      public Builder setEPPJPCMDGEK(int value) {
         
-        cNKJPIBOAGK_ = value;
+        ePPJPCMDGEK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 CNKJPIBOAGK = 4;</code>
+       * <code>uint32 EPPJPCMDGEK = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCNKJPIBOAGK() {
+      public Builder clearEPPJPCMDGEK() {
         
-        cNKJPIBOAGK_ = 0;
+        ePPJPCMDGEK_ = 0;
         onChanged();
         return this;
       }
@@ -614,10 +539,10 @@ public final class TowerMonthlyBriefOuterClass {
       private int towerScheduleId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 tower_schedule_id = 11;</code>
+       * <code>uint32 tower_schedule_id = 15;</code>
        * @return The towerScheduleId.
        */
       @java.lang.Override
@@ -626,10 +551,10 @@ public final class TowerMonthlyBriefOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 tower_schedule_id = 11;</code>
+       * <code>uint32 tower_schedule_id = 15;</code>
        * @param value The towerScheduleId to set.
        * @return This builder for chaining.
        */
@@ -641,10 +566,10 @@ public final class TowerMonthlyBriefOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 tower_schedule_id = 11;</code>
+       * <code>uint32 tower_schedule_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearTowerScheduleId() {
@@ -654,88 +579,33 @@ public final class TowerMonthlyBriefOuterClass {
         return this;
       }
 
-      private int gIECDGPHKEE_ ;
+      private int fFJJEFKCJEC_ ;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 GIECDGPHKEE = 2;</code>
-       * @return The gIECDGPHKEE.
+       * <code>uint32 FFJJEFKCJEC = 12;</code>
+       * @return The fFJJEFKCJEC.
        */
       @java.lang.Override
-      public int getGIECDGPHKEE() {
-        return gIECDGPHKEE_;
+      public int getFFJJEFKCJEC() {
+        return fFJJEFKCJEC_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 GIECDGPHKEE = 2;</code>
-       * @param value The gIECDGPHKEE to set.
+       * <code>uint32 FFJJEFKCJEC = 12;</code>
+       * @param value The fFJJEFKCJEC to set.
        * @return This builder for chaining.
        */
-      public Builder setGIECDGPHKEE(int value) {
+      public Builder setFFJJEFKCJEC(int value) {
         
-        gIECDGPHKEE_ = value;
+        fFJJEFKCJEC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 GIECDGPHKEE = 2;</code>
+       * <code>uint32 FFJJEFKCJEC = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGIECDGPHKEE() {
+      public Builder clearFFJJEFKCJEC() {
         
-        gIECDGPHKEE_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int iHJNGEMCPAG_ ;
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 IHJNGEMCPAG = 6;</code>
-       * @return The iHJNGEMCPAG.
-       */
-      @java.lang.Override
-      public int getIHJNGEMCPAG() {
-        return iHJNGEMCPAG_;
-      }
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 IHJNGEMCPAG = 6;</code>
-       * @param value The iHJNGEMCPAG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIHJNGEMCPAG(int value) {
-        
-        iHJNGEMCPAG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 IHJNGEMCPAG = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIHJNGEMCPAG() {
-        
-        iHJNGEMCPAG_ = 0;
+        fFJJEFKCJEC_ = 0;
         onChanged();
         return this;
       }
@@ -806,11 +676,10 @@ public final class TowerMonthlyBriefOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027TowerMonthlyBrief.proto\"m\n\021TowerMonthl" +
-      "yBrief\022\023\n\013CNKJPIBOAGK\030\004 \001(\r\022\031\n\021tower_sch" +
-      "edule_id\030\013 \001(\r\022\023\n\013GIECDGPHKEE\030\002 \001(\r\022\023\n\013I" +
-      "HJNGEMCPAG\030\006 \001(\rB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "\n\027TowerMonthlyBrief.proto\"X\n\021TowerMonthl" +
+      "yBrief\022\023\n\013EPPJPCMDGEK\030\004 \001(\r\022\031\n\021tower_sch" +
+      "edule_id\030\017 \001(\r\022\023\n\013FFJJEFKCJEC\030\014 \001(\rB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -821,7 +690,7 @@ public final class TowerMonthlyBriefOuterClass {
     internal_static_TowerMonthlyBrief_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerMonthlyBrief_descriptor,
-        new java.lang.String[] { "CNKJPIBOAGK", "TowerScheduleId", "GIECDGPHKEE", "IHJNGEMCPAG", });
+        new java.lang.String[] { "EPPJPCMDGEK", "TowerScheduleId", "FFJJEFKCJEC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -1,11 +1,10 @@
-# LunaGC-6.1.0 WIP
+# LunaGC-6.5.0 WIP
 
-# STATUS: Since 6.2 has started, I no longer have 6.1 client meaning I cannot test whatever I change and cannot fix stuff for example fishing which is just extremely and unnecesarily hard to fix without a packet log of said version (6.1). If there's anyone that is willing to put up with my testing requests, I will attempt to fix said issues, so let me know either through an issue/discord if you have my username.
-
-# ABOUT 6.2 (and beyond): I will not continue to update this ps to upcoming versions due to lack of motivation, time and other reasons, unless heavily and I mean heavily requested, I will attempt to make a minimal 6.2 ps but I don't think anyone would want to use it.
+## Note from the maintainer
+Might update to latest occasionally, depends on how I'm feeling and my situation. Of course, I post the protocol buffer definitions on [GitLab](https://gitlab.com/kitkat-multiverse/genshin-protocol) and translations. Contact me at my [Discord](https://discord.gg/5Rfyjrt5aB)
 
 ## Updated version of Grasscutters, with some new features implemented.
-Old Discord for LunaGC https://discord.gg/7D5gkyJR5Y (don't ask for support there, instead create an issue in this repository)
+Old Discord for LunaGC https://discord.gg/7D5gkyJR5Y (don't ask for support there as it's been taken over by other people (...), instead create an issue in this repository)
 
 Features and functionality of the ps is not guaranteed, try it yourself to see what works and what doesnt.
 This is possibly the only public PS with updated mob and gadget spawns! (Up to Version 5.4)
@@ -19,28 +18,31 @@ Contribute if you want/can...
 
 ## Main Requirements
 
-- Get [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+- Get [Java 21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
 - Get [MongoDB Community Server](https://www.mongodb.com/try/download/community)
 - Get [NodeJS](https://nodejs.org/dist/v20.15.0/node-v20.15.0-x64.msi) (For handbook generation)
-- Get game version REL6.1.0 (pray you still have it)
+- Get game version REL6.5.0
 - Make sure to install java and set the environment variables.
 - Build the server (refer to "Compile the actual server" in this guide.)
-- Download the [Resources](https://github.com/pmagixc/LunaGC-res/tree/6.1.0), make a new folder called `resources` in the downloaded LunaGC folder and then extract the resources in that new folder.
+- Download the [Resources](https://github.com/kitkat033/LunaGC-Resources), make a new folder called `resources` in the downloaded LunaGC folder and then extract the resources in that new folder.
 - Set useEncryption, Questing and useInRouting to false (it should be false by default, if not then change it)
 - [Patch the game](#patching-the-game)
 - Start the server and the game, make sure to also create an account in the LunaGC console!
 - Have fun (or don't)
 
 ### Patching the game
-- Put [Astrolabe.dll](https://github.com/pmagixc/LunaGC/raw/6.1.0/patch/Astrolabe.dll) in the game directory
-- To "disable" the patch, just rename Astrolabe.dll to something else so it's not a DLL or don't name it Astrolabe (for example Astrolabe.deleleu / astrollable.dll)
+#### The patch won't redirect HoYoPass requests, so you may need an external proxy for now.
+- Install [**Rust**](https://rust-lang.org/learn/get-started/) and **Cargo** (comes with rustup)
+- Go to the `patch/` folder (make sure you have cloned this repository with the `--recurse-submodules` flag)
+- Run `cargo build --release` to build the DLL at `target/release`
+- Inject the DLL into the game. You can do this by renaming the patch to `Astrolabe.dll` and putting it in the game folder.
 
 ### Getting started
 
 - Clone the repository (install [Git](https://git-scm.com) first )
 
   ```
-  git clone https://github.com/pmagixc/LunaGC.git -b 6.1.0
+  git clone --recurse-submodules https://github.com/kitkat033/LunaGC.git
   ```
 
 - Now you can continue with the steps below.
@@ -50,7 +52,7 @@ Contribute if you want/can...
 
 **Requirements**:
 
-[Java Development Kit 17 | JDK](https://oracle.com/java/technologies/javase/jdk17-archive-downloads.html) or higher
+[Java Development Kit 21 | JDK](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html) or higher
 
 - **Sidenote**: Handbook generation may fail on some systems. To disable handbook generation, append `-PskipHandbook=1` to the `gradlew jar` command.
 
@@ -87,4 +89,4 @@ Contribute if you want/can...
 
 proto Repository [hk4e-protos](https://gitlab.com/kitkat-multiverse/genshin-protocol)
 
-patch Repository [hk4e-patch-universal](https://github.com/oureveryday/hk4e-patch-universal) (and credit to Hartie95 for fixing it)
+patch Repository [hk4e-patch-universal](https://github.com/kitkat033/hk4e-patch-universal)

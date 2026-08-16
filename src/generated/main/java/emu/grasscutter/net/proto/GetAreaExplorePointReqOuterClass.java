@@ -20,7 +20,7 @@ public final class GetAreaExplorePointReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0      
      * </pre>
      *
      * <code>repeated uint32 area_id_list = 4;</code>
@@ -29,7 +29,7 @@ public final class GetAreaExplorePointReqOuterClass {
     java.util.List<java.lang.Integer> getAreaIdListList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0      
      * </pre>
      *
      * <code>repeated uint32 area_id_list = 4;</code>
@@ -38,7 +38,7 @@ public final class GetAreaExplorePointReqOuterClass {
     int getAreaIdListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0      
      * </pre>
      *
      * <code>repeated uint32 area_id_list = 4;</code>
@@ -49,7 +49,7 @@ public final class GetAreaExplorePointReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 6381
+   * CmdId: 25511
    * </pre>
    *
    * Protobuf type {@code GetAreaExplorePointReq}
@@ -158,7 +158,7 @@ public final class GetAreaExplorePointReqOuterClass {
     private com.google.protobuf.Internal.IntList areaIdList_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0      
      * </pre>
      *
      * <code>repeated uint32 area_id_list = 4;</code>
@@ -171,7 +171,7 @@ public final class GetAreaExplorePointReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0      
      * </pre>
      *
      * <code>repeated uint32 area_id_list = 4;</code>
@@ -182,7 +182,7 @@ public final class GetAreaExplorePointReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0      
      * </pre>
      *
      * <code>repeated uint32 area_id_list = 4;</code>
@@ -368,7 +368,7 @@ public final class GetAreaExplorePointReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6381
+     * CmdId: 25511
      * </pre>
      *
      * Protobuf type {@code GetAreaExplorePointReq}
@@ -539,7 +539,7 @@ public final class GetAreaExplorePointReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0      
        * </pre>
        *
        * <code>repeated uint32 area_id_list = 4;</code>
@@ -552,7 +552,7 @@ public final class GetAreaExplorePointReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0      
        * </pre>
        *
        * <code>repeated uint32 area_id_list = 4;</code>
@@ -563,7 +563,7 @@ public final class GetAreaExplorePointReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0      
        * </pre>
        *
        * <code>repeated uint32 area_id_list = 4;</code>
@@ -575,7 +575,7 @@ public final class GetAreaExplorePointReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0      
        * </pre>
        *
        * <code>repeated uint32 area_id_list = 4;</code>
@@ -592,7 +592,7 @@ public final class GetAreaExplorePointReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0      
        * </pre>
        *
        * <code>repeated uint32 area_id_list = 4;</code>
@@ -607,7 +607,7 @@ public final class GetAreaExplorePointReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0      
        * </pre>
        *
        * <code>repeated uint32 area_id_list = 4;</code>
@@ -624,7 +624,7 @@ public final class GetAreaExplorePointReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0      
        * </pre>
        *
        * <code>repeated uint32 area_id_list = 4;</code>

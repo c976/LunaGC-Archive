@@ -19,28 +19,16 @@ public final class ANHFAKADIAOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NHPMFANKGII = 1;</code>
      * @return A list containing the nHPMFANKGII.
      */
     java.util.List<java.lang.Integer> getNHPMFANKGIIList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NHPMFANKGII = 1;</code>
      * @return The count of nHPMFANKGII.
      */
     int getNHPMFANKGIICount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NHPMFANKGII = 1;</code>
      * @param index The index of the element to return.
      * @return The nHPMFANKGII at the given index.
@@ -48,28 +36,16 @@ public final class ANHFAKADIAOOuterClass {
     int getNHPMFANKGII(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NPOLECGHMBF = 2;</code>
      * @return A list containing the nPOLECGHMBF.
      */
     java.util.List<java.lang.Integer> getNPOLECGHMBFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NPOLECGHMBF = 2;</code>
      * @return The count of nPOLECGHMBF.
      */
     int getNPOLECGHMBFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NPOLECGHMBF = 2;</code>
      * @param index The index of the element to return.
      * @return The nPOLECGHMBF at the given index.
@@ -77,64 +53,40 @@ public final class ANHFAKADIAOOuterClass {
     int getNPOLECGHMBF(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL> 
         getKEBKELKNABDList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
      */
     emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL getKEBKELKNABD(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
      */
     int getKEBKELKNABDCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDLOrBuilder> 
         getKEBKELKNABDOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
      */
     emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDLOrBuilder getKEBKELKNABDOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 13;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 13;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
   }
   /**
    * Protobuf type {@code ANHFAKADIAO}
@@ -243,7 +195,7 @@ public final class ANHFAKADIAOOuterClass {
             }
             case 104: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -290,10 +242,6 @@ public final class ANHFAKADIAOOuterClass {
     public static final int NHPMFANKGII_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList nHPMFANKGII_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NHPMFANKGII = 1;</code>
      * @return A list containing the nHPMFANKGII.
      */
@@ -303,10 +251,6 @@ public final class ANHFAKADIAOOuterClass {
       return nHPMFANKGII_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NHPMFANKGII = 1;</code>
      * @return The count of nHPMFANKGII.
      */
@@ -314,10 +258,6 @@ public final class ANHFAKADIAOOuterClass {
       return nHPMFANKGII_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NHPMFANKGII = 1;</code>
      * @param index The index of the element to return.
      * @return The nHPMFANKGII at the given index.
@@ -330,10 +270,6 @@ public final class ANHFAKADIAOOuterClass {
     public static final int NPOLECGHMBF_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList nPOLECGHMBF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NPOLECGHMBF = 2;</code>
      * @return A list containing the nPOLECGHMBF.
      */
@@ -343,10 +279,6 @@ public final class ANHFAKADIAOOuterClass {
       return nPOLECGHMBF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NPOLECGHMBF = 2;</code>
      * @return The count of nPOLECGHMBF.
      */
@@ -354,10 +286,6 @@ public final class ANHFAKADIAOOuterClass {
       return nPOLECGHMBF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NPOLECGHMBF = 2;</code>
      * @param index The index of the element to return.
      * @return The nPOLECGHMBF at the given index.
@@ -370,10 +298,6 @@ public final class ANHFAKADIAOOuterClass {
     public static final int KEBKELKNABD_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL> kEBKELKNABD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
      */
     @java.lang.Override
@@ -381,10 +305,6 @@ public final class ANHFAKADIAOOuterClass {
       return kEBKELKNABD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
      */
     @java.lang.Override
@@ -393,10 +313,6 @@ public final class ANHFAKADIAOOuterClass {
       return kEBKELKNABD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
      */
     @java.lang.Override
@@ -404,10 +320,6 @@ public final class ANHFAKADIAOOuterClass {
       return kEBKELKNABD_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
      */
     @java.lang.Override
@@ -415,10 +327,6 @@ public final class ANHFAKADIAOOuterClass {
       return kEBKELKNABD_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
      */
     @java.lang.Override
@@ -430,10 +338,6 @@ public final class ANHFAKADIAOOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 4;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
@@ -442,15 +346,15 @@ public final class ANHFAKADIAOOuterClass {
       return isOpen_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 13;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 13;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 13;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 13;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -488,8 +392,8 @@ public final class ANHFAKADIAOOuterClass {
       for (int i = 0; i < kEBKELKNABD_.size(); i++) {
         output.writeMessage(5, kEBKELKNABD_.get(i));
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(13, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(13, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -536,9 +440,9 @@ public final class ANHFAKADIAOOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, kEBKELKNABD_.get(i));
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, eGHGENOJNEK_);
+          .computeUInt32Size(13, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -563,8 +467,8 @@ public final class ANHFAKADIAOOuterClass {
           .equals(other.getKEBKELKNABDList())) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -591,8 +495,8 @@ public final class ANHFAKADIAOOuterClass {
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -739,7 +643,7 @@ public final class ANHFAKADIAOOuterClass {
         }
         isOpen_ = false;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         return this;
       }
@@ -788,7 +692,7 @@ public final class ANHFAKADIAOOuterClass {
           result.kEBKELKNABD_ = kEBKELKNABDBuilder_.build();
         }
         result.isOpen_ = isOpen_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -886,8 +790,8 @@ public final class ANHFAKADIAOOuterClass {
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -927,10 +831,6 @@ public final class ANHFAKADIAOOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NHPMFANKGII = 1;</code>
        * @return A list containing the nHPMFANKGII.
        */
@@ -940,10 +840,6 @@ public final class ANHFAKADIAOOuterClass {
                  java.util.Collections.unmodifiableList(nHPMFANKGII_) : nHPMFANKGII_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NHPMFANKGII = 1;</code>
        * @return The count of nHPMFANKGII.
        */
@@ -951,10 +847,6 @@ public final class ANHFAKADIAOOuterClass {
         return nHPMFANKGII_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NHPMFANKGII = 1;</code>
        * @param index The index of the element to return.
        * @return The nHPMFANKGII at the given index.
@@ -963,10 +855,6 @@ public final class ANHFAKADIAOOuterClass {
         return nHPMFANKGII_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NHPMFANKGII = 1;</code>
        * @param index The index to set the value at.
        * @param value The nHPMFANKGII to set.
@@ -980,10 +868,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NHPMFANKGII = 1;</code>
        * @param value The nHPMFANKGII to add.
        * @return This builder for chaining.
@@ -995,10 +879,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NHPMFANKGII = 1;</code>
        * @param values The nHPMFANKGII to add.
        * @return This builder for chaining.
@@ -1012,10 +892,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NHPMFANKGII = 1;</code>
        * @return This builder for chaining.
        */
@@ -1034,10 +910,6 @@ public final class ANHFAKADIAOOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NPOLECGHMBF = 2;</code>
        * @return A list containing the nPOLECGHMBF.
        */
@@ -1047,10 +919,6 @@ public final class ANHFAKADIAOOuterClass {
                  java.util.Collections.unmodifiableList(nPOLECGHMBF_) : nPOLECGHMBF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NPOLECGHMBF = 2;</code>
        * @return The count of nPOLECGHMBF.
        */
@@ -1058,10 +926,6 @@ public final class ANHFAKADIAOOuterClass {
         return nPOLECGHMBF_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NPOLECGHMBF = 2;</code>
        * @param index The index of the element to return.
        * @return The nPOLECGHMBF at the given index.
@@ -1070,10 +934,6 @@ public final class ANHFAKADIAOOuterClass {
         return nPOLECGHMBF_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NPOLECGHMBF = 2;</code>
        * @param index The index to set the value at.
        * @param value The nPOLECGHMBF to set.
@@ -1087,10 +947,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NPOLECGHMBF = 2;</code>
        * @param value The nPOLECGHMBF to add.
        * @return This builder for chaining.
@@ -1102,10 +958,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NPOLECGHMBF = 2;</code>
        * @param values The nPOLECGHMBF to add.
        * @return This builder for chaining.
@@ -1119,10 +971,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NPOLECGHMBF = 2;</code>
        * @return This builder for chaining.
        */
@@ -1146,10 +994,6 @@ public final class ANHFAKADIAOOuterClass {
           emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL, emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL.Builder, emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDLOrBuilder> kEBKELKNABDBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL> getKEBKELKNABDList() {
@@ -1160,10 +1004,6 @@ public final class ANHFAKADIAOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public int getKEBKELKNABDCount() {
@@ -1174,10 +1014,6 @@ public final class ANHFAKADIAOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL getKEBKELKNABD(int index) {
@@ -1188,10 +1024,6 @@ public final class ANHFAKADIAOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public Builder setKEBKELKNABD(
@@ -1209,10 +1041,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public Builder setKEBKELKNABD(
@@ -1227,10 +1055,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public Builder addKEBKELKNABD(emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL value) {
@@ -1247,10 +1071,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public Builder addKEBKELKNABD(
@@ -1268,10 +1088,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public Builder addKEBKELKNABD(
@@ -1286,10 +1102,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public Builder addKEBKELKNABD(
@@ -1304,10 +1116,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public Builder addAllKEBKELKNABD(
@@ -1323,10 +1131,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public Builder clearKEBKELKNABD() {
@@ -1340,10 +1144,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public Builder removeKEBKELKNABD(int index) {
@@ -1357,10 +1157,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL.Builder getKEBKELKNABDBuilder(
@@ -1368,10 +1164,6 @@ public final class ANHFAKADIAOOuterClass {
         return getKEBKELKNABDFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDLOrBuilder getKEBKELKNABDOrBuilder(
@@ -1382,10 +1174,6 @@ public final class ANHFAKADIAOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDLOrBuilder> 
@@ -1397,10 +1185,6 @@ public final class ANHFAKADIAOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL.Builder addKEBKELKNABDBuilder() {
@@ -1408,10 +1192,6 @@ public final class ANHFAKADIAOOuterClass {
             emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL.Builder addKEBKELKNABDBuilder(
@@ -1420,10 +1200,6 @@ public final class ANHFAKADIAOOuterClass {
             index, emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBIKHFFAIDL KEBKELKNABD = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.OBIKHFFAIDL.Builder> 
@@ -1447,10 +1223,6 @@ public final class ANHFAKADIAOOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return The isOpen.
        */
@@ -1459,10 +1231,6 @@ public final class ANHFAKADIAOOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1474,10 +1242,6 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return This builder for chaining.
        */
@@ -1488,33 +1252,33 @@ public final class ANHFAKADIAOOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 13;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 13;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 13;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 13;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 13;</code>
+       * <code>uint32 stage_id = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -1585,12 +1349,12 @@ public final class ANHFAKADIAOOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021ANHFAKADIAO.proto\032\021OBIKHFFAIDL.proto\"\200" +
-      "\001\n\013ANHFAKADIAO\022\023\n\013NHPMFANKGII\030\001 \003(\r\022\023\n\013N" +
-      "POLECGHMBF\030\002 \003(\r\022!\n\013KEBKELKNABD\030\005 \003(\0132\014." +
-      "OBIKHFFAIDL\022\017\n\007is_open\030\004 \001(\010\022\023\n\013EGHGENOJ" +
-      "NEK\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\021ANHFAKADIAO.proto\032\021OBIKHFFAIDL.proto\"}" +
+      "\n\013ANHFAKADIAO\022\023\n\013NHPMFANKGII\030\001 \003(\r\022\023\n\013NP" +
+      "OLECGHMBF\030\002 \003(\r\022!\n\013KEBKELKNABD\030\005 \003(\0132\014.O" +
+      "BIKHFFAIDL\022\017\n\007is_open\030\004 \001(\010\022\020\n\010stage_id\030" +
+      "\r \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1602,7 +1366,7 @@ public final class ANHFAKADIAOOuterClass {
     internal_static_ANHFAKADIAO_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ANHFAKADIAO_descriptor,
-        new java.lang.String[] { "NHPMFANKGII", "NPOLECGHMBF", "KEBKELKNABD", "IsOpen", "EGHGENOJNEK", });
+        new java.lang.String[] { "NHPMFANKGII", "NPOLECGHMBF", "KEBKELKNABD", "IsOpen", "StageId", });
     emu.grasscutter.net.proto.OBIKHFFAIDLOuterClass.getDescriptor();
   }
 

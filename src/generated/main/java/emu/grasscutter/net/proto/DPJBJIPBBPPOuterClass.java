@@ -19,40 +19,24 @@ public final class DPJBJIPBBPPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 7;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 4;</code>
      * @return The dALMDMCJNNK.
      */
     boolean getDALMDMCJNNK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 15;</code>
      * @return The cKOCCKMBGJN.
      */
     int getCKOCCKMBGJN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
@@ -158,10 +142,6 @@ public final class DPJBJIPBBPPOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 7;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 7;</code>
      * @return The isFinished.
      */
@@ -173,10 +153,6 @@ public final class DPJBJIPBBPPOuterClass {
     public static final int DALMDMCJNNK_FIELD_NUMBER = 4;
     private boolean dALMDMCJNNK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 4;</code>
      * @return The dALMDMCJNNK.
      */
@@ -188,10 +164,6 @@ public final class DPJBJIPBBPPOuterClass {
     public static final int CKOCCKMBGJN_FIELD_NUMBER = 15;
     private int cKOCCKMBGJN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 15;</code>
      * @return The cKOCCKMBGJN.
      */
@@ -203,10 +175,6 @@ public final class DPJBJIPBBPPOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 3;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
@@ -572,10 +540,6 @@ public final class DPJBJIPBBPPOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 7;</code>
        * @return The isFinished.
        */
@@ -584,10 +548,6 @@ public final class DPJBJIPBBPPOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 7;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -599,10 +559,6 @@ public final class DPJBJIPBBPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 7;</code>
        * @return This builder for chaining.
        */
@@ -615,10 +571,6 @@ public final class DPJBJIPBBPPOuterClass {
 
       private boolean dALMDMCJNNK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 4;</code>
        * @return The dALMDMCJNNK.
        */
@@ -627,10 +579,6 @@ public final class DPJBJIPBBPPOuterClass {
         return dALMDMCJNNK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 4;</code>
        * @param value The dALMDMCJNNK to set.
        * @return This builder for chaining.
@@ -642,10 +590,6 @@ public final class DPJBJIPBBPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 4;</code>
        * @return This builder for chaining.
        */
@@ -658,10 +602,6 @@ public final class DPJBJIPBBPPOuterClass {
 
       private int cKOCCKMBGJN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 15;</code>
        * @return The cKOCCKMBGJN.
        */
@@ -670,10 +610,6 @@ public final class DPJBJIPBBPPOuterClass {
         return cKOCCKMBGJN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 15;</code>
        * @param value The cKOCCKMBGJN to set.
        * @return This builder for chaining.
@@ -685,10 +621,6 @@ public final class DPJBJIPBBPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 15;</code>
        * @return This builder for chaining.
        */
@@ -701,10 +633,6 @@ public final class DPJBJIPBBPPOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @return The levelId.
        */
@@ -713,10 +641,6 @@ public final class DPJBJIPBBPPOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -728,10 +652,6 @@ public final class DPJBJIPBBPPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @return This builder for chaining.
        */

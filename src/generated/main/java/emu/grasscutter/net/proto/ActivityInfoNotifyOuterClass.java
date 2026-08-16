@@ -20,34 +20,34 @@ public final class ActivityInfoNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activity_info = 13;</code>
      * @return Whether the activityInfo field is set.
      */
     boolean hasActivityInfo();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activity_info = 13;</code>
      * @return The activityInfo.
      */
     emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo getActivityInfo();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activity_info = 13;</code>
      */
     emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfoOrBuilder getActivityInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 29493
+   * CmdId: 27105
    * </pre>
    *
    * Protobuf type {@code ActivityInfoNotify}
@@ -94,7 +94,7 @@ public final class ActivityInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 106: {
               emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.Builder subBuilder = null;
               if (activityInfo_ != null) {
                 subBuilder = activityInfo_.toBuilder();
@@ -139,14 +139,14 @@ public final class ActivityInfoNotifyOuterClass {
               emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify.class, emu.grasscutter.net.proto.ActivityInfoNotifyOuterClass.ActivityInfoNotify.Builder.class);
     }
 
-    public static final int ACTIVITY_INFO_FIELD_NUMBER = 12;
+    public static final int ACTIVITY_INFO_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo activityInfo_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activity_info = 13;</code>
      * @return Whether the activityInfo field is set.
      */
     @java.lang.Override
@@ -155,10 +155,10 @@ public final class ActivityInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activity_info = 13;</code>
      * @return The activityInfo.
      */
     @java.lang.Override
@@ -167,10 +167,10 @@ public final class ActivityInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ActivityInfo activity_info = 12;</code>
+     * <code>.ActivityInfo activity_info = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfoOrBuilder getActivityInfoOrBuilder() {
@@ -192,7 +192,7 @@ public final class ActivityInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityInfo_ != null) {
-        output.writeMessage(12, getActivityInfo());
+        output.writeMessage(13, getActivityInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -205,7 +205,7 @@ public final class ActivityInfoNotifyOuterClass {
       size = 0;
       if (activityInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getActivityInfo());
+          .computeMessageSize(13, getActivityInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,7 +339,7 @@ public final class ActivityInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29493
+     * CmdId: 27105
      * </pre>
      *
      * Protobuf type {@code ActivityInfoNotify}
@@ -501,10 +501,10 @@ public final class ActivityInfoNotifyOuterClass {
           emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo, emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.Builder, emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfoOrBuilder> activityInfoBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activity_info = 13;</code>
        * @return Whether the activityInfo field is set.
        */
       public boolean hasActivityInfo() {
@@ -512,10 +512,10 @@ public final class ActivityInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activity_info = 13;</code>
        * @return The activityInfo.
        */
       public emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo getActivityInfo() {
@@ -527,10 +527,10 @@ public final class ActivityInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activity_info = 13;</code>
        */
       public Builder setActivityInfo(emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo value) {
         if (activityInfoBuilder_ == null) {
@@ -547,10 +547,10 @@ public final class ActivityInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activity_info = 13;</code>
        */
       public Builder setActivityInfo(
           emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.Builder builderForValue) {
@@ -565,10 +565,10 @@ public final class ActivityInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activity_info = 13;</code>
        */
       public Builder mergeActivityInfo(emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo value) {
         if (activityInfoBuilder_ == null) {
@@ -587,10 +587,10 @@ public final class ActivityInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activity_info = 13;</code>
        */
       public Builder clearActivityInfo() {
         if (activityInfoBuilder_ == null) {
@@ -605,10 +605,10 @@ public final class ActivityInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activity_info = 13;</code>
        */
       public emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.Builder getActivityInfoBuilder() {
         
@@ -617,10 +617,10 @@ public final class ActivityInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activity_info = 13;</code>
        */
       public emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfoOrBuilder getActivityInfoOrBuilder() {
         if (activityInfoBuilder_ != null) {
@@ -632,10 +632,10 @@ public final class ActivityInfoNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ActivityInfo activity_info = 12;</code>
+       * <code>.ActivityInfo activity_info = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo, emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfo.Builder, emu.grasscutter.net.proto.ActivityInfoOuterClass.ActivityInfoOrBuilder> 
@@ -719,7 +719,7 @@ public final class ActivityInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030ActivityInfoNotify.proto\032\022ActivityInfo" +
       ".proto\":\n\022ActivityInfoNotify\022$\n\ractivity" +
-      "_info\030\014 \001(\0132\r.ActivityInfoB\033\n\031emu.grassc" +
+      "_info\030\r \001(\0132\r.ActivityInfoB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

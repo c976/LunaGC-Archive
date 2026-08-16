@@ -19,99 +19,55 @@ public final class BKFNFCGEJNGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+     * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2> 
+    java.util.List<emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN> 
         getCEMAGGFILCHList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+     * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getCEMAGGFILCH(int index);
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getCEMAGGFILCH(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+     * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
      */
     int getCEMAGGFILCHCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+     * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> 
+    java.util.List<? extends emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> 
         getCEMAGGFILCHOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+     * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getCEMAGGFILCHOrBuilder(
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getCEMAGGFILCHOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      * @return The pos.
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getPos();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getPosOrBuilder();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getPosOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated int32 OGHHLMCDKAH = 9;</code>
      * @return A list containing the oGHHLMCDKAH.
      */
     java.util.List<java.lang.Integer> getOGHHLMCDKAHList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated int32 OGHHLMCDKAH = 9;</code>
      * @return The count of oGHHLMCDKAH.
      */
     int getOGHHLMCDKAHCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated int32 OGHHLMCDKAH = 9;</code>
      * @param index The index of the element to return.
      * @return The oGHHLMCDKAH at the given index.
@@ -119,28 +75,16 @@ public final class BKFNFCGEJNGOuterClass {
     int getOGHHLMCDKAH(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CLIINAHKGCG = 6;</code>
      * @return A list containing the cLIINAHKGCG.
      */
     java.util.List<java.lang.Integer> getCLIINAHKGCGList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CLIINAHKGCG = 6;</code>
      * @return The count of cLIINAHKGCG.
      */
     int getCLIINAHKGCGCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CLIINAHKGCG = 6;</code>
      * @param index The index of the element to return.
      * @return The cLIINAHKGCG at the given index.
@@ -148,77 +92,45 @@ public final class BKFNFCGEJNGOuterClass {
     int getCLIINAHKGCG(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+     * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
      * @return Whether the hBFDPEPLENA field is set.
      */
     boolean hasHBFDPEPLENA();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+     * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
      * @return The hBFDPEPLENA.
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getHBFDPEPLENA();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getHBFDPEPLENA();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+     * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getHBFDPEPLENAOrBuilder();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getHBFDPEPLENAOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 config_id = 12;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 rotation = 3;</code>
      * @return The rotation.
      */
     int getRotation();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 1;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ECJNJIGOFHJ = 5;</code>
      * @return The eCJNJIGOFHJ.
      */
     int getECJNJIGOFHJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OIGILJHHIBN = 11;</code>
      * @return The oIGILJHHIBN.
      */
@@ -279,11 +191,11 @@ public final class BKFNFCGEJNGOuterClass {
               break;
             }
             case 18: {
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder subBuilder = null;
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
               }
-              pos_ = input.readMessage(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.parser(), extensionRegistry);
+              pos_ = input.readMessage(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(pos_);
                 pos_ = subBuilder.buildPartial();
@@ -297,11 +209,11 @@ public final class BKFNFCGEJNGOuterClass {
               break;
             }
             case 34: {
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder subBuilder = null;
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder subBuilder = null;
               if (hBFDPEPLENA_ != null) {
                 subBuilder = hBFDPEPLENA_.toBuilder();
               }
-              hBFDPEPLENA_ = input.readMessage(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.parser(), extensionRegistry);
+              hBFDPEPLENA_ = input.readMessage(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(hBFDPEPLENA_);
                 hBFDPEPLENA_ = subBuilder.buildPartial();
@@ -337,11 +249,11 @@ public final class BKFNFCGEJNGOuterClass {
             }
             case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cEMAGGFILCH_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2>();
+                cEMAGGFILCH_ = new java.util.ArrayList<emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN>();
                 mutable_bitField0_ |= 0x00000001;
               }
               cEMAGGFILCH_.add(
-                  input.readMessage(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.parser(), extensionRegistry));
+                  input.readMessage(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.parser(), extensionRegistry));
               break;
             }
             case 72: {
@@ -417,73 +329,49 @@ public final class BKFNFCGEJNGOuterClass {
     }
 
     public static final int CEMAGGFILCH_FIELD_NUMBER = 7;
-    private java.util.List<emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2> cEMAGGFILCH_;
+    private java.util.List<emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN> cEMAGGFILCH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+     * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2> getCEMAGGFILCHList() {
+    public java.util.List<emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN> getCEMAGGFILCHList() {
       return cEMAGGFILCH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+     * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> 
         getCEMAGGFILCHOrBuilderList() {
       return cEMAGGFILCH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+     * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
      */
     @java.lang.Override
     public int getCEMAGGFILCHCount() {
       return cEMAGGFILCH_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+     * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getCEMAGGFILCH(int index) {
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getCEMAGGFILCH(int index) {
       return cEMAGGFILCH_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+     * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getCEMAGGFILCHOrBuilder(
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getCEMAGGFILCHOrBuilder(
         int index) {
       return cEMAGGFILCH_.get(index);
     }
 
     public static final int POS_FIELD_NUMBER = 2;
-    private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 pos_;
+    private emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN pos_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -491,36 +379,24 @@ public final class BKFNFCGEJNGOuterClass {
       return pos_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      * @return The pos.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : pos_;
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : pos_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getPosOrBuilder() {
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
     public static final int OGHHLMCDKAH_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList oGHHLMCDKAH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated int32 OGHHLMCDKAH = 9;</code>
      * @return A list containing the oGHHLMCDKAH.
      */
@@ -530,10 +406,6 @@ public final class BKFNFCGEJNGOuterClass {
       return oGHHLMCDKAH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated int32 OGHHLMCDKAH = 9;</code>
      * @return The count of oGHHLMCDKAH.
      */
@@ -541,10 +413,6 @@ public final class BKFNFCGEJNGOuterClass {
       return oGHHLMCDKAH_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated int32 OGHHLMCDKAH = 9;</code>
      * @param index The index of the element to return.
      * @return The oGHHLMCDKAH at the given index.
@@ -557,10 +425,6 @@ public final class BKFNFCGEJNGOuterClass {
     public static final int CLIINAHKGCG_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList cLIINAHKGCG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CLIINAHKGCG = 6;</code>
      * @return A list containing the cLIINAHKGCG.
      */
@@ -570,10 +434,6 @@ public final class BKFNFCGEJNGOuterClass {
       return cLIINAHKGCG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CLIINAHKGCG = 6;</code>
      * @return The count of cLIINAHKGCG.
      */
@@ -581,10 +441,6 @@ public final class BKFNFCGEJNGOuterClass {
       return cLIINAHKGCG_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CLIINAHKGCG = 6;</code>
      * @param index The index of the element to return.
      * @return The cLIINAHKGCG at the given index.
@@ -595,13 +451,9 @@ public final class BKFNFCGEJNGOuterClass {
     private int cLIINAHKGCGMemoizedSerializedSize = -1;
 
     public static final int HBFDPEPLENA_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 hBFDPEPLENA_;
+    private emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN hBFDPEPLENA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+     * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
      * @return Whether the hBFDPEPLENA field is set.
      */
     @java.lang.Override
@@ -609,36 +461,24 @@ public final class BKFNFCGEJNGOuterClass {
       return hBFDPEPLENA_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+     * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
      * @return The hBFDPEPLENA.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getHBFDPEPLENA() {
-      return hBFDPEPLENA_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : hBFDPEPLENA_;
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getHBFDPEPLENA() {
+      return hBFDPEPLENA_ == null ? emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : hBFDPEPLENA_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+     * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getHBFDPEPLENAOrBuilder() {
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getHBFDPEPLENAOrBuilder() {
       return getHBFDPEPLENA();
     }
 
     public static final int CONFIG_ID_FIELD_NUMBER = 12;
     private int configId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 config_id = 12;</code>
      * @return The configId.
      */
@@ -650,10 +490,6 @@ public final class BKFNFCGEJNGOuterClass {
     public static final int ROTATION_FIELD_NUMBER = 3;
     private int rotation_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 rotation = 3;</code>
      * @return The rotation.
      */
@@ -665,10 +501,6 @@ public final class BKFNFCGEJNGOuterClass {
     public static final int ID_FIELD_NUMBER = 1;
     private int id_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 1;</code>
      * @return The id.
      */
@@ -680,10 +512,6 @@ public final class BKFNFCGEJNGOuterClass {
     public static final int ECJNJIGOFHJ_FIELD_NUMBER = 5;
     private int eCJNJIGOFHJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ECJNJIGOFHJ = 5;</code>
      * @return The eCJNJIGOFHJ.
      */
@@ -695,10 +523,6 @@ public final class BKFNFCGEJNGOuterClass {
     public static final int OIGILJHHIBN_FIELD_NUMBER = 11;
     private int oIGILJHHIBN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OIGILJHHIBN = 11;</code>
      * @return The oIGILJHHIBN.
      */
@@ -1283,26 +1107,22 @@ public final class BKFNFCGEJNGOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2> cEMAGGFILCH_ =
+      private java.util.List<emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN> cEMAGGFILCH_ =
         java.util.Collections.emptyList();
       private void ensureCEMAGGFILCHIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          cEMAGGFILCH_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2>(cEMAGGFILCH_);
+          cEMAGGFILCH_ = new java.util.ArrayList<emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN>(cEMAGGFILCH_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> cEMAGGFILCHBuilder_;
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> cEMAGGFILCHBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2> getCEMAGGFILCHList() {
+      public java.util.List<emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN> getCEMAGGFILCHList() {
         if (cEMAGGFILCHBuilder_ == null) {
           return java.util.Collections.unmodifiableList(cEMAGGFILCH_);
         } else {
@@ -1310,11 +1130,7 @@ public final class BKFNFCGEJNGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
       public int getCEMAGGFILCHCount() {
         if (cEMAGGFILCHBuilder_ == null) {
@@ -1324,13 +1140,9 @@ public final class BKFNFCGEJNGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getCEMAGGFILCH(int index) {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getCEMAGGFILCH(int index) {
         if (cEMAGGFILCHBuilder_ == null) {
           return cEMAGGFILCH_.get(index);
         } else {
@@ -1338,14 +1150,10 @@ public final class BKFNFCGEJNGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
       public Builder setCEMAGGFILCH(
-          int index, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+          int index, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (cEMAGGFILCHBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1359,14 +1167,10 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
       public Builder setCEMAGGFILCH(
-          int index, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder builderForValue) {
         if (cEMAGGFILCHBuilder_ == null) {
           ensureCEMAGGFILCHIsMutable();
           cEMAGGFILCH_.set(index, builderForValue.build());
@@ -1377,13 +1181,9 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
-      public Builder addCEMAGGFILCH(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+      public Builder addCEMAGGFILCH(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (cEMAGGFILCHBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1397,14 +1197,10 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
       public Builder addCEMAGGFILCH(
-          int index, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+          int index, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (cEMAGGFILCHBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1418,14 +1214,10 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
       public Builder addCEMAGGFILCH(
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder builderForValue) {
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder builderForValue) {
         if (cEMAGGFILCHBuilder_ == null) {
           ensureCEMAGGFILCHIsMutable();
           cEMAGGFILCH_.add(builderForValue.build());
@@ -1436,14 +1228,10 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
       public Builder addCEMAGGFILCH(
-          int index, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder builderForValue) {
+          int index, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder builderForValue) {
         if (cEMAGGFILCHBuilder_ == null) {
           ensureCEMAGGFILCHIsMutable();
           cEMAGGFILCH_.add(index, builderForValue.build());
@@ -1454,14 +1242,10 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
       public Builder addAllCEMAGGFILCH(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2> values) {
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN> values) {
         if (cEMAGGFILCHBuilder_ == null) {
           ensureCEMAGGFILCHIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1473,11 +1257,7 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
       public Builder clearCEMAGGFILCH() {
         if (cEMAGGFILCHBuilder_ == null) {
@@ -1490,11 +1270,7 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
       public Builder removeCEMAGGFILCH(int index) {
         if (cEMAGGFILCHBuilder_ == null) {
@@ -1507,24 +1283,16 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder getCEMAGGFILCHBuilder(
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder getCEMAGGFILCHBuilder(
           int index) {
         return getCEMAGGFILCHFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getCEMAGGFILCHOrBuilder(
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getCEMAGGFILCHOrBuilder(
           int index) {
         if (cEMAGGFILCHBuilder_ == null) {
           return cEMAGGFILCH_.get(index);  } else {
@@ -1532,13 +1300,9 @@ public final class BKFNFCGEJNGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> 
+      public java.util.List<? extends emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> 
            getCEMAGGFILCHOrBuilderList() {
         if (cEMAGGFILCHBuilder_ != null) {
           return cEMAGGFILCHBuilder_.getMessageOrBuilderList();
@@ -1547,45 +1311,33 @@ public final class BKFNFCGEJNGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder addCEMAGGFILCHBuilder() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder addCEMAGGFILCHBuilder() {
         return getCEMAGGFILCHFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance());
+            emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder addCEMAGGFILCHBuilder(
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder addCEMAGGFILCHBuilder(
           int index) {
         return getCEMAGGFILCHFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance());
+            index, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>repeated .BreakoutVector2 CEMAGGFILCH = 7;</code>
+       * <code>repeated .FNEFDOMCAJN CEMAGGFILCH = 7;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder> 
+      public java.util.List<emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder> 
            getCEMAGGFILCHBuilderList() {
         return getCEMAGGFILCHFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> 
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> 
           getCEMAGGFILCHFieldBuilder() {
         if (cEMAGGFILCHBuilder_ == null) {
           cEMAGGFILCHBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder>(
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder>(
                   cEMAGGFILCH_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1595,43 +1347,31 @@ public final class BKFNFCGEJNGOuterClass {
         return cEMAGGFILCHBuilder_;
       }
 
-      private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 pos_;
+      private emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN pos_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> posBuilder_;
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> posBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        * @return The pos.
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getPos() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getPos() {
         if (posBuilder_ == null) {
-          return pos_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : pos_;
+          return pos_ == null ? emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : pos_;
         } else {
           return posBuilder_.getMessage();
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
-      public Builder setPos(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+      public Builder setPos(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (posBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1645,14 +1385,10 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
       public Builder setPos(
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder builderForValue) {
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder builderForValue) {
         if (posBuilder_ == null) {
           pos_ = builderForValue.build();
           onChanged();
@@ -1663,17 +1399,13 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
-      public Builder mergePos(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+      public Builder mergePos(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (posBuilder_ == null) {
           if (pos_ != null) {
             pos_ =
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.newBuilder(pos_).mergeFrom(value).buildPartial();
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.newBuilder(pos_).mergeFrom(value).buildPartial();
           } else {
             pos_ = value;
           }
@@ -1685,11 +1417,7 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -1703,45 +1431,33 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder getPosBuilder() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder getPosBuilder() {
         
         onChanged();
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getPosOrBuilder() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
           return posBuilder_.getMessageOrBuilder();
         } else {
           return pos_ == null ?
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : pos_;
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : pos_;
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> 
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> 
           getPosFieldBuilder() {
         if (posBuilder_ == null) {
           posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder>(
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder>(
                   getPos(),
                   getParentForChildren(),
                   isClean());
@@ -1758,10 +1474,6 @@ public final class BKFNFCGEJNGOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated int32 OGHHLMCDKAH = 9;</code>
        * @return A list containing the oGHHLMCDKAH.
        */
@@ -1771,10 +1483,6 @@ public final class BKFNFCGEJNGOuterClass {
                  java.util.Collections.unmodifiableList(oGHHLMCDKAH_) : oGHHLMCDKAH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated int32 OGHHLMCDKAH = 9;</code>
        * @return The count of oGHHLMCDKAH.
        */
@@ -1782,10 +1490,6 @@ public final class BKFNFCGEJNGOuterClass {
         return oGHHLMCDKAH_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated int32 OGHHLMCDKAH = 9;</code>
        * @param index The index of the element to return.
        * @return The oGHHLMCDKAH at the given index.
@@ -1794,10 +1498,6 @@ public final class BKFNFCGEJNGOuterClass {
         return oGHHLMCDKAH_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated int32 OGHHLMCDKAH = 9;</code>
        * @param index The index to set the value at.
        * @param value The oGHHLMCDKAH to set.
@@ -1811,10 +1511,6 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated int32 OGHHLMCDKAH = 9;</code>
        * @param value The oGHHLMCDKAH to add.
        * @return This builder for chaining.
@@ -1826,10 +1522,6 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated int32 OGHHLMCDKAH = 9;</code>
        * @param values The oGHHLMCDKAH to add.
        * @return This builder for chaining.
@@ -1843,10 +1535,6 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated int32 OGHHLMCDKAH = 9;</code>
        * @return This builder for chaining.
        */
@@ -1865,10 +1553,6 @@ public final class BKFNFCGEJNGOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CLIINAHKGCG = 6;</code>
        * @return A list containing the cLIINAHKGCG.
        */
@@ -1878,10 +1562,6 @@ public final class BKFNFCGEJNGOuterClass {
                  java.util.Collections.unmodifiableList(cLIINAHKGCG_) : cLIINAHKGCG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CLIINAHKGCG = 6;</code>
        * @return The count of cLIINAHKGCG.
        */
@@ -1889,10 +1569,6 @@ public final class BKFNFCGEJNGOuterClass {
         return cLIINAHKGCG_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CLIINAHKGCG = 6;</code>
        * @param index The index of the element to return.
        * @return The cLIINAHKGCG at the given index.
@@ -1901,10 +1577,6 @@ public final class BKFNFCGEJNGOuterClass {
         return cLIINAHKGCG_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CLIINAHKGCG = 6;</code>
        * @param index The index to set the value at.
        * @param value The cLIINAHKGCG to set.
@@ -1918,10 +1590,6 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CLIINAHKGCG = 6;</code>
        * @param value The cLIINAHKGCG to add.
        * @return This builder for chaining.
@@ -1933,10 +1601,6 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CLIINAHKGCG = 6;</code>
        * @param values The cLIINAHKGCG to add.
        * @return This builder for chaining.
@@ -1950,10 +1614,6 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CLIINAHKGCG = 6;</code>
        * @return This builder for chaining.
        */
@@ -1964,43 +1624,31 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 hBFDPEPLENA_;
+      private emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN hBFDPEPLENA_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> hBFDPEPLENABuilder_;
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> hBFDPEPLENABuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+       * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
        * @return Whether the hBFDPEPLENA field is set.
        */
       public boolean hasHBFDPEPLENA() {
         return hBFDPEPLENABuilder_ != null || hBFDPEPLENA_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+       * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
        * @return The hBFDPEPLENA.
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getHBFDPEPLENA() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getHBFDPEPLENA() {
         if (hBFDPEPLENABuilder_ == null) {
-          return hBFDPEPLENA_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : hBFDPEPLENA_;
+          return hBFDPEPLENA_ == null ? emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : hBFDPEPLENA_;
         } else {
           return hBFDPEPLENABuilder_.getMessage();
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+       * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
        */
-      public Builder setHBFDPEPLENA(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+      public Builder setHBFDPEPLENA(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (hBFDPEPLENABuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2014,14 +1662,10 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+       * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
        */
       public Builder setHBFDPEPLENA(
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder builderForValue) {
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder builderForValue) {
         if (hBFDPEPLENABuilder_ == null) {
           hBFDPEPLENA_ = builderForValue.build();
           onChanged();
@@ -2032,17 +1676,13 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+       * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
        */
-      public Builder mergeHBFDPEPLENA(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+      public Builder mergeHBFDPEPLENA(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (hBFDPEPLENABuilder_ == null) {
           if (hBFDPEPLENA_ != null) {
             hBFDPEPLENA_ =
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.newBuilder(hBFDPEPLENA_).mergeFrom(value).buildPartial();
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.newBuilder(hBFDPEPLENA_).mergeFrom(value).buildPartial();
           } else {
             hBFDPEPLENA_ = value;
           }
@@ -2054,11 +1694,7 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+       * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
        */
       public Builder clearHBFDPEPLENA() {
         if (hBFDPEPLENABuilder_ == null) {
@@ -2072,45 +1708,33 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+       * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder getHBFDPEPLENABuilder() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder getHBFDPEPLENABuilder() {
         
         onChanged();
         return getHBFDPEPLENAFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+       * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getHBFDPEPLENAOrBuilder() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getHBFDPEPLENAOrBuilder() {
         if (hBFDPEPLENABuilder_ != null) {
           return hBFDPEPLENABuilder_.getMessageOrBuilder();
         } else {
           return hBFDPEPLENA_ == null ?
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : hBFDPEPLENA_;
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : hBFDPEPLENA_;
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 HBFDPEPLENA = 4;</code>
+       * <code>.FNEFDOMCAJN HBFDPEPLENA = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> 
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> 
           getHBFDPEPLENAFieldBuilder() {
         if (hBFDPEPLENABuilder_ == null) {
           hBFDPEPLENABuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder>(
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder>(
                   getHBFDPEPLENA(),
                   getParentForChildren(),
                   isClean());
@@ -2121,10 +1745,6 @@ public final class BKFNFCGEJNGOuterClass {
 
       private int configId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 12;</code>
        * @return The configId.
        */
@@ -2133,10 +1753,6 @@ public final class BKFNFCGEJNGOuterClass {
         return configId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 12;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
@@ -2148,10 +1764,6 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 12;</code>
        * @return This builder for chaining.
        */
@@ -2164,10 +1776,6 @@ public final class BKFNFCGEJNGOuterClass {
 
       private int rotation_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 rotation = 3;</code>
        * @return The rotation.
        */
@@ -2176,10 +1784,6 @@ public final class BKFNFCGEJNGOuterClass {
         return rotation_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 rotation = 3;</code>
        * @param value The rotation to set.
        * @return This builder for chaining.
@@ -2191,10 +1795,6 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 rotation = 3;</code>
        * @return This builder for chaining.
        */
@@ -2207,10 +1807,6 @@ public final class BKFNFCGEJNGOuterClass {
 
       private int id_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 1;</code>
        * @return The id.
        */
@@ -2219,10 +1815,6 @@ public final class BKFNFCGEJNGOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 1;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -2234,10 +1826,6 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 1;</code>
        * @return This builder for chaining.
        */
@@ -2250,10 +1838,6 @@ public final class BKFNFCGEJNGOuterClass {
 
       private int eCJNJIGOFHJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECJNJIGOFHJ = 5;</code>
        * @return The eCJNJIGOFHJ.
        */
@@ -2262,10 +1846,6 @@ public final class BKFNFCGEJNGOuterClass {
         return eCJNJIGOFHJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECJNJIGOFHJ = 5;</code>
        * @param value The eCJNJIGOFHJ to set.
        * @return This builder for chaining.
@@ -2277,10 +1857,6 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECJNJIGOFHJ = 5;</code>
        * @return This builder for chaining.
        */
@@ -2293,10 +1869,6 @@ public final class BKFNFCGEJNGOuterClass {
 
       private int oIGILJHHIBN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OIGILJHHIBN = 11;</code>
        * @return The oIGILJHHIBN.
        */
@@ -2305,10 +1877,6 @@ public final class BKFNFCGEJNGOuterClass {
         return oIGILJHHIBN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OIGILJHHIBN = 11;</code>
        * @param value The oIGILJHHIBN to set.
        * @return This builder for chaining.
@@ -2320,10 +1888,6 @@ public final class BKFNFCGEJNGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OIGILJHHIBN = 11;</code>
        * @return This builder for chaining.
        */
@@ -2400,20 +1964,20 @@ public final class BKFNFCGEJNGOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021BKFNFCGEJNG.proto\032\025BreakoutVector2.pro" +
-      "to\"\377\001\n\013BKFNFCGEJNG\022%\n\013CEMAGGFILCH\030\007 \003(\0132" +
-      "\020.BreakoutVector2\022\035\n\003pos\030\002 \001(\0132\020.Breakou" +
-      "tVector2\022\023\n\013OGHHLMCDKAH\030\t \003(\005\022\023\n\013CLIINAH" +
-      "KGCG\030\006 \003(\r\022%\n\013HBFDPEPLENA\030\004 \001(\0132\020.Breako" +
-      "utVector2\022\021\n\tconfig_id\030\014 \001(\r\022\020\n\010rotation" +
-      "\030\003 \001(\005\022\n\n\002id\030\001 \001(\r\022\023\n\013ECJNJIGOFHJ\030\005 \001(\r\022" +
-      "\023\n\013OIGILJHHIBN\030\013 \001(\rB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\021BKFNFCGEJNG.proto\032\021FNEFDOMCAJN.proto\"\363" +
+      "\001\n\013BKFNFCGEJNG\022!\n\013CEMAGGFILCH\030\007 \003(\0132\014.FN" +
+      "EFDOMCAJN\022\031\n\003pos\030\002 \001(\0132\014.FNEFDOMCAJN\022\023\n\013" +
+      "OGHHLMCDKAH\030\t \003(\005\022\023\n\013CLIINAHKGCG\030\006 \003(\r\022!" +
+      "\n\013HBFDPEPLENA\030\004 \001(\0132\014.FNEFDOMCAJN\022\021\n\tcon" +
+      "fig_id\030\014 \001(\r\022\020\n\010rotation\030\003 \001(\005\022\n\n\002id\030\001 \001" +
+      "(\r\022\023\n\013ECJNJIGOFHJ\030\005 \001(\r\022\023\n\013OIGILJHHIBN\030\013" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.getDescriptor(),
         });
     internal_static_BKFNFCGEJNG_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -2421,7 +1985,7 @@ public final class BKFNFCGEJNGOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BKFNFCGEJNG_descriptor,
         new java.lang.String[] { "CEMAGGFILCH", "Pos", "OGHHLMCDKAH", "CLIINAHKGCG", "HBFDPEPLENA", "ConfigId", "Rotation", "Id", "ECJNJIGOFHJ", "OIGILJHHIBN", });
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.getDescriptor();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

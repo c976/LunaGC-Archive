@@ -19,29 +19,30 @@ public final class AddFriendNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 11;</code>
+     * <code>uint32 target_uid = 4;</code>
      * @return The targetUid.
      */
     int getTargetUid();
 
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 6;</code>
      * @return Whether the targetFriendBrief field is set.
      */
     boolean hasTargetFriendBrief();
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 6;</code>
      * @return The targetFriendBrief.
      */
     emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief getTargetFriendBrief();
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 6;</code>
      */
     emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder getTargetFriendBriefOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4998
+   * CmdId: 2626
+   * Obf: EHIPCHBKFKE
    * </pre>
    *
    * Protobuf type {@code AddFriendNotify}
@@ -88,12 +89,12 @@ public final class AddFriendNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 32: {
 
               targetUid_ = input.readUInt32();
               break;
             }
-            case 106: {
+            case 50: {
               emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder subBuilder = null;
               if (targetFriendBrief_ != null) {
                 subBuilder = targetFriendBrief_.toBuilder();
@@ -138,10 +139,10 @@ public final class AddFriendNotifyOuterClass {
               emu.grasscutter.net.proto.AddFriendNotifyOuterClass.AddFriendNotify.class, emu.grasscutter.net.proto.AddFriendNotifyOuterClass.AddFriendNotify.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 11;
+    public static final int TARGET_UID_FIELD_NUMBER = 4;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 11;</code>
+     * <code>uint32 target_uid = 4;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -149,10 +150,10 @@ public final class AddFriendNotifyOuterClass {
       return targetUid_;
     }
 
-    public static final int TARGET_FRIEND_BRIEF_FIELD_NUMBER = 13;
+    public static final int TARGET_FRIEND_BRIEF_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief targetFriendBrief_;
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 6;</code>
      * @return Whether the targetFriendBrief field is set.
      */
     @java.lang.Override
@@ -160,7 +161,7 @@ public final class AddFriendNotifyOuterClass {
       return targetFriendBrief_ != null;
     }
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 6;</code>
      * @return The targetFriendBrief.
      */
     @java.lang.Override
@@ -168,7 +169,7 @@ public final class AddFriendNotifyOuterClass {
       return targetFriendBrief_ == null ? emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.getDefaultInstance() : targetFriendBrief_;
     }
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder getTargetFriendBriefOrBuilder() {
@@ -190,10 +191,10 @@ public final class AddFriendNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetUid_ != 0) {
-        output.writeUInt32(11, targetUid_);
+        output.writeUInt32(4, targetUid_);
       }
       if (targetFriendBrief_ != null) {
-        output.writeMessage(13, getTargetFriendBrief());
+        output.writeMessage(6, getTargetFriendBrief());
       }
       unknownFields.writeTo(output);
     }
@@ -206,11 +207,11 @@ public final class AddFriendNotifyOuterClass {
       size = 0;
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, targetUid_);
+          .computeUInt32Size(4, targetUid_);
       }
       if (targetFriendBrief_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getTargetFriendBrief());
+          .computeMessageSize(6, getTargetFriendBrief());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -348,7 +349,8 @@ public final class AddFriendNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4998
+     * CmdId: 2626
+     * Obf: EHIPCHBKFKE
      * </pre>
      *
      * Protobuf type {@code AddFriendNotify}
@@ -513,7 +515,7 @@ public final class AddFriendNotifyOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 11;</code>
+       * <code>uint32 target_uid = 4;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -521,7 +523,7 @@ public final class AddFriendNotifyOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 11;</code>
+       * <code>uint32 target_uid = 4;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -532,7 +534,7 @@ public final class AddFriendNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 11;</code>
+       * <code>uint32 target_uid = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -546,14 +548,14 @@ public final class AddFriendNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder> targetFriendBriefBuilder_;
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 6;</code>
        * @return Whether the targetFriendBrief field is set.
        */
       public boolean hasTargetFriendBrief() {
         return targetFriendBriefBuilder_ != null || targetFriendBrief_ != null;
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 6;</code>
        * @return The targetFriendBrief.
        */
       public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief getTargetFriendBrief() {
@@ -564,7 +566,7 @@ public final class AddFriendNotifyOuterClass {
         }
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 6;</code>
        */
       public Builder setTargetFriendBrief(emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief value) {
         if (targetFriendBriefBuilder_ == null) {
@@ -580,7 +582,7 @@ public final class AddFriendNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 6;</code>
        */
       public Builder setTargetFriendBrief(
           emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder builderForValue) {
@@ -594,7 +596,7 @@ public final class AddFriendNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 6;</code>
        */
       public Builder mergeTargetFriendBrief(emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief value) {
         if (targetFriendBriefBuilder_ == null) {
@@ -612,7 +614,7 @@ public final class AddFriendNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 6;</code>
        */
       public Builder clearTargetFriendBrief() {
         if (targetFriendBriefBuilder_ == null) {
@@ -626,7 +628,7 @@ public final class AddFriendNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 6;</code>
        */
       public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder getTargetFriendBriefBuilder() {
         
@@ -634,7 +636,7 @@ public final class AddFriendNotifyOuterClass {
         return getTargetFriendBriefFieldBuilder().getBuilder();
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 6;</code>
        */
       public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder getTargetFriendBriefOrBuilder() {
         if (targetFriendBriefBuilder_ != null) {
@@ -645,7 +647,7 @@ public final class AddFriendNotifyOuterClass {
         }
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder> 
@@ -728,8 +730,8 @@ public final class AddFriendNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025AddFriendNotify.proto\032\021FriendBrief.pro" +
-      "to\"P\n\017AddFriendNotify\022\022\n\ntarget_uid\030\013 \001(" +
-      "\r\022)\n\023target_friend_brief\030\r \001(\0132\014.FriendB" +
+      "to\"P\n\017AddFriendNotify\022\022\n\ntarget_uid\030\004 \001(" +
+      "\r\022)\n\023target_friend_brief\030\006 \001(\0132\014.FriendB" +
       "riefB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

@@ -19,82 +19,46 @@ public final class JJNLNIMPOMHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
      * @return Whether the lHNBFKKBGOJ field is set.
      */
     boolean hasLHNBFKKBGOJ();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
      * @return The lHNBFKKBGOJ.
      */
     emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG getLHNBFKKBGOJ();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
      */
     emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHGOrBuilder getLHNBFKKBGOJOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
      * @return Whether the nFGBKCACNOL field is set.
      */
     boolean hasNFGBKCACNOL();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
      * @return The nFGBKCACNOL.
      */
     emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG getNFGBKCACNOL();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
      */
     emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHGOrBuilder getNFGBKCACNOLOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 5;</code>
      * @return A list containing the buffIdList.
      */
     java.util.List<java.lang.Integer> getBuffIdListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 5;</code>
      * @return The count of buffIdList.
      */
     int getBuffIdListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The buffIdList at the given index.
@@ -102,44 +66,24 @@ public final class JJNLNIMPOMHOuterClass {
     int getBuffIdList(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI> 
         getKFNIFDANGOFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
      */
     emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI getKFNIFDANGOF(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
      */
     int getKFNIFDANGOFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANIOrBuilder> 
         getKFNIFDANGOFOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
      */
     emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANIOrBuilder getKFNIFDANGOFOrBuilder(
@@ -290,10 +234,6 @@ public final class JJNLNIMPOMHOuterClass {
     public static final int LHNBFKKBGOJ_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG lHNBFKKBGOJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
      * @return Whether the lHNBFKKBGOJ field is set.
      */
@@ -302,10 +242,6 @@ public final class JJNLNIMPOMHOuterClass {
       return lHNBFKKBGOJ_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
      * @return The lHNBFKKBGOJ.
      */
@@ -314,10 +250,6 @@ public final class JJNLNIMPOMHOuterClass {
       return lHNBFKKBGOJ_ == null ? emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG.getDefaultInstance() : lHNBFKKBGOJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
      */
     @java.lang.Override
@@ -328,10 +260,6 @@ public final class JJNLNIMPOMHOuterClass {
     public static final int NFGBKCACNOL_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG nFGBKCACNOL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
      * @return Whether the nFGBKCACNOL field is set.
      */
@@ -340,10 +268,6 @@ public final class JJNLNIMPOMHOuterClass {
       return nFGBKCACNOL_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
      * @return The nFGBKCACNOL.
      */
@@ -352,10 +276,6 @@ public final class JJNLNIMPOMHOuterClass {
       return nFGBKCACNOL_ == null ? emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG.getDefaultInstance() : nFGBKCACNOL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
      */
     @java.lang.Override
@@ -366,10 +286,6 @@ public final class JJNLNIMPOMHOuterClass {
     public static final int BUFF_ID_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList buffIdList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 5;</code>
      * @return A list containing the buffIdList.
      */
@@ -379,10 +295,6 @@ public final class JJNLNIMPOMHOuterClass {
       return buffIdList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 5;</code>
      * @return The count of buffIdList.
      */
@@ -390,10 +302,6 @@ public final class JJNLNIMPOMHOuterClass {
       return buffIdList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 buff_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The buffIdList at the given index.
@@ -406,10 +314,6 @@ public final class JJNLNIMPOMHOuterClass {
     public static final int KFNIFDANGOF_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI> kFNIFDANGOF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
      */
     @java.lang.Override
@@ -417,10 +321,6 @@ public final class JJNLNIMPOMHOuterClass {
       return kFNIFDANGOF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
      */
     @java.lang.Override
@@ -429,10 +329,6 @@ public final class JJNLNIMPOMHOuterClass {
       return kFNIFDANGOF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
      */
     @java.lang.Override
@@ -440,10 +336,6 @@ public final class JJNLNIMPOMHOuterClass {
       return kFNIFDANGOF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
      */
     @java.lang.Override
@@ -451,10 +343,6 @@ public final class JJNLNIMPOMHOuterClass {
       return kFNIFDANGOF_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
      */
     @java.lang.Override
@@ -914,10 +802,6 @@ public final class JJNLNIMPOMHOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG, emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG.Builder, emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHGOrBuilder> lHNBFKKBGOJBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
        * @return Whether the lHNBFKKBGOJ field is set.
        */
@@ -925,10 +809,6 @@ public final class JJNLNIMPOMHOuterClass {
         return lHNBFKKBGOJBuilder_ != null || lHNBFKKBGOJ_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
        * @return The lHNBFKKBGOJ.
        */
@@ -940,10 +820,6 @@ public final class JJNLNIMPOMHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
        */
       public Builder setLHNBFKKBGOJ(emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG value) {
@@ -960,10 +836,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
        */
       public Builder setLHNBFKKBGOJ(
@@ -978,10 +850,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
        */
       public Builder mergeLHNBFKKBGOJ(emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG value) {
@@ -1000,10 +868,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
        */
       public Builder clearLHNBFKKBGOJ() {
@@ -1018,10 +882,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
        */
       public emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG.Builder getLHNBFKKBGOJBuilder() {
@@ -1030,10 +890,6 @@ public final class JJNLNIMPOMHOuterClass {
         return getLHNBFKKBGOJFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
        */
       public emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHGOrBuilder getLHNBFKKBGOJOrBuilder() {
@@ -1045,10 +901,6 @@ public final class JJNLNIMPOMHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG LHNBFKKBGOJ = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1069,10 +921,6 @@ public final class JJNLNIMPOMHOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG, emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG.Builder, emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHGOrBuilder> nFGBKCACNOLBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
        * @return Whether the nFGBKCACNOL field is set.
        */
@@ -1080,10 +928,6 @@ public final class JJNLNIMPOMHOuterClass {
         return nFGBKCACNOLBuilder_ != null || nFGBKCACNOL_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
        * @return The nFGBKCACNOL.
        */
@@ -1095,10 +939,6 @@ public final class JJNLNIMPOMHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
        */
       public Builder setNFGBKCACNOL(emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG value) {
@@ -1115,10 +955,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
        */
       public Builder setNFGBKCACNOL(
@@ -1133,10 +969,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
        */
       public Builder mergeNFGBKCACNOL(emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG value) {
@@ -1155,10 +987,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
        */
       public Builder clearNFGBKCACNOL() {
@@ -1173,10 +1001,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
        */
       public emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHG.Builder getNFGBKCACNOLBuilder() {
@@ -1185,10 +1009,6 @@ public final class JJNLNIMPOMHOuterClass {
         return getNFGBKCACNOLFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
        */
       public emu.grasscutter.net.proto.BNEKECPKEHGOuterClass.BNEKECPKEHGOrBuilder getNFGBKCACNOLOrBuilder() {
@@ -1200,10 +1020,6 @@ public final class JJNLNIMPOMHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BNEKECPKEHG NFGBKCACNOL = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1228,10 +1044,6 @@ public final class JJNLNIMPOMHOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 5;</code>
        * @return A list containing the buffIdList.
        */
@@ -1241,10 +1053,6 @@ public final class JJNLNIMPOMHOuterClass {
                  java.util.Collections.unmodifiableList(buffIdList_) : buffIdList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 5;</code>
        * @return The count of buffIdList.
        */
@@ -1252,10 +1060,6 @@ public final class JJNLNIMPOMHOuterClass {
         return buffIdList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 5;</code>
        * @param index The index of the element to return.
        * @return The buffIdList at the given index.
@@ -1264,10 +1068,6 @@ public final class JJNLNIMPOMHOuterClass {
         return buffIdList_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 5;</code>
        * @param index The index to set the value at.
        * @param value The buffIdList to set.
@@ -1281,10 +1081,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 5;</code>
        * @param value The buffIdList to add.
        * @return This builder for chaining.
@@ -1296,10 +1092,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 5;</code>
        * @param values The buffIdList to add.
        * @return This builder for chaining.
@@ -1313,10 +1105,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 buff_id_list = 5;</code>
        * @return This builder for chaining.
        */
@@ -1340,10 +1128,6 @@ public final class JJNLNIMPOMHOuterClass {
           emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI, emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI.Builder, emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANIOrBuilder> kFNIFDANGOFBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI> getKFNIFDANGOFList() {
@@ -1354,10 +1138,6 @@ public final class JJNLNIMPOMHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public int getKFNIFDANGOFCount() {
@@ -1368,10 +1148,6 @@ public final class JJNLNIMPOMHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI getKFNIFDANGOF(int index) {
@@ -1382,10 +1158,6 @@ public final class JJNLNIMPOMHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public Builder setKFNIFDANGOF(
@@ -1403,10 +1175,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public Builder setKFNIFDANGOF(
@@ -1421,10 +1189,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public Builder addKFNIFDANGOF(emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI value) {
@@ -1441,10 +1205,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public Builder addKFNIFDANGOF(
@@ -1462,10 +1222,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public Builder addKFNIFDANGOF(
@@ -1480,10 +1236,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public Builder addKFNIFDANGOF(
@@ -1498,10 +1250,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public Builder addAllKFNIFDANGOF(
@@ -1517,10 +1265,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public Builder clearKFNIFDANGOF() {
@@ -1534,10 +1278,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public Builder removeKFNIFDANGOF(int index) {
@@ -1551,10 +1291,6 @@ public final class JJNLNIMPOMHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI.Builder getKFNIFDANGOFBuilder(
@@ -1562,10 +1298,6 @@ public final class JJNLNIMPOMHOuterClass {
         return getKFNIFDANGOFFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANIOrBuilder getKFNIFDANGOFOrBuilder(
@@ -1576,10 +1308,6 @@ public final class JJNLNIMPOMHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANIOrBuilder> 
@@ -1591,10 +1319,6 @@ public final class JJNLNIMPOMHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI.Builder addKFNIFDANGOFBuilder() {
@@ -1602,10 +1326,6 @@ public final class JJNLNIMPOMHOuterClass {
             emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI.Builder addKFNIFDANGOFBuilder(
@@ -1614,10 +1334,6 @@ public final class JJNLNIMPOMHOuterClass {
             index, emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LOFHHGIFANI KFNIFDANGOF = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LOFHHGIFANIOuterClass.LOFHHGIFANI.Builder> 

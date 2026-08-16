@@ -19,30 +19,18 @@ public final class EFELMLAAEKEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 14;</code>
      * @return The hBILFAMJDKG.
      */
     int getHBILFAMJDKG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
@@ -143,10 +131,6 @@ public final class EFELMLAAEKEOuterClass {
     public static final int HBILFAMJDKG_FIELD_NUMBER = 14;
     private int hBILFAMJDKG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 14;</code>
      * @return The hBILFAMJDKG.
      */
@@ -158,10 +142,6 @@ public final class EFELMLAAEKEOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
@@ -173,10 +153,6 @@ public final class EFELMLAAEKEOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 7;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
@@ -524,10 +500,6 @@ public final class EFELMLAAEKEOuterClass {
 
       private int hBILFAMJDKG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 14;</code>
        * @return The hBILFAMJDKG.
        */
@@ -536,10 +508,6 @@ public final class EFELMLAAEKEOuterClass {
         return hBILFAMJDKG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 14;</code>
        * @param value The hBILFAMJDKG to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class EFELMLAAEKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 14;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class EFELMLAAEKEOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
@@ -579,10 +539,6 @@ public final class EFELMLAAEKEOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class EFELMLAAEKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class EFELMLAAEKEOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return The isOpen.
        */
@@ -622,10 +570,6 @@ public final class EFELMLAAEKEOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class EFELMLAAEKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return This builder for chaining.
        */

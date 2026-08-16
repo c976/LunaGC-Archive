@@ -19,36 +19,24 @@ public final class FAPHDALIAAHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 1;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 1;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -101,7 +89,7 @@ public final class FAPHDALIAAHOuterClass {
               break;
             case 8: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 24: {
@@ -154,10 +142,6 @@ public final class FAPHDALIAAHOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 3;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
@@ -166,24 +150,20 @@ public final class FAPHDALIAAHOuterClass {
       return levelId_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 1;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 1;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 1;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 1;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     public static final int IS_FINISH_FIELD_NUMBER = 8;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
@@ -195,10 +175,6 @@ public final class FAPHDALIAAHOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -221,8 +197,8 @@ public final class FAPHDALIAAHOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(1, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(1, ugcGuid_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(3, levelId_);
@@ -242,9 +218,9 @@ public final class FAPHDALIAAHOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, iFADGMHEFHF_);
+          .computeUInt32Size(1, ugcGuid_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -275,8 +251,8 @@ public final class FAPHDALIAAHOuterClass {
 
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (getIsFinish()
           != other.getIsFinish()) return false;
       if (getIsOpen()
@@ -294,8 +270,8 @@ public final class FAPHDALIAAHOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
@@ -437,7 +413,7 @@ public final class FAPHDALIAAHOuterClass {
         super.clear();
         levelId_ = 0;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         isFinish_ = false;
 
@@ -470,7 +446,7 @@ public final class FAPHDALIAAHOuterClass {
       public emu.grasscutter.net.proto.FAPHDALIAAHOuterClass.FAPHDALIAAH buildPartial() {
         emu.grasscutter.net.proto.FAPHDALIAAHOuterClass.FAPHDALIAAH result = new emu.grasscutter.net.proto.FAPHDALIAAHOuterClass.FAPHDALIAAH(this);
         result.levelId_ = levelId_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         result.isFinish_ = isFinish_;
         result.isOpen_ = isOpen_;
         onBuilt();
@@ -524,8 +500,8 @@ public final class FAPHDALIAAHOuterClass {
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
@@ -564,10 +540,6 @@ public final class FAPHDALIAAHOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @return The levelId.
        */
@@ -576,10 +548,6 @@ public final class FAPHDALIAAHOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -591,10 +559,6 @@ public final class FAPHDALIAAHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @return This builder for chaining.
        */
@@ -605,43 +569,39 @@ public final class FAPHDALIAAHOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 1;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 1;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 1;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 1;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 1;</code>
+       * <code>uint32 ugc_guid = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return The isFinish.
        */
@@ -650,10 +610,6 @@ public final class FAPHDALIAAHOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -665,10 +621,6 @@ public final class FAPHDALIAAHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return This builder for chaining.
        */
@@ -681,10 +633,6 @@ public final class FAPHDALIAAHOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
@@ -693,10 +641,6 @@ public final class FAPHDALIAAHOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -708,10 +652,6 @@ public final class FAPHDALIAAHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
@@ -788,10 +728,10 @@ public final class FAPHDALIAAHOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021FAPHDALIAAH.proto\"X\n\013FAPHDALIAAH\022\020\n\010le" +
-      "vel_id\030\003 \001(\r\022\023\n\013IFADGMHEFHF\030\001 \001(\r\022\021\n\tis_" +
-      "finish\030\010 \001(\010\022\017\n\007is_open\030\006 \001(\010B\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "\n\021FAPHDALIAAH.proto\"U\n\013FAPHDALIAAH\022\020\n\010le" +
+      "vel_id\030\003 \001(\r\022\020\n\010ugc_guid\030\001 \001(\r\022\021\n\tis_fin" +
+      "ish\030\010 \001(\010\022\017\n\007is_open\030\006 \001(\010B\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -802,7 +742,7 @@ public final class FAPHDALIAAHOuterClass {
     internal_static_FAPHDALIAAH_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FAPHDALIAAH_descriptor,
-        new java.lang.String[] { "LevelId", "IFADGMHEFHF", "IsFinish", "IsOpen", });
+        new java.lang.String[] { "LevelId", "UgcGuid", "IsFinish", "IsOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

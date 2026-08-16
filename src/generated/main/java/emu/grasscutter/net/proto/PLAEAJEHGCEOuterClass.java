@@ -19,28 +19,16 @@ public final class PLAEAJEHGCEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 14;</code>
      * @return A list containing the affixList.
      */
     java.util.List<java.lang.Integer> getAffixListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 14;</code>
      * @return The count of affixList.
      */
     int getAffixListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 14;</code>
      * @param index The index of the element to return.
      * @return The affixList at the given index.
@@ -48,30 +36,22 @@ public final class PLAEAJEHGCEOuterClass {
     int getAffixList(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IFEJFDEDFHE = 15;</code>
      * @return The iFEJFDEDFHE.
      */
     int getIFEJFDEDFHE();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 3;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 3;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
   }
   /**
    * Protobuf type {@code PLAEAJEHGCE}
@@ -122,7 +102,7 @@ public final class PLAEAJEHGCEOuterClass {
               break;
             case 24: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 104: {
@@ -194,10 +174,6 @@ public final class PLAEAJEHGCEOuterClass {
     public static final int AFFIX_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList affixList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 14;</code>
      * @return A list containing the affixList.
      */
@@ -207,10 +183,6 @@ public final class PLAEAJEHGCEOuterClass {
       return affixList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 14;</code>
      * @return The count of affixList.
      */
@@ -218,10 +190,6 @@ public final class PLAEAJEHGCEOuterClass {
       return affixList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 14;</code>
      * @param index The index of the element to return.
      * @return The affixList at the given index.
@@ -234,10 +202,6 @@ public final class PLAEAJEHGCEOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 13;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
@@ -249,10 +213,6 @@ public final class PLAEAJEHGCEOuterClass {
     public static final int IFEJFDEDFHE_FIELD_NUMBER = 15;
     private int iFEJFDEDFHE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IFEJFDEDFHE = 15;</code>
      * @return The iFEJFDEDFHE.
      */
@@ -261,15 +221,15 @@ public final class PLAEAJEHGCEOuterClass {
       return iFEJFDEDFHE_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 3;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 3;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 3;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 3;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -287,8 +247,8 @@ public final class PLAEAJEHGCEOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(3, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(3, ugcGuid_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(13, levelId_);
@@ -312,9 +272,9 @@ public final class PLAEAJEHGCEOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, iFADGMHEFHF_);
+          .computeUInt32Size(3, ugcGuid_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -359,8 +319,8 @@ public final class PLAEAJEHGCEOuterClass {
           != other.getLevelId()) return false;
       if (getIFEJFDEDFHE()
           != other.getIFEJFDEDFHE()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -380,8 +340,8 @@ public final class PLAEAJEHGCEOuterClass {
       hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IFEJFDEDFHE_FIELD_NUMBER;
       hash = (53 * hash) + getIFEJFDEDFHE();
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -521,7 +481,7 @@ public final class PLAEAJEHGCEOuterClass {
 
         iFEJFDEDFHE_ = 0;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         return this;
       }
@@ -557,7 +517,7 @@ public final class PLAEAJEHGCEOuterClass {
         result.affixList_ = affixList_;
         result.levelId_ = levelId_;
         result.iFEJFDEDFHE_ = iFEJFDEDFHE_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         onBuilt();
         return result;
       }
@@ -622,8 +582,8 @@ public final class PLAEAJEHGCEOuterClass {
         if (other.getIFEJFDEDFHE() != 0) {
           setIFEJFDEDFHE(other.getIFEJFDEDFHE());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -663,10 +623,6 @@ public final class PLAEAJEHGCEOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 14;</code>
        * @return A list containing the affixList.
        */
@@ -676,10 +632,6 @@ public final class PLAEAJEHGCEOuterClass {
                  java.util.Collections.unmodifiableList(affixList_) : affixList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 14;</code>
        * @return The count of affixList.
        */
@@ -687,10 +639,6 @@ public final class PLAEAJEHGCEOuterClass {
         return affixList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 14;</code>
        * @param index The index of the element to return.
        * @return The affixList at the given index.
@@ -699,10 +647,6 @@ public final class PLAEAJEHGCEOuterClass {
         return affixList_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The affixList to set.
@@ -716,10 +660,6 @@ public final class PLAEAJEHGCEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 14;</code>
        * @param value The affixList to add.
        * @return This builder for chaining.
@@ -731,10 +671,6 @@ public final class PLAEAJEHGCEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 14;</code>
        * @param values The affixList to add.
        * @return This builder for chaining.
@@ -748,10 +684,6 @@ public final class PLAEAJEHGCEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 14;</code>
        * @return This builder for chaining.
        */
@@ -764,10 +696,6 @@ public final class PLAEAJEHGCEOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @return The levelId.
        */
@@ -776,10 +704,6 @@ public final class PLAEAJEHGCEOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -791,10 +715,6 @@ public final class PLAEAJEHGCEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @return This builder for chaining.
        */
@@ -807,10 +727,6 @@ public final class PLAEAJEHGCEOuterClass {
 
       private int iFEJFDEDFHE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IFEJFDEDFHE = 15;</code>
        * @return The iFEJFDEDFHE.
        */
@@ -819,10 +735,6 @@ public final class PLAEAJEHGCEOuterClass {
         return iFEJFDEDFHE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IFEJFDEDFHE = 15;</code>
        * @param value The iFEJFDEDFHE to set.
        * @return This builder for chaining.
@@ -834,10 +746,6 @@ public final class PLAEAJEHGCEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IFEJFDEDFHE = 15;</code>
        * @return This builder for chaining.
        */
@@ -848,33 +756,33 @@ public final class PLAEAJEHGCEOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 3;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 3;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 3;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 3;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 3;</code>
+       * <code>uint32 ugc_guid = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
@@ -945,10 +853,10 @@ public final class PLAEAJEHGCEOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021PLAEAJEHGCE.proto\"]\n\013PLAEAJEHGCE\022\022\n\naf" +
+      "\n\021PLAEAJEHGCE.proto\"Z\n\013PLAEAJEHGCE\022\022\n\naf" +
       "fix_list\030\016 \003(\r\022\020\n\010level_id\030\r \001(\r\022\023\n\013IFEJ" +
-      "FDEDFHE\030\017 \001(\r\022\023\n\013IFADGMHEFHF\030\003 \001(\rB\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "FDEDFHE\030\017 \001(\r\022\020\n\010ugc_guid\030\003 \001(\rB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -959,7 +867,7 @@ public final class PLAEAJEHGCEOuterClass {
     internal_static_PLAEAJEHGCE_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PLAEAJEHGCE_descriptor,
-        new java.lang.String[] { "AffixList", "LevelId", "IFEJFDEDFHE", "IFADGMHEFHF", });
+        new java.lang.String[] { "AffixList", "LevelId", "IFEJFDEDFHE", "UgcGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

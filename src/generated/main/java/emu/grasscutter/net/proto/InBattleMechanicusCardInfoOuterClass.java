@@ -19,58 +19,40 @@ public final class InBattleMechanicusCardInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 JBDHPBBFFEG = 13;</code>
-     * @return The jBDHPBBFFEG.
+     * <code>uint32 OFKDBMGMAAA = 9;</code>
+     * @return The oFKDBMGMAAA.
      */
-    int getJBDHPBBFFEG();
+    int getOFKDBMGMAAA();
 
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 card_id = 10;</code>
+     * <code>uint32 cost_points = 10;</code>
+     * @return The costPoints.
+     */
+    int getCostPoints();
+
+    /**
+     * <code>uint32 BBEFENDIHEG = 8;</code>
+     * @return The bBEFENDIHEG.
+     */
+    int getBBEFENDIHEG();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>uint32 card_id = 4;</code>
      * @return The cardId.
      */
     int getCardId();
 
     /**
      * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 PLBHGLHCKJH = 6;</code>
-     * @return The pLBHGLHCKJH.
-     */
-    int getPLBHGLHCKJH();
-
-    /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>uint32 OCJJCAAFFOM = 14;</code>
-     * @return The oCJJCAAFFOM.
-     */
-    int getOCJJCAAFFOM();
-
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>uint32 CBGFCOMIBLA = 15;</code>
-     * @return The cBGFCOMIBLA.
-     */
-    int getCBGFCOMIBLA();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>.InBattleMechanicusCardChallengeState challenge_state = 3;</code>
@@ -79,7 +61,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
     int getChallengeStateValue();
     /**
      * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>.InBattleMechanicusCardChallengeState challenge_state = 3;</code>
@@ -139,29 +121,24 @@ public final class InBattleMechanicusCardInfoOuterClass {
               challengeState_ = rawValue;
               break;
             }
-            case 48: {
-
-              pLBHGLHCKJH_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 32: {
 
               cardId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 64: {
 
-              jBDHPBBFFEG_ = input.readUInt32();
+              bBEFENDIHEG_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 72: {
 
-              oCJJCAAFFOM_ = input.readUInt32();
+              oFKDBMGMAAA_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 80: {
 
-              cBGFCOMIBLA_ = input.readUInt32();
+              costPoints_ = input.readUInt32();
               break;
             }
             default: {
@@ -196,29 +173,51 @@ public final class InBattleMechanicusCardInfoOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.class, emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.Builder.class);
     }
 
-    public static final int JBDHPBBFFEG_FIELD_NUMBER = 13;
-    private int jBDHPBBFFEG_;
+    public static final int OFKDBMGMAAA_FIELD_NUMBER = 9;
+    private int oFKDBMGMAAA_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 JBDHPBBFFEG = 13;</code>
-     * @return The jBDHPBBFFEG.
+     * <code>uint32 OFKDBMGMAAA = 9;</code>
+     * @return The oFKDBMGMAAA.
      */
     @java.lang.Override
-    public int getJBDHPBBFFEG() {
-      return jBDHPBBFFEG_;
+    public int getOFKDBMGMAAA() {
+      return oFKDBMGMAAA_;
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 10;
+    public static final int COST_POINTS_FIELD_NUMBER = 10;
+    private int costPoints_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>uint32 cost_points = 10;</code>
+     * @return The costPoints.
+     */
+    @java.lang.Override
+    public int getCostPoints() {
+      return costPoints_;
+    }
+
+    public static final int BBEFENDIHEG_FIELD_NUMBER = 8;
+    private int bBEFENDIHEG_;
+    /**
+     * <code>uint32 BBEFENDIHEG = 8;</code>
+     * @return The bBEFENDIHEG.
+     */
+    @java.lang.Override
+    public int getBBEFENDIHEG() {
+      return bBEFENDIHEG_;
+    }
+
+    public static final int CARD_ID_FIELD_NUMBER = 4;
     private int cardId_;
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 card_id = 10;</code>
+     * <code>uint32 card_id = 4;</code>
      * @return The cardId.
      */
     @java.lang.Override
@@ -226,56 +225,11 @@ public final class InBattleMechanicusCardInfoOuterClass {
       return cardId_;
     }
 
-    public static final int PLBHGLHCKJH_FIELD_NUMBER = 6;
-    private int pLBHGLHCKJH_;
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 PLBHGLHCKJH = 6;</code>
-     * @return The pLBHGLHCKJH.
-     */
-    @java.lang.Override
-    public int getPLBHGLHCKJH() {
-      return pLBHGLHCKJH_;
-    }
-
-    public static final int OCJJCAAFFOM_FIELD_NUMBER = 14;
-    private int oCJJCAAFFOM_;
-    /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>uint32 OCJJCAAFFOM = 14;</code>
-     * @return The oCJJCAAFFOM.
-     */
-    @java.lang.Override
-    public int getOCJJCAAFFOM() {
-      return oCJJCAAFFOM_;
-    }
-
-    public static final int CBGFCOMIBLA_FIELD_NUMBER = 15;
-    private int cBGFCOMIBLA_;
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>uint32 CBGFCOMIBLA = 15;</code>
-     * @return The cBGFCOMIBLA.
-     */
-    @java.lang.Override
-    public int getCBGFCOMIBLA() {
-      return cBGFCOMIBLA_;
-    }
-
     public static final int CHALLENGE_STATE_FIELD_NUMBER = 3;
     private int challengeState_;
     /**
      * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>.InBattleMechanicusCardChallengeState challenge_state = 3;</code>
@@ -286,7 +240,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>.InBattleMechanicusCardChallengeState challenge_state = 3;</code>
@@ -315,20 +269,17 @@ public final class InBattleMechanicusCardInfoOuterClass {
       if (challengeState_ != emu.grasscutter.net.proto.InBattleMechanicusCardChallengeStateOuterClass.InBattleMechanicusCardChallengeState.InBattleMechanicusCardChallengeState_IN_BATTLE_MECHANICUS_CARD_CHALLENGE_NONE.getNumber()) {
         output.writeEnum(3, challengeState_);
       }
-      if (pLBHGLHCKJH_ != 0) {
-        output.writeUInt32(6, pLBHGLHCKJH_);
-      }
       if (cardId_ != 0) {
-        output.writeUInt32(10, cardId_);
+        output.writeUInt32(4, cardId_);
       }
-      if (jBDHPBBFFEG_ != 0) {
-        output.writeUInt32(13, jBDHPBBFFEG_);
+      if (bBEFENDIHEG_ != 0) {
+        output.writeUInt32(8, bBEFENDIHEG_);
       }
-      if (oCJJCAAFFOM_ != 0) {
-        output.writeUInt32(14, oCJJCAAFFOM_);
+      if (oFKDBMGMAAA_ != 0) {
+        output.writeUInt32(9, oFKDBMGMAAA_);
       }
-      if (cBGFCOMIBLA_ != 0) {
-        output.writeUInt32(15, cBGFCOMIBLA_);
+      if (costPoints_ != 0) {
+        output.writeUInt32(10, costPoints_);
       }
       unknownFields.writeTo(output);
     }
@@ -343,25 +294,21 @@ public final class InBattleMechanicusCardInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(3, challengeState_);
       }
-      if (pLBHGLHCKJH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, pLBHGLHCKJH_);
-      }
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, cardId_);
+          .computeUInt32Size(4, cardId_);
       }
-      if (jBDHPBBFFEG_ != 0) {
+      if (bBEFENDIHEG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, jBDHPBBFFEG_);
+          .computeUInt32Size(8, bBEFENDIHEG_);
       }
-      if (oCJJCAAFFOM_ != 0) {
+      if (oFKDBMGMAAA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, oCJJCAAFFOM_);
+          .computeUInt32Size(9, oFKDBMGMAAA_);
       }
-      if (cBGFCOMIBLA_ != 0) {
+      if (costPoints_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, cBGFCOMIBLA_);
+          .computeUInt32Size(10, costPoints_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -378,16 +325,14 @@ public final class InBattleMechanicusCardInfoOuterClass {
       }
       emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo other = (emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo) obj;
 
-      if (getJBDHPBBFFEG()
-          != other.getJBDHPBBFFEG()) return false;
+      if (getOFKDBMGMAAA()
+          != other.getOFKDBMGMAAA()) return false;
+      if (getCostPoints()
+          != other.getCostPoints()) return false;
+      if (getBBEFENDIHEG()
+          != other.getBBEFENDIHEG()) return false;
       if (getCardId()
           != other.getCardId()) return false;
-      if (getPLBHGLHCKJH()
-          != other.getPLBHGLHCKJH()) return false;
-      if (getOCJJCAAFFOM()
-          != other.getOCJJCAAFFOM()) return false;
-      if (getCBGFCOMIBLA()
-          != other.getCBGFCOMIBLA()) return false;
       if (challengeState_ != other.challengeState_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -400,16 +345,14 @@ public final class InBattleMechanicusCardInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + JBDHPBBFFEG_FIELD_NUMBER;
-      hash = (53 * hash) + getJBDHPBBFFEG();
+      hash = (37 * hash) + OFKDBMGMAAA_FIELD_NUMBER;
+      hash = (53 * hash) + getOFKDBMGMAAA();
+      hash = (37 * hash) + COST_POINTS_FIELD_NUMBER;
+      hash = (53 * hash) + getCostPoints();
+      hash = (37 * hash) + BBEFENDIHEG_FIELD_NUMBER;
+      hash = (53 * hash) + getBBEFENDIHEG();
       hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCardId();
-      hash = (37 * hash) + PLBHGLHCKJH_FIELD_NUMBER;
-      hash = (53 * hash) + getPLBHGLHCKJH();
-      hash = (37 * hash) + OCJJCAAFFOM_FIELD_NUMBER;
-      hash = (53 * hash) + getOCJJCAAFFOM();
-      hash = (37 * hash) + CBGFCOMIBLA_FIELD_NUMBER;
-      hash = (53 * hash) + getCBGFCOMIBLA();
       hash = (37 * hash) + CHALLENGE_STATE_FIELD_NUMBER;
       hash = (53 * hash) + challengeState_;
       hash = (29 * hash) + unknownFields.hashCode();
@@ -545,15 +488,13 @@ public final class InBattleMechanicusCardInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        jBDHPBBFFEG_ = 0;
+        oFKDBMGMAAA_ = 0;
+
+        costPoints_ = 0;
+
+        bBEFENDIHEG_ = 0;
 
         cardId_ = 0;
-
-        pLBHGLHCKJH_ = 0;
-
-        oCJJCAAFFOM_ = 0;
-
-        cBGFCOMIBLA_ = 0;
 
         challengeState_ = 0;
 
@@ -583,11 +524,10 @@ public final class InBattleMechanicusCardInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo buildPartial() {
         emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo result = new emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo(this);
-        result.jBDHPBBFFEG_ = jBDHPBBFFEG_;
+        result.oFKDBMGMAAA_ = oFKDBMGMAAA_;
+        result.costPoints_ = costPoints_;
+        result.bBEFENDIHEG_ = bBEFENDIHEG_;
         result.cardId_ = cardId_;
-        result.pLBHGLHCKJH_ = pLBHGLHCKJH_;
-        result.oCJJCAAFFOM_ = oCJJCAAFFOM_;
-        result.cBGFCOMIBLA_ = cBGFCOMIBLA_;
         result.challengeState_ = challengeState_;
         onBuilt();
         return result;
@@ -637,20 +577,17 @@ public final class InBattleMechanicusCardInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo other) {
         if (other == emu.grasscutter.net.proto.InBattleMechanicusCardInfoOuterClass.InBattleMechanicusCardInfo.getDefaultInstance()) return this;
-        if (other.getJBDHPBBFFEG() != 0) {
-          setJBDHPBBFFEG(other.getJBDHPBBFFEG());
+        if (other.getOFKDBMGMAAA() != 0) {
+          setOFKDBMGMAAA(other.getOFKDBMGMAAA());
+        }
+        if (other.getCostPoints() != 0) {
+          setCostPoints(other.getCostPoints());
+        }
+        if (other.getBBEFENDIHEG() != 0) {
+          setBBEFENDIHEG(other.getBBEFENDIHEG());
         }
         if (other.getCardId() != 0) {
           setCardId(other.getCardId());
-        }
-        if (other.getPLBHGLHCKJH() != 0) {
-          setPLBHGLHCKJH(other.getPLBHGLHCKJH());
-        }
-        if (other.getOCJJCAAFFOM() != 0) {
-          setOCJJCAAFFOM(other.getOCJJCAAFFOM());
-        }
-        if (other.getCBGFCOMIBLA() != 0) {
-          setCBGFCOMIBLA(other.getCBGFCOMIBLA());
         }
         if (other.challengeState_ != 0) {
           setChallengeStateValue(other.getChallengeStateValue());
@@ -684,45 +621,107 @@ public final class InBattleMechanicusCardInfoOuterClass {
         return this;
       }
 
-      private int jBDHPBBFFEG_ ;
+      private int oFKDBMGMAAA_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 JBDHPBBFFEG = 13;</code>
-       * @return The jBDHPBBFFEG.
+       * <code>uint32 OFKDBMGMAAA = 9;</code>
+       * @return The oFKDBMGMAAA.
        */
       @java.lang.Override
-      public int getJBDHPBBFFEG() {
-        return jBDHPBBFFEG_;
+      public int getOFKDBMGMAAA() {
+        return oFKDBMGMAAA_;
+      }
+      /**
+       * <code>uint32 OFKDBMGMAAA = 9;</code>
+       * @param value The oFKDBMGMAAA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOFKDBMGMAAA(int value) {
+        
+        oFKDBMGMAAA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 OFKDBMGMAAA = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOFKDBMGMAAA() {
+        
+        oFKDBMGMAAA_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int costPoints_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0       
+       * </pre>
+       *
+       * <code>uint32 cost_points = 10;</code>
+       * @return The costPoints.
+       */
+      @java.lang.Override
+      public int getCostPoints() {
+        return costPoints_;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 JBDHPBBFFEG = 13;</code>
-       * @param value The jBDHPBBFFEG to set.
+       * <code>uint32 cost_points = 10;</code>
+       * @param value The costPoints to set.
        * @return This builder for chaining.
        */
-      public Builder setJBDHPBBFFEG(int value) {
+      public Builder setCostPoints(int value) {
         
-        jBDHPBBFFEG_ = value;
+        costPoints_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 JBDHPBBFFEG = 13;</code>
+       * <code>uint32 cost_points = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJBDHPBBFFEG() {
+      public Builder clearCostPoints() {
         
-        jBDHPBBFFEG_ = 0;
+        costPoints_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bBEFENDIHEG_ ;
+      /**
+       * <code>uint32 BBEFENDIHEG = 8;</code>
+       * @return The bBEFENDIHEG.
+       */
+      @java.lang.Override
+      public int getBBEFENDIHEG() {
+        return bBEFENDIHEG_;
+      }
+      /**
+       * <code>uint32 BBEFENDIHEG = 8;</code>
+       * @param value The bBEFENDIHEG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBBEFENDIHEG(int value) {
+        
+        bBEFENDIHEG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BBEFENDIHEG = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBBEFENDIHEG() {
+        
+        bBEFENDIHEG_ = 0;
         onChanged();
         return this;
       }
@@ -730,10 +729,10 @@ public final class InBattleMechanicusCardInfoOuterClass {
       private int cardId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 card_id = 10;</code>
+       * <code>uint32 card_id = 4;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -742,10 +741,10 @@ public final class InBattleMechanicusCardInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 card_id = 10;</code>
+       * <code>uint32 card_id = 4;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -757,10 +756,10 @@ public final class InBattleMechanicusCardInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 card_id = 10;</code>
+       * <code>uint32 card_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
@@ -770,139 +769,10 @@ public final class InBattleMechanicusCardInfoOuterClass {
         return this;
       }
 
-      private int pLBHGLHCKJH_ ;
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 PLBHGLHCKJH = 6;</code>
-       * @return The pLBHGLHCKJH.
-       */
-      @java.lang.Override
-      public int getPLBHGLHCKJH() {
-        return pLBHGLHCKJH_;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 PLBHGLHCKJH = 6;</code>
-       * @param value The pLBHGLHCKJH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPLBHGLHCKJH(int value) {
-        
-        pLBHGLHCKJH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 PLBHGLHCKJH = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPLBHGLHCKJH() {
-        
-        pLBHGLHCKJH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int oCJJCAAFFOM_ ;
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 OCJJCAAFFOM = 14;</code>
-       * @return The oCJJCAAFFOM.
-       */
-      @java.lang.Override
-      public int getOCJJCAAFFOM() {
-        return oCJJCAAFFOM_;
-      }
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 OCJJCAAFFOM = 14;</code>
-       * @param value The oCJJCAAFFOM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOCJJCAAFFOM(int value) {
-        
-        oCJJCAAFFOM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 OCJJCAAFFOM = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOCJJCAAFFOM() {
-        
-        oCJJCAAFFOM_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cBGFCOMIBLA_ ;
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>uint32 CBGFCOMIBLA = 15;</code>
-       * @return The cBGFCOMIBLA.
-       */
-      @java.lang.Override
-      public int getCBGFCOMIBLA() {
-        return cBGFCOMIBLA_;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>uint32 CBGFCOMIBLA = 15;</code>
-       * @param value The cBGFCOMIBLA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCBGFCOMIBLA(int value) {
-        
-        cBGFCOMIBLA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>uint32 CBGFCOMIBLA = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCBGFCOMIBLA() {
-        
-        cBGFCOMIBLA_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int challengeState_ = 0;
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.InBattleMechanicusCardChallengeState challenge_state = 3;</code>
@@ -913,7 +783,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.InBattleMechanicusCardChallengeState challenge_state = 3;</code>
@@ -928,7 +798,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.InBattleMechanicusCardChallengeState challenge_state = 3;</code>
@@ -942,7 +812,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.InBattleMechanicusCardChallengeState challenge_state = 3;</code>
@@ -960,7 +830,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.InBattleMechanicusCardChallengeState challenge_state = 3;</code>
@@ -1040,13 +910,13 @@ public final class InBattleMechanicusCardInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n InBattleMechanicusCardInfo.proto\032*InBa" +
-      "ttleMechanicusCardChallengeState.proto\"\301" +
-      "\001\n\032InBattleMechanicusCardInfo\022\023\n\013JBDHPBB" +
-      "FFEG\030\r \001(\r\022\017\n\007card_id\030\n \001(\r\022\023\n\013PLBHGLHCK" +
-      "JH\030\006 \001(\r\022\023\n\013OCJJCAAFFOM\030\016 \001(\r\022\023\n\013CBGFCOM" +
-      "IBLA\030\017 \001(\r\022>\n\017challenge_state\030\003 \001(\0162%.In" +
-      "BattleMechanicusCardChallengeStateB\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "ttleMechanicusCardChallengeState.proto\"\254" +
+      "\001\n\032InBattleMechanicusCardInfo\022\023\n\013OFKDBMG" +
+      "MAAA\030\t \001(\r\022\023\n\013cost_points\030\n \001(\r\022\023\n\013BBEFE" +
+      "NDIHEG\030\010 \001(\r\022\017\n\007card_id\030\004 \001(\r\022>\n\017challen" +
+      "ge_state\030\003 \001(\0162%.InBattleMechanicusCardC" +
+      "hallengeStateB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1058,7 +928,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
     internal_static_InBattleMechanicusCardInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleMechanicusCardInfo_descriptor,
-        new java.lang.String[] { "JBDHPBBFFEG", "CardId", "PLBHGLHCKJH", "OCJJCAAFFOM", "CBGFCOMIBLA", "ChallengeState", });
+        new java.lang.String[] { "OFKDBMGMAAA", "CostPoints", "BBEFENDIHEG", "CardId", "ChallengeState", });
     emu.grasscutter.net.proto.InBattleMechanicusCardChallengeStateOuterClass.getDescriptor();
   }
 

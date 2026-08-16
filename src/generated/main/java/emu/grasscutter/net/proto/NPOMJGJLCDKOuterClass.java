@@ -19,36 +19,24 @@ public final class NPOMJGJLCDKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 7;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 13;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 13;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
@@ -116,7 +104,7 @@ public final class NPOMJGJLCDKOuterClass {
             }
             case 104: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -154,10 +142,6 @@ public final class NPOMJGJLCDKOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 7;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 7;</code>
      * @return The isFinished.
      */
@@ -169,10 +153,6 @@ public final class NPOMJGJLCDKOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 9;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
@@ -181,24 +161,20 @@ public final class NPOMJGJLCDKOuterClass {
       return isOpen_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 13;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 13;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 13;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 13;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 6;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
@@ -230,8 +206,8 @@ public final class NPOMJGJLCDKOuterClass {
       if (isOpen_ != false) {
         output.writeBool(9, isOpen_);
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(13, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(13, ugcGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -254,9 +230,9 @@ public final class NPOMJGJLCDKOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(9, isOpen_);
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, iFADGMHEFHF_);
+          .computeUInt32Size(13, ugcGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -277,8 +253,8 @@ public final class NPOMJGJLCDKOuterClass {
           != other.getIsFinished()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -298,8 +274,8 @@ public final class NPOMJGJLCDKOuterClass {
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -439,7 +415,7 @@ public final class NPOMJGJLCDKOuterClass {
 
         isOpen_ = false;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         levelId_ = 0;
 
@@ -471,7 +447,7 @@ public final class NPOMJGJLCDKOuterClass {
         emu.grasscutter.net.proto.NPOMJGJLCDKOuterClass.NPOMJGJLCDK result = new emu.grasscutter.net.proto.NPOMJGJLCDKOuterClass.NPOMJGJLCDK(this);
         result.isFinished_ = isFinished_;
         result.isOpen_ = isOpen_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         result.levelId_ = levelId_;
         onBuilt();
         return result;
@@ -527,8 +503,8 @@ public final class NPOMJGJLCDKOuterClass {
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
@@ -564,10 +540,6 @@ public final class NPOMJGJLCDKOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 7;</code>
        * @return The isFinished.
        */
@@ -576,10 +548,6 @@ public final class NPOMJGJLCDKOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 7;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -591,10 +559,6 @@ public final class NPOMJGJLCDKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 7;</code>
        * @return This builder for chaining.
        */
@@ -607,10 +571,6 @@ public final class NPOMJGJLCDKOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @return The isOpen.
        */
@@ -619,10 +579,6 @@ public final class NPOMJGJLCDKOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -634,10 +590,6 @@ public final class NPOMJGJLCDKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @return This builder for chaining.
        */
@@ -648,43 +600,39 @@ public final class NPOMJGJLCDKOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 13;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 13;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 13;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 13;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 13;</code>
+       * <code>uint32 ugc_guid = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @return The levelId.
        */
@@ -693,10 +641,6 @@ public final class NPOMJGJLCDKOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -708,10 +652,6 @@ public final class NPOMJGJLCDKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @return This builder for chaining.
        */
@@ -788,10 +728,10 @@ public final class NPOMJGJLCDKOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021NPOMJGJLCDK.proto\"Z\n\013NPOMJGJLCDK\022\023\n\013is" +
-      "_finished\030\007 \001(\010\022\017\n\007is_open\030\t \001(\010\022\023\n\013IFAD" +
-      "GMHEFHF\030\r \001(\r\022\020\n\010level_id\030\006 \001(\rB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\021NPOMJGJLCDK.proto\"W\n\013NPOMJGJLCDK\022\023\n\013is" +
+      "_finished\030\007 \001(\010\022\017\n\007is_open\030\t \001(\010\022\020\n\010ugc_" +
+      "guid\030\r \001(\r\022\020\n\010level_id\030\006 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -802,7 +742,7 @@ public final class NPOMJGJLCDKOuterClass {
     internal_static_NPOMJGJLCDK_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_NPOMJGJLCDK_descriptor,
-        new java.lang.String[] { "IsFinished", "IsOpen", "IFADGMHEFHF", "LevelId", });
+        new java.lang.String[] { "IsFinished", "IsOpen", "UgcGuid", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

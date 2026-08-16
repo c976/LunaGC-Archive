@@ -43,6 +43,10 @@ public final class LanternRiteFireworksInfoOuterClass {
         int index);
   }
   /**
+   * <pre>
+   * Obf: KIINMBGKFOK
+   * </pre>
+   *
    * Protobuf type {@code LanternRiteFireworksInfo}
    */
   public static final class LanternRiteFireworksInfo extends
@@ -331,6 +335,10 @@ public final class LanternRiteFireworksInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: KIINMBGKFOK
+     * </pre>
+     *
      * Protobuf type {@code LanternRiteFireworksInfo}
      */
     public static final class Builder extends

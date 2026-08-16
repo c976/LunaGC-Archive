@@ -19,84 +19,48 @@ public final class POIEHGBJMKAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG> 
         getMMHECEJGBECList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
      */
     emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG getMMHECEJGBEC(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
      */
     int getMMHECEJGBECCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLGOrBuilder> 
         getMMHECEJGBECOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
      */
     emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLGOrBuilder getMMHECEJGBECOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HOHGJHCLGPB = 15;</code>
      * @return The hOHGJHCLGPB.
      */
     boolean getHOHGJHCLGPB();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
@@ -216,10 +180,6 @@ public final class POIEHGBJMKAOuterClass {
     public static final int MMHECEJGBEC_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG> mMHECEJGBEC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
      */
     @java.lang.Override
@@ -227,10 +187,6 @@ public final class POIEHGBJMKAOuterClass {
       return mMHECEJGBEC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
      */
     @java.lang.Override
@@ -239,10 +195,6 @@ public final class POIEHGBJMKAOuterClass {
       return mMHECEJGBEC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
      */
     @java.lang.Override
@@ -250,10 +202,6 @@ public final class POIEHGBJMKAOuterClass {
       return mMHECEJGBEC_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
      */
     @java.lang.Override
@@ -261,10 +209,6 @@ public final class POIEHGBJMKAOuterClass {
       return mMHECEJGBEC_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
      */
     @java.lang.Override
@@ -276,10 +220,6 @@ public final class POIEHGBJMKAOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 4;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
@@ -291,10 +231,6 @@ public final class POIEHGBJMKAOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
@@ -306,10 +242,6 @@ public final class POIEHGBJMKAOuterClass {
     public static final int HOHGJHCLGPB_FIELD_NUMBER = 15;
     private boolean hOHGJHCLGPB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HOHGJHCLGPB = 15;</code>
      * @return The hOHGJHCLGPB.
      */
@@ -321,10 +253,6 @@ public final class POIEHGBJMKAOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 14;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
@@ -759,10 +687,6 @@ public final class POIEHGBJMKAOuterClass {
           emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG, emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG.Builder, emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLGOrBuilder> mMHECEJGBECBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG> getMMHECEJGBECList() {
@@ -773,10 +697,6 @@ public final class POIEHGBJMKAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public int getMMHECEJGBECCount() {
@@ -787,10 +707,6 @@ public final class POIEHGBJMKAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG getMMHECEJGBEC(int index) {
@@ -801,10 +717,6 @@ public final class POIEHGBJMKAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public Builder setMMHECEJGBEC(
@@ -822,10 +734,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public Builder setMMHECEJGBEC(
@@ -840,10 +748,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public Builder addMMHECEJGBEC(emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG value) {
@@ -860,10 +764,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public Builder addMMHECEJGBEC(
@@ -881,10 +781,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public Builder addMMHECEJGBEC(
@@ -899,10 +795,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public Builder addMMHECEJGBEC(
@@ -917,10 +809,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public Builder addAllMMHECEJGBEC(
@@ -936,10 +824,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public Builder clearMMHECEJGBEC() {
@@ -953,10 +837,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public Builder removeMMHECEJGBEC(int index) {
@@ -970,10 +850,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG.Builder getMMHECEJGBECBuilder(
@@ -981,10 +857,6 @@ public final class POIEHGBJMKAOuterClass {
         return getMMHECEJGBECFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLGOrBuilder getMMHECEJGBECOrBuilder(
@@ -995,10 +867,6 @@ public final class POIEHGBJMKAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLGOrBuilder> 
@@ -1010,10 +878,6 @@ public final class POIEHGBJMKAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG.Builder addMMHECEJGBECBuilder() {
@@ -1021,10 +885,6 @@ public final class POIEHGBJMKAOuterClass {
             emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG.Builder addMMHECEJGBECBuilder(
@@ -1033,10 +893,6 @@ public final class POIEHGBJMKAOuterClass {
             index, emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ELILJMMOGLG MMHECEJGBEC = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ELILJMMOGLGOuterClass.ELILJMMOGLG.Builder> 
@@ -1060,10 +916,6 @@ public final class POIEHGBJMKAOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 4;</code>
        * @return The levelId.
        */
@@ -1072,10 +924,6 @@ public final class POIEHGBJMKAOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 4;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1087,10 +935,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 4;</code>
        * @return This builder for chaining.
        */
@@ -1103,10 +947,6 @@ public final class POIEHGBJMKAOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
@@ -1115,10 +955,6 @@ public final class POIEHGBJMKAOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1130,10 +966,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
@@ -1146,10 +978,6 @@ public final class POIEHGBJMKAOuterClass {
 
       private boolean hOHGJHCLGPB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HOHGJHCLGPB = 15;</code>
        * @return The hOHGJHCLGPB.
        */
@@ -1158,10 +986,6 @@ public final class POIEHGBJMKAOuterClass {
         return hOHGJHCLGPB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HOHGJHCLGPB = 15;</code>
        * @param value The hOHGJHCLGPB to set.
        * @return This builder for chaining.
@@ -1173,10 +997,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HOHGJHCLGPB = 15;</code>
        * @return This builder for chaining.
        */
@@ -1189,10 +1009,6 @@ public final class POIEHGBJMKAOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return The isFinish.
        */
@@ -1201,10 +1017,6 @@ public final class POIEHGBJMKAOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1216,10 +1028,6 @@ public final class POIEHGBJMKAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return This builder for chaining.
        */

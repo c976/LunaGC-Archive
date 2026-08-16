@@ -19,28 +19,16 @@ public final class LCIGLJEFJCAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
      * @return A list containing the bDLGKNCNFKC.
      */
     java.util.List<java.lang.Integer> getBDLGKNCNFKCList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
      * @return The count of bDLGKNCNFKC.
      */
     int getBDLGKNCNFKCCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
      * @param index The index of the element to return.
      * @return The bDLGKNCNFKC at the given index.
@@ -48,28 +36,16 @@ public final class LCIGLJEFJCAOuterClass {
     int getBDLGKNCNFKC(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
      * @return A list containing the ePHMPNPHFPE.
      */
     java.util.List<java.lang.Integer> getEPHMPNPHFPEList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
      * @return The count of ePHMPNPHFPE.
      */
     int getEPHMPNPHFPECount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
      * @param index The index of the element to return.
      * @return The ePHMPNPHFPE at the given index.
@@ -77,40 +53,24 @@ public final class LCIGLJEFJCAOuterClass {
     int getEPHMPNPHFPE(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FLALDNALPJN = 11;</code>
      * @return The fLALDNALPJN.
      */
     boolean getFLALDNALPJN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FDDKJDOMCBM = 10;</code>
      * @return The fDDKJDOMCBM.
      */
     boolean getFDDKJDOMCBM();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 5;</code>
      * @return The oMEBOHLACPH.
      */
@@ -267,10 +227,6 @@ public final class LCIGLJEFJCAOuterClass {
     public static final int BDLGKNCNFKC_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList bDLGKNCNFKC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
      * @return A list containing the bDLGKNCNFKC.
      */
@@ -280,10 +236,6 @@ public final class LCIGLJEFJCAOuterClass {
       return bDLGKNCNFKC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
      * @return The count of bDLGKNCNFKC.
      */
@@ -291,10 +243,6 @@ public final class LCIGLJEFJCAOuterClass {
       return bDLGKNCNFKC_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
      * @param index The index of the element to return.
      * @return The bDLGKNCNFKC at the given index.
@@ -307,10 +255,6 @@ public final class LCIGLJEFJCAOuterClass {
     public static final int EPHMPNPHFPE_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList ePHMPNPHFPE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
      * @return A list containing the ePHMPNPHFPE.
      */
@@ -320,10 +264,6 @@ public final class LCIGLJEFJCAOuterClass {
       return ePHMPNPHFPE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
      * @return The count of ePHMPNPHFPE.
      */
@@ -331,10 +271,6 @@ public final class LCIGLJEFJCAOuterClass {
       return ePHMPNPHFPE_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
      * @param index The index of the element to return.
      * @return The ePHMPNPHFPE at the given index.
@@ -347,10 +283,6 @@ public final class LCIGLJEFJCAOuterClass {
     public static final int FLALDNALPJN_FIELD_NUMBER = 11;
     private boolean fLALDNALPJN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FLALDNALPJN = 11;</code>
      * @return The fLALDNALPJN.
      */
@@ -362,10 +294,6 @@ public final class LCIGLJEFJCAOuterClass {
     public static final int FDDKJDOMCBM_FIELD_NUMBER = 10;
     private boolean fDDKJDOMCBM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FDDKJDOMCBM = 10;</code>
      * @return The fDDKJDOMCBM.
      */
@@ -377,10 +305,6 @@ public final class LCIGLJEFJCAOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
@@ -392,10 +316,6 @@ public final class LCIGLJEFJCAOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 5;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 5;</code>
      * @return The oMEBOHLACPH.
      */
@@ -858,10 +778,6 @@ public final class LCIGLJEFJCAOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
        * @return A list containing the bDLGKNCNFKC.
        */
@@ -871,10 +787,6 @@ public final class LCIGLJEFJCAOuterClass {
                  java.util.Collections.unmodifiableList(bDLGKNCNFKC_) : bDLGKNCNFKC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
        * @return The count of bDLGKNCNFKC.
        */
@@ -882,10 +794,6 @@ public final class LCIGLJEFJCAOuterClass {
         return bDLGKNCNFKC_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
        * @param index The index of the element to return.
        * @return The bDLGKNCNFKC at the given index.
@@ -894,10 +802,6 @@ public final class LCIGLJEFJCAOuterClass {
         return bDLGKNCNFKC_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
        * @param index The index to set the value at.
        * @param value The bDLGKNCNFKC to set.
@@ -911,10 +815,6 @@ public final class LCIGLJEFJCAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
        * @param value The bDLGKNCNFKC to add.
        * @return This builder for chaining.
@@ -926,10 +826,6 @@ public final class LCIGLJEFJCAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
        * @param values The bDLGKNCNFKC to add.
        * @return This builder for chaining.
@@ -943,10 +839,6 @@ public final class LCIGLJEFJCAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BDLGKNCNFKC = 14;</code>
        * @return This builder for chaining.
        */
@@ -965,10 +857,6 @@ public final class LCIGLJEFJCAOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
        * @return A list containing the ePHMPNPHFPE.
        */
@@ -978,10 +866,6 @@ public final class LCIGLJEFJCAOuterClass {
                  java.util.Collections.unmodifiableList(ePHMPNPHFPE_) : ePHMPNPHFPE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
        * @return The count of ePHMPNPHFPE.
        */
@@ -989,10 +873,6 @@ public final class LCIGLJEFJCAOuterClass {
         return ePHMPNPHFPE_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
        * @param index The index of the element to return.
        * @return The ePHMPNPHFPE at the given index.
@@ -1001,10 +881,6 @@ public final class LCIGLJEFJCAOuterClass {
         return ePHMPNPHFPE_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
        * @param index The index to set the value at.
        * @param value The ePHMPNPHFPE to set.
@@ -1018,10 +894,6 @@ public final class LCIGLJEFJCAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
        * @param value The ePHMPNPHFPE to add.
        * @return This builder for chaining.
@@ -1033,10 +905,6 @@ public final class LCIGLJEFJCAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
        * @param values The ePHMPNPHFPE to add.
        * @return This builder for chaining.
@@ -1050,10 +918,6 @@ public final class LCIGLJEFJCAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EPHMPNPHFPE = 13;</code>
        * @return This builder for chaining.
        */
@@ -1066,10 +930,6 @@ public final class LCIGLJEFJCAOuterClass {
 
       private boolean fLALDNALPJN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FLALDNALPJN = 11;</code>
        * @return The fLALDNALPJN.
        */
@@ -1078,10 +938,6 @@ public final class LCIGLJEFJCAOuterClass {
         return fLALDNALPJN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FLALDNALPJN = 11;</code>
        * @param value The fLALDNALPJN to set.
        * @return This builder for chaining.
@@ -1093,10 +949,6 @@ public final class LCIGLJEFJCAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FLALDNALPJN = 11;</code>
        * @return This builder for chaining.
        */
@@ -1109,10 +961,6 @@ public final class LCIGLJEFJCAOuterClass {
 
       private boolean fDDKJDOMCBM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FDDKJDOMCBM = 10;</code>
        * @return The fDDKJDOMCBM.
        */
@@ -1121,10 +969,6 @@ public final class LCIGLJEFJCAOuterClass {
         return fDDKJDOMCBM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FDDKJDOMCBM = 10;</code>
        * @param value The fDDKJDOMCBM to set.
        * @return This builder for chaining.
@@ -1136,10 +980,6 @@ public final class LCIGLJEFJCAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FDDKJDOMCBM = 10;</code>
        * @return This builder for chaining.
        */
@@ -1152,10 +992,6 @@ public final class LCIGLJEFJCAOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
@@ -1164,10 +1000,6 @@ public final class LCIGLJEFJCAOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1179,10 +1011,6 @@ public final class LCIGLJEFJCAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
@@ -1195,10 +1023,6 @@ public final class LCIGLJEFJCAOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 5;</code>
        * @return The oMEBOHLACPH.
        */
@@ -1207,10 +1031,6 @@ public final class LCIGLJEFJCAOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 5;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -1222,10 +1042,6 @@ public final class LCIGLJEFJCAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 5;</code>
        * @return This builder for chaining.
        */

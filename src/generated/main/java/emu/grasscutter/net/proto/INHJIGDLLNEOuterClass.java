@@ -19,40 +19,24 @@ public final class INHJIGDLLNEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IHDOOPKFGOG = 4;</code>
      * @return The iHDOOPKFGOG.
      */
     int getIHDOOPKFGOG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CCLEGALMDBG = 12;</code>
      * @return The cCLEGALMDBG.
      */
     int getCCLEGALMDBG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 rotation = 8;</code>
      * @return The rotation.
      */
     int getRotation();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OHMKACDGKEO = 6;</code>
      * @return The oHMKACDGKEO.
      */
@@ -158,10 +142,6 @@ public final class INHJIGDLLNEOuterClass {
     public static final int IHDOOPKFGOG_FIELD_NUMBER = 4;
     private int iHDOOPKFGOG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IHDOOPKFGOG = 4;</code>
      * @return The iHDOOPKFGOG.
      */
@@ -173,10 +153,6 @@ public final class INHJIGDLLNEOuterClass {
     public static final int CCLEGALMDBG_FIELD_NUMBER = 12;
     private int cCLEGALMDBG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CCLEGALMDBG = 12;</code>
      * @return The cCLEGALMDBG.
      */
@@ -188,10 +164,6 @@ public final class INHJIGDLLNEOuterClass {
     public static final int ROTATION_FIELD_NUMBER = 8;
     private int rotation_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 rotation = 8;</code>
      * @return The rotation.
      */
@@ -203,10 +175,6 @@ public final class INHJIGDLLNEOuterClass {
     public static final int OHMKACDGKEO_FIELD_NUMBER = 6;
     private int oHMKACDGKEO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OHMKACDGKEO = 6;</code>
      * @return The oHMKACDGKEO.
      */
@@ -570,10 +538,6 @@ public final class INHJIGDLLNEOuterClass {
 
       private int iHDOOPKFGOG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IHDOOPKFGOG = 4;</code>
        * @return The iHDOOPKFGOG.
        */
@@ -582,10 +546,6 @@ public final class INHJIGDLLNEOuterClass {
         return iHDOOPKFGOG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IHDOOPKFGOG = 4;</code>
        * @param value The iHDOOPKFGOG to set.
        * @return This builder for chaining.
@@ -597,10 +557,6 @@ public final class INHJIGDLLNEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IHDOOPKFGOG = 4;</code>
        * @return This builder for chaining.
        */
@@ -613,10 +569,6 @@ public final class INHJIGDLLNEOuterClass {
 
       private int cCLEGALMDBG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CCLEGALMDBG = 12;</code>
        * @return The cCLEGALMDBG.
        */
@@ -625,10 +577,6 @@ public final class INHJIGDLLNEOuterClass {
         return cCLEGALMDBG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CCLEGALMDBG = 12;</code>
        * @param value The cCLEGALMDBG to set.
        * @return This builder for chaining.
@@ -640,10 +588,6 @@ public final class INHJIGDLLNEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CCLEGALMDBG = 12;</code>
        * @return This builder for chaining.
        */
@@ -656,10 +600,6 @@ public final class INHJIGDLLNEOuterClass {
 
       private int rotation_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 rotation = 8;</code>
        * @return The rotation.
        */
@@ -668,10 +608,6 @@ public final class INHJIGDLLNEOuterClass {
         return rotation_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 rotation = 8;</code>
        * @param value The rotation to set.
        * @return This builder for chaining.
@@ -683,10 +619,6 @@ public final class INHJIGDLLNEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 rotation = 8;</code>
        * @return This builder for chaining.
        */
@@ -699,10 +631,6 @@ public final class INHJIGDLLNEOuterClass {
 
       private int oHMKACDGKEO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OHMKACDGKEO = 6;</code>
        * @return The oHMKACDGKEO.
        */
@@ -711,10 +639,6 @@ public final class INHJIGDLLNEOuterClass {
         return oHMKACDGKEO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OHMKACDGKEO = 6;</code>
        * @param value The oHMKACDGKEO to set.
        * @return This builder for chaining.
@@ -726,10 +650,6 @@ public final class INHJIGDLLNEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OHMKACDGKEO = 6;</code>
        * @return This builder for chaining.
        */

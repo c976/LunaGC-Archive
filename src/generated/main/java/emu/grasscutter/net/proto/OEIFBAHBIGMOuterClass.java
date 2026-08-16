@@ -19,10 +19,6 @@ public final class OEIFBAHBIGMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HIGMOFMFNJM = 6;</code>
      * @return The hIGMOFMFNJM.
      */
@@ -113,10 +109,6 @@ public final class OEIFBAHBIGMOuterClass {
     public static final int HIGMOFMFNJM_FIELD_NUMBER = 6;
     private int hIGMOFMFNJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HIGMOFMFNJM = 6;</code>
      * @return The hIGMOFMFNJM.
      */
@@ -429,10 +421,6 @@ public final class OEIFBAHBIGMOuterClass {
 
       private int hIGMOFMFNJM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HIGMOFMFNJM = 6;</code>
        * @return The hIGMOFMFNJM.
        */
@@ -441,10 +429,6 @@ public final class OEIFBAHBIGMOuterClass {
         return hIGMOFMFNJM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HIGMOFMFNJM = 6;</code>
        * @param value The hIGMOFMFNJM to set.
        * @return This builder for chaining.
@@ -456,10 +440,6 @@ public final class OEIFBAHBIGMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HIGMOFMFNJM = 6;</code>
        * @return This builder for chaining.
        */

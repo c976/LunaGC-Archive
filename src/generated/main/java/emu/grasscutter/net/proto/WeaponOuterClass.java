@@ -20,7 +20,7 @@ public final class WeaponOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -28,7 +28,7 @@ public final class WeaponOuterClass {
     int getAffixMapCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -43,7 +43,7 @@ public final class WeaponOuterClass {
     getAffixMap();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -52,7 +52,7 @@ public final class WeaponOuterClass {
     getAffixMapMap();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -63,7 +63,7 @@ public final class WeaponOuterClass {
         int defaultValue);
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -74,27 +74,17 @@ public final class WeaponOuterClass {
 
     /**
      * <pre>
-     * offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>bool JHPLJPIFMBM = 5;</code>
-     * @return The jHPLJPIFMBM.
+     * <code>uint32 exp = 2;</code>
+     * @return The exp.
      */
-    boolean getJHPLJPIFMBM();
+    int getExp();
 
     /**
      * <pre>
-     *6.3.0 // offset: 44
-     * </pre>
-     *
-     * <code>uint32 level = 1;</code>
-     * @return The level.
-     */
-    int getLevel();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 promote_level = 3;</code>
@@ -103,14 +93,20 @@ public final class WeaponOuterClass {
     int getPromoteLevel();
 
     /**
+     * <code>bool HHGDIOOEBMJ = 5;</code>
+     * @return The hHGDIOOEBMJ.
+     */
+    boolean getHHGDIOOEBMJ();
+
+    /**
      * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 exp = 2;</code>
-     * @return The exp.
+     * <code>uint32 level = 1;</code>
+     * @return The level.
      */
-    int getExp();
+    int getLevel();
   }
   /**
    * Protobuf type {@code Weapon}
@@ -188,7 +184,7 @@ public final class WeaponOuterClass {
             }
             case 40: {
 
-              jHPLJPIFMBM_ = input.readBool();
+              hHGDIOOEBMJ_ = input.readBool();
               break;
             }
             default: {
@@ -263,7 +259,7 @@ public final class WeaponOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -285,7 +281,7 @@ public final class WeaponOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -297,7 +293,7 @@ public final class WeaponOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -314,7 +310,7 @@ public final class WeaponOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -332,41 +328,26 @@ public final class WeaponOuterClass {
       return map.get(key);
     }
 
-    public static final int JHPLJPIFMBM_FIELD_NUMBER = 5;
-    private boolean jHPLJPIFMBM_;
+    public static final int EXP_FIELD_NUMBER = 2;
+    private int exp_;
     /**
      * <pre>
-     * offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>bool JHPLJPIFMBM = 5;</code>
-     * @return The jHPLJPIFMBM.
+     * <code>uint32 exp = 2;</code>
+     * @return The exp.
      */
     @java.lang.Override
-    public boolean getJHPLJPIFMBM() {
-      return jHPLJPIFMBM_;
-    }
-
-    public static final int LEVEL_FIELD_NUMBER = 1;
-    private int level_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 44
-     * </pre>
-     *
-     * <code>uint32 level = 1;</code>
-     * @return The level.
-     */
-    @java.lang.Override
-    public int getLevel() {
-      return level_;
+    public int getExp() {
+      return exp_;
     }
 
     public static final int PROMOTE_LEVEL_FIELD_NUMBER = 3;
     private int promoteLevel_;
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 promote_level = 3;</code>
@@ -377,19 +358,30 @@ public final class WeaponOuterClass {
       return promoteLevel_;
     }
 
-    public static final int EXP_FIELD_NUMBER = 2;
-    private int exp_;
+    public static final int HHGDIOOEBMJ_FIELD_NUMBER = 5;
+    private boolean hHGDIOOEBMJ_;
     /**
-     * <pre>
-     *6.3.0 // offset: 52
-     * </pre>
-     *
-     * <code>uint32 exp = 2;</code>
-     * @return The exp.
+     * <code>bool HHGDIOOEBMJ = 5;</code>
+     * @return The hHGDIOOEBMJ.
      */
     @java.lang.Override
-    public int getExp() {
-      return exp_;
+    public boolean getHHGDIOOEBMJ() {
+      return hHGDIOOEBMJ_;
+    }
+
+    public static final int LEVEL_FIELD_NUMBER = 1;
+    private int level_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 level = 1;</code>
+     * @return The level.
+     */
+    @java.lang.Override
+    public int getLevel() {
+      return level_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -421,8 +413,8 @@ public final class WeaponOuterClass {
           internalGetAffixMap(),
           AffixMapDefaultEntryHolder.defaultEntry,
           4);
-      if (jHPLJPIFMBM_ != false) {
-        output.writeBool(5, jHPLJPIFMBM_);
+      if (hHGDIOOEBMJ_ != false) {
+        output.writeBool(5, hHGDIOOEBMJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -455,9 +447,9 @@ public final class WeaponOuterClass {
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(4, affixMap__);
       }
-      if (jHPLJPIFMBM_ != false) {
+      if (hHGDIOOEBMJ_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, jHPLJPIFMBM_);
+          .computeBoolSize(5, hHGDIOOEBMJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -476,14 +468,14 @@ public final class WeaponOuterClass {
 
       if (!internalGetAffixMap().equals(
           other.internalGetAffixMap())) return false;
-      if (getJHPLJPIFMBM()
-          != other.getJHPLJPIFMBM()) return false;
-      if (getLevel()
-          != other.getLevel()) return false;
-      if (getPromoteLevel()
-          != other.getPromoteLevel()) return false;
       if (getExp()
           != other.getExp()) return false;
+      if (getPromoteLevel()
+          != other.getPromoteLevel()) return false;
+      if (getHHGDIOOEBMJ()
+          != other.getHHGDIOOEBMJ()) return false;
+      if (getLevel()
+          != other.getLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -499,15 +491,15 @@ public final class WeaponOuterClass {
         hash = (37 * hash) + AFFIX_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetAffixMap().hashCode();
       }
-      hash = (37 * hash) + JHPLJPIFMBM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getJHPLJPIFMBM());
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
-      hash = (37 * hash) + PROMOTE_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getPromoteLevel();
       hash = (37 * hash) + EXP_FIELD_NUMBER;
       hash = (53 * hash) + getExp();
+      hash = (37 * hash) + PROMOTE_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getPromoteLevel();
+      hash = (37 * hash) + HHGDIOOEBMJ_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getHHGDIOOEBMJ());
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -664,13 +656,13 @@ public final class WeaponOuterClass {
       public Builder clear() {
         super.clear();
         internalGetMutableAffixMap().clear();
-        jHPLJPIFMBM_ = false;
-
-        level_ = 0;
+        exp_ = 0;
 
         promoteLevel_ = 0;
 
-        exp_ = 0;
+        hHGDIOOEBMJ_ = false;
+
+        level_ = 0;
 
         return this;
       }
@@ -701,10 +693,10 @@ public final class WeaponOuterClass {
         int from_bitField0_ = bitField0_;
         result.affixMap_ = internalGetAffixMap();
         result.affixMap_.makeImmutable();
-        result.jHPLJPIFMBM_ = jHPLJPIFMBM_;
-        result.level_ = level_;
-        result.promoteLevel_ = promoteLevel_;
         result.exp_ = exp_;
+        result.promoteLevel_ = promoteLevel_;
+        result.hHGDIOOEBMJ_ = hHGDIOOEBMJ_;
+        result.level_ = level_;
         onBuilt();
         return result;
       }
@@ -755,17 +747,17 @@ public final class WeaponOuterClass {
         if (other == emu.grasscutter.net.proto.WeaponOuterClass.Weapon.getDefaultInstance()) return this;
         internalGetMutableAffixMap().mergeFrom(
             other.internalGetAffixMap());
-        if (other.getJHPLJPIFMBM() != false) {
-          setJHPLJPIFMBM(other.getJHPLJPIFMBM());
-        }
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
+        if (other.getExp() != 0) {
+          setExp(other.getExp());
         }
         if (other.getPromoteLevel() != 0) {
           setPromoteLevel(other.getPromoteLevel());
         }
-        if (other.getExp() != 0) {
-          setExp(other.getExp());
+        if (other.getHHGDIOOEBMJ() != false) {
+          setHHGDIOOEBMJ(other.getHHGDIOOEBMJ());
+        }
+        if (other.getLevel() != 0) {
+          setLevel(other.getLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -825,7 +817,7 @@ public final class WeaponOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -847,7 +839,7 @@ public final class WeaponOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -859,7 +851,7 @@ public final class WeaponOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -876,7 +868,7 @@ public final class WeaponOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -901,7 +893,7 @@ public final class WeaponOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -924,7 +916,7 @@ public final class WeaponOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -940,7 +932,7 @@ public final class WeaponOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 4;</code>
@@ -953,139 +945,10 @@ public final class WeaponOuterClass {
         return this;
       }
 
-      private boolean jHPLJPIFMBM_ ;
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool JHPLJPIFMBM = 5;</code>
-       * @return The jHPLJPIFMBM.
-       */
-      @java.lang.Override
-      public boolean getJHPLJPIFMBM() {
-        return jHPLJPIFMBM_;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool JHPLJPIFMBM = 5;</code>
-       * @param value The jHPLJPIFMBM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJHPLJPIFMBM(boolean value) {
-        
-        jHPLJPIFMBM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool JHPLJPIFMBM = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJHPLJPIFMBM() {
-        
-        jHPLJPIFMBM_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int level_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 44
-       * </pre>
-       *
-       * <code>uint32 level = 1;</code>
-       * @return The level.
-       */
-      @java.lang.Override
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 44
-       * </pre>
-       *
-       * <code>uint32 level = 1;</code>
-       * @param value The level to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevel(int value) {
-        
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 44
-       * </pre>
-       *
-       * <code>uint32 level = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevel() {
-        
-        level_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int promoteLevel_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>uint32 promote_level = 3;</code>
-       * @return The promoteLevel.
-       */
-      @java.lang.Override
-      public int getPromoteLevel() {
-        return promoteLevel_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>uint32 promote_level = 3;</code>
-       * @param value The promoteLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPromoteLevel(int value) {
-        
-        promoteLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>uint32 promote_level = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPromoteLevel() {
-        
-        promoteLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int exp_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 exp = 2;</code>
@@ -1097,7 +960,7 @@ public final class WeaponOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 exp = 2;</code>
@@ -1112,7 +975,7 @@ public final class WeaponOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 exp = 2;</code>
@@ -1121,6 +984,123 @@ public final class WeaponOuterClass {
       public Builder clearExp() {
         
         exp_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int promoteLevel_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 promote_level = 3;</code>
+       * @return The promoteLevel.
+       */
+      @java.lang.Override
+      public int getPromoteLevel() {
+        return promoteLevel_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 promote_level = 3;</code>
+       * @param value The promoteLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPromoteLevel(int value) {
+        
+        promoteLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 promote_level = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPromoteLevel() {
+        
+        promoteLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean hHGDIOOEBMJ_ ;
+      /**
+       * <code>bool HHGDIOOEBMJ = 5;</code>
+       * @return The hHGDIOOEBMJ.
+       */
+      @java.lang.Override
+      public boolean getHHGDIOOEBMJ() {
+        return hHGDIOOEBMJ_;
+      }
+      /**
+       * <code>bool HHGDIOOEBMJ = 5;</code>
+       * @param value The hHGDIOOEBMJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHHGDIOOEBMJ(boolean value) {
+        
+        hHGDIOOEBMJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool HHGDIOOEBMJ = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHHGDIOOEBMJ() {
+        
+        hHGDIOOEBMJ_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int level_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 level = 1;</code>
+       * @return The level.
+       */
+      @java.lang.Override
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 level = 1;</code>
+       * @param value The level to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevel(int value) {
+        
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 level = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevel() {
+        
+        level_ = 0;
         onChanged();
         return this;
       }
@@ -1197,9 +1177,9 @@ public final class WeaponOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\014Weapon.proto\"\253\001\n\006Weapon\022(\n\taffix_map\030\004" +
-      " \003(\0132\025.Weapon.AffixMapEntry\022\023\n\013JHPLJPIFM" +
-      "BM\030\005 \001(\010\022\r\n\005level\030\001 \001(\r\022\025\n\rpromote_level" +
-      "\030\003 \001(\r\022\013\n\003exp\030\002 \001(\r\032/\n\rAffixMapEntry\022\013\n\003" +
+      " \003(\0132\025.Weapon.AffixMapEntry\022\013\n\003exp\030\002 \001(\r" +
+      "\022\025\n\rpromote_level\030\003 \001(\r\022\023\n\013HHGDIOOEBMJ\030\005" +
+      " \001(\010\022\r\n\005level\030\001 \001(\r\032/\n\rAffixMapEntry\022\013\n\003" +
       "key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
@@ -1212,7 +1192,7 @@ public final class WeaponOuterClass {
     internal_static_Weapon_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Weapon_descriptor,
-        new java.lang.String[] { "AffixMap", "JHPLJPIFMBM", "Level", "PromoteLevel", "Exp", });
+        new java.lang.String[] { "AffixMap", "Exp", "PromoteLevel", "HHGDIOOEBMJ", "Level", });
     internal_static_Weapon_AffixMapEntry_descriptor =
       internal_static_Weapon_descriptor.getNestedTypes().get(0);
     internal_static_Weapon_AffixMapEntry_fieldAccessorTable = new

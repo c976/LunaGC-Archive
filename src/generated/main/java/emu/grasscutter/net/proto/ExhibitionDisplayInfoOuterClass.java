@@ -19,36 +19,28 @@ public final class ExhibitionDisplayInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 HPEMAAHIOIP = 3;</code>
-     * @return The hPEMAAHIOIP.
+     * <code>uint32 id = 1;</code>
+     * @return The id.
      */
-    int getHPEMAAHIOIP();
+    int getId();
 
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
      * <code>uint32 param = 2;</code>
      * @return The param.
      */
     int getParam();
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 id = 1;</code>
-     * @return The id.
+     * <code>uint32 detail_param = 3;</code>
+     * @return The detailParam.
      */
-    int getId();
+    int getDetailParam();
   }
   /**
+   * <pre>
+   * Obf: MCIHMDBLAPP
+   * </pre>
+   *
    * Protobuf type {@code ExhibitionDisplayInfo}
    */
   public static final class ExhibitionDisplayInfo extends
@@ -105,7 +97,7 @@ public final class ExhibitionDisplayInfoOuterClass {
             }
             case 24: {
 
-              hPEMAAHIOIP_ = input.readUInt32();
+              detailParam_ = input.readUInt32();
               break;
             }
             default: {
@@ -140,28 +132,20 @@ public final class ExhibitionDisplayInfoOuterClass {
               emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.class, emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.Builder.class);
     }
 
-    public static final int HPEMAAHIOIP_FIELD_NUMBER = 3;
-    private int hPEMAAHIOIP_;
+    public static final int ID_FIELD_NUMBER = 1;
+    private int id_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 HPEMAAHIOIP = 3;</code>
-     * @return The hPEMAAHIOIP.
+     * <code>uint32 id = 1;</code>
+     * @return The id.
      */
     @java.lang.Override
-    public int getHPEMAAHIOIP() {
-      return hPEMAAHIOIP_;
+    public int getId() {
+      return id_;
     }
 
     public static final int PARAM_FIELD_NUMBER = 2;
     private int param_;
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
      * <code>uint32 param = 2;</code>
      * @return The param.
      */
@@ -170,19 +154,15 @@ public final class ExhibitionDisplayInfoOuterClass {
       return param_;
     }
 
-    public static final int ID_FIELD_NUMBER = 1;
-    private int id_;
+    public static final int DETAIL_PARAM_FIELD_NUMBER = 3;
+    private int detailParam_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 id = 1;</code>
-     * @return The id.
+     * <code>uint32 detail_param = 3;</code>
+     * @return The detailParam.
      */
     @java.lang.Override
-    public int getId() {
-      return id_;
+    public int getDetailParam() {
+      return detailParam_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -205,8 +185,8 @@ public final class ExhibitionDisplayInfoOuterClass {
       if (param_ != 0) {
         output.writeUInt32(2, param_);
       }
-      if (hPEMAAHIOIP_ != 0) {
-        output.writeUInt32(3, hPEMAAHIOIP_);
+      if (detailParam_ != 0) {
+        output.writeUInt32(3, detailParam_);
       }
       unknownFields.writeTo(output);
     }
@@ -225,9 +205,9 @@ public final class ExhibitionDisplayInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, param_);
       }
-      if (hPEMAAHIOIP_ != 0) {
+      if (detailParam_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, hPEMAAHIOIP_);
+          .computeUInt32Size(3, detailParam_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -244,12 +224,12 @@ public final class ExhibitionDisplayInfoOuterClass {
       }
       emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo other = (emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo) obj;
 
-      if (getHPEMAAHIOIP()
-          != other.getHPEMAAHIOIP()) return false;
-      if (getParam()
-          != other.getParam()) return false;
       if (getId()
           != other.getId()) return false;
+      if (getParam()
+          != other.getParam()) return false;
+      if (getDetailParam()
+          != other.getDetailParam()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -261,12 +241,12 @@ public final class ExhibitionDisplayInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HPEMAAHIOIP_FIELD_NUMBER;
-      hash = (53 * hash) + getHPEMAAHIOIP();
-      hash = (37 * hash) + PARAM_FIELD_NUMBER;
-      hash = (53 * hash) + getParam();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
+      hash = (37 * hash) + PARAM_FIELD_NUMBER;
+      hash = (53 * hash) + getParam();
+      hash = (37 * hash) + DETAIL_PARAM_FIELD_NUMBER;
+      hash = (53 * hash) + getDetailParam();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -363,6 +343,10 @@ public final class ExhibitionDisplayInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: MCIHMDBLAPP
+     * </pre>
+     *
      * Protobuf type {@code ExhibitionDisplayInfo}
      */
     public static final class Builder extends
@@ -400,11 +384,11 @@ public final class ExhibitionDisplayInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hPEMAAHIOIP_ = 0;
+        id_ = 0;
 
         param_ = 0;
 
-        id_ = 0;
+        detailParam_ = 0;
 
         return this;
       }
@@ -432,9 +416,9 @@ public final class ExhibitionDisplayInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo buildPartial() {
         emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo result = new emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo(this);
-        result.hPEMAAHIOIP_ = hPEMAAHIOIP_;
-        result.param_ = param_;
         result.id_ = id_;
+        result.param_ = param_;
+        result.detailParam_ = detailParam_;
         onBuilt();
         return result;
       }
@@ -483,14 +467,14 @@ public final class ExhibitionDisplayInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo other) {
         if (other == emu.grasscutter.net.proto.ExhibitionDisplayInfoOuterClass.ExhibitionDisplayInfo.getDefaultInstance()) return this;
-        if (other.getHPEMAAHIOIP() != 0) {
-          setHPEMAAHIOIP(other.getHPEMAAHIOIP());
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         if (other.getParam() != 0) {
           setParam(other.getParam());
         }
-        if (other.getId() != 0) {
-          setId(other.getId());
+        if (other.getDetailParam() != 0) {
+          setDetailParam(other.getDetailParam());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -521,98 +505,8 @@ public final class ExhibitionDisplayInfoOuterClass {
         return this;
       }
 
-      private int hPEMAAHIOIP_ ;
-      /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 HPEMAAHIOIP = 3;</code>
-       * @return The hPEMAAHIOIP.
-       */
-      @java.lang.Override
-      public int getHPEMAAHIOIP() {
-        return hPEMAAHIOIP_;
-      }
-      /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 HPEMAAHIOIP = 3;</code>
-       * @param value The hPEMAAHIOIP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHPEMAAHIOIP(int value) {
-        
-        hPEMAAHIOIP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 HPEMAAHIOIP = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHPEMAAHIOIP() {
-        
-        hPEMAAHIOIP_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int param_ ;
-      /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 param = 2;</code>
-       * @return The param.
-       */
-      @java.lang.Override
-      public int getParam() {
-        return param_;
-      }
-      /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 param = 2;</code>
-       * @param value The param to set.
-       * @return This builder for chaining.
-       */
-      public Builder setParam(int value) {
-        
-        param_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 param = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearParam() {
-        
-        param_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int id_ ;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
        * <code>uint32 id = 1;</code>
        * @return The id.
        */
@@ -621,10 +515,6 @@ public final class ExhibitionDisplayInfoOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
        * <code>uint32 id = 1;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -636,16 +526,74 @@ public final class ExhibitionDisplayInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
        * <code>uint32 id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
         
         id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int param_ ;
+      /**
+       * <code>uint32 param = 2;</code>
+       * @return The param.
+       */
+      @java.lang.Override
+      public int getParam() {
+        return param_;
+      }
+      /**
+       * <code>uint32 param = 2;</code>
+       * @param value The param to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParam(int value) {
+        
+        param_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 param = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParam() {
+        
+        param_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int detailParam_ ;
+      /**
+       * <code>uint32 detail_param = 3;</code>
+       * @return The detailParam.
+       */
+      @java.lang.Override
+      public int getDetailParam() {
+        return detailParam_;
+      }
+      /**
+       * <code>uint32 detail_param = 3;</code>
+       * @param value The detailParam to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDetailParam(int value) {
+        
+        detailParam_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 detail_param = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDetailParam() {
+        
+        detailParam_ = 0;
         onChanged();
         return this;
       }
@@ -716,10 +664,10 @@ public final class ExhibitionDisplayInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033ExhibitionDisplayInfo.proto\"G\n\025Exhibit" +
-      "ionDisplayInfo\022\023\n\013HPEMAAHIOIP\030\003 \001(\r\022\r\n\005p" +
-      "aram\030\002 \001(\r\022\n\n\002id\030\001 \001(\rB\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      "\n\033ExhibitionDisplayInfo.proto\"H\n\025Exhibit" +
+      "ionDisplayInfo\022\n\n\002id\030\001 \001(\r\022\r\n\005param\030\002 \001(" +
+      "\r\022\024\n\014detail_param\030\003 \001(\rB\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -730,7 +678,7 @@ public final class ExhibitionDisplayInfoOuterClass {
     internal_static_ExhibitionDisplayInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ExhibitionDisplayInfo_descriptor,
-        new java.lang.String[] { "HPEMAAHIOIP", "Param", "Id", });
+        new java.lang.String[] { "Id", "Param", "DetailParam", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

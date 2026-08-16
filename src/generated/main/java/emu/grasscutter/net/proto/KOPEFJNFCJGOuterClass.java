@@ -19,30 +19,18 @@ public final class KOPEFJNFCJGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 9;</code>
      * @return The isFinish.
      */
@@ -143,10 +131,6 @@ public final class KOPEFJNFCJGOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 6;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
@@ -158,10 +142,6 @@ public final class KOPEFJNFCJGOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 7;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
@@ -173,10 +153,6 @@ public final class KOPEFJNFCJGOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 9;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 9;</code>
      * @return The isFinish.
      */
@@ -525,10 +501,6 @@ public final class KOPEFJNFCJGOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @return The levelId.
        */
@@ -537,10 +509,6 @@ public final class KOPEFJNFCJGOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -552,10 +520,6 @@ public final class KOPEFJNFCJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @return This builder for chaining.
        */
@@ -568,10 +532,6 @@ public final class KOPEFJNFCJGOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return The isOpen.
        */
@@ -580,10 +540,6 @@ public final class KOPEFJNFCJGOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -595,10 +551,6 @@ public final class KOPEFJNFCJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return This builder for chaining.
        */
@@ -611,10 +563,6 @@ public final class KOPEFJNFCJGOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 9;</code>
        * @return The isFinish.
        */
@@ -623,10 +571,6 @@ public final class KOPEFJNFCJGOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 9;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -638,10 +582,6 @@ public final class KOPEFJNFCJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 9;</code>
        * @return This builder for chaining.
        */

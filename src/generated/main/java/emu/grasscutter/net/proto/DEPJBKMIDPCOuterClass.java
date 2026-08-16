@@ -19,20 +19,12 @@ public final class DEPJBKMIDPCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_id = 15;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool ACECGFODOOO = 3;</code>
      * @return The aCECGFODOOO.
      */
@@ -128,10 +120,6 @@ public final class DEPJBKMIDPCOuterClass {
     public static final int AVATAR_ID_FIELD_NUMBER = 15;
     private int avatarId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_id = 15;</code>
      * @return The avatarId.
      */
@@ -143,10 +131,6 @@ public final class DEPJBKMIDPCOuterClass {
     public static final int ACECGFODOOO_FIELD_NUMBER = 3;
     private boolean aCECGFODOOO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool ACECGFODOOO = 3;</code>
      * @return The aCECGFODOOO.
      */
@@ -477,10 +461,6 @@ public final class DEPJBKMIDPCOuterClass {
 
       private int avatarId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 15;</code>
        * @return The avatarId.
        */
@@ -489,10 +469,6 @@ public final class DEPJBKMIDPCOuterClass {
         return avatarId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 15;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
@@ -504,10 +480,6 @@ public final class DEPJBKMIDPCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 15;</code>
        * @return This builder for chaining.
        */
@@ -520,10 +492,6 @@ public final class DEPJBKMIDPCOuterClass {
 
       private boolean aCECGFODOOO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ACECGFODOOO = 3;</code>
        * @return The aCECGFODOOO.
        */
@@ -532,10 +500,6 @@ public final class DEPJBKMIDPCOuterClass {
         return aCECGFODOOO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ACECGFODOOO = 3;</code>
        * @param value The aCECGFODOOO to set.
        * @return This builder for chaining.
@@ -547,10 +511,6 @@ public final class DEPJBKMIDPCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ACECGFODOOO = 3;</code>
        * @return This builder for chaining.
        */

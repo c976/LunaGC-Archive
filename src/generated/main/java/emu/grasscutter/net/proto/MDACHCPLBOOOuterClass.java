@@ -19,44 +19,24 @@ public final class MDACHCPLBOOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII> 
         getNGMHFHPAAMFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
      */
     emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII getNGMHFHPAAMF(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
      */
     int getNGMHFHPAAMFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFIIOrBuilder> 
         getNGMHFHPAAMFOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
      */
     emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFIIOrBuilder getNGMHFHPAAMFOrBuilder(
@@ -156,10 +136,6 @@ public final class MDACHCPLBOOOuterClass {
     public static final int NGMHFHPAAMF_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII> nGMHFHPAAMF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class MDACHCPLBOOOuterClass {
       return nGMHFHPAAMF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class MDACHCPLBOOOuterClass {
       return nGMHFHPAAMF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class MDACHCPLBOOOuterClass {
       return nGMHFHPAAMF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class MDACHCPLBOOOuterClass {
       return nGMHFHPAAMF_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class MDACHCPLBOOOuterClass {
           emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII, emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII.Builder, emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFIIOrBuilder> nGMHFHPAAMFBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII> getNGMHFHPAAMFList() {
@@ -582,10 +538,6 @@ public final class MDACHCPLBOOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public int getNGMHFHPAAMFCount() {
@@ -596,10 +548,6 @@ public final class MDACHCPLBOOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII getNGMHFHPAAMF(int index) {
@@ -610,10 +558,6 @@ public final class MDACHCPLBOOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public Builder setNGMHFHPAAMF(
@@ -631,10 +575,6 @@ public final class MDACHCPLBOOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public Builder setNGMHFHPAAMF(
@@ -649,10 +589,6 @@ public final class MDACHCPLBOOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public Builder addNGMHFHPAAMF(emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII value) {
@@ -669,10 +605,6 @@ public final class MDACHCPLBOOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -690,10 +622,6 @@ public final class MDACHCPLBOOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -708,10 +636,6 @@ public final class MDACHCPLBOOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -726,10 +650,6 @@ public final class MDACHCPLBOOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public Builder addAllNGMHFHPAAMF(
@@ -745,10 +665,6 @@ public final class MDACHCPLBOOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public Builder clearNGMHFHPAAMF() {
@@ -762,10 +678,6 @@ public final class MDACHCPLBOOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public Builder removeNGMHFHPAAMF(int index) {
@@ -779,10 +691,6 @@ public final class MDACHCPLBOOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII.Builder getNGMHFHPAAMFBuilder(
@@ -790,10 +698,6 @@ public final class MDACHCPLBOOOuterClass {
         return getNGMHFHPAAMFFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFIIOrBuilder getNGMHFHPAAMFOrBuilder(
@@ -804,10 +708,6 @@ public final class MDACHCPLBOOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFIIOrBuilder> 
@@ -819,10 +719,6 @@ public final class MDACHCPLBOOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII.Builder addNGMHFHPAAMFBuilder() {
@@ -830,10 +726,6 @@ public final class MDACHCPLBOOOuterClass {
             emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII.Builder addNGMHFHPAAMFBuilder(
@@ -842,10 +734,6 @@ public final class MDACHCPLBOOOuterClass {
             index, emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .APGPEOJNFII NGMHFHPAAMF = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.APGPEOJNFIIOuterClass.APGPEOJNFII.Builder> 

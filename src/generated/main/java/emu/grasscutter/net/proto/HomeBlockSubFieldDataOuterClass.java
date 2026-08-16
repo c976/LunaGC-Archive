@@ -19,17 +19,17 @@ public final class HomeBlockSubFieldDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector rot = 6;</code>
+     * <code>.Vector rot = 2;</code>
      * @return Whether the rot field is set.
      */
     boolean hasRot();
     /**
-     * <code>.Vector rot = 6;</code>
+     * <code>.Vector rot = 2;</code>
      * @return The rot.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
-     * <code>.Vector rot = 6;</code>
+     * <code>.Vector rot = 2;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
 
@@ -49,6 +49,10 @@ public final class HomeBlockSubFieldDataOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
   }
   /**
+   * <pre>
+   * Obf: HEOEAKDEIJA
+   * </pre>
+   *
    * Protobuf type {@code HomeBlockSubFieldData}
    */
   public static final class HomeBlockSubFieldData extends
@@ -93,7 +97,7 @@ public final class HomeBlockSubFieldDataOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 18: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (rot_ != null) {
                 subBuilder = rot_.toBuilder();
@@ -151,10 +155,10 @@ public final class HomeBlockSubFieldDataOuterClass {
               emu.grasscutter.net.proto.HomeBlockSubFieldDataOuterClass.HomeBlockSubFieldData.class, emu.grasscutter.net.proto.HomeBlockSubFieldDataOuterClass.HomeBlockSubFieldData.Builder.class);
     }
 
-    public static final int ROT_FIELD_NUMBER = 6;
+    public static final int ROT_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
-     * <code>.Vector rot = 6;</code>
+     * <code>.Vector rot = 2;</code>
      * @return Whether the rot field is set.
      */
     @java.lang.Override
@@ -162,7 +166,7 @@ public final class HomeBlockSubFieldDataOuterClass {
       return rot_ != null;
     }
     /**
-     * <code>.Vector rot = 6;</code>
+     * <code>.Vector rot = 2;</code>
      * @return The rot.
      */
     @java.lang.Override
@@ -170,7 +174,7 @@ public final class HomeBlockSubFieldDataOuterClass {
       return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
     /**
-     * <code>.Vector rot = 6;</code>
+     * <code>.Vector rot = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
@@ -218,7 +222,7 @@ public final class HomeBlockSubFieldDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (rot_ != null) {
-        output.writeMessage(6, getRot());
+        output.writeMessage(2, getRot());
       }
       if (pos_ != null) {
         output.writeMessage(8, getPos());
@@ -234,7 +238,7 @@ public final class HomeBlockSubFieldDataOuterClass {
       size = 0;
       if (rot_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getRot());
+          .computeMessageSize(2, getRot());
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -380,6 +384,10 @@ public final class HomeBlockSubFieldDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: HEOEAKDEIJA
+     * </pre>
+     *
      * Protobuf type {@code HomeBlockSubFieldData}
      */
     public static final class Builder extends
@@ -552,14 +560,14 @@ public final class HomeBlockSubFieldDataOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 2;</code>
        * @return Whether the rot field is set.
        */
       public boolean hasRot() {
         return rotBuilder_ != null || rot_ != null;
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 2;</code>
        * @return The rot.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
@@ -570,7 +578,7 @@ public final class HomeBlockSubFieldDataOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 2;</code>
        */
       public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -586,7 +594,7 @@ public final class HomeBlockSubFieldDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 2;</code>
        */
       public Builder setRot(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -600,7 +608,7 @@ public final class HomeBlockSubFieldDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 2;</code>
        */
       public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -618,7 +626,7 @@ public final class HomeBlockSubFieldDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 2;</code>
        */
       public Builder clearRot() {
         if (rotBuilder_ == null) {
@@ -632,7 +640,7 @@ public final class HomeBlockSubFieldDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
         
@@ -640,7 +648,7 @@ public final class HomeBlockSubFieldDataOuterClass {
         return getRotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
         if (rotBuilder_ != null) {
@@ -651,7 +659,7 @@ public final class HomeBlockSubFieldDataOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -853,7 +861,7 @@ public final class HomeBlockSubFieldDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033HomeBlockSubFieldData.proto\032\014Vector.pr" +
-      "oto\"C\n\025HomeBlockSubFieldData\022\024\n\003rot\030\006 \001(" +
+      "oto\"C\n\025HomeBlockSubFieldData\022\024\n\003rot\030\002 \001(" +
       "\0132\007.Vector\022\024\n\003pos\030\010 \001(\0132\007.VectorB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };

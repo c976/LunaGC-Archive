@@ -19,44 +19,24 @@ public final class CJIFCLJCLEIOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD> 
         getGMGBBPFMNFNList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
      */
     emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD getGMGBBPFMNFN(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
      */
     int getGMGBBPFMNFNCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMDOrBuilder> 
         getGMGBBPFMNFNOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
      */
     emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMDOrBuilder getGMGBBPFMNFNOrBuilder(
@@ -156,10 +136,6 @@ public final class CJIFCLJCLEIOuterClass {
     public static final int GMGBBPFMNFN_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD> gMGBBPFMNFN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class CJIFCLJCLEIOuterClass {
       return gMGBBPFMNFN_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class CJIFCLJCLEIOuterClass {
       return gMGBBPFMNFN_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class CJIFCLJCLEIOuterClass {
       return gMGBBPFMNFN_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class CJIFCLJCLEIOuterClass {
       return gMGBBPFMNFN_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class CJIFCLJCLEIOuterClass {
           emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD, emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD.Builder, emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMDOrBuilder> gMGBBPFMNFNBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD> getGMGBBPFMNFNList() {
@@ -582,10 +538,6 @@ public final class CJIFCLJCLEIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public int getGMGBBPFMNFNCount() {
@@ -596,10 +548,6 @@ public final class CJIFCLJCLEIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD getGMGBBPFMNFN(int index) {
@@ -610,10 +558,6 @@ public final class CJIFCLJCLEIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public Builder setGMGBBPFMNFN(
@@ -631,10 +575,6 @@ public final class CJIFCLJCLEIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public Builder setGMGBBPFMNFN(
@@ -649,10 +589,6 @@ public final class CJIFCLJCLEIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public Builder addGMGBBPFMNFN(emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD value) {
@@ -669,10 +605,6 @@ public final class CJIFCLJCLEIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public Builder addGMGBBPFMNFN(
@@ -690,10 +622,6 @@ public final class CJIFCLJCLEIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public Builder addGMGBBPFMNFN(
@@ -708,10 +636,6 @@ public final class CJIFCLJCLEIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public Builder addGMGBBPFMNFN(
@@ -726,10 +650,6 @@ public final class CJIFCLJCLEIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public Builder addAllGMGBBPFMNFN(
@@ -745,10 +665,6 @@ public final class CJIFCLJCLEIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public Builder clearGMGBBPFMNFN() {
@@ -762,10 +678,6 @@ public final class CJIFCLJCLEIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public Builder removeGMGBBPFMNFN(int index) {
@@ -779,10 +691,6 @@ public final class CJIFCLJCLEIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD.Builder getGMGBBPFMNFNBuilder(
@@ -790,10 +698,6 @@ public final class CJIFCLJCLEIOuterClass {
         return getGMGBBPFMNFNFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMDOrBuilder getGMGBBPFMNFNOrBuilder(
@@ -804,10 +708,6 @@ public final class CJIFCLJCLEIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMDOrBuilder> 
@@ -819,10 +719,6 @@ public final class CJIFCLJCLEIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD.Builder addGMGBBPFMNFNBuilder() {
@@ -830,10 +726,6 @@ public final class CJIFCLJCLEIOuterClass {
             emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD.Builder addGMGBBPFMNFNBuilder(
@@ -842,10 +734,6 @@ public final class CJIFCLJCLEIOuterClass {
             index, emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAAGJLIGKMD GMGBBPFMNFN = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BAAGJLIGKMDOuterClass.BAAGJLIGKMD.Builder> 

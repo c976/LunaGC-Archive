@@ -19,77 +19,45 @@ public final class DEIIKHENDBHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 12;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cur_progress = 9;</code>
      * @return The curProgress.
      */
     int getCurProgress();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 7;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 2;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 total_progress = 11;</code>
      * @return The totalProgress.
      */
@@ -213,10 +181,6 @@ public final class DEIIKHENDBHOuterClass {
     public static final int POS_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return Whether the pos field is set.
      */
@@ -225,10 +189,6 @@ public final class DEIIKHENDBHOuterClass {
       return pos_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return The pos.
      */
@@ -237,10 +197,6 @@ public final class DEIIKHENDBHOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      */
     @java.lang.Override
@@ -251,10 +207,6 @@ public final class DEIIKHENDBHOuterClass {
     public static final int ID_FIELD_NUMBER = 12;
     private int id_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 12;</code>
      * @return The id.
      */
@@ -266,10 +218,6 @@ public final class DEIIKHENDBHOuterClass {
     public static final int CUR_PROGRESS_FIELD_NUMBER = 9;
     private int curProgress_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cur_progress = 9;</code>
      * @return The curProgress.
      */
@@ -281,10 +229,6 @@ public final class DEIIKHENDBHOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 7;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 7;</code>
      * @return The openTime.
      */
@@ -296,10 +240,6 @@ public final class DEIIKHENDBHOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 2;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 2;</code>
      * @return The isFinished.
      */
@@ -311,10 +251,6 @@ public final class DEIIKHENDBHOuterClass {
     public static final int TOTAL_PROGRESS_FIELD_NUMBER = 11;
     private int totalProgress_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 total_progress = 11;</code>
      * @return The totalProgress.
      */
@@ -728,10 +664,6 @@ public final class DEIIKHENDBHOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        * @return Whether the pos field is set.
        */
@@ -739,10 +671,6 @@ public final class DEIIKHENDBHOuterClass {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        * @return The pos.
        */
@@ -754,10 +682,6 @@ public final class DEIIKHENDBHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -774,10 +698,6 @@ public final class DEIIKHENDBHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder setPos(
@@ -792,10 +712,6 @@ public final class DEIIKHENDBHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -814,10 +730,6 @@ public final class DEIIKHENDBHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder clearPos() {
@@ -832,10 +744,6 @@ public final class DEIIKHENDBHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
@@ -844,10 +752,6 @@ public final class DEIIKHENDBHOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -859,10 +763,6 @@ public final class DEIIKHENDBHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -881,10 +781,6 @@ public final class DEIIKHENDBHOuterClass {
 
       private int id_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 12;</code>
        * @return The id.
        */
@@ -893,10 +789,6 @@ public final class DEIIKHENDBHOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 12;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -908,10 +800,6 @@ public final class DEIIKHENDBHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 12;</code>
        * @return This builder for chaining.
        */
@@ -924,10 +812,6 @@ public final class DEIIKHENDBHOuterClass {
 
       private int curProgress_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cur_progress = 9;</code>
        * @return The curProgress.
        */
@@ -936,10 +820,6 @@ public final class DEIIKHENDBHOuterClass {
         return curProgress_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cur_progress = 9;</code>
        * @param value The curProgress to set.
        * @return This builder for chaining.
@@ -951,10 +831,6 @@ public final class DEIIKHENDBHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cur_progress = 9;</code>
        * @return This builder for chaining.
        */
@@ -967,10 +843,6 @@ public final class DEIIKHENDBHOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 7;</code>
        * @return The openTime.
        */
@@ -979,10 +851,6 @@ public final class DEIIKHENDBHOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 7;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -994,10 +862,6 @@ public final class DEIIKHENDBHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 7;</code>
        * @return This builder for chaining.
        */
@@ -1010,10 +874,6 @@ public final class DEIIKHENDBHOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 2;</code>
        * @return The isFinished.
        */
@@ -1022,10 +882,6 @@ public final class DEIIKHENDBHOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 2;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -1037,10 +893,6 @@ public final class DEIIKHENDBHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 2;</code>
        * @return This builder for chaining.
        */
@@ -1053,10 +905,6 @@ public final class DEIIKHENDBHOuterClass {
 
       private int totalProgress_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 total_progress = 11;</code>
        * @return The totalProgress.
        */
@@ -1065,10 +913,6 @@ public final class DEIIKHENDBHOuterClass {
         return totalProgress_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 total_progress = 11;</code>
        * @param value The totalProgress to set.
        * @return This builder for chaining.
@@ -1080,10 +924,6 @@ public final class DEIIKHENDBHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 total_progress = 11;</code>
        * @return This builder for chaining.
        */

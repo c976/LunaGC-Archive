@@ -19,40 +19,24 @@ public final class IEGAEKHHDFBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 11;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 12;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 7;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
@@ -158,10 +142,6 @@ public final class IEGAEKHHDFBOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 11;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 11;</code>
      * @return The isOpen.
      */
@@ -173,10 +153,6 @@ public final class IEGAEKHHDFBOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 12;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 12;</code>
      * @return The isFinish.
      */
@@ -188,10 +164,6 @@ public final class IEGAEKHHDFBOuterClass {
     public static final int SCORE_FIELD_NUMBER = 7;
     private int score_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 7;</code>
      * @return The score.
      */
@@ -203,10 +175,6 @@ public final class IEGAEKHHDFBOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
@@ -572,10 +540,6 @@ public final class IEGAEKHHDFBOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 11;</code>
        * @return The isOpen.
        */
@@ -584,10 +548,6 @@ public final class IEGAEKHHDFBOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 11;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -599,10 +559,6 @@ public final class IEGAEKHHDFBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 11;</code>
        * @return This builder for chaining.
        */
@@ -615,10 +571,6 @@ public final class IEGAEKHHDFBOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 12;</code>
        * @return The isFinish.
        */
@@ -627,10 +579,6 @@ public final class IEGAEKHHDFBOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 12;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -642,10 +590,6 @@ public final class IEGAEKHHDFBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 12;</code>
        * @return This builder for chaining.
        */
@@ -658,10 +602,6 @@ public final class IEGAEKHHDFBOuterClass {
 
       private int score_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 7;</code>
        * @return The score.
        */
@@ -670,10 +610,6 @@ public final class IEGAEKHHDFBOuterClass {
         return score_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 7;</code>
        * @param value The score to set.
        * @return This builder for chaining.
@@ -685,10 +621,6 @@ public final class IEGAEKHHDFBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 7;</code>
        * @return This builder for chaining.
        */
@@ -701,10 +633,6 @@ public final class IEGAEKHHDFBOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
@@ -713,10 +641,6 @@ public final class IEGAEKHHDFBOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -728,10 +652,6 @@ public final class IEGAEKHHDFBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */

@@ -19,20 +19,12 @@ public final class MFCLINBGDDNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ECFCFIOBOMA = 12;</code>
      * @return The eCFCFIOBOMA.
      */
     int getECFCFIOBOMA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 13;</code>
      * @return The openTime.
      */
@@ -128,10 +120,6 @@ public final class MFCLINBGDDNOuterClass {
     public static final int ECFCFIOBOMA_FIELD_NUMBER = 12;
     private int eCFCFIOBOMA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ECFCFIOBOMA = 12;</code>
      * @return The eCFCFIOBOMA.
      */
@@ -143,10 +131,6 @@ public final class MFCLINBGDDNOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 13;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 13;</code>
      * @return The openTime.
      */
@@ -476,10 +460,6 @@ public final class MFCLINBGDDNOuterClass {
 
       private int eCFCFIOBOMA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECFCFIOBOMA = 12;</code>
        * @return The eCFCFIOBOMA.
        */
@@ -488,10 +468,6 @@ public final class MFCLINBGDDNOuterClass {
         return eCFCFIOBOMA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECFCFIOBOMA = 12;</code>
        * @param value The eCFCFIOBOMA to set.
        * @return This builder for chaining.
@@ -503,10 +479,6 @@ public final class MFCLINBGDDNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECFCFIOBOMA = 12;</code>
        * @return This builder for chaining.
        */
@@ -519,10 +491,6 @@ public final class MFCLINBGDDNOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @return The openTime.
        */
@@ -531,10 +499,6 @@ public final class MFCLINBGDDNOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -546,10 +510,6 @@ public final class MFCLINBGDDNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @return This builder for chaining.
        */

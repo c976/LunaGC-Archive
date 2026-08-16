@@ -19,64 +19,40 @@ public final class MHAEIKIHLKLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE> 
         getGGOKKDEKPJMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
      */
     emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE getGGOKKDEKPJM(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
      */
     int getGGOKKDEKPJMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGEOrBuilder> 
         getGGOKKDEKPJMOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
      */
     emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGEOrBuilder getGGOKKDEKPJMOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool AONMNNJAKLI = 13;</code>
      * @return The aONMNNJAKLI.
      */
     boolean getAONMNNJAKLI();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 5;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 5;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
   }
   /**
    * Protobuf type {@code MHAEIKIHLKL}
@@ -136,7 +112,7 @@ public final class MHAEIKIHLKLOuterClass {
             }
             case 40: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 104: {
@@ -182,10 +158,6 @@ public final class MHAEIKIHLKLOuterClass {
     public static final int GGOKKDEKPJM_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE> gGOKKDEKPJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
      */
     @java.lang.Override
@@ -193,10 +165,6 @@ public final class MHAEIKIHLKLOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
      */
     @java.lang.Override
@@ -205,10 +173,6 @@ public final class MHAEIKIHLKLOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
      */
     @java.lang.Override
@@ -216,10 +180,6 @@ public final class MHAEIKIHLKLOuterClass {
       return gGOKKDEKPJM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
      */
     @java.lang.Override
@@ -227,10 +187,6 @@ public final class MHAEIKIHLKLOuterClass {
       return gGOKKDEKPJM_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
      */
     @java.lang.Override
@@ -242,10 +198,6 @@ public final class MHAEIKIHLKLOuterClass {
     public static final int AONMNNJAKLI_FIELD_NUMBER = 13;
     private boolean aONMNNJAKLI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool AONMNNJAKLI = 13;</code>
      * @return The aONMNNJAKLI.
      */
@@ -254,15 +206,15 @@ public final class MHAEIKIHLKLOuterClass {
       return aONMNNJAKLI_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 5;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 5;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 5;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 5;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -282,8 +234,8 @@ public final class MHAEIKIHLKLOuterClass {
       for (int i = 0; i < gGOKKDEKPJM_.size(); i++) {
         output.writeMessage(3, gGOKKDEKPJM_.get(i));
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(5, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(5, stageId_);
       }
       if (aONMNNJAKLI_ != false) {
         output.writeBool(13, aONMNNJAKLI_);
@@ -301,9 +253,9 @@ public final class MHAEIKIHLKLOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, gGOKKDEKPJM_.get(i));
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, eGHGENOJNEK_);
+          .computeUInt32Size(5, stageId_);
       }
       if (aONMNNJAKLI_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -328,8 +280,8 @@ public final class MHAEIKIHLKLOuterClass {
           .equals(other.getGGOKKDEKPJMList())) return false;
       if (getAONMNNJAKLI()
           != other.getAONMNNJAKLI()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -348,8 +300,8 @@ public final class MHAEIKIHLKLOuterClass {
       hash = (37 * hash) + AONMNNJAKLI_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getAONMNNJAKLI());
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -492,7 +444,7 @@ public final class MHAEIKIHLKLOuterClass {
         }
         aONMNNJAKLI_ = false;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         return this;
       }
@@ -531,7 +483,7 @@ public final class MHAEIKIHLKLOuterClass {
           result.gGOKKDEKPJM_ = gGOKKDEKPJMBuilder_.build();
         }
         result.aONMNNJAKLI_ = aONMNNJAKLI_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -609,8 +561,8 @@ public final class MHAEIKIHLKLOuterClass {
         if (other.getAONMNNJAKLI() != false) {
           setAONMNNJAKLI(other.getAONMNNJAKLI());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -655,10 +607,6 @@ public final class MHAEIKIHLKLOuterClass {
           emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE, emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE.Builder, emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGEOrBuilder> gGOKKDEKPJMBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE> getGGOKKDEKPJMList() {
@@ -669,10 +617,6 @@ public final class MHAEIKIHLKLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public int getGGOKKDEKPJMCount() {
@@ -683,10 +627,6 @@ public final class MHAEIKIHLKLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE getGGOKKDEKPJM(int index) {
@@ -697,10 +637,6 @@ public final class MHAEIKIHLKLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -718,10 +654,6 @@ public final class MHAEIKIHLKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -736,10 +668,6 @@ public final class MHAEIKIHLKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public Builder addGGOKKDEKPJM(emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE value) {
@@ -756,10 +684,6 @@ public final class MHAEIKIHLKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -777,10 +701,6 @@ public final class MHAEIKIHLKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -795,10 +715,6 @@ public final class MHAEIKIHLKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -813,10 +729,6 @@ public final class MHAEIKIHLKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public Builder addAllGGOKKDEKPJM(
@@ -832,10 +744,6 @@ public final class MHAEIKIHLKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public Builder clearGGOKKDEKPJM() {
@@ -849,10 +757,6 @@ public final class MHAEIKIHLKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public Builder removeGGOKKDEKPJM(int index) {
@@ -866,10 +770,6 @@ public final class MHAEIKIHLKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE.Builder getGGOKKDEKPJMBuilder(
@@ -877,10 +777,6 @@ public final class MHAEIKIHLKLOuterClass {
         return getGGOKKDEKPJMFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGEOrBuilder getGGOKKDEKPJMOrBuilder(
@@ -891,10 +787,6 @@ public final class MHAEIKIHLKLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGEOrBuilder> 
@@ -906,10 +798,6 @@ public final class MHAEIKIHLKLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE.Builder addGGOKKDEKPJMBuilder() {
@@ -917,10 +805,6 @@ public final class MHAEIKIHLKLOuterClass {
             emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE.Builder addGGOKKDEKPJMBuilder(
@@ -929,10 +813,6 @@ public final class MHAEIKIHLKLOuterClass {
             index, emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KDHBGMLFPGE GGOKKDEKPJM = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.KDHBGMLFPGE.Builder> 
@@ -956,10 +836,6 @@ public final class MHAEIKIHLKLOuterClass {
 
       private boolean aONMNNJAKLI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool AONMNNJAKLI = 13;</code>
        * @return The aONMNNJAKLI.
        */
@@ -968,10 +844,6 @@ public final class MHAEIKIHLKLOuterClass {
         return aONMNNJAKLI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool AONMNNJAKLI = 13;</code>
        * @param value The aONMNNJAKLI to set.
        * @return This builder for chaining.
@@ -983,10 +855,6 @@ public final class MHAEIKIHLKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool AONMNNJAKLI = 13;</code>
        * @return This builder for chaining.
        */
@@ -997,33 +865,33 @@ public final class MHAEIKIHLKLOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 5;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 5;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 5;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 5;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 5;</code>
+       * <code>uint32 stage_id = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -1094,11 +962,11 @@ public final class MHAEIKIHLKLOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MHAEIKIHLKL.proto\032\021KDHBGMLFPGE.proto\"Z" +
+      "\n\021MHAEIKIHLKL.proto\032\021KDHBGMLFPGE.proto\"W" +
       "\n\013MHAEIKIHLKL\022!\n\013GGOKKDEKPJM\030\003 \003(\0132\014.KDH" +
-      "BGMLFPGE\022\023\n\013AONMNNJAKLI\030\r \001(\010\022\023\n\013EGHGENO" +
-      "JNEK\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "BGMLFPGE\022\023\n\013AONMNNJAKLI\030\r \001(\010\022\020\n\010stage_i" +
+      "d\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1110,7 +978,7 @@ public final class MHAEIKIHLKLOuterClass {
     internal_static_MHAEIKIHLKL_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MHAEIKIHLKL_descriptor,
-        new java.lang.String[] { "GGOKKDEKPJM", "AONMNNJAKLI", "EGHGENOJNEK", });
+        new java.lang.String[] { "GGOKKDEKPJM", "AONMNNJAKLI", "StageId", });
     emu.grasscutter.net.proto.KDHBGMLFPGEOuterClass.getDescriptor();
   }
 

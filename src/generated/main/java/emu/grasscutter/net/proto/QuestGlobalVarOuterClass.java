@@ -19,26 +19,22 @@ public final class QuestGlobalVarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>int32 value = 10;</code>
+     * <code>int32 value = 14;</code>
      * @return The value.
      */
     int getValue();
 
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 key = 11;</code>
+     * <code>uint32 key = 8;</code>
      * @return The key.
      */
     int getKey();
   }
   /**
+   * <pre>
+   * Obf: PGEKJBDCGND
+   * </pre>
+   *
    * Protobuf type {@code QuestGlobalVar}
    */
   public static final class QuestGlobalVar extends
@@ -83,14 +79,14 @@ public final class QuestGlobalVarOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-
-              value_ = input.readInt32();
-              break;
-            }
-            case 88: {
+            case 64: {
 
               key_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              value_ = input.readInt32();
               break;
             }
             default: {
@@ -125,14 +121,10 @@ public final class QuestGlobalVarOuterClass {
               emu.grasscutter.net.proto.QuestGlobalVarOuterClass.QuestGlobalVar.class, emu.grasscutter.net.proto.QuestGlobalVarOuterClass.QuestGlobalVar.Builder.class);
     }
 
-    public static final int VALUE_FIELD_NUMBER = 10;
+    public static final int VALUE_FIELD_NUMBER = 14;
     private int value_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>int32 value = 10;</code>
+     * <code>int32 value = 14;</code>
      * @return The value.
      */
     @java.lang.Override
@@ -140,14 +132,10 @@ public final class QuestGlobalVarOuterClass {
       return value_;
     }
 
-    public static final int KEY_FIELD_NUMBER = 11;
+    public static final int KEY_FIELD_NUMBER = 8;
     private int key_;
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 key = 11;</code>
+     * <code>uint32 key = 8;</code>
      * @return The key.
      */
     @java.lang.Override
@@ -169,11 +157,11 @@ public final class QuestGlobalVarOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (value_ != 0) {
-        output.writeInt32(10, value_);
-      }
       if (key_ != 0) {
-        output.writeUInt32(11, key_);
+        output.writeUInt32(8, key_);
+      }
+      if (value_ != 0) {
+        output.writeInt32(14, value_);
       }
       unknownFields.writeTo(output);
     }
@@ -184,13 +172,13 @@ public final class QuestGlobalVarOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (value_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, value_);
-      }
       if (key_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, key_);
+          .computeUInt32Size(8, key_);
+      }
+      if (value_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, value_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -322,6 +310,10 @@ public final class QuestGlobalVarOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: PGEKJBDCGND
+     * </pre>
+     *
      * Protobuf type {@code QuestGlobalVar}
      */
     public static final class Builder extends
@@ -476,11 +468,7 @@ public final class QuestGlobalVarOuterClass {
 
       private int value_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>int32 value = 10;</code>
+       * <code>int32 value = 14;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -488,11 +476,7 @@ public final class QuestGlobalVarOuterClass {
         return value_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>int32 value = 10;</code>
+       * <code>int32 value = 14;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
@@ -503,11 +487,7 @@ public final class QuestGlobalVarOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>int32 value = 10;</code>
+       * <code>int32 value = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
@@ -519,11 +499,7 @@ public final class QuestGlobalVarOuterClass {
 
       private int key_ ;
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 key = 11;</code>
+       * <code>uint32 key = 8;</code>
        * @return The key.
        */
       @java.lang.Override
@@ -531,11 +507,7 @@ public final class QuestGlobalVarOuterClass {
         return key_;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 key = 11;</code>
+       * <code>uint32 key = 8;</code>
        * @param value The key to set.
        * @return This builder for chaining.
        */
@@ -546,11 +518,7 @@ public final class QuestGlobalVarOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 key = 11;</code>
+       * <code>uint32 key = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearKey() {
@@ -627,7 +595,7 @@ public final class QuestGlobalVarOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024QuestGlobalVar.proto\",\n\016QuestGlobalVar" +
-      "\022\r\n\005value\030\n \001(\005\022\013\n\003key\030\013 \001(\rB\033\n\031emu.gras" +
+      "\022\r\n\005value\030\016 \001(\005\022\013\n\003key\030\010 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

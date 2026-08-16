@@ -19,20 +19,12 @@ public final class BBGJODHDCNPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 4;</code>
      * @return The finishTime.
      */
     int getFinishTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CICBHCHOEPN = 5;</code>
      * @return The cICBHCHOEPN.
      */
@@ -128,10 +120,6 @@ public final class BBGJODHDCNPOuterClass {
     public static final int FINISH_TIME_FIELD_NUMBER = 4;
     private int finishTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 4;</code>
      * @return The finishTime.
      */
@@ -143,10 +131,6 @@ public final class BBGJODHDCNPOuterClass {
     public static final int CICBHCHOEPN_FIELD_NUMBER = 5;
     private int cICBHCHOEPN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CICBHCHOEPN = 5;</code>
      * @return The cICBHCHOEPN.
      */
@@ -476,10 +460,6 @@ public final class BBGJODHDCNPOuterClass {
 
       private int finishTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 4;</code>
        * @return The finishTime.
        */
@@ -488,10 +468,6 @@ public final class BBGJODHDCNPOuterClass {
         return finishTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 4;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
@@ -503,10 +479,6 @@ public final class BBGJODHDCNPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 4;</code>
        * @return This builder for chaining.
        */
@@ -519,10 +491,6 @@ public final class BBGJODHDCNPOuterClass {
 
       private int cICBHCHOEPN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CICBHCHOEPN = 5;</code>
        * @return The cICBHCHOEPN.
        */
@@ -531,10 +499,6 @@ public final class BBGJODHDCNPOuterClass {
         return cICBHCHOEPN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CICBHCHOEPN = 5;</code>
        * @param value The cICBHCHOEPN to set.
        * @return This builder for chaining.
@@ -546,10 +510,6 @@ public final class BBGJODHDCNPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CICBHCHOEPN = 5;</code>
        * @return This builder for chaining.
        */

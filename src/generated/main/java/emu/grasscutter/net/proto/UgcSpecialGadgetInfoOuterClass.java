@@ -19,10 +19,6 @@ public final class UgcSpecialGadgetInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ugc_gadget_config_id = 3;</code>
      * @return The ugcGadgetConfigId.
      */
@@ -30,7 +26,7 @@ public final class UgcSpecialGadgetInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.4.0 //6.5.0         
      * </pre>
      *
      * <code>uint32 guid = 2;</code>
@@ -40,7 +36,7 @@ public final class UgcSpecialGadgetInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.4.0 //6.5.0         
      * </pre>
      *
      * <code>uint32 group_id = 1;</code>
@@ -143,10 +139,6 @@ public final class UgcSpecialGadgetInfoOuterClass {
     public static final int UGC_GADGET_CONFIG_ID_FIELD_NUMBER = 3;
     private int ugcGadgetConfigId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ugc_gadget_config_id = 3;</code>
      * @return The ugcGadgetConfigId.
      */
@@ -159,7 +151,7 @@ public final class UgcSpecialGadgetInfoOuterClass {
     private int guid_;
     /**
      * <pre>
-     *6.3.0
+     *6.4.0 //6.5.0         
      * </pre>
      *
      * <code>uint32 guid = 2;</code>
@@ -174,7 +166,7 @@ public final class UgcSpecialGadgetInfoOuterClass {
     private int groupId_;
     /**
      * <pre>
-     *6.3.0
+     *6.4.0 //6.5.0         
      * </pre>
      *
      * <code>uint32 group_id = 1;</code>
@@ -523,10 +515,6 @@ public final class UgcSpecialGadgetInfoOuterClass {
 
       private int ugcGadgetConfigId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ugc_gadget_config_id = 3;</code>
        * @return The ugcGadgetConfigId.
        */
@@ -535,10 +523,6 @@ public final class UgcSpecialGadgetInfoOuterClass {
         return ugcGadgetConfigId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ugc_gadget_config_id = 3;</code>
        * @param value The ugcGadgetConfigId to set.
        * @return This builder for chaining.
@@ -550,10 +534,6 @@ public final class UgcSpecialGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ugc_gadget_config_id = 3;</code>
        * @return This builder for chaining.
        */
@@ -567,7 +547,7 @@ public final class UgcSpecialGadgetInfoOuterClass {
       private int guid_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.4.0 //6.5.0         
        * </pre>
        *
        * <code>uint32 guid = 2;</code>
@@ -579,7 +559,7 @@ public final class UgcSpecialGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.4.0 //6.5.0         
        * </pre>
        *
        * <code>uint32 guid = 2;</code>
@@ -594,7 +574,7 @@ public final class UgcSpecialGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.4.0 //6.5.0         
        * </pre>
        *
        * <code>uint32 guid = 2;</code>
@@ -610,7 +590,7 @@ public final class UgcSpecialGadgetInfoOuterClass {
       private int groupId_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.4.0 //6.5.0         
        * </pre>
        *
        * <code>uint32 group_id = 1;</code>
@@ -622,7 +602,7 @@ public final class UgcSpecialGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.4.0 //6.5.0         
        * </pre>
        *
        * <code>uint32 group_id = 1;</code>
@@ -637,7 +617,7 @@ public final class UgcSpecialGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.4.0 //6.5.0         
        * </pre>
        *
        * <code>uint32 group_id = 1;</code>

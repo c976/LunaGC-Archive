@@ -19,14 +19,15 @@ public final class SceneWeatherForcastReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 IHOAHJAABIM = 11;</code>
-     * @return The iHOAHJAABIM.
+     * <code>uint32 weather_area_id = 2;</code>
+     * @return The weatherAreaId.
      */
-    int getIHOAHJAABIM();
+    int getWeatherAreaId();
   }
   /**
    * <pre>
-   * CmdId: 22476
+   * CmdId: 27174
+   * Obf: DLNOGFFHMHA
    * </pre>
    *
    * Protobuf type {@code SceneWeatherForcastReq}
@@ -73,9 +74,9 @@ public final class SceneWeatherForcastReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 16: {
 
-              iHOAHJAABIM_ = input.readUInt32();
+              weatherAreaId_ = input.readUInt32();
               break;
             }
             default: {
@@ -110,15 +111,15 @@ public final class SceneWeatherForcastReqOuterClass {
               emu.grasscutter.net.proto.SceneWeatherForcastReqOuterClass.SceneWeatherForcastReq.class, emu.grasscutter.net.proto.SceneWeatherForcastReqOuterClass.SceneWeatherForcastReq.Builder.class);
     }
 
-    public static final int IHOAHJAABIM_FIELD_NUMBER = 11;
-    private int iHOAHJAABIM_;
+    public static final int WEATHER_AREA_ID_FIELD_NUMBER = 2;
+    private int weatherAreaId_;
     /**
-     * <code>uint32 IHOAHJAABIM = 11;</code>
-     * @return The iHOAHJAABIM.
+     * <code>uint32 weather_area_id = 2;</code>
+     * @return The weatherAreaId.
      */
     @java.lang.Override
-    public int getIHOAHJAABIM() {
-      return iHOAHJAABIM_;
+    public int getWeatherAreaId() {
+      return weatherAreaId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -135,8 +136,8 @@ public final class SceneWeatherForcastReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iHOAHJAABIM_ != 0) {
-        output.writeUInt32(11, iHOAHJAABIM_);
+      if (weatherAreaId_ != 0) {
+        output.writeUInt32(2, weatherAreaId_);
       }
       unknownFields.writeTo(output);
     }
@@ -147,9 +148,9 @@ public final class SceneWeatherForcastReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iHOAHJAABIM_ != 0) {
+      if (weatherAreaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, iHOAHJAABIM_);
+          .computeUInt32Size(2, weatherAreaId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -166,8 +167,8 @@ public final class SceneWeatherForcastReqOuterClass {
       }
       emu.grasscutter.net.proto.SceneWeatherForcastReqOuterClass.SceneWeatherForcastReq other = (emu.grasscutter.net.proto.SceneWeatherForcastReqOuterClass.SceneWeatherForcastReq) obj;
 
-      if (getIHOAHJAABIM()
-          != other.getIHOAHJAABIM()) return false;
+      if (getWeatherAreaId()
+          != other.getWeatherAreaId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -179,8 +180,8 @@ public final class SceneWeatherForcastReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IHOAHJAABIM_FIELD_NUMBER;
-      hash = (53 * hash) + getIHOAHJAABIM();
+      hash = (37 * hash) + WEATHER_AREA_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getWeatherAreaId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -278,7 +279,8 @@ public final class SceneWeatherForcastReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22476
+     * CmdId: 27174
+     * Obf: DLNOGFFHMHA
      * </pre>
      *
      * Protobuf type {@code SceneWeatherForcastReq}
@@ -318,7 +320,7 @@ public final class SceneWeatherForcastReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        iHOAHJAABIM_ = 0;
+        weatherAreaId_ = 0;
 
         return this;
       }
@@ -346,7 +348,7 @@ public final class SceneWeatherForcastReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneWeatherForcastReqOuterClass.SceneWeatherForcastReq buildPartial() {
         emu.grasscutter.net.proto.SceneWeatherForcastReqOuterClass.SceneWeatherForcastReq result = new emu.grasscutter.net.proto.SceneWeatherForcastReqOuterClass.SceneWeatherForcastReq(this);
-        result.iHOAHJAABIM_ = iHOAHJAABIM_;
+        result.weatherAreaId_ = weatherAreaId_;
         onBuilt();
         return result;
       }
@@ -395,8 +397,8 @@ public final class SceneWeatherForcastReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneWeatherForcastReqOuterClass.SceneWeatherForcastReq other) {
         if (other == emu.grasscutter.net.proto.SceneWeatherForcastReqOuterClass.SceneWeatherForcastReq.getDefaultInstance()) return this;
-        if (other.getIHOAHJAABIM() != 0) {
-          setIHOAHJAABIM(other.getIHOAHJAABIM());
+        if (other.getWeatherAreaId() != 0) {
+          setWeatherAreaId(other.getWeatherAreaId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -427,33 +429,33 @@ public final class SceneWeatherForcastReqOuterClass {
         return this;
       }
 
-      private int iHOAHJAABIM_ ;
+      private int weatherAreaId_ ;
       /**
-       * <code>uint32 IHOAHJAABIM = 11;</code>
-       * @return The iHOAHJAABIM.
+       * <code>uint32 weather_area_id = 2;</code>
+       * @return The weatherAreaId.
        */
       @java.lang.Override
-      public int getIHOAHJAABIM() {
-        return iHOAHJAABIM_;
+      public int getWeatherAreaId() {
+        return weatherAreaId_;
       }
       /**
-       * <code>uint32 IHOAHJAABIM = 11;</code>
-       * @param value The iHOAHJAABIM to set.
+       * <code>uint32 weather_area_id = 2;</code>
+       * @param value The weatherAreaId to set.
        * @return This builder for chaining.
        */
-      public Builder setIHOAHJAABIM(int value) {
+      public Builder setWeatherAreaId(int value) {
         
-        iHOAHJAABIM_ = value;
+        weatherAreaId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IHOAHJAABIM = 11;</code>
+       * <code>uint32 weather_area_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIHOAHJAABIM() {
+      public Builder clearWeatherAreaId() {
         
-        iHOAHJAABIM_ = 0;
+        weatherAreaId_ = 0;
         onChanged();
         return this;
       }
@@ -524,9 +526,9 @@ public final class SceneWeatherForcastReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034SceneWeatherForcastReq.proto\"-\n\026SceneW" +
-      "eatherForcastReq\022\023\n\013IHOAHJAABIM\030\013 \001(\rB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n\034SceneWeatherForcastReq.proto\"1\n\026SceneW" +
+      "eatherForcastReq\022\027\n\017weather_area_id\030\002 \001(" +
+      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -537,7 +539,7 @@ public final class SceneWeatherForcastReqOuterClass {
     internal_static_SceneWeatherForcastReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneWeatherForcastReq_descriptor,
-        new java.lang.String[] { "IHOAHJAABIM", });
+        new java.lang.String[] { "WeatherAreaId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

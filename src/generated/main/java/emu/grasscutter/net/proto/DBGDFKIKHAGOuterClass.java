@@ -19,44 +19,24 @@ public final class DBGDFKIKHAGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF> 
         getKBGJCPOKLFBList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
      */
     emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF getKBGJCPOKLFB(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
      */
     int getKBGJCPOKLFBCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHFOrBuilder> 
         getKBGJCPOKLFBOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
      */
     emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHFOrBuilder getKBGJCPOKLFBOrBuilder(
@@ -156,10 +136,6 @@ public final class DBGDFKIKHAGOuterClass {
     public static final int KBGJCPOKLFB_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF> kBGJCPOKLFB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class DBGDFKIKHAGOuterClass {
       return kBGJCPOKLFB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class DBGDFKIKHAGOuterClass {
       return kBGJCPOKLFB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class DBGDFKIKHAGOuterClass {
       return kBGJCPOKLFB_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class DBGDFKIKHAGOuterClass {
       return kBGJCPOKLFB_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class DBGDFKIKHAGOuterClass {
           emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF, emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF.Builder, emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHFOrBuilder> kBGJCPOKLFBBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF> getKBGJCPOKLFBList() {
@@ -582,10 +538,6 @@ public final class DBGDFKIKHAGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public int getKBGJCPOKLFBCount() {
@@ -596,10 +548,6 @@ public final class DBGDFKIKHAGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF getKBGJCPOKLFB(int index) {
@@ -610,10 +558,6 @@ public final class DBGDFKIKHAGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public Builder setKBGJCPOKLFB(
@@ -631,10 +575,6 @@ public final class DBGDFKIKHAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public Builder setKBGJCPOKLFB(
@@ -649,10 +589,6 @@ public final class DBGDFKIKHAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public Builder addKBGJCPOKLFB(emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF value) {
@@ -669,10 +605,6 @@ public final class DBGDFKIKHAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -690,10 +622,6 @@ public final class DBGDFKIKHAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -708,10 +636,6 @@ public final class DBGDFKIKHAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -726,10 +650,6 @@ public final class DBGDFKIKHAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public Builder addAllKBGJCPOKLFB(
@@ -745,10 +665,6 @@ public final class DBGDFKIKHAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public Builder clearKBGJCPOKLFB() {
@@ -762,10 +678,6 @@ public final class DBGDFKIKHAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public Builder removeKBGJCPOKLFB(int index) {
@@ -779,10 +691,6 @@ public final class DBGDFKIKHAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF.Builder getKBGJCPOKLFBBuilder(
@@ -790,10 +698,6 @@ public final class DBGDFKIKHAGOuterClass {
         return getKBGJCPOKLFBFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHFOrBuilder getKBGJCPOKLFBOrBuilder(
@@ -804,10 +708,6 @@ public final class DBGDFKIKHAGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHFOrBuilder> 
@@ -819,10 +719,6 @@ public final class DBGDFKIKHAGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF.Builder addKBGJCPOKLFBBuilder() {
@@ -830,10 +726,6 @@ public final class DBGDFKIKHAGOuterClass {
             emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF.Builder addKBGJCPOKLFBBuilder(
@@ -842,10 +734,6 @@ public final class DBGDFKIKHAGOuterClass {
             index, emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ECAGJPHIFHF KBGJCPOKLFB = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ECAGJPHIFHFOuterClass.ECAGJPHIFHF.Builder> 

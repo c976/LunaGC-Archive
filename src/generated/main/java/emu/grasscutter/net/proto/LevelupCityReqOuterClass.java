@@ -19,38 +19,27 @@ public final class LevelupCityReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 scene_id = 14;</code>
+     * <code>uint32 scene_id = 11;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 area_id = 7;</code>
+     * <code>uint32 area_id = 3;</code>
      * @return The areaId.
      */
     int getAreaId();
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 item_num = 15;</code>
+     * <code>uint32 item_num = 1;</code>
      * @return The itemNum.
      */
     int getItemNum();
   }
   /**
    * <pre>
-   * CmdId: 9925
+   * CmdId: 8097
+   * Obf: DAIDHECFAML
    * </pre>
    *
    * Protobuf type {@code LevelupCityReq}
@@ -97,19 +86,19 @@ public final class LevelupCityReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 8: {
+
+              itemNum_ = input.readUInt32();
+              break;
+            }
+            case 24: {
 
               areaId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 88: {
 
               sceneId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              itemNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,14 +133,10 @@ public final class LevelupCityReqOuterClass {
               emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq.class, emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 14;
+    public static final int SCENE_ID_FIELD_NUMBER = 11;
     private int sceneId_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 scene_id = 14;</code>
+     * <code>uint32 scene_id = 11;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -159,14 +144,10 @@ public final class LevelupCityReqOuterClass {
       return sceneId_;
     }
 
-    public static final int AREA_ID_FIELD_NUMBER = 7;
+    public static final int AREA_ID_FIELD_NUMBER = 3;
     private int areaId_;
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 area_id = 7;</code>
+     * <code>uint32 area_id = 3;</code>
      * @return The areaId.
      */
     @java.lang.Override
@@ -174,14 +155,10 @@ public final class LevelupCityReqOuterClass {
       return areaId_;
     }
 
-    public static final int ITEM_NUM_FIELD_NUMBER = 15;
+    public static final int ITEM_NUM_FIELD_NUMBER = 1;
     private int itemNum_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 item_num = 15;</code>
+     * <code>uint32 item_num = 1;</code>
      * @return The itemNum.
      */
     @java.lang.Override
@@ -203,14 +180,14 @@ public final class LevelupCityReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (itemNum_ != 0) {
+        output.writeUInt32(1, itemNum_);
+      }
       if (areaId_ != 0) {
-        output.writeUInt32(7, areaId_);
+        output.writeUInt32(3, areaId_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(14, sceneId_);
-      }
-      if (itemNum_ != 0) {
-        output.writeUInt32(15, itemNum_);
+        output.writeUInt32(11, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -221,17 +198,17 @@ public final class LevelupCityReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (itemNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, itemNum_);
+      }
       if (areaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, areaId_);
+          .computeUInt32Size(3, areaId_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, sceneId_);
-      }
-      if (itemNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, itemNum_);
+          .computeUInt32Size(11, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -368,7 +345,8 @@ public final class LevelupCityReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9925
+     * CmdId: 8097
+     * Obf: DAIDHECFAML
      * </pre>
      *
      * Protobuf type {@code LevelupCityReq}
@@ -531,11 +509,7 @@ public final class LevelupCityReqOuterClass {
 
       private int sceneId_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 scene_id = 14;</code>
+       * <code>uint32 scene_id = 11;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -543,11 +517,7 @@ public final class LevelupCityReqOuterClass {
         return sceneId_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 scene_id = 14;</code>
+       * <code>uint32 scene_id = 11;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -558,11 +528,7 @@ public final class LevelupCityReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 scene_id = 14;</code>
+       * <code>uint32 scene_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -574,11 +540,7 @@ public final class LevelupCityReqOuterClass {
 
       private int areaId_ ;
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 area_id = 7;</code>
+       * <code>uint32 area_id = 3;</code>
        * @return The areaId.
        */
       @java.lang.Override
@@ -586,11 +548,7 @@ public final class LevelupCityReqOuterClass {
         return areaId_;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 area_id = 7;</code>
+       * <code>uint32 area_id = 3;</code>
        * @param value The areaId to set.
        * @return This builder for chaining.
        */
@@ -601,11 +559,7 @@ public final class LevelupCityReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 area_id = 7;</code>
+       * <code>uint32 area_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaId() {
@@ -617,11 +571,7 @@ public final class LevelupCityReqOuterClass {
 
       private int itemNum_ ;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 item_num = 15;</code>
+       * <code>uint32 item_num = 1;</code>
        * @return The itemNum.
        */
       @java.lang.Override
@@ -629,11 +579,7 @@ public final class LevelupCityReqOuterClass {
         return itemNum_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 item_num = 15;</code>
+       * <code>uint32 item_num = 1;</code>
        * @param value The itemNum to set.
        * @return This builder for chaining.
        */
@@ -644,11 +590,7 @@ public final class LevelupCityReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 item_num = 15;</code>
+       * <code>uint32 item_num = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemNum() {
@@ -725,8 +667,8 @@ public final class LevelupCityReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024LevelupCityReq.proto\"E\n\016LevelupCityReq" +
-      "\022\020\n\010scene_id\030\016 \001(\r\022\017\n\007area_id\030\007 \001(\r\022\020\n\010i" +
-      "tem_num\030\017 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "\022\020\n\010scene_id\030\013 \001(\r\022\017\n\007area_id\030\003 \001(\r\022\020\n\010i" +
+      "tem_num\030\001 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -20,27 +20,27 @@ public final class WearEquipReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
-     * <code>uint64 equip_guid = 2;</code>
+     * <code>uint64 equip_guid = 5;</code>
      * @return The equipGuid.
      */
     long getEquipGuid();
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
-     * <code>uint64 avatar_guid = 8;</code>
+     * <code>uint64 avatar_guid = 12;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
   }
   /**
    * <pre>
-   * CmdId: 9103
+   * CmdId: 24207
    * </pre>
    *
    * Protobuf type {@code WearEquipReq}
@@ -87,12 +87,12 @@ public final class WearEquipReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 40: {
 
               equipGuid_ = input.readUInt64();
               break;
             }
-            case 64: {
+            case 96: {
 
               avatarGuid_ = input.readUInt64();
               break;
@@ -129,14 +129,14 @@ public final class WearEquipReqOuterClass {
               emu.grasscutter.net.proto.WearEquipReqOuterClass.WearEquipReq.class, emu.grasscutter.net.proto.WearEquipReqOuterClass.WearEquipReq.Builder.class);
     }
 
-    public static final int EQUIP_GUID_FIELD_NUMBER = 2;
+    public static final int EQUIP_GUID_FIELD_NUMBER = 5;
     private long equipGuid_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
-     * <code>uint64 equip_guid = 2;</code>
+     * <code>uint64 equip_guid = 5;</code>
      * @return The equipGuid.
      */
     @java.lang.Override
@@ -144,14 +144,14 @@ public final class WearEquipReqOuterClass {
       return equipGuid_;
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 8;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 12;
     private long avatarGuid_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0         
      * </pre>
      *
-     * <code>uint64 avatar_guid = 8;</code>
+     * <code>uint64 avatar_guid = 12;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -174,10 +174,10 @@ public final class WearEquipReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (equipGuid_ != 0L) {
-        output.writeUInt64(2, equipGuid_);
+        output.writeUInt64(5, equipGuid_);
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(8, avatarGuid_);
+        output.writeUInt64(12, avatarGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -190,11 +190,11 @@ public final class WearEquipReqOuterClass {
       size = 0;
       if (equipGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(2, equipGuid_);
+          .computeUInt64Size(5, equipGuid_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(8, avatarGuid_);
+          .computeUInt64Size(12, avatarGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -329,7 +329,7 @@ public final class WearEquipReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9103
+     * CmdId: 24207
      * </pre>
      *
      * Protobuf type {@code WearEquipReq}
@@ -487,10 +487,10 @@ public final class WearEquipReqOuterClass {
       private long equipGuid_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
-       * <code>uint64 equip_guid = 2;</code>
+       * <code>uint64 equip_guid = 5;</code>
        * @return The equipGuid.
        */
       @java.lang.Override
@@ -499,10 +499,10 @@ public final class WearEquipReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
-       * <code>uint64 equip_guid = 2;</code>
+       * <code>uint64 equip_guid = 5;</code>
        * @param value The equipGuid to set.
        * @return This builder for chaining.
        */
@@ -514,10 +514,10 @@ public final class WearEquipReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
-       * <code>uint64 equip_guid = 2;</code>
+       * <code>uint64 equip_guid = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEquipGuid() {
@@ -530,10 +530,10 @@ public final class WearEquipReqOuterClass {
       private long avatarGuid_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
-       * <code>uint64 avatar_guid = 8;</code>
+       * <code>uint64 avatar_guid = 12;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -542,10 +542,10 @@ public final class WearEquipReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
-       * <code>uint64 avatar_guid = 8;</code>
+       * <code>uint64 avatar_guid = 12;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -557,10 +557,10 @@ public final class WearEquipReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0         
        * </pre>
        *
-       * <code>uint64 avatar_guid = 8;</code>
+       * <code>uint64 avatar_guid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -637,7 +637,7 @@ public final class WearEquipReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022WearEquipReq.proto\"7\n\014WearEquipReq\022\022\n\n" +
-      "equip_guid\030\002 \001(\004\022\023\n\013avatar_guid\030\010 \001(\004B\033\n" +
+      "equip_guid\030\005 \001(\004\022\023\n\013avatar_guid\030\014 \001(\004B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

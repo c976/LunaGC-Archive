@@ -20,7 +20,7 @@ public final class BreakoutElementReactionCounterOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 count = 2;</code>
@@ -30,13 +30,13 @@ public final class BreakoutElementReactionCounterOuterClass {
 
     /**
      * <pre>
-     * offset: 36
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 HGGAKNFMDOJ = 1;</code>
-     * @return The hGGAKNFMDOJ.
+     * <code>uint32 element_reaction = 1;</code>
+     * @return The elementReaction.
      */
-    int getHGGAKNFMDOJ();
+    int getElementReaction();
   }
   /**
    * Protobuf type {@code BreakoutElementReactionCounter}
@@ -85,7 +85,7 @@ public final class BreakoutElementReactionCounterOuterClass {
               break;
             case 8: {
 
-              hGGAKNFMDOJ_ = input.readUInt32();
+              elementReaction_ = input.readUInt32();
               break;
             }
             case 16: {
@@ -129,7 +129,7 @@ public final class BreakoutElementReactionCounterOuterClass {
     private int count_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 count = 2;</code>
@@ -140,19 +140,19 @@ public final class BreakoutElementReactionCounterOuterClass {
       return count_;
     }
 
-    public static final int HGGAKNFMDOJ_FIELD_NUMBER = 1;
-    private int hGGAKNFMDOJ_;
+    public static final int ELEMENT_REACTION_FIELD_NUMBER = 1;
+    private int elementReaction_;
     /**
      * <pre>
-     * offset: 36
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 HGGAKNFMDOJ = 1;</code>
-     * @return The hGGAKNFMDOJ.
+     * <code>uint32 element_reaction = 1;</code>
+     * @return The elementReaction.
      */
     @java.lang.Override
-    public int getHGGAKNFMDOJ() {
-      return hGGAKNFMDOJ_;
+    public int getElementReaction() {
+      return elementReaction_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -169,8 +169,8 @@ public final class BreakoutElementReactionCounterOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hGGAKNFMDOJ_ != 0) {
-        output.writeUInt32(1, hGGAKNFMDOJ_);
+      if (elementReaction_ != 0) {
+        output.writeUInt32(1, elementReaction_);
       }
       if (count_ != 0) {
         output.writeUInt32(2, count_);
@@ -184,9 +184,9 @@ public final class BreakoutElementReactionCounterOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hGGAKNFMDOJ_ != 0) {
+      if (elementReaction_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, hGGAKNFMDOJ_);
+          .computeUInt32Size(1, elementReaction_);
       }
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -209,8 +209,8 @@ public final class BreakoutElementReactionCounterOuterClass {
 
       if (getCount()
           != other.getCount()) return false;
-      if (getHGGAKNFMDOJ()
-          != other.getHGGAKNFMDOJ()) return false;
+      if (getElementReaction()
+          != other.getElementReaction()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -224,8 +224,8 @@ public final class BreakoutElementReactionCounterOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getCount();
-      hash = (37 * hash) + HGGAKNFMDOJ_FIELD_NUMBER;
-      hash = (53 * hash) + getHGGAKNFMDOJ();
+      hash = (37 * hash) + ELEMENT_REACTION_FIELD_NUMBER;
+      hash = (53 * hash) + getElementReaction();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -361,7 +361,7 @@ public final class BreakoutElementReactionCounterOuterClass {
         super.clear();
         count_ = 0;
 
-        hGGAKNFMDOJ_ = 0;
+        elementReaction_ = 0;
 
         return this;
       }
@@ -390,7 +390,7 @@ public final class BreakoutElementReactionCounterOuterClass {
       public emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter buildPartial() {
         emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter result = new emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter(this);
         result.count_ = count_;
-        result.hGGAKNFMDOJ_ = hGGAKNFMDOJ_;
+        result.elementReaction_ = elementReaction_;
         onBuilt();
         return result;
       }
@@ -442,8 +442,8 @@ public final class BreakoutElementReactionCounterOuterClass {
         if (other.getCount() != 0) {
           setCount(other.getCount());
         }
-        if (other.getHGGAKNFMDOJ() != 0) {
-          setHGGAKNFMDOJ(other.getHGGAKNFMDOJ());
+        if (other.getElementReaction() != 0) {
+          setElementReaction(other.getElementReaction());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -477,7 +477,7 @@ public final class BreakoutElementReactionCounterOuterClass {
       private int count_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 count = 2;</code>
@@ -489,7 +489,7 @@ public final class BreakoutElementReactionCounterOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 count = 2;</code>
@@ -504,7 +504,7 @@ public final class BreakoutElementReactionCounterOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 count = 2;</code>
@@ -517,45 +517,45 @@ public final class BreakoutElementReactionCounterOuterClass {
         return this;
       }
 
-      private int hGGAKNFMDOJ_ ;
+      private int elementReaction_ ;
       /**
        * <pre>
-       * offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 HGGAKNFMDOJ = 1;</code>
-       * @return The hGGAKNFMDOJ.
+       * <code>uint32 element_reaction = 1;</code>
+       * @return The elementReaction.
        */
       @java.lang.Override
-      public int getHGGAKNFMDOJ() {
-        return hGGAKNFMDOJ_;
+      public int getElementReaction() {
+        return elementReaction_;
       }
       /**
        * <pre>
-       * offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 HGGAKNFMDOJ = 1;</code>
-       * @param value The hGGAKNFMDOJ to set.
+       * <code>uint32 element_reaction = 1;</code>
+       * @param value The elementReaction to set.
        * @return This builder for chaining.
        */
-      public Builder setHGGAKNFMDOJ(int value) {
+      public Builder setElementReaction(int value) {
         
-        hGGAKNFMDOJ_ = value;
+        elementReaction_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 36
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 HGGAKNFMDOJ = 1;</code>
+       * <code>uint32 element_reaction = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHGGAKNFMDOJ() {
+      public Builder clearElementReaction() {
         
-        hGGAKNFMDOJ_ = 0;
+        elementReaction_ = 0;
         onChanged();
         return this;
       }
@@ -626,10 +626,10 @@ public final class BreakoutElementReactionCounterOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$BreakoutElementReactionCounter.proto\"D" +
+      "\n$BreakoutElementReactionCounter.proto\"I" +
       "\n\036BreakoutElementReactionCounter\022\r\n\005coun" +
-      "t\030\002 \001(\r\022\023\n\013HGGAKNFMDOJ\030\001 \001(\rB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "t\030\002 \001(\r\022\030\n\020element_reaction\030\001 \001(\rB\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -640,7 +640,7 @@ public final class BreakoutElementReactionCounterOuterClass {
     internal_static_BreakoutElementReactionCounter_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BreakoutElementReactionCounter_descriptor,
-        new java.lang.String[] { "Count", "HGGAKNFMDOJ", });
+        new java.lang.String[] { "Count", "ElementReaction", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

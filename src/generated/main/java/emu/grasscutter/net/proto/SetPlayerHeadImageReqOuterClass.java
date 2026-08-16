@@ -19,10 +19,6 @@ public final class SetPlayerHeadImageReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 profile_picture_id = 10;</code>
      * @return The profilePictureId.
      */
@@ -113,10 +109,6 @@ public final class SetPlayerHeadImageReqOuterClass {
     public static final int PROFILE_PICTURE_ID_FIELD_NUMBER = 10;
     private int profilePictureId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 profile_picture_id = 10;</code>
      * @return The profilePictureId.
      */
@@ -429,10 +421,6 @@ public final class SetPlayerHeadImageReqOuterClass {
 
       private int profilePictureId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 profile_picture_id = 10;</code>
        * @return The profilePictureId.
        */
@@ -441,10 +429,6 @@ public final class SetPlayerHeadImageReqOuterClass {
         return profilePictureId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 profile_picture_id = 10;</code>
        * @param value The profilePictureId to set.
        * @return This builder for chaining.
@@ -456,10 +440,6 @@ public final class SetPlayerHeadImageReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 profile_picture_id = 10;</code>
        * @return This builder for chaining.
        */

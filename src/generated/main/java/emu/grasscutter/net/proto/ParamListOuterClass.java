@@ -19,28 +19,16 @@ public final class ParamListOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>repeated uint32 param_list = 1;</code>
      * @return A list containing the paramList.
      */
     java.util.List<java.lang.Integer> getParamListList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>repeated uint32 param_list = 1;</code>
      * @return The count of paramList.
      */
     int getParamListCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>repeated uint32 param_list = 1;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
@@ -48,6 +36,10 @@ public final class ParamListOuterClass {
     int getParamList(int index);
   }
   /**
+   * <pre>
+   * Obf: BLCNFAPGDKG
+   * </pre>
+   *
    * Protobuf type {@code ParamList}
    */
   public static final class ParamList extends
@@ -153,10 +145,6 @@ public final class ParamListOuterClass {
     public static final int PARAM_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList paramList_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>repeated uint32 param_list = 1;</code>
      * @return A list containing the paramList.
      */
@@ -166,10 +154,6 @@ public final class ParamListOuterClass {
       return paramList_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>repeated uint32 param_list = 1;</code>
      * @return The count of paramList.
      */
@@ -177,10 +161,6 @@ public final class ParamListOuterClass {
       return paramList_.size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>repeated uint32 param_list = 1;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
@@ -363,6 +343,10 @@ public final class ParamListOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: BLCNFAPGDKG
+     * </pre>
+     *
      * Protobuf type {@code ParamList}
      */
     public static final class Builder extends
@@ -530,10 +514,6 @@ public final class ParamListOuterClass {
          }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>repeated uint32 param_list = 1;</code>
        * @return A list containing the paramList.
        */
@@ -543,10 +523,6 @@ public final class ParamListOuterClass {
                  java.util.Collections.unmodifiableList(paramList_) : paramList_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>repeated uint32 param_list = 1;</code>
        * @return The count of paramList.
        */
@@ -554,10 +530,6 @@ public final class ParamListOuterClass {
         return paramList_.size();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>repeated uint32 param_list = 1;</code>
        * @param index The index of the element to return.
        * @return The paramList at the given index.
@@ -566,10 +538,6 @@ public final class ParamListOuterClass {
         return paramList_.getInt(index);
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>repeated uint32 param_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The paramList to set.
@@ -583,10 +551,6 @@ public final class ParamListOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>repeated uint32 param_list = 1;</code>
        * @param value The paramList to add.
        * @return This builder for chaining.
@@ -598,10 +562,6 @@ public final class ParamListOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>repeated uint32 param_list = 1;</code>
        * @param values The paramList to add.
        * @return This builder for chaining.
@@ -615,10 +575,6 @@ public final class ParamListOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>repeated uint32 param_list = 1;</code>
        * @return This builder for chaining.
        */

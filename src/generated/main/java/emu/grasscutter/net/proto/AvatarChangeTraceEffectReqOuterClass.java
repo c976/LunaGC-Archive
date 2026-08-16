@@ -19,20 +19,12 @@ public final class AvatarChangeTraceEffectReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>uint64 avatar_guid = 4;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
      * <code>uint32 trace_effect_id = 8;</code>
      * @return The traceEffectId.
      */
@@ -40,6 +32,7 @@ public final class AvatarChangeTraceEffectReqOuterClass {
   }
   /**
    * <pre>
+   * Version: 5.7
    * CmdId: 23360
    * </pre>
    *
@@ -132,10 +125,6 @@ public final class AvatarChangeTraceEffectReqOuterClass {
     public static final int AVATAR_GUID_FIELD_NUMBER = 4;
     private long avatarGuid_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>uint64 avatar_guid = 4;</code>
      * @return The avatarGuid.
      */
@@ -147,10 +136,6 @@ public final class AvatarChangeTraceEffectReqOuterClass {
     public static final int TRACE_EFFECT_ID_FIELD_NUMBER = 8;
     private int traceEffectId_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
      * <code>uint32 trace_effect_id = 8;</code>
      * @return The traceEffectId.
      */
@@ -328,6 +313,7 @@ public final class AvatarChangeTraceEffectReqOuterClass {
     }
     /**
      * <pre>
+     * Version: 5.7
      * CmdId: 23360
      * </pre>
      *
@@ -485,10 +471,6 @@ public final class AvatarChangeTraceEffectReqOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint64 avatar_guid = 4;</code>
        * @return The avatarGuid.
        */
@@ -497,10 +479,6 @@ public final class AvatarChangeTraceEffectReqOuterClass {
         return avatarGuid_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint64 avatar_guid = 4;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
@@ -512,10 +490,6 @@ public final class AvatarChangeTraceEffectReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint64 avatar_guid = 4;</code>
        * @return This builder for chaining.
        */
@@ -528,10 +502,6 @@ public final class AvatarChangeTraceEffectReqOuterClass {
 
       private int traceEffectId_ ;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
        * <code>uint32 trace_effect_id = 8;</code>
        * @return The traceEffectId.
        */
@@ -540,10 +510,6 @@ public final class AvatarChangeTraceEffectReqOuterClass {
         return traceEffectId_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
        * <code>uint32 trace_effect_id = 8;</code>
        * @param value The traceEffectId to set.
        * @return This builder for chaining.
@@ -555,10 +521,6 @@ public final class AvatarChangeTraceEffectReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
        * <code>uint32 trace_effect_id = 8;</code>
        * @return This builder for chaining.
        */

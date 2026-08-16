@@ -19,67 +19,39 @@ public final class NLGAEMCDIANOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
      * @return Whether the nFGNKKJOKKA field is set.
      */
     boolean hasNFGNKKJOKKA();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
      * @return The nFGNKKJOKKA.
      */
     emu.grasscutter.net.proto.NPGMLKKPNGOOuterClass.NPGMLKKPNGO getNFGNKKJOKKA();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
      */
     emu.grasscutter.net.proto.NPGMLKKPNGOOuterClass.NPGMLKKPNGOOrBuilder getNFGNKKJOKKAOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OAPGHDJLPMN = 6;</code>
      * @return The oAPGHDJLPMN.
      */
     int getOAPGHDJLPMN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ADADHFBFMEB = 12;</code>
      * @return The aDADHFBFMEB.
      */
     int getADADHFBFMEB();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OJPNMAJCDND = 2;</code>
      * @return The oJPNMAJCDND.
      */
     int getOJPNMAJCDND();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DGFADMCLNDI = 9;</code>
      * @return The dGFADMCLNDI.
      */
@@ -198,10 +170,6 @@ public final class NLGAEMCDIANOuterClass {
     public static final int NFGNKKJOKKA_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.NPGMLKKPNGOOuterClass.NPGMLKKPNGO nFGNKKJOKKA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
      * @return Whether the nFGNKKJOKKA field is set.
      */
@@ -210,10 +178,6 @@ public final class NLGAEMCDIANOuterClass {
       return nFGNKKJOKKA_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
      * @return The nFGNKKJOKKA.
      */
@@ -222,10 +186,6 @@ public final class NLGAEMCDIANOuterClass {
       return nFGNKKJOKKA_ == null ? emu.grasscutter.net.proto.NPGMLKKPNGOOuterClass.NPGMLKKPNGO.getDefaultInstance() : nFGNKKJOKKA_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
      */
     @java.lang.Override
@@ -236,10 +196,6 @@ public final class NLGAEMCDIANOuterClass {
     public static final int OAPGHDJLPMN_FIELD_NUMBER = 6;
     private int oAPGHDJLPMN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OAPGHDJLPMN = 6;</code>
      * @return The oAPGHDJLPMN.
      */
@@ -251,10 +207,6 @@ public final class NLGAEMCDIANOuterClass {
     public static final int ADADHFBFMEB_FIELD_NUMBER = 12;
     private int aDADHFBFMEB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ADADHFBFMEB = 12;</code>
      * @return The aDADHFBFMEB.
      */
@@ -266,10 +218,6 @@ public final class NLGAEMCDIANOuterClass {
     public static final int OJPNMAJCDND_FIELD_NUMBER = 2;
     private int oJPNMAJCDND_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OJPNMAJCDND = 2;</code>
      * @return The oJPNMAJCDND.
      */
@@ -281,10 +229,6 @@ public final class NLGAEMCDIANOuterClass {
     public static final int DGFADMCLNDI_FIELD_NUMBER = 9;
     private int dGFADMCLNDI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DGFADMCLNDI = 9;</code>
      * @return The dGFADMCLNDI.
      */
@@ -680,10 +624,6 @@ public final class NLGAEMCDIANOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.NPGMLKKPNGOOuterClass.NPGMLKKPNGO, emu.grasscutter.net.proto.NPGMLKKPNGOOuterClass.NPGMLKKPNGO.Builder, emu.grasscutter.net.proto.NPGMLKKPNGOOuterClass.NPGMLKKPNGOOrBuilder> nFGNKKJOKKABuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
        * @return Whether the nFGNKKJOKKA field is set.
        */
@@ -691,10 +631,6 @@ public final class NLGAEMCDIANOuterClass {
         return nFGNKKJOKKABuilder_ != null || nFGNKKJOKKA_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
        * @return The nFGNKKJOKKA.
        */
@@ -706,10 +642,6 @@ public final class NLGAEMCDIANOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
        */
       public Builder setNFGNKKJOKKA(emu.grasscutter.net.proto.NPGMLKKPNGOOuterClass.NPGMLKKPNGO value) {
@@ -726,10 +658,6 @@ public final class NLGAEMCDIANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
        */
       public Builder setNFGNKKJOKKA(
@@ -744,10 +672,6 @@ public final class NLGAEMCDIANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
        */
       public Builder mergeNFGNKKJOKKA(emu.grasscutter.net.proto.NPGMLKKPNGOOuterClass.NPGMLKKPNGO value) {
@@ -766,10 +690,6 @@ public final class NLGAEMCDIANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
        */
       public Builder clearNFGNKKJOKKA() {
@@ -784,10 +704,6 @@ public final class NLGAEMCDIANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
        */
       public emu.grasscutter.net.proto.NPGMLKKPNGOOuterClass.NPGMLKKPNGO.Builder getNFGNKKJOKKABuilder() {
@@ -796,10 +712,6 @@ public final class NLGAEMCDIANOuterClass {
         return getNFGNKKJOKKAFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
        */
       public emu.grasscutter.net.proto.NPGMLKKPNGOOuterClass.NPGMLKKPNGOOrBuilder getNFGNKKJOKKAOrBuilder() {
@@ -811,10 +723,6 @@ public final class NLGAEMCDIANOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NPGMLKKPNGO NFGNKKJOKKA = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -833,10 +741,6 @@ public final class NLGAEMCDIANOuterClass {
 
       private int oAPGHDJLPMN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OAPGHDJLPMN = 6;</code>
        * @return The oAPGHDJLPMN.
        */
@@ -845,10 +749,6 @@ public final class NLGAEMCDIANOuterClass {
         return oAPGHDJLPMN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OAPGHDJLPMN = 6;</code>
        * @param value The oAPGHDJLPMN to set.
        * @return This builder for chaining.
@@ -860,10 +760,6 @@ public final class NLGAEMCDIANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OAPGHDJLPMN = 6;</code>
        * @return This builder for chaining.
        */
@@ -876,10 +772,6 @@ public final class NLGAEMCDIANOuterClass {
 
       private int aDADHFBFMEB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ADADHFBFMEB = 12;</code>
        * @return The aDADHFBFMEB.
        */
@@ -888,10 +780,6 @@ public final class NLGAEMCDIANOuterClass {
         return aDADHFBFMEB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ADADHFBFMEB = 12;</code>
        * @param value The aDADHFBFMEB to set.
        * @return This builder for chaining.
@@ -903,10 +791,6 @@ public final class NLGAEMCDIANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ADADHFBFMEB = 12;</code>
        * @return This builder for chaining.
        */
@@ -919,10 +803,6 @@ public final class NLGAEMCDIANOuterClass {
 
       private int oJPNMAJCDND_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OJPNMAJCDND = 2;</code>
        * @return The oJPNMAJCDND.
        */
@@ -931,10 +811,6 @@ public final class NLGAEMCDIANOuterClass {
         return oJPNMAJCDND_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OJPNMAJCDND = 2;</code>
        * @param value The oJPNMAJCDND to set.
        * @return This builder for chaining.
@@ -946,10 +822,6 @@ public final class NLGAEMCDIANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OJPNMAJCDND = 2;</code>
        * @return This builder for chaining.
        */
@@ -962,10 +834,6 @@ public final class NLGAEMCDIANOuterClass {
 
       private int dGFADMCLNDI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DGFADMCLNDI = 9;</code>
        * @return The dGFADMCLNDI.
        */
@@ -974,10 +842,6 @@ public final class NLGAEMCDIANOuterClass {
         return dGFADMCLNDI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DGFADMCLNDI = 9;</code>
        * @param value The dGFADMCLNDI to set.
        * @return This builder for chaining.
@@ -989,10 +853,6 @@ public final class NLGAEMCDIANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DGFADMCLNDI = 9;</code>
        * @return This builder for chaining.
        */

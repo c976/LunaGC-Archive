@@ -19,50 +19,30 @@ public final class JFJNFHMNJEHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 group_id = 1;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MLDDFANOCCG = 14;</code>
      * @return The mLDDFANOCCG.
      */
     int getMLDDFANOCCG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EAMFLHEIJIO = 7;</code>
      * @return The eAMFLHEIJIO.
      */
     int getEAMFLHEIJIO();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 config_id = 4;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IKANKDLPKLB = 10;</code>
      * @return The iKANKDLPKLB.
      */
@@ -173,10 +153,6 @@ public final class JFJNFHMNJEHOuterClass {
     public static final int GROUP_ID_FIELD_NUMBER = 1;
     private int groupId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 group_id = 1;</code>
      * @return The groupId.
      */
@@ -188,10 +164,6 @@ public final class JFJNFHMNJEHOuterClass {
     public static final int MLDDFANOCCG_FIELD_NUMBER = 14;
     private int mLDDFANOCCG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MLDDFANOCCG = 14;</code>
      * @return The mLDDFANOCCG.
      */
@@ -203,10 +175,6 @@ public final class JFJNFHMNJEHOuterClass {
     public static final int EAMFLHEIJIO_FIELD_NUMBER = 7;
     private int eAMFLHEIJIO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EAMFLHEIJIO = 7;</code>
      * @return The eAMFLHEIJIO.
      */
@@ -218,10 +186,6 @@ public final class JFJNFHMNJEHOuterClass {
     public static final int CONFIG_ID_FIELD_NUMBER = 4;
     private int configId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 config_id = 4;</code>
      * @return The configId.
      */
@@ -233,10 +197,6 @@ public final class JFJNFHMNJEHOuterClass {
     public static final int IKANKDLPKLB_FIELD_NUMBER = 10;
     private int iKANKDLPKLB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IKANKDLPKLB = 10;</code>
      * @return The iKANKDLPKLB.
      */
@@ -617,10 +577,6 @@ public final class JFJNFHMNJEHOuterClass {
 
       private int groupId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 1;</code>
        * @return The groupId.
        */
@@ -629,10 +585,6 @@ public final class JFJNFHMNJEHOuterClass {
         return groupId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 1;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
@@ -644,10 +596,6 @@ public final class JFJNFHMNJEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 1;</code>
        * @return This builder for chaining.
        */
@@ -660,10 +608,6 @@ public final class JFJNFHMNJEHOuterClass {
 
       private int mLDDFANOCCG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MLDDFANOCCG = 14;</code>
        * @return The mLDDFANOCCG.
        */
@@ -672,10 +616,6 @@ public final class JFJNFHMNJEHOuterClass {
         return mLDDFANOCCG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MLDDFANOCCG = 14;</code>
        * @param value The mLDDFANOCCG to set.
        * @return This builder for chaining.
@@ -687,10 +627,6 @@ public final class JFJNFHMNJEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MLDDFANOCCG = 14;</code>
        * @return This builder for chaining.
        */
@@ -703,10 +639,6 @@ public final class JFJNFHMNJEHOuterClass {
 
       private int eAMFLHEIJIO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EAMFLHEIJIO = 7;</code>
        * @return The eAMFLHEIJIO.
        */
@@ -715,10 +647,6 @@ public final class JFJNFHMNJEHOuterClass {
         return eAMFLHEIJIO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EAMFLHEIJIO = 7;</code>
        * @param value The eAMFLHEIJIO to set.
        * @return This builder for chaining.
@@ -730,10 +658,6 @@ public final class JFJNFHMNJEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EAMFLHEIJIO = 7;</code>
        * @return This builder for chaining.
        */
@@ -746,10 +670,6 @@ public final class JFJNFHMNJEHOuterClass {
 
       private int configId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 4;</code>
        * @return The configId.
        */
@@ -758,10 +678,6 @@ public final class JFJNFHMNJEHOuterClass {
         return configId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 4;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
@@ -773,10 +689,6 @@ public final class JFJNFHMNJEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 4;</code>
        * @return This builder for chaining.
        */
@@ -789,10 +701,6 @@ public final class JFJNFHMNJEHOuterClass {
 
       private int iKANKDLPKLB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IKANKDLPKLB = 10;</code>
        * @return The iKANKDLPKLB.
        */
@@ -801,10 +709,6 @@ public final class JFJNFHMNJEHOuterClass {
         return iKANKDLPKLB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IKANKDLPKLB = 10;</code>
        * @param value The iKANKDLPKLB to set.
        * @return This builder for chaining.
@@ -816,10 +720,6 @@ public final class JFJNFHMNJEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IKANKDLPKLB = 10;</code>
        * @return This builder for chaining.
        */

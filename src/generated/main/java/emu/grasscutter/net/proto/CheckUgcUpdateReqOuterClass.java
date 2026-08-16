@@ -19,19 +19,20 @@ public final class CheckUgcUpdateReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.UgcType ugc_type = 9;</code>
+     * <code>.UgcType ugc_type = 15;</code>
      * @return The enum numeric value on the wire for ugcType.
      */
     int getUgcTypeValue();
     /**
-     * <code>.UgcType ugc_type = 9;</code>
+     * <code>.UgcType ugc_type = 15;</code>
      * @return The ugcType.
      */
     emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType();
   }
   /**
    * <pre>
-   * CmdId: 26121
+   * CmdId: 8229
+   * Obf: GANFHAADKOP
    * </pre>
    *
    * Protobuf type {@code CheckUgcUpdateReq}
@@ -79,7 +80,7 @@ public final class CheckUgcUpdateReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 120: {
               int rawValue = input.readEnum();
 
               ugcType_ = rawValue;
@@ -117,17 +118,17 @@ public final class CheckUgcUpdateReqOuterClass {
               emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq.class, emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq.Builder.class);
     }
 
-    public static final int UGC_TYPE_FIELD_NUMBER = 9;
+    public static final int UgcType_FIELD_NUMBER = 15;
     private int ugcType_;
     /**
-     * <code>.UgcType ugc_type = 9;</code>
+     * <code>.UgcType ugc_type = 15;</code>
      * @return The enum numeric value on the wire for ugcType.
      */
     @java.lang.Override public int getUgcTypeValue() {
       return ugcType_;
     }
     /**
-     * <code>.UgcType ugc_type = 9;</code>
+     * <code>.UgcType ugc_type = 15;</code>
      * @return The ugcType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
@@ -150,8 +151,8 @@ public final class CheckUgcUpdateReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
-        output.writeEnum(9, ugcType_);
+      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UgcType_NONE.getNumber()) {
+        output.writeEnum(15, ugcType_);
       }
       unknownFields.writeTo(output);
     }
@@ -162,9 +163,9 @@ public final class CheckUgcUpdateReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
+      if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UgcType_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(9, ugcType_);
+          .computeEnumSize(15, ugcType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -193,7 +194,7 @@ public final class CheckUgcUpdateReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UGC_TYPE_FIELD_NUMBER;
+      hash = (37 * hash) + UgcType_FIELD_NUMBER;
       hash = (53 * hash) + ugcType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -292,7 +293,8 @@ public final class CheckUgcUpdateReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26121
+     * CmdId: 8229
+     * Obf: GANFHAADKOP
      * </pre>
      *
      * Protobuf type {@code CheckUgcUpdateReq}
@@ -443,25 +445,25 @@ public final class CheckUgcUpdateReqOuterClass {
 
       private int ugcType_ = 0;
       /**
-       * <code>.UgcType ugc_type = 9;</code>
+       * <code>.UgcType ugc_type = 15;</code>
        * @return The enum numeric value on the wire for ugcType.
        */
       @java.lang.Override public int getUgcTypeValue() {
         return ugcType_;
       }
       /**
-       * <code>.UgcType ugc_type = 9;</code>
+       * <code>.UgcType ugc_type = 15;</code>
        * @param value The enum numeric value on the wire for ugcType to set.
        * @return This builder for chaining.
        */
       public Builder setUgcTypeValue(int value) {
-        
+
         ugcType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.UgcType ugc_type = 9;</code>
+       * <code>.UgcType ugc_type = 15;</code>
        * @return The ugcType.
        */
       @java.lang.Override
@@ -471,7 +473,7 @@ public final class CheckUgcUpdateReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.UgcType ugc_type = 9;</code>
+       * <code>.UgcType ugc_type = 15;</code>
        * @param value The ugcType to set.
        * @return This builder for chaining.
        */
@@ -479,17 +481,17 @@ public final class CheckUgcUpdateReqOuterClass {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         ugcType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.UgcType ugc_type = 9;</code>
+       * <code>.UgcType ugc_type = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearUgcType() {
-        
+
         ugcType_ = 0;
         onChanged();
         return this;
@@ -549,7 +551,7 @@ public final class CheckUgcUpdateReqOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_CheckUgcUpdateReq_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_CheckUgcUpdateReq_fieldAccessorTable;
 
@@ -562,7 +564,7 @@ public final class CheckUgcUpdateReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027CheckUgcUpdateReq.proto\032\rUgcType.proto" +
-      "\"/\n\021CheckUgcUpdateReq\022\032\n\010ugc_type\030\t \001(\0162" +
+      "\"/\n\021CheckUgcUpdateReq\022\032\n\010ugc_type\030\017 \001(\0162" +
       "\010.UgcTypeB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };

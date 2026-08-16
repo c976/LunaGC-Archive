@@ -19,28 +19,16 @@ public final class JGNGJONEOMPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
      * @return A list containing the oCGPAPPBGKH.
      */
     java.util.List<java.lang.Integer> getOCGPAPPBGKHList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
      * @return The count of oCGPAPPBGKH.
      */
     int getOCGPAPPBGKHCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
      * @param index The index of the element to return.
      * @return The oCGPAPPBGKH at the given index.
@@ -48,55 +36,31 @@ public final class JGNGJONEOMPOuterClass {
     int getOCGPAPPBGKH(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OLEECNGDJAJ exam_info = 5;</code>
      * @return Whether the examInfo field is set.
      */
     boolean hasExamInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OLEECNGDJAJ exam_info = 5;</code>
      * @return The examInfo.
      */
     emu.grasscutter.net.proto.OLEECNGDJAJOuterClass.OLEECNGDJAJ getExamInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OLEECNGDJAJ exam_info = 5;</code>
      */
     emu.grasscutter.net.proto.OLEECNGDJAJOuterClass.OLEECNGDJAJOrBuilder getExamInfoOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HLJBGEHDOFC order_info = 12;</code>
      * @return Whether the orderInfo field is set.
      */
     boolean hasOrderInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HLJBGEHDOFC order_info = 12;</code>
      * @return The orderInfo.
      */
     emu.grasscutter.net.proto.HLJBGEHDOFCOuterClass.HLJBGEHDOFC getOrderInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HLJBGEHDOFC order_info = 12;</code>
      */
     emu.grasscutter.net.proto.HLJBGEHDOFCOuterClass.HLJBGEHDOFCOrBuilder getOrderInfoOrBuilder();
@@ -278,10 +242,6 @@ public final class JGNGJONEOMPOuterClass {
     public static final int OCGPAPPBGKH_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList oCGPAPPBGKH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
      * @return A list containing the oCGPAPPBGKH.
      */
@@ -291,10 +251,6 @@ public final class JGNGJONEOMPOuterClass {
       return oCGPAPPBGKH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
      * @return The count of oCGPAPPBGKH.
      */
@@ -302,10 +258,6 @@ public final class JGNGJONEOMPOuterClass {
       return oCGPAPPBGKH_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
      * @param index The index of the element to return.
      * @return The oCGPAPPBGKH at the given index.
@@ -317,10 +269,6 @@ public final class JGNGJONEOMPOuterClass {
 
     public static final int EXAM_INFO_FIELD_NUMBER = 5;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OLEECNGDJAJ exam_info = 5;</code>
      * @return Whether the examInfo field is set.
      */
@@ -329,10 +277,6 @@ public final class JGNGJONEOMPOuterClass {
       return detailCase_ == 5;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OLEECNGDJAJ exam_info = 5;</code>
      * @return The examInfo.
      */
@@ -344,10 +288,6 @@ public final class JGNGJONEOMPOuterClass {
       return emu.grasscutter.net.proto.OLEECNGDJAJOuterClass.OLEECNGDJAJ.getDefaultInstance();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OLEECNGDJAJ exam_info = 5;</code>
      */
     @java.lang.Override
@@ -360,10 +300,6 @@ public final class JGNGJONEOMPOuterClass {
 
     public static final int ORDER_INFO_FIELD_NUMBER = 12;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HLJBGEHDOFC order_info = 12;</code>
      * @return Whether the orderInfo field is set.
      */
@@ -372,10 +308,6 @@ public final class JGNGJONEOMPOuterClass {
       return detailCase_ == 12;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HLJBGEHDOFC order_info = 12;</code>
      * @return The orderInfo.
      */
@@ -387,10 +319,6 @@ public final class JGNGJONEOMPOuterClass {
       return emu.grasscutter.net.proto.HLJBGEHDOFCOuterClass.HLJBGEHDOFC.getDefaultInstance();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HLJBGEHDOFC order_info = 12;</code>
      */
     @java.lang.Override
@@ -825,10 +753,6 @@ public final class JGNGJONEOMPOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
        * @return A list containing the oCGPAPPBGKH.
        */
@@ -838,10 +762,6 @@ public final class JGNGJONEOMPOuterClass {
                  java.util.Collections.unmodifiableList(oCGPAPPBGKH_) : oCGPAPPBGKH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
        * @return The count of oCGPAPPBGKH.
        */
@@ -849,10 +769,6 @@ public final class JGNGJONEOMPOuterClass {
         return oCGPAPPBGKH_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
        * @param index The index of the element to return.
        * @return The oCGPAPPBGKH at the given index.
@@ -861,10 +777,6 @@ public final class JGNGJONEOMPOuterClass {
         return oCGPAPPBGKH_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
        * @param index The index to set the value at.
        * @param value The oCGPAPPBGKH to set.
@@ -878,10 +790,6 @@ public final class JGNGJONEOMPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
        * @param value The oCGPAPPBGKH to add.
        * @return This builder for chaining.
@@ -893,10 +801,6 @@ public final class JGNGJONEOMPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
        * @param values The oCGPAPPBGKH to add.
        * @return This builder for chaining.
@@ -910,10 +814,6 @@ public final class JGNGJONEOMPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OCGPAPPBGKH = 3;</code>
        * @return This builder for chaining.
        */
@@ -927,10 +827,6 @@ public final class JGNGJONEOMPOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OLEECNGDJAJOuterClass.OLEECNGDJAJ, emu.grasscutter.net.proto.OLEECNGDJAJOuterClass.OLEECNGDJAJ.Builder, emu.grasscutter.net.proto.OLEECNGDJAJOuterClass.OLEECNGDJAJOrBuilder> examInfoBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OLEECNGDJAJ exam_info = 5;</code>
        * @return Whether the examInfo field is set.
        */
@@ -939,10 +835,6 @@ public final class JGNGJONEOMPOuterClass {
         return detailCase_ == 5;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OLEECNGDJAJ exam_info = 5;</code>
        * @return The examInfo.
        */
@@ -961,10 +853,6 @@ public final class JGNGJONEOMPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OLEECNGDJAJ exam_info = 5;</code>
        */
       public Builder setExamInfo(emu.grasscutter.net.proto.OLEECNGDJAJOuterClass.OLEECNGDJAJ value) {
@@ -981,10 +869,6 @@ public final class JGNGJONEOMPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OLEECNGDJAJ exam_info = 5;</code>
        */
       public Builder setExamInfo(
@@ -999,10 +883,6 @@ public final class JGNGJONEOMPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OLEECNGDJAJ exam_info = 5;</code>
        */
       public Builder mergeExamInfo(emu.grasscutter.net.proto.OLEECNGDJAJOuterClass.OLEECNGDJAJ value) {
@@ -1025,10 +905,6 @@ public final class JGNGJONEOMPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OLEECNGDJAJ exam_info = 5;</code>
        */
       public Builder clearExamInfo() {
@@ -1048,20 +924,12 @@ public final class JGNGJONEOMPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OLEECNGDJAJ exam_info = 5;</code>
        */
       public emu.grasscutter.net.proto.OLEECNGDJAJOuterClass.OLEECNGDJAJ.Builder getExamInfoBuilder() {
         return getExamInfoFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OLEECNGDJAJ exam_info = 5;</code>
        */
       @java.lang.Override
@@ -1076,10 +944,6 @@ public final class JGNGJONEOMPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OLEECNGDJAJ exam_info = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1104,10 +968,6 @@ public final class JGNGJONEOMPOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HLJBGEHDOFCOuterClass.HLJBGEHDOFC, emu.grasscutter.net.proto.HLJBGEHDOFCOuterClass.HLJBGEHDOFC.Builder, emu.grasscutter.net.proto.HLJBGEHDOFCOuterClass.HLJBGEHDOFCOrBuilder> orderInfoBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HLJBGEHDOFC order_info = 12;</code>
        * @return Whether the orderInfo field is set.
        */
@@ -1116,10 +976,6 @@ public final class JGNGJONEOMPOuterClass {
         return detailCase_ == 12;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HLJBGEHDOFC order_info = 12;</code>
        * @return The orderInfo.
        */
@@ -1138,10 +994,6 @@ public final class JGNGJONEOMPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HLJBGEHDOFC order_info = 12;</code>
        */
       public Builder setOrderInfo(emu.grasscutter.net.proto.HLJBGEHDOFCOuterClass.HLJBGEHDOFC value) {
@@ -1158,10 +1010,6 @@ public final class JGNGJONEOMPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HLJBGEHDOFC order_info = 12;</code>
        */
       public Builder setOrderInfo(
@@ -1176,10 +1024,6 @@ public final class JGNGJONEOMPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HLJBGEHDOFC order_info = 12;</code>
        */
       public Builder mergeOrderInfo(emu.grasscutter.net.proto.HLJBGEHDOFCOuterClass.HLJBGEHDOFC value) {
@@ -1202,10 +1046,6 @@ public final class JGNGJONEOMPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HLJBGEHDOFC order_info = 12;</code>
        */
       public Builder clearOrderInfo() {
@@ -1225,20 +1065,12 @@ public final class JGNGJONEOMPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HLJBGEHDOFC order_info = 12;</code>
        */
       public emu.grasscutter.net.proto.HLJBGEHDOFCOuterClass.HLJBGEHDOFC.Builder getOrderInfoBuilder() {
         return getOrderInfoFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HLJBGEHDOFC order_info = 12;</code>
        */
       @java.lang.Override
@@ -1253,10 +1085,6 @@ public final class JGNGJONEOMPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HLJBGEHDOFC order_info = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<

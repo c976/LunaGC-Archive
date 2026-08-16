@@ -19,40 +19,24 @@ public final class KMCIEKLJLMFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 camp_id = 13;</code>
      * @return The campId.
      */
     int getCampId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -158,10 +142,6 @@ public final class KMCIEKLJLMFOuterClass {
     public static final int CAMP_ID_FIELD_NUMBER = 13;
     private int campId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 camp_id = 13;</code>
      * @return The campId.
      */
@@ -173,10 +153,6 @@ public final class KMCIEKLJLMFOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
@@ -188,10 +164,6 @@ public final class KMCIEKLJLMFOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 8;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
@@ -203,10 +175,6 @@ public final class KMCIEKLJLMFOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -572,10 +540,6 @@ public final class KMCIEKLJLMFOuterClass {
 
       private int campId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 camp_id = 13;</code>
        * @return The campId.
        */
@@ -584,10 +548,6 @@ public final class KMCIEKLJLMFOuterClass {
         return campId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 camp_id = 13;</code>
        * @param value The campId to set.
        * @return This builder for chaining.
@@ -599,10 +559,6 @@ public final class KMCIEKLJLMFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 camp_id = 13;</code>
        * @return This builder for chaining.
        */
@@ -615,10 +571,6 @@ public final class KMCIEKLJLMFOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
@@ -627,10 +579,6 @@ public final class KMCIEKLJLMFOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -642,10 +590,6 @@ public final class KMCIEKLJLMFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
@@ -658,10 +602,6 @@ public final class KMCIEKLJLMFOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return The isFinish.
        */
@@ -670,10 +610,6 @@ public final class KMCIEKLJLMFOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -685,10 +621,6 @@ public final class KMCIEKLJLMFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return This builder for chaining.
        */
@@ -701,10 +633,6 @@ public final class KMCIEKLJLMFOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
@@ -713,10 +641,6 @@ public final class KMCIEKLJLMFOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -728,10 +652,6 @@ public final class KMCIEKLJLMFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */

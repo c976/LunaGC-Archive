@@ -19,50 +19,30 @@ public final class GEOOJHCOHCPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 11;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float FJCIPFBOBKC = 8;</code>
      * @return The fJCIPFBOBKC.
      */
     float getFJCIPFBOBKC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OBILLHGCFII = 13;</code>
      * @return The oBILLHGCFII.
      */
     int getOBILLHGCFII();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -173,10 +153,6 @@ public final class GEOOJHCOHCPOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 5;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
@@ -188,10 +164,6 @@ public final class GEOOJHCOHCPOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 11;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 11;</code>
      * @return The isFinish.
      */
@@ -203,10 +175,6 @@ public final class GEOOJHCOHCPOuterClass {
     public static final int FJCIPFBOBKC_FIELD_NUMBER = 8;
     private float fJCIPFBOBKC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float FJCIPFBOBKC = 8;</code>
      * @return The fJCIPFBOBKC.
      */
@@ -218,10 +186,6 @@ public final class GEOOJHCOHCPOuterClass {
     public static final int OBILLHGCFII_FIELD_NUMBER = 13;
     private int oBILLHGCFII_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OBILLHGCFII = 13;</code>
      * @return The oBILLHGCFII.
      */
@@ -233,10 +197,6 @@ public final class GEOOJHCOHCPOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -621,10 +581,6 @@ public final class GEOOJHCOHCPOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return The isOpen.
        */
@@ -633,10 +589,6 @@ public final class GEOOJHCOHCPOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -648,10 +600,6 @@ public final class GEOOJHCOHCPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return This builder for chaining.
        */
@@ -664,10 +612,6 @@ public final class GEOOJHCOHCPOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @return The isFinish.
        */
@@ -676,10 +620,6 @@ public final class GEOOJHCOHCPOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -691,10 +631,6 @@ public final class GEOOJHCOHCPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @return This builder for chaining.
        */
@@ -707,10 +643,6 @@ public final class GEOOJHCOHCPOuterClass {
 
       private float fJCIPFBOBKC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float FJCIPFBOBKC = 8;</code>
        * @return The fJCIPFBOBKC.
        */
@@ -719,10 +651,6 @@ public final class GEOOJHCOHCPOuterClass {
         return fJCIPFBOBKC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float FJCIPFBOBKC = 8;</code>
        * @param value The fJCIPFBOBKC to set.
        * @return This builder for chaining.
@@ -734,10 +662,6 @@ public final class GEOOJHCOHCPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float FJCIPFBOBKC = 8;</code>
        * @return This builder for chaining.
        */
@@ -750,10 +674,6 @@ public final class GEOOJHCOHCPOuterClass {
 
       private int oBILLHGCFII_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OBILLHGCFII = 13;</code>
        * @return The oBILLHGCFII.
        */
@@ -762,10 +682,6 @@ public final class GEOOJHCOHCPOuterClass {
         return oBILLHGCFII_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OBILLHGCFII = 13;</code>
        * @param value The oBILLHGCFII to set.
        * @return This builder for chaining.
@@ -777,10 +693,6 @@ public final class GEOOJHCOHCPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OBILLHGCFII = 13;</code>
        * @return This builder for chaining.
        */
@@ -793,10 +705,6 @@ public final class GEOOJHCOHCPOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
@@ -805,10 +713,6 @@ public final class GEOOJHCOHCPOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -820,10 +724,6 @@ public final class GEOOJHCOHCPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */

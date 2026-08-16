@@ -20,60 +20,60 @@ public final class SkyCrystalDetectorDataOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector hint_center_pos = 15;</code>
+     * <code>.Vector hint_center_pos = 2;</code>
      * @return Whether the hintCenterPos field is set.
      */
     boolean hasHintCenterPos();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector hint_center_pos = 15;</code>
+     * <code>.Vector hint_center_pos = 2;</code>
      * @return The hintCenterPos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getHintCenterPos();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector hint_center_pos = 15;</code>
+     * <code>.Vector hint_center_pos = 2;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getHintCenterPosOrBuilder();
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 config_id = 5;</code>
-     * @return The configId.
+     * <code>uint32 group_id = 1;</code>
+     * @return The groupId.
      */
-    int getConfigId();
+    int getGroupId();
 
     /**
      * <pre>
-     *6.3.0 // offset: 44
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>bool is_hint_valid = 8;</code>
+     * <code>bool is_hint_valid = 10;</code>
      * @return The isHintValid.
      */
     boolean getIsHintValid();
 
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 group_id = 7;</code>
-     * @return The groupId.
+     * <code>uint32 config_id = 11;</code>
+     * @return The configId.
      */
-    int getGroupId();
+    int getConfigId();
   }
   /**
    * Protobuf type {@code SkyCrystalDetectorData}
@@ -120,22 +120,12 @@ public final class SkyCrystalDetectorDataOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              configId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 8: {
 
               groupId_ = input.readUInt32();
               break;
             }
-            case 64: {
-
-              isHintValid_ = input.readBool();
-              break;
-            }
-            case 122: {
+            case 18: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (hintCenterPos_ != null) {
                 subBuilder = hintCenterPos_.toBuilder();
@@ -146,6 +136,16 @@ public final class SkyCrystalDetectorDataOuterClass {
                 hintCenterPos_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 80: {
+
+              isHintValid_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              configId_ = input.readUInt32();
               break;
             }
             default: {
@@ -180,14 +180,14 @@ public final class SkyCrystalDetectorDataOuterClass {
               emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData.class, emu.grasscutter.net.proto.SkyCrystalDetectorDataOuterClass.SkyCrystalDetectorData.Builder.class);
     }
 
-    public static final int HINT_CENTER_POS_FIELD_NUMBER = 15;
+    public static final int HINT_CENTER_POS_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector hintCenterPos_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector hint_center_pos = 15;</code>
+     * <code>.Vector hint_center_pos = 2;</code>
      * @return Whether the hintCenterPos field is set.
      */
     @java.lang.Override
@@ -196,10 +196,10 @@ public final class SkyCrystalDetectorDataOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector hint_center_pos = 15;</code>
+     * <code>.Vector hint_center_pos = 2;</code>
      * @return The hintCenterPos.
      */
     @java.lang.Override
@@ -208,39 +208,39 @@ public final class SkyCrystalDetectorDataOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector hint_center_pos = 15;</code>
+     * <code>.Vector hint_center_pos = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getHintCenterPosOrBuilder() {
       return getHintCenterPos();
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 5;
-    private int configId_;
+    public static final int GROUP_ID_FIELD_NUMBER = 1;
+    private int groupId_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 config_id = 5;</code>
-     * @return The configId.
+     * <code>uint32 group_id = 1;</code>
+     * @return The groupId.
      */
     @java.lang.Override
-    public int getConfigId() {
-      return configId_;
+    public int getGroupId() {
+      return groupId_;
     }
 
-    public static final int IS_HINT_VALID_FIELD_NUMBER = 8;
+    public static final int IS_HINT_VALID_FIELD_NUMBER = 10;
     private boolean isHintValid_;
     /**
      * <pre>
-     *6.3.0 // offset: 44
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>bool is_hint_valid = 8;</code>
+     * <code>bool is_hint_valid = 10;</code>
      * @return The isHintValid.
      */
     @java.lang.Override
@@ -248,19 +248,19 @@ public final class SkyCrystalDetectorDataOuterClass {
       return isHintValid_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 7;
-    private int groupId_;
+    public static final int CONFIG_ID_FIELD_NUMBER = 11;
+    private int configId_;
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 group_id = 7;</code>
-     * @return The groupId.
+     * <code>uint32 config_id = 11;</code>
+     * @return The configId.
      */
     @java.lang.Override
-    public int getGroupId() {
-      return groupId_;
+    public int getConfigId() {
+      return configId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -277,17 +277,17 @@ public final class SkyCrystalDetectorDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (configId_ != 0) {
-        output.writeUInt32(5, configId_);
-      }
       if (groupId_ != 0) {
-        output.writeUInt32(7, groupId_);
-      }
-      if (isHintValid_ != false) {
-        output.writeBool(8, isHintValid_);
+        output.writeUInt32(1, groupId_);
       }
       if (hintCenterPos_ != null) {
-        output.writeMessage(15, getHintCenterPos());
+        output.writeMessage(2, getHintCenterPos());
+      }
+      if (isHintValid_ != false) {
+        output.writeBool(10, isHintValid_);
+      }
+      if (configId_ != 0) {
+        output.writeUInt32(11, configId_);
       }
       unknownFields.writeTo(output);
     }
@@ -298,21 +298,21 @@ public final class SkyCrystalDetectorDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (configId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, configId_);
-      }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, groupId_);
-      }
-      if (isHintValid_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isHintValid_);
+          .computeUInt32Size(1, groupId_);
       }
       if (hintCenterPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getHintCenterPos());
+          .computeMessageSize(2, getHintCenterPos());
+      }
+      if (isHintValid_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, isHintValid_);
+      }
+      if (configId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, configId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -334,12 +334,12 @@ public final class SkyCrystalDetectorDataOuterClass {
         if (!getHintCenterPos()
             .equals(other.getHintCenterPos())) return false;
       }
-      if (getConfigId()
-          != other.getConfigId()) return false;
-      if (getIsHintValid()
-          != other.getIsHintValid()) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
+      if (getIsHintValid()
+          != other.getIsHintValid()) return false;
+      if (getConfigId()
+          != other.getConfigId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -355,13 +355,13 @@ public final class SkyCrystalDetectorDataOuterClass {
         hash = (37 * hash) + HINT_CENTER_POS_FIELD_NUMBER;
         hash = (53 * hash) + getHintCenterPos().hashCode();
       }
-      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getConfigId();
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
       hash = (37 * hash) + IS_HINT_VALID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsHintValid());
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
+      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getConfigId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -501,11 +501,11 @@ public final class SkyCrystalDetectorDataOuterClass {
           hintCenterPos_ = null;
           hintCenterPosBuilder_ = null;
         }
-        configId_ = 0;
+        groupId_ = 0;
 
         isHintValid_ = false;
 
-        groupId_ = 0;
+        configId_ = 0;
 
         return this;
       }
@@ -538,9 +538,9 @@ public final class SkyCrystalDetectorDataOuterClass {
         } else {
           result.hintCenterPos_ = hintCenterPosBuilder_.build();
         }
-        result.configId_ = configId_;
-        result.isHintValid_ = isHintValid_;
         result.groupId_ = groupId_;
+        result.isHintValid_ = isHintValid_;
+        result.configId_ = configId_;
         onBuilt();
         return result;
       }
@@ -592,14 +592,14 @@ public final class SkyCrystalDetectorDataOuterClass {
         if (other.hasHintCenterPos()) {
           mergeHintCenterPos(other.getHintCenterPos());
         }
-        if (other.getConfigId() != 0) {
-          setConfigId(other.getConfigId());
+        if (other.getGroupId() != 0) {
+          setGroupId(other.getGroupId());
         }
         if (other.getIsHintValid() != false) {
           setIsHintValid(other.getIsHintValid());
         }
-        if (other.getGroupId() != 0) {
-          setGroupId(other.getGroupId());
+        if (other.getConfigId() != 0) {
+          setConfigId(other.getConfigId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -635,10 +635,10 @@ public final class SkyCrystalDetectorDataOuterClass {
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> hintCenterPosBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector hint_center_pos = 15;</code>
+       * <code>.Vector hint_center_pos = 2;</code>
        * @return Whether the hintCenterPos field is set.
        */
       public boolean hasHintCenterPos() {
@@ -646,10 +646,10 @@ public final class SkyCrystalDetectorDataOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector hint_center_pos = 15;</code>
+       * <code>.Vector hint_center_pos = 2;</code>
        * @return The hintCenterPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getHintCenterPos() {
@@ -661,10 +661,10 @@ public final class SkyCrystalDetectorDataOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector hint_center_pos = 15;</code>
+       * <code>.Vector hint_center_pos = 2;</code>
        */
       public Builder setHintCenterPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (hintCenterPosBuilder_ == null) {
@@ -681,10 +681,10 @@ public final class SkyCrystalDetectorDataOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector hint_center_pos = 15;</code>
+       * <code>.Vector hint_center_pos = 2;</code>
        */
       public Builder setHintCenterPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -699,10 +699,10 @@ public final class SkyCrystalDetectorDataOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector hint_center_pos = 15;</code>
+       * <code>.Vector hint_center_pos = 2;</code>
        */
       public Builder mergeHintCenterPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (hintCenterPosBuilder_ == null) {
@@ -721,10 +721,10 @@ public final class SkyCrystalDetectorDataOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector hint_center_pos = 15;</code>
+       * <code>.Vector hint_center_pos = 2;</code>
        */
       public Builder clearHintCenterPos() {
         if (hintCenterPosBuilder_ == null) {
@@ -739,10 +739,10 @@ public final class SkyCrystalDetectorDataOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector hint_center_pos = 15;</code>
+       * <code>.Vector hint_center_pos = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getHintCenterPosBuilder() {
         
@@ -751,10 +751,10 @@ public final class SkyCrystalDetectorDataOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector hint_center_pos = 15;</code>
+       * <code>.Vector hint_center_pos = 2;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getHintCenterPosOrBuilder() {
         if (hintCenterPosBuilder_ != null) {
@@ -766,10 +766,10 @@ public final class SkyCrystalDetectorDataOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector hint_center_pos = 15;</code>
+       * <code>.Vector hint_center_pos = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -785,99 +785,13 @@ public final class SkyCrystalDetectorDataOuterClass {
         return hintCenterPosBuilder_;
       }
 
-      private int configId_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 config_id = 5;</code>
-       * @return The configId.
-       */
-      @java.lang.Override
-      public int getConfigId() {
-        return configId_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 config_id = 5;</code>
-       * @param value The configId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setConfigId(int value) {
-        
-        configId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 config_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearConfigId() {
-        
-        configId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isHintValid_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 44
-       * </pre>
-       *
-       * <code>bool is_hint_valid = 8;</code>
-       * @return The isHintValid.
-       */
-      @java.lang.Override
-      public boolean getIsHintValid() {
-        return isHintValid_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 44
-       * </pre>
-       *
-       * <code>bool is_hint_valid = 8;</code>
-       * @param value The isHintValid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsHintValid(boolean value) {
-        
-        isHintValid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 44
-       * </pre>
-       *
-       * <code>bool is_hint_valid = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsHintValid() {
-        
-        isHintValid_ = false;
-        onChanged();
-        return this;
-      }
-
       private int groupId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 1;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -886,10 +800,10 @@ public final class SkyCrystalDetectorDataOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 1;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -901,15 +815,101 @@ public final class SkyCrystalDetectorDataOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
         
         groupId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isHintValid_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>bool is_hint_valid = 10;</code>
+       * @return The isHintValid.
+       */
+      @java.lang.Override
+      public boolean getIsHintValid() {
+        return isHintValid_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>bool is_hint_valid = 10;</code>
+       * @param value The isHintValid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsHintValid(boolean value) {
+        
+        isHintValid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>bool is_hint_valid = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsHintValid() {
+        
+        isHintValid_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int configId_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 config_id = 11;</code>
+       * @return The configId.
+       */
+      @java.lang.Override
+      public int getConfigId() {
+        return configId_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 config_id = 11;</code>
+       * @param value The configId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setConfigId(int value) {
+        
+        configId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 config_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearConfigId() {
+        
+        configId_ = 0;
         onChanged();
         return this;
       }
@@ -982,8 +982,8 @@ public final class SkyCrystalDetectorDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034SkyCrystalDetectorData.proto\032\014Vector.p" +
       "roto\"v\n\026SkyCrystalDetectorData\022 \n\017hint_c" +
-      "enter_pos\030\017 \001(\0132\007.Vector\022\021\n\tconfig_id\030\005 " +
-      "\001(\r\022\025\n\ris_hint_valid\030\010 \001(\010\022\020\n\010group_id\030\007" +
+      "enter_pos\030\002 \001(\0132\007.Vector\022\020\n\010group_id\030\001 \001" +
+      "(\r\022\025\n\ris_hint_valid\030\n \001(\010\022\021\n\tconfig_id\030\013" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
@@ -997,7 +997,7 @@ public final class SkyCrystalDetectorDataOuterClass {
     internal_static_SkyCrystalDetectorData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SkyCrystalDetectorData_descriptor,
-        new java.lang.String[] { "HintCenterPos", "ConfigId", "IsHintValid", "GroupId", });
+        new java.lang.String[] { "HintCenterPos", "GroupId", "IsHintValid", "ConfigId", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

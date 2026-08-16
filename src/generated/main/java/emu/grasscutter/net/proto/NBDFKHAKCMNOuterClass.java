@@ -19,28 +19,16 @@ public final class NBDFKHAKCMNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
      * @return A list containing the cHHNCMPFMIH.
      */
     java.util.List<java.lang.Integer> getCHHNCMPFMIHList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
      * @return The count of cHHNCMPFMIH.
      */
     int getCHHNCMPFMIHCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
      * @param index The index of the element to return.
      * @return The cHHNCMPFMIH at the given index.
@@ -48,74 +36,42 @@ public final class NBDFKHAKCMNOuterClass {
     int getCHHNCMPFMIH(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF> 
         getECIAJHPHNNHList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
      */
     emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF getECIAJHPHNNH(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
      */
     int getECIAJHPHNNHCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDFOrBuilder> 
         getECIAJHPHNNHOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
      */
     emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDFOrBuilder getECIAJHPHNNHOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 10;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BGEEANCHFGD = 12;</code>
      * @return The bGEEANCHFGD.
      */
@@ -255,10 +211,6 @@ public final class NBDFKHAKCMNOuterClass {
     public static final int CHHNCMPFMIH_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList cHHNCMPFMIH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
      * @return A list containing the cHHNCMPFMIH.
      */
@@ -268,10 +220,6 @@ public final class NBDFKHAKCMNOuterClass {
       return cHHNCMPFMIH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
      * @return The count of cHHNCMPFMIH.
      */
@@ -279,10 +227,6 @@ public final class NBDFKHAKCMNOuterClass {
       return cHHNCMPFMIH_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
      * @param index The index of the element to return.
      * @return The cHHNCMPFMIH at the given index.
@@ -295,10 +239,6 @@ public final class NBDFKHAKCMNOuterClass {
     public static final int ECIAJHPHNNH_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF> eCIAJHPHNNH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
      */
     @java.lang.Override
@@ -306,10 +246,6 @@ public final class NBDFKHAKCMNOuterClass {
       return eCIAJHPHNNH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
      */
     @java.lang.Override
@@ -318,10 +254,6 @@ public final class NBDFKHAKCMNOuterClass {
       return eCIAJHPHNNH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
      */
     @java.lang.Override
@@ -329,10 +261,6 @@ public final class NBDFKHAKCMNOuterClass {
       return eCIAJHPHNNH_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
      */
     @java.lang.Override
@@ -340,10 +268,6 @@ public final class NBDFKHAKCMNOuterClass {
       return eCIAJHPHNNH_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
      */
     @java.lang.Override
@@ -355,10 +279,6 @@ public final class NBDFKHAKCMNOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 10;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 10;</code>
      * @return The openTime.
      */
@@ -370,10 +290,6 @@ public final class NBDFKHAKCMNOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 5;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
@@ -385,10 +301,6 @@ public final class NBDFKHAKCMNOuterClass {
     public static final int BGEEANCHFGD_FIELD_NUMBER = 12;
     private int bGEEANCHFGD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BGEEANCHFGD = 12;</code>
      * @return The bGEEANCHFGD.
      */
@@ -844,10 +756,6 @@ public final class NBDFKHAKCMNOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
        * @return A list containing the cHHNCMPFMIH.
        */
@@ -857,10 +765,6 @@ public final class NBDFKHAKCMNOuterClass {
                  java.util.Collections.unmodifiableList(cHHNCMPFMIH_) : cHHNCMPFMIH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
        * @return The count of cHHNCMPFMIH.
        */
@@ -868,10 +772,6 @@ public final class NBDFKHAKCMNOuterClass {
         return cHHNCMPFMIH_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
        * @param index The index of the element to return.
        * @return The cHHNCMPFMIH at the given index.
@@ -880,10 +780,6 @@ public final class NBDFKHAKCMNOuterClass {
         return cHHNCMPFMIH_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
        * @param index The index to set the value at.
        * @param value The cHHNCMPFMIH to set.
@@ -897,10 +793,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
        * @param value The cHHNCMPFMIH to add.
        * @return This builder for chaining.
@@ -912,10 +804,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
        * @param values The cHHNCMPFMIH to add.
        * @return This builder for chaining.
@@ -929,10 +817,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CHHNCMPFMIH = 15;</code>
        * @return This builder for chaining.
        */
@@ -956,10 +840,6 @@ public final class NBDFKHAKCMNOuterClass {
           emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF, emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF.Builder, emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDFOrBuilder> eCIAJHPHNNHBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF> getECIAJHPHNNHList() {
@@ -970,10 +850,6 @@ public final class NBDFKHAKCMNOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public int getECIAJHPHNNHCount() {
@@ -984,10 +860,6 @@ public final class NBDFKHAKCMNOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF getECIAJHPHNNH(int index) {
@@ -998,10 +870,6 @@ public final class NBDFKHAKCMNOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public Builder setECIAJHPHNNH(
@@ -1019,10 +887,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public Builder setECIAJHPHNNH(
@@ -1037,10 +901,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public Builder addECIAJHPHNNH(emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF value) {
@@ -1057,10 +917,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public Builder addECIAJHPHNNH(
@@ -1078,10 +934,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public Builder addECIAJHPHNNH(
@@ -1096,10 +948,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public Builder addECIAJHPHNNH(
@@ -1114,10 +962,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public Builder addAllECIAJHPHNNH(
@@ -1133,10 +977,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public Builder clearECIAJHPHNNH() {
@@ -1150,10 +990,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public Builder removeECIAJHPHNNH(int index) {
@@ -1167,10 +1003,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF.Builder getECIAJHPHNNHBuilder(
@@ -1178,10 +1010,6 @@ public final class NBDFKHAKCMNOuterClass {
         return getECIAJHPHNNHFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDFOrBuilder getECIAJHPHNNHOrBuilder(
@@ -1192,10 +1020,6 @@ public final class NBDFKHAKCMNOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDFOrBuilder> 
@@ -1207,10 +1031,6 @@ public final class NBDFKHAKCMNOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF.Builder addECIAJHPHNNHBuilder() {
@@ -1218,10 +1038,6 @@ public final class NBDFKHAKCMNOuterClass {
             emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF.Builder addECIAJHPHNNHBuilder(
@@ -1230,10 +1046,6 @@ public final class NBDFKHAKCMNOuterClass {
             index, emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BMFPCDAGFDF ECIAJHPHNNH = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BMFPCDAGFDFOuterClass.BMFPCDAGFDF.Builder> 
@@ -1257,10 +1069,6 @@ public final class NBDFKHAKCMNOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 10;</code>
        * @return The openTime.
        */
@@ -1269,10 +1077,6 @@ public final class NBDFKHAKCMNOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 10;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -1284,10 +1088,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 10;</code>
        * @return This builder for chaining.
        */
@@ -1300,10 +1100,6 @@ public final class NBDFKHAKCMNOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return The isOpen.
        */
@@ -1312,10 +1108,6 @@ public final class NBDFKHAKCMNOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1327,10 +1119,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return This builder for chaining.
        */
@@ -1343,10 +1131,6 @@ public final class NBDFKHAKCMNOuterClass {
 
       private int bGEEANCHFGD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGEEANCHFGD = 12;</code>
        * @return The bGEEANCHFGD.
        */
@@ -1355,10 +1139,6 @@ public final class NBDFKHAKCMNOuterClass {
         return bGEEANCHFGD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGEEANCHFGD = 12;</code>
        * @param value The bGEEANCHFGD to set.
        * @return This builder for chaining.
@@ -1370,10 +1150,6 @@ public final class NBDFKHAKCMNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGEEANCHFGD = 12;</code>
        * @return This builder for chaining.
        */

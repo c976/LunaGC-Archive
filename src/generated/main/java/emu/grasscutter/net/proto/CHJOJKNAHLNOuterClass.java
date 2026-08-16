@@ -19,28 +19,16 @@ public final class CHJOJKNAHLNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
      * @return A list containing the aLFBIABDKNJ.
      */
     java.util.List<java.lang.Integer> getALFBIABDKNJList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
      * @return The count of aLFBIABDKNJ.
      */
     int getALFBIABDKNJCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
      * @param index The index of the element to return.
      * @return The aLFBIABDKNJ at the given index.
@@ -48,36 +36,28 @@ public final class CHJOJKNAHLNOuterClass {
     int getALFBIABDKNJ(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OMCLANOKDAF = 2;</code>
      * @return The oMCLANOKDAF.
      */
     boolean getOMCLANOKDAF();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 6;</code>
      * @return The lOHAJIABHDJ.
      */
     int getLOHAJIABHDJ();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 4;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 4;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <code>uint32 DAFGIIMGDPL = 5;</code>
-     * @return The dAFGIIMGDPL.
+     * <code>uint32 cur_round = 5;</code>
+     * @return The curRound.
      */
-    int getDAFGIIMGDPL();
+    int getCurRound();
   }
   /**
    * Protobuf type {@code CHJOJKNAHLN}
@@ -133,12 +113,12 @@ public final class CHJOJKNAHLNOuterClass {
             }
             case 32: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              dAFGIIMGDPL_ = input.readUInt32();
+              curRound_ = input.readUInt32();
               break;
             }
             case 48: {
@@ -205,10 +185,6 @@ public final class CHJOJKNAHLNOuterClass {
     public static final int ALFBIABDKNJ_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList aLFBIABDKNJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
      * @return A list containing the aLFBIABDKNJ.
      */
@@ -218,10 +194,6 @@ public final class CHJOJKNAHLNOuterClass {
       return aLFBIABDKNJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
      * @return The count of aLFBIABDKNJ.
      */
@@ -229,10 +201,6 @@ public final class CHJOJKNAHLNOuterClass {
       return aLFBIABDKNJ_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
      * @param index The index of the element to return.
      * @return The aLFBIABDKNJ at the given index.
@@ -245,10 +213,6 @@ public final class CHJOJKNAHLNOuterClass {
     public static final int OMCLANOKDAF_FIELD_NUMBER = 2;
     private boolean oMCLANOKDAF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OMCLANOKDAF = 2;</code>
      * @return The oMCLANOKDAF.
      */
@@ -260,10 +224,6 @@ public final class CHJOJKNAHLNOuterClass {
     public static final int LOHAJIABHDJ_FIELD_NUMBER = 6;
     private int lOHAJIABHDJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 6;</code>
      * @return The lOHAJIABHDJ.
      */
@@ -272,26 +232,26 @@ public final class CHJOJKNAHLNOuterClass {
       return lOHAJIABHDJ_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 4;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 4;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 4;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 4;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
-    public static final int DAFGIIMGDPL_FIELD_NUMBER = 5;
-    private int dAFGIIMGDPL_;
+    public static final int CUR_ROUND_FIELD_NUMBER = 5;
+    private int curRound_;
     /**
-     * <code>uint32 DAFGIIMGDPL = 5;</code>
-     * @return The dAFGIIMGDPL.
+     * <code>uint32 cur_round = 5;</code>
+     * @return The curRound.
      */
     @java.lang.Override
-    public int getDAFGIIMGDPL() {
-      return dAFGIIMGDPL_;
+    public int getCurRound() {
+      return curRound_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -312,11 +272,11 @@ public final class CHJOJKNAHLNOuterClass {
       if (oMCLANOKDAF_ != false) {
         output.writeBool(2, oMCLANOKDAF_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(4, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(4, stageId_);
       }
-      if (dAFGIIMGDPL_ != 0) {
-        output.writeUInt32(5, dAFGIIMGDPL_);
+      if (curRound_ != 0) {
+        output.writeUInt32(5, curRound_);
       }
       if (lOHAJIABHDJ_ != 0) {
         output.writeUInt32(6, lOHAJIABHDJ_);
@@ -341,13 +301,13 @@ public final class CHJOJKNAHLNOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, oMCLANOKDAF_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, eGHGENOJNEK_);
+          .computeUInt32Size(4, stageId_);
       }
-      if (dAFGIIMGDPL_ != 0) {
+      if (curRound_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, dAFGIIMGDPL_);
+          .computeUInt32Size(5, curRound_);
       }
       if (lOHAJIABHDJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -388,10 +348,10 @@ public final class CHJOJKNAHLNOuterClass {
           != other.getOMCLANOKDAF()) return false;
       if (getLOHAJIABHDJ()
           != other.getLOHAJIABHDJ()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
-      if (getDAFGIIMGDPL()
-          != other.getDAFGIIMGDPL()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
+      if (getCurRound()
+          != other.getCurRound()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -412,10 +372,10 @@ public final class CHJOJKNAHLNOuterClass {
           getOMCLANOKDAF());
       hash = (37 * hash) + LOHAJIABHDJ_FIELD_NUMBER;
       hash = (53 * hash) + getLOHAJIABHDJ();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
-      hash = (37 * hash) + DAFGIIMGDPL_FIELD_NUMBER;
-      hash = (53 * hash) + getDAFGIIMGDPL();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + CUR_ROUND_FIELD_NUMBER;
+      hash = (53 * hash) + getCurRound();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -555,9 +515,9 @@ public final class CHJOJKNAHLNOuterClass {
 
         lOHAJIABHDJ_ = 0;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
-        dAFGIIMGDPL_ = 0;
+        curRound_ = 0;
 
         return this;
       }
@@ -593,8 +553,8 @@ public final class CHJOJKNAHLNOuterClass {
         result.aLFBIABDKNJ_ = aLFBIABDKNJ_;
         result.oMCLANOKDAF_ = oMCLANOKDAF_;
         result.lOHAJIABHDJ_ = lOHAJIABHDJ_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
-        result.dAFGIIMGDPL_ = dAFGIIMGDPL_;
+        result.stageId_ = stageId_;
+        result.curRound_ = curRound_;
         onBuilt();
         return result;
       }
@@ -659,11 +619,11 @@ public final class CHJOJKNAHLNOuterClass {
         if (other.getLOHAJIABHDJ() != 0) {
           setLOHAJIABHDJ(other.getLOHAJIABHDJ());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
-        if (other.getDAFGIIMGDPL() != 0) {
-          setDAFGIIMGDPL(other.getDAFGIIMGDPL());
+        if (other.getCurRound() != 0) {
+          setCurRound(other.getCurRound());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -703,10 +663,6 @@ public final class CHJOJKNAHLNOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
        * @return A list containing the aLFBIABDKNJ.
        */
@@ -716,10 +672,6 @@ public final class CHJOJKNAHLNOuterClass {
                  java.util.Collections.unmodifiableList(aLFBIABDKNJ_) : aLFBIABDKNJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
        * @return The count of aLFBIABDKNJ.
        */
@@ -727,10 +679,6 @@ public final class CHJOJKNAHLNOuterClass {
         return aLFBIABDKNJ_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
        * @param index The index of the element to return.
        * @return The aLFBIABDKNJ at the given index.
@@ -739,10 +687,6 @@ public final class CHJOJKNAHLNOuterClass {
         return aLFBIABDKNJ_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
        * @param index The index to set the value at.
        * @param value The aLFBIABDKNJ to set.
@@ -756,10 +700,6 @@ public final class CHJOJKNAHLNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
        * @param value The aLFBIABDKNJ to add.
        * @return This builder for chaining.
@@ -771,10 +711,6 @@ public final class CHJOJKNAHLNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
        * @param values The aLFBIABDKNJ to add.
        * @return This builder for chaining.
@@ -788,10 +724,6 @@ public final class CHJOJKNAHLNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 ALFBIABDKNJ = 10;</code>
        * @return This builder for chaining.
        */
@@ -804,10 +736,6 @@ public final class CHJOJKNAHLNOuterClass {
 
       private boolean oMCLANOKDAF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OMCLANOKDAF = 2;</code>
        * @return The oMCLANOKDAF.
        */
@@ -816,10 +744,6 @@ public final class CHJOJKNAHLNOuterClass {
         return oMCLANOKDAF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OMCLANOKDAF = 2;</code>
        * @param value The oMCLANOKDAF to set.
        * @return This builder for chaining.
@@ -831,10 +755,6 @@ public final class CHJOJKNAHLNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OMCLANOKDAF = 2;</code>
        * @return This builder for chaining.
        */
@@ -847,10 +767,6 @@ public final class CHJOJKNAHLNOuterClass {
 
       private int lOHAJIABHDJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 6;</code>
        * @return The lOHAJIABHDJ.
        */
@@ -859,10 +775,6 @@ public final class CHJOJKNAHLNOuterClass {
         return lOHAJIABHDJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 6;</code>
        * @param value The lOHAJIABHDJ to set.
        * @return This builder for chaining.
@@ -874,10 +786,6 @@ public final class CHJOJKNAHLNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 6;</code>
        * @return This builder for chaining.
        */
@@ -888,64 +796,64 @@ public final class CHJOJKNAHLNOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 4;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 4;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 4;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 4;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 4;</code>
+       * <code>uint32 stage_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
-      private int dAFGIIMGDPL_ ;
+      private int curRound_ ;
       /**
-       * <code>uint32 DAFGIIMGDPL = 5;</code>
-       * @return The dAFGIIMGDPL.
+       * <code>uint32 cur_round = 5;</code>
+       * @return The curRound.
        */
       @java.lang.Override
-      public int getDAFGIIMGDPL() {
-        return dAFGIIMGDPL_;
+      public int getCurRound() {
+        return curRound_;
       }
       /**
-       * <code>uint32 DAFGIIMGDPL = 5;</code>
-       * @param value The dAFGIIMGDPL to set.
+       * <code>uint32 cur_round = 5;</code>
+       * @param value The curRound to set.
        * @return This builder for chaining.
        */
-      public Builder setDAFGIIMGDPL(int value) {
+      public Builder setCurRound(int value) {
         
-        dAFGIIMGDPL_ = value;
+        curRound_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DAFGIIMGDPL = 5;</code>
+       * <code>uint32 cur_round = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDAFGIIMGDPL() {
+      public Builder clearCurRound() {
         
-        dAFGIIMGDPL_ = 0;
+        curRound_ = 0;
         onChanged();
         return this;
       }
@@ -1016,11 +924,11 @@ public final class CHJOJKNAHLNOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021CHJOJKNAHLN.proto\"v\n\013CHJOJKNAHLN\022\023\n\013AL" +
+      "\n\021CHJOJKNAHLN.proto\"q\n\013CHJOJKNAHLN\022\023\n\013AL" +
       "FBIABDKNJ\030\n \003(\r\022\023\n\013OMCLANOKDAF\030\002 \001(\010\022\023\n\013" +
-      "LOHAJIABHDJ\030\006 \001(\r\022\023\n\013EGHGENOJNEK\030\004 \001(\r\022\023" +
-      "\n\013DAFGIIMGDPL\030\005 \001(\rB\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "LOHAJIABHDJ\030\006 \001(\r\022\020\n\010stage_id\030\004 \001(\r\022\021\n\tc" +
+      "ur_round\030\005 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1031,7 +939,7 @@ public final class CHJOJKNAHLNOuterClass {
     internal_static_CHJOJKNAHLN_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CHJOJKNAHLN_descriptor,
-        new java.lang.String[] { "ALFBIABDKNJ", "OMCLANOKDAF", "LOHAJIABHDJ", "EGHGENOJNEK", "DAFGIIMGDPL", });
+        new java.lang.String[] { "ALFBIABDKNJ", "OMCLANOKDAF", "LOHAJIABHDJ", "StageId", "CurRound", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

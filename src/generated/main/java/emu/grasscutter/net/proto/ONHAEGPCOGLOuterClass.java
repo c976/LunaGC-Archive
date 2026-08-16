@@ -19,20 +19,12 @@ public final class ONHAEGPCOGLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 8;</code>
      * @return The hBILFAMJDKG.
      */
     int getHBILFAMJDKG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -128,10 +120,6 @@ public final class ONHAEGPCOGLOuterClass {
     public static final int HBILFAMJDKG_FIELD_NUMBER = 8;
     private int hBILFAMJDKG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 8;</code>
      * @return The hBILFAMJDKG.
      */
@@ -143,10 +131,6 @@ public final class ONHAEGPCOGLOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -476,10 +460,6 @@ public final class ONHAEGPCOGLOuterClass {
 
       private int hBILFAMJDKG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 8;</code>
        * @return The hBILFAMJDKG.
        */
@@ -488,10 +468,6 @@ public final class ONHAEGPCOGLOuterClass {
         return hBILFAMJDKG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 8;</code>
        * @param value The hBILFAMJDKG to set.
        * @return This builder for chaining.
@@ -503,10 +479,6 @@ public final class ONHAEGPCOGLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 8;</code>
        * @return This builder for chaining.
        */
@@ -519,10 +491,6 @@ public final class ONHAEGPCOGLOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
@@ -531,10 +499,6 @@ public final class ONHAEGPCOGLOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -546,10 +510,6 @@ public final class ONHAEGPCOGLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */

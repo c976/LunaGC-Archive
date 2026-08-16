@@ -19,54 +19,30 @@ public final class APCMJCOKPNCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getPBGKJJGLFIPList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getPBGKJJGLFIP(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
      */
     int getPBGKJJGLFIPCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getPBGKJJGLFIPOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getPBGKJJGLFIPOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HCONGIAKIIK = 5;</code>
      * @return The hCONGIAKIIK.
      */
@@ -171,10 +147,6 @@ public final class APCMJCOKPNCOuterClass {
     public static final int PBGKJJGLFIP_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> pBGKJJGLFIP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
      */
     @java.lang.Override
@@ -182,10 +154,6 @@ public final class APCMJCOKPNCOuterClass {
       return pBGKJJGLFIP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
      */
     @java.lang.Override
@@ -194,10 +162,6 @@ public final class APCMJCOKPNCOuterClass {
       return pBGKJJGLFIP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
      */
     @java.lang.Override
@@ -205,10 +169,6 @@ public final class APCMJCOKPNCOuterClass {
       return pBGKJJGLFIP_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
      */
     @java.lang.Override
@@ -216,10 +176,6 @@ public final class APCMJCOKPNCOuterClass {
       return pBGKJJGLFIP_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
      */
     @java.lang.Override
@@ -231,10 +187,6 @@ public final class APCMJCOKPNCOuterClass {
     public static final int HCONGIAKIIK_FIELD_NUMBER = 5;
     private int hCONGIAKIIK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HCONGIAKIIK = 5;</code>
      * @return The hCONGIAKIIK.
      */
@@ -615,10 +567,6 @@ public final class APCMJCOKPNCOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> pBGKJJGLFIPBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getPBGKJJGLFIPList() {
@@ -629,10 +577,6 @@ public final class APCMJCOKPNCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public int getPBGKJJGLFIPCount() {
@@ -643,10 +587,6 @@ public final class APCMJCOKPNCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getPBGKJJGLFIP(int index) {
@@ -657,10 +597,6 @@ public final class APCMJCOKPNCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public Builder setPBGKJJGLFIP(
@@ -678,10 +614,6 @@ public final class APCMJCOKPNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public Builder setPBGKJJGLFIP(
@@ -696,10 +628,6 @@ public final class APCMJCOKPNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public Builder addPBGKJJGLFIP(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -716,10 +644,6 @@ public final class APCMJCOKPNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public Builder addPBGKJJGLFIP(
@@ -737,10 +661,6 @@ public final class APCMJCOKPNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public Builder addPBGKJJGLFIP(
@@ -755,10 +675,6 @@ public final class APCMJCOKPNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public Builder addPBGKJJGLFIP(
@@ -773,10 +689,6 @@ public final class APCMJCOKPNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public Builder addAllPBGKJJGLFIP(
@@ -792,10 +704,6 @@ public final class APCMJCOKPNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public Builder clearPBGKJJGLFIP() {
@@ -809,10 +717,6 @@ public final class APCMJCOKPNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public Builder removePBGKJJGLFIP(int index) {
@@ -826,10 +730,6 @@ public final class APCMJCOKPNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getPBGKJJGLFIPBuilder(
@@ -837,10 +737,6 @@ public final class APCMJCOKPNCOuterClass {
         return getPBGKJJGLFIPFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getPBGKJJGLFIPOrBuilder(
@@ -851,10 +747,6 @@ public final class APCMJCOKPNCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -866,10 +758,6 @@ public final class APCMJCOKPNCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addPBGKJJGLFIPBuilder() {
@@ -877,10 +765,6 @@ public final class APCMJCOKPNCOuterClass {
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addPBGKJJGLFIPBuilder(
@@ -889,10 +773,6 @@ public final class APCMJCOKPNCOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam PBGKJJGLFIP = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
@@ -916,10 +796,6 @@ public final class APCMJCOKPNCOuterClass {
 
       private int hCONGIAKIIK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HCONGIAKIIK = 5;</code>
        * @return The hCONGIAKIIK.
        */
@@ -928,10 +804,6 @@ public final class APCMJCOKPNCOuterClass {
         return hCONGIAKIIK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HCONGIAKIIK = 5;</code>
        * @param value The hCONGIAKIIK to set.
        * @return This builder for chaining.
@@ -943,10 +815,6 @@ public final class APCMJCOKPNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HCONGIAKIIK = 5;</code>
        * @return This builder for chaining.
        */

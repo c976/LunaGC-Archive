@@ -19,20 +19,12 @@ public final class MHDOKEBFCFPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OJIOABNNHKJ = 1;</code>
      * @return The oJIOABNNHKJ.
      */
     boolean getOJIOABNNHKJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float NJIENHPPLAK = 2;</code>
      * @return The nJIENHPPLAK.
      */
@@ -128,10 +120,6 @@ public final class MHDOKEBFCFPOuterClass {
     public static final int OJIOABNNHKJ_FIELD_NUMBER = 1;
     private boolean oJIOABNNHKJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OJIOABNNHKJ = 1;</code>
      * @return The oJIOABNNHKJ.
      */
@@ -143,10 +131,6 @@ public final class MHDOKEBFCFPOuterClass {
     public static final int NJIENHPPLAK_FIELD_NUMBER = 2;
     private float nJIENHPPLAK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float NJIENHPPLAK = 2;</code>
      * @return The nJIENHPPLAK.
      */
@@ -479,10 +463,6 @@ public final class MHDOKEBFCFPOuterClass {
 
       private boolean oJIOABNNHKJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OJIOABNNHKJ = 1;</code>
        * @return The oJIOABNNHKJ.
        */
@@ -491,10 +471,6 @@ public final class MHDOKEBFCFPOuterClass {
         return oJIOABNNHKJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OJIOABNNHKJ = 1;</code>
        * @param value The oJIOABNNHKJ to set.
        * @return This builder for chaining.
@@ -506,10 +482,6 @@ public final class MHDOKEBFCFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OJIOABNNHKJ = 1;</code>
        * @return This builder for chaining.
        */
@@ -522,10 +494,6 @@ public final class MHDOKEBFCFPOuterClass {
 
       private float nJIENHPPLAK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float NJIENHPPLAK = 2;</code>
        * @return The nJIENHPPLAK.
        */
@@ -534,10 +502,6 @@ public final class MHDOKEBFCFPOuterClass {
         return nJIENHPPLAK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float NJIENHPPLAK = 2;</code>
        * @param value The nJIENHPPLAK to set.
        * @return This builder for chaining.
@@ -549,10 +513,6 @@ public final class MHDOKEBFCFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float NJIENHPPLAK = 2;</code>
        * @return This builder for chaining.
        */

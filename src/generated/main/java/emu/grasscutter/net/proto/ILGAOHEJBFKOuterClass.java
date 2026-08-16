@@ -19,30 +19,18 @@ public final class ILGAOHEJBFKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
@@ -143,10 +131,6 @@ public final class ILGAOHEJBFKOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -158,10 +142,6 @@ public final class ILGAOHEJBFKOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 4;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
@@ -173,10 +153,6 @@ public final class ILGAOHEJBFKOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 12;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
@@ -525,10 +501,6 @@ public final class ILGAOHEJBFKOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
@@ -537,10 +509,6 @@ public final class ILGAOHEJBFKOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -552,10 +520,6 @@ public final class ILGAOHEJBFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
@@ -568,10 +532,6 @@ public final class ILGAOHEJBFKOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return The isFinish.
        */
@@ -580,10 +540,6 @@ public final class ILGAOHEJBFKOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -595,10 +551,6 @@ public final class ILGAOHEJBFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return This builder for chaining.
        */
@@ -611,10 +563,6 @@ public final class ILGAOHEJBFKOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @return The isOpen.
        */
@@ -623,10 +571,6 @@ public final class ILGAOHEJBFKOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -638,10 +582,6 @@ public final class ILGAOHEJBFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @return This builder for chaining.
        */

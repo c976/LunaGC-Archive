@@ -20,7 +20,8 @@ public final class FurnitureMakeReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4780
+   * CmdId: 23349
+   * Obf: OBBOIIBGLPH
    * </pre>
    *
    * Protobuf type {@code FurnitureMakeReq}
@@ -245,7 +246,8 @@ public final class FurnitureMakeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4780
+     * CmdId: 23349
+     * Obf: OBBOIIBGLPH
      * </pre>
      *
      * Protobuf type {@code FurnitureMakeReq}

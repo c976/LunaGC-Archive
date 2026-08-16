@@ -19,30 +19,18 @@ public final class GKHGFHIIGOCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BJLBNGAEFMC = 14;</code>
      * @return The bJLBNGAEFMC.
      */
     int getBJLBNGAEFMC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 13;</code>
      * @return The isFinished.
      */
@@ -143,10 +131,6 @@ public final class GKHGFHIIGOCOuterClass {
     public static final int BJLBNGAEFMC_FIELD_NUMBER = 14;
     private int bJLBNGAEFMC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BJLBNGAEFMC = 14;</code>
      * @return The bJLBNGAEFMC.
      */
@@ -158,10 +142,6 @@ public final class GKHGFHIIGOCOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
@@ -173,10 +153,6 @@ public final class GKHGFHIIGOCOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 13;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 13;</code>
      * @return The isFinished.
      */
@@ -524,10 +500,6 @@ public final class GKHGFHIIGOCOuterClass {
 
       private int bJLBNGAEFMC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BJLBNGAEFMC = 14;</code>
        * @return The bJLBNGAEFMC.
        */
@@ -536,10 +508,6 @@ public final class GKHGFHIIGOCOuterClass {
         return bJLBNGAEFMC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BJLBNGAEFMC = 14;</code>
        * @param value The bJLBNGAEFMC to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class GKHGFHIIGOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BJLBNGAEFMC = 14;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class GKHGFHIIGOCOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
@@ -579,10 +539,6 @@ public final class GKHGFHIIGOCOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class GKHGFHIIGOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class GKHGFHIIGOCOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 13;</code>
        * @return The isFinished.
        */
@@ -622,10 +570,6 @@ public final class GKHGFHIIGOCOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 13;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class GKHGFHIIGOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 13;</code>
        * @return This builder for chaining.
        */

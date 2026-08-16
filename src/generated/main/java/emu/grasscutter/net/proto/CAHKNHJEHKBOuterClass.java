@@ -19,29 +19,17 @@ public final class CAHKNHJEHKBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NIGDGHMKJIK PLAMLNLHFDC = 8;</code>
      * @return The enum numeric value on the wire for pLAMLNLHFDC.
      */
     int getPLAMLNLHFDCValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NIGDGHMKJIK PLAMLNLHFDC = 8;</code>
      * @return The pLAMLNLHFDC.
      */
@@ -139,10 +127,6 @@ public final class CAHKNHJEHKBOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 11;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
@@ -154,10 +138,6 @@ public final class CAHKNHJEHKBOuterClass {
     public static final int PLAMLNLHFDC_FIELD_NUMBER = 8;
     private int pLAMLNLHFDC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NIGDGHMKJIK PLAMLNLHFDC = 8;</code>
      * @return The enum numeric value on the wire for pLAMLNLHFDC.
      */
@@ -165,10 +145,6 @@ public final class CAHKNHJEHKBOuterClass {
       return pLAMLNLHFDC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NIGDGHMKJIK PLAMLNLHFDC = 8;</code>
      * @return The pLAMLNLHFDC.
      */
@@ -498,10 +474,6 @@ public final class CAHKNHJEHKBOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return The levelId.
        */
@@ -510,10 +482,6 @@ public final class CAHKNHJEHKBOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -525,10 +493,6 @@ public final class CAHKNHJEHKBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */
@@ -541,10 +505,6 @@ public final class CAHKNHJEHKBOuterClass {
 
       private int pLAMLNLHFDC_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NIGDGHMKJIK PLAMLNLHFDC = 8;</code>
        * @return The enum numeric value on the wire for pLAMLNLHFDC.
        */
@@ -552,10 +512,6 @@ public final class CAHKNHJEHKBOuterClass {
         return pLAMLNLHFDC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NIGDGHMKJIK PLAMLNLHFDC = 8;</code>
        * @param value The enum numeric value on the wire for pLAMLNLHFDC to set.
        * @return This builder for chaining.
@@ -567,10 +523,6 @@ public final class CAHKNHJEHKBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NIGDGHMKJIK PLAMLNLHFDC = 8;</code>
        * @return The pLAMLNLHFDC.
        */
@@ -581,10 +533,6 @@ public final class CAHKNHJEHKBOuterClass {
         return result == null ? emu.grasscutter.net.proto.NIGDGHMKJIKOuterClass.NIGDGHMKJIK.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NIGDGHMKJIK PLAMLNLHFDC = 8;</code>
        * @param value The pLAMLNLHFDC to set.
        * @return This builder for chaining.
@@ -599,10 +547,6 @@ public final class CAHKNHJEHKBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NIGDGHMKJIK PLAMLNLHFDC = 8;</code>
        * @return This builder for chaining.
        */

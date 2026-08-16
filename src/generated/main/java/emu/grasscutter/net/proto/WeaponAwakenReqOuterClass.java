@@ -19,45 +19,41 @@ public final class WeaponAwakenReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint64 item_guid_list = 15;</code>
-     * @return A list containing the itemGuidList.
+     * <code>repeated uint64 item_guid = 5124;</code>
+     * @return A list containing the itemGuid.
      */
-    java.util.List<java.lang.Long> getItemGuidListList();
+    java.util.List<java.lang.Long> getItemGuidList();
     /**
-     * <code>repeated uint64 item_guid_list = 15;</code>
-     * @return The count of itemGuidList.
+     * <code>repeated uint64 item_guid = 5124;</code>
+     * @return The count of itemGuid.
      */
-    int getItemGuidListCount();
+    int getItemGuidCount();
     /**
-     * <code>repeated uint64 item_guid_list = 15;</code>
+     * <code>repeated uint64 item_guid = 5124;</code>
      * @param index The index of the element to return.
-     * @return The itemGuidList at the given index.
+     * @return The itemGuid at the given index.
      */
-    long getItemGuidList(int index);
+    long getItemGuid(int index);
+
+    /**
+     * <code>uint32 affix_level = 5;</code>
+     * @return The affixLevel.
+     */
+    int getAffixLevel();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>uint64 target_weapon_guid = 3;</code>
+     * <code>uint64 target_weapon_guid = 6;</code>
      * @return The targetWeaponGuid.
      */
     long getTargetWeaponGuid();
-
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>uint32 item_guid = 5124;</code>
-     * @return The itemGuid.
-     */
-    int getItemGuid();
   }
   /**
    * <pre>
-   * CmdId: 23250
+   * CmdId: 8528
    * </pre>
    *
    * Protobuf type {@code WeaponAwakenReq}
@@ -72,7 +68,7 @@ public final class WeaponAwakenReqOuterClass {
       super(builder);
     }
     private WeaponAwakenReq() {
-      itemGuidList_ = emptyLongList();
+      itemGuid_ = emptyLongList();
     }
 
     @java.lang.Override
@@ -106,35 +102,35 @@ public final class WeaponAwakenReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
+
+              affixLevel_ = input.readUInt32();
+              break;
+            }
+            case 48: {
 
               targetWeaponGuid_ = input.readUInt64();
               break;
             }
-            case 120: {
+            case 40992: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                itemGuidList_ = newLongList();
+                itemGuid_ = newLongList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              itemGuidList_.addLong(input.readUInt64());
+              itemGuid_.addLong(input.readUInt64());
               break;
             }
-            case 122: {
+            case 40994: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                itemGuidList_ = newLongList();
+                itemGuid_ = newLongList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                itemGuidList_.addLong(input.readUInt64());
+                itemGuid_.addLong(input.readUInt64());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 40992: {
-
-              itemGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -153,7 +149,7 @@ public final class WeaponAwakenReqOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          itemGuidList_.makeImmutable(); // C
+          itemGuid_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -172,62 +168,58 @@ public final class WeaponAwakenReqOuterClass {
               emu.grasscutter.net.proto.WeaponAwakenReqOuterClass.WeaponAwakenReq.class, emu.grasscutter.net.proto.WeaponAwakenReqOuterClass.WeaponAwakenReq.Builder.class);
     }
 
-    public static final int ITEM_GUID_LIST_FIELD_NUMBER = 15;
-    private com.google.protobuf.Internal.LongList itemGuidList_;
+    public static final int ITEM_GUID_FIELD_NUMBER = 5124;
+    private com.google.protobuf.Internal.LongList itemGuid_;
     /**
-     * <code>repeated uint64 item_guid_list = 15;</code>
-     * @return A list containing the itemGuidList.
+     * <code>repeated uint64 item_guid = 5124;</code>
+     * @return A list containing the itemGuid.
      */
     @java.lang.Override
     public java.util.List<java.lang.Long>
-        getItemGuidListList() {
-      return itemGuidList_;
+        getItemGuidList() {
+      return itemGuid_;
     }
     /**
-     * <code>repeated uint64 item_guid_list = 15;</code>
-     * @return The count of itemGuidList.
+     * <code>repeated uint64 item_guid = 5124;</code>
+     * @return The count of itemGuid.
      */
-    public int getItemGuidListCount() {
-      return itemGuidList_.size();
+    public int getItemGuidCount() {
+      return itemGuid_.size();
     }
     /**
-     * <code>repeated uint64 item_guid_list = 15;</code>
+     * <code>repeated uint64 item_guid = 5124;</code>
      * @param index The index of the element to return.
-     * @return The itemGuidList at the given index.
+     * @return The itemGuid at the given index.
      */
-    public long getItemGuidList(int index) {
-      return itemGuidList_.getLong(index);
+    public long getItemGuid(int index) {
+      return itemGuid_.getLong(index);
     }
-    private int itemGuidListMemoizedSerializedSize = -1;
+    private int itemGuidMemoizedSerializedSize = -1;
 
-    public static final int TARGET_WEAPON_GUID_FIELD_NUMBER = 3;
+    public static final int AFFIX_LEVEL_FIELD_NUMBER = 5;
+    private int affixLevel_;
+    /**
+     * <code>uint32 affix_level = 5;</code>
+     * @return The affixLevel.
+     */
+    @java.lang.Override
+    public int getAffixLevel() {
+      return affixLevel_;
+    }
+
+    public static final int TARGET_WEAPON_GUID_FIELD_NUMBER = 6;
     private long targetWeaponGuid_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>uint64 target_weapon_guid = 3;</code>
+     * <code>uint64 target_weapon_guid = 6;</code>
      * @return The targetWeaponGuid.
      */
     @java.lang.Override
     public long getTargetWeaponGuid() {
       return targetWeaponGuid_;
-    }
-
-    public static final int ITEM_GUID_FIELD_NUMBER = 5124;
-    private int itemGuid_;
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>uint32 item_guid = 5124;</code>
-     * @return The itemGuid.
-     */
-    @java.lang.Override
-    public int getItemGuid() {
-      return itemGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -245,18 +237,18 @@ public final class WeaponAwakenReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (affixLevel_ != 0) {
+        output.writeUInt32(5, affixLevel_);
+      }
       if (targetWeaponGuid_ != 0L) {
-        output.writeUInt64(3, targetWeaponGuid_);
+        output.writeUInt64(6, targetWeaponGuid_);
       }
-      if (getItemGuidListList().size() > 0) {
-        output.writeUInt32NoTag(122);
-        output.writeUInt32NoTag(itemGuidListMemoizedSerializedSize);
+      if (getItemGuidList().size() > 0) {
+        output.writeUInt32NoTag(40994);
+        output.writeUInt32NoTag(itemGuidMemoizedSerializedSize);
       }
-      for (int i = 0; i < itemGuidList_.size(); i++) {
-        output.writeUInt64NoTag(itemGuidList_.getLong(i));
-      }
-      if (itemGuid_ != 0) {
-        output.writeUInt32(5124, itemGuid_);
+      for (int i = 0; i < itemGuid_.size(); i++) {
+        output.writeUInt64NoTag(itemGuid_.getLong(i));
       }
       unknownFields.writeTo(output);
     }
@@ -267,27 +259,27 @@ public final class WeaponAwakenReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (affixLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, affixLevel_);
+      }
       if (targetWeaponGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(3, targetWeaponGuid_);
+          .computeUInt64Size(6, targetWeaponGuid_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < itemGuidList_.size(); i++) {
+        for (int i = 0; i < itemGuid_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt64SizeNoTag(itemGuidList_.getLong(i));
+            .computeUInt64SizeNoTag(itemGuid_.getLong(i));
         }
         size += dataSize;
-        if (!getItemGuidListList().isEmpty()) {
-          size += 1;
+        if (!getItemGuidList().isEmpty()) {
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        itemGuidListMemoizedSerializedSize = dataSize;
-      }
-      if (itemGuid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5124, itemGuid_);
+        itemGuidMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -304,12 +296,12 @@ public final class WeaponAwakenReqOuterClass {
       }
       emu.grasscutter.net.proto.WeaponAwakenReqOuterClass.WeaponAwakenReq other = (emu.grasscutter.net.proto.WeaponAwakenReqOuterClass.WeaponAwakenReq) obj;
 
-      if (!getItemGuidListList()
-          .equals(other.getItemGuidListList())) return false;
+      if (!getItemGuidList()
+          .equals(other.getItemGuidList())) return false;
+      if (getAffixLevel()
+          != other.getAffixLevel()) return false;
       if (getTargetWeaponGuid()
           != other.getTargetWeaponGuid()) return false;
-      if (getItemGuid()
-          != other.getItemGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -321,15 +313,15 @@ public final class WeaponAwakenReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getItemGuidListCount() > 0) {
-        hash = (37 * hash) + ITEM_GUID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getItemGuidListList().hashCode();
+      if (getItemGuidCount() > 0) {
+        hash = (37 * hash) + ITEM_GUID_FIELD_NUMBER;
+        hash = (53 * hash) + getItemGuidList().hashCode();
       }
+      hash = (37 * hash) + AFFIX_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getAffixLevel();
       hash = (37 * hash) + TARGET_WEAPON_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getTargetWeaponGuid());
-      hash = (37 * hash) + ITEM_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getItemGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -427,7 +419,7 @@ public final class WeaponAwakenReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23250
+     * CmdId: 8528
      * </pre>
      *
      * Protobuf type {@code WeaponAwakenReq}
@@ -467,11 +459,11 @@ public final class WeaponAwakenReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        itemGuidList_ = emptyLongList();
+        itemGuid_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        targetWeaponGuid_ = 0L;
+        affixLevel_ = 0;
 
-        itemGuid_ = 0;
+        targetWeaponGuid_ = 0L;
 
         return this;
       }
@@ -501,12 +493,12 @@ public final class WeaponAwakenReqOuterClass {
         emu.grasscutter.net.proto.WeaponAwakenReqOuterClass.WeaponAwakenReq result = new emu.grasscutter.net.proto.WeaponAwakenReqOuterClass.WeaponAwakenReq(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          itemGuidList_.makeImmutable();
+          itemGuid_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.itemGuidList_ = itemGuidList_;
-        result.targetWeaponGuid_ = targetWeaponGuid_;
         result.itemGuid_ = itemGuid_;
+        result.affixLevel_ = affixLevel_;
+        result.targetWeaponGuid_ = targetWeaponGuid_;
         onBuilt();
         return result;
       }
@@ -555,21 +547,21 @@ public final class WeaponAwakenReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WeaponAwakenReqOuterClass.WeaponAwakenReq other) {
         if (other == emu.grasscutter.net.proto.WeaponAwakenReqOuterClass.WeaponAwakenReq.getDefaultInstance()) return this;
-        if (!other.itemGuidList_.isEmpty()) {
-          if (itemGuidList_.isEmpty()) {
-            itemGuidList_ = other.itemGuidList_;
+        if (!other.itemGuid_.isEmpty()) {
+          if (itemGuid_.isEmpty()) {
+            itemGuid_ = other.itemGuid_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureItemGuidListIsMutable();
-            itemGuidList_.addAll(other.itemGuidList_);
+            ensureItemGuidIsMutable();
+            itemGuid_.addAll(other.itemGuid_);
           }
           onChanged();
         }
+        if (other.getAffixLevel() != 0) {
+          setAffixLevel(other.getAffixLevel());
+        }
         if (other.getTargetWeaponGuid() != 0L) {
           setTargetWeaponGuid(other.getTargetWeaponGuid());
-        }
-        if (other.getItemGuid() != 0) {
-          setItemGuid(other.getItemGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -601,81 +593,112 @@ public final class WeaponAwakenReqOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.LongList itemGuidList_ = emptyLongList();
-      private void ensureItemGuidListIsMutable() {
+      private com.google.protobuf.Internal.LongList itemGuid_ = emptyLongList();
+      private void ensureItemGuidIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          itemGuidList_ = mutableCopy(itemGuidList_);
+          itemGuid_ = mutableCopy(itemGuid_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint64 item_guid_list = 15;</code>
-       * @return A list containing the itemGuidList.
+       * <code>repeated uint64 item_guid = 5124;</code>
+       * @return A list containing the itemGuid.
        */
       public java.util.List<java.lang.Long>
-          getItemGuidListList() {
+          getItemGuidList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(itemGuidList_) : itemGuidList_;
+                 java.util.Collections.unmodifiableList(itemGuid_) : itemGuid_;
       }
       /**
-       * <code>repeated uint64 item_guid_list = 15;</code>
-       * @return The count of itemGuidList.
+       * <code>repeated uint64 item_guid = 5124;</code>
+       * @return The count of itemGuid.
        */
-      public int getItemGuidListCount() {
-        return itemGuidList_.size();
+      public int getItemGuidCount() {
+        return itemGuid_.size();
       }
       /**
-       * <code>repeated uint64 item_guid_list = 15;</code>
+       * <code>repeated uint64 item_guid = 5124;</code>
        * @param index The index of the element to return.
-       * @return The itemGuidList at the given index.
+       * @return The itemGuid at the given index.
        */
-      public long getItemGuidList(int index) {
-        return itemGuidList_.getLong(index);
+      public long getItemGuid(int index) {
+        return itemGuid_.getLong(index);
       }
       /**
-       * <code>repeated uint64 item_guid_list = 15;</code>
+       * <code>repeated uint64 item_guid = 5124;</code>
        * @param index The index to set the value at.
-       * @param value The itemGuidList to set.
+       * @param value The itemGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setItemGuidList(
+      public Builder setItemGuid(
           int index, long value) {
-        ensureItemGuidListIsMutable();
-        itemGuidList_.setLong(index, value);
+        ensureItemGuidIsMutable();
+        itemGuid_.setLong(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint64 item_guid_list = 15;</code>
-       * @param value The itemGuidList to add.
+       * <code>repeated uint64 item_guid = 5124;</code>
+       * @param value The itemGuid to add.
        * @return This builder for chaining.
        */
-      public Builder addItemGuidList(long value) {
-        ensureItemGuidListIsMutable();
-        itemGuidList_.addLong(value);
+      public Builder addItemGuid(long value) {
+        ensureItemGuidIsMutable();
+        itemGuid_.addLong(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint64 item_guid_list = 15;</code>
-       * @param values The itemGuidList to add.
+       * <code>repeated uint64 item_guid = 5124;</code>
+       * @param values The itemGuid to add.
        * @return This builder for chaining.
        */
-      public Builder addAllItemGuidList(
+      public Builder addAllItemGuid(
           java.lang.Iterable<? extends java.lang.Long> values) {
-        ensureItemGuidListIsMutable();
+        ensureItemGuidIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, itemGuidList_);
+            values, itemGuid_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint64 item_guid_list = 15;</code>
+       * <code>repeated uint64 item_guid = 5124;</code>
        * @return This builder for chaining.
        */
-      public Builder clearItemGuidList() {
-        itemGuidList_ = emptyLongList();
+      public Builder clearItemGuid() {
+        itemGuid_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int affixLevel_ ;
+      /**
+       * <code>uint32 affix_level = 5;</code>
+       * @return The affixLevel.
+       */
+      @java.lang.Override
+      public int getAffixLevel() {
+        return affixLevel_;
+      }
+      /**
+       * <code>uint32 affix_level = 5;</code>
+       * @param value The affixLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAffixLevel(int value) {
+        
+        affixLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 affix_level = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAffixLevel() {
+        
+        affixLevel_ = 0;
         onChanged();
         return this;
       }
@@ -683,10 +706,10 @@ public final class WeaponAwakenReqOuterClass {
       private long targetWeaponGuid_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint64 target_weapon_guid = 3;</code>
+       * <code>uint64 target_weapon_guid = 6;</code>
        * @return The targetWeaponGuid.
        */
       @java.lang.Override
@@ -695,10 +718,10 @@ public final class WeaponAwakenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint64 target_weapon_guid = 3;</code>
+       * <code>uint64 target_weapon_guid = 6;</code>
        * @param value The targetWeaponGuid to set.
        * @return This builder for chaining.
        */
@@ -710,58 +733,15 @@ public final class WeaponAwakenReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint64 target_weapon_guid = 3;</code>
+       * <code>uint64 target_weapon_guid = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetWeaponGuid() {
         
         targetWeaponGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int itemGuid_ ;
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>uint32 item_guid = 5124;</code>
-       * @return The itemGuid.
-       */
-      @java.lang.Override
-      public int getItemGuid() {
-        return itemGuid_;
-      }
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>uint32 item_guid = 5124;</code>
-       * @param value The itemGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setItemGuid(int value) {
-        
-        itemGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>uint32 item_guid = 5124;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearItemGuid() {
-        
-        itemGuid_ = 0;
         onChanged();
         return this;
       }
@@ -832,10 +812,10 @@ public final class WeaponAwakenReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025WeaponAwakenReq.proto\"Y\n\017WeaponAwakenR" +
-      "eq\022\026\n\016item_guid_list\030\017 \003(\004\022\032\n\022target_wea" +
-      "pon_guid\030\003 \001(\004\022\022\n\titem_guid\030\204( \001(\rB\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "\n\025WeaponAwakenReq.proto\"V\n\017WeaponAwakenR" +
+      "eq\022\022\n\titem_guid\030\204( \003(\004\022\023\n\013affix_level\030\005 " +
+      "\001(\r\022\032\n\022target_weapon_guid\030\006 \001(\004B\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -846,7 +826,7 @@ public final class WeaponAwakenReqOuterClass {
     internal_static_WeaponAwakenReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WeaponAwakenReq_descriptor,
-        new java.lang.String[] { "ItemGuidList", "TargetWeaponGuid", "ItemGuid", });
+        new java.lang.String[] { "ItemGuid", "AffixLevel", "TargetWeaponGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

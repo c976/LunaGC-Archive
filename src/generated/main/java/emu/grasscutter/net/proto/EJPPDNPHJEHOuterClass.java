@@ -19,50 +19,30 @@ public final class EJPPDNPHJEHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DAFFDKLNONJ = 13;</code>
      * @return The dAFFDKLNONJ.
      */
     int getDAFFDKLNONJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MFEBILGOLJE = 1;</code>
      * @return The mFEBILGOLJE.
      */
     int getMFEBILGOLJE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ECBAKOMOILD = 4;</code>
      * @return The eCBAKOMOILD.
      */
     int getECBAKOMOILD();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 guid = 2;</code>
      * @return The guid.
      */
     int getGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 card_id = 15;</code>
      * @return The cardId.
      */
@@ -173,10 +153,6 @@ public final class EJPPDNPHJEHOuterClass {
     public static final int DAFFDKLNONJ_FIELD_NUMBER = 13;
     private int dAFFDKLNONJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DAFFDKLNONJ = 13;</code>
      * @return The dAFFDKLNONJ.
      */
@@ -188,10 +164,6 @@ public final class EJPPDNPHJEHOuterClass {
     public static final int MFEBILGOLJE_FIELD_NUMBER = 1;
     private int mFEBILGOLJE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MFEBILGOLJE = 1;</code>
      * @return The mFEBILGOLJE.
      */
@@ -203,10 +175,6 @@ public final class EJPPDNPHJEHOuterClass {
     public static final int ECBAKOMOILD_FIELD_NUMBER = 4;
     private int eCBAKOMOILD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ECBAKOMOILD = 4;</code>
      * @return The eCBAKOMOILD.
      */
@@ -218,10 +186,6 @@ public final class EJPPDNPHJEHOuterClass {
     public static final int GUID_FIELD_NUMBER = 2;
     private int guid_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 guid = 2;</code>
      * @return The guid.
      */
@@ -233,10 +197,6 @@ public final class EJPPDNPHJEHOuterClass {
     public static final int CARD_ID_FIELD_NUMBER = 15;
     private int cardId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 card_id = 15;</code>
      * @return The cardId.
      */
@@ -617,10 +577,6 @@ public final class EJPPDNPHJEHOuterClass {
 
       private int dAFFDKLNONJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DAFFDKLNONJ = 13;</code>
        * @return The dAFFDKLNONJ.
        */
@@ -629,10 +585,6 @@ public final class EJPPDNPHJEHOuterClass {
         return dAFFDKLNONJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DAFFDKLNONJ = 13;</code>
        * @param value The dAFFDKLNONJ to set.
        * @return This builder for chaining.
@@ -644,10 +596,6 @@ public final class EJPPDNPHJEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DAFFDKLNONJ = 13;</code>
        * @return This builder for chaining.
        */
@@ -660,10 +608,6 @@ public final class EJPPDNPHJEHOuterClass {
 
       private int mFEBILGOLJE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MFEBILGOLJE = 1;</code>
        * @return The mFEBILGOLJE.
        */
@@ -672,10 +616,6 @@ public final class EJPPDNPHJEHOuterClass {
         return mFEBILGOLJE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MFEBILGOLJE = 1;</code>
        * @param value The mFEBILGOLJE to set.
        * @return This builder for chaining.
@@ -687,10 +627,6 @@ public final class EJPPDNPHJEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MFEBILGOLJE = 1;</code>
        * @return This builder for chaining.
        */
@@ -703,10 +639,6 @@ public final class EJPPDNPHJEHOuterClass {
 
       private int eCBAKOMOILD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECBAKOMOILD = 4;</code>
        * @return The eCBAKOMOILD.
        */
@@ -715,10 +647,6 @@ public final class EJPPDNPHJEHOuterClass {
         return eCBAKOMOILD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECBAKOMOILD = 4;</code>
        * @param value The eCBAKOMOILD to set.
        * @return This builder for chaining.
@@ -730,10 +658,6 @@ public final class EJPPDNPHJEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECBAKOMOILD = 4;</code>
        * @return This builder for chaining.
        */
@@ -746,10 +670,6 @@ public final class EJPPDNPHJEHOuterClass {
 
       private int guid_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 guid = 2;</code>
        * @return The guid.
        */
@@ -758,10 +678,6 @@ public final class EJPPDNPHJEHOuterClass {
         return guid_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 guid = 2;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
@@ -773,10 +689,6 @@ public final class EJPPDNPHJEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 guid = 2;</code>
        * @return This builder for chaining.
        */
@@ -789,10 +701,6 @@ public final class EJPPDNPHJEHOuterClass {
 
       private int cardId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 card_id = 15;</code>
        * @return The cardId.
        */
@@ -801,10 +709,6 @@ public final class EJPPDNPHJEHOuterClass {
         return cardId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 card_id = 15;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
@@ -816,10 +720,6 @@ public final class EJPPDNPHJEHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 card_id = 15;</code>
        * @return This builder for chaining.
        */

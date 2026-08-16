@@ -20,7 +20,7 @@ public final class BossChestInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -29,7 +29,7 @@ public final class BossChestInfoOuterClass {
     java.util.List<java.lang.Integer> getQualifyUidListList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -38,7 +38,7 @@ public final class BossChestInfoOuterClass {
     int getQualifyUidListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -49,7 +49,7 @@ public final class BossChestInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -57,7 +57,7 @@ public final class BossChestInfoOuterClass {
     int getUidDiscountMapCount();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -72,7 +72,7 @@ public final class BossChestInfoOuterClass {
     getUidDiscountMap();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -81,7 +81,7 @@ public final class BossChestInfoOuterClass {
     getUidDiscountMapMap();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -92,7 +92,7 @@ public final class BossChestInfoOuterClass {
         emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo defaultValue);
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -103,7 +103,7 @@ public final class BossChestInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -112,7 +112,7 @@ public final class BossChestInfoOuterClass {
     java.util.List<java.lang.Integer> getRemainUidListList();
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -121,7 +121,7 @@ public final class BossChestInfoOuterClass {
     int getRemainUidListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -132,23 +132,23 @@ public final class BossChestInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>uint32 resin = 2;</code>
-     * @return The resin.
-     */
-    int getResin();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 60
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 monster_config_id = 1;</code>
      * @return The monsterConfigId.
      */
     int getMonsterConfigId();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 resin = 2;</code>
+     * @return The resin.
+     */
+    int getResin();
   }
   /**
    * Protobuf type {@code BossChestInfo}
@@ -317,7 +317,7 @@ public final class BossChestInfoOuterClass {
     private com.google.protobuf.Internal.IntList qualifyUidList_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -330,7 +330,7 @@ public final class BossChestInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -341,7 +341,7 @@ public final class BossChestInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -381,7 +381,7 @@ public final class BossChestInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -403,7 +403,7 @@ public final class BossChestInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -415,7 +415,7 @@ public final class BossChestInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -432,7 +432,7 @@ public final class BossChestInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -454,7 +454,7 @@ public final class BossChestInfoOuterClass {
     private com.google.protobuf.Internal.IntList remainUidList_;
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -467,7 +467,7 @@ public final class BossChestInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -478,7 +478,7 @@ public final class BossChestInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -490,26 +490,11 @@ public final class BossChestInfoOuterClass {
     }
     private int remainUidListMemoizedSerializedSize = -1;
 
-    public static final int RESIN_FIELD_NUMBER = 2;
-    private int resin_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>uint32 resin = 2;</code>
-     * @return The resin.
-     */
-    @java.lang.Override
-    public int getResin() {
-      return resin_;
-    }
-
     public static final int MONSTER_CONFIG_ID_FIELD_NUMBER = 1;
     private int monsterConfigId_;
     /**
      * <pre>
-     *6.3.0 // offset: 60
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 monster_config_id = 1;</code>
@@ -518,6 +503,21 @@ public final class BossChestInfoOuterClass {
     @java.lang.Override
     public int getMonsterConfigId() {
       return monsterConfigId_;
+    }
+
+    public static final int RESIN_FIELD_NUMBER = 2;
+    private int resin_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 resin = 2;</code>
+     * @return The resin.
+     */
+    @java.lang.Override
+    public int getResin() {
+      return resin_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -637,10 +637,10 @@ public final class BossChestInfoOuterClass {
           other.internalGetUidDiscountMap())) return false;
       if (!getRemainUidListList()
           .equals(other.getRemainUidListList())) return false;
-      if (getResin()
-          != other.getResin()) return false;
       if (getMonsterConfigId()
           != other.getMonsterConfigId()) return false;
+      if (getResin()
+          != other.getResin()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -664,10 +664,10 @@ public final class BossChestInfoOuterClass {
         hash = (37 * hash) + REMAIN_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRemainUidListList().hashCode();
       }
-      hash = (37 * hash) + RESIN_FIELD_NUMBER;
-      hash = (53 * hash) + getResin();
       hash = (37 * hash) + MONSTER_CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMonsterConfigId();
+      hash = (37 * hash) + RESIN_FIELD_NUMBER;
+      hash = (53 * hash) + getResin();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -828,9 +828,9 @@ public final class BossChestInfoOuterClass {
         internalGetMutableUidDiscountMap().clear();
         remainUidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
-        resin_ = 0;
-
         monsterConfigId_ = 0;
+
+        resin_ = 0;
 
         return this;
       }
@@ -871,8 +871,8 @@ public final class BossChestInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.remainUidList_ = remainUidList_;
-        result.resin_ = resin_;
         result.monsterConfigId_ = monsterConfigId_;
+        result.resin_ = resin_;
         onBuilt();
         return result;
       }
@@ -943,11 +943,11 @@ public final class BossChestInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getResin() != 0) {
-          setResin(other.getResin());
-        }
         if (other.getMonsterConfigId() != 0) {
           setMonsterConfigId(other.getMonsterConfigId());
+        }
+        if (other.getResin() != 0) {
+          setResin(other.getResin());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -988,7 +988,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -1001,7 +1001,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -1012,7 +1012,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -1024,7 +1024,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -1041,7 +1041,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -1056,7 +1056,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -1073,7 +1073,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 qualify_uid_list = 4;</code>
@@ -1114,7 +1114,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -1136,7 +1136,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -1148,7 +1148,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -1165,7 +1165,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -1190,7 +1190,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -1213,7 +1213,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -1229,7 +1229,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, .WeeklyBossResinDiscountInfo&gt; uid_discount_map = 5;</code>
@@ -1251,7 +1251,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -1264,7 +1264,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -1275,7 +1275,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -1287,7 +1287,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -1304,7 +1304,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -1319,7 +1319,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -1336,7 +1336,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -1349,53 +1349,10 @@ public final class BossChestInfoOuterClass {
         return this;
       }
 
-      private int resin_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>uint32 resin = 2;</code>
-       * @return The resin.
-       */
-      @java.lang.Override
-      public int getResin() {
-        return resin_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>uint32 resin = 2;</code>
-       * @param value The resin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setResin(int value) {
-        
-        resin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>uint32 resin = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearResin() {
-        
-        resin_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int monsterConfigId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 60
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 monster_config_id = 1;</code>
@@ -1407,7 +1364,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 60
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 monster_config_id = 1;</code>
@@ -1422,7 +1379,7 @@ public final class BossChestInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 60
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 monster_config_id = 1;</code>
@@ -1431,6 +1388,49 @@ public final class BossChestInfoOuterClass {
       public Builder clearMonsterConfigId() {
         
         monsterConfigId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int resin_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 resin = 2;</code>
+       * @return The resin.
+       */
+      @java.lang.Override
+      public int getResin() {
+        return resin_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 resin = 2;</code>
+       * @param value The resin to set.
+       * @return This builder for chaining.
+       */
+      public Builder setResin(int value) {
+        
+        resin_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 resin = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearResin() {
+        
+        resin_ = 0;
         onChanged();
         return this;
       }
@@ -1510,8 +1510,8 @@ public final class BossChestInfoOuterClass {
       "scountInfo.proto\"\377\001\n\rBossChestInfo\022\030\n\020qu" +
       "alify_uid_list\030\004 \003(\r\022<\n\020uid_discount_map" +
       "\030\005 \003(\0132\".BossChestInfo.UidDiscountMapEnt" +
-      "ry\022\027\n\017remain_uid_list\030\003 \003(\r\022\r\n\005resin\030\002 \001" +
-      "(\r\022\031\n\021monster_config_id\030\001 \001(\r\032S\n\023UidDisc" +
+      "ry\022\027\n\017remain_uid_list\030\003 \003(\r\022\031\n\021monster_c" +
+      "onfig_id\030\001 \001(\r\022\r\n\005resin\030\002 \001(\r\032S\n\023UidDisc" +
       "ountMapEntry\022\013\n\003key\030\001 \001(\r\022+\n\005value\030\002 \001(\013" +
       "2\034.WeeklyBossResinDiscountInfo:\0028\001B\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
@@ -1526,7 +1526,7 @@ public final class BossChestInfoOuterClass {
     internal_static_BossChestInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BossChestInfo_descriptor,
-        new java.lang.String[] { "QualifyUidList", "UidDiscountMap", "RemainUidList", "Resin", "MonsterConfigId", });
+        new java.lang.String[] { "QualifyUidList", "UidDiscountMap", "RemainUidList", "MonsterConfigId", "Resin", });
     internal_static_BossChestInfo_UidDiscountMapEntry_descriptor =
       internal_static_BossChestInfo_descriptor.getNestedTypes().get(0);
     internal_static_BossChestInfo_UidDiscountMapEntry_fieldAccessorTable = new

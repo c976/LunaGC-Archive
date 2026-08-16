@@ -19,44 +19,24 @@ public final class HNPHLPHHFLHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC> 
         getLPLPLBCGCANList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
      */
     emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC getLPLPLBCGCAN(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
      */
     int getLPLPLBCGCANCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLCOrBuilder> 
         getLPLPLBCGCANOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
      */
     emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLCOrBuilder getLPLPLBCGCANOrBuilder(
@@ -156,10 +136,6 @@ public final class HNPHLPHHFLHOuterClass {
     public static final int LPLPLBCGCAN_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC> lPLPLBCGCAN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class HNPHLPHHFLHOuterClass {
       return lPLPLBCGCAN_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class HNPHLPHHFLHOuterClass {
       return lPLPLBCGCAN_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class HNPHLPHHFLHOuterClass {
       return lPLPLBCGCAN_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class HNPHLPHHFLHOuterClass {
       return lPLPLBCGCAN_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class HNPHLPHHFLHOuterClass {
           emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC, emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC.Builder, emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLCOrBuilder> lPLPLBCGCANBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC> getLPLPLBCGCANList() {
@@ -582,10 +538,6 @@ public final class HNPHLPHHFLHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public int getLPLPLBCGCANCount() {
@@ -596,10 +548,6 @@ public final class HNPHLPHHFLHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC getLPLPLBCGCAN(int index) {
@@ -610,10 +558,6 @@ public final class HNPHLPHHFLHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public Builder setLPLPLBCGCAN(
@@ -631,10 +575,6 @@ public final class HNPHLPHHFLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public Builder setLPLPLBCGCAN(
@@ -649,10 +589,6 @@ public final class HNPHLPHHFLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public Builder addLPLPLBCGCAN(emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC value) {
@@ -669,10 +605,6 @@ public final class HNPHLPHHFLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public Builder addLPLPLBCGCAN(
@@ -690,10 +622,6 @@ public final class HNPHLPHHFLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public Builder addLPLPLBCGCAN(
@@ -708,10 +636,6 @@ public final class HNPHLPHHFLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public Builder addLPLPLBCGCAN(
@@ -726,10 +650,6 @@ public final class HNPHLPHHFLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public Builder addAllLPLPLBCGCAN(
@@ -745,10 +665,6 @@ public final class HNPHLPHHFLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public Builder clearLPLPLBCGCAN() {
@@ -762,10 +678,6 @@ public final class HNPHLPHHFLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public Builder removeLPLPLBCGCAN(int index) {
@@ -779,10 +691,6 @@ public final class HNPHLPHHFLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC.Builder getLPLPLBCGCANBuilder(
@@ -790,10 +698,6 @@ public final class HNPHLPHHFLHOuterClass {
         return getLPLPLBCGCANFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLCOrBuilder getLPLPLBCGCANOrBuilder(
@@ -804,10 +708,6 @@ public final class HNPHLPHHFLHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLCOrBuilder> 
@@ -819,10 +719,6 @@ public final class HNPHLPHHFLHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC.Builder addLPLPLBCGCANBuilder() {
@@ -830,10 +726,6 @@ public final class HNPHLPHHFLHOuterClass {
             emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC.Builder addLPLPLBCGCANBuilder(
@@ -842,10 +734,6 @@ public final class HNPHLPHHFLHOuterClass {
             index, emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMBBOKACLC LPLPLBCGCAN = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PAMBBOKACLCOuterClass.PAMBBOKACLC.Builder> 

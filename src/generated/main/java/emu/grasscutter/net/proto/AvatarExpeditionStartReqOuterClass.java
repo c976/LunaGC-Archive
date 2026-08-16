@@ -19,32 +19,27 @@ public final class AvatarExpeditionStartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
+     * <code>uint64 avatar_guid = 13;</code>
+     * @return The avatarGuid.
      */
-    java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> 
-        getJCJKGBHDPPMList();
+    long getAvatarGuid();
+
     /**
-     * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
+     * <code>uint32 hour_time = 12;</code>
+     * @return The hourTime.
      */
-    emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM getJCJKGBHDPPM(int index);
+    int getHourTime();
+
     /**
-     * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
+     * <code>uint32 exp_id = 6;</code>
+     * @return The expId.
      */
-    int getJCJKGBHDPPMCount();
-    /**
-     * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder> 
-        getJCJKGBHDPPMOrBuilderList();
-    /**
-     * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-     */
-    emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder getJCJKGBHDPPMOrBuilder(
-        int index);
+    int getExpId();
   }
   /**
    * <pre>
-   * CmdId: 26456
+   * CmdId: 751
+   * Obf: POPPHGOPGHG
    * </pre>
    *
    * Protobuf type {@code AvatarExpeditionStartReq}
@@ -59,7 +54,6 @@ public final class AvatarExpeditionStartReqOuterClass {
       super(builder);
     }
     private AvatarExpeditionStartReq() {
-      jCJKGBHDPPM_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -82,7 +76,6 @@ public final class AvatarExpeditionStartReqOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -93,13 +86,19 @@ public final class AvatarExpeditionStartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                jCJKGBHDPPM_ = new java.util.ArrayList<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              jCJKGBHDPPM_.add(
-                  input.readMessage(emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.parser(), extensionRegistry));
+            case 48: {
+
+              expId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              hourTime_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              avatarGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -117,9 +116,6 @@ public final class AvatarExpeditionStartReqOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          jCJKGBHDPPM_ = java.util.Collections.unmodifiableList(jCJKGBHDPPM_);
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -137,44 +133,37 @@ public final class AvatarExpeditionStartReqOuterClass {
               emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq.class, emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq.Builder.class);
     }
 
-    public static final int JCJKGBHDPPM_FIELD_NUMBER = 7;
-    private java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> jCJKGBHDPPM_;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 13;
+    private long avatarGuid_;
     /**
-     * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
+     * <code>uint64 avatar_guid = 13;</code>
+     * @return The avatarGuid.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> getJCJKGBHDPPMList() {
-      return jCJKGBHDPPM_;
+    public long getAvatarGuid() {
+      return avatarGuid_;
     }
+
+    public static final int HOUR_TIME_FIELD_NUMBER = 12;
+    private int hourTime_;
     /**
-     * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
+     * <code>uint32 hour_time = 12;</code>
+     * @return The hourTime.
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder> 
-        getJCJKGBHDPPMOrBuilderList() {
-      return jCJKGBHDPPM_;
+    public int getHourTime() {
+      return hourTime_;
     }
+
+    public static final int EXP_ID_FIELD_NUMBER = 6;
+    private int expId_;
     /**
-     * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
+     * <code>uint32 exp_id = 6;</code>
+     * @return The expId.
      */
     @java.lang.Override
-    public int getJCJKGBHDPPMCount() {
-      return jCJKGBHDPPM_.size();
-    }
-    /**
-     * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM getJCJKGBHDPPM(int index) {
-      return jCJKGBHDPPM_.get(index);
-    }
-    /**
-     * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder getJCJKGBHDPPMOrBuilder(
-        int index) {
-      return jCJKGBHDPPM_.get(index);
+    public int getExpId() {
+      return expId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,8 +180,14 @@ public final class AvatarExpeditionStartReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < jCJKGBHDPPM_.size(); i++) {
-        output.writeMessage(7, jCJKGBHDPPM_.get(i));
+      if (expId_ != 0) {
+        output.writeUInt32(6, expId_);
+      }
+      if (hourTime_ != 0) {
+        output.writeUInt32(12, hourTime_);
+      }
+      if (avatarGuid_ != 0L) {
+        output.writeUInt64(13, avatarGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -203,9 +198,17 @@ public final class AvatarExpeditionStartReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < jCJKGBHDPPM_.size(); i++) {
+      if (expId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, jCJKGBHDPPM_.get(i));
+          .computeUInt32Size(6, expId_);
+      }
+      if (hourTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, hourTime_);
+      }
+      if (avatarGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(13, avatarGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -222,8 +225,12 @@ public final class AvatarExpeditionStartReqOuterClass {
       }
       emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq other = (emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq) obj;
 
-      if (!getJCJKGBHDPPMList()
-          .equals(other.getJCJKGBHDPPMList())) return false;
+      if (getAvatarGuid()
+          != other.getAvatarGuid()) return false;
+      if (getHourTime()
+          != other.getHourTime()) return false;
+      if (getExpId()
+          != other.getExpId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -235,10 +242,13 @@ public final class AvatarExpeditionStartReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getJCJKGBHDPPMCount() > 0) {
-        hash = (37 * hash) + JCJKGBHDPPM_FIELD_NUMBER;
-        hash = (53 * hash) + getJCJKGBHDPPMList().hashCode();
-      }
+      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getAvatarGuid());
+      hash = (37 * hash) + HOUR_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getHourTime();
+      hash = (37 * hash) + EXP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getExpId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -336,7 +346,8 @@ public final class AvatarExpeditionStartReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26456
+     * CmdId: 751
+     * Obf: POPPHGOPGHG
      * </pre>
      *
      * Protobuf type {@code AvatarExpeditionStartReq}
@@ -371,18 +382,17 @@ public final class AvatarExpeditionStartReqOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getJCJKGBHDPPMFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (jCJKGBHDPPMBuilder_ == null) {
-          jCJKGBHDPPM_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          jCJKGBHDPPMBuilder_.clear();
-        }
+        avatarGuid_ = 0L;
+
+        hourTime_ = 0;
+
+        expId_ = 0;
+
         return this;
       }
 
@@ -409,16 +419,9 @@ public final class AvatarExpeditionStartReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq buildPartial() {
         emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq result = new emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq(this);
-        int from_bitField0_ = bitField0_;
-        if (jCJKGBHDPPMBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            jCJKGBHDPPM_ = java.util.Collections.unmodifiableList(jCJKGBHDPPM_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.jCJKGBHDPPM_ = jCJKGBHDPPM_;
-        } else {
-          result.jCJKGBHDPPM_ = jCJKGBHDPPMBuilder_.build();
-        }
+        result.avatarGuid_ = avatarGuid_;
+        result.hourTime_ = hourTime_;
+        result.expId_ = expId_;
         onBuilt();
         return result;
       }
@@ -467,31 +470,14 @@ public final class AvatarExpeditionStartReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq other) {
         if (other == emu.grasscutter.net.proto.AvatarExpeditionStartReqOuterClass.AvatarExpeditionStartReq.getDefaultInstance()) return this;
-        if (jCJKGBHDPPMBuilder_ == null) {
-          if (!other.jCJKGBHDPPM_.isEmpty()) {
-            if (jCJKGBHDPPM_.isEmpty()) {
-              jCJKGBHDPPM_ = other.jCJKGBHDPPM_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensureJCJKGBHDPPMIsMutable();
-              jCJKGBHDPPM_.addAll(other.jCJKGBHDPPM_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.jCJKGBHDPPM_.isEmpty()) {
-            if (jCJKGBHDPPMBuilder_.isEmpty()) {
-              jCJKGBHDPPMBuilder_.dispose();
-              jCJKGBHDPPMBuilder_ = null;
-              jCJKGBHDPPM_ = other.jCJKGBHDPPM_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              jCJKGBHDPPMBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getJCJKGBHDPPMFieldBuilder() : null;
-            } else {
-              jCJKGBHDPPMBuilder_.addAllMessages(other.jCJKGBHDPPM_);
-            }
-          }
+        if (other.getAvatarGuid() != 0L) {
+          setAvatarGuid(other.getAvatarGuid());
+        }
+        if (other.getHourTime() != 0) {
+          setHourTime(other.getHourTime());
+        }
+        if (other.getExpId() != 0) {
+          setExpId(other.getExpId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -521,246 +507,98 @@ public final class AvatarExpeditionStartReqOuterClass {
         }
         return this;
       }
-      private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> jCJKGBHDPPM_ =
-        java.util.Collections.emptyList();
-      private void ensureJCJKGBHDPPMIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          jCJKGBHDPPM_ = new java.util.ArrayList<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM>(jCJKGBHDPPM_);
-          bitField0_ |= 0x00000001;
-         }
+      private long avatarGuid_ ;
+      /**
+       * <code>uint64 avatar_guid = 13;</code>
+       * @return The avatarGuid.
+       */
+      @java.lang.Override
+      public long getAvatarGuid() {
+        return avatarGuid_;
+      }
+      /**
+       * <code>uint64 avatar_guid = 13;</code>
+       * @param value The avatarGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarGuid(long value) {
+        
+        avatarGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 avatar_guid = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarGuid() {
+        
+        avatarGuid_ = 0L;
+        onChanged();
+        return this;
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder> jCJKGBHDPPMBuilder_;
+      private int hourTime_ ;
+      /**
+       * <code>uint32 hour_time = 12;</code>
+       * @return The hourTime.
+       */
+      @java.lang.Override
+      public int getHourTime() {
+        return hourTime_;
+      }
+      /**
+       * <code>uint32 hour_time = 12;</code>
+       * @param value The hourTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHourTime(int value) {
+        
+        hourTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 hour_time = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHourTime() {
+        
+        hourTime_ = 0;
+        onChanged();
+        return this;
+      }
 
+      private int expId_ ;
       /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
+       * <code>uint32 exp_id = 6;</code>
+       * @return The expId.
        */
-      public java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> getJCJKGBHDPPMList() {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(jCJKGBHDPPM_);
-        } else {
-          return jCJKGBHDPPMBuilder_.getMessageList();
-        }
+      @java.lang.Override
+      public int getExpId() {
+        return expId_;
       }
       /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
+       * <code>uint32 exp_id = 6;</code>
+       * @param value The expId to set.
+       * @return This builder for chaining.
        */
-      public int getJCJKGBHDPPMCount() {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          return jCJKGBHDPPM_.size();
-        } else {
-          return jCJKGBHDPPMBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM getJCJKGBHDPPM(int index) {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          return jCJKGBHDPPM_.get(index);
-        } else {
-          return jCJKGBHDPPMBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public Builder setJCJKGBHDPPM(
-          int index, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM value) {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureJCJKGBHDPPMIsMutable();
-          jCJKGBHDPPM_.set(index, value);
-          onChanged();
-        } else {
-          jCJKGBHDPPMBuilder_.setMessage(index, value);
-        }
+      public Builder setExpId(int value) {
+        
+        expId_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
+       * <code>uint32 exp_id = 6;</code>
+       * @return This builder for chaining.
        */
-      public Builder setJCJKGBHDPPM(
-          int index, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder builderForValue) {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          ensureJCJKGBHDPPMIsMutable();
-          jCJKGBHDPPM_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          jCJKGBHDPPMBuilder_.setMessage(index, builderForValue.build());
-        }
+      public Builder clearExpId() {
+        
+        expId_ = 0;
+        onChanged();
         return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public Builder addJCJKGBHDPPM(emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM value) {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureJCJKGBHDPPMIsMutable();
-          jCJKGBHDPPM_.add(value);
-          onChanged();
-        } else {
-          jCJKGBHDPPMBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public Builder addJCJKGBHDPPM(
-          int index, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM value) {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureJCJKGBHDPPMIsMutable();
-          jCJKGBHDPPM_.add(index, value);
-          onChanged();
-        } else {
-          jCJKGBHDPPMBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public Builder addJCJKGBHDPPM(
-          emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder builderForValue) {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          ensureJCJKGBHDPPMIsMutable();
-          jCJKGBHDPPM_.add(builderForValue.build());
-          onChanged();
-        } else {
-          jCJKGBHDPPMBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public Builder addJCJKGBHDPPM(
-          int index, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder builderForValue) {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          ensureJCJKGBHDPPMIsMutable();
-          jCJKGBHDPPM_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          jCJKGBHDPPMBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public Builder addAllJCJKGBHDPPM(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> values) {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          ensureJCJKGBHDPPMIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, jCJKGBHDPPM_);
-          onChanged();
-        } else {
-          jCJKGBHDPPMBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public Builder clearJCJKGBHDPPM() {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          jCJKGBHDPPM_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          jCJKGBHDPPMBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public Builder removeJCJKGBHDPPM(int index) {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          ensureJCJKGBHDPPMIsMutable();
-          jCJKGBHDPPM_.remove(index);
-          onChanged();
-        } else {
-          jCJKGBHDPPMBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder getJCJKGBHDPPMBuilder(
-          int index) {
-        return getJCJKGBHDPPMFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder getJCJKGBHDPPMOrBuilder(
-          int index) {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          return jCJKGBHDPPM_.get(index);  } else {
-          return jCJKGBHDPPMBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder> 
-           getJCJKGBHDPPMOrBuilderList() {
-        if (jCJKGBHDPPMBuilder_ != null) {
-          return jCJKGBHDPPMBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(jCJKGBHDPPM_);
-        }
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder addJCJKGBHDPPMBuilder() {
-        return getJCJKGBHDPPMFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder addJCJKGBHDPPMBuilder(
-          int index) {
-        return getJCJKGBHDPPMFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM JCJKGBHDPPM = 7;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder> 
-           getJCJKGBHDPPMBuilderList() {
-        return getJCJKGBHDPPMFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder> 
-          getJCJKGBHDPPMFieldBuilder() {
-        if (jCJKGBHDPPMBuilder_ == null) {
-          jCJKGBHDPPMBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder>(
-                  jCJKGBHDPPM_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          jCJKGBHDPPM_ = null;
-        }
-        return jCJKGBHDPPMBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -829,23 +667,21 @@ public final class AvatarExpeditionStartReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036AvatarExpeditionStartReq.proto\032\021DFOCJM" +
-      "AHOMM.proto\"=\n\030AvatarExpeditionStartReq\022" +
-      "!\n\013JCJKGBHDPPM\030\007 \003(\0132\014.DFOCJMAHOMMB\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "\n\036AvatarExpeditionStartReq.proto\"R\n\030Avat" +
+      "arExpeditionStartReq\022\023\n\013avatar_guid\030\r \001(" +
+      "\004\022\021\n\thour_time\030\014 \001(\r\022\016\n\006exp_id\030\006 \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.getDescriptor(),
         });
     internal_static_AvatarExpeditionStartReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AvatarExpeditionStartReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarExpeditionStartReq_descriptor,
-        new java.lang.String[] { "JCJKGBHDPPM", });
-    emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.getDescriptor();
+        new java.lang.String[] { "AvatarGuid", "HourTime", "ExpId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

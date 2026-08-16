@@ -19,36 +19,24 @@ public final class POILBCCNMHHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 EGHGENOJNEK = 2;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 2;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 14;</code>
      * @return The oMEBOHLACPH.
      */
     int getOMEBOHLACPH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -101,7 +89,7 @@ public final class POILBCCNMHHOuterClass {
               break;
             case 16: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 48: {
@@ -151,24 +139,20 @@ public final class POILBCCNMHHOuterClass {
               emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH.class, emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH.Builder.class);
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 2;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 2;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 2;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 2;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int OMEBOHLACPH_FIELD_NUMBER = 14;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 14;</code>
      * @return The oMEBOHLACPH.
      */
@@ -180,10 +164,6 @@ public final class POILBCCNMHHOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 8;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
@@ -195,10 +175,6 @@ public final class POILBCCNMHHOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -221,8 +197,8 @@ public final class POILBCCNMHHOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(2, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(2, stageId_);
       }
       if (isOpen_ != false) {
         output.writeBool(6, isOpen_);
@@ -242,9 +218,9 @@ public final class POILBCCNMHHOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, eGHGENOJNEK_);
+          .computeUInt32Size(2, stageId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -273,8 +249,8 @@ public final class POILBCCNMHHOuterClass {
       }
       emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH other = (emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH) obj;
 
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getOMEBOHLACPH()
           != other.getOMEBOHLACPH()) return false;
       if (getIsFinish()
@@ -292,8 +268,8 @@ public final class POILBCCNMHHOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + OMEBOHLACPH_FIELD_NUMBER;
       hash = (53 * hash) + getOMEBOHLACPH();
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
@@ -435,7 +411,7 @@ public final class POILBCCNMHHOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         oMEBOHLACPH_ = 0;
 
@@ -469,7 +445,7 @@ public final class POILBCCNMHHOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH buildPartial() {
         emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH result = new emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH(this);
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.oMEBOHLACPH_ = oMEBOHLACPH_;
         result.isFinish_ = isFinish_;
         result.isOpen_ = isOpen_;
@@ -521,8 +497,8 @@ public final class POILBCCNMHHOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH other) {
         if (other == emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH.getDefaultInstance()) return this;
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getOMEBOHLACPH() != 0) {
           setOMEBOHLACPH(other.getOMEBOHLACPH());
@@ -562,43 +538,39 @@ public final class POILBCCNMHHOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 2;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 2;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
+       * <code>uint32 stage_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @return The oMEBOHLACPH.
        */
@@ -607,10 +579,6 @@ public final class POILBCCNMHHOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -622,10 +590,6 @@ public final class POILBCCNMHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @return This builder for chaining.
        */
@@ -638,10 +602,6 @@ public final class POILBCCNMHHOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return The isFinish.
        */
@@ -650,10 +610,6 @@ public final class POILBCCNMHHOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -665,10 +621,6 @@ public final class POILBCCNMHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return This builder for chaining.
        */
@@ -681,10 +633,6 @@ public final class POILBCCNMHHOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
@@ -693,10 +641,6 @@ public final class POILBCCNMHHOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -708,10 +652,6 @@ public final class POILBCCNMHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
@@ -788,10 +728,10 @@ public final class POILBCCNMHHOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021POILBCCNMHH.proto\"[\n\013POILBCCNMHH\022\023\n\013EG" +
-      "HGENOJNEK\030\002 \001(\r\022\023\n\013OMEBOHLACPH\030\016 \001(\r\022\021\n\t" +
-      "is_finish\030\010 \001(\010\022\017\n\007is_open\030\006 \001(\010B\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\021POILBCCNMHH.proto\"X\n\013POILBCCNMHH\022\020\n\010st" +
+      "age_id\030\002 \001(\r\022\023\n\013OMEBOHLACPH\030\016 \001(\r\022\021\n\tis_" +
+      "finish\030\010 \001(\010\022\017\n\007is_open\030\006 \001(\010B\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -802,7 +742,7 @@ public final class POILBCCNMHHOuterClass {
     internal_static_POILBCCNMHH_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POILBCCNMHH_descriptor,
-        new java.lang.String[] { "EGHGENOJNEK", "OMEBOHLACPH", "IsFinish", "IsOpen", });
+        new java.lang.String[] { "StageId", "OMEBOHLACPH", "IsFinish", "IsOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,54 +19,30 @@ public final class IHENBJLENOKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH> 
         getMMGAPLBAGBJList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
      */
     emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH getMMGAPLBAGBJ(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
      */
     int getMMGAPLBAGBJCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHHOrBuilder> 
         getMMGAPLBAGBJOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
      */
     emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHHOrBuilder getMMGAPLBAGBJOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 JMPLFDDPPKE = 6;</code>
      * @return The jMPLFDDPPKE.
      */
@@ -171,10 +147,6 @@ public final class IHENBJLENOKOuterClass {
     public static final int MMGAPLBAGBJ_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH> mMGAPLBAGBJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
      */
     @java.lang.Override
@@ -182,10 +154,6 @@ public final class IHENBJLENOKOuterClass {
       return mMGAPLBAGBJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
      */
     @java.lang.Override
@@ -194,10 +162,6 @@ public final class IHENBJLENOKOuterClass {
       return mMGAPLBAGBJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
      */
     @java.lang.Override
@@ -205,10 +169,6 @@ public final class IHENBJLENOKOuterClass {
       return mMGAPLBAGBJ_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
      */
     @java.lang.Override
@@ -216,10 +176,6 @@ public final class IHENBJLENOKOuterClass {
       return mMGAPLBAGBJ_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
      */
     @java.lang.Override
@@ -231,10 +187,6 @@ public final class IHENBJLENOKOuterClass {
     public static final int JMPLFDDPPKE_FIELD_NUMBER = 6;
     private int jMPLFDDPPKE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 JMPLFDDPPKE = 6;</code>
      * @return The jMPLFDDPPKE.
      */
@@ -615,10 +567,6 @@ public final class IHENBJLENOKOuterClass {
           emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH, emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH.Builder, emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHHOrBuilder> mMGAPLBAGBJBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH> getMMGAPLBAGBJList() {
@@ -629,10 +577,6 @@ public final class IHENBJLENOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public int getMMGAPLBAGBJCount() {
@@ -643,10 +587,6 @@ public final class IHENBJLENOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH getMMGAPLBAGBJ(int index) {
@@ -657,10 +597,6 @@ public final class IHENBJLENOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public Builder setMMGAPLBAGBJ(
@@ -678,10 +614,6 @@ public final class IHENBJLENOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public Builder setMMGAPLBAGBJ(
@@ -696,10 +628,6 @@ public final class IHENBJLENOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public Builder addMMGAPLBAGBJ(emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH value) {
@@ -716,10 +644,6 @@ public final class IHENBJLENOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public Builder addMMGAPLBAGBJ(
@@ -737,10 +661,6 @@ public final class IHENBJLENOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public Builder addMMGAPLBAGBJ(
@@ -755,10 +675,6 @@ public final class IHENBJLENOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public Builder addMMGAPLBAGBJ(
@@ -773,10 +689,6 @@ public final class IHENBJLENOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public Builder addAllMMGAPLBAGBJ(
@@ -792,10 +704,6 @@ public final class IHENBJLENOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public Builder clearMMGAPLBAGBJ() {
@@ -809,10 +717,6 @@ public final class IHENBJLENOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public Builder removeMMGAPLBAGBJ(int index) {
@@ -826,10 +730,6 @@ public final class IHENBJLENOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH.Builder getMMGAPLBAGBJBuilder(
@@ -837,10 +737,6 @@ public final class IHENBJLENOKOuterClass {
         return getMMGAPLBAGBJFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHHOrBuilder getMMGAPLBAGBJOrBuilder(
@@ -851,10 +747,6 @@ public final class IHENBJLENOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHHOrBuilder> 
@@ -866,10 +758,6 @@ public final class IHENBJLENOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH.Builder addMMGAPLBAGBJBuilder() {
@@ -877,10 +765,6 @@ public final class IHENBJLENOKOuterClass {
             emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH.Builder addMMGAPLBAGBJBuilder(
@@ -889,10 +773,6 @@ public final class IHENBJLENOKOuterClass {
             index, emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .POILBCCNMHH MMGAPLBAGBJ = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.POILBCCNMHHOuterClass.POILBCCNMHH.Builder> 
@@ -916,10 +796,6 @@ public final class IHENBJLENOKOuterClass {
 
       private int jMPLFDDPPKE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JMPLFDDPPKE = 6;</code>
        * @return The jMPLFDDPPKE.
        */
@@ -928,10 +804,6 @@ public final class IHENBJLENOKOuterClass {
         return jMPLFDDPPKE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JMPLFDDPPKE = 6;</code>
        * @param value The jMPLFDDPPKE to set.
        * @return This builder for chaining.
@@ -943,10 +815,6 @@ public final class IHENBJLENOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JMPLFDDPPKE = 6;</code>
        * @return This builder for chaining.
        */

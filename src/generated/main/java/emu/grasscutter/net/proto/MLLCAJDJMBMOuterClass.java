@@ -19,72 +19,40 @@ public final class MLLCAJDJMBMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF> 
         getNGMHFHPAAMFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
      */
     emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF getNGMHFHPAAMF(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
      */
     int getNGMHFHPAAMFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNFOrBuilder> 
         getNGMHFHPAAMFOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
      */
     emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNFOrBuilder getNGMHFHPAAMFOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
      * @return A list containing the lPJFCCKFGJI.
      */
     java.util.List<java.lang.Integer> getLPJFCCKFGJIList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
      * @return The count of lPJFCCKFGJI.
      */
     int getLPJFCCKFGJICount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
      * @param index The index of the element to return.
      * @return The lPJFCCKFGJI at the given index.
@@ -92,10 +60,6 @@ public final class MLLCAJDJMBMOuterClass {
     int getLPJFCCKFGJI(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ONPBHBIDOJA = 2;</code>
      * @return The oNPBHBIDOJA.
      */
@@ -225,10 +189,6 @@ public final class MLLCAJDJMBMOuterClass {
     public static final int NGMHFHPAAMF_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF> nGMHFHPAAMF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
      */
     @java.lang.Override
@@ -236,10 +196,6 @@ public final class MLLCAJDJMBMOuterClass {
       return nGMHFHPAAMF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
      */
     @java.lang.Override
@@ -248,10 +204,6 @@ public final class MLLCAJDJMBMOuterClass {
       return nGMHFHPAAMF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
      */
     @java.lang.Override
@@ -259,10 +211,6 @@ public final class MLLCAJDJMBMOuterClass {
       return nGMHFHPAAMF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
      */
     @java.lang.Override
@@ -270,10 +218,6 @@ public final class MLLCAJDJMBMOuterClass {
       return nGMHFHPAAMF_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
      */
     @java.lang.Override
@@ -285,10 +229,6 @@ public final class MLLCAJDJMBMOuterClass {
     public static final int LPJFCCKFGJI_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList lPJFCCKFGJI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
      * @return A list containing the lPJFCCKFGJI.
      */
@@ -298,10 +238,6 @@ public final class MLLCAJDJMBMOuterClass {
       return lPJFCCKFGJI_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
      * @return The count of lPJFCCKFGJI.
      */
@@ -309,10 +245,6 @@ public final class MLLCAJDJMBMOuterClass {
       return lPJFCCKFGJI_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
      * @param index The index of the element to return.
      * @return The lPJFCCKFGJI at the given index.
@@ -325,10 +257,6 @@ public final class MLLCAJDJMBMOuterClass {
     public static final int ONPBHBIDOJA_FIELD_NUMBER = 2;
     private int oNPBHBIDOJA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ONPBHBIDOJA = 2;</code>
      * @return The oNPBHBIDOJA.
      */
@@ -754,10 +682,6 @@ public final class MLLCAJDJMBMOuterClass {
           emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF, emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF.Builder, emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNFOrBuilder> nGMHFHPAAMFBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF> getNGMHFHPAAMFList() {
@@ -768,10 +692,6 @@ public final class MLLCAJDJMBMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public int getNGMHFHPAAMFCount() {
@@ -782,10 +702,6 @@ public final class MLLCAJDJMBMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF getNGMHFHPAAMF(int index) {
@@ -796,10 +712,6 @@ public final class MLLCAJDJMBMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public Builder setNGMHFHPAAMF(
@@ -817,10 +729,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public Builder setNGMHFHPAAMF(
@@ -835,10 +743,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public Builder addNGMHFHPAAMF(emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF value) {
@@ -855,10 +759,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -876,10 +776,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -894,10 +790,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -912,10 +804,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public Builder addAllNGMHFHPAAMF(
@@ -931,10 +819,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public Builder clearNGMHFHPAAMF() {
@@ -948,10 +832,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public Builder removeNGMHFHPAAMF(int index) {
@@ -965,10 +845,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF.Builder getNGMHFHPAAMFBuilder(
@@ -976,10 +852,6 @@ public final class MLLCAJDJMBMOuterClass {
         return getNGMHFHPAAMFFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNFOrBuilder getNGMHFHPAAMFOrBuilder(
@@ -990,10 +862,6 @@ public final class MLLCAJDJMBMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNFOrBuilder> 
@@ -1005,10 +873,6 @@ public final class MLLCAJDJMBMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF.Builder addNGMHFHPAAMFBuilder() {
@@ -1016,10 +880,6 @@ public final class MLLCAJDJMBMOuterClass {
             emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF.Builder addNGMHFHPAAMFBuilder(
@@ -1028,10 +888,6 @@ public final class MLLCAJDJMBMOuterClass {
             index, emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LMNBGOMEHNF NGMHFHPAAMF = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF.Builder> 
@@ -1061,10 +917,6 @@ public final class MLLCAJDJMBMOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
        * @return A list containing the lPJFCCKFGJI.
        */
@@ -1074,10 +926,6 @@ public final class MLLCAJDJMBMOuterClass {
                  java.util.Collections.unmodifiableList(lPJFCCKFGJI_) : lPJFCCKFGJI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
        * @return The count of lPJFCCKFGJI.
        */
@@ -1085,10 +933,6 @@ public final class MLLCAJDJMBMOuterClass {
         return lPJFCCKFGJI_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
        * @param index The index of the element to return.
        * @return The lPJFCCKFGJI at the given index.
@@ -1097,10 +941,6 @@ public final class MLLCAJDJMBMOuterClass {
         return lPJFCCKFGJI_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
        * @param index The index to set the value at.
        * @param value The lPJFCCKFGJI to set.
@@ -1114,10 +954,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
        * @param value The lPJFCCKFGJI to add.
        * @return This builder for chaining.
@@ -1129,10 +965,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
        * @param values The lPJFCCKFGJI to add.
        * @return This builder for chaining.
@@ -1146,10 +978,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LPJFCCKFGJI = 9;</code>
        * @return This builder for chaining.
        */
@@ -1162,10 +990,6 @@ public final class MLLCAJDJMBMOuterClass {
 
       private int oNPBHBIDOJA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ONPBHBIDOJA = 2;</code>
        * @return The oNPBHBIDOJA.
        */
@@ -1174,10 +998,6 @@ public final class MLLCAJDJMBMOuterClass {
         return oNPBHBIDOJA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ONPBHBIDOJA = 2;</code>
        * @param value The oNPBHBIDOJA to set.
        * @return This builder for chaining.
@@ -1189,10 +1009,6 @@ public final class MLLCAJDJMBMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ONPBHBIDOJA = 2;</code>
        * @return This builder for chaining.
        */

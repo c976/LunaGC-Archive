@@ -19,50 +19,34 @@ public final class IMPMPMNGLAGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 4;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PGPFDBDBJCO = 15;</code>
      * @return The pGPFDBDBJCO.
      */
     int getPGPFDBDBJCO();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 2;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 2;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
   }
   /**
    * Protobuf type {@code IMPMPMNGLAG}
@@ -111,7 +95,7 @@ public final class IMPMPMNGLAGOuterClass {
               break;
             case 16: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 32: {
@@ -169,10 +153,6 @@ public final class IMPMPMNGLAGOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 4;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 4;</code>
      * @return The openTime.
      */
@@ -184,10 +164,6 @@ public final class IMPMPMNGLAGOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 14;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
@@ -199,10 +175,6 @@ public final class IMPMPMNGLAGOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 10;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
@@ -214,10 +186,6 @@ public final class IMPMPMNGLAGOuterClass {
     public static final int PGPFDBDBJCO_FIELD_NUMBER = 15;
     private int pGPFDBDBJCO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PGPFDBDBJCO = 15;</code>
      * @return The pGPFDBDBJCO.
      */
@@ -226,15 +194,15 @@ public final class IMPMPMNGLAGOuterClass {
       return pGPFDBDBJCO_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 2;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 2;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 2;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 2;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -251,8 +219,8 @@ public final class IMPMPMNGLAGOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(2, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(2, stageId_);
       }
       if (openTime_ != 0) {
         output.writeUInt32(4, openTime_);
@@ -275,9 +243,9 @@ public final class IMPMPMNGLAGOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, eGHGENOJNEK_);
+          .computeUInt32Size(2, stageId_);
       }
       if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -318,8 +286,8 @@ public final class IMPMPMNGLAGOuterClass {
           != other.getIsFinish()) return false;
       if (getPGPFDBDBJCO()
           != other.getPGPFDBDBJCO()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -341,8 +309,8 @@ public final class IMPMPMNGLAGOuterClass {
           getIsFinish());
       hash = (37 * hash) + PGPFDBDBJCO_FIELD_NUMBER;
       hash = (53 * hash) + getPGPFDBDBJCO();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -484,7 +452,7 @@ public final class IMPMPMNGLAGOuterClass {
 
         pGPFDBDBJCO_ = 0;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         return this;
       }
@@ -516,7 +484,7 @@ public final class IMPMPMNGLAGOuterClass {
         result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
         result.pGPFDBDBJCO_ = pGPFDBDBJCO_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -577,8 +545,8 @@ public final class IMPMPMNGLAGOuterClass {
         if (other.getPGPFDBDBJCO() != 0) {
           setPGPFDBDBJCO(other.getPGPFDBDBJCO());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -611,10 +579,6 @@ public final class IMPMPMNGLAGOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 4;</code>
        * @return The openTime.
        */
@@ -623,10 +587,6 @@ public final class IMPMPMNGLAGOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 4;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -638,10 +598,6 @@ public final class IMPMPMNGLAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 4;</code>
        * @return This builder for chaining.
        */
@@ -654,10 +610,6 @@ public final class IMPMPMNGLAGOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 14;</code>
        * @return The isOpen.
        */
@@ -666,10 +618,6 @@ public final class IMPMPMNGLAGOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 14;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -681,10 +629,6 @@ public final class IMPMPMNGLAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 14;</code>
        * @return This builder for chaining.
        */
@@ -697,10 +641,6 @@ public final class IMPMPMNGLAGOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @return The isFinish.
        */
@@ -709,10 +649,6 @@ public final class IMPMPMNGLAGOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -724,10 +660,6 @@ public final class IMPMPMNGLAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @return This builder for chaining.
        */
@@ -740,10 +672,6 @@ public final class IMPMPMNGLAGOuterClass {
 
       private int pGPFDBDBJCO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGPFDBDBJCO = 15;</code>
        * @return The pGPFDBDBJCO.
        */
@@ -752,10 +680,6 @@ public final class IMPMPMNGLAGOuterClass {
         return pGPFDBDBJCO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGPFDBDBJCO = 15;</code>
        * @param value The pGPFDBDBJCO to set.
        * @return This builder for chaining.
@@ -767,10 +691,6 @@ public final class IMPMPMNGLAGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGPFDBDBJCO = 15;</code>
        * @return This builder for chaining.
        */
@@ -781,33 +701,33 @@ public final class IMPMPMNGLAGOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 2;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 2;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 2;</code>
+       * <code>uint32 stage_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -878,11 +798,11 @@ public final class IMPMPMNGLAGOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021IMPMPMNGLAG.proto\"n\n\013IMPMPMNGLAG\022\021\n\top" +
+      "\n\021IMPMPMNGLAG.proto\"k\n\013IMPMPMNGLAG\022\021\n\top" +
       "en_time\030\004 \001(\r\022\017\n\007is_open\030\016 \001(\010\022\021\n\tis_fin" +
-      "ish\030\n \001(\010\022\023\n\013PGPFDBDBJCO\030\017 \001(\r\022\023\n\013EGHGEN" +
-      "OJNEK\030\002 \001(\rB\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "ish\030\n \001(\010\022\023\n\013PGPFDBDBJCO\030\017 \001(\r\022\020\n\010stage_" +
+      "id\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -893,7 +813,7 @@ public final class IMPMPMNGLAGOuterClass {
     internal_static_IMPMPMNGLAG_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IMPMPMNGLAG_descriptor,
-        new java.lang.String[] { "OpenTime", "IsOpen", "IsFinish", "PGPFDBDBJCO", "EGHGENOJNEK", });
+        new java.lang.String[] { "OpenTime", "IsOpen", "IsFinish", "PGPFDBDBJCO", "StageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,44 +19,24 @@ public final class DJNPJICIOHEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH> 
         getDLFOENKFOAIList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
      */
     emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH getDLFOENKFOAI(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
      */
     int getDLFOENKFOAICount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPHOrBuilder> 
         getDLFOENKFOAIOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
      */
     emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPHOrBuilder getDLFOENKFOAIOrBuilder(
@@ -156,10 +136,6 @@ public final class DJNPJICIOHEOuterClass {
     public static final int DLFOENKFOAI_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH> dLFOENKFOAI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class DJNPJICIOHEOuterClass {
       return dLFOENKFOAI_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class DJNPJICIOHEOuterClass {
       return dLFOENKFOAI_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class DJNPJICIOHEOuterClass {
       return dLFOENKFOAI_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class DJNPJICIOHEOuterClass {
       return dLFOENKFOAI_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class DJNPJICIOHEOuterClass {
           emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH, emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH.Builder, emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPHOrBuilder> dLFOENKFOAIBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH> getDLFOENKFOAIList() {
@@ -582,10 +538,6 @@ public final class DJNPJICIOHEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public int getDLFOENKFOAICount() {
@@ -596,10 +548,6 @@ public final class DJNPJICIOHEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH getDLFOENKFOAI(int index) {
@@ -610,10 +558,6 @@ public final class DJNPJICIOHEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public Builder setDLFOENKFOAI(
@@ -631,10 +575,6 @@ public final class DJNPJICIOHEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public Builder setDLFOENKFOAI(
@@ -649,10 +589,6 @@ public final class DJNPJICIOHEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public Builder addDLFOENKFOAI(emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH value) {
@@ -669,10 +605,6 @@ public final class DJNPJICIOHEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public Builder addDLFOENKFOAI(
@@ -690,10 +622,6 @@ public final class DJNPJICIOHEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public Builder addDLFOENKFOAI(
@@ -708,10 +636,6 @@ public final class DJNPJICIOHEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public Builder addDLFOENKFOAI(
@@ -726,10 +650,6 @@ public final class DJNPJICIOHEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public Builder addAllDLFOENKFOAI(
@@ -745,10 +665,6 @@ public final class DJNPJICIOHEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public Builder clearDLFOENKFOAI() {
@@ -762,10 +678,6 @@ public final class DJNPJICIOHEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public Builder removeDLFOENKFOAI(int index) {
@@ -779,10 +691,6 @@ public final class DJNPJICIOHEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH.Builder getDLFOENKFOAIBuilder(
@@ -790,10 +698,6 @@ public final class DJNPJICIOHEOuterClass {
         return getDLFOENKFOAIFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPHOrBuilder getDLFOENKFOAIOrBuilder(
@@ -804,10 +708,6 @@ public final class DJNPJICIOHEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPHOrBuilder> 
@@ -819,10 +719,6 @@ public final class DJNPJICIOHEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH.Builder addDLFOENKFOAIBuilder() {
@@ -830,10 +726,6 @@ public final class DJNPJICIOHEOuterClass {
             emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH.Builder addDLFOENKFOAIBuilder(
@@ -842,10 +734,6 @@ public final class DJNPJICIOHEOuterClass {
             index, emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OHKFPIABNPH DLFOENKFOAI = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OHKFPIABNPHOuterClass.OHKFPIABNPH.Builder> 

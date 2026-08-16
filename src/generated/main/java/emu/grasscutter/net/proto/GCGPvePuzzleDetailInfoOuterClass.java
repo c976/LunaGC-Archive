@@ -19,43 +19,27 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 MGJNEACLGHH = 13;</code>
-     * @return A list containing the mGJNEACLGHH.
+     * <code>repeated uint32 CGGPMNODNBG = 4;</code>
+     * @return A list containing the cGGPMNODNBG.
      */
-    java.util.List<java.lang.Integer> getMGJNEACLGHHList();
+    java.util.List<java.lang.Integer> getCGGPMNODNBGList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 MGJNEACLGHH = 13;</code>
-     * @return The count of mGJNEACLGHH.
+     * <code>repeated uint32 CGGPMNODNBG = 4;</code>
+     * @return The count of cGGPMNODNBG.
      */
-    int getMGJNEACLGHHCount();
+    int getCGGPMNODNBGCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 MGJNEACLGHH = 13;</code>
+     * <code>repeated uint32 CGGPMNODNBG = 4;</code>
      * @param index The index of the element to return.
-     * @return The mGJNEACLGHH at the given index.
+     * @return The cGGPMNODNBG at the given index.
      */
-    int getMGJNEACLGHH(int index);
+    int getCGGPMNODNBG(int index);
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>bool AJFANLJEJEC = 1;</code>
-     * @return The aJFANLJEJEC.
+     * <code>bool OFLIIGMLKDI = 2;</code>
+     * @return The oFLIIGMLKDI.
      */
-    boolean getAJFANLJEJEC();
+    boolean getOFLIIGMLKDI();
   }
   /**
    * Protobuf type {@code GcgPvePuzzleDetailInfo}
@@ -70,7 +54,7 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
       super(builder);
     }
     private GcgPvePuzzleDetailInfo() {
-      mGJNEACLGHH_ = emptyIntList();
+      cGGPMNODNBG_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -104,28 +88,28 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              aJFANLJEJEC_ = input.readBool();
+              oFLIIGMLKDI_ = input.readBool();
               break;
             }
-            case 104: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                mGJNEACLGHH_ = newIntList();
+                cGGPMNODNBG_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              mGJNEACLGHH_.addInt(input.readUInt32());
+              cGGPMNODNBG_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                mGJNEACLGHH_ = newIntList();
+                cGGPMNODNBG_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                mGJNEACLGHH_.addInt(input.readUInt32());
+                cGGPMNODNBG_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -146,7 +130,7 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          mGJNEACLGHH_.makeImmutable(); // C
+          cGGPMNODNBG_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -165,59 +149,43 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
               emu.grasscutter.net.proto.GcgPvePuzzleDetailInfoOuterClass.GcgPvePuzzleDetailInfo.class, emu.grasscutter.net.proto.GcgPvePuzzleDetailInfoOuterClass.GcgPvePuzzleDetailInfo.Builder.class);
     }
 
-    public static final int MGJNEACLGHH_FIELD_NUMBER = 13;
-    private com.google.protobuf.Internal.IntList mGJNEACLGHH_;
+    public static final int CGGPMNODNBG_FIELD_NUMBER = 4;
+    private com.google.protobuf.Internal.IntList cGGPMNODNBG_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 MGJNEACLGHH = 13;</code>
-     * @return A list containing the mGJNEACLGHH.
+     * <code>repeated uint32 CGGPMNODNBG = 4;</code>
+     * @return A list containing the cGGPMNODNBG.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getMGJNEACLGHHList() {
-      return mGJNEACLGHH_;
+        getCGGPMNODNBGList() {
+      return cGGPMNODNBG_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 MGJNEACLGHH = 13;</code>
-     * @return The count of mGJNEACLGHH.
+     * <code>repeated uint32 CGGPMNODNBG = 4;</code>
+     * @return The count of cGGPMNODNBG.
      */
-    public int getMGJNEACLGHHCount() {
-      return mGJNEACLGHH_.size();
+    public int getCGGPMNODNBGCount() {
+      return cGGPMNODNBG_.size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated uint32 MGJNEACLGHH = 13;</code>
+     * <code>repeated uint32 CGGPMNODNBG = 4;</code>
      * @param index The index of the element to return.
-     * @return The mGJNEACLGHH at the given index.
+     * @return The cGGPMNODNBG at the given index.
      */
-    public int getMGJNEACLGHH(int index) {
-      return mGJNEACLGHH_.getInt(index);
+    public int getCGGPMNODNBG(int index) {
+      return cGGPMNODNBG_.getInt(index);
     }
-    private int mGJNEACLGHHMemoizedSerializedSize = -1;
+    private int cGGPMNODNBGMemoizedSerializedSize = -1;
 
-    public static final int AJFANLJEJEC_FIELD_NUMBER = 1;
-    private boolean aJFANLJEJEC_;
+    public static final int OFLIIGMLKDI_FIELD_NUMBER = 2;
+    private boolean oFLIIGMLKDI_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>bool AJFANLJEJEC = 1;</code>
-     * @return The aJFANLJEJEC.
+     * <code>bool OFLIIGMLKDI = 2;</code>
+     * @return The oFLIIGMLKDI.
      */
     @java.lang.Override
-    public boolean getAJFANLJEJEC() {
-      return aJFANLJEJEC_;
+    public boolean getOFLIIGMLKDI() {
+      return oFLIIGMLKDI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -235,15 +203,15 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (aJFANLJEJEC_ != false) {
-        output.writeBool(1, aJFANLJEJEC_);
+      if (oFLIIGMLKDI_ != false) {
+        output.writeBool(2, oFLIIGMLKDI_);
       }
-      if (getMGJNEACLGHHList().size() > 0) {
-        output.writeUInt32NoTag(106);
-        output.writeUInt32NoTag(mGJNEACLGHHMemoizedSerializedSize);
+      if (getCGGPMNODNBGList().size() > 0) {
+        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(cGGPMNODNBGMemoizedSerializedSize);
       }
-      for (int i = 0; i < mGJNEACLGHH_.size(); i++) {
-        output.writeUInt32NoTag(mGJNEACLGHH_.getInt(i));
+      for (int i = 0; i < cGGPMNODNBG_.size(); i++) {
+        output.writeUInt32NoTag(cGGPMNODNBG_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -254,23 +222,23 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aJFANLJEJEC_ != false) {
+      if (oFLIIGMLKDI_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, aJFANLJEJEC_);
+          .computeBoolSize(2, oFLIIGMLKDI_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < mGJNEACLGHH_.size(); i++) {
+        for (int i = 0; i < cGGPMNODNBG_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(mGJNEACLGHH_.getInt(i));
+            .computeUInt32SizeNoTag(cGGPMNODNBG_.getInt(i));
         }
         size += dataSize;
-        if (!getMGJNEACLGHHList().isEmpty()) {
+        if (!getCGGPMNODNBGList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        mGJNEACLGHHMemoizedSerializedSize = dataSize;
+        cGGPMNODNBGMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -287,10 +255,10 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.GcgPvePuzzleDetailInfoOuterClass.GcgPvePuzzleDetailInfo other = (emu.grasscutter.net.proto.GcgPvePuzzleDetailInfoOuterClass.GcgPvePuzzleDetailInfo) obj;
 
-      if (!getMGJNEACLGHHList()
-          .equals(other.getMGJNEACLGHHList())) return false;
-      if (getAJFANLJEJEC()
-          != other.getAJFANLJEJEC()) return false;
+      if (!getCGGPMNODNBGList()
+          .equals(other.getCGGPMNODNBGList())) return false;
+      if (getOFLIIGMLKDI()
+          != other.getOFLIIGMLKDI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -302,13 +270,13 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getMGJNEACLGHHCount() > 0) {
-        hash = (37 * hash) + MGJNEACLGHH_FIELD_NUMBER;
-        hash = (53 * hash) + getMGJNEACLGHHList().hashCode();
+      if (getCGGPMNODNBGCount() > 0) {
+        hash = (37 * hash) + CGGPMNODNBG_FIELD_NUMBER;
+        hash = (53 * hash) + getCGGPMNODNBGList().hashCode();
       }
-      hash = (37 * hash) + AJFANLJEJEC_FIELD_NUMBER;
+      hash = (37 * hash) + OFLIIGMLKDI_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getAJFANLJEJEC());
+          getOFLIIGMLKDI());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,9 +410,9 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mGJNEACLGHH_ = emptyIntList();
+        cGGPMNODNBG_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        aJFANLJEJEC_ = false;
+        oFLIIGMLKDI_ = false;
 
         return this;
       }
@@ -474,11 +442,11 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
         emu.grasscutter.net.proto.GcgPvePuzzleDetailInfoOuterClass.GcgPvePuzzleDetailInfo result = new emu.grasscutter.net.proto.GcgPvePuzzleDetailInfoOuterClass.GcgPvePuzzleDetailInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          mGJNEACLGHH_.makeImmutable();
+          cGGPMNODNBG_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.mGJNEACLGHH_ = mGJNEACLGHH_;
-        result.aJFANLJEJEC_ = aJFANLJEJEC_;
+        result.cGGPMNODNBG_ = cGGPMNODNBG_;
+        result.oFLIIGMLKDI_ = oFLIIGMLKDI_;
         onBuilt();
         return result;
       }
@@ -527,18 +495,18 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GcgPvePuzzleDetailInfoOuterClass.GcgPvePuzzleDetailInfo other) {
         if (other == emu.grasscutter.net.proto.GcgPvePuzzleDetailInfoOuterClass.GcgPvePuzzleDetailInfo.getDefaultInstance()) return this;
-        if (!other.mGJNEACLGHH_.isEmpty()) {
-          if (mGJNEACLGHH_.isEmpty()) {
-            mGJNEACLGHH_ = other.mGJNEACLGHH_;
+        if (!other.cGGPMNODNBG_.isEmpty()) {
+          if (cGGPMNODNBG_.isEmpty()) {
+            cGGPMNODNBG_ = other.cGGPMNODNBG_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureMGJNEACLGHHIsMutable();
-            mGJNEACLGHH_.addAll(other.mGJNEACLGHH_);
+            ensureCGGPMNODNBGIsMutable();
+            cGGPMNODNBG_.addAll(other.cGGPMNODNBG_);
           }
           onChanged();
         }
-        if (other.getAJFANLJEJEC() != false) {
-          setAJFANLJEJEC(other.getAJFANLJEJEC());
+        if (other.getOFLIIGMLKDI() != false) {
+          setOFLIIGMLKDI(other.getOFLIIGMLKDI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -570,152 +538,112 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList mGJNEACLGHH_ = emptyIntList();
-      private void ensureMGJNEACLGHHIsMutable() {
+      private com.google.protobuf.Internal.IntList cGGPMNODNBG_ = emptyIntList();
+      private void ensureCGGPMNODNBGIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          mGJNEACLGHH_ = mutableCopy(mGJNEACLGHH_);
+          cGGPMNODNBG_ = mutableCopy(cGGPMNODNBG_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 MGJNEACLGHH = 13;</code>
-       * @return A list containing the mGJNEACLGHH.
+       * <code>repeated uint32 CGGPMNODNBG = 4;</code>
+       * @return A list containing the cGGPMNODNBG.
        */
       public java.util.List<java.lang.Integer>
-          getMGJNEACLGHHList() {
+          getCGGPMNODNBGList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(mGJNEACLGHH_) : mGJNEACLGHH_;
+                 java.util.Collections.unmodifiableList(cGGPMNODNBG_) : cGGPMNODNBG_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 MGJNEACLGHH = 13;</code>
-       * @return The count of mGJNEACLGHH.
+       * <code>repeated uint32 CGGPMNODNBG = 4;</code>
+       * @return The count of cGGPMNODNBG.
        */
-      public int getMGJNEACLGHHCount() {
-        return mGJNEACLGHH_.size();
+      public int getCGGPMNODNBGCount() {
+        return cGGPMNODNBG_.size();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 MGJNEACLGHH = 13;</code>
+       * <code>repeated uint32 CGGPMNODNBG = 4;</code>
        * @param index The index of the element to return.
-       * @return The mGJNEACLGHH at the given index.
+       * @return The cGGPMNODNBG at the given index.
        */
-      public int getMGJNEACLGHH(int index) {
-        return mGJNEACLGHH_.getInt(index);
+      public int getCGGPMNODNBG(int index) {
+        return cGGPMNODNBG_.getInt(index);
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 MGJNEACLGHH = 13;</code>
+       * <code>repeated uint32 CGGPMNODNBG = 4;</code>
        * @param index The index to set the value at.
-       * @param value The mGJNEACLGHH to set.
+       * @param value The cGGPMNODNBG to set.
        * @return This builder for chaining.
        */
-      public Builder setMGJNEACLGHH(
+      public Builder setCGGPMNODNBG(
           int index, int value) {
-        ensureMGJNEACLGHHIsMutable();
-        mGJNEACLGHH_.setInt(index, value);
+        ensureCGGPMNODNBGIsMutable();
+        cGGPMNODNBG_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 MGJNEACLGHH = 13;</code>
-       * @param value The mGJNEACLGHH to add.
+       * <code>repeated uint32 CGGPMNODNBG = 4;</code>
+       * @param value The cGGPMNODNBG to add.
        * @return This builder for chaining.
        */
-      public Builder addMGJNEACLGHH(int value) {
-        ensureMGJNEACLGHHIsMutable();
-        mGJNEACLGHH_.addInt(value);
+      public Builder addCGGPMNODNBG(int value) {
+        ensureCGGPMNODNBGIsMutable();
+        cGGPMNODNBG_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 MGJNEACLGHH = 13;</code>
-       * @param values The mGJNEACLGHH to add.
+       * <code>repeated uint32 CGGPMNODNBG = 4;</code>
+       * @param values The cGGPMNODNBG to add.
        * @return This builder for chaining.
        */
-      public Builder addAllMGJNEACLGHH(
+      public Builder addAllCGGPMNODNBG(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureMGJNEACLGHHIsMutable();
+        ensureCGGPMNODNBGIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, mGJNEACLGHH_);
+            values, cGGPMNODNBG_);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated uint32 MGJNEACLGHH = 13;</code>
+       * <code>repeated uint32 CGGPMNODNBG = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMGJNEACLGHH() {
-        mGJNEACLGHH_ = emptyIntList();
+      public Builder clearCGGPMNODNBG() {
+        cGGPMNODNBG_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private boolean aJFANLJEJEC_ ;
+      private boolean oFLIIGMLKDI_ ;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool AJFANLJEJEC = 1;</code>
-       * @return The aJFANLJEJEC.
+       * <code>bool OFLIIGMLKDI = 2;</code>
+       * @return The oFLIIGMLKDI.
        */
       @java.lang.Override
-      public boolean getAJFANLJEJEC() {
-        return aJFANLJEJEC_;
+      public boolean getOFLIIGMLKDI() {
+        return oFLIIGMLKDI_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool AJFANLJEJEC = 1;</code>
-       * @param value The aJFANLJEJEC to set.
+       * <code>bool OFLIIGMLKDI = 2;</code>
+       * @param value The oFLIIGMLKDI to set.
        * @return This builder for chaining.
        */
-      public Builder setAJFANLJEJEC(boolean value) {
+      public Builder setOFLIIGMLKDI(boolean value) {
         
-        aJFANLJEJEC_ = value;
+        oFLIIGMLKDI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool AJFANLJEJEC = 1;</code>
+       * <code>bool OFLIIGMLKDI = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAJFANLJEJEC() {
+      public Builder clearOFLIIGMLKDI() {
         
-        aJFANLJEJEC_ = false;
+        oFLIIGMLKDI_ = false;
         onChanged();
         return this;
       }
@@ -787,8 +715,8 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GcgPvePuzzleDetailInfo.proto\"B\n\026GcgPve" +
-      "PuzzleDetailInfo\022\023\n\013MGJNEACLGHH\030\r \003(\r\022\023\n" +
-      "\013AJFANLJEJEC\030\001 \001(\010B\033\n\031emu.grasscutter.ne" +
+      "PuzzleDetailInfo\022\023\n\013CGGPMNODNBG\030\004 \003(\r\022\023\n" +
+      "\013OFLIIGMLKDI\030\002 \001(\010B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -800,7 +728,7 @@ public final class GcgPvePuzzleDetailInfoOuterClass {
     internal_static_GcgPvePuzzleDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GcgPvePuzzleDetailInfo_descriptor,
-        new java.lang.String[] { "MGJNEACLGHH", "AJFANLJEJEC", });
+        new java.lang.String[] { "CGGPMNODNBG", "OFLIIGMLKDI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,7 +20,7 @@ public final class EvtBeingHitNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -29,7 +29,7 @@ public final class EvtBeingHitNotifyOuterClass {
     boolean hasBeingHitInfo();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -38,7 +38,7 @@ public final class EvtBeingHitNotifyOuterClass {
     emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo getBeingHitInfo();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -47,26 +47,26 @@ public final class EvtBeingHitNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.ForwardType forward_type = 8;</code>
+     * <code>.ForwardType forward_type = 5;</code>
      * @return The enum numeric value on the wire for forwardType.
      */
     int getForwardTypeValue();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.ForwardType forward_type = 8;</code>
+     * <code>.ForwardType forward_type = 5;</code>
      * @return The forwardType.
      */
     emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType();
   }
   /**
    * <pre>
-   * CmdId: 29400
+   * CmdId: 7121
    * </pre>
    *
    * Protobuf type {@code EvtBeingHitNotify}
@@ -114,7 +114,7 @@ public final class EvtBeingHitNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 40: {
               int rawValue = input.readEnum();
 
               forwardType_ = rawValue;
@@ -169,7 +169,7 @@ public final class EvtBeingHitNotifyOuterClass {
     private emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo beingHitInfo_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -181,7 +181,7 @@ public final class EvtBeingHitNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -193,7 +193,7 @@ public final class EvtBeingHitNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -203,14 +203,14 @@ public final class EvtBeingHitNotifyOuterClass {
       return getBeingHitInfo();
     }
 
-    public static final int FORWARD_TYPE_FIELD_NUMBER = 8;
+    public static final int FORWARD_TYPE_FIELD_NUMBER = 5;
     private int forwardType_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.ForwardType forward_type = 8;</code>
+     * <code>.ForwardType forward_type = 5;</code>
      * @return The enum numeric value on the wire for forwardType.
      */
     @java.lang.Override public int getForwardTypeValue() {
@@ -218,10 +218,10 @@ public final class EvtBeingHitNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.ForwardType forward_type = 8;</code>
+     * <code>.ForwardType forward_type = 5;</code>
      * @return The forwardType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
@@ -244,8 +244,8 @@ public final class EvtBeingHitNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
-        output.writeEnum(8, forwardType_);
+      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.ForwardType_FORWARD_LOCAL.getNumber()) {
+        output.writeEnum(5, forwardType_);
       }
       if (beingHitInfo_ != null) {
         output.writeMessage(10, getBeingHitInfo());
@@ -259,9 +259,9 @@ public final class EvtBeingHitNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
+      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.ForwardType_FORWARD_LOCAL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(8, forwardType_);
+          .computeEnumSize(5, forwardType_);
       }
       if (beingHitInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -402,7 +402,7 @@ public final class EvtBeingHitNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29400
+     * CmdId: 7121
      * </pre>
      *
      * Protobuf type {@code EvtBeingHitNotify}
@@ -570,7 +570,7 @@ public final class EvtBeingHitNotifyOuterClass {
           emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfoOrBuilder> beingHitInfoBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -581,7 +581,7 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -596,7 +596,7 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -616,7 +616,7 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -634,7 +634,7 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -656,7 +656,7 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -674,7 +674,7 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -686,7 +686,7 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -701,7 +701,7 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>.EvtBeingHitInfo being_hit_info = 10;</code>
@@ -723,10 +723,10 @@ public final class EvtBeingHitNotifyOuterClass {
       private int forwardType_ = 0;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.ForwardType forward_type = 8;</code>
+       * <code>.ForwardType forward_type = 5;</code>
        * @return The enum numeric value on the wire for forwardType.
        */
       @java.lang.Override public int getForwardTypeValue() {
@@ -734,10 +734,10 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.ForwardType forward_type = 8;</code>
+       * <code>.ForwardType forward_type = 5;</code>
        * @param value The enum numeric value on the wire for forwardType to set.
        * @return This builder for chaining.
        */
@@ -749,10 +749,10 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.ForwardType forward_type = 8;</code>
+       * <code>.ForwardType forward_type = 5;</code>
        * @return The forwardType.
        */
       @java.lang.Override
@@ -763,10 +763,10 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.ForwardType forward_type = 8;</code>
+       * <code>.ForwardType forward_type = 5;</code>
        * @param value The forwardType to set.
        * @return This builder for chaining.
        */
@@ -781,10 +781,10 @@ public final class EvtBeingHitNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.ForwardType forward_type = 8;</code>
+       * <code>.ForwardType forward_type = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearForwardType() {
@@ -863,7 +863,7 @@ public final class EvtBeingHitNotifyOuterClass {
       "\n\027EvtBeingHitNotify.proto\032\025EvtBeingHitIn" +
       "fo.proto\032\021ForwardType.proto\"a\n\021EvtBeingH" +
       "itNotify\022(\n\016being_hit_info\030\n \001(\0132\020.EvtBe" +
-      "ingHitInfo\022\"\n\014forward_type\030\010 \001(\0162\014.Forwa" +
+      "ingHitInfo\022\"\n\014forward_type\030\005 \001(\0162\014.Forwa" +
       "rdTypeB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };

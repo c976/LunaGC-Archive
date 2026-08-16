@@ -34,6 +34,11 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
     emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfoOrBuilder getEntityInfoOrBuilder();
   }
   /**
+   * <pre>
+   * Version: 5.7
+   * CmdId: 28643
+   * </pre>
+   *
    * Protobuf type {@code AvatarTraceEffectChangeNotify}
    */
   public static final class AvatarTraceEffectChangeNotify extends
@@ -310,6 +315,11 @@ public final class AvatarTraceEffectChangeNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.7
+     * CmdId: 28643
+     * </pre>
+     *
      * Protobuf type {@code AvatarTraceEffectChangeNotify}
      */
     public static final class Builder extends

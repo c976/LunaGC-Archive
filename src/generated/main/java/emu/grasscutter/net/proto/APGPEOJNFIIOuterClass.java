@@ -19,60 +19,36 @@ public final class APGPEOJNFIIOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM> 
         getKCHKCHIIBBBList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
      */
     emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM getKCHKCHIIBBB(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
      */
     int getKCHKCHIIBBBCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCMOrBuilder> 
         getKCHKCHIIBBBOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
      */
     emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCMOrBuilder getKCHKCHIIBBBOrBuilder(
         int index);
 
     /**
-     * <code>uint32 EGHGENOJNEK = 3;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 3;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
@@ -136,7 +112,7 @@ public final class APGPEOJNFIIOuterClass {
             }
             case 24: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 32: {
@@ -182,10 +158,6 @@ public final class APGPEOJNFIIOuterClass {
     public static final int KCHKCHIIBBB_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM> kCHKCHIIBBB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
      */
     @java.lang.Override
@@ -193,10 +165,6 @@ public final class APGPEOJNFIIOuterClass {
       return kCHKCHIIBBB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
      */
     @java.lang.Override
@@ -205,10 +173,6 @@ public final class APGPEOJNFIIOuterClass {
       return kCHKCHIIBBB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
      */
     @java.lang.Override
@@ -216,10 +180,6 @@ public final class APGPEOJNFIIOuterClass {
       return kCHKCHIIBBB_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
      */
     @java.lang.Override
@@ -227,10 +187,6 @@ public final class APGPEOJNFIIOuterClass {
       return kCHKCHIIBBB_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
      */
     @java.lang.Override
@@ -239,24 +195,20 @@ public final class APGPEOJNFIIOuterClass {
       return kCHKCHIIBBB_.get(index);
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 3;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 3;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 3;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 3;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 4;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
@@ -282,8 +234,8 @@ public final class APGPEOJNFIIOuterClass {
       for (int i = 0; i < kCHKCHIIBBB_.size(); i++) {
         output.writeMessage(2, kCHKCHIIBBB_.get(i));
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(3, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(3, stageId_);
       }
       if (isOpen_ != false) {
         output.writeBool(4, isOpen_);
@@ -301,9 +253,9 @@ public final class APGPEOJNFIIOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, kCHKCHIIBBB_.get(i));
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, eGHGENOJNEK_);
+          .computeUInt32Size(3, stageId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -326,8 +278,8 @@ public final class APGPEOJNFIIOuterClass {
 
       if (!getKCHKCHIIBBBList()
           .equals(other.getKCHKCHIIBBBList())) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -345,8 +297,8 @@ public final class APGPEOJNFIIOuterClass {
         hash = (37 * hash) + KCHKCHIIBBB_FIELD_NUMBER;
         hash = (53 * hash) + getKCHKCHIIBBBList().hashCode();
       }
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -490,7 +442,7 @@ public final class APGPEOJNFIIOuterClass {
         } else {
           kCHKCHIIBBBBuilder_.clear();
         }
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         isOpen_ = false;
 
@@ -530,7 +482,7 @@ public final class APGPEOJNFIIOuterClass {
         } else {
           result.kCHKCHIIBBB_ = kCHKCHIIBBBBuilder_.build();
         }
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.isOpen_ = isOpen_;
         onBuilt();
         return result;
@@ -606,8 +558,8 @@ public final class APGPEOJNFIIOuterClass {
             }
           }
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -655,10 +607,6 @@ public final class APGPEOJNFIIOuterClass {
           emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM, emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM.Builder, emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCMOrBuilder> kCHKCHIIBBBBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM> getKCHKCHIIBBBList() {
@@ -669,10 +617,6 @@ public final class APGPEOJNFIIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public int getKCHKCHIIBBBCount() {
@@ -683,10 +627,6 @@ public final class APGPEOJNFIIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM getKCHKCHIIBBB(int index) {
@@ -697,10 +637,6 @@ public final class APGPEOJNFIIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public Builder setKCHKCHIIBBB(
@@ -718,10 +654,6 @@ public final class APGPEOJNFIIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public Builder setKCHKCHIIBBB(
@@ -736,10 +668,6 @@ public final class APGPEOJNFIIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public Builder addKCHKCHIIBBB(emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM value) {
@@ -756,10 +684,6 @@ public final class APGPEOJNFIIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public Builder addKCHKCHIIBBB(
@@ -777,10 +701,6 @@ public final class APGPEOJNFIIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public Builder addKCHKCHIIBBB(
@@ -795,10 +715,6 @@ public final class APGPEOJNFIIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public Builder addKCHKCHIIBBB(
@@ -813,10 +729,6 @@ public final class APGPEOJNFIIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public Builder addAllKCHKCHIIBBB(
@@ -832,10 +744,6 @@ public final class APGPEOJNFIIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public Builder clearKCHKCHIIBBB() {
@@ -849,10 +757,6 @@ public final class APGPEOJNFIIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public Builder removeKCHKCHIIBBB(int index) {
@@ -866,10 +770,6 @@ public final class APGPEOJNFIIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM.Builder getKCHKCHIIBBBBuilder(
@@ -877,10 +777,6 @@ public final class APGPEOJNFIIOuterClass {
         return getKCHKCHIIBBBFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCMOrBuilder getKCHKCHIIBBBOrBuilder(
@@ -891,10 +787,6 @@ public final class APGPEOJNFIIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCMOrBuilder> 
@@ -906,10 +798,6 @@ public final class APGPEOJNFIIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM.Builder addKCHKCHIIBBBBuilder() {
@@ -917,10 +805,6 @@ public final class APGPEOJNFIIOuterClass {
             emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM.Builder addKCHKCHIIBBBBuilder(
@@ -929,10 +813,6 @@ public final class APGPEOJNFIIOuterClass {
             index, emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OAIEKCIOGCM KCHKCHIIBBB = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.OAIEKCIOGCM.Builder> 
@@ -954,43 +834,39 @@ public final class APGPEOJNFIIOuterClass {
         return kCHKCHIIBBBBuilder_;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 3;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 3;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return The isOpen.
        */
@@ -999,10 +875,6 @@ public final class APGPEOJNFIIOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1014,10 +886,6 @@ public final class APGPEOJNFIIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return This builder for chaining.
        */
@@ -1094,11 +962,10 @@ public final class APGPEOJNFIIOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021APGPEOJNFII.proto\032\021OAIEKCIOGCM.proto\"V" +
+      "\n\021APGPEOJNFII.proto\032\021OAIEKCIOGCM.proto\"S" +
       "\n\013APGPEOJNFII\022!\n\013KCHKCHIIBBB\030\002 \003(\0132\014.OAI" +
-      "EKCIOGCM\022\023\n\013EGHGENOJNEK\030\003 \001(\r\022\017\n\007is_open" +
-      "\030\004 \001(\010B\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "EKCIOGCM\022\020\n\010stage_id\030\003 \001(\r\022\017\n\007is_open\030\004 " +
+      "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1110,7 +977,7 @@ public final class APGPEOJNFIIOuterClass {
     internal_static_APGPEOJNFII_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_APGPEOJNFII_descriptor,
-        new java.lang.String[] { "KCHKCHIIBBB", "EGHGENOJNEK", "IsOpen", });
+        new java.lang.String[] { "KCHKCHIIBBB", "StageId", "IsOpen", });
     emu.grasscutter.net.proto.OAIEKCIOGCMOuterClass.getDescriptor();
   }
 

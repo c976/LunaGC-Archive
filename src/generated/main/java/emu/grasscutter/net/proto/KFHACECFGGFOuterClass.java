@@ -19,72 +19,40 @@ public final class KFHACECFGGFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getDHIMBKOEJCGList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getDHIMBKOEJCG(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
      */
     int getDHIMBKOEJCGCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getDHIMBKOEJCGOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getDHIMBKOEJCGOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
      * @return A list containing the nJGOHBAMGPE.
      */
     java.util.List<java.lang.Integer> getNJGOHBAMGPEList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
      * @return The count of nJGOHBAMGPE.
      */
     int getNJGOHBAMGPECount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
      * @param index The index of the element to return.
      * @return The nJGOHBAMGPE at the given index.
@@ -210,10 +178,6 @@ public final class KFHACECFGGFOuterClass {
     public static final int DHIMBKOEJCG_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> dHIMBKOEJCG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
      */
     @java.lang.Override
@@ -221,10 +185,6 @@ public final class KFHACECFGGFOuterClass {
       return dHIMBKOEJCG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
      */
     @java.lang.Override
@@ -233,10 +193,6 @@ public final class KFHACECFGGFOuterClass {
       return dHIMBKOEJCG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
      */
     @java.lang.Override
@@ -244,10 +200,6 @@ public final class KFHACECFGGFOuterClass {
       return dHIMBKOEJCG_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
      */
     @java.lang.Override
@@ -255,10 +207,6 @@ public final class KFHACECFGGFOuterClass {
       return dHIMBKOEJCG_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
      */
     @java.lang.Override
@@ -270,10 +218,6 @@ public final class KFHACECFGGFOuterClass {
     public static final int NJGOHBAMGPE_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList nJGOHBAMGPE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
      * @return A list containing the nJGOHBAMGPE.
      */
@@ -283,10 +227,6 @@ public final class KFHACECFGGFOuterClass {
       return nJGOHBAMGPE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
      * @return The count of nJGOHBAMGPE.
      */
@@ -294,10 +234,6 @@ public final class KFHACECFGGFOuterClass {
       return nJGOHBAMGPE_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
      * @param index The index of the element to return.
      * @return The nJGOHBAMGPE at the given index.
@@ -707,10 +643,6 @@ public final class KFHACECFGGFOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> dHIMBKOEJCGBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getDHIMBKOEJCGList() {
@@ -721,10 +653,6 @@ public final class KFHACECFGGFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public int getDHIMBKOEJCGCount() {
@@ -735,10 +663,6 @@ public final class KFHACECFGGFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getDHIMBKOEJCG(int index) {
@@ -749,10 +673,6 @@ public final class KFHACECFGGFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public Builder setDHIMBKOEJCG(
@@ -770,10 +690,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public Builder setDHIMBKOEJCG(
@@ -788,10 +704,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public Builder addDHIMBKOEJCG(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -808,10 +720,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public Builder addDHIMBKOEJCG(
@@ -829,10 +737,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public Builder addDHIMBKOEJCG(
@@ -847,10 +751,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public Builder addDHIMBKOEJCG(
@@ -865,10 +765,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public Builder addAllDHIMBKOEJCG(
@@ -884,10 +780,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public Builder clearDHIMBKOEJCG() {
@@ -901,10 +793,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public Builder removeDHIMBKOEJCG(int index) {
@@ -918,10 +806,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getDHIMBKOEJCGBuilder(
@@ -929,10 +813,6 @@ public final class KFHACECFGGFOuterClass {
         return getDHIMBKOEJCGFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getDHIMBKOEJCGOrBuilder(
@@ -943,10 +823,6 @@ public final class KFHACECFGGFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -958,10 +834,6 @@ public final class KFHACECFGGFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addDHIMBKOEJCGBuilder() {
@@ -969,10 +841,6 @@ public final class KFHACECFGGFOuterClass {
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addDHIMBKOEJCGBuilder(
@@ -981,10 +849,6 @@ public final class KFHACECFGGFOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ItemParam DHIMBKOEJCG = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
@@ -1014,10 +878,6 @@ public final class KFHACECFGGFOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
        * @return A list containing the nJGOHBAMGPE.
        */
@@ -1027,10 +887,6 @@ public final class KFHACECFGGFOuterClass {
                  java.util.Collections.unmodifiableList(nJGOHBAMGPE_) : nJGOHBAMGPE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
        * @return The count of nJGOHBAMGPE.
        */
@@ -1038,10 +894,6 @@ public final class KFHACECFGGFOuterClass {
         return nJGOHBAMGPE_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
        * @param index The index of the element to return.
        * @return The nJGOHBAMGPE at the given index.
@@ -1050,10 +902,6 @@ public final class KFHACECFGGFOuterClass {
         return nJGOHBAMGPE_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
        * @param index The index to set the value at.
        * @param value The nJGOHBAMGPE to set.
@@ -1067,10 +915,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
        * @param value The nJGOHBAMGPE to add.
        * @return This builder for chaining.
@@ -1082,10 +926,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
        * @param values The nJGOHBAMGPE to add.
        * @return This builder for chaining.
@@ -1099,10 +939,6 @@ public final class KFHACECFGGFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJGOHBAMGPE = 15;</code>
        * @return This builder for chaining.
        */

@@ -19,42 +19,46 @@ public final class LanternRiteFireworksStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 2;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+     * <code>uint32 stage_id = 10;</code>
+     * @return The stageId.
+     */
+    int getStageId();
+
+    /**
+     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo> 
         getChallengeInfoListList();
     /**
-     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
      */
     emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo getChallengeInfoList(int index);
     /**
-     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
      */
     int getChallengeInfoListCount();
     /**
-     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfoOrBuilder> 
         getChallengeInfoListOrBuilderList();
     /**
-     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
      */
     emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
         int index);
-
-    /**
-     * <code>uint32 stage_id = 12;</code>
-     * @return The stageId.
-     */
-    int getStageId();
   }
   /**
+   * <pre>
+   * Obf: LKEKAMMFFIM
+   * </pre>
+   *
    * Protobuf type {@code LanternRiteFireworksStageInfo}
    */
   public static final class LanternRiteFireworksStageInfo extends
@@ -101,12 +105,12 @@ public final class LanternRiteFireworksStageInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 48: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 58: {
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 challengeInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -115,7 +119,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.parser(), extensionRegistry));
               break;
             }
-            case 96: {
+            case 80: {
 
               stageId_ = input.readUInt32();
               break;
@@ -155,10 +159,10 @@ public final class LanternRiteFireworksStageInfoOuterClass {
               emu.grasscutter.net.proto.LanternRiteFireworksStageInfoOuterClass.LanternRiteFireworksStageInfo.class, emu.grasscutter.net.proto.LanternRiteFireworksStageInfoOuterClass.LanternRiteFireworksStageInfo.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 2;
+    public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 2;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -166,17 +170,28 @@ public final class LanternRiteFireworksStageInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int CHALLENGE_INFO_LIST_FIELD_NUMBER = 7;
+    public static final int STAGE_ID_FIELD_NUMBER = 10;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 10;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
+    }
+
+    public static final int CHALLENGE_INFO_LIST_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo> challengeInfoList_;
     /**
-     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo> getChallengeInfoListList() {
       return challengeInfoList_;
     }
     /**
-     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfoOrBuilder> 
@@ -184,37 +199,26 @@ public final class LanternRiteFireworksStageInfoOuterClass {
       return challengeInfoList_;
     }
     /**
-     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
      */
     @java.lang.Override
     public int getChallengeInfoListCount() {
       return challengeInfoList_.size();
     }
     /**
-     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo getChallengeInfoList(int index) {
       return challengeInfoList_.get(index);
     }
     /**
-     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+     * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
         int index) {
       return challengeInfoList_.get(index);
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 12;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 12;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -232,13 +236,13 @@ public final class LanternRiteFireworksStageInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isOpen_ != false) {
-        output.writeBool(2, isOpen_);
+        output.writeBool(6, isOpen_);
       }
       for (int i = 0; i < challengeInfoList_.size(); i++) {
-        output.writeMessage(7, challengeInfoList_.get(i));
+        output.writeMessage(8, challengeInfoList_.get(i));
       }
       if (stageId_ != 0) {
-        output.writeUInt32(12, stageId_);
+        output.writeUInt32(10, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -251,15 +255,15 @@ public final class LanternRiteFireworksStageInfoOuterClass {
       size = 0;
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isOpen_);
+          .computeBoolSize(6, isOpen_);
       }
       for (int i = 0; i < challengeInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, challengeInfoList_.get(i));
+          .computeMessageSize(8, challengeInfoList_.get(i));
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, stageId_);
+          .computeUInt32Size(10, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,10 +282,10 @@ public final class LanternRiteFireworksStageInfoOuterClass {
 
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (!getChallengeInfoListList()
-          .equals(other.getChallengeInfoListList())) return false;
       if (getStageId()
           != other.getStageId()) return false;
+      if (!getChallengeInfoListList()
+          .equals(other.getChallengeInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -296,12 +300,12 @@ public final class LanternRiteFireworksStageInfoOuterClass {
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       if (getChallengeInfoListCount() > 0) {
         hash = (37 * hash) + CHALLENGE_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getChallengeInfoListList().hashCode();
       }
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -398,6 +402,10 @@ public final class LanternRiteFireworksStageInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: LKEKAMMFFIM
+     * </pre>
+     *
      * Protobuf type {@code LanternRiteFireworksStageInfo}
      */
     public static final class Builder extends
@@ -438,14 +446,14 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         super.clear();
         isOpen_ = false;
 
+        stageId_ = 0;
+
         if (challengeInfoListBuilder_ == null) {
           challengeInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           challengeInfoListBuilder_.clear();
         }
-        stageId_ = 0;
-
         return this;
       }
 
@@ -474,6 +482,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         emu.grasscutter.net.proto.LanternRiteFireworksStageInfoOuterClass.LanternRiteFireworksStageInfo result = new emu.grasscutter.net.proto.LanternRiteFireworksStageInfoOuterClass.LanternRiteFireworksStageInfo(this);
         int from_bitField0_ = bitField0_;
         result.isOpen_ = isOpen_;
+        result.stageId_ = stageId_;
         if (challengeInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             challengeInfoList_ = java.util.Collections.unmodifiableList(challengeInfoList_);
@@ -483,7 +492,6 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         } else {
           result.challengeInfoList_ = challengeInfoListBuilder_.build();
         }
-        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -535,6 +543,9 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
+        }
         if (challengeInfoListBuilder_ == null) {
           if (!other.challengeInfoList_.isEmpty()) {
             if (challengeInfoList_.isEmpty()) {
@@ -560,9 +571,6 @@ public final class LanternRiteFireworksStageInfoOuterClass {
               challengeInfoListBuilder_.addAllMessages(other.challengeInfoList_);
             }
           }
-        }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -596,7 +604,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 2;</code>
+       * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -604,7 +612,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 2;</code>
+       * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -615,12 +623,43 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 2;</code>
+       * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
         
         isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 10;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 10;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -638,7 +677,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
           emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo, emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.Builder, emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfoOrBuilder> challengeInfoListBuilder_;
 
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo> getChallengeInfoListList() {
         if (challengeInfoListBuilder_ == null) {
@@ -648,7 +687,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public int getChallengeInfoListCount() {
         if (challengeInfoListBuilder_ == null) {
@@ -658,7 +697,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo getChallengeInfoList(int index) {
         if (challengeInfoListBuilder_ == null) {
@@ -668,7 +707,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder setChallengeInfoList(
           int index, emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo value) {
@@ -685,7 +724,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder setChallengeInfoList(
           int index, emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.Builder builderForValue) {
@@ -699,7 +738,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder addChallengeInfoList(emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo value) {
         if (challengeInfoListBuilder_ == null) {
@@ -715,7 +754,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder addChallengeInfoList(
           int index, emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo value) {
@@ -732,7 +771,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder addChallengeInfoList(
           emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.Builder builderForValue) {
@@ -746,7 +785,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder addChallengeInfoList(
           int index, emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.Builder builderForValue) {
@@ -760,7 +799,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder addAllChallengeInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo> values) {
@@ -775,7 +814,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder clearChallengeInfoList() {
         if (challengeInfoListBuilder_ == null) {
@@ -788,7 +827,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder removeChallengeInfoList(int index) {
         if (challengeInfoListBuilder_ == null) {
@@ -801,14 +840,14 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.Builder getChallengeInfoListBuilder(
           int index) {
         return getChallengeInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
           int index) {
@@ -818,7 +857,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfoOrBuilder> 
            getChallengeInfoListOrBuilderList() {
@@ -829,14 +868,14 @@ public final class LanternRiteFireworksStageInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.Builder addChallengeInfoListBuilder() {
         return getChallengeInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.Builder addChallengeInfoListBuilder(
           int index) {
@@ -844,7 +883,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
             index, emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 7;</code>
+       * <code>repeated .LanternRiteFireworksChallengeInfo challenge_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.Builder> 
            getChallengeInfoListBuilderList() {
@@ -863,37 +902,6 @@ public final class LanternRiteFireworksStageInfoOuterClass {
           challengeInfoList_ = null;
         }
         return challengeInfoListBuilder_;
-      }
-
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 12;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 12;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -965,9 +973,9 @@ public final class LanternRiteFireworksStageInfoOuterClass {
       "\n#LanternRiteFireworksStageInfo.proto\032\'L" +
       "anternRiteFireworksChallengeInfo.proto\"\203" +
       "\001\n\035LanternRiteFireworksStageInfo\022\017\n\007is_o" +
-      "pen\030\002 \001(\010\022?\n\023challenge_info_list\030\007 \003(\0132\"" +
-      ".LanternRiteFireworksChallengeInfo\022\020\n\010st" +
-      "age_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "pen\030\006 \001(\010\022\020\n\010stage_id\030\n \001(\r\022?\n\023challenge" +
+      "_info_list\030\010 \003(\0132\".LanternRiteFireworksC" +
+      "hallengeInfoB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -980,7 +988,7 @@ public final class LanternRiteFireworksStageInfoOuterClass {
     internal_static_LanternRiteFireworksStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanternRiteFireworksStageInfo_descriptor,
-        new java.lang.String[] { "IsOpen", "ChallengeInfoList", "StageId", });
+        new java.lang.String[] { "IsOpen", "StageId", "ChallengeInfoList", });
     emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.getDescriptor();
   }
 

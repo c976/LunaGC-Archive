@@ -19,97 +19,57 @@ public final class JMGBKLMOLLGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC> 
         getINPIDDBJDMLList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
      */
     emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC getINPIDDBJDML(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
      */
     int getINPIDDBJDMLCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPCOrBuilder> 
         getINPIDDBJDMLOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
      */
     emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPCOrBuilder getINPIDDBJDMLOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
      * @return Whether the kEPODKCOLLJ field is set.
      */
     boolean hasKEPODKCOLLJ();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
      * @return The kEPODKCOLLJ.
      */
     emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.HMAEHECDMMF getKEPODKCOLLJ();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
      */
     emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.HMAEHECDMMFOrBuilder getKEPODKCOLLJOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 4;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 3;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 3;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
@@ -164,7 +124,7 @@ public final class JMGBKLMOLLGOuterClass {
               break;
             case 24: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 32: {
@@ -237,10 +197,6 @@ public final class JMGBKLMOLLGOuterClass {
     public static final int INPIDDBJDML_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC> iNPIDDBJDML_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
      */
     @java.lang.Override
@@ -248,10 +204,6 @@ public final class JMGBKLMOLLGOuterClass {
       return iNPIDDBJDML_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
      */
     @java.lang.Override
@@ -260,10 +212,6 @@ public final class JMGBKLMOLLGOuterClass {
       return iNPIDDBJDML_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
      */
     @java.lang.Override
@@ -271,10 +219,6 @@ public final class JMGBKLMOLLGOuterClass {
       return iNPIDDBJDML_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
      */
     @java.lang.Override
@@ -282,10 +226,6 @@ public final class JMGBKLMOLLGOuterClass {
       return iNPIDDBJDML_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
      */
     @java.lang.Override
@@ -297,10 +237,6 @@ public final class JMGBKLMOLLGOuterClass {
     public static final int KEPODKCOLLJ_FIELD_NUMBER = 11;
     private emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.HMAEHECDMMF kEPODKCOLLJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
      * @return Whether the kEPODKCOLLJ field is set.
      */
@@ -309,10 +245,6 @@ public final class JMGBKLMOLLGOuterClass {
       return kEPODKCOLLJ_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
      * @return The kEPODKCOLLJ.
      */
@@ -321,10 +253,6 @@ public final class JMGBKLMOLLGOuterClass {
       return kEPODKCOLLJ_ == null ? emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.HMAEHECDMMF.getDefaultInstance() : kEPODKCOLLJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
      */
     @java.lang.Override
@@ -335,10 +263,6 @@ public final class JMGBKLMOLLGOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 4;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 4;</code>
      * @return The openTime.
      */
@@ -347,24 +271,20 @@ public final class JMGBKLMOLLGOuterClass {
       return openTime_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 3;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 3;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 3;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 3;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 15;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
@@ -387,8 +307,8 @@ public final class JMGBKLMOLLGOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(3, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(3, stageId_);
       }
       if (openTime_ != 0) {
         output.writeUInt32(4, openTime_);
@@ -411,9 +331,9 @@ public final class JMGBKLMOLLGOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, eGHGENOJNEK_);
+          .computeUInt32Size(3, stageId_);
       }
       if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -455,8 +375,8 @@ public final class JMGBKLMOLLGOuterClass {
       }
       if (getOpenTime()
           != other.getOpenTime()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -480,8 +400,8 @@ public final class JMGBKLMOLLGOuterClass {
       }
       hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getOpenTime();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -633,7 +553,7 @@ public final class JMGBKLMOLLGOuterClass {
         }
         openTime_ = 0;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         isOpen_ = false;
 
@@ -679,7 +599,7 @@ public final class JMGBKLMOLLGOuterClass {
           result.kEPODKCOLLJ_ = kEPODKCOLLJBuilder_.build();
         }
         result.openTime_ = openTime_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.isOpen_ = isOpen_;
         onBuilt();
         return result;
@@ -761,8 +681,8 @@ public final class JMGBKLMOLLGOuterClass {
         if (other.getOpenTime() != 0) {
           setOpenTime(other.getOpenTime());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -810,10 +730,6 @@ public final class JMGBKLMOLLGOuterClass {
           emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC, emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC.Builder, emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPCOrBuilder> iNPIDDBJDMLBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC> getINPIDDBJDMLList() {
@@ -824,10 +740,6 @@ public final class JMGBKLMOLLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public int getINPIDDBJDMLCount() {
@@ -838,10 +750,6 @@ public final class JMGBKLMOLLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC getINPIDDBJDML(int index) {
@@ -852,10 +760,6 @@ public final class JMGBKLMOLLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public Builder setINPIDDBJDML(
@@ -873,10 +777,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public Builder setINPIDDBJDML(
@@ -891,10 +791,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public Builder addINPIDDBJDML(emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC value) {
@@ -911,10 +807,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public Builder addINPIDDBJDML(
@@ -932,10 +824,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public Builder addINPIDDBJDML(
@@ -950,10 +838,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public Builder addINPIDDBJDML(
@@ -968,10 +852,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public Builder addAllINPIDDBJDML(
@@ -987,10 +867,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public Builder clearINPIDDBJDML() {
@@ -1004,10 +880,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public Builder removeINPIDDBJDML(int index) {
@@ -1021,10 +893,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC.Builder getINPIDDBJDMLBuilder(
@@ -1032,10 +900,6 @@ public final class JMGBKLMOLLGOuterClass {
         return getINPIDDBJDMLFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPCOrBuilder getINPIDDBJDMLOrBuilder(
@@ -1046,10 +910,6 @@ public final class JMGBKLMOLLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPCOrBuilder> 
@@ -1061,10 +921,6 @@ public final class JMGBKLMOLLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC.Builder addINPIDDBJDMLBuilder() {
@@ -1072,10 +928,6 @@ public final class JMGBKLMOLLGOuterClass {
             emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC.Builder addINPIDDBJDMLBuilder(
@@ -1084,10 +936,6 @@ public final class JMGBKLMOLLGOuterClass {
             index, emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KAOKKGOFLPC INPIDDBJDML = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC.Builder> 
@@ -1113,10 +961,6 @@ public final class JMGBKLMOLLGOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.HMAEHECDMMF, emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.HMAEHECDMMF.Builder, emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.HMAEHECDMMFOrBuilder> kEPODKCOLLJBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
        * @return Whether the kEPODKCOLLJ field is set.
        */
@@ -1124,10 +968,6 @@ public final class JMGBKLMOLLGOuterClass {
         return kEPODKCOLLJBuilder_ != null || kEPODKCOLLJ_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
        * @return The kEPODKCOLLJ.
        */
@@ -1139,10 +979,6 @@ public final class JMGBKLMOLLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
        */
       public Builder setKEPODKCOLLJ(emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.HMAEHECDMMF value) {
@@ -1159,10 +995,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
        */
       public Builder setKEPODKCOLLJ(
@@ -1177,10 +1009,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
        */
       public Builder mergeKEPODKCOLLJ(emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.HMAEHECDMMF value) {
@@ -1199,10 +1027,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
        */
       public Builder clearKEPODKCOLLJ() {
@@ -1217,10 +1041,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
        */
       public emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.HMAEHECDMMF.Builder getKEPODKCOLLJBuilder() {
@@ -1229,10 +1049,6 @@ public final class JMGBKLMOLLGOuterClass {
         return getKEPODKCOLLJFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
        */
       public emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.HMAEHECDMMFOrBuilder getKEPODKCOLLJOrBuilder() {
@@ -1244,10 +1060,6 @@ public final class JMGBKLMOLLGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.HMAEHECDMMF KEPODKCOLLJ = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1266,10 +1078,6 @@ public final class JMGBKLMOLLGOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 4;</code>
        * @return The openTime.
        */
@@ -1278,10 +1086,6 @@ public final class JMGBKLMOLLGOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 4;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -1293,10 +1097,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 4;</code>
        * @return This builder for chaining.
        */
@@ -1307,43 +1107,39 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 3;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 3;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return The isOpen.
        */
@@ -1352,10 +1148,6 @@ public final class JMGBKLMOLLGOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1367,10 +1159,6 @@ public final class JMGBKLMOLLGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return This builder for chaining.
        */
@@ -1448,11 +1236,11 @@ public final class JMGBKLMOLLGOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021JMGBKLMOLLG.proto\032\021KAOKKGOFLPC.proto\032\021" +
-      "HMAEHECDMMF.proto\"\214\001\n\013JMGBKLMOLLG\022!\n\013INP" +
+      "HMAEHECDMMF.proto\"\211\001\n\013JMGBKLMOLLG\022!\n\013INP" +
       "IDDBJDML\030\n \003(\0132\014.KAOKKGOFLPC\022!\n\013KEPODKCO" +
       "LLJ\030\013 \001(\0132\014.HMAEHECDMMF\022\021\n\topen_time\030\004 \001" +
-      "(\r\022\023\n\013EGHGENOJNEK\030\003 \001(\r\022\017\n\007is_open\030\017 \001(\010" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "(\r\022\020\n\010stage_id\030\003 \001(\r\022\017\n\007is_open\030\017 \001(\010B\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1465,7 +1253,7 @@ public final class JMGBKLMOLLGOuterClass {
     internal_static_JMGBKLMOLLG_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_JMGBKLMOLLG_descriptor,
-        new java.lang.String[] { "INPIDDBJDML", "KEPODKCOLLJ", "OpenTime", "EGHGENOJNEK", "IsOpen", });
+        new java.lang.String[] { "INPIDDBJDML", "KEPODKCOLLJ", "OpenTime", "StageId", "IsOpen", });
     emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HMAEHECDMMFOuterClass.getDescriptor();
   }

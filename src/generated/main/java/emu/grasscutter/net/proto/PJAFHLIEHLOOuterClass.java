@@ -19,64 +19,40 @@ public final class PJAFHLIEHLOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH> 
         getKCHKCHIIBBBList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
      */
     emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH getKCHKCHIIBBB(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
      */
     int getKCHKCHIIBBBCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJHOrBuilder> 
         getKCHKCHIIBBBOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
      */
     emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJHOrBuilder getKCHKCHIIBBBOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 3;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 3;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
   }
   /**
    * Protobuf type {@code PJAFHLIEHLO}
@@ -127,7 +103,7 @@ public final class PJAFHLIEHLOOuterClass {
               break;
             case 24: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 42: {
@@ -182,10 +158,6 @@ public final class PJAFHLIEHLOOuterClass {
     public static final int KCHKCHIIBBB_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH> kCHKCHIIBBB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
      */
     @java.lang.Override
@@ -193,10 +165,6 @@ public final class PJAFHLIEHLOOuterClass {
       return kCHKCHIIBBB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
      */
     @java.lang.Override
@@ -205,10 +173,6 @@ public final class PJAFHLIEHLOOuterClass {
       return kCHKCHIIBBB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
      */
     @java.lang.Override
@@ -216,10 +180,6 @@ public final class PJAFHLIEHLOOuterClass {
       return kCHKCHIIBBB_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
      */
     @java.lang.Override
@@ -227,10 +187,6 @@ public final class PJAFHLIEHLOOuterClass {
       return kCHKCHIIBBB_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
      */
     @java.lang.Override
@@ -242,10 +198,6 @@ public final class PJAFHLIEHLOOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 9;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
@@ -254,15 +206,15 @@ public final class PJAFHLIEHLOOuterClass {
       return isOpen_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 3;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 3;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 3;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 3;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -279,8 +231,8 @@ public final class PJAFHLIEHLOOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(3, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(3, stageId_);
       }
       for (int i = 0; i < kCHKCHIIBBB_.size(); i++) {
         output.writeMessage(5, kCHKCHIIBBB_.get(i));
@@ -297,9 +249,9 @@ public final class PJAFHLIEHLOOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, eGHGENOJNEK_);
+          .computeUInt32Size(3, stageId_);
       }
       for (int i = 0; i < kCHKCHIIBBB_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -328,8 +280,8 @@ public final class PJAFHLIEHLOOuterClass {
           .equals(other.getKCHKCHIIBBBList())) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -348,8 +300,8 @@ public final class PJAFHLIEHLOOuterClass {
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -492,7 +444,7 @@ public final class PJAFHLIEHLOOuterClass {
         }
         isOpen_ = false;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         return this;
       }
@@ -531,7 +483,7 @@ public final class PJAFHLIEHLOOuterClass {
           result.kCHKCHIIBBB_ = kCHKCHIIBBBBuilder_.build();
         }
         result.isOpen_ = isOpen_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -609,8 +561,8 @@ public final class PJAFHLIEHLOOuterClass {
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -655,10 +607,6 @@ public final class PJAFHLIEHLOOuterClass {
           emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH, emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH.Builder, emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJHOrBuilder> kCHKCHIIBBBBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH> getKCHKCHIIBBBList() {
@@ -669,10 +617,6 @@ public final class PJAFHLIEHLOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public int getKCHKCHIIBBBCount() {
@@ -683,10 +627,6 @@ public final class PJAFHLIEHLOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH getKCHKCHIIBBB(int index) {
@@ -697,10 +637,6 @@ public final class PJAFHLIEHLOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public Builder setKCHKCHIIBBB(
@@ -718,10 +654,6 @@ public final class PJAFHLIEHLOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public Builder setKCHKCHIIBBB(
@@ -736,10 +668,6 @@ public final class PJAFHLIEHLOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public Builder addKCHKCHIIBBB(emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH value) {
@@ -756,10 +684,6 @@ public final class PJAFHLIEHLOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public Builder addKCHKCHIIBBB(
@@ -777,10 +701,6 @@ public final class PJAFHLIEHLOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public Builder addKCHKCHIIBBB(
@@ -795,10 +715,6 @@ public final class PJAFHLIEHLOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public Builder addKCHKCHIIBBB(
@@ -813,10 +729,6 @@ public final class PJAFHLIEHLOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public Builder addAllKCHKCHIIBBB(
@@ -832,10 +744,6 @@ public final class PJAFHLIEHLOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public Builder clearKCHKCHIIBBB() {
@@ -849,10 +757,6 @@ public final class PJAFHLIEHLOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public Builder removeKCHKCHIIBBB(int index) {
@@ -866,10 +770,6 @@ public final class PJAFHLIEHLOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH.Builder getKCHKCHIIBBBBuilder(
@@ -877,10 +777,6 @@ public final class PJAFHLIEHLOOuterClass {
         return getKCHKCHIIBBBFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJHOrBuilder getKCHKCHIIBBBOrBuilder(
@@ -891,10 +787,6 @@ public final class PJAFHLIEHLOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJHOrBuilder> 
@@ -906,10 +798,6 @@ public final class PJAFHLIEHLOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH.Builder addKCHKCHIIBBBBuilder() {
@@ -917,10 +805,6 @@ public final class PJAFHLIEHLOOuterClass {
             emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH.Builder addKCHKCHIIBBBBuilder(
@@ -929,10 +813,6 @@ public final class PJAFHLIEHLOOuterClass {
             index, emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .ACKHIGGGDJH KCHKCHIIBBB = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.ACKHIGGGDJH.Builder> 
@@ -956,10 +836,6 @@ public final class PJAFHLIEHLOOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @return The isOpen.
        */
@@ -968,10 +844,6 @@ public final class PJAFHLIEHLOOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -983,10 +855,6 @@ public final class PJAFHLIEHLOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @return This builder for chaining.
        */
@@ -997,33 +865,33 @@ public final class PJAFHLIEHLOOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 3;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 3;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -1094,11 +962,10 @@ public final class PJAFHLIEHLOOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021PJAFHLIEHLO.proto\032\021ACKHIGGGDJH.proto\"V" +
+      "\n\021PJAFHLIEHLO.proto\032\021ACKHIGGGDJH.proto\"S" +
       "\n\013PJAFHLIEHLO\022!\n\013KCHKCHIIBBB\030\005 \003(\0132\014.ACK" +
-      "HIGGGDJH\022\017\n\007is_open\030\t \001(\010\022\023\n\013EGHGENOJNEK" +
-      "\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "HIGGGDJH\022\017\n\007is_open\030\t \001(\010\022\020\n\010stage_id\030\003 " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1110,7 +977,7 @@ public final class PJAFHLIEHLOOuterClass {
     internal_static_PJAFHLIEHLO_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PJAFHLIEHLO_descriptor,
-        new java.lang.String[] { "KCHKCHIIBBB", "IsOpen", "EGHGENOJNEK", });
+        new java.lang.String[] { "KCHKCHIIBBB", "IsOpen", "StageId", });
     emu.grasscutter.net.proto.ACKHIGGGDJHOuterClass.getDescriptor();
   }
 

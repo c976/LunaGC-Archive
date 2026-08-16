@@ -19,74 +19,42 @@ public final class KGLLNIDAKPOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO> 
         getIDJCOMPEJKMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
      */
     emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO getIDJCOMPEJKM(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
      */
     int getIDJCOMPEJKMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILOOrBuilder> 
         getIDJCOMPEJKMOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
      */
     emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILOOrBuilder getIDJCOMPEJKMOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 12;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
@@ -201,10 +169,6 @@ public final class KGLLNIDAKPOOuterClass {
     public static final int IDJCOMPEJKM_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO> iDJCOMPEJKM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
      */
     @java.lang.Override
@@ -212,10 +176,6 @@ public final class KGLLNIDAKPOOuterClass {
       return iDJCOMPEJKM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
      */
     @java.lang.Override
@@ -224,10 +184,6 @@ public final class KGLLNIDAKPOOuterClass {
       return iDJCOMPEJKM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
      */
     @java.lang.Override
@@ -235,10 +191,6 @@ public final class KGLLNIDAKPOOuterClass {
       return iDJCOMPEJKM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
      */
     @java.lang.Override
@@ -246,10 +198,6 @@ public final class KGLLNIDAKPOOuterClass {
       return iDJCOMPEJKM_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
      */
     @java.lang.Override
@@ -261,10 +209,6 @@ public final class KGLLNIDAKPOOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 12;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 12;</code>
      * @return The isFinish.
      */
@@ -276,10 +220,6 @@ public final class KGLLNIDAKPOOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 8;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
@@ -291,10 +231,6 @@ public final class KGLLNIDAKPOOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 11;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
@@ -711,10 +647,6 @@ public final class KGLLNIDAKPOOuterClass {
           emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO, emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO.Builder, emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILOOrBuilder> iDJCOMPEJKMBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO> getIDJCOMPEJKMList() {
@@ -725,10 +657,6 @@ public final class KGLLNIDAKPOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public int getIDJCOMPEJKMCount() {
@@ -739,10 +667,6 @@ public final class KGLLNIDAKPOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO getIDJCOMPEJKM(int index) {
@@ -753,10 +677,6 @@ public final class KGLLNIDAKPOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public Builder setIDJCOMPEJKM(
@@ -774,10 +694,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public Builder setIDJCOMPEJKM(
@@ -792,10 +708,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public Builder addIDJCOMPEJKM(emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO value) {
@@ -812,10 +724,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public Builder addIDJCOMPEJKM(
@@ -833,10 +741,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public Builder addIDJCOMPEJKM(
@@ -851,10 +755,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public Builder addIDJCOMPEJKM(
@@ -869,10 +769,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public Builder addAllIDJCOMPEJKM(
@@ -888,10 +784,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public Builder clearIDJCOMPEJKM() {
@@ -905,10 +797,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public Builder removeIDJCOMPEJKM(int index) {
@@ -922,10 +810,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO.Builder getIDJCOMPEJKMBuilder(
@@ -933,10 +817,6 @@ public final class KGLLNIDAKPOOuterClass {
         return getIDJCOMPEJKMFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILOOrBuilder getIDJCOMPEJKMOrBuilder(
@@ -947,10 +827,6 @@ public final class KGLLNIDAKPOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILOOrBuilder> 
@@ -962,10 +838,6 @@ public final class KGLLNIDAKPOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO.Builder addIDJCOMPEJKMBuilder() {
@@ -973,10 +845,6 @@ public final class KGLLNIDAKPOOuterClass {
             emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO.Builder addIDJCOMPEJKMBuilder(
@@ -985,10 +853,6 @@ public final class KGLLNIDAKPOOuterClass {
             index, emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EICMIHDEILO IDJCOMPEJKM = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EICMIHDEILOOuterClass.EICMIHDEILO.Builder> 
@@ -1012,10 +876,6 @@ public final class KGLLNIDAKPOOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 12;</code>
        * @return The isFinish.
        */
@@ -1024,10 +884,6 @@ public final class KGLLNIDAKPOOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 12;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1039,10 +895,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 12;</code>
        * @return This builder for chaining.
        */
@@ -1055,10 +907,6 @@ public final class KGLLNIDAKPOOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @return The isOpen.
        */
@@ -1067,10 +915,6 @@ public final class KGLLNIDAKPOOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1082,10 +926,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @return This builder for chaining.
        */
@@ -1098,10 +938,6 @@ public final class KGLLNIDAKPOOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return The levelId.
        */
@@ -1110,10 +946,6 @@ public final class KGLLNIDAKPOOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1125,10 +957,6 @@ public final class KGLLNIDAKPOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */

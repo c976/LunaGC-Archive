@@ -19,50 +19,30 @@ public final class PFDPCOLLPFAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AMPKJHBGEJN = 13;</code>
      * @return The aMPKJHBGEJN.
      */
     int getAMPKJHBGEJN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GMDBFFDMOBD = 6;</code>
      * @return The gMDBFFDMOBD.
      */
     int getGMDBFFDMOBD();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LLFDPICDDKN = 9;</code>
      * @return The lLFDPICDDKN.
      */
     int getLLFDPICDDKN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 dungeon_id = 4;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EPGJOMPLFPP = 15;</code>
      * @return The ePGJOMPLFPP.
      */
@@ -173,10 +153,6 @@ public final class PFDPCOLLPFAOuterClass {
     public static final int AMPKJHBGEJN_FIELD_NUMBER = 13;
     private int aMPKJHBGEJN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AMPKJHBGEJN = 13;</code>
      * @return The aMPKJHBGEJN.
      */
@@ -188,10 +164,6 @@ public final class PFDPCOLLPFAOuterClass {
     public static final int GMDBFFDMOBD_FIELD_NUMBER = 6;
     private int gMDBFFDMOBD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GMDBFFDMOBD = 6;</code>
      * @return The gMDBFFDMOBD.
      */
@@ -203,10 +175,6 @@ public final class PFDPCOLLPFAOuterClass {
     public static final int LLFDPICDDKN_FIELD_NUMBER = 9;
     private int lLFDPICDDKN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LLFDPICDDKN = 9;</code>
      * @return The lLFDPICDDKN.
      */
@@ -218,10 +186,6 @@ public final class PFDPCOLLPFAOuterClass {
     public static final int DUNGEON_ID_FIELD_NUMBER = 4;
     private int dungeonId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 dungeon_id = 4;</code>
      * @return The dungeonId.
      */
@@ -233,10 +197,6 @@ public final class PFDPCOLLPFAOuterClass {
     public static final int EPGJOMPLFPP_FIELD_NUMBER = 15;
     private int ePGJOMPLFPP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EPGJOMPLFPP = 15;</code>
      * @return The ePGJOMPLFPP.
      */
@@ -617,10 +577,6 @@ public final class PFDPCOLLPFAOuterClass {
 
       private int aMPKJHBGEJN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AMPKJHBGEJN = 13;</code>
        * @return The aMPKJHBGEJN.
        */
@@ -629,10 +585,6 @@ public final class PFDPCOLLPFAOuterClass {
         return aMPKJHBGEJN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AMPKJHBGEJN = 13;</code>
        * @param value The aMPKJHBGEJN to set.
        * @return This builder for chaining.
@@ -644,10 +596,6 @@ public final class PFDPCOLLPFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AMPKJHBGEJN = 13;</code>
        * @return This builder for chaining.
        */
@@ -660,10 +608,6 @@ public final class PFDPCOLLPFAOuterClass {
 
       private int gMDBFFDMOBD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GMDBFFDMOBD = 6;</code>
        * @return The gMDBFFDMOBD.
        */
@@ -672,10 +616,6 @@ public final class PFDPCOLLPFAOuterClass {
         return gMDBFFDMOBD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GMDBFFDMOBD = 6;</code>
        * @param value The gMDBFFDMOBD to set.
        * @return This builder for chaining.
@@ -687,10 +627,6 @@ public final class PFDPCOLLPFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GMDBFFDMOBD = 6;</code>
        * @return This builder for chaining.
        */
@@ -703,10 +639,6 @@ public final class PFDPCOLLPFAOuterClass {
 
       private int lLFDPICDDKN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LLFDPICDDKN = 9;</code>
        * @return The lLFDPICDDKN.
        */
@@ -715,10 +647,6 @@ public final class PFDPCOLLPFAOuterClass {
         return lLFDPICDDKN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LLFDPICDDKN = 9;</code>
        * @param value The lLFDPICDDKN to set.
        * @return This builder for chaining.
@@ -730,10 +658,6 @@ public final class PFDPCOLLPFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LLFDPICDDKN = 9;</code>
        * @return This builder for chaining.
        */
@@ -746,10 +670,6 @@ public final class PFDPCOLLPFAOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 4;</code>
        * @return The dungeonId.
        */
@@ -758,10 +678,6 @@ public final class PFDPCOLLPFAOuterClass {
         return dungeonId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 4;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
@@ -773,10 +689,6 @@ public final class PFDPCOLLPFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 4;</code>
        * @return This builder for chaining.
        */
@@ -789,10 +701,6 @@ public final class PFDPCOLLPFAOuterClass {
 
       private int ePGJOMPLFPP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EPGJOMPLFPP = 15;</code>
        * @return The ePGJOMPLFPP.
        */
@@ -801,10 +709,6 @@ public final class PFDPCOLLPFAOuterClass {
         return ePGJOMPLFPP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EPGJOMPLFPP = 15;</code>
        * @param value The ePGJOMPLFPP to set.
        * @return This builder for chaining.
@@ -816,10 +720,6 @@ public final class PFDPCOLLPFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EPGJOMPLFPP = 15;</code>
        * @return This builder for chaining.
        */

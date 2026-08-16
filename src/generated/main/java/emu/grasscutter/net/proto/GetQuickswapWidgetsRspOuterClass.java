@@ -19,39 +19,35 @@ public final class GetQuickswapWidgetsRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+     * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
      * @return A list containing the quickswapWidgetIdList.
      */
     java.util.List<java.lang.Integer> getQuickswapWidgetIdListList();
     /**
-     * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+     * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
      * @return The count of quickswapWidgetIdList.
      */
     int getQuickswapWidgetIdListCount();
     /**
-     * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+     * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The quickswapWidgetIdList at the given index.
      */
     int getQuickswapWidgetIdList(int index);
 
     /**
-     * <code>uint32 quick_widget_index = 3;</code>
-     * @return The quickWidgetIndex.
-     */
-    int getQuickWidgetIndex();
-
-    /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 quick_widget_index = 14;</code>
+     * @return The quickWidgetIndex.
+     */
+    int getQuickWidgetIndex();
   }
   /**
-   * <pre>
-   * CmdId: 26858
-   * </pre>
-   *
    * Protobuf type {@code GetQuickswapWidgetsRsp}
    */
   public static final class GetQuickswapWidgetsRsp extends
@@ -98,17 +94,12 @@ public final class GetQuickswapWidgetsRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              quickWidgetIndex_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 56: {
+            case 16: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 quickswapWidgetIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -116,7 +107,7 @@ public final class GetQuickswapWidgetsRspOuterClass {
               quickswapWidgetIdList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -127,6 +118,11 @@ public final class GetQuickswapWidgetsRspOuterClass {
                 quickswapWidgetIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 112: {
+
+              quickWidgetIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -164,10 +160,10 @@ public final class GetQuickswapWidgetsRspOuterClass {
               emu.grasscutter.net.proto.GetQuickswapWidgetsRspOuterClass.GetQuickswapWidgetsRsp.class, emu.grasscutter.net.proto.GetQuickswapWidgetsRspOuterClass.GetQuickswapWidgetsRsp.Builder.class);
     }
 
-    public static final int QUICKSWAP_WIDGET_ID_LIST_FIELD_NUMBER = 7;
+    public static final int QUICKSWAP_WIDGET_ID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList quickswapWidgetIdList_;
     /**
-     * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+     * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
      * @return A list containing the quickswapWidgetIdList.
      */
     @java.lang.Override
@@ -176,14 +172,14 @@ public final class GetQuickswapWidgetsRspOuterClass {
       return quickswapWidgetIdList_;
     }
     /**
-     * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+     * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
      * @return The count of quickswapWidgetIdList.
      */
     public int getQuickswapWidgetIdListCount() {
       return quickswapWidgetIdList_.size();
     }
     /**
-     * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+     * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The quickswapWidgetIdList at the given index.
      */
@@ -192,26 +188,26 @@ public final class GetQuickswapWidgetsRspOuterClass {
     }
     private int quickswapWidgetIdListMemoizedSerializedSize = -1;
 
-    public static final int QUICK_WIDGET_INDEX_FIELD_NUMBER = 3;
-    private int quickWidgetIndex_;
-    /**
-     * <code>uint32 quick_widget_index = 3;</code>
-     * @return The quickWidgetIndex.
-     */
-    @java.lang.Override
-    public int getQuickWidgetIndex() {
-      return quickWidgetIndex_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int QUICK_WIDGET_INDEX_FIELD_NUMBER = 14;
+    private int quickWidgetIndex_;
+    /**
+     * <code>uint32 quick_widget_index = 14;</code>
+     * @return The quickWidgetIndex.
+     */
+    @java.lang.Override
+    public int getQuickWidgetIndex() {
+      return quickWidgetIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -229,18 +225,18 @@ public final class GetQuickswapWidgetsRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (quickWidgetIndex_ != 0) {
-        output.writeUInt32(3, quickWidgetIndex_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (getQuickswapWidgetIdListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(quickswapWidgetIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < quickswapWidgetIdList_.size(); i++) {
         output.writeUInt32NoTag(quickswapWidgetIdList_.getInt(i));
+      }
+      if (quickWidgetIndex_ != 0) {
+        output.writeUInt32(14, quickWidgetIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -251,13 +247,9 @@ public final class GetQuickswapWidgetsRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (quickWidgetIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, quickWidgetIndex_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       {
         int dataSize = 0;
@@ -272,6 +264,10 @@ public final class GetQuickswapWidgetsRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         quickswapWidgetIdListMemoizedSerializedSize = dataSize;
+      }
+      if (quickWidgetIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, quickWidgetIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -290,10 +286,10 @@ public final class GetQuickswapWidgetsRspOuterClass {
 
       if (!getQuickswapWidgetIdListList()
           .equals(other.getQuickswapWidgetIdListList())) return false;
-      if (getQuickWidgetIndex()
-          != other.getQuickWidgetIndex()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getQuickWidgetIndex()
+          != other.getQuickWidgetIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -309,10 +305,10 @@ public final class GetQuickswapWidgetsRspOuterClass {
         hash = (37 * hash) + QUICKSWAP_WIDGET_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getQuickswapWidgetIdListList().hashCode();
       }
-      hash = (37 * hash) + QUICK_WIDGET_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getQuickWidgetIndex();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + QUICK_WIDGET_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getQuickWidgetIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -409,10 +405,6 @@ public final class GetQuickswapWidgetsRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 26858
-     * </pre>
-     *
      * Protobuf type {@code GetQuickswapWidgetsRsp}
      */
     public static final class Builder extends
@@ -452,9 +444,9 @@ public final class GetQuickswapWidgetsRspOuterClass {
         super.clear();
         quickswapWidgetIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        quickWidgetIndex_ = 0;
-
         retcode_ = 0;
+
+        quickWidgetIndex_ = 0;
 
         return this;
       }
@@ -488,8 +480,8 @@ public final class GetQuickswapWidgetsRspOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.quickswapWidgetIdList_ = quickswapWidgetIdList_;
-        result.quickWidgetIndex_ = quickWidgetIndex_;
         result.retcode_ = retcode_;
+        result.quickWidgetIndex_ = quickWidgetIndex_;
         onBuilt();
         return result;
       }
@@ -548,11 +540,11 @@ public final class GetQuickswapWidgetsRspOuterClass {
           }
           onChanged();
         }
-        if (other.getQuickWidgetIndex() != 0) {
-          setQuickWidgetIndex(other.getQuickWidgetIndex());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getQuickWidgetIndex() != 0) {
+          setQuickWidgetIndex(other.getQuickWidgetIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -592,7 +584,7 @@ public final class GetQuickswapWidgetsRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+       * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
        * @return A list containing the quickswapWidgetIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -601,14 +593,14 @@ public final class GetQuickswapWidgetsRspOuterClass {
                  java.util.Collections.unmodifiableList(quickswapWidgetIdList_) : quickswapWidgetIdList_;
       }
       /**
-       * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+       * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
        * @return The count of quickswapWidgetIdList.
        */
       public int getQuickswapWidgetIdListCount() {
         return quickswapWidgetIdList_.size();
       }
       /**
-       * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+       * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
        * @param index The index of the element to return.
        * @return The quickswapWidgetIdList at the given index.
        */
@@ -616,7 +608,7 @@ public final class GetQuickswapWidgetsRspOuterClass {
         return quickswapWidgetIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+       * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The quickswapWidgetIdList to set.
        * @return This builder for chaining.
@@ -629,7 +621,7 @@ public final class GetQuickswapWidgetsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+       * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
        * @param value The quickswapWidgetIdList to add.
        * @return This builder for chaining.
        */
@@ -640,7 +632,7 @@ public final class GetQuickswapWidgetsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+       * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
        * @param values The quickswapWidgetIdList to add.
        * @return This builder for chaining.
        */
@@ -653,7 +645,7 @@ public final class GetQuickswapWidgetsRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 quickswap_widget_id_list = 7;</code>
+       * <code>repeated uint32 quickswap_widget_id_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuickswapWidgetIdList() {
@@ -663,40 +655,9 @@ public final class GetQuickswapWidgetsRspOuterClass {
         return this;
       }
 
-      private int quickWidgetIndex_ ;
-      /**
-       * <code>uint32 quick_widget_index = 3;</code>
-       * @return The quickWidgetIndex.
-       */
-      @java.lang.Override
-      public int getQuickWidgetIndex() {
-        return quickWidgetIndex_;
-      }
-      /**
-       * <code>uint32 quick_widget_index = 3;</code>
-       * @param value The quickWidgetIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setQuickWidgetIndex(int value) {
-        
-        quickWidgetIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 quick_widget_index = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearQuickWidgetIndex() {
-        
-        quickWidgetIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -704,7 +665,7 @@ public final class GetQuickswapWidgetsRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -715,12 +676,43 @@ public final class GetQuickswapWidgetsRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int quickWidgetIndex_ ;
+      /**
+       * <code>uint32 quick_widget_index = 14;</code>
+       * @return The quickWidgetIndex.
+       */
+      @java.lang.Override
+      public int getQuickWidgetIndex() {
+        return quickWidgetIndex_;
+      }
+      /**
+       * <code>uint32 quick_widget_index = 14;</code>
+       * @param value The quickWidgetIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setQuickWidgetIndex(int value) {
+        
+        quickWidgetIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 quick_widget_index = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearQuickWidgetIndex() {
+        
+        quickWidgetIndex_ = 0;
         onChanged();
         return this;
       }
@@ -793,8 +785,8 @@ public final class GetQuickswapWidgetsRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034GetQuickswapWidgetsRsp.proto\"g\n\026GetQui" +
       "ckswapWidgetsRsp\022 \n\030quickswap_widget_id_" +
-      "list\030\007 \003(\r\022\032\n\022quick_widget_index\030\003 \001(\r\022\017" +
-      "\n\007retcode\030\005 \001(\005B\033\n\031emu.grasscutter.net.p" +
+      "list\030\002 \003(\r\022\017\n\007retcode\030\001 \001(\005\022\032\n\022quick_wid" +
+      "get_index\030\016 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -806,7 +798,7 @@ public final class GetQuickswapWidgetsRspOuterClass {
     internal_static_GetQuickswapWidgetsRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetQuickswapWidgetsRsp_descriptor,
-        new java.lang.String[] { "QuickswapWidgetIdList", "QuickWidgetIndex", "Retcode", });
+        new java.lang.String[] { "QuickswapWidgetIdList", "Retcode", "QuickWidgetIndex", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

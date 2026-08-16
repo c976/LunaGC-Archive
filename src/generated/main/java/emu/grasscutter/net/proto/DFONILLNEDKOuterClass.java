@@ -19,40 +19,28 @@ public final class DFONILLNEDKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 15;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 12;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 12;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
   }
   /**
    * Protobuf type {@code DFONILLNEDK}
@@ -106,7 +94,7 @@ public final class DFONILLNEDKOuterClass {
             }
             case 96: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 112: {
@@ -154,10 +142,6 @@ public final class DFONILLNEDKOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 11;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
@@ -169,10 +153,6 @@ public final class DFONILLNEDKOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 15;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 15;</code>
      * @return The isFinished.
      */
@@ -184,10 +164,6 @@ public final class DFONILLNEDKOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 14;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
@@ -196,15 +172,15 @@ public final class DFONILLNEDKOuterClass {
       return isOpen_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 12;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 12;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 12;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 12;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -224,8 +200,8 @@ public final class DFONILLNEDKOuterClass {
       if (levelId_ != 0) {
         output.writeUInt32(11, levelId_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(12, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(12, stageId_);
       }
       if (isOpen_ != false) {
         output.writeBool(14, isOpen_);
@@ -246,9 +222,9 @@ public final class DFONILLNEDKOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, levelId_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, eGHGENOJNEK_);
+          .computeUInt32Size(12, stageId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -279,8 +255,8 @@ public final class DFONILLNEDKOuterClass {
           != other.getIsFinished()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -300,8 +276,8 @@ public final class DFONILLNEDKOuterClass {
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -441,7 +417,7 @@ public final class DFONILLNEDKOuterClass {
 
         isOpen_ = false;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         return this;
       }
@@ -472,7 +448,7 @@ public final class DFONILLNEDKOuterClass {
         result.levelId_ = levelId_;
         result.isFinished_ = isFinished_;
         result.isOpen_ = isOpen_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -530,8 +506,8 @@ public final class DFONILLNEDKOuterClass {
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -564,10 +540,6 @@ public final class DFONILLNEDKOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return The levelId.
        */
@@ -576,10 +548,6 @@ public final class DFONILLNEDKOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -591,10 +559,6 @@ public final class DFONILLNEDKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */
@@ -607,10 +571,6 @@ public final class DFONILLNEDKOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 15;</code>
        * @return The isFinished.
        */
@@ -619,10 +579,6 @@ public final class DFONILLNEDKOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 15;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -634,10 +590,6 @@ public final class DFONILLNEDKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 15;</code>
        * @return This builder for chaining.
        */
@@ -650,10 +602,6 @@ public final class DFONILLNEDKOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 14;</code>
        * @return The isOpen.
        */
@@ -662,10 +610,6 @@ public final class DFONILLNEDKOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 14;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -677,10 +621,6 @@ public final class DFONILLNEDKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 14;</code>
        * @return This builder for chaining.
        */
@@ -691,33 +631,33 @@ public final class DFONILLNEDKOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 12;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 12;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
+       * <code>uint32 stage_id = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -788,10 +728,10 @@ public final class DFONILLNEDKOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021DFONILLNEDK.proto\"Z\n\013DFONILLNEDK\022\020\n\010le" +
+      "\n\021DFONILLNEDK.proto\"W\n\013DFONILLNEDK\022\020\n\010le" +
       "vel_id\030\013 \001(\r\022\023\n\013is_finished\030\017 \001(\010\022\017\n\007is_" +
-      "open\030\016 \001(\010\022\023\n\013EGHGENOJNEK\030\014 \001(\rB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "open\030\016 \001(\010\022\020\n\010stage_id\030\014 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -802,7 +742,7 @@ public final class DFONILLNEDKOuterClass {
     internal_static_DFONILLNEDK_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DFONILLNEDK_descriptor,
-        new java.lang.String[] { "LevelId", "IsFinished", "IsOpen", "EGHGENOJNEK", });
+        new java.lang.String[] { "LevelId", "IsFinished", "IsOpen", "StageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

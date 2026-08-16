@@ -19,111 +19,63 @@ public final class DAHCKBDIPNAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
      * @return Whether the hDIJILGDFMO field is set.
      */
     boolean hasHDIJILGDFMO();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
      * @return The hDIJILGDFMO.
      */
     emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF getHDIJILGDFMO();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
      */
     emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCFOrBuilder getHDIJILGDFMOOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF> 
         getIOAAPNACCBAList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
      */
     emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF getIOAAPNACCBA(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
      */
     int getIOAAPNACCBACount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCFOrBuilder> 
         getIOAAPNACCBAOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
      */
     emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCFOrBuilder getIOAAPNACCBAOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 13;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ALNBJEPDPPN = 8;</code>
      * @return The aLNBJEPDPPN.
      */
@@ -256,10 +208,6 @@ public final class DAHCKBDIPNAOuterClass {
     public static final int HDIJILGDFMO_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF hDIJILGDFMO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
      * @return Whether the hDIJILGDFMO field is set.
      */
@@ -268,10 +216,6 @@ public final class DAHCKBDIPNAOuterClass {
       return hDIJILGDFMO_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
      * @return The hDIJILGDFMO.
      */
@@ -280,10 +224,6 @@ public final class DAHCKBDIPNAOuterClass {
       return hDIJILGDFMO_ == null ? emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF.getDefaultInstance() : hDIJILGDFMO_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
      */
     @java.lang.Override
@@ -294,10 +234,6 @@ public final class DAHCKBDIPNAOuterClass {
     public static final int IOAAPNACCBA_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF> iOAAPNACCBA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
      */
     @java.lang.Override
@@ -305,10 +241,6 @@ public final class DAHCKBDIPNAOuterClass {
       return iOAAPNACCBA_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
      */
     @java.lang.Override
@@ -317,10 +249,6 @@ public final class DAHCKBDIPNAOuterClass {
       return iOAAPNACCBA_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
      */
     @java.lang.Override
@@ -328,10 +256,6 @@ public final class DAHCKBDIPNAOuterClass {
       return iOAAPNACCBA_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
      */
     @java.lang.Override
@@ -339,10 +263,6 @@ public final class DAHCKBDIPNAOuterClass {
       return iOAAPNACCBA_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
      */
     @java.lang.Override
@@ -354,10 +274,6 @@ public final class DAHCKBDIPNAOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 13;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 13;</code>
      * @return The openTime.
      */
@@ -369,10 +285,6 @@ public final class DAHCKBDIPNAOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 12;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
@@ -384,10 +296,6 @@ public final class DAHCKBDIPNAOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
@@ -399,10 +307,6 @@ public final class DAHCKBDIPNAOuterClass {
     public static final int ALNBJEPDPPN_FIELD_NUMBER = 8;
     private int aLNBJEPDPPN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ALNBJEPDPPN = 8;</code>
      * @return The aLNBJEPDPPN.
      */
@@ -856,10 +760,6 @@ public final class DAHCKBDIPNAOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF, emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF.Builder, emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCFOrBuilder> hDIJILGDFMOBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
        * @return Whether the hDIJILGDFMO field is set.
        */
@@ -867,10 +767,6 @@ public final class DAHCKBDIPNAOuterClass {
         return hDIJILGDFMOBuilder_ != null || hDIJILGDFMO_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
        * @return The hDIJILGDFMO.
        */
@@ -882,10 +778,6 @@ public final class DAHCKBDIPNAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
        */
       public Builder setHDIJILGDFMO(emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF value) {
@@ -902,10 +794,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
        */
       public Builder setHDIJILGDFMO(
@@ -920,10 +808,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
        */
       public Builder mergeHDIJILGDFMO(emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF value) {
@@ -942,10 +826,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
        */
       public Builder clearHDIJILGDFMO() {
@@ -960,10 +840,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
        */
       public emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF.Builder getHDIJILGDFMOBuilder() {
@@ -972,10 +848,6 @@ public final class DAHCKBDIPNAOuterClass {
         return getHDIJILGDFMOFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
        */
       public emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCFOrBuilder getHDIJILGDFMOOrBuilder() {
@@ -987,10 +859,6 @@ public final class DAHCKBDIPNAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BAOGBLEELCF HDIJILGDFMO = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1020,10 +888,6 @@ public final class DAHCKBDIPNAOuterClass {
           emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF, emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF.Builder, emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCFOrBuilder> iOAAPNACCBABuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF> getIOAAPNACCBAList() {
@@ -1034,10 +898,6 @@ public final class DAHCKBDIPNAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public int getIOAAPNACCBACount() {
@@ -1048,10 +908,6 @@ public final class DAHCKBDIPNAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF getIOAAPNACCBA(int index) {
@@ -1062,10 +918,6 @@ public final class DAHCKBDIPNAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public Builder setIOAAPNACCBA(
@@ -1083,10 +935,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public Builder setIOAAPNACCBA(
@@ -1101,10 +949,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public Builder addIOAAPNACCBA(emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF value) {
@@ -1121,10 +965,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public Builder addIOAAPNACCBA(
@@ -1142,10 +982,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public Builder addIOAAPNACCBA(
@@ -1160,10 +996,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public Builder addIOAAPNACCBA(
@@ -1178,10 +1010,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public Builder addAllIOAAPNACCBA(
@@ -1197,10 +1025,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public Builder clearIOAAPNACCBA() {
@@ -1214,10 +1038,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public Builder removeIOAAPNACCBA(int index) {
@@ -1231,10 +1051,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF.Builder getIOAAPNACCBABuilder(
@@ -1242,10 +1058,6 @@ public final class DAHCKBDIPNAOuterClass {
         return getIOAAPNACCBAFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCFOrBuilder getIOAAPNACCBAOrBuilder(
@@ -1256,10 +1068,6 @@ public final class DAHCKBDIPNAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCFOrBuilder> 
@@ -1271,10 +1079,6 @@ public final class DAHCKBDIPNAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF.Builder addIOAAPNACCBABuilder() {
@@ -1282,10 +1086,6 @@ public final class DAHCKBDIPNAOuterClass {
             emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF.Builder addIOAAPNACCBABuilder(
@@ -1294,10 +1094,6 @@ public final class DAHCKBDIPNAOuterClass {
             index, emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BAOGBLEELCF IOAAPNACCBA = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BAOGBLEELCFOuterClass.BAOGBLEELCF.Builder> 
@@ -1321,10 +1117,6 @@ public final class DAHCKBDIPNAOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @return The openTime.
        */
@@ -1333,10 +1125,6 @@ public final class DAHCKBDIPNAOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -1348,10 +1136,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @return This builder for chaining.
        */
@@ -1364,10 +1148,6 @@ public final class DAHCKBDIPNAOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @return The isOpen.
        */
@@ -1376,10 +1156,6 @@ public final class DAHCKBDIPNAOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1391,10 +1167,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @return This builder for chaining.
        */
@@ -1407,10 +1179,6 @@ public final class DAHCKBDIPNAOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
@@ -1419,10 +1187,6 @@ public final class DAHCKBDIPNAOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1434,10 +1198,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
@@ -1450,10 +1210,6 @@ public final class DAHCKBDIPNAOuterClass {
 
       private int aLNBJEPDPPN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ALNBJEPDPPN = 8;</code>
        * @return The aLNBJEPDPPN.
        */
@@ -1462,10 +1218,6 @@ public final class DAHCKBDIPNAOuterClass {
         return aLNBJEPDPPN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ALNBJEPDPPN = 8;</code>
        * @param value The aLNBJEPDPPN to set.
        * @return This builder for chaining.
@@ -1477,10 +1229,6 @@ public final class DAHCKBDIPNAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ALNBJEPDPPN = 8;</code>
        * @return This builder for chaining.
        */

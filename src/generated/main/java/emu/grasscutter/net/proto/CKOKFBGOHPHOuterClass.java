@@ -19,54 +19,30 @@ public final class CKOKFBGOHPHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB> 
         getDetailInfoList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
      */
     emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB getDetailInfo(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
      */
     int getDetailInfoCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNBOrBuilder> 
         getDetailInfoOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
      */
     emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNBOrBuilder getDetailInfoOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
@@ -171,10 +147,6 @@ public final class CKOKFBGOHPHOuterClass {
     public static final int DETAIL_INFO_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB> detailInfo_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
      */
     @java.lang.Override
@@ -182,10 +154,6 @@ public final class CKOKFBGOHPHOuterClass {
       return detailInfo_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
      */
     @java.lang.Override
@@ -194,10 +162,6 @@ public final class CKOKFBGOHPHOuterClass {
       return detailInfo_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
      */
     @java.lang.Override
@@ -205,10 +169,6 @@ public final class CKOKFBGOHPHOuterClass {
       return detailInfo_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
      */
     @java.lang.Override
@@ -216,10 +176,6 @@ public final class CKOKFBGOHPHOuterClass {
       return detailInfo_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
      */
     @java.lang.Override
@@ -231,10 +187,6 @@ public final class CKOKFBGOHPHOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 11;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
@@ -615,10 +567,6 @@ public final class CKOKFBGOHPHOuterClass {
           emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB, emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB.Builder, emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNBOrBuilder> detailInfoBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB> getDetailInfoList() {
@@ -629,10 +577,6 @@ public final class CKOKFBGOHPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public int getDetailInfoCount() {
@@ -643,10 +587,6 @@ public final class CKOKFBGOHPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB getDetailInfo(int index) {
@@ -657,10 +597,6 @@ public final class CKOKFBGOHPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public Builder setDetailInfo(
@@ -678,10 +614,6 @@ public final class CKOKFBGOHPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public Builder setDetailInfo(
@@ -696,10 +628,6 @@ public final class CKOKFBGOHPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public Builder addDetailInfo(emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB value) {
@@ -716,10 +644,6 @@ public final class CKOKFBGOHPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public Builder addDetailInfo(
@@ -737,10 +661,6 @@ public final class CKOKFBGOHPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public Builder addDetailInfo(
@@ -755,10 +675,6 @@ public final class CKOKFBGOHPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public Builder addDetailInfo(
@@ -773,10 +689,6 @@ public final class CKOKFBGOHPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public Builder addAllDetailInfo(
@@ -792,10 +704,6 @@ public final class CKOKFBGOHPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public Builder clearDetailInfo() {
@@ -809,10 +717,6 @@ public final class CKOKFBGOHPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public Builder removeDetailInfo(int index) {
@@ -826,10 +730,6 @@ public final class CKOKFBGOHPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB.Builder getDetailInfoBuilder(
@@ -837,10 +737,6 @@ public final class CKOKFBGOHPHOuterClass {
         return getDetailInfoFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNBOrBuilder getDetailInfoOrBuilder(
@@ -851,10 +747,6 @@ public final class CKOKFBGOHPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNBOrBuilder> 
@@ -866,10 +758,6 @@ public final class CKOKFBGOHPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB.Builder addDetailInfoBuilder() {
@@ -877,10 +765,6 @@ public final class CKOKFBGOHPHOuterClass {
             emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB.Builder addDetailInfoBuilder(
@@ -889,10 +773,6 @@ public final class CKOKFBGOHPHOuterClass {
             index, emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PEDOKCODPNB detail_info = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PEDOKCODPNBOuterClass.PEDOKCODPNB.Builder> 
@@ -916,10 +796,6 @@ public final class CKOKFBGOHPHOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return The levelId.
        */
@@ -928,10 +804,6 @@ public final class CKOKFBGOHPHOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -943,10 +815,6 @@ public final class CKOKFBGOHPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */

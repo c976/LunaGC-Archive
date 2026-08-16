@@ -19,37 +19,38 @@ public final class MonsterAlertChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 monster_entity_list = 6;</code>
-     * @return A list containing the monsterEntityList.
+     * <code>uint32 avatar_entity_id = 14;</code>
+     * @return The avatarEntityId.
      */
-    java.util.List<java.lang.Integer> getMonsterEntityListList();
-    /**
-     * <code>repeated uint32 monster_entity_list = 6;</code>
-     * @return The count of monsterEntityList.
-     */
-    int getMonsterEntityListCount();
-    /**
-     * <code>repeated uint32 monster_entity_list = 6;</code>
-     * @param index The index of the element to return.
-     * @return The monsterEntityList at the given index.
-     */
-    int getMonsterEntityList(int index);
+    int getAvatarEntityId();
 
     /**
-     * <code>uint32 is_alert = 8;</code>
+     * <code>uint32 is_alert = 1;</code>
      * @return The isAlert.
      */
     int getIsAlert();
 
     /**
-     * <code>uint32 avatar_entity_id = 2;</code>
-     * @return The avatarEntityId.
+     * <code>repeated uint32 monster_entity_list = 12;</code>
+     * @return A list containing the monsterEntityList.
      */
-    int getAvatarEntityId();
+    java.util.List<java.lang.Integer> getMonsterEntityListList();
+    /**
+     * <code>repeated uint32 monster_entity_list = 12;</code>
+     * @return The count of monsterEntityList.
+     */
+    int getMonsterEntityListCount();
+    /**
+     * <code>repeated uint32 monster_entity_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The monsterEntityList at the given index.
+     */
+    int getMonsterEntityList(int index);
   }
   /**
    * <pre>
-   * CmdId: 29093
+   * CmdId: 20036
+   * Obf: BMANLPLANOJ
    * </pre>
    *
    * Protobuf type {@code MonsterAlertChangeNotify}
@@ -98,12 +99,12 @@ public final class MonsterAlertChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
-              avatarEntityId_ = input.readUInt32();
+              isAlert_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 monsterEntityList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -111,7 +112,7 @@ public final class MonsterAlertChangeNotifyOuterClass {
               monsterEntityList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -124,9 +125,9 @@ public final class MonsterAlertChangeNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 64: {
+            case 112: {
 
-              isAlert_ = input.readUInt32();
+              avatarEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -164,10 +165,32 @@ public final class MonsterAlertChangeNotifyOuterClass {
               emu.grasscutter.net.proto.MonsterAlertChangeNotifyOuterClass.MonsterAlertChangeNotify.class, emu.grasscutter.net.proto.MonsterAlertChangeNotifyOuterClass.MonsterAlertChangeNotify.Builder.class);
     }
 
-    public static final int MONSTER_ENTITY_LIST_FIELD_NUMBER = 6;
+    public static final int AVATAR_ENTITY_ID_FIELD_NUMBER = 14;
+    private int avatarEntityId_;
+    /**
+     * <code>uint32 avatar_entity_id = 14;</code>
+     * @return The avatarEntityId.
+     */
+    @java.lang.Override
+    public int getAvatarEntityId() {
+      return avatarEntityId_;
+    }
+
+    public static final int IS_ALERT_FIELD_NUMBER = 1;
+    private int isAlert_;
+    /**
+     * <code>uint32 is_alert = 1;</code>
+     * @return The isAlert.
+     */
+    @java.lang.Override
+    public int getIsAlert() {
+      return isAlert_;
+    }
+
+    public static final int MONSTER_ENTITY_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList monsterEntityList_;
     /**
-     * <code>repeated uint32 monster_entity_list = 6;</code>
+     * <code>repeated uint32 monster_entity_list = 12;</code>
      * @return A list containing the monsterEntityList.
      */
     @java.lang.Override
@@ -176,14 +199,14 @@ public final class MonsterAlertChangeNotifyOuterClass {
       return monsterEntityList_;
     }
     /**
-     * <code>repeated uint32 monster_entity_list = 6;</code>
+     * <code>repeated uint32 monster_entity_list = 12;</code>
      * @return The count of monsterEntityList.
      */
     public int getMonsterEntityListCount() {
       return monsterEntityList_.size();
     }
     /**
-     * <code>repeated uint32 monster_entity_list = 6;</code>
+     * <code>repeated uint32 monster_entity_list = 12;</code>
      * @param index The index of the element to return.
      * @return The monsterEntityList at the given index.
      */
@@ -191,28 +214,6 @@ public final class MonsterAlertChangeNotifyOuterClass {
       return monsterEntityList_.getInt(index);
     }
     private int monsterEntityListMemoizedSerializedSize = -1;
-
-    public static final int IS_ALERT_FIELD_NUMBER = 8;
-    private int isAlert_;
-    /**
-     * <code>uint32 is_alert = 8;</code>
-     * @return The isAlert.
-     */
-    @java.lang.Override
-    public int getIsAlert() {
-      return isAlert_;
-    }
-
-    public static final int AVATAR_ENTITY_ID_FIELD_NUMBER = 2;
-    private int avatarEntityId_;
-    /**
-     * <code>uint32 avatar_entity_id = 2;</code>
-     * @return The avatarEntityId.
-     */
-    @java.lang.Override
-    public int getAvatarEntityId() {
-      return avatarEntityId_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -229,18 +230,18 @@ public final class MonsterAlertChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (avatarEntityId_ != 0) {
-        output.writeUInt32(2, avatarEntityId_);
+      if (isAlert_ != 0) {
+        output.writeUInt32(1, isAlert_);
       }
       if (getMonsterEntityListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(monsterEntityListMemoizedSerializedSize);
       }
       for (int i = 0; i < monsterEntityList_.size(); i++) {
         output.writeUInt32NoTag(monsterEntityList_.getInt(i));
       }
-      if (isAlert_ != 0) {
-        output.writeUInt32(8, isAlert_);
+      if (avatarEntityId_ != 0) {
+        output.writeUInt32(14, avatarEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -251,9 +252,9 @@ public final class MonsterAlertChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatarEntityId_ != 0) {
+      if (isAlert_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, avatarEntityId_);
+          .computeUInt32Size(1, isAlert_);
       }
       {
         int dataSize = 0;
@@ -269,9 +270,9 @@ public final class MonsterAlertChangeNotifyOuterClass {
         }
         monsterEntityListMemoizedSerializedSize = dataSize;
       }
-      if (isAlert_ != 0) {
+      if (avatarEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, isAlert_);
+          .computeUInt32Size(14, avatarEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -288,12 +289,12 @@ public final class MonsterAlertChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MonsterAlertChangeNotifyOuterClass.MonsterAlertChangeNotify other = (emu.grasscutter.net.proto.MonsterAlertChangeNotifyOuterClass.MonsterAlertChangeNotify) obj;
 
-      if (!getMonsterEntityListList()
-          .equals(other.getMonsterEntityListList())) return false;
-      if (getIsAlert()
-          != other.getIsAlert()) return false;
       if (getAvatarEntityId()
           != other.getAvatarEntityId()) return false;
+      if (getIsAlert()
+          != other.getIsAlert()) return false;
+      if (!getMonsterEntityListList()
+          .equals(other.getMonsterEntityListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -305,14 +306,14 @@ public final class MonsterAlertChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + AVATAR_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarEntityId();
+      hash = (37 * hash) + IS_ALERT_FIELD_NUMBER;
+      hash = (53 * hash) + getIsAlert();
       if (getMonsterEntityListCount() > 0) {
         hash = (37 * hash) + MONSTER_ENTITY_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getMonsterEntityListList().hashCode();
       }
-      hash = (37 * hash) + IS_ALERT_FIELD_NUMBER;
-      hash = (53 * hash) + getIsAlert();
-      hash = (37 * hash) + AVATAR_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,7 +411,8 @@ public final class MonsterAlertChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29093
+     * CmdId: 20036
+     * Obf: BMANLPLANOJ
      * </pre>
      *
      * Protobuf type {@code MonsterAlertChangeNotify}
@@ -450,12 +452,12 @@ public final class MonsterAlertChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        monsterEntityList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        isAlert_ = 0;
-
         avatarEntityId_ = 0;
 
+        isAlert_ = 0;
+
+        monsterEntityList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -483,13 +485,13 @@ public final class MonsterAlertChangeNotifyOuterClass {
       public emu.grasscutter.net.proto.MonsterAlertChangeNotifyOuterClass.MonsterAlertChangeNotify buildPartial() {
         emu.grasscutter.net.proto.MonsterAlertChangeNotifyOuterClass.MonsterAlertChangeNotify result = new emu.grasscutter.net.proto.MonsterAlertChangeNotifyOuterClass.MonsterAlertChangeNotify(this);
         int from_bitField0_ = bitField0_;
+        result.avatarEntityId_ = avatarEntityId_;
+        result.isAlert_ = isAlert_;
         if (((bitField0_ & 0x00000001) != 0)) {
           monsterEntityList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.monsterEntityList_ = monsterEntityList_;
-        result.isAlert_ = isAlert_;
-        result.avatarEntityId_ = avatarEntityId_;
         onBuilt();
         return result;
       }
@@ -538,6 +540,12 @@ public final class MonsterAlertChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MonsterAlertChangeNotifyOuterClass.MonsterAlertChangeNotify other) {
         if (other == emu.grasscutter.net.proto.MonsterAlertChangeNotifyOuterClass.MonsterAlertChangeNotify.getDefaultInstance()) return this;
+        if (other.getAvatarEntityId() != 0) {
+          setAvatarEntityId(other.getAvatarEntityId());
+        }
+        if (other.getIsAlert() != 0) {
+          setIsAlert(other.getIsAlert());
+        }
         if (!other.monsterEntityList_.isEmpty()) {
           if (monsterEntityList_.isEmpty()) {
             monsterEntityList_ = other.monsterEntityList_;
@@ -547,12 +555,6 @@ public final class MonsterAlertChangeNotifyOuterClass {
             monsterEntityList_.addAll(other.monsterEntityList_);
           }
           onChanged();
-        }
-        if (other.getIsAlert() != 0) {
-          setIsAlert(other.getIsAlert());
-        }
-        if (other.getAvatarEntityId() != 0) {
-          setAvatarEntityId(other.getAvatarEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -584,6 +586,68 @@ public final class MonsterAlertChangeNotifyOuterClass {
       }
       private int bitField0_;
 
+      private int avatarEntityId_ ;
+      /**
+       * <code>uint32 avatar_entity_id = 14;</code>
+       * @return The avatarEntityId.
+       */
+      @java.lang.Override
+      public int getAvatarEntityId() {
+        return avatarEntityId_;
+      }
+      /**
+       * <code>uint32 avatar_entity_id = 14;</code>
+       * @param value The avatarEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarEntityId(int value) {
+        
+        avatarEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 avatar_entity_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarEntityId() {
+        
+        avatarEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int isAlert_ ;
+      /**
+       * <code>uint32 is_alert = 1;</code>
+       * @return The isAlert.
+       */
+      @java.lang.Override
+      public int getIsAlert() {
+        return isAlert_;
+      }
+      /**
+       * <code>uint32 is_alert = 1;</code>
+       * @param value The isAlert to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsAlert(int value) {
+        
+        isAlert_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 is_alert = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsAlert() {
+        
+        isAlert_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList monsterEntityList_ = emptyIntList();
       private void ensureMonsterEntityListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -592,7 +656,7 @@ public final class MonsterAlertChangeNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 monster_entity_list = 6;</code>
+       * <code>repeated uint32 monster_entity_list = 12;</code>
        * @return A list containing the monsterEntityList.
        */
       public java.util.List<java.lang.Integer>
@@ -601,14 +665,14 @@ public final class MonsterAlertChangeNotifyOuterClass {
                  java.util.Collections.unmodifiableList(monsterEntityList_) : monsterEntityList_;
       }
       /**
-       * <code>repeated uint32 monster_entity_list = 6;</code>
+       * <code>repeated uint32 monster_entity_list = 12;</code>
        * @return The count of monsterEntityList.
        */
       public int getMonsterEntityListCount() {
         return monsterEntityList_.size();
       }
       /**
-       * <code>repeated uint32 monster_entity_list = 6;</code>
+       * <code>repeated uint32 monster_entity_list = 12;</code>
        * @param index The index of the element to return.
        * @return The monsterEntityList at the given index.
        */
@@ -616,7 +680,7 @@ public final class MonsterAlertChangeNotifyOuterClass {
         return monsterEntityList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 monster_entity_list = 6;</code>
+       * <code>repeated uint32 monster_entity_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The monsterEntityList to set.
        * @return This builder for chaining.
@@ -629,7 +693,7 @@ public final class MonsterAlertChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 monster_entity_list = 6;</code>
+       * <code>repeated uint32 monster_entity_list = 12;</code>
        * @param value The monsterEntityList to add.
        * @return This builder for chaining.
        */
@@ -640,7 +704,7 @@ public final class MonsterAlertChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 monster_entity_list = 6;</code>
+       * <code>repeated uint32 monster_entity_list = 12;</code>
        * @param values The monsterEntityList to add.
        * @return This builder for chaining.
        */
@@ -653,74 +717,12 @@ public final class MonsterAlertChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 monster_entity_list = 6;</code>
+       * <code>repeated uint32 monster_entity_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearMonsterEntityList() {
         monsterEntityList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int isAlert_ ;
-      /**
-       * <code>uint32 is_alert = 8;</code>
-       * @return The isAlert.
-       */
-      @java.lang.Override
-      public int getIsAlert() {
-        return isAlert_;
-      }
-      /**
-       * <code>uint32 is_alert = 8;</code>
-       * @param value The isAlert to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsAlert(int value) {
-        
-        isAlert_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 is_alert = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsAlert() {
-        
-        isAlert_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int avatarEntityId_ ;
-      /**
-       * <code>uint32 avatar_entity_id = 2;</code>
-       * @return The avatarEntityId.
-       */
-      @java.lang.Override
-      public int getAvatarEntityId() {
-        return avatarEntityId_;
-      }
-      /**
-       * <code>uint32 avatar_entity_id = 2;</code>
-       * @param value The avatarEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarEntityId(int value) {
-        
-        avatarEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 avatar_entity_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarEntityId() {
-        
-        avatarEntityId_ = 0;
         onChanged();
         return this;
       }
@@ -792,9 +794,9 @@ public final class MonsterAlertChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036MonsterAlertChangeNotify.proto\"c\n\030Mons" +
-      "terAlertChangeNotify\022\033\n\023monster_entity_l" +
-      "ist\030\006 \003(\r\022\020\n\010is_alert\030\010 \001(\r\022\030\n\020avatar_en" +
-      "tity_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "terAlertChangeNotify\022\030\n\020avatar_entity_id" +
+      "\030\016 \001(\r\022\020\n\010is_alert\030\001 \001(\r\022\033\n\023monster_enti" +
+      "ty_list\030\014 \003(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -806,7 +808,7 @@ public final class MonsterAlertChangeNotifyOuterClass {
     internal_static_MonsterAlertChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MonsterAlertChangeNotify_descriptor,
-        new java.lang.String[] { "MonsterEntityList", "IsAlert", "AvatarEntityId", });
+        new java.lang.String[] { "AvatarEntityId", "IsAlert", "MonsterEntityList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

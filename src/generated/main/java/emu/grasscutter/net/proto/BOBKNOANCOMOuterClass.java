@@ -19,44 +19,24 @@ public final class BOBKNOANCOMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK> 
         getNGMHFHPAAMFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
      */
     emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK getNGMHFHPAAMF(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
      */
     int getNGMHFHPAAMFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDKOrBuilder> 
         getNGMHFHPAAMFOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
      */
     emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDKOrBuilder getNGMHFHPAAMFOrBuilder(
@@ -156,10 +136,6 @@ public final class BOBKNOANCOMOuterClass {
     public static final int NGMHFHPAAMF_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK> nGMHFHPAAMF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class BOBKNOANCOMOuterClass {
       return nGMHFHPAAMF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class BOBKNOANCOMOuterClass {
       return nGMHFHPAAMF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class BOBKNOANCOMOuterClass {
       return nGMHFHPAAMF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class BOBKNOANCOMOuterClass {
       return nGMHFHPAAMF_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class BOBKNOANCOMOuterClass {
           emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK, emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK.Builder, emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDKOrBuilder> nGMHFHPAAMFBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK> getNGMHFHPAAMFList() {
@@ -582,10 +538,6 @@ public final class BOBKNOANCOMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public int getNGMHFHPAAMFCount() {
@@ -596,10 +548,6 @@ public final class BOBKNOANCOMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK getNGMHFHPAAMF(int index) {
@@ -610,10 +558,6 @@ public final class BOBKNOANCOMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public Builder setNGMHFHPAAMF(
@@ -631,10 +575,6 @@ public final class BOBKNOANCOMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public Builder setNGMHFHPAAMF(
@@ -649,10 +589,6 @@ public final class BOBKNOANCOMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public Builder addNGMHFHPAAMF(emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK value) {
@@ -669,10 +605,6 @@ public final class BOBKNOANCOMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -690,10 +622,6 @@ public final class BOBKNOANCOMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -708,10 +636,6 @@ public final class BOBKNOANCOMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public Builder addNGMHFHPAAMF(
@@ -726,10 +650,6 @@ public final class BOBKNOANCOMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public Builder addAllNGMHFHPAAMF(
@@ -745,10 +665,6 @@ public final class BOBKNOANCOMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public Builder clearNGMHFHPAAMF() {
@@ -762,10 +678,6 @@ public final class BOBKNOANCOMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public Builder removeNGMHFHPAAMF(int index) {
@@ -779,10 +691,6 @@ public final class BOBKNOANCOMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK.Builder getNGMHFHPAAMFBuilder(
@@ -790,10 +698,6 @@ public final class BOBKNOANCOMOuterClass {
         return getNGMHFHPAAMFFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDKOrBuilder getNGMHFHPAAMFOrBuilder(
@@ -804,10 +708,6 @@ public final class BOBKNOANCOMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDKOrBuilder> 
@@ -819,10 +719,6 @@ public final class BOBKNOANCOMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK.Builder addNGMHFHPAAMFBuilder() {
@@ -830,10 +726,6 @@ public final class BOBKNOANCOMOuterClass {
             emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK.Builder addNGMHFHPAAMFBuilder(
@@ -842,10 +734,6 @@ public final class BOBKNOANCOMOuterClass {
             index, emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LGDMICBNNDK NGMHFHPAAMF = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LGDMICBNNDKOuterClass.LGDMICBNNDK.Builder> 

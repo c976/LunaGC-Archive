@@ -19,40 +19,24 @@ public final class DKKMKBDDLOJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 2;</code>
      * @return The oMEBOHLACPH.
      */
     int getOMEBOHLACPH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FLALDNALPJN = 8;</code>
      * @return The fLALDNALPJN.
      */
     boolean getFLALDNALPJN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FDDKJDOMCBM = 15;</code>
      * @return The fDDKJDOMCBM.
      */
@@ -158,10 +142,6 @@ public final class DKKMKBDDLOJOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 2;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 2;</code>
      * @return The oMEBOHLACPH.
      */
@@ -173,10 +153,6 @@ public final class DKKMKBDDLOJOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 3;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
@@ -188,10 +164,6 @@ public final class DKKMKBDDLOJOuterClass {
     public static final int FLALDNALPJN_FIELD_NUMBER = 8;
     private boolean fLALDNALPJN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FLALDNALPJN = 8;</code>
      * @return The fLALDNALPJN.
      */
@@ -203,10 +175,6 @@ public final class DKKMKBDDLOJOuterClass {
     public static final int FDDKJDOMCBM_FIELD_NUMBER = 15;
     private boolean fDDKJDOMCBM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FDDKJDOMCBM = 15;</code>
      * @return The fDDKJDOMCBM.
      */
@@ -572,10 +540,6 @@ public final class DKKMKBDDLOJOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 2;</code>
        * @return The oMEBOHLACPH.
        */
@@ -584,10 +548,6 @@ public final class DKKMKBDDLOJOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 2;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -599,10 +559,6 @@ public final class DKKMKBDDLOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 2;</code>
        * @return This builder for chaining.
        */
@@ -615,10 +571,6 @@ public final class DKKMKBDDLOJOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @return The levelId.
        */
@@ -627,10 +579,6 @@ public final class DKKMKBDDLOJOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -642,10 +590,6 @@ public final class DKKMKBDDLOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 3;</code>
        * @return This builder for chaining.
        */
@@ -658,10 +602,6 @@ public final class DKKMKBDDLOJOuterClass {
 
       private boolean fLALDNALPJN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FLALDNALPJN = 8;</code>
        * @return The fLALDNALPJN.
        */
@@ -670,10 +610,6 @@ public final class DKKMKBDDLOJOuterClass {
         return fLALDNALPJN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FLALDNALPJN = 8;</code>
        * @param value The fLALDNALPJN to set.
        * @return This builder for chaining.
@@ -685,10 +621,6 @@ public final class DKKMKBDDLOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FLALDNALPJN = 8;</code>
        * @return This builder for chaining.
        */
@@ -701,10 +633,6 @@ public final class DKKMKBDDLOJOuterClass {
 
       private boolean fDDKJDOMCBM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FDDKJDOMCBM = 15;</code>
        * @return The fDDKJDOMCBM.
        */
@@ -713,10 +641,6 @@ public final class DKKMKBDDLOJOuterClass {
         return fDDKJDOMCBM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FDDKJDOMCBM = 15;</code>
        * @param value The fDDKJDOMCBM to set.
        * @return This builder for chaining.
@@ -728,10 +652,6 @@ public final class DKKMKBDDLOJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FDDKJDOMCBM = 15;</code>
        * @return This builder for chaining.
        */

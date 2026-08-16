@@ -19,25 +19,21 @@ public final class SorushWidgetDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+     * <code>.SorushWidgetData sorush_widget_data = 6;</code>
      * @return Whether the sorushWidgetData field is set.
      */
     boolean hasSorushWidgetData();
     /**
-     * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+     * <code>.SorushWidgetData sorush_widget_data = 6;</code>
      * @return The sorushWidgetData.
      */
     emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData getSorushWidgetData();
     /**
-     * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+     * <code>.SorushWidgetData sorush_widget_data = 6;</code>
      */
     emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetDataOrBuilder getSorushWidgetDataOrBuilder();
   }
   /**
-   * <pre>
-   * CmdId: 8857
-   * </pre>
-   *
    * Protobuf type {@code SorushWidgetDataNotify}
    */
   public static final class SorushWidgetDataNotify extends
@@ -82,7 +78,7 @@ public final class SorushWidgetDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 50: {
               emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData.Builder subBuilder = null;
               if (sorushWidgetData_ != null) {
                 subBuilder = sorushWidgetData_.toBuilder();
@@ -127,10 +123,10 @@ public final class SorushWidgetDataNotifyOuterClass {
               emu.grasscutter.net.proto.SorushWidgetDataNotifyOuterClass.SorushWidgetDataNotify.class, emu.grasscutter.net.proto.SorushWidgetDataNotifyOuterClass.SorushWidgetDataNotify.Builder.class);
     }
 
-    public static final int SORUSH_WIDGET_DATA_FIELD_NUMBER = 12;
+    public static final int SORUSH_WIDGET_DATA_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData sorushWidgetData_;
     /**
-     * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+     * <code>.SorushWidgetData sorush_widget_data = 6;</code>
      * @return Whether the sorushWidgetData field is set.
      */
     @java.lang.Override
@@ -138,7 +134,7 @@ public final class SorushWidgetDataNotifyOuterClass {
       return sorushWidgetData_ != null;
     }
     /**
-     * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+     * <code>.SorushWidgetData sorush_widget_data = 6;</code>
      * @return The sorushWidgetData.
      */
     @java.lang.Override
@@ -146,7 +142,7 @@ public final class SorushWidgetDataNotifyOuterClass {
       return sorushWidgetData_ == null ? emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData.getDefaultInstance() : sorushWidgetData_;
     }
     /**
-     * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+     * <code>.SorushWidgetData sorush_widget_data = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetDataOrBuilder getSorushWidgetDataOrBuilder() {
@@ -168,7 +164,7 @@ public final class SorushWidgetDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (sorushWidgetData_ != null) {
-        output.writeMessage(12, getSorushWidgetData());
+        output.writeMessage(6, getSorushWidgetData());
       }
       unknownFields.writeTo(output);
     }
@@ -181,7 +177,7 @@ public final class SorushWidgetDataNotifyOuterClass {
       size = 0;
       if (sorushWidgetData_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getSorushWidgetData());
+          .computeMessageSize(6, getSorushWidgetData());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -314,10 +310,6 @@ public final class SorushWidgetDataNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 8857
-     * </pre>
-     *
      * Protobuf type {@code SorushWidgetDataNotify}
      */
     public static final class Builder extends
@@ -476,14 +468,14 @@ public final class SorushWidgetDataNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData, emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData.Builder, emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetDataOrBuilder> sorushWidgetDataBuilder_;
       /**
-       * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+       * <code>.SorushWidgetData sorush_widget_data = 6;</code>
        * @return Whether the sorushWidgetData field is set.
        */
       public boolean hasSorushWidgetData() {
         return sorushWidgetDataBuilder_ != null || sorushWidgetData_ != null;
       }
       /**
-       * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+       * <code>.SorushWidgetData sorush_widget_data = 6;</code>
        * @return The sorushWidgetData.
        */
       public emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData getSorushWidgetData() {
@@ -494,7 +486,7 @@ public final class SorushWidgetDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+       * <code>.SorushWidgetData sorush_widget_data = 6;</code>
        */
       public Builder setSorushWidgetData(emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData value) {
         if (sorushWidgetDataBuilder_ == null) {
@@ -510,7 +502,7 @@ public final class SorushWidgetDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+       * <code>.SorushWidgetData sorush_widget_data = 6;</code>
        */
       public Builder setSorushWidgetData(
           emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData.Builder builderForValue) {
@@ -524,7 +516,7 @@ public final class SorushWidgetDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+       * <code>.SorushWidgetData sorush_widget_data = 6;</code>
        */
       public Builder mergeSorushWidgetData(emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData value) {
         if (sorushWidgetDataBuilder_ == null) {
@@ -542,7 +534,7 @@ public final class SorushWidgetDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+       * <code>.SorushWidgetData sorush_widget_data = 6;</code>
        */
       public Builder clearSorushWidgetData() {
         if (sorushWidgetDataBuilder_ == null) {
@@ -556,7 +548,7 @@ public final class SorushWidgetDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+       * <code>.SorushWidgetData sorush_widget_data = 6;</code>
        */
       public emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData.Builder getSorushWidgetDataBuilder() {
         
@@ -564,7 +556,7 @@ public final class SorushWidgetDataNotifyOuterClass {
         return getSorushWidgetDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+       * <code>.SorushWidgetData sorush_widget_data = 6;</code>
        */
       public emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetDataOrBuilder getSorushWidgetDataOrBuilder() {
         if (sorushWidgetDataBuilder_ != null) {
@@ -575,7 +567,7 @@ public final class SorushWidgetDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.SorushWidgetData sorush_widget_data = 12;</code>
+       * <code>.SorushWidgetData sorush_widget_data = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData, emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetData.Builder, emu.grasscutter.net.proto.SorushWidgetDataOuterClass.SorushWidgetDataOrBuilder> 
@@ -659,7 +651,7 @@ public final class SorushWidgetDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034SorushWidgetDataNotify.proto\032\026SorushWi" +
       "dgetData.proto\"G\n\026SorushWidgetDataNotify" +
-      "\022-\n\022sorush_widget_data\030\014 \001(\0132\021.SorushWid" +
+      "\022-\n\022sorush_widget_data\030\006 \001(\0132\021.SorushWid" +
       "getDataB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };

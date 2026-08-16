@@ -20,23 +20,23 @@ public final class FeatureBlockInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>uint32 end_time = 2;</code>
-     * @return The endTime.
-     */
-    int getEndTime();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 feature_type = 1;</code>
      * @return The featureType.
      */
     int getFeatureType();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 end_time = 2;</code>
+     * @return The endTime.
+     */
+    int getEndTime();
   }
   /**
    * Protobuf type {@code FeatureBlockInfo}
@@ -125,26 +125,11 @@ public final class FeatureBlockInfoOuterClass {
               emu.grasscutter.net.proto.FeatureBlockInfoOuterClass.FeatureBlockInfo.class, emu.grasscutter.net.proto.FeatureBlockInfoOuterClass.FeatureBlockInfo.Builder.class);
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 2;
-    private int endTime_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>uint32 end_time = 2;</code>
-     * @return The endTime.
-     */
-    @java.lang.Override
-    public int getEndTime() {
-      return endTime_;
-    }
-
     public static final int FEATURE_TYPE_FIELD_NUMBER = 1;
     private int featureType_;
     /**
      * <pre>
-     *6.3.0 // offset: 36
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 feature_type = 1;</code>
@@ -153,6 +138,21 @@ public final class FeatureBlockInfoOuterClass {
     @java.lang.Override
     public int getFeatureType() {
       return featureType_;
+    }
+
+    public static final int END_TIME_FIELD_NUMBER = 2;
+    private int endTime_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 end_time = 2;</code>
+     * @return The endTime.
+     */
+    @java.lang.Override
+    public int getEndTime() {
+      return endTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -207,10 +207,10 @@ public final class FeatureBlockInfoOuterClass {
       }
       emu.grasscutter.net.proto.FeatureBlockInfoOuterClass.FeatureBlockInfo other = (emu.grasscutter.net.proto.FeatureBlockInfoOuterClass.FeatureBlockInfo) obj;
 
-      if (getEndTime()
-          != other.getEndTime()) return false;
       if (getFeatureType()
           != other.getFeatureType()) return false;
+      if (getEndTime()
+          != other.getEndTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -222,10 +222,10 @@ public final class FeatureBlockInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getEndTime();
       hash = (37 * hash) + FEATURE_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getFeatureType();
+      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getEndTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -359,9 +359,9 @@ public final class FeatureBlockInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        endTime_ = 0;
-
         featureType_ = 0;
+
+        endTime_ = 0;
 
         return this;
       }
@@ -389,8 +389,8 @@ public final class FeatureBlockInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FeatureBlockInfoOuterClass.FeatureBlockInfo buildPartial() {
         emu.grasscutter.net.proto.FeatureBlockInfoOuterClass.FeatureBlockInfo result = new emu.grasscutter.net.proto.FeatureBlockInfoOuterClass.FeatureBlockInfo(this);
-        result.endTime_ = endTime_;
         result.featureType_ = featureType_;
+        result.endTime_ = endTime_;
         onBuilt();
         return result;
       }
@@ -439,11 +439,11 @@ public final class FeatureBlockInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FeatureBlockInfoOuterClass.FeatureBlockInfo other) {
         if (other == emu.grasscutter.net.proto.FeatureBlockInfoOuterClass.FeatureBlockInfo.getDefaultInstance()) return this;
-        if (other.getEndTime() != 0) {
-          setEndTime(other.getEndTime());
-        }
         if (other.getFeatureType() != 0) {
           setFeatureType(other.getFeatureType());
+        }
+        if (other.getEndTime() != 0) {
+          setEndTime(other.getEndTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -474,53 +474,10 @@ public final class FeatureBlockInfoOuterClass {
         return this;
       }
 
-      private int endTime_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>uint32 end_time = 2;</code>
-       * @return The endTime.
-       */
-      @java.lang.Override
-      public int getEndTime() {
-        return endTime_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>uint32 end_time = 2;</code>
-       * @param value The endTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEndTime(int value) {
-        
-        endTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>uint32 end_time = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEndTime() {
-        
-        endTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int featureType_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 feature_type = 1;</code>
@@ -532,7 +489,7 @@ public final class FeatureBlockInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 feature_type = 1;</code>
@@ -547,7 +504,7 @@ public final class FeatureBlockInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 36
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 feature_type = 1;</code>
@@ -556,6 +513,49 @@ public final class FeatureBlockInfoOuterClass {
       public Builder clearFeatureType() {
         
         featureType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int endTime_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 end_time = 2;</code>
+       * @return The endTime.
+       */
+      @java.lang.Override
+      public int getEndTime() {
+        return endTime_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 end_time = 2;</code>
+       * @param value The endTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEndTime(int value) {
+        
+        endTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 end_time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEndTime() {
+        
+        endTime_ = 0;
         onChanged();
         return this;
       }
@@ -627,7 +627,7 @@ public final class FeatureBlockInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026FeatureBlockInfo.proto\":\n\020FeatureBlock" +
-      "Info\022\020\n\010end_time\030\002 \001(\r\022\024\n\014feature_type\030\001" +
+      "Info\022\024\n\014feature_type\030\001 \001(\r\022\020\n\010end_time\030\002" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
@@ -640,7 +640,7 @@ public final class FeatureBlockInfoOuterClass {
     internal_static_FeatureBlockInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FeatureBlockInfo_descriptor,
-        new java.lang.String[] { "EndTime", "FeatureType", });
+        new java.lang.String[] { "FeatureType", "EndTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,33 +20,33 @@ public final class AreaNotifyOuterClass {
 
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>bytes GOAOBBLLIGM = 13;</code>
-     * @return The gOAOBBLLIGM.
+     * <code>bytes area_code = 9;</code>
+     * @return The areaCode.
      */
-    com.google.protobuf.ByteString getGOAOBBLLIGM();
+    com.google.protobuf.ByteString getAreaCode();
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 area_id = 3;</code>
-     * @return The areaId.
-     */
-    int getAreaId();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 44
-     * </pre>
-     *
-     * <code>uint32 area_type = 6;</code>
+     * <code>uint32 area_type = 1;</code>
      * @return The areaType.
      */
     int getAreaType();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>uint32 area_id = 14;</code>
+     * @return The areaId.
+     */
+    int getAreaId();
   }
   /**
    * Protobuf type {@code AreaNotify}
@@ -61,7 +61,7 @@ public final class AreaNotifyOuterClass {
       super(builder);
     }
     private AreaNotify() {
-      gOAOBBLLIGM_ = com.google.protobuf.ByteString.EMPTY;
+      areaCode_ = com.google.protobuf.ByteString.EMPTY;
     }
 
     @java.lang.Override
@@ -94,19 +94,19 @@ public final class AreaNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              areaId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 8: {
 
               areaType_ = input.readUInt32();
               break;
             }
-            case 106: {
+            case 74: {
 
-              gOAOBBLLIGM_ = input.readBytes();
+              areaCode_ = input.readBytes();
+              break;
+            }
+            case 112: {
+
+              areaId_ = input.readUInt32();
               break;
             }
             default: {
@@ -141,49 +141,49 @@ public final class AreaNotifyOuterClass {
               emu.grasscutter.net.proto.AreaNotifyOuterClass.AreaNotify.class, emu.grasscutter.net.proto.AreaNotifyOuterClass.AreaNotify.Builder.class);
     }
 
-    public static final int GOAOBBLLIGM_FIELD_NUMBER = 13;
-    private com.google.protobuf.ByteString gOAOBBLLIGM_;
+    public static final int AREA_CODE_FIELD_NUMBER = 9;
+    private com.google.protobuf.ByteString areaCode_;
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>bytes GOAOBBLLIGM = 13;</code>
-     * @return The gOAOBBLLIGM.
+     * <code>bytes area_code = 9;</code>
+     * @return The areaCode.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString getGOAOBBLLIGM() {
-      return gOAOBBLLIGM_;
+    public com.google.protobuf.ByteString getAreaCode() {
+      return areaCode_;
     }
 
-    public static final int AREA_ID_FIELD_NUMBER = 3;
-    private int areaId_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>uint32 area_id = 3;</code>
-     * @return The areaId.
-     */
-    @java.lang.Override
-    public int getAreaId() {
-      return areaId_;
-    }
-
-    public static final int AREA_TYPE_FIELD_NUMBER = 6;
+    public static final int AREA_TYPE_FIELD_NUMBER = 1;
     private int areaType_;
     /**
      * <pre>
-     *6.3.0 // offset: 44
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 area_type = 6;</code>
+     * <code>uint32 area_type = 1;</code>
      * @return The areaType.
      */
     @java.lang.Override
     public int getAreaType() {
       return areaType_;
+    }
+
+    public static final int AREA_ID_FIELD_NUMBER = 14;
+    private int areaId_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>uint32 area_id = 14;</code>
+     * @return The areaId.
+     */
+    @java.lang.Override
+    public int getAreaId() {
+      return areaId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -200,14 +200,14 @@ public final class AreaNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (areaId_ != 0) {
-        output.writeUInt32(3, areaId_);
-      }
       if (areaType_ != 0) {
-        output.writeUInt32(6, areaType_);
+        output.writeUInt32(1, areaType_);
       }
-      if (!gOAOBBLLIGM_.isEmpty()) {
-        output.writeBytes(13, gOAOBBLLIGM_);
+      if (!areaCode_.isEmpty()) {
+        output.writeBytes(9, areaCode_);
+      }
+      if (areaId_ != 0) {
+        output.writeUInt32(14, areaId_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,17 +218,17 @@ public final class AreaNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (areaId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, areaId_);
-      }
       if (areaType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, areaType_);
+          .computeUInt32Size(1, areaType_);
       }
-      if (!gOAOBBLLIGM_.isEmpty()) {
+      if (!areaCode_.isEmpty()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(13, gOAOBBLLIGM_);
+          .computeBytesSize(9, areaCode_);
+      }
+      if (areaId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, areaId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -245,12 +245,12 @@ public final class AreaNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AreaNotifyOuterClass.AreaNotify other = (emu.grasscutter.net.proto.AreaNotifyOuterClass.AreaNotify) obj;
 
-      if (!getGOAOBBLLIGM()
-          .equals(other.getGOAOBBLLIGM())) return false;
-      if (getAreaId()
-          != other.getAreaId()) return false;
+      if (!getAreaCode()
+          .equals(other.getAreaCode())) return false;
       if (getAreaType()
           != other.getAreaType()) return false;
+      if (getAreaId()
+          != other.getAreaId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -262,12 +262,12 @@ public final class AreaNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GOAOBBLLIGM_FIELD_NUMBER;
-      hash = (53 * hash) + getGOAOBBLLIGM().hashCode();
-      hash = (37 * hash) + AREA_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAreaId();
+      hash = (37 * hash) + AREA_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + getAreaCode().hashCode();
       hash = (37 * hash) + AREA_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getAreaType();
+      hash = (37 * hash) + AREA_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAreaId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -401,11 +401,11 @@ public final class AreaNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gOAOBBLLIGM_ = com.google.protobuf.ByteString.EMPTY;
-
-        areaId_ = 0;
+        areaCode_ = com.google.protobuf.ByteString.EMPTY;
 
         areaType_ = 0;
+
+        areaId_ = 0;
 
         return this;
       }
@@ -433,9 +433,9 @@ public final class AreaNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AreaNotifyOuterClass.AreaNotify buildPartial() {
         emu.grasscutter.net.proto.AreaNotifyOuterClass.AreaNotify result = new emu.grasscutter.net.proto.AreaNotifyOuterClass.AreaNotify(this);
-        result.gOAOBBLLIGM_ = gOAOBBLLIGM_;
-        result.areaId_ = areaId_;
+        result.areaCode_ = areaCode_;
         result.areaType_ = areaType_;
+        result.areaId_ = areaId_;
         onBuilt();
         return result;
       }
@@ -484,14 +484,14 @@ public final class AreaNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AreaNotifyOuterClass.AreaNotify other) {
         if (other == emu.grasscutter.net.proto.AreaNotifyOuterClass.AreaNotify.getDefaultInstance()) return this;
-        if (other.getGOAOBBLLIGM() != com.google.protobuf.ByteString.EMPTY) {
-          setGOAOBBLLIGM(other.getGOAOBBLLIGM());
-        }
-        if (other.getAreaId() != 0) {
-          setAreaId(other.getAreaId());
+        if (other.getAreaCode() != com.google.protobuf.ByteString.EMPTY) {
+          setAreaCode(other.getAreaCode());
         }
         if (other.getAreaType() != 0) {
           setAreaType(other.getAreaType());
+        }
+        if (other.getAreaId() != 0) {
+          setAreaId(other.getAreaId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -522,91 +522,48 @@ public final class AreaNotifyOuterClass {
         return this;
       }
 
-      private com.google.protobuf.ByteString gOAOBBLLIGM_ = com.google.protobuf.ByteString.EMPTY;
+      private com.google.protobuf.ByteString areaCode_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bytes GOAOBBLLIGM = 13;</code>
-       * @return The gOAOBBLLIGM.
+       * <code>bytes area_code = 9;</code>
+       * @return The areaCode.
        */
       @java.lang.Override
-      public com.google.protobuf.ByteString getGOAOBBLLIGM() {
-        return gOAOBBLLIGM_;
+      public com.google.protobuf.ByteString getAreaCode() {
+        return areaCode_;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bytes GOAOBBLLIGM = 13;</code>
-       * @param value The gOAOBBLLIGM to set.
+       * <code>bytes area_code = 9;</code>
+       * @param value The areaCode to set.
        * @return This builder for chaining.
        */
-      public Builder setGOAOBBLLIGM(com.google.protobuf.ByteString value) {
+      public Builder setAreaCode(com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        gOAOBBLLIGM_ = value;
+        areaCode_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bytes GOAOBBLLIGM = 13;</code>
+       * <code>bytes area_code = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGOAOBBLLIGM() {
+      public Builder clearAreaCode() {
         
-        gOAOBBLLIGM_ = getDefaultInstance().getGOAOBBLLIGM();
-        onChanged();
-        return this;
-      }
-
-      private int areaId_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 area_id = 3;</code>
-       * @return The areaId.
-       */
-      @java.lang.Override
-      public int getAreaId() {
-        return areaId_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 area_id = 3;</code>
-       * @param value The areaId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAreaId(int value) {
-        
-        areaId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 40
-       * </pre>
-       *
-       * <code>uint32 area_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAreaId() {
-        
-        areaId_ = 0;
+        areaCode_ = getDefaultInstance().getAreaCode();
         onChanged();
         return this;
       }
@@ -614,10 +571,10 @@ public final class AreaNotifyOuterClass {
       private int areaType_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 area_type = 6;</code>
+       * <code>uint32 area_type = 1;</code>
        * @return The areaType.
        */
       @java.lang.Override
@@ -626,10 +583,10 @@ public final class AreaNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 area_type = 6;</code>
+       * <code>uint32 area_type = 1;</code>
        * @param value The areaType to set.
        * @return This builder for chaining.
        */
@@ -641,15 +598,58 @@ public final class AreaNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 area_type = 6;</code>
+       * <code>uint32 area_type = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaType() {
         
         areaType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int areaId_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>uint32 area_id = 14;</code>
+       * @return The areaId.
+       */
+      @java.lang.Override
+      public int getAreaId() {
+        return areaId_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>uint32 area_id = 14;</code>
+       * @param value The areaId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAreaId(int value) {
+        
+        areaId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>uint32 area_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAreaId() {
+        
+        areaId_ = 0;
         onChanged();
         return this;
       }
@@ -720,10 +720,10 @@ public final class AreaNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020AreaNotify.proto\"E\n\nAreaNotify\022\023\n\013GOAO" +
-      "BBLLIGM\030\r \001(\014\022\017\n\007area_id\030\003 \001(\r\022\021\n\tarea_t" +
-      "ype\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\020AreaNotify.proto\"C\n\nAreaNotify\022\021\n\tarea" +
+      "_code\030\t \001(\014\022\021\n\tarea_type\030\001 \001(\r\022\017\n\007area_i" +
+      "d\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -734,7 +734,7 @@ public final class AreaNotifyOuterClass {
     internal_static_AreaNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AreaNotify_descriptor,
-        new java.lang.String[] { "GOAOBBLLIGM", "AreaId", "AreaType", });
+        new java.lang.String[] { "AreaCode", "AreaType", "AreaId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

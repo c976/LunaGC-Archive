@@ -19,36 +19,24 @@ public final class GGHDBIIKADHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 EGHGENOJNEK = 7;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 7;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 8;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 4;</code>
      * @return The oMEBOHLACPH.
      */
@@ -111,7 +99,7 @@ public final class GGHDBIIKADHOuterClass {
             }
             case 56: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 64: {
@@ -151,24 +139,20 @@ public final class GGHDBIIKADHOuterClass {
               emu.grasscutter.net.proto.GGHDBIIKADHOuterClass.GGHDBIIKADH.class, emu.grasscutter.net.proto.GGHDBIIKADHOuterClass.GGHDBIIKADH.Builder.class);
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 7;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 7;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 7;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 7;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 3;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
@@ -180,10 +164,6 @@ public final class GGHDBIIKADHOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 8;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 8;</code>
      * @return The openTime.
      */
@@ -195,10 +175,6 @@ public final class GGHDBIIKADHOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 4;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 4;</code>
      * @return The oMEBOHLACPH.
      */
@@ -227,8 +203,8 @@ public final class GGHDBIIKADHOuterClass {
       if (oMEBOHLACPH_ != 0) {
         output.writeUInt32(4, oMEBOHLACPH_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(7, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(7, stageId_);
       }
       if (openTime_ != 0) {
         output.writeUInt32(8, openTime_);
@@ -250,9 +226,9 @@ public final class GGHDBIIKADHOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, oMEBOHLACPH_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, eGHGENOJNEK_);
+          .computeUInt32Size(7, stageId_);
       }
       if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -273,8 +249,8 @@ public final class GGHDBIIKADHOuterClass {
       }
       emu.grasscutter.net.proto.GGHDBIIKADHOuterClass.GGHDBIIKADH other = (emu.grasscutter.net.proto.GGHDBIIKADHOuterClass.GGHDBIIKADH) obj;
 
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getOpenTime()
@@ -292,8 +268,8 @@ public final class GGHDBIIKADHOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -434,7 +410,7 @@ public final class GGHDBIIKADHOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         isOpen_ = false;
 
@@ -468,7 +444,7 @@ public final class GGHDBIIKADHOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GGHDBIIKADHOuterClass.GGHDBIIKADH buildPartial() {
         emu.grasscutter.net.proto.GGHDBIIKADHOuterClass.GGHDBIIKADH result = new emu.grasscutter.net.proto.GGHDBIIKADHOuterClass.GGHDBIIKADH(this);
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.isOpen_ = isOpen_;
         result.openTime_ = openTime_;
         result.oMEBOHLACPH_ = oMEBOHLACPH_;
@@ -520,8 +496,8 @@ public final class GGHDBIIKADHOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GGHDBIIKADHOuterClass.GGHDBIIKADH other) {
         if (other == emu.grasscutter.net.proto.GGHDBIIKADHOuterClass.GGHDBIIKADH.getDefaultInstance()) return this;
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -561,43 +537,39 @@ public final class GGHDBIIKADHOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 7;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 7;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 7;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 7;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 7;</code>
+       * <code>uint32 stage_id = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return The isOpen.
        */
@@ -606,10 +578,6 @@ public final class GGHDBIIKADHOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -621,10 +589,6 @@ public final class GGHDBIIKADHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return This builder for chaining.
        */
@@ -637,10 +601,6 @@ public final class GGHDBIIKADHOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 8;</code>
        * @return The openTime.
        */
@@ -649,10 +609,6 @@ public final class GGHDBIIKADHOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 8;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -664,10 +620,6 @@ public final class GGHDBIIKADHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 8;</code>
        * @return This builder for chaining.
        */
@@ -680,10 +632,6 @@ public final class GGHDBIIKADHOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 4;</code>
        * @return The oMEBOHLACPH.
        */
@@ -692,10 +640,6 @@ public final class GGHDBIIKADHOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 4;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -707,10 +651,6 @@ public final class GGHDBIIKADHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 4;</code>
        * @return This builder for chaining.
        */
@@ -787,10 +727,10 @@ public final class GGHDBIIKADHOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021GGHDBIIKADH.proto\"[\n\013GGHDBIIKADH\022\023\n\013EG" +
-      "HGENOJNEK\030\007 \001(\r\022\017\n\007is_open\030\003 \001(\010\022\021\n\topen" +
-      "_time\030\010 \001(\r\022\023\n\013OMEBOHLACPH\030\004 \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\021GGHDBIIKADH.proto\"X\n\013GGHDBIIKADH\022\020\n\010st" +
+      "age_id\030\007 \001(\r\022\017\n\007is_open\030\003 \001(\010\022\021\n\topen_ti" +
+      "me\030\010 \001(\r\022\023\n\013OMEBOHLACPH\030\004 \001(\rB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -801,7 +741,7 @@ public final class GGHDBIIKADHOuterClass {
     internal_static_GGHDBIIKADH_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GGHDBIIKADH_descriptor,
-        new java.lang.String[] { "EGHGENOJNEK", "IsOpen", "OpenTime", "OMEBOHLACPH", });
+        new java.lang.String[] { "StageId", "IsOpen", "OpenTime", "OMEBOHLACPH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

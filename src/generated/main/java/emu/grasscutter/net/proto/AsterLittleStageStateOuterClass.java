@@ -20,40 +20,40 @@ public final class AsterLittleStageStateOuterClass {
   public enum AsterLittleStageState
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>JPDKCFKGCNG_ASTER_LITTLE_STAGE_NONE = 0;</code>
+     * <code>AsterLittleStageState_ASTER_LITTLE_STAGE_NONE = 0;</code>
      */
-    JPDKCFKGCNG_ASTER_LITTLE_STAGE_NONE(0),
+    AsterLittleStageState_ASTER_LITTLE_STAGE_NONE(0),
     /**
-     * <code>JPDKCFKGCNG_ASTER_LITTLE_STAGE_UNSTARTED = 1;</code>
+     * <code>AsterLittleStageState_ASTER_LITTLE_STAGE_UNSTARTED = 1;</code>
      */
-    JPDKCFKGCNG_ASTER_LITTLE_STAGE_UNSTARTED(1),
+    AsterLittleStageState_ASTER_LITTLE_STAGE_UNSTARTED(1),
     /**
-     * <code>JPDKCFKGCNG_ASTER_LITTLE_STAGE_STARTED = 2;</code>
+     * <code>AsterLittleStageState_ASTER_LITTLE_STAGE_STARTED = 2;</code>
      */
-    JPDKCFKGCNG_ASTER_LITTLE_STAGE_STARTED(2),
+    AsterLittleStageState_ASTER_LITTLE_STAGE_STARTED(2),
     /**
-     * <code>JPDKCFKGCNG_ASTER_LITTLE_STAGE_FINISHED = 3;</code>
+     * <code>AsterLittleStageState_ASTER_LITTLE_STAGE_FINISHED = 3;</code>
      */
-    JPDKCFKGCNG_ASTER_LITTLE_STAGE_FINISHED(3),
+    AsterLittleStageState_ASTER_LITTLE_STAGE_FINISHED(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>JPDKCFKGCNG_ASTER_LITTLE_STAGE_NONE = 0;</code>
+     * <code>AsterLittleStageState_ASTER_LITTLE_STAGE_NONE = 0;</code>
      */
-    public static final int JPDKCFKGCNG_ASTER_LITTLE_STAGE_NONE_VALUE = 0;
+    public static final int AsterLittleStageState_ASTER_LITTLE_STAGE_NONE_VALUE = 0;
     /**
-     * <code>JPDKCFKGCNG_ASTER_LITTLE_STAGE_UNSTARTED = 1;</code>
+     * <code>AsterLittleStageState_ASTER_LITTLE_STAGE_UNSTARTED = 1;</code>
      */
-    public static final int JPDKCFKGCNG_ASTER_LITTLE_STAGE_UNSTARTED_VALUE = 1;
+    public static final int AsterLittleStageState_ASTER_LITTLE_STAGE_UNSTARTED_VALUE = 1;
     /**
-     * <code>JPDKCFKGCNG_ASTER_LITTLE_STAGE_STARTED = 2;</code>
+     * <code>AsterLittleStageState_ASTER_LITTLE_STAGE_STARTED = 2;</code>
      */
-    public static final int JPDKCFKGCNG_ASTER_LITTLE_STAGE_STARTED_VALUE = 2;
+    public static final int AsterLittleStageState_ASTER_LITTLE_STAGE_STARTED_VALUE = 2;
     /**
-     * <code>JPDKCFKGCNG_ASTER_LITTLE_STAGE_FINISHED = 3;</code>
+     * <code>AsterLittleStageState_ASTER_LITTLE_STAGE_FINISHED = 3;</code>
      */
-    public static final int JPDKCFKGCNG_ASTER_LITTLE_STAGE_FINISHED_VALUE = 3;
+    public static final int AsterLittleStageState_ASTER_LITTLE_STAGE_FINISHED_VALUE = 3;
 
 
     public final int getNumber() {
@@ -80,10 +80,10 @@ public final class AsterLittleStageStateOuterClass {
      */
     public static AsterLittleStageState forNumber(int value) {
       switch (value) {
-        case 0: return JPDKCFKGCNG_ASTER_LITTLE_STAGE_NONE;
-        case 1: return JPDKCFKGCNG_ASTER_LITTLE_STAGE_UNSTARTED;
-        case 2: return JPDKCFKGCNG_ASTER_LITTLE_STAGE_STARTED;
-        case 3: return JPDKCFKGCNG_ASTER_LITTLE_STAGE_FINISHED;
+        case 0: return AsterLittleStageState_ASTER_LITTLE_STAGE_NONE;
+        case 1: return AsterLittleStageState_ASTER_LITTLE_STAGE_UNSTARTED;
+        case 2: return AsterLittleStageState_ASTER_LITTLE_STAGE_STARTED;
+        case 3: return AsterLittleStageState_ASTER_LITTLE_STAGE_FINISHED;
         default: return null;
       }
     }
@@ -149,12 +149,13 @@ public final class AsterLittleStageStateOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033AsterLittleStageState.proto*\307\001\n\025AsterL" +
-      "ittleStageState\022\'\n#JPDKCFKGCNG_ASTER_LIT" +
-      "TLE_STAGE_NONE\020\000\022,\n(JPDKCFKGCNG_ASTER_LI" +
-      "TTLE_STAGE_UNSTARTED\020\001\022*\n&JPDKCFKGCNG_AS" +
-      "TER_LITTLE_STAGE_STARTED\020\002\022+\n\'JPDKCFKGCN" +
-      "G_ASTER_LITTLE_STAGE_FINISHED\020\003B\033\n\031emu.g" +
+      "\n\033AsterLittleStageState.proto*\357\001\n\025AsterL" +
+      "ittleStageState\0221\n-AsterLittleStageState" +
+      "_ASTER_LITTLE_STAGE_NONE\020\000\0226\n2AsterLittl" +
+      "eStageState_ASTER_LITTLE_STAGE_UNSTARTED" +
+      "\020\001\0224\n0AsterLittleStageState_ASTER_LITTLE" +
+      "_STAGE_STARTED\020\002\0225\n1AsterLittleStageStat" +
+      "e_ASTER_LITTLE_STAGE_FINISHED\020\003B\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

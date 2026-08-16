@@ -19,40 +19,28 @@ public final class HLDGGIOAMLEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 6;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 11;</code>
      * @return The dALMDMCJNNK.
      */
     boolean getDALMDMCJNNK();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 8;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 8;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
   }
   /**
    * Protobuf type {@code HLDGGIOAMLE}
@@ -106,7 +94,7 @@ public final class HLDGGIOAMLEOuterClass {
             }
             case 64: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 80: {
@@ -154,10 +142,6 @@ public final class HLDGGIOAMLEOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
@@ -169,10 +153,6 @@ public final class HLDGGIOAMLEOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 6;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 6;</code>
      * @return The isFinished.
      */
@@ -184,10 +164,6 @@ public final class HLDGGIOAMLEOuterClass {
     public static final int DALMDMCJNNK_FIELD_NUMBER = 11;
     private boolean dALMDMCJNNK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 11;</code>
      * @return The dALMDMCJNNK.
      */
@@ -196,15 +172,15 @@ public final class HLDGGIOAMLEOuterClass {
       return dALMDMCJNNK_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 8;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 8;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 8;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 8;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -224,8 +200,8 @@ public final class HLDGGIOAMLEOuterClass {
       if (isFinished_ != false) {
         output.writeBool(6, isFinished_);
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(8, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(8, ugcGuid_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(10, levelId_);
@@ -246,9 +222,9 @@ public final class HLDGGIOAMLEOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(6, isFinished_);
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, iFADGMHEFHF_);
+          .computeUInt32Size(8, ugcGuid_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -279,8 +255,8 @@ public final class HLDGGIOAMLEOuterClass {
           != other.getIsFinished()) return false;
       if (getDALMDMCJNNK()
           != other.getDALMDMCJNNK()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -300,8 +276,8 @@ public final class HLDGGIOAMLEOuterClass {
       hash = (37 * hash) + DALMDMCJNNK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getDALMDMCJNNK());
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -441,7 +417,7 @@ public final class HLDGGIOAMLEOuterClass {
 
         dALMDMCJNNK_ = false;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         return this;
       }
@@ -472,7 +448,7 @@ public final class HLDGGIOAMLEOuterClass {
         result.levelId_ = levelId_;
         result.isFinished_ = isFinished_;
         result.dALMDMCJNNK_ = dALMDMCJNNK_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         onBuilt();
         return result;
       }
@@ -530,8 +506,8 @@ public final class HLDGGIOAMLEOuterClass {
         if (other.getDALMDMCJNNK() != false) {
           setDALMDMCJNNK(other.getDALMDMCJNNK());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -564,10 +540,6 @@ public final class HLDGGIOAMLEOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
@@ -576,10 +548,6 @@ public final class HLDGGIOAMLEOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -591,10 +559,6 @@ public final class HLDGGIOAMLEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
@@ -607,10 +571,6 @@ public final class HLDGGIOAMLEOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 6;</code>
        * @return The isFinished.
        */
@@ -619,10 +579,6 @@ public final class HLDGGIOAMLEOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 6;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -634,10 +590,6 @@ public final class HLDGGIOAMLEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 6;</code>
        * @return This builder for chaining.
        */
@@ -650,10 +602,6 @@ public final class HLDGGIOAMLEOuterClass {
 
       private boolean dALMDMCJNNK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 11;</code>
        * @return The dALMDMCJNNK.
        */
@@ -662,10 +610,6 @@ public final class HLDGGIOAMLEOuterClass {
         return dALMDMCJNNK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 11;</code>
        * @param value The dALMDMCJNNK to set.
        * @return This builder for chaining.
@@ -677,10 +621,6 @@ public final class HLDGGIOAMLEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 11;</code>
        * @return This builder for chaining.
        */
@@ -691,33 +631,33 @@ public final class HLDGGIOAMLEOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 8;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 8;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 8;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 8;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 8;</code>
+       * <code>uint32 ugc_guid = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
@@ -788,10 +728,10 @@ public final class HLDGGIOAMLEOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021HLDGGIOAMLE.proto\"^\n\013HLDGGIOAMLE\022\020\n\010le" +
+      "\n\021HLDGGIOAMLE.proto\"[\n\013HLDGGIOAMLE\022\020\n\010le" +
       "vel_id\030\n \001(\r\022\023\n\013is_finished\030\006 \001(\010\022\023\n\013DAL" +
-      "MDMCJNNK\030\013 \001(\010\022\023\n\013IFADGMHEFHF\030\010 \001(\rB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "MDMCJNNK\030\013 \001(\010\022\020\n\010ugc_guid\030\010 \001(\rB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -802,7 +742,7 @@ public final class HLDGGIOAMLEOuterClass {
     internal_static_HLDGGIOAMLE_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HLDGGIOAMLE_descriptor,
-        new java.lang.String[] { "LevelId", "IsFinished", "DALMDMCJNNK", "IFADGMHEFHF", });
+        new java.lang.String[] { "LevelId", "IsFinished", "DALMDMCJNNK", "UgcGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

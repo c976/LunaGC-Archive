@@ -25,12 +25,16 @@ public final class MoonfinTrialLevelInfoOuterClass {
     int getBestRecord();
 
     /**
-     * <code>uint32 open_time = 13;</code>
+     * <code>uint32 open_time = 2;</code>
      * @return The openTime.
      */
     int getOpenTime();
   }
   /**
+   * <pre>
+   * Obf: EGNPAEHGJIF
+   * </pre>
+   *
    * Protobuf type {@code MoonfinTrialLevelInfo}
    */
   public static final class MoonfinTrialLevelInfo extends
@@ -75,14 +79,14 @@ public final class MoonfinTrialLevelInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              openTime_ = input.readUInt32();
+              break;
+            }
             case 56: {
 
               bestRecord_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              openTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +132,10 @@ public final class MoonfinTrialLevelInfoOuterClass {
       return bestRecord_;
     }
 
-    public static final int OPEN_TIME_FIELD_NUMBER = 13;
+    public static final int OPEN_TIME_FIELD_NUMBER = 2;
     private int openTime_;
     /**
-     * <code>uint32 open_time = 13;</code>
+     * <code>uint32 open_time = 2;</code>
      * @return The openTime.
      */
     @java.lang.Override
@@ -153,11 +157,11 @@ public final class MoonfinTrialLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (openTime_ != 0) {
+        output.writeUInt32(2, openTime_);
+      }
       if (bestRecord_ != 0) {
         output.writeUInt32(7, bestRecord_);
-      }
-      if (openTime_ != 0) {
-        output.writeUInt32(13, openTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class MoonfinTrialLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (openTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, openTime_);
+      }
       if (bestRecord_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, bestRecord_);
-      }
-      if (openTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, openTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -306,6 +310,10 @@ public final class MoonfinTrialLevelInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: EGNPAEHGJIF
+     * </pre>
+     *
      * Protobuf type {@code MoonfinTrialLevelInfo}
      */
     public static final class Builder extends
@@ -491,7 +499,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
 
       private int openTime_ ;
       /**
-       * <code>uint32 open_time = 13;</code>
+       * <code>uint32 open_time = 2;</code>
        * @return The openTime.
        */
       @java.lang.Override
@@ -499,7 +507,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
         return openTime_;
       }
       /**
-       * <code>uint32 open_time = 13;</code>
+       * <code>uint32 open_time = 2;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
        */
@@ -510,7 +518,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 open_time = 13;</code>
+       * <code>uint32 open_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenTime() {
@@ -588,7 +596,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033MoonfinTrialLevelInfo.proto\"?\n\025Moonfin" +
       "TrialLevelInfo\022\023\n\013best_record\030\007 \001(\r\022\021\n\to" +
-      "pen_time\030\r \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "pen_time\030\002 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,20 +19,12 @@ public final class FGGHEHMBLEOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 13;</code>
      * @return The oMEBOHLACPH.
      */
     int getOMEBOHLACPH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 start_time = 10;</code>
      * @return The startTime.
      */
@@ -128,10 +120,6 @@ public final class FGGHEHMBLEOOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 13;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 13;</code>
      * @return The oMEBOHLACPH.
      */
@@ -143,10 +131,6 @@ public final class FGGHEHMBLEOOuterClass {
     public static final int START_TIME_FIELD_NUMBER = 10;
     private int startTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 start_time = 10;</code>
      * @return The startTime.
      */
@@ -476,10 +460,6 @@ public final class FGGHEHMBLEOOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 13;</code>
        * @return The oMEBOHLACPH.
        */
@@ -488,10 +468,6 @@ public final class FGGHEHMBLEOOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 13;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -503,10 +479,6 @@ public final class FGGHEHMBLEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 13;</code>
        * @return This builder for chaining.
        */
@@ -519,10 +491,6 @@ public final class FGGHEHMBLEOOuterClass {
 
       private int startTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 10;</code>
        * @return The startTime.
        */
@@ -531,10 +499,6 @@ public final class FGGHEHMBLEOOuterClass {
         return startTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 10;</code>
        * @param value The startTime to set.
        * @return This builder for chaining.
@@ -546,10 +510,6 @@ public final class FGGHEHMBLEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 10;</code>
        * @return This builder for chaining.
        */

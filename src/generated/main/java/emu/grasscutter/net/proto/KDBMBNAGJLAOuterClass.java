@@ -19,84 +19,48 @@ public final class KDBMBNAGJLAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC> 
         getJDJPLJPMCJHList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
      */
     emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC getJDJPLJPMCJH(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
      */
     int getJDJPLJPMCJHCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPCOrBuilder> 
         getJDJPLJPMCJHOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
      */
     emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPCOrBuilder getJDJPLJPMCJHOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 5;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
@@ -216,10 +180,6 @@ public final class KDBMBNAGJLAOuterClass {
     public static final int JDJPLJPMCJH_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC> jDJPLJPMCJH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
      */
     @java.lang.Override
@@ -227,10 +187,6 @@ public final class KDBMBNAGJLAOuterClass {
       return jDJPLJPMCJH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
      */
     @java.lang.Override
@@ -239,10 +195,6 @@ public final class KDBMBNAGJLAOuterClass {
       return jDJPLJPMCJH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
      */
     @java.lang.Override
@@ -250,10 +202,6 @@ public final class KDBMBNAGJLAOuterClass {
       return jDJPLJPMCJH_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
      */
     @java.lang.Override
@@ -261,10 +209,6 @@ public final class KDBMBNAGJLAOuterClass {
       return jDJPLJPMCJH_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
      */
     @java.lang.Override
@@ -276,10 +220,6 @@ public final class KDBMBNAGJLAOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 9;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
@@ -291,10 +231,6 @@ public final class KDBMBNAGJLAOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 4;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
@@ -306,10 +242,6 @@ public final class KDBMBNAGJLAOuterClass {
     public static final int SCORE_FIELD_NUMBER = 5;
     private int score_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 5;</code>
      * @return The score.
      */
@@ -321,10 +253,6 @@ public final class KDBMBNAGJLAOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
@@ -758,10 +686,6 @@ public final class KDBMBNAGJLAOuterClass {
           emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC, emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC.Builder, emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPCOrBuilder> jDJPLJPMCJHBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC> getJDJPLJPMCJHList() {
@@ -772,10 +696,6 @@ public final class KDBMBNAGJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public int getJDJPLJPMCJHCount() {
@@ -786,10 +706,6 @@ public final class KDBMBNAGJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC getJDJPLJPMCJH(int index) {
@@ -800,10 +716,6 @@ public final class KDBMBNAGJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public Builder setJDJPLJPMCJH(
@@ -821,10 +733,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public Builder setJDJPLJPMCJH(
@@ -839,10 +747,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public Builder addJDJPLJPMCJH(emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC value) {
@@ -859,10 +763,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public Builder addJDJPLJPMCJH(
@@ -880,10 +780,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public Builder addJDJPLJPMCJH(
@@ -898,10 +794,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public Builder addJDJPLJPMCJH(
@@ -916,10 +808,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public Builder addAllJDJPLJPMCJH(
@@ -935,10 +823,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public Builder clearJDJPLJPMCJH() {
@@ -952,10 +836,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public Builder removeJDJPLJPMCJH(int index) {
@@ -969,10 +849,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC.Builder getJDJPLJPMCJHBuilder(
@@ -980,10 +856,6 @@ public final class KDBMBNAGJLAOuterClass {
         return getJDJPLJPMCJHFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPCOrBuilder getJDJPLJPMCJHOrBuilder(
@@ -994,10 +866,6 @@ public final class KDBMBNAGJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPCOrBuilder> 
@@ -1009,10 +877,6 @@ public final class KDBMBNAGJLAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC.Builder addJDJPLJPMCJHBuilder() {
@@ -1020,10 +884,6 @@ public final class KDBMBNAGJLAOuterClass {
             emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC.Builder addJDJPLJPMCJHBuilder(
@@ -1032,10 +892,6 @@ public final class KDBMBNAGJLAOuterClass {
             index, emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DEPJBKMIDPC JDJPLJPMCJH = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DEPJBKMIDPCOuterClass.DEPJBKMIDPC.Builder> 
@@ -1059,10 +915,6 @@ public final class KDBMBNAGJLAOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @return The isOpen.
        */
@@ -1071,10 +923,6 @@ public final class KDBMBNAGJLAOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1086,10 +934,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @return This builder for chaining.
        */
@@ -1102,10 +946,6 @@ public final class KDBMBNAGJLAOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return The isFinish.
        */
@@ -1114,10 +954,6 @@ public final class KDBMBNAGJLAOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1129,10 +965,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return This builder for chaining.
        */
@@ -1145,10 +977,6 @@ public final class KDBMBNAGJLAOuterClass {
 
       private int score_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 5;</code>
        * @return The score.
        */
@@ -1157,10 +985,6 @@ public final class KDBMBNAGJLAOuterClass {
         return score_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 5;</code>
        * @param value The score to set.
        * @return This builder for chaining.
@@ -1172,10 +996,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 5;</code>
        * @return This builder for chaining.
        */
@@ -1188,10 +1008,6 @@ public final class KDBMBNAGJLAOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
@@ -1200,10 +1016,6 @@ public final class KDBMBNAGJLAOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1215,10 +1027,6 @@ public final class KDBMBNAGJLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */

@@ -19,84 +19,48 @@ public final class OHNGCDJFGEJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> 
         getGKMBJADDNHBList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
      */
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN getGKMBJADDNHB(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
      */
     int getGKMBJADDNHBCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> 
         getGKMBJADDNHBOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
      */
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder getGKMBJADDNHBOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 11;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 14;</code>
      * @return The oMEBOHLACPH.
      */
@@ -216,10 +180,6 @@ public final class OHNGCDJFGEJOuterClass {
     public static final int GKMBJADDNHB_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> gKMBJADDNHB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
      */
     @java.lang.Override
@@ -227,10 +187,6 @@ public final class OHNGCDJFGEJOuterClass {
       return gKMBJADDNHB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
      */
     @java.lang.Override
@@ -239,10 +195,6 @@ public final class OHNGCDJFGEJOuterClass {
       return gKMBJADDNHB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
      */
     @java.lang.Override
@@ -250,10 +202,6 @@ public final class OHNGCDJFGEJOuterClass {
       return gKMBJADDNHB_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
      */
     @java.lang.Override
@@ -261,10 +209,6 @@ public final class OHNGCDJFGEJOuterClass {
       return gKMBJADDNHB_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
      */
     @java.lang.Override
@@ -276,10 +220,6 @@ public final class OHNGCDJFGEJOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 13;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
@@ -291,10 +231,6 @@ public final class OHNGCDJFGEJOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 11;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 11;</code>
      * @return The isFinish.
      */
@@ -306,10 +242,6 @@ public final class OHNGCDJFGEJOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 3;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
@@ -321,10 +253,6 @@ public final class OHNGCDJFGEJOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 14;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 14;</code>
      * @return The oMEBOHLACPH.
      */
@@ -758,10 +686,6 @@ public final class OHNGCDJFGEJOuterClass {
           emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> gKMBJADDNHBBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> getGKMBJADDNHBList() {
@@ -772,10 +696,6 @@ public final class OHNGCDJFGEJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public int getGKMBJADDNHBCount() {
@@ -786,10 +706,6 @@ public final class OHNGCDJFGEJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN getGKMBJADDNHB(int index) {
@@ -800,10 +716,6 @@ public final class OHNGCDJFGEJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public Builder setGKMBJADDNHB(
@@ -821,10 +733,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public Builder setGKMBJADDNHB(
@@ -839,10 +747,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public Builder addGKMBJADDNHB(emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN value) {
@@ -859,10 +763,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public Builder addGKMBJADDNHB(
@@ -880,10 +780,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public Builder addGKMBJADDNHB(
@@ -898,10 +794,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public Builder addGKMBJADDNHB(
@@ -916,10 +808,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public Builder addAllGKMBJADDNHB(
@@ -935,10 +823,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public Builder clearGKMBJADDNHB() {
@@ -952,10 +836,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public Builder removeGKMBJADDNHB(int index) {
@@ -969,10 +849,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder getGKMBJADDNHBBuilder(
@@ -980,10 +856,6 @@ public final class OHNGCDJFGEJOuterClass {
         return getGKMBJADDNHBFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder getGKMBJADDNHBOrBuilder(
@@ -994,10 +866,6 @@ public final class OHNGCDJFGEJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> 
@@ -1009,10 +877,6 @@ public final class OHNGCDJFGEJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder addGKMBJADDNHBBuilder() {
@@ -1020,10 +884,6 @@ public final class OHNGCDJFGEJOuterClass {
             emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder addGKMBJADDNHBBuilder(
@@ -1032,10 +892,6 @@ public final class OHNGCDJFGEJOuterClass {
             index, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN GKMBJADDNHB = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder> 
@@ -1059,10 +915,6 @@ public final class OHNGCDJFGEJOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @return The levelId.
        */
@@ -1071,10 +923,6 @@ public final class OHNGCDJFGEJOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1086,10 +934,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @return This builder for chaining.
        */
@@ -1102,10 +946,6 @@ public final class OHNGCDJFGEJOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @return The isFinish.
        */
@@ -1114,10 +954,6 @@ public final class OHNGCDJFGEJOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1129,10 +965,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @return This builder for chaining.
        */
@@ -1145,10 +977,6 @@ public final class OHNGCDJFGEJOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return The isOpen.
        */
@@ -1157,10 +985,6 @@ public final class OHNGCDJFGEJOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1172,10 +996,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return This builder for chaining.
        */
@@ -1188,10 +1008,6 @@ public final class OHNGCDJFGEJOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @return The oMEBOHLACPH.
        */
@@ -1200,10 +1016,6 @@ public final class OHNGCDJFGEJOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -1215,10 +1027,6 @@ public final class OHNGCDJFGEJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @return This builder for chaining.
        */

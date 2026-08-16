@@ -19,40 +19,24 @@ public final class HOIPCELALGCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 13;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KOKGMAGFJCM = 9;</code>
      * @return The kOKGMAGFJCM.
      */
     int getKOKGMAGFJCM();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HPDHFLPGLFO = 6;</code>
      * @return The hPDHFLPGLFO.
      */
@@ -158,10 +142,6 @@ public final class HOIPCELALGCOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 13;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 13;</code>
      * @return The isFinished.
      */
@@ -173,10 +153,6 @@ public final class HOIPCELALGCOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
@@ -188,10 +164,6 @@ public final class HOIPCELALGCOuterClass {
     public static final int KOKGMAGFJCM_FIELD_NUMBER = 9;
     private int kOKGMAGFJCM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KOKGMAGFJCM = 9;</code>
      * @return The kOKGMAGFJCM.
      */
@@ -203,10 +175,6 @@ public final class HOIPCELALGCOuterClass {
     public static final int HPDHFLPGLFO_FIELD_NUMBER = 6;
     private int hPDHFLPGLFO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HPDHFLPGLFO = 6;</code>
      * @return The hPDHFLPGLFO.
      */
@@ -572,10 +540,6 @@ public final class HOIPCELALGCOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 13;</code>
        * @return The isFinished.
        */
@@ -584,10 +548,6 @@ public final class HOIPCELALGCOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 13;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -599,10 +559,6 @@ public final class HOIPCELALGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 13;</code>
        * @return This builder for chaining.
        */
@@ -615,10 +571,6 @@ public final class HOIPCELALGCOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
@@ -627,10 +579,6 @@ public final class HOIPCELALGCOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -642,10 +590,6 @@ public final class HOIPCELALGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
@@ -658,10 +602,6 @@ public final class HOIPCELALGCOuterClass {
 
       private int kOKGMAGFJCM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KOKGMAGFJCM = 9;</code>
        * @return The kOKGMAGFJCM.
        */
@@ -670,10 +610,6 @@ public final class HOIPCELALGCOuterClass {
         return kOKGMAGFJCM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KOKGMAGFJCM = 9;</code>
        * @param value The kOKGMAGFJCM to set.
        * @return This builder for chaining.
@@ -685,10 +621,6 @@ public final class HOIPCELALGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KOKGMAGFJCM = 9;</code>
        * @return This builder for chaining.
        */
@@ -701,10 +633,6 @@ public final class HOIPCELALGCOuterClass {
 
       private int hPDHFLPGLFO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPDHFLPGLFO = 6;</code>
        * @return The hPDHFLPGLFO.
        */
@@ -713,10 +641,6 @@ public final class HOIPCELALGCOuterClass {
         return hPDHFLPGLFO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPDHFLPGLFO = 6;</code>
        * @param value The hPDHFLPGLFO to set.
        * @return This builder for chaining.
@@ -728,10 +652,6 @@ public final class HOIPCELALGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPDHFLPGLFO = 6;</code>
        * @return This builder for chaining.
        */

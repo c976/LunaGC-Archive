@@ -20,113 +20,113 @@ public final class GalleryStartNotifyOuterClass {
 
     /**
      * <pre>
-     * offset: 40
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 PINAOIKKCGB = 14;</code>
-     * @return The pINAOIKKCGB.
-     */
-    int getPINAOIKKCGB();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 44
-     * </pre>
-     *
-     * <code>uint32 owner_uid = 10;</code>
-     * @return The ownerUid.
-     */
-    int getOwnerUid();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>uint32 start_time = 4;</code>
+     * <code>uint32 start_time = 13;</code>
      * @return The startTime.
      */
     int getStartTime();
 
     /**
      * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 gallery_id = 7;</code>
-     * @return The galleryId.
+     * <code>uint32 player_count = 9;</code>
+     * @return The playerCount.
      */
-    int getGalleryId();
+    int getPlayerCount();
 
     /**
      * <pre>
-     *6.3.0 // offset: 56
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 end_time = 3;</code>
+     * <code>uint32 owner_uid = 14;</code>
+     * @return The ownerUid.
+     */
+    int getOwnerUid();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>uint32 end_time = 5;</code>
      * @return The endTime.
      */
     int getEndTime();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-     * @return Whether the flowerStartParam field is set.
+     * <code>uint32 gallery_id = 11;</code>
+     * @return The galleryId.
      */
-    boolean hasFlowerStartParam();
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-     * @return The flowerStartParam.
-     */
-    emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam getFlowerStartParam();
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-     */
-    emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder getFlowerStartParamOrBuilder();
+    int getGalleryId();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+     * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
      * @return Whether the electroherculesStartParam field is set.
      */
     boolean hasElectroherculesStartParam();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+     * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
      * @return The electroherculesStartParam.
      */
     emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam getElectroherculesStartParam();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+     * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
      */
     emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParamOrBuilder getElectroherculesStartParamOrBuilder();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+     * @return Whether the flowerStartParam field is set.
+     */
+    boolean hasFlowerStartParam();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+     * @return The flowerStartParam.
+     */
+    emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam getFlowerStartParam();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+     */
+    emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder getFlowerStartParamOrBuilder();
 
     public emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify.DetailCase getDetailCase();
   }
   /**
    * <pre>
-   * CmdId: 27884
+   * CmdId: 4631
    * </pre>
    *
    * Protobuf type {@code GalleryStartNotify}
@@ -173,43 +173,14 @@ public final class GalleryStartNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
 
               endTime_ = input.readUInt32();
               break;
             }
-            case 32: {
-
-              startTime_ = input.readUInt32();
-              break;
-            }
-            case 42: {
-              emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder subBuilder = null;
-              if (detailCase_ == 5) {
-                subBuilder = ((emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 5;
-              break;
-            }
-            case 56: {
-
-              galleryId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              ownerUid_ = input.readUInt32();
-              break;
-            }
-            case 90: {
+            case 66: {
               emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.Builder subBuilder = null;
-              if (detailCase_ == 11) {
+              if (detailCase_ == 8) {
                 subBuilder = ((emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam) detail_).toBuilder();
               }
               detail_ =
@@ -218,12 +189,41 @@ public final class GalleryStartNotifyOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 11;
+              detailCase_ = 8;
+              break;
+            }
+            case 72: {
+
+              playerCount_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              galleryId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              startTime_ = input.readUInt32();
               break;
             }
             case 112: {
 
-              pINAOIKKCGB_ = input.readUInt32();
+              ownerUid_ = input.readUInt32();
+              break;
+            }
+            case 122: {
+              emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder subBuilder = null;
+              if (detailCase_ == 15) {
+                subBuilder = ((emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_).toBuilder();
+              }
+              detail_ =
+                  input.readMessage(emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_);
+                detail_ = subBuilder.buildPartial();
+              }
+              detailCase_ = 15;
               break;
             }
             default: {
@@ -263,8 +263,8 @@ public final class GalleryStartNotifyOuterClass {
     public enum DetailCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      FLOWER_START_PARAM(5),
-      ELECTROHERCULES_START_PARAM(11),
+      ELECTROHERCULES_START_PARAM(8),
+      FLOWER_START_PARAM(15),
       DETAIL_NOT_SET(0);
       private final int value;
       private DetailCase(int value) {
@@ -282,8 +282,8 @@ public final class GalleryStartNotifyOuterClass {
 
       public static DetailCase forNumber(int value) {
         switch (value) {
-          case 5: return FLOWER_START_PARAM;
-          case 11: return ELECTROHERCULES_START_PARAM;
+          case 8: return ELECTROHERCULES_START_PARAM;
+          case 15: return FLOWER_START_PARAM;
           case 0: return DETAIL_NOT_SET;
           default: return null;
         }
@@ -299,44 +299,14 @@ public final class GalleryStartNotifyOuterClass {
           detailCase_);
     }
 
-    public static final int PINAOIKKCGB_FIELD_NUMBER = 14;
-    private int pINAOIKKCGB_;
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 PINAOIKKCGB = 14;</code>
-     * @return The pINAOIKKCGB.
-     */
-    @java.lang.Override
-    public int getPINAOIKKCGB() {
-      return pINAOIKKCGB_;
-    }
-
-    public static final int OWNER_UID_FIELD_NUMBER = 10;
-    private int ownerUid_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 44
-     * </pre>
-     *
-     * <code>uint32 owner_uid = 10;</code>
-     * @return The ownerUid.
-     */
-    @java.lang.Override
-    public int getOwnerUid() {
-      return ownerUid_;
-    }
-
-    public static final int START_TIME_FIELD_NUMBER = 4;
+    public static final int START_TIME_FIELD_NUMBER = 13;
     private int startTime_;
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 start_time = 4;</code>
+     * <code>uint32 start_time = 13;</code>
      * @return The startTime.
      */
     @java.lang.Override
@@ -344,29 +314,44 @@ public final class GalleryStartNotifyOuterClass {
       return startTime_;
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 7;
-    private int galleryId_;
+    public static final int PLAYER_COUNT_FIELD_NUMBER = 9;
+    private int playerCount_;
     /**
      * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 gallery_id = 7;</code>
-     * @return The galleryId.
+     * <code>uint32 player_count = 9;</code>
+     * @return The playerCount.
      */
     @java.lang.Override
-    public int getGalleryId() {
-      return galleryId_;
+    public int getPlayerCount() {
+      return playerCount_;
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 3;
+    public static final int OWNER_UID_FIELD_NUMBER = 14;
+    private int ownerUid_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>uint32 owner_uid = 14;</code>
+     * @return The ownerUid.
+     */
+    @java.lang.Override
+    public int getOwnerUid() {
+      return ownerUid_;
+    }
+
+    public static final int END_TIME_FIELD_NUMBER = 5;
     private int endTime_;
     /**
      * <pre>
-     *6.3.0 // offset: 56
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 end_time = 3;</code>
+     * <code>uint32 end_time = 5;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -374,90 +359,105 @@ public final class GalleryStartNotifyOuterClass {
       return endTime_;
     }
 
-    public static final int FLOWER_START_PARAM_FIELD_NUMBER = 5;
+    public static final int GALLERY_ID_FIELD_NUMBER = 11;
+    private int galleryId_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-     * @return Whether the flowerStartParam field is set.
+     * <code>uint32 gallery_id = 11;</code>
+     * @return The galleryId.
      */
     @java.lang.Override
-    public boolean hasFlowerStartParam() {
-      return detailCase_ == 5;
-    }
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-     * @return The flowerStartParam.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam getFlowerStartParam() {
-      if (detailCase_ == 5) {
-         return (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_;
-      }
-      return emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
-    }
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder getFlowerStartParamOrBuilder() {
-      if (detailCase_ == 5) {
-         return (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_;
-      }
-      return emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
+    public int getGalleryId() {
+      return galleryId_;
     }
 
-    public static final int ELECTROHERCULES_START_PARAM_FIELD_NUMBER = 11;
+    public static final int ELECTROHERCULES_START_PARAM_FIELD_NUMBER = 8;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+     * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
      * @return Whether the electroherculesStartParam field is set.
      */
     @java.lang.Override
     public boolean hasElectroherculesStartParam() {
-      return detailCase_ == 11;
+      return detailCase_ == 8;
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+     * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
      * @return The electroherculesStartParam.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam getElectroherculesStartParam() {
-      if (detailCase_ == 11) {
+      if (detailCase_ == 8) {
          return (emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam) detail_;
       }
       return emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.getDefaultInstance();
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+     * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParamOrBuilder getElectroherculesStartParamOrBuilder() {
-      if (detailCase_ == 11) {
+      if (detailCase_ == 8) {
          return (emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam) detail_;
       }
       return emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.getDefaultInstance();
+    }
+
+    public static final int FLOWER_START_PARAM_FIELD_NUMBER = 15;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+     * @return Whether the flowerStartParam field is set.
+     */
+    @java.lang.Override
+    public boolean hasFlowerStartParam() {
+      return detailCase_ == 15;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+     * @return The flowerStartParam.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam getFlowerStartParam() {
+      if (detailCase_ == 15) {
+         return (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_;
+      }
+      return emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0     
+     * </pre>
+     *
+     * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder getFlowerStartParamOrBuilder() {
+      if (detailCase_ == 15) {
+         return (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_;
+      }
+      return emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -475,25 +475,25 @@ public final class GalleryStartNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (endTime_ != 0) {
-        output.writeUInt32(3, endTime_);
+        output.writeUInt32(5, endTime_);
       }
-      if (startTime_ != 0) {
-        output.writeUInt32(4, startTime_);
+      if (detailCase_ == 8) {
+        output.writeMessage(8, (emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam) detail_);
       }
-      if (detailCase_ == 5) {
-        output.writeMessage(5, (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_);
+      if (playerCount_ != 0) {
+        output.writeUInt32(9, playerCount_);
       }
       if (galleryId_ != 0) {
-        output.writeUInt32(7, galleryId_);
+        output.writeUInt32(11, galleryId_);
+      }
+      if (startTime_ != 0) {
+        output.writeUInt32(13, startTime_);
       }
       if (ownerUid_ != 0) {
-        output.writeUInt32(10, ownerUid_);
+        output.writeUInt32(14, ownerUid_);
       }
-      if (detailCase_ == 11) {
-        output.writeMessage(11, (emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam) detail_);
-      }
-      if (pINAOIKKCGB_ != 0) {
-        output.writeUInt32(14, pINAOIKKCGB_);
+      if (detailCase_ == 15) {
+        output.writeMessage(15, (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_);
       }
       unknownFields.writeTo(output);
     }
@@ -506,31 +506,31 @@ public final class GalleryStartNotifyOuterClass {
       size = 0;
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, endTime_);
+          .computeUInt32Size(5, endTime_);
       }
-      if (startTime_ != 0) {
+      if (detailCase_ == 8) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, startTime_);
+          .computeMessageSize(8, (emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam) detail_);
       }
-      if (detailCase_ == 5) {
+      if (playerCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_);
+          .computeUInt32Size(9, playerCount_);
       }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, galleryId_);
+          .computeUInt32Size(11, galleryId_);
+      }
+      if (startTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, startTime_);
       }
       if (ownerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, ownerUid_);
+          .computeUInt32Size(14, ownerUid_);
       }
-      if (detailCase_ == 11) {
+      if (detailCase_ == 15) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, (emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam) detail_);
-      }
-      if (pINAOIKKCGB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, pINAOIKKCGB_);
+          .computeMessageSize(15, (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -547,25 +547,25 @@ public final class GalleryStartNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify other = (emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify) obj;
 
-      if (getPINAOIKKCGB()
-          != other.getPINAOIKKCGB()) return false;
-      if (getOwnerUid()
-          != other.getOwnerUid()) return false;
       if (getStartTime()
           != other.getStartTime()) return false;
-      if (getGalleryId()
-          != other.getGalleryId()) return false;
+      if (getPlayerCount()
+          != other.getPlayerCount()) return false;
+      if (getOwnerUid()
+          != other.getOwnerUid()) return false;
       if (getEndTime()
           != other.getEndTime()) return false;
+      if (getGalleryId()
+          != other.getGalleryId()) return false;
       if (!getDetailCase().equals(other.getDetailCase())) return false;
       switch (detailCase_) {
-        case 5:
-          if (!getFlowerStartParam()
-              .equals(other.getFlowerStartParam())) return false;
-          break;
-        case 11:
+        case 8:
           if (!getElectroherculesStartParam()
               .equals(other.getElectroherculesStartParam())) return false;
+          break;
+        case 15:
+          if (!getFlowerStartParam()
+              .equals(other.getFlowerStartParam())) return false;
           break;
         case 0:
         default:
@@ -581,24 +581,24 @@ public final class GalleryStartNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PINAOIKKCGB_FIELD_NUMBER;
-      hash = (53 * hash) + getPINAOIKKCGB();
-      hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getOwnerUid();
       hash = (37 * hash) + START_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getStartTime();
-      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryId();
+      hash = (37 * hash) + PLAYER_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayerCount();
+      hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getOwnerUid();
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
       switch (detailCase_) {
-        case 5:
-          hash = (37 * hash) + FLOWER_START_PARAM_FIELD_NUMBER;
-          hash = (53 * hash) + getFlowerStartParam().hashCode();
-          break;
-        case 11:
+        case 8:
           hash = (37 * hash) + ELECTROHERCULES_START_PARAM_FIELD_NUMBER;
           hash = (53 * hash) + getElectroherculesStartParam().hashCode();
+          break;
+        case 15:
+          hash = (37 * hash) + FLOWER_START_PARAM_FIELD_NUMBER;
+          hash = (53 * hash) + getFlowerStartParam().hashCode();
           break;
         case 0:
         default:
@@ -700,7 +700,7 @@ public final class GalleryStartNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27884
+     * CmdId: 4631
      * </pre>
      *
      * Protobuf type {@code GalleryStartNotify}
@@ -740,15 +740,15 @@ public final class GalleryStartNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pINAOIKKCGB_ = 0;
+        startTime_ = 0;
+
+        playerCount_ = 0;
 
         ownerUid_ = 0;
 
-        startTime_ = 0;
+        endTime_ = 0;
 
         galleryId_ = 0;
-
-        endTime_ = 0;
 
         detailCase_ = 0;
         detail_ = null;
@@ -778,23 +778,23 @@ public final class GalleryStartNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify buildPartial() {
         emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify result = new emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify(this);
-        result.pINAOIKKCGB_ = pINAOIKKCGB_;
-        result.ownerUid_ = ownerUid_;
         result.startTime_ = startTime_;
-        result.galleryId_ = galleryId_;
+        result.playerCount_ = playerCount_;
+        result.ownerUid_ = ownerUid_;
         result.endTime_ = endTime_;
-        if (detailCase_ == 5) {
-          if (flowerStartParamBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = flowerStartParamBuilder_.build();
-          }
-        }
-        if (detailCase_ == 11) {
+        result.galleryId_ = galleryId_;
+        if (detailCase_ == 8) {
           if (electroherculesStartParamBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = electroherculesStartParamBuilder_.build();
+          }
+        }
+        if (detailCase_ == 15) {
+          if (flowerStartParamBuilder_ == null) {
+            result.detail_ = detail_;
+          } else {
+            result.detail_ = flowerStartParamBuilder_.build();
           }
         }
         result.detailCase_ = detailCase_;
@@ -846,28 +846,28 @@ public final class GalleryStartNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify other) {
         if (other == emu.grasscutter.net.proto.GalleryStartNotifyOuterClass.GalleryStartNotify.getDefaultInstance()) return this;
-        if (other.getPINAOIKKCGB() != 0) {
-          setPINAOIKKCGB(other.getPINAOIKKCGB());
+        if (other.getStartTime() != 0) {
+          setStartTime(other.getStartTime());
+        }
+        if (other.getPlayerCount() != 0) {
+          setPlayerCount(other.getPlayerCount());
         }
         if (other.getOwnerUid() != 0) {
           setOwnerUid(other.getOwnerUid());
         }
-        if (other.getStartTime() != 0) {
-          setStartTime(other.getStartTime());
+        if (other.getEndTime() != 0) {
+          setEndTime(other.getEndTime());
         }
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
         }
-        if (other.getEndTime() != 0) {
-          setEndTime(other.getEndTime());
-        }
         switch (other.getDetailCase()) {
-          case FLOWER_START_PARAM: {
-            mergeFlowerStartParam(other.getFlowerStartParam());
-            break;
-          }
           case ELECTROHERCULES_START_PARAM: {
             mergeElectroherculesStartParam(other.getElectroherculesStartParam());
+            break;
+          }
+          case FLOWER_START_PARAM: {
+            mergeFlowerStartParam(other.getFlowerStartParam());
             break;
           }
           case DETAIL_NOT_SET: {
@@ -918,99 +918,13 @@ public final class GalleryStartNotifyOuterClass {
       }
 
 
-      private int pINAOIKKCGB_ ;
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 PINAOIKKCGB = 14;</code>
-       * @return The pINAOIKKCGB.
-       */
-      @java.lang.Override
-      public int getPINAOIKKCGB() {
-        return pINAOIKKCGB_;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 PINAOIKKCGB = 14;</code>
-       * @param value The pINAOIKKCGB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPINAOIKKCGB(int value) {
-        
-        pINAOIKKCGB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 PINAOIKKCGB = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPINAOIKKCGB() {
-        
-        pINAOIKKCGB_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int ownerUid_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 44
-       * </pre>
-       *
-       * <code>uint32 owner_uid = 10;</code>
-       * @return The ownerUid.
-       */
-      @java.lang.Override
-      public int getOwnerUid() {
-        return ownerUid_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 44
-       * </pre>
-       *
-       * <code>uint32 owner_uid = 10;</code>
-       * @param value The ownerUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOwnerUid(int value) {
-        
-        ownerUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 44
-       * </pre>
-       *
-       * <code>uint32 owner_uid = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOwnerUid() {
-        
-        ownerUid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int startTime_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 start_time = 4;</code>
+       * <code>uint32 start_time = 13;</code>
        * @return The startTime.
        */
       @java.lang.Override
@@ -1019,10 +933,10 @@ public final class GalleryStartNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 start_time = 4;</code>
+       * <code>uint32 start_time = 13;</code>
        * @param value The startTime to set.
        * @return This builder for chaining.
        */
@@ -1034,10 +948,10 @@ public final class GalleryStartNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 start_time = 4;</code>
+       * <code>uint32 start_time = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearStartTime() {
@@ -1047,45 +961,88 @@ public final class GalleryStartNotifyOuterClass {
         return this;
       }
 
-      private int galleryId_ ;
+      private int playerCount_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 gallery_id = 7;</code>
-       * @return The galleryId.
+       * <code>uint32 player_count = 9;</code>
+       * @return The playerCount.
        */
       @java.lang.Override
-      public int getGalleryId() {
-        return galleryId_;
+      public int getPlayerCount() {
+        return playerCount_;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 gallery_id = 7;</code>
-       * @param value The galleryId to set.
+       * <code>uint32 player_count = 9;</code>
+       * @param value The playerCount to set.
        * @return This builder for chaining.
        */
-      public Builder setGalleryId(int value) {
+      public Builder setPlayerCount(int value) {
         
-        galleryId_ = value;
+        playerCount_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 gallery_id = 7;</code>
+       * <code>uint32 player_count = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGalleryId() {
+      public Builder clearPlayerCount() {
         
-        galleryId_ = 0;
+        playerCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int ownerUid_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>uint32 owner_uid = 14;</code>
+       * @return The ownerUid.
+       */
+      @java.lang.Override
+      public int getOwnerUid() {
+        return ownerUid_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>uint32 owner_uid = 14;</code>
+       * @param value The ownerUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOwnerUid(int value) {
+        
+        ownerUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>uint32 owner_uid = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOwnerUid() {
+        
+        ownerUid_ = 0;
         onChanged();
         return this;
       }
@@ -1093,10 +1050,10 @@ public final class GalleryStartNotifyOuterClass {
       private int endTime_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 56
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 end_time = 3;</code>
+       * <code>uint32 end_time = 5;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -1105,10 +1062,10 @@ public final class GalleryStartNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 56
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 end_time = 3;</code>
+       * <code>uint32 end_time = 5;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -1120,10 +1077,10 @@ public final class GalleryStartNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 56
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 end_time = 3;</code>
+       * <code>uint32 end_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -1133,214 +1090,80 @@ public final class GalleryStartNotifyOuterClass {
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder> flowerStartParamBuilder_;
+      private int galleryId_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-       * @return Whether the flowerStartParam field is set.
+       * <code>uint32 gallery_id = 11;</code>
+       * @return The galleryId.
        */
       @java.lang.Override
-      public boolean hasFlowerStartParam() {
-        return detailCase_ == 5;
+      public int getGalleryId() {
+        return galleryId_;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-       * @return The flowerStartParam.
+       * <code>uint32 gallery_id = 11;</code>
+       * @param value The galleryId to set.
+       * @return This builder for chaining.
        */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam getFlowerStartParam() {
-        if (flowerStartParamBuilder_ == null) {
-          if (detailCase_ == 5) {
-            return (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_;
-          }
-          return emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
-        } else {
-          if (detailCase_ == 5) {
-            return flowerStartParamBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-       */
-      public Builder setFlowerStartParam(emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam value) {
-        if (flowerStartParamBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          flowerStartParamBuilder_.setMessage(value);
-        }
-        detailCase_ = 5;
+      public Builder setGalleryId(int value) {
+        
+        galleryId_ = value;
+        onChanged();
         return this;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
+       * <code>uint32 gallery_id = 11;</code>
+       * @return This builder for chaining.
        */
-      public Builder setFlowerStartParam(
-          emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder builderForValue) {
-        if (flowerStartParamBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          flowerStartParamBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 5;
+      public Builder clearGalleryId() {
+        
+        galleryId_ = 0;
+        onChanged();
         return this;
-      }
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-       */
-      public Builder mergeFlowerStartParam(emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam value) {
-        if (flowerStartParamBuilder_ == null) {
-          if (detailCase_ == 5 &&
-              detail_ != emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.newBuilder((emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 5) {
-            flowerStartParamBuilder_.mergeFrom(value);
-          }
-          flowerStartParamBuilder_.setMessage(value);
-        }
-        detailCase_ = 5;
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-       */
-      public Builder clearFlowerStartParam() {
-        if (flowerStartParamBuilder_ == null) {
-          if (detailCase_ == 5) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 5) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          flowerStartParamBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-       */
-      public emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder getFlowerStartParamBuilder() {
-        return getFlowerStartParamFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder getFlowerStartParamOrBuilder() {
-        if ((detailCase_ == 5) && (flowerStartParamBuilder_ != null)) {
-          return flowerStartParamBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 5) {
-            return (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_;
-          }
-          return emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.GalleryFlowerStartParam flower_start_param = 5;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder> 
-          getFlowerStartParamFieldBuilder() {
-        if (flowerStartParamBuilder_ == null) {
-          if (!(detailCase_ == 5)) {
-            detail_ = emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
-          }
-          flowerStartParamBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder>(
-                  (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 5;
-        onChanged();;
-        return flowerStartParamBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam, emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.Builder, emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParamOrBuilder> electroherculesStartParamBuilder_;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+       * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
        * @return Whether the electroherculesStartParam field is set.
        */
       @java.lang.Override
       public boolean hasElectroherculesStartParam() {
-        return detailCase_ == 11;
+        return detailCase_ == 8;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+       * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
        * @return The electroherculesStartParam.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam getElectroherculesStartParam() {
         if (electroherculesStartParamBuilder_ == null) {
-          if (detailCase_ == 11) {
+          if (detailCase_ == 8) {
             return (emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam) detail_;
           }
           return emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.getDefaultInstance();
         } else {
-          if (detailCase_ == 11) {
+          if (detailCase_ == 8) {
             return electroherculesStartParamBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.getDefaultInstance();
@@ -1348,10 +1171,10 @@ public final class GalleryStartNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+       * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
        */
       public Builder setElectroherculesStartParam(emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam value) {
         if (electroherculesStartParamBuilder_ == null) {
@@ -1363,15 +1186,15 @@ public final class GalleryStartNotifyOuterClass {
         } else {
           electroherculesStartParamBuilder_.setMessage(value);
         }
-        detailCase_ = 11;
+        detailCase_ = 8;
         return this;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+       * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
        */
       public Builder setElectroherculesStartParam(
           emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.Builder builderForValue) {
@@ -1381,19 +1204,19 @@ public final class GalleryStartNotifyOuterClass {
         } else {
           electroherculesStartParamBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 11;
+        detailCase_ = 8;
         return this;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+       * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
        */
       public Builder mergeElectroherculesStartParam(emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam value) {
         if (electroherculesStartParamBuilder_ == null) {
-          if (detailCase_ == 11 &&
+          if (detailCase_ == 8 &&
               detail_ != emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.newBuilder((emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam) detail_)
                 .mergeFrom(value).buildPartial();
@@ -1402,30 +1225,30 @@ public final class GalleryStartNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 11) {
+          if (detailCase_ == 8) {
             electroherculesStartParamBuilder_.mergeFrom(value);
           }
           electroherculesStartParamBuilder_.setMessage(value);
         }
-        detailCase_ = 11;
+        detailCase_ = 8;
         return this;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+       * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
        */
       public Builder clearElectroherculesStartParam() {
         if (electroherculesStartParamBuilder_ == null) {
-          if (detailCase_ == 11) {
+          if (detailCase_ == 8) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 11) {
+          if (detailCase_ == 8) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -1435,27 +1258,27 @@ public final class GalleryStartNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+       * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
        */
       public emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.Builder getElectroherculesStartParamBuilder() {
         return getElectroherculesStartParamFieldBuilder().getBuilder();
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+       * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParamOrBuilder getElectroherculesStartParamOrBuilder() {
-        if ((detailCase_ == 11) && (electroherculesStartParamBuilder_ != null)) {
+        if ((detailCase_ == 8) && (electroherculesStartParamBuilder_ != null)) {
           return electroherculesStartParamBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 11) {
+          if (detailCase_ == 8) {
             return (emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam) detail_;
           }
           return emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.getDefaultInstance();
@@ -1463,16 +1286,16 @@ public final class GalleryStartNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>.ElectroherculesStartParam electrohercules_start_param = 11;</code>
+       * <code>.ElectroherculesStartParam electrohercules_start_param = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam, emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.Builder, emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParamOrBuilder> 
           getElectroherculesStartParamFieldBuilder() {
         if (electroherculesStartParamBuilder_ == null) {
-          if (!(detailCase_ == 11)) {
+          if (!(detailCase_ == 8)) {
             detail_ = emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.ElectroherculesStartParam.getDefaultInstance();
           }
           electroherculesStartParamBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1482,9 +1305,186 @@ public final class GalleryStartNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 11;
+        detailCase_ = 8;
         onChanged();;
         return electroherculesStartParamBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder> flowerStartParamBuilder_;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+       * @return Whether the flowerStartParam field is set.
+       */
+      @java.lang.Override
+      public boolean hasFlowerStartParam() {
+        return detailCase_ == 15;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+       * @return The flowerStartParam.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam getFlowerStartParam() {
+        if (flowerStartParamBuilder_ == null) {
+          if (detailCase_ == 15) {
+            return (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_;
+          }
+          return emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
+        } else {
+          if (detailCase_ == 15) {
+            return flowerStartParamBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+       */
+      public Builder setFlowerStartParam(emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam value) {
+        if (flowerStartParamBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          detail_ = value;
+          onChanged();
+        } else {
+          flowerStartParamBuilder_.setMessage(value);
+        }
+        detailCase_ = 15;
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+       */
+      public Builder setFlowerStartParam(
+          emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder builderForValue) {
+        if (flowerStartParamBuilder_ == null) {
+          detail_ = builderForValue.build();
+          onChanged();
+        } else {
+          flowerStartParamBuilder_.setMessage(builderForValue.build());
+        }
+        detailCase_ = 15;
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+       */
+      public Builder mergeFlowerStartParam(emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam value) {
+        if (flowerStartParamBuilder_ == null) {
+          if (detailCase_ == 15 &&
+              detail_ != emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.newBuilder((emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            detail_ = value;
+          }
+          onChanged();
+        } else {
+          if (detailCase_ == 15) {
+            flowerStartParamBuilder_.mergeFrom(value);
+          }
+          flowerStartParamBuilder_.setMessage(value);
+        }
+        detailCase_ = 15;
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+       */
+      public Builder clearFlowerStartParam() {
+        if (flowerStartParamBuilder_ == null) {
+          if (detailCase_ == 15) {
+            detailCase_ = 0;
+            detail_ = null;
+            onChanged();
+          }
+        } else {
+          if (detailCase_ == 15) {
+            detailCase_ = 0;
+            detail_ = null;
+          }
+          flowerStartParamBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+       */
+      public emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder getFlowerStartParamBuilder() {
+        return getFlowerStartParamFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder getFlowerStartParamOrBuilder() {
+        if ((detailCase_ == 15) && (flowerStartParamBuilder_ != null)) {
+          return flowerStartParamBuilder_.getMessageOrBuilder();
+        } else {
+          if (detailCase_ == 15) {
+            return (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_;
+          }
+          return emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0     
+       * </pre>
+       *
+       * <code>.GalleryFlowerStartParam flower_start_param = 15;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder> 
+          getFlowerStartParamFieldBuilder() {
+        if (flowerStartParamBuilder_ == null) {
+          if (!(detailCase_ == 15)) {
+            detail_ = emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.getDefaultInstance();
+          }
+          flowerStartParamBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam.Builder, emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParamOrBuilder>(
+                  (emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.GalleryFlowerStartParam) detail_,
+                  getParentForChildren(),
+                  isClean());
+          detail_ = null;
+        }
+        detailCase_ = 15;
+        onChanged();;
+        return flowerStartParamBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1555,14 +1555,14 @@ public final class GalleryStartNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030GalleryStartNotify.proto\032\037Electrohercu" +
       "lesStartParam.proto\032\035GalleryFlowerStartP" +
-      "aram.proto\"\373\001\n\022GalleryStartNotify\022\023\n\013PIN" +
-      "AOIKKCGB\030\016 \001(\r\022\021\n\towner_uid\030\n \001(\r\022\022\n\nsta" +
-      "rt_time\030\004 \001(\r\022\022\n\ngallery_id\030\007 \001(\r\022\020\n\010end" +
-      "_time\030\003 \001(\r\0226\n\022flower_start_param\030\005 \001(\0132" +
-      "\030.GalleryFlowerStartParamH\000\022A\n\033electrohe" +
-      "rcules_start_param\030\013 \001(\0132\032.Electrohercul" +
-      "esStartParamH\000B\010\n\006detailB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "aram.proto\"\374\001\n\022GalleryStartNotify\022\022\n\nsta" +
+      "rt_time\030\r \001(\r\022\024\n\014player_count\030\t \001(\r\022\021\n\to" +
+      "wner_uid\030\016 \001(\r\022\020\n\010end_time\030\005 \001(\r\022\022\n\ngall" +
+      "ery_id\030\013 \001(\r\022A\n\033electrohercules_start_pa" +
+      "ram\030\010 \001(\0132\032.ElectroherculesStartParamH\000\022" +
+      "6\n\022flower_start_param\030\017 \001(\0132\030.GalleryFlo" +
+      "werStartParamH\000B\010\n\006detailB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1575,7 +1575,7 @@ public final class GalleryStartNotifyOuterClass {
     internal_static_GalleryStartNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GalleryStartNotify_descriptor,
-        new java.lang.String[] { "PINAOIKKCGB", "OwnerUid", "StartTime", "GalleryId", "EndTime", "FlowerStartParam", "ElectroherculesStartParam", "Detail", });
+        new java.lang.String[] { "StartTime", "PlayerCount", "OwnerUid", "EndTime", "GalleryId", "ElectroherculesStartParam", "FlowerStartParam", "Detail", });
     emu.grasscutter.net.proto.ElectroherculesStartParamOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GalleryFlowerStartParamOuterClass.getDescriptor();
   }

@@ -19,28 +19,16 @@ public final class BMFPCDAGFDFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
      * @return A list containing the dMLFLBGGPOG.
      */
     java.util.List<java.lang.Integer> getDMLFLBGGPOGList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
      * @return The count of dMLFLBGGPOG.
      */
     int getDMLFLBGGPOGCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
      * @param index The index of the element to return.
      * @return The dMLFLBGGPOG at the given index.
@@ -48,50 +36,30 @@ public final class BMFPCDAGFDFOuterClass {
     int getDMLFLBGGPOG(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OOCHMBFLABG = 11;</code>
      * @return The oOCHMBFLABG.
      */
     boolean getOOCHMBFLABG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MFGDBBKLDGB = 6;</code>
      * @return The mFGDBBKLDGB.
      */
     int getMFGDBBKLDGB();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 8;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 3;</code>
      * @return The score.
      */
@@ -228,10 +196,6 @@ public final class BMFPCDAGFDFOuterClass {
     public static final int DMLFLBGGPOG_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList dMLFLBGGPOG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
      * @return A list containing the dMLFLBGGPOG.
      */
@@ -241,10 +205,6 @@ public final class BMFPCDAGFDFOuterClass {
       return dMLFLBGGPOG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
      * @return The count of dMLFLBGGPOG.
      */
@@ -252,10 +212,6 @@ public final class BMFPCDAGFDFOuterClass {
       return dMLFLBGGPOG_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
      * @param index The index of the element to return.
      * @return The dMLFLBGGPOG at the given index.
@@ -268,10 +224,6 @@ public final class BMFPCDAGFDFOuterClass {
     public static final int OOCHMBFLABG_FIELD_NUMBER = 11;
     private boolean oOCHMBFLABG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OOCHMBFLABG = 11;</code>
      * @return The oOCHMBFLABG.
      */
@@ -283,10 +235,6 @@ public final class BMFPCDAGFDFOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 12;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
@@ -298,10 +246,6 @@ public final class BMFPCDAGFDFOuterClass {
     public static final int MFGDBBKLDGB_FIELD_NUMBER = 6;
     private int mFGDBBKLDGB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MFGDBBKLDGB = 6;</code>
      * @return The mFGDBBKLDGB.
      */
@@ -313,10 +257,6 @@ public final class BMFPCDAGFDFOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 8;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 8;</code>
      * @return The openTime.
      */
@@ -328,10 +268,6 @@ public final class BMFPCDAGFDFOuterClass {
     public static final int SCORE_FIELD_NUMBER = 3;
     private int score_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 3;</code>
      * @return The score.
      */
@@ -767,10 +703,6 @@ public final class BMFPCDAGFDFOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
        * @return A list containing the dMLFLBGGPOG.
        */
@@ -780,10 +712,6 @@ public final class BMFPCDAGFDFOuterClass {
                  java.util.Collections.unmodifiableList(dMLFLBGGPOG_) : dMLFLBGGPOG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
        * @return The count of dMLFLBGGPOG.
        */
@@ -791,10 +719,6 @@ public final class BMFPCDAGFDFOuterClass {
         return dMLFLBGGPOG_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
        * @param index The index of the element to return.
        * @return The dMLFLBGGPOG at the given index.
@@ -803,10 +727,6 @@ public final class BMFPCDAGFDFOuterClass {
         return dMLFLBGGPOG_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
        * @param index The index to set the value at.
        * @param value The dMLFLBGGPOG to set.
@@ -820,10 +740,6 @@ public final class BMFPCDAGFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
        * @param value The dMLFLBGGPOG to add.
        * @return This builder for chaining.
@@ -835,10 +751,6 @@ public final class BMFPCDAGFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
        * @param values The dMLFLBGGPOG to add.
        * @return This builder for chaining.
@@ -852,10 +764,6 @@ public final class BMFPCDAGFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 DMLFLBGGPOG = 9;</code>
        * @return This builder for chaining.
        */
@@ -868,10 +776,6 @@ public final class BMFPCDAGFDFOuterClass {
 
       private boolean oOCHMBFLABG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OOCHMBFLABG = 11;</code>
        * @return The oOCHMBFLABG.
        */
@@ -880,10 +784,6 @@ public final class BMFPCDAGFDFOuterClass {
         return oOCHMBFLABG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OOCHMBFLABG = 11;</code>
        * @param value The oOCHMBFLABG to set.
        * @return This builder for chaining.
@@ -895,10 +795,6 @@ public final class BMFPCDAGFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OOCHMBFLABG = 11;</code>
        * @return This builder for chaining.
        */
@@ -911,10 +807,6 @@ public final class BMFPCDAGFDFOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @return The isOpen.
        */
@@ -923,10 +815,6 @@ public final class BMFPCDAGFDFOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -938,10 +826,6 @@ public final class BMFPCDAGFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @return This builder for chaining.
        */
@@ -954,10 +838,6 @@ public final class BMFPCDAGFDFOuterClass {
 
       private int mFGDBBKLDGB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MFGDBBKLDGB = 6;</code>
        * @return The mFGDBBKLDGB.
        */
@@ -966,10 +846,6 @@ public final class BMFPCDAGFDFOuterClass {
         return mFGDBBKLDGB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MFGDBBKLDGB = 6;</code>
        * @param value The mFGDBBKLDGB to set.
        * @return This builder for chaining.
@@ -981,10 +857,6 @@ public final class BMFPCDAGFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MFGDBBKLDGB = 6;</code>
        * @return This builder for chaining.
        */
@@ -997,10 +869,6 @@ public final class BMFPCDAGFDFOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 8;</code>
        * @return The openTime.
        */
@@ -1009,10 +877,6 @@ public final class BMFPCDAGFDFOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 8;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -1024,10 +888,6 @@ public final class BMFPCDAGFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 8;</code>
        * @return This builder for chaining.
        */
@@ -1040,10 +900,6 @@ public final class BMFPCDAGFDFOuterClass {
 
       private int score_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 3;</code>
        * @return The score.
        */
@@ -1052,10 +908,6 @@ public final class BMFPCDAGFDFOuterClass {
         return score_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 3;</code>
        * @param value The score to set.
        * @return This builder for chaining.
@@ -1067,10 +919,6 @@ public final class BMFPCDAGFDFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 3;</code>
        * @return This builder for chaining.
        */

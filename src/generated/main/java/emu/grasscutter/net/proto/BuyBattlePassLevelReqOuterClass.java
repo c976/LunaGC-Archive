@@ -26,7 +26,8 @@ public final class BuyBattlePassLevelReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8073
+   * CmdId: 20824
+   * Obf: FJCCKDGCFBC
    * </pre>
    *
    * Protobuf type {@code BuyBattlePassLevelReq}
@@ -278,7 +279,8 @@ public final class BuyBattlePassLevelReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8073
+     * CmdId: 20824
+     * Obf: FJCCKDGCFBC
      * </pre>
      *
      * Protobuf type {@code BuyBattlePassLevelReq}

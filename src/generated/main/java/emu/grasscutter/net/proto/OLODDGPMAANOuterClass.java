@@ -19,64 +19,36 @@ public final class OLODDGPMAANOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN> 
         getDGKLLKJDKMPList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
      */
     emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN getDGKLLKJDKMP(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
      */
     int getDGKLLKJDKMPCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABINOrBuilder> 
         getDGKLLKJDKMPOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
      */
     emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABINOrBuilder getDGKLLKJDKMPOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 POLJBHACKGB = 8;</code>
      * @return The pOLJBHACKGB.
      */
@@ -186,10 +158,6 @@ public final class OLODDGPMAANOuterClass {
     public static final int DGKLLKJDKMP_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN> dGKLLKJDKMP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
      */
     @java.lang.Override
@@ -197,10 +165,6 @@ public final class OLODDGPMAANOuterClass {
       return dGKLLKJDKMP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
      */
     @java.lang.Override
@@ -209,10 +173,6 @@ public final class OLODDGPMAANOuterClass {
       return dGKLLKJDKMP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
      */
     @java.lang.Override
@@ -220,10 +180,6 @@ public final class OLODDGPMAANOuterClass {
       return dGKLLKJDKMP_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
      */
     @java.lang.Override
@@ -231,10 +187,6 @@ public final class OLODDGPMAANOuterClass {
       return dGKLLKJDKMP_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
      */
     @java.lang.Override
@@ -246,10 +198,6 @@ public final class OLODDGPMAANOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 4;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
@@ -261,10 +209,6 @@ public final class OLODDGPMAANOuterClass {
     public static final int POLJBHACKGB_FIELD_NUMBER = 8;
     private int pOLJBHACKGB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 POLJBHACKGB = 8;</code>
      * @return The pOLJBHACKGB.
      */
@@ -663,10 +607,6 @@ public final class OLODDGPMAANOuterClass {
           emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN, emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN.Builder, emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABINOrBuilder> dGKLLKJDKMPBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN> getDGKLLKJDKMPList() {
@@ -677,10 +617,6 @@ public final class OLODDGPMAANOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public int getDGKLLKJDKMPCount() {
@@ -691,10 +627,6 @@ public final class OLODDGPMAANOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN getDGKLLKJDKMP(int index) {
@@ -705,10 +637,6 @@ public final class OLODDGPMAANOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public Builder setDGKLLKJDKMP(
@@ -726,10 +654,6 @@ public final class OLODDGPMAANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public Builder setDGKLLKJDKMP(
@@ -744,10 +668,6 @@ public final class OLODDGPMAANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public Builder addDGKLLKJDKMP(emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN value) {
@@ -764,10 +684,6 @@ public final class OLODDGPMAANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public Builder addDGKLLKJDKMP(
@@ -785,10 +701,6 @@ public final class OLODDGPMAANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public Builder addDGKLLKJDKMP(
@@ -803,10 +715,6 @@ public final class OLODDGPMAANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public Builder addDGKLLKJDKMP(
@@ -821,10 +729,6 @@ public final class OLODDGPMAANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public Builder addAllDGKLLKJDKMP(
@@ -840,10 +744,6 @@ public final class OLODDGPMAANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public Builder clearDGKLLKJDKMP() {
@@ -857,10 +757,6 @@ public final class OLODDGPMAANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public Builder removeDGKLLKJDKMP(int index) {
@@ -874,10 +770,6 @@ public final class OLODDGPMAANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN.Builder getDGKLLKJDKMPBuilder(
@@ -885,10 +777,6 @@ public final class OLODDGPMAANOuterClass {
         return getDGKLLKJDKMPFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABINOrBuilder getDGKLLKJDKMPOrBuilder(
@@ -899,10 +787,6 @@ public final class OLODDGPMAANOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABINOrBuilder> 
@@ -914,10 +798,6 @@ public final class OLODDGPMAANOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN.Builder addDGKLLKJDKMPBuilder() {
@@ -925,10 +805,6 @@ public final class OLODDGPMAANOuterClass {
             emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN.Builder addDGKLLKJDKMPBuilder(
@@ -937,10 +813,6 @@ public final class OLODDGPMAANOuterClass {
             index, emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OBLBEEKABIN DGKLLKJDKMP = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OBLBEEKABINOuterClass.OBLBEEKABIN.Builder> 
@@ -964,10 +836,6 @@ public final class OLODDGPMAANOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return The isOpen.
        */
@@ -976,10 +844,6 @@ public final class OLODDGPMAANOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -991,10 +855,6 @@ public final class OLODDGPMAANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return This builder for chaining.
        */
@@ -1007,10 +867,6 @@ public final class OLODDGPMAANOuterClass {
 
       private int pOLJBHACKGB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 POLJBHACKGB = 8;</code>
        * @return The pOLJBHACKGB.
        */
@@ -1019,10 +875,6 @@ public final class OLODDGPMAANOuterClass {
         return pOLJBHACKGB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 POLJBHACKGB = 8;</code>
        * @param value The pOLJBHACKGB to set.
        * @return This builder for chaining.
@@ -1034,10 +886,6 @@ public final class OLODDGPMAANOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 POLJBHACKGB = 8;</code>
        * @return This builder for chaining.
        */

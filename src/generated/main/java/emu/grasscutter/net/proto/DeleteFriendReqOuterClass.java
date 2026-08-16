@@ -19,20 +19,15 @@ public final class DeleteFriendReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 target_uid = 8;</code>
+     * <code>uint32 target_uid = 11;</code>
      * @return The targetUid.
      */
     int getTargetUid();
   }
   /**
    * <pre>
-   * CmdId: 394
+   * CmdId: 3037
+   * Obf: PALNPHNIHDF
    * </pre>
    *
    * Protobuf type {@code DeleteFriendReq}
@@ -79,14 +74,9 @@ public final class DeleteFriendReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 88: {
 
               targetUid_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -121,21 +111,10 @@ public final class DeleteFriendReqOuterClass {
               emu.grasscutter.net.proto.DeleteFriendReqOuterClass.DeleteFriendReq.class, emu.grasscutter.net.proto.DeleteFriendReqOuterClass.DeleteFriendReq.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int TARGET_UID_FIELD_NUMBER = 8;
+    public static final int TARGET_UID_FIELD_NUMBER = 11;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 8;</code>
+     * <code>uint32 target_uid = 11;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -158,10 +137,7 @@ public final class DeleteFriendReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetUid_ != 0) {
-        output.writeUInt32(8, targetUid_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeUInt32(11, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +150,7 @@ public final class DeleteFriendReqOuterClass {
       size = 0;
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, targetUid_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeUInt32Size(11, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,8 +167,6 @@ public final class DeleteFriendReqOuterClass {
       }
       emu.grasscutter.net.proto.DeleteFriendReqOuterClass.DeleteFriendReq other = (emu.grasscutter.net.proto.DeleteFriendReqOuterClass.DeleteFriendReq) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getTargetUid()
           != other.getTargetUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -210,8 +180,6 @@ public final class DeleteFriendReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetUid();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -311,7 +279,8 @@ public final class DeleteFriendReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 394
+     * CmdId: 3037
+     * Obf: PALNPHNIHDF
      * </pre>
      *
      * Protobuf type {@code DeleteFriendReq}
@@ -351,8 +320,6 @@ public final class DeleteFriendReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         targetUid_ = 0;
 
         return this;
@@ -381,7 +348,6 @@ public final class DeleteFriendReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DeleteFriendReqOuterClass.DeleteFriendReq buildPartial() {
         emu.grasscutter.net.proto.DeleteFriendReqOuterClass.DeleteFriendReq result = new emu.grasscutter.net.proto.DeleteFriendReqOuterClass.DeleteFriendReq(this);
-        result.retcode_ = retcode_;
         result.targetUid_ = targetUid_;
         onBuilt();
         return result;
@@ -431,9 +397,6 @@ public final class DeleteFriendReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DeleteFriendReqOuterClass.DeleteFriendReq other) {
         if (other == emu.grasscutter.net.proto.DeleteFriendReqOuterClass.DeleteFriendReq.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getTargetUid() != 0) {
           setTargetUid(other.getTargetUid());
         }
@@ -466,40 +429,9 @@ public final class DeleteFriendReqOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 8;</code>
+       * <code>uint32 target_uid = 11;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -507,7 +439,7 @@ public final class DeleteFriendReqOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 8;</code>
+       * <code>uint32 target_uid = 11;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -518,7 +450,7 @@ public final class DeleteFriendReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 8;</code>
+       * <code>uint32 target_uid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -594,9 +526,9 @@ public final class DeleteFriendReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025DeleteFriendReq.proto\"6\n\017DeleteFriendR" +
-      "eq\022\017\n\007retcode\030\r \001(\005\022\022\n\ntarget_uid\030\010 \001(\rB" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\025DeleteFriendReq.proto\"%\n\017DeleteFriendR" +
+      "eq\022\022\n\ntarget_uid\030\013 \001(\rB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -607,7 +539,7 @@ public final class DeleteFriendReqOuterClass {
     internal_static_DeleteFriendReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DeleteFriendReq_descriptor,
-        new java.lang.String[] { "Retcode", "TargetUid", });
+        new java.lang.String[] { "TargetUid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,63 +19,35 @@ public final class IOGDMNIJIOKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC> 
         getBMDDEOFBNPJList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
      */
     emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC getBMDDEOFBNPJ(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
      */
     int getBMDDEOFBNPJCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOCOrBuilder> 
         getBMDDEOFBNPJOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
      */
     emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOCOrBuilder getBMDDEOFBNPJOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string name = 5;</code>
      * @return The name.
      */
     java.lang.String getName();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string name = 5;</code>
      * @return The bytes for name.
      */
@@ -83,20 +55,12 @@ public final class IOGDMNIJIOKOuterClass {
         getNameBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 NCAALKHGPDC = 1;</code>
      * @return The nCAALKHGPDC.
      */
     int getNCAALKHGPDC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OHHGAELBJMG = 4;</code>
      * @return The oHHGAELBJMG.
      */
@@ -213,10 +177,6 @@ public final class IOGDMNIJIOKOuterClass {
     public static final int BMDDEOFBNPJ_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC> bMDDEOFBNPJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
      */
     @java.lang.Override
@@ -224,10 +184,6 @@ public final class IOGDMNIJIOKOuterClass {
       return bMDDEOFBNPJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
      */
     @java.lang.Override
@@ -236,10 +192,6 @@ public final class IOGDMNIJIOKOuterClass {
       return bMDDEOFBNPJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
      */
     @java.lang.Override
@@ -247,10 +199,6 @@ public final class IOGDMNIJIOKOuterClass {
       return bMDDEOFBNPJ_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
      */
     @java.lang.Override
@@ -258,10 +206,6 @@ public final class IOGDMNIJIOKOuterClass {
       return bMDDEOFBNPJ_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
      */
     @java.lang.Override
@@ -273,10 +217,6 @@ public final class IOGDMNIJIOKOuterClass {
     public static final int NAME_FIELD_NUMBER = 5;
     private volatile java.lang.Object name_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string name = 5;</code>
      * @return The name.
      */
@@ -294,10 +234,6 @@ public final class IOGDMNIJIOKOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string name = 5;</code>
      * @return The bytes for name.
      */
@@ -319,10 +255,6 @@ public final class IOGDMNIJIOKOuterClass {
     public static final int NCAALKHGPDC_FIELD_NUMBER = 1;
     private int nCAALKHGPDC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 NCAALKHGPDC = 1;</code>
      * @return The nCAALKHGPDC.
      */
@@ -334,10 +266,6 @@ public final class IOGDMNIJIOKOuterClass {
     public static final int OHHGAELBJMG_FIELD_NUMBER = 4;
     private int oHHGAELBJMG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OHHGAELBJMG = 4;</code>
      * @return The oHHGAELBJMG.
      */
@@ -752,10 +680,6 @@ public final class IOGDMNIJIOKOuterClass {
           emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC, emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC.Builder, emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOCOrBuilder> bMDDEOFBNPJBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC> getBMDDEOFBNPJList() {
@@ -766,10 +690,6 @@ public final class IOGDMNIJIOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public int getBMDDEOFBNPJCount() {
@@ -780,10 +700,6 @@ public final class IOGDMNIJIOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC getBMDDEOFBNPJ(int index) {
@@ -794,10 +710,6 @@ public final class IOGDMNIJIOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public Builder setBMDDEOFBNPJ(
@@ -815,10 +727,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public Builder setBMDDEOFBNPJ(
@@ -833,10 +741,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public Builder addBMDDEOFBNPJ(emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC value) {
@@ -853,10 +757,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public Builder addBMDDEOFBNPJ(
@@ -874,10 +774,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public Builder addBMDDEOFBNPJ(
@@ -892,10 +788,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public Builder addBMDDEOFBNPJ(
@@ -910,10 +802,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public Builder addAllBMDDEOFBNPJ(
@@ -929,10 +817,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public Builder clearBMDDEOFBNPJ() {
@@ -946,10 +830,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public Builder removeBMDDEOFBNPJ(int index) {
@@ -963,10 +843,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC.Builder getBMDDEOFBNPJBuilder(
@@ -974,10 +850,6 @@ public final class IOGDMNIJIOKOuterClass {
         return getBMDDEOFBNPJFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOCOrBuilder getBMDDEOFBNPJOrBuilder(
@@ -988,10 +860,6 @@ public final class IOGDMNIJIOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOCOrBuilder> 
@@ -1003,10 +871,6 @@ public final class IOGDMNIJIOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC.Builder addBMDDEOFBNPJBuilder() {
@@ -1014,10 +878,6 @@ public final class IOGDMNIJIOKOuterClass {
             emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC.Builder addBMDDEOFBNPJBuilder(
@@ -1026,10 +886,6 @@ public final class IOGDMNIJIOKOuterClass {
             index, emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HIIOKICKAOC BMDDEOFBNPJ = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HIIOKICKAOCOuterClass.HIIOKICKAOC.Builder> 
@@ -1053,10 +909,6 @@ public final class IOGDMNIJIOKOuterClass {
 
       private java.lang.Object name_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string name = 5;</code>
        * @return The name.
        */
@@ -1073,10 +925,6 @@ public final class IOGDMNIJIOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string name = 5;</code>
        * @return The bytes for name.
        */
@@ -1094,10 +942,6 @@ public final class IOGDMNIJIOKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string name = 5;</code>
        * @param value The name to set.
        * @return This builder for chaining.
@@ -1113,10 +957,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string name = 5;</code>
        * @return This builder for chaining.
        */
@@ -1127,10 +967,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string name = 5;</code>
        * @param value The bytes for name to set.
        * @return This builder for chaining.
@@ -1149,10 +985,6 @@ public final class IOGDMNIJIOKOuterClass {
 
       private int nCAALKHGPDC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NCAALKHGPDC = 1;</code>
        * @return The nCAALKHGPDC.
        */
@@ -1161,10 +993,6 @@ public final class IOGDMNIJIOKOuterClass {
         return nCAALKHGPDC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NCAALKHGPDC = 1;</code>
        * @param value The nCAALKHGPDC to set.
        * @return This builder for chaining.
@@ -1176,10 +1004,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NCAALKHGPDC = 1;</code>
        * @return This builder for chaining.
        */
@@ -1192,10 +1016,6 @@ public final class IOGDMNIJIOKOuterClass {
 
       private int oHHGAELBJMG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OHHGAELBJMG = 4;</code>
        * @return The oHHGAELBJMG.
        */
@@ -1204,10 +1024,6 @@ public final class IOGDMNIJIOKOuterClass {
         return oHHGAELBJMG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OHHGAELBJMG = 4;</code>
        * @param value The oHHGAELBJMG to set.
        * @return This builder for chaining.
@@ -1219,10 +1035,6 @@ public final class IOGDMNIJIOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OHHGAELBJMG = 4;</code>
        * @return This builder for chaining.
        */

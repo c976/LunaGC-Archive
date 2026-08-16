@@ -19,28 +19,16 @@ public final class FACLMOLGFBEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
      * @return A list containing the cEFFEOBPIEP.
      */
     java.util.List<java.lang.Integer> getCEFFEOBPIEPList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
      * @return The count of cEFFEOBPIEP.
      */
     int getCEFFEOBPIEPCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
      * @param index The index of the element to return.
      * @return The cEFFEOBPIEP at the given index.
@@ -48,28 +36,16 @@ public final class FACLMOLGFBEOuterClass {
     int getCEFFEOBPIEP(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
      * @return A list containing the bPCGDJKEGDH.
      */
     java.util.List<java.lang.Integer> getBPCGDJKEGDHList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
      * @return The count of bPCGDJKEGDH.
      */
     int getBPCGDJKEGDHCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
      * @param index The index of the element to return.
      * @return The bPCGDJKEGDH at the given index.
@@ -77,28 +53,16 @@ public final class FACLMOLGFBEOuterClass {
     int getBPCGDJKEGDH(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 13;</code>
      * @return A list containing the avatarGuidList.
      */
     java.util.List<java.lang.Long> getAvatarGuidListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 13;</code>
      * @return The count of avatarGuidList.
      */
     int getAvatarGuidListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 13;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
@@ -106,46 +70,30 @@ public final class FACLMOLGFBEOuterClass {
     long getAvatarGuidList(int index);
 
     /**
-     * <code>uint32 IFADGMHEFHF = 12;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 12;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IOEGCDKFHGN = 15;</code>
      * @return The iOEGCDKFHGN.
      */
     int getIOEGCDKFHGN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
@@ -259,7 +207,7 @@ public final class FACLMOLGFBEOuterClass {
             }
             case 96: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 104: {
@@ -332,10 +280,6 @@ public final class FACLMOLGFBEOuterClass {
     public static final int CEFFEOBPIEP_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList cEFFEOBPIEP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
      * @return A list containing the cEFFEOBPIEP.
      */
@@ -345,10 +289,6 @@ public final class FACLMOLGFBEOuterClass {
       return cEFFEOBPIEP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
      * @return The count of cEFFEOBPIEP.
      */
@@ -356,10 +296,6 @@ public final class FACLMOLGFBEOuterClass {
       return cEFFEOBPIEP_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
      * @param index The index of the element to return.
      * @return The cEFFEOBPIEP at the given index.
@@ -372,10 +308,6 @@ public final class FACLMOLGFBEOuterClass {
     public static final int BPCGDJKEGDH_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList bPCGDJKEGDH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
      * @return A list containing the bPCGDJKEGDH.
      */
@@ -385,10 +317,6 @@ public final class FACLMOLGFBEOuterClass {
       return bPCGDJKEGDH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
      * @return The count of bPCGDJKEGDH.
      */
@@ -396,10 +324,6 @@ public final class FACLMOLGFBEOuterClass {
       return bPCGDJKEGDH_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
      * @param index The index of the element to return.
      * @return The bPCGDJKEGDH at the given index.
@@ -412,10 +336,6 @@ public final class FACLMOLGFBEOuterClass {
     public static final int AVATAR_GUID_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.LongList avatarGuidList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 13;</code>
      * @return A list containing the avatarGuidList.
      */
@@ -425,10 +345,6 @@ public final class FACLMOLGFBEOuterClass {
       return avatarGuidList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 13;</code>
      * @return The count of avatarGuidList.
      */
@@ -436,10 +352,6 @@ public final class FACLMOLGFBEOuterClass {
       return avatarGuidList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 13;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
@@ -449,24 +361,20 @@ public final class FACLMOLGFBEOuterClass {
     }
     private int avatarGuidListMemoizedSerializedSize = -1;
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 12;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 12;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 12;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 12;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 11;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
@@ -478,10 +386,6 @@ public final class FACLMOLGFBEOuterClass {
     public static final int IOEGCDKFHGN_FIELD_NUMBER = 15;
     private int iOEGCDKFHGN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IOEGCDKFHGN = 15;</code>
      * @return The iOEGCDKFHGN.
      */
@@ -493,10 +397,6 @@ public final class FACLMOLGFBEOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -508,10 +408,6 @@ public final class FACLMOLGFBEOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 4;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
@@ -558,8 +454,8 @@ public final class FACLMOLGFBEOuterClass {
       if (levelId_ != 0) {
         output.writeUInt32(11, levelId_);
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(12, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(12, ugcGuid_);
       }
       if (getAvatarGuidListList().size() > 0) {
         output.writeUInt32NoTag(106);
@@ -620,9 +516,9 @@ public final class FACLMOLGFBEOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, levelId_);
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, iFADGMHEFHF_);
+          .computeUInt32Size(12, ugcGuid_);
       }
       {
         int dataSize = 0;
@@ -663,8 +559,8 @@ public final class FACLMOLGFBEOuterClass {
           .equals(other.getBPCGDJKEGDHList())) return false;
       if (!getAvatarGuidListList()
           .equals(other.getAvatarGuidListList())) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (getIOEGCDKFHGN()
@@ -696,8 +592,8 @@ public final class FACLMOLGFBEOuterClass {
         hash = (37 * hash) + AVATAR_GUID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarGuidListList().hashCode();
       }
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IOEGCDKFHGN_FIELD_NUMBER;
@@ -847,7 +743,7 @@ public final class FACLMOLGFBEOuterClass {
         bitField0_ = (bitField0_ & ~0x00000002);
         avatarGuidList_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000004);
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         levelId_ = 0;
 
@@ -899,7 +795,7 @@ public final class FACLMOLGFBEOuterClass {
           bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.avatarGuidList_ = avatarGuidList_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         result.levelId_ = levelId_;
         result.iOEGCDKFHGN_ = iOEGCDKFHGN_;
         result.isOpen_ = isOpen_;
@@ -982,8 +878,8 @@ public final class FACLMOLGFBEOuterClass {
           }
           onChanged();
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
@@ -1035,10 +931,6 @@ public final class FACLMOLGFBEOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
        * @return A list containing the cEFFEOBPIEP.
        */
@@ -1048,10 +940,6 @@ public final class FACLMOLGFBEOuterClass {
                  java.util.Collections.unmodifiableList(cEFFEOBPIEP_) : cEFFEOBPIEP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
        * @return The count of cEFFEOBPIEP.
        */
@@ -1059,10 +947,6 @@ public final class FACLMOLGFBEOuterClass {
         return cEFFEOBPIEP_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
        * @param index The index of the element to return.
        * @return The cEFFEOBPIEP at the given index.
@@ -1071,10 +955,6 @@ public final class FACLMOLGFBEOuterClass {
         return cEFFEOBPIEP_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
        * @param index The index to set the value at.
        * @param value The cEFFEOBPIEP to set.
@@ -1088,10 +968,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
        * @param value The cEFFEOBPIEP to add.
        * @return This builder for chaining.
@@ -1103,10 +979,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
        * @param values The cEFFEOBPIEP to add.
        * @return This builder for chaining.
@@ -1120,10 +992,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFFEOBPIEP = 5;</code>
        * @return This builder for chaining.
        */
@@ -1142,10 +1010,6 @@ public final class FACLMOLGFBEOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
        * @return A list containing the bPCGDJKEGDH.
        */
@@ -1155,10 +1019,6 @@ public final class FACLMOLGFBEOuterClass {
                  java.util.Collections.unmodifiableList(bPCGDJKEGDH_) : bPCGDJKEGDH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
        * @return The count of bPCGDJKEGDH.
        */
@@ -1166,10 +1026,6 @@ public final class FACLMOLGFBEOuterClass {
         return bPCGDJKEGDH_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
        * @param index The index of the element to return.
        * @return The bPCGDJKEGDH at the given index.
@@ -1178,10 +1034,6 @@ public final class FACLMOLGFBEOuterClass {
         return bPCGDJKEGDH_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
        * @param index The index to set the value at.
        * @param value The bPCGDJKEGDH to set.
@@ -1195,10 +1047,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
        * @param value The bPCGDJKEGDH to add.
        * @return This builder for chaining.
@@ -1210,10 +1058,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
        * @param values The bPCGDJKEGDH to add.
        * @return This builder for chaining.
@@ -1227,10 +1071,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BPCGDJKEGDH = 9;</code>
        * @return This builder for chaining.
        */
@@ -1249,10 +1089,6 @@ public final class FACLMOLGFBEOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 13;</code>
        * @return A list containing the avatarGuidList.
        */
@@ -1262,10 +1098,6 @@ public final class FACLMOLGFBEOuterClass {
                  java.util.Collections.unmodifiableList(avatarGuidList_) : avatarGuidList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 13;</code>
        * @return The count of avatarGuidList.
        */
@@ -1273,10 +1105,6 @@ public final class FACLMOLGFBEOuterClass {
         return avatarGuidList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 13;</code>
        * @param index The index of the element to return.
        * @return The avatarGuidList at the given index.
@@ -1285,10 +1113,6 @@ public final class FACLMOLGFBEOuterClass {
         return avatarGuidList_.getLong(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The avatarGuidList to set.
@@ -1302,10 +1126,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 13;</code>
        * @param value The avatarGuidList to add.
        * @return This builder for chaining.
@@ -1317,10 +1137,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 13;</code>
        * @param values The avatarGuidList to add.
        * @return This builder for chaining.
@@ -1334,10 +1150,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 13;</code>
        * @return This builder for chaining.
        */
@@ -1348,43 +1160,39 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 12;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 12;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 12;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 12;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 12;</code>
+       * <code>uint32 ugc_guid = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return The levelId.
        */
@@ -1393,10 +1201,6 @@ public final class FACLMOLGFBEOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1408,10 +1212,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */
@@ -1424,10 +1224,6 @@ public final class FACLMOLGFBEOuterClass {
 
       private int iOEGCDKFHGN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IOEGCDKFHGN = 15;</code>
        * @return The iOEGCDKFHGN.
        */
@@ -1436,10 +1232,6 @@ public final class FACLMOLGFBEOuterClass {
         return iOEGCDKFHGN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IOEGCDKFHGN = 15;</code>
        * @param value The iOEGCDKFHGN to set.
        * @return This builder for chaining.
@@ -1451,10 +1243,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IOEGCDKFHGN = 15;</code>
        * @return This builder for chaining.
        */
@@ -1467,10 +1255,6 @@ public final class FACLMOLGFBEOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
@@ -1479,10 +1263,6 @@ public final class FACLMOLGFBEOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1494,10 +1274,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
@@ -1510,10 +1286,6 @@ public final class FACLMOLGFBEOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return The isFinish.
        */
@@ -1522,10 +1294,6 @@ public final class FACLMOLGFBEOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1537,10 +1305,6 @@ public final class FACLMOLGFBEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return This builder for chaining.
        */
@@ -1617,12 +1381,12 @@ public final class FACLMOLGFBEOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021FACLMOLGFBE.proto\"\261\001\n\013FACLMOLGFBE\022\023\n\013C" +
+      "\n\021FACLMOLGFBE.proto\"\256\001\n\013FACLMOLGFBE\022\023\n\013C" +
       "EFFEOBPIEP\030\005 \003(\r\022\023\n\013BPCGDJKEGDH\030\t \003(\r\022\030\n" +
-      "\020avatar_guid_list\030\r \003(\004\022\023\n\013IFADGMHEFHF\030\014" +
-      " \001(\r\022\020\n\010level_id\030\013 \001(\r\022\023\n\013IOEGCDKFHGN\030\017 " +
-      "\001(\r\022\017\n\007is_open\030\006 \001(\010\022\021\n\tis_finish\030\004 \001(\010B" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\020avatar_guid_list\030\r \003(\004\022\020\n\010ugc_guid\030\014 \001(" +
+      "\r\022\020\n\010level_id\030\013 \001(\r\022\023\n\013IOEGCDKFHGN\030\017 \001(\r" +
+      "\022\017\n\007is_open\030\006 \001(\010\022\021\n\tis_finish\030\004 \001(\010B\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1633,7 +1397,7 @@ public final class FACLMOLGFBEOuterClass {
     internal_static_FACLMOLGFBE_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FACLMOLGFBE_descriptor,
-        new java.lang.String[] { "CEFFEOBPIEP", "BPCGDJKEGDH", "AvatarGuidList", "IFADGMHEFHF", "LevelId", "IOEGCDKFHGN", "IsOpen", "IsFinish", });
+        new java.lang.String[] { "CEFFEOBPIEP", "BPCGDJKEGDH", "AvatarGuidList", "UgcGuid", "LevelId", "IOEGCDKFHGN", "IsOpen", "IsFinish", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

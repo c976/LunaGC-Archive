@@ -19,30 +19,18 @@ public final class KDHBGMLFPGEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 9;</code>
      * @return The hBILFAMJDKG.
      */
@@ -143,10 +131,6 @@ public final class KDHBGMLFPGEOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 15;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
@@ -158,10 +142,6 @@ public final class KDHBGMLFPGEOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 8;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
@@ -173,10 +153,6 @@ public final class KDHBGMLFPGEOuterClass {
     public static final int HBILFAMJDKG_FIELD_NUMBER = 9;
     private int hBILFAMJDKG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 9;</code>
      * @return The hBILFAMJDKG.
      */
@@ -524,10 +500,6 @@ public final class KDHBGMLFPGEOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 15;</code>
        * @return The levelId.
        */
@@ -536,10 +508,6 @@ public final class KDHBGMLFPGEOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 15;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class KDHBGMLFPGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 15;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class KDHBGMLFPGEOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return The isFinish.
        */
@@ -579,10 +539,6 @@ public final class KDHBGMLFPGEOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class KDHBGMLFPGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class KDHBGMLFPGEOuterClass {
 
       private int hBILFAMJDKG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 9;</code>
        * @return The hBILFAMJDKG.
        */
@@ -622,10 +570,6 @@ public final class KDHBGMLFPGEOuterClass {
         return hBILFAMJDKG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 9;</code>
        * @param value The hBILFAMJDKG to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class KDHBGMLFPGEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 9;</code>
        * @return This builder for chaining.
        */

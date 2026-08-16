@@ -19,20 +19,12 @@ public final class KFIFCHPJHPIOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FANBBDKAKNE = 8;</code>
      * @return The fANBBDKAKNE.
      */
     boolean getFANBBDKAKNE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_id = 4;</code>
      * @return The avatarId.
      */
@@ -128,10 +120,6 @@ public final class KFIFCHPJHPIOuterClass {
     public static final int FANBBDKAKNE_FIELD_NUMBER = 8;
     private boolean fANBBDKAKNE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FANBBDKAKNE = 8;</code>
      * @return The fANBBDKAKNE.
      */
@@ -143,10 +131,6 @@ public final class KFIFCHPJHPIOuterClass {
     public static final int AVATAR_ID_FIELD_NUMBER = 4;
     private int avatarId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_id = 4;</code>
      * @return The avatarId.
      */
@@ -477,10 +461,6 @@ public final class KFIFCHPJHPIOuterClass {
 
       private boolean fANBBDKAKNE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FANBBDKAKNE = 8;</code>
        * @return The fANBBDKAKNE.
        */
@@ -489,10 +469,6 @@ public final class KFIFCHPJHPIOuterClass {
         return fANBBDKAKNE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FANBBDKAKNE = 8;</code>
        * @param value The fANBBDKAKNE to set.
        * @return This builder for chaining.
@@ -504,10 +480,6 @@ public final class KFIFCHPJHPIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FANBBDKAKNE = 8;</code>
        * @return This builder for chaining.
        */
@@ -520,10 +492,6 @@ public final class KFIFCHPJHPIOuterClass {
 
       private int avatarId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 4;</code>
        * @return The avatarId.
        */
@@ -532,10 +500,6 @@ public final class KFIFCHPJHPIOuterClass {
         return avatarId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 4;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
@@ -547,10 +511,6 @@ public final class KFIFCHPJHPIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 4;</code>
        * @return This builder for chaining.
        */

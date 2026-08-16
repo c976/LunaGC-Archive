@@ -19,28 +19,16 @@ public final class KDHAHCJINJBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
      * @return A list containing the kAOKKGNHNCA.
      */
     java.util.List<java.lang.Integer> getKAOKKGNHNCAList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
      * @return The count of kAOKKGNHNCA.
      */
     int getKAOKKGNHNCACount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
      * @param index The index of the element to return.
      * @return The kAOKKGNHNCA at the given index.
@@ -48,72 +36,40 @@ public final class KDHAHCJINJBOuterClass {
     int getKAOKKGNHNCA(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH> 
         getMonsterListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
      */
     emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH getMonsterList(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
      */
     int getMonsterListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEHOrBuilder> 
         getMonsterListOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
      */
     emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEHOrBuilder getMonsterListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
      * @return A list containing the fLHIGJOKPAH.
      */
     java.util.List<java.lang.Integer> getFLHIGJOKPAHList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
      * @return The count of fLHIGJOKPAH.
      */
     int getFLHIGJOKPAHCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
      * @param index The index of the element to return.
      * @return The fLHIGJOKPAH at the given index.
@@ -121,10 +77,6 @@ public final class KDHAHCJINJBOuterClass {
     int getFLHIGJOKPAH(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IIIBPEMHHGF = 8;</code>
      * @return The iIIBPEMHHGF.
      */
@@ -279,10 +231,6 @@ public final class KDHAHCJINJBOuterClass {
     public static final int KAOKKGNHNCA_FIELD_NUMBER = 11;
     private com.google.protobuf.Internal.IntList kAOKKGNHNCA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
      * @return A list containing the kAOKKGNHNCA.
      */
@@ -292,10 +240,6 @@ public final class KDHAHCJINJBOuterClass {
       return kAOKKGNHNCA_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
      * @return The count of kAOKKGNHNCA.
      */
@@ -303,10 +247,6 @@ public final class KDHAHCJINJBOuterClass {
       return kAOKKGNHNCA_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
      * @param index The index of the element to return.
      * @return The kAOKKGNHNCA at the given index.
@@ -319,10 +259,6 @@ public final class KDHAHCJINJBOuterClass {
     public static final int MONSTER_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH> monsterList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
      */
     @java.lang.Override
@@ -330,10 +266,6 @@ public final class KDHAHCJINJBOuterClass {
       return monsterList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
      */
     @java.lang.Override
@@ -342,10 +274,6 @@ public final class KDHAHCJINJBOuterClass {
       return monsterList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
      */
     @java.lang.Override
@@ -353,10 +281,6 @@ public final class KDHAHCJINJBOuterClass {
       return monsterList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
      */
     @java.lang.Override
@@ -364,10 +288,6 @@ public final class KDHAHCJINJBOuterClass {
       return monsterList_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
      */
     @java.lang.Override
@@ -379,10 +299,6 @@ public final class KDHAHCJINJBOuterClass {
     public static final int FLHIGJOKPAH_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList fLHIGJOKPAH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
      * @return A list containing the fLHIGJOKPAH.
      */
@@ -392,10 +308,6 @@ public final class KDHAHCJINJBOuterClass {
       return fLHIGJOKPAH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
      * @return The count of fLHIGJOKPAH.
      */
@@ -403,10 +315,6 @@ public final class KDHAHCJINJBOuterClass {
       return fLHIGJOKPAH_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
      * @param index The index of the element to return.
      * @return The fLHIGJOKPAH at the given index.
@@ -419,10 +327,6 @@ public final class KDHAHCJINJBOuterClass {
     public static final int IIIBPEMHHGF_FIELD_NUMBER = 8;
     private int iIIBPEMHHGF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IIIBPEMHHGF = 8;</code>
      * @return The iIIBPEMHHGF.
      */
@@ -887,10 +791,6 @@ public final class KDHAHCJINJBOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
        * @return A list containing the kAOKKGNHNCA.
        */
@@ -900,10 +800,6 @@ public final class KDHAHCJINJBOuterClass {
                  java.util.Collections.unmodifiableList(kAOKKGNHNCA_) : kAOKKGNHNCA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
        * @return The count of kAOKKGNHNCA.
        */
@@ -911,10 +807,6 @@ public final class KDHAHCJINJBOuterClass {
         return kAOKKGNHNCA_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
        * @param index The index of the element to return.
        * @return The kAOKKGNHNCA at the given index.
@@ -923,10 +815,6 @@ public final class KDHAHCJINJBOuterClass {
         return kAOKKGNHNCA_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
        * @param index The index to set the value at.
        * @param value The kAOKKGNHNCA to set.
@@ -940,10 +828,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
        * @param value The kAOKKGNHNCA to add.
        * @return This builder for chaining.
@@ -955,10 +839,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
        * @param values The kAOKKGNHNCA to add.
        * @return This builder for chaining.
@@ -972,10 +852,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KAOKKGNHNCA = 11;</code>
        * @return This builder for chaining.
        */
@@ -999,10 +875,6 @@ public final class KDHAHCJINJBOuterClass {
           emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH, emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH.Builder, emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEHOrBuilder> monsterListBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH> getMonsterListList() {
@@ -1013,10 +885,6 @@ public final class KDHAHCJINJBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public int getMonsterListCount() {
@@ -1027,10 +895,6 @@ public final class KDHAHCJINJBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH getMonsterList(int index) {
@@ -1041,10 +905,6 @@ public final class KDHAHCJINJBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public Builder setMonsterList(
@@ -1062,10 +922,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public Builder setMonsterList(
@@ -1080,10 +936,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public Builder addMonsterList(emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH value) {
@@ -1100,10 +952,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public Builder addMonsterList(
@@ -1121,10 +969,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public Builder addMonsterList(
@@ -1139,10 +983,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public Builder addMonsterList(
@@ -1157,10 +997,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public Builder addAllMonsterList(
@@ -1176,10 +1012,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public Builder clearMonsterList() {
@@ -1193,10 +1025,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public Builder removeMonsterList(int index) {
@@ -1210,10 +1038,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH.Builder getMonsterListBuilder(
@@ -1221,10 +1045,6 @@ public final class KDHAHCJINJBOuterClass {
         return getMonsterListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEHOrBuilder getMonsterListOrBuilder(
@@ -1235,10 +1055,6 @@ public final class KDHAHCJINJBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEHOrBuilder> 
@@ -1250,10 +1066,6 @@ public final class KDHAHCJINJBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH.Builder addMonsterListBuilder() {
@@ -1261,10 +1073,6 @@ public final class KDHAHCJINJBOuterClass {
             emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH.Builder addMonsterListBuilder(
@@ -1273,10 +1081,6 @@ public final class KDHAHCJINJBOuterClass {
             index, emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EJPPDNPHJEH monster_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EJPPDNPHJEHOuterClass.EJPPDNPHJEH.Builder> 
@@ -1306,10 +1110,6 @@ public final class KDHAHCJINJBOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
        * @return A list containing the fLHIGJOKPAH.
        */
@@ -1319,10 +1119,6 @@ public final class KDHAHCJINJBOuterClass {
                  java.util.Collections.unmodifiableList(fLHIGJOKPAH_) : fLHIGJOKPAH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
        * @return The count of fLHIGJOKPAH.
        */
@@ -1330,10 +1126,6 @@ public final class KDHAHCJINJBOuterClass {
         return fLHIGJOKPAH_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
        * @param index The index of the element to return.
        * @return The fLHIGJOKPAH at the given index.
@@ -1342,10 +1134,6 @@ public final class KDHAHCJINJBOuterClass {
         return fLHIGJOKPAH_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
        * @param index The index to set the value at.
        * @param value The fLHIGJOKPAH to set.
@@ -1359,10 +1147,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
        * @param value The fLHIGJOKPAH to add.
        * @return This builder for chaining.
@@ -1374,10 +1158,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
        * @param values The fLHIGJOKPAH to add.
        * @return This builder for chaining.
@@ -1391,10 +1171,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLHIGJOKPAH = 15;</code>
        * @return This builder for chaining.
        */
@@ -1407,10 +1183,6 @@ public final class KDHAHCJINJBOuterClass {
 
       private int iIIBPEMHHGF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IIIBPEMHHGF = 8;</code>
        * @return The iIIBPEMHHGF.
        */
@@ -1419,10 +1191,6 @@ public final class KDHAHCJINJBOuterClass {
         return iIIBPEMHHGF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IIIBPEMHHGF = 8;</code>
        * @param value The iIIBPEMHHGF to set.
        * @return This builder for chaining.
@@ -1434,10 +1202,6 @@ public final class KDHAHCJINJBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IIIBPEMHHGF = 8;</code>
        * @return This builder for chaining.
        */

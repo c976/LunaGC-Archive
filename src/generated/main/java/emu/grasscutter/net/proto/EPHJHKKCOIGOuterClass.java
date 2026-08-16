@@ -19,10 +19,6 @@ public final class EPHJHKKCOIGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_need_destroy = 5;</code>
      * @return The isNeedDestroy.
      */
@@ -113,10 +109,6 @@ public final class EPHJHKKCOIGOuterClass {
     public static final int IS_NEED_DESTROY_FIELD_NUMBER = 5;
     private boolean isNeedDestroy_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_need_destroy = 5;</code>
      * @return The isNeedDestroy.
      */
@@ -430,10 +422,6 @@ public final class EPHJHKKCOIGOuterClass {
 
       private boolean isNeedDestroy_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_need_destroy = 5;</code>
        * @return The isNeedDestroy.
        */
@@ -442,10 +430,6 @@ public final class EPHJHKKCOIGOuterClass {
         return isNeedDestroy_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_need_destroy = 5;</code>
        * @param value The isNeedDestroy to set.
        * @return This builder for chaining.
@@ -457,10 +441,6 @@ public final class EPHJHKKCOIGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_need_destroy = 5;</code>
        * @return This builder for chaining.
        */

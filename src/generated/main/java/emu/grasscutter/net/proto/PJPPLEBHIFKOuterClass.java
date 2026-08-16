@@ -19,74 +19,42 @@ public final class PJPPLEBHIFKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB> 
         getHEMFIOJEMAPList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
      */
     emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB getHEMFIOJEMAP(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
      */
     int getHEMFIOJEMAPCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCBOrBuilder> 
         getHEMFIOJEMAPOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
      */
     emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCBOrBuilder getHEMFIOJEMAPOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 9;</code>
      * @return The oMEBOHLACPH.
      */
     int getOMEBOHLACPH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
@@ -201,10 +169,6 @@ public final class PJPPLEBHIFKOuterClass {
     public static final int HEMFIOJEMAP_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB> hEMFIOJEMAP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
      */
     @java.lang.Override
@@ -212,10 +176,6 @@ public final class PJPPLEBHIFKOuterClass {
       return hEMFIOJEMAP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
      */
     @java.lang.Override
@@ -224,10 +184,6 @@ public final class PJPPLEBHIFKOuterClass {
       return hEMFIOJEMAP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
      */
     @java.lang.Override
@@ -235,10 +191,6 @@ public final class PJPPLEBHIFKOuterClass {
       return hEMFIOJEMAP_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
      */
     @java.lang.Override
@@ -246,10 +198,6 @@ public final class PJPPLEBHIFKOuterClass {
       return hEMFIOJEMAP_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
      */
     @java.lang.Override
@@ -261,10 +209,6 @@ public final class PJPPLEBHIFKOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 9;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 9;</code>
      * @return The oMEBOHLACPH.
      */
@@ -276,10 +220,6 @@ public final class PJPPLEBHIFKOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 7;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
@@ -291,10 +231,6 @@ public final class PJPPLEBHIFKOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 5;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
@@ -710,10 +646,6 @@ public final class PJPPLEBHIFKOuterClass {
           emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB, emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB.Builder, emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCBOrBuilder> hEMFIOJEMAPBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB> getHEMFIOJEMAPList() {
@@ -724,10 +656,6 @@ public final class PJPPLEBHIFKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public int getHEMFIOJEMAPCount() {
@@ -738,10 +666,6 @@ public final class PJPPLEBHIFKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB getHEMFIOJEMAP(int index) {
@@ -752,10 +676,6 @@ public final class PJPPLEBHIFKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public Builder setHEMFIOJEMAP(
@@ -773,10 +693,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public Builder setHEMFIOJEMAP(
@@ -791,10 +707,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public Builder addHEMFIOJEMAP(emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB value) {
@@ -811,10 +723,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public Builder addHEMFIOJEMAP(
@@ -832,10 +740,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public Builder addHEMFIOJEMAP(
@@ -850,10 +754,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public Builder addHEMFIOJEMAP(
@@ -868,10 +768,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public Builder addAllHEMFIOJEMAP(
@@ -887,10 +783,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public Builder clearHEMFIOJEMAP() {
@@ -904,10 +796,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public Builder removeHEMFIOJEMAP(int index) {
@@ -921,10 +809,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB.Builder getHEMFIOJEMAPBuilder(
@@ -932,10 +816,6 @@ public final class PJPPLEBHIFKOuterClass {
         return getHEMFIOJEMAPFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCBOrBuilder getHEMFIOJEMAPOrBuilder(
@@ -946,10 +826,6 @@ public final class PJPPLEBHIFKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCBOrBuilder> 
@@ -961,10 +837,6 @@ public final class PJPPLEBHIFKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB.Builder addHEMFIOJEMAPBuilder() {
@@ -972,10 +844,6 @@ public final class PJPPLEBHIFKOuterClass {
             emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB.Builder addHEMFIOJEMAPBuilder(
@@ -984,10 +852,6 @@ public final class PJPPLEBHIFKOuterClass {
             index, emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .EGAONNPNFCB HEMFIOJEMAP = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EGAONNPNFCBOuterClass.EGAONNPNFCB.Builder> 
@@ -1011,10 +875,6 @@ public final class PJPPLEBHIFKOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 9;</code>
        * @return The oMEBOHLACPH.
        */
@@ -1023,10 +883,6 @@ public final class PJPPLEBHIFKOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 9;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -1038,10 +894,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 9;</code>
        * @return This builder for chaining.
        */
@@ -1054,10 +906,6 @@ public final class PJPPLEBHIFKOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 7;</code>
        * @return The levelId.
        */
@@ -1066,10 +914,6 @@ public final class PJPPLEBHIFKOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 7;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1081,10 +925,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 7;</code>
        * @return This builder for chaining.
        */
@@ -1097,10 +937,6 @@ public final class PJPPLEBHIFKOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return The isOpen.
        */
@@ -1109,10 +945,6 @@ public final class PJPPLEBHIFKOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1124,10 +956,6 @@ public final class PJPPLEBHIFKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return This builder for chaining.
        */

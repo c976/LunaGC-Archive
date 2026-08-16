@@ -19,10 +19,6 @@ public final class AvatarGainTraceEffectNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>uint32 trace_effect_id = 1;</code>
      * @return The traceEffectId.
      */
@@ -30,6 +26,7 @@ public final class AvatarGainTraceEffectNotifyOuterClass {
   }
   /**
    * <pre>
+   * Version: 5.7
    * CmdId: 20100
    * </pre>
    *
@@ -117,10 +114,6 @@ public final class AvatarGainTraceEffectNotifyOuterClass {
     public static final int TRACE_EFFECT_ID_FIELD_NUMBER = 1;
     private int traceEffectId_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
      * <code>uint32 trace_effect_id = 1;</code>
      * @return The traceEffectId.
      */
@@ -286,6 +279,7 @@ public final class AvatarGainTraceEffectNotifyOuterClass {
     }
     /**
      * <pre>
+     * Version: 5.7
      * CmdId: 20100
      * </pre>
      *
@@ -437,10 +431,6 @@ public final class AvatarGainTraceEffectNotifyOuterClass {
 
       private int traceEffectId_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint32 trace_effect_id = 1;</code>
        * @return The traceEffectId.
        */
@@ -449,10 +439,6 @@ public final class AvatarGainTraceEffectNotifyOuterClass {
         return traceEffectId_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint32 trace_effect_id = 1;</code>
        * @param value The traceEffectId to set.
        * @return This builder for chaining.
@@ -464,10 +450,6 @@ public final class AvatarGainTraceEffectNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
        * <code>uint32 trace_effect_id = 1;</code>
        * @return This builder for chaining.
        */

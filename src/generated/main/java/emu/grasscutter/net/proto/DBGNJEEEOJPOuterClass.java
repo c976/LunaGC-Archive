@@ -19,84 +19,48 @@ public final class DBGNJEEEOJPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> 
         getAvatarListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
      */
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN getAvatarList(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
      */
     int getAvatarListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> 
         getAvatarListOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
      */
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder getAvatarListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool KHOABNAIOEF = 9;</code>
      * @return The kHOABNAIOEF.
      */
     boolean getKHOABNAIOEF();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cost_time = 6;</code>
      * @return The costTime.
      */
     int getCostTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 12;</code>
      * @return The lOHAJIABHDJ.
      */
     int getLOHAJIABHDJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BAFGHOPFHFI = 1;</code>
      * @return The bAFGHOPFHFI.
      */
@@ -216,10 +180,6 @@ public final class DBGNJEEEOJPOuterClass {
     public static final int AVATAR_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> avatarList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
      */
     @java.lang.Override
@@ -227,10 +187,6 @@ public final class DBGNJEEEOJPOuterClass {
       return avatarList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
      */
     @java.lang.Override
@@ -239,10 +195,6 @@ public final class DBGNJEEEOJPOuterClass {
       return avatarList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
      */
     @java.lang.Override
@@ -250,10 +202,6 @@ public final class DBGNJEEEOJPOuterClass {
       return avatarList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
      */
     @java.lang.Override
@@ -261,10 +209,6 @@ public final class DBGNJEEEOJPOuterClass {
       return avatarList_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
      */
     @java.lang.Override
@@ -276,10 +220,6 @@ public final class DBGNJEEEOJPOuterClass {
     public static final int KHOABNAIOEF_FIELD_NUMBER = 9;
     private boolean kHOABNAIOEF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool KHOABNAIOEF = 9;</code>
      * @return The kHOABNAIOEF.
      */
@@ -291,10 +231,6 @@ public final class DBGNJEEEOJPOuterClass {
     public static final int COST_TIME_FIELD_NUMBER = 6;
     private int costTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cost_time = 6;</code>
      * @return The costTime.
      */
@@ -306,10 +242,6 @@ public final class DBGNJEEEOJPOuterClass {
     public static final int LOHAJIABHDJ_FIELD_NUMBER = 12;
     private int lOHAJIABHDJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 12;</code>
      * @return The lOHAJIABHDJ.
      */
@@ -321,10 +253,6 @@ public final class DBGNJEEEOJPOuterClass {
     public static final int BAFGHOPFHFI_FIELD_NUMBER = 1;
     private int bAFGHOPFHFI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BAFGHOPFHFI = 1;</code>
      * @return The bAFGHOPFHFI.
      */
@@ -757,10 +685,6 @@ public final class DBGNJEEEOJPOuterClass {
           emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> avatarListBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> getAvatarListList() {
@@ -771,10 +695,6 @@ public final class DBGNJEEEOJPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public int getAvatarListCount() {
@@ -785,10 +705,6 @@ public final class DBGNJEEEOJPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN getAvatarList(int index) {
@@ -799,10 +715,6 @@ public final class DBGNJEEEOJPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public Builder setAvatarList(
@@ -820,10 +732,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public Builder setAvatarList(
@@ -838,10 +746,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public Builder addAvatarList(emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN value) {
@@ -858,10 +762,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public Builder addAvatarList(
@@ -879,10 +779,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public Builder addAvatarList(
@@ -897,10 +793,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public Builder addAvatarList(
@@ -915,10 +807,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public Builder addAllAvatarList(
@@ -934,10 +822,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public Builder clearAvatarList() {
@@ -951,10 +835,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public Builder removeAvatarList(int index) {
@@ -968,10 +848,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder getAvatarListBuilder(
@@ -979,10 +855,6 @@ public final class DBGNJEEEOJPOuterClass {
         return getAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder getAvatarListOrBuilder(
@@ -993,10 +865,6 @@ public final class DBGNJEEEOJPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> 
@@ -1008,10 +876,6 @@ public final class DBGNJEEEOJPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder addAvatarListBuilder() {
@@ -1019,10 +883,6 @@ public final class DBGNJEEEOJPOuterClass {
             emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder addAvatarListBuilder(
@@ -1031,10 +891,6 @@ public final class DBGNJEEEOJPOuterClass {
             index, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder> 
@@ -1058,10 +914,6 @@ public final class DBGNJEEEOJPOuterClass {
 
       private boolean kHOABNAIOEF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool KHOABNAIOEF = 9;</code>
        * @return The kHOABNAIOEF.
        */
@@ -1070,10 +922,6 @@ public final class DBGNJEEEOJPOuterClass {
         return kHOABNAIOEF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool KHOABNAIOEF = 9;</code>
        * @param value The kHOABNAIOEF to set.
        * @return This builder for chaining.
@@ -1085,10 +933,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool KHOABNAIOEF = 9;</code>
        * @return This builder for chaining.
        */
@@ -1101,10 +945,6 @@ public final class DBGNJEEEOJPOuterClass {
 
       private int costTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 6;</code>
        * @return The costTime.
        */
@@ -1113,10 +953,6 @@ public final class DBGNJEEEOJPOuterClass {
         return costTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 6;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
@@ -1128,10 +964,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 6;</code>
        * @return This builder for chaining.
        */
@@ -1144,10 +976,6 @@ public final class DBGNJEEEOJPOuterClass {
 
       private int lOHAJIABHDJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 12;</code>
        * @return The lOHAJIABHDJ.
        */
@@ -1156,10 +984,6 @@ public final class DBGNJEEEOJPOuterClass {
         return lOHAJIABHDJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 12;</code>
        * @param value The lOHAJIABHDJ to set.
        * @return This builder for chaining.
@@ -1171,10 +995,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 12;</code>
        * @return This builder for chaining.
        */
@@ -1187,10 +1007,6 @@ public final class DBGNJEEEOJPOuterClass {
 
       private int bAFGHOPFHFI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BAFGHOPFHFI = 1;</code>
        * @return The bAFGHOPFHFI.
        */
@@ -1199,10 +1015,6 @@ public final class DBGNJEEEOJPOuterClass {
         return bAFGHOPFHFI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BAFGHOPFHFI = 1;</code>
        * @param value The bAFGHOPFHFI to set.
        * @return This builder for chaining.
@@ -1214,10 +1026,6 @@ public final class DBGNJEEEOJPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BAFGHOPFHFI = 1;</code>
        * @return This builder for chaining.
        */

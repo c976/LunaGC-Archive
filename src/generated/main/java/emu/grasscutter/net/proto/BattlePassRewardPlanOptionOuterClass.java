@@ -19,34 +19,22 @@ public final class BattlePassRewardPlanOptionOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
+     * <code>bool BAJOAJBLADK = 16;</code>
+     * @return The bAJOAJBLADK.
+     */
+    boolean getBAJOAJBLADK();
+
+    /**
+     * <code>uint32 OMEPJOHGDFA = 11;</code>
+     * @return The oMEPJOHGDFA.
+     */
+    int getOMEPJOHGDFA();
+
+    /**
      * <code>uint32 reward_type = 12;</code>
      * @return The rewardType.
      */
     int getRewardType();
-
-    /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 AEOGEOIGFOK = 14;</code>
-     * @return The aEOGEOIGFOK.
-     */
-    int getAEOGEOIGFOK();
-
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>bool is_original = 13;</code>
-     * @return The isOriginal.
-     */
-    boolean getIsOriginal();
   }
   /**
    * Protobuf type {@code BattlePassRewardPlanOption}
@@ -93,19 +81,19 @@ public final class BattlePassRewardPlanOptionOuterClass {
             case 0:
               done = true;
               break;
+            case 88: {
+
+              oMEPJOHGDFA_ = input.readUInt32();
+              break;
+            }
             case 96: {
 
               rewardType_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 128: {
 
-              isOriginal_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              aEOGEOIGFOK_ = input.readUInt32();
+              bAJOAJBLADK_ = input.readBool();
               break;
             }
             default: {
@@ -140,49 +128,37 @@ public final class BattlePassRewardPlanOptionOuterClass {
               emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption.class, emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption.Builder.class);
     }
 
+    public static final int BAJOAJBLADK_FIELD_NUMBER = 16;
+    private boolean bAJOAJBLADK_;
+    /**
+     * <code>bool BAJOAJBLADK = 16;</code>
+     * @return The bAJOAJBLADK.
+     */
+    @java.lang.Override
+    public boolean getBAJOAJBLADK() {
+      return bAJOAJBLADK_;
+    }
+
+    public static final int OMEPJOHGDFA_FIELD_NUMBER = 11;
+    private int oMEPJOHGDFA_;
+    /**
+     * <code>uint32 OMEPJOHGDFA = 11;</code>
+     * @return The oMEPJOHGDFA.
+     */
+    @java.lang.Override
+    public int getOMEPJOHGDFA() {
+      return oMEPJOHGDFA_;
+    }
+
     public static final int REWARD_TYPE_FIELD_NUMBER = 12;
     private int rewardType_;
     /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
      * <code>uint32 reward_type = 12;</code>
      * @return The rewardType.
      */
     @java.lang.Override
     public int getRewardType() {
       return rewardType_;
-    }
-
-    public static final int AEOGEOIGFOK_FIELD_NUMBER = 14;
-    private int aEOGEOIGFOK_;
-    /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 AEOGEOIGFOK = 14;</code>
-     * @return The aEOGEOIGFOK.
-     */
-    @java.lang.Override
-    public int getAEOGEOIGFOK() {
-      return aEOGEOIGFOK_;
-    }
-
-    public static final int IS_ORIGINAL_FIELD_NUMBER = 13;
-    private boolean isOriginal_;
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>bool is_original = 13;</code>
-     * @return The isOriginal.
-     */
-    @java.lang.Override
-    public boolean getIsOriginal() {
-      return isOriginal_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -199,14 +175,14 @@ public final class BattlePassRewardPlanOptionOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (oMEPJOHGDFA_ != 0) {
+        output.writeUInt32(11, oMEPJOHGDFA_);
+      }
       if (rewardType_ != 0) {
         output.writeUInt32(12, rewardType_);
       }
-      if (isOriginal_ != false) {
-        output.writeBool(13, isOriginal_);
-      }
-      if (aEOGEOIGFOK_ != 0) {
-        output.writeUInt32(14, aEOGEOIGFOK_);
+      if (bAJOAJBLADK_ != false) {
+        output.writeBool(16, bAJOAJBLADK_);
       }
       unknownFields.writeTo(output);
     }
@@ -217,17 +193,17 @@ public final class BattlePassRewardPlanOptionOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (oMEPJOHGDFA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, oMEPJOHGDFA_);
+      }
       if (rewardType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, rewardType_);
       }
-      if (isOriginal_ != false) {
+      if (bAJOAJBLADK_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isOriginal_);
-      }
-      if (aEOGEOIGFOK_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, aEOGEOIGFOK_);
+          .computeBoolSize(16, bAJOAJBLADK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -244,12 +220,12 @@ public final class BattlePassRewardPlanOptionOuterClass {
       }
       emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption other = (emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption) obj;
 
+      if (getBAJOAJBLADK()
+          != other.getBAJOAJBLADK()) return false;
+      if (getOMEPJOHGDFA()
+          != other.getOMEPJOHGDFA()) return false;
       if (getRewardType()
           != other.getRewardType()) return false;
-      if (getAEOGEOIGFOK()
-          != other.getAEOGEOIGFOK()) return false;
-      if (getIsOriginal()
-          != other.getIsOriginal()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -261,13 +237,13 @@ public final class BattlePassRewardPlanOptionOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + BAJOAJBLADK_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getBAJOAJBLADK());
+      hash = (37 * hash) + OMEPJOHGDFA_FIELD_NUMBER;
+      hash = (53 * hash) + getOMEPJOHGDFA();
       hash = (37 * hash) + REWARD_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getRewardType();
-      hash = (37 * hash) + AEOGEOIGFOK_FIELD_NUMBER;
-      hash = (53 * hash) + getAEOGEOIGFOK();
-      hash = (37 * hash) + IS_ORIGINAL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsOriginal());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -401,11 +377,11 @@ public final class BattlePassRewardPlanOptionOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bAJOAJBLADK_ = false;
+
+        oMEPJOHGDFA_ = 0;
+
         rewardType_ = 0;
-
-        aEOGEOIGFOK_ = 0;
-
-        isOriginal_ = false;
 
         return this;
       }
@@ -433,9 +409,9 @@ public final class BattlePassRewardPlanOptionOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption buildPartial() {
         emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption result = new emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption(this);
+        result.bAJOAJBLADK_ = bAJOAJBLADK_;
+        result.oMEPJOHGDFA_ = oMEPJOHGDFA_;
         result.rewardType_ = rewardType_;
-        result.aEOGEOIGFOK_ = aEOGEOIGFOK_;
-        result.isOriginal_ = isOriginal_;
         onBuilt();
         return result;
       }
@@ -484,14 +460,14 @@ public final class BattlePassRewardPlanOptionOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption other) {
         if (other == emu.grasscutter.net.proto.BattlePassRewardPlanOptionOuterClass.BattlePassRewardPlanOption.getDefaultInstance()) return this;
+        if (other.getBAJOAJBLADK() != false) {
+          setBAJOAJBLADK(other.getBAJOAJBLADK());
+        }
+        if (other.getOMEPJOHGDFA() != 0) {
+          setOMEPJOHGDFA(other.getOMEPJOHGDFA());
+        }
         if (other.getRewardType() != 0) {
           setRewardType(other.getRewardType());
-        }
-        if (other.getAEOGEOIGFOK() != 0) {
-          setAEOGEOIGFOK(other.getAEOGEOIGFOK());
-        }
-        if (other.getIsOriginal() != false) {
-          setIsOriginal(other.getIsOriginal());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -522,12 +498,70 @@ public final class BattlePassRewardPlanOptionOuterClass {
         return this;
       }
 
+      private boolean bAJOAJBLADK_ ;
+      /**
+       * <code>bool BAJOAJBLADK = 16;</code>
+       * @return The bAJOAJBLADK.
+       */
+      @java.lang.Override
+      public boolean getBAJOAJBLADK() {
+        return bAJOAJBLADK_;
+      }
+      /**
+       * <code>bool BAJOAJBLADK = 16;</code>
+       * @param value The bAJOAJBLADK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBAJOAJBLADK(boolean value) {
+        
+        bAJOAJBLADK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool BAJOAJBLADK = 16;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBAJOAJBLADK() {
+        
+        bAJOAJBLADK_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int oMEPJOHGDFA_ ;
+      /**
+       * <code>uint32 OMEPJOHGDFA = 11;</code>
+       * @return The oMEPJOHGDFA.
+       */
+      @java.lang.Override
+      public int getOMEPJOHGDFA() {
+        return oMEPJOHGDFA_;
+      }
+      /**
+       * <code>uint32 OMEPJOHGDFA = 11;</code>
+       * @param value The oMEPJOHGDFA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOMEPJOHGDFA(int value) {
+        
+        oMEPJOHGDFA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 OMEPJOHGDFA = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOMEPJOHGDFA() {
+        
+        oMEPJOHGDFA_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int rewardType_ ;
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
        * <code>uint32 reward_type = 12;</code>
        * @return The rewardType.
        */
@@ -536,10 +570,6 @@ public final class BattlePassRewardPlanOptionOuterClass {
         return rewardType_;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
        * <code>uint32 reward_type = 12;</code>
        * @param value The rewardType to set.
        * @return This builder for chaining.
@@ -551,102 +581,12 @@ public final class BattlePassRewardPlanOptionOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
        * <code>uint32 reward_type = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardType() {
         
         rewardType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int aEOGEOIGFOK_ ;
-      /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 AEOGEOIGFOK = 14;</code>
-       * @return The aEOGEOIGFOK.
-       */
-      @java.lang.Override
-      public int getAEOGEOIGFOK() {
-        return aEOGEOIGFOK_;
-      }
-      /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 AEOGEOIGFOK = 14;</code>
-       * @param value The aEOGEOIGFOK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAEOGEOIGFOK(int value) {
-        
-        aEOGEOIGFOK_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 AEOGEOIGFOK = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAEOGEOIGFOK() {
-        
-        aEOGEOIGFOK_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isOriginal_ ;
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool is_original = 13;</code>
-       * @return The isOriginal.
-       */
-      @java.lang.Override
-      public boolean getIsOriginal() {
-        return isOriginal_;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool is_original = 13;</code>
-       * @param value The isOriginal to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOriginal(boolean value) {
-        
-        isOriginal_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>bool is_original = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOriginal() {
-        
-        isOriginal_ = false;
         onChanged();
         return this;
       }
@@ -718,9 +658,9 @@ public final class BattlePassRewardPlanOptionOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n BattlePassRewardPlanOption.proto\"[\n\032Ba" +
-      "ttlePassRewardPlanOption\022\023\n\013reward_type\030" +
-      "\014 \001(\r\022\023\n\013AEOGEOIGFOK\030\016 \001(\r\022\023\n\013is_origina" +
-      "l\030\r \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "ttlePassRewardPlanOption\022\023\n\013BAJOAJBLADK\030" +
+      "\020 \001(\010\022\023\n\013OMEPJOHGDFA\030\013 \001(\r\022\023\n\013reward_typ" +
+      "e\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -732,7 +672,7 @@ public final class BattlePassRewardPlanOptionOuterClass {
     internal_static_BattlePassRewardPlanOption_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BattlePassRewardPlanOption_descriptor,
-        new java.lang.String[] { "RewardType", "AEOGEOIGFOK", "IsOriginal", });
+        new java.lang.String[] { "BAJOAJBLADK", "OMEPJOHGDFA", "RewardType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

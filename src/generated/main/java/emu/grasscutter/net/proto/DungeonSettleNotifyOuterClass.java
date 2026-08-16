@@ -19,109 +19,41 @@ public final class DungeonSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 player_uid_list = 1;</code>
-     * @return A list containing the playerUidList.
-     */
-    java.util.List<java.lang.Integer> getPlayerUidListList();
-    /**
-     * <code>repeated uint32 player_uid_list = 1;</code>
-     * @return The count of playerUidList.
-     */
-    int getPlayerUidListCount();
-    /**
-     * <code>repeated uint32 player_uid_list = 1;</code>
-     * @param index The index of the element to return.
-     * @return The playerUidList at the given index.
-     */
-    int getPlayerUidList(int index);
-
-    /**
-     * <code>uint32 dungeon_id = 2;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>uint32 ALHPCFABLPH = 3;</code>
-     * @return The aLHPCFABLPH.
-     */
-    int getALHPCFABLPH();
-
-    /**
-     * <code>uint32 close_time = 4;</code>
-     * @return The closeTime.
-     */
-    int getCloseTime();
-
-    /**
-     * <code>uint32 use_time = 7;</code>
-     * @return The useTime.
-     */
-    int getUseTime();
-
-    /**
-     * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-     * @return A list containing the ePBCNMFNDAP.
-     */
-    java.util.List<java.lang.Integer> getEPBCNMFNDAPList();
-    /**
-     * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-     * @return The count of ePBCNMFNDAP.
-     */
-    int getEPBCNMFNDAPCount();
-    /**
-     * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-     * @param index The index of the element to return.
-     * @return The ePBCNMFNDAP at the given index.
-     */
-    int getEPBCNMFNDAP(int index);
-
-    /**
-     * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
-     */
-    int getSettleShowCount();
-    /**
-     * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
-     */
-    boolean containsSettleShow(
-        int key);
-    /**
-     * Use {@link #getSettleShowMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList>
-    getSettleShow();
-    /**
-     * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
-     */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList>
-    getSettleShowMap();
-    /**
-     * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
-     */
-
-    emu.grasscutter.net.proto.ParamListOuterClass.ParamList getSettleShowOrDefault(
-        int key,
-        emu.grasscutter.net.proto.ParamListOuterClass.ParamList defaultValue);
-    /**
-     * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
-     */
-
-    emu.grasscutter.net.proto.ParamListOuterClass.ParamList getSettleShowOrThrow(
-        int key);
-
-    /**
-     * <code>bool is_success = 11;</code>
+     * <code>bool is_success = 3;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
 
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> 
+        getExhibitionInfoListList();
+    /**
+     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+     */
+    emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo getExhibitionInfoList(int index);
+    /**
+     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+     */
+    int getExhibitionInfoListCount();
+    /**
+     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder> 
+        getExhibitionInfoListOrBuilderList();
+    /**
+     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+     */
+    emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder getExhibitionInfoListOrBuilder(
+        int index);
+
+    /**
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
      */
     int getStrengthenPointDataMapCount();
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
      */
     boolean containsStrengthenPointDataMap(
         int key);
@@ -132,809 +64,336 @@ public final class DungeonSettleNotifyOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
     getStrengthenPointDataMap();
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
     getStrengthenPointDataMapMap();
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
      */
 
     emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData getStrengthenPointDataMapOrDefault(
         int key,
         emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData defaultValue);
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
      */
 
     emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData getStrengthenPointDataMapOrThrow(
         int key);
 
     /**
-     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
+     * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> 
-        getExhibitionInfoListList();
+    int getSettleShowCount();
     /**
-     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
+     * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
      */
-    emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo getExhibitionInfoList(int index);
+    boolean containsSettleShow(
+        int key);
     /**
-     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
+     * Use {@link #getSettleShowMap()} instead.
      */
-    int getExhibitionInfoListCount();
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList>
+    getSettleShow();
     /**
-     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
+     * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder> 
-        getExhibitionInfoListOrBuilderList();
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList>
+    getSettleShowMap();
     /**
-     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
+     * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
      */
-    emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder getExhibitionInfoListOrBuilder(
-        int index);
+
+    emu.grasscutter.net.proto.ParamListOuterClass.ParamList getSettleShowOrDefault(
+        int key,
+        emu.grasscutter.net.proto.ParamListOuterClass.ParamList defaultValue);
+    /**
+     * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
+     */
+
+    emu.grasscutter.net.proto.ParamListOuterClass.ParamList getSettleShowOrThrow(
+        int key);
 
     /**
-     * <code>uint32 result = 14;</code>
+     * <code>uint32 create_player_uid = 1;</code>
+     * @return The createPlayerUid.
+     */
+    int getCreatePlayerUid();
+
+    /**
+     * <code>uint32 dungeon_id = 7;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
+
+    /**
+     * <code>uint32 close_time = 6;</code>
+     * @return The closeTime.
+     */
+    int getCloseTime();
+
+    /**
+     * <code>uint32 result = 5;</code>
      * @return The result.
      */
     int getResult();
 
     /**
-     * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+     * <code>uint32 use_time = 15;</code>
+     * @return The useTime.
+     */
+    int getUseTime();
+
+    /**
+     * <code>repeated uint32 fail_cond_list = 9;</code>
+     * @return A list containing the failCondList.
+     */
+    java.util.List<java.lang.Integer> getFailCondListList();
+    /**
+     * <code>repeated uint32 fail_cond_list = 9;</code>
+     * @return The count of failCondList.
+     */
+    int getFailCondListCount();
+    /**
+     * <code>repeated uint32 fail_cond_list = 9;</code>
+     * @param index The index of the element to return.
+     * @return The failCondList at the given index.
+     */
+    int getFailCondList(int index);
+
+    /**
+     * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
      * @return Whether the towerLevelEndNotify field is set.
      */
     boolean hasTowerLevelEndNotify();
     /**
-     * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+     * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
      * @return The towerLevelEndNotify.
      */
     emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify getTowerLevelEndNotify();
     /**
-     * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+     * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
      */
     emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotifyOrBuilder getTowerLevelEndNotifyOrBuilder();
 
     /**
-     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
      * @return Whether the trialAvatarFirstPassDungeonNotify field is set.
      */
     boolean hasTrialAvatarFirstPassDungeonNotify();
     /**
-     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
      * @return The trialAvatarFirstPassDungeonNotify.
      */
     emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify getTrialAvatarFirstPassDungeonNotify();
     /**
-     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
      */
     emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotifyOrBuilder getTrialAvatarFirstPassDungeonNotifyOrBuilder();
 
     /**
-     * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+     * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
      * @return Whether the channellerSlabLoopDungeonResultInfo field is set.
      */
     boolean hasChannellerSlabLoopDungeonResultInfo();
     /**
-     * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+     * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
      * @return The channellerSlabLoopDungeonResultInfo.
      */
-    emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo getChannellerSlabLoopDungeonResultInfo();
+    emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo getChannellerSlabLoopDungeonResultInfo();
     /**
-     * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+     * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
      */
-    emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfoOrBuilder getChannellerSlabLoopDungeonResultInfoOrBuilder();
+    emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfoOrBuilder getChannellerSlabLoopDungeonResultInfoOrBuilder();
 
     /**
-     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
      * @return Whether the effigyChallengeDungeonResultInfo field is set.
      */
     boolean hasEffigyChallengeDungeonResultInfo();
     /**
-     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
      * @return The effigyChallengeDungeonResultInfo.
      */
     emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo getEffigyChallengeDungeonResultInfo();
     /**
-     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
      */
     emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfoOrBuilder getEffigyChallengeDungeonResultInfoOrBuilder();
 
     /**
-     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
      * @return Whether the roguelikeDungeonSettleInfo field is set.
      */
     boolean hasRoguelikeDungeonSettleInfo();
     /**
-     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
      * @return The roguelikeDungeonSettleInfo.
      */
     emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo getRoguelikeDungeonSettleInfo();
     /**
-     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
      */
     emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfoOrBuilder getRoguelikeDungeonSettleInfoOrBuilder();
 
     /**
-     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
      * @return Whether the crystalLinkSettleInfo field is set.
      */
     boolean hasCrystalLinkSettleInfo();
     /**
-     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
      * @return The crystalLinkSettleInfo.
      */
     emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo getCrystalLinkSettleInfo();
     /**
-     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
      */
     emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfoOrBuilder getCrystalLinkSettleInfoOrBuilder();
 
     /**
-     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
      * @return Whether the summerTimeV2DungeonSettleInfo field is set.
      */
     boolean hasSummerTimeV2DungeonSettleInfo();
     /**
-     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
      * @return The summerTimeV2DungeonSettleInfo.
      */
     emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo getSummerTimeV2DungeonSettleInfo();
     /**
-     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
      */
     emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfoOrBuilder getSummerTimeV2DungeonSettleInfoOrBuilder();
 
     /**
-     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
      * @return Whether the instableSpraySettleInfo field is set.
      */
     boolean hasInstableSpraySettleInfo();
     /**
-     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
      * @return The instableSpraySettleInfo.
      */
     emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo getInstableSpraySettleInfo();
     /**
-     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
      */
     emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfoOrBuilder getInstableSpraySettleInfoOrBuilder();
 
     /**
-     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
      * @return Whether the windFieldDungeonSettleInfo field is set.
      */
     boolean hasWindFieldDungeonSettleInfo();
     /**
-     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
      * @return The windFieldDungeonSettleInfo.
      */
     emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo getWindFieldDungeonSettleInfo();
     /**
-     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
      */
     emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfoOrBuilder getWindFieldDungeonSettleInfoOrBuilder();
 
     /**
-     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
      * @return Whether the effigyChallengeV2SettleInfo field is set.
      */
     boolean hasEffigyChallengeV2SettleInfo();
     /**
-     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
      * @return The effigyChallengeV2SettleInfo.
      */
     emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo getEffigyChallengeV2SettleInfo();
     /**
-     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
      */
     emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfoOrBuilder getEffigyChallengeV2SettleInfoOrBuilder();
 
     /**
-     * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+     * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
      * @return Whether the teamChainSettleInfo field is set.
      */
     boolean hasTeamChainSettleInfo();
     /**
-     * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+     * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
      * @return The teamChainSettleInfo.
      */
     emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo getTeamChainSettleInfo();
     /**
-     * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+     * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
      */
     emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfoOrBuilder getTeamChainSettleInfoOrBuilder();
 
     /**
-     * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+     * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
      * @return Whether the pacmanSettleInfo field is set.
      */
     boolean hasPacmanSettleInfo();
     /**
-     * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+     * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
      * @return The pacmanSettleInfo.
      */
     emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo getPacmanSettleInfo();
     /**
-     * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+     * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
      */
     emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfoOrBuilder getPacmanSettleInfoOrBuilder();
 
     /**
-     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
      * @return Whether the fungusFighterV2SettleInfo field is set.
      */
     boolean hasFungusFighterV2SettleInfo();
     /**
-     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
      * @return The fungusFighterV2SettleInfo.
      */
     emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo getFungusFighterV2SettleInfo();
     /**
-     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
      */
     emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfoOrBuilder getFungusFighterV2SettleInfoOrBuilder();
 
     /**
-     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
      * @return Whether the bladeDanceSettleInfo field is set.
      */
     boolean hasBladeDanceSettleInfo();
     /**
-     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
      * @return The bladeDanceSettleInfo.
      */
     emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo getBladeDanceSettleInfo();
     /**
-     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
      */
     emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfoOrBuilder getBladeDanceSettleInfoOrBuilder();
 
     /**
-     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
      * @return Whether the multiCharacterDungeonSettleInfo field is set.
      */
     boolean hasMultiCharacterDungeonSettleInfo();
     /**
-     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
      * @return The multiCharacterDungeonSettleInfo.
      */
     emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo getMultiCharacterDungeonSettleInfo();
     /**
-     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
      */
     emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfoOrBuilder getMultiCharacterDungeonSettleInfoOrBuilder();
-
-    /**
-     * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-     * @return Whether the inspirationSpurtDungeonSettleInfo field is set.
-     */
-    boolean hasInspirationSpurtDungeonSettleInfo();
-    /**
-     * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-     * @return The inspirationSpurtDungeonSettleInfo.
-     */
-    emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo getInspirationSpurtDungeonSettleInfo();
-    /**
-     * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-     */
-    emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfoOrBuilder getInspirationSpurtDungeonSettleInfoOrBuilder();
-
-    /**
-     * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-     * @return Whether the quickTimeCombatSettleInfo field is set.
-     */
-    boolean hasQuickTimeCombatSettleInfo();
-    /**
-     * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-     * @return The quickTimeCombatSettleInfo.
-     */
-    emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo getQuickTimeCombatSettleInfo();
-    /**
-     * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-     */
-    emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfoOrBuilder getQuickTimeCombatSettleInfoOrBuilder();
-
-    /**
-     * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-     * @return Whether the fungusFighterV3SettleInfo field is set.
-     */
-    boolean hasFungusFighterV3SettleInfo();
-    /**
-     * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-     * @return The fungusFighterV3SettleInfo.
-     */
-    emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo getFungusFighterV3SettleInfo();
-    /**
-     * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-     */
-    emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfoOrBuilder getFungusFighterV3SettleInfoOrBuilder();
-
-    /**
-     * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-     * @return Whether the filmfestBattleSettleInfo field is set.
-     */
-    boolean hasFilmfestBattleSettleInfo();
-    /**
-     * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-     * @return The filmfestBattleSettleInfo.
-     */
-    emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo getFilmfestBattleSettleInfo();
-    /**
-     * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-     */
-    emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfoOrBuilder getFilmfestBattleSettleInfoOrBuilder();
-
-    /**
-     * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-     * @return Whether the filmfestSniperSettleInfo field is set.
-     */
-    boolean hasFilmfestSniperSettleInfo();
-    /**
-     * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-     * @return The filmfestSniperSettleInfo.
-     */
-    emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo getFilmfestSniperSettleInfo();
-    /**
-     * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-     */
-    emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfoOrBuilder getFilmfestSniperSettleInfoOrBuilder();
-
-    /**
-     * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-     * @return Whether the goalChallengeSettleInfo field is set.
-     */
-    boolean hasGoalChallengeSettleInfo();
-    /**
-     * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-     * @return The goalChallengeSettleInfo.
-     */
-    emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo getGoalChallengeSettleInfo();
-    /**
-     * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-     */
-    emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfoOrBuilder getGoalChallengeSettleInfoOrBuilder();
-
-    /**
-     * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-     * @return Whether the mistTrialSettleInfo field is set.
-     */
-    boolean hasMistTrialSettleInfo();
-    /**
-     * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-     * @return The mistTrialSettleInfo.
-     */
-    emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo getMistTrialSettleInfo();
-    /**
-     * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-     */
-    emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfoOrBuilder getMistTrialSettleInfoOrBuilder();
-
-    /**
-     * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-     * @return Whether the staminaFightSettleInfo field is set.
-     */
-    boolean hasStaminaFightSettleInfo();
-    /**
-     * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-     * @return The staminaFightSettleInfo.
-     */
-    emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo getStaminaFightSettleInfo();
-    /**
-     * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-     */
-    emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfoOrBuilder getStaminaFightSettleInfoOrBuilder();
-
-    /**
-     * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-     * @return Whether the lostSamachurlSneakSettleInfo field is set.
-     */
-    boolean hasLostSamachurlSneakSettleInfo();
-    /**
-     * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-     * @return The lostSamachurlSneakSettleInfo.
-     */
-    emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo getLostSamachurlSneakSettleInfo();
-    /**
-     * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-     */
-    emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfoOrBuilder getLostSamachurlSneakSettleInfoOrBuilder();
-
-    /**
-     * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-     * @return Whether the autoTimeStopSettleInfo field is set.
-     */
-    boolean hasAutoTimeStopSettleInfo();
-    /**
-     * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-     * @return The autoTimeStopSettleInfo.
-     */
-    emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo getAutoTimeStopSettleInfo();
-    /**
-     * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-     */
-    emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfoOrBuilder getAutoTimeStopSettleInfoOrBuilder();
-
-    /**
-     * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-     * @return Whether the slimeCannonSettleInfo field is set.
-     */
-    boolean hasSlimeCannonSettleInfo();
-    /**
-     * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-     * @return The slimeCannonSettleInfo.
-     */
-    emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo getSlimeCannonSettleInfo();
-    /**
-     * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-     */
-    emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfoOrBuilder getSlimeCannonSettleInfoOrBuilder();
-
-    /**
-     * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-     * @return Whether the effigyChallengeV5SettleInfo field is set.
-     */
-    boolean hasEffigyChallengeV5SettleInfo();
-    /**
-     * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-     * @return The effigyChallengeV5SettleInfo.
-     */
-    emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo getEffigyChallengeV5SettleInfo();
-    /**
-     * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-     */
-    emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfoOrBuilder getEffigyChallengeV5SettleInfoOrBuilder();
-
-    /**
-     * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-     * @return Whether the roleCombatSettleInfo field is set.
-     */
-    boolean hasRoleCombatSettleInfo();
-    /**
-     * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-     * @return The roleCombatSettleInfo.
-     */
-    emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo getRoleCombatSettleInfo();
-    /**
-     * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-     */
-    emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfoOrBuilder getRoleCombatSettleInfoOrBuilder();
-
-    /**
-     * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-     * @return Whether the acrobaticsBattleSettleInfo field is set.
-     */
-    boolean hasAcrobaticsBattleSettleInfo();
-    /**
-     * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-     * @return The acrobaticsBattleSettleInfo.
-     */
-    emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo getAcrobaticsBattleSettleInfo();
-    /**
-     * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-     */
-    emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfoOrBuilder getAcrobaticsBattleSettleInfoOrBuilder();
-
-    /**
-     * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-     * @return Whether the bulletHellSettleInfo field is set.
-     */
-    boolean hasBulletHellSettleInfo();
-    /**
-     * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-     * @return The bulletHellSettleInfo.
-     */
-    emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo getBulletHellSettleInfo();
-    /**
-     * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-     */
-    emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfoOrBuilder getBulletHellSettleInfoOrBuilder();
-
-    /**
-     * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-     * @return Whether the rechargeDiskSettleInfo field is set.
-     */
-    boolean hasRechargeDiskSettleInfo();
-    /**
-     * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-     * @return The rechargeDiskSettleInfo.
-     */
-    emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo getRechargeDiskSettleInfo();
-    /**
-     * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-     */
-    emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfoOrBuilder getRechargeDiskSettleInfoOrBuilder();
-
-    /**
-     * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-     * @return Whether the fairyTalesCombatSettleInfo field is set.
-     */
-    boolean hasFairyTalesCombatSettleInfo();
-    /**
-     * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-     * @return The fairyTalesCombatSettleInfo.
-     */
-    emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo getFairyTalesCombatSettleInfo();
-    /**
-     * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-     */
-    emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfoOrBuilder getFairyTalesCombatSettleInfoOrBuilder();
-
-    /**
-     * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-     * @return Whether the gainBuffSettleInfo field is set.
-     */
-    boolean hasGainBuffSettleInfo();
-    /**
-     * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-     * @return The gainBuffSettleInfo.
-     */
-    emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo getGainBuffSettleInfo();
-    /**
-     * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-     */
-    emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfoOrBuilder getGainBuffSettleInfoOrBuilder();
-
-    /**
-     * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-     * @return Whether the charMasterSettleInfo field is set.
-     */
-    boolean hasCharMasterSettleInfo();
-    /**
-     * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-     * @return The charMasterSettleInfo.
-     */
-    emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo getCharMasterSettleInfo();
-    /**
-     * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-     */
-    emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfoOrBuilder getCharMasterSettleInfoOrBuilder();
-
-    /**
-     * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-     * @return Whether the feverBattleSettleInfo field is set.
-     */
-    boolean hasFeverBattleSettleInfo();
-    /**
-     * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-     * @return The feverBattleSettleInfo.
-     */
-    emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo getFeverBattleSettleInfo();
-    /**
-     * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-     */
-    emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfoOrBuilder getFeverBattleSettleInfoOrBuilder();
-
-    /**
-     * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-     * @return Whether the cooperateChallengeSettleInfo field is set.
-     */
-    boolean hasCooperateChallengeSettleInfo();
-    /**
-     * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-     * @return The cooperateChallengeSettleInfo.
-     */
-    emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo getCooperateChallengeSettleInfo();
-    /**
-     * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-     */
-    emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfoOrBuilder getCooperateChallengeSettleInfoOrBuilder();
-
-    /**
-     * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-     * @return Whether the bomberDodocoSettleInfo field is set.
-     */
-    boolean hasBomberDodocoSettleInfo();
-    /**
-     * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-     * @return The bomberDodocoSettleInfo.
-     */
-    emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo getBomberDodocoSettleInfo();
-    /**
-     * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-     */
-    emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfoOrBuilder getBomberDodocoSettleInfoOrBuilder();
-
-    /**
-     * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-     * @return Whether the ceremonyBattleSettleInfo field is set.
-     */
-    boolean hasCeremonyBattleSettleInfo();
-    /**
-     * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-     * @return The ceremonyBattleSettleInfo.
-     */
-    emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo getCeremonyBattleSettleInfo();
-    /**
-     * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-     */
-    emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfoOrBuilder getCeremonyBattleSettleInfoOrBuilder();
-
-    /**
-     * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-     * @return Whether the badgetBattleSettleInfo field is set.
-     */
-    boolean hasBadgetBattleSettleInfo();
-    /**
-     * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-     * @return The badgetBattleSettleInfo.
-     */
-    emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo getBadgetBattleSettleInfo();
-    /**
-     * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-     */
-    emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfoOrBuilder getBadgetBattleSettleInfoOrBuilder();
-
-    /**
-     * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-     * @return Whether the adShootingSettleInfo field is set.
-     */
-    boolean hasAdShootingSettleInfo();
-    /**
-     * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-     * @return The adShootingSettleInfo.
-     */
-    emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo getAdShootingSettleInfo();
-    /**
-     * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-     */
-    emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfoOrBuilder getAdShootingSettleInfoOrBuilder();
-
-    /**
-     * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-     * @return Whether the towerChallengeSettleInfo field is set.
-     */
-    boolean hasTowerChallengeSettleInfo();
-    /**
-     * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-     * @return The towerChallengeSettleInfo.
-     */
-    emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo getTowerChallengeSettleInfo();
-    /**
-     * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-     */
-    emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfoOrBuilder getTowerChallengeSettleInfoOrBuilder();
-
-    /**
-     * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-     * @return Whether the galleryContextEntry field is set.
-     */
-    boolean hasGalleryContextEntry();
-    /**
-     * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-     * @return The galleryContextEntry.
-     */
-    emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry getGalleryContextEntry();
-    /**
-     * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-     */
-    emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntryOrBuilder getGalleryContextEntryOrBuilder();
-
-    /**
-     * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-     * @return Whether the natlanDrillBattleSettleInfo field is set.
-     */
-    boolean hasNatlanDrillBattleSettleInfo();
-    /**
-     * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-     * @return The natlanDrillBattleSettleInfo.
-     */
-    emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo getNatlanDrillBattleSettleInfo();
-    /**
-     * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-     */
-    emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfoOrBuilder getNatlanDrillBattleSettleInfoOrBuilder();
-
-    /**
-     * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-     * @return Whether the natlanArenaSettleInfo field is set.
-     */
-    boolean hasNatlanArenaSettleInfo();
-    /**
-     * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-     * @return The natlanArenaSettleInfo.
-     */
-    emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo getNatlanArenaSettleInfo();
-    /**
-     * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-     */
-    emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfoOrBuilder getNatlanArenaSettleInfoOrBuilder();
-
-    /**
-     * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-     * @return Whether the saurus1V3SettleInfo field is set.
-     */
-    boolean hasSaurus1V3SettleInfo();
-    /**
-     * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-     * @return The saurus1V3SettleInfo.
-     */
-    emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo getSaurus1V3SettleInfo();
-    /**
-     * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-     */
-    emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfoOrBuilder getSaurus1V3SettleInfoOrBuilder();
-
-    /**
-     * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-     * @return Whether the diversityBattleSettleInfo field is set.
-     */
-    boolean hasDiversityBattleSettleInfo();
-    /**
-     * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-     * @return The diversityBattleSettleInfo.
-     */
-    emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo getDiversityBattleSettleInfo();
-    /**
-     * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-     */
-    emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfoOrBuilder getDiversityBattleSettleInfoOrBuilder();
-
-    /**
-     * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-     * @return Whether the themeParkParkourSettleInfo field is set.
-     */
-    boolean hasThemeParkParkourSettleInfo();
-    /**
-     * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-     * @return The themeParkParkourSettleInfo.
-     */
-    emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo getThemeParkParkourSettleInfo();
-    /**
-     * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-     */
-    emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfoOrBuilder getThemeParkParkourSettleInfoOrBuilder();
-
-    /**
-     * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-     * @return Whether the themeParkTriathlonSettleInfo field is set.
-     */
-    boolean hasThemeParkTriathlonSettleInfo();
-    /**
-     * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-     * @return The themeParkTriathlonSettleInfo.
-     */
-    emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo getThemeParkTriathlonSettleInfo();
-    /**
-     * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-     */
-    emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfoOrBuilder getThemeParkTriathlonSettleInfoOrBuilder();
-
-    /**
-     * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-     * @return Whether the mvm2PveSettleInfo field is set.
-     */
-    boolean hasMvm2PveSettleInfo();
-    /**
-     * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-     * @return The mvm2PveSettleInfo.
-     */
-    emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo getMvm2PveSettleInfo();
-    /**
-     * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-     */
-    emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfoOrBuilder getMvm2PveSettleInfoOrBuilder();
-
-    /**
-     * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-     * @return Whether the mvm2SimulateSettleInfo field is set.
-     */
-    boolean hasMvm2SimulateSettleInfo();
-    /**
-     * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-     * @return The mvm2SimulateSettleInfo.
-     */
-    emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo getMvm2SimulateSettleInfo();
-    /**
-     * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-     */
-    emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfoOrBuilder getMvm2SimulateSettleInfoOrBuilder();
 
     public emu.grasscutter.net.proto.DungeonSettleNotifyOuterClass.DungeonSettleNotify.DetailCase getDetailCase();
   }
   /**
    * <pre>
-   * CmdId: 839
+   * CmdId: 22323
+   * Obf: OHGJJKADNFH
    * </pre>
    *
    * Protobuf type {@code DungeonSettleNotify}
@@ -949,9 +408,8 @@ public final class DungeonSettleNotifyOuterClass {
       super(builder);
     }
     private DungeonSettleNotify() {
-      playerUidList_ = emptyIntList();
-      ePBCNMFNDAP_ = emptyIntList();
       exhibitionInfoList_ = java.util.Collections.emptyList();
+      failCondList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -986,68 +444,74 @@ public final class DungeonSettleNotifyOuterClass {
               done = true;
               break;
             case 8: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                playerUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              playerUidList_.addInt(input.readUInt32());
-              break;
-            }
-            case 10: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                playerUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                playerUidList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 16: {
 
-              dungeonId_ = input.readUInt32();
+              createPlayerUid_ = input.readUInt32();
+              break;
+            }
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                strengthenPointDataMap_ = com.google.protobuf.MapField.newMapField(
+                    StrengthenPointDataMapDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000002;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
+              strengthenPointDataMap__ = input.readMessage(
+                  StrengthenPointDataMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              strengthenPointDataMap_.getMutableMap().put(
+                  strengthenPointDataMap__.getKey(), strengthenPointDataMap__.getValue());
               break;
             }
             case 24: {
 
-              aLHPCFABLPH_ = input.readUInt32();
+              isSuccess_ = input.readBool();
               break;
             }
-            case 32: {
+            case 40: {
+
+              result_ = input.readUInt32();
+              break;
+            }
+            case 48: {
 
               closeTime_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              useTime_ = input.readUInt32();
+              dungeonId_ = input.readUInt32();
               break;
             }
-            case 64: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                ePBCNMFNDAP_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+            case 72: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                failCondList_ = newIntList();
+                mutable_bitField0_ |= 0x00000008;
               }
-              ePBCNMFNDAP_.addInt(input.readUInt32());
+              failCondList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                ePBCNMFNDAP_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
+                failCondList_ = newIntList();
+                mutable_bitField0_ |= 0x00000008;
               }
               while (input.getBytesUntilLimit() > 0) {
-                ePBCNMFNDAP_.addInt(input.readUInt32());
+                failCondList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 74: {
+            case 82: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                exhibitionInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              exhibitionInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 settleShow_ = com.google.protobuf.MapField.newMapField(
                     SettleShowDefaultEntryHolder.defaultEntry);
@@ -1060,83 +524,14 @@ public final class DungeonSettleNotifyOuterClass {
                   settleShow__.getKey(), settleShow__.getValue());
               break;
             }
-            case 88: {
+            case 120: {
 
-              isSuccess_ = input.readBool();
+              useTime_ = input.readUInt32();
               break;
             }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                strengthenPointDataMap_ = com.google.protobuf.MapField.newMapField(
-                    StrengthenPointDataMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000008;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
-              strengthenPointDataMap__ = input.readMessage(
-                  StrengthenPointDataMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              strengthenPointDataMap_.getMutableMap().put(
-                  strengthenPointDataMap__.getKey(), strengthenPointDataMap__.getValue());
-              break;
-            }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
-                exhibitionInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo>();
-                mutable_bitField0_ |= 0x00000010;
-              }
-              exhibitionInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 112: {
-
-              result_ = input.readUInt32();
-              break;
-            }
-            case 226: {
-              emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 28) {
-                subBuilder = ((emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 28;
-              break;
-            }
-            case 242: {
-              emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.Builder subBuilder = null;
-              if (detailCase_ == 30) {
-                subBuilder = ((emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 30;
-              break;
-            }
-            case 290: {
-              emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 36) {
-                subBuilder = ((emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 36;
-              break;
-            }
-            case 938: {
+            case 1394: {
               emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 117) {
+              if (detailCase_ == 174) {
                 subBuilder = ((emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo) detail_).toBuilder();
               }
               detail_ =
@@ -1145,418 +540,12 @@ public final class DungeonSettleNotifyOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 117;
+              detailCase_ = 174;
               break;
             }
-            case 1058: {
-              emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.Builder subBuilder = null;
-              if (detailCase_ == 132) {
-                subBuilder = ((emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 132;
-              break;
-            }
-            case 1186: {
-              emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 148) {
-                subBuilder = ((emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 148;
-              break;
-            }
-            case 1370: {
-              emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 171) {
-                subBuilder = ((emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 171;
-              break;
-            }
-            case 1586: {
-              emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 198) {
-                subBuilder = ((emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 198;
-              break;
-            }
-            case 1762: {
-              emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 220) {
-                subBuilder = ((emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 220;
-              break;
-            }
-            case 1930: {
-              emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.Builder subBuilder = null;
-              if (detailCase_ == 241) {
-                subBuilder = ((emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 241;
-              break;
-            }
-            case 1978: {
-              emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 247) {
-                subBuilder = ((emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 247;
-              break;
-            }
-            case 1994: {
-              emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 249) {
-                subBuilder = ((emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 249;
-              break;
-            }
-            case 2978: {
-              emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 372) {
-                subBuilder = ((emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 372;
-              break;
-            }
-            case 3122: {
-              emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 390) {
-                subBuilder = ((emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 390;
-              break;
-            }
-            case 3306: {
-              emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 413) {
-                subBuilder = ((emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 413;
-              break;
-            }
-            case 4290: {
-              emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 536) {
-                subBuilder = ((emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 536;
-              break;
-            }
-            case 5146: {
-              emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.Builder subBuilder = null;
-              if (detailCase_ == 643) {
-                subBuilder = ((emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 643;
-              break;
-            }
-            case 5274: {
-              emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 659) {
-                subBuilder = ((emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 659;
-              break;
-            }
-            case 5610: {
-              emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 701) {
-                subBuilder = ((emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 701;
-              break;
-            }
-            case 5770: {
-              emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 721) {
-                subBuilder = ((emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 721;
-              break;
-            }
-            case 6298: {
-              emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.Builder subBuilder = null;
-              if (detailCase_ == 787) {
-                subBuilder = ((emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 787;
-              break;
-            }
-            case 6498: {
-              emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 812) {
-                subBuilder = ((emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 812;
-              break;
-            }
-            case 6570: {
-              emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 821) {
-                subBuilder = ((emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 821;
-              break;
-            }
-            case 6786: {
-              emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 848) {
-                subBuilder = ((emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 848;
-              break;
-            }
-            case 7426: {
-              emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 928) {
-                subBuilder = ((emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 928;
-              break;
-            }
-            case 7450: {
-              emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 931) {
-                subBuilder = ((emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 931;
-              break;
-            }
-            case 7538: {
-              emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 942) {
-                subBuilder = ((emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 942;
-              break;
-            }
-            case 7882: {
-              emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 985) {
-                subBuilder = ((emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 985;
-              break;
-            }
-            case 7930: {
-              emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 991) {
-                subBuilder = ((emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 991;
-              break;
-            }
-            case 8010: {
-              emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1001) {
-                subBuilder = ((emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 1001;
-              break;
-            }
-            case 8034: {
-              emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1004) {
-                subBuilder = ((emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 1004;
-              break;
-            }
-            case 9034: {
-              emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1129) {
-                subBuilder = ((emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 1129;
-              break;
-            }
-            case 9482: {
-              emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1185) {
-                subBuilder = ((emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 1185;
-              break;
-            }
-            case 9618: {
+            case 4626: {
               emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1202) {
+              if (detailCase_ == 578) {
                 subBuilder = ((emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo) detail_).toBuilder();
               }
               detail_ =
@@ -1565,138 +554,138 @@ public final class DungeonSettleNotifyOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1202;
+              detailCase_ = 578;
               break;
             }
-            case 9866: {
-              emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1233) {
-                subBuilder = ((emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo) detail_).toBuilder();
+            case 4770: {
+              emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.Builder subBuilder = null;
+              if (detailCase_ == 596) {
+                subBuilder = ((emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1233;
+              detailCase_ = 596;
               break;
             }
-            case 11234: {
-              emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1404) {
-                subBuilder = ((emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo) detail_).toBuilder();
+            case 5618: {
+              emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.Builder subBuilder = null;
+              if (detailCase_ == 702) {
+                subBuilder = ((emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1404;
+              detailCase_ = 702;
               break;
             }
-            case 11922: {
-              emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1490) {
-                subBuilder = ((emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo) detail_).toBuilder();
+            case 5714: {
+              emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.Builder subBuilder = null;
+              if (detailCase_ == 714) {
+                subBuilder = ((emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1490;
+              detailCase_ = 714;
               break;
             }
-            case 12194: {
-              emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1524) {
-                subBuilder = ((emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo) detail_).toBuilder();
+            case 6042: {
+              emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.Builder subBuilder = null;
+              if (detailCase_ == 755) {
+                subBuilder = ((emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1524;
+              detailCase_ = 755;
               break;
             }
-            case 12306: {
-              emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1538) {
-                subBuilder = ((emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo) detail_).toBuilder();
+            case 6466: {
+              emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.Builder subBuilder = null;
+              if (detailCase_ == 808) {
+                subBuilder = ((emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1538;
+              detailCase_ = 808;
               break;
             }
-            case 12410: {
-              emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1551) {
-                subBuilder = ((emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo) detail_).toBuilder();
+            case 9298: {
+              emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.Builder subBuilder = null;
+              if (detailCase_ == 1162) {
+                subBuilder = ((emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1551;
+              detailCase_ = 1162;
               break;
             }
-            case 13090: {
-              emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1636) {
-                subBuilder = ((emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo) detail_).toBuilder();
+            case 10506: {
+              emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.Builder subBuilder = null;
+              if (detailCase_ == 1313) {
+                subBuilder = ((emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1636;
+              detailCase_ = 1313;
               break;
             }
-            case 13922: {
-              emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1740) {
-                subBuilder = ((emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo) detail_).toBuilder();
+            case 12354: {
+              emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.Builder subBuilder = null;
+              if (detailCase_ == 1544) {
+                subBuilder = ((emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1740;
+              detailCase_ = 1544;
               break;
             }
-            case 14234: {
-              emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1779) {
-                subBuilder = ((emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo) detail_).toBuilder();
+            case 13034: {
+              emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.Builder subBuilder = null;
+              if (detailCase_ == 1629) {
+                subBuilder = ((emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1779;
+              detailCase_ = 1629;
               break;
             }
-            case 14554: {
+            case 15090: {
               emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1819) {
+              if (detailCase_ == 1886) {
                 subBuilder = ((emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) detail_).toBuilder();
               }
               detail_ =
@@ -1705,91 +694,49 @@ public final class DungeonSettleNotifyOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1819;
+              detailCase_ = 1886;
               break;
             }
-            case 15338: {
-              emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 1917) {
-                subBuilder = ((emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo) detail_).toBuilder();
+            case 15210: {
+              emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.Builder subBuilder = null;
+              if (detailCase_ == 1901) {
+                subBuilder = ((emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 1917;
+              detailCase_ = 1901;
               break;
             }
-            case 16098: {
-              emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 2012) {
-                subBuilder = ((emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo) detail_).toBuilder();
+            case 16082: {
+              emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.Builder subBuilder = null;
+              if (detailCase_ == 2010) {
+                subBuilder = ((emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 2012;
+              detailCase_ = 2010;
               break;
             }
-            case 16162: {
-              emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 2020) {
-                subBuilder = ((emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo) detail_).toBuilder();
+            case 16290: {
+              emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.Builder subBuilder = null;
+              if (detailCase_ == 2036) {
+                subBuilder = ((emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_).toBuilder();
               }
               detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo) detail_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_);
                 detail_ = subBuilder.buildPartial();
               }
-              detailCase_ = 2020;
-              break;
-            }
-            case 16194: {
-              emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 2024) {
-                subBuilder = ((emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 2024;
-              break;
-            }
-            case 16250: {
-              emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 2031) {
-                subBuilder = ((emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 2031;
-              break;
-            }
-            case 16314: {
-              emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.Builder subBuilder = null;
-              if (detailCase_ == 2039) {
-                subBuilder = ((emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo) detail_).toBuilder();
-              }
-              detail_ =
-                  input.readMessage(emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo) detail_);
-                detail_ = subBuilder.buildPartial();
-              }
-              detailCase_ = 2039;
+              detailCase_ = 2036;
               break;
             }
             default: {
@@ -1807,13 +754,10 @@ public final class DungeonSettleNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+          failCondList_.makeImmutable(); // C
+        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          playerUidList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          ePBCNMFNDAP_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
           exhibitionInfoList_ = java.util.Collections.unmodifiableList(exhibitionInfoList_);
         }
         this.unknownFields = unknownFields.build();
@@ -1830,10 +774,10 @@ public final class DungeonSettleNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 9:
-          return internalGetSettleShow();
-        case 12:
+        case 2:
           return internalGetStrengthenPointDataMap();
+        case 13:
+          return internalGetSettleShow();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -1852,56 +796,21 @@ public final class DungeonSettleNotifyOuterClass {
     public enum DetailCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      TOWER_LEVEL_END_NOTIFY(787),
-      TRIAL_AVATAR_FIRST_PASS_DUNGEON_NOTIFY(241),
-      CHANNELLER_SLAB_LOOP_DUNGEON_RESULT_INFO(643),
-      EFFIGY_CHALLENGE_DUNGEON_RESULT_INFO(132),
-      ROGUELIKE_DUNGEON_SETTLE_INFO(372),
-      CRYSTAL_LINK_SETTLE_INFO(220),
-      SUMMER_TIME_V2_DUNGEON_SETTLE_INFO(117),
-      INSTABLE_SPRAY_SETTLE_INFO(659),
-      WIND_FIELD_DUNGEON_SETTLE_INFO(28),
-      EFFIGY_CHALLENGE_V2_SETTLE_INFO(390),
-      TEAM_CHAIN_SETTLE_INFO(1001),
-      PACMAN_SETTLE_INFO(536),
-      FUNGUS_FIGHTER_V2_SETTLE_INFO(1819),
-      BLADE_DANCE_SETTLE_INFO(1202),
-      MULTI_CHARACTER_DUNGEON_SETTLE_INFO(985),
-      INSPIRATION_SPURT_DUNGEON_SETTLE_INFO(1524),
-      QUICK_TIME_COMBAT_SETTLE_INFO(1551),
-      FUNGUS_FIGHTER_V3_SETTLE_INFO(198),
-      FILMFEST_BATTLE_SETTLE_INFO(1636),
-      FILMFEST_SNIPER_SETTLE_INFO(1185),
-      GOAL_CHALLENGE_SETTLE_INFO(812),
-      MIST_TRIAL_SETTLE_INFO(2031),
-      STAMINA_FIGHT_SETTLE_INFO(171),
-      LOST_SAMACHURL_SNEAK_SETTLE_INFO(1490),
-      AUTO_TIME_STOP_SETTLE_INFO(1917),
-      SLIME_CANNON_SETTLE_INFO(991),
-      EFFIGY_CHALLENGE_V5_SETTLE_INFO(1779),
-      ROLE_COMBAT_SETTLE_INFO(1740),
-      ACROBATICS_BATTLE_SETTLE_INFO(928),
-      BULLET_HELL_SETTLE_INFO(1233),
-      RECHARGE_DISK_SETTLE_INFO(36),
-      FAIRY_TALES_COMBAT_SETTLE_INFO(848),
-      GAIN_BUFF_SETTLE_INFO(931),
-      CHAR_MASTER_SETTLE_INFO(2012),
-      FEVER_BATTLE_SETTLE_INFO(249),
-      COOPERATE_CHALLENGE_SETTLE_INFO(1004),
-      BOMBER_DODOCO_SETTLE_INFO(2024),
-      CEREMONY_BATTLE_SETTLE_INFO(247),
-      BADGET_BATTLE_SETTLE_INFO(1538),
-      AD_SHOOTING_SETTLE_INFO(148),
-      TOWER_CHALLENGE_SETTLE_INFO(1404),
-      GALLERY_CONTEXT_ENTRY(30),
-      NATLAN_DRILL_BATTLE_SETTLE_INFO(942),
-      NATLAN_ARENA_SETTLE_INFO(721),
-      SAURUS1_V3_SETTLE_INFO(821),
-      DIVERSITY_BATTLE_SETTLE_INFO(413),
-      THEME_PARK_PARKOUR_SETTLE_INFO(2020),
-      THEME_PARK_TRIATHLON_SETTLE_INFO(1129),
-      MVM2_PVE_SETTLE_INFO(2039),
-      MVM2_SIMULATE_SETTLE_INFO(701),
+      TOWER_LEVEL_END_NOTIFY(1162),
+      TRIAL_AVATAR_FIRST_PASS_DUNGEON_NOTIFY(2036),
+      CHANNELLER_SLAB_LOOP_DUNGEON_RESULT_INFO(808),
+      EFFIGY_CHALLENGE_DUNGEON_RESULT_INFO(596),
+      ROGUELIKE_DUNGEON_SETTLE_INFO(2010),
+      CRYSTAL_LINK_SETTLE_INFO(1313),
+      SUMMER_TIME_V2_DUNGEON_SETTLE_INFO(174),
+      INSTABLE_SPRAY_SETTLE_INFO(702),
+      WIND_FIELD_DUNGEON_SETTLE_INFO(714),
+      EFFIGY_CHALLENGE_V2_SETTLE_INFO(1629),
+      TEAM_CHAIN_SETTLE_INFO(755),
+      PACMAN_SETTLE_INFO(1544),
+      FUNGUS_FIGHTER_V2_SETTLE_INFO(1886),
+      BLADE_DANCE_SETTLE_INFO(578),
+      MULTI_CHARACTER_DUNGEON_SETTLE_INFO(1901),
       DETAIL_NOT_SET(0);
       private final int value;
       private DetailCase(int value) {
@@ -1919,56 +828,21 @@ public final class DungeonSettleNotifyOuterClass {
 
       public static DetailCase forNumber(int value) {
         switch (value) {
-          case 787: return TOWER_LEVEL_END_NOTIFY;
-          case 241: return TRIAL_AVATAR_FIRST_PASS_DUNGEON_NOTIFY;
-          case 643: return CHANNELLER_SLAB_LOOP_DUNGEON_RESULT_INFO;
-          case 132: return EFFIGY_CHALLENGE_DUNGEON_RESULT_INFO;
-          case 372: return ROGUELIKE_DUNGEON_SETTLE_INFO;
-          case 220: return CRYSTAL_LINK_SETTLE_INFO;
-          case 117: return SUMMER_TIME_V2_DUNGEON_SETTLE_INFO;
-          case 659: return INSTABLE_SPRAY_SETTLE_INFO;
-          case 28: return WIND_FIELD_DUNGEON_SETTLE_INFO;
-          case 390: return EFFIGY_CHALLENGE_V2_SETTLE_INFO;
-          case 1001: return TEAM_CHAIN_SETTLE_INFO;
-          case 536: return PACMAN_SETTLE_INFO;
-          case 1819: return FUNGUS_FIGHTER_V2_SETTLE_INFO;
-          case 1202: return BLADE_DANCE_SETTLE_INFO;
-          case 985: return MULTI_CHARACTER_DUNGEON_SETTLE_INFO;
-          case 1524: return INSPIRATION_SPURT_DUNGEON_SETTLE_INFO;
-          case 1551: return QUICK_TIME_COMBAT_SETTLE_INFO;
-          case 198: return FUNGUS_FIGHTER_V3_SETTLE_INFO;
-          case 1636: return FILMFEST_BATTLE_SETTLE_INFO;
-          case 1185: return FILMFEST_SNIPER_SETTLE_INFO;
-          case 812: return GOAL_CHALLENGE_SETTLE_INFO;
-          case 2031: return MIST_TRIAL_SETTLE_INFO;
-          case 171: return STAMINA_FIGHT_SETTLE_INFO;
-          case 1490: return LOST_SAMACHURL_SNEAK_SETTLE_INFO;
-          case 1917: return AUTO_TIME_STOP_SETTLE_INFO;
-          case 991: return SLIME_CANNON_SETTLE_INFO;
-          case 1779: return EFFIGY_CHALLENGE_V5_SETTLE_INFO;
-          case 1740: return ROLE_COMBAT_SETTLE_INFO;
-          case 928: return ACROBATICS_BATTLE_SETTLE_INFO;
-          case 1233: return BULLET_HELL_SETTLE_INFO;
-          case 36: return RECHARGE_DISK_SETTLE_INFO;
-          case 848: return FAIRY_TALES_COMBAT_SETTLE_INFO;
-          case 931: return GAIN_BUFF_SETTLE_INFO;
-          case 2012: return CHAR_MASTER_SETTLE_INFO;
-          case 249: return FEVER_BATTLE_SETTLE_INFO;
-          case 1004: return COOPERATE_CHALLENGE_SETTLE_INFO;
-          case 2024: return BOMBER_DODOCO_SETTLE_INFO;
-          case 247: return CEREMONY_BATTLE_SETTLE_INFO;
-          case 1538: return BADGET_BATTLE_SETTLE_INFO;
-          case 148: return AD_SHOOTING_SETTLE_INFO;
-          case 1404: return TOWER_CHALLENGE_SETTLE_INFO;
-          case 30: return GALLERY_CONTEXT_ENTRY;
-          case 942: return NATLAN_DRILL_BATTLE_SETTLE_INFO;
-          case 721: return NATLAN_ARENA_SETTLE_INFO;
-          case 821: return SAURUS1_V3_SETTLE_INFO;
-          case 413: return DIVERSITY_BATTLE_SETTLE_INFO;
-          case 2020: return THEME_PARK_PARKOUR_SETTLE_INFO;
-          case 1129: return THEME_PARK_TRIATHLON_SETTLE_INFO;
-          case 2039: return MVM2_PVE_SETTLE_INFO;
-          case 701: return MVM2_SIMULATE_SETTLE_INFO;
+          case 1162: return TOWER_LEVEL_END_NOTIFY;
+          case 2036: return TRIAL_AVATAR_FIRST_PASS_DUNGEON_NOTIFY;
+          case 808: return CHANNELLER_SLAB_LOOP_DUNGEON_RESULT_INFO;
+          case 596: return EFFIGY_CHALLENGE_DUNGEON_RESULT_INFO;
+          case 2010: return ROGUELIKE_DUNGEON_SETTLE_INFO;
+          case 1313: return CRYSTAL_LINK_SETTLE_INFO;
+          case 174: return SUMMER_TIME_V2_DUNGEON_SETTLE_INFO;
+          case 702: return INSTABLE_SPRAY_SETTLE_INFO;
+          case 714: return WIND_FIELD_DUNGEON_SETTLE_INFO;
+          case 1629: return EFFIGY_CHALLENGE_V2_SETTLE_INFO;
+          case 755: return TEAM_CHAIN_SETTLE_INFO;
+          case 1544: return PACMAN_SETTLE_INFO;
+          case 1886: return FUNGUS_FIGHTER_V2_SETTLE_INFO;
+          case 578: return BLADE_DANCE_SETTLE_INFO;
+          case 1901: return MULTI_CHARACTER_DUNGEON_SETTLE_INFO;
           case 0: return DETAIL_NOT_SET;
           default: return null;
         }
@@ -1984,191 +858,10 @@ public final class DungeonSettleNotifyOuterClass {
           detailCase_);
     }
 
-    public static final int PLAYER_UID_LIST_FIELD_NUMBER = 1;
-    private com.google.protobuf.Internal.IntList playerUidList_;
-    /**
-     * <code>repeated uint32 player_uid_list = 1;</code>
-     * @return A list containing the playerUidList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getPlayerUidListList() {
-      return playerUidList_;
-    }
-    /**
-     * <code>repeated uint32 player_uid_list = 1;</code>
-     * @return The count of playerUidList.
-     */
-    public int getPlayerUidListCount() {
-      return playerUidList_.size();
-    }
-    /**
-     * <code>repeated uint32 player_uid_list = 1;</code>
-     * @param index The index of the element to return.
-     * @return The playerUidList at the given index.
-     */
-    public int getPlayerUidList(int index) {
-      return playerUidList_.getInt(index);
-    }
-    private int playerUidListMemoizedSerializedSize = -1;
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 2;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 2;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int ALHPCFABLPH_FIELD_NUMBER = 3;
-    private int aLHPCFABLPH_;
-    /**
-     * <code>uint32 ALHPCFABLPH = 3;</code>
-     * @return The aLHPCFABLPH.
-     */
-    @java.lang.Override
-    public int getALHPCFABLPH() {
-      return aLHPCFABLPH_;
-    }
-
-    public static final int CLOSE_TIME_FIELD_NUMBER = 4;
-    private int closeTime_;
-    /**
-     * <code>uint32 close_time = 4;</code>
-     * @return The closeTime.
-     */
-    @java.lang.Override
-    public int getCloseTime() {
-      return closeTime_;
-    }
-
-    public static final int USE_TIME_FIELD_NUMBER = 7;
-    private int useTime_;
-    /**
-     * <code>uint32 use_time = 7;</code>
-     * @return The useTime.
-     */
-    @java.lang.Override
-    public int getUseTime() {
-      return useTime_;
-    }
-
-    public static final int EPBCNMFNDAP_FIELD_NUMBER = 8;
-    private com.google.protobuf.Internal.IntList ePBCNMFNDAP_;
-    /**
-     * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-     * @return A list containing the ePBCNMFNDAP.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getEPBCNMFNDAPList() {
-      return ePBCNMFNDAP_;
-    }
-    /**
-     * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-     * @return The count of ePBCNMFNDAP.
-     */
-    public int getEPBCNMFNDAPCount() {
-      return ePBCNMFNDAP_.size();
-    }
-    /**
-     * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-     * @param index The index of the element to return.
-     * @return The ePBCNMFNDAP at the given index.
-     */
-    public int getEPBCNMFNDAP(int index) {
-      return ePBCNMFNDAP_.getInt(index);
-    }
-    private int ePBCNMFNDAPMemoizedSerializedSize = -1;
-
-    public static final int SETTLE_SHOW_FIELD_NUMBER = 9;
-    private static final class SettleShowDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList>newDefaultInstance(
-                  emu.grasscutter.net.proto.DungeonSettleNotifyOuterClass.internal_static_DungeonSettleNotify_SettleShowEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  emu.grasscutter.net.proto.ParamListOuterClass.ParamList.getDefaultInstance());
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> settleShow_;
-    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList>
-    internalGetSettleShow() {
-      if (settleShow_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            SettleShowDefaultEntryHolder.defaultEntry);
-      }
-      return settleShow_;
-    }
-
-    public int getSettleShowCount() {
-      return internalGetSettleShow().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsSettleShow(
-        int key) {
-      
-      return internalGetSettleShow().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getSettleShowMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> getSettleShow() {
-      return getSettleShowMap();
-    }
-    /**
-     * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> getSettleShowMap() {
-      return internalGetSettleShow().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.ParamListOuterClass.ParamList getSettleShowOrDefault(
-        int key,
-        emu.grasscutter.net.proto.ParamListOuterClass.ParamList defaultValue) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> map =
-          internalGetSettleShow().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.ParamListOuterClass.ParamList getSettleShowOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> map =
-          internalGetSettleShow().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 11;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 3;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 11;</code>
+     * <code>bool is_success = 3;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -2176,7 +869,47 @@ public final class DungeonSettleNotifyOuterClass {
       return isSuccess_;
     }
 
-    public static final int STRENGTHEN_POINT_DATA_MAP_FIELD_NUMBER = 12;
+    public static final int EXHIBITION_INFO_LIST_FIELD_NUMBER = 10;
+    private java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> exhibitionInfoList_;
+    /**
+     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> getExhibitionInfoListList() {
+      return exhibitionInfoList_;
+    }
+    /**
+     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder> 
+        getExhibitionInfoListOrBuilderList() {
+      return exhibitionInfoList_;
+    }
+    /**
+     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+     */
+    @java.lang.Override
+    public int getExhibitionInfoListCount() {
+      return exhibitionInfoList_.size();
+    }
+    /**
+     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo getExhibitionInfoList(int index) {
+      return exhibitionInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder getExhibitionInfoListOrBuilder(
+        int index) {
+      return exhibitionInfoList_.get(index);
+    }
+
+    public static final int STRENGTHEN_POINT_DATA_MAP_FIELD_NUMBER = 2;
     private static final class StrengthenPointDataMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> defaultEntry =
@@ -2203,7 +936,7 @@ public final class DungeonSettleNotifyOuterClass {
       return internalGetStrengthenPointDataMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
      */
 
     @java.lang.Override
@@ -2221,7 +954,7 @@ public final class DungeonSettleNotifyOuterClass {
       return getStrengthenPointDataMapMap();
     }
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
      */
     @java.lang.Override
 
@@ -2229,7 +962,7 @@ public final class DungeonSettleNotifyOuterClass {
       return internalGetStrengthenPointDataMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
      */
     @java.lang.Override
 
@@ -2242,7 +975,7 @@ public final class DungeonSettleNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+     * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
      */
     @java.lang.Override
 
@@ -2257,50 +990,124 @@ public final class DungeonSettleNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int EXHIBITION_INFO_LIST_FIELD_NUMBER = 13;
-    private java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> exhibitionInfoList_;
-    /**
-     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> getExhibitionInfoListList() {
-      return exhibitionInfoList_;
+    public static final int SETTLE_SHOW_FIELD_NUMBER = 13;
+    private static final class SettleShowDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList>newDefaultInstance(
+                  emu.grasscutter.net.proto.DungeonSettleNotifyOuterClass.internal_static_DungeonSettleNotify_SettleShowEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
+                  emu.grasscutter.net.proto.ParamListOuterClass.ParamList.getDefaultInstance());
     }
-    /**
-     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder> 
-        getExhibitionInfoListOrBuilderList() {
-      return exhibitionInfoList_;
-    }
-    /**
-     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-     */
-    @java.lang.Override
-    public int getExhibitionInfoListCount() {
-      return exhibitionInfoList_.size();
-    }
-    /**
-     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo getExhibitionInfoList(int index) {
-      return exhibitionInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder getExhibitionInfoListOrBuilder(
-        int index) {
-      return exhibitionInfoList_.get(index);
+    private com.google.protobuf.MapField<
+        java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> settleShow_;
+    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList>
+    internalGetSettleShow() {
+      if (settleShow_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            SettleShowDefaultEntryHolder.defaultEntry);
+      }
+      return settleShow_;
     }
 
-    public static final int RESULT_FIELD_NUMBER = 14;
+    public int getSettleShowCount() {
+      return internalGetSettleShow().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsSettleShow(
+        int key) {
+      
+      return internalGetSettleShow().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getSettleShowMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> getSettleShow() {
+      return getSettleShowMap();
+    }
+    /**
+     * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> getSettleShowMap() {
+      return internalGetSettleShow().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.ParamListOuterClass.ParamList getSettleShowOrDefault(
+        int key,
+        emu.grasscutter.net.proto.ParamListOuterClass.ParamList defaultValue) {
+      
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> map =
+          internalGetSettleShow().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.ParamListOuterClass.ParamList getSettleShowOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> map =
+          internalGetSettleShow().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int CREATE_PLAYER_UID_FIELD_NUMBER = 1;
+    private int createPlayerUid_;
+    /**
+     * <code>uint32 create_player_uid = 1;</code>
+     * @return The createPlayerUid.
+     */
+    @java.lang.Override
+    public int getCreatePlayerUid() {
+      return createPlayerUid_;
+    }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 7;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 7;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
+    }
+
+    public static final int CLOSE_TIME_FIELD_NUMBER = 6;
+    private int closeTime_;
+    /**
+     * <code>uint32 close_time = 6;</code>
+     * @return The closeTime.
+     */
+    @java.lang.Override
+    public int getCloseTime() {
+      return closeTime_;
+    }
+
+    public static final int RESULT_FIELD_NUMBER = 5;
     private int result_;
     /**
-     * <code>uint32 result = 14;</code>
+     * <code>uint32 result = 5;</code>
      * @return The result.
      */
     @java.lang.Override
@@ -2308,1554 +1115,508 @@ public final class DungeonSettleNotifyOuterClass {
       return result_;
     }
 
-    public static final int TOWER_LEVEL_END_NOTIFY_FIELD_NUMBER = 787;
+    public static final int USE_TIME_FIELD_NUMBER = 15;
+    private int useTime_;
     /**
-     * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+     * <code>uint32 use_time = 15;</code>
+     * @return The useTime.
+     */
+    @java.lang.Override
+    public int getUseTime() {
+      return useTime_;
+    }
+
+    public static final int FAIL_COND_LIST_FIELD_NUMBER = 9;
+    private com.google.protobuf.Internal.IntList failCondList_;
+    /**
+     * <code>repeated uint32 fail_cond_list = 9;</code>
+     * @return A list containing the failCondList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getFailCondListList() {
+      return failCondList_;
+    }
+    /**
+     * <code>repeated uint32 fail_cond_list = 9;</code>
+     * @return The count of failCondList.
+     */
+    public int getFailCondListCount() {
+      return failCondList_.size();
+    }
+    /**
+     * <code>repeated uint32 fail_cond_list = 9;</code>
+     * @param index The index of the element to return.
+     * @return The failCondList at the given index.
+     */
+    public int getFailCondList(int index) {
+      return failCondList_.getInt(index);
+    }
+    private int failCondListMemoizedSerializedSize = -1;
+
+    public static final int TOWER_LEVEL_END_NOTIFY_FIELD_NUMBER = 1162;
+    /**
+     * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
      * @return Whether the towerLevelEndNotify field is set.
      */
     @java.lang.Override
     public boolean hasTowerLevelEndNotify() {
-      return detailCase_ == 787;
+      return detailCase_ == 1162;
     }
     /**
-     * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+     * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
      * @return The towerLevelEndNotify.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify getTowerLevelEndNotify() {
-      if (detailCase_ == 787) {
+      if (detailCase_ == 1162) {
          return (emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_;
       }
       return emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.getDefaultInstance();
     }
     /**
-     * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+     * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotifyOrBuilder getTowerLevelEndNotifyOrBuilder() {
-      if (detailCase_ == 787) {
+      if (detailCase_ == 1162) {
          return (emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_;
       }
       return emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.getDefaultInstance();
     }
 
-    public static final int TRIAL_AVATAR_FIRST_PASS_DUNGEON_NOTIFY_FIELD_NUMBER = 241;
+    public static final int TRIAL_AVATAR_FIRST_PASS_DUNGEON_NOTIFY_FIELD_NUMBER = 2036;
     /**
-     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
      * @return Whether the trialAvatarFirstPassDungeonNotify field is set.
      */
     @java.lang.Override
     public boolean hasTrialAvatarFirstPassDungeonNotify() {
-      return detailCase_ == 241;
+      return detailCase_ == 2036;
     }
     /**
-     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
      * @return The trialAvatarFirstPassDungeonNotify.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify getTrialAvatarFirstPassDungeonNotify() {
-      if (detailCase_ == 241) {
+      if (detailCase_ == 2036) {
          return (emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_;
       }
       return emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.getDefaultInstance();
     }
     /**
-     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+     * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotifyOrBuilder getTrialAvatarFirstPassDungeonNotifyOrBuilder() {
-      if (detailCase_ == 241) {
+      if (detailCase_ == 2036) {
          return (emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_;
       }
       return emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.getDefaultInstance();
     }
 
-    public static final int CHANNELLER_SLAB_LOOP_DUNGEON_RESULT_INFO_FIELD_NUMBER = 643;
+    public static final int CHANNELLER_SLAB_LOOP_DUNGEON_RESULT_INFO_FIELD_NUMBER = 808;
     /**
-     * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+     * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
      * @return Whether the channellerSlabLoopDungeonResultInfo field is set.
      */
     @java.lang.Override
     public boolean hasChannellerSlabLoopDungeonResultInfo() {
-      return detailCase_ == 643;
+      return detailCase_ == 808;
     }
     /**
-     * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+     * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
      * @return The channellerSlabLoopDungeonResultInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo getChannellerSlabLoopDungeonResultInfo() {
-      if (detailCase_ == 643) {
-         return (emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo) detail_;
+    public emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo getChannellerSlabLoopDungeonResultInfo() {
+      if (detailCase_ == 808) {
+         return (emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo) detail_;
       }
-      return emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.getDefaultInstance();
     }
     /**
-     * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+     * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfoOrBuilder getChannellerSlabLoopDungeonResultInfoOrBuilder() {
-      if (detailCase_ == 643) {
-         return (emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo) detail_;
+    public emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfoOrBuilder getChannellerSlabLoopDungeonResultInfoOrBuilder() {
+      if (detailCase_ == 808) {
+         return (emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo) detail_;
       }
-      return emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.getDefaultInstance();
+      return emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.getDefaultInstance();
     }
 
-    public static final int EFFIGY_CHALLENGE_DUNGEON_RESULT_INFO_FIELD_NUMBER = 132;
+    public static final int EFFIGY_CHALLENGE_DUNGEON_RESULT_INFO_FIELD_NUMBER = 596;
     /**
-     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
      * @return Whether the effigyChallengeDungeonResultInfo field is set.
      */
     @java.lang.Override
     public boolean hasEffigyChallengeDungeonResultInfo() {
-      return detailCase_ == 132;
+      return detailCase_ == 596;
     }
     /**
-     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
      * @return The effigyChallengeDungeonResultInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo getEffigyChallengeDungeonResultInfo() {
-      if (detailCase_ == 132) {
+      if (detailCase_ == 596) {
          return (emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_;
       }
       return emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.getDefaultInstance();
     }
     /**
-     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+     * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfoOrBuilder getEffigyChallengeDungeonResultInfoOrBuilder() {
-      if (detailCase_ == 132) {
+      if (detailCase_ == 596) {
          return (emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_;
       }
       return emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.getDefaultInstance();
     }
 
-    public static final int ROGUELIKE_DUNGEON_SETTLE_INFO_FIELD_NUMBER = 372;
+    public static final int ROGUELIKE_DUNGEON_SETTLE_INFO_FIELD_NUMBER = 2010;
     /**
-     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
      * @return Whether the roguelikeDungeonSettleInfo field is set.
      */
     @java.lang.Override
     public boolean hasRoguelikeDungeonSettleInfo() {
-      return detailCase_ == 372;
+      return detailCase_ == 2010;
     }
     /**
-     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
      * @return The roguelikeDungeonSettleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo getRoguelikeDungeonSettleInfo() {
-      if (detailCase_ == 372) {
+      if (detailCase_ == 2010) {
          return (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+     * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfoOrBuilder getRoguelikeDungeonSettleInfoOrBuilder() {
-      if (detailCase_ == 372) {
+      if (detailCase_ == 2010) {
          return (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
     }
 
-    public static final int CRYSTAL_LINK_SETTLE_INFO_FIELD_NUMBER = 220;
+    public static final int CRYSTAL_LINK_SETTLE_INFO_FIELD_NUMBER = 1313;
     /**
-     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
      * @return Whether the crystalLinkSettleInfo field is set.
      */
     @java.lang.Override
     public boolean hasCrystalLinkSettleInfo() {
-      return detailCase_ == 220;
+      return detailCase_ == 1313;
     }
     /**
-     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
      * @return The crystalLinkSettleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo getCrystalLinkSettleInfo() {
-      if (detailCase_ == 220) {
+      if (detailCase_ == 1313) {
          return (emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+     * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfoOrBuilder getCrystalLinkSettleInfoOrBuilder() {
-      if (detailCase_ == 220) {
+      if (detailCase_ == 1313) {
          return (emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.getDefaultInstance();
     }
 
-    public static final int SUMMER_TIME_V2_DUNGEON_SETTLE_INFO_FIELD_NUMBER = 117;
+    public static final int SUMMER_TIME_V2_DUNGEON_SETTLE_INFO_FIELD_NUMBER = 174;
     /**
-     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
      * @return Whether the summerTimeV2DungeonSettleInfo field is set.
      */
     @java.lang.Override
     public boolean hasSummerTimeV2DungeonSettleInfo() {
-      return detailCase_ == 117;
+      return detailCase_ == 174;
     }
     /**
-     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
      * @return The summerTimeV2DungeonSettleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo getSummerTimeV2DungeonSettleInfo() {
-      if (detailCase_ == 117) {
+      if (detailCase_ == 174) {
          return (emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+     * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfoOrBuilder getSummerTimeV2DungeonSettleInfoOrBuilder() {
-      if (detailCase_ == 117) {
+      if (detailCase_ == 174) {
          return (emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.getDefaultInstance();
     }
 
-    public static final int INSTABLE_SPRAY_SETTLE_INFO_FIELD_NUMBER = 659;
+    public static final int INSTABLE_SPRAY_SETTLE_INFO_FIELD_NUMBER = 702;
     /**
-     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
      * @return Whether the instableSpraySettleInfo field is set.
      */
     @java.lang.Override
     public boolean hasInstableSpraySettleInfo() {
-      return detailCase_ == 659;
+      return detailCase_ == 702;
     }
     /**
-     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
      * @return The instableSpraySettleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo getInstableSpraySettleInfo() {
-      if (detailCase_ == 659) {
+      if (detailCase_ == 702) {
          return (emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+     * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfoOrBuilder getInstableSpraySettleInfoOrBuilder() {
-      if (detailCase_ == 659) {
+      if (detailCase_ == 702) {
          return (emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.getDefaultInstance();
     }
 
-    public static final int WIND_FIELD_DUNGEON_SETTLE_INFO_FIELD_NUMBER = 28;
+    public static final int WIND_FIELD_DUNGEON_SETTLE_INFO_FIELD_NUMBER = 714;
     /**
-     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
      * @return Whether the windFieldDungeonSettleInfo field is set.
      */
     @java.lang.Override
     public boolean hasWindFieldDungeonSettleInfo() {
-      return detailCase_ == 28;
+      return detailCase_ == 714;
     }
     /**
-     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
      * @return The windFieldDungeonSettleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo getWindFieldDungeonSettleInfo() {
-      if (detailCase_ == 28) {
+      if (detailCase_ == 714) {
          return (emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+     * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfoOrBuilder getWindFieldDungeonSettleInfoOrBuilder() {
-      if (detailCase_ == 28) {
+      if (detailCase_ == 714) {
          return (emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.getDefaultInstance();
     }
 
-    public static final int EFFIGY_CHALLENGE_V2_SETTLE_INFO_FIELD_NUMBER = 390;
+    public static final int EFFIGY_CHALLENGE_V2_SETTLE_INFO_FIELD_NUMBER = 1629;
     /**
-     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
      * @return Whether the effigyChallengeV2SettleInfo field is set.
      */
     @java.lang.Override
     public boolean hasEffigyChallengeV2SettleInfo() {
-      return detailCase_ == 390;
+      return detailCase_ == 1629;
     }
     /**
-     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
      * @return The effigyChallengeV2SettleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo getEffigyChallengeV2SettleInfo() {
-      if (detailCase_ == 390) {
+      if (detailCase_ == 1629) {
          return (emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+     * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfoOrBuilder getEffigyChallengeV2SettleInfoOrBuilder() {
-      if (detailCase_ == 390) {
+      if (detailCase_ == 1629) {
          return (emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.getDefaultInstance();
     }
 
-    public static final int TEAM_CHAIN_SETTLE_INFO_FIELD_NUMBER = 1001;
+    public static final int TEAM_CHAIN_SETTLE_INFO_FIELD_NUMBER = 755;
     /**
-     * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+     * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
      * @return Whether the teamChainSettleInfo field is set.
      */
     @java.lang.Override
     public boolean hasTeamChainSettleInfo() {
-      return detailCase_ == 1001;
+      return detailCase_ == 755;
     }
     /**
-     * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+     * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
      * @return The teamChainSettleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo getTeamChainSettleInfo() {
-      if (detailCase_ == 1001) {
+      if (detailCase_ == 755) {
          return (emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+     * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfoOrBuilder getTeamChainSettleInfoOrBuilder() {
-      if (detailCase_ == 1001) {
+      if (detailCase_ == 755) {
          return (emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.getDefaultInstance();
     }
 
-    public static final int PACMAN_SETTLE_INFO_FIELD_NUMBER = 536;
+    public static final int PACMAN_SETTLE_INFO_FIELD_NUMBER = 1544;
     /**
-     * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+     * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
      * @return Whether the pacmanSettleInfo field is set.
      */
     @java.lang.Override
     public boolean hasPacmanSettleInfo() {
-      return detailCase_ == 536;
+      return detailCase_ == 1544;
     }
     /**
-     * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+     * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
      * @return The pacmanSettleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo getPacmanSettleInfo() {
-      if (detailCase_ == 536) {
+      if (detailCase_ == 1544) {
          return (emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+     * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfoOrBuilder getPacmanSettleInfoOrBuilder() {
-      if (detailCase_ == 536) {
+      if (detailCase_ == 1544) {
          return (emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.getDefaultInstance();
     }
 
-    public static final int FUNGUS_FIGHTER_V2_SETTLE_INFO_FIELD_NUMBER = 1819;
+    public static final int FUNGUS_FIGHTER_V2_SETTLE_INFO_FIELD_NUMBER = 1886;
     /**
-     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
      * @return Whether the fungusFighterV2SettleInfo field is set.
      */
     @java.lang.Override
     public boolean hasFungusFighterV2SettleInfo() {
-      return detailCase_ == 1819;
+      return detailCase_ == 1886;
     }
     /**
-     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
      * @return The fungusFighterV2SettleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo getFungusFighterV2SettleInfo() {
-      if (detailCase_ == 1819) {
+      if (detailCase_ == 1886) {
          return (emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+     * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfoOrBuilder getFungusFighterV2SettleInfoOrBuilder() {
-      if (detailCase_ == 1819) {
+      if (detailCase_ == 1886) {
          return (emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.getDefaultInstance();
     }
 
-    public static final int BLADE_DANCE_SETTLE_INFO_FIELD_NUMBER = 1202;
+    public static final int BLADE_DANCE_SETTLE_INFO_FIELD_NUMBER = 578;
     /**
-     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
      * @return Whether the bladeDanceSettleInfo field is set.
      */
     @java.lang.Override
     public boolean hasBladeDanceSettleInfo() {
-      return detailCase_ == 1202;
+      return detailCase_ == 578;
     }
     /**
-     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
      * @return The bladeDanceSettleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo getBladeDanceSettleInfo() {
-      if (detailCase_ == 1202) {
+      if (detailCase_ == 578) {
          return (emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+     * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfoOrBuilder getBladeDanceSettleInfoOrBuilder() {
-      if (detailCase_ == 1202) {
+      if (detailCase_ == 578) {
          return (emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.getDefaultInstance();
     }
 
-    public static final int MULTI_CHARACTER_DUNGEON_SETTLE_INFO_FIELD_NUMBER = 985;
+    public static final int MULTI_CHARACTER_DUNGEON_SETTLE_INFO_FIELD_NUMBER = 1901;
     /**
-     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
      * @return Whether the multiCharacterDungeonSettleInfo field is set.
      */
     @java.lang.Override
     public boolean hasMultiCharacterDungeonSettleInfo() {
-      return detailCase_ == 985;
+      return detailCase_ == 1901;
     }
     /**
-     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
      * @return The multiCharacterDungeonSettleInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo getMultiCharacterDungeonSettleInfo() {
-      if (detailCase_ == 985) {
+      if (detailCase_ == 1901) {
          return (emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.getDefaultInstance();
     }
     /**
-     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+     * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfoOrBuilder getMultiCharacterDungeonSettleInfoOrBuilder() {
-      if (detailCase_ == 985) {
+      if (detailCase_ == 1901) {
          return (emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_;
       }
       return emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.getDefaultInstance();
-    }
-
-    public static final int INSPIRATION_SPURT_DUNGEON_SETTLE_INFO_FIELD_NUMBER = 1524;
-    /**
-     * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-     * @return Whether the inspirationSpurtDungeonSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasInspirationSpurtDungeonSettleInfo() {
-      return detailCase_ == 1524;
-    }
-    /**
-     * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-     * @return The inspirationSpurtDungeonSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo getInspirationSpurtDungeonSettleInfo() {
-      if (detailCase_ == 1524) {
-         return (emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfoOrBuilder getInspirationSpurtDungeonSettleInfoOrBuilder() {
-      if (detailCase_ == 1524) {
-         return (emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.getDefaultInstance();
-    }
-
-    public static final int QUICK_TIME_COMBAT_SETTLE_INFO_FIELD_NUMBER = 1551;
-    /**
-     * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-     * @return Whether the quickTimeCombatSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasQuickTimeCombatSettleInfo() {
-      return detailCase_ == 1551;
-    }
-    /**
-     * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-     * @return The quickTimeCombatSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo getQuickTimeCombatSettleInfo() {
-      if (detailCase_ == 1551) {
-         return (emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfoOrBuilder getQuickTimeCombatSettleInfoOrBuilder() {
-      if (detailCase_ == 1551) {
-         return (emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.getDefaultInstance();
-    }
-
-    public static final int FUNGUS_FIGHTER_V3_SETTLE_INFO_FIELD_NUMBER = 198;
-    /**
-     * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-     * @return Whether the fungusFighterV3SettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasFungusFighterV3SettleInfo() {
-      return detailCase_ == 198;
-    }
-    /**
-     * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-     * @return The fungusFighterV3SettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo getFungusFighterV3SettleInfo() {
-      if (detailCase_ == 198) {
-         return (emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfoOrBuilder getFungusFighterV3SettleInfoOrBuilder() {
-      if (detailCase_ == 198) {
-         return (emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.getDefaultInstance();
-    }
-
-    public static final int FILMFEST_BATTLE_SETTLE_INFO_FIELD_NUMBER = 1636;
-    /**
-     * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-     * @return Whether the filmfestBattleSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasFilmfestBattleSettleInfo() {
-      return detailCase_ == 1636;
-    }
-    /**
-     * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-     * @return The filmfestBattleSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo getFilmfestBattleSettleInfo() {
-      if (detailCase_ == 1636) {
-         return (emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfoOrBuilder getFilmfestBattleSettleInfoOrBuilder() {
-      if (detailCase_ == 1636) {
-         return (emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.getDefaultInstance();
-    }
-
-    public static final int FILMFEST_SNIPER_SETTLE_INFO_FIELD_NUMBER = 1185;
-    /**
-     * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-     * @return Whether the filmfestSniperSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasFilmfestSniperSettleInfo() {
-      return detailCase_ == 1185;
-    }
-    /**
-     * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-     * @return The filmfestSniperSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo getFilmfestSniperSettleInfo() {
-      if (detailCase_ == 1185) {
-         return (emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfoOrBuilder getFilmfestSniperSettleInfoOrBuilder() {
-      if (detailCase_ == 1185) {
-         return (emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.getDefaultInstance();
-    }
-
-    public static final int GOAL_CHALLENGE_SETTLE_INFO_FIELD_NUMBER = 812;
-    /**
-     * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-     * @return Whether the goalChallengeSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasGoalChallengeSettleInfo() {
-      return detailCase_ == 812;
-    }
-    /**
-     * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-     * @return The goalChallengeSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo getGoalChallengeSettleInfo() {
-      if (detailCase_ == 812) {
-         return (emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfoOrBuilder getGoalChallengeSettleInfoOrBuilder() {
-      if (detailCase_ == 812) {
-         return (emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.getDefaultInstance();
-    }
-
-    public static final int MIST_TRIAL_SETTLE_INFO_FIELD_NUMBER = 2031;
-    /**
-     * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-     * @return Whether the mistTrialSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasMistTrialSettleInfo() {
-      return detailCase_ == 2031;
-    }
-    /**
-     * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-     * @return The mistTrialSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo getMistTrialSettleInfo() {
-      if (detailCase_ == 2031) {
-         return (emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfoOrBuilder getMistTrialSettleInfoOrBuilder() {
-      if (detailCase_ == 2031) {
-         return (emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.getDefaultInstance();
-    }
-
-    public static final int STAMINA_FIGHT_SETTLE_INFO_FIELD_NUMBER = 171;
-    /**
-     * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-     * @return Whether the staminaFightSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasStaminaFightSettleInfo() {
-      return detailCase_ == 171;
-    }
-    /**
-     * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-     * @return The staminaFightSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo getStaminaFightSettleInfo() {
-      if (detailCase_ == 171) {
-         return (emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfoOrBuilder getStaminaFightSettleInfoOrBuilder() {
-      if (detailCase_ == 171) {
-         return (emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.getDefaultInstance();
-    }
-
-    public static final int LOST_SAMACHURL_SNEAK_SETTLE_INFO_FIELD_NUMBER = 1490;
-    /**
-     * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-     * @return Whether the lostSamachurlSneakSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasLostSamachurlSneakSettleInfo() {
-      return detailCase_ == 1490;
-    }
-    /**
-     * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-     * @return The lostSamachurlSneakSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo getLostSamachurlSneakSettleInfo() {
-      if (detailCase_ == 1490) {
-         return (emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfoOrBuilder getLostSamachurlSneakSettleInfoOrBuilder() {
-      if (detailCase_ == 1490) {
-         return (emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.getDefaultInstance();
-    }
-
-    public static final int AUTO_TIME_STOP_SETTLE_INFO_FIELD_NUMBER = 1917;
-    /**
-     * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-     * @return Whether the autoTimeStopSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasAutoTimeStopSettleInfo() {
-      return detailCase_ == 1917;
-    }
-    /**
-     * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-     * @return The autoTimeStopSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo getAutoTimeStopSettleInfo() {
-      if (detailCase_ == 1917) {
-         return (emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfoOrBuilder getAutoTimeStopSettleInfoOrBuilder() {
-      if (detailCase_ == 1917) {
-         return (emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.getDefaultInstance();
-    }
-
-    public static final int SLIME_CANNON_SETTLE_INFO_FIELD_NUMBER = 991;
-    /**
-     * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-     * @return Whether the slimeCannonSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasSlimeCannonSettleInfo() {
-      return detailCase_ == 991;
-    }
-    /**
-     * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-     * @return The slimeCannonSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo getSlimeCannonSettleInfo() {
-      if (detailCase_ == 991) {
-         return (emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfoOrBuilder getSlimeCannonSettleInfoOrBuilder() {
-      if (detailCase_ == 991) {
-         return (emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.getDefaultInstance();
-    }
-
-    public static final int EFFIGY_CHALLENGE_V5_SETTLE_INFO_FIELD_NUMBER = 1779;
-    /**
-     * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-     * @return Whether the effigyChallengeV5SettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasEffigyChallengeV5SettleInfo() {
-      return detailCase_ == 1779;
-    }
-    /**
-     * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-     * @return The effigyChallengeV5SettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo getEffigyChallengeV5SettleInfo() {
-      if (detailCase_ == 1779) {
-         return (emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfoOrBuilder getEffigyChallengeV5SettleInfoOrBuilder() {
-      if (detailCase_ == 1779) {
-         return (emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.getDefaultInstance();
-    }
-
-    public static final int ROLE_COMBAT_SETTLE_INFO_FIELD_NUMBER = 1740;
-    /**
-     * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-     * @return Whether the roleCombatSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasRoleCombatSettleInfo() {
-      return detailCase_ == 1740;
-    }
-    /**
-     * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-     * @return The roleCombatSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo getRoleCombatSettleInfo() {
-      if (detailCase_ == 1740) {
-         return (emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfoOrBuilder getRoleCombatSettleInfoOrBuilder() {
-      if (detailCase_ == 1740) {
-         return (emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.getDefaultInstance();
-    }
-
-    public static final int ACROBATICS_BATTLE_SETTLE_INFO_FIELD_NUMBER = 928;
-    /**
-     * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-     * @return Whether the acrobaticsBattleSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasAcrobaticsBattleSettleInfo() {
-      return detailCase_ == 928;
-    }
-    /**
-     * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-     * @return The acrobaticsBattleSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo getAcrobaticsBattleSettleInfo() {
-      if (detailCase_ == 928) {
-         return (emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfoOrBuilder getAcrobaticsBattleSettleInfoOrBuilder() {
-      if (detailCase_ == 928) {
-         return (emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.getDefaultInstance();
-    }
-
-    public static final int BULLET_HELL_SETTLE_INFO_FIELD_NUMBER = 1233;
-    /**
-     * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-     * @return Whether the bulletHellSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasBulletHellSettleInfo() {
-      return detailCase_ == 1233;
-    }
-    /**
-     * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-     * @return The bulletHellSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo getBulletHellSettleInfo() {
-      if (detailCase_ == 1233) {
-         return (emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfoOrBuilder getBulletHellSettleInfoOrBuilder() {
-      if (detailCase_ == 1233) {
-         return (emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.getDefaultInstance();
-    }
-
-    public static final int RECHARGE_DISK_SETTLE_INFO_FIELD_NUMBER = 36;
-    /**
-     * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-     * @return Whether the rechargeDiskSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasRechargeDiskSettleInfo() {
-      return detailCase_ == 36;
-    }
-    /**
-     * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-     * @return The rechargeDiskSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo getRechargeDiskSettleInfo() {
-      if (detailCase_ == 36) {
-         return (emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfoOrBuilder getRechargeDiskSettleInfoOrBuilder() {
-      if (detailCase_ == 36) {
-         return (emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.getDefaultInstance();
-    }
-
-    public static final int FAIRY_TALES_COMBAT_SETTLE_INFO_FIELD_NUMBER = 848;
-    /**
-     * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-     * @return Whether the fairyTalesCombatSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasFairyTalesCombatSettleInfo() {
-      return detailCase_ == 848;
-    }
-    /**
-     * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-     * @return The fairyTalesCombatSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo getFairyTalesCombatSettleInfo() {
-      if (detailCase_ == 848) {
-         return (emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfoOrBuilder getFairyTalesCombatSettleInfoOrBuilder() {
-      if (detailCase_ == 848) {
-         return (emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.getDefaultInstance();
-    }
-
-    public static final int GAIN_BUFF_SETTLE_INFO_FIELD_NUMBER = 931;
-    /**
-     * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-     * @return Whether the gainBuffSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasGainBuffSettleInfo() {
-      return detailCase_ == 931;
-    }
-    /**
-     * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-     * @return The gainBuffSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo getGainBuffSettleInfo() {
-      if (detailCase_ == 931) {
-         return (emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfoOrBuilder getGainBuffSettleInfoOrBuilder() {
-      if (detailCase_ == 931) {
-         return (emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.getDefaultInstance();
-    }
-
-    public static final int CHAR_MASTER_SETTLE_INFO_FIELD_NUMBER = 2012;
-    /**
-     * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-     * @return Whether the charMasterSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasCharMasterSettleInfo() {
-      return detailCase_ == 2012;
-    }
-    /**
-     * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-     * @return The charMasterSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo getCharMasterSettleInfo() {
-      if (detailCase_ == 2012) {
-         return (emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfoOrBuilder getCharMasterSettleInfoOrBuilder() {
-      if (detailCase_ == 2012) {
-         return (emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.getDefaultInstance();
-    }
-
-    public static final int FEVER_BATTLE_SETTLE_INFO_FIELD_NUMBER = 249;
-    /**
-     * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-     * @return Whether the feverBattleSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasFeverBattleSettleInfo() {
-      return detailCase_ == 249;
-    }
-    /**
-     * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-     * @return The feverBattleSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo getFeverBattleSettleInfo() {
-      if (detailCase_ == 249) {
-         return (emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfoOrBuilder getFeverBattleSettleInfoOrBuilder() {
-      if (detailCase_ == 249) {
-         return (emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.getDefaultInstance();
-    }
-
-    public static final int COOPERATE_CHALLENGE_SETTLE_INFO_FIELD_NUMBER = 1004;
-    /**
-     * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-     * @return Whether the cooperateChallengeSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasCooperateChallengeSettleInfo() {
-      return detailCase_ == 1004;
-    }
-    /**
-     * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-     * @return The cooperateChallengeSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo getCooperateChallengeSettleInfo() {
-      if (detailCase_ == 1004) {
-         return (emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfoOrBuilder getCooperateChallengeSettleInfoOrBuilder() {
-      if (detailCase_ == 1004) {
-         return (emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.getDefaultInstance();
-    }
-
-    public static final int BOMBER_DODOCO_SETTLE_INFO_FIELD_NUMBER = 2024;
-    /**
-     * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-     * @return Whether the bomberDodocoSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasBomberDodocoSettleInfo() {
-      return detailCase_ == 2024;
-    }
-    /**
-     * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-     * @return The bomberDodocoSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo getBomberDodocoSettleInfo() {
-      if (detailCase_ == 2024) {
-         return (emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfoOrBuilder getBomberDodocoSettleInfoOrBuilder() {
-      if (detailCase_ == 2024) {
-         return (emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.getDefaultInstance();
-    }
-
-    public static final int CEREMONY_BATTLE_SETTLE_INFO_FIELD_NUMBER = 247;
-    /**
-     * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-     * @return Whether the ceremonyBattleSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasCeremonyBattleSettleInfo() {
-      return detailCase_ == 247;
-    }
-    /**
-     * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-     * @return The ceremonyBattleSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo getCeremonyBattleSettleInfo() {
-      if (detailCase_ == 247) {
-         return (emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfoOrBuilder getCeremonyBattleSettleInfoOrBuilder() {
-      if (detailCase_ == 247) {
-         return (emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.getDefaultInstance();
-    }
-
-    public static final int BADGET_BATTLE_SETTLE_INFO_FIELD_NUMBER = 1538;
-    /**
-     * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-     * @return Whether the badgetBattleSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasBadgetBattleSettleInfo() {
-      return detailCase_ == 1538;
-    }
-    /**
-     * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-     * @return The badgetBattleSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo getBadgetBattleSettleInfo() {
-      if (detailCase_ == 1538) {
-         return (emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfoOrBuilder getBadgetBattleSettleInfoOrBuilder() {
-      if (detailCase_ == 1538) {
-         return (emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.getDefaultInstance();
-    }
-
-    public static final int AD_SHOOTING_SETTLE_INFO_FIELD_NUMBER = 148;
-    /**
-     * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-     * @return Whether the adShootingSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasAdShootingSettleInfo() {
-      return detailCase_ == 148;
-    }
-    /**
-     * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-     * @return The adShootingSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo getAdShootingSettleInfo() {
-      if (detailCase_ == 148) {
-         return (emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfoOrBuilder getAdShootingSettleInfoOrBuilder() {
-      if (detailCase_ == 148) {
-         return (emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.getDefaultInstance();
-    }
-
-    public static final int TOWER_CHALLENGE_SETTLE_INFO_FIELD_NUMBER = 1404;
-    /**
-     * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-     * @return Whether the towerChallengeSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasTowerChallengeSettleInfo() {
-      return detailCase_ == 1404;
-    }
-    /**
-     * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-     * @return The towerChallengeSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo getTowerChallengeSettleInfo() {
-      if (detailCase_ == 1404) {
-         return (emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfoOrBuilder getTowerChallengeSettleInfoOrBuilder() {
-      if (detailCase_ == 1404) {
-         return (emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.getDefaultInstance();
-    }
-
-    public static final int GALLERY_CONTEXT_ENTRY_FIELD_NUMBER = 30;
-    /**
-     * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-     * @return Whether the galleryContextEntry field is set.
-     */
-    @java.lang.Override
-    public boolean hasGalleryContextEntry() {
-      return detailCase_ == 30;
-    }
-    /**
-     * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-     * @return The galleryContextEntry.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry getGalleryContextEntry() {
-      if (detailCase_ == 30) {
-         return (emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry) detail_;
-      }
-      return emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.getDefaultInstance();
-    }
-    /**
-     * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntryOrBuilder getGalleryContextEntryOrBuilder() {
-      if (detailCase_ == 30) {
-         return (emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry) detail_;
-      }
-      return emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.getDefaultInstance();
-    }
-
-    public static final int NATLAN_DRILL_BATTLE_SETTLE_INFO_FIELD_NUMBER = 942;
-    /**
-     * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-     * @return Whether the natlanDrillBattleSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasNatlanDrillBattleSettleInfo() {
-      return detailCase_ == 942;
-    }
-    /**
-     * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-     * @return The natlanDrillBattleSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo getNatlanDrillBattleSettleInfo() {
-      if (detailCase_ == 942) {
-         return (emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfoOrBuilder getNatlanDrillBattleSettleInfoOrBuilder() {
-      if (detailCase_ == 942) {
-         return (emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.getDefaultInstance();
-    }
-
-    public static final int NATLAN_ARENA_SETTLE_INFO_FIELD_NUMBER = 721;
-    /**
-     * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-     * @return Whether the natlanArenaSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasNatlanArenaSettleInfo() {
-      return detailCase_ == 721;
-    }
-    /**
-     * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-     * @return The natlanArenaSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo getNatlanArenaSettleInfo() {
-      if (detailCase_ == 721) {
-         return (emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfoOrBuilder getNatlanArenaSettleInfoOrBuilder() {
-      if (detailCase_ == 721) {
-         return (emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.getDefaultInstance();
-    }
-
-    public static final int SAURUS1_V3_SETTLE_INFO_FIELD_NUMBER = 821;
-    /**
-     * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-     * @return Whether the saurus1V3SettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasSaurus1V3SettleInfo() {
-      return detailCase_ == 821;
-    }
-    /**
-     * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-     * @return The saurus1V3SettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo getSaurus1V3SettleInfo() {
-      if (detailCase_ == 821) {
-         return (emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfoOrBuilder getSaurus1V3SettleInfoOrBuilder() {
-      if (detailCase_ == 821) {
-         return (emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.getDefaultInstance();
-    }
-
-    public static final int DIVERSITY_BATTLE_SETTLE_INFO_FIELD_NUMBER = 413;
-    /**
-     * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-     * @return Whether the diversityBattleSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasDiversityBattleSettleInfo() {
-      return detailCase_ == 413;
-    }
-    /**
-     * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-     * @return The diversityBattleSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo getDiversityBattleSettleInfo() {
-      if (detailCase_ == 413) {
-         return (emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfoOrBuilder getDiversityBattleSettleInfoOrBuilder() {
-      if (detailCase_ == 413) {
-         return (emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.getDefaultInstance();
-    }
-
-    public static final int THEME_PARK_PARKOUR_SETTLE_INFO_FIELD_NUMBER = 2020;
-    /**
-     * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-     * @return Whether the themeParkParkourSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasThemeParkParkourSettleInfo() {
-      return detailCase_ == 2020;
-    }
-    /**
-     * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-     * @return The themeParkParkourSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo getThemeParkParkourSettleInfo() {
-      if (detailCase_ == 2020) {
-         return (emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfoOrBuilder getThemeParkParkourSettleInfoOrBuilder() {
-      if (detailCase_ == 2020) {
-         return (emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.getDefaultInstance();
-    }
-
-    public static final int THEME_PARK_TRIATHLON_SETTLE_INFO_FIELD_NUMBER = 1129;
-    /**
-     * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-     * @return Whether the themeParkTriathlonSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasThemeParkTriathlonSettleInfo() {
-      return detailCase_ == 1129;
-    }
-    /**
-     * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-     * @return The themeParkTriathlonSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo getThemeParkTriathlonSettleInfo() {
-      if (detailCase_ == 1129) {
-         return (emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfoOrBuilder getThemeParkTriathlonSettleInfoOrBuilder() {
-      if (detailCase_ == 1129) {
-         return (emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.getDefaultInstance();
-    }
-
-    public static final int MVM2_PVE_SETTLE_INFO_FIELD_NUMBER = 2039;
-    /**
-     * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-     * @return Whether the mvm2PveSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasMvm2PveSettleInfo() {
-      return detailCase_ == 2039;
-    }
-    /**
-     * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-     * @return The mvm2PveSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo getMvm2PveSettleInfo() {
-      if (detailCase_ == 2039) {
-         return (emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfoOrBuilder getMvm2PveSettleInfoOrBuilder() {
-      if (detailCase_ == 2039) {
-         return (emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.getDefaultInstance();
-    }
-
-    public static final int MVM2_SIMULATE_SETTLE_INFO_FIELD_NUMBER = 701;
-    /**
-     * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-     * @return Whether the mvm2SimulateSettleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasMvm2SimulateSettleInfo() {
-      return detailCase_ == 701;
-    }
-    /**
-     * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-     * @return The mvm2SimulateSettleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo getMvm2SimulateSettleInfo() {
-      if (detailCase_ == 701) {
-         return (emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.getDefaultInstance();
-    }
-    /**
-     * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfoOrBuilder getMvm2SimulateSettleInfoOrBuilder() {
-      if (detailCase_ == 701) {
-         return (emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo) detail_;
-      }
-      return emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -3873,202 +1634,90 @@ public final class DungeonSettleNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getPlayerUidListList().size() > 0) {
-        output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(playerUidListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < playerUidList_.size(); i++) {
-        output.writeUInt32NoTag(playerUidList_.getInt(i));
-      }
-      if (dungeonId_ != 0) {
-        output.writeUInt32(2, dungeonId_);
-      }
-      if (aLHPCFABLPH_ != 0) {
-        output.writeUInt32(3, aLHPCFABLPH_);
-      }
-      if (closeTime_ != 0) {
-        output.writeUInt32(4, closeTime_);
-      }
-      if (useTime_ != 0) {
-        output.writeUInt32(7, useTime_);
-      }
-      if (getEPBCNMFNDAPList().size() > 0) {
-        output.writeUInt32NoTag(66);
-        output.writeUInt32NoTag(ePBCNMFNDAPMemoizedSerializedSize);
-      }
-      for (int i = 0; i < ePBCNMFNDAP_.size(); i++) {
-        output.writeUInt32NoTag(ePBCNMFNDAP_.getInt(i));
-      }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetSettleShow(),
-          SettleShowDefaultEntryHolder.defaultEntry,
-          9);
-      if (isSuccess_ != false) {
-        output.writeBool(11, isSuccess_);
+      if (createPlayerUid_ != 0) {
+        output.writeUInt32(1, createPlayerUid_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetStrengthenPointDataMap(),
           StrengthenPointDataMapDefaultEntryHolder.defaultEntry,
-          12);
-      for (int i = 0; i < exhibitionInfoList_.size(); i++) {
-        output.writeMessage(13, exhibitionInfoList_.get(i));
+          2);
+      if (isSuccess_ != false) {
+        output.writeBool(3, isSuccess_);
       }
       if (result_ != 0) {
-        output.writeUInt32(14, result_);
+        output.writeUInt32(5, result_);
       }
-      if (detailCase_ == 28) {
-        output.writeMessage(28, (emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_);
+      if (closeTime_ != 0) {
+        output.writeUInt32(6, closeTime_);
       }
-      if (detailCase_ == 30) {
-        output.writeMessage(30, (emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry) detail_);
+      if (dungeonId_ != 0) {
+        output.writeUInt32(7, dungeonId_);
       }
-      if (detailCase_ == 36) {
-        output.writeMessage(36, (emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo) detail_);
+      if (getFailCondListList().size() > 0) {
+        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(failCondListMemoizedSerializedSize);
       }
-      if (detailCase_ == 117) {
-        output.writeMessage(117, (emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo) detail_);
+      for (int i = 0; i < failCondList_.size(); i++) {
+        output.writeUInt32NoTag(failCondList_.getInt(i));
       }
-      if (detailCase_ == 132) {
-        output.writeMessage(132, (emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_);
+      for (int i = 0; i < exhibitionInfoList_.size(); i++) {
+        output.writeMessage(10, exhibitionInfoList_.get(i));
       }
-      if (detailCase_ == 148) {
-        output.writeMessage(148, (emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo) detail_);
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetSettleShow(),
+          SettleShowDefaultEntryHolder.defaultEntry,
+          13);
+      if (useTime_ != 0) {
+        output.writeUInt32(15, useTime_);
       }
-      if (detailCase_ == 171) {
-        output.writeMessage(171, (emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo) detail_);
+      if (detailCase_ == 174) {
+        output.writeMessage(174, (emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 198) {
-        output.writeMessage(198, (emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo) detail_);
+      if (detailCase_ == 578) {
+        output.writeMessage(578, (emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo) detail_);
       }
-      if (detailCase_ == 220) {
-        output.writeMessage(220, (emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_);
+      if (detailCase_ == 596) {
+        output.writeMessage(596, (emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_);
       }
-      if (detailCase_ == 241) {
-        output.writeMessage(241, (emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_);
+      if (detailCase_ == 702) {
+        output.writeMessage(702, (emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 247) {
-        output.writeMessage(247, (emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo) detail_);
+      if (detailCase_ == 714) {
+        output.writeMessage(714, (emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 249) {
-        output.writeMessage(249, (emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo) detail_);
+      if (detailCase_ == 755) {
+        output.writeMessage(755, (emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_);
       }
-      if (detailCase_ == 372) {
-        output.writeMessage(372, (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_);
+      if (detailCase_ == 808) {
+        output.writeMessage(808, (emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo) detail_);
       }
-      if (detailCase_ == 390) {
-        output.writeMessage(390, (emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_);
+      if (detailCase_ == 1162) {
+        output.writeMessage(1162, (emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_);
       }
-      if (detailCase_ == 413) {
-        output.writeMessage(413, (emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo) detail_);
+      if (detailCase_ == 1313) {
+        output.writeMessage(1313, (emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 536) {
-        output.writeMessage(536, (emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_);
+      if (detailCase_ == 1544) {
+        output.writeMessage(1544, (emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_);
       }
-      if (detailCase_ == 643) {
-        output.writeMessage(643, (emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo) detail_);
+      if (detailCase_ == 1629) {
+        output.writeMessage(1629, (emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_);
       }
-      if (detailCase_ == 659) {
-        output.writeMessage(659, (emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_);
+      if (detailCase_ == 1886) {
+        output.writeMessage(1886, (emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) detail_);
       }
-      if (detailCase_ == 701) {
-        output.writeMessage(701, (emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo) detail_);
+      if (detailCase_ == 1901) {
+        output.writeMessage(1901, (emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 721) {
-        output.writeMessage(721, (emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo) detail_);
+      if (detailCase_ == 2010) {
+        output.writeMessage(2010, (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 787) {
-        output.writeMessage(787, (emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_);
-      }
-      if (detailCase_ == 812) {
-        output.writeMessage(812, (emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo) detail_);
-      }
-      if (detailCase_ == 821) {
-        output.writeMessage(821, (emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo) detail_);
-      }
-      if (detailCase_ == 848) {
-        output.writeMessage(848, (emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo) detail_);
-      }
-      if (detailCase_ == 928) {
-        output.writeMessage(928, (emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo) detail_);
-      }
-      if (detailCase_ == 931) {
-        output.writeMessage(931, (emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo) detail_);
-      }
-      if (detailCase_ == 942) {
-        output.writeMessage(942, (emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo) detail_);
-      }
-      if (detailCase_ == 985) {
-        output.writeMessage(985, (emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_);
-      }
-      if (detailCase_ == 991) {
-        output.writeMessage(991, (emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo) detail_);
-      }
-      if (detailCase_ == 1001) {
-        output.writeMessage(1001, (emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_);
-      }
-      if (detailCase_ == 1004) {
-        output.writeMessage(1004, (emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo) detail_);
-      }
-      if (detailCase_ == 1129) {
-        output.writeMessage(1129, (emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo) detail_);
-      }
-      if (detailCase_ == 1185) {
-        output.writeMessage(1185, (emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo) detail_);
-      }
-      if (detailCase_ == 1202) {
-        output.writeMessage(1202, (emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo) detail_);
-      }
-      if (detailCase_ == 1233) {
-        output.writeMessage(1233, (emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo) detail_);
-      }
-      if (detailCase_ == 1404) {
-        output.writeMessage(1404, (emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo) detail_);
-      }
-      if (detailCase_ == 1490) {
-        output.writeMessage(1490, (emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo) detail_);
-      }
-      if (detailCase_ == 1524) {
-        output.writeMessage(1524, (emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo) detail_);
-      }
-      if (detailCase_ == 1538) {
-        output.writeMessage(1538, (emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo) detail_);
-      }
-      if (detailCase_ == 1551) {
-        output.writeMessage(1551, (emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo) detail_);
-      }
-      if (detailCase_ == 1636) {
-        output.writeMessage(1636, (emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo) detail_);
-      }
-      if (detailCase_ == 1740) {
-        output.writeMessage(1740, (emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo) detail_);
-      }
-      if (detailCase_ == 1779) {
-        output.writeMessage(1779, (emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo) detail_);
-      }
-      if (detailCase_ == 1819) {
-        output.writeMessage(1819, (emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) detail_);
-      }
-      if (detailCase_ == 1917) {
-        output.writeMessage(1917, (emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo) detail_);
-      }
-      if (detailCase_ == 2012) {
-        output.writeMessage(2012, (emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo) detail_);
-      }
-      if (detailCase_ == 2020) {
-        output.writeMessage(2020, (emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo) detail_);
-      }
-      if (detailCase_ == 2024) {
-        output.writeMessage(2024, (emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo) detail_);
-      }
-      if (detailCase_ == 2031) {
-        output.writeMessage(2031, (emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo) detail_);
-      }
-      if (detailCase_ == 2039) {
-        output.writeMessage(2039, (emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo) detail_);
+      if (detailCase_ == 2036) {
+        output.writeMessage(2036, (emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_);
       }
       unknownFields.writeTo(output);
     }
@@ -4079,63 +1728,9 @@ public final class DungeonSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < playerUidList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(playerUidList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getPlayerUidListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        playerUidListMemoizedSerializedSize = dataSize;
-      }
-      if (dungeonId_ != 0) {
+      if (createPlayerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, dungeonId_);
-      }
-      if (aLHPCFABLPH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, aLHPCFABLPH_);
-      }
-      if (closeTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, closeTime_);
-      }
-      if (useTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, useTime_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < ePBCNMFNDAP_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(ePBCNMFNDAP_.getInt(i));
-        }
-        size += dataSize;
-        if (!getEPBCNMFNDAPList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        ePBCNMFNDAPMemoizedSerializedSize = dataSize;
-      }
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> entry
-           : internalGetSettleShow().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList>
-        settleShow__ = SettleShowDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(9, settleShow__);
-      }
-      if (isSuccess_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isSuccess_);
+          .computeUInt32Size(1, createPlayerUid_);
       }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> entry
            : internalGetStrengthenPointDataMap().getMap().entrySet()) {
@@ -4145,215 +1740,115 @@ public final class DungeonSettleNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(12, strengthenPointDataMap__);
+            .computeMessageSize(2, strengthenPointDataMap__);
       }
-      for (int i = 0; i < exhibitionInfoList_.size(); i++) {
+      if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, exhibitionInfoList_.get(i));
+          .computeBoolSize(3, isSuccess_);
       }
       if (result_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, result_);
+          .computeUInt32Size(5, result_);
       }
-      if (detailCase_ == 28) {
+      if (closeTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(28, (emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_);
+          .computeUInt32Size(6, closeTime_);
       }
-      if (detailCase_ == 30) {
+      if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(30, (emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry) detail_);
+          .computeUInt32Size(7, dungeonId_);
       }
-      if (detailCase_ == 36) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(36, (emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo) detail_);
+      {
+        int dataSize = 0;
+        for (int i = 0; i < failCondList_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(failCondList_.getInt(i));
+        }
+        size += dataSize;
+        if (!getFailCondListList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        failCondListMemoizedSerializedSize = dataSize;
       }
-      if (detailCase_ == 117) {
+      for (int i = 0; i < exhibitionInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(117, (emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo) detail_);
+          .computeMessageSize(10, exhibitionInfoList_.get(i));
       }
-      if (detailCase_ == 132) {
+      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList> entry
+           : internalGetSettleShow().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.ParamListOuterClass.ParamList>
+        settleShow__ = SettleShowDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(132, (emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_);
+            .computeMessageSize(13, settleShow__);
       }
-      if (detailCase_ == 148) {
+      if (useTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(148, (emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo) detail_);
+          .computeUInt32Size(15, useTime_);
       }
-      if (detailCase_ == 171) {
+      if (detailCase_ == 174) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(171, (emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo) detail_);
+          .computeMessageSize(174, (emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 198) {
+      if (detailCase_ == 578) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(198, (emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo) detail_);
+          .computeMessageSize(578, (emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo) detail_);
       }
-      if (detailCase_ == 220) {
+      if (detailCase_ == 596) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(220, (emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_);
+          .computeMessageSize(596, (emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_);
       }
-      if (detailCase_ == 241) {
+      if (detailCase_ == 702) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(241, (emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_);
+          .computeMessageSize(702, (emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 247) {
+      if (detailCase_ == 714) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(247, (emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo) detail_);
+          .computeMessageSize(714, (emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 249) {
+      if (detailCase_ == 755) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(249, (emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo) detail_);
+          .computeMessageSize(755, (emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_);
       }
-      if (detailCase_ == 372) {
+      if (detailCase_ == 808) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(372, (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_);
+          .computeMessageSize(808, (emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo) detail_);
       }
-      if (detailCase_ == 390) {
+      if (detailCase_ == 1162) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(390, (emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_);
+          .computeMessageSize(1162, (emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_);
       }
-      if (detailCase_ == 413) {
+      if (detailCase_ == 1313) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(413, (emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo) detail_);
+          .computeMessageSize(1313, (emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 536) {
+      if (detailCase_ == 1544) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(536, (emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_);
+          .computeMessageSize(1544, (emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_);
       }
-      if (detailCase_ == 643) {
+      if (detailCase_ == 1629) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(643, (emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo) detail_);
+          .computeMessageSize(1629, (emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_);
       }
-      if (detailCase_ == 659) {
+      if (detailCase_ == 1886) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(659, (emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_);
+          .computeMessageSize(1886, (emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) detail_);
       }
-      if (detailCase_ == 701) {
+      if (detailCase_ == 1901) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(701, (emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo) detail_);
+          .computeMessageSize(1901, (emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 721) {
+      if (detailCase_ == 2010) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(721, (emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo) detail_);
+          .computeMessageSize(2010, (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_);
       }
-      if (detailCase_ == 787) {
+      if (detailCase_ == 2036) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(787, (emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_);
-      }
-      if (detailCase_ == 812) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(812, (emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo) detail_);
-      }
-      if (detailCase_ == 821) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(821, (emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo) detail_);
-      }
-      if (detailCase_ == 848) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(848, (emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo) detail_);
-      }
-      if (detailCase_ == 928) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(928, (emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo) detail_);
-      }
-      if (detailCase_ == 931) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(931, (emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo) detail_);
-      }
-      if (detailCase_ == 942) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(942, (emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo) detail_);
-      }
-      if (detailCase_ == 985) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(985, (emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_);
-      }
-      if (detailCase_ == 991) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(991, (emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo) detail_);
-      }
-      if (detailCase_ == 1001) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1001, (emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_);
-      }
-      if (detailCase_ == 1004) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1004, (emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo) detail_);
-      }
-      if (detailCase_ == 1129) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1129, (emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo) detail_);
-      }
-      if (detailCase_ == 1185) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1185, (emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo) detail_);
-      }
-      if (detailCase_ == 1202) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1202, (emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo) detail_);
-      }
-      if (detailCase_ == 1233) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1233, (emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo) detail_);
-      }
-      if (detailCase_ == 1404) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1404, (emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo) detail_);
-      }
-      if (detailCase_ == 1490) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1490, (emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo) detail_);
-      }
-      if (detailCase_ == 1524) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1524, (emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo) detail_);
-      }
-      if (detailCase_ == 1538) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1538, (emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo) detail_);
-      }
-      if (detailCase_ == 1551) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1551, (emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo) detail_);
-      }
-      if (detailCase_ == 1636) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1636, (emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo) detail_);
-      }
-      if (detailCase_ == 1740) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1740, (emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo) detail_);
-      }
-      if (detailCase_ == 1779) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1779, (emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo) detail_);
-      }
-      if (detailCase_ == 1819) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1819, (emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) detail_);
-      }
-      if (detailCase_ == 1917) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1917, (emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo) detail_);
-      }
-      if (detailCase_ == 2012) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2012, (emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo) detail_);
-      }
-      if (detailCase_ == 2020) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2020, (emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo) detail_);
-      }
-      if (detailCase_ == 2024) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2024, (emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo) detail_);
-      }
-      if (detailCase_ == 2031) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2031, (emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo) detail_);
-      }
-      if (detailCase_ == 2039) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2039, (emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo) detail_);
+          .computeMessageSize(2036, (emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -4370,229 +1865,87 @@ public final class DungeonSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DungeonSettleNotifyOuterClass.DungeonSettleNotify other = (emu.grasscutter.net.proto.DungeonSettleNotifyOuterClass.DungeonSettleNotify) obj;
 
-      if (!getPlayerUidListList()
-          .equals(other.getPlayerUidListList())) return false;
-      if (getDungeonId()
-          != other.getDungeonId()) return false;
-      if (getALHPCFABLPH()
-          != other.getALHPCFABLPH()) return false;
-      if (getCloseTime()
-          != other.getCloseTime()) return false;
-      if (getUseTime()
-          != other.getUseTime()) return false;
-      if (!getEPBCNMFNDAPList()
-          .equals(other.getEPBCNMFNDAPList())) return false;
-      if (!internalGetSettleShow().equals(
-          other.internalGetSettleShow())) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
-      if (!internalGetStrengthenPointDataMap().equals(
-          other.internalGetStrengthenPointDataMap())) return false;
       if (!getExhibitionInfoListList()
           .equals(other.getExhibitionInfoListList())) return false;
+      if (!internalGetStrengthenPointDataMap().equals(
+          other.internalGetStrengthenPointDataMap())) return false;
+      if (!internalGetSettleShow().equals(
+          other.internalGetSettleShow())) return false;
+      if (getCreatePlayerUid()
+          != other.getCreatePlayerUid()) return false;
+      if (getDungeonId()
+          != other.getDungeonId()) return false;
+      if (getCloseTime()
+          != other.getCloseTime()) return false;
       if (getResult()
           != other.getResult()) return false;
+      if (getUseTime()
+          != other.getUseTime()) return false;
+      if (!getFailCondListList()
+          .equals(other.getFailCondListList())) return false;
       if (!getDetailCase().equals(other.getDetailCase())) return false;
       switch (detailCase_) {
-        case 787:
+        case 1162:
           if (!getTowerLevelEndNotify()
               .equals(other.getTowerLevelEndNotify())) return false;
           break;
-        case 241:
+        case 2036:
           if (!getTrialAvatarFirstPassDungeonNotify()
               .equals(other.getTrialAvatarFirstPassDungeonNotify())) return false;
           break;
-        case 643:
+        case 808:
           if (!getChannellerSlabLoopDungeonResultInfo()
               .equals(other.getChannellerSlabLoopDungeonResultInfo())) return false;
           break;
-        case 132:
+        case 596:
           if (!getEffigyChallengeDungeonResultInfo()
               .equals(other.getEffigyChallengeDungeonResultInfo())) return false;
           break;
-        case 372:
+        case 2010:
           if (!getRoguelikeDungeonSettleInfo()
               .equals(other.getRoguelikeDungeonSettleInfo())) return false;
           break;
-        case 220:
+        case 1313:
           if (!getCrystalLinkSettleInfo()
               .equals(other.getCrystalLinkSettleInfo())) return false;
           break;
-        case 117:
+        case 174:
           if (!getSummerTimeV2DungeonSettleInfo()
               .equals(other.getSummerTimeV2DungeonSettleInfo())) return false;
           break;
-        case 659:
+        case 702:
           if (!getInstableSpraySettleInfo()
               .equals(other.getInstableSpraySettleInfo())) return false;
           break;
-        case 28:
+        case 714:
           if (!getWindFieldDungeonSettleInfo()
               .equals(other.getWindFieldDungeonSettleInfo())) return false;
           break;
-        case 390:
+        case 1629:
           if (!getEffigyChallengeV2SettleInfo()
               .equals(other.getEffigyChallengeV2SettleInfo())) return false;
           break;
-        case 1001:
+        case 755:
           if (!getTeamChainSettleInfo()
               .equals(other.getTeamChainSettleInfo())) return false;
           break;
-        case 536:
+        case 1544:
           if (!getPacmanSettleInfo()
               .equals(other.getPacmanSettleInfo())) return false;
           break;
-        case 1819:
+        case 1886:
           if (!getFungusFighterV2SettleInfo()
               .equals(other.getFungusFighterV2SettleInfo())) return false;
           break;
-        case 1202:
+        case 578:
           if (!getBladeDanceSettleInfo()
               .equals(other.getBladeDanceSettleInfo())) return false;
           break;
-        case 985:
+        case 1901:
           if (!getMultiCharacterDungeonSettleInfo()
               .equals(other.getMultiCharacterDungeonSettleInfo())) return false;
-          break;
-        case 1524:
-          if (!getInspirationSpurtDungeonSettleInfo()
-              .equals(other.getInspirationSpurtDungeonSettleInfo())) return false;
-          break;
-        case 1551:
-          if (!getQuickTimeCombatSettleInfo()
-              .equals(other.getQuickTimeCombatSettleInfo())) return false;
-          break;
-        case 198:
-          if (!getFungusFighterV3SettleInfo()
-              .equals(other.getFungusFighterV3SettleInfo())) return false;
-          break;
-        case 1636:
-          if (!getFilmfestBattleSettleInfo()
-              .equals(other.getFilmfestBattleSettleInfo())) return false;
-          break;
-        case 1185:
-          if (!getFilmfestSniperSettleInfo()
-              .equals(other.getFilmfestSniperSettleInfo())) return false;
-          break;
-        case 812:
-          if (!getGoalChallengeSettleInfo()
-              .equals(other.getGoalChallengeSettleInfo())) return false;
-          break;
-        case 2031:
-          if (!getMistTrialSettleInfo()
-              .equals(other.getMistTrialSettleInfo())) return false;
-          break;
-        case 171:
-          if (!getStaminaFightSettleInfo()
-              .equals(other.getStaminaFightSettleInfo())) return false;
-          break;
-        case 1490:
-          if (!getLostSamachurlSneakSettleInfo()
-              .equals(other.getLostSamachurlSneakSettleInfo())) return false;
-          break;
-        case 1917:
-          if (!getAutoTimeStopSettleInfo()
-              .equals(other.getAutoTimeStopSettleInfo())) return false;
-          break;
-        case 991:
-          if (!getSlimeCannonSettleInfo()
-              .equals(other.getSlimeCannonSettleInfo())) return false;
-          break;
-        case 1779:
-          if (!getEffigyChallengeV5SettleInfo()
-              .equals(other.getEffigyChallengeV5SettleInfo())) return false;
-          break;
-        case 1740:
-          if (!getRoleCombatSettleInfo()
-              .equals(other.getRoleCombatSettleInfo())) return false;
-          break;
-        case 928:
-          if (!getAcrobaticsBattleSettleInfo()
-              .equals(other.getAcrobaticsBattleSettleInfo())) return false;
-          break;
-        case 1233:
-          if (!getBulletHellSettleInfo()
-              .equals(other.getBulletHellSettleInfo())) return false;
-          break;
-        case 36:
-          if (!getRechargeDiskSettleInfo()
-              .equals(other.getRechargeDiskSettleInfo())) return false;
-          break;
-        case 848:
-          if (!getFairyTalesCombatSettleInfo()
-              .equals(other.getFairyTalesCombatSettleInfo())) return false;
-          break;
-        case 931:
-          if (!getGainBuffSettleInfo()
-              .equals(other.getGainBuffSettleInfo())) return false;
-          break;
-        case 2012:
-          if (!getCharMasterSettleInfo()
-              .equals(other.getCharMasterSettleInfo())) return false;
-          break;
-        case 249:
-          if (!getFeverBattleSettleInfo()
-              .equals(other.getFeverBattleSettleInfo())) return false;
-          break;
-        case 1004:
-          if (!getCooperateChallengeSettleInfo()
-              .equals(other.getCooperateChallengeSettleInfo())) return false;
-          break;
-        case 2024:
-          if (!getBomberDodocoSettleInfo()
-              .equals(other.getBomberDodocoSettleInfo())) return false;
-          break;
-        case 247:
-          if (!getCeremonyBattleSettleInfo()
-              .equals(other.getCeremonyBattleSettleInfo())) return false;
-          break;
-        case 1538:
-          if (!getBadgetBattleSettleInfo()
-              .equals(other.getBadgetBattleSettleInfo())) return false;
-          break;
-        case 148:
-          if (!getAdShootingSettleInfo()
-              .equals(other.getAdShootingSettleInfo())) return false;
-          break;
-        case 1404:
-          if (!getTowerChallengeSettleInfo()
-              .equals(other.getTowerChallengeSettleInfo())) return false;
-          break;
-        case 30:
-          if (!getGalleryContextEntry()
-              .equals(other.getGalleryContextEntry())) return false;
-          break;
-        case 942:
-          if (!getNatlanDrillBattleSettleInfo()
-              .equals(other.getNatlanDrillBattleSettleInfo())) return false;
-          break;
-        case 721:
-          if (!getNatlanArenaSettleInfo()
-              .equals(other.getNatlanArenaSettleInfo())) return false;
-          break;
-        case 821:
-          if (!getSaurus1V3SettleInfo()
-              .equals(other.getSaurus1V3SettleInfo())) return false;
-          break;
-        case 413:
-          if (!getDiversityBattleSettleInfo()
-              .equals(other.getDiversityBattleSettleInfo())) return false;
-          break;
-        case 2020:
-          if (!getThemeParkParkourSettleInfo()
-              .equals(other.getThemeParkParkourSettleInfo())) return false;
-          break;
-        case 1129:
-          if (!getThemeParkTriathlonSettleInfo()
-              .equals(other.getThemeParkTriathlonSettleInfo())) return false;
-          break;
-        case 2039:
-          if (!getMvm2PveSettleInfo()
-              .equals(other.getMvm2PveSettleInfo())) return false;
-          break;
-        case 701:
-          if (!getMvm2SimulateSettleInfo()
-              .equals(other.getMvm2SimulateSettleInfo())) return false;
           break;
         case 0:
         default:
@@ -4608,239 +1961,95 @@ public final class DungeonSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getPlayerUidListCount() > 0) {
-        hash = (37 * hash) + PLAYER_UID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getPlayerUidListList().hashCode();
+      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSuccess());
+      if (getExhibitionInfoListCount() > 0) {
+        hash = (37 * hash) + EXHIBITION_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getExhibitionInfoListList().hashCode();
       }
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
-      hash = (37 * hash) + ALHPCFABLPH_FIELD_NUMBER;
-      hash = (53 * hash) + getALHPCFABLPH();
-      hash = (37 * hash) + CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCloseTime();
-      hash = (37 * hash) + USE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getUseTime();
-      if (getEPBCNMFNDAPCount() > 0) {
-        hash = (37 * hash) + EPBCNMFNDAP_FIELD_NUMBER;
-        hash = (53 * hash) + getEPBCNMFNDAPList().hashCode();
+      if (!internalGetStrengthenPointDataMap().getMap().isEmpty()) {
+        hash = (37 * hash) + STRENGTHEN_POINT_DATA_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetStrengthenPointDataMap().hashCode();
       }
       if (!internalGetSettleShow().getMap().isEmpty()) {
         hash = (37 * hash) + SETTLE_SHOW_FIELD_NUMBER;
         hash = (53 * hash) + internalGetSettleShow().hashCode();
       }
-      hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSuccess());
-      if (!internalGetStrengthenPointDataMap().getMap().isEmpty()) {
-        hash = (37 * hash) + STRENGTHEN_POINT_DATA_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetStrengthenPointDataMap().hashCode();
-      }
-      if (getExhibitionInfoListCount() > 0) {
-        hash = (37 * hash) + EXHIBITION_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getExhibitionInfoListList().hashCode();
-      }
+      hash = (37 * hash) + CREATE_PLAYER_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getCreatePlayerUid();
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
+      hash = (37 * hash) + CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getCloseTime();
       hash = (37 * hash) + RESULT_FIELD_NUMBER;
       hash = (53 * hash) + getResult();
+      hash = (37 * hash) + USE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getUseTime();
+      if (getFailCondListCount() > 0) {
+        hash = (37 * hash) + FAIL_COND_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getFailCondListList().hashCode();
+      }
       switch (detailCase_) {
-        case 787:
+        case 1162:
           hash = (37 * hash) + TOWER_LEVEL_END_NOTIFY_FIELD_NUMBER;
           hash = (53 * hash) + getTowerLevelEndNotify().hashCode();
           break;
-        case 241:
+        case 2036:
           hash = (37 * hash) + TRIAL_AVATAR_FIRST_PASS_DUNGEON_NOTIFY_FIELD_NUMBER;
           hash = (53 * hash) + getTrialAvatarFirstPassDungeonNotify().hashCode();
           break;
-        case 643:
+        case 808:
           hash = (37 * hash) + CHANNELLER_SLAB_LOOP_DUNGEON_RESULT_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getChannellerSlabLoopDungeonResultInfo().hashCode();
           break;
-        case 132:
+        case 596:
           hash = (37 * hash) + EFFIGY_CHALLENGE_DUNGEON_RESULT_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getEffigyChallengeDungeonResultInfo().hashCode();
           break;
-        case 372:
+        case 2010:
           hash = (37 * hash) + ROGUELIKE_DUNGEON_SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getRoguelikeDungeonSettleInfo().hashCode();
           break;
-        case 220:
+        case 1313:
           hash = (37 * hash) + CRYSTAL_LINK_SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getCrystalLinkSettleInfo().hashCode();
           break;
-        case 117:
+        case 174:
           hash = (37 * hash) + SUMMER_TIME_V2_DUNGEON_SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getSummerTimeV2DungeonSettleInfo().hashCode();
           break;
-        case 659:
+        case 702:
           hash = (37 * hash) + INSTABLE_SPRAY_SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getInstableSpraySettleInfo().hashCode();
           break;
-        case 28:
+        case 714:
           hash = (37 * hash) + WIND_FIELD_DUNGEON_SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getWindFieldDungeonSettleInfo().hashCode();
           break;
-        case 390:
+        case 1629:
           hash = (37 * hash) + EFFIGY_CHALLENGE_V2_SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getEffigyChallengeV2SettleInfo().hashCode();
           break;
-        case 1001:
+        case 755:
           hash = (37 * hash) + TEAM_CHAIN_SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getTeamChainSettleInfo().hashCode();
           break;
-        case 536:
+        case 1544:
           hash = (37 * hash) + PACMAN_SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getPacmanSettleInfo().hashCode();
           break;
-        case 1819:
+        case 1886:
           hash = (37 * hash) + FUNGUS_FIGHTER_V2_SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getFungusFighterV2SettleInfo().hashCode();
           break;
-        case 1202:
+        case 578:
           hash = (37 * hash) + BLADE_DANCE_SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getBladeDanceSettleInfo().hashCode();
           break;
-        case 985:
+        case 1901:
           hash = (37 * hash) + MULTI_CHARACTER_DUNGEON_SETTLE_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getMultiCharacterDungeonSettleInfo().hashCode();
-          break;
-        case 1524:
-          hash = (37 * hash) + INSPIRATION_SPURT_DUNGEON_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getInspirationSpurtDungeonSettleInfo().hashCode();
-          break;
-        case 1551:
-          hash = (37 * hash) + QUICK_TIME_COMBAT_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getQuickTimeCombatSettleInfo().hashCode();
-          break;
-        case 198:
-          hash = (37 * hash) + FUNGUS_FIGHTER_V3_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getFungusFighterV3SettleInfo().hashCode();
-          break;
-        case 1636:
-          hash = (37 * hash) + FILMFEST_BATTLE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getFilmfestBattleSettleInfo().hashCode();
-          break;
-        case 1185:
-          hash = (37 * hash) + FILMFEST_SNIPER_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getFilmfestSniperSettleInfo().hashCode();
-          break;
-        case 812:
-          hash = (37 * hash) + GOAL_CHALLENGE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getGoalChallengeSettleInfo().hashCode();
-          break;
-        case 2031:
-          hash = (37 * hash) + MIST_TRIAL_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getMistTrialSettleInfo().hashCode();
-          break;
-        case 171:
-          hash = (37 * hash) + STAMINA_FIGHT_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getStaminaFightSettleInfo().hashCode();
-          break;
-        case 1490:
-          hash = (37 * hash) + LOST_SAMACHURL_SNEAK_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getLostSamachurlSneakSettleInfo().hashCode();
-          break;
-        case 1917:
-          hash = (37 * hash) + AUTO_TIME_STOP_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getAutoTimeStopSettleInfo().hashCode();
-          break;
-        case 991:
-          hash = (37 * hash) + SLIME_CANNON_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getSlimeCannonSettleInfo().hashCode();
-          break;
-        case 1779:
-          hash = (37 * hash) + EFFIGY_CHALLENGE_V5_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getEffigyChallengeV5SettleInfo().hashCode();
-          break;
-        case 1740:
-          hash = (37 * hash) + ROLE_COMBAT_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getRoleCombatSettleInfo().hashCode();
-          break;
-        case 928:
-          hash = (37 * hash) + ACROBATICS_BATTLE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getAcrobaticsBattleSettleInfo().hashCode();
-          break;
-        case 1233:
-          hash = (37 * hash) + BULLET_HELL_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getBulletHellSettleInfo().hashCode();
-          break;
-        case 36:
-          hash = (37 * hash) + RECHARGE_DISK_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getRechargeDiskSettleInfo().hashCode();
-          break;
-        case 848:
-          hash = (37 * hash) + FAIRY_TALES_COMBAT_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getFairyTalesCombatSettleInfo().hashCode();
-          break;
-        case 931:
-          hash = (37 * hash) + GAIN_BUFF_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getGainBuffSettleInfo().hashCode();
-          break;
-        case 2012:
-          hash = (37 * hash) + CHAR_MASTER_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getCharMasterSettleInfo().hashCode();
-          break;
-        case 249:
-          hash = (37 * hash) + FEVER_BATTLE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getFeverBattleSettleInfo().hashCode();
-          break;
-        case 1004:
-          hash = (37 * hash) + COOPERATE_CHALLENGE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getCooperateChallengeSettleInfo().hashCode();
-          break;
-        case 2024:
-          hash = (37 * hash) + BOMBER_DODOCO_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getBomberDodocoSettleInfo().hashCode();
-          break;
-        case 247:
-          hash = (37 * hash) + CEREMONY_BATTLE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getCeremonyBattleSettleInfo().hashCode();
-          break;
-        case 1538:
-          hash = (37 * hash) + BADGET_BATTLE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getBadgetBattleSettleInfo().hashCode();
-          break;
-        case 148:
-          hash = (37 * hash) + AD_SHOOTING_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getAdShootingSettleInfo().hashCode();
-          break;
-        case 1404:
-          hash = (37 * hash) + TOWER_CHALLENGE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getTowerChallengeSettleInfo().hashCode();
-          break;
-        case 30:
-          hash = (37 * hash) + GALLERY_CONTEXT_ENTRY_FIELD_NUMBER;
-          hash = (53 * hash) + getGalleryContextEntry().hashCode();
-          break;
-        case 942:
-          hash = (37 * hash) + NATLAN_DRILL_BATTLE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getNatlanDrillBattleSettleInfo().hashCode();
-          break;
-        case 721:
-          hash = (37 * hash) + NATLAN_ARENA_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getNatlanArenaSettleInfo().hashCode();
-          break;
-        case 821:
-          hash = (37 * hash) + SAURUS1_V3_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getSaurus1V3SettleInfo().hashCode();
-          break;
-        case 413:
-          hash = (37 * hash) + DIVERSITY_BATTLE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getDiversityBattleSettleInfo().hashCode();
-          break;
-        case 2020:
-          hash = (37 * hash) + THEME_PARK_PARKOUR_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getThemeParkParkourSettleInfo().hashCode();
-          break;
-        case 1129:
-          hash = (37 * hash) + THEME_PARK_TRIATHLON_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getThemeParkTriathlonSettleInfo().hashCode();
-          break;
-        case 2039:
-          hash = (37 * hash) + MVM2_PVE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getMvm2PveSettleInfo().hashCode();
-          break;
-        case 701:
-          hash = (37 * hash) + MVM2_SIMULATE_SETTLE_INFO_FIELD_NUMBER;
-          hash = (53 * hash) + getMvm2SimulateSettleInfo().hashCode();
           break;
         case 0:
         default:
@@ -4942,7 +2151,8 @@ public final class DungeonSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 839
+     * CmdId: 22323
+     * Obf: OHGJJKADNFH
      * </pre>
      *
      * Protobuf type {@code DungeonSettleNotify}
@@ -4960,10 +2170,10 @@ public final class DungeonSettleNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 9:
-            return internalGetSettleShow();
-          case 12:
+          case 2:
             return internalGetStrengthenPointDataMap();
+          case 13:
+            return internalGetSettleShow();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -4973,10 +2183,10 @@ public final class DungeonSettleNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 9:
-            return internalGetMutableSettleShow();
-          case 12:
+          case 2:
             return internalGetMutableStrengthenPointDataMap();
+          case 13:
+            return internalGetMutableSettleShow();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -5009,30 +2219,28 @@ public final class DungeonSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        playerUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        dungeonId_ = 0;
-
-        aLHPCFABLPH_ = 0;
-
-        closeTime_ = 0;
-
-        useTime_ = 0;
-
-        ePBCNMFNDAP_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        internalGetMutableSettleShow().clear();
         isSuccess_ = false;
 
-        internalGetMutableStrengthenPointDataMap().clear();
         if (exhibitionInfoListBuilder_ == null) {
           exhibitionInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           exhibitionInfoListBuilder_.clear();
         }
+        internalGetMutableStrengthenPointDataMap().clear();
+        internalGetMutableSettleShow().clear();
+        createPlayerUid_ = 0;
+
+        dungeonId_ = 0;
+
+        closeTime_ = 0;
+
         result_ = 0;
 
+        useTime_ = 0;
+
+        failCondList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000008);
         detailCase_ = 0;
         detail_ = null;
         return this;
@@ -5062,383 +2270,133 @@ public final class DungeonSettleNotifyOuterClass {
       public emu.grasscutter.net.proto.DungeonSettleNotifyOuterClass.DungeonSettleNotify buildPartial() {
         emu.grasscutter.net.proto.DungeonSettleNotifyOuterClass.DungeonSettleNotify result = new emu.grasscutter.net.proto.DungeonSettleNotifyOuterClass.DungeonSettleNotify(this);
         int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          playerUidList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.playerUidList_ = playerUidList_;
-        result.dungeonId_ = dungeonId_;
-        result.aLHPCFABLPH_ = aLHPCFABLPH_;
-        result.closeTime_ = closeTime_;
-        result.useTime_ = useTime_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          ePBCNMFNDAP_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.ePBCNMFNDAP_ = ePBCNMFNDAP_;
-        result.settleShow_ = internalGetSettleShow();
-        result.settleShow_.makeImmutable();
         result.isSuccess_ = isSuccess_;
-        result.strengthenPointDataMap_ = internalGetStrengthenPointDataMap();
-        result.strengthenPointDataMap_.makeImmutable();
         if (exhibitionInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             exhibitionInfoList_ = java.util.Collections.unmodifiableList(exhibitionInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000010);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.exhibitionInfoList_ = exhibitionInfoList_;
         } else {
           result.exhibitionInfoList_ = exhibitionInfoListBuilder_.build();
         }
+        result.strengthenPointDataMap_ = internalGetStrengthenPointDataMap();
+        result.strengthenPointDataMap_.makeImmutable();
+        result.settleShow_ = internalGetSettleShow();
+        result.settleShow_.makeImmutable();
+        result.createPlayerUid_ = createPlayerUid_;
+        result.dungeonId_ = dungeonId_;
+        result.closeTime_ = closeTime_;
         result.result_ = result_;
-        if (detailCase_ == 787) {
+        result.useTime_ = useTime_;
+        if (((bitField0_ & 0x00000008) != 0)) {
+          failCondList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        }
+        result.failCondList_ = failCondList_;
+        if (detailCase_ == 1162) {
           if (towerLevelEndNotifyBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = towerLevelEndNotifyBuilder_.build();
           }
         }
-        if (detailCase_ == 241) {
+        if (detailCase_ == 2036) {
           if (trialAvatarFirstPassDungeonNotifyBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = trialAvatarFirstPassDungeonNotifyBuilder_.build();
           }
         }
-        if (detailCase_ == 643) {
+        if (detailCase_ == 808) {
           if (channellerSlabLoopDungeonResultInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = channellerSlabLoopDungeonResultInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 132) {
+        if (detailCase_ == 596) {
           if (effigyChallengeDungeonResultInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = effigyChallengeDungeonResultInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 372) {
+        if (detailCase_ == 2010) {
           if (roguelikeDungeonSettleInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = roguelikeDungeonSettleInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 220) {
+        if (detailCase_ == 1313) {
           if (crystalLinkSettleInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = crystalLinkSettleInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 117) {
+        if (detailCase_ == 174) {
           if (summerTimeV2DungeonSettleInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = summerTimeV2DungeonSettleInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 659) {
+        if (detailCase_ == 702) {
           if (instableSpraySettleInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = instableSpraySettleInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 28) {
+        if (detailCase_ == 714) {
           if (windFieldDungeonSettleInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = windFieldDungeonSettleInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 390) {
+        if (detailCase_ == 1629) {
           if (effigyChallengeV2SettleInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = effigyChallengeV2SettleInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 1001) {
+        if (detailCase_ == 755) {
           if (teamChainSettleInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = teamChainSettleInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 536) {
+        if (detailCase_ == 1544) {
           if (pacmanSettleInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = pacmanSettleInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 1819) {
+        if (detailCase_ == 1886) {
           if (fungusFighterV2SettleInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = fungusFighterV2SettleInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 1202) {
+        if (detailCase_ == 578) {
           if (bladeDanceSettleInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = bladeDanceSettleInfoBuilder_.build();
           }
         }
-        if (detailCase_ == 985) {
+        if (detailCase_ == 1901) {
           if (multiCharacterDungeonSettleInfoBuilder_ == null) {
             result.detail_ = detail_;
           } else {
             result.detail_ = multiCharacterDungeonSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1524) {
-          if (inspirationSpurtDungeonSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = inspirationSpurtDungeonSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1551) {
-          if (quickTimeCombatSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = quickTimeCombatSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 198) {
-          if (fungusFighterV3SettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = fungusFighterV3SettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1636) {
-          if (filmfestBattleSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = filmfestBattleSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1185) {
-          if (filmfestSniperSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = filmfestSniperSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 812) {
-          if (goalChallengeSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = goalChallengeSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 2031) {
-          if (mistTrialSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = mistTrialSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 171) {
-          if (staminaFightSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = staminaFightSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1490) {
-          if (lostSamachurlSneakSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = lostSamachurlSneakSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1917) {
-          if (autoTimeStopSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = autoTimeStopSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 991) {
-          if (slimeCannonSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = slimeCannonSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1779) {
-          if (effigyChallengeV5SettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = effigyChallengeV5SettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1740) {
-          if (roleCombatSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = roleCombatSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 928) {
-          if (acrobaticsBattleSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = acrobaticsBattleSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1233) {
-          if (bulletHellSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = bulletHellSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 36) {
-          if (rechargeDiskSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = rechargeDiskSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 848) {
-          if (fairyTalesCombatSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = fairyTalesCombatSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 931) {
-          if (gainBuffSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = gainBuffSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 2012) {
-          if (charMasterSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = charMasterSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 249) {
-          if (feverBattleSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = feverBattleSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1004) {
-          if (cooperateChallengeSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = cooperateChallengeSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 2024) {
-          if (bomberDodocoSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = bomberDodocoSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 247) {
-          if (ceremonyBattleSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = ceremonyBattleSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1538) {
-          if (badgetBattleSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = badgetBattleSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 148) {
-          if (adShootingSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = adShootingSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1404) {
-          if (towerChallengeSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = towerChallengeSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 30) {
-          if (galleryContextEntryBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = galleryContextEntryBuilder_.build();
-          }
-        }
-        if (detailCase_ == 942) {
-          if (natlanDrillBattleSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = natlanDrillBattleSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 721) {
-          if (natlanArenaSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = natlanArenaSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 821) {
-          if (saurus1V3SettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = saurus1V3SettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 413) {
-          if (diversityBattleSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = diversityBattleSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 2020) {
-          if (themeParkParkourSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = themeParkParkourSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 1129) {
-          if (themeParkTriathlonSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = themeParkTriathlonSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 2039) {
-          if (mvm2PveSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = mvm2PveSettleInfoBuilder_.build();
-          }
-        }
-        if (detailCase_ == 701) {
-          if (mvm2SimulateSettleInfoBuilder_ == null) {
-            result.detail_ = detail_;
-          } else {
-            result.detail_ = mvm2SimulateSettleInfoBuilder_.build();
           }
         }
         result.detailCase_ = detailCase_;
@@ -5490,50 +2448,14 @@ public final class DungeonSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonSettleNotifyOuterClass.DungeonSettleNotify other) {
         if (other == emu.grasscutter.net.proto.DungeonSettleNotifyOuterClass.DungeonSettleNotify.getDefaultInstance()) return this;
-        if (!other.playerUidList_.isEmpty()) {
-          if (playerUidList_.isEmpty()) {
-            playerUidList_ = other.playerUidList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensurePlayerUidListIsMutable();
-            playerUidList_.addAll(other.playerUidList_);
-          }
-          onChanged();
-        }
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
-        }
-        if (other.getALHPCFABLPH() != 0) {
-          setALHPCFABLPH(other.getALHPCFABLPH());
-        }
-        if (other.getCloseTime() != 0) {
-          setCloseTime(other.getCloseTime());
-        }
-        if (other.getUseTime() != 0) {
-          setUseTime(other.getUseTime());
-        }
-        if (!other.ePBCNMFNDAP_.isEmpty()) {
-          if (ePBCNMFNDAP_.isEmpty()) {
-            ePBCNMFNDAP_ = other.ePBCNMFNDAP_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureEPBCNMFNDAPIsMutable();
-            ePBCNMFNDAP_.addAll(other.ePBCNMFNDAP_);
-          }
-          onChanged();
-        }
-        internalGetMutableSettleShow().mergeFrom(
-            other.internalGetSettleShow());
         if (other.getIsSuccess() != false) {
           setIsSuccess(other.getIsSuccess());
         }
-        internalGetMutableStrengthenPointDataMap().mergeFrom(
-            other.internalGetStrengthenPointDataMap());
         if (exhibitionInfoListBuilder_ == null) {
           if (!other.exhibitionInfoList_.isEmpty()) {
             if (exhibitionInfoList_.isEmpty()) {
               exhibitionInfoList_ = other.exhibitionInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureExhibitionInfoListIsMutable();
               exhibitionInfoList_.addAll(other.exhibitionInfoList_);
@@ -5546,7 +2468,7 @@ public final class DungeonSettleNotifyOuterClass {
               exhibitionInfoListBuilder_.dispose();
               exhibitionInfoListBuilder_ = null;
               exhibitionInfoList_ = other.exhibitionInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000010);
+              bitField0_ = (bitField0_ & ~0x00000001);
               exhibitionInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getExhibitionInfoListFieldBuilder() : null;
@@ -5555,8 +2477,34 @@ public final class DungeonSettleNotifyOuterClass {
             }
           }
         }
+        internalGetMutableStrengthenPointDataMap().mergeFrom(
+            other.internalGetStrengthenPointDataMap());
+        internalGetMutableSettleShow().mergeFrom(
+            other.internalGetSettleShow());
+        if (other.getCreatePlayerUid() != 0) {
+          setCreatePlayerUid(other.getCreatePlayerUid());
+        }
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
+        }
+        if (other.getCloseTime() != 0) {
+          setCloseTime(other.getCloseTime());
+        }
         if (other.getResult() != 0) {
           setResult(other.getResult());
+        }
+        if (other.getUseTime() != 0) {
+          setUseTime(other.getUseTime());
+        }
+        if (!other.failCondList_.isEmpty()) {
+          if (failCondList_.isEmpty()) {
+            failCondList_ = other.failCondList_;
+            bitField0_ = (bitField0_ & ~0x00000008);
+          } else {
+            ensureFailCondListIsMutable();
+            failCondList_.addAll(other.failCondList_);
+          }
+          onChanged();
         }
         switch (other.getDetailCase()) {
           case TOWER_LEVEL_END_NOTIFY: {
@@ -5619,146 +2567,6 @@ public final class DungeonSettleNotifyOuterClass {
             mergeMultiCharacterDungeonSettleInfo(other.getMultiCharacterDungeonSettleInfo());
             break;
           }
-          case INSPIRATION_SPURT_DUNGEON_SETTLE_INFO: {
-            mergeInspirationSpurtDungeonSettleInfo(other.getInspirationSpurtDungeonSettleInfo());
-            break;
-          }
-          case QUICK_TIME_COMBAT_SETTLE_INFO: {
-            mergeQuickTimeCombatSettleInfo(other.getQuickTimeCombatSettleInfo());
-            break;
-          }
-          case FUNGUS_FIGHTER_V3_SETTLE_INFO: {
-            mergeFungusFighterV3SettleInfo(other.getFungusFighterV3SettleInfo());
-            break;
-          }
-          case FILMFEST_BATTLE_SETTLE_INFO: {
-            mergeFilmfestBattleSettleInfo(other.getFilmfestBattleSettleInfo());
-            break;
-          }
-          case FILMFEST_SNIPER_SETTLE_INFO: {
-            mergeFilmfestSniperSettleInfo(other.getFilmfestSniperSettleInfo());
-            break;
-          }
-          case GOAL_CHALLENGE_SETTLE_INFO: {
-            mergeGoalChallengeSettleInfo(other.getGoalChallengeSettleInfo());
-            break;
-          }
-          case MIST_TRIAL_SETTLE_INFO: {
-            mergeMistTrialSettleInfo(other.getMistTrialSettleInfo());
-            break;
-          }
-          case STAMINA_FIGHT_SETTLE_INFO: {
-            mergeStaminaFightSettleInfo(other.getStaminaFightSettleInfo());
-            break;
-          }
-          case LOST_SAMACHURL_SNEAK_SETTLE_INFO: {
-            mergeLostSamachurlSneakSettleInfo(other.getLostSamachurlSneakSettleInfo());
-            break;
-          }
-          case AUTO_TIME_STOP_SETTLE_INFO: {
-            mergeAutoTimeStopSettleInfo(other.getAutoTimeStopSettleInfo());
-            break;
-          }
-          case SLIME_CANNON_SETTLE_INFO: {
-            mergeSlimeCannonSettleInfo(other.getSlimeCannonSettleInfo());
-            break;
-          }
-          case EFFIGY_CHALLENGE_V5_SETTLE_INFO: {
-            mergeEffigyChallengeV5SettleInfo(other.getEffigyChallengeV5SettleInfo());
-            break;
-          }
-          case ROLE_COMBAT_SETTLE_INFO: {
-            mergeRoleCombatSettleInfo(other.getRoleCombatSettleInfo());
-            break;
-          }
-          case ACROBATICS_BATTLE_SETTLE_INFO: {
-            mergeAcrobaticsBattleSettleInfo(other.getAcrobaticsBattleSettleInfo());
-            break;
-          }
-          case BULLET_HELL_SETTLE_INFO: {
-            mergeBulletHellSettleInfo(other.getBulletHellSettleInfo());
-            break;
-          }
-          case RECHARGE_DISK_SETTLE_INFO: {
-            mergeRechargeDiskSettleInfo(other.getRechargeDiskSettleInfo());
-            break;
-          }
-          case FAIRY_TALES_COMBAT_SETTLE_INFO: {
-            mergeFairyTalesCombatSettleInfo(other.getFairyTalesCombatSettleInfo());
-            break;
-          }
-          case GAIN_BUFF_SETTLE_INFO: {
-            mergeGainBuffSettleInfo(other.getGainBuffSettleInfo());
-            break;
-          }
-          case CHAR_MASTER_SETTLE_INFO: {
-            mergeCharMasterSettleInfo(other.getCharMasterSettleInfo());
-            break;
-          }
-          case FEVER_BATTLE_SETTLE_INFO: {
-            mergeFeverBattleSettleInfo(other.getFeverBattleSettleInfo());
-            break;
-          }
-          case COOPERATE_CHALLENGE_SETTLE_INFO: {
-            mergeCooperateChallengeSettleInfo(other.getCooperateChallengeSettleInfo());
-            break;
-          }
-          case BOMBER_DODOCO_SETTLE_INFO: {
-            mergeBomberDodocoSettleInfo(other.getBomberDodocoSettleInfo());
-            break;
-          }
-          case CEREMONY_BATTLE_SETTLE_INFO: {
-            mergeCeremonyBattleSettleInfo(other.getCeremonyBattleSettleInfo());
-            break;
-          }
-          case BADGET_BATTLE_SETTLE_INFO: {
-            mergeBadgetBattleSettleInfo(other.getBadgetBattleSettleInfo());
-            break;
-          }
-          case AD_SHOOTING_SETTLE_INFO: {
-            mergeAdShootingSettleInfo(other.getAdShootingSettleInfo());
-            break;
-          }
-          case TOWER_CHALLENGE_SETTLE_INFO: {
-            mergeTowerChallengeSettleInfo(other.getTowerChallengeSettleInfo());
-            break;
-          }
-          case GALLERY_CONTEXT_ENTRY: {
-            mergeGalleryContextEntry(other.getGalleryContextEntry());
-            break;
-          }
-          case NATLAN_DRILL_BATTLE_SETTLE_INFO: {
-            mergeNatlanDrillBattleSettleInfo(other.getNatlanDrillBattleSettleInfo());
-            break;
-          }
-          case NATLAN_ARENA_SETTLE_INFO: {
-            mergeNatlanArenaSettleInfo(other.getNatlanArenaSettleInfo());
-            break;
-          }
-          case SAURUS1_V3_SETTLE_INFO: {
-            mergeSaurus1V3SettleInfo(other.getSaurus1V3SettleInfo());
-            break;
-          }
-          case DIVERSITY_BATTLE_SETTLE_INFO: {
-            mergeDiversityBattleSettleInfo(other.getDiversityBattleSettleInfo());
-            break;
-          }
-          case THEME_PARK_PARKOUR_SETTLE_INFO: {
-            mergeThemeParkParkourSettleInfo(other.getThemeParkParkourSettleInfo());
-            break;
-          }
-          case THEME_PARK_TRIATHLON_SETTLE_INFO: {
-            mergeThemeParkTriathlonSettleInfo(other.getThemeParkTriathlonSettleInfo());
-            break;
-          }
-          case MVM2_PVE_SETTLE_INFO: {
-            mergeMvm2PveSettleInfo(other.getMvm2PveSettleInfo());
-            break;
-          }
-          case MVM2_SIMULATE_SETTLE_INFO: {
-            mergeMvm2SimulateSettleInfo(other.getMvm2SimulateSettleInfo());
-            break;
-          }
           case DETAIL_NOT_SET: {
             break;
           }
@@ -5808,285 +2616,402 @@ public final class DungeonSettleNotifyOuterClass {
 
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList playerUidList_ = emptyIntList();
-      private void ensurePlayerUidListIsMutable() {
+      private boolean isSuccess_ ;
+      /**
+       * <code>bool is_success = 3;</code>
+       * @return The isSuccess.
+       */
+      @java.lang.Override
+      public boolean getIsSuccess() {
+        return isSuccess_;
+      }
+      /**
+       * <code>bool is_success = 3;</code>
+       * @param value The isSuccess to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSuccess(boolean value) {
+        
+        isSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_success = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSuccess() {
+        
+        isSuccess_ = false;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> exhibitionInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureExhibitionInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          playerUidList_ = mutableCopy(playerUidList_);
+          exhibitionInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo>(exhibitionInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder> exhibitionInfoListBuilder_;
+
       /**
-       * <code>repeated uint32 player_uid_list = 1;</code>
-       * @return A list containing the playerUidList.
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
        */
-      public java.util.List<java.lang.Integer>
-          getPlayerUidListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(playerUidList_) : playerUidList_;
+      public java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> getExhibitionInfoListList() {
+        if (exhibitionInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(exhibitionInfoList_);
+        } else {
+          return exhibitionInfoListBuilder_.getMessageList();
+        }
       }
       /**
-       * <code>repeated uint32 player_uid_list = 1;</code>
-       * @return The count of playerUidList.
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
        */
-      public int getPlayerUidListCount() {
-        return playerUidList_.size();
+      public int getExhibitionInfoListCount() {
+        if (exhibitionInfoListBuilder_ == null) {
+          return exhibitionInfoList_.size();
+        } else {
+          return exhibitionInfoListBuilder_.getCount();
+        }
       }
       /**
-       * <code>repeated uint32 player_uid_list = 1;</code>
-       * @param index The index of the element to return.
-       * @return The playerUidList at the given index.
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
        */
-      public int getPlayerUidList(int index) {
-        return playerUidList_.getInt(index);
+      public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo getExhibitionInfoList(int index) {
+        if (exhibitionInfoListBuilder_ == null) {
+          return exhibitionInfoList_.get(index);
+        } else {
+          return exhibitionInfoListBuilder_.getMessage(index);
+        }
       }
       /**
-       * <code>repeated uint32 player_uid_list = 1;</code>
-       * @param index The index to set the value at.
-       * @param value The playerUidList to set.
-       * @return This builder for chaining.
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
        */
-      public Builder setPlayerUidList(
-          int index, int value) {
-        ensurePlayerUidListIsMutable();
-        playerUidList_.setInt(index, value);
-        onChanged();
+      public Builder setExhibitionInfoList(
+          int index, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo value) {
+        if (exhibitionInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureExhibitionInfoListIsMutable();
+          exhibitionInfoList_.set(index, value);
+          onChanged();
+        } else {
+          exhibitionInfoListBuilder_.setMessage(index, value);
+        }
         return this;
       }
       /**
-       * <code>repeated uint32 player_uid_list = 1;</code>
-       * @param value The playerUidList to add.
-       * @return This builder for chaining.
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
        */
-      public Builder addPlayerUidList(int value) {
-        ensurePlayerUidListIsMutable();
-        playerUidList_.addInt(value);
-        onChanged();
+      public Builder setExhibitionInfoList(
+          int index, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder builderForValue) {
+        if (exhibitionInfoListBuilder_ == null) {
+          ensureExhibitionInfoListIsMutable();
+          exhibitionInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          exhibitionInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
       }
       /**
-       * <code>repeated uint32 player_uid_list = 1;</code>
-       * @param values The playerUidList to add.
-       * @return This builder for chaining.
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
        */
-      public Builder addAllPlayerUidList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensurePlayerUidListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, playerUidList_);
-        onChanged();
+      public Builder addExhibitionInfoList(emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo value) {
+        if (exhibitionInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureExhibitionInfoListIsMutable();
+          exhibitionInfoList_.add(value);
+          onChanged();
+        } else {
+          exhibitionInfoListBuilder_.addMessage(value);
+        }
         return this;
       }
       /**
-       * <code>repeated uint32 player_uid_list = 1;</code>
-       * @return This builder for chaining.
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
        */
-      public Builder clearPlayerUidList() {
-        playerUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
+      public Builder addExhibitionInfoList(
+          int index, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo value) {
+        if (exhibitionInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureExhibitionInfoListIsMutable();
+          exhibitionInfoList_.add(index, value);
+          onChanged();
+        } else {
+          exhibitionInfoListBuilder_.addMessage(index, value);
+        }
         return this;
+      }
+      /**
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+       */
+      public Builder addExhibitionInfoList(
+          emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder builderForValue) {
+        if (exhibitionInfoListBuilder_ == null) {
+          ensureExhibitionInfoListIsMutable();
+          exhibitionInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          exhibitionInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+       */
+      public Builder addExhibitionInfoList(
+          int index, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder builderForValue) {
+        if (exhibitionInfoListBuilder_ == null) {
+          ensureExhibitionInfoListIsMutable();
+          exhibitionInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          exhibitionInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+       */
+      public Builder addAllExhibitionInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> values) {
+        if (exhibitionInfoListBuilder_ == null) {
+          ensureExhibitionInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, exhibitionInfoList_);
+          onChanged();
+        } else {
+          exhibitionInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+       */
+      public Builder clearExhibitionInfoList() {
+        if (exhibitionInfoListBuilder_ == null) {
+          exhibitionInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          exhibitionInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+       */
+      public Builder removeExhibitionInfoList(int index) {
+        if (exhibitionInfoListBuilder_ == null) {
+          ensureExhibitionInfoListIsMutable();
+          exhibitionInfoList_.remove(index);
+          onChanged();
+        } else {
+          exhibitionInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+       */
+      public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder getExhibitionInfoListBuilder(
+          int index) {
+        return getExhibitionInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+       */
+      public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder getExhibitionInfoListOrBuilder(
+          int index) {
+        if (exhibitionInfoListBuilder_ == null) {
+          return exhibitionInfoList_.get(index);  } else {
+          return exhibitionInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder> 
+           getExhibitionInfoListOrBuilderList() {
+        if (exhibitionInfoListBuilder_ != null) {
+          return exhibitionInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(exhibitionInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+       */
+      public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder addExhibitionInfoListBuilder() {
+        return getExhibitionInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+       */
+      public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder addExhibitionInfoListBuilder(
+          int index) {
+        return getExhibitionInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 10;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder> 
+           getExhibitionInfoListBuilderList() {
+        return getExhibitionInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder> 
+          getExhibitionInfoListFieldBuilder() {
+        if (exhibitionInfoListBuilder_ == null) {
+          exhibitionInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder>(
+                  exhibitionInfoList_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          exhibitionInfoList_ = null;
+        }
+        return exhibitionInfoListBuilder_;
       }
 
-      private int dungeonId_ ;
+      private com.google.protobuf.MapField<
+          java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> strengthenPointDataMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
+      internalGetStrengthenPointDataMap() {
+        if (strengthenPointDataMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              StrengthenPointDataMapDefaultEntryHolder.defaultEntry);
+        }
+        return strengthenPointDataMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
+      internalGetMutableStrengthenPointDataMap() {
+        onChanged();;
+        if (strengthenPointDataMap_ == null) {
+          strengthenPointDataMap_ = com.google.protobuf.MapField.newMapField(
+              StrengthenPointDataMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!strengthenPointDataMap_.isMutable()) {
+          strengthenPointDataMap_ = strengthenPointDataMap_.copy();
+        }
+        return strengthenPointDataMap_;
+      }
+
+      public int getStrengthenPointDataMapCount() {
+        return internalGetStrengthenPointDataMap().getMap().size();
+      }
       /**
-       * <code>uint32 dungeon_id = 2;</code>
-       * @return The dungeonId.
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsStrengthenPointDataMap(
+          int key) {
+        
+        return internalGetStrengthenPointDataMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getStrengthenPointDataMapMap()} instead.
        */
       @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> getStrengthenPointDataMap() {
+        return getStrengthenPointDataMapMap();
       }
       /**
-       * <code>uint32 dungeon_id = 2;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int aLHPCFABLPH_ ;
-      /**
-       * <code>uint32 ALHPCFABLPH = 3;</code>
-       * @return The aLHPCFABLPH.
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
        */
       @java.lang.Override
-      public int getALHPCFABLPH() {
-        return aLHPCFABLPH_;
-      }
-      /**
-       * <code>uint32 ALHPCFABLPH = 3;</code>
-       * @param value The aLHPCFABLPH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setALHPCFABLPH(int value) {
-        
-        aLHPCFABLPH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 ALHPCFABLPH = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearALHPCFABLPH() {
-        
-        aLHPCFABLPH_ = 0;
-        onChanged();
-        return this;
-      }
 
-      private int closeTime_ ;
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> getStrengthenPointDataMapMap() {
+        return internalGetStrengthenPointDataMap().getMap();
+      }
       /**
-       * <code>uint32 close_time = 4;</code>
-       * @return The closeTime.
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
        */
       @java.lang.Override
-      public int getCloseTime() {
-        return closeTime_;
-      }
-      /**
-       * <code>uint32 close_time = 4;</code>
-       * @param value The closeTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCloseTime(int value) {
-        
-        closeTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 close_time = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCloseTime() {
-        
-        closeTime_ = 0;
-        onChanged();
-        return this;
-      }
 
-      private int useTime_ ;
+      public emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData getStrengthenPointDataMapOrDefault(
+          int key,
+          emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData defaultValue) {
+        
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> map =
+            internalGetStrengthenPointDataMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
       /**
-       * <code>uint32 use_time = 7;</code>
-       * @return The useTime.
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
        */
       @java.lang.Override
-      public int getUseTime() {
-        return useTime_;
-      }
-      /**
-       * <code>uint32 use_time = 7;</code>
-       * @param value The useTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUseTime(int value) {
+
+      public emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData getStrengthenPointDataMapOrThrow(
+          int key) {
         
-        useTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 use_time = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUseTime() {
-        
-        useTime_ = 0;
-        onChanged();
-        return this;
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> map =
+            internalGetStrengthenPointDataMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
       }
 
-      private com.google.protobuf.Internal.IntList ePBCNMFNDAP_ = emptyIntList();
-      private void ensureEPBCNMFNDAPIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          ePBCNMFNDAP_ = mutableCopy(ePBCNMFNDAP_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-       * @return A list containing the ePBCNMFNDAP.
-       */
-      public java.util.List<java.lang.Integer>
-          getEPBCNMFNDAPList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(ePBCNMFNDAP_) : ePBCNMFNDAP_;
-      }
-      /**
-       * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-       * @return The count of ePBCNMFNDAP.
-       */
-      public int getEPBCNMFNDAPCount() {
-        return ePBCNMFNDAP_.size();
-      }
-      /**
-       * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-       * @param index The index of the element to return.
-       * @return The ePBCNMFNDAP at the given index.
-       */
-      public int getEPBCNMFNDAP(int index) {
-        return ePBCNMFNDAP_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-       * @param index The index to set the value at.
-       * @param value The ePBCNMFNDAP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEPBCNMFNDAP(
-          int index, int value) {
-        ensureEPBCNMFNDAPIsMutable();
-        ePBCNMFNDAP_.setInt(index, value);
-        onChanged();
+      public Builder clearStrengthenPointDataMap() {
+        internalGetMutableStrengthenPointDataMap().getMutableMap()
+            .clear();
         return this;
       }
       /**
-       * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-       * @param value The ePBCNMFNDAP to add.
-       * @return This builder for chaining.
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
        */
-      public Builder addEPBCNMFNDAP(int value) {
-        ensureEPBCNMFNDAPIsMutable();
-        ePBCNMFNDAP_.addInt(value);
-        onChanged();
+
+      public Builder removeStrengthenPointDataMap(
+          int key) {
+        
+        internalGetMutableStrengthenPointDataMap().getMutableMap()
+            .remove(key);
         return this;
       }
       /**
-       * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-       * @param values The ePBCNMFNDAP to add.
-       * @return This builder for chaining.
+       * Use alternate mutation accessors instead.
        */
-      public Builder addAllEPBCNMFNDAP(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureEPBCNMFNDAPIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, ePBCNMFNDAP_);
-        onChanged();
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
+      getMutableStrengthenPointDataMap() {
+        return internalGetMutableStrengthenPointDataMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
+       */
+      public Builder putStrengthenPointDataMap(
+          int key,
+          emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData value) {
+        
+        if (value == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableStrengthenPointDataMap().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
-       * <code>repeated uint32 EPBCNMFNDAP = 8;</code>
-       * @return This builder for chaining.
+       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 2;</code>
        */
-      public Builder clearEPBCNMFNDAP() {
-        ePBCNMFNDAP_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
+
+      public Builder putAllStrengthenPointDataMap(
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> values) {
+        internalGetMutableStrengthenPointDataMap().getMutableMap()
+            .putAll(values);
         return this;
       }
 
@@ -6117,7 +3042,7 @@ public final class DungeonSettleNotifyOuterClass {
         return internalGetSettleShow().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
+       * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
        */
 
       @java.lang.Override
@@ -6135,7 +3060,7 @@ public final class DungeonSettleNotifyOuterClass {
         return getSettleShowMap();
       }
       /**
-       * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
+       * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
        */
       @java.lang.Override
 
@@ -6143,7 +3068,7 @@ public final class DungeonSettleNotifyOuterClass {
         return internalGetSettleShow().getMap();
       }
       /**
-       * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
+       * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
        */
       @java.lang.Override
 
@@ -6156,7 +3081,7 @@ public final class DungeonSettleNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
+       * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
        */
       @java.lang.Override
 
@@ -6177,7 +3102,7 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
+       * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
        */
 
       public Builder removeSettleShow(
@@ -6196,7 +3121,7 @@ public final class DungeonSettleNotifyOuterClass {
         return internalGetMutableSettleShow().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
+       * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
        */
       public Builder putSettleShow(
           int key,
@@ -6208,7 +3133,7 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .ParamList&gt; settle_show = 9;</code>
+       * <code>map&lt;uint32, .ParamList&gt; settle_show = 13;</code>
        */
 
       public Builder putAllSettleShow(
@@ -6218,408 +3143,102 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
 
-      private boolean isSuccess_ ;
+      private int createPlayerUid_ ;
       /**
-       * <code>bool is_success = 11;</code>
-       * @return The isSuccess.
+       * <code>uint32 create_player_uid = 1;</code>
+       * @return The createPlayerUid.
        */
       @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
+      public int getCreatePlayerUid() {
+        return createPlayerUid_;
       }
       /**
-       * <code>bool is_success = 11;</code>
-       * @param value The isSuccess to set.
+       * <code>uint32 create_player_uid = 1;</code>
+       * @param value The createPlayerUid to set.
        * @return This builder for chaining.
        */
-      public Builder setIsSuccess(boolean value) {
+      public Builder setCreatePlayerUid(int value) {
         
-        isSuccess_ = value;
+        createPlayerUid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_success = 11;</code>
+       * <code>uint32 create_player_uid = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsSuccess() {
+      public Builder clearCreatePlayerUid() {
         
-        isSuccess_ = false;
+        createPlayerUid_ = 0;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> strengthenPointDataMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
-      internalGetStrengthenPointDataMap() {
-        if (strengthenPointDataMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              StrengthenPointDataMapDefaultEntryHolder.defaultEntry);
-        }
-        return strengthenPointDataMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
-      internalGetMutableStrengthenPointDataMap() {
-        onChanged();;
-        if (strengthenPointDataMap_ == null) {
-          strengthenPointDataMap_ = com.google.protobuf.MapField.newMapField(
-              StrengthenPointDataMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!strengthenPointDataMap_.isMutable()) {
-          strengthenPointDataMap_ = strengthenPointDataMap_.copy();
-        }
-        return strengthenPointDataMap_;
-      }
-
-      public int getStrengthenPointDataMapCount() {
-        return internalGetStrengthenPointDataMap().getMap().size();
-      }
+      private int dungeonId_ ;
       /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsStrengthenPointDataMap(
-          int key) {
-        
-        return internalGetStrengthenPointDataMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getStrengthenPointDataMapMap()} instead.
+       * <code>uint32 dungeon_id = 7;</code>
+       * @return The dungeonId.
        */
       @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> getStrengthenPointDataMap() {
-        return getStrengthenPointDataMapMap();
+      public int getDungeonId() {
+        return dungeonId_;
       }
       /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+       * <code>uint32 dungeon_id = 7;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int closeTime_ ;
+      /**
+       * <code>uint32 close_time = 6;</code>
+       * @return The closeTime.
        */
       @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> getStrengthenPointDataMapMap() {
-        return internalGetStrengthenPointDataMap().getMap();
+      public int getCloseTime() {
+        return closeTime_;
       }
       /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+       * <code>uint32 close_time = 6;</code>
+       * @param value The closeTime to set.
+       * @return This builder for chaining.
        */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData getStrengthenPointDataMapOrDefault(
-          int key,
-          emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData defaultValue) {
+      public Builder setCloseTime(int value) {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> map =
-            internalGetStrengthenPointDataMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
+        closeTime_ = value;
+        onChanged();
+        return this;
       }
       /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
+       * <code>uint32 close_time = 6;</code>
+       * @return This builder for chaining.
        */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData getStrengthenPointDataMapOrThrow(
-          int key) {
+      public Builder clearCloseTime() {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> map =
-            internalGetStrengthenPointDataMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearStrengthenPointDataMap() {
-        internalGetMutableStrengthenPointDataMap().getMutableMap()
-            .clear();
+        closeTime_ = 0;
+        onChanged();
         return this;
-      }
-      /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
-       */
-
-      public Builder removeStrengthenPointDataMap(
-          int key) {
-        
-        internalGetMutableStrengthenPointDataMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData>
-      getMutableStrengthenPointDataMap() {
-        return internalGetMutableStrengthenPointDataMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
-       */
-      public Builder putStrengthenPointDataMap(
-          int key,
-          emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData value) {
-        
-        if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableStrengthenPointDataMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .StrengthenPointData&gt; strengthen_point_data_map = 12;</code>
-       */
-
-      public Builder putAllStrengthenPointDataMap(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData> values) {
-        internalGetMutableStrengthenPointDataMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> exhibitionInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureExhibitionInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
-          exhibitionInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo>(exhibitionInfoList_);
-          bitField0_ |= 0x00000010;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder> exhibitionInfoListBuilder_;
-
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> getExhibitionInfoListList() {
-        if (exhibitionInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(exhibitionInfoList_);
-        } else {
-          return exhibitionInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public int getExhibitionInfoListCount() {
-        if (exhibitionInfoListBuilder_ == null) {
-          return exhibitionInfoList_.size();
-        } else {
-          return exhibitionInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo getExhibitionInfoList(int index) {
-        if (exhibitionInfoListBuilder_ == null) {
-          return exhibitionInfoList_.get(index);
-        } else {
-          return exhibitionInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public Builder setExhibitionInfoList(
-          int index, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo value) {
-        if (exhibitionInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureExhibitionInfoListIsMutable();
-          exhibitionInfoList_.set(index, value);
-          onChanged();
-        } else {
-          exhibitionInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public Builder setExhibitionInfoList(
-          int index, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder builderForValue) {
-        if (exhibitionInfoListBuilder_ == null) {
-          ensureExhibitionInfoListIsMutable();
-          exhibitionInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          exhibitionInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public Builder addExhibitionInfoList(emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo value) {
-        if (exhibitionInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureExhibitionInfoListIsMutable();
-          exhibitionInfoList_.add(value);
-          onChanged();
-        } else {
-          exhibitionInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public Builder addExhibitionInfoList(
-          int index, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo value) {
-        if (exhibitionInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureExhibitionInfoListIsMutable();
-          exhibitionInfoList_.add(index, value);
-          onChanged();
-        } else {
-          exhibitionInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public Builder addExhibitionInfoList(
-          emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder builderForValue) {
-        if (exhibitionInfoListBuilder_ == null) {
-          ensureExhibitionInfoListIsMutable();
-          exhibitionInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          exhibitionInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public Builder addExhibitionInfoList(
-          int index, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder builderForValue) {
-        if (exhibitionInfoListBuilder_ == null) {
-          ensureExhibitionInfoListIsMutable();
-          exhibitionInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          exhibitionInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public Builder addAllExhibitionInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo> values) {
-        if (exhibitionInfoListBuilder_ == null) {
-          ensureExhibitionInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, exhibitionInfoList_);
-          onChanged();
-        } else {
-          exhibitionInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public Builder clearExhibitionInfoList() {
-        if (exhibitionInfoListBuilder_ == null) {
-          exhibitionInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
-          onChanged();
-        } else {
-          exhibitionInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public Builder removeExhibitionInfoList(int index) {
-        if (exhibitionInfoListBuilder_ == null) {
-          ensureExhibitionInfoListIsMutable();
-          exhibitionInfoList_.remove(index);
-          onChanged();
-        } else {
-          exhibitionInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder getExhibitionInfoListBuilder(
-          int index) {
-        return getExhibitionInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder getExhibitionInfoListOrBuilder(
-          int index) {
-        if (exhibitionInfoListBuilder_ == null) {
-          return exhibitionInfoList_.get(index);  } else {
-          return exhibitionInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder> 
-           getExhibitionInfoListOrBuilderList() {
-        if (exhibitionInfoListBuilder_ != null) {
-          return exhibitionInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(exhibitionInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder addExhibitionInfoListBuilder() {
-        return getExhibitionInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder addExhibitionInfoListBuilder(
-          int index) {
-        return getExhibitionInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .DungeonSettleExhibitionInfo exhibition_info_list = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder> 
-           getExhibitionInfoListBuilderList() {
-        return getExhibitionInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder> 
-          getExhibitionInfoListFieldBuilder() {
-        if (exhibitionInfoListBuilder_ == null) {
-          exhibitionInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfo.Builder, emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.DungeonSettleExhibitionInfoOrBuilder>(
-                  exhibitionInfoList_,
-                  ((bitField0_ & 0x00000010) != 0),
-                  getParentForChildren(),
-                  isClean());
-          exhibitionInfoList_ = null;
-        }
-        return exhibitionInfoListBuilder_;
       }
 
       private int result_ ;
       /**
-       * <code>uint32 result = 14;</code>
+       * <code>uint32 result = 5;</code>
        * @return The result.
        */
       @java.lang.Override
@@ -6627,7 +3246,7 @@ public final class DungeonSettleNotifyOuterClass {
         return result_;
       }
       /**
-       * <code>uint32 result = 14;</code>
+       * <code>uint32 result = 5;</code>
        * @param value The result to set.
        * @return This builder for chaining.
        */
@@ -6638,7 +3257,7 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 result = 14;</code>
+       * <code>uint32 result = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearResult() {
@@ -6648,36 +3267,146 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
 
+      private int useTime_ ;
+      /**
+       * <code>uint32 use_time = 15;</code>
+       * @return The useTime.
+       */
+      @java.lang.Override
+      public int getUseTime() {
+        return useTime_;
+      }
+      /**
+       * <code>uint32 use_time = 15;</code>
+       * @param value The useTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUseTime(int value) {
+        
+        useTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 use_time = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUseTime() {
+        
+        useTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList failCondList_ = emptyIntList();
+      private void ensureFailCondListIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          failCondList_ = mutableCopy(failCondList_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+      /**
+       * <code>repeated uint32 fail_cond_list = 9;</code>
+       * @return A list containing the failCondList.
+       */
+      public java.util.List<java.lang.Integer>
+          getFailCondListList() {
+        return ((bitField0_ & 0x00000008) != 0) ?
+                 java.util.Collections.unmodifiableList(failCondList_) : failCondList_;
+      }
+      /**
+       * <code>repeated uint32 fail_cond_list = 9;</code>
+       * @return The count of failCondList.
+       */
+      public int getFailCondListCount() {
+        return failCondList_.size();
+      }
+      /**
+       * <code>repeated uint32 fail_cond_list = 9;</code>
+       * @param index The index of the element to return.
+       * @return The failCondList at the given index.
+       */
+      public int getFailCondList(int index) {
+        return failCondList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 fail_cond_list = 9;</code>
+       * @param index The index to set the value at.
+       * @param value The failCondList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFailCondList(
+          int index, int value) {
+        ensureFailCondListIsMutable();
+        failCondList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 fail_cond_list = 9;</code>
+       * @param value The failCondList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addFailCondList(int value) {
+        ensureFailCondListIsMutable();
+        failCondList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 fail_cond_list = 9;</code>
+       * @param values The failCondList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllFailCondList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureFailCondListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, failCondList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 fail_cond_list = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFailCondList() {
+        failCondList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000008);
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify, emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.Builder, emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotifyOrBuilder> towerLevelEndNotifyBuilder_;
       /**
-       * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+       * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
        * @return Whether the towerLevelEndNotify field is set.
        */
       @java.lang.Override
       public boolean hasTowerLevelEndNotify() {
-        return detailCase_ == 787;
+        return detailCase_ == 1162;
       }
       /**
-       * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+       * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
        * @return The towerLevelEndNotify.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify getTowerLevelEndNotify() {
         if (towerLevelEndNotifyBuilder_ == null) {
-          if (detailCase_ == 787) {
+          if (detailCase_ == 1162) {
             return (emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_;
           }
           return emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.getDefaultInstance();
         } else {
-          if (detailCase_ == 787) {
+          if (detailCase_ == 1162) {
             return towerLevelEndNotifyBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.getDefaultInstance();
         }
       }
       /**
-       * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+       * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
        */
       public Builder setTowerLevelEndNotify(emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify value) {
         if (towerLevelEndNotifyBuilder_ == null) {
@@ -6689,11 +3418,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           towerLevelEndNotifyBuilder_.setMessage(value);
         }
-        detailCase_ = 787;
+        detailCase_ = 1162;
         return this;
       }
       /**
-       * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+       * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
        */
       public Builder setTowerLevelEndNotify(
           emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.Builder builderForValue) {
@@ -6703,15 +3432,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           towerLevelEndNotifyBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 787;
+        detailCase_ = 1162;
         return this;
       }
       /**
-       * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+       * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
        */
       public Builder mergeTowerLevelEndNotify(emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify value) {
         if (towerLevelEndNotifyBuilder_ == null) {
-          if (detailCase_ == 787 &&
+          if (detailCase_ == 1162 &&
               detail_ != emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.newBuilder((emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_)
                 .mergeFrom(value).buildPartial();
@@ -6720,26 +3449,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 787) {
+          if (detailCase_ == 1162) {
             towerLevelEndNotifyBuilder_.mergeFrom(value);
           }
           towerLevelEndNotifyBuilder_.setMessage(value);
         }
-        detailCase_ = 787;
+        detailCase_ = 1162;
         return this;
       }
       /**
-       * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+       * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
        */
       public Builder clearTowerLevelEndNotify() {
         if (towerLevelEndNotifyBuilder_ == null) {
-          if (detailCase_ == 787) {
+          if (detailCase_ == 1162) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 787) {
+          if (detailCase_ == 1162) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -6748,33 +3477,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+       * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
        */
       public emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.Builder getTowerLevelEndNotifyBuilder() {
         return getTowerLevelEndNotifyFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+       * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotifyOrBuilder getTowerLevelEndNotifyOrBuilder() {
-        if ((detailCase_ == 787) && (towerLevelEndNotifyBuilder_ != null)) {
+        if ((detailCase_ == 1162) && (towerLevelEndNotifyBuilder_ != null)) {
           return towerLevelEndNotifyBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 787) {
+          if (detailCase_ == 1162) {
             return (emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify) detail_;
           }
           return emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.getDefaultInstance();
         }
       }
       /**
-       * <code>.TowerLevelEndNotify tower_level_end_notify = 787;</code>
+       * <code>.TowerLevelEndNotify tower_level_end_notify = 1162;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify, emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.Builder, emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotifyOrBuilder> 
           getTowerLevelEndNotifyFieldBuilder() {
         if (towerLevelEndNotifyBuilder_ == null) {
-          if (!(detailCase_ == 787)) {
+          if (!(detailCase_ == 1162)) {
             detail_ = emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify.getDefaultInstance();
           }
           towerLevelEndNotifyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -6784,7 +3513,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 787;
+        detailCase_ = 1162;
         onChanged();;
         return towerLevelEndNotifyBuilder_;
       }
@@ -6792,33 +3521,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify, emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.Builder, emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotifyOrBuilder> trialAvatarFirstPassDungeonNotifyBuilder_;
       /**
-       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
        * @return Whether the trialAvatarFirstPassDungeonNotify field is set.
        */
       @java.lang.Override
       public boolean hasTrialAvatarFirstPassDungeonNotify() {
-        return detailCase_ == 241;
+        return detailCase_ == 2036;
       }
       /**
-       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
        * @return The trialAvatarFirstPassDungeonNotify.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify getTrialAvatarFirstPassDungeonNotify() {
         if (trialAvatarFirstPassDungeonNotifyBuilder_ == null) {
-          if (detailCase_ == 241) {
+          if (detailCase_ == 2036) {
             return (emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_;
           }
           return emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.getDefaultInstance();
         } else {
-          if (detailCase_ == 241) {
+          if (detailCase_ == 2036) {
             return trialAvatarFirstPassDungeonNotifyBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.getDefaultInstance();
         }
       }
       /**
-       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
        */
       public Builder setTrialAvatarFirstPassDungeonNotify(emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify value) {
         if (trialAvatarFirstPassDungeonNotifyBuilder_ == null) {
@@ -6830,11 +3559,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           trialAvatarFirstPassDungeonNotifyBuilder_.setMessage(value);
         }
-        detailCase_ = 241;
+        detailCase_ = 2036;
         return this;
       }
       /**
-       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
        */
       public Builder setTrialAvatarFirstPassDungeonNotify(
           emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.Builder builderForValue) {
@@ -6844,15 +3573,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           trialAvatarFirstPassDungeonNotifyBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 241;
+        detailCase_ = 2036;
         return this;
       }
       /**
-       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
        */
       public Builder mergeTrialAvatarFirstPassDungeonNotify(emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify value) {
         if (trialAvatarFirstPassDungeonNotifyBuilder_ == null) {
-          if (detailCase_ == 241 &&
+          if (detailCase_ == 2036 &&
               detail_ != emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.newBuilder((emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_)
                 .mergeFrom(value).buildPartial();
@@ -6861,26 +3590,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 241) {
+          if (detailCase_ == 2036) {
             trialAvatarFirstPassDungeonNotifyBuilder_.mergeFrom(value);
           }
           trialAvatarFirstPassDungeonNotifyBuilder_.setMessage(value);
         }
-        detailCase_ = 241;
+        detailCase_ = 2036;
         return this;
       }
       /**
-       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
        */
       public Builder clearTrialAvatarFirstPassDungeonNotify() {
         if (trialAvatarFirstPassDungeonNotifyBuilder_ == null) {
-          if (detailCase_ == 241) {
+          if (detailCase_ == 2036) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 241) {
+          if (detailCase_ == 2036) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -6889,33 +3618,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
        */
       public emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.Builder getTrialAvatarFirstPassDungeonNotifyBuilder() {
         return getTrialAvatarFirstPassDungeonNotifyFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotifyOrBuilder getTrialAvatarFirstPassDungeonNotifyOrBuilder() {
-        if ((detailCase_ == 241) && (trialAvatarFirstPassDungeonNotifyBuilder_ != null)) {
+        if ((detailCase_ == 2036) && (trialAvatarFirstPassDungeonNotifyBuilder_ != null)) {
           return trialAvatarFirstPassDungeonNotifyBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 241) {
+          if (detailCase_ == 2036) {
             return (emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) detail_;
           }
           return emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.getDefaultInstance();
         }
       }
       /**
-       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 241;</code>
+       * <code>.TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 2036;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify, emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.Builder, emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotifyOrBuilder> 
           getTrialAvatarFirstPassDungeonNotifyFieldBuilder() {
         if (trialAvatarFirstPassDungeonNotifyBuilder_ == null) {
-          if (!(detailCase_ == 241)) {
+          if (!(detailCase_ == 2036)) {
             detail_ = emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.getDefaultInstance();
           }
           trialAvatarFirstPassDungeonNotifyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -6925,43 +3654,43 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 241;
+        detailCase_ = 2036;
         onChanged();;
         return trialAvatarFirstPassDungeonNotifyBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo, emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.Builder, emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfoOrBuilder> channellerSlabLoopDungeonResultInfoBuilder_;
+          emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo, emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.Builder, emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfoOrBuilder> channellerSlabLoopDungeonResultInfoBuilder_;
       /**
-       * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+       * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
        * @return Whether the channellerSlabLoopDungeonResultInfo field is set.
        */
       @java.lang.Override
       public boolean hasChannellerSlabLoopDungeonResultInfo() {
-        return detailCase_ == 643;
+        return detailCase_ == 808;
       }
       /**
-       * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+       * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
        * @return The channellerSlabLoopDungeonResultInfo.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo getChannellerSlabLoopDungeonResultInfo() {
+      public emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo getChannellerSlabLoopDungeonResultInfo() {
         if (channellerSlabLoopDungeonResultInfoBuilder_ == null) {
-          if (detailCase_ == 643) {
-            return (emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo) detail_;
+          if (detailCase_ == 808) {
+            return (emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo) detail_;
           }
-          return emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 643) {
+          if (detailCase_ == 808) {
             return channellerSlabLoopDungeonResultInfoBuilder_.getMessage();
           }
-          return emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+       * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
        */
-      public Builder setChannellerSlabLoopDungeonResultInfo(emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo value) {
+      public Builder setChannellerSlabLoopDungeonResultInfo(emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo value) {
         if (channellerSlabLoopDungeonResultInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6971,57 +3700,57 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           channellerSlabLoopDungeonResultInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 643;
+        detailCase_ = 808;
         return this;
       }
       /**
-       * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+       * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
        */
       public Builder setChannellerSlabLoopDungeonResultInfo(
-          emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.Builder builderForValue) {
         if (channellerSlabLoopDungeonResultInfoBuilder_ == null) {
           detail_ = builderForValue.build();
           onChanged();
         } else {
           channellerSlabLoopDungeonResultInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 643;
+        detailCase_ = 808;
         return this;
       }
       /**
-       * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+       * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
        */
-      public Builder mergeChannellerSlabLoopDungeonResultInfo(emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo value) {
+      public Builder mergeChannellerSlabLoopDungeonResultInfo(emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo value) {
         if (channellerSlabLoopDungeonResultInfoBuilder_ == null) {
-          if (detailCase_ == 643 &&
-              detail_ != emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.newBuilder((emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo) detail_)
+          if (detailCase_ == 808 &&
+              detail_ != emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.getDefaultInstance()) {
+            detail_ = emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.newBuilder((emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo) detail_)
                 .mergeFrom(value).buildPartial();
           } else {
             detail_ = value;
           }
           onChanged();
         } else {
-          if (detailCase_ == 643) {
+          if (detailCase_ == 808) {
             channellerSlabLoopDungeonResultInfoBuilder_.mergeFrom(value);
           }
           channellerSlabLoopDungeonResultInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 643;
+        detailCase_ = 808;
         return this;
       }
       /**
-       * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+       * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
        */
       public Builder clearChannellerSlabLoopDungeonResultInfo() {
         if (channellerSlabLoopDungeonResultInfoBuilder_ == null) {
-          if (detailCase_ == 643) {
+          if (detailCase_ == 808) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 643) {
+          if (detailCase_ == 808) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -7030,43 +3759,43 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+       * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
        */
-      public emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.Builder getChannellerSlabLoopDungeonResultInfoBuilder() {
+      public emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.Builder getChannellerSlabLoopDungeonResultInfoBuilder() {
         return getChannellerSlabLoopDungeonResultInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+       * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfoOrBuilder getChannellerSlabLoopDungeonResultInfoOrBuilder() {
-        if ((detailCase_ == 643) && (channellerSlabLoopDungeonResultInfoBuilder_ != null)) {
+      public emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfoOrBuilder getChannellerSlabLoopDungeonResultInfoOrBuilder() {
+        if ((detailCase_ == 808) && (channellerSlabLoopDungeonResultInfoBuilder_ != null)) {
           return channellerSlabLoopDungeonResultInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 643) {
-            return (emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo) detail_;
+          if (detailCase_ == 808) {
+            return (emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo) detail_;
           }
-          return emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.getDefaultInstance();
+          return emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 643;</code>
+       * <code>.ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 808;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo, emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.Builder, emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfoOrBuilder> 
+          emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo, emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.Builder, emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfoOrBuilder> 
           getChannellerSlabLoopDungeonResultInfoFieldBuilder() {
         if (channellerSlabLoopDungeonResultInfoBuilder_ == null) {
-          if (!(detailCase_ == 643)) {
-            detail_ = emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.getDefaultInstance();
+          if (!(detailCase_ == 808)) {
+            detail_ = emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.getDefaultInstance();
           }
           channellerSlabLoopDungeonResultInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo, emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo.Builder, emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.ChannelerSlabLoopDungeonResultInfo) detail_,
+              emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo, emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo.Builder, emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.ChannellerSlabLoopDungeonResultInfo) detail_,
                   getParentForChildren(),
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 643;
+        detailCase_ = 808;
         onChanged();;
         return channellerSlabLoopDungeonResultInfoBuilder_;
       }
@@ -7074,33 +3803,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo, emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfoOrBuilder> effigyChallengeDungeonResultInfoBuilder_;
       /**
-       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
        * @return Whether the effigyChallengeDungeonResultInfo field is set.
        */
       @java.lang.Override
       public boolean hasEffigyChallengeDungeonResultInfo() {
-        return detailCase_ == 132;
+        return detailCase_ == 596;
       }
       /**
-       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
        * @return The effigyChallengeDungeonResultInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo getEffigyChallengeDungeonResultInfo() {
         if (effigyChallengeDungeonResultInfoBuilder_ == null) {
-          if (detailCase_ == 132) {
+          if (detailCase_ == 596) {
             return (emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_;
           }
           return emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 132) {
+          if (detailCase_ == 596) {
             return effigyChallengeDungeonResultInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
        */
       public Builder setEffigyChallengeDungeonResultInfo(emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo value) {
         if (effigyChallengeDungeonResultInfoBuilder_ == null) {
@@ -7112,11 +3841,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           effigyChallengeDungeonResultInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 132;
+        detailCase_ = 596;
         return this;
       }
       /**
-       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
        */
       public Builder setEffigyChallengeDungeonResultInfo(
           emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.Builder builderForValue) {
@@ -7126,15 +3855,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           effigyChallengeDungeonResultInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 132;
+        detailCase_ = 596;
         return this;
       }
       /**
-       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
        */
       public Builder mergeEffigyChallengeDungeonResultInfo(emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo value) {
         if (effigyChallengeDungeonResultInfoBuilder_ == null) {
-          if (detailCase_ == 132 &&
+          if (detailCase_ == 596 &&
               detail_ != emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.newBuilder((emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -7143,26 +3872,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 132) {
+          if (detailCase_ == 596) {
             effigyChallengeDungeonResultInfoBuilder_.mergeFrom(value);
           }
           effigyChallengeDungeonResultInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 132;
+        detailCase_ = 596;
         return this;
       }
       /**
-       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
        */
       public Builder clearEffigyChallengeDungeonResultInfo() {
         if (effigyChallengeDungeonResultInfoBuilder_ == null) {
-          if (detailCase_ == 132) {
+          if (detailCase_ == 596) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 132) {
+          if (detailCase_ == 596) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -7171,33 +3900,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
        */
       public emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.Builder getEffigyChallengeDungeonResultInfoBuilder() {
         return getEffigyChallengeDungeonResultInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfoOrBuilder getEffigyChallengeDungeonResultInfoOrBuilder() {
-        if ((detailCase_ == 132) && (effigyChallengeDungeonResultInfoBuilder_ != null)) {
+        if ((detailCase_ == 596) && (effigyChallengeDungeonResultInfoBuilder_ != null)) {
           return effigyChallengeDungeonResultInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 132) {
+          if (detailCase_ == 596) {
             return (emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) detail_;
           }
           return emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 132;</code>
+       * <code>.EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 596;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo, emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfoOrBuilder> 
           getEffigyChallengeDungeonResultInfoFieldBuilder() {
         if (effigyChallengeDungeonResultInfoBuilder_ == null) {
-          if (!(detailCase_ == 132)) {
+          if (!(detailCase_ == 596)) {
             detail_ = emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.getDefaultInstance();
           }
           effigyChallengeDungeonResultInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7207,7 +3936,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 132;
+        detailCase_ = 596;
         onChanged();;
         return effigyChallengeDungeonResultInfoBuilder_;
       }
@@ -7215,33 +3944,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo, emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.Builder, emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfoOrBuilder> roguelikeDungeonSettleInfoBuilder_;
       /**
-       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
        * @return Whether the roguelikeDungeonSettleInfo field is set.
        */
       @java.lang.Override
       public boolean hasRoguelikeDungeonSettleInfo() {
-        return detailCase_ == 372;
+        return detailCase_ == 2010;
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
        * @return The roguelikeDungeonSettleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo getRoguelikeDungeonSettleInfo() {
         if (roguelikeDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 372) {
+          if (detailCase_ == 2010) {
             return (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 372) {
+          if (detailCase_ == 2010) {
             return roguelikeDungeonSettleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
        */
       public Builder setRoguelikeDungeonSettleInfo(emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo value) {
         if (roguelikeDungeonSettleInfoBuilder_ == null) {
@@ -7253,11 +3982,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           roguelikeDungeonSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 372;
+        detailCase_ = 2010;
         return this;
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
        */
       public Builder setRoguelikeDungeonSettleInfo(
           emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.Builder builderForValue) {
@@ -7267,15 +3996,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           roguelikeDungeonSettleInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 372;
+        detailCase_ = 2010;
         return this;
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
        */
       public Builder mergeRoguelikeDungeonSettleInfo(emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo value) {
         if (roguelikeDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 372 &&
+          if (detailCase_ == 2010 &&
               detail_ != emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.newBuilder((emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -7284,26 +4013,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 372) {
+          if (detailCase_ == 2010) {
             roguelikeDungeonSettleInfoBuilder_.mergeFrom(value);
           }
           roguelikeDungeonSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 372;
+        detailCase_ = 2010;
         return this;
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
        */
       public Builder clearRoguelikeDungeonSettleInfo() {
         if (roguelikeDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 372) {
+          if (detailCase_ == 2010) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 372) {
+          if (detailCase_ == 2010) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -7312,33 +4041,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
        */
       public emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.Builder getRoguelikeDungeonSettleInfoBuilder() {
         return getRoguelikeDungeonSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfoOrBuilder getRoguelikeDungeonSettleInfoOrBuilder() {
-        if ((detailCase_ == 372) && (roguelikeDungeonSettleInfoBuilder_ != null)) {
+        if ((detailCase_ == 2010) && (roguelikeDungeonSettleInfoBuilder_ != null)) {
           return roguelikeDungeonSettleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 372) {
+          if (detailCase_ == 2010) {
             return (emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 372;</code>
+       * <code>.RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 2010;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo, emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.Builder, emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfoOrBuilder> 
           getRoguelikeDungeonSettleInfoFieldBuilder() {
         if (roguelikeDungeonSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 372)) {
+          if (!(detailCase_ == 2010)) {
             detail_ = emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.RoguelikeDungeonSettleInfo.getDefaultInstance();
           }
           roguelikeDungeonSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7348,7 +4077,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 372;
+        detailCase_ = 2010;
         onChanged();;
         return roguelikeDungeonSettleInfoBuilder_;
       }
@@ -7356,33 +4085,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo, emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.Builder, emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfoOrBuilder> crystalLinkSettleInfoBuilder_;
       /**
-       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
        * @return Whether the crystalLinkSettleInfo field is set.
        */
       @java.lang.Override
       public boolean hasCrystalLinkSettleInfo() {
-        return detailCase_ == 220;
+        return detailCase_ == 1313;
       }
       /**
-       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
        * @return The crystalLinkSettleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo getCrystalLinkSettleInfo() {
         if (crystalLinkSettleInfoBuilder_ == null) {
-          if (detailCase_ == 220) {
+          if (detailCase_ == 1313) {
             return (emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 220) {
+          if (detailCase_ == 1313) {
             return crystalLinkSettleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
        */
       public Builder setCrystalLinkSettleInfo(emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo value) {
         if (crystalLinkSettleInfoBuilder_ == null) {
@@ -7394,11 +4123,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           crystalLinkSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 220;
+        detailCase_ = 1313;
         return this;
       }
       /**
-       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
        */
       public Builder setCrystalLinkSettleInfo(
           emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.Builder builderForValue) {
@@ -7408,15 +4137,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           crystalLinkSettleInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 220;
+        detailCase_ = 1313;
         return this;
       }
       /**
-       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
        */
       public Builder mergeCrystalLinkSettleInfo(emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo value) {
         if (crystalLinkSettleInfoBuilder_ == null) {
-          if (detailCase_ == 220 &&
+          if (detailCase_ == 1313 &&
               detail_ != emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.newBuilder((emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -7425,26 +4154,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 220) {
+          if (detailCase_ == 1313) {
             crystalLinkSettleInfoBuilder_.mergeFrom(value);
           }
           crystalLinkSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 220;
+        detailCase_ = 1313;
         return this;
       }
       /**
-       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
        */
       public Builder clearCrystalLinkSettleInfo() {
         if (crystalLinkSettleInfoBuilder_ == null) {
-          if (detailCase_ == 220) {
+          if (detailCase_ == 1313) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 220) {
+          if (detailCase_ == 1313) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -7453,33 +4182,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.Builder getCrystalLinkSettleInfoBuilder() {
         return getCrystalLinkSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfoOrBuilder getCrystalLinkSettleInfoOrBuilder() {
-        if ((detailCase_ == 220) && (crystalLinkSettleInfoBuilder_ != null)) {
+        if ((detailCase_ == 1313) && (crystalLinkSettleInfoBuilder_ != null)) {
           return crystalLinkSettleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 220) {
+          if (detailCase_ == 1313) {
             return (emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 220;</code>
+       * <code>.CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1313;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo, emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.Builder, emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfoOrBuilder> 
           getCrystalLinkSettleInfoFieldBuilder() {
         if (crystalLinkSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 220)) {
+          if (!(detailCase_ == 1313)) {
             detail_ = emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.CrystalLinkDungeonSettleInfo.getDefaultInstance();
           }
           crystalLinkSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7489,7 +4218,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 220;
+        detailCase_ = 1313;
         onChanged();;
         return crystalLinkSettleInfoBuilder_;
       }
@@ -7497,33 +4226,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo, emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.Builder, emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfoOrBuilder> summerTimeV2DungeonSettleInfoBuilder_;
       /**
-       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
        * @return Whether the summerTimeV2DungeonSettleInfo field is set.
        */
       @java.lang.Override
       public boolean hasSummerTimeV2DungeonSettleInfo() {
-        return detailCase_ == 117;
+        return detailCase_ == 174;
       }
       /**
-       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
        * @return The summerTimeV2DungeonSettleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo getSummerTimeV2DungeonSettleInfo() {
         if (summerTimeV2DungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 117) {
+          if (detailCase_ == 174) {
             return (emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 117) {
+          if (detailCase_ == 174) {
             return summerTimeV2DungeonSettleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
        */
       public Builder setSummerTimeV2DungeonSettleInfo(emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo value) {
         if (summerTimeV2DungeonSettleInfoBuilder_ == null) {
@@ -7535,11 +4264,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           summerTimeV2DungeonSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 117;
+        detailCase_ = 174;
         return this;
       }
       /**
-       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
        */
       public Builder setSummerTimeV2DungeonSettleInfo(
           emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.Builder builderForValue) {
@@ -7549,15 +4278,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           summerTimeV2DungeonSettleInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 117;
+        detailCase_ = 174;
         return this;
       }
       /**
-       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
        */
       public Builder mergeSummerTimeV2DungeonSettleInfo(emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo value) {
         if (summerTimeV2DungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 117 &&
+          if (detailCase_ == 174 &&
               detail_ != emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.newBuilder((emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -7566,26 +4295,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 117) {
+          if (detailCase_ == 174) {
             summerTimeV2DungeonSettleInfoBuilder_.mergeFrom(value);
           }
           summerTimeV2DungeonSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 117;
+        detailCase_ = 174;
         return this;
       }
       /**
-       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
        */
       public Builder clearSummerTimeV2DungeonSettleInfo() {
         if (summerTimeV2DungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 117) {
+          if (detailCase_ == 174) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 117) {
+          if (detailCase_ == 174) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -7594,33 +4323,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
        */
       public emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.Builder getSummerTimeV2DungeonSettleInfoBuilder() {
         return getSummerTimeV2DungeonSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfoOrBuilder getSummerTimeV2DungeonSettleInfoOrBuilder() {
-        if ((detailCase_ == 117) && (summerTimeV2DungeonSettleInfoBuilder_ != null)) {
+        if ((detailCase_ == 174) && (summerTimeV2DungeonSettleInfoBuilder_ != null)) {
           return summerTimeV2DungeonSettleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 117) {
+          if (detailCase_ == 174) {
             return (emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 117;</code>
+       * <code>.SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 174;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo, emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.Builder, emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfoOrBuilder> 
           getSummerTimeV2DungeonSettleInfoFieldBuilder() {
         if (summerTimeV2DungeonSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 117)) {
+          if (!(detailCase_ == 174)) {
             detail_ = emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.SummerTimeV2DungeonSettleInfo.getDefaultInstance();
           }
           summerTimeV2DungeonSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7630,7 +4359,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 117;
+        detailCase_ = 174;
         onChanged();;
         return summerTimeV2DungeonSettleInfoBuilder_;
       }
@@ -7638,33 +4367,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo, emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.Builder, emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfoOrBuilder> instableSpraySettleInfoBuilder_;
       /**
-       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
        * @return Whether the instableSpraySettleInfo field is set.
        */
       @java.lang.Override
       public boolean hasInstableSpraySettleInfo() {
-        return detailCase_ == 659;
+        return detailCase_ == 702;
       }
       /**
-       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
        * @return The instableSpraySettleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo getInstableSpraySettleInfo() {
         if (instableSpraySettleInfoBuilder_ == null) {
-          if (detailCase_ == 659) {
+          if (detailCase_ == 702) {
             return (emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 659) {
+          if (detailCase_ == 702) {
             return instableSpraySettleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
        */
       public Builder setInstableSpraySettleInfo(emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo value) {
         if (instableSpraySettleInfoBuilder_ == null) {
@@ -7676,11 +4405,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           instableSpraySettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 659;
+        detailCase_ = 702;
         return this;
       }
       /**
-       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
        */
       public Builder setInstableSpraySettleInfo(
           emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.Builder builderForValue) {
@@ -7690,15 +4419,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           instableSpraySettleInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 659;
+        detailCase_ = 702;
         return this;
       }
       /**
-       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
        */
       public Builder mergeInstableSpraySettleInfo(emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo value) {
         if (instableSpraySettleInfoBuilder_ == null) {
-          if (detailCase_ == 659 &&
+          if (detailCase_ == 702 &&
               detail_ != emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.newBuilder((emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -7707,26 +4436,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 659) {
+          if (detailCase_ == 702) {
             instableSpraySettleInfoBuilder_.mergeFrom(value);
           }
           instableSpraySettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 659;
+        detailCase_ = 702;
         return this;
       }
       /**
-       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
        */
       public Builder clearInstableSpraySettleInfo() {
         if (instableSpraySettleInfoBuilder_ == null) {
-          if (detailCase_ == 659) {
+          if (detailCase_ == 702) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 659) {
+          if (detailCase_ == 702) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -7735,33 +4464,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
        */
       public emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.Builder getInstableSpraySettleInfoBuilder() {
         return getInstableSpraySettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfoOrBuilder getInstableSpraySettleInfoOrBuilder() {
-        if ((detailCase_ == 659) && (instableSpraySettleInfoBuilder_ != null)) {
+        if ((detailCase_ == 702) && (instableSpraySettleInfoBuilder_ != null)) {
           return instableSpraySettleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 659) {
+          if (detailCase_ == 702) {
             return (emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 659;</code>
+       * <code>.InstableSprayDungeonSettleInfo instable_spray_settle_info = 702;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo, emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.Builder, emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfoOrBuilder> 
           getInstableSpraySettleInfoFieldBuilder() {
         if (instableSpraySettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 659)) {
+          if (!(detailCase_ == 702)) {
             detail_ = emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.InstableSprayDungeonSettleInfo.getDefaultInstance();
           }
           instableSpraySettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7771,7 +4500,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 659;
+        detailCase_ = 702;
         onChanged();;
         return instableSpraySettleInfoBuilder_;
       }
@@ -7779,33 +4508,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo, emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.Builder, emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfoOrBuilder> windFieldDungeonSettleInfoBuilder_;
       /**
-       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
        * @return Whether the windFieldDungeonSettleInfo field is set.
        */
       @java.lang.Override
       public boolean hasWindFieldDungeonSettleInfo() {
-        return detailCase_ == 28;
+        return detailCase_ == 714;
       }
       /**
-       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
        * @return The windFieldDungeonSettleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo getWindFieldDungeonSettleInfo() {
         if (windFieldDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 28) {
+          if (detailCase_ == 714) {
             return (emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 28) {
+          if (detailCase_ == 714) {
             return windFieldDungeonSettleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
        */
       public Builder setWindFieldDungeonSettleInfo(emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo value) {
         if (windFieldDungeonSettleInfoBuilder_ == null) {
@@ -7817,11 +4546,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           windFieldDungeonSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 28;
+        detailCase_ = 714;
         return this;
       }
       /**
-       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
        */
       public Builder setWindFieldDungeonSettleInfo(
           emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.Builder builderForValue) {
@@ -7831,15 +4560,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           windFieldDungeonSettleInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 28;
+        detailCase_ = 714;
         return this;
       }
       /**
-       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
        */
       public Builder mergeWindFieldDungeonSettleInfo(emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo value) {
         if (windFieldDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 28 &&
+          if (detailCase_ == 714 &&
               detail_ != emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.newBuilder((emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -7848,26 +4577,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 28) {
+          if (detailCase_ == 714) {
             windFieldDungeonSettleInfoBuilder_.mergeFrom(value);
           }
           windFieldDungeonSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 28;
+        detailCase_ = 714;
         return this;
       }
       /**
-       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
        */
       public Builder clearWindFieldDungeonSettleInfo() {
         if (windFieldDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 28) {
+          if (detailCase_ == 714) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 28) {
+          if (detailCase_ == 714) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -7876,33 +4605,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
        */
       public emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.Builder getWindFieldDungeonSettleInfoBuilder() {
         return getWindFieldDungeonSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfoOrBuilder getWindFieldDungeonSettleInfoOrBuilder() {
-        if ((detailCase_ == 28) && (windFieldDungeonSettleInfoBuilder_ != null)) {
+        if ((detailCase_ == 714) && (windFieldDungeonSettleInfoBuilder_ != null)) {
           return windFieldDungeonSettleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 28) {
+          if (detailCase_ == 714) {
             return (emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 28;</code>
+       * <code>.WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 714;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo, emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.Builder, emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfoOrBuilder> 
           getWindFieldDungeonSettleInfoFieldBuilder() {
         if (windFieldDungeonSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 28)) {
+          if (!(detailCase_ == 714)) {
             detail_ = emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.getDefaultInstance();
           }
           windFieldDungeonSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7912,7 +4641,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 28;
+        detailCase_ = 714;
         onChanged();;
         return windFieldDungeonSettleInfoBuilder_;
       }
@@ -7920,33 +4649,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo, emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfoOrBuilder> effigyChallengeV2SettleInfoBuilder_;
       /**
-       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
        * @return Whether the effigyChallengeV2SettleInfo field is set.
        */
       @java.lang.Override
       public boolean hasEffigyChallengeV2SettleInfo() {
-        return detailCase_ == 390;
+        return detailCase_ == 1629;
       }
       /**
-       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
        * @return The effigyChallengeV2SettleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo getEffigyChallengeV2SettleInfo() {
         if (effigyChallengeV2SettleInfoBuilder_ == null) {
-          if (detailCase_ == 390) {
+          if (detailCase_ == 1629) {
             return (emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 390) {
+          if (detailCase_ == 1629) {
             return effigyChallengeV2SettleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
        */
       public Builder setEffigyChallengeV2SettleInfo(emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo value) {
         if (effigyChallengeV2SettleInfoBuilder_ == null) {
@@ -7958,11 +4687,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           effigyChallengeV2SettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 390;
+        detailCase_ = 1629;
         return this;
       }
       /**
-       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
        */
       public Builder setEffigyChallengeV2SettleInfo(
           emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.Builder builderForValue) {
@@ -7972,15 +4701,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           effigyChallengeV2SettleInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 390;
+        detailCase_ = 1629;
         return this;
       }
       /**
-       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
        */
       public Builder mergeEffigyChallengeV2SettleInfo(emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo value) {
         if (effigyChallengeV2SettleInfoBuilder_ == null) {
-          if (detailCase_ == 390 &&
+          if (detailCase_ == 1629 &&
               detail_ != emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.newBuilder((emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -7989,26 +4718,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 390) {
+          if (detailCase_ == 1629) {
             effigyChallengeV2SettleInfoBuilder_.mergeFrom(value);
           }
           effigyChallengeV2SettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 390;
+        detailCase_ = 1629;
         return this;
       }
       /**
-       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
        */
       public Builder clearEffigyChallengeV2SettleInfo() {
         if (effigyChallengeV2SettleInfoBuilder_ == null) {
-          if (detailCase_ == 390) {
+          if (detailCase_ == 1629) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 390) {
+          if (detailCase_ == 1629) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -8017,33 +4746,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
        */
       public emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.Builder getEffigyChallengeV2SettleInfoBuilder() {
         return getEffigyChallengeV2SettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfoOrBuilder getEffigyChallengeV2SettleInfoOrBuilder() {
-        if ((detailCase_ == 390) && (effigyChallengeV2SettleInfoBuilder_ != null)) {
+        if ((detailCase_ == 1629) && (effigyChallengeV2SettleInfoBuilder_ != null)) {
           return effigyChallengeV2SettleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 390) {
+          if (detailCase_ == 1629) {
             return (emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 390;</code>
+       * <code>.EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1629;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo, emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfoOrBuilder> 
           getEffigyChallengeV2SettleInfoFieldBuilder() {
         if (effigyChallengeV2SettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 390)) {
+          if (!(detailCase_ == 1629)) {
             detail_ = emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.getDefaultInstance();
           }
           effigyChallengeV2SettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -8053,7 +4782,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 390;
+        detailCase_ = 1629;
         onChanged();;
         return effigyChallengeV2SettleInfoBuilder_;
       }
@@ -8061,33 +4790,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo, emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.Builder, emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfoOrBuilder> teamChainSettleInfoBuilder_;
       /**
-       * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+       * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
        * @return Whether the teamChainSettleInfo field is set.
        */
       @java.lang.Override
       public boolean hasTeamChainSettleInfo() {
-        return detailCase_ == 1001;
+        return detailCase_ == 755;
       }
       /**
-       * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+       * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
        * @return The teamChainSettleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo getTeamChainSettleInfo() {
         if (teamChainSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1001) {
+          if (detailCase_ == 755) {
             return (emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 1001) {
+          if (detailCase_ == 755) {
             return teamChainSettleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+       * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
        */
       public Builder setTeamChainSettleInfo(emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo value) {
         if (teamChainSettleInfoBuilder_ == null) {
@@ -8099,11 +4828,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           teamChainSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 1001;
+        detailCase_ = 755;
         return this;
       }
       /**
-       * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+       * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
        */
       public Builder setTeamChainSettleInfo(
           emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.Builder builderForValue) {
@@ -8113,15 +4842,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           teamChainSettleInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 1001;
+        detailCase_ = 755;
         return this;
       }
       /**
-       * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+       * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
        */
       public Builder mergeTeamChainSettleInfo(emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo value) {
         if (teamChainSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1001 &&
+          if (detailCase_ == 755 &&
               detail_ != emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.newBuilder((emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -8130,26 +4859,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 1001) {
+          if (detailCase_ == 755) {
             teamChainSettleInfoBuilder_.mergeFrom(value);
           }
           teamChainSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 1001;
+        detailCase_ = 755;
         return this;
       }
       /**
-       * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+       * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
        */
       public Builder clearTeamChainSettleInfo() {
         if (teamChainSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1001) {
+          if (detailCase_ == 755) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 1001) {
+          if (detailCase_ == 755) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -8158,33 +4887,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+       * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
        */
       public emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.Builder getTeamChainSettleInfoBuilder() {
         return getTeamChainSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+       * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfoOrBuilder getTeamChainSettleInfoOrBuilder() {
-        if ((detailCase_ == 1001) && (teamChainSettleInfoBuilder_ != null)) {
+        if ((detailCase_ == 755) && (teamChainSettleInfoBuilder_ != null)) {
           return teamChainSettleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 1001) {
+          if (detailCase_ == 755) {
             return (emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.TeamChainSettleInfo team_chain_settle_info = 1001;</code>
+       * <code>.TeamChainSettleInfo team_chain_settle_info = 755;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo, emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.Builder, emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfoOrBuilder> 
           getTeamChainSettleInfoFieldBuilder() {
         if (teamChainSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1001)) {
+          if (!(detailCase_ == 755)) {
             detail_ = emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.TeamChainSettleInfo.getDefaultInstance();
           }
           teamChainSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -8194,7 +4923,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 1001;
+        detailCase_ = 755;
         onChanged();;
         return teamChainSettleInfoBuilder_;
       }
@@ -8202,33 +4931,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo, emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.Builder, emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfoOrBuilder> pacmanSettleInfoBuilder_;
       /**
-       * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+       * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
        * @return Whether the pacmanSettleInfo field is set.
        */
       @java.lang.Override
       public boolean hasPacmanSettleInfo() {
-        return detailCase_ == 536;
+        return detailCase_ == 1544;
       }
       /**
-       * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+       * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
        * @return The pacmanSettleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo getPacmanSettleInfo() {
         if (pacmanSettleInfoBuilder_ == null) {
-          if (detailCase_ == 536) {
+          if (detailCase_ == 1544) {
             return (emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 536) {
+          if (detailCase_ == 1544) {
             return pacmanSettleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+       * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
        */
       public Builder setPacmanSettleInfo(emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo value) {
         if (pacmanSettleInfoBuilder_ == null) {
@@ -8240,11 +4969,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           pacmanSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 536;
+        detailCase_ = 1544;
         return this;
       }
       /**
-       * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+       * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
        */
       public Builder setPacmanSettleInfo(
           emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.Builder builderForValue) {
@@ -8254,15 +4983,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           pacmanSettleInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 536;
+        detailCase_ = 1544;
         return this;
       }
       /**
-       * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+       * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
        */
       public Builder mergePacmanSettleInfo(emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo value) {
         if (pacmanSettleInfoBuilder_ == null) {
-          if (detailCase_ == 536 &&
+          if (detailCase_ == 1544 &&
               detail_ != emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.newBuilder((emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -8271,26 +5000,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 536) {
+          if (detailCase_ == 1544) {
             pacmanSettleInfoBuilder_.mergeFrom(value);
           }
           pacmanSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 536;
+        detailCase_ = 1544;
         return this;
       }
       /**
-       * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+       * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
        */
       public Builder clearPacmanSettleInfo() {
         if (pacmanSettleInfoBuilder_ == null) {
-          if (detailCase_ == 536) {
+          if (detailCase_ == 1544) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 536) {
+          if (detailCase_ == 1544) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -8299,33 +5028,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+       * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
        */
       public emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.Builder getPacmanSettleInfoBuilder() {
         return getPacmanSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+       * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfoOrBuilder getPacmanSettleInfoOrBuilder() {
-        if ((detailCase_ == 536) && (pacmanSettleInfoBuilder_ != null)) {
+        if ((detailCase_ == 1544) && (pacmanSettleInfoBuilder_ != null)) {
           return pacmanSettleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 536) {
+          if (detailCase_ == 1544) {
             return (emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.PacmanSettleInfo pacman_settle_info = 536;</code>
+       * <code>.PacmanSettleInfo pacman_settle_info = 1544;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo, emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.Builder, emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfoOrBuilder> 
           getPacmanSettleInfoFieldBuilder() {
         if (pacmanSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 536)) {
+          if (!(detailCase_ == 1544)) {
             detail_ = emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.getDefaultInstance();
           }
           pacmanSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -8335,7 +5064,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 536;
+        detailCase_ = 1544;
         onChanged();;
         return pacmanSettleInfoBuilder_;
       }
@@ -8343,33 +5072,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo, emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.Builder, emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfoOrBuilder> fungusFighterV2SettleInfoBuilder_;
       /**
-       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
        * @return Whether the fungusFighterV2SettleInfo field is set.
        */
       @java.lang.Override
       public boolean hasFungusFighterV2SettleInfo() {
-        return detailCase_ == 1819;
+        return detailCase_ == 1886;
       }
       /**
-       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
        * @return The fungusFighterV2SettleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo getFungusFighterV2SettleInfo() {
         if (fungusFighterV2SettleInfoBuilder_ == null) {
-          if (detailCase_ == 1819) {
+          if (detailCase_ == 1886) {
             return (emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 1819) {
+          if (detailCase_ == 1886) {
             return fungusFighterV2SettleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
        */
       public Builder setFungusFighterV2SettleInfo(emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo value) {
         if (fungusFighterV2SettleInfoBuilder_ == null) {
@@ -8381,11 +5110,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           fungusFighterV2SettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 1819;
+        detailCase_ = 1886;
         return this;
       }
       /**
-       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
        */
       public Builder setFungusFighterV2SettleInfo(
           emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.Builder builderForValue) {
@@ -8395,15 +5124,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           fungusFighterV2SettleInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 1819;
+        detailCase_ = 1886;
         return this;
       }
       /**
-       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
        */
       public Builder mergeFungusFighterV2SettleInfo(emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo value) {
         if (fungusFighterV2SettleInfoBuilder_ == null) {
-          if (detailCase_ == 1819 &&
+          if (detailCase_ == 1886 &&
               detail_ != emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.newBuilder((emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -8412,26 +5141,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 1819) {
+          if (detailCase_ == 1886) {
             fungusFighterV2SettleInfoBuilder_.mergeFrom(value);
           }
           fungusFighterV2SettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 1819;
+        detailCase_ = 1886;
         return this;
       }
       /**
-       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
        */
       public Builder clearFungusFighterV2SettleInfo() {
         if (fungusFighterV2SettleInfoBuilder_ == null) {
-          if (detailCase_ == 1819) {
+          if (detailCase_ == 1886) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 1819) {
+          if (detailCase_ == 1886) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -8440,33 +5169,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
        */
       public emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.Builder getFungusFighterV2SettleInfoBuilder() {
         return getFungusFighterV2SettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfoOrBuilder getFungusFighterV2SettleInfoOrBuilder() {
-        if ((detailCase_ == 1819) && (fungusFighterV2SettleInfoBuilder_ != null)) {
+        if ((detailCase_ == 1886) && (fungusFighterV2SettleInfoBuilder_ != null)) {
           return fungusFighterV2SettleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 1819) {
+          if (detailCase_ == 1886) {
             return (emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1819;</code>
+       * <code>.FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1886;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo, emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.Builder, emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfoOrBuilder> 
           getFungusFighterV2SettleInfoFieldBuilder() {
         if (fungusFighterV2SettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1819)) {
+          if (!(detailCase_ == 1886)) {
             detail_ = emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.FungusFighterV2SettleInfo.getDefaultInstance();
           }
           fungusFighterV2SettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -8476,7 +5205,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 1819;
+        detailCase_ = 1886;
         onChanged();;
         return fungusFighterV2SettleInfoBuilder_;
       }
@@ -8484,33 +5213,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo, emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.Builder, emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfoOrBuilder> bladeDanceSettleInfoBuilder_;
       /**
-       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
        * @return Whether the bladeDanceSettleInfo field is set.
        */
       @java.lang.Override
       public boolean hasBladeDanceSettleInfo() {
-        return detailCase_ == 1202;
+        return detailCase_ == 578;
       }
       /**
-       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
        * @return The bladeDanceSettleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo getBladeDanceSettleInfo() {
         if (bladeDanceSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1202) {
+          if (detailCase_ == 578) {
             return (emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 1202) {
+          if (detailCase_ == 578) {
             return bladeDanceSettleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
        */
       public Builder setBladeDanceSettleInfo(emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo value) {
         if (bladeDanceSettleInfoBuilder_ == null) {
@@ -8522,11 +5251,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           bladeDanceSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 1202;
+        detailCase_ = 578;
         return this;
       }
       /**
-       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
        */
       public Builder setBladeDanceSettleInfo(
           emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.Builder builderForValue) {
@@ -8536,15 +5265,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           bladeDanceSettleInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 1202;
+        detailCase_ = 578;
         return this;
       }
       /**
-       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
        */
       public Builder mergeBladeDanceSettleInfo(emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo value) {
         if (bladeDanceSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1202 &&
+          if (detailCase_ == 578 &&
               detail_ != emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.newBuilder((emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -8553,26 +5282,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 1202) {
+          if (detailCase_ == 578) {
             bladeDanceSettleInfoBuilder_.mergeFrom(value);
           }
           bladeDanceSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 1202;
+        detailCase_ = 578;
         return this;
       }
       /**
-       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
        */
       public Builder clearBladeDanceSettleInfo() {
         if (bladeDanceSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1202) {
+          if (detailCase_ == 578) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 1202) {
+          if (detailCase_ == 578) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -8581,33 +5310,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
        */
       public emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.Builder getBladeDanceSettleInfoBuilder() {
         return getBladeDanceSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfoOrBuilder getBladeDanceSettleInfoOrBuilder() {
-        if ((detailCase_ == 1202) && (bladeDanceSettleInfoBuilder_ != null)) {
+        if ((detailCase_ == 578) && (bladeDanceSettleInfoBuilder_ != null)) {
           return bladeDanceSettleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 1202) {
+          if (detailCase_ == 578) {
             return (emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 1202;</code>
+       * <code>.BladeDanceSettleInfo blade_dance_settle_info = 578;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo, emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.Builder, emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfoOrBuilder> 
           getBladeDanceSettleInfoFieldBuilder() {
         if (bladeDanceSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1202)) {
+          if (!(detailCase_ == 578)) {
             detail_ = emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.getDefaultInstance();
           }
           bladeDanceSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -8617,7 +5346,7 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 1202;
+        detailCase_ = 578;
         onChanged();;
         return bladeDanceSettleInfoBuilder_;
       }
@@ -8625,33 +5354,33 @@ public final class DungeonSettleNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo, emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.Builder, emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfoOrBuilder> multiCharacterDungeonSettleInfoBuilder_;
       /**
-       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
        * @return Whether the multiCharacterDungeonSettleInfo field is set.
        */
       @java.lang.Override
       public boolean hasMultiCharacterDungeonSettleInfo() {
-        return detailCase_ == 985;
+        return detailCase_ == 1901;
       }
       /**
-       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
        * @return The multiCharacterDungeonSettleInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo getMultiCharacterDungeonSettleInfo() {
         if (multiCharacterDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 985) {
+          if (detailCase_ == 1901) {
             return (emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.getDefaultInstance();
         } else {
-          if (detailCase_ == 985) {
+          if (detailCase_ == 1901) {
             return multiCharacterDungeonSettleInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
        */
       public Builder setMultiCharacterDungeonSettleInfo(emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo value) {
         if (multiCharacterDungeonSettleInfoBuilder_ == null) {
@@ -8663,11 +5392,11 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           multiCharacterDungeonSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 985;
+        detailCase_ = 1901;
         return this;
       }
       /**
-       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
        */
       public Builder setMultiCharacterDungeonSettleInfo(
           emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.Builder builderForValue) {
@@ -8677,15 +5406,15 @@ public final class DungeonSettleNotifyOuterClass {
         } else {
           multiCharacterDungeonSettleInfoBuilder_.setMessage(builderForValue.build());
         }
-        detailCase_ = 985;
+        detailCase_ = 1901;
         return this;
       }
       /**
-       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
        */
       public Builder mergeMultiCharacterDungeonSettleInfo(emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo value) {
         if (multiCharacterDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 985 &&
+          if (detailCase_ == 1901 &&
               detail_ != emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.newBuilder((emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_)
                 .mergeFrom(value).buildPartial();
@@ -8694,26 +5423,26 @@ public final class DungeonSettleNotifyOuterClass {
           }
           onChanged();
         } else {
-          if (detailCase_ == 985) {
+          if (detailCase_ == 1901) {
             multiCharacterDungeonSettleInfoBuilder_.mergeFrom(value);
           }
           multiCharacterDungeonSettleInfoBuilder_.setMessage(value);
         }
-        detailCase_ = 985;
+        detailCase_ = 1901;
         return this;
       }
       /**
-       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
        */
       public Builder clearMultiCharacterDungeonSettleInfo() {
         if (multiCharacterDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 985) {
+          if (detailCase_ == 1901) {
             detailCase_ = 0;
             detail_ = null;
             onChanged();
           }
         } else {
-          if (detailCase_ == 985) {
+          if (detailCase_ == 1901) {
             detailCase_ = 0;
             detail_ = null;
           }
@@ -8722,33 +5451,33 @@ public final class DungeonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
        */
       public emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.Builder getMultiCharacterDungeonSettleInfoBuilder() {
         return getMultiCharacterDungeonSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfoOrBuilder getMultiCharacterDungeonSettleInfoOrBuilder() {
-        if ((detailCase_ == 985) && (multiCharacterDungeonSettleInfoBuilder_ != null)) {
+        if ((detailCase_ == 1901) && (multiCharacterDungeonSettleInfoBuilder_ != null)) {
           return multiCharacterDungeonSettleInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (detailCase_ == 985) {
+          if (detailCase_ == 1901) {
             return (emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo) detail_;
           }
           return emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 985;</code>
+       * <code>.MultiCharacterDungeonSettleInfo multi_character_dungeon_settle_info = 1901;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo, emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.Builder, emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfoOrBuilder> 
           getMultiCharacterDungeonSettleInfoFieldBuilder() {
         if (multiCharacterDungeonSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 985)) {
+          if (!(detailCase_ == 1901)) {
             detail_ = emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.MultiCharacterDungeonSettleInfo.getDefaultInstance();
           }
           multiCharacterDungeonSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -8758,4944 +5487,9 @@ public final class DungeonSettleNotifyOuterClass {
                   isClean());
           detail_ = null;
         }
-        detailCase_ = 985;
+        detailCase_ = 1901;
         onChanged();;
         return multiCharacterDungeonSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo, emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.Builder, emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfoOrBuilder> inspirationSpurtDungeonSettleInfoBuilder_;
-      /**
-       * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-       * @return Whether the inspirationSpurtDungeonSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasInspirationSpurtDungeonSettleInfo() {
-        return detailCase_ == 1524;
-      }
-      /**
-       * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-       * @return The inspirationSpurtDungeonSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo getInspirationSpurtDungeonSettleInfo() {
-        if (inspirationSpurtDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1524) {
-            return (emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1524) {
-            return inspirationSpurtDungeonSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-       */
-      public Builder setInspirationSpurtDungeonSettleInfo(emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo value) {
-        if (inspirationSpurtDungeonSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          inspirationSpurtDungeonSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1524;
-        return this;
-      }
-      /**
-       * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-       */
-      public Builder setInspirationSpurtDungeonSettleInfo(
-          emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.Builder builderForValue) {
-        if (inspirationSpurtDungeonSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          inspirationSpurtDungeonSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1524;
-        return this;
-      }
-      /**
-       * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-       */
-      public Builder mergeInspirationSpurtDungeonSettleInfo(emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo value) {
-        if (inspirationSpurtDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1524 &&
-              detail_ != emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.newBuilder((emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1524) {
-            inspirationSpurtDungeonSettleInfoBuilder_.mergeFrom(value);
-          }
-          inspirationSpurtDungeonSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1524;
-        return this;
-      }
-      /**
-       * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-       */
-      public Builder clearInspirationSpurtDungeonSettleInfo() {
-        if (inspirationSpurtDungeonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1524) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1524) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          inspirationSpurtDungeonSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-       */
-      public emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.Builder getInspirationSpurtDungeonSettleInfoBuilder() {
-        return getInspirationSpurtDungeonSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfoOrBuilder getInspirationSpurtDungeonSettleInfoOrBuilder() {
-        if ((detailCase_ == 1524) && (inspirationSpurtDungeonSettleInfoBuilder_ != null)) {
-          return inspirationSpurtDungeonSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1524) {
-            return (emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.InspirationSpurtDungeonSettleInfo inspiration_spurt_dungeon_settle_info = 1524;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo, emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.Builder, emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfoOrBuilder> 
-          getInspirationSpurtDungeonSettleInfoFieldBuilder() {
-        if (inspirationSpurtDungeonSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1524)) {
-            detail_ = emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.getDefaultInstance();
-          }
-          inspirationSpurtDungeonSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo, emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo.Builder, emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.InspirationSpurtDungeonSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1524;
-        onChanged();;
-        return inspirationSpurtDungeonSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo, emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.Builder, emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfoOrBuilder> quickTimeCombatSettleInfoBuilder_;
-      /**
-       * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-       * @return Whether the quickTimeCombatSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasQuickTimeCombatSettleInfo() {
-        return detailCase_ == 1551;
-      }
-      /**
-       * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-       * @return The quickTimeCombatSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo getQuickTimeCombatSettleInfo() {
-        if (quickTimeCombatSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1551) {
-            return (emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1551) {
-            return quickTimeCombatSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-       */
-      public Builder setQuickTimeCombatSettleInfo(emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo value) {
-        if (quickTimeCombatSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          quickTimeCombatSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1551;
-        return this;
-      }
-      /**
-       * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-       */
-      public Builder setQuickTimeCombatSettleInfo(
-          emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.Builder builderForValue) {
-        if (quickTimeCombatSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          quickTimeCombatSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1551;
-        return this;
-      }
-      /**
-       * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-       */
-      public Builder mergeQuickTimeCombatSettleInfo(emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo value) {
-        if (quickTimeCombatSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1551 &&
-              detail_ != emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.newBuilder((emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1551) {
-            quickTimeCombatSettleInfoBuilder_.mergeFrom(value);
-          }
-          quickTimeCombatSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1551;
-        return this;
-      }
-      /**
-       * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-       */
-      public Builder clearQuickTimeCombatSettleInfo() {
-        if (quickTimeCombatSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1551) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1551) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          quickTimeCombatSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-       */
-      public emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.Builder getQuickTimeCombatSettleInfoBuilder() {
-        return getQuickTimeCombatSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfoOrBuilder getQuickTimeCombatSettleInfoOrBuilder() {
-        if ((detailCase_ == 1551) && (quickTimeCombatSettleInfoBuilder_ != null)) {
-          return quickTimeCombatSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1551) {
-            return (emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.QuickTimeCombatSettleInfo quick_time_combat_settle_info = 1551;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo, emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.Builder, emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfoOrBuilder> 
-          getQuickTimeCombatSettleInfoFieldBuilder() {
-        if (quickTimeCombatSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1551)) {
-            detail_ = emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.getDefaultInstance();
-          }
-          quickTimeCombatSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo, emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo.Builder, emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.QuickTimeCombatSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1551;
-        onChanged();;
-        return quickTimeCombatSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo, emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.Builder, emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfoOrBuilder> fungusFighterV3SettleInfoBuilder_;
-      /**
-       * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-       * @return Whether the fungusFighterV3SettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasFungusFighterV3SettleInfo() {
-        return detailCase_ == 198;
-      }
-      /**
-       * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-       * @return The fungusFighterV3SettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo getFungusFighterV3SettleInfo() {
-        if (fungusFighterV3SettleInfoBuilder_ == null) {
-          if (detailCase_ == 198) {
-            return (emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 198) {
-            return fungusFighterV3SettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-       */
-      public Builder setFungusFighterV3SettleInfo(emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo value) {
-        if (fungusFighterV3SettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          fungusFighterV3SettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 198;
-        return this;
-      }
-      /**
-       * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-       */
-      public Builder setFungusFighterV3SettleInfo(
-          emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.Builder builderForValue) {
-        if (fungusFighterV3SettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          fungusFighterV3SettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 198;
-        return this;
-      }
-      /**
-       * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-       */
-      public Builder mergeFungusFighterV3SettleInfo(emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo value) {
-        if (fungusFighterV3SettleInfoBuilder_ == null) {
-          if (detailCase_ == 198 &&
-              detail_ != emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.newBuilder((emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 198) {
-            fungusFighterV3SettleInfoBuilder_.mergeFrom(value);
-          }
-          fungusFighterV3SettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 198;
-        return this;
-      }
-      /**
-       * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-       */
-      public Builder clearFungusFighterV3SettleInfo() {
-        if (fungusFighterV3SettleInfoBuilder_ == null) {
-          if (detailCase_ == 198) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 198) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          fungusFighterV3SettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-       */
-      public emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.Builder getFungusFighterV3SettleInfoBuilder() {
-        return getFungusFighterV3SettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfoOrBuilder getFungusFighterV3SettleInfoOrBuilder() {
-        if ((detailCase_ == 198) && (fungusFighterV3SettleInfoBuilder_ != null)) {
-          return fungusFighterV3SettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 198) {
-            return (emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.FungusFighterV3SettleInfo fungus_fighter_v3_settle_info = 198;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo, emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.Builder, emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfoOrBuilder> 
-          getFungusFighterV3SettleInfoFieldBuilder() {
-        if (fungusFighterV3SettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 198)) {
-            detail_ = emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.getDefaultInstance();
-          }
-          fungusFighterV3SettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo, emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo.Builder, emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.FungusFighterV3SettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 198;
-        onChanged();;
-        return fungusFighterV3SettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo, emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.Builder, emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfoOrBuilder> filmfestBattleSettleInfoBuilder_;
-      /**
-       * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-       * @return Whether the filmfestBattleSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasFilmfestBattleSettleInfo() {
-        return detailCase_ == 1636;
-      }
-      /**
-       * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-       * @return The filmfestBattleSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo getFilmfestBattleSettleInfo() {
-        if (filmfestBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1636) {
-            return (emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1636) {
-            return filmfestBattleSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-       */
-      public Builder setFilmfestBattleSettleInfo(emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo value) {
-        if (filmfestBattleSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          filmfestBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1636;
-        return this;
-      }
-      /**
-       * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-       */
-      public Builder setFilmfestBattleSettleInfo(
-          emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.Builder builderForValue) {
-        if (filmfestBattleSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          filmfestBattleSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1636;
-        return this;
-      }
-      /**
-       * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-       */
-      public Builder mergeFilmfestBattleSettleInfo(emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo value) {
-        if (filmfestBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1636 &&
-              detail_ != emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.newBuilder((emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1636) {
-            filmfestBattleSettleInfoBuilder_.mergeFrom(value);
-          }
-          filmfestBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1636;
-        return this;
-      }
-      /**
-       * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-       */
-      public Builder clearFilmfestBattleSettleInfo() {
-        if (filmfestBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1636) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1636) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          filmfestBattleSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-       */
-      public emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.Builder getFilmfestBattleSettleInfoBuilder() {
-        return getFilmfestBattleSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfoOrBuilder getFilmfestBattleSettleInfoOrBuilder() {
-        if ((detailCase_ == 1636) && (filmfestBattleSettleInfoBuilder_ != null)) {
-          return filmfestBattleSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1636) {
-            return (emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.FilmfestBattleSettleInfo filmfest_battle_settle_info = 1636;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo, emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.Builder, emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfoOrBuilder> 
-          getFilmfestBattleSettleInfoFieldBuilder() {
-        if (filmfestBattleSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1636)) {
-            detail_ = emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.getDefaultInstance();
-          }
-          filmfestBattleSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo, emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo.Builder, emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.FilmfestBattleSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1636;
-        onChanged();;
-        return filmfestBattleSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo, emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.Builder, emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfoOrBuilder> filmfestSniperSettleInfoBuilder_;
-      /**
-       * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-       * @return Whether the filmfestSniperSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasFilmfestSniperSettleInfo() {
-        return detailCase_ == 1185;
-      }
-      /**
-       * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-       * @return The filmfestSniperSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo getFilmfestSniperSettleInfo() {
-        if (filmfestSniperSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1185) {
-            return (emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1185) {
-            return filmfestSniperSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-       */
-      public Builder setFilmfestSniperSettleInfo(emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo value) {
-        if (filmfestSniperSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          filmfestSniperSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1185;
-        return this;
-      }
-      /**
-       * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-       */
-      public Builder setFilmfestSniperSettleInfo(
-          emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.Builder builderForValue) {
-        if (filmfestSniperSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          filmfestSniperSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1185;
-        return this;
-      }
-      /**
-       * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-       */
-      public Builder mergeFilmfestSniperSettleInfo(emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo value) {
-        if (filmfestSniperSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1185 &&
-              detail_ != emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.newBuilder((emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1185) {
-            filmfestSniperSettleInfoBuilder_.mergeFrom(value);
-          }
-          filmfestSniperSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1185;
-        return this;
-      }
-      /**
-       * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-       */
-      public Builder clearFilmfestSniperSettleInfo() {
-        if (filmfestSniperSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1185) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1185) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          filmfestSniperSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-       */
-      public emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.Builder getFilmfestSniperSettleInfoBuilder() {
-        return getFilmfestSniperSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfoOrBuilder getFilmfestSniperSettleInfoOrBuilder() {
-        if ((detailCase_ == 1185) && (filmfestSniperSettleInfoBuilder_ != null)) {
-          return filmfestSniperSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1185) {
-            return (emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.FilmfestSniperSettleInfo filmfest_sniper_settle_info = 1185;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo, emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.Builder, emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfoOrBuilder> 
-          getFilmfestSniperSettleInfoFieldBuilder() {
-        if (filmfestSniperSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1185)) {
-            detail_ = emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.getDefaultInstance();
-          }
-          filmfestSniperSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo, emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo.Builder, emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.FilmfestSniperSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1185;
-        onChanged();;
-        return filmfestSniperSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo, emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.Builder, emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfoOrBuilder> goalChallengeSettleInfoBuilder_;
-      /**
-       * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-       * @return Whether the goalChallengeSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasGoalChallengeSettleInfo() {
-        return detailCase_ == 812;
-      }
-      /**
-       * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-       * @return The goalChallengeSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo getGoalChallengeSettleInfo() {
-        if (goalChallengeSettleInfoBuilder_ == null) {
-          if (detailCase_ == 812) {
-            return (emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 812) {
-            return goalChallengeSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-       */
-      public Builder setGoalChallengeSettleInfo(emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo value) {
-        if (goalChallengeSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          goalChallengeSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 812;
-        return this;
-      }
-      /**
-       * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-       */
-      public Builder setGoalChallengeSettleInfo(
-          emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.Builder builderForValue) {
-        if (goalChallengeSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          goalChallengeSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 812;
-        return this;
-      }
-      /**
-       * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-       */
-      public Builder mergeGoalChallengeSettleInfo(emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo value) {
-        if (goalChallengeSettleInfoBuilder_ == null) {
-          if (detailCase_ == 812 &&
-              detail_ != emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.newBuilder((emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 812) {
-            goalChallengeSettleInfoBuilder_.mergeFrom(value);
-          }
-          goalChallengeSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 812;
-        return this;
-      }
-      /**
-       * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-       */
-      public Builder clearGoalChallengeSettleInfo() {
-        if (goalChallengeSettleInfoBuilder_ == null) {
-          if (detailCase_ == 812) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 812) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          goalChallengeSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-       */
-      public emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.Builder getGoalChallengeSettleInfoBuilder() {
-        return getGoalChallengeSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfoOrBuilder getGoalChallengeSettleInfoOrBuilder() {
-        if ((detailCase_ == 812) && (goalChallengeSettleInfoBuilder_ != null)) {
-          return goalChallengeSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 812) {
-            return (emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.GoalChallengeSettleInfo goal_challenge_settle_info = 812;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo, emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.Builder, emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfoOrBuilder> 
-          getGoalChallengeSettleInfoFieldBuilder() {
-        if (goalChallengeSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 812)) {
-            detail_ = emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.getDefaultInstance();
-          }
-          goalChallengeSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo, emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo.Builder, emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.GoalChallengeSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 812;
-        onChanged();;
-        return goalChallengeSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo, emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.Builder, emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfoOrBuilder> mistTrialSettleInfoBuilder_;
-      /**
-       * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-       * @return Whether the mistTrialSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasMistTrialSettleInfo() {
-        return detailCase_ == 2031;
-      }
-      /**
-       * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-       * @return The mistTrialSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo getMistTrialSettleInfo() {
-        if (mistTrialSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2031) {
-            return (emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 2031) {
-            return mistTrialSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-       */
-      public Builder setMistTrialSettleInfo(emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo value) {
-        if (mistTrialSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          mistTrialSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 2031;
-        return this;
-      }
-      /**
-       * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-       */
-      public Builder setMistTrialSettleInfo(
-          emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.Builder builderForValue) {
-        if (mistTrialSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          mistTrialSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 2031;
-        return this;
-      }
-      /**
-       * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-       */
-      public Builder mergeMistTrialSettleInfo(emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo value) {
-        if (mistTrialSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2031 &&
-              detail_ != emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.newBuilder((emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 2031) {
-            mistTrialSettleInfoBuilder_.mergeFrom(value);
-          }
-          mistTrialSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 2031;
-        return this;
-      }
-      /**
-       * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-       */
-      public Builder clearMistTrialSettleInfo() {
-        if (mistTrialSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2031) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 2031) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          mistTrialSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-       */
-      public emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.Builder getMistTrialSettleInfoBuilder() {
-        return getMistTrialSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfoOrBuilder getMistTrialSettleInfoOrBuilder() {
-        if ((detailCase_ == 2031) && (mistTrialSettleInfoBuilder_ != null)) {
-          return mistTrialSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 2031) {
-            return (emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.MistTrialSettleInfo mist_trial_settle_info = 2031;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo, emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.Builder, emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfoOrBuilder> 
-          getMistTrialSettleInfoFieldBuilder() {
-        if (mistTrialSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 2031)) {
-            detail_ = emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.getDefaultInstance();
-          }
-          mistTrialSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo, emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo.Builder, emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.MistTrialSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 2031;
-        onChanged();;
-        return mistTrialSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo, emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.Builder, emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfoOrBuilder> staminaFightSettleInfoBuilder_;
-      /**
-       * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-       * @return Whether the staminaFightSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasStaminaFightSettleInfo() {
-        return detailCase_ == 171;
-      }
-      /**
-       * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-       * @return The staminaFightSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo getStaminaFightSettleInfo() {
-        if (staminaFightSettleInfoBuilder_ == null) {
-          if (detailCase_ == 171) {
-            return (emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 171) {
-            return staminaFightSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-       */
-      public Builder setStaminaFightSettleInfo(emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo value) {
-        if (staminaFightSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          staminaFightSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 171;
-        return this;
-      }
-      /**
-       * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-       */
-      public Builder setStaminaFightSettleInfo(
-          emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.Builder builderForValue) {
-        if (staminaFightSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          staminaFightSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 171;
-        return this;
-      }
-      /**
-       * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-       */
-      public Builder mergeStaminaFightSettleInfo(emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo value) {
-        if (staminaFightSettleInfoBuilder_ == null) {
-          if (detailCase_ == 171 &&
-              detail_ != emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.newBuilder((emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 171) {
-            staminaFightSettleInfoBuilder_.mergeFrom(value);
-          }
-          staminaFightSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 171;
-        return this;
-      }
-      /**
-       * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-       */
-      public Builder clearStaminaFightSettleInfo() {
-        if (staminaFightSettleInfoBuilder_ == null) {
-          if (detailCase_ == 171) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 171) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          staminaFightSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-       */
-      public emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.Builder getStaminaFightSettleInfoBuilder() {
-        return getStaminaFightSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfoOrBuilder getStaminaFightSettleInfoOrBuilder() {
-        if ((detailCase_ == 171) && (staminaFightSettleInfoBuilder_ != null)) {
-          return staminaFightSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 171) {
-            return (emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.StaminaFightSettleInfo stamina_fight_settle_info = 171;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo, emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.Builder, emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfoOrBuilder> 
-          getStaminaFightSettleInfoFieldBuilder() {
-        if (staminaFightSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 171)) {
-            detail_ = emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.getDefaultInstance();
-          }
-          staminaFightSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo, emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo.Builder, emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.StaminaFightSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 171;
-        onChanged();;
-        return staminaFightSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo, emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.Builder, emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfoOrBuilder> lostSamachurlSneakSettleInfoBuilder_;
-      /**
-       * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-       * @return Whether the lostSamachurlSneakSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasLostSamachurlSneakSettleInfo() {
-        return detailCase_ == 1490;
-      }
-      /**
-       * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-       * @return The lostSamachurlSneakSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo getLostSamachurlSneakSettleInfo() {
-        if (lostSamachurlSneakSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1490) {
-            return (emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1490) {
-            return lostSamachurlSneakSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-       */
-      public Builder setLostSamachurlSneakSettleInfo(emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo value) {
-        if (lostSamachurlSneakSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          lostSamachurlSneakSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1490;
-        return this;
-      }
-      /**
-       * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-       */
-      public Builder setLostSamachurlSneakSettleInfo(
-          emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.Builder builderForValue) {
-        if (lostSamachurlSneakSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          lostSamachurlSneakSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1490;
-        return this;
-      }
-      /**
-       * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-       */
-      public Builder mergeLostSamachurlSneakSettleInfo(emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo value) {
-        if (lostSamachurlSneakSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1490 &&
-              detail_ != emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.newBuilder((emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1490) {
-            lostSamachurlSneakSettleInfoBuilder_.mergeFrom(value);
-          }
-          lostSamachurlSneakSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1490;
-        return this;
-      }
-      /**
-       * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-       */
-      public Builder clearLostSamachurlSneakSettleInfo() {
-        if (lostSamachurlSneakSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1490) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1490) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          lostSamachurlSneakSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-       */
-      public emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.Builder getLostSamachurlSneakSettleInfoBuilder() {
-        return getLostSamachurlSneakSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfoOrBuilder getLostSamachurlSneakSettleInfoOrBuilder() {
-        if ((detailCase_ == 1490) && (lostSamachurlSneakSettleInfoBuilder_ != null)) {
-          return lostSamachurlSneakSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1490) {
-            return (emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.LostSamachurlSneakSettleInfo lost_samachurl_sneak_settle_info = 1490;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo, emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.Builder, emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfoOrBuilder> 
-          getLostSamachurlSneakSettleInfoFieldBuilder() {
-        if (lostSamachurlSneakSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1490)) {
-            detail_ = emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.getDefaultInstance();
-          }
-          lostSamachurlSneakSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo, emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo.Builder, emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.LostSamachurlSneakSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1490;
-        onChanged();;
-        return lostSamachurlSneakSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo, emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.Builder, emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfoOrBuilder> autoTimeStopSettleInfoBuilder_;
-      /**
-       * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-       * @return Whether the autoTimeStopSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasAutoTimeStopSettleInfo() {
-        return detailCase_ == 1917;
-      }
-      /**
-       * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-       * @return The autoTimeStopSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo getAutoTimeStopSettleInfo() {
-        if (autoTimeStopSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1917) {
-            return (emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1917) {
-            return autoTimeStopSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-       */
-      public Builder setAutoTimeStopSettleInfo(emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo value) {
-        if (autoTimeStopSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          autoTimeStopSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1917;
-        return this;
-      }
-      /**
-       * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-       */
-      public Builder setAutoTimeStopSettleInfo(
-          emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.Builder builderForValue) {
-        if (autoTimeStopSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          autoTimeStopSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1917;
-        return this;
-      }
-      /**
-       * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-       */
-      public Builder mergeAutoTimeStopSettleInfo(emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo value) {
-        if (autoTimeStopSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1917 &&
-              detail_ != emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.newBuilder((emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1917) {
-            autoTimeStopSettleInfoBuilder_.mergeFrom(value);
-          }
-          autoTimeStopSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1917;
-        return this;
-      }
-      /**
-       * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-       */
-      public Builder clearAutoTimeStopSettleInfo() {
-        if (autoTimeStopSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1917) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1917) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          autoTimeStopSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-       */
-      public emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.Builder getAutoTimeStopSettleInfoBuilder() {
-        return getAutoTimeStopSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfoOrBuilder getAutoTimeStopSettleInfoOrBuilder() {
-        if ((detailCase_ == 1917) && (autoTimeStopSettleInfoBuilder_ != null)) {
-          return autoTimeStopSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1917) {
-            return (emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.AutoTimeStopSettleInfo auto_time_stop_settle_info = 1917;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo, emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.Builder, emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfoOrBuilder> 
-          getAutoTimeStopSettleInfoFieldBuilder() {
-        if (autoTimeStopSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1917)) {
-            detail_ = emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.getDefaultInstance();
-          }
-          autoTimeStopSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo, emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo.Builder, emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.AutoTimeStopSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1917;
-        onChanged();;
-        return autoTimeStopSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo, emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.Builder, emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfoOrBuilder> slimeCannonSettleInfoBuilder_;
-      /**
-       * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-       * @return Whether the slimeCannonSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasSlimeCannonSettleInfo() {
-        return detailCase_ == 991;
-      }
-      /**
-       * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-       * @return The slimeCannonSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo getSlimeCannonSettleInfo() {
-        if (slimeCannonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 991) {
-            return (emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 991) {
-            return slimeCannonSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-       */
-      public Builder setSlimeCannonSettleInfo(emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo value) {
-        if (slimeCannonSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          slimeCannonSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 991;
-        return this;
-      }
-      /**
-       * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-       */
-      public Builder setSlimeCannonSettleInfo(
-          emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.Builder builderForValue) {
-        if (slimeCannonSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          slimeCannonSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 991;
-        return this;
-      }
-      /**
-       * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-       */
-      public Builder mergeSlimeCannonSettleInfo(emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo value) {
-        if (slimeCannonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 991 &&
-              detail_ != emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.newBuilder((emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 991) {
-            slimeCannonSettleInfoBuilder_.mergeFrom(value);
-          }
-          slimeCannonSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 991;
-        return this;
-      }
-      /**
-       * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-       */
-      public Builder clearSlimeCannonSettleInfo() {
-        if (slimeCannonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 991) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 991) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          slimeCannonSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-       */
-      public emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.Builder getSlimeCannonSettleInfoBuilder() {
-        return getSlimeCannonSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfoOrBuilder getSlimeCannonSettleInfoOrBuilder() {
-        if ((detailCase_ == 991) && (slimeCannonSettleInfoBuilder_ != null)) {
-          return slimeCannonSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 991) {
-            return (emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.SlimeCannonSettleInfo slime_cannon_settle_info = 991;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo, emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.Builder, emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfoOrBuilder> 
-          getSlimeCannonSettleInfoFieldBuilder() {
-        if (slimeCannonSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 991)) {
-            detail_ = emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.getDefaultInstance();
-          }
-          slimeCannonSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo, emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo.Builder, emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.SlimeCannonSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 991;
-        onChanged();;
-        return slimeCannonSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo, emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfoOrBuilder> effigyChallengeV5SettleInfoBuilder_;
-      /**
-       * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-       * @return Whether the effigyChallengeV5SettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasEffigyChallengeV5SettleInfo() {
-        return detailCase_ == 1779;
-      }
-      /**
-       * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-       * @return The effigyChallengeV5SettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo getEffigyChallengeV5SettleInfo() {
-        if (effigyChallengeV5SettleInfoBuilder_ == null) {
-          if (detailCase_ == 1779) {
-            return (emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1779) {
-            return effigyChallengeV5SettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-       */
-      public Builder setEffigyChallengeV5SettleInfo(emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo value) {
-        if (effigyChallengeV5SettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          effigyChallengeV5SettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1779;
-        return this;
-      }
-      /**
-       * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-       */
-      public Builder setEffigyChallengeV5SettleInfo(
-          emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.Builder builderForValue) {
-        if (effigyChallengeV5SettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          effigyChallengeV5SettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1779;
-        return this;
-      }
-      /**
-       * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-       */
-      public Builder mergeEffigyChallengeV5SettleInfo(emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo value) {
-        if (effigyChallengeV5SettleInfoBuilder_ == null) {
-          if (detailCase_ == 1779 &&
-              detail_ != emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.newBuilder((emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1779) {
-            effigyChallengeV5SettleInfoBuilder_.mergeFrom(value);
-          }
-          effigyChallengeV5SettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1779;
-        return this;
-      }
-      /**
-       * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-       */
-      public Builder clearEffigyChallengeV5SettleInfo() {
-        if (effigyChallengeV5SettleInfoBuilder_ == null) {
-          if (detailCase_ == 1779) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1779) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          effigyChallengeV5SettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-       */
-      public emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.Builder getEffigyChallengeV5SettleInfoBuilder() {
-        return getEffigyChallengeV5SettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfoOrBuilder getEffigyChallengeV5SettleInfoOrBuilder() {
-        if ((detailCase_ == 1779) && (effigyChallengeV5SettleInfoBuilder_ != null)) {
-          return effigyChallengeV5SettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1779) {
-            return (emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.EffigyChallengeV5SettleInfo effigy_challenge_v5_settle_info = 1779;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo, emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfoOrBuilder> 
-          getEffigyChallengeV5SettleInfoFieldBuilder() {
-        if (effigyChallengeV5SettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1779)) {
-            detail_ = emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.getDefaultInstance();
-          }
-          effigyChallengeV5SettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo, emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo.Builder, emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.EffigyChallengeV5SettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1779;
-        onChanged();;
-        return effigyChallengeV5SettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo, emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.Builder, emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfoOrBuilder> roleCombatSettleInfoBuilder_;
-      /**
-       * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-       * @return Whether the roleCombatSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasRoleCombatSettleInfo() {
-        return detailCase_ == 1740;
-      }
-      /**
-       * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-       * @return The roleCombatSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo getRoleCombatSettleInfo() {
-        if (roleCombatSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1740) {
-            return (emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1740) {
-            return roleCombatSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-       */
-      public Builder setRoleCombatSettleInfo(emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo value) {
-        if (roleCombatSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          roleCombatSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1740;
-        return this;
-      }
-      /**
-       * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-       */
-      public Builder setRoleCombatSettleInfo(
-          emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.Builder builderForValue) {
-        if (roleCombatSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          roleCombatSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1740;
-        return this;
-      }
-      /**
-       * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-       */
-      public Builder mergeRoleCombatSettleInfo(emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo value) {
-        if (roleCombatSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1740 &&
-              detail_ != emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.newBuilder((emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1740) {
-            roleCombatSettleInfoBuilder_.mergeFrom(value);
-          }
-          roleCombatSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1740;
-        return this;
-      }
-      /**
-       * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-       */
-      public Builder clearRoleCombatSettleInfo() {
-        if (roleCombatSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1740) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1740) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          roleCombatSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-       */
-      public emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.Builder getRoleCombatSettleInfoBuilder() {
-        return getRoleCombatSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfoOrBuilder getRoleCombatSettleInfoOrBuilder() {
-        if ((detailCase_ == 1740) && (roleCombatSettleInfoBuilder_ != null)) {
-          return roleCombatSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1740) {
-            return (emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.RoleCombatSettleInfo role_combat_settle_info = 1740;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo, emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.Builder, emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfoOrBuilder> 
-          getRoleCombatSettleInfoFieldBuilder() {
-        if (roleCombatSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1740)) {
-            detail_ = emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.getDefaultInstance();
-          }
-          roleCombatSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo, emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo.Builder, emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.RoleCombatSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1740;
-        onChanged();;
-        return roleCombatSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo, emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.Builder, emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfoOrBuilder> acrobaticsBattleSettleInfoBuilder_;
-      /**
-       * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-       * @return Whether the acrobaticsBattleSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasAcrobaticsBattleSettleInfo() {
-        return detailCase_ == 928;
-      }
-      /**
-       * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-       * @return The acrobaticsBattleSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo getAcrobaticsBattleSettleInfo() {
-        if (acrobaticsBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 928) {
-            return (emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 928) {
-            return acrobaticsBattleSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-       */
-      public Builder setAcrobaticsBattleSettleInfo(emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo value) {
-        if (acrobaticsBattleSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          acrobaticsBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 928;
-        return this;
-      }
-      /**
-       * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-       */
-      public Builder setAcrobaticsBattleSettleInfo(
-          emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.Builder builderForValue) {
-        if (acrobaticsBattleSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          acrobaticsBattleSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 928;
-        return this;
-      }
-      /**
-       * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-       */
-      public Builder mergeAcrobaticsBattleSettleInfo(emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo value) {
-        if (acrobaticsBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 928 &&
-              detail_ != emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.newBuilder((emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 928) {
-            acrobaticsBattleSettleInfoBuilder_.mergeFrom(value);
-          }
-          acrobaticsBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 928;
-        return this;
-      }
-      /**
-       * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-       */
-      public Builder clearAcrobaticsBattleSettleInfo() {
-        if (acrobaticsBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 928) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 928) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          acrobaticsBattleSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-       */
-      public emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.Builder getAcrobaticsBattleSettleInfoBuilder() {
-        return getAcrobaticsBattleSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfoOrBuilder getAcrobaticsBattleSettleInfoOrBuilder() {
-        if ((detailCase_ == 928) && (acrobaticsBattleSettleInfoBuilder_ != null)) {
-          return acrobaticsBattleSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 928) {
-            return (emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.AcrobaticsBattleSettleInfo acrobatics_battle_settle_info = 928;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo, emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.Builder, emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfoOrBuilder> 
-          getAcrobaticsBattleSettleInfoFieldBuilder() {
-        if (acrobaticsBattleSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 928)) {
-            detail_ = emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.getDefaultInstance();
-          }
-          acrobaticsBattleSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo, emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo.Builder, emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.AcrobaticsBattleSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 928;
-        onChanged();;
-        return acrobaticsBattleSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo, emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.Builder, emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfoOrBuilder> bulletHellSettleInfoBuilder_;
-      /**
-       * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-       * @return Whether the bulletHellSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasBulletHellSettleInfo() {
-        return detailCase_ == 1233;
-      }
-      /**
-       * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-       * @return The bulletHellSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo getBulletHellSettleInfo() {
-        if (bulletHellSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1233) {
-            return (emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1233) {
-            return bulletHellSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-       */
-      public Builder setBulletHellSettleInfo(emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo value) {
-        if (bulletHellSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          bulletHellSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1233;
-        return this;
-      }
-      /**
-       * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-       */
-      public Builder setBulletHellSettleInfo(
-          emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.Builder builderForValue) {
-        if (bulletHellSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          bulletHellSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1233;
-        return this;
-      }
-      /**
-       * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-       */
-      public Builder mergeBulletHellSettleInfo(emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo value) {
-        if (bulletHellSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1233 &&
-              detail_ != emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.newBuilder((emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1233) {
-            bulletHellSettleInfoBuilder_.mergeFrom(value);
-          }
-          bulletHellSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1233;
-        return this;
-      }
-      /**
-       * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-       */
-      public Builder clearBulletHellSettleInfo() {
-        if (bulletHellSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1233) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1233) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          bulletHellSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-       */
-      public emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.Builder getBulletHellSettleInfoBuilder() {
-        return getBulletHellSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfoOrBuilder getBulletHellSettleInfoOrBuilder() {
-        if ((detailCase_ == 1233) && (bulletHellSettleInfoBuilder_ != null)) {
-          return bulletHellSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1233) {
-            return (emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.BulletHellSettleInfo bullet_hell_settle_info = 1233;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo, emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.Builder, emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfoOrBuilder> 
-          getBulletHellSettleInfoFieldBuilder() {
-        if (bulletHellSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1233)) {
-            detail_ = emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.getDefaultInstance();
-          }
-          bulletHellSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo, emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo.Builder, emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.BulletHellSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1233;
-        onChanged();;
-        return bulletHellSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo, emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.Builder, emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfoOrBuilder> rechargeDiskSettleInfoBuilder_;
-      /**
-       * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-       * @return Whether the rechargeDiskSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasRechargeDiskSettleInfo() {
-        return detailCase_ == 36;
-      }
-      /**
-       * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-       * @return The rechargeDiskSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo getRechargeDiskSettleInfo() {
-        if (rechargeDiskSettleInfoBuilder_ == null) {
-          if (detailCase_ == 36) {
-            return (emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 36) {
-            return rechargeDiskSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-       */
-      public Builder setRechargeDiskSettleInfo(emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo value) {
-        if (rechargeDiskSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          rechargeDiskSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 36;
-        return this;
-      }
-      /**
-       * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-       */
-      public Builder setRechargeDiskSettleInfo(
-          emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.Builder builderForValue) {
-        if (rechargeDiskSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          rechargeDiskSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 36;
-        return this;
-      }
-      /**
-       * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-       */
-      public Builder mergeRechargeDiskSettleInfo(emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo value) {
-        if (rechargeDiskSettleInfoBuilder_ == null) {
-          if (detailCase_ == 36 &&
-              detail_ != emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.newBuilder((emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 36) {
-            rechargeDiskSettleInfoBuilder_.mergeFrom(value);
-          }
-          rechargeDiskSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 36;
-        return this;
-      }
-      /**
-       * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-       */
-      public Builder clearRechargeDiskSettleInfo() {
-        if (rechargeDiskSettleInfoBuilder_ == null) {
-          if (detailCase_ == 36) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 36) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          rechargeDiskSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-       */
-      public emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.Builder getRechargeDiskSettleInfoBuilder() {
-        return getRechargeDiskSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfoOrBuilder getRechargeDiskSettleInfoOrBuilder() {
-        if ((detailCase_ == 36) && (rechargeDiskSettleInfoBuilder_ != null)) {
-          return rechargeDiskSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 36) {
-            return (emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.RechargeDiskSettleInfo recharge_disk_settle_info = 36;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo, emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.Builder, emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfoOrBuilder> 
-          getRechargeDiskSettleInfoFieldBuilder() {
-        if (rechargeDiskSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 36)) {
-            detail_ = emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.getDefaultInstance();
-          }
-          rechargeDiskSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo, emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo.Builder, emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.RechargeDiskSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 36;
-        onChanged();;
-        return rechargeDiskSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo, emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.Builder, emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfoOrBuilder> fairyTalesCombatSettleInfoBuilder_;
-      /**
-       * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-       * @return Whether the fairyTalesCombatSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasFairyTalesCombatSettleInfo() {
-        return detailCase_ == 848;
-      }
-      /**
-       * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-       * @return The fairyTalesCombatSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo getFairyTalesCombatSettleInfo() {
-        if (fairyTalesCombatSettleInfoBuilder_ == null) {
-          if (detailCase_ == 848) {
-            return (emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 848) {
-            return fairyTalesCombatSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-       */
-      public Builder setFairyTalesCombatSettleInfo(emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo value) {
-        if (fairyTalesCombatSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          fairyTalesCombatSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 848;
-        return this;
-      }
-      /**
-       * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-       */
-      public Builder setFairyTalesCombatSettleInfo(
-          emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.Builder builderForValue) {
-        if (fairyTalesCombatSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          fairyTalesCombatSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 848;
-        return this;
-      }
-      /**
-       * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-       */
-      public Builder mergeFairyTalesCombatSettleInfo(emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo value) {
-        if (fairyTalesCombatSettleInfoBuilder_ == null) {
-          if (detailCase_ == 848 &&
-              detail_ != emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.newBuilder((emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 848) {
-            fairyTalesCombatSettleInfoBuilder_.mergeFrom(value);
-          }
-          fairyTalesCombatSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 848;
-        return this;
-      }
-      /**
-       * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-       */
-      public Builder clearFairyTalesCombatSettleInfo() {
-        if (fairyTalesCombatSettleInfoBuilder_ == null) {
-          if (detailCase_ == 848) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 848) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          fairyTalesCombatSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-       */
-      public emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.Builder getFairyTalesCombatSettleInfoBuilder() {
-        return getFairyTalesCombatSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfoOrBuilder getFairyTalesCombatSettleInfoOrBuilder() {
-        if ((detailCase_ == 848) && (fairyTalesCombatSettleInfoBuilder_ != null)) {
-          return fairyTalesCombatSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 848) {
-            return (emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.FairyTalesCombatSettleInfo fairy_tales_combat_settle_info = 848;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo, emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.Builder, emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfoOrBuilder> 
-          getFairyTalesCombatSettleInfoFieldBuilder() {
-        if (fairyTalesCombatSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 848)) {
-            detail_ = emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.getDefaultInstance();
-          }
-          fairyTalesCombatSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo, emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo.Builder, emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.FairyTalesCombatSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 848;
-        onChanged();;
-        return fairyTalesCombatSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo, emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.Builder, emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfoOrBuilder> gainBuffSettleInfoBuilder_;
-      /**
-       * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-       * @return Whether the gainBuffSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasGainBuffSettleInfo() {
-        return detailCase_ == 931;
-      }
-      /**
-       * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-       * @return The gainBuffSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo getGainBuffSettleInfo() {
-        if (gainBuffSettleInfoBuilder_ == null) {
-          if (detailCase_ == 931) {
-            return (emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 931) {
-            return gainBuffSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-       */
-      public Builder setGainBuffSettleInfo(emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo value) {
-        if (gainBuffSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          gainBuffSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 931;
-        return this;
-      }
-      /**
-       * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-       */
-      public Builder setGainBuffSettleInfo(
-          emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.Builder builderForValue) {
-        if (gainBuffSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          gainBuffSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 931;
-        return this;
-      }
-      /**
-       * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-       */
-      public Builder mergeGainBuffSettleInfo(emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo value) {
-        if (gainBuffSettleInfoBuilder_ == null) {
-          if (detailCase_ == 931 &&
-              detail_ != emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.newBuilder((emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 931) {
-            gainBuffSettleInfoBuilder_.mergeFrom(value);
-          }
-          gainBuffSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 931;
-        return this;
-      }
-      /**
-       * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-       */
-      public Builder clearGainBuffSettleInfo() {
-        if (gainBuffSettleInfoBuilder_ == null) {
-          if (detailCase_ == 931) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 931) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          gainBuffSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-       */
-      public emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.Builder getGainBuffSettleInfoBuilder() {
-        return getGainBuffSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfoOrBuilder getGainBuffSettleInfoOrBuilder() {
-        if ((detailCase_ == 931) && (gainBuffSettleInfoBuilder_ != null)) {
-          return gainBuffSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 931) {
-            return (emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.GainBuffSettleInfo gain_buff_settle_info = 931;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo, emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.Builder, emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfoOrBuilder> 
-          getGainBuffSettleInfoFieldBuilder() {
-        if (gainBuffSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 931)) {
-            detail_ = emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.getDefaultInstance();
-          }
-          gainBuffSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo, emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo.Builder, emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.GainBuffSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 931;
-        onChanged();;
-        return gainBuffSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo, emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.Builder, emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfoOrBuilder> charMasterSettleInfoBuilder_;
-      /**
-       * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-       * @return Whether the charMasterSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasCharMasterSettleInfo() {
-        return detailCase_ == 2012;
-      }
-      /**
-       * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-       * @return The charMasterSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo getCharMasterSettleInfo() {
-        if (charMasterSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2012) {
-            return (emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 2012) {
-            return charMasterSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-       */
-      public Builder setCharMasterSettleInfo(emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo value) {
-        if (charMasterSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          charMasterSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 2012;
-        return this;
-      }
-      /**
-       * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-       */
-      public Builder setCharMasterSettleInfo(
-          emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.Builder builderForValue) {
-        if (charMasterSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          charMasterSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 2012;
-        return this;
-      }
-      /**
-       * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-       */
-      public Builder mergeCharMasterSettleInfo(emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo value) {
-        if (charMasterSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2012 &&
-              detail_ != emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.newBuilder((emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 2012) {
-            charMasterSettleInfoBuilder_.mergeFrom(value);
-          }
-          charMasterSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 2012;
-        return this;
-      }
-      /**
-       * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-       */
-      public Builder clearCharMasterSettleInfo() {
-        if (charMasterSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2012) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 2012) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          charMasterSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-       */
-      public emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.Builder getCharMasterSettleInfoBuilder() {
-        return getCharMasterSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfoOrBuilder getCharMasterSettleInfoOrBuilder() {
-        if ((detailCase_ == 2012) && (charMasterSettleInfoBuilder_ != null)) {
-          return charMasterSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 2012) {
-            return (emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.CharMasterSettleInfo char_master_settle_info = 2012;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo, emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.Builder, emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfoOrBuilder> 
-          getCharMasterSettleInfoFieldBuilder() {
-        if (charMasterSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 2012)) {
-            detail_ = emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.getDefaultInstance();
-          }
-          charMasterSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo, emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo.Builder, emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.CharMasterSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 2012;
-        onChanged();;
-        return charMasterSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo, emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.Builder, emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfoOrBuilder> feverBattleSettleInfoBuilder_;
-      /**
-       * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-       * @return Whether the feverBattleSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasFeverBattleSettleInfo() {
-        return detailCase_ == 249;
-      }
-      /**
-       * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-       * @return The feverBattleSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo getFeverBattleSettleInfo() {
-        if (feverBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 249) {
-            return (emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 249) {
-            return feverBattleSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-       */
-      public Builder setFeverBattleSettleInfo(emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo value) {
-        if (feverBattleSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          feverBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 249;
-        return this;
-      }
-      /**
-       * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-       */
-      public Builder setFeverBattleSettleInfo(
-          emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.Builder builderForValue) {
-        if (feverBattleSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          feverBattleSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 249;
-        return this;
-      }
-      /**
-       * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-       */
-      public Builder mergeFeverBattleSettleInfo(emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo value) {
-        if (feverBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 249 &&
-              detail_ != emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.newBuilder((emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 249) {
-            feverBattleSettleInfoBuilder_.mergeFrom(value);
-          }
-          feverBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 249;
-        return this;
-      }
-      /**
-       * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-       */
-      public Builder clearFeverBattleSettleInfo() {
-        if (feverBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 249) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 249) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          feverBattleSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-       */
-      public emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.Builder getFeverBattleSettleInfoBuilder() {
-        return getFeverBattleSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfoOrBuilder getFeverBattleSettleInfoOrBuilder() {
-        if ((detailCase_ == 249) && (feverBattleSettleInfoBuilder_ != null)) {
-          return feverBattleSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 249) {
-            return (emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.FeverBattleSettleInfo fever_battle_settle_info = 249;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo, emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.Builder, emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfoOrBuilder> 
-          getFeverBattleSettleInfoFieldBuilder() {
-        if (feverBattleSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 249)) {
-            detail_ = emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.getDefaultInstance();
-          }
-          feverBattleSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo, emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo.Builder, emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.FeverBattleSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 249;
-        onChanged();;
-        return feverBattleSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo, emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.Builder, emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfoOrBuilder> cooperateChallengeSettleInfoBuilder_;
-      /**
-       * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-       * @return Whether the cooperateChallengeSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasCooperateChallengeSettleInfo() {
-        return detailCase_ == 1004;
-      }
-      /**
-       * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-       * @return The cooperateChallengeSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo getCooperateChallengeSettleInfo() {
-        if (cooperateChallengeSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1004) {
-            return (emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1004) {
-            return cooperateChallengeSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-       */
-      public Builder setCooperateChallengeSettleInfo(emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo value) {
-        if (cooperateChallengeSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          cooperateChallengeSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1004;
-        return this;
-      }
-      /**
-       * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-       */
-      public Builder setCooperateChallengeSettleInfo(
-          emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.Builder builderForValue) {
-        if (cooperateChallengeSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          cooperateChallengeSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1004;
-        return this;
-      }
-      /**
-       * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-       */
-      public Builder mergeCooperateChallengeSettleInfo(emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo value) {
-        if (cooperateChallengeSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1004 &&
-              detail_ != emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.newBuilder((emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1004) {
-            cooperateChallengeSettleInfoBuilder_.mergeFrom(value);
-          }
-          cooperateChallengeSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1004;
-        return this;
-      }
-      /**
-       * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-       */
-      public Builder clearCooperateChallengeSettleInfo() {
-        if (cooperateChallengeSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1004) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1004) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          cooperateChallengeSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-       */
-      public emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.Builder getCooperateChallengeSettleInfoBuilder() {
-        return getCooperateChallengeSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfoOrBuilder getCooperateChallengeSettleInfoOrBuilder() {
-        if ((detailCase_ == 1004) && (cooperateChallengeSettleInfoBuilder_ != null)) {
-          return cooperateChallengeSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1004) {
-            return (emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.CooperateChallengeSettleInfo cooperate_challenge_settle_info = 1004;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo, emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.Builder, emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfoOrBuilder> 
-          getCooperateChallengeSettleInfoFieldBuilder() {
-        if (cooperateChallengeSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1004)) {
-            detail_ = emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.getDefaultInstance();
-          }
-          cooperateChallengeSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo, emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo.Builder, emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.CooperateChallengeSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1004;
-        onChanged();;
-        return cooperateChallengeSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo, emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.Builder, emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfoOrBuilder> bomberDodocoSettleInfoBuilder_;
-      /**
-       * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-       * @return Whether the bomberDodocoSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasBomberDodocoSettleInfo() {
-        return detailCase_ == 2024;
-      }
-      /**
-       * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-       * @return The bomberDodocoSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo getBomberDodocoSettleInfo() {
-        if (bomberDodocoSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2024) {
-            return (emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 2024) {
-            return bomberDodocoSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-       */
-      public Builder setBomberDodocoSettleInfo(emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo value) {
-        if (bomberDodocoSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          bomberDodocoSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 2024;
-        return this;
-      }
-      /**
-       * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-       */
-      public Builder setBomberDodocoSettleInfo(
-          emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.Builder builderForValue) {
-        if (bomberDodocoSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          bomberDodocoSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 2024;
-        return this;
-      }
-      /**
-       * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-       */
-      public Builder mergeBomberDodocoSettleInfo(emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo value) {
-        if (bomberDodocoSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2024 &&
-              detail_ != emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.newBuilder((emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 2024) {
-            bomberDodocoSettleInfoBuilder_.mergeFrom(value);
-          }
-          bomberDodocoSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 2024;
-        return this;
-      }
-      /**
-       * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-       */
-      public Builder clearBomberDodocoSettleInfo() {
-        if (bomberDodocoSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2024) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 2024) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          bomberDodocoSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-       */
-      public emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.Builder getBomberDodocoSettleInfoBuilder() {
-        return getBomberDodocoSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfoOrBuilder getBomberDodocoSettleInfoOrBuilder() {
-        if ((detailCase_ == 2024) && (bomberDodocoSettleInfoBuilder_ != null)) {
-          return bomberDodocoSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 2024) {
-            return (emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.BomberDodocoSettleInfo bomber_dodoco_settle_info = 2024;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo, emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.Builder, emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfoOrBuilder> 
-          getBomberDodocoSettleInfoFieldBuilder() {
-        if (bomberDodocoSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 2024)) {
-            detail_ = emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.getDefaultInstance();
-          }
-          bomberDodocoSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo, emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo.Builder, emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.BomberDodocoSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 2024;
-        onChanged();;
-        return bomberDodocoSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo, emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.Builder, emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfoOrBuilder> ceremonyBattleSettleInfoBuilder_;
-      /**
-       * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-       * @return Whether the ceremonyBattleSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasCeremonyBattleSettleInfo() {
-        return detailCase_ == 247;
-      }
-      /**
-       * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-       * @return The ceremonyBattleSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo getCeremonyBattleSettleInfo() {
-        if (ceremonyBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 247) {
-            return (emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 247) {
-            return ceremonyBattleSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-       */
-      public Builder setCeremonyBattleSettleInfo(emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo value) {
-        if (ceremonyBattleSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          ceremonyBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 247;
-        return this;
-      }
-      /**
-       * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-       */
-      public Builder setCeremonyBattleSettleInfo(
-          emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.Builder builderForValue) {
-        if (ceremonyBattleSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          ceremonyBattleSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 247;
-        return this;
-      }
-      /**
-       * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-       */
-      public Builder mergeCeremonyBattleSettleInfo(emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo value) {
-        if (ceremonyBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 247 &&
-              detail_ != emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.newBuilder((emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 247) {
-            ceremonyBattleSettleInfoBuilder_.mergeFrom(value);
-          }
-          ceremonyBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 247;
-        return this;
-      }
-      /**
-       * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-       */
-      public Builder clearCeremonyBattleSettleInfo() {
-        if (ceremonyBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 247) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 247) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          ceremonyBattleSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-       */
-      public emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.Builder getCeremonyBattleSettleInfoBuilder() {
-        return getCeremonyBattleSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfoOrBuilder getCeremonyBattleSettleInfoOrBuilder() {
-        if ((detailCase_ == 247) && (ceremonyBattleSettleInfoBuilder_ != null)) {
-          return ceremonyBattleSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 247) {
-            return (emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.CeremonyBattleSettleInfo ceremony_battle_settle_info = 247;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo, emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.Builder, emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfoOrBuilder> 
-          getCeremonyBattleSettleInfoFieldBuilder() {
-        if (ceremonyBattleSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 247)) {
-            detail_ = emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.getDefaultInstance();
-          }
-          ceremonyBattleSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo, emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo.Builder, emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.CeremonyBattleSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 247;
-        onChanged();;
-        return ceremonyBattleSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo, emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.Builder, emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfoOrBuilder> badgetBattleSettleInfoBuilder_;
-      /**
-       * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-       * @return Whether the badgetBattleSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasBadgetBattleSettleInfo() {
-        return detailCase_ == 1538;
-      }
-      /**
-       * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-       * @return The badgetBattleSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo getBadgetBattleSettleInfo() {
-        if (badgetBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1538) {
-            return (emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1538) {
-            return badgetBattleSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-       */
-      public Builder setBadgetBattleSettleInfo(emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo value) {
-        if (badgetBattleSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          badgetBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1538;
-        return this;
-      }
-      /**
-       * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-       */
-      public Builder setBadgetBattleSettleInfo(
-          emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.Builder builderForValue) {
-        if (badgetBattleSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          badgetBattleSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1538;
-        return this;
-      }
-      /**
-       * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-       */
-      public Builder mergeBadgetBattleSettleInfo(emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo value) {
-        if (badgetBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1538 &&
-              detail_ != emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.newBuilder((emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1538) {
-            badgetBattleSettleInfoBuilder_.mergeFrom(value);
-          }
-          badgetBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1538;
-        return this;
-      }
-      /**
-       * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-       */
-      public Builder clearBadgetBattleSettleInfo() {
-        if (badgetBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1538) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1538) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          badgetBattleSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-       */
-      public emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.Builder getBadgetBattleSettleInfoBuilder() {
-        return getBadgetBattleSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfoOrBuilder getBadgetBattleSettleInfoOrBuilder() {
-        if ((detailCase_ == 1538) && (badgetBattleSettleInfoBuilder_ != null)) {
-          return badgetBattleSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1538) {
-            return (emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.BadgetBattleSettleInfo badget_battle_settle_info = 1538;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo, emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.Builder, emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfoOrBuilder> 
-          getBadgetBattleSettleInfoFieldBuilder() {
-        if (badgetBattleSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1538)) {
-            detail_ = emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.getDefaultInstance();
-          }
-          badgetBattleSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo, emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo.Builder, emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.BadgetBattleSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1538;
-        onChanged();;
-        return badgetBattleSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo, emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.Builder, emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfoOrBuilder> adShootingSettleInfoBuilder_;
-      /**
-       * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-       * @return Whether the adShootingSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasAdShootingSettleInfo() {
-        return detailCase_ == 148;
-      }
-      /**
-       * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-       * @return The adShootingSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo getAdShootingSettleInfo() {
-        if (adShootingSettleInfoBuilder_ == null) {
-          if (detailCase_ == 148) {
-            return (emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 148) {
-            return adShootingSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-       */
-      public Builder setAdShootingSettleInfo(emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo value) {
-        if (adShootingSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          adShootingSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 148;
-        return this;
-      }
-      /**
-       * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-       */
-      public Builder setAdShootingSettleInfo(
-          emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.Builder builderForValue) {
-        if (adShootingSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          adShootingSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 148;
-        return this;
-      }
-      /**
-       * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-       */
-      public Builder mergeAdShootingSettleInfo(emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo value) {
-        if (adShootingSettleInfoBuilder_ == null) {
-          if (detailCase_ == 148 &&
-              detail_ != emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.newBuilder((emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 148) {
-            adShootingSettleInfoBuilder_.mergeFrom(value);
-          }
-          adShootingSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 148;
-        return this;
-      }
-      /**
-       * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-       */
-      public Builder clearAdShootingSettleInfo() {
-        if (adShootingSettleInfoBuilder_ == null) {
-          if (detailCase_ == 148) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 148) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          adShootingSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-       */
-      public emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.Builder getAdShootingSettleInfoBuilder() {
-        return getAdShootingSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfoOrBuilder getAdShootingSettleInfoOrBuilder() {
-        if ((detailCase_ == 148) && (adShootingSettleInfoBuilder_ != null)) {
-          return adShootingSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 148) {
-            return (emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.AdShootingSettleInfo ad_shooting_settle_info = 148;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo, emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.Builder, emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfoOrBuilder> 
-          getAdShootingSettleInfoFieldBuilder() {
-        if (adShootingSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 148)) {
-            detail_ = emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.getDefaultInstance();
-          }
-          adShootingSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo, emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo.Builder, emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.AdShootingSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 148;
-        onChanged();;
-        return adShootingSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo, emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.Builder, emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfoOrBuilder> towerChallengeSettleInfoBuilder_;
-      /**
-       * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-       * @return Whether the towerChallengeSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasTowerChallengeSettleInfo() {
-        return detailCase_ == 1404;
-      }
-      /**
-       * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-       * @return The towerChallengeSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo getTowerChallengeSettleInfo() {
-        if (towerChallengeSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1404) {
-            return (emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1404) {
-            return towerChallengeSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-       */
-      public Builder setTowerChallengeSettleInfo(emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo value) {
-        if (towerChallengeSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          towerChallengeSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1404;
-        return this;
-      }
-      /**
-       * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-       */
-      public Builder setTowerChallengeSettleInfo(
-          emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.Builder builderForValue) {
-        if (towerChallengeSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          towerChallengeSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1404;
-        return this;
-      }
-      /**
-       * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-       */
-      public Builder mergeTowerChallengeSettleInfo(emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo value) {
-        if (towerChallengeSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1404 &&
-              detail_ != emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.newBuilder((emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1404) {
-            towerChallengeSettleInfoBuilder_.mergeFrom(value);
-          }
-          towerChallengeSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1404;
-        return this;
-      }
-      /**
-       * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-       */
-      public Builder clearTowerChallengeSettleInfo() {
-        if (towerChallengeSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1404) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1404) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          towerChallengeSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-       */
-      public emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.Builder getTowerChallengeSettleInfoBuilder() {
-        return getTowerChallengeSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfoOrBuilder getTowerChallengeSettleInfoOrBuilder() {
-        if ((detailCase_ == 1404) && (towerChallengeSettleInfoBuilder_ != null)) {
-          return towerChallengeSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1404) {
-            return (emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.TowerChallengeSettleInfo tower_challenge_settle_info = 1404;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo, emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.Builder, emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfoOrBuilder> 
-          getTowerChallengeSettleInfoFieldBuilder() {
-        if (towerChallengeSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1404)) {
-            detail_ = emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.getDefaultInstance();
-          }
-          towerChallengeSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo, emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo.Builder, emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.TowerChallengeSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1404;
-        onChanged();;
-        return towerChallengeSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry, emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.Builder, emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntryOrBuilder> galleryContextEntryBuilder_;
-      /**
-       * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-       * @return Whether the galleryContextEntry field is set.
-       */
-      @java.lang.Override
-      public boolean hasGalleryContextEntry() {
-        return detailCase_ == 30;
-      }
-      /**
-       * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-       * @return The galleryContextEntry.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry getGalleryContextEntry() {
-        if (galleryContextEntryBuilder_ == null) {
-          if (detailCase_ == 30) {
-            return (emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry) detail_;
-          }
-          return emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.getDefaultInstance();
-        } else {
-          if (detailCase_ == 30) {
-            return galleryContextEntryBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-       */
-      public Builder setGalleryContextEntry(emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry value) {
-        if (galleryContextEntryBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          galleryContextEntryBuilder_.setMessage(value);
-        }
-        detailCase_ = 30;
-        return this;
-      }
-      /**
-       * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-       */
-      public Builder setGalleryContextEntry(
-          emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.Builder builderForValue) {
-        if (galleryContextEntryBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          galleryContextEntryBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 30;
-        return this;
-      }
-      /**
-       * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-       */
-      public Builder mergeGalleryContextEntry(emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry value) {
-        if (galleryContextEntryBuilder_ == null) {
-          if (detailCase_ == 30 &&
-              detail_ != emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.newBuilder((emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 30) {
-            galleryContextEntryBuilder_.mergeFrom(value);
-          }
-          galleryContextEntryBuilder_.setMessage(value);
-        }
-        detailCase_ = 30;
-        return this;
-      }
-      /**
-       * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-       */
-      public Builder clearGalleryContextEntry() {
-        if (galleryContextEntryBuilder_ == null) {
-          if (detailCase_ == 30) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 30) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          galleryContextEntryBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-       */
-      public emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.Builder getGalleryContextEntryBuilder() {
-        return getGalleryContextEntryFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntryOrBuilder getGalleryContextEntryOrBuilder() {
-        if ((detailCase_ == 30) && (galleryContextEntryBuilder_ != null)) {
-          return galleryContextEntryBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 30) {
-            return (emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry) detail_;
-          }
-          return emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.GalleryContextEntry gallery_context_entry = 30;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry, emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.Builder, emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntryOrBuilder> 
-          getGalleryContextEntryFieldBuilder() {
-        if (galleryContextEntryBuilder_ == null) {
-          if (!(detailCase_ == 30)) {
-            detail_ = emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.getDefaultInstance();
-          }
-          galleryContextEntryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry, emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry.Builder, emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntryOrBuilder>(
-                  (emu.grasscutter.net.proto.GalleryContextEntryOuterClass.GalleryContextEntry) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 30;
-        onChanged();;
-        return galleryContextEntryBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo, emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.Builder, emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfoOrBuilder> natlanDrillBattleSettleInfoBuilder_;
-      /**
-       * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-       * @return Whether the natlanDrillBattleSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasNatlanDrillBattleSettleInfo() {
-        return detailCase_ == 942;
-      }
-      /**
-       * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-       * @return The natlanDrillBattleSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo getNatlanDrillBattleSettleInfo() {
-        if (natlanDrillBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 942) {
-            return (emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 942) {
-            return natlanDrillBattleSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-       */
-      public Builder setNatlanDrillBattleSettleInfo(emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo value) {
-        if (natlanDrillBattleSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          natlanDrillBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 942;
-        return this;
-      }
-      /**
-       * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-       */
-      public Builder setNatlanDrillBattleSettleInfo(
-          emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.Builder builderForValue) {
-        if (natlanDrillBattleSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          natlanDrillBattleSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 942;
-        return this;
-      }
-      /**
-       * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-       */
-      public Builder mergeNatlanDrillBattleSettleInfo(emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo value) {
-        if (natlanDrillBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 942 &&
-              detail_ != emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.newBuilder((emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 942) {
-            natlanDrillBattleSettleInfoBuilder_.mergeFrom(value);
-          }
-          natlanDrillBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 942;
-        return this;
-      }
-      /**
-       * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-       */
-      public Builder clearNatlanDrillBattleSettleInfo() {
-        if (natlanDrillBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 942) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 942) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          natlanDrillBattleSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-       */
-      public emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.Builder getNatlanDrillBattleSettleInfoBuilder() {
-        return getNatlanDrillBattleSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfoOrBuilder getNatlanDrillBattleSettleInfoOrBuilder() {
-        if ((detailCase_ == 942) && (natlanDrillBattleSettleInfoBuilder_ != null)) {
-          return natlanDrillBattleSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 942) {
-            return (emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.NatlanDrillBattleSettleInfo natlan_drill_battle_settle_info = 942;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo, emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.Builder, emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfoOrBuilder> 
-          getNatlanDrillBattleSettleInfoFieldBuilder() {
-        if (natlanDrillBattleSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 942)) {
-            detail_ = emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.getDefaultInstance();
-          }
-          natlanDrillBattleSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo, emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo.Builder, emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.NatlanDrillBattleSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 942;
-        onChanged();;
-        return natlanDrillBattleSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo, emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.Builder, emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfoOrBuilder> natlanArenaSettleInfoBuilder_;
-      /**
-       * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-       * @return Whether the natlanArenaSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasNatlanArenaSettleInfo() {
-        return detailCase_ == 721;
-      }
-      /**
-       * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-       * @return The natlanArenaSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo getNatlanArenaSettleInfo() {
-        if (natlanArenaSettleInfoBuilder_ == null) {
-          if (detailCase_ == 721) {
-            return (emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 721) {
-            return natlanArenaSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-       */
-      public Builder setNatlanArenaSettleInfo(emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo value) {
-        if (natlanArenaSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          natlanArenaSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 721;
-        return this;
-      }
-      /**
-       * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-       */
-      public Builder setNatlanArenaSettleInfo(
-          emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.Builder builderForValue) {
-        if (natlanArenaSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          natlanArenaSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 721;
-        return this;
-      }
-      /**
-       * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-       */
-      public Builder mergeNatlanArenaSettleInfo(emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo value) {
-        if (natlanArenaSettleInfoBuilder_ == null) {
-          if (detailCase_ == 721 &&
-              detail_ != emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.newBuilder((emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 721) {
-            natlanArenaSettleInfoBuilder_.mergeFrom(value);
-          }
-          natlanArenaSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 721;
-        return this;
-      }
-      /**
-       * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-       */
-      public Builder clearNatlanArenaSettleInfo() {
-        if (natlanArenaSettleInfoBuilder_ == null) {
-          if (detailCase_ == 721) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 721) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          natlanArenaSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-       */
-      public emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.Builder getNatlanArenaSettleInfoBuilder() {
-        return getNatlanArenaSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfoOrBuilder getNatlanArenaSettleInfoOrBuilder() {
-        if ((detailCase_ == 721) && (natlanArenaSettleInfoBuilder_ != null)) {
-          return natlanArenaSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 721) {
-            return (emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.NatlanArenaSettleInfo natlan_arena_settle_info = 721;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo, emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.Builder, emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfoOrBuilder> 
-          getNatlanArenaSettleInfoFieldBuilder() {
-        if (natlanArenaSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 721)) {
-            detail_ = emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.getDefaultInstance();
-          }
-          natlanArenaSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo, emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo.Builder, emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.NatlanArenaSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 721;
-        onChanged();;
-        return natlanArenaSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo, emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.Builder, emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfoOrBuilder> saurus1V3SettleInfoBuilder_;
-      /**
-       * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-       * @return Whether the saurus1V3SettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasSaurus1V3SettleInfo() {
-        return detailCase_ == 821;
-      }
-      /**
-       * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-       * @return The saurus1V3SettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo getSaurus1V3SettleInfo() {
-        if (saurus1V3SettleInfoBuilder_ == null) {
-          if (detailCase_ == 821) {
-            return (emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 821) {
-            return saurus1V3SettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-       */
-      public Builder setSaurus1V3SettleInfo(emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo value) {
-        if (saurus1V3SettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          saurus1V3SettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 821;
-        return this;
-      }
-      /**
-       * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-       */
-      public Builder setSaurus1V3SettleInfo(
-          emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.Builder builderForValue) {
-        if (saurus1V3SettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          saurus1V3SettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 821;
-        return this;
-      }
-      /**
-       * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-       */
-      public Builder mergeSaurus1V3SettleInfo(emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo value) {
-        if (saurus1V3SettleInfoBuilder_ == null) {
-          if (detailCase_ == 821 &&
-              detail_ != emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.newBuilder((emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 821) {
-            saurus1V3SettleInfoBuilder_.mergeFrom(value);
-          }
-          saurus1V3SettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 821;
-        return this;
-      }
-      /**
-       * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-       */
-      public Builder clearSaurus1V3SettleInfo() {
-        if (saurus1V3SettleInfoBuilder_ == null) {
-          if (detailCase_ == 821) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 821) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          saurus1V3SettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-       */
-      public emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.Builder getSaurus1V3SettleInfoBuilder() {
-        return getSaurus1V3SettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfoOrBuilder getSaurus1V3SettleInfoOrBuilder() {
-        if ((detailCase_ == 821) && (saurus1V3SettleInfoBuilder_ != null)) {
-          return saurus1V3SettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 821) {
-            return (emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.Saurus1V3SettleInfo saurus1_v3_settle_info = 821;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo, emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.Builder, emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfoOrBuilder> 
-          getSaurus1V3SettleInfoFieldBuilder() {
-        if (saurus1V3SettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 821)) {
-            detail_ = emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.getDefaultInstance();
-          }
-          saurus1V3SettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo, emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo.Builder, emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.Saurus1V3SettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 821;
-        onChanged();;
-        return saurus1V3SettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo, emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.Builder, emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfoOrBuilder> diversityBattleSettleInfoBuilder_;
-      /**
-       * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-       * @return Whether the diversityBattleSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasDiversityBattleSettleInfo() {
-        return detailCase_ == 413;
-      }
-      /**
-       * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-       * @return The diversityBattleSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo getDiversityBattleSettleInfo() {
-        if (diversityBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 413) {
-            return (emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 413) {
-            return diversityBattleSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-       */
-      public Builder setDiversityBattleSettleInfo(emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo value) {
-        if (diversityBattleSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          diversityBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 413;
-        return this;
-      }
-      /**
-       * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-       */
-      public Builder setDiversityBattleSettleInfo(
-          emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.Builder builderForValue) {
-        if (diversityBattleSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          diversityBattleSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 413;
-        return this;
-      }
-      /**
-       * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-       */
-      public Builder mergeDiversityBattleSettleInfo(emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo value) {
-        if (diversityBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 413 &&
-              detail_ != emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.newBuilder((emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 413) {
-            diversityBattleSettleInfoBuilder_.mergeFrom(value);
-          }
-          diversityBattleSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 413;
-        return this;
-      }
-      /**
-       * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-       */
-      public Builder clearDiversityBattleSettleInfo() {
-        if (diversityBattleSettleInfoBuilder_ == null) {
-          if (detailCase_ == 413) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 413) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          diversityBattleSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-       */
-      public emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.Builder getDiversityBattleSettleInfoBuilder() {
-        return getDiversityBattleSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfoOrBuilder getDiversityBattleSettleInfoOrBuilder() {
-        if ((detailCase_ == 413) && (diversityBattleSettleInfoBuilder_ != null)) {
-          return diversityBattleSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 413) {
-            return (emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.DiversityBattleSettleInfo diversity_battle_settle_info = 413;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo, emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.Builder, emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfoOrBuilder> 
-          getDiversityBattleSettleInfoFieldBuilder() {
-        if (diversityBattleSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 413)) {
-            detail_ = emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.getDefaultInstance();
-          }
-          diversityBattleSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo, emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo.Builder, emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.DiversityBattleSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 413;
-        onChanged();;
-        return diversityBattleSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo, emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.Builder, emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfoOrBuilder> themeParkParkourSettleInfoBuilder_;
-      /**
-       * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-       * @return Whether the themeParkParkourSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasThemeParkParkourSettleInfo() {
-        return detailCase_ == 2020;
-      }
-      /**
-       * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-       * @return The themeParkParkourSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo getThemeParkParkourSettleInfo() {
-        if (themeParkParkourSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2020) {
-            return (emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 2020) {
-            return themeParkParkourSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-       */
-      public Builder setThemeParkParkourSettleInfo(emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo value) {
-        if (themeParkParkourSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          themeParkParkourSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 2020;
-        return this;
-      }
-      /**
-       * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-       */
-      public Builder setThemeParkParkourSettleInfo(
-          emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.Builder builderForValue) {
-        if (themeParkParkourSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          themeParkParkourSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 2020;
-        return this;
-      }
-      /**
-       * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-       */
-      public Builder mergeThemeParkParkourSettleInfo(emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo value) {
-        if (themeParkParkourSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2020 &&
-              detail_ != emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.newBuilder((emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 2020) {
-            themeParkParkourSettleInfoBuilder_.mergeFrom(value);
-          }
-          themeParkParkourSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 2020;
-        return this;
-      }
-      /**
-       * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-       */
-      public Builder clearThemeParkParkourSettleInfo() {
-        if (themeParkParkourSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2020) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 2020) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          themeParkParkourSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-       */
-      public emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.Builder getThemeParkParkourSettleInfoBuilder() {
-        return getThemeParkParkourSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfoOrBuilder getThemeParkParkourSettleInfoOrBuilder() {
-        if ((detailCase_ == 2020) && (themeParkParkourSettleInfoBuilder_ != null)) {
-          return themeParkParkourSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 2020) {
-            return (emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.ThemeParkParkourSettleInfo theme_park_parkour_settle_info = 2020;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo, emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.Builder, emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfoOrBuilder> 
-          getThemeParkParkourSettleInfoFieldBuilder() {
-        if (themeParkParkourSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 2020)) {
-            detail_ = emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.getDefaultInstance();
-          }
-          themeParkParkourSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo, emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo.Builder, emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.ThemeParkParkourSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 2020;
-        onChanged();;
-        return themeParkParkourSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo, emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.Builder, emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfoOrBuilder> themeParkTriathlonSettleInfoBuilder_;
-      /**
-       * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-       * @return Whether the themeParkTriathlonSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasThemeParkTriathlonSettleInfo() {
-        return detailCase_ == 1129;
-      }
-      /**
-       * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-       * @return The themeParkTriathlonSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo getThemeParkTriathlonSettleInfo() {
-        if (themeParkTriathlonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1129) {
-            return (emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 1129) {
-            return themeParkTriathlonSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-       */
-      public Builder setThemeParkTriathlonSettleInfo(emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo value) {
-        if (themeParkTriathlonSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          themeParkTriathlonSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1129;
-        return this;
-      }
-      /**
-       * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-       */
-      public Builder setThemeParkTriathlonSettleInfo(
-          emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.Builder builderForValue) {
-        if (themeParkTriathlonSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          themeParkTriathlonSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 1129;
-        return this;
-      }
-      /**
-       * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-       */
-      public Builder mergeThemeParkTriathlonSettleInfo(emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo value) {
-        if (themeParkTriathlonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1129 &&
-              detail_ != emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.newBuilder((emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 1129) {
-            themeParkTriathlonSettleInfoBuilder_.mergeFrom(value);
-          }
-          themeParkTriathlonSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 1129;
-        return this;
-      }
-      /**
-       * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-       */
-      public Builder clearThemeParkTriathlonSettleInfo() {
-        if (themeParkTriathlonSettleInfoBuilder_ == null) {
-          if (detailCase_ == 1129) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 1129) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          themeParkTriathlonSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-       */
-      public emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.Builder getThemeParkTriathlonSettleInfoBuilder() {
-        return getThemeParkTriathlonSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfoOrBuilder getThemeParkTriathlonSettleInfoOrBuilder() {
-        if ((detailCase_ == 1129) && (themeParkTriathlonSettleInfoBuilder_ != null)) {
-          return themeParkTriathlonSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 1129) {
-            return (emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.ThemeParkTriathlonSettleInfo theme_park_triathlon_settle_info = 1129;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo, emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.Builder, emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfoOrBuilder> 
-          getThemeParkTriathlonSettleInfoFieldBuilder() {
-        if (themeParkTriathlonSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 1129)) {
-            detail_ = emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.getDefaultInstance();
-          }
-          themeParkTriathlonSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo, emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo.Builder, emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.ThemeParkTriathlonSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 1129;
-        onChanged();;
-        return themeParkTriathlonSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo, emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.Builder, emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfoOrBuilder> mvm2PveSettleInfoBuilder_;
-      /**
-       * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-       * @return Whether the mvm2PveSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasMvm2PveSettleInfo() {
-        return detailCase_ == 2039;
-      }
-      /**
-       * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-       * @return The mvm2PveSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo getMvm2PveSettleInfo() {
-        if (mvm2PveSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2039) {
-            return (emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 2039) {
-            return mvm2PveSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-       */
-      public Builder setMvm2PveSettleInfo(emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo value) {
-        if (mvm2PveSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          mvm2PveSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 2039;
-        return this;
-      }
-      /**
-       * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-       */
-      public Builder setMvm2PveSettleInfo(
-          emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.Builder builderForValue) {
-        if (mvm2PveSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          mvm2PveSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 2039;
-        return this;
-      }
-      /**
-       * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-       */
-      public Builder mergeMvm2PveSettleInfo(emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo value) {
-        if (mvm2PveSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2039 &&
-              detail_ != emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.newBuilder((emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 2039) {
-            mvm2PveSettleInfoBuilder_.mergeFrom(value);
-          }
-          mvm2PveSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 2039;
-        return this;
-      }
-      /**
-       * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-       */
-      public Builder clearMvm2PveSettleInfo() {
-        if (mvm2PveSettleInfoBuilder_ == null) {
-          if (detailCase_ == 2039) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 2039) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          mvm2PveSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-       */
-      public emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.Builder getMvm2PveSettleInfoBuilder() {
-        return getMvm2PveSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfoOrBuilder getMvm2PveSettleInfoOrBuilder() {
-        if ((detailCase_ == 2039) && (mvm2PveSettleInfoBuilder_ != null)) {
-          return mvm2PveSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 2039) {
-            return (emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.Mvm2PveSettleInfo mvm2_pve_settle_info = 2039;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo, emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.Builder, emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfoOrBuilder> 
-          getMvm2PveSettleInfoFieldBuilder() {
-        if (mvm2PveSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 2039)) {
-            detail_ = emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.getDefaultInstance();
-          }
-          mvm2PveSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo, emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo.Builder, emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.Mvm2PveSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 2039;
-        onChanged();;
-        return mvm2PveSettleInfoBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo, emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.Builder, emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfoOrBuilder> mvm2SimulateSettleInfoBuilder_;
-      /**
-       * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-       * @return Whether the mvm2SimulateSettleInfo field is set.
-       */
-      @java.lang.Override
-      public boolean hasMvm2SimulateSettleInfo() {
-        return detailCase_ == 701;
-      }
-      /**
-       * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-       * @return The mvm2SimulateSettleInfo.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo getMvm2SimulateSettleInfo() {
-        if (mvm2SimulateSettleInfoBuilder_ == null) {
-          if (detailCase_ == 701) {
-            return (emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.getDefaultInstance();
-        } else {
-          if (detailCase_ == 701) {
-            return mvm2SimulateSettleInfoBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-       */
-      public Builder setMvm2SimulateSettleInfo(emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo value) {
-        if (mvm2SimulateSettleInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          detail_ = value;
-          onChanged();
-        } else {
-          mvm2SimulateSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 701;
-        return this;
-      }
-      /**
-       * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-       */
-      public Builder setMvm2SimulateSettleInfo(
-          emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.Builder builderForValue) {
-        if (mvm2SimulateSettleInfoBuilder_ == null) {
-          detail_ = builderForValue.build();
-          onChanged();
-        } else {
-          mvm2SimulateSettleInfoBuilder_.setMessage(builderForValue.build());
-        }
-        detailCase_ = 701;
-        return this;
-      }
-      /**
-       * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-       */
-      public Builder mergeMvm2SimulateSettleInfo(emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo value) {
-        if (mvm2SimulateSettleInfoBuilder_ == null) {
-          if (detailCase_ == 701 &&
-              detail_ != emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.getDefaultInstance()) {
-            detail_ = emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.newBuilder((emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo) detail_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            detail_ = value;
-          }
-          onChanged();
-        } else {
-          if (detailCase_ == 701) {
-            mvm2SimulateSettleInfoBuilder_.mergeFrom(value);
-          }
-          mvm2SimulateSettleInfoBuilder_.setMessage(value);
-        }
-        detailCase_ = 701;
-        return this;
-      }
-      /**
-       * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-       */
-      public Builder clearMvm2SimulateSettleInfo() {
-        if (mvm2SimulateSettleInfoBuilder_ == null) {
-          if (detailCase_ == 701) {
-            detailCase_ = 0;
-            detail_ = null;
-            onChanged();
-          }
-        } else {
-          if (detailCase_ == 701) {
-            detailCase_ = 0;
-            detail_ = null;
-          }
-          mvm2SimulateSettleInfoBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-       */
-      public emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.Builder getMvm2SimulateSettleInfoBuilder() {
-        return getMvm2SimulateSettleInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfoOrBuilder getMvm2SimulateSettleInfoOrBuilder() {
-        if ((detailCase_ == 701) && (mvm2SimulateSettleInfoBuilder_ != null)) {
-          return mvm2SimulateSettleInfoBuilder_.getMessageOrBuilder();
-        } else {
-          if (detailCase_ == 701) {
-            return (emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo) detail_;
-          }
-          return emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.Mvm2SimulateSettleInfo mvm2_simulate_settle_info = 701;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo, emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.Builder, emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfoOrBuilder> 
-          getMvm2SimulateSettleInfoFieldBuilder() {
-        if (mvm2SimulateSettleInfoBuilder_ == null) {
-          if (!(detailCase_ == 701)) {
-            detail_ = emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.getDefaultInstance();
-          }
-          mvm2SimulateSettleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo, emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo.Builder, emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.Mvm2SimulateSettleInfo) detail_,
-                  getParentForChildren(),
-                  isClean());
-          detail_ = null;
-        }
-        detailCase_ = 701;
-        onChanged();;
-        return mvm2SimulateSettleInfoBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -13756,15 +5550,15 @@ public final class DungeonSettleNotifyOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_DungeonSettleNotify_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_DungeonSettleNotify_SettleShowEntry_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_DungeonSettleNotify_SettleShowEntry_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_DungeonSettleNotify_StrengthenPointDataMapEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_DungeonSettleNotify_StrengthenPointDataMapEntry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_DungeonSettleNotify_SettleShowEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_DungeonSettleNotify_SettleShowEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -13774,277 +5568,122 @@ public final class DungeonSettleNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031DungeonSettleNotify.proto\032 AcrobaticsB" +
-      "attleSettleInfo.proto\032\032AdShootingSettleI" +
-      "nfo.proto\032\034AutoTimeStopSettleInfo.proto\032" +
-      "\034BadgetBattleSettleInfo.proto\032\032BladeDanc" +
-      "eSettleInfo.proto\032\034BomberDodocoSettleInf" +
-      "o.proto\032\032BulletHellSettleInfo.proto\032\036Cer" +
-      "emonyBattleSettleInfo.proto\032(ChannelerSl" +
-      "abLoopDungeonResultInfo.proto\032\032CharMaste" +
-      "rSettleInfo.proto\032\"CooperateChallengeSet" +
-      "tleInfo.proto\032\"CrystalLinkDungeonSettleI" +
-      "nfo.proto\032\037DiversityBattleSettleInfo.pro" +
-      "to\032!DungeonSettleExhibitionInfo.proto\032&E" +
-      "ffigyChallengeDungeonResultInfo.proto\032!E" +
-      "ffigyChallengeV2SettleInfo.proto\032!Effigy" +
-      "ChallengeV5SettleInfo.proto\032 FairyTalesC" +
-      "ombatSettleInfo.proto\032\033FeverBattleSettle" +
-      "Info.proto\032\036FilmfestBattleSettleInfo.pro" +
-      "to\032\036FilmfestSniperSettleInfo.proto\032\037Fung" +
-      "usFighterV2SettleInfo.proto\032\037FungusFight" +
-      "erV3SettleInfo.proto\032\030GainBuffSettleInfo" +
-      ".proto\032\031GalleryContextEntry.proto\032\035GoalC" +
-      "hallengeSettleInfo.proto\032\'InspirationSpu" +
-      "rtDungeonSettleInfo.proto\032$InstableSpray" +
-      "DungeonSettleInfo.proto\032\"LostSamachurlSn" +
-      "eakSettleInfo.proto\032\031MistTrialSettleInfo" +
-      ".proto\032%MultiCharacterDungeonSettleInfo." +
-      "proto\032\027Mvm2PveSettleInfo.proto\032\034Mvm2Simu" +
-      "lateSettleInfo.proto\032\033NatlanArenaSettleI" +
-      "nfo.proto\032!NatlanDrillBattleSettleInfo.p" +
-      "roto\032\026PacmanSettleInfo.proto\032\017ParamList." +
-      "proto\032\037QuickTimeCombatSettleInfo.proto\032\034" +
-      "RechargeDiskSettleInfo.proto\032 RoguelikeD" +
-      "ungeonSettleInfo.proto\032\032RoleCombatSettle" +
-      "Info.proto\032\031Saurus1V3SettleInfo.proto\032\033S" +
-      "limeCannonSettleInfo.proto\032\034StaminaFight" +
-      "SettleInfo.proto\032\031StrengthenPointData.pr" +
-      "oto\032#SummerTimeV2DungeonSettleInfo.proto" +
-      "\032\031TeamChainSettleInfo.proto\032 ThemeParkPa" +
-      "rkourSettleInfo.proto\032\"ThemeParkTriathlo" +
-      "nSettleInfo.proto\032\036TowerChallengeSettleI" +
-      "nfo.proto\032\031TowerLevelEndNotify.proto\032\'Tr" +
-      "ialAvatarFirstPassDungeonNotify.proto\032 W" +
-      "indFieldDungeonSettleInfo.proto\"\302\036\n\023Dung" +
-      "eonSettleNotify\022\027\n\017player_uid_list\030\001 \003(\r" +
-      "\022\022\n\ndungeon_id\030\002 \001(\r\022\023\n\013ALHPCFABLPH\030\003 \001(" +
-      "\r\022\022\n\nclose_time\030\004 \001(\r\022\020\n\010use_time\030\007 \001(\r\022" +
-      "\023\n\013EPBCNMFNDAP\030\010 \003(\r\0229\n\013settle_show\030\t \003(" +
-      "\0132$.DungeonSettleNotify.SettleShowEntry\022" +
-      "\022\n\nis_success\030\013 \001(\010\022S\n\031strengthen_point_" +
-      "data_map\030\014 \003(\01320.DungeonSettleNotify.Str" +
-      "engthenPointDataMapEntry\022:\n\024exhibition_i" +
-      "nfo_list\030\r \003(\0132\034.DungeonSettleExhibition" +
-      "Info\022\016\n\006result\030\016 \001(\r\0227\n\026tower_level_end_" +
-      "notify\030\223\006 \001(\0132\024.TowerLevelEndNotifyH\000\022U\n" +
-      "&trial_avatar_first_pass_dungeon_notify\030" +
-      "\361\001 \001(\0132\".TrialAvatarFirstPassDungeonNoti" +
-      "fyH\000\022X\n(channeller_slab_loop_dungeon_res" +
-      "ult_info\030\203\005 \001(\0132#.ChannelerSlabLoopDunge" +
-      "onResultInfoH\000\022R\n$effigy_challenge_dunge" +
-      "on_result_info\030\204\001 \001(\0132!.EffigyChallengeD" +
-      "ungeonResultInfoH\000\022E\n\035roguelike_dungeon_" +
-      "settle_info\030\364\002 \001(\0132\033.RoguelikeDungeonSet" +
-      "tleInfoH\000\022B\n\030crystal_link_settle_info\030\334\001" +
-      " \001(\0132\035.CrystalLinkDungeonSettleInfoH\000\022L\n" +
-      "\"summer_time_v2_dungeon_settle_info\030u \001(" +
-      "\0132\036.SummerTimeV2DungeonSettleInfoH\000\022F\n\032i" +
-      "nstable_spray_settle_info\030\223\005 \001(\0132\037.Insta" +
-      "bleSprayDungeonSettleInfoH\000\022E\n\036wind_fiel" +
-      "d_dungeon_settle_info\030\034 \001(\0132\033.WindFieldD" +
-      "ungeonSettleInfoH\000\022H\n\037effigy_challenge_v" +
-      "2_settle_info\030\206\003 \001(\0132\034.EffigyChallengeV2" +
-      "SettleInfoH\000\0227\n\026team_chain_settle_info\030\351" +
-      "\007 \001(\0132\024.TeamChainSettleInfoH\000\0220\n\022pacman_" +
-      "settle_info\030\230\004 \001(\0132\021.PacmanSettleInfoH\000\022" +
-      "D\n\035fungus_fighter_v2_settle_info\030\233\016 \001(\0132" +
-      "\032.FungusFighterV2SettleInfoH\000\0229\n\027blade_d" +
-      "ance_settle_info\030\262\t \001(\0132\025.BladeDanceSett" +
-      "leInfoH\000\022P\n#multi_character_dungeon_sett" +
-      "le_info\030\331\007 \001(\0132 .MultiCharacterDungeonSe" +
-      "ttleInfoH\000\022T\n%inspiration_spurt_dungeon_" +
-      "settle_info\030\364\013 \001(\0132\".InspirationSpurtDun" +
-      "geonSettleInfoH\000\022D\n\035quick_time_combat_se" +
-      "ttle_info\030\217\014 \001(\0132\032.QuickTimeCombatSettle" +
-      "InfoH\000\022D\n\035fungus_fighter_v3_settle_info\030" +
-      "\306\001 \001(\0132\032.FungusFighterV3SettleInfoH\000\022A\n\033" +
-      "filmfest_battle_settle_info\030\344\014 \001(\0132\031.Fil" +
-      "mfestBattleSettleInfoH\000\022A\n\033filmfest_snip" +
-      "er_settle_info\030\241\t \001(\0132\031.FilmfestSniperSe" +
-      "ttleInfoH\000\022?\n\032goal_challenge_settle_info" +
-      "\030\254\006 \001(\0132\030.GoalChallengeSettleInfoH\000\0227\n\026m" +
-      "ist_trial_settle_info\030\357\017 \001(\0132\024.MistTrial" +
-      "SettleInfoH\000\022=\n\031stamina_fight_settle_inf" +
-      "o\030\253\001 \001(\0132\027.StaminaFightSettleInfoH\000\022J\n l" +
-      "ost_samachurl_sneak_settle_info\030\322\013 \001(\0132\035" +
-      ".LostSamachurlSneakSettleInfoH\000\022>\n\032auto_" +
-      "time_stop_settle_info\030\375\016 \001(\0132\027.AutoTimeS" +
-      "topSettleInfoH\000\022;\n\030slime_cannon_settle_i" +
-      "nfo\030\337\007 \001(\0132\026.SlimeCannonSettleInfoH\000\022H\n\037" +
-      "effigy_challenge_v5_settle_info\030\363\r \001(\0132\034" +
-      ".EffigyChallengeV5SettleInfoH\000\0229\n\027role_c" +
-      "ombat_settle_info\030\314\r \001(\0132\025.RoleCombatSet" +
-      "tleInfoH\000\022E\n\035acrobatics_battle_settle_in" +
-      "fo\030\240\007 \001(\0132\033.AcrobaticsBattleSettleInfoH\000" +
-      "\0229\n\027bullet_hell_settle_info\030\321\t \001(\0132\025.Bul" +
-      "letHellSettleInfoH\000\022<\n\031recharge_disk_set" +
-      "tle_info\030$ \001(\0132\027.RechargeDiskSettleInfoH" +
-      "\000\022F\n\036fairy_tales_combat_settle_info\030\320\006 \001" +
-      "(\0132\033.FairyTalesCombatSettleInfoH\000\0225\n\025gai" +
-      "n_buff_settle_info\030\243\007 \001(\0132\023.GainBuffSett" +
-      "leInfoH\000\0229\n\027char_master_settle_info\030\334\017 \001" +
-      "(\0132\025.CharMasterSettleInfoH\000\022;\n\030fever_bat" +
-      "tle_settle_info\030\371\001 \001(\0132\026.FeverBattleSett" +
-      "leInfoH\000\022I\n\037cooperate_challenge_settle_i" +
-      "nfo\030\354\007 \001(\0132\035.CooperateChallengeSettleInf" +
-      "oH\000\022=\n\031bomber_dodoco_settle_info\030\350\017 \001(\0132" +
-      "\027.BomberDodocoSettleInfoH\000\022A\n\033ceremony_b" +
-      "attle_settle_info\030\367\001 \001(\0132\031.CeremonyBattl" +
-      "eSettleInfoH\000\022=\n\031badget_battle_settle_in" +
-      "fo\030\202\014 \001(\0132\027.BadgetBattleSettleInfoH\000\0229\n\027" +
-      "ad_shooting_settle_info\030\224\001 \001(\0132\025.AdShoot" +
-      "ingSettleInfoH\000\022A\n\033tower_challenge_settl" +
-      "e_info\030\374\n \001(\0132\031.TowerChallengeSettleInfo" +
-      "H\000\0225\n\025gallery_context_entry\030\036 \001(\0132\024.Gall" +
-      "eryContextEntryH\000\022H\n\037natlan_drill_battle" +
-      "_settle_info\030\256\007 \001(\0132\034.NatlanDrillBattleS" +
-      "ettleInfoH\000\022;\n\030natlan_arena_settle_info\030" +
-      "\321\005 \001(\0132\026.NatlanArenaSettleInfoH\000\0227\n\026saur" +
-      "us1_v3_settle_info\030\265\006 \001(\0132\024.Saurus1V3Set" +
-      "tleInfoH\000\022C\n\034diversity_battle_settle_inf" +
-      "o\030\235\003 \001(\0132\032.DiversityBattleSettleInfoH\000\022F" +
-      "\n\036theme_park_parkour_settle_info\030\344\017 \001(\0132" +
-      "\033.ThemeParkParkourSettleInfoH\000\022J\n theme_" +
-      "park_triathlon_settle_info\030\351\010 \001(\0132\035.Them" +
-      "eParkTriathlonSettleInfoH\000\0223\n\024mvm2_pve_s" +
-      "ettle_info\030\367\017 \001(\0132\022.Mvm2PveSettleInfoH\000\022" +
-      "=\n\031mvm2_simulate_settle_info\030\275\005 \001(\0132\027.Mv" +
-      "m2SimulateSettleInfoH\000\032=\n\017SettleShowEntr" +
-      "y\022\013\n\003key\030\001 \001(\r\022\031\n\005value\030\002 \001(\0132\n.ParamLis" +
-      "t:\0028\001\032S\n\033StrengthenPointDataMapEntry\022\013\n\003" +
-      "key\030\001 \001(\r\022#\n\005value\030\002 \001(\0132\024.StrengthenPoi" +
-      "ntData:\0028\001B\010\n\006detailB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\031DungeonSettleNotify.proto\032!DungeonSett" +
+      "leExhibitionInfo.proto\032\031StrengthenPointD" +
+      "ata.proto\032\017ParamList.proto\032\031TowerLevelEn" +
+      "dNotify.proto\032\'TrialAvatarFirstPassDunge" +
+      "onNotify.proto\032)ChannellerSlabLoopDungeo" +
+      "nResultInfo.proto\032&EffigyChallengeDungeo" +
+      "nResultInfo.proto\032 RoguelikeDungeonSettl" +
+      "eInfo.proto\032\"CrystalLinkDungeonSettleInf" +
+      "o.proto\032#SummerTimeV2DungeonSettleInfo.p" +
+      "roto\032$InstableSprayDungeonSettleInfo.pro" +
+      "to\032 WindFieldDungeonSettleInfo.proto\032!Ef" +
+      "figyChallengeV2SettleInfo.proto\032\031TeamCha" +
+      "inSettleInfo.proto\032\026PacmanSettleInfo.pro" +
+      "to\032\037FungusFighterV2SettleInfo.proto\032\032Bla" +
+      "deDanceSettleInfo.proto\032%MultiCharacterD" +
+      "ungeonSettleInfo.proto\"\301\014\n\023DungeonSettle" +
+      "Notify\022\022\n\nis_success\030\003 \001(\010\022:\n\024exhibition" +
+      "_info_list\030\n \003(\0132\034.DungeonSettleExhibiti" +
+      "onInfo\022S\n\031strengthen_point_data_map\030\002 \003(" +
+      "\01320.DungeonSettleNotify.StrengthenPointD" +
+      "ataMapEntry\0229\n\013settle_show\030\r \003(\0132$.Dunge" +
+      "onSettleNotify.SettleShowEntry\022\031\n\021create" +
+      "_player_uid\030\001 \001(\r\022\022\n\ndungeon_id\030\007 \001(\r\022\022\n" +
+      "\nclose_time\030\006 \001(\r\022\016\n\006result\030\005 \001(\r\022\020\n\010use" +
+      "_time\030\017 \001(\r\022\026\n\016fail_cond_list\030\t \003(\r\0227\n\026t" +
+      "ower_level_end_notify\030\212\t \001(\0132\024.TowerLeve" +
+      "lEndNotifyH\000\022U\n&trial_avatar_first_pass_" +
+      "dungeon_notify\030\364\017 \001(\0132\".TrialAvatarFirst" +
+      "PassDungeonNotifyH\000\022Y\n(channeller_slab_l" +
+      "oop_dungeon_result_info\030\250\006 \001(\0132$.Channel" +
+      "lerSlabLoopDungeonResultInfoH\000\022R\n$effigy" +
+      "_challenge_dungeon_result_info\030\324\004 \001(\0132!." +
+      "EffigyChallengeDungeonResultInfoH\000\022E\n\035ro" +
+      "guelike_dungeon_settle_info\030\332\017 \001(\0132\033.Rog" +
+      "uelikeDungeonSettleInfoH\000\022B\n\030crystal_lin" +
+      "k_settle_info\030\241\n \001(\0132\035.CrystalLinkDungeo" +
+      "nSettleInfoH\000\022M\n\"summer_time_v2_dungeon_" +
+      "settle_info\030\256\001 \001(\0132\036.SummerTimeV2Dungeon" +
+      "SettleInfoH\000\022F\n\032instable_spray_settle_in" +
+      "fo\030\276\005 \001(\0132\037.InstableSprayDungeonSettleIn" +
+      "foH\000\022F\n\036wind_field_dungeon_settle_info\030\312" +
+      "\005 \001(\0132\033.WindFieldDungeonSettleInfoH\000\022H\n\037" +
+      "effigy_challenge_v2_settle_info\030\335\014 \001(\0132\034" +
+      ".EffigyChallengeV2SettleInfoH\000\0227\n\026team_c" +
+      "hain_settle_info\030\363\005 \001(\0132\024.TeamChainSettl" +
+      "eInfoH\000\0220\n\022pacman_settle_info\030\210\014 \001(\0132\021.P" +
+      "acmanSettleInfoH\000\022D\n\035fungus_fighter_v2_s" +
+      "ettle_info\030\336\016 \001(\0132\032.FungusFighterV2Settl" +
+      "eInfoH\000\0229\n\027blade_dance_settle_info\030\302\004 \001(" +
+      "\0132\025.BladeDanceSettleInfoH\000\022P\n#multi_char" +
+      "acter_dungeon_settle_info\030\355\016 \001(\0132 .Multi" +
+      "CharacterDungeonSettleInfoH\000\032S\n\033Strength" +
+      "enPointDataMapEntry\022\013\n\003key\030\001 \001(\r\022#\n\005valu" +
+      "e\030\002 \001(\0132\024.StrengthenPointData:\0028\001\032=\n\017Set" +
+      "tleShowEntry\022\013\n\003key\030\001 \001(\r\022\031\n\005value\030\002 \001(\013" +
+      "2\n.ParamList:\0028\001B\010\n\006detailB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GalleryContextEntryOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.ParamListOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.StrengthenPointDataOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ParamListOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.getDescriptor(),
         });
     internal_static_DungeonSettleNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_DungeonSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonSettleNotify_descriptor,
-        new java.lang.String[] { "PlayerUidList", "DungeonId", "ALHPCFABLPH", "CloseTime", "UseTime", "EPBCNMFNDAP", "SettleShow", "IsSuccess", "StrengthenPointDataMap", "ExhibitionInfoList", "Result", "TowerLevelEndNotify", "TrialAvatarFirstPassDungeonNotify", "ChannellerSlabLoopDungeonResultInfo", "EffigyChallengeDungeonResultInfo", "RoguelikeDungeonSettleInfo", "CrystalLinkSettleInfo", "SummerTimeV2DungeonSettleInfo", "InstableSpraySettleInfo", "WindFieldDungeonSettleInfo", "EffigyChallengeV2SettleInfo", "TeamChainSettleInfo", "PacmanSettleInfo", "FungusFighterV2SettleInfo", "BladeDanceSettleInfo", "MultiCharacterDungeonSettleInfo", "InspirationSpurtDungeonSettleInfo", "QuickTimeCombatSettleInfo", "FungusFighterV3SettleInfo", "FilmfestBattleSettleInfo", "FilmfestSniperSettleInfo", "GoalChallengeSettleInfo", "MistTrialSettleInfo", "StaminaFightSettleInfo", "LostSamachurlSneakSettleInfo", "AutoTimeStopSettleInfo", "SlimeCannonSettleInfo", "EffigyChallengeV5SettleInfo", "RoleCombatSettleInfo", "AcrobaticsBattleSettleInfo", "BulletHellSettleInfo", "RechargeDiskSettleInfo", "FairyTalesCombatSettleInfo", "GainBuffSettleInfo", "CharMasterSettleInfo", "FeverBattleSettleInfo", "CooperateChallengeSettleInfo", "BomberDodocoSettleInfo", "CeremonyBattleSettleInfo", "BadgetBattleSettleInfo", "AdShootingSettleInfo", "TowerChallengeSettleInfo", "GalleryContextEntry", "NatlanDrillBattleSettleInfo", "NatlanArenaSettleInfo", "Saurus1V3SettleInfo", "DiversityBattleSettleInfo", "ThemeParkParkourSettleInfo", "ThemeParkTriathlonSettleInfo", "Mvm2PveSettleInfo", "Mvm2SimulateSettleInfo", "Detail", });
-    internal_static_DungeonSettleNotify_SettleShowEntry_descriptor =
-      internal_static_DungeonSettleNotify_descriptor.getNestedTypes().get(0);
-    internal_static_DungeonSettleNotify_SettleShowEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_DungeonSettleNotify_SettleShowEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new java.lang.String[] { "IsSuccess", "ExhibitionInfoList", "StrengthenPointDataMap", "SettleShow", "CreatePlayerUid", "DungeonId", "CloseTime", "Result", "UseTime", "FailCondList", "TowerLevelEndNotify", "TrialAvatarFirstPassDungeonNotify", "ChannellerSlabLoopDungeonResultInfo", "EffigyChallengeDungeonResultInfo", "RoguelikeDungeonSettleInfo", "CrystalLinkSettleInfo", "SummerTimeV2DungeonSettleInfo", "InstableSpraySettleInfo", "WindFieldDungeonSettleInfo", "EffigyChallengeV2SettleInfo", "TeamChainSettleInfo", "PacmanSettleInfo", "FungusFighterV2SettleInfo", "BladeDanceSettleInfo", "MultiCharacterDungeonSettleInfo", "Detail", });
     internal_static_DungeonSettleNotify_StrengthenPointDataMapEntry_descriptor =
-      internal_static_DungeonSettleNotify_descriptor.getNestedTypes().get(1);
+      internal_static_DungeonSettleNotify_descriptor.getNestedTypes().get(0);
     internal_static_DungeonSettleNotify_StrengthenPointDataMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonSettleNotify_StrengthenPointDataMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.AcrobaticsBattleSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AdShootingSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AutoTimeStopSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.BadgetBattleSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.BomberDodocoSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.BulletHellSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.CeremonyBattleSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.ChannelerSlabLoopDungeonResultInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.CharMasterSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.CooperateChallengeSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.DiversityBattleSettleInfoOuterClass.getDescriptor();
+    internal_static_DungeonSettleNotify_SettleShowEntry_descriptor =
+      internal_static_DungeonSettleNotify_descriptor.getNestedTypes().get(1);
+    internal_static_DungeonSettleNotify_SettleShowEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_DungeonSettleNotify_SettleShowEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
     emu.grasscutter.net.proto.DungeonSettleExhibitionInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.EffigyChallengeV5SettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.FairyTalesCombatSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.FeverBattleSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.FilmfestBattleSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.FilmfestSniperSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.FungusFighterV3SettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GainBuffSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GalleryContextEntryOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GoalChallengeSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.InspirationSpurtDungeonSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.LostSamachurlSneakSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.MistTrialSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.Mvm2PveSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.Mvm2SimulateSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.NatlanArenaSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.NatlanDrillBattleSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.ParamListOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.QuickTimeCombatSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.RechargeDiskSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.RoleCombatSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.Saurus1V3SettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.SlimeCannonSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.StaminaFightSettleInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.StrengthenPointDataOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.ThemeParkParkourSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.ThemeParkTriathlonSettleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.TowerChallengeSettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ParamListOuterClass.getDescriptor();
     emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.getDescriptor();
     emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ChannellerSlabLoopDungeonResultInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.RoguelikeDungeonSettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.CrystalLinkDungeonSettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SummerTimeV2DungeonSettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.InstableSprayDungeonSettleInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.TeamChainSettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.FungusFighterV2SettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MultiCharacterDungeonSettleInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

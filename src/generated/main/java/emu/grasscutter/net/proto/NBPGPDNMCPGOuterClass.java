@@ -19,28 +19,16 @@ public final class NBPGPDNMCPGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
      * @return A list containing the kLGIKGDJEFM.
      */
     java.util.List<java.lang.Integer> getKLGIKGDJEFMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
      * @return The count of kLGIKGDJEFM.
      */
     int getKLGIKGDJEFMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
      * @param index The index of the element to return.
      * @return The kLGIKGDJEFM at the given index.
@@ -48,87 +36,51 @@ public final class NBPGPDNMCPGOuterClass {
     int getKLGIKGDJEFM(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 1;</code>
      * @return Whether the aFFAELMAHHG field is set.
      */
     boolean hasAFFAELMAHHG();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 1;</code>
      * @return The aFFAELMAHHG.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getAFFAELMAHHG();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 1;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAFFAELMAHHGOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 scene_id = 11;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 6;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float DGDCJNEEGAN = 9;</code>
      * @return The dGDCJNEEGAN.
      */
     float getDGDCJNEEGAN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
@@ -283,10 +235,6 @@ public final class NBPGPDNMCPGOuterClass {
     public static final int KLGIKGDJEFM_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList kLGIKGDJEFM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
      * @return A list containing the kLGIKGDJEFM.
      */
@@ -296,10 +244,6 @@ public final class NBPGPDNMCPGOuterClass {
       return kLGIKGDJEFM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
      * @return The count of kLGIKGDJEFM.
      */
@@ -307,10 +251,6 @@ public final class NBPGPDNMCPGOuterClass {
       return kLGIKGDJEFM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
      * @param index The index of the element to return.
      * @return The kLGIKGDJEFM at the given index.
@@ -323,10 +263,6 @@ public final class NBPGPDNMCPGOuterClass {
     public static final int AFFAELMAHHG_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector aFFAELMAHHG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 1;</code>
      * @return Whether the aFFAELMAHHG field is set.
      */
@@ -335,10 +271,6 @@ public final class NBPGPDNMCPGOuterClass {
       return aFFAELMAHHG_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 1;</code>
      * @return The aFFAELMAHHG.
      */
@@ -347,10 +279,6 @@ public final class NBPGPDNMCPGOuterClass {
       return aFFAELMAHHG_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : aFFAELMAHHG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 1;</code>
      */
     @java.lang.Override
@@ -361,10 +289,6 @@ public final class NBPGPDNMCPGOuterClass {
     public static final int SCENE_ID_FIELD_NUMBER = 11;
     private int sceneId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 scene_id = 11;</code>
      * @return The sceneId.
      */
@@ -376,10 +300,6 @@ public final class NBPGPDNMCPGOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 6;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 6;</code>
      * @return The openTime.
      */
@@ -391,10 +311,6 @@ public final class NBPGPDNMCPGOuterClass {
     public static final int DGDCJNEEGAN_FIELD_NUMBER = 9;
     private float dGDCJNEEGAN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float DGDCJNEEGAN = 9;</code>
      * @return The dGDCJNEEGAN.
      */
@@ -406,10 +322,6 @@ public final class NBPGPDNMCPGOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 3;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
@@ -421,10 +333,6 @@ public final class NBPGPDNMCPGOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 10;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
@@ -436,10 +344,6 @@ public final class NBPGPDNMCPGOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
@@ -924,10 +828,6 @@ public final class NBPGPDNMCPGOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
        * @return A list containing the kLGIKGDJEFM.
        */
@@ -937,10 +837,6 @@ public final class NBPGPDNMCPGOuterClass {
                  java.util.Collections.unmodifiableList(kLGIKGDJEFM_) : kLGIKGDJEFM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
        * @return The count of kLGIKGDJEFM.
        */
@@ -948,10 +844,6 @@ public final class NBPGPDNMCPGOuterClass {
         return kLGIKGDJEFM_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
        * @param index The index of the element to return.
        * @return The kLGIKGDJEFM at the given index.
@@ -960,10 +852,6 @@ public final class NBPGPDNMCPGOuterClass {
         return kLGIKGDJEFM_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
        * @param index The index to set the value at.
        * @param value The kLGIKGDJEFM to set.
@@ -977,10 +865,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
        * @param value The kLGIKGDJEFM to add.
        * @return This builder for chaining.
@@ -992,10 +876,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
        * @param values The kLGIKGDJEFM to add.
        * @return This builder for chaining.
@@ -1009,10 +889,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KLGIKGDJEFM = 7;</code>
        * @return This builder for chaining.
        */
@@ -1027,10 +903,6 @@ public final class NBPGPDNMCPGOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> aFFAELMAHHGBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 1;</code>
        * @return Whether the aFFAELMAHHG field is set.
        */
@@ -1038,10 +910,6 @@ public final class NBPGPDNMCPGOuterClass {
         return aFFAELMAHHGBuilder_ != null || aFFAELMAHHG_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 1;</code>
        * @return The aFFAELMAHHG.
        */
@@ -1053,10 +921,6 @@ public final class NBPGPDNMCPGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 1;</code>
        */
       public Builder setAFFAELMAHHG(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -1073,10 +937,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 1;</code>
        */
       public Builder setAFFAELMAHHG(
@@ -1091,10 +951,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 1;</code>
        */
       public Builder mergeAFFAELMAHHG(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -1113,10 +969,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 1;</code>
        */
       public Builder clearAFFAELMAHHG() {
@@ -1131,10 +983,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 1;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getAFFAELMAHHGBuilder() {
@@ -1143,10 +991,6 @@ public final class NBPGPDNMCPGOuterClass {
         return getAFFAELMAHHGFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 1;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAFFAELMAHHGOrBuilder() {
@@ -1158,10 +1002,6 @@ public final class NBPGPDNMCPGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1180,10 +1020,6 @@ public final class NBPGPDNMCPGOuterClass {
 
       private int sceneId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 scene_id = 11;</code>
        * @return The sceneId.
        */
@@ -1192,10 +1028,6 @@ public final class NBPGPDNMCPGOuterClass {
         return sceneId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 scene_id = 11;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
@@ -1207,10 +1039,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 scene_id = 11;</code>
        * @return This builder for chaining.
        */
@@ -1223,10 +1051,6 @@ public final class NBPGPDNMCPGOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 6;</code>
        * @return The openTime.
        */
@@ -1235,10 +1059,6 @@ public final class NBPGPDNMCPGOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 6;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -1250,10 +1070,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 6;</code>
        * @return This builder for chaining.
        */
@@ -1266,10 +1082,6 @@ public final class NBPGPDNMCPGOuterClass {
 
       private float dGDCJNEEGAN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float DGDCJNEEGAN = 9;</code>
        * @return The dGDCJNEEGAN.
        */
@@ -1278,10 +1090,6 @@ public final class NBPGPDNMCPGOuterClass {
         return dGDCJNEEGAN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float DGDCJNEEGAN = 9;</code>
        * @param value The dGDCJNEEGAN to set.
        * @return This builder for chaining.
@@ -1293,10 +1101,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float DGDCJNEEGAN = 9;</code>
        * @return This builder for chaining.
        */
@@ -1309,10 +1113,6 @@ public final class NBPGPDNMCPGOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return The isOpen.
        */
@@ -1321,10 +1121,6 @@ public final class NBPGPDNMCPGOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1336,10 +1132,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return This builder for chaining.
        */
@@ -1352,10 +1144,6 @@ public final class NBPGPDNMCPGOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @return The isFinish.
        */
@@ -1364,10 +1152,6 @@ public final class NBPGPDNMCPGOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1379,10 +1163,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @return This builder for chaining.
        */
@@ -1395,10 +1175,6 @@ public final class NBPGPDNMCPGOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
@@ -1407,10 +1183,6 @@ public final class NBPGPDNMCPGOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1422,10 +1194,6 @@ public final class NBPGPDNMCPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */

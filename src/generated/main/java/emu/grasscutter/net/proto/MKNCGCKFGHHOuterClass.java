@@ -19,72 +19,40 @@ public final class MKNCGCKFGHHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE> 
         getGGOKKDEKPJMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
      */
     emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE getGGOKKDEKPJM(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
      */
     int getGGOKKDEKPJMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIEOrBuilder> 
         getGGOKKDEKPJMOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
      */
     emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIEOrBuilder getGGOKKDEKPJMOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
      * @return A list containing the mMOGFEJPFAP.
      */
     java.util.List<java.lang.Integer> getMMOGFEJPFAPList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
      * @return The count of mMOGFEJPFAP.
      */
     int getMMOGFEJPFAPCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
      * @param index The index of the element to return.
      * @return The mMOGFEJPFAP at the given index.
@@ -92,30 +60,18 @@ public final class MKNCGCKFGHHOuterClass {
     int getMMOGFEJPFAP(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CCAMPLJLAOD = 5;</code>
      * @return The cCAMPLJLAOD.
      */
     int getCCAMPLJLAOD();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GOIAOOLPILK = 3;</code>
      * @return The gOIAOOLPILK.
      */
     int getGOIAOOLPILK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KBMHAALNDHI = 9;</code>
      * @return The kBMHAALNDHI.
      */
@@ -255,10 +211,6 @@ public final class MKNCGCKFGHHOuterClass {
     public static final int GGOKKDEKPJM_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE> gGOKKDEKPJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
      */
     @java.lang.Override
@@ -266,10 +218,6 @@ public final class MKNCGCKFGHHOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
      */
     @java.lang.Override
@@ -278,10 +226,6 @@ public final class MKNCGCKFGHHOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
      */
     @java.lang.Override
@@ -289,10 +233,6 @@ public final class MKNCGCKFGHHOuterClass {
       return gGOKKDEKPJM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
      */
     @java.lang.Override
@@ -300,10 +240,6 @@ public final class MKNCGCKFGHHOuterClass {
       return gGOKKDEKPJM_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
      */
     @java.lang.Override
@@ -315,10 +251,6 @@ public final class MKNCGCKFGHHOuterClass {
     public static final int MMOGFEJPFAP_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList mMOGFEJPFAP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
      * @return A list containing the mMOGFEJPFAP.
      */
@@ -328,10 +260,6 @@ public final class MKNCGCKFGHHOuterClass {
       return mMOGFEJPFAP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
      * @return The count of mMOGFEJPFAP.
      */
@@ -339,10 +267,6 @@ public final class MKNCGCKFGHHOuterClass {
       return mMOGFEJPFAP_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
      * @param index The index of the element to return.
      * @return The mMOGFEJPFAP at the given index.
@@ -355,10 +279,6 @@ public final class MKNCGCKFGHHOuterClass {
     public static final int CCAMPLJLAOD_FIELD_NUMBER = 5;
     private int cCAMPLJLAOD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CCAMPLJLAOD = 5;</code>
      * @return The cCAMPLJLAOD.
      */
@@ -370,10 +290,6 @@ public final class MKNCGCKFGHHOuterClass {
     public static final int GOIAOOLPILK_FIELD_NUMBER = 3;
     private int gOIAOOLPILK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GOIAOOLPILK = 3;</code>
      * @return The gOIAOOLPILK.
      */
@@ -385,10 +301,6 @@ public final class MKNCGCKFGHHOuterClass {
     public static final int KBMHAALNDHI_FIELD_NUMBER = 9;
     private int kBMHAALNDHI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KBMHAALNDHI = 9;</code>
      * @return The kBMHAALNDHI.
      */
@@ -848,10 +760,6 @@ public final class MKNCGCKFGHHOuterClass {
           emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE, emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE.Builder, emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIEOrBuilder> gGOKKDEKPJMBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE> getGGOKKDEKPJMList() {
@@ -862,10 +770,6 @@ public final class MKNCGCKFGHHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public int getGGOKKDEKPJMCount() {
@@ -876,10 +780,6 @@ public final class MKNCGCKFGHHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE getGGOKKDEKPJM(int index) {
@@ -890,10 +790,6 @@ public final class MKNCGCKFGHHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -911,10 +807,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -929,10 +821,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public Builder addGGOKKDEKPJM(emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE value) {
@@ -949,10 +837,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -970,10 +854,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -988,10 +868,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -1006,10 +882,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public Builder addAllGGOKKDEKPJM(
@@ -1025,10 +897,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public Builder clearGGOKKDEKPJM() {
@@ -1042,10 +910,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public Builder removeGGOKKDEKPJM(int index) {
@@ -1059,10 +923,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE.Builder getGGOKKDEKPJMBuilder(
@@ -1070,10 +930,6 @@ public final class MKNCGCKFGHHOuterClass {
         return getGGOKKDEKPJMFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIEOrBuilder getGGOKKDEKPJMOrBuilder(
@@ -1084,10 +940,6 @@ public final class MKNCGCKFGHHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIEOrBuilder> 
@@ -1099,10 +951,6 @@ public final class MKNCGCKFGHHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE.Builder addGGOKKDEKPJMBuilder() {
@@ -1110,10 +958,6 @@ public final class MKNCGCKFGHHOuterClass {
             emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE.Builder addGGOKKDEKPJMBuilder(
@@ -1122,10 +966,6 @@ public final class MKNCGCKFGHHOuterClass {
             index, emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CHMIAMPOAIE GGOKKDEKPJM = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CHMIAMPOAIEOuterClass.CHMIAMPOAIE.Builder> 
@@ -1155,10 +995,6 @@ public final class MKNCGCKFGHHOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
        * @return A list containing the mMOGFEJPFAP.
        */
@@ -1168,10 +1004,6 @@ public final class MKNCGCKFGHHOuterClass {
                  java.util.Collections.unmodifiableList(mMOGFEJPFAP_) : mMOGFEJPFAP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
        * @return The count of mMOGFEJPFAP.
        */
@@ -1179,10 +1011,6 @@ public final class MKNCGCKFGHHOuterClass {
         return mMOGFEJPFAP_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
        * @param index The index of the element to return.
        * @return The mMOGFEJPFAP at the given index.
@@ -1191,10 +1019,6 @@ public final class MKNCGCKFGHHOuterClass {
         return mMOGFEJPFAP_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
        * @param index The index to set the value at.
        * @param value The mMOGFEJPFAP to set.
@@ -1208,10 +1032,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
        * @param value The mMOGFEJPFAP to add.
        * @return This builder for chaining.
@@ -1223,10 +1043,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
        * @param values The mMOGFEJPFAP to add.
        * @return This builder for chaining.
@@ -1240,10 +1056,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MMOGFEJPFAP = 12;</code>
        * @return This builder for chaining.
        */
@@ -1256,10 +1068,6 @@ public final class MKNCGCKFGHHOuterClass {
 
       private int cCAMPLJLAOD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CCAMPLJLAOD = 5;</code>
        * @return The cCAMPLJLAOD.
        */
@@ -1268,10 +1076,6 @@ public final class MKNCGCKFGHHOuterClass {
         return cCAMPLJLAOD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CCAMPLJLAOD = 5;</code>
        * @param value The cCAMPLJLAOD to set.
        * @return This builder for chaining.
@@ -1283,10 +1087,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CCAMPLJLAOD = 5;</code>
        * @return This builder for chaining.
        */
@@ -1299,10 +1099,6 @@ public final class MKNCGCKFGHHOuterClass {
 
       private int gOIAOOLPILK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GOIAOOLPILK = 3;</code>
        * @return The gOIAOOLPILK.
        */
@@ -1311,10 +1107,6 @@ public final class MKNCGCKFGHHOuterClass {
         return gOIAOOLPILK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GOIAOOLPILK = 3;</code>
        * @param value The gOIAOOLPILK to set.
        * @return This builder for chaining.
@@ -1326,10 +1118,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GOIAOOLPILK = 3;</code>
        * @return This builder for chaining.
        */
@@ -1342,10 +1130,6 @@ public final class MKNCGCKFGHHOuterClass {
 
       private int kBMHAALNDHI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KBMHAALNDHI = 9;</code>
        * @return The kBMHAALNDHI.
        */
@@ -1354,10 +1138,6 @@ public final class MKNCGCKFGHHOuterClass {
         return kBMHAALNDHI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KBMHAALNDHI = 9;</code>
        * @param value The kBMHAALNDHI to set.
        * @return This builder for chaining.
@@ -1369,10 +1149,6 @@ public final class MKNCGCKFGHHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KBMHAALNDHI = 9;</code>
        * @return This builder for chaining.
        */

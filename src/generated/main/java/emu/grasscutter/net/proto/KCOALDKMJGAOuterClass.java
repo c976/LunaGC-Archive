@@ -19,40 +19,24 @@ public final class KCOALDKMJGAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 4;</code>
      * @return The hBILFAMJDKG.
      */
     int getHBILFAMJDKG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AIELAJBPDOH = 2;</code>
      * @return The aIELAJBPDOH.
      */
@@ -158,10 +142,6 @@ public final class KCOALDKMJGAOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
@@ -173,10 +153,6 @@ public final class KCOALDKMJGAOuterClass {
     public static final int HBILFAMJDKG_FIELD_NUMBER = 4;
     private int hBILFAMJDKG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 4;</code>
      * @return The hBILFAMJDKG.
      */
@@ -188,10 +164,6 @@ public final class KCOALDKMJGAOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 3;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
@@ -203,10 +175,6 @@ public final class KCOALDKMJGAOuterClass {
     public static final int AIELAJBPDOH_FIELD_NUMBER = 2;
     private int aIELAJBPDOH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AIELAJBPDOH = 2;</code>
      * @return The aIELAJBPDOH.
      */
@@ -571,10 +539,6 @@ public final class KCOALDKMJGAOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
@@ -583,10 +547,6 @@ public final class KCOALDKMJGAOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -598,10 +558,6 @@ public final class KCOALDKMJGAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
@@ -614,10 +570,6 @@ public final class KCOALDKMJGAOuterClass {
 
       private int hBILFAMJDKG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 4;</code>
        * @return The hBILFAMJDKG.
        */
@@ -626,10 +578,6 @@ public final class KCOALDKMJGAOuterClass {
         return hBILFAMJDKG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 4;</code>
        * @param value The hBILFAMJDKG to set.
        * @return This builder for chaining.
@@ -641,10 +589,6 @@ public final class KCOALDKMJGAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 4;</code>
        * @return This builder for chaining.
        */
@@ -657,10 +601,6 @@ public final class KCOALDKMJGAOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return The isOpen.
        */
@@ -669,10 +609,6 @@ public final class KCOALDKMJGAOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -684,10 +620,6 @@ public final class KCOALDKMJGAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return This builder for chaining.
        */
@@ -700,10 +632,6 @@ public final class KCOALDKMJGAOuterClass {
 
       private int aIELAJBPDOH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AIELAJBPDOH = 2;</code>
        * @return The aIELAJBPDOH.
        */
@@ -712,10 +640,6 @@ public final class KCOALDKMJGAOuterClass {
         return aIELAJBPDOH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AIELAJBPDOH = 2;</code>
        * @param value The aIELAJBPDOH to set.
        * @return This builder for chaining.
@@ -727,10 +651,6 @@ public final class KCOALDKMJGAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AIELAJBPDOH = 2;</code>
        * @return This builder for chaining.
        */

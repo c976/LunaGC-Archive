@@ -19,20 +19,12 @@ public final class HFHBPJIEOPDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OPMHFAIHBNF = 7;</code>
      * @return The oPMHFAIHBNF.
      */
     boolean getOPMHFAIHBNF();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FKDNIAHPPOK = 5;</code>
      * @return The fKDNIAHPPOK.
      */
@@ -128,10 +120,6 @@ public final class HFHBPJIEOPDOuterClass {
     public static final int OPMHFAIHBNF_FIELD_NUMBER = 7;
     private boolean oPMHFAIHBNF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OPMHFAIHBNF = 7;</code>
      * @return The oPMHFAIHBNF.
      */
@@ -143,10 +131,6 @@ public final class HFHBPJIEOPDOuterClass {
     public static final int FKDNIAHPPOK_FIELD_NUMBER = 5;
     private int fKDNIAHPPOK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FKDNIAHPPOK = 5;</code>
      * @return The fKDNIAHPPOK.
      */
@@ -477,10 +461,6 @@ public final class HFHBPJIEOPDOuterClass {
 
       private boolean oPMHFAIHBNF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OPMHFAIHBNF = 7;</code>
        * @return The oPMHFAIHBNF.
        */
@@ -489,10 +469,6 @@ public final class HFHBPJIEOPDOuterClass {
         return oPMHFAIHBNF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OPMHFAIHBNF = 7;</code>
        * @param value The oPMHFAIHBNF to set.
        * @return This builder for chaining.
@@ -504,10 +480,6 @@ public final class HFHBPJIEOPDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OPMHFAIHBNF = 7;</code>
        * @return This builder for chaining.
        */
@@ -520,10 +492,6 @@ public final class HFHBPJIEOPDOuterClass {
 
       private int fKDNIAHPPOK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FKDNIAHPPOK = 5;</code>
        * @return The fKDNIAHPPOK.
        */
@@ -532,10 +500,6 @@ public final class HFHBPJIEOPDOuterClass {
         return fKDNIAHPPOK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FKDNIAHPPOK = 5;</code>
        * @param value The fKDNIAHPPOK to set.
        * @return This builder for chaining.
@@ -547,10 +511,6 @@ public final class HFHBPJIEOPDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FKDNIAHPPOK = 5;</code>
        * @return This builder for chaining.
        */

@@ -19,135 +19,95 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
      */
-    int getCHOCANPGGOMCount();
+    int getHFAHLONBGKLCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
      */
-    boolean containsCHOCANPGGOM(
+    boolean containsHFAHLONBGKL(
         int key);
     /**
-     * Use {@link #getCHOCANPGGOMMap()} instead.
+     * Use {@link #getHFAHLONBGKLMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getCHOCANPGGOM();
+    getHFAHLONBGKL();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getCHOCANPGGOMMap();
+    getHFAHLONBGKLMap();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
      */
 
-    int getCHOCANPGGOMOrDefault(
+    int getHFAHLONBGKLOrDefault(
         int key,
         int defaultValue);
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
      */
 
-    int getCHOCANPGGOMOrThrow(
+    int getHFAHLONBGKLOrThrow(
         int key);
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
      */
-    int getEMPJOCCLENFCount();
+    int getNCDHBPLKPHBCount();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
      */
-    boolean containsEMPJOCCLENF(
+    boolean containsNCDHBPLKPHB(
         int key);
     /**
-     * Use {@link #getEMPJOCCLENFMap()} instead.
+     * Use {@link #getNCDHBPLKPHBMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getEMPJOCCLENF();
+    getNCDHBPLKPHB();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getEMPJOCCLENFMap();
+    getNCDHBPLKPHBMap();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
      */
 
-    int getEMPJOCCLENFOrDefault(
+    int getNCDHBPLKPHBOrDefault(
         int key,
         int defaultValue);
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
      */
 
-    int getEMPJOCCLENFOrThrow(
+    int getNCDHBPLKPHBOrThrow(
         int key);
 
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.MaterialDeleteReturnType type = 14;</code>
+     * <code>.MaterialDeleteReturnType type = 15;</code>
      * @return The enum numeric value on the wire for type.
      */
     int getTypeValue();
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.MaterialDeleteReturnType type = 14;</code>
+     * <code>.MaterialDeleteReturnType type = 15;</code>
      * @return The type.
      */
     emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType();
   }
   /**
    * <pre>
-   * CmdId: 20266
+   * CmdId: 7142
    * </pre>
    *
    * Protobuf type {@code MaterialDeleteReturnNotify}
@@ -196,33 +156,33 @@ public final class MaterialDeleteReturnNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                eMPJOCCLENF_ = com.google.protobuf.MapField.newMapField(
-                    EMPJOCCLENFDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              eMPJOCCLENF__ = input.readMessage(
-                  EMPJOCCLENFDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              eMPJOCCLENF_.getMutableMap().put(
-                  eMPJOCCLENF__.getKey(), eMPJOCCLENF__.getValue());
-              break;
-            }
             case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cHOCANPGGOM_ = com.google.protobuf.MapField.newMapField(
-                    CHOCANPGGOMDefaultEntryHolder.defaultEntry);
+                hFAHLONBGKL_ = com.google.protobuf.MapField.newMapField(
+                    HFAHLONBGKLDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              cHOCANPGGOM__ = input.readMessage(
-                  CHOCANPGGOMDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              cHOCANPGGOM_.getMutableMap().put(
-                  cHOCANPGGOM__.getKey(), cHOCANPGGOM__.getValue());
+              hFAHLONBGKL__ = input.readMessage(
+                  HFAHLONBGKLDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              hFAHLONBGKL_.getMutableMap().put(
+                  hFAHLONBGKL__.getKey(), hFAHLONBGKL__.getValue());
               break;
             }
-            case 112: {
+            case 106: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                nCDHBPLKPHB_ = com.google.protobuf.MapField.newMapField(
+                    NCDHBPLKPHBDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000002;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              nCDHBPLKPHB__ = input.readMessage(
+                  NCDHBPLKPHBDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              nCDHBPLKPHB_.getMutableMap().put(
+                  nCDHBPLKPHB__.getKey(), nCDHBPLKPHB__.getValue());
+              break;
+            }
+            case 120: {
               int rawValue = input.readEnum();
 
               type_ = rawValue;
@@ -258,9 +218,9 @@ public final class MaterialDeleteReturnNotifyOuterClass {
         int number) {
       switch (number) {
         case 12:
-          return internalGetCHOCANPGGOM();
-        case 10:
-          return internalGetEMPJOCCLENF();
+          return internalGetHFAHLONBGKL();
+        case 13:
+          return internalGetNCDHBPLKPHB();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -274,208 +234,176 @@ public final class MaterialDeleteReturnNotifyOuterClass {
               emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify.class, emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify.Builder.class);
     }
 
-    public static final int CHOCANPGGOM_FIELD_NUMBER = 12;
-    private static final class CHOCANPGGOMDefaultEntryHolder {
+    public static final int HFAHLONBGKL_FIELD_NUMBER = 12;
+    private static final class HFAHLONBGKLDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.internal_static_MaterialDeleteReturnNotify_CHOCANPGGOMEntry_descriptor, 
+                  emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.internal_static_MaterialDeleteReturnNotify_HFAHLONBGKLEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> cHOCANPGGOM_;
+        java.lang.Integer, java.lang.Integer> hFAHLONBGKL_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetCHOCANPGGOM() {
-      if (cHOCANPGGOM_ == null) {
+    internalGetHFAHLONBGKL() {
+      if (hFAHLONBGKL_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            CHOCANPGGOMDefaultEntryHolder.defaultEntry);
+            HFAHLONBGKLDefaultEntryHolder.defaultEntry);
       }
-      return cHOCANPGGOM_;
+      return hFAHLONBGKL_;
     }
 
-    public int getCHOCANPGGOMCount() {
-      return internalGetCHOCANPGGOM().getMap().size();
+    public int getHFAHLONBGKLCount() {
+      return internalGetHFAHLONBGKL().getMap().size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
      */
 
     @java.lang.Override
-    public boolean containsCHOCANPGGOM(
+    public boolean containsHFAHLONBGKL(
         int key) {
       
-      return internalGetCHOCANPGGOM().getMap().containsKey(key);
+      return internalGetHFAHLONBGKL().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getCHOCANPGGOMMap()} instead.
+     * Use {@link #getHFAHLONBGKLMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getCHOCANPGGOM() {
-      return getCHOCANPGGOMMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getHFAHLONBGKL() {
+      return getHFAHLONBGKLMap();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getCHOCANPGGOMMap() {
-      return internalGetCHOCANPGGOM().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getHFAHLONBGKLMap() {
+      return internalGetHFAHLONBGKL().getMap();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
      */
     @java.lang.Override
 
-    public int getCHOCANPGGOMOrDefault(
+    public int getHFAHLONBGKLOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetCHOCANPGGOM().getMap();
+          internalGetHFAHLONBGKL().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
      */
     @java.lang.Override
 
-    public int getCHOCANPGGOMOrThrow(
+    public int getHFAHLONBGKLOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetCHOCANPGGOM().getMap();
+          internalGetHFAHLONBGKL().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public static final int EMPJOCCLENF_FIELD_NUMBER = 10;
-    private static final class EMPJOCCLENFDefaultEntryHolder {
+    public static final int NCDHBPLKPHB_FIELD_NUMBER = 13;
+    private static final class NCDHBPLKPHBDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.internal_static_MaterialDeleteReturnNotify_EMPJOCCLENFEntry_descriptor, 
+                  emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.internal_static_MaterialDeleteReturnNotify_NCDHBPLKPHBEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> eMPJOCCLENF_;
+        java.lang.Integer, java.lang.Integer> nCDHBPLKPHB_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetEMPJOCCLENF() {
-      if (eMPJOCCLENF_ == null) {
+    internalGetNCDHBPLKPHB() {
+      if (nCDHBPLKPHB_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            EMPJOCCLENFDefaultEntryHolder.defaultEntry);
+            NCDHBPLKPHBDefaultEntryHolder.defaultEntry);
       }
-      return eMPJOCCLENF_;
+      return nCDHBPLKPHB_;
     }
 
-    public int getEMPJOCCLENFCount() {
-      return internalGetEMPJOCCLENF().getMap().size();
+    public int getNCDHBPLKPHBCount() {
+      return internalGetNCDHBPLKPHB().getMap().size();
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
      */
 
     @java.lang.Override
-    public boolean containsEMPJOCCLENF(
+    public boolean containsNCDHBPLKPHB(
         int key) {
       
-      return internalGetEMPJOCCLENF().getMap().containsKey(key);
+      return internalGetNCDHBPLKPHB().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getEMPJOCCLENFMap()} instead.
+     * Use {@link #getNCDHBPLKPHBMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getEMPJOCCLENF() {
-      return getEMPJOCCLENFMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getNCDHBPLKPHB() {
+      return getNCDHBPLKPHBMap();
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getEMPJOCCLENFMap() {
-      return internalGetEMPJOCCLENF().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getNCDHBPLKPHBMap() {
+      return internalGetNCDHBPLKPHB().getMap();
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
      */
     @java.lang.Override
 
-    public int getEMPJOCCLENFOrDefault(
+    public int getNCDHBPLKPHBOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetEMPJOCCLENF().getMap();
+          internalGetNCDHBPLKPHB().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+     * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
      */
     @java.lang.Override
 
-    public int getEMPJOCCLENFOrThrow(
+    public int getNCDHBPLKPHBOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetEMPJOCCLENF().getMap();
+          internalGetNCDHBPLKPHB().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 14;
+    public static final int TYPE_FIELD_NUMBER = 15;
     private int type_;
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.MaterialDeleteReturnType type = 14;</code>
+     * <code>.MaterialDeleteReturnType type = 15;</code>
      * @return The enum numeric value on the wire for type.
      */
     @java.lang.Override public int getTypeValue() {
@@ -483,10 +411,10 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.MaterialDeleteReturnType type = 14;</code>
+     * <code>.MaterialDeleteReturnType type = 15;</code>
      * @return The type.
      */
     @java.lang.Override public emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType() {
@@ -512,17 +440,17 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetEMPJOCCLENF(),
-          EMPJOCCLENFDefaultEntryHolder.defaultEntry,
-          10);
+          internalGetHFAHLONBGKL(),
+          HFAHLONBGKLDefaultEntryHolder.defaultEntry,
+          12);
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetCHOCANPGGOM(),
-          CHOCANPGGOMDefaultEntryHolder.defaultEntry,
-          12);
+          internalGetNCDHBPLKPHB(),
+          NCDHBPLKPHBDefaultEntryHolder.defaultEntry,
+          13);
       if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MaterialDeleteReturnType_MATERIAL_DELETE_RETURN_BAG.getNumber()) {
-        output.writeEnum(14, type_);
+        output.writeEnum(15, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -534,28 +462,28 @@ public final class MaterialDeleteReturnNotifyOuterClass {
 
       size = 0;
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetEMPJOCCLENF().getMap().entrySet()) {
+           : internalGetHFAHLONBGKL().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        eMPJOCCLENF__ = EMPJOCCLENFDefaultEntryHolder.defaultEntry.newBuilderForType()
+        hFAHLONBGKL__ = HFAHLONBGKLDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(10, eMPJOCCLENF__);
+            .computeMessageSize(12, hFAHLONBGKL__);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetCHOCANPGGOM().getMap().entrySet()) {
+           : internalGetNCDHBPLKPHB().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        cHOCANPGGOM__ = CHOCANPGGOMDefaultEntryHolder.defaultEntry.newBuilderForType()
+        nCDHBPLKPHB__ = NCDHBPLKPHBDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(12, cHOCANPGGOM__);
+            .computeMessageSize(13, nCDHBPLKPHB__);
       }
       if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MaterialDeleteReturnType_MATERIAL_DELETE_RETURN_BAG.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, type_);
+          .computeEnumSize(15, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -572,10 +500,10 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify other = (emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify) obj;
 
-      if (!internalGetCHOCANPGGOM().equals(
-          other.internalGetCHOCANPGGOM())) return false;
-      if (!internalGetEMPJOCCLENF().equals(
-          other.internalGetEMPJOCCLENF())) return false;
+      if (!internalGetHFAHLONBGKL().equals(
+          other.internalGetHFAHLONBGKL())) return false;
+      if (!internalGetNCDHBPLKPHB().equals(
+          other.internalGetNCDHBPLKPHB())) return false;
       if (type_ != other.type_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -588,13 +516,13 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetCHOCANPGGOM().getMap().isEmpty()) {
-        hash = (37 * hash) + CHOCANPGGOM_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetCHOCANPGGOM().hashCode();
+      if (!internalGetHFAHLONBGKL().getMap().isEmpty()) {
+        hash = (37 * hash) + HFAHLONBGKL_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetHFAHLONBGKL().hashCode();
       }
-      if (!internalGetEMPJOCCLENF().getMap().isEmpty()) {
-        hash = (37 * hash) + EMPJOCCLENF_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetEMPJOCCLENF().hashCode();
+      if (!internalGetNCDHBPLKPHB().getMap().isEmpty()) {
+        hash = (37 * hash) + NCDHBPLKPHB_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetNCDHBPLKPHB().hashCode();
       }
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
       hash = (53 * hash) + type_;
@@ -695,7 +623,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20266
+     * CmdId: 7142
      * </pre>
      *
      * Protobuf type {@code MaterialDeleteReturnNotify}
@@ -714,9 +642,9 @@ public final class MaterialDeleteReturnNotifyOuterClass {
           int number) {
         switch (number) {
           case 12:
-            return internalGetCHOCANPGGOM();
-          case 10:
-            return internalGetEMPJOCCLENF();
+            return internalGetHFAHLONBGKL();
+          case 13:
+            return internalGetNCDHBPLKPHB();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -727,9 +655,9 @@ public final class MaterialDeleteReturnNotifyOuterClass {
           int number) {
         switch (number) {
           case 12:
-            return internalGetMutableCHOCANPGGOM();
-          case 10:
-            return internalGetMutableEMPJOCCLENF();
+            return internalGetMutableHFAHLONBGKL();
+          case 13:
+            return internalGetMutableNCDHBPLKPHB();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -761,8 +689,8 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableCHOCANPGGOM().clear();
-        internalGetMutableEMPJOCCLENF().clear();
+        internalGetMutableHFAHLONBGKL().clear();
+        internalGetMutableNCDHBPLKPHB().clear();
         type_ = 0;
 
         return this;
@@ -792,10 +720,10 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       public emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify buildPartial() {
         emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify result = new emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify(this);
         int from_bitField0_ = bitField0_;
-        result.cHOCANPGGOM_ = internalGetCHOCANPGGOM();
-        result.cHOCANPGGOM_.makeImmutable();
-        result.eMPJOCCLENF_ = internalGetEMPJOCCLENF();
-        result.eMPJOCCLENF_.makeImmutable();
+        result.hFAHLONBGKL_ = internalGetHFAHLONBGKL();
+        result.hFAHLONBGKL_.makeImmutable();
+        result.nCDHBPLKPHB_ = internalGetNCDHBPLKPHB();
+        result.nCDHBPLKPHB_.makeImmutable();
         result.type_ = type_;
         onBuilt();
         return result;
@@ -845,10 +773,10 @@ public final class MaterialDeleteReturnNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify other) {
         if (other == emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify.getDefaultInstance()) return this;
-        internalGetMutableCHOCANPGGOM().mergeFrom(
-            other.internalGetCHOCANPGGOM());
-        internalGetMutableEMPJOCCLENF().mergeFrom(
-            other.internalGetEMPJOCCLENF());
+        internalGetMutableHFAHLONBGKL().mergeFrom(
+            other.internalGetHFAHLONBGKL());
+        internalGetMutableNCDHBPLKPHB().mergeFrom(
+            other.internalGetNCDHBPLKPHB());
         if (other.type_ != 0) {
           setTypeValue(other.getTypeValue());
         }
@@ -883,119 +811,99 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> cHOCANPGGOM_;
+          java.lang.Integer, java.lang.Integer> hFAHLONBGKL_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetCHOCANPGGOM() {
-        if (cHOCANPGGOM_ == null) {
+      internalGetHFAHLONBGKL() {
+        if (hFAHLONBGKL_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              CHOCANPGGOMDefaultEntryHolder.defaultEntry);
+              HFAHLONBGKLDefaultEntryHolder.defaultEntry);
         }
-        return cHOCANPGGOM_;
+        return hFAHLONBGKL_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableCHOCANPGGOM() {
+      internalGetMutableHFAHLONBGKL() {
         onChanged();;
-        if (cHOCANPGGOM_ == null) {
-          cHOCANPGGOM_ = com.google.protobuf.MapField.newMapField(
-              CHOCANPGGOMDefaultEntryHolder.defaultEntry);
+        if (hFAHLONBGKL_ == null) {
+          hFAHLONBGKL_ = com.google.protobuf.MapField.newMapField(
+              HFAHLONBGKLDefaultEntryHolder.defaultEntry);
         }
-        if (!cHOCANPGGOM_.isMutable()) {
-          cHOCANPGGOM_ = cHOCANPGGOM_.copy();
+        if (!hFAHLONBGKL_.isMutable()) {
+          hFAHLONBGKL_ = hFAHLONBGKL_.copy();
         }
-        return cHOCANPGGOM_;
+        return hFAHLONBGKL_;
       }
 
-      public int getCHOCANPGGOMCount() {
-        return internalGetCHOCANPGGOM().getMap().size();
+      public int getHFAHLONBGKLCount() {
+        return internalGetHFAHLONBGKL().getMap().size();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
        */
 
       @java.lang.Override
-      public boolean containsCHOCANPGGOM(
+      public boolean containsHFAHLONBGKL(
           int key) {
         
-        return internalGetCHOCANPGGOM().getMap().containsKey(key);
+        return internalGetHFAHLONBGKL().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getCHOCANPGGOMMap()} instead.
+       * Use {@link #getHFAHLONBGKLMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getCHOCANPGGOM() {
-        return getCHOCANPGGOMMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getHFAHLONBGKL() {
+        return getHFAHLONBGKLMap();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getCHOCANPGGOMMap() {
-        return internalGetCHOCANPGGOM().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getHFAHLONBGKLMap() {
+        return internalGetHFAHLONBGKL().getMap();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
        */
       @java.lang.Override
 
-      public int getCHOCANPGGOMOrDefault(
+      public int getHFAHLONBGKLOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetCHOCANPGGOM().getMap();
+            internalGetHFAHLONBGKL().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
        */
       @java.lang.Override
 
-      public int getCHOCANPGGOMOrThrow(
+      public int getHFAHLONBGKLOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetCHOCANPGGOM().getMap();
+            internalGetHFAHLONBGKL().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearCHOCANPGGOM() {
-        internalGetMutableCHOCANPGGOM().getMutableMap()
+      public Builder clearHFAHLONBGKL() {
+        internalGetMutableHFAHLONBGKL().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
        */
 
-      public Builder removeCHOCANPGGOM(
+      public Builder removeHFAHLONBGKL(
           int key) {
         
-        internalGetMutableCHOCANPGGOM().getMutableMap()
+        internalGetMutableHFAHLONBGKL().getMutableMap()
             .remove(key);
         return this;
       }
@@ -1004,154 +912,126 @@ public final class MaterialDeleteReturnNotifyOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableCHOCANPGGOM() {
-        return internalGetMutableCHOCANPGGOM().getMutableMap();
+      getMutableHFAHLONBGKL() {
+        return internalGetMutableHFAHLONBGKL().getMutableMap();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
        */
-      public Builder putCHOCANPGGOM(
+      public Builder putHFAHLONBGKL(
           int key,
           int value) {
         
         
-        internalGetMutableCHOCANPGGOM().getMutableMap()
+        internalGetMutableHFAHLONBGKL().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; CHOCANPGGOM = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; HFAHLONBGKL = 12;</code>
        */
 
-      public Builder putAllCHOCANPGGOM(
+      public Builder putAllHFAHLONBGKL(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableCHOCANPGGOM().getMutableMap()
+        internalGetMutableHFAHLONBGKL().getMutableMap()
             .putAll(values);
         return this;
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> eMPJOCCLENF_;
+          java.lang.Integer, java.lang.Integer> nCDHBPLKPHB_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetEMPJOCCLENF() {
-        if (eMPJOCCLENF_ == null) {
+      internalGetNCDHBPLKPHB() {
+        if (nCDHBPLKPHB_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              EMPJOCCLENFDefaultEntryHolder.defaultEntry);
+              NCDHBPLKPHBDefaultEntryHolder.defaultEntry);
         }
-        return eMPJOCCLENF_;
+        return nCDHBPLKPHB_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableEMPJOCCLENF() {
+      internalGetMutableNCDHBPLKPHB() {
         onChanged();;
-        if (eMPJOCCLENF_ == null) {
-          eMPJOCCLENF_ = com.google.protobuf.MapField.newMapField(
-              EMPJOCCLENFDefaultEntryHolder.defaultEntry);
+        if (nCDHBPLKPHB_ == null) {
+          nCDHBPLKPHB_ = com.google.protobuf.MapField.newMapField(
+              NCDHBPLKPHBDefaultEntryHolder.defaultEntry);
         }
-        if (!eMPJOCCLENF_.isMutable()) {
-          eMPJOCCLENF_ = eMPJOCCLENF_.copy();
+        if (!nCDHBPLKPHB_.isMutable()) {
+          nCDHBPLKPHB_ = nCDHBPLKPHB_.copy();
         }
-        return eMPJOCCLENF_;
+        return nCDHBPLKPHB_;
       }
 
-      public int getEMPJOCCLENFCount() {
-        return internalGetEMPJOCCLENF().getMap().size();
+      public int getNCDHBPLKPHBCount() {
+        return internalGetNCDHBPLKPHB().getMap().size();
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
        */
 
       @java.lang.Override
-      public boolean containsEMPJOCCLENF(
+      public boolean containsNCDHBPLKPHB(
           int key) {
         
-        return internalGetEMPJOCCLENF().getMap().containsKey(key);
+        return internalGetNCDHBPLKPHB().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getEMPJOCCLENFMap()} instead.
+       * Use {@link #getNCDHBPLKPHBMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getEMPJOCCLENF() {
-        return getEMPJOCCLENFMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getNCDHBPLKPHB() {
+        return getNCDHBPLKPHBMap();
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getEMPJOCCLENFMap() {
-        return internalGetEMPJOCCLENF().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getNCDHBPLKPHBMap() {
+        return internalGetNCDHBPLKPHB().getMap();
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
        */
       @java.lang.Override
 
-      public int getEMPJOCCLENFOrDefault(
+      public int getNCDHBPLKPHBOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetEMPJOCCLENF().getMap();
+            internalGetNCDHBPLKPHB().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
        */
       @java.lang.Override
 
-      public int getEMPJOCCLENFOrThrow(
+      public int getNCDHBPLKPHBOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetEMPJOCCLENF().getMap();
+            internalGetNCDHBPLKPHB().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearEMPJOCCLENF() {
-        internalGetMutableEMPJOCCLENF().getMutableMap()
+      public Builder clearNCDHBPLKPHB() {
+        internalGetMutableNCDHBPLKPHB().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
        */
 
-      public Builder removeEMPJOCCLENF(
+      public Builder removeNCDHBPLKPHB(
           int key) {
         
-        internalGetMutableEMPJOCCLENF().getMutableMap()
+        internalGetMutableNCDHBPLKPHB().getMutableMap()
             .remove(key);
         return this;
       }
@@ -1160,36 +1040,28 @@ public final class MaterialDeleteReturnNotifyOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableEMPJOCCLENF() {
-        return internalGetMutableEMPJOCCLENF().getMutableMap();
+      getMutableNCDHBPLKPHB() {
+        return internalGetMutableNCDHBPLKPHB().getMutableMap();
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
        */
-      public Builder putEMPJOCCLENF(
+      public Builder putNCDHBPLKPHB(
           int key,
           int value) {
         
         
-        internalGetMutableEMPJOCCLENF().getMutableMap()
+        internalGetMutableNCDHBPLKPHB().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; EMPJOCCLENF = 10;</code>
+       * <code>map&lt;uint32, uint32&gt; NCDHBPLKPHB = 13;</code>
        */
 
-      public Builder putAllEMPJOCCLENF(
+      public Builder putAllNCDHBPLKPHB(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableEMPJOCCLENF().getMutableMap()
+        internalGetMutableNCDHBPLKPHB().getMutableMap()
             .putAll(values);
         return this;
       }
@@ -1197,10 +1069,10 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       private int type_ = 0;
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.MaterialDeleteReturnType type = 14;</code>
+       * <code>.MaterialDeleteReturnType type = 15;</code>
        * @return The enum numeric value on the wire for type.
        */
       @java.lang.Override public int getTypeValue() {
@@ -1208,10 +1080,10 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.MaterialDeleteReturnType type = 14;</code>
+       * <code>.MaterialDeleteReturnType type = 15;</code>
        * @param value The enum numeric value on the wire for type to set.
        * @return This builder for chaining.
        */
@@ -1223,10 +1095,10 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.MaterialDeleteReturnType type = 14;</code>
+       * <code>.MaterialDeleteReturnType type = 15;</code>
        * @return The type.
        */
       @java.lang.Override
@@ -1237,10 +1109,10 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.MaterialDeleteReturnType type = 14;</code>
+       * <code>.MaterialDeleteReturnType type = 15;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
@@ -1255,10 +1127,10 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.MaterialDeleteReturnType type = 14;</code>
+       * <code>.MaterialDeleteReturnType type = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
@@ -1326,15 +1198,15 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_MaterialDeleteReturnNotify_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MaterialDeleteReturnNotify_CHOCANPGGOMEntry_descriptor;
+    internal_static_MaterialDeleteReturnNotify_HFAHLONBGKLEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MaterialDeleteReturnNotify_CHOCANPGGOMEntry_fieldAccessorTable;
+      internal_static_MaterialDeleteReturnNotify_HFAHLONBGKLEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MaterialDeleteReturnNotify_EMPJOCCLENFEntry_descriptor;
+    internal_static_MaterialDeleteReturnNotify_NCDHBPLKPHBEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MaterialDeleteReturnNotify_EMPJOCCLENFEntry_fieldAccessorTable;
+      internal_static_MaterialDeleteReturnNotify_NCDHBPLKPHBEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1346,13 +1218,13 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n MaterialDeleteReturnNotify.proto\032\036Mate" +
       "rialDeleteReturnType.proto\"\263\002\n\032MaterialD" +
-      "eleteReturnNotify\022A\n\013CHOCANPGGOM\030\014 \003(\0132," +
-      ".MaterialDeleteReturnNotify.CHOCANPGGOME" +
-      "ntry\022A\n\013EMPJOCCLENF\030\n \003(\0132,.MaterialDele" +
-      "teReturnNotify.EMPJOCCLENFEntry\022\'\n\004type\030" +
-      "\016 \001(\0162\031.MaterialDeleteReturnType\0322\n\020CHOC" +
-      "ANPGGOMEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r" +
-      ":\0028\001\0322\n\020EMPJOCCLENFEntry\022\013\n\003key\030\001 \001(\r\022\r\n" +
+      "eleteReturnNotify\022A\n\013HFAHLONBGKL\030\014 \003(\0132," +
+      ".MaterialDeleteReturnNotify.HFAHLONBGKLE" +
+      "ntry\022A\n\013NCDHBPLKPHB\030\r \003(\0132,.MaterialDele" +
+      "teReturnNotify.NCDHBPLKPHBEntry\022\'\n\004type\030" +
+      "\017 \001(\0162\031.MaterialDeleteReturnType\0322\n\020HFAH" +
+      "LONBGKLEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r" +
+      ":\0028\001\0322\n\020NCDHBPLKPHBEntry\022\013\n\003key\030\001 \001(\r\022\r\n" +
       "\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
@@ -1366,18 +1238,18 @@ public final class MaterialDeleteReturnNotifyOuterClass {
     internal_static_MaterialDeleteReturnNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MaterialDeleteReturnNotify_descriptor,
-        new java.lang.String[] { "CHOCANPGGOM", "EMPJOCCLENF", "Type", });
-    internal_static_MaterialDeleteReturnNotify_CHOCANPGGOMEntry_descriptor =
+        new java.lang.String[] { "HFAHLONBGKL", "NCDHBPLKPHB", "Type", });
+    internal_static_MaterialDeleteReturnNotify_HFAHLONBGKLEntry_descriptor =
       internal_static_MaterialDeleteReturnNotify_descriptor.getNestedTypes().get(0);
-    internal_static_MaterialDeleteReturnNotify_CHOCANPGGOMEntry_fieldAccessorTable = new
+    internal_static_MaterialDeleteReturnNotify_HFAHLONBGKLEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MaterialDeleteReturnNotify_CHOCANPGGOMEntry_descriptor,
+        internal_static_MaterialDeleteReturnNotify_HFAHLONBGKLEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_MaterialDeleteReturnNotify_EMPJOCCLENFEntry_descriptor =
+    internal_static_MaterialDeleteReturnNotify_NCDHBPLKPHBEntry_descriptor =
       internal_static_MaterialDeleteReturnNotify_descriptor.getNestedTypes().get(1);
-    internal_static_MaterialDeleteReturnNotify_EMPJOCCLENFEntry_fieldAccessorTable = new
+    internal_static_MaterialDeleteReturnNotify_NCDHBPLKPHBEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MaterialDeleteReturnNotify_EMPJOCCLENFEntry_descriptor,
+        internal_static_MaterialDeleteReturnNotify_NCDHBPLKPHBEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.getDescriptor();
   }

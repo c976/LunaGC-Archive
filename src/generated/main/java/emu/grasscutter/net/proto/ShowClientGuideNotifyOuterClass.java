@@ -19,12 +19,12 @@ public final class ShowClientGuideNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string guide_name = 12;</code>
+     * <code>string guide_name = 6;</code>
      * @return The guideName.
      */
     java.lang.String getGuideName();
     /**
-     * <code>string guide_name = 12;</code>
+     * <code>string guide_name = 6;</code>
      * @return The bytes for guideName.
      */
     com.google.protobuf.ByteString
@@ -32,7 +32,8 @@ public final class ShowClientGuideNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 24899
+   * CmdId: 8965
+   * Obf: LBKMGIHFFNI
    * </pre>
    *
    * Protobuf type {@code ShowClientGuideNotify}
@@ -80,7 +81,7 @@ public final class ShowClientGuideNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 50: {
               java.lang.String s = input.readStringRequireUtf8();
 
               guideName_ = s;
@@ -118,10 +119,10 @@ public final class ShowClientGuideNotifyOuterClass {
               emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify.class, emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify.Builder.class);
     }
 
-    public static final int GUIDE_NAME_FIELD_NUMBER = 12;
+    public static final int GUIDE_NAME_FIELD_NUMBER = 6;
     private volatile java.lang.Object guideName_;
     /**
-     * <code>string guide_name = 12;</code>
+     * <code>string guide_name = 6;</code>
      * @return The guideName.
      */
     @java.lang.Override
@@ -138,7 +139,7 @@ public final class ShowClientGuideNotifyOuterClass {
       }
     }
     /**
-     * <code>string guide_name = 12;</code>
+     * <code>string guide_name = 6;</code>
      * @return The bytes for guideName.
      */
     @java.lang.Override
@@ -171,7 +172,7 @@ public final class ShowClientGuideNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(guideName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, guideName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, guideName_);
       }
       unknownFields.writeTo(output);
     }
@@ -183,7 +184,7 @@ public final class ShowClientGuideNotifyOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(guideName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, guideName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, guideName_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,7 +313,8 @@ public final class ShowClientGuideNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24899
+     * CmdId: 8965
+     * Obf: LBKMGIHFFNI
      * </pre>
      *
      * Protobuf type {@code ShowClientGuideNotify}
@@ -464,7 +466,7 @@ public final class ShowClientGuideNotifyOuterClass {
 
       private java.lang.Object guideName_ = "";
       /**
-       * <code>string guide_name = 12;</code>
+       * <code>string guide_name = 6;</code>
        * @return The guideName.
        */
       public java.lang.String getGuideName() {
@@ -480,7 +482,7 @@ public final class ShowClientGuideNotifyOuterClass {
         }
       }
       /**
-       * <code>string guide_name = 12;</code>
+       * <code>string guide_name = 6;</code>
        * @return The bytes for guideName.
        */
       public com.google.protobuf.ByteString
@@ -497,7 +499,7 @@ public final class ShowClientGuideNotifyOuterClass {
         }
       }
       /**
-       * <code>string guide_name = 12;</code>
+       * <code>string guide_name = 6;</code>
        * @param value The guideName to set.
        * @return This builder for chaining.
        */
@@ -512,7 +514,7 @@ public final class ShowClientGuideNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string guide_name = 12;</code>
+       * <code>string guide_name = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuideName() {
@@ -522,7 +524,7 @@ public final class ShowClientGuideNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string guide_name = 12;</code>
+       * <code>string guide_name = 6;</code>
        * @param value The bytes for guideName to set.
        * @return This builder for chaining.
        */
@@ -605,7 +607,7 @@ public final class ShowClientGuideNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ShowClientGuideNotify.proto\"+\n\025ShowCli" +
-      "entGuideNotify\022\022\n\nguide_name\030\014 \001(\tB\033\n\031em" +
+      "entGuideNotify\022\022\n\nguide_name\030\006 \001(\tB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

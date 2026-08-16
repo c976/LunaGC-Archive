@@ -20,7 +20,7 @@ public final class EquipParamOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 item_id = 1;</code>
@@ -30,17 +30,7 @@ public final class EquipParamOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 36
-     * </pre>
-     *
-     * <code>uint32 promote_level = 4;</code>
-     * @return The promoteLevel.
-     */
-    int getPromoteLevel();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 item_num = 2;</code>
@@ -50,13 +40,23 @@ public final class EquipParamOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 44
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 item_level = 3;</code>
      * @return The itemLevel.
      */
     int getItemLevel();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 promote_level = 4;</code>
+     * @return The promoteLevel.
+     */
+    int getPromoteLevel();
   }
   /**
    * Protobuf type {@code EquipParam}
@@ -159,7 +159,7 @@ public final class EquipParamOuterClass {
     private int itemId_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 item_id = 1;</code>
@@ -170,26 +170,11 @@ public final class EquipParamOuterClass {
       return itemId_;
     }
 
-    public static final int PROMOTE_LEVEL_FIELD_NUMBER = 4;
-    private int promoteLevel_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 36
-     * </pre>
-     *
-     * <code>uint32 promote_level = 4;</code>
-     * @return The promoteLevel.
-     */
-    @java.lang.Override
-    public int getPromoteLevel() {
-      return promoteLevel_;
-    }
-
     public static final int ITEM_NUM_FIELD_NUMBER = 2;
     private int itemNum_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 item_num = 2;</code>
@@ -204,7 +189,7 @@ public final class EquipParamOuterClass {
     private int itemLevel_;
     /**
      * <pre>
-     *6.3.0 // offset: 44
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 item_level = 3;</code>
@@ -213,6 +198,21 @@ public final class EquipParamOuterClass {
     @java.lang.Override
     public int getItemLevel() {
       return itemLevel_;
+    }
+
+    public static final int PROMOTE_LEVEL_FIELD_NUMBER = 4;
+    private int promoteLevel_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 promote_level = 4;</code>
+     * @return The promoteLevel.
+     */
+    @java.lang.Override
+    public int getPromoteLevel() {
+      return promoteLevel_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -283,12 +283,12 @@ public final class EquipParamOuterClass {
 
       if (getItemId()
           != other.getItemId()) return false;
-      if (getPromoteLevel()
-          != other.getPromoteLevel()) return false;
       if (getItemNum()
           != other.getItemNum()) return false;
       if (getItemLevel()
           != other.getItemLevel()) return false;
+      if (getPromoteLevel()
+          != other.getPromoteLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -302,12 +302,12 @@ public final class EquipParamOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getItemId();
-      hash = (37 * hash) + PROMOTE_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getPromoteLevel();
       hash = (37 * hash) + ITEM_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getItemNum();
       hash = (37 * hash) + ITEM_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getItemLevel();
+      hash = (37 * hash) + PROMOTE_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getPromoteLevel();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -443,11 +443,11 @@ public final class EquipParamOuterClass {
         super.clear();
         itemId_ = 0;
 
-        promoteLevel_ = 0;
-
         itemNum_ = 0;
 
         itemLevel_ = 0;
+
+        promoteLevel_ = 0;
 
         return this;
       }
@@ -476,9 +476,9 @@ public final class EquipParamOuterClass {
       public emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam buildPartial() {
         emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam result = new emu.grasscutter.net.proto.EquipParamOuterClass.EquipParam(this);
         result.itemId_ = itemId_;
-        result.promoteLevel_ = promoteLevel_;
         result.itemNum_ = itemNum_;
         result.itemLevel_ = itemLevel_;
+        result.promoteLevel_ = promoteLevel_;
         onBuilt();
         return result;
       }
@@ -530,14 +530,14 @@ public final class EquipParamOuterClass {
         if (other.getItemId() != 0) {
           setItemId(other.getItemId());
         }
-        if (other.getPromoteLevel() != 0) {
-          setPromoteLevel(other.getPromoteLevel());
-        }
         if (other.getItemNum() != 0) {
           setItemNum(other.getItemNum());
         }
         if (other.getItemLevel() != 0) {
           setItemLevel(other.getItemLevel());
+        }
+        if (other.getPromoteLevel() != 0) {
+          setPromoteLevel(other.getPromoteLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -571,7 +571,7 @@ public final class EquipParamOuterClass {
       private int itemId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 item_id = 1;</code>
@@ -583,7 +583,7 @@ public final class EquipParamOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 item_id = 1;</code>
@@ -598,7 +598,7 @@ public final class EquipParamOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 item_id = 1;</code>
@@ -611,53 +611,10 @@ public final class EquipParamOuterClass {
         return this;
       }
 
-      private int promoteLevel_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 36
-       * </pre>
-       *
-       * <code>uint32 promote_level = 4;</code>
-       * @return The promoteLevel.
-       */
-      @java.lang.Override
-      public int getPromoteLevel() {
-        return promoteLevel_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 36
-       * </pre>
-       *
-       * <code>uint32 promote_level = 4;</code>
-       * @param value The promoteLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPromoteLevel(int value) {
-        
-        promoteLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 36
-       * </pre>
-       *
-       * <code>uint32 promote_level = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPromoteLevel() {
-        
-        promoteLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int itemNum_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 item_num = 2;</code>
@@ -669,7 +626,7 @@ public final class EquipParamOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 item_num = 2;</code>
@@ -684,7 +641,7 @@ public final class EquipParamOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 item_num = 2;</code>
@@ -700,7 +657,7 @@ public final class EquipParamOuterClass {
       private int itemLevel_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 item_level = 3;</code>
@@ -712,7 +669,7 @@ public final class EquipParamOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 item_level = 3;</code>
@@ -727,7 +684,7 @@ public final class EquipParamOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 item_level = 3;</code>
@@ -736,6 +693,49 @@ public final class EquipParamOuterClass {
       public Builder clearItemLevel() {
         
         itemLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int promoteLevel_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 promote_level = 4;</code>
+       * @return The promoteLevel.
+       */
+      @java.lang.Override
+      public int getPromoteLevel() {
+        return promoteLevel_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 promote_level = 4;</code>
+       * @param value The promoteLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPromoteLevel(int value) {
+        
+        promoteLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 promote_level = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPromoteLevel() {
+        
+        promoteLevel_ = 0;
         onChanged();
         return this;
       }
@@ -807,8 +807,8 @@ public final class EquipParamOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020EquipParam.proto\"Z\n\nEquipParam\022\017\n\007item" +
-      "_id\030\001 \001(\r\022\025\n\rpromote_level\030\004 \001(\r\022\020\n\010item" +
-      "_num\030\002 \001(\r\022\022\n\nitem_level\030\003 \001(\rB\033\n\031emu.gr" +
+      "_id\030\001 \001(\r\022\020\n\010item_num\030\002 \001(\r\022\022\n\nitem_leve" +
+      "l\030\003 \001(\r\022\025\n\rpromote_level\030\004 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -820,7 +820,7 @@ public final class EquipParamOuterClass {
     internal_static_EquipParam_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EquipParam_descriptor,
-        new java.lang.String[] { "ItemId", "PromoteLevel", "ItemNum", "ItemLevel", });
+        new java.lang.String[] { "ItemId", "ItemNum", "ItemLevel", "PromoteLevel", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

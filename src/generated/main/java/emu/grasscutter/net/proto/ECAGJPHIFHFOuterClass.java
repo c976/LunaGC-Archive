@@ -19,20 +19,12 @@ public final class ECAGJPHIFHFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 avatar_id = 12;</code>
      * @return The avatarId.
      */
     long getAvatarId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool ACECGFODOOO = 15;</code>
      * @return The aCECGFODOOO.
      */
@@ -128,10 +120,6 @@ public final class ECAGJPHIFHFOuterClass {
     public static final int AVATAR_ID_FIELD_NUMBER = 12;
     private long avatarId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 avatar_id = 12;</code>
      * @return The avatarId.
      */
@@ -143,10 +131,6 @@ public final class ECAGJPHIFHFOuterClass {
     public static final int ACECGFODOOO_FIELD_NUMBER = 15;
     private boolean aCECGFODOOO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool ACECGFODOOO = 15;</code>
      * @return The aCECGFODOOO.
      */
@@ -478,10 +462,6 @@ public final class ECAGJPHIFHFOuterClass {
 
       private long avatarId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 avatar_id = 12;</code>
        * @return The avatarId.
        */
@@ -490,10 +470,6 @@ public final class ECAGJPHIFHFOuterClass {
         return avatarId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 avatar_id = 12;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
@@ -505,10 +481,6 @@ public final class ECAGJPHIFHFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 avatar_id = 12;</code>
        * @return This builder for chaining.
        */
@@ -521,10 +493,6 @@ public final class ECAGJPHIFHFOuterClass {
 
       private boolean aCECGFODOOO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ACECGFODOOO = 15;</code>
        * @return The aCECGFODOOO.
        */
@@ -533,10 +501,6 @@ public final class ECAGJPHIFHFOuterClass {
         return aCECGFODOOO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ACECGFODOOO = 15;</code>
        * @param value The aCECGFODOOO to set.
        * @return This builder for chaining.
@@ -548,10 +512,6 @@ public final class ECAGJPHIFHFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ACECGFODOOO = 15;</code>
        * @return This builder for chaining.
        */

@@ -19,47 +19,31 @@ public final class EFHMGIKJOHDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
      * @return Whether the pCFKHMFDNPI field is set.
      */
     boolean hasPCFKHMFDNPI();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
      * @return The pCFKHMFDNPI.
      */
     emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.JBFAEBGMJFA getPCFKHMFDNPI();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
      */
     emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.JBFAEBGMJFAOrBuilder getPCFKHMFDNPIOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JPLOABGPFCA = 5;</code>
      * @return The jPLOABGPFCA.
      */
     boolean getJPLOABGPFCA();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 1;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
   }
   /**
    * Protobuf type {@code EFHMGIKJOHD}
@@ -108,7 +92,7 @@ public final class EFHMGIKJOHDOuterClass {
               break;
             case 8: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 34: {
@@ -164,10 +148,6 @@ public final class EFHMGIKJOHDOuterClass {
     public static final int PCFKHMFDNPI_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.JBFAEBGMJFA pCFKHMFDNPI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
      * @return Whether the pCFKHMFDNPI field is set.
      */
@@ -176,10 +156,6 @@ public final class EFHMGIKJOHDOuterClass {
       return pCFKHMFDNPI_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
      * @return The pCFKHMFDNPI.
      */
@@ -188,10 +164,6 @@ public final class EFHMGIKJOHDOuterClass {
       return pCFKHMFDNPI_ == null ? emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.JBFAEBGMJFA.getDefaultInstance() : pCFKHMFDNPI_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
      */
     @java.lang.Override
@@ -202,10 +174,6 @@ public final class EFHMGIKJOHDOuterClass {
     public static final int JPLOABGPFCA_FIELD_NUMBER = 5;
     private boolean jPLOABGPFCA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JPLOABGPFCA = 5;</code>
      * @return The jPLOABGPFCA.
      */
@@ -214,15 +182,15 @@ public final class EFHMGIKJOHDOuterClass {
       return jPLOABGPFCA_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 1;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 1;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -239,8 +207,8 @@ public final class EFHMGIKJOHDOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(1, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(1, stageId_);
       }
       if (pCFKHMFDNPI_ != null) {
         output.writeMessage(4, getPCFKHMFDNPI());
@@ -257,9 +225,9 @@ public final class EFHMGIKJOHDOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, eGHGENOJNEK_);
+          .computeUInt32Size(1, stageId_);
       }
       if (pCFKHMFDNPI_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -291,8 +259,8 @@ public final class EFHMGIKJOHDOuterClass {
       }
       if (getJPLOABGPFCA()
           != other.getJPLOABGPFCA()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -311,8 +279,8 @@ public final class EFHMGIKJOHDOuterClass {
       hash = (37 * hash) + JPLOABGPFCA_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getJPLOABGPFCA());
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -454,7 +422,7 @@ public final class EFHMGIKJOHDOuterClass {
         }
         jPLOABGPFCA_ = false;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         return this;
       }
@@ -488,7 +456,7 @@ public final class EFHMGIKJOHDOuterClass {
           result.pCFKHMFDNPI_ = pCFKHMFDNPIBuilder_.build();
         }
         result.jPLOABGPFCA_ = jPLOABGPFCA_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -543,8 +511,8 @@ public final class EFHMGIKJOHDOuterClass {
         if (other.getJPLOABGPFCA() != false) {
           setJPLOABGPFCA(other.getJPLOABGPFCA());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -579,10 +547,6 @@ public final class EFHMGIKJOHDOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.JBFAEBGMJFA, emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.JBFAEBGMJFA.Builder, emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.JBFAEBGMJFAOrBuilder> pCFKHMFDNPIBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
        * @return Whether the pCFKHMFDNPI field is set.
        */
@@ -590,10 +554,6 @@ public final class EFHMGIKJOHDOuterClass {
         return pCFKHMFDNPIBuilder_ != null || pCFKHMFDNPI_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
        * @return The pCFKHMFDNPI.
        */
@@ -605,10 +565,6 @@ public final class EFHMGIKJOHDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
        */
       public Builder setPCFKHMFDNPI(emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.JBFAEBGMJFA value) {
@@ -625,10 +581,6 @@ public final class EFHMGIKJOHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
        */
       public Builder setPCFKHMFDNPI(
@@ -643,10 +595,6 @@ public final class EFHMGIKJOHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
        */
       public Builder mergePCFKHMFDNPI(emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.JBFAEBGMJFA value) {
@@ -665,10 +613,6 @@ public final class EFHMGIKJOHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
        */
       public Builder clearPCFKHMFDNPI() {
@@ -683,10 +627,6 @@ public final class EFHMGIKJOHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
        */
       public emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.JBFAEBGMJFA.Builder getPCFKHMFDNPIBuilder() {
@@ -695,10 +635,6 @@ public final class EFHMGIKJOHDOuterClass {
         return getPCFKHMFDNPIFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
        */
       public emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.JBFAEBGMJFAOrBuilder getPCFKHMFDNPIOrBuilder() {
@@ -710,10 +646,6 @@ public final class EFHMGIKJOHDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JBFAEBGMJFA PCFKHMFDNPI = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -732,10 +664,6 @@ public final class EFHMGIKJOHDOuterClass {
 
       private boolean jPLOABGPFCA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JPLOABGPFCA = 5;</code>
        * @return The jPLOABGPFCA.
        */
@@ -744,10 +672,6 @@ public final class EFHMGIKJOHDOuterClass {
         return jPLOABGPFCA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JPLOABGPFCA = 5;</code>
        * @param value The jPLOABGPFCA to set.
        * @return This builder for chaining.
@@ -759,10 +683,6 @@ public final class EFHMGIKJOHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JPLOABGPFCA = 5;</code>
        * @return This builder for chaining.
        */
@@ -773,33 +693,33 @@ public final class EFHMGIKJOHDOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 1;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 1;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 1;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 1;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 1;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -870,11 +790,11 @@ public final class EFHMGIKJOHDOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021EFHMGIKJOHD.proto\032\021JBFAEBGMJFA.proto\"Z" +
+      "\n\021EFHMGIKJOHD.proto\032\021JBFAEBGMJFA.proto\"W" +
       "\n\013EFHMGIKJOHD\022!\n\013PCFKHMFDNPI\030\004 \001(\0132\014.JBF" +
-      "AEBGMJFA\022\023\n\013JPLOABGPFCA\030\005 \001(\010\022\023\n\013EGHGENO" +
-      "JNEK\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "AEBGMJFA\022\023\n\013JPLOABGPFCA\030\005 \001(\010\022\020\n\010stage_i" +
+      "d\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -886,7 +806,7 @@ public final class EFHMGIKJOHDOuterClass {
     internal_static_EFHMGIKJOHD_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EFHMGIKJOHD_descriptor,
-        new java.lang.String[] { "PCFKHMFDNPI", "JPLOABGPFCA", "EGHGENOJNEK", });
+        new java.lang.String[] { "PCFKHMFDNPI", "JPLOABGPFCA", "StageId", });
     emu.grasscutter.net.proto.JBFAEBGMJFAOuterClass.getDescriptor();
   }
 

@@ -20,7 +20,7 @@ public final class WorldRoutineInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
      * <code>uint32 finish_progress = 2;</code>
@@ -30,30 +30,30 @@ public final class WorldRoutineInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 progress = 12;</code>
+     * <code>uint32 progress = 4;</code>
      * @return The progress.
      */
     int getProgress();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>uint32 routine_id = 1;</code>
+     * <code>uint32 routine_id = 9;</code>
      * @return The routineId.
      */
     int getRoutineId();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>bool is_finished = 6;</code>
+     * <code>bool is_finished = 5;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
@@ -103,24 +103,24 @@ public final class WorldRoutineInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              routineId_ = input.readUInt32();
-              break;
-            }
             case 16: {
 
               finishProgress_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 32: {
+
+              progress_ = input.readUInt32();
+              break;
+            }
+            case 40: {
 
               isFinished_ = input.readBool();
               break;
             }
-            case 96: {
+            case 72: {
 
-              progress_ = input.readUInt32();
+              routineId_ = input.readUInt32();
               break;
             }
             default: {
@@ -159,7 +159,7 @@ public final class WorldRoutineInfoOuterClass {
     private int finishProgress_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
      * <code>uint32 finish_progress = 2;</code>
@@ -170,14 +170,14 @@ public final class WorldRoutineInfoOuterClass {
       return finishProgress_;
     }
 
-    public static final int PROGRESS_FIELD_NUMBER = 12;
+    public static final int PROGRESS_FIELD_NUMBER = 4;
     private int progress_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 progress = 12;</code>
+     * <code>uint32 progress = 4;</code>
      * @return The progress.
      */
     @java.lang.Override
@@ -185,14 +185,14 @@ public final class WorldRoutineInfoOuterClass {
       return progress_;
     }
 
-    public static final int ROUTINE_ID_FIELD_NUMBER = 1;
+    public static final int ROUTINE_ID_FIELD_NUMBER = 9;
     private int routineId_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>uint32 routine_id = 1;</code>
+     * <code>uint32 routine_id = 9;</code>
      * @return The routineId.
      */
     @java.lang.Override
@@ -200,14 +200,14 @@ public final class WorldRoutineInfoOuterClass {
       return routineId_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 6;
+    public static final int IS_FINISHED_FIELD_NUMBER = 5;
     private boolean isFinished_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>bool is_finished = 6;</code>
+     * <code>bool is_finished = 5;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -229,17 +229,17 @@ public final class WorldRoutineInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (routineId_ != 0) {
-        output.writeUInt32(1, routineId_);
-      }
       if (finishProgress_ != 0) {
         output.writeUInt32(2, finishProgress_);
       }
-      if (isFinished_ != false) {
-        output.writeBool(6, isFinished_);
-      }
       if (progress_ != 0) {
-        output.writeUInt32(12, progress_);
+        output.writeUInt32(4, progress_);
+      }
+      if (isFinished_ != false) {
+        output.writeBool(5, isFinished_);
+      }
+      if (routineId_ != 0) {
+        output.writeUInt32(9, routineId_);
       }
       unknownFields.writeTo(output);
     }
@@ -250,21 +250,21 @@ public final class WorldRoutineInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (routineId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, routineId_);
-      }
       if (finishProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, finishProgress_);
       }
-      if (isFinished_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isFinished_);
-      }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, progress_);
+          .computeUInt32Size(4, progress_);
+      }
+      if (isFinished_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, isFinished_);
+      }
+      if (routineId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, routineId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -572,7 +572,7 @@ public final class WorldRoutineInfoOuterClass {
       private int finishProgress_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
        * <code>uint32 finish_progress = 2;</code>
@@ -584,7 +584,7 @@ public final class WorldRoutineInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
        * <code>uint32 finish_progress = 2;</code>
@@ -599,7 +599,7 @@ public final class WorldRoutineInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
        * <code>uint32 finish_progress = 2;</code>
@@ -615,10 +615,10 @@ public final class WorldRoutineInfoOuterClass {
       private int progress_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 progress = 12;</code>
+       * <code>uint32 progress = 4;</code>
        * @return The progress.
        */
       @java.lang.Override
@@ -627,10 +627,10 @@ public final class WorldRoutineInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 progress = 12;</code>
+       * <code>uint32 progress = 4;</code>
        * @param value The progress to set.
        * @return This builder for chaining.
        */
@@ -642,10 +642,10 @@ public final class WorldRoutineInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 progress = 12;</code>
+       * <code>uint32 progress = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearProgress() {
@@ -658,10 +658,10 @@ public final class WorldRoutineInfoOuterClass {
       private int routineId_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>uint32 routine_id = 1;</code>
+       * <code>uint32 routine_id = 9;</code>
        * @return The routineId.
        */
       @java.lang.Override
@@ -670,10 +670,10 @@ public final class WorldRoutineInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>uint32 routine_id = 1;</code>
+       * <code>uint32 routine_id = 9;</code>
        * @param value The routineId to set.
        * @return This builder for chaining.
        */
@@ -685,10 +685,10 @@ public final class WorldRoutineInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>uint32 routine_id = 1;</code>
+       * <code>uint32 routine_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRoutineId() {
@@ -701,10 +701,10 @@ public final class WorldRoutineInfoOuterClass {
       private boolean isFinished_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_finished = 6;</code>
+       * <code>bool is_finished = 5;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -713,10 +713,10 @@ public final class WorldRoutineInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_finished = 6;</code>
+       * <code>bool is_finished = 5;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -728,10 +728,10 @@ public final class WorldRoutineInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_finished = 6;</code>
+       * <code>bool is_finished = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -809,8 +809,8 @@ public final class WorldRoutineInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026WorldRoutineInfo.proto\"f\n\020WorldRoutine" +
       "Info\022\027\n\017finish_progress\030\002 \001(\r\022\020\n\010progres" +
-      "s\030\014 \001(\r\022\022\n\nroutine_id\030\001 \001(\r\022\023\n\013is_finish" +
-      "ed\030\006 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
+      "s\030\004 \001(\r\022\022\n\nroutine_id\030\t \001(\r\022\023\n\013is_finish" +
+      "ed\030\005 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

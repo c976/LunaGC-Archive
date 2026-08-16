@@ -19,8 +19,23 @@ public final class AbilityMixinRecoverInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+     * @return Whether the kIEOPLPEBCI field is set.
+     */
+    boolean hasKIEOPLPEBCI();
+    /**
+     * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+     * @return The kIEOPLPEBCI.
+     */
+    emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ getKIEOPLPEBCI();
+    /**
+     * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+     */
+    emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJOrBuilder getKIEOPLPEBCIOrBuilder();
+
+    /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -29,7 +44,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
         getMassivePropListList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -37,7 +52,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo getMassivePropList(int index);
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -45,7 +60,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     int getMassivePropListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -54,7 +69,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
         getMassivePropListOrBuilderList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -64,7 +79,34 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
     /**
      * <pre>
-     *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     * @return Whether the breakoutSnapShot field is set.
+     */
+    boolean hasBreakoutSnapShot();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     * @return The breakoutSnapShot.
+     */
+    emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot getBreakoutSnapShot();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder getBreakoutSnapShotOrBuilder();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated uint32 data_list = 4;</code>
@@ -73,7 +115,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     java.util.List<java.lang.Integer> getDataListList();
     /**
      * <pre>
-     *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated uint32 data_list = 4;</code>
@@ -82,7 +124,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     int getDataListCount();
     /**
      * <pre>
-     *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated uint32 data_list = 4;</code>
@@ -93,7 +135,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
     /**
      * <pre>
-     *LAMOMNEEAPK OMPAHPEAMOI = 8; // offset: 64
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 local_id = 3;</code>
@@ -102,10 +144,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
     int getLocalId();
 
     /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
      * <code>bool is_serverbuff_modifier = 5;</code>
      * @return The isServerbuffModifier.
      */
@@ -113,7 +151,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 instanced_ability_id = 1;</code>
@@ -122,7 +160,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     boolean hasInstancedAbilityId();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 instanced_ability_id = 1;</code>
@@ -132,7 +170,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 instanced_modifier_id = 2;</code>
@@ -141,7 +179,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     boolean hasInstancedModifierId();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 instanced_modifier_id = 2;</code>
@@ -249,6 +287,32 @@ public final class AbilityMixinRecoverInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo.parser(), extensionRegistry));
               break;
             }
+            case 58: {
+              emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder subBuilder = null;
+              if (breakoutSnapShot_ != null) {
+                subBuilder = breakoutSnapShot_.toBuilder();
+              }
+              breakoutSnapShot_ = input.readMessage(emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(breakoutSnapShot_);
+                breakoutSnapShot_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 66: {
+              emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ.Builder subBuilder = null;
+              if (kIEOPLPEBCI_ != null) {
+                subBuilder = kIEOPLPEBCI_.toBuilder();
+              }
+              kIEOPLPEBCI_ = input.readMessage(emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(kIEOPLPEBCI_);
+                kIEOPLPEBCI_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -328,11 +392,37 @@ public final class AbilityMixinRecoverInfoOuterClass {
           sourceCase_);
     }
 
+    public static final int KIEOPLPEBCI_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ kIEOPLPEBCI_;
+    /**
+     * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+     * @return Whether the kIEOPLPEBCI field is set.
+     */
+    @java.lang.Override
+    public boolean hasKIEOPLPEBCI() {
+      return kIEOPLPEBCI_ != null;
+    }
+    /**
+     * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+     * @return The kIEOPLPEBCI.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ getKIEOPLPEBCI() {
+      return kIEOPLPEBCI_ == null ? emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ.getDefaultInstance() : kIEOPLPEBCI_;
+    }
+    /**
+     * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJOrBuilder getKIEOPLPEBCIOrBuilder() {
+      return getKIEOPLPEBCI();
+    }
+
     public static final int MASSIVE_PROP_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo> massivePropList_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -343,7 +433,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -355,7 +445,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -366,7 +456,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -377,7 +467,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -388,11 +478,49 @@ public final class AbilityMixinRecoverInfoOuterClass {
       return massivePropList_.get(index);
     }
 
+    public static final int BREAKOUT_SNAP_SHOT_FIELD_NUMBER = 7;
+    private emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot breakoutSnapShot_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     * @return Whether the breakoutSnapShot field is set.
+     */
+    @java.lang.Override
+    public boolean hasBreakoutSnapShot() {
+      return breakoutSnapShot_ != null;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     * @return The breakoutSnapShot.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot getBreakoutSnapShot() {
+      return breakoutSnapShot_ == null ? emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.getDefaultInstance() : breakoutSnapShot_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder getBreakoutSnapShotOrBuilder() {
+      return getBreakoutSnapShot();
+    }
+
     public static final int DATA_LIST_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList dataList_;
     /**
      * <pre>
-     *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated uint32 data_list = 4;</code>
@@ -405,7 +533,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     }
     /**
      * <pre>
-     *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated uint32 data_list = 4;</code>
@@ -416,7 +544,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     }
     /**
      * <pre>
-     *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>repeated uint32 data_list = 4;</code>
@@ -432,7 +560,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     private int localId_;
     /**
      * <pre>
-     *LAMOMNEEAPK OMPAHPEAMOI = 8; // offset: 64
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 local_id = 3;</code>
@@ -446,10 +574,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
     public static final int IS_SERVERBUFF_MODIFIER_FIELD_NUMBER = 5;
     private boolean isServerbuffModifier_;
     /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
      * <code>bool is_serverbuff_modifier = 5;</code>
      * @return The isServerbuffModifier.
      */
@@ -461,7 +585,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     public static final int INSTANCED_ABILITY_ID_FIELD_NUMBER = 1;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 instanced_ability_id = 1;</code>
@@ -473,7 +597,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 instanced_ability_id = 1;</code>
@@ -490,7 +614,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     public static final int INSTANCED_MODIFIER_ID_FIELD_NUMBER = 2;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 instanced_modifier_id = 2;</code>
@@ -502,7 +626,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 instanced_modifier_id = 2;</code>
@@ -555,6 +679,12 @@ public final class AbilityMixinRecoverInfoOuterClass {
       for (int i = 0; i < massivePropList_.size(); i++) {
         output.writeMessage(6, massivePropList_.get(i));
       }
+      if (breakoutSnapShot_ != null) {
+        output.writeMessage(7, getBreakoutSnapShot());
+      }
+      if (kIEOPLPEBCI_ != null) {
+        output.writeMessage(8, getKIEOPLPEBCI());
+      }
       unknownFields.writeTo(output);
     }
 
@@ -600,6 +730,14 @@ public final class AbilityMixinRecoverInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, massivePropList_.get(i));
       }
+      if (breakoutSnapShot_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, getBreakoutSnapShot());
+      }
+      if (kIEOPLPEBCI_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, getKIEOPLPEBCI());
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -615,8 +753,18 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo other = (emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo) obj;
 
+      if (hasKIEOPLPEBCI() != other.hasKIEOPLPEBCI()) return false;
+      if (hasKIEOPLPEBCI()) {
+        if (!getKIEOPLPEBCI()
+            .equals(other.getKIEOPLPEBCI())) return false;
+      }
       if (!getMassivePropListList()
           .equals(other.getMassivePropListList())) return false;
+      if (hasBreakoutSnapShot() != other.hasBreakoutSnapShot()) return false;
+      if (hasBreakoutSnapShot()) {
+        if (!getBreakoutSnapShot()
+            .equals(other.getBreakoutSnapShot())) return false;
+      }
       if (!getDataListList()
           .equals(other.getDataListList())) return false;
       if (getLocalId()
@@ -647,9 +795,17 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasKIEOPLPEBCI()) {
+        hash = (37 * hash) + KIEOPLPEBCI_FIELD_NUMBER;
+        hash = (53 * hash) + getKIEOPLPEBCI().hashCode();
+      }
       if (getMassivePropListCount() > 0) {
         hash = (37 * hash) + MASSIVE_PROP_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getMassivePropListList().hashCode();
+      }
+      if (hasBreakoutSnapShot()) {
+        hash = (37 * hash) + BREAKOUT_SNAP_SHOT_FIELD_NUMBER;
+        hash = (53 * hash) + getBreakoutSnapShot().hashCode();
       }
       if (getDataListCount() > 0) {
         hash = (37 * hash) + DATA_LIST_FIELD_NUMBER;
@@ -806,11 +962,23 @@ public final class AbilityMixinRecoverInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        if (kIEOPLPEBCIBuilder_ == null) {
+          kIEOPLPEBCI_ = null;
+        } else {
+          kIEOPLPEBCI_ = null;
+          kIEOPLPEBCIBuilder_ = null;
+        }
         if (massivePropListBuilder_ == null) {
           massivePropList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           massivePropListBuilder_.clear();
+        }
+        if (breakoutSnapShotBuilder_ == null) {
+          breakoutSnapShot_ = null;
+        } else {
+          breakoutSnapShot_ = null;
+          breakoutSnapShotBuilder_ = null;
         }
         dataList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -847,6 +1015,11 @@ public final class AbilityMixinRecoverInfoOuterClass {
       public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo result = new emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo(this);
         int from_bitField0_ = bitField0_;
+        if (kIEOPLPEBCIBuilder_ == null) {
+          result.kIEOPLPEBCI_ = kIEOPLPEBCI_;
+        } else {
+          result.kIEOPLPEBCI_ = kIEOPLPEBCIBuilder_.build();
+        }
         if (massivePropListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             massivePropList_ = java.util.Collections.unmodifiableList(massivePropList_);
@@ -855,6 +1028,11 @@ public final class AbilityMixinRecoverInfoOuterClass {
           result.massivePropList_ = massivePropList_;
         } else {
           result.massivePropList_ = massivePropListBuilder_.build();
+        }
+        if (breakoutSnapShotBuilder_ == null) {
+          result.breakoutSnapShot_ = breakoutSnapShot_;
+        } else {
+          result.breakoutSnapShot_ = breakoutSnapShotBuilder_.build();
         }
         if (((bitField0_ & 0x00000002) != 0)) {
           dataList_.makeImmutable();
@@ -918,6 +1096,9 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.getDefaultInstance()) return this;
+        if (other.hasKIEOPLPEBCI()) {
+          mergeKIEOPLPEBCI(other.getKIEOPLPEBCI());
+        }
         if (massivePropListBuilder_ == null) {
           if (!other.massivePropList_.isEmpty()) {
             if (massivePropList_.isEmpty()) {
@@ -943,6 +1124,9 @@ public final class AbilityMixinRecoverInfoOuterClass {
               massivePropListBuilder_.addAllMessages(other.massivePropList_);
             }
           }
+        }
+        if (other.hasBreakoutSnapShot()) {
+          mergeBreakoutSnapShot(other.getBreakoutSnapShot());
         }
         if (!other.dataList_.isEmpty()) {
           if (dataList_.isEmpty()) {
@@ -1018,6 +1202,125 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
       private int bitField0_;
 
+      private emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ kIEOPLPEBCI_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ, emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ.Builder, emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJOrBuilder> kIEOPLPEBCIBuilder_;
+      /**
+       * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+       * @return Whether the kIEOPLPEBCI field is set.
+       */
+      public boolean hasKIEOPLPEBCI() {
+        return kIEOPLPEBCIBuilder_ != null || kIEOPLPEBCI_ != null;
+      }
+      /**
+       * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+       * @return The kIEOPLPEBCI.
+       */
+      public emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ getKIEOPLPEBCI() {
+        if (kIEOPLPEBCIBuilder_ == null) {
+          return kIEOPLPEBCI_ == null ? emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ.getDefaultInstance() : kIEOPLPEBCI_;
+        } else {
+          return kIEOPLPEBCIBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+       */
+      public Builder setKIEOPLPEBCI(emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ value) {
+        if (kIEOPLPEBCIBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          kIEOPLPEBCI_ = value;
+          onChanged();
+        } else {
+          kIEOPLPEBCIBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+       */
+      public Builder setKIEOPLPEBCI(
+          emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ.Builder builderForValue) {
+        if (kIEOPLPEBCIBuilder_ == null) {
+          kIEOPLPEBCI_ = builderForValue.build();
+          onChanged();
+        } else {
+          kIEOPLPEBCIBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+       */
+      public Builder mergeKIEOPLPEBCI(emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ value) {
+        if (kIEOPLPEBCIBuilder_ == null) {
+          if (kIEOPLPEBCI_ != null) {
+            kIEOPLPEBCI_ =
+              emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ.newBuilder(kIEOPLPEBCI_).mergeFrom(value).buildPartial();
+          } else {
+            kIEOPLPEBCI_ = value;
+          }
+          onChanged();
+        } else {
+          kIEOPLPEBCIBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+       */
+      public Builder clearKIEOPLPEBCI() {
+        if (kIEOPLPEBCIBuilder_ == null) {
+          kIEOPLPEBCI_ = null;
+          onChanged();
+        } else {
+          kIEOPLPEBCI_ = null;
+          kIEOPLPEBCIBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+       */
+      public emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ.Builder getKIEOPLPEBCIBuilder() {
+        
+        onChanged();
+        return getKIEOPLPEBCIFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+       */
+      public emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJOrBuilder getKIEOPLPEBCIOrBuilder() {
+        if (kIEOPLPEBCIBuilder_ != null) {
+          return kIEOPLPEBCIBuilder_.getMessageOrBuilder();
+        } else {
+          return kIEOPLPEBCI_ == null ?
+              emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ.getDefaultInstance() : kIEOPLPEBCI_;
+        }
+      }
+      /**
+       * <code>.MHEPPFLCCIJ KIEOPLPEBCI = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ, emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ.Builder, emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJOrBuilder> 
+          getKIEOPLPEBCIFieldBuilder() {
+        if (kIEOPLPEBCIBuilder_ == null) {
+          kIEOPLPEBCIBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ, emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJ.Builder, emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.MHEPPFLCCIJOrBuilder>(
+                  getKIEOPLPEBCI(),
+                  getParentForChildren(),
+                  isClean());
+          kIEOPLPEBCI_ = null;
+        }
+        return kIEOPLPEBCIBuilder_;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo> massivePropList_ =
         java.util.Collections.emptyList();
       private void ensureMassivePropListIsMutable() {
@@ -1032,7 +1335,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1046,7 +1349,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1060,7 +1363,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1074,7 +1377,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1095,7 +1398,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1113,7 +1416,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1133,7 +1436,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1154,7 +1457,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1172,7 +1475,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1190,7 +1493,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1209,7 +1512,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1226,7 +1529,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1243,7 +1546,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1254,7 +1557,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1268,7 +1571,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1283,7 +1586,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1294,7 +1597,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1306,7 +1609,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -1330,6 +1633,161 @@ public final class AbilityMixinRecoverInfoOuterClass {
         return massivePropListBuilder_;
       }
 
+      private emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot breakoutSnapShot_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder> breakoutSnapShotBuilder_;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       * @return Whether the breakoutSnapShot field is set.
+       */
+      public boolean hasBreakoutSnapShot() {
+        return breakoutSnapShotBuilder_ != null || breakoutSnapShot_ != null;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       * @return The breakoutSnapShot.
+       */
+      public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot getBreakoutSnapShot() {
+        if (breakoutSnapShotBuilder_ == null) {
+          return breakoutSnapShot_ == null ? emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.getDefaultInstance() : breakoutSnapShot_;
+        } else {
+          return breakoutSnapShotBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      public Builder setBreakoutSnapShot(emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot value) {
+        if (breakoutSnapShotBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          breakoutSnapShot_ = value;
+          onChanged();
+        } else {
+          breakoutSnapShotBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      public Builder setBreakoutSnapShot(
+          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder builderForValue) {
+        if (breakoutSnapShotBuilder_ == null) {
+          breakoutSnapShot_ = builderForValue.build();
+          onChanged();
+        } else {
+          breakoutSnapShotBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      public Builder mergeBreakoutSnapShot(emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot value) {
+        if (breakoutSnapShotBuilder_ == null) {
+          if (breakoutSnapShot_ != null) {
+            breakoutSnapShot_ =
+              emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.newBuilder(breakoutSnapShot_).mergeFrom(value).buildPartial();
+          } else {
+            breakoutSnapShot_ = value;
+          }
+          onChanged();
+        } else {
+          breakoutSnapShotBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      public Builder clearBreakoutSnapShot() {
+        if (breakoutSnapShotBuilder_ == null) {
+          breakoutSnapShot_ = null;
+          onChanged();
+        } else {
+          breakoutSnapShot_ = null;
+          breakoutSnapShotBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder getBreakoutSnapShotBuilder() {
+        
+        onChanged();
+        return getBreakoutSnapShotFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder getBreakoutSnapShotOrBuilder() {
+        if (breakoutSnapShotBuilder_ != null) {
+          return breakoutSnapShotBuilder_.getMessageOrBuilder();
+        } else {
+          return breakoutSnapShot_ == null ?
+              emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.getDefaultInstance() : breakoutSnapShot_;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder> 
+          getBreakoutSnapShotFieldBuilder() {
+        if (breakoutSnapShotBuilder_ == null) {
+          breakoutSnapShotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder>(
+                  getBreakoutSnapShot(),
+                  getParentForChildren(),
+                  isClean());
+          breakoutSnapShot_ = null;
+        }
+        return breakoutSnapShotBuilder_;
+      }
+
       private com.google.protobuf.Internal.IntList dataList_ = emptyIntList();
       private void ensureDataListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
@@ -1339,7 +1797,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated uint32 data_list = 4;</code>
@@ -1352,7 +1810,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated uint32 data_list = 4;</code>
@@ -1363,7 +1821,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated uint32 data_list = 4;</code>
@@ -1375,7 +1833,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated uint32 data_list = 4;</code>
@@ -1392,7 +1850,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated uint32 data_list = 4;</code>
@@ -1407,7 +1865,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated uint32 data_list = 4;</code>
@@ -1424,7 +1882,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *BreakoutSnapShot breakout_snap_shot = 7; // offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated uint32 data_list = 4;</code>
@@ -1440,7 +1898,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       private int localId_ ;
       /**
        * <pre>
-       *LAMOMNEEAPK OMPAHPEAMOI = 8; // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 local_id = 3;</code>
@@ -1452,7 +1910,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *LAMOMNEEAPK OMPAHPEAMOI = 8; // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 local_id = 3;</code>
@@ -1467,7 +1925,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *LAMOMNEEAPK OMPAHPEAMOI = 8; // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 local_id = 3;</code>
@@ -1482,10 +1940,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
       private boolean isServerbuffModifier_ ;
       /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
        * <code>bool is_serverbuff_modifier = 5;</code>
        * @return The isServerbuffModifier.
        */
@@ -1494,10 +1948,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
         return isServerbuffModifier_;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
        * <code>bool is_serverbuff_modifier = 5;</code>
        * @param value The isServerbuffModifier to set.
        * @return This builder for chaining.
@@ -1509,10 +1959,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
        * <code>bool is_serverbuff_modifier = 5;</code>
        * @return This builder for chaining.
        */
@@ -1525,7 +1971,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 instanced_ability_id = 1;</code>
@@ -1536,7 +1982,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 instanced_ability_id = 1;</code>
@@ -1550,7 +1996,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 instanced_ability_id = 1;</code>
@@ -1565,7 +2011,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 instanced_ability_id = 1;</code>
@@ -1582,7 +2028,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 instanced_modifier_id = 2;</code>
@@ -1593,7 +2039,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 instanced_modifier_id = 2;</code>
@@ -1607,7 +2053,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 instanced_modifier_id = 2;</code>
@@ -1622,7 +2068,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 instanced_modifier_id = 2;</code>
@@ -1703,27 +2149,35 @@ public final class AbilityMixinRecoverInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035AbilityMixinRecoverInfo.proto\032\031Massive" +
-      "PropSyncInfo.proto\"\332\001\n\027AbilityMixinRecov" +
-      "erInfo\022/\n\021massive_prop_list\030\006 \003(\0132\024.Mass" +
-      "ivePropSyncInfo\022\021\n\tdata_list\030\004 \003(\r\022\020\n\010lo" +
-      "cal_id\030\003 \001(\r\022\036\n\026is_serverbuff_modifier\030\005" +
-      " \001(\010\022\036\n\024instanced_ability_id\030\001 \001(\rH\000\022\037\n\025" +
-      "instanced_modifier_id\030\002 \001(\rH\000B\010\n\006SourceB" +
-      "\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\035AbilityMixinRecoverInfo.proto\032\021MHEPPFL" +
+      "CCIJ.proto\032\031MassivePropSyncInfo.proto\032\026B" +
+      "reakoutSnapShot.proto\"\254\002\n\027AbilityMixinRe" +
+      "coverInfo\022!\n\013KIEOPLPEBCI\030\010 \001(\0132\014.MHEPPFL" +
+      "CCIJ\022/\n\021massive_prop_list\030\006 \003(\0132\024.Massiv" +
+      "ePropSyncInfo\022-\n\022breakout_snap_shot\030\007 \001(" +
+      "\0132\021.BreakoutSnapShot\022\021\n\tdata_list\030\004 \003(\r\022" +
+      "\020\n\010local_id\030\003 \001(\r\022\036\n\026is_serverbuff_modif" +
+      "ier\030\005 \001(\010\022\036\n\024instanced_ability_id\030\001 \001(\rH" +
+      "\000\022\037\n\025instanced_modifier_id\030\002 \001(\rH\000B\010\n\006so" +
+      "urceB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor(),
         });
     internal_static_AbilityMixinRecoverInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AbilityMixinRecoverInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinRecoverInfo_descriptor,
-        new java.lang.String[] { "MassivePropList", "DataList", "LocalId", "IsServerbuffModifier", "InstancedAbilityId", "InstancedModifierId", "Source", });
+        new java.lang.String[] { "KIEOPLPEBCI", "MassivePropList", "BreakoutSnapShot", "DataList", "LocalId", "IsServerbuffModifier", "InstancedAbilityId", "InstancedModifierId", "Source", });
+    emu.grasscutter.net.proto.MHEPPFLCCIJOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

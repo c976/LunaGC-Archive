@@ -19,20 +19,12 @@ public final class KECPBEOHOKKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OCHOMFGOBOK = 5;</code>
      * @return The oCHOMFGOBOK.
      */
     int getOCHOMFGOBOK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KABONKNFOPO = 6;</code>
      * @return The kABONKNFOPO.
      */
@@ -128,10 +120,6 @@ public final class KECPBEOHOKKOuterClass {
     public static final int OCHOMFGOBOK_FIELD_NUMBER = 5;
     private int oCHOMFGOBOK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OCHOMFGOBOK = 5;</code>
      * @return The oCHOMFGOBOK.
      */
@@ -143,10 +131,6 @@ public final class KECPBEOHOKKOuterClass {
     public static final int KABONKNFOPO_FIELD_NUMBER = 6;
     private int kABONKNFOPO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KABONKNFOPO = 6;</code>
      * @return The kABONKNFOPO.
      */
@@ -476,10 +460,6 @@ public final class KECPBEOHOKKOuterClass {
 
       private int oCHOMFGOBOK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCHOMFGOBOK = 5;</code>
        * @return The oCHOMFGOBOK.
        */
@@ -488,10 +468,6 @@ public final class KECPBEOHOKKOuterClass {
         return oCHOMFGOBOK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCHOMFGOBOK = 5;</code>
        * @param value The oCHOMFGOBOK to set.
        * @return This builder for chaining.
@@ -503,10 +479,6 @@ public final class KECPBEOHOKKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCHOMFGOBOK = 5;</code>
        * @return This builder for chaining.
        */
@@ -519,10 +491,6 @@ public final class KECPBEOHOKKOuterClass {
 
       private int kABONKNFOPO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KABONKNFOPO = 6;</code>
        * @return The kABONKNFOPO.
        */
@@ -531,10 +499,6 @@ public final class KECPBEOHOKKOuterClass {
         return kABONKNFOPO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KABONKNFOPO = 6;</code>
        * @param value The kABONKNFOPO to set.
        * @return This builder for chaining.
@@ -546,10 +510,6 @@ public final class KECPBEOHOKKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KABONKNFOPO = 6;</code>
        * @return This builder for chaining.
        */

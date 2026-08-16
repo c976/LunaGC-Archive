@@ -20,28 +20,28 @@ public final class GetBlossomBriefInfoListReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 city_id_list = 13;</code>
+     * <code>repeated uint32 city_id_list = 14;</code>
      * @return A list containing the cityIdList.
      */
     java.util.List<java.lang.Integer> getCityIdListList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 city_id_list = 13;</code>
+     * <code>repeated uint32 city_id_list = 14;</code>
      * @return The count of cityIdList.
      */
     int getCityIdListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 city_id_list = 13;</code>
+     * <code>repeated uint32 city_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The cityIdList at the given index.
      */
@@ -49,7 +49,7 @@ public final class GetBlossomBriefInfoListReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 28557
+   * CmdId: 1336
    * </pre>
    *
    * Protobuf type {@code GetBlossomBriefInfoListReq}
@@ -98,7 +98,7 @@ public final class GetBlossomBriefInfoListReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 cityIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +106,7 @@ public final class GetBlossomBriefInfoListReqOuterClass {
               cityIdList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -154,14 +154,14 @@ public final class GetBlossomBriefInfoListReqOuterClass {
               emu.grasscutter.net.proto.GetBlossomBriefInfoListReqOuterClass.GetBlossomBriefInfoListReq.class, emu.grasscutter.net.proto.GetBlossomBriefInfoListReqOuterClass.GetBlossomBriefInfoListReq.Builder.class);
     }
 
-    public static final int CITY_ID_LIST_FIELD_NUMBER = 13;
+    public static final int CITY_ID_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList cityIdList_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 city_id_list = 13;</code>
+     * <code>repeated uint32 city_id_list = 14;</code>
      * @return A list containing the cityIdList.
      */
     @java.lang.Override
@@ -171,10 +171,10 @@ public final class GetBlossomBriefInfoListReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 city_id_list = 13;</code>
+     * <code>repeated uint32 city_id_list = 14;</code>
      * @return The count of cityIdList.
      */
     public int getCityIdListCount() {
@@ -182,10 +182,10 @@ public final class GetBlossomBriefInfoListReqOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 city_id_list = 13;</code>
+     * <code>repeated uint32 city_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The cityIdList at the given index.
      */
@@ -210,7 +210,7 @@ public final class GetBlossomBriefInfoListReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getCityIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(cityIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < cityIdList_.size(); i++) {
@@ -368,7 +368,7 @@ public final class GetBlossomBriefInfoListReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 28557
+     * CmdId: 1336
      * </pre>
      *
      * Protobuf type {@code GetBlossomBriefInfoListReq}
@@ -539,10 +539,10 @@ public final class GetBlossomBriefInfoListReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 city_id_list = 13;</code>
+       * <code>repeated uint32 city_id_list = 14;</code>
        * @return A list containing the cityIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -552,10 +552,10 @@ public final class GetBlossomBriefInfoListReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 city_id_list = 13;</code>
+       * <code>repeated uint32 city_id_list = 14;</code>
        * @return The count of cityIdList.
        */
       public int getCityIdListCount() {
@@ -563,10 +563,10 @@ public final class GetBlossomBriefInfoListReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 city_id_list = 13;</code>
+       * <code>repeated uint32 city_id_list = 14;</code>
        * @param index The index of the element to return.
        * @return The cityIdList at the given index.
        */
@@ -575,10 +575,10 @@ public final class GetBlossomBriefInfoListReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 city_id_list = 13;</code>
+       * <code>repeated uint32 city_id_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The cityIdList to set.
        * @return This builder for chaining.
@@ -592,10 +592,10 @@ public final class GetBlossomBriefInfoListReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 city_id_list = 13;</code>
+       * <code>repeated uint32 city_id_list = 14;</code>
        * @param value The cityIdList to add.
        * @return This builder for chaining.
        */
@@ -607,10 +607,10 @@ public final class GetBlossomBriefInfoListReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 city_id_list = 13;</code>
+       * <code>repeated uint32 city_id_list = 14;</code>
        * @param values The cityIdList to add.
        * @return This builder for chaining.
        */
@@ -624,10 +624,10 @@ public final class GetBlossomBriefInfoListReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 city_id_list = 13;</code>
+       * <code>repeated uint32 city_id_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCityIdList() {
@@ -705,7 +705,7 @@ public final class GetBlossomBriefInfoListReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n GetBlossomBriefInfoListReq.proto\"2\n\032Ge" +
       "tBlossomBriefInfoListReq\022\024\n\014city_id_list" +
-      "\030\r \003(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\030\016 \003(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

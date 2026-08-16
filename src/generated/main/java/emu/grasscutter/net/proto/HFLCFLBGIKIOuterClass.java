@@ -19,44 +19,24 @@ public final class HFLCFLBGIKIOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF> 
         getGLHBENMENALList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
      */
     emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF getGLHBENMENAL(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
      */
     int getGLHBENMENALCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGFOrBuilder> 
         getGLHBENMENALOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
      */
     emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGFOrBuilder getGLHBENMENALOrBuilder(
@@ -156,10 +136,6 @@ public final class HFLCFLBGIKIOuterClass {
     public static final int GLHBENMENAL_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF> gLHBENMENAL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class HFLCFLBGIKIOuterClass {
       return gLHBENMENAL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class HFLCFLBGIKIOuterClass {
       return gLHBENMENAL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class HFLCFLBGIKIOuterClass {
       return gLHBENMENAL_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class HFLCFLBGIKIOuterClass {
       return gLHBENMENAL_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class HFLCFLBGIKIOuterClass {
           emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF, emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF.Builder, emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGFOrBuilder> gLHBENMENALBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF> getGLHBENMENALList() {
@@ -582,10 +538,6 @@ public final class HFLCFLBGIKIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public int getGLHBENMENALCount() {
@@ -596,10 +548,6 @@ public final class HFLCFLBGIKIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF getGLHBENMENAL(int index) {
@@ -610,10 +558,6 @@ public final class HFLCFLBGIKIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public Builder setGLHBENMENAL(
@@ -631,10 +575,6 @@ public final class HFLCFLBGIKIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public Builder setGLHBENMENAL(
@@ -649,10 +589,6 @@ public final class HFLCFLBGIKIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public Builder addGLHBENMENAL(emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF value) {
@@ -669,10 +605,6 @@ public final class HFLCFLBGIKIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public Builder addGLHBENMENAL(
@@ -690,10 +622,6 @@ public final class HFLCFLBGIKIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public Builder addGLHBENMENAL(
@@ -708,10 +636,6 @@ public final class HFLCFLBGIKIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public Builder addGLHBENMENAL(
@@ -726,10 +650,6 @@ public final class HFLCFLBGIKIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public Builder addAllGLHBENMENAL(
@@ -745,10 +665,6 @@ public final class HFLCFLBGIKIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public Builder clearGLHBENMENAL() {
@@ -762,10 +678,6 @@ public final class HFLCFLBGIKIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public Builder removeGLHBENMENAL(int index) {
@@ -779,10 +691,6 @@ public final class HFLCFLBGIKIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF.Builder getGLHBENMENALBuilder(
@@ -790,10 +698,6 @@ public final class HFLCFLBGIKIOuterClass {
         return getGLHBENMENALFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGFOrBuilder getGLHBENMENALOrBuilder(
@@ -804,10 +708,6 @@ public final class HFLCFLBGIKIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGFOrBuilder> 
@@ -819,10 +719,6 @@ public final class HFLCFLBGIKIOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF.Builder addGLHBENMENALBuilder() {
@@ -830,10 +726,6 @@ public final class HFLCFLBGIKIOuterClass {
             emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF.Builder addGLHBENMENALBuilder(
@@ -842,10 +734,6 @@ public final class HFLCFLBGIKIOuterClass {
             index, emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BLLIOILJBGF GLHBENMENAL = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BLLIOILJBGFOuterClass.BLLIOILJBGF.Builder> 

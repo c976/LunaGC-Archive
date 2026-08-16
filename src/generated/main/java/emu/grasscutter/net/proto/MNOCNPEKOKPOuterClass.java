@@ -19,72 +19,40 @@ public final class MNOCNPEKOKPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> 
         getAvatarListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
      */
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN getAvatarList(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
      */
     int getAvatarListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> 
         getAvatarListOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
      */
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder getAvatarListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJOFPKEAALM = 2;</code>
      * @return A list containing the nJOFPKEAALM.
      */
     java.util.List<java.lang.Integer> getNJOFPKEAALMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJOFPKEAALM = 2;</code>
      * @return The count of nJOFPKEAALM.
      */
     int getNJOFPKEAALMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJOFPKEAALM = 2;</code>
      * @param index The index of the element to return.
      * @return The nJOFPKEAALM at the given index.
@@ -92,40 +60,28 @@ public final class MNOCNPEKOKPOuterClass {
     int getNJOFPKEAALM(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 13;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 13;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
   }
   /**
    * Protobuf type {@code MNOCNPEKOKP}
@@ -222,7 +178,7 @@ public final class MNOCNPEKOKPOuterClass {
             }
             case 104: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -266,10 +222,6 @@ public final class MNOCNPEKOKPOuterClass {
     public static final int AVATAR_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> avatarList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
      */
     @java.lang.Override
@@ -277,10 +229,6 @@ public final class MNOCNPEKOKPOuterClass {
       return avatarList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
      */
     @java.lang.Override
@@ -289,10 +237,6 @@ public final class MNOCNPEKOKPOuterClass {
       return avatarList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
      */
     @java.lang.Override
@@ -300,10 +244,6 @@ public final class MNOCNPEKOKPOuterClass {
       return avatarList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
      */
     @java.lang.Override
@@ -311,10 +251,6 @@ public final class MNOCNPEKOKPOuterClass {
       return avatarList_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
      */
     @java.lang.Override
@@ -326,10 +262,6 @@ public final class MNOCNPEKOKPOuterClass {
     public static final int NJOFPKEAALM_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList nJOFPKEAALM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJOFPKEAALM = 2;</code>
      * @return A list containing the nJOFPKEAALM.
      */
@@ -339,10 +271,6 @@ public final class MNOCNPEKOKPOuterClass {
       return nJOFPKEAALM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJOFPKEAALM = 2;</code>
      * @return The count of nJOFPKEAALM.
      */
@@ -350,10 +278,6 @@ public final class MNOCNPEKOKPOuterClass {
       return nJOFPKEAALM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NJOFPKEAALM = 2;</code>
      * @param index The index of the element to return.
      * @return The nJOFPKEAALM at the given index.
@@ -366,10 +290,6 @@ public final class MNOCNPEKOKPOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 4;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
@@ -381,10 +301,6 @@ public final class MNOCNPEKOKPOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -396,10 +312,6 @@ public final class MNOCNPEKOKPOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 8;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
@@ -408,15 +320,15 @@ public final class MNOCNPEKOKPOuterClass {
       return levelId_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 13;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 13;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 13;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 13;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -453,8 +365,8 @@ public final class MNOCNPEKOKPOuterClass {
       for (int i = 0; i < avatarList_.size(); i++) {
         output.writeMessage(9, avatarList_.get(i));
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(13, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(13, ugcGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -495,9 +407,9 @@ public final class MNOCNPEKOKPOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, avatarList_.get(i));
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, iFADGMHEFHF_);
+          .computeUInt32Size(13, ugcGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -524,8 +436,8 @@ public final class MNOCNPEKOKPOuterClass {
           != other.getIsOpen()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -553,8 +465,8 @@ public final class MNOCNPEKOKPOuterClass {
           getIsOpen());
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -703,7 +615,7 @@ public final class MNOCNPEKOKPOuterClass {
 
         levelId_ = 0;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         return this;
       }
@@ -749,7 +661,7 @@ public final class MNOCNPEKOKPOuterClass {
         result.isFinish_ = isFinish_;
         result.isOpen_ = isOpen_;
         result.levelId_ = levelId_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         onBuilt();
         return result;
       }
@@ -843,8 +755,8 @@ public final class MNOCNPEKOKPOuterClass {
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -889,10 +801,6 @@ public final class MNOCNPEKOKPOuterClass {
           emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> avatarListBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> getAvatarListList() {
@@ -903,10 +811,6 @@ public final class MNOCNPEKOKPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public int getAvatarListCount() {
@@ -917,10 +821,6 @@ public final class MNOCNPEKOKPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN getAvatarList(int index) {
@@ -931,10 +831,6 @@ public final class MNOCNPEKOKPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public Builder setAvatarList(
@@ -952,10 +848,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public Builder setAvatarList(
@@ -970,10 +862,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public Builder addAvatarList(emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN value) {
@@ -990,10 +878,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public Builder addAvatarList(
@@ -1011,10 +895,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public Builder addAvatarList(
@@ -1029,10 +909,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public Builder addAvatarList(
@@ -1047,10 +923,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public Builder addAllAvatarList(
@@ -1066,10 +938,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public Builder clearAvatarList() {
@@ -1083,10 +951,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public Builder removeAvatarList(int index) {
@@ -1100,10 +964,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder getAvatarListBuilder(
@@ -1111,10 +971,6 @@ public final class MNOCNPEKOKPOuterClass {
         return getAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder getAvatarListOrBuilder(
@@ -1125,10 +981,6 @@ public final class MNOCNPEKOKPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> 
@@ -1140,10 +992,6 @@ public final class MNOCNPEKOKPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder addAvatarListBuilder() {
@@ -1151,10 +999,6 @@ public final class MNOCNPEKOKPOuterClass {
             emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder addAvatarListBuilder(
@@ -1163,10 +1007,6 @@ public final class MNOCNPEKOKPOuterClass {
             index, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN avatar_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder> 
@@ -1196,10 +1036,6 @@ public final class MNOCNPEKOKPOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJOFPKEAALM = 2;</code>
        * @return A list containing the nJOFPKEAALM.
        */
@@ -1209,10 +1045,6 @@ public final class MNOCNPEKOKPOuterClass {
                  java.util.Collections.unmodifiableList(nJOFPKEAALM_) : nJOFPKEAALM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJOFPKEAALM = 2;</code>
        * @return The count of nJOFPKEAALM.
        */
@@ -1220,10 +1052,6 @@ public final class MNOCNPEKOKPOuterClass {
         return nJOFPKEAALM_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJOFPKEAALM = 2;</code>
        * @param index The index of the element to return.
        * @return The nJOFPKEAALM at the given index.
@@ -1232,10 +1060,6 @@ public final class MNOCNPEKOKPOuterClass {
         return nJOFPKEAALM_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJOFPKEAALM = 2;</code>
        * @param index The index to set the value at.
        * @param value The nJOFPKEAALM to set.
@@ -1249,10 +1073,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJOFPKEAALM = 2;</code>
        * @param value The nJOFPKEAALM to add.
        * @return This builder for chaining.
@@ -1264,10 +1084,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJOFPKEAALM = 2;</code>
        * @param values The nJOFPKEAALM to add.
        * @return This builder for chaining.
@@ -1281,10 +1097,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NJOFPKEAALM = 2;</code>
        * @return This builder for chaining.
        */
@@ -1297,10 +1109,6 @@ public final class MNOCNPEKOKPOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return The isFinish.
        */
@@ -1309,10 +1117,6 @@ public final class MNOCNPEKOKPOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1324,10 +1128,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return This builder for chaining.
        */
@@ -1340,10 +1140,6 @@ public final class MNOCNPEKOKPOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
@@ -1352,10 +1148,6 @@ public final class MNOCNPEKOKPOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1367,10 +1159,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
@@ -1383,10 +1171,6 @@ public final class MNOCNPEKOKPOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @return The levelId.
        */
@@ -1395,10 +1179,6 @@ public final class MNOCNPEKOKPOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1410,10 +1190,6 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @return This builder for chaining.
        */
@@ -1424,33 +1200,33 @@ public final class MNOCNPEKOKPOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 13;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 13;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 13;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 13;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 13;</code>
+       * <code>uint32 ugc_guid = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
@@ -1521,12 +1297,12 @@ public final class MNOCNPEKOKPOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MNOCNPEKOKP.proto\032\021NFICKHNFNLN.proto\"\220" +
+      "\n\021MNOCNPEKOKP.proto\032\021NFICKHNFNLN.proto\"\215" +
       "\001\n\013MNOCNPEKOKP\022!\n\013avatar_list\030\t \003(\0132\014.NF" +
       "ICKHNFNLN\022\023\n\013NJOFPKEAALM\030\002 \003(\r\022\021\n\tis_fin" +
       "ish\030\004 \001(\010\022\017\n\007is_open\030\001 \001(\010\022\020\n\010level_id\030\010" +
-      " \001(\r\022\023\n\013IFADGMHEFHF\030\r \001(\rB\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      " \001(\r\022\020\n\010ugc_guid\030\r \001(\rB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1538,7 +1314,7 @@ public final class MNOCNPEKOKPOuterClass {
     internal_static_MNOCNPEKOKP_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MNOCNPEKOKP_descriptor,
-        new java.lang.String[] { "AvatarList", "NJOFPKEAALM", "IsFinish", "IsOpen", "LevelId", "IFADGMHEFHF", });
+        new java.lang.String[] { "AvatarList", "NJOFPKEAALM", "IsFinish", "IsOpen", "LevelId", "UgcGuid", });
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.getDescriptor();
   }
 

@@ -19,70 +19,46 @@ public final class PNOMLIPLGJCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG> 
         getHEMFIOJEMAPList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
      */
     emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG getHEMFIOJEMAP(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
      */
     int getHEMFIOJEMAPCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAGOrBuilder> 
         getHEMFIOJEMAPOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
      */
     emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAGOrBuilder getHEMFIOJEMAPOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 14;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 7;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 7;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 3;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 3;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
   }
   /**
    * Protobuf type {@code PNOMLIPLGJC}
@@ -133,12 +109,12 @@ public final class PNOMLIPLGJCOuterClass {
               break;
             case 24: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 98: {
@@ -193,10 +169,6 @@ public final class PNOMLIPLGJCOuterClass {
     public static final int HEMFIOJEMAP_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG> hEMFIOJEMAP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
      */
     @java.lang.Override
@@ -204,10 +176,6 @@ public final class PNOMLIPLGJCOuterClass {
       return hEMFIOJEMAP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
      */
     @java.lang.Override
@@ -216,10 +184,6 @@ public final class PNOMLIPLGJCOuterClass {
       return hEMFIOJEMAP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
      */
     @java.lang.Override
@@ -227,10 +191,6 @@ public final class PNOMLIPLGJCOuterClass {
       return hEMFIOJEMAP_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
      */
     @java.lang.Override
@@ -238,10 +198,6 @@ public final class PNOMLIPLGJCOuterClass {
       return hEMFIOJEMAP_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
      */
     @java.lang.Override
@@ -253,10 +209,6 @@ public final class PNOMLIPLGJCOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 14;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 14;</code>
      * @return The isFinished.
      */
@@ -265,26 +217,26 @@ public final class PNOMLIPLGJCOuterClass {
       return isFinished_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 7;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 7;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 7;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 7;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 3;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 3;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 3;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 3;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -301,11 +253,11 @@ public final class PNOMLIPLGJCOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(3, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(3, stageId_);
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(7, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(7, ugcGuid_);
       }
       for (int i = 0; i < hEMFIOJEMAP_.size(); i++) {
         output.writeMessage(12, hEMFIOJEMAP_.get(i));
@@ -322,13 +274,13 @@ public final class PNOMLIPLGJCOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, eGHGENOJNEK_);
+          .computeUInt32Size(3, stageId_);
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, iFADGMHEFHF_);
+          .computeUInt32Size(7, ugcGuid_);
       }
       for (int i = 0; i < hEMFIOJEMAP_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -357,10 +309,10 @@ public final class PNOMLIPLGJCOuterClass {
           .equals(other.getHEMFIOJEMAPList())) return false;
       if (getIsFinished()
           != other.getIsFinished()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -379,10 +331,10 @@ public final class PNOMLIPLGJCOuterClass {
       hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinished());
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -525,9 +477,9 @@ public final class PNOMLIPLGJCOuterClass {
         }
         isFinished_ = false;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         return this;
       }
@@ -566,8 +518,8 @@ public final class PNOMLIPLGJCOuterClass {
           result.hEMFIOJEMAP_ = hEMFIOJEMAPBuilder_.build();
         }
         result.isFinished_ = isFinished_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.ugcGuid_ = ugcGuid_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -645,11 +597,11 @@ public final class PNOMLIPLGJCOuterClass {
         if (other.getIsFinished() != false) {
           setIsFinished(other.getIsFinished());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -694,10 +646,6 @@ public final class PNOMLIPLGJCOuterClass {
           emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG, emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG.Builder, emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAGOrBuilder> hEMFIOJEMAPBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG> getHEMFIOJEMAPList() {
@@ -708,10 +656,6 @@ public final class PNOMLIPLGJCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public int getHEMFIOJEMAPCount() {
@@ -722,10 +666,6 @@ public final class PNOMLIPLGJCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG getHEMFIOJEMAP(int index) {
@@ -736,10 +676,6 @@ public final class PNOMLIPLGJCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public Builder setHEMFIOJEMAP(
@@ -757,10 +693,6 @@ public final class PNOMLIPLGJCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public Builder setHEMFIOJEMAP(
@@ -775,10 +707,6 @@ public final class PNOMLIPLGJCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public Builder addHEMFIOJEMAP(emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG value) {
@@ -795,10 +723,6 @@ public final class PNOMLIPLGJCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public Builder addHEMFIOJEMAP(
@@ -816,10 +740,6 @@ public final class PNOMLIPLGJCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public Builder addHEMFIOJEMAP(
@@ -834,10 +754,6 @@ public final class PNOMLIPLGJCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public Builder addHEMFIOJEMAP(
@@ -852,10 +768,6 @@ public final class PNOMLIPLGJCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public Builder addAllHEMFIOJEMAP(
@@ -871,10 +783,6 @@ public final class PNOMLIPLGJCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public Builder clearHEMFIOJEMAP() {
@@ -888,10 +796,6 @@ public final class PNOMLIPLGJCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public Builder removeHEMFIOJEMAP(int index) {
@@ -905,10 +809,6 @@ public final class PNOMLIPLGJCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG.Builder getHEMFIOJEMAPBuilder(
@@ -916,10 +816,6 @@ public final class PNOMLIPLGJCOuterClass {
         return getHEMFIOJEMAPFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAGOrBuilder getHEMFIOJEMAPOrBuilder(
@@ -930,10 +826,6 @@ public final class PNOMLIPLGJCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAGOrBuilder> 
@@ -945,10 +837,6 @@ public final class PNOMLIPLGJCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG.Builder addHEMFIOJEMAPBuilder() {
@@ -956,10 +844,6 @@ public final class PNOMLIPLGJCOuterClass {
             emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG.Builder addHEMFIOJEMAPBuilder(
@@ -968,10 +852,6 @@ public final class PNOMLIPLGJCOuterClass {
             index, emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .DBGDFKIKHAG HEMFIOJEMAP = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.DBGDFKIKHAG.Builder> 
@@ -995,10 +875,6 @@ public final class PNOMLIPLGJCOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 14;</code>
        * @return The isFinished.
        */
@@ -1007,10 +883,6 @@ public final class PNOMLIPLGJCOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 14;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -1022,10 +894,6 @@ public final class PNOMLIPLGJCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 14;</code>
        * @return This builder for chaining.
        */
@@ -1036,64 +904,64 @@ public final class PNOMLIPLGJCOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 7;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 7;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 7;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 7;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 7;</code>
+       * <code>uint32 ugc_guid = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 3;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 3;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 3;</code>
+       * <code>uint32 stage_id = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -1164,11 +1032,11 @@ public final class PNOMLIPLGJCOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021PNOMLIPLGJC.proto\032\021DBGDFKIKHAG.proto\"o" +
+      "\n\021PNOMLIPLGJC.proto\032\021DBGDFKIKHAG.proto\"i" +
       "\n\013PNOMLIPLGJC\022!\n\013HEMFIOJEMAP\030\014 \003(\0132\014.DBG" +
-      "DFKIKHAG\022\023\n\013is_finished\030\016 \001(\010\022\023\n\013IFADGMH" +
-      "EFHF\030\007 \001(\r\022\023\n\013EGHGENOJNEK\030\003 \001(\rB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "DFKIKHAG\022\023\n\013is_finished\030\016 \001(\010\022\020\n\010ugc_gui" +
+      "d\030\007 \001(\r\022\020\n\010stage_id\030\003 \001(\rB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1180,7 +1048,7 @@ public final class PNOMLIPLGJCOuterClass {
     internal_static_PNOMLIPLGJC_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PNOMLIPLGJC_descriptor,
-        new java.lang.String[] { "HEMFIOJEMAP", "IsFinished", "IFADGMHEFHF", "EGHGENOJNEK", });
+        new java.lang.String[] { "HEMFIOJEMAP", "IsFinished", "UgcGuid", "StageId", });
     emu.grasscutter.net.proto.DBGDFKIKHAGOuterClass.getDescriptor();
   }
 

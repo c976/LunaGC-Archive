@@ -19,70 +19,42 @@ public final class AOOMDKNBKFMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 begin_time = 6;</code>
      * @return The beginTime.
      */
     int getBeginTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FKNJFHNEBJN = 13;</code>
      * @return The fKNJFHNEBJN.
      */
     int getFKNJFHNEBJN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BMLIGIIELDE = 9;</code>
      * @return The bMLIGIIELDE.
      */
     int getBMLIGIIELDE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ODJLLLPLBHE = 12;</code>
      * @return The oDJLLLPLBHE.
      */
     int getODJLLLPLBHE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BOEEJKFFKEA = 15;</code>
      * @return The bOEEJKFFKEA.
      */
     int getBOEEJKFFKEA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DDGJHIALHOA = 4;</code>
      * @return The dDGJHIALHOA.
      */
     int getDDGJHIALHOA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OOCHMBFLABG = 10;</code>
      * @return The oOCHMBFLABG.
      */
@@ -203,10 +175,6 @@ public final class AOOMDKNBKFMOuterClass {
     public static final int BEGIN_TIME_FIELD_NUMBER = 6;
     private int beginTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 begin_time = 6;</code>
      * @return The beginTime.
      */
@@ -218,10 +186,6 @@ public final class AOOMDKNBKFMOuterClass {
     public static final int FKNJFHNEBJN_FIELD_NUMBER = 13;
     private int fKNJFHNEBJN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FKNJFHNEBJN = 13;</code>
      * @return The fKNJFHNEBJN.
      */
@@ -233,10 +197,6 @@ public final class AOOMDKNBKFMOuterClass {
     public static final int BMLIGIIELDE_FIELD_NUMBER = 9;
     private int bMLIGIIELDE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BMLIGIIELDE = 9;</code>
      * @return The bMLIGIIELDE.
      */
@@ -248,10 +208,6 @@ public final class AOOMDKNBKFMOuterClass {
     public static final int ODJLLLPLBHE_FIELD_NUMBER = 12;
     private int oDJLLLPLBHE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ODJLLLPLBHE = 12;</code>
      * @return The oDJLLLPLBHE.
      */
@@ -263,10 +219,6 @@ public final class AOOMDKNBKFMOuterClass {
     public static final int BOEEJKFFKEA_FIELD_NUMBER = 15;
     private int bOEEJKFFKEA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BOEEJKFFKEA = 15;</code>
      * @return The bOEEJKFFKEA.
      */
@@ -278,10 +230,6 @@ public final class AOOMDKNBKFMOuterClass {
     public static final int DDGJHIALHOA_FIELD_NUMBER = 4;
     private int dDGJHIALHOA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DDGJHIALHOA = 4;</code>
      * @return The dDGJHIALHOA.
      */
@@ -293,10 +241,6 @@ public final class AOOMDKNBKFMOuterClass {
     public static final int OOCHMBFLABG_FIELD_NUMBER = 10;
     private boolean oOCHMBFLABG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool OOCHMBFLABG = 10;</code>
      * @return The oOCHMBFLABG.
      */
@@ -712,10 +656,6 @@ public final class AOOMDKNBKFMOuterClass {
 
       private int beginTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 begin_time = 6;</code>
        * @return The beginTime.
        */
@@ -724,10 +664,6 @@ public final class AOOMDKNBKFMOuterClass {
         return beginTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 begin_time = 6;</code>
        * @param value The beginTime to set.
        * @return This builder for chaining.
@@ -739,10 +675,6 @@ public final class AOOMDKNBKFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 begin_time = 6;</code>
        * @return This builder for chaining.
        */
@@ -755,10 +687,6 @@ public final class AOOMDKNBKFMOuterClass {
 
       private int fKNJFHNEBJN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FKNJFHNEBJN = 13;</code>
        * @return The fKNJFHNEBJN.
        */
@@ -767,10 +695,6 @@ public final class AOOMDKNBKFMOuterClass {
         return fKNJFHNEBJN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FKNJFHNEBJN = 13;</code>
        * @param value The fKNJFHNEBJN to set.
        * @return This builder for chaining.
@@ -782,10 +706,6 @@ public final class AOOMDKNBKFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FKNJFHNEBJN = 13;</code>
        * @return This builder for chaining.
        */
@@ -798,10 +718,6 @@ public final class AOOMDKNBKFMOuterClass {
 
       private int bMLIGIIELDE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BMLIGIIELDE = 9;</code>
        * @return The bMLIGIIELDE.
        */
@@ -810,10 +726,6 @@ public final class AOOMDKNBKFMOuterClass {
         return bMLIGIIELDE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BMLIGIIELDE = 9;</code>
        * @param value The bMLIGIIELDE to set.
        * @return This builder for chaining.
@@ -825,10 +737,6 @@ public final class AOOMDKNBKFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BMLIGIIELDE = 9;</code>
        * @return This builder for chaining.
        */
@@ -841,10 +749,6 @@ public final class AOOMDKNBKFMOuterClass {
 
       private int oDJLLLPLBHE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ODJLLLPLBHE = 12;</code>
        * @return The oDJLLLPLBHE.
        */
@@ -853,10 +757,6 @@ public final class AOOMDKNBKFMOuterClass {
         return oDJLLLPLBHE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ODJLLLPLBHE = 12;</code>
        * @param value The oDJLLLPLBHE to set.
        * @return This builder for chaining.
@@ -868,10 +768,6 @@ public final class AOOMDKNBKFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ODJLLLPLBHE = 12;</code>
        * @return This builder for chaining.
        */
@@ -884,10 +780,6 @@ public final class AOOMDKNBKFMOuterClass {
 
       private int bOEEJKFFKEA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BOEEJKFFKEA = 15;</code>
        * @return The bOEEJKFFKEA.
        */
@@ -896,10 +788,6 @@ public final class AOOMDKNBKFMOuterClass {
         return bOEEJKFFKEA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BOEEJKFFKEA = 15;</code>
        * @param value The bOEEJKFFKEA to set.
        * @return This builder for chaining.
@@ -911,10 +799,6 @@ public final class AOOMDKNBKFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BOEEJKFFKEA = 15;</code>
        * @return This builder for chaining.
        */
@@ -927,10 +811,6 @@ public final class AOOMDKNBKFMOuterClass {
 
       private int dDGJHIALHOA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DDGJHIALHOA = 4;</code>
        * @return The dDGJHIALHOA.
        */
@@ -939,10 +819,6 @@ public final class AOOMDKNBKFMOuterClass {
         return dDGJHIALHOA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DDGJHIALHOA = 4;</code>
        * @param value The dDGJHIALHOA to set.
        * @return This builder for chaining.
@@ -954,10 +830,6 @@ public final class AOOMDKNBKFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DDGJHIALHOA = 4;</code>
        * @return This builder for chaining.
        */
@@ -970,10 +842,6 @@ public final class AOOMDKNBKFMOuterClass {
 
       private boolean oOCHMBFLABG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OOCHMBFLABG = 10;</code>
        * @return The oOCHMBFLABG.
        */
@@ -982,10 +850,6 @@ public final class AOOMDKNBKFMOuterClass {
         return oOCHMBFLABG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OOCHMBFLABG = 10;</code>
        * @param value The oOCHMBFLABG to set.
        * @return This builder for chaining.
@@ -997,10 +861,6 @@ public final class AOOMDKNBKFMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool OOCHMBFLABG = 10;</code>
        * @return This builder for chaining.
        */

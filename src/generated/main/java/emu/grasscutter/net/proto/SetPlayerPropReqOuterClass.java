@@ -19,52 +19,33 @@ public final class SetPlayerPropReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PropValue prop_list = 13;</code>
+     * <code>repeated .PropValue prop_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PropValueOuterClass.PropValue> 
         getPropListList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PropValue prop_list = 13;</code>
+     * <code>repeated .PropValue prop_list = 9;</code>
      */
     emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropList(int index);
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PropValue prop_list = 13;</code>
+     * <code>repeated .PropValue prop_list = 9;</code>
      */
     int getPropListCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PropValue prop_list = 13;</code>
+     * <code>repeated .PropValue prop_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder> 
         getPropListOrBuilderList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PropValue prop_list = 13;</code>
+     * <code>repeated .PropValue prop_list = 9;</code>
      */
     emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder getPropListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 2055
+   * CmdId: 25174
+   * Obf: FNNAEOMEFBL
    * </pre>
    *
    * Protobuf type {@code SetPlayerPropReq}
@@ -113,7 +94,7 @@ public final class SetPlayerPropReqOuterClass {
             case 0:
               done = true;
               break;
-            case 106: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 propList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PropValueOuterClass.PropValue>();
                 mutable_bitField0_ |= 0x00000001;
@@ -157,25 +138,17 @@ public final class SetPlayerPropReqOuterClass {
               emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq.class, emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq.Builder.class);
     }
 
-    public static final int PROP_LIST_FIELD_NUMBER = 13;
+    public static final int PROP_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.PropValueOuterClass.PropValue> propList_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PropValue prop_list = 13;</code>
+     * <code>repeated .PropValue prop_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropListList() {
       return propList_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PropValue prop_list = 13;</code>
+     * <code>repeated .PropValue prop_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder> 
@@ -183,33 +156,21 @@ public final class SetPlayerPropReqOuterClass {
       return propList_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PropValue prop_list = 13;</code>
+     * <code>repeated .PropValue prop_list = 9;</code>
      */
     @java.lang.Override
     public int getPropListCount() {
       return propList_.size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PropValue prop_list = 13;</code>
+     * <code>repeated .PropValue prop_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropList(int index) {
       return propList_.get(index);
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .PropValue prop_list = 13;</code>
+     * <code>repeated .PropValue prop_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder getPropListOrBuilder(
@@ -232,7 +193,7 @@ public final class SetPlayerPropReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < propList_.size(); i++) {
-        output.writeMessage(13, propList_.get(i));
+        output.writeMessage(9, propList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -245,7 +206,7 @@ public final class SetPlayerPropReqOuterClass {
       size = 0;
       for (int i = 0; i < propList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, propList_.get(i));
+          .computeMessageSize(9, propList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -376,7 +337,8 @@ public final class SetPlayerPropReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2055
+     * CmdId: 25174
+     * Obf: FNNAEOMEFBL
      * </pre>
      *
      * Protobuf type {@code SetPlayerPropReq}
@@ -576,11 +538,7 @@ public final class SetPlayerPropReqOuterClass {
           emu.grasscutter.net.proto.PropValueOuterClass.PropValue, emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder, emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder> propListBuilder_;
 
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropListList() {
         if (propListBuilder_ == null) {
@@ -590,11 +548,7 @@ public final class SetPlayerPropReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public int getPropListCount() {
         if (propListBuilder_ == null) {
@@ -604,11 +558,7 @@ public final class SetPlayerPropReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropList(int index) {
         if (propListBuilder_ == null) {
@@ -618,11 +568,7 @@ public final class SetPlayerPropReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public Builder setPropList(
           int index, emu.grasscutter.net.proto.PropValueOuterClass.PropValue value) {
@@ -639,11 +585,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public Builder setPropList(
           int index, emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder builderForValue) {
@@ -657,11 +599,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public Builder addPropList(emu.grasscutter.net.proto.PropValueOuterClass.PropValue value) {
         if (propListBuilder_ == null) {
@@ -677,11 +615,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public Builder addPropList(
           int index, emu.grasscutter.net.proto.PropValueOuterClass.PropValue value) {
@@ -698,11 +632,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public Builder addPropList(
           emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder builderForValue) {
@@ -716,11 +646,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public Builder addPropList(
           int index, emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder builderForValue) {
@@ -734,11 +660,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public Builder addAllPropList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.PropValueOuterClass.PropValue> values) {
@@ -753,11 +675,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public Builder clearPropList() {
         if (propListBuilder_ == null) {
@@ -770,11 +688,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public Builder removePropList(int index) {
         if (propListBuilder_ == null) {
@@ -787,22 +701,14 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder getPropListBuilder(
           int index) {
         return getPropListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder getPropListOrBuilder(
           int index) {
@@ -812,11 +718,7 @@ public final class SetPlayerPropReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder> 
            getPropListOrBuilderList() {
@@ -827,22 +729,14 @@ public final class SetPlayerPropReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder addPropListBuilder() {
         return getPropListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.PropValueOuterClass.PropValue.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder addPropListBuilder(
           int index) {
@@ -850,11 +744,7 @@ public final class SetPlayerPropReqOuterClass {
             index, emu.grasscutter.net.proto.PropValueOuterClass.PropValue.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .PropValue prop_list = 13;</code>
+       * <code>repeated .PropValue prop_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder> 
            getPropListBuilderList() {
@@ -942,7 +832,7 @@ public final class SetPlayerPropReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026SetPlayerPropReq.proto\032\017PropValue.prot" +
-      "o\"1\n\020SetPlayerPropReq\022\035\n\tprop_list\030\r \003(\013" +
+      "o\"1\n\020SetPlayerPropReq\022\035\n\tprop_list\030\t \003(\013" +
       "2\n.PropValueB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };

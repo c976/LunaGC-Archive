@@ -19,55 +19,31 @@ public final class AIENJALHGBFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 5;</code>
+     * <code>.FNEFDOMCAJN pos = 5;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 5;</code>
+     * <code>.FNEFDOMCAJN pos = 5;</code>
      * @return The pos.
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getPos();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 5;</code>
+     * <code>.FNEFDOMCAJN pos = 5;</code>
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getPosOrBuilder();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getPosOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 entity_id_list = 10;</code>
      * @return A list containing the entityIdList.
      */
     java.util.List<java.lang.Integer> getEntityIdListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 entity_id_list = 10;</code>
      * @return The count of entityIdList.
      */
     int getEntityIdListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 entity_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The entityIdList at the given index.
@@ -75,106 +51,62 @@ public final class AIENJALHGBFOuterClass {
     int getEntityIdList(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+     * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
      * @return Whether the extraBallDir field is set.
      */
     boolean hasExtraBallDir();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+     * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
      * @return The extraBallDir.
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getExtraBallDir();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getExtraBallDir();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+     * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getExtraBallDirOrBuilder();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getExtraBallDirOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 client_game_time = 2;</code>
      * @return The clientGameTime.
      */
     long getClientGameTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 peer_id = 6;</code>
      * @return The peerId.
      */
     int getPeerId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 rot = 9;</code>
      * @return The rot.
      */
     int getRot();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_failed = 4;</code>
      * @return The isFailed.
      */
     boolean getIsFailed();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BreakoutActionType action_type = 1;</code>
      * @return The enum numeric value on the wire for actionType.
      */
     int getActionTypeValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BreakoutActionType action_type = 1;</code>
      * @return The actionType.
      */
     emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType getActionType();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 execution_game_time = 7;</code>
      * @return The executionGameTime.
      */
     long getExecutionGameTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 server_game_time = 3;</code>
      * @return The serverGameTime.
      */
@@ -250,11 +182,11 @@ public final class AIENJALHGBFOuterClass {
               break;
             }
             case 42: {
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder subBuilder = null;
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
               }
-              pos_ = input.readMessage(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.parser(), extensionRegistry);
+              pos_ = input.readMessage(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(pos_);
                 pos_ = subBuilder.buildPartial();
@@ -273,11 +205,11 @@ public final class AIENJALHGBFOuterClass {
               break;
             }
             case 66: {
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder subBuilder = null;
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder subBuilder = null;
               if (extraBallDir_ != null) {
                 subBuilder = extraBallDir_.toBuilder();
               }
-              extraBallDir_ = input.readMessage(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.parser(), extensionRegistry);
+              extraBallDir_ = input.readMessage(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(extraBallDir_);
                 extraBallDir_ = subBuilder.buildPartial();
@@ -347,13 +279,9 @@ public final class AIENJALHGBFOuterClass {
     }
 
     public static final int POS_FIELD_NUMBER = 5;
-    private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 pos_;
+    private emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN pos_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 5;</code>
+     * <code>.FNEFDOMCAJN pos = 5;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -361,36 +289,24 @@ public final class AIENJALHGBFOuterClass {
       return pos_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 5;</code>
+     * <code>.FNEFDOMCAJN pos = 5;</code>
      * @return The pos.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : pos_;
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : pos_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 5;</code>
+     * <code>.FNEFDOMCAJN pos = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getPosOrBuilder() {
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
     public static final int ENTITY_ID_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList entityIdList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 entity_id_list = 10;</code>
      * @return A list containing the entityIdList.
      */
@@ -400,10 +316,6 @@ public final class AIENJALHGBFOuterClass {
       return entityIdList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 entity_id_list = 10;</code>
      * @return The count of entityIdList.
      */
@@ -411,10 +323,6 @@ public final class AIENJALHGBFOuterClass {
       return entityIdList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 entity_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The entityIdList at the given index.
@@ -425,13 +333,9 @@ public final class AIENJALHGBFOuterClass {
     private int entityIdListMemoizedSerializedSize = -1;
 
     public static final int EXTRA_BALL_DIR_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 extraBallDir_;
+    private emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN extraBallDir_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+     * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
      * @return Whether the extraBallDir field is set.
      */
     @java.lang.Override
@@ -439,36 +343,24 @@ public final class AIENJALHGBFOuterClass {
       return extraBallDir_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+     * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
      * @return The extraBallDir.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getExtraBallDir() {
-      return extraBallDir_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : extraBallDir_;
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getExtraBallDir() {
+      return extraBallDir_ == null ? emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : extraBallDir_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+     * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getExtraBallDirOrBuilder() {
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getExtraBallDirOrBuilder() {
       return getExtraBallDir();
     }
 
     public static final int CLIENT_GAME_TIME_FIELD_NUMBER = 2;
     private long clientGameTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 client_game_time = 2;</code>
      * @return The clientGameTime.
      */
@@ -480,10 +372,6 @@ public final class AIENJALHGBFOuterClass {
     public static final int PEER_ID_FIELD_NUMBER = 6;
     private int peerId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 peer_id = 6;</code>
      * @return The peerId.
      */
@@ -495,10 +383,6 @@ public final class AIENJALHGBFOuterClass {
     public static final int ROT_FIELD_NUMBER = 9;
     private int rot_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 rot = 9;</code>
      * @return The rot.
      */
@@ -510,10 +394,6 @@ public final class AIENJALHGBFOuterClass {
     public static final int IS_FAILED_FIELD_NUMBER = 4;
     private boolean isFailed_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_failed = 4;</code>
      * @return The isFailed.
      */
@@ -525,10 +405,6 @@ public final class AIENJALHGBFOuterClass {
     public static final int ACTION_TYPE_FIELD_NUMBER = 1;
     private int actionType_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BreakoutActionType action_type = 1;</code>
      * @return The enum numeric value on the wire for actionType.
      */
@@ -536,10 +412,6 @@ public final class AIENJALHGBFOuterClass {
       return actionType_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BreakoutActionType action_type = 1;</code>
      * @return The actionType.
      */
@@ -552,10 +424,6 @@ public final class AIENJALHGBFOuterClass {
     public static final int EXECUTION_GAME_TIME_FIELD_NUMBER = 7;
     private long executionGameTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 execution_game_time = 7;</code>
      * @return The executionGameTime.
      */
@@ -567,10 +435,6 @@ public final class AIENJALHGBFOuterClass {
     public static final int SERVER_GAME_TIME_FIELD_NUMBER = 3;
     private long serverGameTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 server_game_time = 3;</code>
      * @return The serverGameTime.
      */
@@ -594,7 +458,7 @@ public final class AIENJALHGBFOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (actionType_ != emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType.AHELMHOPMEF_ACTION_TYPE_NONE.getNumber()) {
+      if (actionType_ != emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType.BreakoutActionType_ACTION_TYPE_NONE.getNumber()) {
         output.writeEnum(1, actionType_);
       }
       if (clientGameTime_ != 0L) {
@@ -637,7 +501,7 @@ public final class AIENJALHGBFOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (actionType_ != emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType.AHELMHOPMEF_ACTION_TYPE_NONE.getNumber()) {
+      if (actionType_ != emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType.BreakoutActionType_ACTION_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, actionType_);
       }
@@ -1093,43 +957,31 @@ public final class AIENJALHGBFOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 pos_;
+      private emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN pos_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> posBuilder_;
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> posBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 5;</code>
+       * <code>.FNEFDOMCAJN pos = 5;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 5;</code>
+       * <code>.FNEFDOMCAJN pos = 5;</code>
        * @return The pos.
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getPos() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getPos() {
         if (posBuilder_ == null) {
-          return pos_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : pos_;
+          return pos_ == null ? emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : pos_;
         } else {
           return posBuilder_.getMessage();
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 5;</code>
+       * <code>.FNEFDOMCAJN pos = 5;</code>
        */
-      public Builder setPos(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+      public Builder setPos(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (posBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1143,14 +995,10 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 5;</code>
+       * <code>.FNEFDOMCAJN pos = 5;</code>
        */
       public Builder setPos(
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder builderForValue) {
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder builderForValue) {
         if (posBuilder_ == null) {
           pos_ = builderForValue.build();
           onChanged();
@@ -1161,17 +1009,13 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 5;</code>
+       * <code>.FNEFDOMCAJN pos = 5;</code>
        */
-      public Builder mergePos(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+      public Builder mergePos(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (posBuilder_ == null) {
           if (pos_ != null) {
             pos_ =
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.newBuilder(pos_).mergeFrom(value).buildPartial();
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.newBuilder(pos_).mergeFrom(value).buildPartial();
           } else {
             pos_ = value;
           }
@@ -1183,11 +1027,7 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 5;</code>
+       * <code>.FNEFDOMCAJN pos = 5;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -1201,45 +1041,33 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 5;</code>
+       * <code>.FNEFDOMCAJN pos = 5;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder getPosBuilder() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder getPosBuilder() {
         
         onChanged();
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 5;</code>
+       * <code>.FNEFDOMCAJN pos = 5;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getPosOrBuilder() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
           return posBuilder_.getMessageOrBuilder();
         } else {
           return pos_ == null ?
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : pos_;
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : pos_;
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 5;</code>
+       * <code>.FNEFDOMCAJN pos = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> 
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> 
           getPosFieldBuilder() {
         if (posBuilder_ == null) {
           posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder>(
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder>(
                   getPos(),
                   getParentForChildren(),
                   isClean());
@@ -1256,10 +1084,6 @@ public final class AIENJALHGBFOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 entity_id_list = 10;</code>
        * @return A list containing the entityIdList.
        */
@@ -1269,10 +1093,6 @@ public final class AIENJALHGBFOuterClass {
                  java.util.Collections.unmodifiableList(entityIdList_) : entityIdList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 entity_id_list = 10;</code>
        * @return The count of entityIdList.
        */
@@ -1280,10 +1100,6 @@ public final class AIENJALHGBFOuterClass {
         return entityIdList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 entity_id_list = 10;</code>
        * @param index The index of the element to return.
        * @return The entityIdList at the given index.
@@ -1292,10 +1108,6 @@ public final class AIENJALHGBFOuterClass {
         return entityIdList_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 entity_id_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The entityIdList to set.
@@ -1309,10 +1121,6 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 entity_id_list = 10;</code>
        * @param value The entityIdList to add.
        * @return This builder for chaining.
@@ -1324,10 +1132,6 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 entity_id_list = 10;</code>
        * @param values The entityIdList to add.
        * @return This builder for chaining.
@@ -1341,10 +1145,6 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 entity_id_list = 10;</code>
        * @return This builder for chaining.
        */
@@ -1355,43 +1155,31 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 extraBallDir_;
+      private emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN extraBallDir_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> extraBallDirBuilder_;
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> extraBallDirBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+       * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
        * @return Whether the extraBallDir field is set.
        */
       public boolean hasExtraBallDir() {
         return extraBallDirBuilder_ != null || extraBallDir_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+       * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
        * @return The extraBallDir.
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getExtraBallDir() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getExtraBallDir() {
         if (extraBallDirBuilder_ == null) {
-          return extraBallDir_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : extraBallDir_;
+          return extraBallDir_ == null ? emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : extraBallDir_;
         } else {
           return extraBallDirBuilder_.getMessage();
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+       * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
        */
-      public Builder setExtraBallDir(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+      public Builder setExtraBallDir(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (extraBallDirBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1405,14 +1193,10 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+       * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
        */
       public Builder setExtraBallDir(
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder builderForValue) {
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder builderForValue) {
         if (extraBallDirBuilder_ == null) {
           extraBallDir_ = builderForValue.build();
           onChanged();
@@ -1423,17 +1207,13 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+       * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
        */
-      public Builder mergeExtraBallDir(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+      public Builder mergeExtraBallDir(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (extraBallDirBuilder_ == null) {
           if (extraBallDir_ != null) {
             extraBallDir_ =
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.newBuilder(extraBallDir_).mergeFrom(value).buildPartial();
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.newBuilder(extraBallDir_).mergeFrom(value).buildPartial();
           } else {
             extraBallDir_ = value;
           }
@@ -1445,11 +1225,7 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+       * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
        */
       public Builder clearExtraBallDir() {
         if (extraBallDirBuilder_ == null) {
@@ -1463,45 +1239,33 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+       * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder getExtraBallDirBuilder() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder getExtraBallDirBuilder() {
         
         onChanged();
         return getExtraBallDirFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+       * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getExtraBallDirOrBuilder() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getExtraBallDirOrBuilder() {
         if (extraBallDirBuilder_ != null) {
           return extraBallDirBuilder_.getMessageOrBuilder();
         } else {
           return extraBallDir_ == null ?
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : extraBallDir_;
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : extraBallDir_;
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 extra_ball_dir = 8;</code>
+       * <code>.FNEFDOMCAJN extra_ball_dir = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> 
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> 
           getExtraBallDirFieldBuilder() {
         if (extraBallDirBuilder_ == null) {
           extraBallDirBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder>(
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder>(
                   getExtraBallDir(),
                   getParentForChildren(),
                   isClean());
@@ -1512,10 +1276,6 @@ public final class AIENJALHGBFOuterClass {
 
       private long clientGameTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 client_game_time = 2;</code>
        * @return The clientGameTime.
        */
@@ -1524,10 +1284,6 @@ public final class AIENJALHGBFOuterClass {
         return clientGameTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 client_game_time = 2;</code>
        * @param value The clientGameTime to set.
        * @return This builder for chaining.
@@ -1539,10 +1295,6 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 client_game_time = 2;</code>
        * @return This builder for chaining.
        */
@@ -1555,10 +1307,6 @@ public final class AIENJALHGBFOuterClass {
 
       private int peerId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 peer_id = 6;</code>
        * @return The peerId.
        */
@@ -1567,10 +1315,6 @@ public final class AIENJALHGBFOuterClass {
         return peerId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 peer_id = 6;</code>
        * @param value The peerId to set.
        * @return This builder for chaining.
@@ -1582,10 +1326,6 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 peer_id = 6;</code>
        * @return This builder for chaining.
        */
@@ -1598,10 +1338,6 @@ public final class AIENJALHGBFOuterClass {
 
       private int rot_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 rot = 9;</code>
        * @return The rot.
        */
@@ -1610,10 +1346,6 @@ public final class AIENJALHGBFOuterClass {
         return rot_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 rot = 9;</code>
        * @param value The rot to set.
        * @return This builder for chaining.
@@ -1625,10 +1357,6 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 rot = 9;</code>
        * @return This builder for chaining.
        */
@@ -1641,10 +1369,6 @@ public final class AIENJALHGBFOuterClass {
 
       private boolean isFailed_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_failed = 4;</code>
        * @return The isFailed.
        */
@@ -1653,10 +1377,6 @@ public final class AIENJALHGBFOuterClass {
         return isFailed_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_failed = 4;</code>
        * @param value The isFailed to set.
        * @return This builder for chaining.
@@ -1668,10 +1388,6 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_failed = 4;</code>
        * @return This builder for chaining.
        */
@@ -1684,10 +1400,6 @@ public final class AIENJALHGBFOuterClass {
 
       private int actionType_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BreakoutActionType action_type = 1;</code>
        * @return The enum numeric value on the wire for actionType.
        */
@@ -1695,10 +1407,6 @@ public final class AIENJALHGBFOuterClass {
         return actionType_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BreakoutActionType action_type = 1;</code>
        * @param value The enum numeric value on the wire for actionType to set.
        * @return This builder for chaining.
@@ -1710,10 +1418,6 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BreakoutActionType action_type = 1;</code>
        * @return The actionType.
        */
@@ -1724,10 +1428,6 @@ public final class AIENJALHGBFOuterClass {
         return result == null ? emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BreakoutActionType action_type = 1;</code>
        * @param value The actionType to set.
        * @return This builder for chaining.
@@ -1742,10 +1442,6 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BreakoutActionType action_type = 1;</code>
        * @return This builder for chaining.
        */
@@ -1758,10 +1454,6 @@ public final class AIENJALHGBFOuterClass {
 
       private long executionGameTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 execution_game_time = 7;</code>
        * @return The executionGameTime.
        */
@@ -1770,10 +1462,6 @@ public final class AIENJALHGBFOuterClass {
         return executionGameTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 execution_game_time = 7;</code>
        * @param value The executionGameTime to set.
        * @return This builder for chaining.
@@ -1785,10 +1473,6 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 execution_game_time = 7;</code>
        * @return This builder for chaining.
        */
@@ -1801,10 +1485,6 @@ public final class AIENJALHGBFOuterClass {
 
       private long serverGameTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 server_game_time = 3;</code>
        * @return The serverGameTime.
        */
@@ -1813,10 +1493,6 @@ public final class AIENJALHGBFOuterClass {
         return serverGameTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 server_game_time = 3;</code>
        * @param value The serverGameTime to set.
        * @return This builder for chaining.
@@ -1828,10 +1504,6 @@ public final class AIENJALHGBFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 server_game_time = 3;</code>
        * @return This builder for chaining.
        */
@@ -1908,21 +1580,21 @@ public final class AIENJALHGBFOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021AIENJALHGBF.proto\032\025BreakoutVector2.pro" +
-      "to\032\030BreakoutActionType.proto\"\232\002\n\013AIENJAL" +
-      "HGBF\022\035\n\003pos\030\005 \001(\0132\020.BreakoutVector2\022\026\n\016e" +
-      "ntity_id_list\030\n \003(\r\022(\n\016extra_ball_dir\030\010 " +
-      "\001(\0132\020.BreakoutVector2\022\030\n\020client_game_tim" +
-      "e\030\002 \001(\004\022\017\n\007peer_id\030\006 \001(\r\022\013\n\003rot\030\t \001(\005\022\021\n" +
-      "\tis_failed\030\004 \001(\010\022(\n\013action_type\030\001 \001(\0162\023." +
-      "BreakoutActionType\022\033\n\023execution_game_tim" +
-      "e\030\007 \001(\004\022\030\n\020server_game_time\030\003 \001(\004B\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n\021AIENJALHGBF.proto\032\021FNEFDOMCAJN.proto\032\030" +
+      "BreakoutActionType.proto\"\222\002\n\013AIENJALHGBF" +
+      "\022\031\n\003pos\030\005 \001(\0132\014.FNEFDOMCAJN\022\026\n\016entity_id" +
+      "_list\030\n \003(\r\022$\n\016extra_ball_dir\030\010 \001(\0132\014.FN" +
+      "EFDOMCAJN\022\030\n\020client_game_time\030\002 \001(\004\022\017\n\007p" +
+      "eer_id\030\006 \001(\r\022\013\n\003rot\030\t \001(\005\022\021\n\tis_failed\030\004" +
+      " \001(\010\022(\n\013action_type\030\001 \001(\0162\023.BreakoutActi" +
+      "onType\022\033\n\023execution_game_time\030\007 \001(\004\022\030\n\020s" +
+      "erver_game_time\030\003 \001(\004B\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.getDescriptor(),
         });
     internal_static_AIENJALHGBF_descriptor =
@@ -1931,7 +1603,7 @@ public final class AIENJALHGBFOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AIENJALHGBF_descriptor,
         new java.lang.String[] { "Pos", "EntityIdList", "ExtraBallDir", "ClientGameTime", "PeerId", "Rot", "IsFailed", "ActionType", "ExecutionGameTime", "ServerGameTime", });
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.getDescriptor();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.getDescriptor();
     emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.getDescriptor();
   }
 

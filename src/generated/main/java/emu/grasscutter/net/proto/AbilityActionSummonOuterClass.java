@@ -20,34 +20,34 @@ public final class AbilityActionSummonOuterClass {
 
     /**
      * <pre>
-     * offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>.Vector pos = 7;</code>
+     * <code>.Vector pos = 11;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>.Vector pos = 7;</code>
+     * <code>.Vector pos = 11;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>.Vector pos = 7;</code>
+     * <code>.Vector pos = 11;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
      * <pre>
-     * offset: 40
+     *6.5.5
      * </pre>
      *
      * <code>.Vector rot = 9;</code>
@@ -56,7 +56,7 @@ public final class AbilityActionSummonOuterClass {
     boolean hasRot();
     /**
      * <pre>
-     * offset: 40
+     *6.5.5
      * </pre>
      *
      * <code>.Vector rot = 9;</code>
@@ -65,7 +65,7 @@ public final class AbilityActionSummonOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
      * <pre>
-     * offset: 40
+     *6.5.5
      * </pre>
      *
      * <code>.Vector rot = 9;</code>
@@ -117,19 +117,6 @@ public final class AbilityActionSummonOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (pos_ != null) {
-                subBuilder = pos_.toBuilder();
-              }
-              pos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(pos_);
-                pos_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
             case 74: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (rot_ != null) {
@@ -139,6 +126,19 @@ public final class AbilityActionSummonOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(rot_);
                 rot_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 90: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (pos_ != null) {
+                subBuilder = pos_.toBuilder();
+              }
+              pos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(pos_);
+                pos_ = subBuilder.buildPartial();
               }
 
               break;
@@ -175,14 +175,14 @@ public final class AbilityActionSummonOuterClass {
               emu.grasscutter.net.proto.AbilityActionSummonOuterClass.AbilityActionSummon.class, emu.grasscutter.net.proto.AbilityActionSummonOuterClass.AbilityActionSummon.Builder.class);
     }
 
-    public static final int POS_FIELD_NUMBER = 7;
+    public static final int POS_FIELD_NUMBER = 11;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
      * <pre>
-     * offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>.Vector pos = 7;</code>
+     * <code>.Vector pos = 11;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -191,10 +191,10 @@ public final class AbilityActionSummonOuterClass {
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>.Vector pos = 7;</code>
+     * <code>.Vector pos = 11;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -203,10 +203,10 @@ public final class AbilityActionSummonOuterClass {
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>.Vector pos = 7;</code>
+     * <code>.Vector pos = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -217,7 +217,7 @@ public final class AbilityActionSummonOuterClass {
     private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
      * <pre>
-     * offset: 40
+     *6.5.5
      * </pre>
      *
      * <code>.Vector rot = 9;</code>
@@ -229,7 +229,7 @@ public final class AbilityActionSummonOuterClass {
     }
     /**
      * <pre>
-     * offset: 40
+     *6.5.5
      * </pre>
      *
      * <code>.Vector rot = 9;</code>
@@ -241,7 +241,7 @@ public final class AbilityActionSummonOuterClass {
     }
     /**
      * <pre>
-     * offset: 40
+     *6.5.5
      * </pre>
      *
      * <code>.Vector rot = 9;</code>
@@ -265,11 +265,11 @@ public final class AbilityActionSummonOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pos_ != null) {
-        output.writeMessage(7, getPos());
-      }
       if (rot_ != null) {
         output.writeMessage(9, getRot());
+      }
+      if (pos_ != null) {
+        output.writeMessage(11, getPos());
       }
       unknownFields.writeTo(output);
     }
@@ -280,13 +280,13 @@ public final class AbilityActionSummonOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pos_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getPos());
-      }
       if (rot_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, getRot());
+      }
+      if (pos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, getPos());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -601,10 +601,10 @@ public final class AbilityActionSummonOuterClass {
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
        * <pre>
-       * offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>.Vector pos = 7;</code>
+       * <code>.Vector pos = 11;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
@@ -612,10 +612,10 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>.Vector pos = 7;</code>
+       * <code>.Vector pos = 11;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -627,10 +627,10 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>.Vector pos = 7;</code>
+       * <code>.Vector pos = 11;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -647,10 +647,10 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>.Vector pos = 7;</code>
+       * <code>.Vector pos = 11;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -665,10 +665,10 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>.Vector pos = 7;</code>
+       * <code>.Vector pos = 11;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -687,10 +687,10 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>.Vector pos = 7;</code>
+       * <code>.Vector pos = 11;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -705,10 +705,10 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>.Vector pos = 7;</code>
+       * <code>.Vector pos = 11;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -717,10 +717,10 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>.Vector pos = 7;</code>
+       * <code>.Vector pos = 11;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -732,10 +732,10 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>.Vector pos = 7;</code>
+       * <code>.Vector pos = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -756,7 +756,7 @@ public final class AbilityActionSummonOuterClass {
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
        * <pre>
-       * offset: 40
+       *6.5.5
        * </pre>
        *
        * <code>.Vector rot = 9;</code>
@@ -767,7 +767,7 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 40
+       *6.5.5
        * </pre>
        *
        * <code>.Vector rot = 9;</code>
@@ -782,7 +782,7 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 40
+       *6.5.5
        * </pre>
        *
        * <code>.Vector rot = 9;</code>
@@ -802,7 +802,7 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 40
+       *6.5.5
        * </pre>
        *
        * <code>.Vector rot = 9;</code>
@@ -820,7 +820,7 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 40
+       *6.5.5
        * </pre>
        *
        * <code>.Vector rot = 9;</code>
@@ -842,7 +842,7 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 40
+       *6.5.5
        * </pre>
        *
        * <code>.Vector rot = 9;</code>
@@ -860,7 +860,7 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 40
+       *6.5.5
        * </pre>
        *
        * <code>.Vector rot = 9;</code>
@@ -872,7 +872,7 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 40
+       *6.5.5
        * </pre>
        *
        * <code>.Vector rot = 9;</code>
@@ -887,7 +887,7 @@ public final class AbilityActionSummonOuterClass {
       }
       /**
        * <pre>
-       * offset: 40
+       *6.5.5
        * </pre>
        *
        * <code>.Vector rot = 9;</code>
@@ -973,7 +973,7 @@ public final class AbilityActionSummonOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031AbilityActionSummon.proto\032\014Vector.prot" +
-      "o\"A\n\023AbilityActionSummon\022\024\n\003pos\030\007 \001(\0132\007." +
+      "o\"A\n\023AbilityActionSummon\022\024\n\003pos\030\013 \001(\0132\007." +
       "Vector\022\024\n\003rot\030\t \001(\0132\007.VectorB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };

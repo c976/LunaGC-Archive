@@ -20,133 +20,107 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
 
     /**
      * <pre>
-     * offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>float attack_element_durability = 10;</code>
-     * @return The attackElementDurability.
-     */
-    float getAttackElementDurability();
-
-    /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>int32 BDPGBNFHHCF = 5;</code>
-     * @return The bDPGBNFHHCF.
-     */
-    int getBDPGBNFHHCF();
-
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>uint32 MCBFOGFFBKH = 14;</code>
-     * @return The mCBFOGFFBKH.
-     */
-    int getMCBFOGFFBKH();
-
-    /**
-     * <pre>
-     * offset: 52
-     * </pre>
-     *
-     * <code>uint32 FPPCBHLEKNA = 11;</code>
-     * @return The fPPCBHLEKNA.
-     */
-    int getFPPCBHLEKNA();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 60
-     * </pre>
-     *
-     * <code>int32 entity_type = 4;</code>
-     * @return The entityType.
-     */
-    int getEntityType();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>uint32 attacker_id = 8;</code>
+     * <code>uint32 attacker_id = 7;</code>
      * @return The attackerId.
      */
     int getAttackerId();
 
     /**
      * <pre>
-     * offset: 68
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>int32 GCHLAGKDMAI = 13;</code>
-     * @return The gCHLAGKDMAI.
+     * <code>int32 entity_type = 10;</code>
+     * @return The entityType.
      */
-    int getGCHLAGKDMAI();
+    int getEntityType();
+
+    /**
+     * <code>uint32 KLOBEGKKPIG = 14;</code>
+     * @return The kLOBEGKKPIG.
+     */
+    int getKLOBEGKKPIG();
+
+    /**
+     * <code>int32 DPLBDELKIHH = 13;</code>
+     * @return The dPLBDELKIHH.
+     */
+    int getDPLBDELKIHH();
+
+    /**
+     * <code>int32 DNJOLCOBEIC = 5;</code>
+     * @return The dNJOLCOBEIC.
+     */
+    int getDNJOLCOBEIC();
+
+    /**
+     * <code>float CHHFPCOJMDJ = 8;</code>
+     * @return The cHHFPCOJMDJ.
+     */
+    float getCHHFPCOJMDJ();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeSphere shape_sphere = 1;</code>
+     * <code>.ShapeSphere shape_sphere = 4;</code>
      * @return Whether the shapeSphere field is set.
      */
     boolean hasShapeSphere();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeSphere shape_sphere = 1;</code>
+     * <code>.ShapeSphere shape_sphere = 4;</code>
      * @return The shapeSphere.
      */
     emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere getShapeSphere();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeSphere shape_sphere = 1;</code>
+     * <code>.ShapeSphere shape_sphere = 4;</code>
      */
     emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphereOrBuilder getShapeSphereOrBuilder();
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeBox shape_box = 9;</code>
+     * <code>.ShapeBox shape_box = 6;</code>
      * @return Whether the shapeBox field is set.
      */
     boolean hasShapeBox();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeBox shape_box = 9;</code>
+     * <code>.ShapeBox shape_box = 6;</code>
      * @return The shapeBox.
      */
     emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox getShapeBox();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeBox shape_box = 9;</code>
+     * <code>.ShapeBox shape_box = 6;</code>
      */
     emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBoxOrBuilder getShapeBoxOrBuilder();
 
-    public emu.grasscutter.net.proto.MassiveEntityElementOpBatchNotifyOuterClass.MassiveEntityElementOpBatchNotify.CheckShapeCase getCheckShapeCase();
+    public emu.grasscutter.net.proto.MassiveEntityElementOpBatchNotifyOuterClass.MassiveEntityElementOpBatchNotify.AJBKMCEMGKMCase getAJBKMCEMGKMCase();
   }
   /**
    * <pre>
-   * CmdId: 23620
+   * CmdId: 2035
    * </pre>
    *
    * Protobuf type {@code MassiveEntityElementOpBatchNotify}
@@ -193,67 +167,62 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 34: {
               emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.Builder subBuilder = null;
-              if (checkShapeCase_ == 1) {
-                subBuilder = ((emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) checkShape_).toBuilder();
+              if (aJBKMCEMGKMCase_ == 4) {
+                subBuilder = ((emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) aJBKMCEMGKM_).toBuilder();
               }
-              checkShape_ =
+              aJBKMCEMGKM_ =
                   input.readMessage(emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) checkShape_);
-                checkShape_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) aJBKMCEMGKM_);
+                aJBKMCEMGKM_ = subBuilder.buildPartial();
               }
-              checkShapeCase_ = 1;
-              break;
-            }
-            case 32: {
-
-              entityType_ = input.readInt32();
+              aJBKMCEMGKMCase_ = 4;
               break;
             }
             case 40: {
 
-              bDPGBNFHHCF_ = input.readInt32();
+              dNJOLCOBEIC_ = input.readInt32();
               break;
             }
-            case 64: {
+            case 50: {
+              emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.Builder subBuilder = null;
+              if (aJBKMCEMGKMCase_ == 6) {
+                subBuilder = ((emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) aJBKMCEMGKM_).toBuilder();
+              }
+              aJBKMCEMGKM_ =
+                  input.readMessage(emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) aJBKMCEMGKM_);
+                aJBKMCEMGKM_ = subBuilder.buildPartial();
+              }
+              aJBKMCEMGKMCase_ = 6;
+              break;
+            }
+            case 56: {
 
               attackerId_ = input.readUInt32();
               break;
             }
-            case 74: {
-              emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.Builder subBuilder = null;
-              if (checkShapeCase_ == 9) {
-                subBuilder = ((emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) checkShape_).toBuilder();
-              }
-              checkShape_ =
-                  input.readMessage(emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) checkShape_);
-                checkShape_ = subBuilder.buildPartial();
-              }
-              checkShapeCase_ = 9;
+            case 69: {
+
+              cHHFPCOJMDJ_ = input.readFloat();
               break;
             }
-            case 85: {
+            case 80: {
 
-              attackElementDurability_ = input.readFloat();
-              break;
-            }
-            case 88: {
-
-              fPPCBHLEKNA_ = input.readUInt32();
+              entityType_ = input.readInt32();
               break;
             }
             case 104: {
 
-              gCHLAGKDMAI_ = input.readInt32();
+              dPLBDELKIHH_ = input.readInt32();
               break;
             }
             case 112: {
 
-              mCBFOGFFBKH_ = input.readUInt32();
+              kLOBEGKKPIG_ = input.readUInt32();
               break;
             }
             default: {
@@ -288,16 +257,16 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
               emu.grasscutter.net.proto.MassiveEntityElementOpBatchNotifyOuterClass.MassiveEntityElementOpBatchNotify.class, emu.grasscutter.net.proto.MassiveEntityElementOpBatchNotifyOuterClass.MassiveEntityElementOpBatchNotify.Builder.class);
     }
 
-    private int checkShapeCase_ = 0;
-    private java.lang.Object checkShape_;
-    public enum CheckShapeCase
+    private int aJBKMCEMGKMCase_ = 0;
+    private java.lang.Object aJBKMCEMGKM_;
+    public enum AJBKMCEMGKMCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      SHAPE_SPHERE(1),
-      SHAPE_BOX(9),
-      CHECKSHAPE_NOT_SET(0);
+      SHAPE_SPHERE(4),
+      SHAPE_BOX(6),
+      AJBKMCEMGKM_NOT_SET(0);
       private final int value;
-      private CheckShapeCase(int value) {
+      private AJBKMCEMGKMCase(int value) {
         this.value = value;
       }
       /**
@@ -306,15 +275,15 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static CheckShapeCase valueOf(int value) {
+      public static AJBKMCEMGKMCase valueOf(int value) {
         return forNumber(value);
       }
 
-      public static CheckShapeCase forNumber(int value) {
+      public static AJBKMCEMGKMCase forNumber(int value) {
         switch (value) {
-          case 1: return SHAPE_SPHERE;
-          case 9: return SHAPE_BOX;
-          case 0: return CHECKSHAPE_NOT_SET;
+          case 4: return SHAPE_SPHERE;
+          case 6: return SHAPE_BOX;
+          case 0: return AJBKMCEMGKM_NOT_SET;
           default: return null;
         }
       }
@@ -323,95 +292,20 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       }
     };
 
-    public CheckShapeCase
-    getCheckShapeCase() {
-      return CheckShapeCase.forNumber(
-          checkShapeCase_);
+    public AJBKMCEMGKMCase
+    getAJBKMCEMGKMCase() {
+      return AJBKMCEMGKMCase.forNumber(
+          aJBKMCEMGKMCase_);
     }
 
-    public static final int ATTACK_ELEMENT_DURABILITY_FIELD_NUMBER = 10;
-    private float attackElementDurability_;
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>float attack_element_durability = 10;</code>
-     * @return The attackElementDurability.
-     */
-    @java.lang.Override
-    public float getAttackElementDurability() {
-      return attackElementDurability_;
-    }
-
-    public static final int BDPGBNFHHCF_FIELD_NUMBER = 5;
-    private int bDPGBNFHHCF_;
-    /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>int32 BDPGBNFHHCF = 5;</code>
-     * @return The bDPGBNFHHCF.
-     */
-    @java.lang.Override
-    public int getBDPGBNFHHCF() {
-      return bDPGBNFHHCF_;
-    }
-
-    public static final int MCBFOGFFBKH_FIELD_NUMBER = 14;
-    private int mCBFOGFFBKH_;
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>uint32 MCBFOGFFBKH = 14;</code>
-     * @return The mCBFOGFFBKH.
-     */
-    @java.lang.Override
-    public int getMCBFOGFFBKH() {
-      return mCBFOGFFBKH_;
-    }
-
-    public static final int FPPCBHLEKNA_FIELD_NUMBER = 11;
-    private int fPPCBHLEKNA_;
-    /**
-     * <pre>
-     * offset: 52
-     * </pre>
-     *
-     * <code>uint32 FPPCBHLEKNA = 11;</code>
-     * @return The fPPCBHLEKNA.
-     */
-    @java.lang.Override
-    public int getFPPCBHLEKNA() {
-      return fPPCBHLEKNA_;
-    }
-
-    public static final int ENTITY_TYPE_FIELD_NUMBER = 4;
-    private int entityType_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 60
-     * </pre>
-     *
-     * <code>int32 entity_type = 4;</code>
-     * @return The entityType.
-     */
-    @java.lang.Override
-    public int getEntityType() {
-      return entityType_;
-    }
-
-    public static final int ATTACKER_ID_FIELD_NUMBER = 8;
+    public static final int ATTACKER_ID_FIELD_NUMBER = 7;
     private int attackerId_;
     /**
      * <pre>
-     *6.3.0 // offset: 64
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 attacker_id = 8;</code>
+     * <code>uint32 attacker_id = 7;</code>
      * @return The attackerId.
      */
     @java.lang.Override
@@ -419,103 +313,147 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       return attackerId_;
     }
 
-    public static final int GCHLAGKDMAI_FIELD_NUMBER = 13;
-    private int gCHLAGKDMAI_;
+    public static final int ENTITY_TYPE_FIELD_NUMBER = 10;
+    private int entityType_;
     /**
      * <pre>
-     * offset: 68
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>int32 GCHLAGKDMAI = 13;</code>
-     * @return The gCHLAGKDMAI.
+     * <code>int32 entity_type = 10;</code>
+     * @return The entityType.
      */
     @java.lang.Override
-    public int getGCHLAGKDMAI() {
-      return gCHLAGKDMAI_;
+    public int getEntityType() {
+      return entityType_;
     }
 
-    public static final int SHAPE_SPHERE_FIELD_NUMBER = 1;
+    public static final int KLOBEGKKPIG_FIELD_NUMBER = 14;
+    private int kLOBEGKKPIG_;
+    /**
+     * <code>uint32 KLOBEGKKPIG = 14;</code>
+     * @return The kLOBEGKKPIG.
+     */
+    @java.lang.Override
+    public int getKLOBEGKKPIG() {
+      return kLOBEGKKPIG_;
+    }
+
+    public static final int DPLBDELKIHH_FIELD_NUMBER = 13;
+    private int dPLBDELKIHH_;
+    /**
+     * <code>int32 DPLBDELKIHH = 13;</code>
+     * @return The dPLBDELKIHH.
+     */
+    @java.lang.Override
+    public int getDPLBDELKIHH() {
+      return dPLBDELKIHH_;
+    }
+
+    public static final int DNJOLCOBEIC_FIELD_NUMBER = 5;
+    private int dNJOLCOBEIC_;
+    /**
+     * <code>int32 DNJOLCOBEIC = 5;</code>
+     * @return The dNJOLCOBEIC.
+     */
+    @java.lang.Override
+    public int getDNJOLCOBEIC() {
+      return dNJOLCOBEIC_;
+    }
+
+    public static final int CHHFPCOJMDJ_FIELD_NUMBER = 8;
+    private float cHHFPCOJMDJ_;
+    /**
+     * <code>float CHHFPCOJMDJ = 8;</code>
+     * @return The cHHFPCOJMDJ.
+     */
+    @java.lang.Override
+    public float getCHHFPCOJMDJ() {
+      return cHHFPCOJMDJ_;
+    }
+
+    public static final int SHAPE_SPHERE_FIELD_NUMBER = 4;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeSphere shape_sphere = 1;</code>
+     * <code>.ShapeSphere shape_sphere = 4;</code>
      * @return Whether the shapeSphere field is set.
      */
     @java.lang.Override
     public boolean hasShapeSphere() {
-      return checkShapeCase_ == 1;
+      return aJBKMCEMGKMCase_ == 4;
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeSphere shape_sphere = 1;</code>
+     * <code>.ShapeSphere shape_sphere = 4;</code>
      * @return The shapeSphere.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere getShapeSphere() {
-      if (checkShapeCase_ == 1) {
-         return (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) checkShape_;
+      if (aJBKMCEMGKMCase_ == 4) {
+         return (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) aJBKMCEMGKM_;
       }
       return emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.getDefaultInstance();
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeSphere shape_sphere = 1;</code>
+     * <code>.ShapeSphere shape_sphere = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphereOrBuilder getShapeSphereOrBuilder() {
-      if (checkShapeCase_ == 1) {
-         return (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) checkShape_;
+      if (aJBKMCEMGKMCase_ == 4) {
+         return (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) aJBKMCEMGKM_;
       }
       return emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.getDefaultInstance();
     }
 
-    public static final int SHAPE_BOX_FIELD_NUMBER = 9;
+    public static final int SHAPE_BOX_FIELD_NUMBER = 6;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeBox shape_box = 9;</code>
+     * <code>.ShapeBox shape_box = 6;</code>
      * @return Whether the shapeBox field is set.
      */
     @java.lang.Override
     public boolean hasShapeBox() {
-      return checkShapeCase_ == 9;
+      return aJBKMCEMGKMCase_ == 6;
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeBox shape_box = 9;</code>
+     * <code>.ShapeBox shape_box = 6;</code>
      * @return The shapeBox.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox getShapeBox() {
-      if (checkShapeCase_ == 9) {
-         return (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) checkShape_;
+      if (aJBKMCEMGKMCase_ == 6) {
+         return (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) aJBKMCEMGKM_;
       }
       return emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.getDefaultInstance();
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.ShapeBox shape_box = 9;</code>
+     * <code>.ShapeBox shape_box = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBoxOrBuilder getShapeBoxOrBuilder() {
-      if (checkShapeCase_ == 9) {
-         return (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) checkShape_;
+      if (aJBKMCEMGKMCase_ == 6) {
+         return (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) aJBKMCEMGKM_;
       }
       return emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.getDefaultInstance();
     }
@@ -534,32 +472,29 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (checkShapeCase_ == 1) {
-        output.writeMessage(1, (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) checkShape_);
+      if (aJBKMCEMGKMCase_ == 4) {
+        output.writeMessage(4, (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) aJBKMCEMGKM_);
       }
-      if (entityType_ != 0) {
-        output.writeInt32(4, entityType_);
+      if (dNJOLCOBEIC_ != 0) {
+        output.writeInt32(5, dNJOLCOBEIC_);
       }
-      if (bDPGBNFHHCF_ != 0) {
-        output.writeInt32(5, bDPGBNFHHCF_);
+      if (aJBKMCEMGKMCase_ == 6) {
+        output.writeMessage(6, (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) aJBKMCEMGKM_);
       }
       if (attackerId_ != 0) {
-        output.writeUInt32(8, attackerId_);
+        output.writeUInt32(7, attackerId_);
       }
-      if (checkShapeCase_ == 9) {
-        output.writeMessage(9, (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) checkShape_);
+      if (cHHFPCOJMDJ_ != 0F) {
+        output.writeFloat(8, cHHFPCOJMDJ_);
       }
-      if (attackElementDurability_ != 0F) {
-        output.writeFloat(10, attackElementDurability_);
+      if (entityType_ != 0) {
+        output.writeInt32(10, entityType_);
       }
-      if (fPPCBHLEKNA_ != 0) {
-        output.writeUInt32(11, fPPCBHLEKNA_);
+      if (dPLBDELKIHH_ != 0) {
+        output.writeInt32(13, dPLBDELKIHH_);
       }
-      if (gCHLAGKDMAI_ != 0) {
-        output.writeInt32(13, gCHLAGKDMAI_);
-      }
-      if (mCBFOGFFBKH_ != 0) {
-        output.writeUInt32(14, mCBFOGFFBKH_);
+      if (kLOBEGKKPIG_ != 0) {
+        output.writeUInt32(14, kLOBEGKKPIG_);
       }
       unknownFields.writeTo(output);
     }
@@ -570,41 +505,37 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (checkShapeCase_ == 1) {
+      if (aJBKMCEMGKMCase_ == 4) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) checkShape_);
+          .computeMessageSize(4, (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) aJBKMCEMGKM_);
       }
-      if (entityType_ != 0) {
+      if (dNJOLCOBEIC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, entityType_);
+          .computeInt32Size(5, dNJOLCOBEIC_);
       }
-      if (bDPGBNFHHCF_ != 0) {
+      if (aJBKMCEMGKMCase_ == 6) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, bDPGBNFHHCF_);
+          .computeMessageSize(6, (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) aJBKMCEMGKM_);
       }
       if (attackerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, attackerId_);
+          .computeUInt32Size(7, attackerId_);
       }
-      if (checkShapeCase_ == 9) {
+      if (cHHFPCOJMDJ_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) checkShape_);
+          .computeFloatSize(8, cHHFPCOJMDJ_);
       }
-      if (attackElementDurability_ != 0F) {
+      if (entityType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(10, attackElementDurability_);
+          .computeInt32Size(10, entityType_);
       }
-      if (fPPCBHLEKNA_ != 0) {
+      if (dPLBDELKIHH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, fPPCBHLEKNA_);
+          .computeInt32Size(13, dPLBDELKIHH_);
       }
-      if (gCHLAGKDMAI_ != 0) {
+      if (kLOBEGKKPIG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, gCHLAGKDMAI_);
-      }
-      if (mCBFOGFFBKH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, mCBFOGFFBKH_);
+          .computeUInt32Size(14, kLOBEGKKPIG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -621,28 +552,26 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MassiveEntityElementOpBatchNotifyOuterClass.MassiveEntityElementOpBatchNotify other = (emu.grasscutter.net.proto.MassiveEntityElementOpBatchNotifyOuterClass.MassiveEntityElementOpBatchNotify) obj;
 
-      if (java.lang.Float.floatToIntBits(getAttackElementDurability())
-          != java.lang.Float.floatToIntBits(
-              other.getAttackElementDurability())) return false;
-      if (getBDPGBNFHHCF()
-          != other.getBDPGBNFHHCF()) return false;
-      if (getMCBFOGFFBKH()
-          != other.getMCBFOGFFBKH()) return false;
-      if (getFPPCBHLEKNA()
-          != other.getFPPCBHLEKNA()) return false;
-      if (getEntityType()
-          != other.getEntityType()) return false;
       if (getAttackerId()
           != other.getAttackerId()) return false;
-      if (getGCHLAGKDMAI()
-          != other.getGCHLAGKDMAI()) return false;
-      if (!getCheckShapeCase().equals(other.getCheckShapeCase())) return false;
-      switch (checkShapeCase_) {
-        case 1:
+      if (getEntityType()
+          != other.getEntityType()) return false;
+      if (getKLOBEGKKPIG()
+          != other.getKLOBEGKKPIG()) return false;
+      if (getDPLBDELKIHH()
+          != other.getDPLBDELKIHH()) return false;
+      if (getDNJOLCOBEIC()
+          != other.getDNJOLCOBEIC()) return false;
+      if (java.lang.Float.floatToIntBits(getCHHFPCOJMDJ())
+          != java.lang.Float.floatToIntBits(
+              other.getCHHFPCOJMDJ())) return false;
+      if (!getAJBKMCEMGKMCase().equals(other.getAJBKMCEMGKMCase())) return false;
+      switch (aJBKMCEMGKMCase_) {
+        case 4:
           if (!getShapeSphere()
               .equals(other.getShapeSphere())) return false;
           break;
-        case 9:
+        case 6:
           if (!getShapeBox()
               .equals(other.getShapeBox())) return false;
           break;
@@ -660,27 +589,25 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ATTACK_ELEMENT_DURABILITY_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getAttackElementDurability());
-      hash = (37 * hash) + BDPGBNFHHCF_FIELD_NUMBER;
-      hash = (53 * hash) + getBDPGBNFHHCF();
-      hash = (37 * hash) + MCBFOGFFBKH_FIELD_NUMBER;
-      hash = (53 * hash) + getMCBFOGFFBKH();
-      hash = (37 * hash) + FPPCBHLEKNA_FIELD_NUMBER;
-      hash = (53 * hash) + getFPPCBHLEKNA();
-      hash = (37 * hash) + ENTITY_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityType();
       hash = (37 * hash) + ATTACKER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAttackerId();
-      hash = (37 * hash) + GCHLAGKDMAI_FIELD_NUMBER;
-      hash = (53 * hash) + getGCHLAGKDMAI();
-      switch (checkShapeCase_) {
-        case 1:
+      hash = (37 * hash) + ENTITY_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityType();
+      hash = (37 * hash) + KLOBEGKKPIG_FIELD_NUMBER;
+      hash = (53 * hash) + getKLOBEGKKPIG();
+      hash = (37 * hash) + DPLBDELKIHH_FIELD_NUMBER;
+      hash = (53 * hash) + getDPLBDELKIHH();
+      hash = (37 * hash) + DNJOLCOBEIC_FIELD_NUMBER;
+      hash = (53 * hash) + getDNJOLCOBEIC();
+      hash = (37 * hash) + CHHFPCOJMDJ_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getCHHFPCOJMDJ());
+      switch (aJBKMCEMGKMCase_) {
+        case 4:
           hash = (37 * hash) + SHAPE_SPHERE_FIELD_NUMBER;
           hash = (53 * hash) + getShapeSphere().hashCode();
           break;
-        case 9:
+        case 6:
           hash = (37 * hash) + SHAPE_BOX_FIELD_NUMBER;
           hash = (53 * hash) + getShapeBox().hashCode();
           break;
@@ -784,7 +711,7 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23620
+     * CmdId: 2035
      * </pre>
      *
      * Protobuf type {@code MassiveEntityElementOpBatchNotify}
@@ -824,22 +751,20 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        attackElementDurability_ = 0F;
-
-        bDPGBNFHHCF_ = 0;
-
-        mCBFOGFFBKH_ = 0;
-
-        fPPCBHLEKNA_ = 0;
+        attackerId_ = 0;
 
         entityType_ = 0;
 
-        attackerId_ = 0;
+        kLOBEGKKPIG_ = 0;
 
-        gCHLAGKDMAI_ = 0;
+        dPLBDELKIHH_ = 0;
 
-        checkShapeCase_ = 0;
-        checkShape_ = null;
+        dNJOLCOBEIC_ = 0;
+
+        cHHFPCOJMDJ_ = 0F;
+
+        aJBKMCEMGKMCase_ = 0;
+        aJBKMCEMGKM_ = null;
         return this;
       }
 
@@ -866,28 +791,27 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MassiveEntityElementOpBatchNotifyOuterClass.MassiveEntityElementOpBatchNotify buildPartial() {
         emu.grasscutter.net.proto.MassiveEntityElementOpBatchNotifyOuterClass.MassiveEntityElementOpBatchNotify result = new emu.grasscutter.net.proto.MassiveEntityElementOpBatchNotifyOuterClass.MassiveEntityElementOpBatchNotify(this);
-        result.attackElementDurability_ = attackElementDurability_;
-        result.bDPGBNFHHCF_ = bDPGBNFHHCF_;
-        result.mCBFOGFFBKH_ = mCBFOGFFBKH_;
-        result.fPPCBHLEKNA_ = fPPCBHLEKNA_;
-        result.entityType_ = entityType_;
         result.attackerId_ = attackerId_;
-        result.gCHLAGKDMAI_ = gCHLAGKDMAI_;
-        if (checkShapeCase_ == 1) {
+        result.entityType_ = entityType_;
+        result.kLOBEGKKPIG_ = kLOBEGKKPIG_;
+        result.dPLBDELKIHH_ = dPLBDELKIHH_;
+        result.dNJOLCOBEIC_ = dNJOLCOBEIC_;
+        result.cHHFPCOJMDJ_ = cHHFPCOJMDJ_;
+        if (aJBKMCEMGKMCase_ == 4) {
           if (shapeSphereBuilder_ == null) {
-            result.checkShape_ = checkShape_;
+            result.aJBKMCEMGKM_ = aJBKMCEMGKM_;
           } else {
-            result.checkShape_ = shapeSphereBuilder_.build();
+            result.aJBKMCEMGKM_ = shapeSphereBuilder_.build();
           }
         }
-        if (checkShapeCase_ == 9) {
+        if (aJBKMCEMGKMCase_ == 6) {
           if (shapeBoxBuilder_ == null) {
-            result.checkShape_ = checkShape_;
+            result.aJBKMCEMGKM_ = aJBKMCEMGKM_;
           } else {
-            result.checkShape_ = shapeBoxBuilder_.build();
+            result.aJBKMCEMGKM_ = shapeBoxBuilder_.build();
           }
         }
-        result.checkShapeCase_ = checkShapeCase_;
+        result.aJBKMCEMGKMCase_ = aJBKMCEMGKMCase_;
         onBuilt();
         return result;
       }
@@ -936,28 +860,25 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MassiveEntityElementOpBatchNotifyOuterClass.MassiveEntityElementOpBatchNotify other) {
         if (other == emu.grasscutter.net.proto.MassiveEntityElementOpBatchNotifyOuterClass.MassiveEntityElementOpBatchNotify.getDefaultInstance()) return this;
-        if (other.getAttackElementDurability() != 0F) {
-          setAttackElementDurability(other.getAttackElementDurability());
-        }
-        if (other.getBDPGBNFHHCF() != 0) {
-          setBDPGBNFHHCF(other.getBDPGBNFHHCF());
-        }
-        if (other.getMCBFOGFFBKH() != 0) {
-          setMCBFOGFFBKH(other.getMCBFOGFFBKH());
-        }
-        if (other.getFPPCBHLEKNA() != 0) {
-          setFPPCBHLEKNA(other.getFPPCBHLEKNA());
+        if (other.getAttackerId() != 0) {
+          setAttackerId(other.getAttackerId());
         }
         if (other.getEntityType() != 0) {
           setEntityType(other.getEntityType());
         }
-        if (other.getAttackerId() != 0) {
-          setAttackerId(other.getAttackerId());
+        if (other.getKLOBEGKKPIG() != 0) {
+          setKLOBEGKKPIG(other.getKLOBEGKKPIG());
         }
-        if (other.getGCHLAGKDMAI() != 0) {
-          setGCHLAGKDMAI(other.getGCHLAGKDMAI());
+        if (other.getDPLBDELKIHH() != 0) {
+          setDPLBDELKIHH(other.getDPLBDELKIHH());
         }
-        switch (other.getCheckShapeCase()) {
+        if (other.getDNJOLCOBEIC() != 0) {
+          setDNJOLCOBEIC(other.getDNJOLCOBEIC());
+        }
+        if (other.getCHHFPCOJMDJ() != 0F) {
+          setCHHFPCOJMDJ(other.getCHHFPCOJMDJ());
+        }
+        switch (other.getAJBKMCEMGKMCase()) {
           case SHAPE_SPHERE: {
             mergeShapeSphere(other.getShapeSphere());
             break;
@@ -966,7 +887,7 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
             mergeShapeBox(other.getShapeBox());
             break;
           }
-          case CHECKSHAPE_NOT_SET: {
+          case AJBKMCEMGKM_NOT_SET: {
             break;
           }
         }
@@ -998,244 +919,29 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
         }
         return this;
       }
-      private int checkShapeCase_ = 0;
-      private java.lang.Object checkShape_;
-      public CheckShapeCase
-          getCheckShapeCase() {
-        return CheckShapeCase.forNumber(
-            checkShapeCase_);
+      private int aJBKMCEMGKMCase_ = 0;
+      private java.lang.Object aJBKMCEMGKM_;
+      public AJBKMCEMGKMCase
+          getAJBKMCEMGKMCase() {
+        return AJBKMCEMGKMCase.forNumber(
+            aJBKMCEMGKMCase_);
       }
 
-      public Builder clearCheckShape() {
-        checkShapeCase_ = 0;
-        checkShape_ = null;
-        onChanged();
-        return this;
-      }
-
-
-      private float attackElementDurability_ ;
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>float attack_element_durability = 10;</code>
-       * @return The attackElementDurability.
-       */
-      @java.lang.Override
-      public float getAttackElementDurability() {
-        return attackElementDurability_;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>float attack_element_durability = 10;</code>
-       * @param value The attackElementDurability to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAttackElementDurability(float value) {
-        
-        attackElementDurability_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>float attack_element_durability = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAttackElementDurability() {
-        
-        attackElementDurability_ = 0F;
+      public Builder clearAJBKMCEMGKM() {
+        aJBKMCEMGKMCase_ = 0;
+        aJBKMCEMGKM_ = null;
         onChanged();
         return this;
       }
 
-      private int bDPGBNFHHCF_ ;
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>int32 BDPGBNFHHCF = 5;</code>
-       * @return The bDPGBNFHHCF.
-       */
-      @java.lang.Override
-      public int getBDPGBNFHHCF() {
-        return bDPGBNFHHCF_;
-      }
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>int32 BDPGBNFHHCF = 5;</code>
-       * @param value The bDPGBNFHHCF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBDPGBNFHHCF(int value) {
-        
-        bDPGBNFHHCF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>int32 BDPGBNFHHCF = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBDPGBNFHHCF() {
-        
-        bDPGBNFHHCF_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mCBFOGFFBKH_ ;
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>uint32 MCBFOGFFBKH = 14;</code>
-       * @return The mCBFOGFFBKH.
-       */
-      @java.lang.Override
-      public int getMCBFOGFFBKH() {
-        return mCBFOGFFBKH_;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>uint32 MCBFOGFFBKH = 14;</code>
-       * @param value The mCBFOGFFBKH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMCBFOGFFBKH(int value) {
-        
-        mCBFOGFFBKH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>uint32 MCBFOGFFBKH = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMCBFOGFFBKH() {
-        
-        mCBFOGFFBKH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int fPPCBHLEKNA_ ;
-      /**
-       * <pre>
-       * offset: 52
-       * </pre>
-       *
-       * <code>uint32 FPPCBHLEKNA = 11;</code>
-       * @return The fPPCBHLEKNA.
-       */
-      @java.lang.Override
-      public int getFPPCBHLEKNA() {
-        return fPPCBHLEKNA_;
-      }
-      /**
-       * <pre>
-       * offset: 52
-       * </pre>
-       *
-       * <code>uint32 FPPCBHLEKNA = 11;</code>
-       * @param value The fPPCBHLEKNA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFPPCBHLEKNA(int value) {
-        
-        fPPCBHLEKNA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 52
-       * </pre>
-       *
-       * <code>uint32 FPPCBHLEKNA = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFPPCBHLEKNA() {
-        
-        fPPCBHLEKNA_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int entityType_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 60
-       * </pre>
-       *
-       * <code>int32 entity_type = 4;</code>
-       * @return The entityType.
-       */
-      @java.lang.Override
-      public int getEntityType() {
-        return entityType_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 60
-       * </pre>
-       *
-       * <code>int32 entity_type = 4;</code>
-       * @param value The entityType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityType(int value) {
-        
-        entityType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 60
-       * </pre>
-       *
-       * <code>int32 entity_type = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityType() {
-        
-        entityType_ = 0;
-        onChanged();
-        return this;
-      }
 
       private int attackerId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 attacker_id = 8;</code>
+       * <code>uint32 attacker_id = 7;</code>
        * @return The attackerId.
        */
       @java.lang.Override
@@ -1244,10 +950,10 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 attacker_id = 8;</code>
+       * <code>uint32 attacker_id = 7;</code>
        * @param value The attackerId to set.
        * @return This builder for chaining.
        */
@@ -1259,10 +965,10 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 attacker_id = 8;</code>
+       * <code>uint32 attacker_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearAttackerId() {
@@ -1272,45 +978,169 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
         return this;
       }
 
-      private int gCHLAGKDMAI_ ;
+      private int entityType_ ;
       /**
        * <pre>
-       * offset: 68
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>int32 GCHLAGKDMAI = 13;</code>
-       * @return The gCHLAGKDMAI.
+       * <code>int32 entity_type = 10;</code>
+       * @return The entityType.
        */
       @java.lang.Override
-      public int getGCHLAGKDMAI() {
-        return gCHLAGKDMAI_;
+      public int getEntityType() {
+        return entityType_;
       }
       /**
        * <pre>
-       * offset: 68
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>int32 GCHLAGKDMAI = 13;</code>
-       * @param value The gCHLAGKDMAI to set.
+       * <code>int32 entity_type = 10;</code>
+       * @param value The entityType to set.
        * @return This builder for chaining.
        */
-      public Builder setGCHLAGKDMAI(int value) {
+      public Builder setEntityType(int value) {
         
-        gCHLAGKDMAI_ = value;
+        entityType_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 68
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>int32 GCHLAGKDMAI = 13;</code>
+       * <code>int32 entity_type = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGCHLAGKDMAI() {
+      public Builder clearEntityType() {
         
-        gCHLAGKDMAI_ = 0;
+        entityType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kLOBEGKKPIG_ ;
+      /**
+       * <code>uint32 KLOBEGKKPIG = 14;</code>
+       * @return The kLOBEGKKPIG.
+       */
+      @java.lang.Override
+      public int getKLOBEGKKPIG() {
+        return kLOBEGKKPIG_;
+      }
+      /**
+       * <code>uint32 KLOBEGKKPIG = 14;</code>
+       * @param value The kLOBEGKKPIG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKLOBEGKKPIG(int value) {
+        
+        kLOBEGKKPIG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 KLOBEGKKPIG = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKLOBEGKKPIG() {
+        
+        kLOBEGKKPIG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dPLBDELKIHH_ ;
+      /**
+       * <code>int32 DPLBDELKIHH = 13;</code>
+       * @return The dPLBDELKIHH.
+       */
+      @java.lang.Override
+      public int getDPLBDELKIHH() {
+        return dPLBDELKIHH_;
+      }
+      /**
+       * <code>int32 DPLBDELKIHH = 13;</code>
+       * @param value The dPLBDELKIHH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDPLBDELKIHH(int value) {
+        
+        dPLBDELKIHH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 DPLBDELKIHH = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDPLBDELKIHH() {
+        
+        dPLBDELKIHH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dNJOLCOBEIC_ ;
+      /**
+       * <code>int32 DNJOLCOBEIC = 5;</code>
+       * @return The dNJOLCOBEIC.
+       */
+      @java.lang.Override
+      public int getDNJOLCOBEIC() {
+        return dNJOLCOBEIC_;
+      }
+      /**
+       * <code>int32 DNJOLCOBEIC = 5;</code>
+       * @param value The dNJOLCOBEIC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDNJOLCOBEIC(int value) {
+        
+        dNJOLCOBEIC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 DNJOLCOBEIC = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDNJOLCOBEIC() {
+        
+        dNJOLCOBEIC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float cHHFPCOJMDJ_ ;
+      /**
+       * <code>float CHHFPCOJMDJ = 8;</code>
+       * @return The cHHFPCOJMDJ.
+       */
+      @java.lang.Override
+      public float getCHHFPCOJMDJ() {
+        return cHHFPCOJMDJ_;
+      }
+      /**
+       * <code>float CHHFPCOJMDJ = 8;</code>
+       * @param value The cHHFPCOJMDJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCHHFPCOJMDJ(float value) {
+        
+        cHHFPCOJMDJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float CHHFPCOJMDJ = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCHHFPCOJMDJ() {
+        
+        cHHFPCOJMDJ_ = 0F;
         onChanged();
         return this;
       }
@@ -1319,33 +1149,33 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
           emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere, emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.Builder, emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphereOrBuilder> shapeSphereBuilder_;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeSphere shape_sphere = 1;</code>
+       * <code>.ShapeSphere shape_sphere = 4;</code>
        * @return Whether the shapeSphere field is set.
        */
       @java.lang.Override
       public boolean hasShapeSphere() {
-        return checkShapeCase_ == 1;
+        return aJBKMCEMGKMCase_ == 4;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeSphere shape_sphere = 1;</code>
+       * <code>.ShapeSphere shape_sphere = 4;</code>
        * @return The shapeSphere.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere getShapeSphere() {
         if (shapeSphereBuilder_ == null) {
-          if (checkShapeCase_ == 1) {
-            return (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) checkShape_;
+          if (aJBKMCEMGKMCase_ == 4) {
+            return (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) aJBKMCEMGKM_;
           }
           return emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.getDefaultInstance();
         } else {
-          if (checkShapeCase_ == 1) {
+          if (aJBKMCEMGKMCase_ == 4) {
             return shapeSphereBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.getDefaultInstance();
@@ -1353,86 +1183,86 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeSphere shape_sphere = 1;</code>
+       * <code>.ShapeSphere shape_sphere = 4;</code>
        */
       public Builder setShapeSphere(emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere value) {
         if (shapeSphereBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          checkShape_ = value;
+          aJBKMCEMGKM_ = value;
           onChanged();
         } else {
           shapeSphereBuilder_.setMessage(value);
         }
-        checkShapeCase_ = 1;
+        aJBKMCEMGKMCase_ = 4;
         return this;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeSphere shape_sphere = 1;</code>
+       * <code>.ShapeSphere shape_sphere = 4;</code>
        */
       public Builder setShapeSphere(
           emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.Builder builderForValue) {
         if (shapeSphereBuilder_ == null) {
-          checkShape_ = builderForValue.build();
+          aJBKMCEMGKM_ = builderForValue.build();
           onChanged();
         } else {
           shapeSphereBuilder_.setMessage(builderForValue.build());
         }
-        checkShapeCase_ = 1;
+        aJBKMCEMGKMCase_ = 4;
         return this;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeSphere shape_sphere = 1;</code>
+       * <code>.ShapeSphere shape_sphere = 4;</code>
        */
       public Builder mergeShapeSphere(emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere value) {
         if (shapeSphereBuilder_ == null) {
-          if (checkShapeCase_ == 1 &&
-              checkShape_ != emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.getDefaultInstance()) {
-            checkShape_ = emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.newBuilder((emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) checkShape_)
+          if (aJBKMCEMGKMCase_ == 4 &&
+              aJBKMCEMGKM_ != emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.getDefaultInstance()) {
+            aJBKMCEMGKM_ = emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.newBuilder((emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) aJBKMCEMGKM_)
                 .mergeFrom(value).buildPartial();
           } else {
-            checkShape_ = value;
+            aJBKMCEMGKM_ = value;
           }
           onChanged();
         } else {
-          if (checkShapeCase_ == 1) {
+          if (aJBKMCEMGKMCase_ == 4) {
             shapeSphereBuilder_.mergeFrom(value);
           }
           shapeSphereBuilder_.setMessage(value);
         }
-        checkShapeCase_ = 1;
+        aJBKMCEMGKMCase_ = 4;
         return this;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeSphere shape_sphere = 1;</code>
+       * <code>.ShapeSphere shape_sphere = 4;</code>
        */
       public Builder clearShapeSphere() {
         if (shapeSphereBuilder_ == null) {
-          if (checkShapeCase_ == 1) {
-            checkShapeCase_ = 0;
-            checkShape_ = null;
+          if (aJBKMCEMGKMCase_ == 4) {
+            aJBKMCEMGKMCase_ = 0;
+            aJBKMCEMGKM_ = null;
             onChanged();
           }
         } else {
-          if (checkShapeCase_ == 1) {
-            checkShapeCase_ = 0;
-            checkShape_ = null;
+          if (aJBKMCEMGKMCase_ == 4) {
+            aJBKMCEMGKMCase_ = 0;
+            aJBKMCEMGKM_ = null;
           }
           shapeSphereBuilder_.clear();
         }
@@ -1440,54 +1270,54 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeSphere shape_sphere = 1;</code>
+       * <code>.ShapeSphere shape_sphere = 4;</code>
        */
       public emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.Builder getShapeSphereBuilder() {
         return getShapeSphereFieldBuilder().getBuilder();
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeSphere shape_sphere = 1;</code>
+       * <code>.ShapeSphere shape_sphere = 4;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphereOrBuilder getShapeSphereOrBuilder() {
-        if ((checkShapeCase_ == 1) && (shapeSphereBuilder_ != null)) {
+        if ((aJBKMCEMGKMCase_ == 4) && (shapeSphereBuilder_ != null)) {
           return shapeSphereBuilder_.getMessageOrBuilder();
         } else {
-          if (checkShapeCase_ == 1) {
-            return (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) checkShape_;
+          if (aJBKMCEMGKMCase_ == 4) {
+            return (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) aJBKMCEMGKM_;
           }
           return emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.getDefaultInstance();
         }
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeSphere shape_sphere = 1;</code>
+       * <code>.ShapeSphere shape_sphere = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere, emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.Builder, emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphereOrBuilder> 
           getShapeSphereFieldBuilder() {
         if (shapeSphereBuilder_ == null) {
-          if (!(checkShapeCase_ == 1)) {
-            checkShape_ = emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.getDefaultInstance();
+          if (!(aJBKMCEMGKMCase_ == 4)) {
+            aJBKMCEMGKM_ = emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.getDefaultInstance();
           }
           shapeSphereBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere, emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere.Builder, emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphereOrBuilder>(
-                  (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) checkShape_,
+                  (emu.grasscutter.net.proto.ShapeSphereOuterClass.ShapeSphere) aJBKMCEMGKM_,
                   getParentForChildren(),
                   isClean());
-          checkShape_ = null;
+          aJBKMCEMGKM_ = null;
         }
-        checkShapeCase_ = 1;
+        aJBKMCEMGKMCase_ = 4;
         onChanged();;
         return shapeSphereBuilder_;
       }
@@ -1496,33 +1326,33 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
           emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox, emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.Builder, emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBoxOrBuilder> shapeBoxBuilder_;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeBox shape_box = 9;</code>
+       * <code>.ShapeBox shape_box = 6;</code>
        * @return Whether the shapeBox field is set.
        */
       @java.lang.Override
       public boolean hasShapeBox() {
-        return checkShapeCase_ == 9;
+        return aJBKMCEMGKMCase_ == 6;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeBox shape_box = 9;</code>
+       * <code>.ShapeBox shape_box = 6;</code>
        * @return The shapeBox.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox getShapeBox() {
         if (shapeBoxBuilder_ == null) {
-          if (checkShapeCase_ == 9) {
-            return (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) checkShape_;
+          if (aJBKMCEMGKMCase_ == 6) {
+            return (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) aJBKMCEMGKM_;
           }
           return emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.getDefaultInstance();
         } else {
-          if (checkShapeCase_ == 9) {
+          if (aJBKMCEMGKMCase_ == 6) {
             return shapeBoxBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.getDefaultInstance();
@@ -1530,86 +1360,86 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeBox shape_box = 9;</code>
+       * <code>.ShapeBox shape_box = 6;</code>
        */
       public Builder setShapeBox(emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox value) {
         if (shapeBoxBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          checkShape_ = value;
+          aJBKMCEMGKM_ = value;
           onChanged();
         } else {
           shapeBoxBuilder_.setMessage(value);
         }
-        checkShapeCase_ = 9;
+        aJBKMCEMGKMCase_ = 6;
         return this;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeBox shape_box = 9;</code>
+       * <code>.ShapeBox shape_box = 6;</code>
        */
       public Builder setShapeBox(
           emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.Builder builderForValue) {
         if (shapeBoxBuilder_ == null) {
-          checkShape_ = builderForValue.build();
+          aJBKMCEMGKM_ = builderForValue.build();
           onChanged();
         } else {
           shapeBoxBuilder_.setMessage(builderForValue.build());
         }
-        checkShapeCase_ = 9;
+        aJBKMCEMGKMCase_ = 6;
         return this;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeBox shape_box = 9;</code>
+       * <code>.ShapeBox shape_box = 6;</code>
        */
       public Builder mergeShapeBox(emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox value) {
         if (shapeBoxBuilder_ == null) {
-          if (checkShapeCase_ == 9 &&
-              checkShape_ != emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.getDefaultInstance()) {
-            checkShape_ = emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.newBuilder((emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) checkShape_)
+          if (aJBKMCEMGKMCase_ == 6 &&
+              aJBKMCEMGKM_ != emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.getDefaultInstance()) {
+            aJBKMCEMGKM_ = emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.newBuilder((emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) aJBKMCEMGKM_)
                 .mergeFrom(value).buildPartial();
           } else {
-            checkShape_ = value;
+            aJBKMCEMGKM_ = value;
           }
           onChanged();
         } else {
-          if (checkShapeCase_ == 9) {
+          if (aJBKMCEMGKMCase_ == 6) {
             shapeBoxBuilder_.mergeFrom(value);
           }
           shapeBoxBuilder_.setMessage(value);
         }
-        checkShapeCase_ = 9;
+        aJBKMCEMGKMCase_ = 6;
         return this;
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeBox shape_box = 9;</code>
+       * <code>.ShapeBox shape_box = 6;</code>
        */
       public Builder clearShapeBox() {
         if (shapeBoxBuilder_ == null) {
-          if (checkShapeCase_ == 9) {
-            checkShapeCase_ = 0;
-            checkShape_ = null;
+          if (aJBKMCEMGKMCase_ == 6) {
+            aJBKMCEMGKMCase_ = 0;
+            aJBKMCEMGKM_ = null;
             onChanged();
           }
         } else {
-          if (checkShapeCase_ == 9) {
-            checkShapeCase_ = 0;
-            checkShape_ = null;
+          if (aJBKMCEMGKMCase_ == 6) {
+            aJBKMCEMGKMCase_ = 0;
+            aJBKMCEMGKM_ = null;
           }
           shapeBoxBuilder_.clear();
         }
@@ -1617,54 +1447,54 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeBox shape_box = 9;</code>
+       * <code>.ShapeBox shape_box = 6;</code>
        */
       public emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.Builder getShapeBoxBuilder() {
         return getShapeBoxFieldBuilder().getBuilder();
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeBox shape_box = 9;</code>
+       * <code>.ShapeBox shape_box = 6;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBoxOrBuilder getShapeBoxOrBuilder() {
-        if ((checkShapeCase_ == 9) && (shapeBoxBuilder_ != null)) {
+        if ((aJBKMCEMGKMCase_ == 6) && (shapeBoxBuilder_ != null)) {
           return shapeBoxBuilder_.getMessageOrBuilder();
         } else {
-          if (checkShapeCase_ == 9) {
-            return (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) checkShape_;
+          if (aJBKMCEMGKMCase_ == 6) {
+            return (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) aJBKMCEMGKM_;
           }
           return emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.getDefaultInstance();
         }
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.ShapeBox shape_box = 9;</code>
+       * <code>.ShapeBox shape_box = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox, emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.Builder, emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBoxOrBuilder> 
           getShapeBoxFieldBuilder() {
         if (shapeBoxBuilder_ == null) {
-          if (!(checkShapeCase_ == 9)) {
-            checkShape_ = emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.getDefaultInstance();
+          if (!(aJBKMCEMGKMCase_ == 6)) {
+            aJBKMCEMGKM_ = emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.getDefaultInstance();
           }
           shapeBoxBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox, emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.Builder, emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBoxOrBuilder>(
-                  (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) checkShape_,
+                  (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) aJBKMCEMGKM_,
                   getParentForChildren(),
                   isClean());
-          checkShape_ = null;
+          aJBKMCEMGKM_ = null;
         }
-        checkShapeCase_ = 9;
+        aJBKMCEMGKMCase_ = 6;
         onChanged();;
         return shapeBoxBuilder_;
       }
@@ -1736,30 +1566,30 @@ public final class MassiveEntityElementOpBatchNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'MassiveEntityElementOpBatchNotify.prot" +
-      "o\032\016ShapeBox.proto\032\021ShapeSphere.proto\"\231\002\n" +
-      "!MassiveEntityElementOpBatchNotify\022!\n\031at" +
-      "tack_element_durability\030\n \001(\002\022\023\n\013BDPGBNF" +
-      "HHCF\030\005 \001(\005\022\023\n\013MCBFOGFFBKH\030\016 \001(\r\022\023\n\013FPPCB" +
-      "HLEKNA\030\013 \001(\r\022\023\n\013entity_type\030\004 \001(\005\022\023\n\013att" +
-      "acker_id\030\010 \001(\r\022\023\n\013GCHLAGKDMAI\030\r \001(\005\022$\n\014s" +
-      "hape_sphere\030\001 \001(\0132\014.ShapeSphereH\000\022\036\n\tsha" +
-      "pe_box\030\t \001(\0132\t.ShapeBoxH\000B\r\n\013check_shape" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "o\032\021ShapeSphere.proto\032\016ShapeBox.proto\"\366\001\n" +
+      "!MassiveEntityElementOpBatchNotify\022\023\n\013at" +
+      "tacker_id\030\007 \001(\r\022\023\n\013entity_type\030\n \001(\005\022\023\n\013" +
+      "KLOBEGKKPIG\030\016 \001(\r\022\023\n\013DPLBDELKIHH\030\r \001(\005\022\023" +
+      "\n\013DNJOLCOBEIC\030\005 \001(\005\022\023\n\013CHHFPCOJMDJ\030\010 \001(\002" +
+      "\022$\n\014shape_sphere\030\004 \001(\0132\014.ShapeSphereH\000\022\036" +
+      "\n\tshape_box\030\006 \001(\0132\t.ShapeBoxH\000B\r\n\013AJBKMC" +
+      "EMGKMB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.ShapeBoxOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ShapeSphereOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ShapeBoxOuterClass.getDescriptor(),
         });
     internal_static_MassiveEntityElementOpBatchNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_MassiveEntityElementOpBatchNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MassiveEntityElementOpBatchNotify_descriptor,
-        new java.lang.String[] { "AttackElementDurability", "BDPGBNFHHCF", "MCBFOGFFBKH", "FPPCBHLEKNA", "EntityType", "AttackerId", "GCHLAGKDMAI", "ShapeSphere", "ShapeBox", "CheckShape", });
-    emu.grasscutter.net.proto.ShapeBoxOuterClass.getDescriptor();
+        new java.lang.String[] { "AttackerId", "EntityType", "KLOBEGKKPIG", "DPLBDELKIHH", "DNJOLCOBEIC", "CHHFPCOJMDJ", "ShapeSphere", "ShapeBox", "AJBKMCEMGKM", });
     emu.grasscutter.net.proto.ShapeSphereOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ShapeBoxOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

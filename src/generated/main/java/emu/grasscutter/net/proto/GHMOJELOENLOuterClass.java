@@ -19,70 +19,42 @@ public final class GHMOJELOENLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IOEGCDKFHGN = 4;</code>
      * @return The iOEGCDKFHGN.
      */
     int getIOEGCDKFHGN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 15;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GLKPILMHIMJ = 9;</code>
      * @return The gLKPILMHIMJ.
      */
     int getGLKPILMHIMJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EJOJHAKNCCB = 13;</code>
      * @return The eJOJHAKNCCB.
      */
@@ -203,10 +175,6 @@ public final class GHMOJELOENLOuterClass {
     public static final int IOEGCDKFHGN_FIELD_NUMBER = 4;
     private int iOEGCDKFHGN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IOEGCDKFHGN = 4;</code>
      * @return The iOEGCDKFHGN.
      */
@@ -218,10 +186,6 @@ public final class GHMOJELOENLOuterClass {
     public static final int SCORE_FIELD_NUMBER = 15;
     private int score_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 15;</code>
      * @return The score.
      */
@@ -233,10 +197,6 @@ public final class GHMOJELOENLOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 8;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 8;</code>
      * @return The isFinish.
      */
@@ -248,10 +208,6 @@ public final class GHMOJELOENLOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 3;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
@@ -263,10 +219,6 @@ public final class GHMOJELOENLOuterClass {
     public static final int GLKPILMHIMJ_FIELD_NUMBER = 9;
     private int gLKPILMHIMJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GLKPILMHIMJ = 9;</code>
      * @return The gLKPILMHIMJ.
      */
@@ -278,10 +230,6 @@ public final class GHMOJELOENLOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
@@ -293,10 +241,6 @@ public final class GHMOJELOENLOuterClass {
     public static final int EJOJHAKNCCB_FIELD_NUMBER = 13;
     private int eJOJHAKNCCB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EJOJHAKNCCB = 13;</code>
      * @return The eJOJHAKNCCB.
      */
@@ -713,10 +657,6 @@ public final class GHMOJELOENLOuterClass {
 
       private int iOEGCDKFHGN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IOEGCDKFHGN = 4;</code>
        * @return The iOEGCDKFHGN.
        */
@@ -725,10 +665,6 @@ public final class GHMOJELOENLOuterClass {
         return iOEGCDKFHGN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IOEGCDKFHGN = 4;</code>
        * @param value The iOEGCDKFHGN to set.
        * @return This builder for chaining.
@@ -740,10 +676,6 @@ public final class GHMOJELOENLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IOEGCDKFHGN = 4;</code>
        * @return This builder for chaining.
        */
@@ -756,10 +688,6 @@ public final class GHMOJELOENLOuterClass {
 
       private int score_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 15;</code>
        * @return The score.
        */
@@ -768,10 +696,6 @@ public final class GHMOJELOENLOuterClass {
         return score_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 15;</code>
        * @param value The score to set.
        * @return This builder for chaining.
@@ -783,10 +707,6 @@ public final class GHMOJELOENLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 15;</code>
        * @return This builder for chaining.
        */
@@ -799,10 +719,6 @@ public final class GHMOJELOENLOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return The isFinish.
        */
@@ -811,10 +727,6 @@ public final class GHMOJELOENLOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -826,10 +738,6 @@ public final class GHMOJELOENLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 8;</code>
        * @return This builder for chaining.
        */
@@ -842,10 +750,6 @@ public final class GHMOJELOENLOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return The isOpen.
        */
@@ -854,10 +758,6 @@ public final class GHMOJELOENLOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -869,10 +769,6 @@ public final class GHMOJELOENLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 3;</code>
        * @return This builder for chaining.
        */
@@ -885,10 +781,6 @@ public final class GHMOJELOENLOuterClass {
 
       private int gLKPILMHIMJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GLKPILMHIMJ = 9;</code>
        * @return The gLKPILMHIMJ.
        */
@@ -897,10 +789,6 @@ public final class GHMOJELOENLOuterClass {
         return gLKPILMHIMJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GLKPILMHIMJ = 9;</code>
        * @param value The gLKPILMHIMJ to set.
        * @return This builder for chaining.
@@ -912,10 +800,6 @@ public final class GHMOJELOENLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GLKPILMHIMJ = 9;</code>
        * @return This builder for chaining.
        */
@@ -928,10 +812,6 @@ public final class GHMOJELOENLOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
@@ -940,10 +820,6 @@ public final class GHMOJELOENLOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -955,10 +831,6 @@ public final class GHMOJELOENLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
@@ -971,10 +843,6 @@ public final class GHMOJELOENLOuterClass {
 
       private int eJOJHAKNCCB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EJOJHAKNCCB = 13;</code>
        * @return The eJOJHAKNCCB.
        */
@@ -983,10 +851,6 @@ public final class GHMOJELOENLOuterClass {
         return eJOJHAKNCCB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EJOJHAKNCCB = 13;</code>
        * @param value The eJOJHAKNCCB to set.
        * @return This builder for chaining.
@@ -998,10 +862,6 @@ public final class GHMOJELOENLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EJOJHAKNCCB = 13;</code>
        * @return This builder for chaining.
        */

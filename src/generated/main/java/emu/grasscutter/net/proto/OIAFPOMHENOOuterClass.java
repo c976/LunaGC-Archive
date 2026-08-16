@@ -19,29 +19,17 @@ public final class OIAFPOMHENOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.ClientPlayType PBGJEDMMGIO = 4;</code>
      * @return The enum numeric value on the wire for pBGJEDMMGIO.
      */
     int getPBGJEDMMGIOValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.ClientPlayType PBGJEDMMGIO = 4;</code>
      * @return The pBGJEDMMGIO.
      */
     emu.grasscutter.net.proto.ClientPlayTypeOuterClass.ClientPlayType getPBGJEDMMGIO();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -139,10 +127,6 @@ public final class OIAFPOMHENOOuterClass {
     public static final int PBGJEDMMGIO_FIELD_NUMBER = 4;
     private int pBGJEDMMGIO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.ClientPlayType PBGJEDMMGIO = 4;</code>
      * @return The enum numeric value on the wire for pBGJEDMMGIO.
      */
@@ -150,10 +134,6 @@ public final class OIAFPOMHENOOuterClass {
       return pBGJEDMMGIO_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.ClientPlayType PBGJEDMMGIO = 4;</code>
      * @return The pBGJEDMMGIO.
      */
@@ -166,10 +146,6 @@ public final class OIAFPOMHENOOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -498,10 +474,6 @@ public final class OIAFPOMHENOOuterClass {
 
       private int pBGJEDMMGIO_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ClientPlayType PBGJEDMMGIO = 4;</code>
        * @return The enum numeric value on the wire for pBGJEDMMGIO.
        */
@@ -509,10 +481,6 @@ public final class OIAFPOMHENOOuterClass {
         return pBGJEDMMGIO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ClientPlayType PBGJEDMMGIO = 4;</code>
        * @param value The enum numeric value on the wire for pBGJEDMMGIO to set.
        * @return This builder for chaining.
@@ -524,10 +492,6 @@ public final class OIAFPOMHENOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ClientPlayType PBGJEDMMGIO = 4;</code>
        * @return The pBGJEDMMGIO.
        */
@@ -538,10 +502,6 @@ public final class OIAFPOMHENOOuterClass {
         return result == null ? emu.grasscutter.net.proto.ClientPlayTypeOuterClass.ClientPlayType.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ClientPlayType PBGJEDMMGIO = 4;</code>
        * @param value The pBGJEDMMGIO to set.
        * @return This builder for chaining.
@@ -556,10 +516,6 @@ public final class OIAFPOMHENOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ClientPlayType PBGJEDMMGIO = 4;</code>
        * @return This builder for chaining.
        */
@@ -572,10 +528,6 @@ public final class OIAFPOMHENOOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
@@ -584,10 +536,6 @@ public final class OIAFPOMHENOOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -599,10 +547,6 @@ public final class OIAFPOMHENOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */

@@ -19,160 +19,92 @@ public final class KNNEPNCKFFFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK> 
         getNMHAJDJIFNFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
      */
     emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK getNMHAJDJIFNF(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
      */
     int getNMHAJDJIFNFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFKOrBuilder> 
         getNMHAJDJIFNFOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
      */
     emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFKOrBuilder getNMHAJDJIFNFOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
      * @return Whether the jIGNPKOJGML field is set.
      */
     boolean hasJIGNPKOJGML();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
      * @return The jIGNPKOJGML.
      */
     emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK getJIGNPKOJGML();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
      */
     emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFKOrBuilder getJIGNPKOJGMLOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 11;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OCAMPGKNIEK = 4;</code>
      * @return The oCAMPGKNIEK.
      */
     int getOCAMPGKNIEK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 npc_id = 6;</code>
      * @return The npcId.
      */
     int getNpcId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOAGHIKOFNI = 7;</code>
      * @return The lOAGHIKOFNI.
      */
     int getLOAGHIKOFNI();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.FKOCKFBCIHO EJENKACEGJL = 13;</code>
      * @return The enum numeric value on the wire for eJENKACEGJL.
      */
     int getEJENKACEGJLValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.FKOCKFBCIHO EJENKACEGJL = 13;</code>
      * @return The eJENKACEGJL.
      */
     emu.grasscutter.net.proto.FKOCKFBCIHOOuterClass.FKOCKFBCIHO getEJENKACEGJL();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FMMKCGAIHCH = 14;</code>
      * @return The fMMKCGAIHCH.
      */
     boolean getFMMKCGAIHCH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool LKHIEAMOBCO = 12;</code>
      * @return The lKHIEAMOBCO.
      */
     boolean getLKHIEAMOBCO();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 POMIDHEHBNM = 8;</code>
      * @return The pOMIDHEHBNM.
      */
@@ -327,10 +259,6 @@ public final class KNNEPNCKFFFOuterClass {
     public static final int NMHAJDJIFNF_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK> nMHAJDJIFNF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
      */
     @java.lang.Override
@@ -338,10 +266,6 @@ public final class KNNEPNCKFFFOuterClass {
       return nMHAJDJIFNF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
      */
     @java.lang.Override
@@ -350,10 +274,6 @@ public final class KNNEPNCKFFFOuterClass {
       return nMHAJDJIFNF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
      */
     @java.lang.Override
@@ -361,10 +281,6 @@ public final class KNNEPNCKFFFOuterClass {
       return nMHAJDJIFNF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
      */
     @java.lang.Override
@@ -372,10 +288,6 @@ public final class KNNEPNCKFFFOuterClass {
       return nMHAJDJIFNF_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
      */
     @java.lang.Override
@@ -387,10 +299,6 @@ public final class KNNEPNCKFFFOuterClass {
     public static final int JIGNPKOJGML_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK jIGNPKOJGML_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
      * @return Whether the jIGNPKOJGML field is set.
      */
@@ -399,10 +307,6 @@ public final class KNNEPNCKFFFOuterClass {
       return jIGNPKOJGML_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
      * @return The jIGNPKOJGML.
      */
@@ -411,10 +315,6 @@ public final class KNNEPNCKFFFOuterClass {
       return jIGNPKOJGML_ == null ? emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK.getDefaultInstance() : jIGNPKOJGML_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
      */
     @java.lang.Override
@@ -425,10 +325,6 @@ public final class KNNEPNCKFFFOuterClass {
     public static final int ID_FIELD_NUMBER = 11;
     private int id_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 11;</code>
      * @return The id.
      */
@@ -440,10 +336,6 @@ public final class KNNEPNCKFFFOuterClass {
     public static final int OCAMPGKNIEK_FIELD_NUMBER = 4;
     private int oCAMPGKNIEK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OCAMPGKNIEK = 4;</code>
      * @return The oCAMPGKNIEK.
      */
@@ -455,10 +347,6 @@ public final class KNNEPNCKFFFOuterClass {
     public static final int NPC_ID_FIELD_NUMBER = 6;
     private int npcId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 npc_id = 6;</code>
      * @return The npcId.
      */
@@ -470,10 +358,6 @@ public final class KNNEPNCKFFFOuterClass {
     public static final int LOAGHIKOFNI_FIELD_NUMBER = 7;
     private int lOAGHIKOFNI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOAGHIKOFNI = 7;</code>
      * @return The lOAGHIKOFNI.
      */
@@ -485,10 +369,6 @@ public final class KNNEPNCKFFFOuterClass {
     public static final int EJENKACEGJL_FIELD_NUMBER = 13;
     private int eJENKACEGJL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.FKOCKFBCIHO EJENKACEGJL = 13;</code>
      * @return The enum numeric value on the wire for eJENKACEGJL.
      */
@@ -496,10 +376,6 @@ public final class KNNEPNCKFFFOuterClass {
       return eJENKACEGJL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.FKOCKFBCIHO EJENKACEGJL = 13;</code>
      * @return The eJENKACEGJL.
      */
@@ -512,10 +388,6 @@ public final class KNNEPNCKFFFOuterClass {
     public static final int FMMKCGAIHCH_FIELD_NUMBER = 14;
     private boolean fMMKCGAIHCH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FMMKCGAIHCH = 14;</code>
      * @return The fMMKCGAIHCH.
      */
@@ -527,10 +399,6 @@ public final class KNNEPNCKFFFOuterClass {
     public static final int LKHIEAMOBCO_FIELD_NUMBER = 12;
     private boolean lKHIEAMOBCO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool LKHIEAMOBCO = 12;</code>
      * @return The lKHIEAMOBCO.
      */
@@ -542,10 +410,6 @@ public final class KNNEPNCKFFFOuterClass {
     public static final int POMIDHEHBNM_FIELD_NUMBER = 8;
     private int pOMIDHEHBNM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 POMIDHEHBNM = 8;</code>
      * @return The pOMIDHEHBNM.
      */
@@ -1076,10 +940,6 @@ public final class KNNEPNCKFFFOuterClass {
           emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK, emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK.Builder, emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFKOrBuilder> nMHAJDJIFNFBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK> getNMHAJDJIFNFList() {
@@ -1090,10 +950,6 @@ public final class KNNEPNCKFFFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public int getNMHAJDJIFNFCount() {
@@ -1104,10 +960,6 @@ public final class KNNEPNCKFFFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK getNMHAJDJIFNF(int index) {
@@ -1118,10 +970,6 @@ public final class KNNEPNCKFFFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public Builder setNMHAJDJIFNF(
@@ -1139,10 +987,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public Builder setNMHAJDJIFNF(
@@ -1157,10 +1001,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public Builder addNMHAJDJIFNF(emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK value) {
@@ -1177,10 +1017,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public Builder addNMHAJDJIFNF(
@@ -1198,10 +1034,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public Builder addNMHAJDJIFNF(
@@ -1216,10 +1048,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public Builder addNMHAJDJIFNF(
@@ -1234,10 +1062,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public Builder addAllNMHAJDJIFNF(
@@ -1253,10 +1077,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public Builder clearNMHAJDJIFNF() {
@@ -1270,10 +1090,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public Builder removeNMHAJDJIFNF(int index) {
@@ -1287,10 +1103,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK.Builder getNMHAJDJIFNFBuilder(
@@ -1298,10 +1110,6 @@ public final class KNNEPNCKFFFOuterClass {
         return getNMHAJDJIFNFFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFKOrBuilder getNMHAJDJIFNFOrBuilder(
@@ -1312,10 +1120,6 @@ public final class KNNEPNCKFFFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFKOrBuilder> 
@@ -1327,10 +1131,6 @@ public final class KNNEPNCKFFFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK.Builder addNMHAJDJIFNFBuilder() {
@@ -1338,10 +1138,6 @@ public final class KNNEPNCKFFFOuterClass {
             emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK.Builder addNMHAJDJIFNFBuilder(
@@ -1350,10 +1146,6 @@ public final class KNNEPNCKFFFOuterClass {
             index, emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OEOHEENALFK NMHAJDJIFNF = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK.Builder> 
@@ -1379,10 +1171,6 @@ public final class KNNEPNCKFFFOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK, emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK.Builder, emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFKOrBuilder> jIGNPKOJGMLBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
        * @return Whether the jIGNPKOJGML field is set.
        */
@@ -1390,10 +1178,6 @@ public final class KNNEPNCKFFFOuterClass {
         return jIGNPKOJGMLBuilder_ != null || jIGNPKOJGML_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
        * @return The jIGNPKOJGML.
        */
@@ -1405,10 +1189,6 @@ public final class KNNEPNCKFFFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
        */
       public Builder setJIGNPKOJGML(emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK value) {
@@ -1425,10 +1205,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
        */
       public Builder setJIGNPKOJGML(
@@ -1443,10 +1219,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
        */
       public Builder mergeJIGNPKOJGML(emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK value) {
@@ -1465,10 +1237,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
        */
       public Builder clearJIGNPKOJGML() {
@@ -1483,10 +1251,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
        */
       public emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFK.Builder getJIGNPKOJGMLBuilder() {
@@ -1495,10 +1259,6 @@ public final class KNNEPNCKFFFOuterClass {
         return getJIGNPKOJGMLFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
        */
       public emu.grasscutter.net.proto.OEOHEENALFKOuterClass.OEOHEENALFKOrBuilder getJIGNPKOJGMLOrBuilder() {
@@ -1510,10 +1270,6 @@ public final class KNNEPNCKFFFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OEOHEENALFK JIGNPKOJGML = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1532,10 +1288,6 @@ public final class KNNEPNCKFFFOuterClass {
 
       private int id_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 11;</code>
        * @return The id.
        */
@@ -1544,10 +1296,6 @@ public final class KNNEPNCKFFFOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 11;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -1559,10 +1307,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 11;</code>
        * @return This builder for chaining.
        */
@@ -1575,10 +1319,6 @@ public final class KNNEPNCKFFFOuterClass {
 
       private int oCAMPGKNIEK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCAMPGKNIEK = 4;</code>
        * @return The oCAMPGKNIEK.
        */
@@ -1587,10 +1327,6 @@ public final class KNNEPNCKFFFOuterClass {
         return oCAMPGKNIEK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCAMPGKNIEK = 4;</code>
        * @param value The oCAMPGKNIEK to set.
        * @return This builder for chaining.
@@ -1602,10 +1338,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCAMPGKNIEK = 4;</code>
        * @return This builder for chaining.
        */
@@ -1618,10 +1350,6 @@ public final class KNNEPNCKFFFOuterClass {
 
       private int npcId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 npc_id = 6;</code>
        * @return The npcId.
        */
@@ -1630,10 +1358,6 @@ public final class KNNEPNCKFFFOuterClass {
         return npcId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 npc_id = 6;</code>
        * @param value The npcId to set.
        * @return This builder for chaining.
@@ -1645,10 +1369,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 npc_id = 6;</code>
        * @return This builder for chaining.
        */
@@ -1661,10 +1381,6 @@ public final class KNNEPNCKFFFOuterClass {
 
       private int lOAGHIKOFNI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOAGHIKOFNI = 7;</code>
        * @return The lOAGHIKOFNI.
        */
@@ -1673,10 +1389,6 @@ public final class KNNEPNCKFFFOuterClass {
         return lOAGHIKOFNI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOAGHIKOFNI = 7;</code>
        * @param value The lOAGHIKOFNI to set.
        * @return This builder for chaining.
@@ -1688,10 +1400,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOAGHIKOFNI = 7;</code>
        * @return This builder for chaining.
        */
@@ -1704,10 +1412,6 @@ public final class KNNEPNCKFFFOuterClass {
 
       private int eJENKACEGJL_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.FKOCKFBCIHO EJENKACEGJL = 13;</code>
        * @return The enum numeric value on the wire for eJENKACEGJL.
        */
@@ -1715,10 +1419,6 @@ public final class KNNEPNCKFFFOuterClass {
         return eJENKACEGJL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.FKOCKFBCIHO EJENKACEGJL = 13;</code>
        * @param value The enum numeric value on the wire for eJENKACEGJL to set.
        * @return This builder for chaining.
@@ -1730,10 +1430,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.FKOCKFBCIHO EJENKACEGJL = 13;</code>
        * @return The eJENKACEGJL.
        */
@@ -1744,10 +1440,6 @@ public final class KNNEPNCKFFFOuterClass {
         return result == null ? emu.grasscutter.net.proto.FKOCKFBCIHOOuterClass.FKOCKFBCIHO.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.FKOCKFBCIHO EJENKACEGJL = 13;</code>
        * @param value The eJENKACEGJL to set.
        * @return This builder for chaining.
@@ -1762,10 +1454,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.FKOCKFBCIHO EJENKACEGJL = 13;</code>
        * @return This builder for chaining.
        */
@@ -1778,10 +1466,6 @@ public final class KNNEPNCKFFFOuterClass {
 
       private boolean fMMKCGAIHCH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FMMKCGAIHCH = 14;</code>
        * @return The fMMKCGAIHCH.
        */
@@ -1790,10 +1474,6 @@ public final class KNNEPNCKFFFOuterClass {
         return fMMKCGAIHCH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FMMKCGAIHCH = 14;</code>
        * @param value The fMMKCGAIHCH to set.
        * @return This builder for chaining.
@@ -1805,10 +1485,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FMMKCGAIHCH = 14;</code>
        * @return This builder for chaining.
        */
@@ -1821,10 +1497,6 @@ public final class KNNEPNCKFFFOuterClass {
 
       private boolean lKHIEAMOBCO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LKHIEAMOBCO = 12;</code>
        * @return The lKHIEAMOBCO.
        */
@@ -1833,10 +1505,6 @@ public final class KNNEPNCKFFFOuterClass {
         return lKHIEAMOBCO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LKHIEAMOBCO = 12;</code>
        * @param value The lKHIEAMOBCO to set.
        * @return This builder for chaining.
@@ -1848,10 +1516,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LKHIEAMOBCO = 12;</code>
        * @return This builder for chaining.
        */
@@ -1864,10 +1528,6 @@ public final class KNNEPNCKFFFOuterClass {
 
       private int pOMIDHEHBNM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 POMIDHEHBNM = 8;</code>
        * @return The pOMIDHEHBNM.
        */
@@ -1876,10 +1536,6 @@ public final class KNNEPNCKFFFOuterClass {
         return pOMIDHEHBNM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 POMIDHEHBNM = 8;</code>
        * @param value The pOMIDHEHBNM to set.
        * @return This builder for chaining.
@@ -1891,10 +1547,6 @@ public final class KNNEPNCKFFFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 POMIDHEHBNM = 8;</code>
        * @return This builder for chaining.
        */

@@ -20,7 +20,7 @@ public final class PlayerSetPauseReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
      * <code>bool is_paused = 5;</code>
@@ -30,7 +30,7 @@ public final class PlayerSetPauseReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 21114
+   * CmdId: 8695
    * </pre>
    *
    * Protobuf type {@code PlayerSetPauseReq}
@@ -118,7 +118,7 @@ public final class PlayerSetPauseReqOuterClass {
     private boolean isPaused_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
      * <code>bool is_paused = 5;</code>
@@ -287,7 +287,7 @@ public final class PlayerSetPauseReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21114
+     * CmdId: 8695
      * </pre>
      *
      * Protobuf type {@code PlayerSetPauseReq}
@@ -439,7 +439,7 @@ public final class PlayerSetPauseReqOuterClass {
       private boolean isPaused_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
        * <code>bool is_paused = 5;</code>
@@ -451,7 +451,7 @@ public final class PlayerSetPauseReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
        * <code>bool is_paused = 5;</code>
@@ -466,7 +466,7 @@ public final class PlayerSetPauseReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
        * <code>bool is_paused = 5;</code>

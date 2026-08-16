@@ -19,28 +19,16 @@ public final class NODKKPOIFABOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 2;</code>
      * @return A list containing the avatarGuidList.
      */
     java.util.List<java.lang.Long> getAvatarGuidListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 2;</code>
      * @return The count of avatarGuidList.
      */
     int getAvatarGuidListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
@@ -48,10 +36,6 @@ public final class NODKKPOIFABOuterClass {
     long getAvatarGuidList(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 COPPBKGCCEP = 3;</code>
      * @return The cOPPBKGCCEP.
      */
@@ -168,10 +152,6 @@ public final class NODKKPOIFABOuterClass {
     public static final int AVATAR_GUID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.LongList avatarGuidList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 2;</code>
      * @return A list containing the avatarGuidList.
      */
@@ -181,10 +161,6 @@ public final class NODKKPOIFABOuterClass {
       return avatarGuidList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 2;</code>
      * @return The count of avatarGuidList.
      */
@@ -192,10 +168,6 @@ public final class NODKKPOIFABOuterClass {
       return avatarGuidList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint64 avatar_guid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
@@ -208,10 +180,6 @@ public final class NODKKPOIFABOuterClass {
     public static final int COPPBKGCCEP_FIELD_NUMBER = 3;
     private int cOPPBKGCCEP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 COPPBKGCCEP = 3;</code>
      * @return The cOPPBKGCCEP.
      */
@@ -577,10 +545,6 @@ public final class NODKKPOIFABOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 2;</code>
        * @return A list containing the avatarGuidList.
        */
@@ -590,10 +554,6 @@ public final class NODKKPOIFABOuterClass {
                  java.util.Collections.unmodifiableList(avatarGuidList_) : avatarGuidList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 2;</code>
        * @return The count of avatarGuidList.
        */
@@ -601,10 +561,6 @@ public final class NODKKPOIFABOuterClass {
         return avatarGuidList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 2;</code>
        * @param index The index of the element to return.
        * @return The avatarGuidList at the given index.
@@ -613,10 +569,6 @@ public final class NODKKPOIFABOuterClass {
         return avatarGuidList_.getLong(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The avatarGuidList to set.
@@ -630,10 +582,6 @@ public final class NODKKPOIFABOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 2;</code>
        * @param value The avatarGuidList to add.
        * @return This builder for chaining.
@@ -645,10 +593,6 @@ public final class NODKKPOIFABOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 2;</code>
        * @param values The avatarGuidList to add.
        * @return This builder for chaining.
@@ -662,10 +606,6 @@ public final class NODKKPOIFABOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint64 avatar_guid_list = 2;</code>
        * @return This builder for chaining.
        */
@@ -678,10 +618,6 @@ public final class NODKKPOIFABOuterClass {
 
       private int cOPPBKGCCEP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 COPPBKGCCEP = 3;</code>
        * @return The cOPPBKGCCEP.
        */
@@ -690,10 +626,6 @@ public final class NODKKPOIFABOuterClass {
         return cOPPBKGCCEP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 COPPBKGCCEP = 3;</code>
        * @param value The cOPPBKGCCEP to set.
        * @return This builder for chaining.
@@ -705,10 +637,6 @@ public final class NODKKPOIFABOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 COPPBKGCCEP = 3;</code>
        * @return This builder for chaining.
        */

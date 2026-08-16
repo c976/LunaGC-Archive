@@ -19,36 +19,24 @@ public final class JLPBEBBDELIOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 EGHGENOJNEK = 12;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 12;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool IHIEENKFGGL = 5;</code>
      * @return The iHIEENKFGGL.
      */
     boolean getIHIEENKFGGL();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 9;</code>
      * @return The openTime.
      */
@@ -116,7 +104,7 @@ public final class JLPBEBBDELIOuterClass {
             }
             case 96: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -151,24 +139,20 @@ public final class JLPBEBBDELIOuterClass {
               emu.grasscutter.net.proto.JLPBEBBDELIOuterClass.JLPBEBBDELI.class, emu.grasscutter.net.proto.JLPBEBBDELIOuterClass.JLPBEBBDELI.Builder.class);
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 12;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 12;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 12;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 12;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int IHIEENKFGGL_FIELD_NUMBER = 5;
     private boolean iHIEENKFGGL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool IHIEENKFGGL = 5;</code>
      * @return The iHIEENKFGGL.
      */
@@ -180,10 +164,6 @@ public final class JLPBEBBDELIOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 8;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
@@ -195,10 +175,6 @@ public final class JLPBEBBDELIOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 9;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 9;</code>
      * @return The openTime.
      */
@@ -230,8 +206,8 @@ public final class JLPBEBBDELIOuterClass {
       if (openTime_ != 0) {
         output.writeUInt32(9, openTime_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(12, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(12, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -254,9 +230,9 @@ public final class JLPBEBBDELIOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, openTime_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, eGHGENOJNEK_);
+          .computeUInt32Size(12, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -273,8 +249,8 @@ public final class JLPBEBBDELIOuterClass {
       }
       emu.grasscutter.net.proto.JLPBEBBDELIOuterClass.JLPBEBBDELI other = (emu.grasscutter.net.proto.JLPBEBBDELIOuterClass.JLPBEBBDELI) obj;
 
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getIHIEENKFGGL()
           != other.getIHIEENKFGGL()) return false;
       if (getIsOpen()
@@ -292,8 +268,8 @@ public final class JLPBEBBDELIOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IHIEENKFGGL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIHIEENKFGGL());
@@ -435,7 +411,7 @@ public final class JLPBEBBDELIOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         iHIEENKFGGL_ = false;
 
@@ -469,7 +445,7 @@ public final class JLPBEBBDELIOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.JLPBEBBDELIOuterClass.JLPBEBBDELI buildPartial() {
         emu.grasscutter.net.proto.JLPBEBBDELIOuterClass.JLPBEBBDELI result = new emu.grasscutter.net.proto.JLPBEBBDELIOuterClass.JLPBEBBDELI(this);
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.iHIEENKFGGL_ = iHIEENKFGGL_;
         result.isOpen_ = isOpen_;
         result.openTime_ = openTime_;
@@ -521,8 +497,8 @@ public final class JLPBEBBDELIOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.JLPBEBBDELIOuterClass.JLPBEBBDELI other) {
         if (other == emu.grasscutter.net.proto.JLPBEBBDELIOuterClass.JLPBEBBDELI.getDefaultInstance()) return this;
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getIHIEENKFGGL() != false) {
           setIHIEENKFGGL(other.getIHIEENKFGGL());
@@ -562,43 +538,39 @@ public final class JLPBEBBDELIOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 12;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 12;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
+       * <code>uint32 stage_id = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean iHIEENKFGGL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool IHIEENKFGGL = 5;</code>
        * @return The iHIEENKFGGL.
        */
@@ -607,10 +579,6 @@ public final class JLPBEBBDELIOuterClass {
         return iHIEENKFGGL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool IHIEENKFGGL = 5;</code>
        * @param value The iHIEENKFGGL to set.
        * @return This builder for chaining.
@@ -622,10 +590,6 @@ public final class JLPBEBBDELIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool IHIEENKFGGL = 5;</code>
        * @return This builder for chaining.
        */
@@ -638,10 +602,6 @@ public final class JLPBEBBDELIOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @return The isOpen.
        */
@@ -650,10 +610,6 @@ public final class JLPBEBBDELIOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -665,10 +621,6 @@ public final class JLPBEBBDELIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @return This builder for chaining.
        */
@@ -681,10 +633,6 @@ public final class JLPBEBBDELIOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 9;</code>
        * @return The openTime.
        */
@@ -693,10 +641,6 @@ public final class JLPBEBBDELIOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 9;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -708,10 +652,6 @@ public final class JLPBEBBDELIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 9;</code>
        * @return This builder for chaining.
        */
@@ -788,10 +728,10 @@ public final class JLPBEBBDELIOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021JLPBEBBDELI.proto\"[\n\013JLPBEBBDELI\022\023\n\013EG" +
-      "HGENOJNEK\030\014 \001(\r\022\023\n\013IHIEENKFGGL\030\005 \001(\010\022\017\n\007" +
-      "is_open\030\010 \001(\010\022\021\n\topen_time\030\t \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\021JLPBEBBDELI.proto\"X\n\013JLPBEBBDELI\022\020\n\010st" +
+      "age_id\030\014 \001(\r\022\023\n\013IHIEENKFGGL\030\005 \001(\010\022\017\n\007is_" +
+      "open\030\010 \001(\010\022\021\n\topen_time\030\t \001(\rB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -802,7 +742,7 @@ public final class JLPBEBBDELIOuterClass {
     internal_static_JLPBEBBDELI_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_JLPBEBBDELI_descriptor,
-        new java.lang.String[] { "EGHGENOJNEK", "IHIEENKFGGL", "IsOpen", "OpenTime", });
+        new java.lang.String[] { "StageId", "IHIEENKFGGL", "IsOpen", "OpenTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

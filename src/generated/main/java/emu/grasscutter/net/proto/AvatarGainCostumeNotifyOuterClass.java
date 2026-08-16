@@ -20,17 +20,17 @@ public final class AvatarGainCostumeNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>uint32 costume_id = 12;</code>
+     * <code>uint32 costume_id = 8;</code>
      * @return The costumeId.
      */
     int getCostumeId();
   }
   /**
    * <pre>
-   * CmdId: 2756
+   * CmdId: 3806
    * </pre>
    *
    * Protobuf type {@code AvatarGainCostumeNotify}
@@ -77,7 +77,7 @@ public final class AvatarGainCostumeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 64: {
 
               costumeId_ = input.readUInt32();
               break;
@@ -114,14 +114,14 @@ public final class AvatarGainCostumeNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarGainCostumeNotifyOuterClass.AvatarGainCostumeNotify.class, emu.grasscutter.net.proto.AvatarGainCostumeNotifyOuterClass.AvatarGainCostumeNotify.Builder.class);
     }
 
-    public static final int COSTUME_ID_FIELD_NUMBER = 12;
+    public static final int COSTUME_ID_FIELD_NUMBER = 8;
     private int costumeId_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0        
      * </pre>
      *
-     * <code>uint32 costume_id = 12;</code>
+     * <code>uint32 costume_id = 8;</code>
      * @return The costumeId.
      */
     @java.lang.Override
@@ -144,7 +144,7 @@ public final class AvatarGainCostumeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (costumeId_ != 0) {
-        output.writeUInt32(12, costumeId_);
+        output.writeUInt32(8, costumeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -157,7 +157,7 @@ public final class AvatarGainCostumeNotifyOuterClass {
       size = 0;
       if (costumeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, costumeId_);
+          .computeUInt32Size(8, costumeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -286,7 +286,7 @@ public final class AvatarGainCostumeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2756
+     * CmdId: 3806
      * </pre>
      *
      * Protobuf type {@code AvatarGainCostumeNotify}
@@ -438,10 +438,10 @@ public final class AvatarGainCostumeNotifyOuterClass {
       private int costumeId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 costume_id = 12;</code>
+       * <code>uint32 costume_id = 8;</code>
        * @return The costumeId.
        */
       @java.lang.Override
@@ -450,10 +450,10 @@ public final class AvatarGainCostumeNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 costume_id = 12;</code>
+       * <code>uint32 costume_id = 8;</code>
        * @param value The costumeId to set.
        * @return This builder for chaining.
        */
@@ -465,10 +465,10 @@ public final class AvatarGainCostumeNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0        
        * </pre>
        *
-       * <code>uint32 costume_id = 12;</code>
+       * <code>uint32 costume_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostumeId() {
@@ -545,7 +545,7 @@ public final class AvatarGainCostumeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035AvatarGainCostumeNotify.proto\"-\n\027Avata" +
-      "rGainCostumeNotify\022\022\n\ncostume_id\030\014 \001(\rB\033" +
+      "rGainCostumeNotify\022\022\n\ncostume_id\030\010 \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

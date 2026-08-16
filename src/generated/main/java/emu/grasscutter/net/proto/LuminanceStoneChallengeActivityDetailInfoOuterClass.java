@@ -19,44 +19,32 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 EBFGBBLDBDC = 9;</code>
-     * @return The eBFGBBLDBDC.
+     * <code>uint32 OMEBOHLACPH = 1;</code>
+     * @return The oMEBOHLACPH.
      */
-    int getEBFGBBLDBDC();
+    int getOMEBOHLACPH();
+
+    /**
+     * <code>bool JEAAOBMJBFF = 6;</code>
+     * @return The jEAAOBMJBFF.
+     */
+    boolean getJEAAOBMJBFF();
 
     /**
      * <pre>
-     * offset: 36
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>bool EAEDOIFGENM = 12;</code>
-     * @return The eAEDOIFGENM.
-     */
-    boolean getEAEDOIFGENM();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 37
-     * </pre>
-     *
-     * <code>bool is_content_closed = 10;</code>
+     * <code>bool is_content_closed = 9;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 best_score = 3;</code>
-     * @return The bestScore.
+     * <code>uint32 NCMAJBKNJCA = 11;</code>
+     * @return The nCMAJBKNJCA.
      */
-    int getBestScore();
+    int getNCMAJBKNJCA();
   }
   /**
    * Protobuf type {@code LuminanceStoneChallengeActivityDetailInfo}
@@ -103,24 +91,24 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
-              bestScore_ = input.readUInt32();
+              oMEBOHLACPH_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              jEAAOBMJBFF_ = input.readBool();
               break;
             }
             case 72: {
 
-              eBFGBBLDBDC_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
               isContentClosed_ = input.readBool();
               break;
             }
-            case 96: {
+            case 88: {
 
-              eAEDOIFGENM_ = input.readBool();
+              nCMAJBKNJCA_ = input.readUInt32();
               break;
             }
             default: {
@@ -155,44 +143,36 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo.class, emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo.Builder.class);
     }
 
-    public static final int EBFGBBLDBDC_FIELD_NUMBER = 9;
-    private int eBFGBBLDBDC_;
+    public static final int OMEBOHLACPH_FIELD_NUMBER = 1;
+    private int oMEBOHLACPH_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 EBFGBBLDBDC = 9;</code>
-     * @return The eBFGBBLDBDC.
+     * <code>uint32 OMEBOHLACPH = 1;</code>
+     * @return The oMEBOHLACPH.
      */
     @java.lang.Override
-    public int getEBFGBBLDBDC() {
-      return eBFGBBLDBDC_;
+    public int getOMEBOHLACPH() {
+      return oMEBOHLACPH_;
     }
 
-    public static final int EAEDOIFGENM_FIELD_NUMBER = 12;
-    private boolean eAEDOIFGENM_;
+    public static final int JEAAOBMJBFF_FIELD_NUMBER = 6;
+    private boolean jEAAOBMJBFF_;
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>bool EAEDOIFGENM = 12;</code>
-     * @return The eAEDOIFGENM.
+     * <code>bool JEAAOBMJBFF = 6;</code>
+     * @return The jEAAOBMJBFF.
      */
     @java.lang.Override
-    public boolean getEAEDOIFGENM() {
-      return eAEDOIFGENM_;
+    public boolean getJEAAOBMJBFF() {
+      return jEAAOBMJBFF_;
     }
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 10;
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 9;
     private boolean isContentClosed_;
     /**
      * <pre>
-     *6.3.0 // offset: 37
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>bool is_content_closed = 10;</code>
+     * <code>bool is_content_closed = 9;</code>
      * @return The isContentClosed.
      */
     @java.lang.Override
@@ -200,19 +180,15 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       return isContentClosed_;
     }
 
-    public static final int BEST_SCORE_FIELD_NUMBER = 3;
-    private int bestScore_;
+    public static final int NCMAJBKNJCA_FIELD_NUMBER = 11;
+    private int nCMAJBKNJCA_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 best_score = 3;</code>
-     * @return The bestScore.
+     * <code>uint32 NCMAJBKNJCA = 11;</code>
+     * @return The nCMAJBKNJCA.
      */
     @java.lang.Override
-    public int getBestScore() {
-      return bestScore_;
+    public int getNCMAJBKNJCA() {
+      return nCMAJBKNJCA_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -229,17 +205,17 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bestScore_ != 0) {
-        output.writeUInt32(3, bestScore_);
+      if (oMEBOHLACPH_ != 0) {
+        output.writeUInt32(1, oMEBOHLACPH_);
       }
-      if (eBFGBBLDBDC_ != 0) {
-        output.writeUInt32(9, eBFGBBLDBDC_);
+      if (jEAAOBMJBFF_ != false) {
+        output.writeBool(6, jEAAOBMJBFF_);
       }
       if (isContentClosed_ != false) {
-        output.writeBool(10, isContentClosed_);
+        output.writeBool(9, isContentClosed_);
       }
-      if (eAEDOIFGENM_ != false) {
-        output.writeBool(12, eAEDOIFGENM_);
+      if (nCMAJBKNJCA_ != 0) {
+        output.writeUInt32(11, nCMAJBKNJCA_);
       }
       unknownFields.writeTo(output);
     }
@@ -250,21 +226,21 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bestScore_ != 0) {
+      if (oMEBOHLACPH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, bestScore_);
+          .computeUInt32Size(1, oMEBOHLACPH_);
       }
-      if (eBFGBBLDBDC_ != 0) {
+      if (jEAAOBMJBFF_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, eBFGBBLDBDC_);
+          .computeBoolSize(6, jEAAOBMJBFF_);
       }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isContentClosed_);
+          .computeBoolSize(9, isContentClosed_);
       }
-      if (eAEDOIFGENM_ != false) {
+      if (nCMAJBKNJCA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, eAEDOIFGENM_);
+          .computeUInt32Size(11, nCMAJBKNJCA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,14 +257,14 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo other = (emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo) obj;
 
-      if (getEBFGBBLDBDC()
-          != other.getEBFGBBLDBDC()) return false;
-      if (getEAEDOIFGENM()
-          != other.getEAEDOIFGENM()) return false;
+      if (getOMEBOHLACPH()
+          != other.getOMEBOHLACPH()) return false;
+      if (getJEAAOBMJBFF()
+          != other.getJEAAOBMJBFF()) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
-      if (getBestScore()
-          != other.getBestScore()) return false;
+      if (getNCMAJBKNJCA()
+          != other.getNCMAJBKNJCA()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -300,16 +276,16 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EBFGBBLDBDC_FIELD_NUMBER;
-      hash = (53 * hash) + getEBFGBBLDBDC();
-      hash = (37 * hash) + EAEDOIFGENM_FIELD_NUMBER;
+      hash = (37 * hash) + OMEBOHLACPH_FIELD_NUMBER;
+      hash = (53 * hash) + getOMEBOHLACPH();
+      hash = (37 * hash) + JEAAOBMJBFF_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getEAEDOIFGENM());
+          getJEAAOBMJBFF());
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      hash = (37 * hash) + BEST_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getBestScore();
+      hash = (37 * hash) + NCMAJBKNJCA_FIELD_NUMBER;
+      hash = (53 * hash) + getNCMAJBKNJCA();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -443,13 +419,13 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eBFGBBLDBDC_ = 0;
+        oMEBOHLACPH_ = 0;
 
-        eAEDOIFGENM_ = false;
+        jEAAOBMJBFF_ = false;
 
         isContentClosed_ = false;
 
-        bestScore_ = 0;
+        nCMAJBKNJCA_ = 0;
 
         return this;
       }
@@ -477,10 +453,10 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo result = new emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo(this);
-        result.eBFGBBLDBDC_ = eBFGBBLDBDC_;
-        result.eAEDOIFGENM_ = eAEDOIFGENM_;
+        result.oMEBOHLACPH_ = oMEBOHLACPH_;
+        result.jEAAOBMJBFF_ = jEAAOBMJBFF_;
         result.isContentClosed_ = isContentClosed_;
-        result.bestScore_ = bestScore_;
+        result.nCMAJBKNJCA_ = nCMAJBKNJCA_;
         onBuilt();
         return result;
       }
@@ -529,17 +505,17 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.LuminanceStoneChallengeActivityDetailInfoOuterClass.LuminanceStoneChallengeActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getEBFGBBLDBDC() != 0) {
-          setEBFGBBLDBDC(other.getEBFGBBLDBDC());
+        if (other.getOMEBOHLACPH() != 0) {
+          setOMEBOHLACPH(other.getOMEBOHLACPH());
         }
-        if (other.getEAEDOIFGENM() != false) {
-          setEAEDOIFGENM(other.getEAEDOIFGENM());
+        if (other.getJEAAOBMJBFF() != false) {
+          setJEAAOBMJBFF(other.getJEAAOBMJBFF());
         }
         if (other.getIsContentClosed() != false) {
           setIsContentClosed(other.getIsContentClosed());
         }
-        if (other.getBestScore() != 0) {
-          setBestScore(other.getBestScore());
+        if (other.getNCMAJBKNJCA() != 0) {
+          setNCMAJBKNJCA(other.getNCMAJBKNJCA());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -570,88 +546,64 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
         return this;
       }
 
-      private int eBFGBBLDBDC_ ;
+      private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 EBFGBBLDBDC = 9;</code>
-       * @return The eBFGBBLDBDC.
+       * <code>uint32 OMEBOHLACPH = 1;</code>
+       * @return The oMEBOHLACPH.
        */
       @java.lang.Override
-      public int getEBFGBBLDBDC() {
-        return eBFGBBLDBDC_;
+      public int getOMEBOHLACPH() {
+        return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 EBFGBBLDBDC = 9;</code>
-       * @param value The eBFGBBLDBDC to set.
+       * <code>uint32 OMEBOHLACPH = 1;</code>
+       * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
        */
-      public Builder setEBFGBBLDBDC(int value) {
+      public Builder setOMEBOHLACPH(int value) {
         
-        eBFGBBLDBDC_ = value;
+        oMEBOHLACPH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 EBFGBBLDBDC = 9;</code>
+       * <code>uint32 OMEBOHLACPH = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEBFGBBLDBDC() {
+      public Builder clearOMEBOHLACPH() {
         
-        eBFGBBLDBDC_ = 0;
+        oMEBOHLACPH_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean eAEDOIFGENM_ ;
+      private boolean jEAAOBMJBFF_ ;
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>bool EAEDOIFGENM = 12;</code>
-       * @return The eAEDOIFGENM.
+       * <code>bool JEAAOBMJBFF = 6;</code>
+       * @return The jEAAOBMJBFF.
        */
       @java.lang.Override
-      public boolean getEAEDOIFGENM() {
-        return eAEDOIFGENM_;
+      public boolean getJEAAOBMJBFF() {
+        return jEAAOBMJBFF_;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>bool EAEDOIFGENM = 12;</code>
-       * @param value The eAEDOIFGENM to set.
+       * <code>bool JEAAOBMJBFF = 6;</code>
+       * @param value The jEAAOBMJBFF to set.
        * @return This builder for chaining.
        */
-      public Builder setEAEDOIFGENM(boolean value) {
+      public Builder setJEAAOBMJBFF(boolean value) {
         
-        eAEDOIFGENM_ = value;
+        jEAAOBMJBFF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>bool EAEDOIFGENM = 12;</code>
+       * <code>bool JEAAOBMJBFF = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEAEDOIFGENM() {
+      public Builder clearJEAAOBMJBFF() {
         
-        eAEDOIFGENM_ = false;
+        jEAAOBMJBFF_ = false;
         onChanged();
         return this;
       }
@@ -659,10 +611,10 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       private boolean isContentClosed_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 37
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_content_closed = 10;</code>
+       * <code>bool is_content_closed = 9;</code>
        * @return The isContentClosed.
        */
       @java.lang.Override
@@ -671,10 +623,10 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 37
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_content_closed = 10;</code>
+       * <code>bool is_content_closed = 9;</code>
        * @param value The isContentClosed to set.
        * @return This builder for chaining.
        */
@@ -686,10 +638,10 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 37
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>bool is_content_closed = 10;</code>
+       * <code>bool is_content_closed = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsContentClosed() {
@@ -699,45 +651,33 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
         return this;
       }
 
-      private int bestScore_ ;
+      private int nCMAJBKNJCA_ ;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 best_score = 3;</code>
-       * @return The bestScore.
+       * <code>uint32 NCMAJBKNJCA = 11;</code>
+       * @return The nCMAJBKNJCA.
        */
       @java.lang.Override
-      public int getBestScore() {
-        return bestScore_;
+      public int getNCMAJBKNJCA() {
+        return nCMAJBKNJCA_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 best_score = 3;</code>
-       * @param value The bestScore to set.
+       * <code>uint32 NCMAJBKNJCA = 11;</code>
+       * @param value The nCMAJBKNJCA to set.
        * @return This builder for chaining.
        */
-      public Builder setBestScore(int value) {
+      public Builder setNCMAJBKNJCA(int value) {
         
-        bestScore_ = value;
+        nCMAJBKNJCA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 best_score = 3;</code>
+       * <code>uint32 NCMAJBKNJCA = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBestScore() {
+      public Builder clearNCMAJBKNJCA() {
         
-        bestScore_ = 0;
+        nCMAJBKNJCA_ = 0;
         onChanged();
         return this;
       }
@@ -809,11 +749,11 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n/LuminanceStoneChallengeActivityDetailI" +
-      "nfo.proto\"\204\001\n)LuminanceStoneChallengeAct" +
-      "ivityDetailInfo\022\023\n\013EBFGBBLDBDC\030\t \001(\r\022\023\n\013" +
-      "EAEDOIFGENM\030\014 \001(\010\022\031\n\021is_content_closed\030\n" +
-      " \001(\010\022\022\n\nbest_score\030\003 \001(\rB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "nfo.proto\"\205\001\n)LuminanceStoneChallengeAct" +
+      "ivityDetailInfo\022\023\n\013OMEBOHLACPH\030\001 \001(\r\022\023\n\013" +
+      "JEAAOBMJBFF\030\006 \001(\010\022\031\n\021is_content_closed\030\t" +
+      " \001(\010\022\023\n\013NCMAJBKNJCA\030\013 \001(\rB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -824,7 +764,7 @@ public final class LuminanceStoneChallengeActivityDetailInfoOuterClass {
     internal_static_LuminanceStoneChallengeActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LuminanceStoneChallengeActivityDetailInfo_descriptor,
-        new java.lang.String[] { "EBFGBBLDBDC", "EAEDOIFGENM", "IsContentClosed", "BestScore", });
+        new java.lang.String[] { "OMEBOHLACPH", "JEAAOBMJBFF", "IsContentClosed", "NCMAJBKNJCA", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

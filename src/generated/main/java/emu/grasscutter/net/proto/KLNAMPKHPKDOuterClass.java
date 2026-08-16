@@ -19,28 +19,16 @@ public final class KLNAMPKHPKDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
      * @return A list containing the aHNDFBLGCOA.
      */
     java.util.List<java.lang.Integer> getAHNDFBLGCOAList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
      * @return The count of aHNDFBLGCOA.
      */
     int getAHNDFBLGCOACount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
      * @param index The index of the element to return.
      * @return The aHNDFBLGCOA at the given index.
@@ -48,28 +36,16 @@ public final class KLNAMPKHPKDOuterClass {
     int getAHNDFBLGCOA(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFACNLGEAGM = 2;</code>
      * @return A list containing the cFACNLGEAGM.
      */
     java.util.List<java.lang.Integer> getCFACNLGEAGMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFACNLGEAGM = 2;</code>
      * @return The count of cFACNLGEAGM.
      */
     int getCFACNLGEAGMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFACNLGEAGM = 2;</code>
      * @param index The index of the element to return.
      * @return The cFACNLGEAGM at the given index.
@@ -77,28 +53,16 @@ public final class KLNAMPKHPKDOuterClass {
     int getCFACNLGEAGM(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
      * @return A list containing the fLEDEKPDJAD.
      */
     java.util.List<java.lang.Integer> getFLEDEKPDJADList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
      * @return The count of fLEDEKPDJAD.
      */
     int getFLEDEKPDJADCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
      * @param index The index of the element to return.
      * @return The fLEDEKPDJAD at the given index.
@@ -106,36 +70,24 @@ public final class KLNAMPKHPKDOuterClass {
     int getFLEDEKPDJAD(int index);
 
     /**
-     * <code>uint32 IFADGMHEFHF = 9;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 9;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool MHIPFEMIHMK = 11;</code>
      * @return The mHIPFEMIHMK.
      */
@@ -239,7 +191,7 @@ public final class KLNAMPKHPKDOuterClass {
             }
             case 72: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 88: {
@@ -317,10 +269,6 @@ public final class KLNAMPKHPKDOuterClass {
     public static final int AHNDFBLGCOA_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList aHNDFBLGCOA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
      * @return A list containing the aHNDFBLGCOA.
      */
@@ -330,10 +278,6 @@ public final class KLNAMPKHPKDOuterClass {
       return aHNDFBLGCOA_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
      * @return The count of aHNDFBLGCOA.
      */
@@ -341,10 +285,6 @@ public final class KLNAMPKHPKDOuterClass {
       return aHNDFBLGCOA_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
      * @param index The index of the element to return.
      * @return The aHNDFBLGCOA at the given index.
@@ -357,10 +297,6 @@ public final class KLNAMPKHPKDOuterClass {
     public static final int CFACNLGEAGM_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList cFACNLGEAGM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFACNLGEAGM = 2;</code>
      * @return A list containing the cFACNLGEAGM.
      */
@@ -370,10 +306,6 @@ public final class KLNAMPKHPKDOuterClass {
       return cFACNLGEAGM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFACNLGEAGM = 2;</code>
      * @return The count of cFACNLGEAGM.
      */
@@ -381,10 +313,6 @@ public final class KLNAMPKHPKDOuterClass {
       return cFACNLGEAGM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CFACNLGEAGM = 2;</code>
      * @param index The index of the element to return.
      * @return The cFACNLGEAGM at the given index.
@@ -397,10 +325,6 @@ public final class KLNAMPKHPKDOuterClass {
     public static final int FLEDEKPDJAD_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList fLEDEKPDJAD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
      * @return A list containing the fLEDEKPDJAD.
      */
@@ -410,10 +334,6 @@ public final class KLNAMPKHPKDOuterClass {
       return fLEDEKPDJAD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
      * @return The count of fLEDEKPDJAD.
      */
@@ -421,10 +341,6 @@ public final class KLNAMPKHPKDOuterClass {
       return fLEDEKPDJAD_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
      * @param index The index of the element to return.
      * @return The fLEDEKPDJAD at the given index.
@@ -434,24 +350,20 @@ public final class KLNAMPKHPKDOuterClass {
     }
     private int fLEDEKPDJADMemoizedSerializedSize = -1;
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 9;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 9;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 9;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 9;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
@@ -463,10 +375,6 @@ public final class KLNAMPKHPKDOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 14;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
@@ -478,10 +386,6 @@ public final class KLNAMPKHPKDOuterClass {
     public static final int MHIPFEMIHMK_FIELD_NUMBER = 11;
     private boolean mHIPFEMIHMK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool MHIPFEMIHMK = 11;</code>
      * @return The mHIPFEMIHMK.
      */
@@ -522,8 +426,8 @@ public final class KLNAMPKHPKDOuterClass {
       if (levelId_ != 0) {
         output.writeUInt32(5, levelId_);
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(9, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(9, ugcGuid_);
       }
       if (mHIPFEMIHMK_ != false) {
         output.writeBool(11, mHIPFEMIHMK_);
@@ -579,9 +483,9 @@ public final class KLNAMPKHPKDOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, levelId_);
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, iFADGMHEFHF_);
+          .computeUInt32Size(9, ugcGuid_);
       }
       if (mHIPFEMIHMK_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -626,8 +530,8 @@ public final class KLNAMPKHPKDOuterClass {
           .equals(other.getCFACNLGEAGMList())) return false;
       if (!getFLEDEKPDJADList()
           .equals(other.getFLEDEKPDJADList())) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (getIsFinish()
@@ -657,8 +561,8 @@ public final class KLNAMPKHPKDOuterClass {
         hash = (37 * hash) + FLEDEKPDJAD_FIELD_NUMBER;
         hash = (53 * hash) + getFLEDEKPDJADList().hashCode();
       }
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
@@ -806,7 +710,7 @@ public final class KLNAMPKHPKDOuterClass {
         bitField0_ = (bitField0_ & ~0x00000002);
         fLEDEKPDJAD_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         levelId_ = 0;
 
@@ -856,7 +760,7 @@ public final class KLNAMPKHPKDOuterClass {
           bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.fLEDEKPDJAD_ = fLEDEKPDJAD_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         result.levelId_ = levelId_;
         result.isFinish_ = isFinish_;
         result.mHIPFEMIHMK_ = mHIPFEMIHMK_;
@@ -938,8 +842,8 @@ public final class KLNAMPKHPKDOuterClass {
           }
           onChanged();
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
@@ -988,10 +892,6 @@ public final class KLNAMPKHPKDOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
        * @return A list containing the aHNDFBLGCOA.
        */
@@ -1001,10 +901,6 @@ public final class KLNAMPKHPKDOuterClass {
                  java.util.Collections.unmodifiableList(aHNDFBLGCOA_) : aHNDFBLGCOA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
        * @return The count of aHNDFBLGCOA.
        */
@@ -1012,10 +908,6 @@ public final class KLNAMPKHPKDOuterClass {
         return aHNDFBLGCOA_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
        * @param index The index of the element to return.
        * @return The aHNDFBLGCOA at the given index.
@@ -1024,10 +916,6 @@ public final class KLNAMPKHPKDOuterClass {
         return aHNDFBLGCOA_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
        * @param index The index to set the value at.
        * @param value The aHNDFBLGCOA to set.
@@ -1041,10 +929,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
        * @param value The aHNDFBLGCOA to add.
        * @return This builder for chaining.
@@ -1056,10 +940,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
        * @param values The aHNDFBLGCOA to add.
        * @return This builder for chaining.
@@ -1073,10 +953,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AHNDFBLGCOA = 1;</code>
        * @return This builder for chaining.
        */
@@ -1095,10 +971,6 @@ public final class KLNAMPKHPKDOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFACNLGEAGM = 2;</code>
        * @return A list containing the cFACNLGEAGM.
        */
@@ -1108,10 +980,6 @@ public final class KLNAMPKHPKDOuterClass {
                  java.util.Collections.unmodifiableList(cFACNLGEAGM_) : cFACNLGEAGM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFACNLGEAGM = 2;</code>
        * @return The count of cFACNLGEAGM.
        */
@@ -1119,10 +987,6 @@ public final class KLNAMPKHPKDOuterClass {
         return cFACNLGEAGM_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFACNLGEAGM = 2;</code>
        * @param index The index of the element to return.
        * @return The cFACNLGEAGM at the given index.
@@ -1131,10 +995,6 @@ public final class KLNAMPKHPKDOuterClass {
         return cFACNLGEAGM_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFACNLGEAGM = 2;</code>
        * @param index The index to set the value at.
        * @param value The cFACNLGEAGM to set.
@@ -1148,10 +1008,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFACNLGEAGM = 2;</code>
        * @param value The cFACNLGEAGM to add.
        * @return This builder for chaining.
@@ -1163,10 +1019,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFACNLGEAGM = 2;</code>
        * @param values The cFACNLGEAGM to add.
        * @return This builder for chaining.
@@ -1180,10 +1032,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CFACNLGEAGM = 2;</code>
        * @return This builder for chaining.
        */
@@ -1202,10 +1050,6 @@ public final class KLNAMPKHPKDOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
        * @return A list containing the fLEDEKPDJAD.
        */
@@ -1215,10 +1059,6 @@ public final class KLNAMPKHPKDOuterClass {
                  java.util.Collections.unmodifiableList(fLEDEKPDJAD_) : fLEDEKPDJAD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
        * @return The count of fLEDEKPDJAD.
        */
@@ -1226,10 +1066,6 @@ public final class KLNAMPKHPKDOuterClass {
         return fLEDEKPDJAD_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
        * @param index The index of the element to return.
        * @return The fLEDEKPDJAD at the given index.
@@ -1238,10 +1074,6 @@ public final class KLNAMPKHPKDOuterClass {
         return fLEDEKPDJAD_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
        * @param index The index to set the value at.
        * @param value The fLEDEKPDJAD to set.
@@ -1255,10 +1087,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
        * @param value The fLEDEKPDJAD to add.
        * @return This builder for chaining.
@@ -1270,10 +1098,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
        * @param values The fLEDEKPDJAD to add.
        * @return This builder for chaining.
@@ -1287,10 +1111,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FLEDEKPDJAD = 15;</code>
        * @return This builder for chaining.
        */
@@ -1301,43 +1121,39 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 9;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 9;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 9;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 9;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 9;</code>
+       * <code>uint32 ugc_guid = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
@@ -1346,10 +1162,6 @@ public final class KLNAMPKHPKDOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1361,10 +1173,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
@@ -1377,10 +1185,6 @@ public final class KLNAMPKHPKDOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return The isFinish.
        */
@@ -1389,10 +1193,6 @@ public final class KLNAMPKHPKDOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1404,10 +1204,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return This builder for chaining.
        */
@@ -1420,10 +1216,6 @@ public final class KLNAMPKHPKDOuterClass {
 
       private boolean mHIPFEMIHMK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MHIPFEMIHMK = 11;</code>
        * @return The mHIPFEMIHMK.
        */
@@ -1432,10 +1224,6 @@ public final class KLNAMPKHPKDOuterClass {
         return mHIPFEMIHMK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MHIPFEMIHMK = 11;</code>
        * @param value The mHIPFEMIHMK to set.
        * @return This builder for chaining.
@@ -1447,10 +1235,6 @@ public final class KLNAMPKHPKDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MHIPFEMIHMK = 11;</code>
        * @return This builder for chaining.
        */
@@ -1527,12 +1311,12 @@ public final class KLNAMPKHPKDOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021KLNAMPKHPKD.proto\"\233\001\n\013KLNAMPKHPKD\022\023\n\013A" +
+      "\n\021KLNAMPKHPKD.proto\"\230\001\n\013KLNAMPKHPKD\022\023\n\013A" +
       "HNDFBLGCOA\030\001 \003(\r\022\023\n\013CFACNLGEAGM\030\002 \003(\r\022\023\n" +
-      "\013FLEDEKPDJAD\030\017 \003(\r\022\023\n\013IFADGMHEFHF\030\t \001(\r\022" +
-      "\020\n\010level_id\030\005 \001(\r\022\021\n\tis_finish\030\016 \001(\010\022\023\n\013" +
-      "MHIPFEMIHMK\030\013 \001(\010B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\013FLEDEKPDJAD\030\017 \003(\r\022\020\n\010ugc_guid\030\t \001(\r\022\020\n\010" +
+      "level_id\030\005 \001(\r\022\021\n\tis_finish\030\016 \001(\010\022\023\n\013MHI" +
+      "PFEMIHMK\030\013 \001(\010B\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1543,7 +1327,7 @@ public final class KLNAMPKHPKDOuterClass {
     internal_static_KLNAMPKHPKD_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_KLNAMPKHPKD_descriptor,
-        new java.lang.String[] { "AHNDFBLGCOA", "CFACNLGEAGM", "FLEDEKPDJAD", "IFADGMHEFHF", "LevelId", "IsFinish", "MHIPFEMIHMK", });
+        new java.lang.String[] { "AHNDFBLGCOA", "CFACNLGEAGM", "FLEDEKPDJAD", "UgcGuid", "LevelId", "IsFinish", "MHIPFEMIHMK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

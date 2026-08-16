@@ -19,44 +19,24 @@ public final class IFONDMLOGFPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JACEJALMFGC info_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC> 
         getInfoListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JACEJALMFGC info_list = 6;</code>
      */
     emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC getInfoList(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JACEJALMFGC info_list = 6;</code>
      */
     int getInfoListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JACEJALMFGC info_list = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGCOrBuilder> 
         getInfoListOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JACEJALMFGC info_list = 6;</code>
      */
     emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGCOrBuilder getInfoListOrBuilder(
@@ -156,10 +136,6 @@ public final class IFONDMLOGFPOuterClass {
     public static final int INFO_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC> infoList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JACEJALMFGC info_list = 6;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class IFONDMLOGFPOuterClass {
       return infoList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JACEJALMFGC info_list = 6;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class IFONDMLOGFPOuterClass {
       return infoList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JACEJALMFGC info_list = 6;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class IFONDMLOGFPOuterClass {
       return infoList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JACEJALMFGC info_list = 6;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class IFONDMLOGFPOuterClass {
       return infoList_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JACEJALMFGC info_list = 6;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class IFONDMLOGFPOuterClass {
           emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC, emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC.Builder, emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGCOrBuilder> infoListBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC> getInfoListList() {
@@ -582,10 +538,6 @@ public final class IFONDMLOGFPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public int getInfoListCount() {
@@ -596,10 +548,6 @@ public final class IFONDMLOGFPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC getInfoList(int index) {
@@ -610,10 +558,6 @@ public final class IFONDMLOGFPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public Builder setInfoList(
@@ -631,10 +575,6 @@ public final class IFONDMLOGFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public Builder setInfoList(
@@ -649,10 +589,6 @@ public final class IFONDMLOGFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public Builder addInfoList(emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC value) {
@@ -669,10 +605,6 @@ public final class IFONDMLOGFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public Builder addInfoList(
@@ -690,10 +622,6 @@ public final class IFONDMLOGFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public Builder addInfoList(
@@ -708,10 +636,6 @@ public final class IFONDMLOGFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public Builder addInfoList(
@@ -726,10 +650,6 @@ public final class IFONDMLOGFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public Builder addAllInfoList(
@@ -745,10 +665,6 @@ public final class IFONDMLOGFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public Builder clearInfoList() {
@@ -762,10 +678,6 @@ public final class IFONDMLOGFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public Builder removeInfoList(int index) {
@@ -779,10 +691,6 @@ public final class IFONDMLOGFPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC.Builder getInfoListBuilder(
@@ -790,10 +698,6 @@ public final class IFONDMLOGFPOuterClass {
         return getInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGCOrBuilder getInfoListOrBuilder(
@@ -804,10 +708,6 @@ public final class IFONDMLOGFPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGCOrBuilder> 
@@ -819,10 +719,6 @@ public final class IFONDMLOGFPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC.Builder addInfoListBuilder() {
@@ -830,10 +726,6 @@ public final class IFONDMLOGFPOuterClass {
             emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC.Builder addInfoListBuilder(
@@ -842,10 +734,6 @@ public final class IFONDMLOGFPOuterClass {
             index, emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JACEJALMFGC info_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JACEJALMFGCOuterClass.JACEJALMFGC.Builder> 

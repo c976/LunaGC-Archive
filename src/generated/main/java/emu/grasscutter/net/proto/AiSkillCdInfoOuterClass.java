@@ -20,7 +20,7 @@ public final class AiSkillCdInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -28,7 +28,7 @@ public final class AiSkillCdInfoOuterClass {
     int getSkillGroupCdMapCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -43,7 +43,7 @@ public final class AiSkillCdInfoOuterClass {
     getSkillGroupCdMap();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -52,7 +52,7 @@ public final class AiSkillCdInfoOuterClass {
     getSkillGroupCdMapMap();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -63,7 +63,7 @@ public final class AiSkillCdInfoOuterClass {
         int defaultValue);
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -74,18 +74,18 @@ public final class AiSkillCdInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
      */
     int getSkillCdMapCount();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
      */
     boolean containsSkillCdMap(
         int key);
@@ -97,19 +97,19 @@ public final class AiSkillCdInfoOuterClass {
     getSkillCdMap();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getSkillCdMapMap();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
      */
 
     int getSkillCdMapOrDefault(
@@ -117,10 +117,10 @@ public final class AiSkillCdInfoOuterClass {
         int defaultValue);
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
      */
 
     int getSkillCdMapOrThrow(
@@ -172,7 +172,7 @@ public final class AiSkillCdInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 skillCdMap_ = com.google.protobuf.MapField.newMapField(
                     SkillCdMapDefaultEntryHolder.defaultEntry);
@@ -229,7 +229,7 @@ public final class AiSkillCdInfoOuterClass {
       switch (number) {
         case 13:
           return internalGetSkillGroupCdMap();
-        case 8:
+        case 7:
           return internalGetSkillCdMap();
         default:
           throw new RuntimeException(
@@ -272,7 +272,7 @@ public final class AiSkillCdInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -294,7 +294,7 @@ public final class AiSkillCdInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -306,7 +306,7 @@ public final class AiSkillCdInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -323,7 +323,7 @@ public final class AiSkillCdInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -341,7 +341,7 @@ public final class AiSkillCdInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int SKILL_CD_MAP_FIELD_NUMBER = 8;
+    public static final int SKILL_CD_MAP_FIELD_NUMBER = 7;
     private static final class SkillCdMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -369,10 +369,10 @@ public final class AiSkillCdInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
      */
 
     @java.lang.Override
@@ -391,10 +391,10 @@ public final class AiSkillCdInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
      */
     @java.lang.Override
 
@@ -403,10 +403,10 @@ public final class AiSkillCdInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
      */
     @java.lang.Override
 
@@ -420,10 +420,10 @@ public final class AiSkillCdInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
      */
     @java.lang.Override
 
@@ -457,7 +457,7 @@ public final class AiSkillCdInfoOuterClass {
           output,
           internalGetSkillCdMap(),
           SkillCdMapDefaultEntryHolder.defaultEntry,
-          8);
+          7);
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
@@ -481,7 +481,7 @@ public final class AiSkillCdInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(8, skillCdMap__);
+            .computeMessageSize(7, skillCdMap__);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetSkillGroupCdMap().getMap().entrySet()) {
@@ -644,7 +644,7 @@ public final class AiSkillCdInfoOuterClass {
         switch (number) {
           case 13:
             return internalGetSkillGroupCdMap();
-          case 8:
+          case 7:
             return internalGetSkillCdMap();
           default:
             throw new RuntimeException(
@@ -657,7 +657,7 @@ public final class AiSkillCdInfoOuterClass {
         switch (number) {
           case 13:
             return internalGetMutableSkillGroupCdMap();
-          case 8:
+          case 7:
             return internalGetMutableSkillCdMap();
           default:
             throw new RuntimeException(
@@ -833,7 +833,7 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -855,7 +855,7 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -867,7 +867,7 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -884,7 +884,7 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -909,7 +909,7 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -932,7 +932,7 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -948,7 +948,7 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 13;</code>
@@ -989,10 +989,10 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
        */
 
       @java.lang.Override
@@ -1011,10 +1011,10 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
        */
       @java.lang.Override
 
@@ -1023,10 +1023,10 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
        */
       @java.lang.Override
 
@@ -1040,10 +1040,10 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
        */
       @java.lang.Override
 
@@ -1065,10 +1065,10 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
        */
 
       public Builder removeSkillCdMap(
@@ -1088,10 +1088,10 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
        */
       public Builder putSkillCdMap(
           int key,
@@ -1104,10 +1104,10 @@ public final class AiSkillCdInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 8;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 7;</code>
        */
 
       public Builder putAllSkillCdMap(
@@ -1196,7 +1196,7 @@ public final class AiSkillCdInfoOuterClass {
       "\n\023AiSkillCdInfo.proto\"\361\001\n\rAiSkillCdInfo\022" +
       "?\n\022skill_group_cd_map\030\r \003(\0132#.AiSkillCdI" +
       "nfo.SkillGroupCdMapEntry\0224\n\014skill_cd_map" +
-      "\030\010 \003(\0132\036.AiSkillCdInfo.SkillCdMapEntry\0326" +
+      "\030\007 \003(\0132\036.AiSkillCdInfo.SkillCdMapEntry\0326" +
       "\n\024SkillGroupCdMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005v" +
       "alue\030\002 \001(\r:\0028\001\0321\n\017SkillCdMapEntry\022\013\n\003key" +
       "\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscu" +

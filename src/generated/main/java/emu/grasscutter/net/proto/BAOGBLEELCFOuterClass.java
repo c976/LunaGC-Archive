@@ -19,39 +19,23 @@ public final class BAOGBLEELCFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 costume_id = 10;</code>
      * @return The costumeId.
      */
     int getCostumeId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_id = 1;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BADKBLBFAFF avatar_type = 4;</code>
      * @return The enum numeric value on the wire for avatarType.
      */
     int getAvatarTypeValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BADKBLBFAFF avatar_type = 4;</code>
      * @return The avatarType.
      */
@@ -154,10 +138,6 @@ public final class BAOGBLEELCFOuterClass {
     public static final int COSTUME_ID_FIELD_NUMBER = 10;
     private int costumeId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 costume_id = 10;</code>
      * @return The costumeId.
      */
@@ -169,10 +149,6 @@ public final class BAOGBLEELCFOuterClass {
     public static final int AVATAR_ID_FIELD_NUMBER = 1;
     private int avatarId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_id = 1;</code>
      * @return The avatarId.
      */
@@ -184,10 +160,6 @@ public final class BAOGBLEELCFOuterClass {
     public static final int AVATAR_TYPE_FIELD_NUMBER = 4;
     private int avatarType_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BADKBLBFAFF avatar_type = 4;</code>
      * @return The enum numeric value on the wire for avatarType.
      */
@@ -195,10 +167,6 @@ public final class BAOGBLEELCFOuterClass {
       return avatarType_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BADKBLBFAFF avatar_type = 4;</code>
      * @return The avatarType.
      */
@@ -545,10 +513,6 @@ public final class BAOGBLEELCFOuterClass {
 
       private int costumeId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 costume_id = 10;</code>
        * @return The costumeId.
        */
@@ -557,10 +521,6 @@ public final class BAOGBLEELCFOuterClass {
         return costumeId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 costume_id = 10;</code>
        * @param value The costumeId to set.
        * @return This builder for chaining.
@@ -572,10 +532,6 @@ public final class BAOGBLEELCFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 costume_id = 10;</code>
        * @return This builder for chaining.
        */
@@ -588,10 +544,6 @@ public final class BAOGBLEELCFOuterClass {
 
       private int avatarId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 1;</code>
        * @return The avatarId.
        */
@@ -600,10 +552,6 @@ public final class BAOGBLEELCFOuterClass {
         return avatarId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 1;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
@@ -615,10 +563,6 @@ public final class BAOGBLEELCFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 1;</code>
        * @return This builder for chaining.
        */
@@ -631,10 +575,6 @@ public final class BAOGBLEELCFOuterClass {
 
       private int avatarType_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BADKBLBFAFF avatar_type = 4;</code>
        * @return The enum numeric value on the wire for avatarType.
        */
@@ -642,10 +582,6 @@ public final class BAOGBLEELCFOuterClass {
         return avatarType_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BADKBLBFAFF avatar_type = 4;</code>
        * @param value The enum numeric value on the wire for avatarType to set.
        * @return This builder for chaining.
@@ -657,10 +593,6 @@ public final class BAOGBLEELCFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BADKBLBFAFF avatar_type = 4;</code>
        * @return The avatarType.
        */
@@ -671,10 +603,6 @@ public final class BAOGBLEELCFOuterClass {
         return result == null ? emu.grasscutter.net.proto.BADKBLBFAFFOuterClass.BADKBLBFAFF.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BADKBLBFAFF avatar_type = 4;</code>
        * @param value The avatarType to set.
        * @return This builder for chaining.
@@ -689,10 +617,6 @@ public final class BAOGBLEELCFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BADKBLBFAFF avatar_type = 4;</code>
        * @return This builder for chaining.
        */

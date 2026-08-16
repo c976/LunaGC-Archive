@@ -19,28 +19,16 @@ public final class GLEDHODKBHDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @return A list containing the sceneTagIdList.
      */
     java.util.List<java.lang.Integer> getSceneTagIdListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @return The count of sceneTagIdList.
      */
     int getSceneTagIdListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The sceneTagIdList at the given index.
@@ -48,37 +36,21 @@ public final class GLEDHODKBHDOuterClass {
     int getSceneTagIdList(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.MapLayerInfo map_layer_info = 5;</code>
      * @return Whether the mapLayerInfo field is set.
      */
     boolean hasMapLayerInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.MapLayerInfo map_layer_info = 5;</code>
      * @return The mapLayerInfo.
      */
     emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.MapLayerInfo map_layer_info = 5;</code>
      */
     emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FMADMBGGPBI = 13;</code>
      * @return The fMADMBGGPBI.
      */
@@ -208,10 +180,6 @@ public final class GLEDHODKBHDOuterClass {
     public static final int SCENE_TAG_ID_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList sceneTagIdList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @return A list containing the sceneTagIdList.
      */
@@ -221,10 +189,6 @@ public final class GLEDHODKBHDOuterClass {
       return sceneTagIdList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @return The count of sceneTagIdList.
      */
@@ -232,10 +196,6 @@ public final class GLEDHODKBHDOuterClass {
       return sceneTagIdList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 scene_tag_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The sceneTagIdList at the given index.
@@ -248,10 +208,6 @@ public final class GLEDHODKBHDOuterClass {
     public static final int MAP_LAYER_INFO_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo mapLayerInfo_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.MapLayerInfo map_layer_info = 5;</code>
      * @return Whether the mapLayerInfo field is set.
      */
@@ -260,10 +216,6 @@ public final class GLEDHODKBHDOuterClass {
       return mapLayerInfo_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.MapLayerInfo map_layer_info = 5;</code>
      * @return The mapLayerInfo.
      */
@@ -272,10 +224,6 @@ public final class GLEDHODKBHDOuterClass {
       return mapLayerInfo_ == null ? emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : mapLayerInfo_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.MapLayerInfo map_layer_info = 5;</code>
      */
     @java.lang.Override
@@ -286,10 +234,6 @@ public final class GLEDHODKBHDOuterClass {
     public static final int FMADMBGGPBI_FIELD_NUMBER = 13;
     private int fMADMBGGPBI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FMADMBGGPBI = 13;</code>
      * @return The fMADMBGGPBI.
      */
@@ -685,10 +629,6 @@ public final class GLEDHODKBHDOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @return A list containing the sceneTagIdList.
        */
@@ -698,10 +638,6 @@ public final class GLEDHODKBHDOuterClass {
                  java.util.Collections.unmodifiableList(sceneTagIdList_) : sceneTagIdList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @return The count of sceneTagIdList.
        */
@@ -709,10 +645,6 @@ public final class GLEDHODKBHDOuterClass {
         return sceneTagIdList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @param index The index of the element to return.
        * @return The sceneTagIdList at the given index.
@@ -721,10 +653,6 @@ public final class GLEDHODKBHDOuterClass {
         return sceneTagIdList_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The sceneTagIdList to set.
@@ -738,10 +666,6 @@ public final class GLEDHODKBHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @param value The sceneTagIdList to add.
        * @return This builder for chaining.
@@ -753,10 +677,6 @@ public final class GLEDHODKBHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @param values The sceneTagIdList to add.
        * @return This builder for chaining.
@@ -770,10 +690,6 @@ public final class GLEDHODKBHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 scene_tag_id_list = 10;</code>
        * @return This builder for chaining.
        */
@@ -788,10 +704,6 @@ public final class GLEDHODKBHDOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder> mapLayerInfoBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.MapLayerInfo map_layer_info = 5;</code>
        * @return Whether the mapLayerInfo field is set.
        */
@@ -799,10 +711,6 @@ public final class GLEDHODKBHDOuterClass {
         return mapLayerInfoBuilder_ != null || mapLayerInfo_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.MapLayerInfo map_layer_info = 5;</code>
        * @return The mapLayerInfo.
        */
@@ -814,10 +722,6 @@ public final class GLEDHODKBHDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.MapLayerInfo map_layer_info = 5;</code>
        */
       public Builder setMapLayerInfo(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo value) {
@@ -834,10 +738,6 @@ public final class GLEDHODKBHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.MapLayerInfo map_layer_info = 5;</code>
        */
       public Builder setMapLayerInfo(
@@ -852,10 +752,6 @@ public final class GLEDHODKBHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.MapLayerInfo map_layer_info = 5;</code>
        */
       public Builder mergeMapLayerInfo(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo value) {
@@ -874,10 +770,6 @@ public final class GLEDHODKBHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.MapLayerInfo map_layer_info = 5;</code>
        */
       public Builder clearMapLayerInfo() {
@@ -892,10 +784,6 @@ public final class GLEDHODKBHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.MapLayerInfo map_layer_info = 5;</code>
        */
       public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder getMapLayerInfoBuilder() {
@@ -904,10 +792,6 @@ public final class GLEDHODKBHDOuterClass {
         return getMapLayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.MapLayerInfo map_layer_info = 5;</code>
        */
       public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder() {
@@ -919,10 +803,6 @@ public final class GLEDHODKBHDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.MapLayerInfo map_layer_info = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -941,10 +821,6 @@ public final class GLEDHODKBHDOuterClass {
 
       private int fMADMBGGPBI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FMADMBGGPBI = 13;</code>
        * @return The fMADMBGGPBI.
        */
@@ -953,10 +829,6 @@ public final class GLEDHODKBHDOuterClass {
         return fMADMBGGPBI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FMADMBGGPBI = 13;</code>
        * @param value The fMADMBGGPBI to set.
        * @return This builder for chaining.
@@ -968,10 +840,6 @@ public final class GLEDHODKBHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FMADMBGGPBI = 13;</code>
        * @return This builder for chaining.
        */

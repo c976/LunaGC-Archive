@@ -19,87 +19,51 @@ public final class KANIKHPMOOAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      * @return The pos.
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getPos();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getPosOrBuilder();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getPosOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 index = 4;</code>
      * @return The index.
      */
     int getIndex();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 uid = 1;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BFDKENOOMNH = 6;</code>
      * @return The bFDKENOOMNH.
      */
     int getBFDKENOOMNH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HMFCBJPFDCB = 5;</code>
      * @return The hMFCBJPFDCB.
      */
     int getHMFCBJPFDCB();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 3;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 rot = 8;</code>
      * @return The rot.
      */
@@ -156,11 +120,11 @@ public final class KANIKHPMOOAOuterClass {
               break;
             }
             case 18: {
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder subBuilder = null;
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
               }
-              pos_ = input.readMessage(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.parser(), extensionRegistry);
+              pos_ = input.readMessage(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(pos_);
                 pos_ = subBuilder.buildPartial();
@@ -226,13 +190,9 @@ public final class KANIKHPMOOAOuterClass {
     }
 
     public static final int POS_FIELD_NUMBER = 2;
-    private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 pos_;
+    private emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN pos_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -240,36 +200,24 @@ public final class KANIKHPMOOAOuterClass {
       return pos_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      * @return The pos.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : pos_;
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : pos_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>.BreakoutVector2 pos = 2;</code>
+     * <code>.FNEFDOMCAJN pos = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getPosOrBuilder() {
+    public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
     public static final int INDEX_FIELD_NUMBER = 4;
     private int index_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 index = 4;</code>
      * @return The index.
      */
@@ -281,10 +229,6 @@ public final class KANIKHPMOOAOuterClass {
     public static final int UID_FIELD_NUMBER = 1;
     private int uid_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 uid = 1;</code>
      * @return The uid.
      */
@@ -296,10 +240,6 @@ public final class KANIKHPMOOAOuterClass {
     public static final int BFDKENOOMNH_FIELD_NUMBER = 6;
     private int bFDKENOOMNH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BFDKENOOMNH = 6;</code>
      * @return The bFDKENOOMNH.
      */
@@ -311,10 +251,6 @@ public final class KANIKHPMOOAOuterClass {
     public static final int HMFCBJPFDCB_FIELD_NUMBER = 5;
     private int hMFCBJPFDCB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HMFCBJPFDCB = 5;</code>
      * @return The hMFCBJPFDCB.
      */
@@ -326,10 +262,6 @@ public final class KANIKHPMOOAOuterClass {
     public static final int SCORE_FIELD_NUMBER = 3;
     private int score_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 3;</code>
      * @return The score.
      */
@@ -341,10 +273,6 @@ public final class KANIKHPMOOAOuterClass {
     public static final int ROT_FIELD_NUMBER = 8;
     private int rot_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 rot = 8;</code>
      * @return The rot.
      */
@@ -770,43 +698,31 @@ public final class KANIKHPMOOAOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 pos_;
+      private emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN pos_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> posBuilder_;
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> posBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        * @return The pos.
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getPos() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN getPos() {
         if (posBuilder_ == null) {
-          return pos_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : pos_;
+          return pos_ == null ? emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : pos_;
         } else {
           return posBuilder_.getMessage();
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
-      public Builder setPos(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+      public Builder setPos(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (posBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -820,14 +736,10 @@ public final class KANIKHPMOOAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
       public Builder setPos(
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder builderForValue) {
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder builderForValue) {
         if (posBuilder_ == null) {
           pos_ = builderForValue.build();
           onChanged();
@@ -838,17 +750,13 @@ public final class KANIKHPMOOAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
-      public Builder mergePos(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+      public Builder mergePos(emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN value) {
         if (posBuilder_ == null) {
           if (pos_ != null) {
             pos_ =
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.newBuilder(pos_).mergeFrom(value).buildPartial();
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.newBuilder(pos_).mergeFrom(value).buildPartial();
           } else {
             pos_ = value;
           }
@@ -860,11 +768,7 @@ public final class KANIKHPMOOAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -878,45 +782,33 @@ public final class KANIKHPMOOAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder getPosBuilder() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder getPosBuilder() {
         
         onChanged();
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getPosOrBuilder() {
+      public emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
           return posBuilder_.getMessageOrBuilder();
         } else {
           return pos_ == null ?
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : pos_;
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.getDefaultInstance() : pos_;
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>.BreakoutVector2 pos = 2;</code>
+       * <code>.FNEFDOMCAJN pos = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> 
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder> 
           getPosFieldBuilder() {
         if (posBuilder_ == null) {
           posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder>(
+              emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJN.Builder, emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.FNEFDOMCAJNOrBuilder>(
                   getPos(),
                   getParentForChildren(),
                   isClean());
@@ -927,10 +819,6 @@ public final class KANIKHPMOOAOuterClass {
 
       private int index_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 index = 4;</code>
        * @return The index.
        */
@@ -939,10 +827,6 @@ public final class KANIKHPMOOAOuterClass {
         return index_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 index = 4;</code>
        * @param value The index to set.
        * @return This builder for chaining.
@@ -954,10 +838,6 @@ public final class KANIKHPMOOAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 index = 4;</code>
        * @return This builder for chaining.
        */
@@ -970,10 +850,6 @@ public final class KANIKHPMOOAOuterClass {
 
       private int uid_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 uid = 1;</code>
        * @return The uid.
        */
@@ -982,10 +858,6 @@ public final class KANIKHPMOOAOuterClass {
         return uid_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 uid = 1;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
@@ -997,10 +869,6 @@ public final class KANIKHPMOOAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 uid = 1;</code>
        * @return This builder for chaining.
        */
@@ -1013,10 +881,6 @@ public final class KANIKHPMOOAOuterClass {
 
       private int bFDKENOOMNH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BFDKENOOMNH = 6;</code>
        * @return The bFDKENOOMNH.
        */
@@ -1025,10 +889,6 @@ public final class KANIKHPMOOAOuterClass {
         return bFDKENOOMNH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BFDKENOOMNH = 6;</code>
        * @param value The bFDKENOOMNH to set.
        * @return This builder for chaining.
@@ -1040,10 +900,6 @@ public final class KANIKHPMOOAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BFDKENOOMNH = 6;</code>
        * @return This builder for chaining.
        */
@@ -1056,10 +912,6 @@ public final class KANIKHPMOOAOuterClass {
 
       private int hMFCBJPFDCB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HMFCBJPFDCB = 5;</code>
        * @return The hMFCBJPFDCB.
        */
@@ -1068,10 +920,6 @@ public final class KANIKHPMOOAOuterClass {
         return hMFCBJPFDCB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HMFCBJPFDCB = 5;</code>
        * @param value The hMFCBJPFDCB to set.
        * @return This builder for chaining.
@@ -1083,10 +931,6 @@ public final class KANIKHPMOOAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HMFCBJPFDCB = 5;</code>
        * @return This builder for chaining.
        */
@@ -1099,10 +943,6 @@ public final class KANIKHPMOOAOuterClass {
 
       private int score_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 3;</code>
        * @return The score.
        */
@@ -1111,10 +951,6 @@ public final class KANIKHPMOOAOuterClass {
         return score_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 3;</code>
        * @param value The score to set.
        * @return This builder for chaining.
@@ -1126,10 +962,6 @@ public final class KANIKHPMOOAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 3;</code>
        * @return This builder for chaining.
        */
@@ -1142,10 +974,6 @@ public final class KANIKHPMOOAOuterClass {
 
       private int rot_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 rot = 8;</code>
        * @return The rot.
        */
@@ -1154,10 +982,6 @@ public final class KANIKHPMOOAOuterClass {
         return rot_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 rot = 8;</code>
        * @param value The rot to set.
        * @return This builder for chaining.
@@ -1169,10 +993,6 @@ public final class KANIKHPMOOAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 rot = 8;</code>
        * @return This builder for chaining.
        */
@@ -1249,17 +1069,17 @@ public final class KANIKHPMOOAOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021KANIKHPMOOA.proto\032\025BreakoutVector2.pro" +
-      "to\"\216\001\n\013KANIKHPMOOA\022\035\n\003pos\030\002 \001(\0132\020.Breako" +
-      "utVector2\022\r\n\005index\030\004 \001(\r\022\013\n\003uid\030\001 \001(\r\022\023\n" +
-      "\013BFDKENOOMNH\030\006 \001(\r\022\023\n\013HMFCBJPFDCB\030\005 \001(\r\022" +
-      "\r\n\005score\030\003 \001(\r\022\013\n\003rot\030\010 \001(\005B\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "\n\021KANIKHPMOOA.proto\032\021FNEFDOMCAJN.proto\"\212" +
+      "\001\n\013KANIKHPMOOA\022\031\n\003pos\030\002 \001(\0132\014.FNEFDOMCAJ" +
+      "N\022\r\n\005index\030\004 \001(\r\022\013\n\003uid\030\001 \001(\r\022\023\n\013BFDKENO" +
+      "OMNH\030\006 \001(\r\022\023\n\013HMFCBJPFDCB\030\005 \001(\r\022\r\n\005score" +
+      "\030\003 \001(\r\022\013\n\003rot\030\010 \001(\005B\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.getDescriptor(),
         });
     internal_static_KANIKHPMOOA_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1267,7 +1087,7 @@ public final class KANIKHPMOOAOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_KANIKHPMOOA_descriptor,
         new java.lang.String[] { "Pos", "Index", "Uid", "BFDKENOOMNH", "HMFCBJPFDCB", "Score", "Rot", });
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.getDescriptor();
+    emu.grasscutter.net.proto.FNEFDOMCAJNOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

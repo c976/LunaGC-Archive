@@ -19,67 +19,39 @@ public final class KMPOJIOKAEOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 gadget_id = 10;</code>
      * @return The gadgetId.
      */
     int getGadgetId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 group_id = 9;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 type = 1;</code>
      * @return The type.
      */
     int getType();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 config_id = 5;</code>
      * @return The configId.
      */
@@ -198,10 +170,6 @@ public final class KMPOJIOKAEOOuterClass {
     public static final int POS_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return Whether the pos field is set.
      */
@@ -210,10 +178,6 @@ public final class KMPOJIOKAEOOuterClass {
       return pos_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      * @return The pos.
      */
@@ -222,10 +186,6 @@ public final class KMPOJIOKAEOOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 15;</code>
      */
     @java.lang.Override
@@ -236,10 +196,6 @@ public final class KMPOJIOKAEOOuterClass {
     public static final int GADGET_ID_FIELD_NUMBER = 10;
     private int gadgetId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 gadget_id = 10;</code>
      * @return The gadgetId.
      */
@@ -251,10 +207,6 @@ public final class KMPOJIOKAEOOuterClass {
     public static final int GROUP_ID_FIELD_NUMBER = 9;
     private int groupId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 group_id = 9;</code>
      * @return The groupId.
      */
@@ -266,10 +218,6 @@ public final class KMPOJIOKAEOOuterClass {
     public static final int TYPE_FIELD_NUMBER = 1;
     private int type_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 type = 1;</code>
      * @return The type.
      */
@@ -281,10 +229,6 @@ public final class KMPOJIOKAEOOuterClass {
     public static final int CONFIG_ID_FIELD_NUMBER = 5;
     private int configId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 config_id = 5;</code>
      * @return The configId.
      */
@@ -680,10 +624,6 @@ public final class KMPOJIOKAEOOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        * @return Whether the pos field is set.
        */
@@ -691,10 +631,6 @@ public final class KMPOJIOKAEOOuterClass {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        * @return The pos.
        */
@@ -706,10 +642,6 @@ public final class KMPOJIOKAEOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -726,10 +658,6 @@ public final class KMPOJIOKAEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder setPos(
@@ -744,10 +672,6 @@ public final class KMPOJIOKAEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -766,10 +690,6 @@ public final class KMPOJIOKAEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public Builder clearPos() {
@@ -784,10 +704,6 @@ public final class KMPOJIOKAEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
@@ -796,10 +712,6 @@ public final class KMPOJIOKAEOOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -811,10 +723,6 @@ public final class KMPOJIOKAEOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -833,10 +741,6 @@ public final class KMPOJIOKAEOOuterClass {
 
       private int gadgetId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 gadget_id = 10;</code>
        * @return The gadgetId.
        */
@@ -845,10 +749,6 @@ public final class KMPOJIOKAEOOuterClass {
         return gadgetId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 gadget_id = 10;</code>
        * @param value The gadgetId to set.
        * @return This builder for chaining.
@@ -860,10 +760,6 @@ public final class KMPOJIOKAEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 gadget_id = 10;</code>
        * @return This builder for chaining.
        */
@@ -876,10 +772,6 @@ public final class KMPOJIOKAEOOuterClass {
 
       private int groupId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 9;</code>
        * @return The groupId.
        */
@@ -888,10 +780,6 @@ public final class KMPOJIOKAEOOuterClass {
         return groupId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 9;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
@@ -903,10 +791,6 @@ public final class KMPOJIOKAEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 9;</code>
        * @return This builder for chaining.
        */
@@ -919,10 +803,6 @@ public final class KMPOJIOKAEOOuterClass {
 
       private int type_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 type = 1;</code>
        * @return The type.
        */
@@ -931,10 +811,6 @@ public final class KMPOJIOKAEOOuterClass {
         return type_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 type = 1;</code>
        * @param value The type to set.
        * @return This builder for chaining.
@@ -946,10 +822,6 @@ public final class KMPOJIOKAEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 type = 1;</code>
        * @return This builder for chaining.
        */
@@ -962,10 +834,6 @@ public final class KMPOJIOKAEOOuterClass {
 
       private int configId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 5;</code>
        * @return The configId.
        */
@@ -974,10 +842,6 @@ public final class KMPOJIOKAEOOuterClass {
         return configId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 5;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
@@ -989,10 +853,6 @@ public final class KMPOJIOKAEOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 5;</code>
        * @return This builder for chaining.
        */

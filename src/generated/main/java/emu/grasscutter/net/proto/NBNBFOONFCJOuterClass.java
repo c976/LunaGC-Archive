@@ -19,44 +19,24 @@ public final class NBNBFOONFCJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB> 
         getGBPFJFOAGCKList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
      */
     emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB getGBPFJFOAGCK(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
      */
     int getGBPFJFOAGCKCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFBOrBuilder> 
         getGBPFJFOAGCKOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
      */
     emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFBOrBuilder getGBPFJFOAGCKOrBuilder(
@@ -156,10 +136,6 @@ public final class NBNBFOONFCJOuterClass {
     public static final int GBPFJFOAGCK_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB> gBPFJFOAGCK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class NBNBFOONFCJOuterClass {
       return gBPFJFOAGCK_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class NBNBFOONFCJOuterClass {
       return gBPFJFOAGCK_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class NBNBFOONFCJOuterClass {
       return gBPFJFOAGCK_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class NBNBFOONFCJOuterClass {
       return gBPFJFOAGCK_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class NBNBFOONFCJOuterClass {
           emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB, emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB.Builder, emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFBOrBuilder> gBPFJFOAGCKBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB> getGBPFJFOAGCKList() {
@@ -582,10 +538,6 @@ public final class NBNBFOONFCJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public int getGBPFJFOAGCKCount() {
@@ -596,10 +548,6 @@ public final class NBNBFOONFCJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB getGBPFJFOAGCK(int index) {
@@ -610,10 +558,6 @@ public final class NBNBFOONFCJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public Builder setGBPFJFOAGCK(
@@ -631,10 +575,6 @@ public final class NBNBFOONFCJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public Builder setGBPFJFOAGCK(
@@ -649,10 +589,6 @@ public final class NBNBFOONFCJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public Builder addGBPFJFOAGCK(emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB value) {
@@ -669,10 +605,6 @@ public final class NBNBFOONFCJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public Builder addGBPFJFOAGCK(
@@ -690,10 +622,6 @@ public final class NBNBFOONFCJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public Builder addGBPFJFOAGCK(
@@ -708,10 +636,6 @@ public final class NBNBFOONFCJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public Builder addGBPFJFOAGCK(
@@ -726,10 +650,6 @@ public final class NBNBFOONFCJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public Builder addAllGBPFJFOAGCK(
@@ -745,10 +665,6 @@ public final class NBNBFOONFCJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public Builder clearGBPFJFOAGCK() {
@@ -762,10 +678,6 @@ public final class NBNBFOONFCJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public Builder removeGBPFJFOAGCK(int index) {
@@ -779,10 +691,6 @@ public final class NBNBFOONFCJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB.Builder getGBPFJFOAGCKBuilder(
@@ -790,10 +698,6 @@ public final class NBNBFOONFCJOuterClass {
         return getGBPFJFOAGCKFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFBOrBuilder getGBPFJFOAGCKOrBuilder(
@@ -804,10 +708,6 @@ public final class NBNBFOONFCJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFBOrBuilder> 
@@ -819,10 +719,6 @@ public final class NBNBFOONFCJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB.Builder addGBPFJFOAGCKBuilder() {
@@ -830,10 +726,6 @@ public final class NBNBFOONFCJOuterClass {
             emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB.Builder addGBPFJFOAGCKBuilder(
@@ -842,10 +734,6 @@ public final class NBNBFOONFCJOuterClass {
             index, emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FBMMEBGBFFB GBPFJFOAGCK = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB.Builder> 

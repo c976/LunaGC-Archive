@@ -19,44 +19,24 @@ public final class EBDPPBLCIOPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG> 
         getEADHCJGKCADList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
      */
     emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG getEADHCJGKCAD(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
      */
     int getEADHCJGKCADCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCGOrBuilder> 
         getEADHCJGKCADOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
      */
     emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCGOrBuilder getEADHCJGKCADOrBuilder(
@@ -156,10 +136,6 @@ public final class EBDPPBLCIOPOuterClass {
     public static final int EADHCJGKCAD_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG> eADHCJGKCAD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class EBDPPBLCIOPOuterClass {
       return eADHCJGKCAD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class EBDPPBLCIOPOuterClass {
       return eADHCJGKCAD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class EBDPPBLCIOPOuterClass {
       return eADHCJGKCAD_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class EBDPPBLCIOPOuterClass {
       return eADHCJGKCAD_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class EBDPPBLCIOPOuterClass {
           emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG, emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG.Builder, emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCGOrBuilder> eADHCJGKCADBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG> getEADHCJGKCADList() {
@@ -582,10 +538,6 @@ public final class EBDPPBLCIOPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public int getEADHCJGKCADCount() {
@@ -596,10 +548,6 @@ public final class EBDPPBLCIOPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG getEADHCJGKCAD(int index) {
@@ -610,10 +558,6 @@ public final class EBDPPBLCIOPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public Builder setEADHCJGKCAD(
@@ -631,10 +575,6 @@ public final class EBDPPBLCIOPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public Builder setEADHCJGKCAD(
@@ -649,10 +589,6 @@ public final class EBDPPBLCIOPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public Builder addEADHCJGKCAD(emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG value) {
@@ -669,10 +605,6 @@ public final class EBDPPBLCIOPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public Builder addEADHCJGKCAD(
@@ -690,10 +622,6 @@ public final class EBDPPBLCIOPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public Builder addEADHCJGKCAD(
@@ -708,10 +636,6 @@ public final class EBDPPBLCIOPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public Builder addEADHCJGKCAD(
@@ -726,10 +650,6 @@ public final class EBDPPBLCIOPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public Builder addAllEADHCJGKCAD(
@@ -745,10 +665,6 @@ public final class EBDPPBLCIOPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public Builder clearEADHCJGKCAD() {
@@ -762,10 +678,6 @@ public final class EBDPPBLCIOPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public Builder removeEADHCJGKCAD(int index) {
@@ -779,10 +691,6 @@ public final class EBDPPBLCIOPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG.Builder getEADHCJGKCADBuilder(
@@ -790,10 +698,6 @@ public final class EBDPPBLCIOPOuterClass {
         return getEADHCJGKCADFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCGOrBuilder getEADHCJGKCADOrBuilder(
@@ -804,10 +708,6 @@ public final class EBDPPBLCIOPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCGOrBuilder> 
@@ -819,10 +719,6 @@ public final class EBDPPBLCIOPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG.Builder addEADHCJGKCADBuilder() {
@@ -830,10 +726,6 @@ public final class EBDPPBLCIOPOuterClass {
             emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG.Builder addEADHCJGKCADBuilder(
@@ -842,10 +734,6 @@ public final class EBDPPBLCIOPOuterClass {
             index, emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BPCIAMCPMCG EADHCJGKCAD = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BPCIAMCPMCGOuterClass.BPCIAMCPMCG.Builder> 

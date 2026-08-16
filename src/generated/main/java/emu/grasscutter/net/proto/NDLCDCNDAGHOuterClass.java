@@ -19,44 +19,24 @@ public final class NDLCDCNDAGHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD> 
         getGGOKKDEKPJMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
      */
     emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD getGGOKKDEKPJM(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
      */
     int getGGOKKDEKPJMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMDOrBuilder> 
         getGGOKKDEKPJMOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
      */
     emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMDOrBuilder getGGOKKDEKPJMOrBuilder(
@@ -156,10 +136,6 @@ public final class NDLCDCNDAGHOuterClass {
     public static final int GGOKKDEKPJM_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD> gGOKKDEKPJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class NDLCDCNDAGHOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class NDLCDCNDAGHOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class NDLCDCNDAGHOuterClass {
       return gGOKKDEKPJM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class NDLCDCNDAGHOuterClass {
       return gGOKKDEKPJM_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class NDLCDCNDAGHOuterClass {
           emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD, emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD.Builder, emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMDOrBuilder> gGOKKDEKPJMBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD> getGGOKKDEKPJMList() {
@@ -582,10 +538,6 @@ public final class NDLCDCNDAGHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public int getGGOKKDEKPJMCount() {
@@ -596,10 +548,6 @@ public final class NDLCDCNDAGHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD getGGOKKDEKPJM(int index) {
@@ -610,10 +558,6 @@ public final class NDLCDCNDAGHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -631,10 +575,6 @@ public final class NDLCDCNDAGHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -649,10 +589,6 @@ public final class NDLCDCNDAGHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public Builder addGGOKKDEKPJM(emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD value) {
@@ -669,10 +605,6 @@ public final class NDLCDCNDAGHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -690,10 +622,6 @@ public final class NDLCDCNDAGHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -708,10 +636,6 @@ public final class NDLCDCNDAGHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -726,10 +650,6 @@ public final class NDLCDCNDAGHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public Builder addAllGGOKKDEKPJM(
@@ -745,10 +665,6 @@ public final class NDLCDCNDAGHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public Builder clearGGOKKDEKPJM() {
@@ -762,10 +678,6 @@ public final class NDLCDCNDAGHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public Builder removeGGOKKDEKPJM(int index) {
@@ -779,10 +691,6 @@ public final class NDLCDCNDAGHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD.Builder getGGOKKDEKPJMBuilder(
@@ -790,10 +698,6 @@ public final class NDLCDCNDAGHOuterClass {
         return getGGOKKDEKPJMFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMDOrBuilder getGGOKKDEKPJMOrBuilder(
@@ -804,10 +708,6 @@ public final class NDLCDCNDAGHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMDOrBuilder> 
@@ -819,10 +719,6 @@ public final class NDLCDCNDAGHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD.Builder addGGOKKDEKPJMBuilder() {
@@ -830,10 +726,6 @@ public final class NDLCDCNDAGHOuterClass {
             emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD.Builder addGGOKKDEKPJMBuilder(
@@ -842,10 +734,6 @@ public final class NDLCDCNDAGHOuterClass {
             index, emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GCAFHBHMAMD GGOKKDEKPJM = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCAFHBHMAMDOuterClass.GCAFHBHMAMD.Builder> 

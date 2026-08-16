@@ -19,20 +19,21 @@ public final class McoinExchangeHcoinReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mcoin_cost = 4;</code>
+     * <code>uint32 mcoin_cost = 13;</code>
      * @return The mcoinCost.
      */
     int getMcoinCost();
 
     /**
-     * <code>uint32 hcoin = 12;</code>
+     * <code>uint32 hcoin = 8;</code>
      * @return The hcoin.
      */
     int getHcoin();
   }
   /**
    * <pre>
-   * CmdId: 8651
+   * CmdId: 29611
+   * Obf: OJDOCOAMKPC
    * </pre>
    *
    * Protobuf type {@code McoinExchangeHcoinReq}
@@ -79,14 +80,14 @@ public final class McoinExchangeHcoinReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              mcoinCost_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 64: {
 
               hcoin_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              mcoinCost_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,10 +122,10 @@ public final class McoinExchangeHcoinReqOuterClass {
               emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq.class, emu.grasscutter.net.proto.McoinExchangeHcoinReqOuterClass.McoinExchangeHcoinReq.Builder.class);
     }
 
-    public static final int MCOIN_COST_FIELD_NUMBER = 4;
+    public static final int MCOIN_COST_FIELD_NUMBER = 13;
     private int mcoinCost_;
     /**
-     * <code>uint32 mcoin_cost = 4;</code>
+     * <code>uint32 mcoin_cost = 13;</code>
      * @return The mcoinCost.
      */
     @java.lang.Override
@@ -132,10 +133,10 @@ public final class McoinExchangeHcoinReqOuterClass {
       return mcoinCost_;
     }
 
-    public static final int HCOIN_FIELD_NUMBER = 12;
+    public static final int HCOIN_FIELD_NUMBER = 8;
     private int hcoin_;
     /**
-     * <code>uint32 hcoin = 12;</code>
+     * <code>uint32 hcoin = 8;</code>
      * @return The hcoin.
      */
     @java.lang.Override
@@ -157,11 +158,11 @@ public final class McoinExchangeHcoinReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mcoinCost_ != 0) {
-        output.writeUInt32(4, mcoinCost_);
-      }
       if (hcoin_ != 0) {
-        output.writeUInt32(12, hcoin_);
+        output.writeUInt32(8, hcoin_);
+      }
+      if (mcoinCost_ != 0) {
+        output.writeUInt32(13, mcoinCost_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +173,13 @@ public final class McoinExchangeHcoinReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mcoinCost_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, mcoinCost_);
-      }
       if (hcoin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, hcoin_);
+          .computeUInt32Size(8, hcoin_);
+      }
+      if (mcoinCost_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, mcoinCost_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +312,8 @@ public final class McoinExchangeHcoinReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8651
+     * CmdId: 29611
+     * Obf: OJDOCOAMKPC
      * </pre>
      *
      * Protobuf type {@code McoinExchangeHcoinReq}
@@ -468,7 +470,7 @@ public final class McoinExchangeHcoinReqOuterClass {
 
       private int mcoinCost_ ;
       /**
-       * <code>uint32 mcoin_cost = 4;</code>
+       * <code>uint32 mcoin_cost = 13;</code>
        * @return The mcoinCost.
        */
       @java.lang.Override
@@ -476,7 +478,7 @@ public final class McoinExchangeHcoinReqOuterClass {
         return mcoinCost_;
       }
       /**
-       * <code>uint32 mcoin_cost = 4;</code>
+       * <code>uint32 mcoin_cost = 13;</code>
        * @param value The mcoinCost to set.
        * @return This builder for chaining.
        */
@@ -487,7 +489,7 @@ public final class McoinExchangeHcoinReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mcoin_cost = 4;</code>
+       * <code>uint32 mcoin_cost = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearMcoinCost() {
@@ -499,7 +501,7 @@ public final class McoinExchangeHcoinReqOuterClass {
 
       private int hcoin_ ;
       /**
-       * <code>uint32 hcoin = 12;</code>
+       * <code>uint32 hcoin = 8;</code>
        * @return The hcoin.
        */
       @java.lang.Override
@@ -507,7 +509,7 @@ public final class McoinExchangeHcoinReqOuterClass {
         return hcoin_;
       }
       /**
-       * <code>uint32 hcoin = 12;</code>
+       * <code>uint32 hcoin = 8;</code>
        * @param value The hcoin to set.
        * @return This builder for chaining.
        */
@@ -518,7 +520,7 @@ public final class McoinExchangeHcoinReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 hcoin = 12;</code>
+       * <code>uint32 hcoin = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearHcoin() {
@@ -595,8 +597,8 @@ public final class McoinExchangeHcoinReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033McoinExchangeHcoinReq.proto\":\n\025McoinEx" +
-      "changeHcoinReq\022\022\n\nmcoin_cost\030\004 \001(\r\022\r\n\005hc" +
-      "oin\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "changeHcoinReq\022\022\n\nmcoin_cost\030\r \001(\r\022\r\n\005hc" +
+      "oin\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

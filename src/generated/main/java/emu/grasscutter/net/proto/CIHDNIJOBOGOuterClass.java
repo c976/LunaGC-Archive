@@ -19,30 +19,18 @@ public final class CIHDNIJOBOGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CICBHCHOEPN = 15;</code>
      * @return The cICBHCHOEPN.
      */
     int getCICBHCHOEPN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 param = 2;</code>
      * @return The param.
      */
     int getParam();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 14;</code>
      * @return The finishTime.
      */
@@ -143,10 +131,6 @@ public final class CIHDNIJOBOGOuterClass {
     public static final int CICBHCHOEPN_FIELD_NUMBER = 15;
     private int cICBHCHOEPN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CICBHCHOEPN = 15;</code>
      * @return The cICBHCHOEPN.
      */
@@ -158,10 +142,6 @@ public final class CIHDNIJOBOGOuterClass {
     public static final int PARAM_FIELD_NUMBER = 2;
     private int param_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 param = 2;</code>
      * @return The param.
      */
@@ -173,10 +153,6 @@ public final class CIHDNIJOBOGOuterClass {
     public static final int FINISH_TIME_FIELD_NUMBER = 14;
     private int finishTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 14;</code>
      * @return The finishTime.
      */
@@ -523,10 +499,6 @@ public final class CIHDNIJOBOGOuterClass {
 
       private int cICBHCHOEPN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CICBHCHOEPN = 15;</code>
        * @return The cICBHCHOEPN.
        */
@@ -535,10 +507,6 @@ public final class CIHDNIJOBOGOuterClass {
         return cICBHCHOEPN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CICBHCHOEPN = 15;</code>
        * @param value The cICBHCHOEPN to set.
        * @return This builder for chaining.
@@ -550,10 +518,6 @@ public final class CIHDNIJOBOGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CICBHCHOEPN = 15;</code>
        * @return This builder for chaining.
        */
@@ -566,10 +530,6 @@ public final class CIHDNIJOBOGOuterClass {
 
       private int param_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 param = 2;</code>
        * @return The param.
        */
@@ -578,10 +538,6 @@ public final class CIHDNIJOBOGOuterClass {
         return param_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 param = 2;</code>
        * @param value The param to set.
        * @return This builder for chaining.
@@ -593,10 +549,6 @@ public final class CIHDNIJOBOGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 param = 2;</code>
        * @return This builder for chaining.
        */
@@ -609,10 +561,6 @@ public final class CIHDNIJOBOGOuterClass {
 
       private int finishTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 14;</code>
        * @return The finishTime.
        */
@@ -621,10 +569,6 @@ public final class CIHDNIJOBOGOuterClass {
         return finishTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 14;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
@@ -636,10 +580,6 @@ public final class CIHDNIJOBOGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 14;</code>
        * @return This builder for chaining.
        */

@@ -19,26 +19,22 @@ public final class VintageBoothUsedItemDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>bool is_open = 14;</code>
+     * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 gadget_id = 15;</code>
+     * <code>uint32 gadget_id = 8;</code>
      * @return The gadgetId.
      */
     int getGadgetId();
   }
   /**
+   * <pre>
+   * Obf: CIBMOLOFPCO
+   * </pre>
+   *
    * Protobuf type {@code VintageBoothUsedItemData}
    */
   public static final class VintageBoothUsedItemData extends
@@ -83,14 +79,14 @@ public final class VintageBoothUsedItemDataOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 64: {
 
-              isOpen_ = input.readBool();
+              gadgetId_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              gadgetId_ = input.readUInt32();
+              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -125,14 +121,10 @@ public final class VintageBoothUsedItemDataOuterClass {
               emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData.class, emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 14;
+    public static final int IS_OPEN_FIELD_NUMBER = 15;
     private boolean isOpen_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>bool is_open = 14;</code>
+     * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -140,14 +132,10 @@ public final class VintageBoothUsedItemDataOuterClass {
       return isOpen_;
     }
 
-    public static final int GADGET_ID_FIELD_NUMBER = 15;
+    public static final int GADGET_ID_FIELD_NUMBER = 8;
     private int gadgetId_;
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 gadget_id = 15;</code>
+     * <code>uint32 gadget_id = 8;</code>
      * @return The gadgetId.
      */
     @java.lang.Override
@@ -169,11 +157,11 @@ public final class VintageBoothUsedItemDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isOpen_ != false) {
-        output.writeBool(14, isOpen_);
-      }
       if (gadgetId_ != 0) {
-        output.writeUInt32(15, gadgetId_);
+        output.writeUInt32(8, gadgetId_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(15, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -184,13 +172,13 @@ public final class VintageBoothUsedItemDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isOpen_);
-      }
       if (gadgetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, gadgetId_);
+          .computeUInt32Size(8, gadgetId_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -323,6 +311,10 @@ public final class VintageBoothUsedItemDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: CIBMOLOFPCO
+     * </pre>
+     *
      * Protobuf type {@code VintageBoothUsedItemData}
      */
     public static final class Builder extends
@@ -477,11 +469,7 @@ public final class VintageBoothUsedItemDataOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 15;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -489,11 +477,7 @@ public final class VintageBoothUsedItemDataOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 15;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -504,11 +488,7 @@ public final class VintageBoothUsedItemDataOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -520,11 +500,7 @@ public final class VintageBoothUsedItemDataOuterClass {
 
       private int gadgetId_ ;
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 gadget_id = 15;</code>
+       * <code>uint32 gadget_id = 8;</code>
        * @return The gadgetId.
        */
       @java.lang.Override
@@ -532,11 +508,7 @@ public final class VintageBoothUsedItemDataOuterClass {
         return gadgetId_;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 gadget_id = 15;</code>
+       * <code>uint32 gadget_id = 8;</code>
        * @param value The gadgetId to set.
        * @return This builder for chaining.
        */
@@ -547,11 +519,7 @@ public final class VintageBoothUsedItemDataOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 gadget_id = 15;</code>
+       * <code>uint32 gadget_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetId() {
@@ -628,8 +596,8 @@ public final class VintageBoothUsedItemDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036VintageBoothUsedItemData.proto\">\n\030Vint" +
-      "ageBoothUsedItemData\022\017\n\007is_open\030\016 \001(\010\022\021\n" +
-      "\tgadget_id\030\017 \001(\rB\033\n\031emu.grasscutter.net." +
+      "ageBoothUsedItemData\022\017\n\007is_open\030\017 \001(\010\022\021\n" +
+      "\tgadget_id\030\010 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,30 +19,22 @@ public final class JGPIAPGGAINOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 7;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 8;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 8;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
   }
   /**
    * Protobuf type {@code JGPIAPGGAIN}
@@ -101,7 +93,7 @@ public final class JGPIAPGGAINOuterClass {
             }
             case 64: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +131,6 @@ public final class JGPIAPGGAINOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -154,10 +142,6 @@ public final class JGPIAPGGAINOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 7;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 7;</code>
      * @return The openTime.
      */
@@ -166,15 +150,15 @@ public final class JGPIAPGGAINOuterClass {
       return openTime_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 8;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 8;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 8;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 8;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,8 +181,8 @@ public final class JGPIAPGGAINOuterClass {
       if (openTime_ != 0) {
         output.writeUInt32(7, openTime_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(8, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(8, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -217,9 +201,9 @@ public final class JGPIAPGGAINOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, openTime_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, eGHGENOJNEK_);
+          .computeUInt32Size(8, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -240,8 +224,8 @@ public final class JGPIAPGGAINOuterClass {
           != other.getIsOpen()) return false;
       if (getOpenTime()
           != other.getOpenTime()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -258,8 +242,8 @@ public final class JGPIAPGGAINOuterClass {
           getIsOpen());
       hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getOpenTime();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -397,7 +381,7 @@ public final class JGPIAPGGAINOuterClass {
 
         openTime_ = 0;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         return this;
       }
@@ -427,7 +411,7 @@ public final class JGPIAPGGAINOuterClass {
         emu.grasscutter.net.proto.JGPIAPGGAINOuterClass.JGPIAPGGAIN result = new emu.grasscutter.net.proto.JGPIAPGGAINOuterClass.JGPIAPGGAIN(this);
         result.isOpen_ = isOpen_;
         result.openTime_ = openTime_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -482,8 +466,8 @@ public final class JGPIAPGGAINOuterClass {
         if (other.getOpenTime() != 0) {
           setOpenTime(other.getOpenTime());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -516,10 +500,6 @@ public final class JGPIAPGGAINOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
@@ -528,10 +508,6 @@ public final class JGPIAPGGAINOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -543,10 +519,6 @@ public final class JGPIAPGGAINOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
@@ -559,10 +531,6 @@ public final class JGPIAPGGAINOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 7;</code>
        * @return The openTime.
        */
@@ -571,10 +539,6 @@ public final class JGPIAPGGAINOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 7;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -586,10 +550,6 @@ public final class JGPIAPGGAINOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 7;</code>
        * @return This builder for chaining.
        */
@@ -600,33 +560,33 @@ public final class JGPIAPGGAINOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 8;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 8;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 8;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 8;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 8;</code>
+       * <code>uint32 stage_id = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -697,10 +657,10 @@ public final class JGPIAPGGAINOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021JGPIAPGGAIN.proto\"F\n\013JGPIAPGGAIN\022\017\n\007is" +
-      "_open\030\001 \001(\010\022\021\n\topen_time\030\007 \001(\r\022\023\n\013EGHGEN" +
-      "OJNEK\030\010 \001(\rB\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\021JGPIAPGGAIN.proto\"C\n\013JGPIAPGGAIN\022\017\n\007is" +
+      "_open\030\001 \001(\010\022\021\n\topen_time\030\007 \001(\r\022\020\n\010stage_" +
+      "id\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -711,7 +671,7 @@ public final class JGPIAPGGAINOuterClass {
     internal_static_JGPIAPGGAIN_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_JGPIAPGGAIN_descriptor,
-        new java.lang.String[] { "IsOpen", "OpenTime", "EGHGENOJNEK", });
+        new java.lang.String[] { "IsOpen", "OpenTime", "StageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,44 +19,24 @@ public final class KPCLNENMDPMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL> 
         getABOMJJKGODKList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
      */
     emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL getABOMJJKGODK(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
      */
     int getABOMJJKGODKCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBLOrBuilder> 
         getABOMJJKGODKOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
      */
     emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBLOrBuilder getABOMJJKGODKOrBuilder(
@@ -156,10 +136,6 @@ public final class KPCLNENMDPMOuterClass {
     public static final int ABOMJJKGODK_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL> aBOMJJKGODK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class KPCLNENMDPMOuterClass {
       return aBOMJJKGODK_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class KPCLNENMDPMOuterClass {
       return aBOMJJKGODK_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class KPCLNENMDPMOuterClass {
       return aBOMJJKGODK_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class KPCLNENMDPMOuterClass {
       return aBOMJJKGODK_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class KPCLNENMDPMOuterClass {
           emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL, emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL.Builder, emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBLOrBuilder> aBOMJJKGODKBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL> getABOMJJKGODKList() {
@@ -582,10 +538,6 @@ public final class KPCLNENMDPMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public int getABOMJJKGODKCount() {
@@ -596,10 +548,6 @@ public final class KPCLNENMDPMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL getABOMJJKGODK(int index) {
@@ -610,10 +558,6 @@ public final class KPCLNENMDPMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public Builder setABOMJJKGODK(
@@ -631,10 +575,6 @@ public final class KPCLNENMDPMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public Builder setABOMJJKGODK(
@@ -649,10 +589,6 @@ public final class KPCLNENMDPMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public Builder addABOMJJKGODK(emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL value) {
@@ -669,10 +605,6 @@ public final class KPCLNENMDPMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public Builder addABOMJJKGODK(
@@ -690,10 +622,6 @@ public final class KPCLNENMDPMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public Builder addABOMJJKGODK(
@@ -708,10 +636,6 @@ public final class KPCLNENMDPMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public Builder addABOMJJKGODK(
@@ -726,10 +650,6 @@ public final class KPCLNENMDPMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public Builder addAllABOMJJKGODK(
@@ -745,10 +665,6 @@ public final class KPCLNENMDPMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public Builder clearABOMJJKGODK() {
@@ -762,10 +678,6 @@ public final class KPCLNENMDPMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public Builder removeABOMJJKGODK(int index) {
@@ -779,10 +691,6 @@ public final class KPCLNENMDPMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL.Builder getABOMJJKGODKBuilder(
@@ -790,10 +698,6 @@ public final class KPCLNENMDPMOuterClass {
         return getABOMJJKGODKFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBLOrBuilder getABOMJJKGODKOrBuilder(
@@ -804,10 +708,6 @@ public final class KPCLNENMDPMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBLOrBuilder> 
@@ -819,10 +719,6 @@ public final class KPCLNENMDPMOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL.Builder addABOMJJKGODKBuilder() {
@@ -830,10 +726,6 @@ public final class KPCLNENMDPMOuterClass {
             emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL.Builder addABOMJJKGODKBuilder(
@@ -842,10 +734,6 @@ public final class KPCLNENMDPMOuterClass {
             index, emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .CILCHAGMCBL ABOMJJKGODK = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CILCHAGMCBLOuterClass.CILCHAGMCBL.Builder> 

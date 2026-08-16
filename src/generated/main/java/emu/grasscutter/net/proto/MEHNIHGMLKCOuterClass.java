@@ -19,28 +19,16 @@ public final class MEHNIHGMLKCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LOEACILCNMP = 9;</code>
      * @return A list containing the lOEACILCNMP.
      */
     java.util.List<java.lang.Integer> getLOEACILCNMPList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LOEACILCNMP = 9;</code>
      * @return The count of lOEACILCNMP.
      */
     int getLOEACILCNMPCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LOEACILCNMP = 9;</code>
      * @param index The index of the element to return.
      * @return The lOEACILCNMP at the given index.
@@ -48,28 +36,16 @@ public final class MEHNIHGMLKCOuterClass {
     int getLOEACILCNMP(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GGNMMBJCADO = 6;</code>
      * @return A list containing the gGNMMBJCADO.
      */
     java.util.List<java.lang.Integer> getGGNMMBJCADOList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GGNMMBJCADO = 6;</code>
      * @return The count of gGNMMBJCADO.
      */
     int getGGNMMBJCADOCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GGNMMBJCADO = 6;</code>
      * @param index The index of the element to return.
      * @return The gGNMMBJCADO at the given index.
@@ -77,39 +53,23 @@ public final class MEHNIHGMLKCOuterClass {
     int getGGNMMBJCADO(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.KAJIHEDPBND IDKPEMLABKK = 10;</code>
      * @return The enum numeric value on the wire for iDKPEMLABKK.
      */
     int getIDKPEMLABKKValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.KAJIHEDPBND IDKPEMLABKK = 10;</code>
      * @return The iDKPEMLABKK.
      */
     emu.grasscutter.net.proto.KAJIHEDPBNDOuterClass.KAJIHEDPBND getIDKPEMLABKK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BLMLKOLOILB = 13;</code>
      * @return The bLMLKOLOILB.
      */
     int getBLMLKOLOILB();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 area_id = 5;</code>
      * @return The areaId.
      */
@@ -263,10 +223,6 @@ public final class MEHNIHGMLKCOuterClass {
     public static final int LOEACILCNMP_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList lOEACILCNMP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LOEACILCNMP = 9;</code>
      * @return A list containing the lOEACILCNMP.
      */
@@ -276,10 +232,6 @@ public final class MEHNIHGMLKCOuterClass {
       return lOEACILCNMP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LOEACILCNMP = 9;</code>
      * @return The count of lOEACILCNMP.
      */
@@ -287,10 +239,6 @@ public final class MEHNIHGMLKCOuterClass {
       return lOEACILCNMP_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 LOEACILCNMP = 9;</code>
      * @param index The index of the element to return.
      * @return The lOEACILCNMP at the given index.
@@ -303,10 +251,6 @@ public final class MEHNIHGMLKCOuterClass {
     public static final int GGNMMBJCADO_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList gGNMMBJCADO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GGNMMBJCADO = 6;</code>
      * @return A list containing the gGNMMBJCADO.
      */
@@ -316,10 +260,6 @@ public final class MEHNIHGMLKCOuterClass {
       return gGNMMBJCADO_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GGNMMBJCADO = 6;</code>
      * @return The count of gGNMMBJCADO.
      */
@@ -327,10 +267,6 @@ public final class MEHNIHGMLKCOuterClass {
       return gGNMMBJCADO_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 GGNMMBJCADO = 6;</code>
      * @param index The index of the element to return.
      * @return The gGNMMBJCADO at the given index.
@@ -343,10 +279,6 @@ public final class MEHNIHGMLKCOuterClass {
     public static final int IDKPEMLABKK_FIELD_NUMBER = 10;
     private int iDKPEMLABKK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.KAJIHEDPBND IDKPEMLABKK = 10;</code>
      * @return The enum numeric value on the wire for iDKPEMLABKK.
      */
@@ -354,10 +286,6 @@ public final class MEHNIHGMLKCOuterClass {
       return iDKPEMLABKK_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.KAJIHEDPBND IDKPEMLABKK = 10;</code>
      * @return The iDKPEMLABKK.
      */
@@ -370,10 +298,6 @@ public final class MEHNIHGMLKCOuterClass {
     public static final int BLMLKOLOILB_FIELD_NUMBER = 13;
     private int bLMLKOLOILB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BLMLKOLOILB = 13;</code>
      * @return The bLMLKOLOILB.
      */
@@ -385,10 +309,6 @@ public final class MEHNIHGMLKCOuterClass {
     public static final int AREA_ID_FIELD_NUMBER = 5;
     private int areaId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 area_id = 5;</code>
      * @return The areaId.
      */
@@ -831,10 +751,6 @@ public final class MEHNIHGMLKCOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LOEACILCNMP = 9;</code>
        * @return A list containing the lOEACILCNMP.
        */
@@ -844,10 +760,6 @@ public final class MEHNIHGMLKCOuterClass {
                  java.util.Collections.unmodifiableList(lOEACILCNMP_) : lOEACILCNMP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LOEACILCNMP = 9;</code>
        * @return The count of lOEACILCNMP.
        */
@@ -855,10 +767,6 @@ public final class MEHNIHGMLKCOuterClass {
         return lOEACILCNMP_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LOEACILCNMP = 9;</code>
        * @param index The index of the element to return.
        * @return The lOEACILCNMP at the given index.
@@ -867,10 +775,6 @@ public final class MEHNIHGMLKCOuterClass {
         return lOEACILCNMP_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LOEACILCNMP = 9;</code>
        * @param index The index to set the value at.
        * @param value The lOEACILCNMP to set.
@@ -884,10 +788,6 @@ public final class MEHNIHGMLKCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LOEACILCNMP = 9;</code>
        * @param value The lOEACILCNMP to add.
        * @return This builder for chaining.
@@ -899,10 +799,6 @@ public final class MEHNIHGMLKCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LOEACILCNMP = 9;</code>
        * @param values The lOEACILCNMP to add.
        * @return This builder for chaining.
@@ -916,10 +812,6 @@ public final class MEHNIHGMLKCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 LOEACILCNMP = 9;</code>
        * @return This builder for chaining.
        */
@@ -938,10 +830,6 @@ public final class MEHNIHGMLKCOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GGNMMBJCADO = 6;</code>
        * @return A list containing the gGNMMBJCADO.
        */
@@ -951,10 +839,6 @@ public final class MEHNIHGMLKCOuterClass {
                  java.util.Collections.unmodifiableList(gGNMMBJCADO_) : gGNMMBJCADO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GGNMMBJCADO = 6;</code>
        * @return The count of gGNMMBJCADO.
        */
@@ -962,10 +846,6 @@ public final class MEHNIHGMLKCOuterClass {
         return gGNMMBJCADO_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GGNMMBJCADO = 6;</code>
        * @param index The index of the element to return.
        * @return The gGNMMBJCADO at the given index.
@@ -974,10 +854,6 @@ public final class MEHNIHGMLKCOuterClass {
         return gGNMMBJCADO_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GGNMMBJCADO = 6;</code>
        * @param index The index to set the value at.
        * @param value The gGNMMBJCADO to set.
@@ -991,10 +867,6 @@ public final class MEHNIHGMLKCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GGNMMBJCADO = 6;</code>
        * @param value The gGNMMBJCADO to add.
        * @return This builder for chaining.
@@ -1006,10 +878,6 @@ public final class MEHNIHGMLKCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GGNMMBJCADO = 6;</code>
        * @param values The gGNMMBJCADO to add.
        * @return This builder for chaining.
@@ -1023,10 +891,6 @@ public final class MEHNIHGMLKCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 GGNMMBJCADO = 6;</code>
        * @return This builder for chaining.
        */
@@ -1039,10 +903,6 @@ public final class MEHNIHGMLKCOuterClass {
 
       private int iDKPEMLABKK_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.KAJIHEDPBND IDKPEMLABKK = 10;</code>
        * @return The enum numeric value on the wire for iDKPEMLABKK.
        */
@@ -1050,10 +910,6 @@ public final class MEHNIHGMLKCOuterClass {
         return iDKPEMLABKK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.KAJIHEDPBND IDKPEMLABKK = 10;</code>
        * @param value The enum numeric value on the wire for iDKPEMLABKK to set.
        * @return This builder for chaining.
@@ -1065,10 +921,6 @@ public final class MEHNIHGMLKCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.KAJIHEDPBND IDKPEMLABKK = 10;</code>
        * @return The iDKPEMLABKK.
        */
@@ -1079,10 +931,6 @@ public final class MEHNIHGMLKCOuterClass {
         return result == null ? emu.grasscutter.net.proto.KAJIHEDPBNDOuterClass.KAJIHEDPBND.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.KAJIHEDPBND IDKPEMLABKK = 10;</code>
        * @param value The iDKPEMLABKK to set.
        * @return This builder for chaining.
@@ -1097,10 +945,6 @@ public final class MEHNIHGMLKCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.KAJIHEDPBND IDKPEMLABKK = 10;</code>
        * @return This builder for chaining.
        */
@@ -1113,10 +957,6 @@ public final class MEHNIHGMLKCOuterClass {
 
       private int bLMLKOLOILB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BLMLKOLOILB = 13;</code>
        * @return The bLMLKOLOILB.
        */
@@ -1125,10 +965,6 @@ public final class MEHNIHGMLKCOuterClass {
         return bLMLKOLOILB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BLMLKOLOILB = 13;</code>
        * @param value The bLMLKOLOILB to set.
        * @return This builder for chaining.
@@ -1140,10 +976,6 @@ public final class MEHNIHGMLKCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BLMLKOLOILB = 13;</code>
        * @return This builder for chaining.
        */
@@ -1156,10 +988,6 @@ public final class MEHNIHGMLKCOuterClass {
 
       private int areaId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 area_id = 5;</code>
        * @return The areaId.
        */
@@ -1168,10 +996,6 @@ public final class MEHNIHGMLKCOuterClass {
         return areaId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 area_id = 5;</code>
        * @param value The areaId to set.
        * @return This builder for chaining.
@@ -1183,10 +1007,6 @@ public final class MEHNIHGMLKCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 area_id = 5;</code>
        * @return This builder for chaining.
        */

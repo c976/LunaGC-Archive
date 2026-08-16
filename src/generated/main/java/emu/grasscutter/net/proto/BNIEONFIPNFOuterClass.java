@@ -19,74 +19,42 @@ public final class BNIEONFIPNFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
      * @return Whether the gMFKLKHFBGJ field is set.
      */
     boolean hasGMFKLKHFBGJ();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
      * @return The gMFKLKHFBGJ.
      */
     emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO getGMFKLKHFBGJ();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
      */
     emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMOOrBuilder getGMFKLKHFBGJOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
      * @return Whether the lBKOPHNCFKB field is set.
      */
     boolean hasLBKOPHNCFKB();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
      * @return The lBKOPHNCFKB.
      */
     emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO getLBKOPHNCFKB();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
      */
     emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMOOrBuilder getLBKOPHNCFKBOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 3;</code>
      * @return The openTime.
      */
@@ -208,10 +176,6 @@ public final class BNIEONFIPNFOuterClass {
     public static final int GMFKLKHFBGJ_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO gMFKLKHFBGJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
      * @return Whether the gMFKLKHFBGJ field is set.
      */
@@ -220,10 +184,6 @@ public final class BNIEONFIPNFOuterClass {
       return gMFKLKHFBGJ_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
      * @return The gMFKLKHFBGJ.
      */
@@ -232,10 +192,6 @@ public final class BNIEONFIPNFOuterClass {
       return gMFKLKHFBGJ_ == null ? emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO.getDefaultInstance() : gMFKLKHFBGJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
      */
     @java.lang.Override
@@ -246,10 +202,6 @@ public final class BNIEONFIPNFOuterClass {
     public static final int LBKOPHNCFKB_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO lBKOPHNCFKB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
      * @return Whether the lBKOPHNCFKB field is set.
      */
@@ -258,10 +210,6 @@ public final class BNIEONFIPNFOuterClass {
       return lBKOPHNCFKB_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
      * @return The lBKOPHNCFKB.
      */
@@ -270,10 +218,6 @@ public final class BNIEONFIPNFOuterClass {
       return lBKOPHNCFKB_ == null ? emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO.getDefaultInstance() : lBKOPHNCFKB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
      */
     @java.lang.Override
@@ -284,10 +228,6 @@ public final class BNIEONFIPNFOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -299,10 +239,6 @@ public final class BNIEONFIPNFOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 3;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 3;</code>
      * @return The openTime.
      */
@@ -694,10 +630,6 @@ public final class BNIEONFIPNFOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO, emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO.Builder, emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMOOrBuilder> gMFKLKHFBGJBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
        * @return Whether the gMFKLKHFBGJ field is set.
        */
@@ -705,10 +637,6 @@ public final class BNIEONFIPNFOuterClass {
         return gMFKLKHFBGJBuilder_ != null || gMFKLKHFBGJ_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
        * @return The gMFKLKHFBGJ.
        */
@@ -720,10 +648,6 @@ public final class BNIEONFIPNFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
        */
       public Builder setGMFKLKHFBGJ(emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO value) {
@@ -740,10 +664,6 @@ public final class BNIEONFIPNFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
        */
       public Builder setGMFKLKHFBGJ(
@@ -758,10 +678,6 @@ public final class BNIEONFIPNFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
        */
       public Builder mergeGMFKLKHFBGJ(emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO value) {
@@ -780,10 +696,6 @@ public final class BNIEONFIPNFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
        */
       public Builder clearGMFKLKHFBGJ() {
@@ -798,10 +710,6 @@ public final class BNIEONFIPNFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
        */
       public emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO.Builder getGMFKLKHFBGJBuilder() {
@@ -810,10 +718,6 @@ public final class BNIEONFIPNFOuterClass {
         return getGMFKLKHFBGJFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
        */
       public emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMOOrBuilder getGMFKLKHFBGJOrBuilder() {
@@ -825,10 +729,6 @@ public final class BNIEONFIPNFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO GMFKLKHFBGJ = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -849,10 +749,6 @@ public final class BNIEONFIPNFOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO, emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO.Builder, emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMOOrBuilder> lBKOPHNCFKBBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
        * @return Whether the lBKOPHNCFKB field is set.
        */
@@ -860,10 +756,6 @@ public final class BNIEONFIPNFOuterClass {
         return lBKOPHNCFKBBuilder_ != null || lBKOPHNCFKB_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
        * @return The lBKOPHNCFKB.
        */
@@ -875,10 +767,6 @@ public final class BNIEONFIPNFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
        */
       public Builder setLBKOPHNCFKB(emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO value) {
@@ -895,10 +783,6 @@ public final class BNIEONFIPNFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
        */
       public Builder setLBKOPHNCFKB(
@@ -913,10 +797,6 @@ public final class BNIEONFIPNFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
        */
       public Builder mergeLBKOPHNCFKB(emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO value) {
@@ -935,10 +815,6 @@ public final class BNIEONFIPNFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
        */
       public Builder clearLBKOPHNCFKB() {
@@ -953,10 +829,6 @@ public final class BNIEONFIPNFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
        */
       public emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMO.Builder getLBKOPHNCFKBBuilder() {
@@ -965,10 +837,6 @@ public final class BNIEONFIPNFOuterClass {
         return getLBKOPHNCFKBFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
        */
       public emu.grasscutter.net.proto.IOFFGIJBPMOOuterClass.IOFFGIJBPMOOrBuilder getLBKOPHNCFKBOrBuilder() {
@@ -980,10 +848,6 @@ public final class BNIEONFIPNFOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IOFFGIJBPMO LBKOPHNCFKB = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1002,10 +866,6 @@ public final class BNIEONFIPNFOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
@@ -1014,10 +874,6 @@ public final class BNIEONFIPNFOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1029,10 +885,6 @@ public final class BNIEONFIPNFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
@@ -1045,10 +897,6 @@ public final class BNIEONFIPNFOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 3;</code>
        * @return The openTime.
        */
@@ -1057,10 +905,6 @@ public final class BNIEONFIPNFOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 3;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -1072,10 +916,6 @@ public final class BNIEONFIPNFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 3;</code>
        * @return This builder for chaining.
        */

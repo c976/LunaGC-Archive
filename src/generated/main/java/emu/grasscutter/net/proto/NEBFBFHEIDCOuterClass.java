@@ -19,18 +19,10 @@ public final class NEBFBFHEIDCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
      */
     int getPIPMBBMCJMCCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
      */
     boolean containsPIPMBBMCJMC(
@@ -42,19 +34,11 @@ public final class NEBFBFHEIDCOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.APCMJCOKPNCOuterClass.APCMJCOKPNC>
     getPIPMBBMCJMC();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.APCMJCOKPNCOuterClass.APCMJCOKPNC>
     getPIPMBBMCJMCMap();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
      */
 
@@ -62,10 +46,6 @@ public final class NEBFBFHEIDCOuterClass {
         int key,
         emu.grasscutter.net.proto.APCMJCOKPNCOuterClass.APCMJCOKPNC defaultValue);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
      */
 
@@ -202,10 +182,6 @@ public final class NEBFBFHEIDCOuterClass {
       return internalGetPIPMBBMCJMC().getMap().size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
      */
 
@@ -224,10 +200,6 @@ public final class NEBFBFHEIDCOuterClass {
       return getPIPMBBMCJMCMap();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
      */
     @java.lang.Override
@@ -236,10 +208,6 @@ public final class NEBFBFHEIDCOuterClass {
       return internalGetPIPMBBMCJMC().getMap();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
      */
     @java.lang.Override
@@ -253,10 +221,6 @@ public final class NEBFBFHEIDCOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
      */
     @java.lang.Override
@@ -635,10 +599,6 @@ public final class NEBFBFHEIDCOuterClass {
         return internalGetPIPMBBMCJMC().getMap().size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
        */
 
@@ -657,10 +617,6 @@ public final class NEBFBFHEIDCOuterClass {
         return getPIPMBBMCJMCMap();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
        */
       @java.lang.Override
@@ -669,10 +625,6 @@ public final class NEBFBFHEIDCOuterClass {
         return internalGetPIPMBBMCJMC().getMap();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
        */
       @java.lang.Override
@@ -686,10 +638,6 @@ public final class NEBFBFHEIDCOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
        */
       @java.lang.Override
@@ -711,10 +659,6 @@ public final class NEBFBFHEIDCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
        */
 
@@ -734,10 +678,6 @@ public final class NEBFBFHEIDCOuterClass {
         return internalGetMutablePIPMBBMCJMC().getMutableMap();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
        */
       public Builder putPIPMBBMCJMC(
@@ -750,10 +690,6 @@ public final class NEBFBFHEIDCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .APCMJCOKPNC&gt; PIPMBBMCJMC = 8;</code>
        */
 

@@ -25,10 +25,6 @@ public final class WidgetWeatherWizardDataNotifyOuterClass {
     int getShieldValue();
   }
   /**
-   * <pre>
-   * CmdId: 29757
-   * </pre>
-   *
    * Protobuf type {@code WidgetWeatherWizardDataNotify}
    */
   public static final class WidgetWeatherWizardDataNotify extends
@@ -277,10 +273,6 @@ public final class WidgetWeatherWizardDataNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 29757
-     * </pre>
-     *
      * Protobuf type {@code WidgetWeatherWizardDataNotify}
      */
     public static final class Builder extends

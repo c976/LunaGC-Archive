@@ -19,122 +19,78 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
      */
-    int getLevelOpenTimeMapCount();
+    int getOKANCOLKFJDCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
      */
-    boolean containsLevelOpenTimeMap(
+    boolean containsOKANCOLKFJD(
         int key);
     /**
-     * Use {@link #getLevelOpenTimeMapMap()} instead.
+     * Use {@link #getOKANCOLKFJDMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getLevelOpenTimeMap();
+    getOKANCOLKFJD();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getLevelOpenTimeMapMap();
+    getOKANCOLKFJDMap();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
      */
 
-    int getLevelOpenTimeMapOrDefault(
+    int getOKANCOLKFJDOrDefault(
         int key,
         int defaultValue);
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
      */
 
-    int getLevelOpenTimeMapOrThrow(
+    int getOKANCOLKFJDOrThrow(
         int key);
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+     * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM> 
-        getLevelListList();
+    java.util.List<emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO> 
+        getKEBKELKNABDList();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+     * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
      */
-    emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM getLevelList(int index);
+    emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO getKEBKELKNABD(int index);
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+     * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
      */
-    int getLevelListCount();
+    int getKEBKELKNABDCount();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+     * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEMOrBuilder> 
-        getLevelListOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIOOrBuilder> 
+        getKEBKELKNABDOrBuilderList();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+     * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
      */
-    emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEMOrBuilder getLevelListOrBuilder(
+    emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIOOrBuilder getKEBKELKNABDOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>uint32 world_level = 9;</code>
-     * @return The worldLevel.
+     * <code>bool HOGCGGNKFBN = 10;</code>
+     * @return The hOGCGGNKFBN.
      */
-    int getWorldLevel();
+    boolean getHOGCGGNKFBN();
 
     /**
      * <pre>
-     * offset: 52
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>bool is_finish_any_level = 14;</code>
-     * @return The isFinishAnyLevel.
+     * <code>uint32 world_level = 13;</code>
+     * @return The worldLevel.
      */
-    boolean getIsFinishAnyLevel();
+    int getWorldLevel();
   }
   /**
    * Protobuf type {@code ArenaChallengeActivityDetailInfo}
@@ -149,7 +105,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       super(builder);
     }
     private ArenaChallengeActivityDetailInfo() {
-      levelList_ = java.util.Collections.emptyList();
+      kEBKELKNABD_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -185,34 +141,34 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
               break;
             case 18: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM>();
+                kEBKELKNABD_ = new java.util.ArrayList<emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO>();
                 mutable_bitField0_ |= 0x00000002;
               }
-              levelList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.parser(), extensionRegistry));
+              kEBKELKNABD_.add(
+                  input.readMessage(emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.parser(), extensionRegistry));
               break;
             }
-            case 58: {
+            case 80: {
+
+              hOGCGGNKFBN_ = input.readBool();
+              break;
+            }
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelOpenTimeMap_ = com.google.protobuf.MapField.newMapField(
-                    LevelOpenTimeMapDefaultEntryHolder.defaultEntry);
+                oKANCOLKFJD_ = com.google.protobuf.MapField.newMapField(
+                    OKANCOLKFJDDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              levelOpenTimeMap__ = input.readMessage(
-                  LevelOpenTimeMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              levelOpenTimeMap_.getMutableMap().put(
-                  levelOpenTimeMap__.getKey(), levelOpenTimeMap__.getValue());
+              oKANCOLKFJD__ = input.readMessage(
+                  OKANCOLKFJDDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              oKANCOLKFJD_.getMutableMap().put(
+                  oKANCOLKFJD__.getKey(), oKANCOLKFJD__.getValue());
               break;
             }
-            case 72: {
+            case 104: {
 
               worldLevel_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              isFinishAnyLevel_ = input.readBool();
               break;
             }
             default: {
@@ -231,7 +187,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          levelList_ = java.util.Collections.unmodifiableList(levelList_);
+          kEBKELKNABD_ = java.util.Collections.unmodifiableList(kEBKELKNABD_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -247,8 +203,8 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 7:
-          return internalGetLevelOpenTimeMap();
+        case 11:
+          return internalGetOKANCOLKFJD();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -262,191 +218,151 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo.class, emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_OPEN_TIME_MAP_FIELD_NUMBER = 7;
-    private static final class LevelOpenTimeMapDefaultEntryHolder {
+    public static final int OKANCOLKFJD_FIELD_NUMBER = 11;
+    private static final class OKANCOLKFJDDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.internal_static_ArenaChallengeActivityDetailInfo_LevelOpenTimeMapEntry_descriptor, 
+                  emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.internal_static_ArenaChallengeActivityDetailInfo_OKANCOLKFJDEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> levelOpenTimeMap_;
+        java.lang.Integer, java.lang.Integer> oKANCOLKFJD_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetLevelOpenTimeMap() {
-      if (levelOpenTimeMap_ == null) {
+    internalGetOKANCOLKFJD() {
+      if (oKANCOLKFJD_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            LevelOpenTimeMapDefaultEntryHolder.defaultEntry);
+            OKANCOLKFJDDefaultEntryHolder.defaultEntry);
       }
-      return levelOpenTimeMap_;
+      return oKANCOLKFJD_;
     }
 
-    public int getLevelOpenTimeMapCount() {
-      return internalGetLevelOpenTimeMap().getMap().size();
+    public int getOKANCOLKFJDCount() {
+      return internalGetOKANCOLKFJD().getMap().size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
      */
 
     @java.lang.Override
-    public boolean containsLevelOpenTimeMap(
+    public boolean containsOKANCOLKFJD(
         int key) {
       
-      return internalGetLevelOpenTimeMap().getMap().containsKey(key);
+      return internalGetOKANCOLKFJD().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getLevelOpenTimeMapMap()} instead.
+     * Use {@link #getOKANCOLKFJDMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getLevelOpenTimeMap() {
-      return getLevelOpenTimeMapMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getOKANCOLKFJD() {
+      return getOKANCOLKFJDMap();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getLevelOpenTimeMapMap() {
-      return internalGetLevelOpenTimeMap().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getOKANCOLKFJDMap() {
+      return internalGetOKANCOLKFJD().getMap();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
      */
     @java.lang.Override
 
-    public int getLevelOpenTimeMapOrDefault(
+    public int getOKANCOLKFJDOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetLevelOpenTimeMap().getMap();
+          internalGetOKANCOLKFJD().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
      */
     @java.lang.Override
 
-    public int getLevelOpenTimeMapOrThrow(
+    public int getOKANCOLKFJDOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetLevelOpenTimeMap().getMap();
+          internalGetOKANCOLKFJD().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public static final int LEVEL_LIST_FIELD_NUMBER = 2;
-    private java.util.List<emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM> levelList_;
+    public static final int KEBKELKNABD_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO> kEBKELKNABD_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+     * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM> getLevelListList() {
-      return levelList_;
+    public java.util.List<emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO> getKEBKELKNABDList() {
+      return kEBKELKNABD_;
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+     * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEMOrBuilder> 
-        getLevelListOrBuilderList() {
-      return levelList_;
+    public java.util.List<? extends emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIOOrBuilder> 
+        getKEBKELKNABDOrBuilderList() {
+      return kEBKELKNABD_;
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+     * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
      */
     @java.lang.Override
-    public int getLevelListCount() {
-      return levelList_.size();
+    public int getKEBKELKNABDCount() {
+      return kEBKELKNABD_.size();
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+     * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM getLevelList(int index) {
-      return levelList_.get(index);
+    public emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO getKEBKELKNABD(int index) {
+      return kEBKELKNABD_.get(index);
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+     * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEMOrBuilder getLevelListOrBuilder(
+    public emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIOOrBuilder getKEBKELKNABDOrBuilder(
         int index) {
-      return levelList_.get(index);
+      return kEBKELKNABD_.get(index);
     }
 
-    public static final int WORLD_LEVEL_FIELD_NUMBER = 9;
+    public static final int HOGCGGNKFBN_FIELD_NUMBER = 10;
+    private boolean hOGCGGNKFBN_;
+    /**
+     * <code>bool HOGCGGNKFBN = 10;</code>
+     * @return The hOGCGGNKFBN.
+     */
+    @java.lang.Override
+    public boolean getHOGCGGNKFBN() {
+      return hOGCGGNKFBN_;
+    }
+
+    public static final int WORLD_LEVEL_FIELD_NUMBER = 13;
     private int worldLevel_;
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 world_level = 9;</code>
+     * <code>uint32 world_level = 13;</code>
      * @return The worldLevel.
      */
     @java.lang.Override
     public int getWorldLevel() {
       return worldLevel_;
-    }
-
-    public static final int IS_FINISH_ANY_LEVEL_FIELD_NUMBER = 14;
-    private boolean isFinishAnyLevel_;
-    /**
-     * <pre>
-     * offset: 52
-     * </pre>
-     *
-     * <code>bool is_finish_any_level = 14;</code>
-     * @return The isFinishAnyLevel.
-     */
-    @java.lang.Override
-    public boolean getIsFinishAnyLevel() {
-      return isFinishAnyLevel_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -463,20 +379,20 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < levelList_.size(); i++) {
-        output.writeMessage(2, levelList_.get(i));
+      for (int i = 0; i < kEBKELKNABD_.size(); i++) {
+        output.writeMessage(2, kEBKELKNABD_.get(i));
+      }
+      if (hOGCGGNKFBN_ != false) {
+        output.writeBool(10, hOGCGGNKFBN_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetLevelOpenTimeMap(),
-          LevelOpenTimeMapDefaultEntryHolder.defaultEntry,
-          7);
+          internalGetOKANCOLKFJD(),
+          OKANCOLKFJDDefaultEntryHolder.defaultEntry,
+          11);
       if (worldLevel_ != 0) {
-        output.writeUInt32(9, worldLevel_);
-      }
-      if (isFinishAnyLevel_ != false) {
-        output.writeBool(14, isFinishAnyLevel_);
+        output.writeUInt32(13, worldLevel_);
       }
       unknownFields.writeTo(output);
     }
@@ -487,27 +403,27 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < levelList_.size(); i++) {
+      for (int i = 0; i < kEBKELKNABD_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, levelList_.get(i));
+          .computeMessageSize(2, kEBKELKNABD_.get(i));
+      }
+      if (hOGCGGNKFBN_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, hOGCGGNKFBN_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetLevelOpenTimeMap().getMap().entrySet()) {
+           : internalGetOKANCOLKFJD().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        levelOpenTimeMap__ = LevelOpenTimeMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+        oKANCOLKFJD__ = OKANCOLKFJDDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(7, levelOpenTimeMap__);
+            .computeMessageSize(11, oKANCOLKFJD__);
       }
       if (worldLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, worldLevel_);
-      }
-      if (isFinishAnyLevel_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isFinishAnyLevel_);
+          .computeUInt32Size(13, worldLevel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -524,14 +440,14 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo other = (emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo) obj;
 
-      if (!internalGetLevelOpenTimeMap().equals(
-          other.internalGetLevelOpenTimeMap())) return false;
-      if (!getLevelListList()
-          .equals(other.getLevelListList())) return false;
+      if (!internalGetOKANCOLKFJD().equals(
+          other.internalGetOKANCOLKFJD())) return false;
+      if (!getKEBKELKNABDList()
+          .equals(other.getKEBKELKNABDList())) return false;
+      if (getHOGCGGNKFBN()
+          != other.getHOGCGGNKFBN()) return false;
       if (getWorldLevel()
           != other.getWorldLevel()) return false;
-      if (getIsFinishAnyLevel()
-          != other.getIsFinishAnyLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -543,19 +459,19 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetLevelOpenTimeMap().getMap().isEmpty()) {
-        hash = (37 * hash) + LEVEL_OPEN_TIME_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetLevelOpenTimeMap().hashCode();
+      if (!internalGetOKANCOLKFJD().getMap().isEmpty()) {
+        hash = (37 * hash) + OKANCOLKFJD_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetOKANCOLKFJD().hashCode();
       }
-      if (getLevelListCount() > 0) {
-        hash = (37 * hash) + LEVEL_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getLevelListList().hashCode();
+      if (getKEBKELKNABDCount() > 0) {
+        hash = (37 * hash) + KEBKELKNABD_FIELD_NUMBER;
+        hash = (53 * hash) + getKEBKELKNABDList().hashCode();
       }
+      hash = (37 * hash) + HOGCGGNKFBN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getHOGCGGNKFBN());
       hash = (37 * hash) + WORLD_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getWorldLevel();
-      hash = (37 * hash) + IS_FINISH_ANY_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinishAnyLevel());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -667,8 +583,8 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 7:
-            return internalGetLevelOpenTimeMap();
+          case 11:
+            return internalGetOKANCOLKFJD();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -678,8 +594,8 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 7:
-            return internalGetMutableLevelOpenTimeMap();
+          case 11:
+            return internalGetMutableOKANCOLKFJD();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -706,22 +622,22 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getLevelListFieldBuilder();
+          getKEBKELKNABDFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableLevelOpenTimeMap().clear();
-        if (levelListBuilder_ == null) {
-          levelList_ = java.util.Collections.emptyList();
+        internalGetMutableOKANCOLKFJD().clear();
+        if (kEBKELKNABDBuilder_ == null) {
+          kEBKELKNABD_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
-          levelListBuilder_.clear();
+          kEBKELKNABDBuilder_.clear();
         }
-        worldLevel_ = 0;
+        hOGCGGNKFBN_ = false;
 
-        isFinishAnyLevel_ = false;
+        worldLevel_ = 0;
 
         return this;
       }
@@ -750,19 +666,19 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo result = new emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.levelOpenTimeMap_ = internalGetLevelOpenTimeMap();
-        result.levelOpenTimeMap_.makeImmutable();
-        if (levelListBuilder_ == null) {
+        result.oKANCOLKFJD_ = internalGetOKANCOLKFJD();
+        result.oKANCOLKFJD_.makeImmutable();
+        if (kEBKELKNABDBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
-            levelList_ = java.util.Collections.unmodifiableList(levelList_);
+            kEBKELKNABD_ = java.util.Collections.unmodifiableList(kEBKELKNABD_);
             bitField0_ = (bitField0_ & ~0x00000002);
           }
-          result.levelList_ = levelList_;
+          result.kEBKELKNABD_ = kEBKELKNABD_;
         } else {
-          result.levelList_ = levelListBuilder_.build();
+          result.kEBKELKNABD_ = kEBKELKNABDBuilder_.build();
         }
+        result.hOGCGGNKFBN_ = hOGCGGNKFBN_;
         result.worldLevel_ = worldLevel_;
-        result.isFinishAnyLevel_ = isFinishAnyLevel_;
         onBuilt();
         return result;
       }
@@ -811,39 +727,39 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo.getDefaultInstance()) return this;
-        internalGetMutableLevelOpenTimeMap().mergeFrom(
-            other.internalGetLevelOpenTimeMap());
-        if (levelListBuilder_ == null) {
-          if (!other.levelList_.isEmpty()) {
-            if (levelList_.isEmpty()) {
-              levelList_ = other.levelList_;
+        internalGetMutableOKANCOLKFJD().mergeFrom(
+            other.internalGetOKANCOLKFJD());
+        if (kEBKELKNABDBuilder_ == null) {
+          if (!other.kEBKELKNABD_.isEmpty()) {
+            if (kEBKELKNABD_.isEmpty()) {
+              kEBKELKNABD_ = other.kEBKELKNABD_;
               bitField0_ = (bitField0_ & ~0x00000002);
             } else {
-              ensureLevelListIsMutable();
-              levelList_.addAll(other.levelList_);
+              ensureKEBKELKNABDIsMutable();
+              kEBKELKNABD_.addAll(other.kEBKELKNABD_);
             }
             onChanged();
           }
         } else {
-          if (!other.levelList_.isEmpty()) {
-            if (levelListBuilder_.isEmpty()) {
-              levelListBuilder_.dispose();
-              levelListBuilder_ = null;
-              levelList_ = other.levelList_;
+          if (!other.kEBKELKNABD_.isEmpty()) {
+            if (kEBKELKNABDBuilder_.isEmpty()) {
+              kEBKELKNABDBuilder_.dispose();
+              kEBKELKNABDBuilder_ = null;
+              kEBKELKNABD_ = other.kEBKELKNABD_;
               bitField0_ = (bitField0_ & ~0x00000002);
-              levelListBuilder_ = 
+              kEBKELKNABDBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getLevelListFieldBuilder() : null;
+                   getKEBKELKNABDFieldBuilder() : null;
             } else {
-              levelListBuilder_.addAllMessages(other.levelList_);
+              kEBKELKNABDBuilder_.addAllMessages(other.kEBKELKNABD_);
             }
           }
         }
+        if (other.getHOGCGGNKFBN() != false) {
+          setHOGCGGNKFBN(other.getHOGCGGNKFBN());
+        }
         if (other.getWorldLevel() != 0) {
           setWorldLevel(other.getWorldLevel());
-        }
-        if (other.getIsFinishAnyLevel() != false) {
-          setIsFinishAnyLevel(other.getIsFinishAnyLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -876,119 +792,99 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> levelOpenTimeMap_;
+          java.lang.Integer, java.lang.Integer> oKANCOLKFJD_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetLevelOpenTimeMap() {
-        if (levelOpenTimeMap_ == null) {
+      internalGetOKANCOLKFJD() {
+        if (oKANCOLKFJD_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              LevelOpenTimeMapDefaultEntryHolder.defaultEntry);
+              OKANCOLKFJDDefaultEntryHolder.defaultEntry);
         }
-        return levelOpenTimeMap_;
+        return oKANCOLKFJD_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableLevelOpenTimeMap() {
+      internalGetMutableOKANCOLKFJD() {
         onChanged();;
-        if (levelOpenTimeMap_ == null) {
-          levelOpenTimeMap_ = com.google.protobuf.MapField.newMapField(
-              LevelOpenTimeMapDefaultEntryHolder.defaultEntry);
+        if (oKANCOLKFJD_ == null) {
+          oKANCOLKFJD_ = com.google.protobuf.MapField.newMapField(
+              OKANCOLKFJDDefaultEntryHolder.defaultEntry);
         }
-        if (!levelOpenTimeMap_.isMutable()) {
-          levelOpenTimeMap_ = levelOpenTimeMap_.copy();
+        if (!oKANCOLKFJD_.isMutable()) {
+          oKANCOLKFJD_ = oKANCOLKFJD_.copy();
         }
-        return levelOpenTimeMap_;
+        return oKANCOLKFJD_;
       }
 
-      public int getLevelOpenTimeMapCount() {
-        return internalGetLevelOpenTimeMap().getMap().size();
+      public int getOKANCOLKFJDCount() {
+        return internalGetOKANCOLKFJD().getMap().size();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
        */
 
       @java.lang.Override
-      public boolean containsLevelOpenTimeMap(
+      public boolean containsOKANCOLKFJD(
           int key) {
         
-        return internalGetLevelOpenTimeMap().getMap().containsKey(key);
+        return internalGetOKANCOLKFJD().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getLevelOpenTimeMapMap()} instead.
+       * Use {@link #getOKANCOLKFJDMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getLevelOpenTimeMap() {
-        return getLevelOpenTimeMapMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getOKANCOLKFJD() {
+        return getOKANCOLKFJDMap();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getLevelOpenTimeMapMap() {
-        return internalGetLevelOpenTimeMap().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getOKANCOLKFJDMap() {
+        return internalGetOKANCOLKFJD().getMap();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
        */
       @java.lang.Override
 
-      public int getLevelOpenTimeMapOrDefault(
+      public int getOKANCOLKFJDOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetLevelOpenTimeMap().getMap();
+            internalGetOKANCOLKFJD().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
        */
       @java.lang.Override
 
-      public int getLevelOpenTimeMapOrThrow(
+      public int getOKANCOLKFJDOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetLevelOpenTimeMap().getMap();
+            internalGetOKANCOLKFJD().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearLevelOpenTimeMap() {
-        internalGetMutableLevelOpenTimeMap().getMutableMap()
+      public Builder clearOKANCOLKFJD() {
+        internalGetMutableOKANCOLKFJD().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
        */
 
-      public Builder removeLevelOpenTimeMap(
+      public Builder removeOKANCOLKFJD(
           int key) {
         
-        internalGetMutableLevelOpenTimeMap().getMutableMap()
+        internalGetMutableOKANCOLKFJD().getMutableMap()
             .remove(key);
         return this;
       }
@@ -997,359 +893,310 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableLevelOpenTimeMap() {
-        return internalGetMutableLevelOpenTimeMap().getMutableMap();
+      getMutableOKANCOLKFJD() {
+        return internalGetMutableOKANCOLKFJD().getMutableMap();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
        */
-      public Builder putLevelOpenTimeMap(
+      public Builder putOKANCOLKFJD(
           int key,
           int value) {
         
         
-        internalGetMutableLevelOpenTimeMap().getMutableMap()
+        internalGetMutableOKANCOLKFJD().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; OKANCOLKFJD = 11;</code>
        */
 
-      public Builder putAllLevelOpenTimeMap(
+      public Builder putAllOKANCOLKFJD(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableLevelOpenTimeMap().getMutableMap()
+        internalGetMutableOKANCOLKFJD().getMutableMap()
             .putAll(values);
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM> levelList_ =
+      private java.util.List<emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO> kEBKELKNABD_ =
         java.util.Collections.emptyList();
-      private void ensureLevelListIsMutable() {
+      private void ensureKEBKELKNABDIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM>(levelList_);
+          kEBKELKNABD_ = new java.util.ArrayList<emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO>(kEBKELKNABD_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM, emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.Builder, emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEMOrBuilder> levelListBuilder_;
+          emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO, emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.Builder, emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIOOrBuilder> kEBKELKNABDBuilder_;
 
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM> getLevelListList() {
-        if (levelListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(levelList_);
+      public java.util.List<emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO> getKEBKELKNABDList() {
+        if (kEBKELKNABDBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(kEBKELKNABD_);
         } else {
-          return levelListBuilder_.getMessageList();
+          return kEBKELKNABDBuilder_.getMessageList();
         }
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public int getLevelListCount() {
-        if (levelListBuilder_ == null) {
-          return levelList_.size();
+      public int getKEBKELKNABDCount() {
+        if (kEBKELKNABDBuilder_ == null) {
+          return kEBKELKNABD_.size();
         } else {
-          return levelListBuilder_.getCount();
+          return kEBKELKNABDBuilder_.getCount();
         }
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM getLevelList(int index) {
-        if (levelListBuilder_ == null) {
-          return levelList_.get(index);
+      public emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO getKEBKELKNABD(int index) {
+        if (kEBKELKNABDBuilder_ == null) {
+          return kEBKELKNABD_.get(index);
         } else {
-          return levelListBuilder_.getMessage(index);
+          return kEBKELKNABDBuilder_.getMessage(index);
         }
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public Builder setLevelList(
-          int index, emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM value) {
-        if (levelListBuilder_ == null) {
+      public Builder setKEBKELKNABD(
+          int index, emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO value) {
+        if (kEBKELKNABDBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureLevelListIsMutable();
-          levelList_.set(index, value);
+          ensureKEBKELKNABDIsMutable();
+          kEBKELKNABD_.set(index, value);
           onChanged();
         } else {
-          levelListBuilder_.setMessage(index, value);
+          kEBKELKNABDBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public Builder setLevelList(
-          int index, emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.Builder builderForValue) {
-        if (levelListBuilder_ == null) {
-          ensureLevelListIsMutable();
-          levelList_.set(index, builderForValue.build());
+      public Builder setKEBKELKNABD(
+          int index, emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.Builder builderForValue) {
+        if (kEBKELKNABDBuilder_ == null) {
+          ensureKEBKELKNABDIsMutable();
+          kEBKELKNABD_.set(index, builderForValue.build());
           onChanged();
         } else {
-          levelListBuilder_.setMessage(index, builderForValue.build());
+          kEBKELKNABDBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public Builder addLevelList(emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM value) {
-        if (levelListBuilder_ == null) {
+      public Builder addKEBKELKNABD(emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO value) {
+        if (kEBKELKNABDBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureLevelListIsMutable();
-          levelList_.add(value);
+          ensureKEBKELKNABDIsMutable();
+          kEBKELKNABD_.add(value);
           onChanged();
         } else {
-          levelListBuilder_.addMessage(value);
+          kEBKELKNABDBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public Builder addLevelList(
-          int index, emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM value) {
-        if (levelListBuilder_ == null) {
+      public Builder addKEBKELKNABD(
+          int index, emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO value) {
+        if (kEBKELKNABDBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureLevelListIsMutable();
-          levelList_.add(index, value);
+          ensureKEBKELKNABDIsMutable();
+          kEBKELKNABD_.add(index, value);
           onChanged();
         } else {
-          levelListBuilder_.addMessage(index, value);
+          kEBKELKNABDBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public Builder addLevelList(
-          emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.Builder builderForValue) {
-        if (levelListBuilder_ == null) {
-          ensureLevelListIsMutable();
-          levelList_.add(builderForValue.build());
+      public Builder addKEBKELKNABD(
+          emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.Builder builderForValue) {
+        if (kEBKELKNABDBuilder_ == null) {
+          ensureKEBKELKNABDIsMutable();
+          kEBKELKNABD_.add(builderForValue.build());
           onChanged();
         } else {
-          levelListBuilder_.addMessage(builderForValue.build());
+          kEBKELKNABDBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public Builder addLevelList(
-          int index, emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.Builder builderForValue) {
-        if (levelListBuilder_ == null) {
-          ensureLevelListIsMutable();
-          levelList_.add(index, builderForValue.build());
+      public Builder addKEBKELKNABD(
+          int index, emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.Builder builderForValue) {
+        if (kEBKELKNABDBuilder_ == null) {
+          ensureKEBKELKNABDIsMutable();
+          kEBKELKNABD_.add(index, builderForValue.build());
           onChanged();
         } else {
-          levelListBuilder_.addMessage(index, builderForValue.build());
+          kEBKELKNABDBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public Builder addAllLevelList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM> values) {
-        if (levelListBuilder_ == null) {
-          ensureLevelListIsMutable();
+      public Builder addAllKEBKELKNABD(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO> values) {
+        if (kEBKELKNABDBuilder_ == null) {
+          ensureKEBKELKNABDIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, levelList_);
+              values, kEBKELKNABD_);
           onChanged();
         } else {
-          levelListBuilder_.addAllMessages(values);
+          kEBKELKNABDBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public Builder clearLevelList() {
-        if (levelListBuilder_ == null) {
-          levelList_ = java.util.Collections.emptyList();
+      public Builder clearKEBKELKNABD() {
+        if (kEBKELKNABDBuilder_ == null) {
+          kEBKELKNABD_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
-          levelListBuilder_.clear();
+          kEBKELKNABDBuilder_.clear();
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public Builder removeLevelList(int index) {
-        if (levelListBuilder_ == null) {
-          ensureLevelListIsMutable();
-          levelList_.remove(index);
+      public Builder removeKEBKELKNABD(int index) {
+        if (kEBKELKNABDBuilder_ == null) {
+          ensureKEBKELKNABDIsMutable();
+          kEBKELKNABD_.remove(index);
           onChanged();
         } else {
-          levelListBuilder_.remove(index);
+          kEBKELKNABDBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.Builder getLevelListBuilder(
+      public emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.Builder getKEBKELKNABDBuilder(
           int index) {
-        return getLevelListFieldBuilder().getBuilder(index);
+        return getKEBKELKNABDFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEMOrBuilder getLevelListOrBuilder(
+      public emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIOOrBuilder getKEBKELKNABDOrBuilder(
           int index) {
-        if (levelListBuilder_ == null) {
-          return levelList_.get(index);  } else {
-          return levelListBuilder_.getMessageOrBuilder(index);
+        if (kEBKELKNABDBuilder_ == null) {
+          return kEBKELKNABD_.get(index);  } else {
+          return kEBKELKNABDBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEMOrBuilder> 
-           getLevelListOrBuilderList() {
-        if (levelListBuilder_ != null) {
-          return levelListBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIOOrBuilder> 
+           getKEBKELKNABDOrBuilderList() {
+        if (kEBKELKNABDBuilder_ != null) {
+          return kEBKELKNABDBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(levelList_);
+          return java.util.Collections.unmodifiableList(kEBKELKNABD_);
         }
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.Builder addLevelListBuilder() {
-        return getLevelListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.getDefaultInstance());
+      public emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.Builder addKEBKELKNABDBuilder() {
+        return getKEBKELKNABDFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.Builder addLevelListBuilder(
+      public emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.Builder addKEBKELKNABDBuilder(
           int index) {
-        return getLevelListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.getDefaultInstance());
+        return getKEBKELKNABDFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated .BKKMECLDJEM level_list = 2;</code>
+       * <code>repeated .EPGCCOOAEIO KEBKELKNABD = 2;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.Builder> 
-           getLevelListBuilderList() {
-        return getLevelListFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.Builder> 
+           getKEBKELKNABDBuilderList() {
+        return getKEBKELKNABDFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM, emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.Builder, emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEMOrBuilder> 
-          getLevelListFieldBuilder() {
-        if (levelListBuilder_ == null) {
-          levelListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM, emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEM.Builder, emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.BKKMECLDJEMOrBuilder>(
-                  levelList_,
+          emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO, emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.Builder, emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIOOrBuilder> 
+          getKEBKELKNABDFieldBuilder() {
+        if (kEBKELKNABDBuilder_ == null) {
+          kEBKELKNABDBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO, emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIO.Builder, emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.EPGCCOOAEIOOrBuilder>(
+                  kEBKELKNABD_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
-          levelList_ = null;
+          kEBKELKNABD_ = null;
         }
-        return levelListBuilder_;
+        return kEBKELKNABDBuilder_;
+      }
+
+      private boolean hOGCGGNKFBN_ ;
+      /**
+       * <code>bool HOGCGGNKFBN = 10;</code>
+       * @return The hOGCGGNKFBN.
+       */
+      @java.lang.Override
+      public boolean getHOGCGGNKFBN() {
+        return hOGCGGNKFBN_;
+      }
+      /**
+       * <code>bool HOGCGGNKFBN = 10;</code>
+       * @param value The hOGCGGNKFBN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHOGCGGNKFBN(boolean value) {
+        
+        hOGCGGNKFBN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool HOGCGGNKFBN = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHOGCGGNKFBN() {
+        
+        hOGCGGNKFBN_ = false;
+        onChanged();
+        return this;
       }
 
       private int worldLevel_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 world_level = 9;</code>
+       * <code>uint32 world_level = 13;</code>
        * @return The worldLevel.
        */
       @java.lang.Override
@@ -1358,10 +1205,10 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 world_level = 9;</code>
+       * <code>uint32 world_level = 13;</code>
        * @param value The worldLevel to set.
        * @return This builder for chaining.
        */
@@ -1373,58 +1220,15 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 world_level = 9;</code>
+       * <code>uint32 world_level = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearWorldLevel() {
         
         worldLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFinishAnyLevel_ ;
-      /**
-       * <pre>
-       * offset: 52
-       * </pre>
-       *
-       * <code>bool is_finish_any_level = 14;</code>
-       * @return The isFinishAnyLevel.
-       */
-      @java.lang.Override
-      public boolean getIsFinishAnyLevel() {
-        return isFinishAnyLevel_;
-      }
-      /**
-       * <pre>
-       * offset: 52
-       * </pre>
-       *
-       * <code>bool is_finish_any_level = 14;</code>
-       * @param value The isFinishAnyLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinishAnyLevel(boolean value) {
-        
-        isFinishAnyLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 52
-       * </pre>
-       *
-       * <code>bool is_finish_any_level = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinishAnyLevel() {
-        
-        isFinishAnyLevel_ = false;
         onChanged();
         return this;
       }
@@ -1487,10 +1291,10 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ArenaChallengeActivityDetailInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_ArenaChallengeActivityDetailInfo_LevelOpenTimeMapEntry_descriptor;
+    internal_static_ArenaChallengeActivityDetailInfo_OKANCOLKFJDEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_ArenaChallengeActivityDetailInfo_LevelOpenTimeMapEntry_fieldAccessorTable;
+      internal_static_ArenaChallengeActivityDetailInfo_OKANCOLKFJDEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1501,33 +1305,33 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&ArenaChallengeActivityDetailInfo.proto" +
-      "\032\021BKKMECLDJEM.proto\"\205\002\n ArenaChallengeAc" +
-      "tivityDetailInfo\022T\n\023level_open_time_map\030" +
-      "\007 \003(\01327.ArenaChallengeActivityDetailInfo" +
-      ".LevelOpenTimeMapEntry\022 \n\nlevel_list\030\002 \003" +
-      "(\0132\014.BKKMECLDJEM\022\023\n\013world_level\030\t \001(\r\022\033\n" +
-      "\023is_finish_any_level\030\016 \001(\010\0327\n\025LevelOpenT" +
-      "imeMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:" +
-      "\0028\001B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\032\021EPGCCOOAEIO.proto\"\354\001\n ArenaChallengeAc" +
+      "tivityDetailInfo\022G\n\013OKANCOLKFJD\030\013 \003(\01322." +
+      "ArenaChallengeActivityDetailInfo.OKANCOL" +
+      "KFJDEntry\022!\n\013KEBKELKNABD\030\002 \003(\0132\014.EPGCCOO" +
+      "AEIO\022\023\n\013HOGCGGNKFBN\030\n \001(\010\022\023\n\013world_level" +
+      "\030\r \001(\r\0322\n\020OKANCOLKFJDEntry\022\013\n\003key\030\001 \001(\r\022" +
+      "\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.getDescriptor(),
         });
     internal_static_ArenaChallengeActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ArenaChallengeActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ArenaChallengeActivityDetailInfo_descriptor,
-        new java.lang.String[] { "LevelOpenTimeMap", "LevelList", "WorldLevel", "IsFinishAnyLevel", });
-    internal_static_ArenaChallengeActivityDetailInfo_LevelOpenTimeMapEntry_descriptor =
+        new java.lang.String[] { "OKANCOLKFJD", "KEBKELKNABD", "HOGCGGNKFBN", "WorldLevel", });
+    internal_static_ArenaChallengeActivityDetailInfo_OKANCOLKFJDEntry_descriptor =
       internal_static_ArenaChallengeActivityDetailInfo_descriptor.getNestedTypes().get(0);
-    internal_static_ArenaChallengeActivityDetailInfo_LevelOpenTimeMapEntry_fieldAccessorTable = new
+    internal_static_ArenaChallengeActivityDetailInfo_OKANCOLKFJDEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_ArenaChallengeActivityDetailInfo_LevelOpenTimeMapEntry_descriptor,
+        internal_static_ArenaChallengeActivityDetailInfo_OKANCOLKFJDEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.BKKMECLDJEMOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.EPGCCOOAEIOOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

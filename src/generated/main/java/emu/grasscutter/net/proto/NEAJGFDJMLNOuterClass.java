@@ -19,26 +19,18 @@ public final class NEAJGFDJMLNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 EGHGENOJNEK = 4;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 4;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FLDCDKPFHOJ = 13;</code>
      * @return The fLDCDKPFHOJ.
      */
     boolean getFLDCDKPFHOJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool BBLIGCOBMEC = 2;</code>
      * @return The bBLIGCOBMEC.
      */
@@ -96,7 +88,7 @@ public final class NEAJGFDJMLNOuterClass {
             }
             case 32: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 104: {
@@ -136,24 +128,20 @@ public final class NEAJGFDJMLNOuterClass {
               emu.grasscutter.net.proto.NEAJGFDJMLNOuterClass.NEAJGFDJMLN.class, emu.grasscutter.net.proto.NEAJGFDJMLNOuterClass.NEAJGFDJMLN.Builder.class);
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 4;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 4;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 4;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 4;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int FLDCDKPFHOJ_FIELD_NUMBER = 13;
     private boolean fLDCDKPFHOJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FLDCDKPFHOJ = 13;</code>
      * @return The fLDCDKPFHOJ.
      */
@@ -165,10 +153,6 @@ public final class NEAJGFDJMLNOuterClass {
     public static final int BBLIGCOBMEC_FIELD_NUMBER = 2;
     private boolean bBLIGCOBMEC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool BBLIGCOBMEC = 2;</code>
      * @return The bBLIGCOBMEC.
      */
@@ -194,8 +178,8 @@ public final class NEAJGFDJMLNOuterClass {
       if (bBLIGCOBMEC_ != false) {
         output.writeBool(2, bBLIGCOBMEC_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(4, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(4, stageId_);
       }
       if (fLDCDKPFHOJ_ != false) {
         output.writeBool(13, fLDCDKPFHOJ_);
@@ -213,9 +197,9 @@ public final class NEAJGFDJMLNOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, bBLIGCOBMEC_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, eGHGENOJNEK_);
+          .computeUInt32Size(4, stageId_);
       }
       if (fLDCDKPFHOJ_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -236,8 +220,8 @@ public final class NEAJGFDJMLNOuterClass {
       }
       emu.grasscutter.net.proto.NEAJGFDJMLNOuterClass.NEAJGFDJMLN other = (emu.grasscutter.net.proto.NEAJGFDJMLNOuterClass.NEAJGFDJMLN) obj;
 
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getFLDCDKPFHOJ()
           != other.getFLDCDKPFHOJ()) return false;
       if (getBBLIGCOBMEC()
@@ -253,8 +237,8 @@ public final class NEAJGFDJMLNOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + FLDCDKPFHOJ_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getFLDCDKPFHOJ());
@@ -394,7 +378,7 @@ public final class NEAJGFDJMLNOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         fLDCDKPFHOJ_ = false;
 
@@ -426,7 +410,7 @@ public final class NEAJGFDJMLNOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.NEAJGFDJMLNOuterClass.NEAJGFDJMLN buildPartial() {
         emu.grasscutter.net.proto.NEAJGFDJMLNOuterClass.NEAJGFDJMLN result = new emu.grasscutter.net.proto.NEAJGFDJMLNOuterClass.NEAJGFDJMLN(this);
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.fLDCDKPFHOJ_ = fLDCDKPFHOJ_;
         result.bBLIGCOBMEC_ = bBLIGCOBMEC_;
         onBuilt();
@@ -477,8 +461,8 @@ public final class NEAJGFDJMLNOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.NEAJGFDJMLNOuterClass.NEAJGFDJMLN other) {
         if (other == emu.grasscutter.net.proto.NEAJGFDJMLNOuterClass.NEAJGFDJMLN.getDefaultInstance()) return this;
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getFLDCDKPFHOJ() != false) {
           setFLDCDKPFHOJ(other.getFLDCDKPFHOJ());
@@ -515,43 +499,39 @@ public final class NEAJGFDJMLNOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 4;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 4;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 4;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 4;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 4;</code>
+       * <code>uint32 stage_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean fLDCDKPFHOJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FLDCDKPFHOJ = 13;</code>
        * @return The fLDCDKPFHOJ.
        */
@@ -560,10 +540,6 @@ public final class NEAJGFDJMLNOuterClass {
         return fLDCDKPFHOJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FLDCDKPFHOJ = 13;</code>
        * @param value The fLDCDKPFHOJ to set.
        * @return This builder for chaining.
@@ -575,10 +551,6 @@ public final class NEAJGFDJMLNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FLDCDKPFHOJ = 13;</code>
        * @return This builder for chaining.
        */
@@ -591,10 +563,6 @@ public final class NEAJGFDJMLNOuterClass {
 
       private boolean bBLIGCOBMEC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool BBLIGCOBMEC = 2;</code>
        * @return The bBLIGCOBMEC.
        */
@@ -603,10 +571,6 @@ public final class NEAJGFDJMLNOuterClass {
         return bBLIGCOBMEC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool BBLIGCOBMEC = 2;</code>
        * @param value The bBLIGCOBMEC to set.
        * @return This builder for chaining.
@@ -618,10 +582,6 @@ public final class NEAJGFDJMLNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool BBLIGCOBMEC = 2;</code>
        * @return This builder for chaining.
        */
@@ -698,10 +658,10 @@ public final class NEAJGFDJMLNOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021NEAJGFDJMLN.proto\"L\n\013NEAJGFDJMLN\022\023\n\013EG" +
-      "HGENOJNEK\030\004 \001(\r\022\023\n\013FLDCDKPFHOJ\030\r \001(\010\022\023\n\013" +
-      "BBLIGCOBMEC\030\002 \001(\010B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\n\021NEAJGFDJMLN.proto\"I\n\013NEAJGFDJMLN\022\020\n\010st" +
+      "age_id\030\004 \001(\r\022\023\n\013FLDCDKPFHOJ\030\r \001(\010\022\023\n\013BBL" +
+      "IGCOBMEC\030\002 \001(\010B\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -712,7 +672,7 @@ public final class NEAJGFDJMLNOuterClass {
     internal_static_NEAJGFDJMLN_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_NEAJGFDJMLN_descriptor,
-        new java.lang.String[] { "EGHGENOJNEK", "FLDCDKPFHOJ", "BBLIGCOBMEC", });
+        new java.lang.String[] { "StageId", "FLDCDKPFHOJ", "BBLIGCOBMEC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

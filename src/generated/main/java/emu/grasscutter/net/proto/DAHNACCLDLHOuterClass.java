@@ -19,57 +19,33 @@ public final class DAHNACCLDLHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 7;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 7;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 7;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 group_id = 12;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 reward_id = 4;</code>
      * @return The rewardId.
      */
     int getRewardId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LPILPIBJOAC = 9;</code>
      * @return The lPILPIBJOAC.
      */
@@ -183,10 +159,6 @@ public final class DAHNACCLDLHOuterClass {
     public static final int POS_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 7;</code>
      * @return Whether the pos field is set.
      */
@@ -195,10 +167,6 @@ public final class DAHNACCLDLHOuterClass {
       return pos_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 7;</code>
      * @return The pos.
      */
@@ -207,10 +175,6 @@ public final class DAHNACCLDLHOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 7;</code>
      */
     @java.lang.Override
@@ -221,10 +185,6 @@ public final class DAHNACCLDLHOuterClass {
     public static final int GROUP_ID_FIELD_NUMBER = 12;
     private int groupId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 group_id = 12;</code>
      * @return The groupId.
      */
@@ -236,10 +196,6 @@ public final class DAHNACCLDLHOuterClass {
     public static final int REWARD_ID_FIELD_NUMBER = 4;
     private int rewardId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 reward_id = 4;</code>
      * @return The rewardId.
      */
@@ -251,10 +207,6 @@ public final class DAHNACCLDLHOuterClass {
     public static final int LPILPIBJOAC_FIELD_NUMBER = 9;
     private int lPILPIBJOAC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LPILPIBJOAC = 9;</code>
      * @return The lPILPIBJOAC.
      */
@@ -633,10 +585,6 @@ public final class DAHNACCLDLHOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 7;</code>
        * @return Whether the pos field is set.
        */
@@ -644,10 +592,6 @@ public final class DAHNACCLDLHOuterClass {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 7;</code>
        * @return The pos.
        */
@@ -659,10 +603,6 @@ public final class DAHNACCLDLHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 7;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -679,10 +619,6 @@ public final class DAHNACCLDLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 7;</code>
        */
       public Builder setPos(
@@ -697,10 +633,6 @@ public final class DAHNACCLDLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 7;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -719,10 +651,6 @@ public final class DAHNACCLDLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 7;</code>
        */
       public Builder clearPos() {
@@ -737,10 +665,6 @@ public final class DAHNACCLDLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 7;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
@@ -749,10 +673,6 @@ public final class DAHNACCLDLHOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 7;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -764,10 +684,6 @@ public final class DAHNACCLDLHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -786,10 +702,6 @@ public final class DAHNACCLDLHOuterClass {
 
       private int groupId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 12;</code>
        * @return The groupId.
        */
@@ -798,10 +710,6 @@ public final class DAHNACCLDLHOuterClass {
         return groupId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 12;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
@@ -813,10 +721,6 @@ public final class DAHNACCLDLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 group_id = 12;</code>
        * @return This builder for chaining.
        */
@@ -829,10 +733,6 @@ public final class DAHNACCLDLHOuterClass {
 
       private int rewardId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 reward_id = 4;</code>
        * @return The rewardId.
        */
@@ -841,10 +741,6 @@ public final class DAHNACCLDLHOuterClass {
         return rewardId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 reward_id = 4;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
@@ -856,10 +752,6 @@ public final class DAHNACCLDLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 reward_id = 4;</code>
        * @return This builder for chaining.
        */
@@ -872,10 +764,6 @@ public final class DAHNACCLDLHOuterClass {
 
       private int lPILPIBJOAC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LPILPIBJOAC = 9;</code>
        * @return The lPILPIBJOAC.
        */
@@ -884,10 +772,6 @@ public final class DAHNACCLDLHOuterClass {
         return lPILPIBJOAC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LPILPIBJOAC = 9;</code>
        * @param value The lPILPIBJOAC to set.
        * @return This builder for chaining.
@@ -899,10 +783,6 @@ public final class DAHNACCLDLHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LPILPIBJOAC = 9;</code>
        * @return This builder for chaining.
        */

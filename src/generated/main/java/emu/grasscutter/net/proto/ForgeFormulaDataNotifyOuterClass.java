@@ -25,14 +25,15 @@ public final class ForgeFormulaDataNotifyOuterClass {
     boolean getIsLocked();
 
     /**
-     * <code>uint32 forge_id = 5;</code>
+     * <code>uint32 forge_id = 2;</code>
      * @return The forgeId.
      */
     int getForgeId();
   }
   /**
    * <pre>
-   * CmdId: 20782
+   * CmdId: 28490
+   * Obf: ILMLELNIKGE
    * </pre>
    *
    * Protobuf type {@code ForgeFormulaDataNotify}
@@ -79,14 +80,14 @@ public final class ForgeFormulaDataNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              forgeId_ = input.readUInt32();
+              break;
+            }
             case 32: {
 
               isLocked_ = input.readBool();
-              break;
-            }
-            case 40: {
-
-              forgeId_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,10 +133,10 @@ public final class ForgeFormulaDataNotifyOuterClass {
       return isLocked_;
     }
 
-    public static final int FORGE_ID_FIELD_NUMBER = 5;
+    public static final int FORGE_ID_FIELD_NUMBER = 2;
     private int forgeId_;
     /**
-     * <code>uint32 forge_id = 5;</code>
+     * <code>uint32 forge_id = 2;</code>
      * @return The forgeId.
      */
     @java.lang.Override
@@ -157,11 +158,11 @@ public final class ForgeFormulaDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (forgeId_ != 0) {
+        output.writeUInt32(2, forgeId_);
+      }
       if (isLocked_ != false) {
         output.writeBool(4, isLocked_);
-      }
-      if (forgeId_ != 0) {
-        output.writeUInt32(5, forgeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +173,13 @@ public final class ForgeFormulaDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (forgeId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, forgeId_);
+      }
       if (isLocked_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(4, isLocked_);
-      }
-      if (forgeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, forgeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,7 +313,8 @@ public final class ForgeFormulaDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20782
+     * CmdId: 28490
+     * Obf: ILMLELNIKGE
      * </pre>
      *
      * Protobuf type {@code ForgeFormulaDataNotify}
@@ -500,7 +502,7 @@ public final class ForgeFormulaDataNotifyOuterClass {
 
       private int forgeId_ ;
       /**
-       * <code>uint32 forge_id = 5;</code>
+       * <code>uint32 forge_id = 2;</code>
        * @return The forgeId.
        */
       @java.lang.Override
@@ -508,7 +510,7 @@ public final class ForgeFormulaDataNotifyOuterClass {
         return forgeId_;
       }
       /**
-       * <code>uint32 forge_id = 5;</code>
+       * <code>uint32 forge_id = 2;</code>
        * @param value The forgeId to set.
        * @return This builder for chaining.
        */
@@ -519,7 +521,7 @@ public final class ForgeFormulaDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 forge_id = 5;</code>
+       * <code>uint32 forge_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearForgeId() {
@@ -597,7 +599,7 @@ public final class ForgeFormulaDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034ForgeFormulaDataNotify.proto\"=\n\026ForgeF" +
       "ormulaDataNotify\022\021\n\tis_locked\030\004 \001(\010\022\020\n\010f" +
-      "orge_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "orge_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

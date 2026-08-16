@@ -19,30 +19,18 @@ public final class LJHJFCOJMDGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 7;</code>
      * @return The cKOCCKMBGJN.
      */
     int getCKOCCKMBGJN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 10;</code>
      * @return The dALMDMCJNNK.
      */
     boolean getDALMDMCJNNK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
@@ -143,10 +131,6 @@ public final class LJHJFCOJMDGOuterClass {
     public static final int CKOCCKMBGJN_FIELD_NUMBER = 7;
     private int cKOCCKMBGJN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 7;</code>
      * @return The cKOCCKMBGJN.
      */
@@ -158,10 +142,6 @@ public final class LJHJFCOJMDGOuterClass {
     public static final int DALMDMCJNNK_FIELD_NUMBER = 10;
     private boolean dALMDMCJNNK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 10;</code>
      * @return The dALMDMCJNNK.
      */
@@ -173,10 +153,6 @@ public final class LJHJFCOJMDGOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 6;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
@@ -524,10 +500,6 @@ public final class LJHJFCOJMDGOuterClass {
 
       private int cKOCCKMBGJN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 7;</code>
        * @return The cKOCCKMBGJN.
        */
@@ -536,10 +508,6 @@ public final class LJHJFCOJMDGOuterClass {
         return cKOCCKMBGJN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 7;</code>
        * @param value The cKOCCKMBGJN to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class LJHJFCOJMDGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 7;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class LJHJFCOJMDGOuterClass {
 
       private boolean dALMDMCJNNK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 10;</code>
        * @return The dALMDMCJNNK.
        */
@@ -579,10 +539,6 @@ public final class LJHJFCOJMDGOuterClass {
         return dALMDMCJNNK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 10;</code>
        * @param value The dALMDMCJNNK to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class LJHJFCOJMDGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 10;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class LJHJFCOJMDGOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @return The levelId.
        */
@@ -622,10 +570,6 @@ public final class LJHJFCOJMDGOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class LJHJFCOJMDGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @return This builder for chaining.
        */

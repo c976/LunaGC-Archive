@@ -19,19 +19,11 @@ public final class BELNHAFOHMLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string nickname = 3;</code>
      * @return The nickname.
      */
     java.lang.String getNickname();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string nickname = 3;</code>
      * @return The bytes for nickname.
      */
@@ -39,19 +31,11 @@ public final class BELNHAFOHMLOuterClass {
         getNicknameBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string online_id = 14;</code>
      * @return The onlineId.
      */
     java.lang.String getOnlineId();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string online_id = 14;</code>
      * @return The bytes for onlineId.
      */
@@ -59,47 +43,27 @@ public final class BELNHAFOHMLOuterClass {
         getOnlineIdBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.ProfilePicture profile_picture = 2;</code>
      * @return Whether the profilePicture field is set.
      */
     boolean hasProfilePicture();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.ProfilePicture profile_picture = 2;</code>
      * @return The profilePicture.
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.ProfilePicture profile_picture = 2;</code>
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 uid = 12;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ABNJPPOAOCG = 9;</code>
      * @return The aBNJPPOAOCG.
      */
@@ -222,10 +186,6 @@ public final class BELNHAFOHMLOuterClass {
     public static final int NICKNAME_FIELD_NUMBER = 3;
     private volatile java.lang.Object nickname_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string nickname = 3;</code>
      * @return The nickname.
      */
@@ -243,10 +203,6 @@ public final class BELNHAFOHMLOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string nickname = 3;</code>
      * @return The bytes for nickname.
      */
@@ -268,10 +224,6 @@ public final class BELNHAFOHMLOuterClass {
     public static final int ONLINE_ID_FIELD_NUMBER = 14;
     private volatile java.lang.Object onlineId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string online_id = 14;</code>
      * @return The onlineId.
      */
@@ -289,10 +241,6 @@ public final class BELNHAFOHMLOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string online_id = 14;</code>
      * @return The bytes for onlineId.
      */
@@ -314,10 +262,6 @@ public final class BELNHAFOHMLOuterClass {
     public static final int PROFILE_PICTURE_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.ProfilePicture profile_picture = 2;</code>
      * @return Whether the profilePicture field is set.
      */
@@ -326,10 +270,6 @@ public final class BELNHAFOHMLOuterClass {
       return profilePicture_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.ProfilePicture profile_picture = 2;</code>
      * @return The profilePicture.
      */
@@ -338,10 +278,6 @@ public final class BELNHAFOHMLOuterClass {
       return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.ProfilePicture profile_picture = 2;</code>
      */
     @java.lang.Override
@@ -352,10 +288,6 @@ public final class BELNHAFOHMLOuterClass {
     public static final int UID_FIELD_NUMBER = 12;
     private int uid_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 uid = 12;</code>
      * @return The uid.
      */
@@ -367,10 +299,6 @@ public final class BELNHAFOHMLOuterClass {
     public static final int ABNJPPOAOCG_FIELD_NUMBER = 9;
     private int aBNJPPOAOCG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ABNJPPOAOCG = 9;</code>
      * @return The aBNJPPOAOCG.
      */
@@ -764,10 +692,6 @@ public final class BELNHAFOHMLOuterClass {
 
       private java.lang.Object nickname_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string nickname = 3;</code>
        * @return The nickname.
        */
@@ -784,10 +708,6 @@ public final class BELNHAFOHMLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string nickname = 3;</code>
        * @return The bytes for nickname.
        */
@@ -805,10 +725,6 @@ public final class BELNHAFOHMLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string nickname = 3;</code>
        * @param value The nickname to set.
        * @return This builder for chaining.
@@ -824,10 +740,6 @@ public final class BELNHAFOHMLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string nickname = 3;</code>
        * @return This builder for chaining.
        */
@@ -838,10 +750,6 @@ public final class BELNHAFOHMLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string nickname = 3;</code>
        * @param value The bytes for nickname to set.
        * @return This builder for chaining.
@@ -860,10 +768,6 @@ public final class BELNHAFOHMLOuterClass {
 
       private java.lang.Object onlineId_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string online_id = 14;</code>
        * @return The onlineId.
        */
@@ -880,10 +784,6 @@ public final class BELNHAFOHMLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string online_id = 14;</code>
        * @return The bytes for onlineId.
        */
@@ -901,10 +801,6 @@ public final class BELNHAFOHMLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string online_id = 14;</code>
        * @param value The onlineId to set.
        * @return This builder for chaining.
@@ -920,10 +816,6 @@ public final class BELNHAFOHMLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string online_id = 14;</code>
        * @return This builder for chaining.
        */
@@ -934,10 +826,6 @@ public final class BELNHAFOHMLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string online_id = 14;</code>
        * @param value The bytes for onlineId to set.
        * @return This builder for chaining.
@@ -958,10 +846,6 @@ public final class BELNHAFOHMLOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ProfilePicture profile_picture = 2;</code>
        * @return Whether the profilePicture field is set.
        */
@@ -969,10 +853,6 @@ public final class BELNHAFOHMLOuterClass {
         return profilePictureBuilder_ != null || profilePicture_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ProfilePicture profile_picture = 2;</code>
        * @return The profilePicture.
        */
@@ -984,10 +864,6 @@ public final class BELNHAFOHMLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ProfilePicture profile_picture = 2;</code>
        */
       public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
@@ -1004,10 +880,6 @@ public final class BELNHAFOHMLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ProfilePicture profile_picture = 2;</code>
        */
       public Builder setProfilePicture(
@@ -1022,10 +894,6 @@ public final class BELNHAFOHMLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ProfilePicture profile_picture = 2;</code>
        */
       public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
@@ -1044,10 +912,6 @@ public final class BELNHAFOHMLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ProfilePicture profile_picture = 2;</code>
        */
       public Builder clearProfilePicture() {
@@ -1062,10 +926,6 @@ public final class BELNHAFOHMLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ProfilePicture profile_picture = 2;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
@@ -1074,10 +934,6 @@ public final class BELNHAFOHMLOuterClass {
         return getProfilePictureFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ProfilePicture profile_picture = 2;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
@@ -1089,10 +945,6 @@ public final class BELNHAFOHMLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.ProfilePicture profile_picture = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1111,10 +963,6 @@ public final class BELNHAFOHMLOuterClass {
 
       private int uid_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 uid = 12;</code>
        * @return The uid.
        */
@@ -1123,10 +971,6 @@ public final class BELNHAFOHMLOuterClass {
         return uid_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 uid = 12;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
@@ -1138,10 +982,6 @@ public final class BELNHAFOHMLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 uid = 12;</code>
        * @return This builder for chaining.
        */
@@ -1154,10 +994,6 @@ public final class BELNHAFOHMLOuterClass {
 
       private int aBNJPPOAOCG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ABNJPPOAOCG = 9;</code>
        * @return The aBNJPPOAOCG.
        */
@@ -1166,10 +1002,6 @@ public final class BELNHAFOHMLOuterClass {
         return aBNJPPOAOCG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ABNJPPOAOCG = 9;</code>
        * @param value The aBNJPPOAOCG to set.
        * @return This builder for chaining.
@@ -1181,10 +1013,6 @@ public final class BELNHAFOHMLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ABNJPPOAOCG = 9;</code>
        * @return This builder for chaining.
        */

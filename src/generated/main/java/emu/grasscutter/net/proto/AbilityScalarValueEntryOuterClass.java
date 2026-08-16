@@ -20,65 +20,7 @@ public final class AbilityScalarValueEntryOuterClass {
 
     /**
      * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>float float_value = 3;</code>
-     * @return Whether the floatValue field is set.
-     */
-    boolean hasFloatValue();
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>float float_value = 3;</code>
-     * @return The floatValue.
-     */
-    float getFloatValue();
-
-    /**
-     * <code>string string_value = 4;</code>
-     * @return Whether the stringValue field is set.
-     */
-    boolean hasStringValue();
-    /**
-     * <code>string string_value = 4;</code>
-     * @return The stringValue.
-     */
-    java.lang.String getStringValue();
-    /**
-     * <code>string string_value = 4;</code>
-     * @return The bytes for stringValue.
-     */
-    com.google.protobuf.ByteString
-        getStringValueBytes();
-
-    /**
-     * <code>int32 int_value = 5;</code>
-     * @return Whether the intValue field is set.
-     */
-    boolean hasIntValue();
-    /**
-     * <code>int32 int_value = 5;</code>
-     * @return The intValue.
-     */
-    int getIntValue();
-
-    /**
-     * <code>uint32 uint_value = 6;</code>
-     * @return Whether the uintValue field is set.
-     */
-    boolean hasUintValue();
-    /**
-     * <code>uint32 uint_value = 6;</code>
-     * @return The uintValue.
-     */
-    int getUintValue();
-
-    /**
-     * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString key = 1;</code>
@@ -87,7 +29,7 @@ public final class AbilityScalarValueEntryOuterClass {
     boolean hasKey();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString key = 1;</code>
@@ -96,7 +38,7 @@ public final class AbilityScalarValueEntryOuterClass {
     emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getKey();
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString key = 1;</code>
@@ -104,17 +46,14 @@ public final class AbilityScalarValueEntryOuterClass {
     emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getKeyOrBuilder();
 
     /**
-     * <code>.AbilityScalarType value_type = 2;</code>
-     * @return The enum numeric value on the wire for valueType.
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>float float_value = 3;</code>
+     * @return The floatValue.
      */
-    int getValueTypeValue();
-    /**
-     * <code>.AbilityScalarType value_type = 2;</code>
-     * @return The valueType.
-     */
-    emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType();
-
-    public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.ValueCase getValueCase();
+    float getFloatValue();
   }
   /**
    * Protobuf type {@code AbilityScalarValueEntry}
@@ -129,7 +68,6 @@ public final class AbilityScalarValueEntryOuterClass {
       super(builder);
     }
     private AbilityScalarValueEntry() {
-      valueType_ = 0;
     }
 
     @java.lang.Override
@@ -175,31 +113,9 @@ public final class AbilityScalarValueEntryOuterClass {
 
               break;
             }
-            case 16: {
-              int rawValue = input.readEnum();
-
-              valueType_ = rawValue;
-              break;
-            }
             case 29: {
-              valueCase_ = 3;
-              value_ = input.readFloat();
-              break;
-            }
-            case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
-              valueCase_ = 4;
-              value_ = s;
-              break;
-            }
-            case 40: {
-              valueCase_ = 5;
-              value_ = input.readInt32();
-              break;
-            }
-            case 48: {
-              valueCase_ = 6;
-              value_ = input.readUInt32();
+
+              floatValue_ = input.readFloat();
               break;
             }
             default: {
@@ -234,179 +150,11 @@ public final class AbilityScalarValueEntryOuterClass {
               emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.class, emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.Builder.class);
     }
 
-    private int valueCase_ = 0;
-    private java.lang.Object value_;
-    public enum ValueCase
-        implements com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      FLOAT_VALUE(3),
-      STRING_VALUE(4),
-      INT_VALUE(5),
-      UINT_VALUE(6),
-      VALUE_NOT_SET(0);
-      private final int value;
-      private ValueCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ValueCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static ValueCase forNumber(int value) {
-        switch (value) {
-          case 3: return FLOAT_VALUE;
-          case 4: return STRING_VALUE;
-          case 5: return INT_VALUE;
-          case 6: return UINT_VALUE;
-          case 0: return VALUE_NOT_SET;
-          default: return null;
-        }
-      }
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public ValueCase
-    getValueCase() {
-      return ValueCase.forNumber(
-          valueCase_);
-    }
-
-    public static final int FLOAT_VALUE_FIELD_NUMBER = 3;
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>float float_value = 3;</code>
-     * @return Whether the floatValue field is set.
-     */
-    @java.lang.Override
-    public boolean hasFloatValue() {
-      return valueCase_ == 3;
-    }
-    /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
-     * <code>float float_value = 3;</code>
-     * @return The floatValue.
-     */
-    @java.lang.Override
-    public float getFloatValue() {
-      if (valueCase_ == 3) {
-        return (java.lang.Float) value_;
-      }
-      return 0F;
-    }
-
-    public static final int STRING_VALUE_FIELD_NUMBER = 4;
-    /**
-     * <code>string string_value = 4;</code>
-     * @return Whether the stringValue field is set.
-     */
-    public boolean hasStringValue() {
-      return valueCase_ == 4;
-    }
-    /**
-     * <code>string string_value = 4;</code>
-     * @return The stringValue.
-     */
-    public java.lang.String getStringValue() {
-      java.lang.Object ref = "";
-      if (valueCase_ == 4) {
-        ref = value_;
-      }
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (valueCase_ == 4) {
-          value_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>string string_value = 4;</code>
-     * @return The bytes for stringValue.
-     */
-    public com.google.protobuf.ByteString
-        getStringValueBytes() {
-      java.lang.Object ref = "";
-      if (valueCase_ == 4) {
-        ref = value_;
-      }
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        if (valueCase_ == 4) {
-          value_ = b;
-        }
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int INT_VALUE_FIELD_NUMBER = 5;
-    /**
-     * <code>int32 int_value = 5;</code>
-     * @return Whether the intValue field is set.
-     */
-    @java.lang.Override
-    public boolean hasIntValue() {
-      return valueCase_ == 5;
-    }
-    /**
-     * <code>int32 int_value = 5;</code>
-     * @return The intValue.
-     */
-    @java.lang.Override
-    public int getIntValue() {
-      if (valueCase_ == 5) {
-        return (java.lang.Integer) value_;
-      }
-      return 0;
-    }
-
-    public static final int UINT_VALUE_FIELD_NUMBER = 6;
-    /**
-     * <code>uint32 uint_value = 6;</code>
-     * @return Whether the uintValue field is set.
-     */
-    @java.lang.Override
-    public boolean hasUintValue() {
-      return valueCase_ == 6;
-    }
-    /**
-     * <code>uint32 uint_value = 6;</code>
-     * @return The uintValue.
-     */
-    @java.lang.Override
-    public int getUintValue() {
-      if (valueCase_ == 6) {
-        return (java.lang.Integer) value_;
-      }
-      return 0;
-    }
-
     public static final int KEY_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString key_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString key = 1;</code>
@@ -418,7 +166,7 @@ public final class AbilityScalarValueEntryOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString key = 1;</code>
@@ -430,7 +178,7 @@ public final class AbilityScalarValueEntryOuterClass {
     }
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.AbilityString key = 1;</code>
@@ -440,23 +188,19 @@ public final class AbilityScalarValueEntryOuterClass {
       return getKey();
     }
 
-    public static final int VALUE_TYPE_FIELD_NUMBER = 2;
-    private int valueType_;
+    public static final int FLOAT_VALUE_FIELD_NUMBER = 3;
+    private float floatValue_;
     /**
-     * <code>.AbilityScalarType value_type = 2;</code>
-     * @return The enum numeric value on the wire for valueType.
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>float float_value = 3;</code>
+     * @return The floatValue.
      */
-    @java.lang.Override public int getValueTypeValue() {
-      return valueType_;
-    }
-    /**
-     * <code>.AbilityScalarType value_type = 2;</code>
-     * @return The valueType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType result = emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.valueOf(valueType_);
-      return result == null ? emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.UNRECOGNIZED : result;
+    @java.lang.Override
+    public float getFloatValue() {
+      return floatValue_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -476,23 +220,8 @@ public final class AbilityScalarValueEntryOuterClass {
       if (key_ != null) {
         output.writeMessage(1, getKey());
       }
-      if (valueType_ != emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.ABILITY_SCALAR_TYPE_UNKNOW.getNumber()) {
-        output.writeEnum(2, valueType_);
-      }
-      if (valueCase_ == 3) {
-        output.writeFloat(
-            3, (float)((java.lang.Float) value_));
-      }
-      if (valueCase_ == 4) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, value_);
-      }
-      if (valueCase_ == 5) {
-        output.writeInt32(
-            5, (int)((java.lang.Integer) value_));
-      }
-      if (valueCase_ == 6) {
-        output.writeUInt32(
-            6, (int)((java.lang.Integer) value_));
+      if (floatValue_ != 0F) {
+        output.writeFloat(3, floatValue_);
       }
       unknownFields.writeTo(output);
     }
@@ -507,27 +236,9 @@ public final class AbilityScalarValueEntryOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getKey());
       }
-      if (valueType_ != emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.ABILITY_SCALAR_TYPE_UNKNOW.getNumber()) {
+      if (floatValue_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, valueType_);
-      }
-      if (valueCase_ == 3) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(
-              3, (float)((java.lang.Float) value_));
-      }
-      if (valueCase_ == 4) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, value_);
-      }
-      if (valueCase_ == 5) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(
-              5, (int)((java.lang.Integer) value_));
-      }
-      if (valueCase_ == 6) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(
-              6, (int)((java.lang.Integer) value_));
+          .computeFloatSize(3, floatValue_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -549,29 +260,9 @@ public final class AbilityScalarValueEntryOuterClass {
         if (!getKey()
             .equals(other.getKey())) return false;
       }
-      if (valueType_ != other.valueType_) return false;
-      if (!getValueCase().equals(other.getValueCase())) return false;
-      switch (valueCase_) {
-        case 3:
-          if (java.lang.Float.floatToIntBits(getFloatValue())
-              != java.lang.Float.floatToIntBits(
-                  other.getFloatValue())) return false;
-          break;
-        case 4:
-          if (!getStringValue()
-              .equals(other.getStringValue())) return false;
-          break;
-        case 5:
-          if (getIntValue()
-              != other.getIntValue()) return false;
-          break;
-        case 6:
-          if (getUintValue()
-              != other.getUintValue()) return false;
-          break;
-        case 0:
-        default:
-      }
+      if (java.lang.Float.floatToIntBits(getFloatValue())
+          != java.lang.Float.floatToIntBits(
+              other.getFloatValue())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -587,29 +278,9 @@ public final class AbilityScalarValueEntryOuterClass {
         hash = (37 * hash) + KEY_FIELD_NUMBER;
         hash = (53 * hash) + getKey().hashCode();
       }
-      hash = (37 * hash) + VALUE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + valueType_;
-      switch (valueCase_) {
-        case 3:
-          hash = (37 * hash) + FLOAT_VALUE_FIELD_NUMBER;
-          hash = (53 * hash) + java.lang.Float.floatToIntBits(
-              getFloatValue());
-          break;
-        case 4:
-          hash = (37 * hash) + STRING_VALUE_FIELD_NUMBER;
-          hash = (53 * hash) + getStringValue().hashCode();
-          break;
-        case 5:
-          hash = (37 * hash) + INT_VALUE_FIELD_NUMBER;
-          hash = (53 * hash) + getIntValue();
-          break;
-        case 6:
-          hash = (37 * hash) + UINT_VALUE_FIELD_NUMBER;
-          hash = (53 * hash) + getUintValue();
-          break;
-        case 0:
-        default:
-      }
+      hash = (37 * hash) + FLOAT_VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getFloatValue());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -749,10 +420,8 @@ public final class AbilityScalarValueEntryOuterClass {
           key_ = null;
           keyBuilder_ = null;
         }
-        valueType_ = 0;
+        floatValue_ = 0F;
 
-        valueCase_ = 0;
-        value_ = null;
         return this;
       }
 
@@ -779,25 +448,12 @@ public final class AbilityScalarValueEntryOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry buildPartial() {
         emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry result = new emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry(this);
-        if (valueCase_ == 3) {
-          result.value_ = value_;
-        }
-        if (valueCase_ == 4) {
-          result.value_ = value_;
-        }
-        if (valueCase_ == 5) {
-          result.value_ = value_;
-        }
-        if (valueCase_ == 6) {
-          result.value_ = value_;
-        }
         if (keyBuilder_ == null) {
           result.key_ = key_;
         } else {
           result.key_ = keyBuilder_.build();
         }
-        result.valueType_ = valueType_;
-        result.valueCase_ = valueCase_;
+        result.floatValue_ = floatValue_;
         onBuilt();
         return result;
       }
@@ -849,31 +505,8 @@ public final class AbilityScalarValueEntryOuterClass {
         if (other.hasKey()) {
           mergeKey(other.getKey());
         }
-        if (other.valueType_ != 0) {
-          setValueTypeValue(other.getValueTypeValue());
-        }
-        switch (other.getValueCase()) {
-          case FLOAT_VALUE: {
-            setFloatValue(other.getFloatValue());
-            break;
-          }
-          case STRING_VALUE: {
-            valueCase_ = 4;
-            value_ = other.value_;
-            onChanged();
-            break;
-          }
-          case INT_VALUE: {
-            setIntValue(other.getIntValue());
-            break;
-          }
-          case UINT_VALUE: {
-            setUintValue(other.getUintValue());
-            break;
-          }
-          case VALUE_NOT_SET: {
-            break;
-          }
+        if (other.getFloatValue() != 0F) {
+          setFloatValue(other.getFloatValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -903,264 +536,13 @@ public final class AbilityScalarValueEntryOuterClass {
         }
         return this;
       }
-      private int valueCase_ = 0;
-      private java.lang.Object value_;
-      public ValueCase
-          getValueCase() {
-        return ValueCase.forNumber(
-            valueCase_);
-      }
-
-      public Builder clearValue() {
-        valueCase_ = 0;
-        value_ = null;
-        onChanged();
-        return this;
-      }
-
-
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>float float_value = 3;</code>
-       * @return Whether the floatValue field is set.
-       */
-      public boolean hasFloatValue() {
-        return valueCase_ == 3;
-      }
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>float float_value = 3;</code>
-       * @return The floatValue.
-       */
-      public float getFloatValue() {
-        if (valueCase_ == 3) {
-          return (java.lang.Float) value_;
-        }
-        return 0F;
-      }
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>float float_value = 3;</code>
-       * @param value The floatValue to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFloatValue(float value) {
-        valueCase_ = 3;
-        value_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
-       * <code>float float_value = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFloatValue() {
-        if (valueCase_ == 3) {
-          valueCase_ = 0;
-          value_ = null;
-          onChanged();
-        }
-        return this;
-      }
-
-      /**
-       * <code>string string_value = 4;</code>
-       * @return Whether the stringValue field is set.
-       */
-      @java.lang.Override
-      public boolean hasStringValue() {
-        return valueCase_ == 4;
-      }
-      /**
-       * <code>string string_value = 4;</code>
-       * @return The stringValue.
-       */
-      @java.lang.Override
-      public java.lang.String getStringValue() {
-        java.lang.Object ref = "";
-        if (valueCase_ == 4) {
-          ref = value_;
-        }
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (valueCase_ == 4) {
-            value_ = s;
-          }
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string string_value = 4;</code>
-       * @return The bytes for stringValue.
-       */
-      @java.lang.Override
-      public com.google.protobuf.ByteString
-          getStringValueBytes() {
-        java.lang.Object ref = "";
-        if (valueCase_ == 4) {
-          ref = value_;
-        }
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          if (valueCase_ == 4) {
-            value_ = b;
-          }
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string string_value = 4;</code>
-       * @param value The stringValue to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStringValue(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  valueCase_ = 4;
-        value_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string string_value = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStringValue() {
-        if (valueCase_ == 4) {
-          valueCase_ = 0;
-          value_ = null;
-          onChanged();
-        }
-        return this;
-      }
-      /**
-       * <code>string string_value = 4;</code>
-       * @param value The bytes for stringValue to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStringValueBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        valueCase_ = 4;
-        value_ = value;
-        onChanged();
-        return this;
-      }
-
-      /**
-       * <code>int32 int_value = 5;</code>
-       * @return Whether the intValue field is set.
-       */
-      public boolean hasIntValue() {
-        return valueCase_ == 5;
-      }
-      /**
-       * <code>int32 int_value = 5;</code>
-       * @return The intValue.
-       */
-      public int getIntValue() {
-        if (valueCase_ == 5) {
-          return (java.lang.Integer) value_;
-        }
-        return 0;
-      }
-      /**
-       * <code>int32 int_value = 5;</code>
-       * @param value The intValue to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIntValue(int value) {
-        valueCase_ = 5;
-        value_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 int_value = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIntValue() {
-        if (valueCase_ == 5) {
-          valueCase_ = 0;
-          value_ = null;
-          onChanged();
-        }
-        return this;
-      }
-
-      /**
-       * <code>uint32 uint_value = 6;</code>
-       * @return Whether the uintValue field is set.
-       */
-      public boolean hasUintValue() {
-        return valueCase_ == 6;
-      }
-      /**
-       * <code>uint32 uint_value = 6;</code>
-       * @return The uintValue.
-       */
-      public int getUintValue() {
-        if (valueCase_ == 6) {
-          return (java.lang.Integer) value_;
-        }
-        return 0;
-      }
-      /**
-       * <code>uint32 uint_value = 6;</code>
-       * @param value The uintValue to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUintValue(int value) {
-        valueCase_ = 6;
-        value_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uint_value = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUintValue() {
-        if (valueCase_ == 6) {
-          valueCase_ = 0;
-          value_ = null;
-          onChanged();
-        }
-        return this;
-      }
 
       private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString key_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> keyBuilder_;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString key = 1;</code>
@@ -1171,7 +553,7 @@ public final class AbilityScalarValueEntryOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString key = 1;</code>
@@ -1186,7 +568,7 @@ public final class AbilityScalarValueEntryOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString key = 1;</code>
@@ -1206,7 +588,7 @@ public final class AbilityScalarValueEntryOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString key = 1;</code>
@@ -1224,7 +606,7 @@ public final class AbilityScalarValueEntryOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString key = 1;</code>
@@ -1246,7 +628,7 @@ public final class AbilityScalarValueEntryOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString key = 1;</code>
@@ -1264,7 +646,7 @@ public final class AbilityScalarValueEntryOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString key = 1;</code>
@@ -1276,7 +658,7 @@ public final class AbilityScalarValueEntryOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString key = 1;</code>
@@ -1291,7 +673,7 @@ public final class AbilityScalarValueEntryOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.AbilityString key = 1;</code>
@@ -1310,56 +692,45 @@ public final class AbilityScalarValueEntryOuterClass {
         return keyBuilder_;
       }
 
-      private int valueType_ = 0;
+      private float floatValue_ ;
       /**
-       * <code>.AbilityScalarType value_type = 2;</code>
-       * @return The enum numeric value on the wire for valueType.
-       */
-      @java.lang.Override public int getValueTypeValue() {
-        return valueType_;
-      }
-      /**
-       * <code>.AbilityScalarType value_type = 2;</code>
-       * @param value The enum numeric value on the wire for valueType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setValueTypeValue(int value) {
-        
-        valueType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.AbilityScalarType value_type = 2;</code>
-       * @return The valueType.
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>float float_value = 3;</code>
+       * @return The floatValue.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType getValueType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType result = emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.valueOf(valueType_);
-        return result == null ? emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.UNRECOGNIZED : result;
+      public float getFloatValue() {
+        return floatValue_;
       }
       /**
-       * <code>.AbilityScalarType value_type = 2;</code>
-       * @param value The valueType to set.
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>float float_value = 3;</code>
+       * @param value The floatValue to set.
        * @return This builder for chaining.
        */
-      public Builder setValueType(emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
+      public Builder setFloatValue(float value) {
         
-        valueType_ = value.getNumber();
+        floatValue_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.AbilityScalarType value_type = 2;</code>
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>float float_value = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearValueType() {
+      public Builder clearFloatValue() {
         
-        valueType_ = 0;
+        floatValue_ = 0F;
         onChanged();
         return this;
       }
@@ -1431,28 +802,23 @@ public final class AbilityScalarValueEntryOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035AbilityScalarValueEntry.proto\032\023Ability" +
-      "String.proto\032\027AbilityScalarType.proto\"\301\001" +
-      "\n\027AbilityScalarValueEntry\022\025\n\013float_value" +
-      "\030\003 \001(\002H\000\022\026\n\014string_value\030\004 \001(\tH\000\022\023\n\tint_" +
-      "value\030\005 \001(\005H\000\022\024\n\nuint_value\030\006 \001(\rH\000\022\033\n\003k" +
-      "ey\030\001 \001(\0132\016.AbilityString\022&\n\nvalue_type\030\002" +
-      " \001(\0162\022.AbilityScalarTypeB\007\n\005valueB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "String.proto\"K\n\027AbilityScalarValueEntry\022" +
+      "\033\n\003key\030\001 \001(\0132\016.AbilityString\022\023\n\013float_va" +
+      "lue\030\003 \001(\002B\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.getDescriptor(),
         });
     internal_static_AbilityScalarValueEntry_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AbilityScalarValueEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityScalarValueEntry_descriptor,
-        new java.lang.String[] { "FloatValue", "StringValue", "IntValue", "UintValue", "Key", "ValueType", "Value", });
+        new java.lang.String[] { "Key", "FloatValue", });
     emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

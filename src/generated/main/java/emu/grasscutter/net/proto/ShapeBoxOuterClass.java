@@ -19,62 +19,23 @@ public final class ShapeBoxOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.Vector center = 1;</code>
-     * @return Whether the center field is set.
+     * <code>.Vector FIFFOHFGFLF = 2;</code>
+     * @return Whether the fIFFOHFGFLF field is set.
      */
-    boolean hasCenter();
+    boolean hasFIFFOHFGFLF();
     /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.Vector center = 1;</code>
-     * @return The center.
+     * <code>.Vector FIFFOHFGFLF = 2;</code>
+     * @return The fIFFOHFGFLF.
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getFIFFOHFGFLF();
     /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.Vector center = 1;</code>
+     * <code>.Vector FIFFOHFGFLF = 2;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder();
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getFIFFOHFGFLFOrBuilder();
 
     /**
      * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.Vector axis2 = 4;</code>
-     * @return Whether the axis2 field is set.
-     */
-    boolean hasAxis2();
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.Vector axis2 = 4;</code>
-     * @return The axis2.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis2();
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.Vector axis2 = 4;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis2OrBuilder();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.Vector extents = 5;</code>
@@ -83,7 +44,7 @@ public final class ShapeBoxOuterClass {
     boolean hasExtents();
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.Vector extents = 5;</code>
@@ -92,7 +53,7 @@ public final class ShapeBoxOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.Vector getExtents();
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.Vector extents = 5;</code>
@@ -100,58 +61,61 @@ public final class ShapeBoxOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getExtentsOrBuilder();
 
     /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector axis1 = 3;</code>
-     * @return Whether the axis1 field is set.
+     * <code>.Vector LPBLCAPDBPE = 3;</code>
+     * @return Whether the lPBLCAPDBPE field is set.
      */
-    boolean hasAxis1();
+    boolean hasLPBLCAPDBPE();
     /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector axis1 = 3;</code>
-     * @return The axis1.
+     * <code>.Vector LPBLCAPDBPE = 3;</code>
+     * @return The lPBLCAPDBPE.
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis1();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getLPBLCAPDBPE();
     /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector axis1 = 3;</code>
+     * <code>.Vector LPBLCAPDBPE = 3;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis1OrBuilder();
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getLPBLCAPDBPEOrBuilder();
 
     /**
      * <pre>
-     * offset: 64
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector axis0 = 2;</code>
-     * @return Whether the axis0 field is set.
+     * <code>.Vector center = 1;</code>
+     * @return Whether the center field is set.
      */
-    boolean hasAxis0();
+    boolean hasCenter();
     /**
      * <pre>
-     * offset: 64
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector axis0 = 2;</code>
-     * @return The axis0.
+     * <code>.Vector center = 1;</code>
+     * @return The center.
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis0();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter();
     /**
      * <pre>
-     * offset: 64
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector axis0 = 2;</code>
+     * <code>.Vector center = 1;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis0OrBuilder();
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder();
+
+    /**
+     * <code>.Vector JNDBLNKMPCK = 4;</code>
+     * @return Whether the jNDBLNKMPCK field is set.
+     */
+    boolean hasJNDBLNKMPCK();
+    /**
+     * <code>.Vector JNDBLNKMPCK = 4;</code>
+     * @return The jNDBLNKMPCK.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getJNDBLNKMPCK();
+    /**
+     * <code>.Vector JNDBLNKMPCK = 4;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getJNDBLNKMPCKOrBuilder();
   }
   /**
    * Protobuf type {@code ShapeBox}
@@ -213,39 +177,39 @@ public final class ShapeBoxOuterClass {
             }
             case 18: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (axis0_ != null) {
-                subBuilder = axis0_.toBuilder();
+              if (fIFFOHFGFLF_ != null) {
+                subBuilder = fIFFOHFGFLF_.toBuilder();
               }
-              axis0_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              fIFFOHFGFLF_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(axis0_);
-                axis0_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(fIFFOHFGFLF_);
+                fIFFOHFGFLF_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 26: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (axis1_ != null) {
-                subBuilder = axis1_.toBuilder();
+              if (lPBLCAPDBPE_ != null) {
+                subBuilder = lPBLCAPDBPE_.toBuilder();
               }
-              axis1_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              lPBLCAPDBPE_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(axis1_);
-                axis1_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(lPBLCAPDBPE_);
+                lPBLCAPDBPE_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 34: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (axis2_ != null) {
-                subBuilder = axis2_.toBuilder();
+              if (jNDBLNKMPCK_ != null) {
+                subBuilder = jNDBLNKMPCK_.toBuilder();
               }
-              axis2_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              jNDBLNKMPCK_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(axis2_);
-                axis2_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(jNDBLNKMPCK_);
+                jNDBLNKMPCK_ = subBuilder.buildPartial();
               }
 
               break;
@@ -295,87 +259,37 @@ public final class ShapeBoxOuterClass {
               emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.class, emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.Builder.class);
     }
 
-    public static final int CENTER_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
+    public static final int FIFFOHFGFLF_FIELD_NUMBER = 2;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector fIFFOHFGFLF_;
     /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.Vector center = 1;</code>
-     * @return Whether the center field is set.
+     * <code>.Vector FIFFOHFGFLF = 2;</code>
+     * @return Whether the fIFFOHFGFLF field is set.
      */
     @java.lang.Override
-    public boolean hasCenter() {
-      return center_ != null;
+    public boolean hasFIFFOHFGFLF() {
+      return fIFFOHFGFLF_ != null;
     }
     /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.Vector center = 1;</code>
-     * @return The center.
+     * <code>.Vector FIFFOHFGFLF = 2;</code>
+     * @return The fIFFOHFGFLF.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
-      return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getFIFFOHFGFLF() {
+      return fIFFOHFGFLF_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : fIFFOHFGFLF_;
     }
     /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.Vector center = 1;</code>
+     * <code>.Vector FIFFOHFGFLF = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
-      return getCenter();
-    }
-
-    public static final int AXIS2_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector axis2_;
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.Vector axis2 = 4;</code>
-     * @return Whether the axis2 field is set.
-     */
-    @java.lang.Override
-    public boolean hasAxis2() {
-      return axis2_ != null;
-    }
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.Vector axis2 = 4;</code>
-     * @return The axis2.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis2() {
-      return axis2_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis2_;
-    }
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.Vector axis2 = 4;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis2OrBuilder() {
-      return getAxis2();
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getFIFFOHFGFLFOrBuilder() {
+      return getFIFFOHFGFLF();
     }
 
     public static final int EXTENTS_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector extents_;
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.Vector extents = 5;</code>
@@ -387,7 +301,7 @@ public final class ShapeBoxOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.Vector extents = 5;</code>
@@ -399,7 +313,7 @@ public final class ShapeBoxOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.Vector extents = 5;</code>
@@ -409,80 +323,94 @@ public final class ShapeBoxOuterClass {
       return getExtents();
     }
 
-    public static final int AXIS1_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector axis1_;
+    public static final int LPBLCAPDBPE_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector lPBLCAPDBPE_;
     /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector axis1 = 3;</code>
-     * @return Whether the axis1 field is set.
+     * <code>.Vector LPBLCAPDBPE = 3;</code>
+     * @return Whether the lPBLCAPDBPE field is set.
      */
     @java.lang.Override
-    public boolean hasAxis1() {
-      return axis1_ != null;
+    public boolean hasLPBLCAPDBPE() {
+      return lPBLCAPDBPE_ != null;
     }
     /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector axis1 = 3;</code>
-     * @return The axis1.
+     * <code>.Vector LPBLCAPDBPE = 3;</code>
+     * @return The lPBLCAPDBPE.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis1() {
-      return axis1_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis1_;
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getLPBLCAPDBPE() {
+      return lPBLCAPDBPE_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : lPBLCAPDBPE_;
     }
     /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector axis1 = 3;</code>
+     * <code>.Vector LPBLCAPDBPE = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis1OrBuilder() {
-      return getAxis1();
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getLPBLCAPDBPEOrBuilder() {
+      return getLPBLCAPDBPE();
     }
 
-    public static final int AXIS0_FIELD_NUMBER = 2;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector axis0_;
+    public static final int CENTER_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
     /**
      * <pre>
-     * offset: 64
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector axis0 = 2;</code>
-     * @return Whether the axis0 field is set.
+     * <code>.Vector center = 1;</code>
+     * @return Whether the center field is set.
      */
     @java.lang.Override
-    public boolean hasAxis0() {
-      return axis0_ != null;
+    public boolean hasCenter() {
+      return center_ != null;
     }
     /**
      * <pre>
-     * offset: 64
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector axis0 = 2;</code>
-     * @return The axis0.
+     * <code>.Vector center = 1;</code>
+     * @return The center.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis0() {
-      return axis0_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis0_;
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
+      return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
     }
     /**
      * <pre>
-     * offset: 64
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>.Vector axis0 = 2;</code>
+     * <code>.Vector center = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis0OrBuilder() {
-      return getAxis0();
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
+      return getCenter();
+    }
+
+    public static final int JNDBLNKMPCK_FIELD_NUMBER = 4;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector jNDBLNKMPCK_;
+    /**
+     * <code>.Vector JNDBLNKMPCK = 4;</code>
+     * @return Whether the jNDBLNKMPCK field is set.
+     */
+    @java.lang.Override
+    public boolean hasJNDBLNKMPCK() {
+      return jNDBLNKMPCK_ != null;
+    }
+    /**
+     * <code>.Vector JNDBLNKMPCK = 4;</code>
+     * @return The jNDBLNKMPCK.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getJNDBLNKMPCK() {
+      return jNDBLNKMPCK_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : jNDBLNKMPCK_;
+    }
+    /**
+     * <code>.Vector JNDBLNKMPCK = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getJNDBLNKMPCKOrBuilder() {
+      return getJNDBLNKMPCK();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -502,14 +430,14 @@ public final class ShapeBoxOuterClass {
       if (center_ != null) {
         output.writeMessage(1, getCenter());
       }
-      if (axis0_ != null) {
-        output.writeMessage(2, getAxis0());
+      if (fIFFOHFGFLF_ != null) {
+        output.writeMessage(2, getFIFFOHFGFLF());
       }
-      if (axis1_ != null) {
-        output.writeMessage(3, getAxis1());
+      if (lPBLCAPDBPE_ != null) {
+        output.writeMessage(3, getLPBLCAPDBPE());
       }
-      if (axis2_ != null) {
-        output.writeMessage(4, getAxis2());
+      if (jNDBLNKMPCK_ != null) {
+        output.writeMessage(4, getJNDBLNKMPCK());
       }
       if (extents_ != null) {
         output.writeMessage(5, getExtents());
@@ -527,17 +455,17 @@ public final class ShapeBoxOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getCenter());
       }
-      if (axis0_ != null) {
+      if (fIFFOHFGFLF_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getAxis0());
+          .computeMessageSize(2, getFIFFOHFGFLF());
       }
-      if (axis1_ != null) {
+      if (lPBLCAPDBPE_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getAxis1());
+          .computeMessageSize(3, getLPBLCAPDBPE());
       }
-      if (axis2_ != null) {
+      if (jNDBLNKMPCK_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getAxis2());
+          .computeMessageSize(4, getJNDBLNKMPCK());
       }
       if (extents_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -558,30 +486,30 @@ public final class ShapeBoxOuterClass {
       }
       emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox other = (emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox) obj;
 
-      if (hasCenter() != other.hasCenter()) return false;
-      if (hasCenter()) {
-        if (!getCenter()
-            .equals(other.getCenter())) return false;
-      }
-      if (hasAxis2() != other.hasAxis2()) return false;
-      if (hasAxis2()) {
-        if (!getAxis2()
-            .equals(other.getAxis2())) return false;
+      if (hasFIFFOHFGFLF() != other.hasFIFFOHFGFLF()) return false;
+      if (hasFIFFOHFGFLF()) {
+        if (!getFIFFOHFGFLF()
+            .equals(other.getFIFFOHFGFLF())) return false;
       }
       if (hasExtents() != other.hasExtents()) return false;
       if (hasExtents()) {
         if (!getExtents()
             .equals(other.getExtents())) return false;
       }
-      if (hasAxis1() != other.hasAxis1()) return false;
-      if (hasAxis1()) {
-        if (!getAxis1()
-            .equals(other.getAxis1())) return false;
+      if (hasLPBLCAPDBPE() != other.hasLPBLCAPDBPE()) return false;
+      if (hasLPBLCAPDBPE()) {
+        if (!getLPBLCAPDBPE()
+            .equals(other.getLPBLCAPDBPE())) return false;
       }
-      if (hasAxis0() != other.hasAxis0()) return false;
-      if (hasAxis0()) {
-        if (!getAxis0()
-            .equals(other.getAxis0())) return false;
+      if (hasCenter() != other.hasCenter()) return false;
+      if (hasCenter()) {
+        if (!getCenter()
+            .equals(other.getCenter())) return false;
+      }
+      if (hasJNDBLNKMPCK() != other.hasJNDBLNKMPCK()) return false;
+      if (hasJNDBLNKMPCK()) {
+        if (!getJNDBLNKMPCK()
+            .equals(other.getJNDBLNKMPCK())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -594,25 +522,25 @@ public final class ShapeBoxOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasCenter()) {
-        hash = (37 * hash) + CENTER_FIELD_NUMBER;
-        hash = (53 * hash) + getCenter().hashCode();
-      }
-      if (hasAxis2()) {
-        hash = (37 * hash) + AXIS2_FIELD_NUMBER;
-        hash = (53 * hash) + getAxis2().hashCode();
+      if (hasFIFFOHFGFLF()) {
+        hash = (37 * hash) + FIFFOHFGFLF_FIELD_NUMBER;
+        hash = (53 * hash) + getFIFFOHFGFLF().hashCode();
       }
       if (hasExtents()) {
         hash = (37 * hash) + EXTENTS_FIELD_NUMBER;
         hash = (53 * hash) + getExtents().hashCode();
       }
-      if (hasAxis1()) {
-        hash = (37 * hash) + AXIS1_FIELD_NUMBER;
-        hash = (53 * hash) + getAxis1().hashCode();
+      if (hasLPBLCAPDBPE()) {
+        hash = (37 * hash) + LPBLCAPDBPE_FIELD_NUMBER;
+        hash = (53 * hash) + getLPBLCAPDBPE().hashCode();
       }
-      if (hasAxis0()) {
-        hash = (37 * hash) + AXIS0_FIELD_NUMBER;
-        hash = (53 * hash) + getAxis0().hashCode();
+      if (hasCenter()) {
+        hash = (37 * hash) + CENTER_FIELD_NUMBER;
+        hash = (53 * hash) + getCenter().hashCode();
+      }
+      if (hasJNDBLNKMPCK()) {
+        hash = (37 * hash) + JNDBLNKMPCK_FIELD_NUMBER;
+        hash = (53 * hash) + getJNDBLNKMPCK().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -747,17 +675,11 @@ public final class ShapeBoxOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (centerBuilder_ == null) {
-          center_ = null;
+        if (fIFFOHFGFLFBuilder_ == null) {
+          fIFFOHFGFLF_ = null;
         } else {
-          center_ = null;
-          centerBuilder_ = null;
-        }
-        if (axis2Builder_ == null) {
-          axis2_ = null;
-        } else {
-          axis2_ = null;
-          axis2Builder_ = null;
+          fIFFOHFGFLF_ = null;
+          fIFFOHFGFLFBuilder_ = null;
         }
         if (extentsBuilder_ == null) {
           extents_ = null;
@@ -765,17 +687,23 @@ public final class ShapeBoxOuterClass {
           extents_ = null;
           extentsBuilder_ = null;
         }
-        if (axis1Builder_ == null) {
-          axis1_ = null;
+        if (lPBLCAPDBPEBuilder_ == null) {
+          lPBLCAPDBPE_ = null;
         } else {
-          axis1_ = null;
-          axis1Builder_ = null;
+          lPBLCAPDBPE_ = null;
+          lPBLCAPDBPEBuilder_ = null;
         }
-        if (axis0Builder_ == null) {
-          axis0_ = null;
+        if (centerBuilder_ == null) {
+          center_ = null;
         } else {
-          axis0_ = null;
-          axis0Builder_ = null;
+          center_ = null;
+          centerBuilder_ = null;
+        }
+        if (jNDBLNKMPCKBuilder_ == null) {
+          jNDBLNKMPCK_ = null;
+        } else {
+          jNDBLNKMPCK_ = null;
+          jNDBLNKMPCKBuilder_ = null;
         }
         return this;
       }
@@ -803,30 +731,30 @@ public final class ShapeBoxOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox buildPartial() {
         emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox result = new emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox(this);
-        if (centerBuilder_ == null) {
-          result.center_ = center_;
+        if (fIFFOHFGFLFBuilder_ == null) {
+          result.fIFFOHFGFLF_ = fIFFOHFGFLF_;
         } else {
-          result.center_ = centerBuilder_.build();
-        }
-        if (axis2Builder_ == null) {
-          result.axis2_ = axis2_;
-        } else {
-          result.axis2_ = axis2Builder_.build();
+          result.fIFFOHFGFLF_ = fIFFOHFGFLFBuilder_.build();
         }
         if (extentsBuilder_ == null) {
           result.extents_ = extents_;
         } else {
           result.extents_ = extentsBuilder_.build();
         }
-        if (axis1Builder_ == null) {
-          result.axis1_ = axis1_;
+        if (lPBLCAPDBPEBuilder_ == null) {
+          result.lPBLCAPDBPE_ = lPBLCAPDBPE_;
         } else {
-          result.axis1_ = axis1Builder_.build();
+          result.lPBLCAPDBPE_ = lPBLCAPDBPEBuilder_.build();
         }
-        if (axis0Builder_ == null) {
-          result.axis0_ = axis0_;
+        if (centerBuilder_ == null) {
+          result.center_ = center_;
         } else {
-          result.axis0_ = axis0Builder_.build();
+          result.center_ = centerBuilder_.build();
+        }
+        if (jNDBLNKMPCKBuilder_ == null) {
+          result.jNDBLNKMPCK_ = jNDBLNKMPCK_;
+        } else {
+          result.jNDBLNKMPCK_ = jNDBLNKMPCKBuilder_.build();
         }
         onBuilt();
         return result;
@@ -876,20 +804,20 @@ public final class ShapeBoxOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox other) {
         if (other == emu.grasscutter.net.proto.ShapeBoxOuterClass.ShapeBox.getDefaultInstance()) return this;
-        if (other.hasCenter()) {
-          mergeCenter(other.getCenter());
-        }
-        if (other.hasAxis2()) {
-          mergeAxis2(other.getAxis2());
+        if (other.hasFIFFOHFGFLF()) {
+          mergeFIFFOHFGFLF(other.getFIFFOHFGFLF());
         }
         if (other.hasExtents()) {
           mergeExtents(other.getExtents());
         }
-        if (other.hasAxis1()) {
-          mergeAxis1(other.getAxis1());
+        if (other.hasLPBLCAPDBPE()) {
+          mergeLPBLCAPDBPE(other.getLPBLCAPDBPE());
         }
-        if (other.hasAxis0()) {
-          mergeAxis0(other.getAxis0());
+        if (other.hasCenter()) {
+          mergeCenter(other.getCenter());
+        }
+        if (other.hasJNDBLNKMPCK()) {
+          mergeJNDBLNKMPCK(other.getJNDBLNKMPCK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -920,314 +848,123 @@ public final class ShapeBoxOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector fIFFOHFGFLF_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> centerBuilder_;
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> fIFFOHFGFLFBuilder_;
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.Vector center = 1;</code>
-       * @return Whether the center field is set.
+       * <code>.Vector FIFFOHFGFLF = 2;</code>
+       * @return Whether the fIFFOHFGFLF field is set.
        */
-      public boolean hasCenter() {
-        return centerBuilder_ != null || center_ != null;
+      public boolean hasFIFFOHFGFLF() {
+        return fIFFOHFGFLFBuilder_ != null || fIFFOHFGFLF_ != null;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.Vector center = 1;</code>
-       * @return The center.
+       * <code>.Vector FIFFOHFGFLF = 2;</code>
+       * @return The fIFFOHFGFLF.
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
-        if (centerBuilder_ == null) {
-          return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getFIFFOHFGFLF() {
+        if (fIFFOHFGFLFBuilder_ == null) {
+          return fIFFOHFGFLF_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : fIFFOHFGFLF_;
         } else {
-          return centerBuilder_.getMessage();
+          return fIFFOHFGFLFBuilder_.getMessage();
         }
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.Vector center = 1;</code>
+       * <code>.Vector FIFFOHFGFLF = 2;</code>
        */
-      public Builder setCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (centerBuilder_ == null) {
+      public Builder setFIFFOHFGFLF(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (fIFFOHFGFLFBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          center_ = value;
+          fIFFOHFGFLF_ = value;
           onChanged();
         } else {
-          centerBuilder_.setMessage(value);
+          fIFFOHFGFLFBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.Vector center = 1;</code>
+       * <code>.Vector FIFFOHFGFLF = 2;</code>
        */
-      public Builder setCenter(
+      public Builder setFIFFOHFGFLF(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (centerBuilder_ == null) {
-          center_ = builderForValue.build();
+        if (fIFFOHFGFLFBuilder_ == null) {
+          fIFFOHFGFLF_ = builderForValue.build();
           onChanged();
         } else {
-          centerBuilder_.setMessage(builderForValue.build());
+          fIFFOHFGFLFBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.Vector center = 1;</code>
+       * <code>.Vector FIFFOHFGFLF = 2;</code>
        */
-      public Builder mergeCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (centerBuilder_ == null) {
-          if (center_ != null) {
-            center_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(center_).mergeFrom(value).buildPartial();
+      public Builder mergeFIFFOHFGFLF(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (fIFFOHFGFLFBuilder_ == null) {
+          if (fIFFOHFGFLF_ != null) {
+            fIFFOHFGFLF_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(fIFFOHFGFLF_).mergeFrom(value).buildPartial();
           } else {
-            center_ = value;
+            fIFFOHFGFLF_ = value;
           }
           onChanged();
         } else {
-          centerBuilder_.mergeFrom(value);
+          fIFFOHFGFLFBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.Vector center = 1;</code>
+       * <code>.Vector FIFFOHFGFLF = 2;</code>
        */
-      public Builder clearCenter() {
-        if (centerBuilder_ == null) {
-          center_ = null;
+      public Builder clearFIFFOHFGFLF() {
+        if (fIFFOHFGFLFBuilder_ == null) {
+          fIFFOHFGFLF_ = null;
           onChanged();
         } else {
-          center_ = null;
-          centerBuilder_ = null;
+          fIFFOHFGFLF_ = null;
+          fIFFOHFGFLFBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.Vector center = 1;</code>
+       * <code>.Vector FIFFOHFGFLF = 2;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCenterBuilder() {
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getFIFFOHFGFLFBuilder() {
         
         onChanged();
-        return getCenterFieldBuilder().getBuilder();
+        return getFIFFOHFGFLFFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.Vector center = 1;</code>
+       * <code>.Vector FIFFOHFGFLF = 2;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
-        if (centerBuilder_ != null) {
-          return centerBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getFIFFOHFGFLFOrBuilder() {
+        if (fIFFOHFGFLFBuilder_ != null) {
+          return fIFFOHFGFLFBuilder_.getMessageOrBuilder();
         } else {
-          return center_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
+          return fIFFOHFGFLF_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : fIFFOHFGFLF_;
         }
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.Vector center = 1;</code>
+       * <code>.Vector FIFFOHFGFLF = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getCenterFieldBuilder() {
-        if (centerBuilder_ == null) {
-          centerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getFIFFOHFGFLFFieldBuilder() {
+        if (fIFFOHFGFLFBuilder_ == null) {
+          fIFFOHFGFLFBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getCenter(),
+                  getFIFFOHFGFLF(),
                   getParentForChildren(),
                   isClean());
-          center_ = null;
+          fIFFOHFGFLF_ = null;
         }
-        return centerBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector axis2_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> axis2Builder_;
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.Vector axis2 = 4;</code>
-       * @return Whether the axis2 field is set.
-       */
-      public boolean hasAxis2() {
-        return axis2Builder_ != null || axis2_ != null;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.Vector axis2 = 4;</code>
-       * @return The axis2.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis2() {
-        if (axis2Builder_ == null) {
-          return axis2_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis2_;
-        } else {
-          return axis2Builder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.Vector axis2 = 4;</code>
-       */
-      public Builder setAxis2(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (axis2Builder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          axis2_ = value;
-          onChanged();
-        } else {
-          axis2Builder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.Vector axis2 = 4;</code>
-       */
-      public Builder setAxis2(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (axis2Builder_ == null) {
-          axis2_ = builderForValue.build();
-          onChanged();
-        } else {
-          axis2Builder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.Vector axis2 = 4;</code>
-       */
-      public Builder mergeAxis2(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (axis2Builder_ == null) {
-          if (axis2_ != null) {
-            axis2_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(axis2_).mergeFrom(value).buildPartial();
-          } else {
-            axis2_ = value;
-          }
-          onChanged();
-        } else {
-          axis2Builder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.Vector axis2 = 4;</code>
-       */
-      public Builder clearAxis2() {
-        if (axis2Builder_ == null) {
-          axis2_ = null;
-          onChanged();
-        } else {
-          axis2_ = null;
-          axis2Builder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.Vector axis2 = 4;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getAxis2Builder() {
-        
-        onChanged();
-        return getAxis2FieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.Vector axis2 = 4;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis2OrBuilder() {
-        if (axis2Builder_ != null) {
-          return axis2Builder_.getMessageOrBuilder();
-        } else {
-          return axis2_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis2_;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.Vector axis2 = 4;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getAxis2FieldBuilder() {
-        if (axis2Builder_ == null) {
-          axis2Builder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getAxis2(),
-                  getParentForChildren(),
-                  isClean());
-          axis2_ = null;
-        }
-        return axis2Builder_;
+        return fIFFOHFGFLFBuilder_;
       }
 
       private emu.grasscutter.net.proto.VectorOuterClass.Vector extents_;
@@ -1235,7 +972,7 @@ public final class ShapeBoxOuterClass {
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> extentsBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.Vector extents = 5;</code>
@@ -1246,7 +983,7 @@ public final class ShapeBoxOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.Vector extents = 5;</code>
@@ -1261,7 +998,7 @@ public final class ShapeBoxOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.Vector extents = 5;</code>
@@ -1281,7 +1018,7 @@ public final class ShapeBoxOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.Vector extents = 5;</code>
@@ -1299,7 +1036,7 @@ public final class ShapeBoxOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.Vector extents = 5;</code>
@@ -1321,7 +1058,7 @@ public final class ShapeBoxOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.Vector extents = 5;</code>
@@ -1339,7 +1076,7 @@ public final class ShapeBoxOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.Vector extents = 5;</code>
@@ -1351,7 +1088,7 @@ public final class ShapeBoxOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.Vector extents = 5;</code>
@@ -1366,7 +1103,7 @@ public final class ShapeBoxOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.Vector extents = 5;</code>
@@ -1385,314 +1122,397 @@ public final class ShapeBoxOuterClass {
         return extentsBuilder_;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector axis1_;
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector lPBLCAPDBPE_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> axis1Builder_;
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> lPBLCAPDBPEBuilder_;
       /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector axis1 = 3;</code>
-       * @return Whether the axis1 field is set.
+       * <code>.Vector LPBLCAPDBPE = 3;</code>
+       * @return Whether the lPBLCAPDBPE field is set.
        */
-      public boolean hasAxis1() {
-        return axis1Builder_ != null || axis1_ != null;
+      public boolean hasLPBLCAPDBPE() {
+        return lPBLCAPDBPEBuilder_ != null || lPBLCAPDBPE_ != null;
       }
       /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector axis1 = 3;</code>
-       * @return The axis1.
+       * <code>.Vector LPBLCAPDBPE = 3;</code>
+       * @return The lPBLCAPDBPE.
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis1() {
-        if (axis1Builder_ == null) {
-          return axis1_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis1_;
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getLPBLCAPDBPE() {
+        if (lPBLCAPDBPEBuilder_ == null) {
+          return lPBLCAPDBPE_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : lPBLCAPDBPE_;
         } else {
-          return axis1Builder_.getMessage();
+          return lPBLCAPDBPEBuilder_.getMessage();
         }
       }
       /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector axis1 = 3;</code>
+       * <code>.Vector LPBLCAPDBPE = 3;</code>
        */
-      public Builder setAxis1(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (axis1Builder_ == null) {
+      public Builder setLPBLCAPDBPE(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (lPBLCAPDBPEBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          axis1_ = value;
+          lPBLCAPDBPE_ = value;
           onChanged();
         } else {
-          axis1Builder_.setMessage(value);
+          lPBLCAPDBPEBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector axis1 = 3;</code>
+       * <code>.Vector LPBLCAPDBPE = 3;</code>
        */
-      public Builder setAxis1(
+      public Builder setLPBLCAPDBPE(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (axis1Builder_ == null) {
-          axis1_ = builderForValue.build();
+        if (lPBLCAPDBPEBuilder_ == null) {
+          lPBLCAPDBPE_ = builderForValue.build();
           onChanged();
         } else {
-          axis1Builder_.setMessage(builderForValue.build());
+          lPBLCAPDBPEBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector axis1 = 3;</code>
+       * <code>.Vector LPBLCAPDBPE = 3;</code>
        */
-      public Builder mergeAxis1(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (axis1Builder_ == null) {
-          if (axis1_ != null) {
-            axis1_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(axis1_).mergeFrom(value).buildPartial();
+      public Builder mergeLPBLCAPDBPE(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (lPBLCAPDBPEBuilder_ == null) {
+          if (lPBLCAPDBPE_ != null) {
+            lPBLCAPDBPE_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(lPBLCAPDBPE_).mergeFrom(value).buildPartial();
           } else {
-            axis1_ = value;
+            lPBLCAPDBPE_ = value;
           }
           onChanged();
         } else {
-          axis1Builder_.mergeFrom(value);
+          lPBLCAPDBPEBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector axis1 = 3;</code>
+       * <code>.Vector LPBLCAPDBPE = 3;</code>
        */
-      public Builder clearAxis1() {
-        if (axis1Builder_ == null) {
-          axis1_ = null;
+      public Builder clearLPBLCAPDBPE() {
+        if (lPBLCAPDBPEBuilder_ == null) {
+          lPBLCAPDBPE_ = null;
           onChanged();
         } else {
-          axis1_ = null;
-          axis1Builder_ = null;
+          lPBLCAPDBPE_ = null;
+          lPBLCAPDBPEBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector axis1 = 3;</code>
+       * <code>.Vector LPBLCAPDBPE = 3;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getAxis1Builder() {
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getLPBLCAPDBPEBuilder() {
         
         onChanged();
-        return getAxis1FieldBuilder().getBuilder();
+        return getLPBLCAPDBPEFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector axis1 = 3;</code>
+       * <code>.Vector LPBLCAPDBPE = 3;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis1OrBuilder() {
-        if (axis1Builder_ != null) {
-          return axis1Builder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getLPBLCAPDBPEOrBuilder() {
+        if (lPBLCAPDBPEBuilder_ != null) {
+          return lPBLCAPDBPEBuilder_.getMessageOrBuilder();
         } else {
-          return axis1_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis1_;
+          return lPBLCAPDBPE_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : lPBLCAPDBPE_;
         }
       }
       /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector axis1 = 3;</code>
+       * <code>.Vector LPBLCAPDBPE = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getAxis1FieldBuilder() {
-        if (axis1Builder_ == null) {
-          axis1Builder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getLPBLCAPDBPEFieldBuilder() {
+        if (lPBLCAPDBPEBuilder_ == null) {
+          lPBLCAPDBPEBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getAxis1(),
+                  getLPBLCAPDBPE(),
                   getParentForChildren(),
                   isClean());
-          axis1_ = null;
+          lPBLCAPDBPE_ = null;
         }
-        return axis1Builder_;
+        return lPBLCAPDBPEBuilder_;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector axis0_;
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> axis0Builder_;
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> centerBuilder_;
       /**
        * <pre>
-       * offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector axis0 = 2;</code>
-       * @return Whether the axis0 field is set.
+       * <code>.Vector center = 1;</code>
+       * @return Whether the center field is set.
        */
-      public boolean hasAxis0() {
-        return axis0Builder_ != null || axis0_ != null;
+      public boolean hasCenter() {
+        return centerBuilder_ != null || center_ != null;
       }
       /**
        * <pre>
-       * offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector axis0 = 2;</code>
-       * @return The axis0.
+       * <code>.Vector center = 1;</code>
+       * @return The center.
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getAxis0() {
-        if (axis0Builder_ == null) {
-          return axis0_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis0_;
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter() {
+        if (centerBuilder_ == null) {
+          return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
         } else {
-          return axis0Builder_.getMessage();
+          return centerBuilder_.getMessage();
         }
       }
       /**
        * <pre>
-       * offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector axis0 = 2;</code>
+       * <code>.Vector center = 1;</code>
        */
-      public Builder setAxis0(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (axis0Builder_ == null) {
+      public Builder setCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (centerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          axis0_ = value;
+          center_ = value;
           onChanged();
         } else {
-          axis0Builder_.setMessage(value);
+          centerBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
        * <pre>
-       * offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector axis0 = 2;</code>
+       * <code>.Vector center = 1;</code>
        */
-      public Builder setAxis0(
+      public Builder setCenter(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (axis0Builder_ == null) {
-          axis0_ = builderForValue.build();
+        if (centerBuilder_ == null) {
+          center_ = builderForValue.build();
           onChanged();
         } else {
-          axis0Builder_.setMessage(builderForValue.build());
+          centerBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
        * <pre>
-       * offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector axis0 = 2;</code>
+       * <code>.Vector center = 1;</code>
        */
-      public Builder mergeAxis0(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (axis0Builder_ == null) {
-          if (axis0_ != null) {
-            axis0_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(axis0_).mergeFrom(value).buildPartial();
+      public Builder mergeCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (centerBuilder_ == null) {
+          if (center_ != null) {
+            center_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(center_).mergeFrom(value).buildPartial();
           } else {
-            axis0_ = value;
+            center_ = value;
           }
           onChanged();
         } else {
-          axis0Builder_.mergeFrom(value);
+          centerBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
        * <pre>
-       * offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector axis0 = 2;</code>
+       * <code>.Vector center = 1;</code>
        */
-      public Builder clearAxis0() {
-        if (axis0Builder_ == null) {
-          axis0_ = null;
+      public Builder clearCenter() {
+        if (centerBuilder_ == null) {
+          center_ = null;
           onChanged();
         } else {
-          axis0_ = null;
-          axis0Builder_ = null;
+          center_ = null;
+          centerBuilder_ = null;
         }
 
         return this;
       }
       /**
        * <pre>
-       * offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector axis0 = 2;</code>
+       * <code>.Vector center = 1;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getAxis0Builder() {
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCenterBuilder() {
         
         onChanged();
-        return getAxis0FieldBuilder().getBuilder();
+        return getCenterFieldBuilder().getBuilder();
       }
       /**
        * <pre>
-       * offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector axis0 = 2;</code>
+       * <code>.Vector center = 1;</code>
        */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAxis0OrBuilder() {
-        if (axis0Builder_ != null) {
-          return axis0Builder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
+        if (centerBuilder_ != null) {
+          return centerBuilder_.getMessageOrBuilder();
         } else {
-          return axis0_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : axis0_;
+          return center_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
         }
       }
       /**
        * <pre>
-       * offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Vector axis0 = 2;</code>
+       * <code>.Vector center = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getAxis0FieldBuilder() {
-        if (axis0Builder_ == null) {
-          axis0Builder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getCenterFieldBuilder() {
+        if (centerBuilder_ == null) {
+          centerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getAxis0(),
+                  getCenter(),
                   getParentForChildren(),
                   isClean());
-          axis0_ = null;
+          center_ = null;
         }
-        return axis0Builder_;
+        return centerBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector jNDBLNKMPCK_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> jNDBLNKMPCKBuilder_;
+      /**
+       * <code>.Vector JNDBLNKMPCK = 4;</code>
+       * @return Whether the jNDBLNKMPCK field is set.
+       */
+      public boolean hasJNDBLNKMPCK() {
+        return jNDBLNKMPCKBuilder_ != null || jNDBLNKMPCK_ != null;
+      }
+      /**
+       * <code>.Vector JNDBLNKMPCK = 4;</code>
+       * @return The jNDBLNKMPCK.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getJNDBLNKMPCK() {
+        if (jNDBLNKMPCKBuilder_ == null) {
+          return jNDBLNKMPCK_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : jNDBLNKMPCK_;
+        } else {
+          return jNDBLNKMPCKBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector JNDBLNKMPCK = 4;</code>
+       */
+      public Builder setJNDBLNKMPCK(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (jNDBLNKMPCKBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          jNDBLNKMPCK_ = value;
+          onChanged();
+        } else {
+          jNDBLNKMPCKBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector JNDBLNKMPCK = 4;</code>
+       */
+      public Builder setJNDBLNKMPCK(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (jNDBLNKMPCKBuilder_ == null) {
+          jNDBLNKMPCK_ = builderForValue.build();
+          onChanged();
+        } else {
+          jNDBLNKMPCKBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector JNDBLNKMPCK = 4;</code>
+       */
+      public Builder mergeJNDBLNKMPCK(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (jNDBLNKMPCKBuilder_ == null) {
+          if (jNDBLNKMPCK_ != null) {
+            jNDBLNKMPCK_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(jNDBLNKMPCK_).mergeFrom(value).buildPartial();
+          } else {
+            jNDBLNKMPCK_ = value;
+          }
+          onChanged();
+        } else {
+          jNDBLNKMPCKBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector JNDBLNKMPCK = 4;</code>
+       */
+      public Builder clearJNDBLNKMPCK() {
+        if (jNDBLNKMPCKBuilder_ == null) {
+          jNDBLNKMPCK_ = null;
+          onChanged();
+        } else {
+          jNDBLNKMPCK_ = null;
+          jNDBLNKMPCKBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector JNDBLNKMPCK = 4;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getJNDBLNKMPCKBuilder() {
+        
+        onChanged();
+        return getJNDBLNKMPCKFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector JNDBLNKMPCK = 4;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getJNDBLNKMPCKOrBuilder() {
+        if (jNDBLNKMPCKBuilder_ != null) {
+          return jNDBLNKMPCKBuilder_.getMessageOrBuilder();
+        } else {
+          return jNDBLNKMPCK_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : jNDBLNKMPCK_;
+        }
+      }
+      /**
+       * <code>.Vector JNDBLNKMPCK = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getJNDBLNKMPCKFieldBuilder() {
+        if (jNDBLNKMPCKBuilder_ == null) {
+          jNDBLNKMPCKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getJNDBLNKMPCK(),
+                  getParentForChildren(),
+                  isClean());
+          jNDBLNKMPCK_ = null;
+        }
+        return jNDBLNKMPCKBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1761,12 +1581,12 @@ public final class ShapeBoxOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016ShapeBox.proto\032\014Vector.proto\"\205\001\n\010Shape" +
-      "Box\022\027\n\006center\030\001 \001(\0132\007.Vector\022\026\n\005axis2\030\004 " +
-      "\001(\0132\007.Vector\022\030\n\007extents\030\005 \001(\0132\007.Vector\022\026" +
-      "\n\005axis1\030\003 \001(\0132\007.Vector\022\026\n\005axis0\030\002 \001(\0132\007." +
-      "VectorB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "\n\016ShapeBox.proto\032\014Vector.proto\"\227\001\n\010Shape" +
+      "Box\022\034\n\013FIFFOHFGFLF\030\002 \001(\0132\007.Vector\022\030\n\007ext" +
+      "ents\030\005 \001(\0132\007.Vector\022\034\n\013LPBLCAPDBPE\030\003 \001(\013" +
+      "2\007.Vector\022\027\n\006center\030\001 \001(\0132\007.Vector\022\034\n\013JN" +
+      "DBLNKMPCK\030\004 \001(\0132\007.VectorB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1778,7 +1598,7 @@ public final class ShapeBoxOuterClass {
     internal_static_ShapeBox_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ShapeBox_descriptor,
-        new java.lang.String[] { "Center", "Axis2", "Extents", "Axis1", "Axis0", });
+        new java.lang.String[] { "FIFFOHFGFLF", "Extents", "LPBLCAPDBPE", "Center", "JNDBLNKMPCK", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

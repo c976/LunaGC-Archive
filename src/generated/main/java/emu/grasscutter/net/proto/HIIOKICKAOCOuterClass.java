@@ -19,80 +19,48 @@ public final class HIIOKICKAOCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float LKEJBDILKEF = 9;</code>
      * @return The lKEJBDILKEF.
      */
     float getLKEJBDILKEF();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool KEMHNIEDEBD = 12;</code>
      * @return The kEMHNIEDEBD.
      */
     boolean getKEMHNIEDEBD();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float PKPNMEMFNPN = 15;</code>
      * @return The pKPNMEMFNPN.
      */
     float getPKPNMEMFNPN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float KIPELBKDIAN = 10;</code>
      * @return The kIPELBKDIAN.
      */
     float getKIPELBKDIAN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 value = 14;</code>
      * @return The value.
      */
     int getValue();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IILLFBIKDNC = 13;</code>
      * @return The iILLFBIKDNC.
      */
     int getIILLFBIKDNC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 4;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float rot = 2;</code>
      * @return The rot.
      */
@@ -218,10 +186,6 @@ public final class HIIOKICKAOCOuterClass {
     public static final int LKEJBDILKEF_FIELD_NUMBER = 9;
     private float lKEJBDILKEF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float LKEJBDILKEF = 9;</code>
      * @return The lKEJBDILKEF.
      */
@@ -233,10 +197,6 @@ public final class HIIOKICKAOCOuterClass {
     public static final int KEMHNIEDEBD_FIELD_NUMBER = 12;
     private boolean kEMHNIEDEBD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool KEMHNIEDEBD = 12;</code>
      * @return The kEMHNIEDEBD.
      */
@@ -248,10 +208,6 @@ public final class HIIOKICKAOCOuterClass {
     public static final int PKPNMEMFNPN_FIELD_NUMBER = 15;
     private float pKPNMEMFNPN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float PKPNMEMFNPN = 15;</code>
      * @return The pKPNMEMFNPN.
      */
@@ -263,10 +219,6 @@ public final class HIIOKICKAOCOuterClass {
     public static final int KIPELBKDIAN_FIELD_NUMBER = 10;
     private float kIPELBKDIAN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float KIPELBKDIAN = 10;</code>
      * @return The kIPELBKDIAN.
      */
@@ -278,10 +230,6 @@ public final class HIIOKICKAOCOuterClass {
     public static final int VALUE_FIELD_NUMBER = 14;
     private int value_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 value = 14;</code>
      * @return The value.
      */
@@ -293,10 +241,6 @@ public final class HIIOKICKAOCOuterClass {
     public static final int IILLFBIKDNC_FIELD_NUMBER = 13;
     private int iILLFBIKDNC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IILLFBIKDNC = 13;</code>
      * @return The iILLFBIKDNC.
      */
@@ -308,10 +252,6 @@ public final class HIIOKICKAOCOuterClass {
     public static final int ID_FIELD_NUMBER = 4;
     private int id_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 4;</code>
      * @return The id.
      */
@@ -323,10 +263,6 @@ public final class HIIOKICKAOCOuterClass {
     public static final int ROT_FIELD_NUMBER = 2;
     private float rot_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float rot = 2;</code>
      * @return The rot.
      */
@@ -767,10 +703,6 @@ public final class HIIOKICKAOCOuterClass {
 
       private float lKEJBDILKEF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float LKEJBDILKEF = 9;</code>
        * @return The lKEJBDILKEF.
        */
@@ -779,10 +711,6 @@ public final class HIIOKICKAOCOuterClass {
         return lKEJBDILKEF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float LKEJBDILKEF = 9;</code>
        * @param value The lKEJBDILKEF to set.
        * @return This builder for chaining.
@@ -794,10 +722,6 @@ public final class HIIOKICKAOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float LKEJBDILKEF = 9;</code>
        * @return This builder for chaining.
        */
@@ -810,10 +734,6 @@ public final class HIIOKICKAOCOuterClass {
 
       private boolean kEMHNIEDEBD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool KEMHNIEDEBD = 12;</code>
        * @return The kEMHNIEDEBD.
        */
@@ -822,10 +742,6 @@ public final class HIIOKICKAOCOuterClass {
         return kEMHNIEDEBD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool KEMHNIEDEBD = 12;</code>
        * @param value The kEMHNIEDEBD to set.
        * @return This builder for chaining.
@@ -837,10 +753,6 @@ public final class HIIOKICKAOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool KEMHNIEDEBD = 12;</code>
        * @return This builder for chaining.
        */
@@ -853,10 +765,6 @@ public final class HIIOKICKAOCOuterClass {
 
       private float pKPNMEMFNPN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float PKPNMEMFNPN = 15;</code>
        * @return The pKPNMEMFNPN.
        */
@@ -865,10 +773,6 @@ public final class HIIOKICKAOCOuterClass {
         return pKPNMEMFNPN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float PKPNMEMFNPN = 15;</code>
        * @param value The pKPNMEMFNPN to set.
        * @return This builder for chaining.
@@ -880,10 +784,6 @@ public final class HIIOKICKAOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float PKPNMEMFNPN = 15;</code>
        * @return This builder for chaining.
        */
@@ -896,10 +796,6 @@ public final class HIIOKICKAOCOuterClass {
 
       private float kIPELBKDIAN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float KIPELBKDIAN = 10;</code>
        * @return The kIPELBKDIAN.
        */
@@ -908,10 +804,6 @@ public final class HIIOKICKAOCOuterClass {
         return kIPELBKDIAN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float KIPELBKDIAN = 10;</code>
        * @param value The kIPELBKDIAN to set.
        * @return This builder for chaining.
@@ -923,10 +815,6 @@ public final class HIIOKICKAOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float KIPELBKDIAN = 10;</code>
        * @return This builder for chaining.
        */
@@ -939,10 +827,6 @@ public final class HIIOKICKAOCOuterClass {
 
       private int value_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 value = 14;</code>
        * @return The value.
        */
@@ -951,10 +835,6 @@ public final class HIIOKICKAOCOuterClass {
         return value_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 value = 14;</code>
        * @param value The value to set.
        * @return This builder for chaining.
@@ -966,10 +846,6 @@ public final class HIIOKICKAOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 value = 14;</code>
        * @return This builder for chaining.
        */
@@ -982,10 +858,6 @@ public final class HIIOKICKAOCOuterClass {
 
       private int iILLFBIKDNC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IILLFBIKDNC = 13;</code>
        * @return The iILLFBIKDNC.
        */
@@ -994,10 +866,6 @@ public final class HIIOKICKAOCOuterClass {
         return iILLFBIKDNC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IILLFBIKDNC = 13;</code>
        * @param value The iILLFBIKDNC to set.
        * @return This builder for chaining.
@@ -1009,10 +877,6 @@ public final class HIIOKICKAOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IILLFBIKDNC = 13;</code>
        * @return This builder for chaining.
        */
@@ -1025,10 +889,6 @@ public final class HIIOKICKAOCOuterClass {
 
       private int id_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 4;</code>
        * @return The id.
        */
@@ -1037,10 +897,6 @@ public final class HIIOKICKAOCOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 4;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -1052,10 +908,6 @@ public final class HIIOKICKAOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 4;</code>
        * @return This builder for chaining.
        */
@@ -1068,10 +920,6 @@ public final class HIIOKICKAOCOuterClass {
 
       private float rot_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float rot = 2;</code>
        * @return The rot.
        */
@@ -1080,10 +928,6 @@ public final class HIIOKICKAOCOuterClass {
         return rot_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float rot = 2;</code>
        * @param value The rot to set.
        * @return This builder for chaining.
@@ -1095,10 +939,6 @@ public final class HIIOKICKAOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float rot = 2;</code>
        * @return This builder for chaining.
        */

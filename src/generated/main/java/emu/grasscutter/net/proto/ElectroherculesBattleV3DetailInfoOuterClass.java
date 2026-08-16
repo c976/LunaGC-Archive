@@ -19,77 +19,45 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+     * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP> 
-        getLevelInfoListList();
+    java.util.List<emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG> 
+        getGGOKKDEKPJMList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+     * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
      */
-    emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP getLevelInfoList(int index);
+    emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG getGGOKKDEKPJM(int index);
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+     * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
      */
-    int getLevelInfoListCount();
+    int getGGOKKDEKPJMCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+     * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHPOrBuilder> 
-        getLevelInfoListOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOGOrBuilder> 
+        getGGOKKDEKPJMOrBuilderList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+     * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
      */
-    emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHPOrBuilder getLevelInfoListOrBuilder(
+    emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOGOrBuilder getGGOKKDEKPJMOrBuilder(
         int index);
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 open_stage_list = 8;</code>
-     * @return A list containing the openStageList.
+     * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
+     * @return A list containing the jKPPHFIKJDC.
      */
-    java.util.List<java.lang.Integer> getOpenStageListList();
+    java.util.List<java.lang.Integer> getJKPPHFIKJDCList();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 open_stage_list = 8;</code>
-     * @return The count of openStageList.
+     * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
+     * @return The count of jKPPHFIKJDC.
      */
-    int getOpenStageListCount();
+    int getJKPPHFIKJDCCount();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 open_stage_list = 8;</code>
+     * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
      * @param index The index of the element to return.
-     * @return The openStageList at the given index.
+     * @return The jKPPHFIKJDC at the given index.
      */
-    int getOpenStageList(int index);
+    int getJKPPHFIKJDC(int index);
   }
   /**
    * Protobuf type {@code ElectroherculesBattleV3DetailInfo}
@@ -104,8 +72,8 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
       super(builder);
     }
     private ElectroherculesBattleV3DetailInfo() {
-      levelInfoList_ = java.util.Collections.emptyList();
-      openStageList_ = emptyIntList();
+      gGOKKDEKPJM_ = java.util.Collections.emptyList();
+      jKPPHFIKJDC_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -139,32 +107,32 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP>();
+                gGOKKDEKPJM_ = new java.util.ArrayList<emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.parser(), extensionRegistry));
+              gGOKKDEKPJM_.add(
+                  input.readMessage(emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.parser(), extensionRegistry));
               break;
             }
             case 64: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                openStageList_ = newIntList();
+                jKPPHFIKJDC_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
-              openStageList_.addInt(input.readUInt32());
+              jKPPHFIKJDC_.addInt(input.readUInt32());
               break;
             }
             case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                openStageList_ = newIntList();
+                jKPPHFIKJDC_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                openStageList_.addInt(input.readUInt32());
+                jKPPHFIKJDC_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -185,10 +153,10 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = java.util.Collections.unmodifiableList(levelInfoList_);
+          gGOKKDEKPJM_ = java.util.Collections.unmodifiableList(gGOKKDEKPJM_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          openStageList_.makeImmutable(); // C
+          jKPPHFIKJDC_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -207,105 +175,73 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
               emu.grasscutter.net.proto.ElectroherculesBattleV3DetailInfoOuterClass.ElectroherculesBattleV3DetailInfo.class, emu.grasscutter.net.proto.ElectroherculesBattleV3DetailInfoOuterClass.ElectroherculesBattleV3DetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP> levelInfoList_;
+    public static final int GGOKKDEKPJM_FIELD_NUMBER = 1;
+    private java.util.List<emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG> gGOKKDEKPJM_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+     * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP> getLevelInfoListList() {
-      return levelInfoList_;
+    public java.util.List<emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG> getGGOKKDEKPJMList() {
+      return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+     * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHPOrBuilder> 
-        getLevelInfoListOrBuilderList() {
-      return levelInfoList_;
+    public java.util.List<? extends emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOGOrBuilder> 
+        getGGOKKDEKPJMOrBuilderList() {
+      return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+     * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
      */
     @java.lang.Override
-    public int getLevelInfoListCount() {
-      return levelInfoList_.size();
+    public int getGGOKKDEKPJMCount() {
+      return gGOKKDEKPJM_.size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+     * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP getLevelInfoList(int index) {
-      return levelInfoList_.get(index);
+    public emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG getGGOKKDEKPJM(int index) {
+      return gGOKKDEKPJM_.get(index);
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+     * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHPOrBuilder getLevelInfoListOrBuilder(
+    public emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOGOrBuilder getGGOKKDEKPJMOrBuilder(
         int index) {
-      return levelInfoList_.get(index);
+      return gGOKKDEKPJM_.get(index);
     }
 
-    public static final int OPEN_STAGE_LIST_FIELD_NUMBER = 8;
-    private com.google.protobuf.Internal.IntList openStageList_;
+    public static final int JKPPHFIKJDC_FIELD_NUMBER = 8;
+    private com.google.protobuf.Internal.IntList jKPPHFIKJDC_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 open_stage_list = 8;</code>
-     * @return A list containing the openStageList.
+     * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
+     * @return A list containing the jKPPHFIKJDC.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getOpenStageListList() {
-      return openStageList_;
+        getJKPPHFIKJDCList() {
+      return jKPPHFIKJDC_;
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 open_stage_list = 8;</code>
-     * @return The count of openStageList.
+     * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
+     * @return The count of jKPPHFIKJDC.
      */
-    public int getOpenStageListCount() {
-      return openStageList_.size();
+    public int getJKPPHFIKJDCCount() {
+      return jKPPHFIKJDC_.size();
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 open_stage_list = 8;</code>
+     * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
      * @param index The index of the element to return.
-     * @return The openStageList at the given index.
+     * @return The jKPPHFIKJDC at the given index.
      */
-    public int getOpenStageList(int index) {
-      return openStageList_.getInt(index);
+    public int getJKPPHFIKJDC(int index) {
+      return jKPPHFIKJDC_.getInt(index);
     }
-    private int openStageListMemoizedSerializedSize = -1;
+    private int jKPPHFIKJDCMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -322,15 +258,15 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(3, levelInfoList_.get(i));
+      for (int i = 0; i < gGOKKDEKPJM_.size(); i++) {
+        output.writeMessage(1, gGOKKDEKPJM_.get(i));
       }
-      if (getOpenStageListList().size() > 0) {
+      if (getJKPPHFIKJDCList().size() > 0) {
         output.writeUInt32NoTag(66);
-        output.writeUInt32NoTag(openStageListMemoizedSerializedSize);
+        output.writeUInt32NoTag(jKPPHFIKJDCMemoizedSerializedSize);
       }
-      for (int i = 0; i < openStageList_.size(); i++) {
-        output.writeUInt32NoTag(openStageList_.getInt(i));
+      for (int i = 0; i < jKPPHFIKJDC_.size(); i++) {
+        output.writeUInt32NoTag(jKPPHFIKJDC_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -341,23 +277,23 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < levelInfoList_.size(); i++) {
+      for (int i = 0; i < gGOKKDEKPJM_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, levelInfoList_.get(i));
+          .computeMessageSize(1, gGOKKDEKPJM_.get(i));
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < openStageList_.size(); i++) {
+        for (int i = 0; i < jKPPHFIKJDC_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(openStageList_.getInt(i));
+            .computeUInt32SizeNoTag(jKPPHFIKJDC_.getInt(i));
         }
         size += dataSize;
-        if (!getOpenStageListList().isEmpty()) {
+        if (!getJKPPHFIKJDCList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        openStageListMemoizedSerializedSize = dataSize;
+        jKPPHFIKJDCMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -374,10 +310,10 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.ElectroherculesBattleV3DetailInfoOuterClass.ElectroherculesBattleV3DetailInfo other = (emu.grasscutter.net.proto.ElectroherculesBattleV3DetailInfoOuterClass.ElectroherculesBattleV3DetailInfo) obj;
 
-      if (!getLevelInfoListList()
-          .equals(other.getLevelInfoListList())) return false;
-      if (!getOpenStageListList()
-          .equals(other.getOpenStageListList())) return false;
+      if (!getGGOKKDEKPJMList()
+          .equals(other.getGGOKKDEKPJMList())) return false;
+      if (!getJKPPHFIKJDCList()
+          .equals(other.getJKPPHFIKJDCList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -389,13 +325,13 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getLevelInfoListCount() > 0) {
-        hash = (37 * hash) + LEVEL_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getLevelInfoListList().hashCode();
+      if (getGGOKKDEKPJMCount() > 0) {
+        hash = (37 * hash) + GGOKKDEKPJM_FIELD_NUMBER;
+        hash = (53 * hash) + getGGOKKDEKPJMList().hashCode();
       }
-      if (getOpenStageListCount() > 0) {
-        hash = (37 * hash) + OPEN_STAGE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getOpenStageListList().hashCode();
+      if (getJKPPHFIKJDCCount() > 0) {
+        hash = (37 * hash) + JKPPHFIKJDC_FIELD_NUMBER;
+        hash = (53 * hash) + getJKPPHFIKJDCList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -525,19 +461,19 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getLevelInfoListFieldBuilder();
+          getGGOKKDEKPJMFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (levelInfoListBuilder_ == null) {
-          levelInfoList_ = java.util.Collections.emptyList();
+        if (gGOKKDEKPJMBuilder_ == null) {
+          gGOKKDEKPJM_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          levelInfoListBuilder_.clear();
+          gGOKKDEKPJMBuilder_.clear();
         }
-        openStageList_ = emptyIntList();
+        jKPPHFIKJDC_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -566,20 +502,20 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
       public emu.grasscutter.net.proto.ElectroherculesBattleV3DetailInfoOuterClass.ElectroherculesBattleV3DetailInfo buildPartial() {
         emu.grasscutter.net.proto.ElectroherculesBattleV3DetailInfoOuterClass.ElectroherculesBattleV3DetailInfo result = new emu.grasscutter.net.proto.ElectroherculesBattleV3DetailInfoOuterClass.ElectroherculesBattleV3DetailInfo(this);
         int from_bitField0_ = bitField0_;
-        if (levelInfoListBuilder_ == null) {
+        if (gGOKKDEKPJMBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            levelInfoList_ = java.util.Collections.unmodifiableList(levelInfoList_);
+            gGOKKDEKPJM_ = java.util.Collections.unmodifiableList(gGOKKDEKPJM_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.levelInfoList_ = levelInfoList_;
+          result.gGOKKDEKPJM_ = gGOKKDEKPJM_;
         } else {
-          result.levelInfoList_ = levelInfoListBuilder_.build();
+          result.gGOKKDEKPJM_ = gGOKKDEKPJMBuilder_.build();
         }
         if (((bitField0_ & 0x00000002) != 0)) {
-          openStageList_.makeImmutable();
+          jKPPHFIKJDC_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.openStageList_ = openStageList_;
+        result.jKPPHFIKJDC_ = jKPPHFIKJDC_;
         onBuilt();
         return result;
       }
@@ -628,39 +564,39 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ElectroherculesBattleV3DetailInfoOuterClass.ElectroherculesBattleV3DetailInfo other) {
         if (other == emu.grasscutter.net.proto.ElectroherculesBattleV3DetailInfoOuterClass.ElectroherculesBattleV3DetailInfo.getDefaultInstance()) return this;
-        if (levelInfoListBuilder_ == null) {
-          if (!other.levelInfoList_.isEmpty()) {
-            if (levelInfoList_.isEmpty()) {
-              levelInfoList_ = other.levelInfoList_;
+        if (gGOKKDEKPJMBuilder_ == null) {
+          if (!other.gGOKKDEKPJM_.isEmpty()) {
+            if (gGOKKDEKPJM_.isEmpty()) {
+              gGOKKDEKPJM_ = other.gGOKKDEKPJM_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureLevelInfoListIsMutable();
-              levelInfoList_.addAll(other.levelInfoList_);
+              ensureGGOKKDEKPJMIsMutable();
+              gGOKKDEKPJM_.addAll(other.gGOKKDEKPJM_);
             }
             onChanged();
           }
         } else {
-          if (!other.levelInfoList_.isEmpty()) {
-            if (levelInfoListBuilder_.isEmpty()) {
-              levelInfoListBuilder_.dispose();
-              levelInfoListBuilder_ = null;
-              levelInfoList_ = other.levelInfoList_;
+          if (!other.gGOKKDEKPJM_.isEmpty()) {
+            if (gGOKKDEKPJMBuilder_.isEmpty()) {
+              gGOKKDEKPJMBuilder_.dispose();
+              gGOKKDEKPJMBuilder_ = null;
+              gGOKKDEKPJM_ = other.gGOKKDEKPJM_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              levelInfoListBuilder_ = 
+              gGOKKDEKPJMBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getLevelInfoListFieldBuilder() : null;
+                   getGGOKKDEKPJMFieldBuilder() : null;
             } else {
-              levelInfoListBuilder_.addAllMessages(other.levelInfoList_);
+              gGOKKDEKPJMBuilder_.addAllMessages(other.gGOKKDEKPJM_);
             }
           }
         }
-        if (!other.openStageList_.isEmpty()) {
-          if (openStageList_.isEmpty()) {
-            openStageList_ = other.openStageList_;
+        if (!other.jKPPHFIKJDC_.isEmpty()) {
+          if (jKPPHFIKJDC_.isEmpty()) {
+            jKPPHFIKJDC_ = other.jKPPHFIKJDC_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureOpenStageListIsMutable();
-            openStageList_.addAll(other.openStageList_);
+            ensureJKPPHFIKJDCIsMutable();
+            jKPPHFIKJDC_.addAll(other.jKPPHFIKJDC_);
           }
           onChanged();
         }
@@ -694,420 +630,320 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP> levelInfoList_ =
+      private java.util.List<emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG> gGOKKDEKPJM_ =
         java.util.Collections.emptyList();
-      private void ensureLevelInfoListIsMutable() {
+      private void ensureGGOKKDEKPJMIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP>(levelInfoList_);
+          gGOKKDEKPJM_ = new java.util.ArrayList<emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG>(gGOKKDEKPJM_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP, emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.Builder, emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHPOrBuilder> levelInfoListBuilder_;
+          emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG, emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.Builder, emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOGOrBuilder> gGOKKDEKPJMBuilder_;
 
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP> getLevelInfoListList() {
-        if (levelInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(levelInfoList_);
+      public java.util.List<emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG> getGGOKKDEKPJMList() {
+        if (gGOKKDEKPJMBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(gGOKKDEKPJM_);
         } else {
-          return levelInfoListBuilder_.getMessageList();
+          return gGOKKDEKPJMBuilder_.getMessageList();
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public int getLevelInfoListCount() {
-        if (levelInfoListBuilder_ == null) {
-          return levelInfoList_.size();
+      public int getGGOKKDEKPJMCount() {
+        if (gGOKKDEKPJMBuilder_ == null) {
+          return gGOKKDEKPJM_.size();
         } else {
-          return levelInfoListBuilder_.getCount();
+          return gGOKKDEKPJMBuilder_.getCount();
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP getLevelInfoList(int index) {
-        if (levelInfoListBuilder_ == null) {
-          return levelInfoList_.get(index);
+      public emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG getGGOKKDEKPJM(int index) {
+        if (gGOKKDEKPJMBuilder_ == null) {
+          return gGOKKDEKPJM_.get(index);
         } else {
-          return levelInfoListBuilder_.getMessage(index);
+          return gGOKKDEKPJMBuilder_.getMessage(index);
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP value) {
-        if (levelInfoListBuilder_ == null) {
+      public Builder setGGOKKDEKPJM(
+          int index, emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG value) {
+        if (gGOKKDEKPJMBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureLevelInfoListIsMutable();
-          levelInfoList_.set(index, value);
+          ensureGGOKKDEKPJMIsMutable();
+          gGOKKDEKPJM_.set(index, value);
           onChanged();
         } else {
-          levelInfoListBuilder_.setMessage(index, value);
+          gGOKKDEKPJMBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public Builder setLevelInfoList(
-          int index, emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.Builder builderForValue) {
-        if (levelInfoListBuilder_ == null) {
-          ensureLevelInfoListIsMutable();
-          levelInfoList_.set(index, builderForValue.build());
+      public Builder setGGOKKDEKPJM(
+          int index, emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.Builder builderForValue) {
+        if (gGOKKDEKPJMBuilder_ == null) {
+          ensureGGOKKDEKPJMIsMutable();
+          gGOKKDEKPJM_.set(index, builderForValue.build());
           onChanged();
         } else {
-          levelInfoListBuilder_.setMessage(index, builderForValue.build());
+          gGOKKDEKPJMBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public Builder addLevelInfoList(emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP value) {
-        if (levelInfoListBuilder_ == null) {
+      public Builder addGGOKKDEKPJM(emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG value) {
+        if (gGOKKDEKPJMBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureLevelInfoListIsMutable();
-          levelInfoList_.add(value);
+          ensureGGOKKDEKPJMIsMutable();
+          gGOKKDEKPJM_.add(value);
           onChanged();
         } else {
-          levelInfoListBuilder_.addMessage(value);
+          gGOKKDEKPJMBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP value) {
-        if (levelInfoListBuilder_ == null) {
+      public Builder addGGOKKDEKPJM(
+          int index, emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG value) {
+        if (gGOKKDEKPJMBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureLevelInfoListIsMutable();
-          levelInfoList_.add(index, value);
+          ensureGGOKKDEKPJMIsMutable();
+          gGOKKDEKPJM_.add(index, value);
           onChanged();
         } else {
-          levelInfoListBuilder_.addMessage(index, value);
+          gGOKKDEKPJMBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public Builder addLevelInfoList(
-          emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.Builder builderForValue) {
-        if (levelInfoListBuilder_ == null) {
-          ensureLevelInfoListIsMutable();
-          levelInfoList_.add(builderForValue.build());
+      public Builder addGGOKKDEKPJM(
+          emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.Builder builderForValue) {
+        if (gGOKKDEKPJMBuilder_ == null) {
+          ensureGGOKKDEKPJMIsMutable();
+          gGOKKDEKPJM_.add(builderForValue.build());
           onChanged();
         } else {
-          levelInfoListBuilder_.addMessage(builderForValue.build());
+          gGOKKDEKPJMBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public Builder addLevelInfoList(
-          int index, emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.Builder builderForValue) {
-        if (levelInfoListBuilder_ == null) {
-          ensureLevelInfoListIsMutable();
-          levelInfoList_.add(index, builderForValue.build());
+      public Builder addGGOKKDEKPJM(
+          int index, emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.Builder builderForValue) {
+        if (gGOKKDEKPJMBuilder_ == null) {
+          ensureGGOKKDEKPJMIsMutable();
+          gGOKKDEKPJM_.add(index, builderForValue.build());
           onChanged();
         } else {
-          levelInfoListBuilder_.addMessage(index, builderForValue.build());
+          gGOKKDEKPJMBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public Builder addAllLevelInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP> values) {
-        if (levelInfoListBuilder_ == null) {
-          ensureLevelInfoListIsMutable();
+      public Builder addAllGGOKKDEKPJM(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG> values) {
+        if (gGOKKDEKPJMBuilder_ == null) {
+          ensureGGOKKDEKPJMIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, levelInfoList_);
+              values, gGOKKDEKPJM_);
           onChanged();
         } else {
-          levelInfoListBuilder_.addAllMessages(values);
+          gGOKKDEKPJMBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public Builder clearLevelInfoList() {
-        if (levelInfoListBuilder_ == null) {
-          levelInfoList_ = java.util.Collections.emptyList();
+      public Builder clearGGOKKDEKPJM() {
+        if (gGOKKDEKPJMBuilder_ == null) {
+          gGOKKDEKPJM_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          levelInfoListBuilder_.clear();
+          gGOKKDEKPJMBuilder_.clear();
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public Builder removeLevelInfoList(int index) {
-        if (levelInfoListBuilder_ == null) {
-          ensureLevelInfoListIsMutable();
-          levelInfoList_.remove(index);
+      public Builder removeGGOKKDEKPJM(int index) {
+        if (gGOKKDEKPJMBuilder_ == null) {
+          ensureGGOKKDEKPJMIsMutable();
+          gGOKKDEKPJM_.remove(index);
           onChanged();
         } else {
-          levelInfoListBuilder_.remove(index);
+          gGOKKDEKPJMBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.Builder getLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.Builder getGGOKKDEKPJMBuilder(
           int index) {
-        return getLevelInfoListFieldBuilder().getBuilder(index);
+        return getGGOKKDEKPJMFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHPOrBuilder getLevelInfoListOrBuilder(
+      public emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOGOrBuilder getGGOKKDEKPJMOrBuilder(
           int index) {
-        if (levelInfoListBuilder_ == null) {
-          return levelInfoList_.get(index);  } else {
-          return levelInfoListBuilder_.getMessageOrBuilder(index);
+        if (gGOKKDEKPJMBuilder_ == null) {
+          return gGOKKDEKPJM_.get(index);  } else {
+          return gGOKKDEKPJMBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHPOrBuilder> 
-           getLevelInfoListOrBuilderList() {
-        if (levelInfoListBuilder_ != null) {
-          return levelInfoListBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOGOrBuilder> 
+           getGGOKKDEKPJMOrBuilderList() {
+        if (gGOKKDEKPJMBuilder_ != null) {
+          return gGOKKDEKPJMBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(levelInfoList_);
+          return java.util.Collections.unmodifiableList(gGOKKDEKPJM_);
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.Builder addLevelInfoListBuilder() {
-        return getLevelInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.getDefaultInstance());
+      public emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.Builder addGGOKKDEKPJMBuilder() {
+        return getGGOKKDEKPJMFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.Builder addLevelInfoListBuilder(
+      public emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.Builder addGGOKKDEKPJMBuilder(
           int index) {
-        return getLevelInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.getDefaultInstance());
+        return getGGOKKDEKPJMFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HOAMFFKPEHP level_info_list = 3;</code>
+       * <code>repeated .DHFNEBLOOOG GGOKKDEKPJM = 1;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.Builder> 
-           getLevelInfoListBuilderList() {
-        return getLevelInfoListFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.Builder> 
+           getGGOKKDEKPJMBuilderList() {
+        return getGGOKKDEKPJMFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP, emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.Builder, emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHPOrBuilder> 
-          getLevelInfoListFieldBuilder() {
-        if (levelInfoListBuilder_ == null) {
-          levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP, emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHP.Builder, emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.HOAMFFKPEHPOrBuilder>(
-                  levelInfoList_,
+          emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG, emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.Builder, emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOGOrBuilder> 
+          getGGOKKDEKPJMFieldBuilder() {
+        if (gGOKKDEKPJMBuilder_ == null) {
+          gGOKKDEKPJMBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG, emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOG.Builder, emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.DHFNEBLOOOGOrBuilder>(
+                  gGOKKDEKPJM_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          levelInfoList_ = null;
+          gGOKKDEKPJM_ = null;
         }
-        return levelInfoListBuilder_;
+        return gGOKKDEKPJMBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList openStageList_ = emptyIntList();
-      private void ensureOpenStageListIsMutable() {
+      private com.google.protobuf.Internal.IntList jKPPHFIKJDC_ = emptyIntList();
+      private void ensureJKPPHFIKJDCIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          openStageList_ = mutableCopy(openStageList_);
+          jKPPHFIKJDC_ = mutableCopy(jKPPHFIKJDC_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 open_stage_list = 8;</code>
-       * @return A list containing the openStageList.
+       * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
+       * @return A list containing the jKPPHFIKJDC.
        */
       public java.util.List<java.lang.Integer>
-          getOpenStageListList() {
+          getJKPPHFIKJDCList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(openStageList_) : openStageList_;
+                 java.util.Collections.unmodifiableList(jKPPHFIKJDC_) : jKPPHFIKJDC_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 open_stage_list = 8;</code>
-       * @return The count of openStageList.
+       * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
+       * @return The count of jKPPHFIKJDC.
        */
-      public int getOpenStageListCount() {
-        return openStageList_.size();
+      public int getJKPPHFIKJDCCount() {
+        return jKPPHFIKJDC_.size();
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 open_stage_list = 8;</code>
+       * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
        * @param index The index of the element to return.
-       * @return The openStageList at the given index.
+       * @return The jKPPHFIKJDC at the given index.
        */
-      public int getOpenStageList(int index) {
-        return openStageList_.getInt(index);
+      public int getJKPPHFIKJDC(int index) {
+        return jKPPHFIKJDC_.getInt(index);
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 open_stage_list = 8;</code>
+       * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
        * @param index The index to set the value at.
-       * @param value The openStageList to set.
+       * @param value The jKPPHFIKJDC to set.
        * @return This builder for chaining.
        */
-      public Builder setOpenStageList(
+      public Builder setJKPPHFIKJDC(
           int index, int value) {
-        ensureOpenStageListIsMutable();
-        openStageList_.setInt(index, value);
+        ensureJKPPHFIKJDCIsMutable();
+        jKPPHFIKJDC_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 open_stage_list = 8;</code>
-       * @param value The openStageList to add.
+       * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
+       * @param value The jKPPHFIKJDC to add.
        * @return This builder for chaining.
        */
-      public Builder addOpenStageList(int value) {
-        ensureOpenStageListIsMutable();
-        openStageList_.addInt(value);
+      public Builder addJKPPHFIKJDC(int value) {
+        ensureJKPPHFIKJDCIsMutable();
+        jKPPHFIKJDC_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 open_stage_list = 8;</code>
-       * @param values The openStageList to add.
+       * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
+       * @param values The jKPPHFIKJDC to add.
        * @return This builder for chaining.
        */
-      public Builder addAllOpenStageList(
+      public Builder addAllJKPPHFIKJDC(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOpenStageListIsMutable();
+        ensureJKPPHFIKJDCIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, openStageList_);
+            values, jKPPHFIKJDC_);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 open_stage_list = 8;</code>
+       * <code>repeated uint32 JKPPHFIKJDC = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOpenStageList() {
-        openStageList_ = emptyIntList();
+      public Builder clearJKPPHFIKJDC() {
+        jKPPHFIKJDC_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -1180,23 +1016,23 @@ public final class ElectroherculesBattleV3DetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'ElectroherculesBattleV3DetailInfo.prot" +
-      "o\032\021HOAMFFKPEHP.proto\"c\n!ElectroherculesB" +
-      "attleV3DetailInfo\022%\n\017level_info_list\030\003 \003" +
-      "(\0132\014.HOAMFFKPEHP\022\027\n\017open_stage_list\030\010 \003(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "o\032\021DHFNEBLOOOG.proto\"[\n!ElectroherculesB" +
+      "attleV3DetailInfo\022!\n\013GGOKKDEKPJM\030\001 \003(\0132\014" +
+      ".DHFNEBLOOOG\022\023\n\013JKPPHFIKJDC\030\010 \003(\rB\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.getDescriptor(),
         });
     internal_static_ElectroherculesBattleV3DetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ElectroherculesBattleV3DetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ElectroherculesBattleV3DetailInfo_descriptor,
-        new java.lang.String[] { "LevelInfoList", "OpenStageList", });
-    emu.grasscutter.net.proto.HOAMFFKPEHPOuterClass.getDescriptor();
+        new java.lang.String[] { "GGOKKDEKPJM", "JKPPHFIKJDC", });
+    emu.grasscutter.net.proto.DHFNEBLOOOGOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

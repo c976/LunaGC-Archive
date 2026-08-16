@@ -19,20 +19,21 @@ public final class CancelCoopTaskRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 chapter_id = 6;</code>
+     * <code>uint32 chapter_id = 9;</code>
      * @return The chapterId.
      */
     int getChapterId();
   }
   /**
    * <pre>
-   * CmdId: 22748
+   * CmdId: 26816
+   * Obf: MMIJBEHIGHH
    * </pre>
    *
    * Protobuf type {@code CancelCoopTaskRsp}
@@ -79,12 +80,12 @@ public final class CancelCoopTaskRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 48: {
+            case 72: {
 
               chapterId_ = input.readUInt32();
               break;
@@ -121,10 +122,10 @@ public final class CancelCoopTaskRspOuterClass {
               emu.grasscutter.net.proto.CancelCoopTaskRspOuterClass.CancelCoopTaskRsp.class, emu.grasscutter.net.proto.CancelCoopTaskRspOuterClass.CancelCoopTaskRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -132,10 +133,10 @@ public final class CancelCoopTaskRspOuterClass {
       return retcode_;
     }
 
-    public static final int CHAPTER_ID_FIELD_NUMBER = 6;
+    public static final int CHAPTER_ID_FIELD_NUMBER = 9;
     private int chapterId_;
     /**
-     * <code>uint32 chapter_id = 6;</code>
+     * <code>uint32 chapter_id = 9;</code>
      * @return The chapterId.
      */
     @java.lang.Override
@@ -158,10 +159,10 @@ public final class CancelCoopTaskRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(3, retcode_);
       }
       if (chapterId_ != 0) {
-        output.writeUInt32(6, chapterId_);
+        output.writeUInt32(9, chapterId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +175,11 @@ public final class CancelCoopTaskRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(3, retcode_);
       }
       if (chapterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, chapterId_);
+          .computeUInt32Size(9, chapterId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +312,8 @@ public final class CancelCoopTaskRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22748
+     * CmdId: 26816
+     * Obf: MMIJBEHIGHH
      * </pre>
      *
      * Protobuf type {@code CancelCoopTaskRsp}
@@ -468,7 +470,7 @@ public final class CancelCoopTaskRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -476,7 +478,7 @@ public final class CancelCoopTaskRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -487,7 +489,7 @@ public final class CancelCoopTaskRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -499,7 +501,7 @@ public final class CancelCoopTaskRspOuterClass {
 
       private int chapterId_ ;
       /**
-       * <code>uint32 chapter_id = 6;</code>
+       * <code>uint32 chapter_id = 9;</code>
        * @return The chapterId.
        */
       @java.lang.Override
@@ -507,7 +509,7 @@ public final class CancelCoopTaskRspOuterClass {
         return chapterId_;
       }
       /**
-       * <code>uint32 chapter_id = 6;</code>
+       * <code>uint32 chapter_id = 9;</code>
        * @param value The chapterId to set.
        * @return This builder for chaining.
        */
@@ -518,7 +520,7 @@ public final class CancelCoopTaskRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 chapter_id = 6;</code>
+       * <code>uint32 chapter_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearChapterId() {
@@ -595,7 +597,7 @@ public final class CancelCoopTaskRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027CancelCoopTaskRsp.proto\"8\n\021CancelCoopT" +
-      "askRsp\022\017\n\007retcode\030\004 \001(\005\022\022\n\nchapter_id\030\006 " +
+      "askRsp\022\017\n\007retcode\030\003 \001(\005\022\022\n\nchapter_id\030\t " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

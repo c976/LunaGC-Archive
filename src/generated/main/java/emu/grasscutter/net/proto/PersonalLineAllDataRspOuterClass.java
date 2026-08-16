@@ -19,169 +19,85 @@ public final class PersonalLineAllDataRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData> 
-        getLockedPersonalLineListList();
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
-     */
-    emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData getLockedPersonalLineList(int index);
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
-     */
-    int getLockedPersonalLineListCount();
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder> 
-        getLockedPersonalLineListOrBuilderList();
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
-     */
-    emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder getLockedPersonalLineListOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
+     * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
      * @return A list containing the canBeUnlockedPersonalLineList.
      */
     java.util.List<java.lang.Integer> getCanBeUnlockedPersonalLineListList();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
+     * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
      * @return The count of canBeUnlockedPersonalLineList.
      */
     int getCanBeUnlockedPersonalLineListCount();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
+     * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
      * @param index The index of the element to return.
      * @return The canBeUnlockedPersonalLineList at the given index.
      */
     int getCanBeUnlockedPersonalLineList(int index);
 
     /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-     * @return A list containing the lFKPIMPLOPL.
-     */
-    java.util.List<java.lang.Integer> getLFKPIMPLOPLList();
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-     * @return The count of lFKPIMPLOPL.
-     */
-    int getLFKPIMPLOPLCount();
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-     * @param index The index of the element to return.
-     * @return The lFKPIMPLOPL at the given index.
-     */
-    int getLFKPIMPLOPL(int index);
-
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-     * @return A list containing the gDFFMEHKMAF.
-     */
-    java.util.List<java.lang.Integer> getGDFFMEHKMAFList();
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-     * @return The count of gDFFMEHKMAF.
-     */
-    int getGDFFMEHKMAFCount();
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-     * @param index The index of the element to return.
-     * @return The gDFFMEHKMAF at the given index.
-     */
-    int getGDFFMEHKMAF(int index);
-
-    /**
-     * <pre>
-     * offset: 64
-     * </pre>
-     *
-     * <code>uint32 BLJFCDPEICO = 5;</code>
-     * @return The bLJFCDPEICO.
-     */
-    int getBLJFCDPEICO();
-
-    /**
-     * <pre>
-     * offset: 68
-     * </pre>
-     *
      * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <pre>
-     * offset: 72
-     * </pre>
-     *
-     * <code>uint32 CKNBOPHPNDE = 2;</code>
-     * @return The cKNBOPHPNDE.
+     * <code>uint32 cur_finished_daily_task_count = 11;</code>
+     * @return The curFinishedDailyTaskCount.
      */
-    int getCKNBOPHPNDE();
+    int getCurFinishedDailyTaskCount();
+
+    /**
+     * <code>uint32 legendary_key_count = 1;</code>
+     * @return The legendaryKeyCount.
+     */
+    int getLegendaryKeyCount();
+
+    /**
+     * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+     * @return A list containing the ongoingPersonalLineList.
+     */
+    java.util.List<java.lang.Integer> getOngoingPersonalLineListList();
+    /**
+     * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+     * @return The count of ongoingPersonalLineList.
+     */
+    int getOngoingPersonalLineListCount();
+    /**
+     * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+     * @param index The index of the element to return.
+     * @return The ongoingPersonalLineList at the given index.
+     */
+    int getOngoingPersonalLineList(int index);
+
+    /**
+     * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData> 
+        getLockedPersonalLineListList();
+    /**
+     * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
+     */
+    emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData getLockedPersonalLineList(int index);
+    /**
+     * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
+     */
+    int getLockedPersonalLineListCount();
+    /**
+     * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder> 
+        getLockedPersonalLineListOrBuilderList();
+    /**
+     * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
+     */
+    emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder getLockedPersonalLineListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * CmdId: 29811
+   * CmdId: 20607
+   * Obf: EKHCNHLAPJL
    * </pre>
    *
    * Protobuf type {@code PersonalLineAllDataRsp}
@@ -196,10 +112,9 @@ public final class PersonalLineAllDataRspOuterClass {
       super(builder);
     }
     private PersonalLineAllDataRsp() {
-      lockedPersonalLineList_ = java.util.Collections.emptyList();
       canBeUnlockedPersonalLineList_ = emptyIntList();
-      lFKPIMPLOPL_ = emptyIntList();
-      gDFFMEHKMAF_ = emptyIntList();
+      ongoingPersonalLineList_ = emptyIntList();
+      lockedPersonalLineList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -233,56 +148,25 @@ public final class PersonalLineAllDataRspOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              legendaryKeyCount_ = input.readUInt32();
+              break;
+            }
             case 16: {
-
-              cKNBOPHPNDE_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 40: {
-
-              bLJFCDPEICO_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                gDFFMEHKMAF_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              gDFFMEHKMAF_.addInt(input.readUInt32());
-              break;
-            }
-            case 66: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
-                gDFFMEHKMAF_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                gDFFMEHKMAF_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 80: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 canBeUnlockedPersonalLineList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               canBeUnlockedPersonalLineList_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 canBeUnlockedPersonalLineList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 canBeUnlockedPersonalLineList_.addInt(input.readUInt32());
@@ -290,34 +174,44 @@ public final class PersonalLineAllDataRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 88: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                lFKPIMPLOPL_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              lFKPIMPLOPL_.addInt(input.readUInt32());
+            case 24: {
+
+              retcode_ = input.readInt32();
               break;
             }
-            case 90: {
+            case 48: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                ongoingPersonalLineList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              ongoingPersonalLineList_.addInt(input.readUInt32());
+              break;
+            }
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                lFKPIMPLOPL_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                ongoingPersonalLineList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                lFKPIMPLOPL_.addInt(input.readUInt32());
+                ongoingPersonalLineList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 lockedPersonalLineList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000004;
               }
               lockedPersonalLineList_.add(
                   input.readMessage(emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.parser(), extensionRegistry));
+              break;
+            }
+            case 88: {
+
+              curFinishedDailyTaskCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -335,16 +229,13 @@ public final class PersonalLineAllDataRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          gDFFMEHKMAF_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           canBeUnlockedPersonalLineList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          lFKPIMPLOPL_.makeImmutable(); // C
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          ongoingPersonalLineList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
           lockedPersonalLineList_ = java.util.Collections.unmodifiableList(lockedPersonalLineList_);
         }
         this.unknownFields = unknownFields.build();
@@ -364,74 +255,10 @@ public final class PersonalLineAllDataRspOuterClass {
               emu.grasscutter.net.proto.PersonalLineAllDataRspOuterClass.PersonalLineAllDataRsp.class, emu.grasscutter.net.proto.PersonalLineAllDataRspOuterClass.PersonalLineAllDataRsp.Builder.class);
     }
 
-    public static final int LOCKED_PERSONAL_LINE_LIST_FIELD_NUMBER = 12;
-    private java.util.List<emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData> lockedPersonalLineList_;
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData> getLockedPersonalLineListList() {
-      return lockedPersonalLineList_;
-    }
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder> 
-        getLockedPersonalLineListOrBuilderList() {
-      return lockedPersonalLineList_;
-    }
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
-     */
-    @java.lang.Override
-    public int getLockedPersonalLineListCount() {
-      return lockedPersonalLineList_.size();
-    }
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData getLockedPersonalLineList(int index) {
-      return lockedPersonalLineList_.get(index);
-    }
-    /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder getLockedPersonalLineListOrBuilder(
-        int index) {
-      return lockedPersonalLineList_.get(index);
-    }
-
-    public static final int CAN_BE_UNLOCKED_PERSONAL_LINE_LIST_FIELD_NUMBER = 10;
+    public static final int CAN_BE_UNLOCKED_PERSONAL_LINE_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList canBeUnlockedPersonalLineList_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
+     * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
      * @return A list containing the canBeUnlockedPersonalLineList.
      */
     @java.lang.Override
@@ -440,22 +267,14 @@ public final class PersonalLineAllDataRspOuterClass {
       return canBeUnlockedPersonalLineList_;
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
+     * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
      * @return The count of canBeUnlockedPersonalLineList.
      */
     public int getCanBeUnlockedPersonalLineListCount() {
       return canBeUnlockedPersonalLineList_.size();
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
+     * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
      * @param index The index of the element to return.
      * @return The canBeUnlockedPersonalLineList at the given index.
      */
@@ -464,108 +283,9 @@ public final class PersonalLineAllDataRspOuterClass {
     }
     private int canBeUnlockedPersonalLineListMemoizedSerializedSize = -1;
 
-    public static final int LFKPIMPLOPL_FIELD_NUMBER = 11;
-    private com.google.protobuf.Internal.IntList lFKPIMPLOPL_;
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-     * @return A list containing the lFKPIMPLOPL.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getLFKPIMPLOPLList() {
-      return lFKPIMPLOPL_;
-    }
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-     * @return The count of lFKPIMPLOPL.
-     */
-    public int getLFKPIMPLOPLCount() {
-      return lFKPIMPLOPL_.size();
-    }
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-     * @param index The index of the element to return.
-     * @return The lFKPIMPLOPL at the given index.
-     */
-    public int getLFKPIMPLOPL(int index) {
-      return lFKPIMPLOPL_.getInt(index);
-    }
-    private int lFKPIMPLOPLMemoizedSerializedSize = -1;
-
-    public static final int GDFFMEHKMAF_FIELD_NUMBER = 8;
-    private com.google.protobuf.Internal.IntList gDFFMEHKMAF_;
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-     * @return A list containing the gDFFMEHKMAF.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getGDFFMEHKMAFList() {
-      return gDFFMEHKMAF_;
-    }
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-     * @return The count of gDFFMEHKMAF.
-     */
-    public int getGDFFMEHKMAFCount() {
-      return gDFFMEHKMAF_.size();
-    }
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-     * @param index The index of the element to return.
-     * @return The gDFFMEHKMAF at the given index.
-     */
-    public int getGDFFMEHKMAF(int index) {
-      return gDFFMEHKMAF_.getInt(index);
-    }
-    private int gDFFMEHKMAFMemoizedSerializedSize = -1;
-
-    public static final int BLJFCDPEICO_FIELD_NUMBER = 5;
-    private int bLJFCDPEICO_;
-    /**
-     * <pre>
-     * offset: 64
-     * </pre>
-     *
-     * <code>uint32 BLJFCDPEICO = 5;</code>
-     * @return The bLJFCDPEICO.
-     */
-    @java.lang.Override
-    public int getBLJFCDPEICO() {
-      return bLJFCDPEICO_;
-    }
-
     public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <pre>
-     * offset: 68
-     * </pre>
-     *
      * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
@@ -574,19 +294,94 @@ public final class PersonalLineAllDataRspOuterClass {
       return retcode_;
     }
 
-    public static final int CKNBOPHPNDE_FIELD_NUMBER = 2;
-    private int cKNBOPHPNDE_;
+    public static final int CUR_FINISHED_DAILY_TASK_COUNT_FIELD_NUMBER = 11;
+    private int curFinishedDailyTaskCount_;
     /**
-     * <pre>
-     * offset: 72
-     * </pre>
-     *
-     * <code>uint32 CKNBOPHPNDE = 2;</code>
-     * @return The cKNBOPHPNDE.
+     * <code>uint32 cur_finished_daily_task_count = 11;</code>
+     * @return The curFinishedDailyTaskCount.
      */
     @java.lang.Override
-    public int getCKNBOPHPNDE() {
-      return cKNBOPHPNDE_;
+    public int getCurFinishedDailyTaskCount() {
+      return curFinishedDailyTaskCount_;
+    }
+
+    public static final int LEGENDARY_KEY_COUNT_FIELD_NUMBER = 1;
+    private int legendaryKeyCount_;
+    /**
+     * <code>uint32 legendary_key_count = 1;</code>
+     * @return The legendaryKeyCount.
+     */
+    @java.lang.Override
+    public int getLegendaryKeyCount() {
+      return legendaryKeyCount_;
+    }
+
+    public static final int ONGOING_PERSONAL_LINE_LIST_FIELD_NUMBER = 6;
+    private com.google.protobuf.Internal.IntList ongoingPersonalLineList_;
+    /**
+     * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+     * @return A list containing the ongoingPersonalLineList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getOngoingPersonalLineListList() {
+      return ongoingPersonalLineList_;
+    }
+    /**
+     * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+     * @return The count of ongoingPersonalLineList.
+     */
+    public int getOngoingPersonalLineListCount() {
+      return ongoingPersonalLineList_.size();
+    }
+    /**
+     * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+     * @param index The index of the element to return.
+     * @return The ongoingPersonalLineList at the given index.
+     */
+    public int getOngoingPersonalLineList(int index) {
+      return ongoingPersonalLineList_.getInt(index);
+    }
+    private int ongoingPersonalLineListMemoizedSerializedSize = -1;
+
+    public static final int LOCKED_PERSONAL_LINE_LIST_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData> lockedPersonalLineList_;
+    /**
+     * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData> getLockedPersonalLineListList() {
+      return lockedPersonalLineList_;
+    }
+    /**
+     * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder> 
+        getLockedPersonalLineListOrBuilderList() {
+      return lockedPersonalLineList_;
+    }
+    /**
+     * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
+     */
+    @java.lang.Override
+    public int getLockedPersonalLineListCount() {
+      return lockedPersonalLineList_.size();
+    }
+    /**
+     * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData getLockedPersonalLineList(int index) {
+      return lockedPersonalLineList_.get(index);
+    }
+    /**
+     * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder getLockedPersonalLineListOrBuilder(
+        int index) {
+      return lockedPersonalLineList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -604,38 +399,31 @@ public final class PersonalLineAllDataRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (cKNBOPHPNDE_ != 0) {
-        output.writeUInt32(2, cKNBOPHPNDE_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
-      }
-      if (bLJFCDPEICO_ != 0) {
-        output.writeUInt32(5, bLJFCDPEICO_);
-      }
-      if (getGDFFMEHKMAFList().size() > 0) {
-        output.writeUInt32NoTag(66);
-        output.writeUInt32NoTag(gDFFMEHKMAFMemoizedSerializedSize);
-      }
-      for (int i = 0; i < gDFFMEHKMAF_.size(); i++) {
-        output.writeUInt32NoTag(gDFFMEHKMAF_.getInt(i));
+      if (legendaryKeyCount_ != 0) {
+        output.writeUInt32(1, legendaryKeyCount_);
       }
       if (getCanBeUnlockedPersonalLineListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(canBeUnlockedPersonalLineListMemoizedSerializedSize);
       }
       for (int i = 0; i < canBeUnlockedPersonalLineList_.size(); i++) {
         output.writeUInt32NoTag(canBeUnlockedPersonalLineList_.getInt(i));
       }
-      if (getLFKPIMPLOPLList().size() > 0) {
-        output.writeUInt32NoTag(90);
-        output.writeUInt32NoTag(lFKPIMPLOPLMemoizedSerializedSize);
+      if (retcode_ != 0) {
+        output.writeInt32(3, retcode_);
       }
-      for (int i = 0; i < lFKPIMPLOPL_.size(); i++) {
-        output.writeUInt32NoTag(lFKPIMPLOPL_.getInt(i));
+      if (getOngoingPersonalLineListList().size() > 0) {
+        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(ongoingPersonalLineListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < ongoingPersonalLineList_.size(); i++) {
+        output.writeUInt32NoTag(ongoingPersonalLineList_.getInt(i));
       }
       for (int i = 0; i < lockedPersonalLineList_.size(); i++) {
-        output.writeMessage(12, lockedPersonalLineList_.get(i));
+        output.writeMessage(8, lockedPersonalLineList_.get(i));
+      }
+      if (curFinishedDailyTaskCount_ != 0) {
+        output.writeUInt32(11, curFinishedDailyTaskCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -646,31 +434,9 @@ public final class PersonalLineAllDataRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cKNBOPHPNDE_ != 0) {
+      if (legendaryKeyCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, cKNBOPHPNDE_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
-      }
-      if (bLJFCDPEICO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, bLJFCDPEICO_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < gDFFMEHKMAF_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(gDFFMEHKMAF_.getInt(i));
-        }
-        size += dataSize;
-        if (!getGDFFMEHKMAFList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        gDFFMEHKMAFMemoizedSerializedSize = dataSize;
+          .computeUInt32Size(1, legendaryKeyCount_);
       }
       {
         int dataSize = 0;
@@ -686,23 +452,31 @@ public final class PersonalLineAllDataRspOuterClass {
         }
         canBeUnlockedPersonalLineListMemoizedSerializedSize = dataSize;
       }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, retcode_);
+      }
       {
         int dataSize = 0;
-        for (int i = 0; i < lFKPIMPLOPL_.size(); i++) {
+        for (int i = 0; i < ongoingPersonalLineList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(lFKPIMPLOPL_.getInt(i));
+            .computeUInt32SizeNoTag(ongoingPersonalLineList_.getInt(i));
         }
         size += dataSize;
-        if (!getLFKPIMPLOPLList().isEmpty()) {
+        if (!getOngoingPersonalLineListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        lFKPIMPLOPLMemoizedSerializedSize = dataSize;
+        ongoingPersonalLineListMemoizedSerializedSize = dataSize;
       }
       for (int i = 0; i < lockedPersonalLineList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, lockedPersonalLineList_.get(i));
+          .computeMessageSize(8, lockedPersonalLineList_.get(i));
+      }
+      if (curFinishedDailyTaskCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, curFinishedDailyTaskCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -719,20 +493,18 @@ public final class PersonalLineAllDataRspOuterClass {
       }
       emu.grasscutter.net.proto.PersonalLineAllDataRspOuterClass.PersonalLineAllDataRsp other = (emu.grasscutter.net.proto.PersonalLineAllDataRspOuterClass.PersonalLineAllDataRsp) obj;
 
-      if (!getLockedPersonalLineListList()
-          .equals(other.getLockedPersonalLineListList())) return false;
       if (!getCanBeUnlockedPersonalLineListList()
           .equals(other.getCanBeUnlockedPersonalLineListList())) return false;
-      if (!getLFKPIMPLOPLList()
-          .equals(other.getLFKPIMPLOPLList())) return false;
-      if (!getGDFFMEHKMAFList()
-          .equals(other.getGDFFMEHKMAFList())) return false;
-      if (getBLJFCDPEICO()
-          != other.getBLJFCDPEICO()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getCKNBOPHPNDE()
-          != other.getCKNBOPHPNDE()) return false;
+      if (getCurFinishedDailyTaskCount()
+          != other.getCurFinishedDailyTaskCount()) return false;
+      if (getLegendaryKeyCount()
+          != other.getLegendaryKeyCount()) return false;
+      if (!getOngoingPersonalLineListList()
+          .equals(other.getOngoingPersonalLineListList())) return false;
+      if (!getLockedPersonalLineListList()
+          .equals(other.getLockedPersonalLineListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -744,28 +516,24 @@ public final class PersonalLineAllDataRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getLockedPersonalLineListCount() > 0) {
-        hash = (37 * hash) + LOCKED_PERSONAL_LINE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getLockedPersonalLineListList().hashCode();
-      }
       if (getCanBeUnlockedPersonalLineListCount() > 0) {
         hash = (37 * hash) + CAN_BE_UNLOCKED_PERSONAL_LINE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCanBeUnlockedPersonalLineListList().hashCode();
       }
-      if (getLFKPIMPLOPLCount() > 0) {
-        hash = (37 * hash) + LFKPIMPLOPL_FIELD_NUMBER;
-        hash = (53 * hash) + getLFKPIMPLOPLList().hashCode();
-      }
-      if (getGDFFMEHKMAFCount() > 0) {
-        hash = (37 * hash) + GDFFMEHKMAF_FIELD_NUMBER;
-        hash = (53 * hash) + getGDFFMEHKMAFList().hashCode();
-      }
-      hash = (37 * hash) + BLJFCDPEICO_FIELD_NUMBER;
-      hash = (53 * hash) + getBLJFCDPEICO();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + CKNBOPHPNDE_FIELD_NUMBER;
-      hash = (53 * hash) + getCKNBOPHPNDE();
+      hash = (37 * hash) + CUR_FINISHED_DAILY_TASK_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getCurFinishedDailyTaskCount();
+      hash = (37 * hash) + LEGENDARY_KEY_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getLegendaryKeyCount();
+      if (getOngoingPersonalLineListCount() > 0) {
+        hash = (37 * hash) + ONGOING_PERSONAL_LINE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getOngoingPersonalLineListList().hashCode();
+      }
+      if (getLockedPersonalLineListCount() > 0) {
+        hash = (37 * hash) + LOCKED_PERSONAL_LINE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getLockedPersonalLineListList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -863,7 +631,8 @@ public final class PersonalLineAllDataRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29811
+     * CmdId: 20607
+     * Obf: EKHCNHLAPJL
      * </pre>
      *
      * Protobuf type {@code PersonalLineAllDataRsp}
@@ -904,24 +673,22 @@ public final class PersonalLineAllDataRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        canBeUnlockedPersonalLineList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        retcode_ = 0;
+
+        curFinishedDailyTaskCount_ = 0;
+
+        legendaryKeyCount_ = 0;
+
+        ongoingPersonalLineList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         if (lockedPersonalLineListBuilder_ == null) {
           lockedPersonalLineList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000004);
         } else {
           lockedPersonalLineListBuilder_.clear();
         }
-        canBeUnlockedPersonalLineList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        lFKPIMPLOPL_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        gDFFMEHKMAF_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        bLJFCDPEICO_ = 0;
-
-        retcode_ = 0;
-
-        cKNBOPHPNDE_ = 0;
-
         return this;
       }
 
@@ -949,33 +716,28 @@ public final class PersonalLineAllDataRspOuterClass {
       public emu.grasscutter.net.proto.PersonalLineAllDataRspOuterClass.PersonalLineAllDataRsp buildPartial() {
         emu.grasscutter.net.proto.PersonalLineAllDataRspOuterClass.PersonalLineAllDataRsp result = new emu.grasscutter.net.proto.PersonalLineAllDataRspOuterClass.PersonalLineAllDataRsp(this);
         int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          canBeUnlockedPersonalLineList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.canBeUnlockedPersonalLineList_ = canBeUnlockedPersonalLineList_;
+        result.retcode_ = retcode_;
+        result.curFinishedDailyTaskCount_ = curFinishedDailyTaskCount_;
+        result.legendaryKeyCount_ = legendaryKeyCount_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          ongoingPersonalLineList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.ongoingPersonalLineList_ = ongoingPersonalLineList_;
         if (lockedPersonalLineListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000004) != 0)) {
             lockedPersonalLineList_ = java.util.Collections.unmodifiableList(lockedPersonalLineList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000004);
           }
           result.lockedPersonalLineList_ = lockedPersonalLineList_;
         } else {
           result.lockedPersonalLineList_ = lockedPersonalLineListBuilder_.build();
         }
-        if (((bitField0_ & 0x00000002) != 0)) {
-          canBeUnlockedPersonalLineList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.canBeUnlockedPersonalLineList_ = canBeUnlockedPersonalLineList_;
-        if (((bitField0_ & 0x00000004) != 0)) {
-          lFKPIMPLOPL_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        }
-        result.lFKPIMPLOPL_ = lFKPIMPLOPL_;
-        if (((bitField0_ & 0x00000008) != 0)) {
-          gDFFMEHKMAF_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000008);
-        }
-        result.gDFFMEHKMAF_ = gDFFMEHKMAF_;
-        result.bLJFCDPEICO_ = bLJFCDPEICO_;
-        result.retcode_ = retcode_;
-        result.cKNBOPHPNDE_ = cKNBOPHPNDE_;
         onBuilt();
         return result;
       }
@@ -1024,11 +786,40 @@ public final class PersonalLineAllDataRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PersonalLineAllDataRspOuterClass.PersonalLineAllDataRsp other) {
         if (other == emu.grasscutter.net.proto.PersonalLineAllDataRspOuterClass.PersonalLineAllDataRsp.getDefaultInstance()) return this;
+        if (!other.canBeUnlockedPersonalLineList_.isEmpty()) {
+          if (canBeUnlockedPersonalLineList_.isEmpty()) {
+            canBeUnlockedPersonalLineList_ = other.canBeUnlockedPersonalLineList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureCanBeUnlockedPersonalLineListIsMutable();
+            canBeUnlockedPersonalLineList_.addAll(other.canBeUnlockedPersonalLineList_);
+          }
+          onChanged();
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (other.getCurFinishedDailyTaskCount() != 0) {
+          setCurFinishedDailyTaskCount(other.getCurFinishedDailyTaskCount());
+        }
+        if (other.getLegendaryKeyCount() != 0) {
+          setLegendaryKeyCount(other.getLegendaryKeyCount());
+        }
+        if (!other.ongoingPersonalLineList_.isEmpty()) {
+          if (ongoingPersonalLineList_.isEmpty()) {
+            ongoingPersonalLineList_ = other.ongoingPersonalLineList_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureOngoingPersonalLineListIsMutable();
+            ongoingPersonalLineList_.addAll(other.ongoingPersonalLineList_);
+          }
+          onChanged();
+        }
         if (lockedPersonalLineListBuilder_ == null) {
           if (!other.lockedPersonalLineList_.isEmpty()) {
             if (lockedPersonalLineList_.isEmpty()) {
               lockedPersonalLineList_ = other.lockedPersonalLineList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
               ensureLockedPersonalLineListIsMutable();
               lockedPersonalLineList_.addAll(other.lockedPersonalLineList_);
@@ -1041,7 +832,7 @@ public final class PersonalLineAllDataRspOuterClass {
               lockedPersonalLineListBuilder_.dispose();
               lockedPersonalLineListBuilder_ = null;
               lockedPersonalLineList_ = other.lockedPersonalLineList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000004);
               lockedPersonalLineListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getLockedPersonalLineListFieldBuilder() : null;
@@ -1049,45 +840,6 @@ public final class PersonalLineAllDataRspOuterClass {
               lockedPersonalLineListBuilder_.addAllMessages(other.lockedPersonalLineList_);
             }
           }
-        }
-        if (!other.canBeUnlockedPersonalLineList_.isEmpty()) {
-          if (canBeUnlockedPersonalLineList_.isEmpty()) {
-            canBeUnlockedPersonalLineList_ = other.canBeUnlockedPersonalLineList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureCanBeUnlockedPersonalLineListIsMutable();
-            canBeUnlockedPersonalLineList_.addAll(other.canBeUnlockedPersonalLineList_);
-          }
-          onChanged();
-        }
-        if (!other.lFKPIMPLOPL_.isEmpty()) {
-          if (lFKPIMPLOPL_.isEmpty()) {
-            lFKPIMPLOPL_ = other.lFKPIMPLOPL_;
-            bitField0_ = (bitField0_ & ~0x00000004);
-          } else {
-            ensureLFKPIMPLOPLIsMutable();
-            lFKPIMPLOPL_.addAll(other.lFKPIMPLOPL_);
-          }
-          onChanged();
-        }
-        if (!other.gDFFMEHKMAF_.isEmpty()) {
-          if (gDFFMEHKMAF_.isEmpty()) {
-            gDFFMEHKMAF_ = other.gDFFMEHKMAF_;
-            bitField0_ = (bitField0_ & ~0x00000008);
-          } else {
-            ensureGDFFMEHKMAFIsMutable();
-            gDFFMEHKMAF_.addAll(other.gDFFMEHKMAF_);
-          }
-          onChanged();
-        }
-        if (other.getBLJFCDPEICO() != 0) {
-          setBLJFCDPEICO(other.getBLJFCDPEICO());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.getCKNBOPHPNDE() != 0) {
-          setCKNBOPHPNDE(other.getCKNBOPHPNDE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1119,12 +871,263 @@ public final class PersonalLineAllDataRspOuterClass {
       }
       private int bitField0_;
 
+      private com.google.protobuf.Internal.IntList canBeUnlockedPersonalLineList_ = emptyIntList();
+      private void ensureCanBeUnlockedPersonalLineListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          canBeUnlockedPersonalLineList_ = mutableCopy(canBeUnlockedPersonalLineList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
+       * @return A list containing the canBeUnlockedPersonalLineList.
+       */
+      public java.util.List<java.lang.Integer>
+          getCanBeUnlockedPersonalLineListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(canBeUnlockedPersonalLineList_) : canBeUnlockedPersonalLineList_;
+      }
+      /**
+       * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
+       * @return The count of canBeUnlockedPersonalLineList.
+       */
+      public int getCanBeUnlockedPersonalLineListCount() {
+        return canBeUnlockedPersonalLineList_.size();
+      }
+      /**
+       * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
+       * @param index The index of the element to return.
+       * @return The canBeUnlockedPersonalLineList at the given index.
+       */
+      public int getCanBeUnlockedPersonalLineList(int index) {
+        return canBeUnlockedPersonalLineList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
+       * @param index The index to set the value at.
+       * @param value The canBeUnlockedPersonalLineList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCanBeUnlockedPersonalLineList(
+          int index, int value) {
+        ensureCanBeUnlockedPersonalLineListIsMutable();
+        canBeUnlockedPersonalLineList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
+       * @param value The canBeUnlockedPersonalLineList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addCanBeUnlockedPersonalLineList(int value) {
+        ensureCanBeUnlockedPersonalLineListIsMutable();
+        canBeUnlockedPersonalLineList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
+       * @param values The canBeUnlockedPersonalLineList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllCanBeUnlockedPersonalLineList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureCanBeUnlockedPersonalLineListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, canBeUnlockedPersonalLineList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 can_be_unlocked_personal_line_list = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCanBeUnlockedPersonalLineList() {
+        canBeUnlockedPersonalLineList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int curFinishedDailyTaskCount_ ;
+      /**
+       * <code>uint32 cur_finished_daily_task_count = 11;</code>
+       * @return The curFinishedDailyTaskCount.
+       */
+      @java.lang.Override
+      public int getCurFinishedDailyTaskCount() {
+        return curFinishedDailyTaskCount_;
+      }
+      /**
+       * <code>uint32 cur_finished_daily_task_count = 11;</code>
+       * @param value The curFinishedDailyTaskCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurFinishedDailyTaskCount(int value) {
+        
+        curFinishedDailyTaskCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cur_finished_daily_task_count = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurFinishedDailyTaskCount() {
+        
+        curFinishedDailyTaskCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int legendaryKeyCount_ ;
+      /**
+       * <code>uint32 legendary_key_count = 1;</code>
+       * @return The legendaryKeyCount.
+       */
+      @java.lang.Override
+      public int getLegendaryKeyCount() {
+        return legendaryKeyCount_;
+      }
+      /**
+       * <code>uint32 legendary_key_count = 1;</code>
+       * @param value The legendaryKeyCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLegendaryKeyCount(int value) {
+        
+        legendaryKeyCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 legendary_key_count = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLegendaryKeyCount() {
+        
+        legendaryKeyCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList ongoingPersonalLineList_ = emptyIntList();
+      private void ensureOngoingPersonalLineListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          ongoingPersonalLineList_ = mutableCopy(ongoingPersonalLineList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+       * @return A list containing the ongoingPersonalLineList.
+       */
+      public java.util.List<java.lang.Integer>
+          getOngoingPersonalLineListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(ongoingPersonalLineList_) : ongoingPersonalLineList_;
+      }
+      /**
+       * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+       * @return The count of ongoingPersonalLineList.
+       */
+      public int getOngoingPersonalLineListCount() {
+        return ongoingPersonalLineList_.size();
+      }
+      /**
+       * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+       * @param index The index of the element to return.
+       * @return The ongoingPersonalLineList at the given index.
+       */
+      public int getOngoingPersonalLineList(int index) {
+        return ongoingPersonalLineList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+       * @param index The index to set the value at.
+       * @param value The ongoingPersonalLineList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOngoingPersonalLineList(
+          int index, int value) {
+        ensureOngoingPersonalLineListIsMutable();
+        ongoingPersonalLineList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+       * @param value The ongoingPersonalLineList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addOngoingPersonalLineList(int value) {
+        ensureOngoingPersonalLineListIsMutable();
+        ongoingPersonalLineList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+       * @param values The ongoingPersonalLineList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllOngoingPersonalLineList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureOngoingPersonalLineListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, ongoingPersonalLineList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 ongoing_personal_line_list = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOngoingPersonalLineList() {
+        ongoingPersonalLineList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData> lockedPersonalLineList_ =
         java.util.Collections.emptyList();
       private void ensureLockedPersonalLineListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           lockedPersonalLineList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData>(lockedPersonalLineList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000004;
          }
       }
 
@@ -1132,11 +1135,7 @@ public final class PersonalLineAllDataRspOuterClass {
           emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.Builder, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder> lockedPersonalLineListBuilder_;
 
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData> getLockedPersonalLineListList() {
         if (lockedPersonalLineListBuilder_ == null) {
@@ -1146,11 +1145,7 @@ public final class PersonalLineAllDataRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public int getLockedPersonalLineListCount() {
         if (lockedPersonalLineListBuilder_ == null) {
@@ -1160,11 +1155,7 @@ public final class PersonalLineAllDataRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData getLockedPersonalLineList(int index) {
         if (lockedPersonalLineListBuilder_ == null) {
@@ -1174,11 +1165,7 @@ public final class PersonalLineAllDataRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public Builder setLockedPersonalLineList(
           int index, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData value) {
@@ -1195,11 +1182,7 @@ public final class PersonalLineAllDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public Builder setLockedPersonalLineList(
           int index, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.Builder builderForValue) {
@@ -1213,11 +1196,7 @@ public final class PersonalLineAllDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public Builder addLockedPersonalLineList(emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData value) {
         if (lockedPersonalLineListBuilder_ == null) {
@@ -1233,11 +1212,7 @@ public final class PersonalLineAllDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public Builder addLockedPersonalLineList(
           int index, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData value) {
@@ -1254,11 +1229,7 @@ public final class PersonalLineAllDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public Builder addLockedPersonalLineList(
           emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.Builder builderForValue) {
@@ -1272,11 +1243,7 @@ public final class PersonalLineAllDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public Builder addLockedPersonalLineList(
           int index, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.Builder builderForValue) {
@@ -1290,11 +1257,7 @@ public final class PersonalLineAllDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public Builder addAllLockedPersonalLineList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData> values) {
@@ -1309,16 +1272,12 @@ public final class PersonalLineAllDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public Builder clearLockedPersonalLineList() {
         if (lockedPersonalLineListBuilder_ == null) {
           lockedPersonalLineList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
           lockedPersonalLineListBuilder_.clear();
@@ -1326,11 +1285,7 @@ public final class PersonalLineAllDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public Builder removeLockedPersonalLineList(int index) {
         if (lockedPersonalLineListBuilder_ == null) {
@@ -1343,22 +1298,14 @@ public final class PersonalLineAllDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.Builder getLockedPersonalLineListBuilder(
           int index) {
         return getLockedPersonalLineListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder getLockedPersonalLineListOrBuilder(
           int index) {
@@ -1368,11 +1315,7 @@ public final class PersonalLineAllDataRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder> 
            getLockedPersonalLineListOrBuilderList() {
@@ -1383,22 +1326,14 @@ public final class PersonalLineAllDataRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.Builder addLockedPersonalLineListBuilder() {
         return getLockedPersonalLineListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.Builder addLockedPersonalLineListBuilder(
           int index) {
@@ -1406,11 +1341,7 @@ public final class PersonalLineAllDataRspOuterClass {
             index, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .LockedPersonallineData locked_personal_line_list = 12;</code>
+       * <code>repeated .LockedPersonallineData locked_personal_line_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.Builder> 
            getLockedPersonalLineListBuilderList() {
@@ -1423,462 +1354,12 @@ public final class PersonalLineAllDataRspOuterClass {
           lockedPersonalLineListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.Builder, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineDataOrBuilder>(
                   lockedPersonalLineList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
           lockedPersonalLineList_ = null;
         }
         return lockedPersonalLineListBuilder_;
-      }
-
-      private com.google.protobuf.Internal.IntList canBeUnlockedPersonalLineList_ = emptyIntList();
-      private void ensureCanBeUnlockedPersonalLineListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          canBeUnlockedPersonalLineList_ = mutableCopy(canBeUnlockedPersonalLineList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
-       * @return A list containing the canBeUnlockedPersonalLineList.
-       */
-      public java.util.List<java.lang.Integer>
-          getCanBeUnlockedPersonalLineListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(canBeUnlockedPersonalLineList_) : canBeUnlockedPersonalLineList_;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
-       * @return The count of canBeUnlockedPersonalLineList.
-       */
-      public int getCanBeUnlockedPersonalLineListCount() {
-        return canBeUnlockedPersonalLineList_.size();
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
-       * @param index The index of the element to return.
-       * @return The canBeUnlockedPersonalLineList at the given index.
-       */
-      public int getCanBeUnlockedPersonalLineList(int index) {
-        return canBeUnlockedPersonalLineList_.getInt(index);
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
-       * @param index The index to set the value at.
-       * @param value The canBeUnlockedPersonalLineList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCanBeUnlockedPersonalLineList(
-          int index, int value) {
-        ensureCanBeUnlockedPersonalLineListIsMutable();
-        canBeUnlockedPersonalLineList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
-       * @param value The canBeUnlockedPersonalLineList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addCanBeUnlockedPersonalLineList(int value) {
-        ensureCanBeUnlockedPersonalLineListIsMutable();
-        canBeUnlockedPersonalLineList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
-       * @param values The canBeUnlockedPersonalLineList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllCanBeUnlockedPersonalLineList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureCanBeUnlockedPersonalLineListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, canBeUnlockedPersonalLineList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 can_be_unlocked_personal_line_list = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCanBeUnlockedPersonalLineList() {
-        canBeUnlockedPersonalLineList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList lFKPIMPLOPL_ = emptyIntList();
-      private void ensureLFKPIMPLOPLIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          lFKPIMPLOPL_ = mutableCopy(lFKPIMPLOPL_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-       * @return A list containing the lFKPIMPLOPL.
-       */
-      public java.util.List<java.lang.Integer>
-          getLFKPIMPLOPLList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(lFKPIMPLOPL_) : lFKPIMPLOPL_;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-       * @return The count of lFKPIMPLOPL.
-       */
-      public int getLFKPIMPLOPLCount() {
-        return lFKPIMPLOPL_.size();
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-       * @param index The index of the element to return.
-       * @return The lFKPIMPLOPL at the given index.
-       */
-      public int getLFKPIMPLOPL(int index) {
-        return lFKPIMPLOPL_.getInt(index);
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-       * @param index The index to set the value at.
-       * @param value The lFKPIMPLOPL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLFKPIMPLOPL(
-          int index, int value) {
-        ensureLFKPIMPLOPLIsMutable();
-        lFKPIMPLOPL_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-       * @param value The lFKPIMPLOPL to add.
-       * @return This builder for chaining.
-       */
-      public Builder addLFKPIMPLOPL(int value) {
-        ensureLFKPIMPLOPLIsMutable();
-        lFKPIMPLOPL_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-       * @param values The lFKPIMPLOPL to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllLFKPIMPLOPL(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureLFKPIMPLOPLIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, lFKPIMPLOPL_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated uint32 LFKPIMPLOPL = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLFKPIMPLOPL() {
-        lFKPIMPLOPL_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList gDFFMEHKMAF_ = emptyIntList();
-      private void ensureGDFFMEHKMAFIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
-          gDFFMEHKMAF_ = mutableCopy(gDFFMEHKMAF_);
-          bitField0_ |= 0x00000008;
-         }
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-       * @return A list containing the gDFFMEHKMAF.
-       */
-      public java.util.List<java.lang.Integer>
-          getGDFFMEHKMAFList() {
-        return ((bitField0_ & 0x00000008) != 0) ?
-                 java.util.Collections.unmodifiableList(gDFFMEHKMAF_) : gDFFMEHKMAF_;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-       * @return The count of gDFFMEHKMAF.
-       */
-      public int getGDFFMEHKMAFCount() {
-        return gDFFMEHKMAF_.size();
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-       * @param index The index of the element to return.
-       * @return The gDFFMEHKMAF at the given index.
-       */
-      public int getGDFFMEHKMAF(int index) {
-        return gDFFMEHKMAF_.getInt(index);
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-       * @param index The index to set the value at.
-       * @param value The gDFFMEHKMAF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGDFFMEHKMAF(
-          int index, int value) {
-        ensureGDFFMEHKMAFIsMutable();
-        gDFFMEHKMAF_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-       * @param value The gDFFMEHKMAF to add.
-       * @return This builder for chaining.
-       */
-      public Builder addGDFFMEHKMAF(int value) {
-        ensureGDFFMEHKMAFIsMutable();
-        gDFFMEHKMAF_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-       * @param values The gDFFMEHKMAF to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllGDFFMEHKMAF(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureGDFFMEHKMAFIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, gDFFMEHKMAF_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>repeated uint32 GDFFMEHKMAF = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGDFFMEHKMAF() {
-        gDFFMEHKMAF_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        onChanged();
-        return this;
-      }
-
-      private int bLJFCDPEICO_ ;
-      /**
-       * <pre>
-       * offset: 64
-       * </pre>
-       *
-       * <code>uint32 BLJFCDPEICO = 5;</code>
-       * @return The bLJFCDPEICO.
-       */
-      @java.lang.Override
-      public int getBLJFCDPEICO() {
-        return bLJFCDPEICO_;
-      }
-      /**
-       * <pre>
-       * offset: 64
-       * </pre>
-       *
-       * <code>uint32 BLJFCDPEICO = 5;</code>
-       * @param value The bLJFCDPEICO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBLJFCDPEICO(int value) {
-        
-        bLJFCDPEICO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 64
-       * </pre>
-       *
-       * <code>uint32 BLJFCDPEICO = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBLJFCDPEICO() {
-        
-        bLJFCDPEICO_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <pre>
-       * offset: 68
-       * </pre>
-       *
-       * <code>int32 retcode = 3;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <pre>
-       * offset: 68
-       * </pre>
-       *
-       * <code>int32 retcode = 3;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 68
-       * </pre>
-       *
-       * <code>int32 retcode = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cKNBOPHPNDE_ ;
-      /**
-       * <pre>
-       * offset: 72
-       * </pre>
-       *
-       * <code>uint32 CKNBOPHPNDE = 2;</code>
-       * @return The cKNBOPHPNDE.
-       */
-      @java.lang.Override
-      public int getCKNBOPHPNDE() {
-        return cKNBOPHPNDE_;
-      }
-      /**
-       * <pre>
-       * offset: 72
-       * </pre>
-       *
-       * <code>uint32 CKNBOPHPNDE = 2;</code>
-       * @param value The cKNBOPHPNDE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCKNBOPHPNDE(int value) {
-        
-        cKNBOPHPNDE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 72
-       * </pre>
-       *
-       * <code>uint32 CKNBOPHPNDE = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCKNBOPHPNDE() {
-        
-        cKNBOPHPNDE_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1948,14 +1429,14 @@ public final class PersonalLineAllDataRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034PersonalLineAllDataRsp.proto\032\034LockedPe" +
-      "rsonallineData.proto\"\345\001\n\026PersonalLineAll" +
-      "DataRsp\022:\n\031locked_personal_line_list\030\014 \003" +
-      "(\0132\027.LockedPersonallineData\022*\n\"can_be_un" +
-      "locked_personal_line_list\030\n \003(\r\022\023\n\013LFKPI" +
-      "MPLOPL\030\013 \003(\r\022\023\n\013GDFFMEHKMAF\030\010 \003(\r\022\023\n\013BLJ" +
-      "FCDPEICO\030\005 \001(\r\022\017\n\007retcode\030\003 \001(\005\022\023\n\013CKNBO" +
-      "PHPNDE\030\002 \001(\rB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "rsonallineData.proto\"\371\001\n\026PersonalLineAll" +
+      "DataRsp\022*\n\"can_be_unlocked_personal_line" +
+      "_list\030\002 \003(\r\022\017\n\007retcode\030\003 \001(\005\022%\n\035cur_fini" +
+      "shed_daily_task_count\030\013 \001(\r\022\033\n\023legendary" +
+      "_key_count\030\001 \001(\r\022\"\n\032ongoing_personal_lin" +
+      "e_list\030\006 \003(\r\022:\n\031locked_personal_line_lis" +
+      "t\030\010 \003(\0132\027.LockedPersonallineDataB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1967,7 +1448,7 @@ public final class PersonalLineAllDataRspOuterClass {
     internal_static_PersonalLineAllDataRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PersonalLineAllDataRsp_descriptor,
-        new java.lang.String[] { "LockedPersonalLineList", "CanBeUnlockedPersonalLineList", "LFKPIMPLOPL", "GDFFMEHKMAF", "BLJFCDPEICO", "Retcode", "CKNBOPHPNDE", });
+        new java.lang.String[] { "CanBeUnlockedPersonalLineList", "Retcode", "CurFinishedDailyTaskCount", "LegendaryKeyCount", "OngoingPersonalLineList", "LockedPersonalLineList", });
     emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.getDescriptor();
   }
 

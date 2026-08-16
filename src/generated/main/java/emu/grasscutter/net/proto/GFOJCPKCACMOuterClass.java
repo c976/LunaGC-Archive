@@ -19,10 +19,6 @@ public final class GFOJCPKCACMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 config_id = 15;</code>
      * @return The configId.
      */
@@ -113,10 +109,6 @@ public final class GFOJCPKCACMOuterClass {
     public static final int CONFIG_ID_FIELD_NUMBER = 15;
     private int configId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 config_id = 15;</code>
      * @return The configId.
      */
@@ -429,10 +421,6 @@ public final class GFOJCPKCACMOuterClass {
 
       private int configId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 15;</code>
        * @return The configId.
        */
@@ -441,10 +429,6 @@ public final class GFOJCPKCACMOuterClass {
         return configId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 15;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
@@ -456,10 +440,6 @@ public final class GFOJCPKCACMOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 config_id = 15;</code>
        * @return This builder for chaining.
        */

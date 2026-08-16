@@ -19,28 +19,16 @@ public final class KALNNKEHBJGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 8;</code>
      * @return A list containing the cEFGIMINOOB.
      */
     java.util.List<java.lang.Integer> getCEFGIMINOOBList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 8;</code>
      * @return The count of cEFGIMINOOB.
      */
     int getCEFGIMINOOBCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 8;</code>
      * @param index The index of the element to return.
      * @return The cEFGIMINOOB at the given index.
@@ -48,99 +36,59 @@ public final class KALNNKEHBJGOuterClass {
     int getCEFGIMINOOB(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FJLENEIENLG = 13;</code>
      * @return The fJLENEIENLG.
      */
     int getFJLENEIENLG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OJGCINHPHPI = 9;</code>
      * @return The oJGCINHPHPI.
      */
     int getOJGCINHPHPI();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IGPJOABNCGB = 5;</code>
      * @return The iGPJOABNCGB.
      */
     int getIGPJOABNCGB();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ODJLLLPLBHE = 7;</code>
      * @return The oDJLLLPLBHE.
      */
     int getODJLLLPLBHE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JGHBHDIFECI state = 12;</code>
      * @return The enum numeric value on the wire for state.
      */
     int getStateValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JGHBHDIFECI state = 12;</code>
      * @return The state.
      */
     emu.grasscutter.net.proto.JGHBHDIFECIOuterClass.JGHBHDIFECI getState();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 start_time = 4;</code>
      * @return The startTime.
      */
     int getStartTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float FACFOHGOPIK = 14;</code>
      * @return The fACFOHGOPIK.
      */
     float getFACFOHGOPIK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AIGHPBBDDBJ = 3;</code>
      * @return The aIGHPBBDDBJ.
      */
     int getAIGHPBBDDBJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FILJNMEPIJC = 2;</code>
      * @return The fILJNMEPIJC.
      */
@@ -299,10 +247,6 @@ public final class KALNNKEHBJGOuterClass {
     public static final int CEFGIMINOOB_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList cEFGIMINOOB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 8;</code>
      * @return A list containing the cEFGIMINOOB.
      */
@@ -312,10 +256,6 @@ public final class KALNNKEHBJGOuterClass {
       return cEFGIMINOOB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 8;</code>
      * @return The count of cEFGIMINOOB.
      */
@@ -323,10 +263,6 @@ public final class KALNNKEHBJGOuterClass {
       return cEFGIMINOOB_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 CEFGIMINOOB = 8;</code>
      * @param index The index of the element to return.
      * @return The cEFGIMINOOB at the given index.
@@ -339,10 +275,6 @@ public final class KALNNKEHBJGOuterClass {
     public static final int FJLENEIENLG_FIELD_NUMBER = 13;
     private int fJLENEIENLG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FJLENEIENLG = 13;</code>
      * @return The fJLENEIENLG.
      */
@@ -354,10 +286,6 @@ public final class KALNNKEHBJGOuterClass {
     public static final int OJGCINHPHPI_FIELD_NUMBER = 9;
     private int oJGCINHPHPI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OJGCINHPHPI = 9;</code>
      * @return The oJGCINHPHPI.
      */
@@ -369,10 +297,6 @@ public final class KALNNKEHBJGOuterClass {
     public static final int IGPJOABNCGB_FIELD_NUMBER = 5;
     private int iGPJOABNCGB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IGPJOABNCGB = 5;</code>
      * @return The iGPJOABNCGB.
      */
@@ -384,10 +308,6 @@ public final class KALNNKEHBJGOuterClass {
     public static final int ODJLLLPLBHE_FIELD_NUMBER = 7;
     private int oDJLLLPLBHE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ODJLLLPLBHE = 7;</code>
      * @return The oDJLLLPLBHE.
      */
@@ -399,10 +319,6 @@ public final class KALNNKEHBJGOuterClass {
     public static final int STATE_FIELD_NUMBER = 12;
     private int state_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JGHBHDIFECI state = 12;</code>
      * @return The enum numeric value on the wire for state.
      */
@@ -410,10 +326,6 @@ public final class KALNNKEHBJGOuterClass {
       return state_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JGHBHDIFECI state = 12;</code>
      * @return The state.
      */
@@ -426,10 +338,6 @@ public final class KALNNKEHBJGOuterClass {
     public static final int START_TIME_FIELD_NUMBER = 4;
     private int startTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 start_time = 4;</code>
      * @return The startTime.
      */
@@ -441,10 +349,6 @@ public final class KALNNKEHBJGOuterClass {
     public static final int FACFOHGOPIK_FIELD_NUMBER = 14;
     private float fACFOHGOPIK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float FACFOHGOPIK = 14;</code>
      * @return The fACFOHGOPIK.
      */
@@ -456,10 +360,6 @@ public final class KALNNKEHBJGOuterClass {
     public static final int AIGHPBBDDBJ_FIELD_NUMBER = 3;
     private int aIGHPBBDDBJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AIGHPBBDDBJ = 3;</code>
      * @return The aIGHPBBDDBJ.
      */
@@ -471,10 +371,6 @@ public final class KALNNKEHBJGOuterClass {
     public static final int FILJNMEPIJC_FIELD_NUMBER = 2;
     private int fILJNMEPIJC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FILJNMEPIJC = 2;</code>
      * @return The fILJNMEPIJC.
      */
@@ -977,10 +873,6 @@ public final class KALNNKEHBJGOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 8;</code>
        * @return A list containing the cEFGIMINOOB.
        */
@@ -990,10 +882,6 @@ public final class KALNNKEHBJGOuterClass {
                  java.util.Collections.unmodifiableList(cEFGIMINOOB_) : cEFGIMINOOB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 8;</code>
        * @return The count of cEFGIMINOOB.
        */
@@ -1001,10 +889,6 @@ public final class KALNNKEHBJGOuterClass {
         return cEFGIMINOOB_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 8;</code>
        * @param index The index of the element to return.
        * @return The cEFGIMINOOB at the given index.
@@ -1013,10 +897,6 @@ public final class KALNNKEHBJGOuterClass {
         return cEFGIMINOOB_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 8;</code>
        * @param index The index to set the value at.
        * @param value The cEFGIMINOOB to set.
@@ -1030,10 +910,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 8;</code>
        * @param value The cEFGIMINOOB to add.
        * @return This builder for chaining.
@@ -1045,10 +921,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 8;</code>
        * @param values The cEFGIMINOOB to add.
        * @return This builder for chaining.
@@ -1062,10 +934,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 CEFGIMINOOB = 8;</code>
        * @return This builder for chaining.
        */
@@ -1078,10 +946,6 @@ public final class KALNNKEHBJGOuterClass {
 
       private int fJLENEIENLG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FJLENEIENLG = 13;</code>
        * @return The fJLENEIENLG.
        */
@@ -1090,10 +954,6 @@ public final class KALNNKEHBJGOuterClass {
         return fJLENEIENLG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FJLENEIENLG = 13;</code>
        * @param value The fJLENEIENLG to set.
        * @return This builder for chaining.
@@ -1105,10 +965,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FJLENEIENLG = 13;</code>
        * @return This builder for chaining.
        */
@@ -1121,10 +977,6 @@ public final class KALNNKEHBJGOuterClass {
 
       private int oJGCINHPHPI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OJGCINHPHPI = 9;</code>
        * @return The oJGCINHPHPI.
        */
@@ -1133,10 +985,6 @@ public final class KALNNKEHBJGOuterClass {
         return oJGCINHPHPI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OJGCINHPHPI = 9;</code>
        * @param value The oJGCINHPHPI to set.
        * @return This builder for chaining.
@@ -1148,10 +996,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OJGCINHPHPI = 9;</code>
        * @return This builder for chaining.
        */
@@ -1164,10 +1008,6 @@ public final class KALNNKEHBJGOuterClass {
 
       private int iGPJOABNCGB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IGPJOABNCGB = 5;</code>
        * @return The iGPJOABNCGB.
        */
@@ -1176,10 +1016,6 @@ public final class KALNNKEHBJGOuterClass {
         return iGPJOABNCGB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IGPJOABNCGB = 5;</code>
        * @param value The iGPJOABNCGB to set.
        * @return This builder for chaining.
@@ -1191,10 +1027,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IGPJOABNCGB = 5;</code>
        * @return This builder for chaining.
        */
@@ -1207,10 +1039,6 @@ public final class KALNNKEHBJGOuterClass {
 
       private int oDJLLLPLBHE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ODJLLLPLBHE = 7;</code>
        * @return The oDJLLLPLBHE.
        */
@@ -1219,10 +1047,6 @@ public final class KALNNKEHBJGOuterClass {
         return oDJLLLPLBHE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ODJLLLPLBHE = 7;</code>
        * @param value The oDJLLLPLBHE to set.
        * @return This builder for chaining.
@@ -1234,10 +1058,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ODJLLLPLBHE = 7;</code>
        * @return This builder for chaining.
        */
@@ -1250,10 +1070,6 @@ public final class KALNNKEHBJGOuterClass {
 
       private int state_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHBHDIFECI state = 12;</code>
        * @return The enum numeric value on the wire for state.
        */
@@ -1261,10 +1077,6 @@ public final class KALNNKEHBJGOuterClass {
         return state_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHBHDIFECI state = 12;</code>
        * @param value The enum numeric value on the wire for state to set.
        * @return This builder for chaining.
@@ -1276,10 +1088,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHBHDIFECI state = 12;</code>
        * @return The state.
        */
@@ -1290,10 +1098,6 @@ public final class KALNNKEHBJGOuterClass {
         return result == null ? emu.grasscutter.net.proto.JGHBHDIFECIOuterClass.JGHBHDIFECI.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHBHDIFECI state = 12;</code>
        * @param value The state to set.
        * @return This builder for chaining.
@@ -1308,10 +1112,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHBHDIFECI state = 12;</code>
        * @return This builder for chaining.
        */
@@ -1324,10 +1124,6 @@ public final class KALNNKEHBJGOuterClass {
 
       private int startTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 4;</code>
        * @return The startTime.
        */
@@ -1336,10 +1132,6 @@ public final class KALNNKEHBJGOuterClass {
         return startTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 4;</code>
        * @param value The startTime to set.
        * @return This builder for chaining.
@@ -1351,10 +1143,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 4;</code>
        * @return This builder for chaining.
        */
@@ -1367,10 +1155,6 @@ public final class KALNNKEHBJGOuterClass {
 
       private float fACFOHGOPIK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float FACFOHGOPIK = 14;</code>
        * @return The fACFOHGOPIK.
        */
@@ -1379,10 +1163,6 @@ public final class KALNNKEHBJGOuterClass {
         return fACFOHGOPIK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float FACFOHGOPIK = 14;</code>
        * @param value The fACFOHGOPIK to set.
        * @return This builder for chaining.
@@ -1394,10 +1174,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float FACFOHGOPIK = 14;</code>
        * @return This builder for chaining.
        */
@@ -1410,10 +1186,6 @@ public final class KALNNKEHBJGOuterClass {
 
       private int aIGHPBBDDBJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AIGHPBBDDBJ = 3;</code>
        * @return The aIGHPBBDDBJ.
        */
@@ -1422,10 +1194,6 @@ public final class KALNNKEHBJGOuterClass {
         return aIGHPBBDDBJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AIGHPBBDDBJ = 3;</code>
        * @param value The aIGHPBBDDBJ to set.
        * @return This builder for chaining.
@@ -1437,10 +1205,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AIGHPBBDDBJ = 3;</code>
        * @return This builder for chaining.
        */
@@ -1453,10 +1217,6 @@ public final class KALNNKEHBJGOuterClass {
 
       private int fILJNMEPIJC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FILJNMEPIJC = 2;</code>
        * @return The fILJNMEPIJC.
        */
@@ -1465,10 +1225,6 @@ public final class KALNNKEHBJGOuterClass {
         return fILJNMEPIJC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FILJNMEPIJC = 2;</code>
        * @param value The fILJNMEPIJC to set.
        * @return This builder for chaining.
@@ -1480,10 +1236,6 @@ public final class KALNNKEHBJGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FILJNMEPIJC = 2;</code>
        * @return This builder for chaining.
        */

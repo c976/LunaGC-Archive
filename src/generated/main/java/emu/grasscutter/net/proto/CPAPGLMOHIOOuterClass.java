@@ -19,28 +19,16 @@ public final class CPAPGLMOHIOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
      * @return A list containing the kPPLJGIJNEJ.
      */
     java.util.List<java.lang.Integer> getKPPLJGIJNEJList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
      * @return The count of kPPLJGIJNEJ.
      */
     int getKPPLJGIJNEJCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
      * @param index The index of the element to return.
      * @return The kPPLJGIJNEJ at the given index.
@@ -48,50 +36,30 @@ public final class CPAPGLMOHIOOuterClass {
     int getKPPLJGIJNEJ(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IOEIIFAHCFC = 6;</code>
      * @return The iOEIIFAHCFC.
      */
     int getIOEIIFAHCFC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 14;</code>
      * @return The oMEBOHLACPH.
      */
     int getOMEBOHLACPH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 11;</code>
      * @return The isFinish.
      */
@@ -228,10 +196,6 @@ public final class CPAPGLMOHIOOuterClass {
     public static final int KPPLJGIJNEJ_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList kPPLJGIJNEJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
      * @return A list containing the kPPLJGIJNEJ.
      */
@@ -241,10 +205,6 @@ public final class CPAPGLMOHIOOuterClass {
       return kPPLJGIJNEJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
      * @return The count of kPPLJGIJNEJ.
      */
@@ -252,10 +212,6 @@ public final class CPAPGLMOHIOOuterClass {
       return kPPLJGIJNEJ_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
      * @param index The index of the element to return.
      * @return The kPPLJGIJNEJ at the given index.
@@ -268,10 +224,6 @@ public final class CPAPGLMOHIOOuterClass {
     public static final int IOEIIFAHCFC_FIELD_NUMBER = 6;
     private int iOEIIFAHCFC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IOEIIFAHCFC = 6;</code>
      * @return The iOEIIFAHCFC.
      */
@@ -283,10 +235,6 @@ public final class CPAPGLMOHIOOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 14;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 14;</code>
      * @return The oMEBOHLACPH.
      */
@@ -298,10 +246,6 @@ public final class CPAPGLMOHIOOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 9;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
@@ -313,10 +257,6 @@ public final class CPAPGLMOHIOOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 15;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
@@ -328,10 +268,6 @@ public final class CPAPGLMOHIOOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 11;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 11;</code>
      * @return The isFinish.
      */
@@ -767,10 +703,6 @@ public final class CPAPGLMOHIOOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
        * @return A list containing the kPPLJGIJNEJ.
        */
@@ -780,10 +712,6 @@ public final class CPAPGLMOHIOOuterClass {
                  java.util.Collections.unmodifiableList(kPPLJGIJNEJ_) : kPPLJGIJNEJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
        * @return The count of kPPLJGIJNEJ.
        */
@@ -791,10 +719,6 @@ public final class CPAPGLMOHIOOuterClass {
         return kPPLJGIJNEJ_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
        * @param index The index of the element to return.
        * @return The kPPLJGIJNEJ at the given index.
@@ -803,10 +727,6 @@ public final class CPAPGLMOHIOOuterClass {
         return kPPLJGIJNEJ_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
        * @param index The index to set the value at.
        * @param value The kPPLJGIJNEJ to set.
@@ -820,10 +740,6 @@ public final class CPAPGLMOHIOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
        * @param value The kPPLJGIJNEJ to add.
        * @return This builder for chaining.
@@ -835,10 +751,6 @@ public final class CPAPGLMOHIOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
        * @param values The kPPLJGIJNEJ to add.
        * @return This builder for chaining.
@@ -852,10 +764,6 @@ public final class CPAPGLMOHIOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KPPLJGIJNEJ = 10;</code>
        * @return This builder for chaining.
        */
@@ -868,10 +776,6 @@ public final class CPAPGLMOHIOOuterClass {
 
       private int iOEIIFAHCFC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IOEIIFAHCFC = 6;</code>
        * @return The iOEIIFAHCFC.
        */
@@ -880,10 +784,6 @@ public final class CPAPGLMOHIOOuterClass {
         return iOEIIFAHCFC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IOEIIFAHCFC = 6;</code>
        * @param value The iOEIIFAHCFC to set.
        * @return This builder for chaining.
@@ -895,10 +795,6 @@ public final class CPAPGLMOHIOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IOEIIFAHCFC = 6;</code>
        * @return This builder for chaining.
        */
@@ -911,10 +807,6 @@ public final class CPAPGLMOHIOOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @return The oMEBOHLACPH.
        */
@@ -923,10 +815,6 @@ public final class CPAPGLMOHIOOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -938,10 +826,6 @@ public final class CPAPGLMOHIOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @return This builder for chaining.
        */
@@ -954,10 +838,6 @@ public final class CPAPGLMOHIOOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 9;</code>
        * @return The levelId.
        */
@@ -966,10 +846,6 @@ public final class CPAPGLMOHIOOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 9;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -981,10 +857,6 @@ public final class CPAPGLMOHIOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 9;</code>
        * @return This builder for chaining.
        */
@@ -997,10 +869,6 @@ public final class CPAPGLMOHIOOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return The isOpen.
        */
@@ -1009,10 +877,6 @@ public final class CPAPGLMOHIOOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1024,10 +888,6 @@ public final class CPAPGLMOHIOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return This builder for chaining.
        */
@@ -1040,10 +900,6 @@ public final class CPAPGLMOHIOOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @return The isFinish.
        */
@@ -1052,10 +908,6 @@ public final class CPAPGLMOHIOOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1067,10 +919,6 @@ public final class CPAPGLMOHIOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @return This builder for chaining.
        */

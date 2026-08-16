@@ -19,117 +19,69 @@ public final class IHMEPOBHBNDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 14;</code>
      * @return Whether the aFFAELMAHHG field is set.
      */
     boolean hasAFFAELMAHHG();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 14;</code>
      * @return The aFFAELMAHHG.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getAFFAELMAHHG();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 14;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAFFAELMAHHGOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CHPGKCMHGAO = 15;</code>
      * @return The cHPGKCMHGAO.
      */
     int getCHPGKCMHGAO();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JNBMFABFHGP = 12;</code>
      * @return The jNBMFABFHGP.
      */
     boolean getJNBMFABFHGP();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 region_id = 3;</code>
      * @return The regionId.
      */
     int getRegionId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ICHFEHAGGOM = 9;</code>
      * @return The iCHFEHAGGOM.
      */
     int getICHFEHAGGOM();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 13;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 scene_id = 5;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GFKDIIJGAJM = 10;</code>
      * @return The gFKDIIJGAJM.
      */
     int getGFKDIIJGAJM();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float DGDCJNEEGAN = 4;</code>
      * @return The dGDCJNEEGAN.
      */
@@ -273,10 +225,6 @@ public final class IHMEPOBHBNDOuterClass {
     public static final int AFFAELMAHHG_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector aFFAELMAHHG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 14;</code>
      * @return Whether the aFFAELMAHHG field is set.
      */
@@ -285,10 +233,6 @@ public final class IHMEPOBHBNDOuterClass {
       return aFFAELMAHHG_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 14;</code>
      * @return The aFFAELMAHHG.
      */
@@ -297,10 +241,6 @@ public final class IHMEPOBHBNDOuterClass {
       return aFFAELMAHHG_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : aFFAELMAHHG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector AFFAELMAHHG = 14;</code>
      */
     @java.lang.Override
@@ -311,10 +251,6 @@ public final class IHMEPOBHBNDOuterClass {
     public static final int CHPGKCMHGAO_FIELD_NUMBER = 15;
     private int cHPGKCMHGAO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CHPGKCMHGAO = 15;</code>
      * @return The cHPGKCMHGAO.
      */
@@ -326,10 +262,6 @@ public final class IHMEPOBHBNDOuterClass {
     public static final int JNBMFABFHGP_FIELD_NUMBER = 12;
     private boolean jNBMFABFHGP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JNBMFABFHGP = 12;</code>
      * @return The jNBMFABFHGP.
      */
@@ -341,10 +273,6 @@ public final class IHMEPOBHBNDOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 7;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
@@ -356,10 +284,6 @@ public final class IHMEPOBHBNDOuterClass {
     public static final int REGION_ID_FIELD_NUMBER = 3;
     private int regionId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 region_id = 3;</code>
      * @return The regionId.
      */
@@ -371,10 +295,6 @@ public final class IHMEPOBHBNDOuterClass {
     public static final int ICHFEHAGGOM_FIELD_NUMBER = 9;
     private int iCHFEHAGGOM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ICHFEHAGGOM = 9;</code>
      * @return The iCHFEHAGGOM.
      */
@@ -386,10 +306,6 @@ public final class IHMEPOBHBNDOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 13;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 13;</code>
      * @return The openTime.
      */
@@ -401,10 +317,6 @@ public final class IHMEPOBHBNDOuterClass {
     public static final int SCENE_ID_FIELD_NUMBER = 5;
     private int sceneId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 scene_id = 5;</code>
      * @return The sceneId.
      */
@@ -416,10 +328,6 @@ public final class IHMEPOBHBNDOuterClass {
     public static final int GFKDIIJGAJM_FIELD_NUMBER = 10;
     private int gFKDIIJGAJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GFKDIIJGAJM = 10;</code>
      * @return The gFKDIIJGAJM.
      */
@@ -431,10 +339,6 @@ public final class IHMEPOBHBNDOuterClass {
     public static final int DGDCJNEEGAN_FIELD_NUMBER = 4;
     private float dGDCJNEEGAN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>float DGDCJNEEGAN = 4;</code>
      * @return The dGDCJNEEGAN.
      */
@@ -919,10 +823,6 @@ public final class IHMEPOBHBNDOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> aFFAELMAHHGBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 14;</code>
        * @return Whether the aFFAELMAHHG field is set.
        */
@@ -930,10 +830,6 @@ public final class IHMEPOBHBNDOuterClass {
         return aFFAELMAHHGBuilder_ != null || aFFAELMAHHG_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 14;</code>
        * @return The aFFAELMAHHG.
        */
@@ -945,10 +841,6 @@ public final class IHMEPOBHBNDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 14;</code>
        */
       public Builder setAFFAELMAHHG(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -965,10 +857,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 14;</code>
        */
       public Builder setAFFAELMAHHG(
@@ -983,10 +871,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 14;</code>
        */
       public Builder mergeAFFAELMAHHG(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -1005,10 +889,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 14;</code>
        */
       public Builder clearAFFAELMAHHG() {
@@ -1023,10 +903,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getAFFAELMAHHGBuilder() {
@@ -1035,10 +911,6 @@ public final class IHMEPOBHBNDOuterClass {
         return getAFFAELMAHHGFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getAFFAELMAHHGOrBuilder() {
@@ -1050,10 +922,6 @@ public final class IHMEPOBHBNDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector AFFAELMAHHG = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1072,10 +940,6 @@ public final class IHMEPOBHBNDOuterClass {
 
       private int cHPGKCMHGAO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CHPGKCMHGAO = 15;</code>
        * @return The cHPGKCMHGAO.
        */
@@ -1084,10 +948,6 @@ public final class IHMEPOBHBNDOuterClass {
         return cHPGKCMHGAO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CHPGKCMHGAO = 15;</code>
        * @param value The cHPGKCMHGAO to set.
        * @return This builder for chaining.
@@ -1099,10 +959,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CHPGKCMHGAO = 15;</code>
        * @return This builder for chaining.
        */
@@ -1115,10 +971,6 @@ public final class IHMEPOBHBNDOuterClass {
 
       private boolean jNBMFABFHGP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JNBMFABFHGP = 12;</code>
        * @return The jNBMFABFHGP.
        */
@@ -1127,10 +979,6 @@ public final class IHMEPOBHBNDOuterClass {
         return jNBMFABFHGP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JNBMFABFHGP = 12;</code>
        * @param value The jNBMFABFHGP to set.
        * @return This builder for chaining.
@@ -1142,10 +990,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JNBMFABFHGP = 12;</code>
        * @return This builder for chaining.
        */
@@ -1158,10 +1002,6 @@ public final class IHMEPOBHBNDOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return The isOpen.
        */
@@ -1170,10 +1010,6 @@ public final class IHMEPOBHBNDOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1185,10 +1021,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return This builder for chaining.
        */
@@ -1201,10 +1033,6 @@ public final class IHMEPOBHBNDOuterClass {
 
       private int regionId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 region_id = 3;</code>
        * @return The regionId.
        */
@@ -1213,10 +1041,6 @@ public final class IHMEPOBHBNDOuterClass {
         return regionId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 region_id = 3;</code>
        * @param value The regionId to set.
        * @return This builder for chaining.
@@ -1228,10 +1052,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 region_id = 3;</code>
        * @return This builder for chaining.
        */
@@ -1244,10 +1064,6 @@ public final class IHMEPOBHBNDOuterClass {
 
       private int iCHFEHAGGOM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ICHFEHAGGOM = 9;</code>
        * @return The iCHFEHAGGOM.
        */
@@ -1256,10 +1072,6 @@ public final class IHMEPOBHBNDOuterClass {
         return iCHFEHAGGOM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ICHFEHAGGOM = 9;</code>
        * @param value The iCHFEHAGGOM to set.
        * @return This builder for chaining.
@@ -1271,10 +1083,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ICHFEHAGGOM = 9;</code>
        * @return This builder for chaining.
        */
@@ -1287,10 +1095,6 @@ public final class IHMEPOBHBNDOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @return The openTime.
        */
@@ -1299,10 +1103,6 @@ public final class IHMEPOBHBNDOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -1314,10 +1114,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @return This builder for chaining.
        */
@@ -1330,10 +1126,6 @@ public final class IHMEPOBHBNDOuterClass {
 
       private int sceneId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 scene_id = 5;</code>
        * @return The sceneId.
        */
@@ -1342,10 +1134,6 @@ public final class IHMEPOBHBNDOuterClass {
         return sceneId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 scene_id = 5;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
@@ -1357,10 +1145,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 scene_id = 5;</code>
        * @return This builder for chaining.
        */
@@ -1373,10 +1157,6 @@ public final class IHMEPOBHBNDOuterClass {
 
       private int gFKDIIJGAJM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GFKDIIJGAJM = 10;</code>
        * @return The gFKDIIJGAJM.
        */
@@ -1385,10 +1165,6 @@ public final class IHMEPOBHBNDOuterClass {
         return gFKDIIJGAJM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GFKDIIJGAJM = 10;</code>
        * @param value The gFKDIIJGAJM to set.
        * @return This builder for chaining.
@@ -1400,10 +1176,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GFKDIIJGAJM = 10;</code>
        * @return This builder for chaining.
        */
@@ -1416,10 +1188,6 @@ public final class IHMEPOBHBNDOuterClass {
 
       private float dGDCJNEEGAN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float DGDCJNEEGAN = 4;</code>
        * @return The dGDCJNEEGAN.
        */
@@ -1428,10 +1196,6 @@ public final class IHMEPOBHBNDOuterClass {
         return dGDCJNEEGAN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float DGDCJNEEGAN = 4;</code>
        * @param value The dGDCJNEEGAN to set.
        * @return This builder for chaining.
@@ -1443,10 +1207,6 @@ public final class IHMEPOBHBNDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>float DGDCJNEEGAN = 4;</code>
        * @return This builder for chaining.
        */

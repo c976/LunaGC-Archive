@@ -19,103 +19,59 @@ public final class JMEKLDGIDACOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector rot = 15;</code>
      * @return Whether the rot field is set.
      */
     boolean hasRot();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector rot = 15;</code>
      * @return The rot.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector rot = 15;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NKJFLMLNHDP state = 8;</code>
      * @return The enum numeric value on the wire for state.
      */
     int getStateValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NKJFLMLNHDP state = 8;</code>
      * @return The state.
      */
     emu.grasscutter.net.proto.NKJFLMLNHDPOuterClass.NKJFLMLNHDP getState();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 scene_id = 2;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 gadget_entity_id = 4;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BCICFCNAFNP = 7;</code>
      * @return The bCICFCNAFNP.
      */
@@ -249,10 +205,6 @@ public final class JMEKLDGIDACOuterClass {
     public static final int ROT_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector rot = 15;</code>
      * @return Whether the rot field is set.
      */
@@ -261,10 +213,6 @@ public final class JMEKLDGIDACOuterClass {
       return rot_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector rot = 15;</code>
      * @return The rot.
      */
@@ -273,10 +221,6 @@ public final class JMEKLDGIDACOuterClass {
       return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector rot = 15;</code>
      */
     @java.lang.Override
@@ -287,10 +231,6 @@ public final class JMEKLDGIDACOuterClass {
     public static final int POS_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      * @return Whether the pos field is set.
      */
@@ -299,10 +239,6 @@ public final class JMEKLDGIDACOuterClass {
       return pos_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      * @return The pos.
      */
@@ -311,10 +247,6 @@ public final class JMEKLDGIDACOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      */
     @java.lang.Override
@@ -325,10 +257,6 @@ public final class JMEKLDGIDACOuterClass {
     public static final int STATE_FIELD_NUMBER = 8;
     private int state_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NKJFLMLNHDP state = 8;</code>
      * @return The enum numeric value on the wire for state.
      */
@@ -336,10 +264,6 @@ public final class JMEKLDGIDACOuterClass {
       return state_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.NKJFLMLNHDP state = 8;</code>
      * @return The state.
      */
@@ -352,10 +276,6 @@ public final class JMEKLDGIDACOuterClass {
     public static final int SCENE_ID_FIELD_NUMBER = 2;
     private int sceneId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 scene_id = 2;</code>
      * @return The sceneId.
      */
@@ -367,10 +287,6 @@ public final class JMEKLDGIDACOuterClass {
     public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 4;
     private int gadgetEntityId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 gadget_entity_id = 4;</code>
      * @return The gadgetEntityId.
      */
@@ -382,10 +298,6 @@ public final class JMEKLDGIDACOuterClass {
     public static final int BCICFCNAFNP_FIELD_NUMBER = 7;
     private int bCICFCNAFNP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BCICFCNAFNP = 7;</code>
      * @return The bCICFCNAFNP.
      */
@@ -810,10 +722,6 @@ public final class JMEKLDGIDACOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector rot = 15;</code>
        * @return Whether the rot field is set.
        */
@@ -821,10 +729,6 @@ public final class JMEKLDGIDACOuterClass {
         return rotBuilder_ != null || rot_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector rot = 15;</code>
        * @return The rot.
        */
@@ -836,10 +740,6 @@ public final class JMEKLDGIDACOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector rot = 15;</code>
        */
       public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -856,10 +756,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector rot = 15;</code>
        */
       public Builder setRot(
@@ -874,10 +770,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector rot = 15;</code>
        */
       public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -896,10 +788,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector rot = 15;</code>
        */
       public Builder clearRot() {
@@ -914,10 +802,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector rot = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
@@ -926,10 +810,6 @@ public final class JMEKLDGIDACOuterClass {
         return getRotFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector rot = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
@@ -941,10 +821,6 @@ public final class JMEKLDGIDACOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector rot = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -965,10 +841,6 @@ public final class JMEKLDGIDACOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        * @return Whether the pos field is set.
        */
@@ -976,10 +848,6 @@ public final class JMEKLDGIDACOuterClass {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        * @return The pos.
        */
@@ -991,10 +859,6 @@ public final class JMEKLDGIDACOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -1011,10 +875,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder setPos(
@@ -1029,10 +889,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -1051,10 +907,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder clearPos() {
@@ -1069,10 +921,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
@@ -1081,10 +929,6 @@ public final class JMEKLDGIDACOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -1096,10 +940,6 @@ public final class JMEKLDGIDACOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1118,10 +958,6 @@ public final class JMEKLDGIDACOuterClass {
 
       private int state_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NKJFLMLNHDP state = 8;</code>
        * @return The enum numeric value on the wire for state.
        */
@@ -1129,10 +965,6 @@ public final class JMEKLDGIDACOuterClass {
         return state_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NKJFLMLNHDP state = 8;</code>
        * @param value The enum numeric value on the wire for state to set.
        * @return This builder for chaining.
@@ -1144,10 +976,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NKJFLMLNHDP state = 8;</code>
        * @return The state.
        */
@@ -1158,10 +986,6 @@ public final class JMEKLDGIDACOuterClass {
         return result == null ? emu.grasscutter.net.proto.NKJFLMLNHDPOuterClass.NKJFLMLNHDP.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NKJFLMLNHDP state = 8;</code>
        * @param value The state to set.
        * @return This builder for chaining.
@@ -1176,10 +1000,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.NKJFLMLNHDP state = 8;</code>
        * @return This builder for chaining.
        */
@@ -1192,10 +1012,6 @@ public final class JMEKLDGIDACOuterClass {
 
       private int sceneId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 scene_id = 2;</code>
        * @return The sceneId.
        */
@@ -1204,10 +1020,6 @@ public final class JMEKLDGIDACOuterClass {
         return sceneId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 scene_id = 2;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
@@ -1219,10 +1031,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 scene_id = 2;</code>
        * @return This builder for chaining.
        */
@@ -1235,10 +1043,6 @@ public final class JMEKLDGIDACOuterClass {
 
       private int gadgetEntityId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 gadget_entity_id = 4;</code>
        * @return The gadgetEntityId.
        */
@@ -1247,10 +1051,6 @@ public final class JMEKLDGIDACOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 gadget_entity_id = 4;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
@@ -1262,10 +1062,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 gadget_entity_id = 4;</code>
        * @return This builder for chaining.
        */
@@ -1278,10 +1074,6 @@ public final class JMEKLDGIDACOuterClass {
 
       private int bCICFCNAFNP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BCICFCNAFNP = 7;</code>
        * @return The bCICFCNAFNP.
        */
@@ -1290,10 +1082,6 @@ public final class JMEKLDGIDACOuterClass {
         return bCICFCNAFNP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BCICFCNAFNP = 7;</code>
        * @param value The bCICFCNAFNP to set.
        * @return This builder for chaining.
@@ -1305,10 +1093,6 @@ public final class JMEKLDGIDACOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BCICFCNAFNP = 7;</code>
        * @return This builder for chaining.
        */

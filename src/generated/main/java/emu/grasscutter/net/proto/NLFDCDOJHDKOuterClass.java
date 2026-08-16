@@ -19,20 +19,12 @@ public final class NLFDCDOJHDKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 avatar_id = 11;</code>
      * @return The avatarId.
      */
     long getAvatarId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool ACECGFODOOO = 14;</code>
      * @return The aCECGFODOOO.
      */
@@ -128,10 +120,6 @@ public final class NLFDCDOJHDKOuterClass {
     public static final int AVATAR_ID_FIELD_NUMBER = 11;
     private long avatarId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 avatar_id = 11;</code>
      * @return The avatarId.
      */
@@ -143,10 +131,6 @@ public final class NLFDCDOJHDKOuterClass {
     public static final int ACECGFODOOO_FIELD_NUMBER = 14;
     private boolean aCECGFODOOO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool ACECGFODOOO = 14;</code>
      * @return The aCECGFODOOO.
      */
@@ -478,10 +462,6 @@ public final class NLFDCDOJHDKOuterClass {
 
       private long avatarId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 avatar_id = 11;</code>
        * @return The avatarId.
        */
@@ -490,10 +470,6 @@ public final class NLFDCDOJHDKOuterClass {
         return avatarId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 avatar_id = 11;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
@@ -505,10 +481,6 @@ public final class NLFDCDOJHDKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 avatar_id = 11;</code>
        * @return This builder for chaining.
        */
@@ -521,10 +493,6 @@ public final class NLFDCDOJHDKOuterClass {
 
       private boolean aCECGFODOOO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ACECGFODOOO = 14;</code>
        * @return The aCECGFODOOO.
        */
@@ -533,10 +501,6 @@ public final class NLFDCDOJHDKOuterClass {
         return aCECGFODOOO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ACECGFODOOO = 14;</code>
        * @param value The aCECGFODOOO to set.
        * @return This builder for chaining.
@@ -548,10 +512,6 @@ public final class NLFDCDOJHDKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool ACECGFODOOO = 14;</code>
        * @return This builder for chaining.
        */

@@ -19,20 +19,12 @@ public final class LKLACPHGDNCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HPPOBKGPCAB = 8;</code>
      * @return The hPPOBKGPCAB.
      */
     int getHPPOBKGPCAB();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 dungeon_id = 5;</code>
      * @return The dungeonId.
      */
@@ -128,10 +120,6 @@ public final class LKLACPHGDNCOuterClass {
     public static final int HPPOBKGPCAB_FIELD_NUMBER = 8;
     private int hPPOBKGPCAB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HPPOBKGPCAB = 8;</code>
      * @return The hPPOBKGPCAB.
      */
@@ -143,10 +131,6 @@ public final class LKLACPHGDNCOuterClass {
     public static final int DUNGEON_ID_FIELD_NUMBER = 5;
     private int dungeonId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 dungeon_id = 5;</code>
      * @return The dungeonId.
      */
@@ -476,10 +460,6 @@ public final class LKLACPHGDNCOuterClass {
 
       private int hPPOBKGPCAB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPPOBKGPCAB = 8;</code>
        * @return The hPPOBKGPCAB.
        */
@@ -488,10 +468,6 @@ public final class LKLACPHGDNCOuterClass {
         return hPPOBKGPCAB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPPOBKGPCAB = 8;</code>
        * @param value The hPPOBKGPCAB to set.
        * @return This builder for chaining.
@@ -503,10 +479,6 @@ public final class LKLACPHGDNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPPOBKGPCAB = 8;</code>
        * @return This builder for chaining.
        */
@@ -519,10 +491,6 @@ public final class LKLACPHGDNCOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 5;</code>
        * @return The dungeonId.
        */
@@ -531,10 +499,6 @@ public final class LKLACPHGDNCOuterClass {
         return dungeonId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 5;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
@@ -546,10 +510,6 @@ public final class LKLACPHGDNCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 5;</code>
        * @return This builder for chaining.
        */

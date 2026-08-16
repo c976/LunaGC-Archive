@@ -19,72 +19,40 @@ public final class OLNJNNHKBBLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK> 
         getGGOKKDEKPJMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
      */
     emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK getGGOKKDEKPJM(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
      */
     int getGGOKKDEKPJMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPKOrBuilder> 
         getGGOKKDEKPJMOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
      */
     emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPKOrBuilder getGGOKKDEKPJMOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
      * @return A list containing the jCEJPHDIMCC.
      */
     java.util.List<java.lang.Integer> getJCEJPHDIMCCList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
      * @return The count of jCEJPHDIMCC.
      */
     int getJCEJPHDIMCCCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
      * @param index The index of the element to return.
      * @return The jCEJPHDIMCC at the given index.
@@ -210,10 +178,6 @@ public final class OLNJNNHKBBLOuterClass {
     public static final int GGOKKDEKPJM_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK> gGOKKDEKPJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
      */
     @java.lang.Override
@@ -221,10 +185,6 @@ public final class OLNJNNHKBBLOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
      */
     @java.lang.Override
@@ -233,10 +193,6 @@ public final class OLNJNNHKBBLOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
      */
     @java.lang.Override
@@ -244,10 +200,6 @@ public final class OLNJNNHKBBLOuterClass {
       return gGOKKDEKPJM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
      */
     @java.lang.Override
@@ -255,10 +207,6 @@ public final class OLNJNNHKBBLOuterClass {
       return gGOKKDEKPJM_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
      */
     @java.lang.Override
@@ -270,10 +218,6 @@ public final class OLNJNNHKBBLOuterClass {
     public static final int JCEJPHDIMCC_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList jCEJPHDIMCC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
      * @return A list containing the jCEJPHDIMCC.
      */
@@ -283,10 +227,6 @@ public final class OLNJNNHKBBLOuterClass {
       return jCEJPHDIMCC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
      * @return The count of jCEJPHDIMCC.
      */
@@ -294,10 +234,6 @@ public final class OLNJNNHKBBLOuterClass {
       return jCEJPHDIMCC_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
      * @param index The index of the element to return.
      * @return The jCEJPHDIMCC at the given index.
@@ -707,10 +643,6 @@ public final class OLNJNNHKBBLOuterClass {
           emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK, emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK.Builder, emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPKOrBuilder> gGOKKDEKPJMBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK> getGGOKKDEKPJMList() {
@@ -721,10 +653,6 @@ public final class OLNJNNHKBBLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public int getGGOKKDEKPJMCount() {
@@ -735,10 +663,6 @@ public final class OLNJNNHKBBLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK getGGOKKDEKPJM(int index) {
@@ -749,10 +673,6 @@ public final class OLNJNNHKBBLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -770,10 +690,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -788,10 +704,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public Builder addGGOKKDEKPJM(emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK value) {
@@ -808,10 +720,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -829,10 +737,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -847,10 +751,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -865,10 +765,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public Builder addAllGGOKKDEKPJM(
@@ -884,10 +780,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public Builder clearGGOKKDEKPJM() {
@@ -901,10 +793,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public Builder removeGGOKKDEKPJM(int index) {
@@ -918,10 +806,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK.Builder getGGOKKDEKPJMBuilder(
@@ -929,10 +813,6 @@ public final class OLNJNNHKBBLOuterClass {
         return getGGOKKDEKPJMFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPKOrBuilder getGGOKKDEKPJMOrBuilder(
@@ -943,10 +823,6 @@ public final class OLNJNNHKBBLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPKOrBuilder> 
@@ -958,10 +834,6 @@ public final class OLNJNNHKBBLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK.Builder addGGOKKDEKPJMBuilder() {
@@ -969,10 +841,6 @@ public final class OLNJNNHKBBLOuterClass {
             emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK.Builder addGGOKKDEKPJMBuilder(
@@ -981,10 +849,6 @@ public final class OLNJNNHKBBLOuterClass {
             index, emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PKFNOOJJOPK GGOKKDEKPJM = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PKFNOOJJOPKOuterClass.PKFNOOJJOPK.Builder> 
@@ -1014,10 +878,6 @@ public final class OLNJNNHKBBLOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
        * @return A list containing the jCEJPHDIMCC.
        */
@@ -1027,10 +887,6 @@ public final class OLNJNNHKBBLOuterClass {
                  java.util.Collections.unmodifiableList(jCEJPHDIMCC_) : jCEJPHDIMCC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
        * @return The count of jCEJPHDIMCC.
        */
@@ -1038,10 +894,6 @@ public final class OLNJNNHKBBLOuterClass {
         return jCEJPHDIMCC_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
        * @param index The index of the element to return.
        * @return The jCEJPHDIMCC at the given index.
@@ -1050,10 +902,6 @@ public final class OLNJNNHKBBLOuterClass {
         return jCEJPHDIMCC_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
        * @param index The index to set the value at.
        * @param value The jCEJPHDIMCC to set.
@@ -1067,10 +915,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
        * @param value The jCEJPHDIMCC to add.
        * @return This builder for chaining.
@@ -1082,10 +926,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
        * @param values The jCEJPHDIMCC to add.
        * @return This builder for chaining.
@@ -1099,10 +939,6 @@ public final class OLNJNNHKBBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JCEJPHDIMCC = 7;</code>
        * @return This builder for chaining.
        */

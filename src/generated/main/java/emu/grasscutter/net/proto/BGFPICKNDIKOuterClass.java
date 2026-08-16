@@ -19,20 +19,12 @@ public final class BGFPICKNDIKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
@@ -128,10 +120,6 @@ public final class BGFPICKNDIKOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -143,10 +131,6 @@ public final class BGFPICKNDIKOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 5;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
@@ -477,10 +461,6 @@ public final class BGFPICKNDIKOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
@@ -489,10 +469,6 @@ public final class BGFPICKNDIKOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -504,10 +480,6 @@ public final class BGFPICKNDIKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
@@ -520,10 +492,6 @@ public final class BGFPICKNDIKOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return The isOpen.
        */
@@ -532,10 +500,6 @@ public final class BGFPICKNDIKOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -547,10 +511,6 @@ public final class BGFPICKNDIKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return This builder for chaining.
        */

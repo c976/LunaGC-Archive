@@ -19,50 +19,30 @@ public final class GFBEALGFENJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KMKENGHIONF = 4;</code>
      * @return The kMKENGHIONF.
      */
     int getKMKENGHIONF();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 total_progress = 5;</code>
      * @return The totalProgress.
      */
     int getTotalProgress();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_taken_reward = 10;</code>
      * @return The isTakenReward.
      */
     boolean getIsTakenReward();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cur_progress = 11;</code>
      * @return The curProgress.
      */
     int getCurProgress();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 watcher_id = 13;</code>
      * @return The watcherId.
      */
@@ -173,10 +153,6 @@ public final class GFBEALGFENJOuterClass {
     public static final int KMKENGHIONF_FIELD_NUMBER = 4;
     private int kMKENGHIONF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KMKENGHIONF = 4;</code>
      * @return The kMKENGHIONF.
      */
@@ -188,10 +164,6 @@ public final class GFBEALGFENJOuterClass {
     public static final int TOTAL_PROGRESS_FIELD_NUMBER = 5;
     private int totalProgress_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 total_progress = 5;</code>
      * @return The totalProgress.
      */
@@ -203,10 +175,6 @@ public final class GFBEALGFENJOuterClass {
     public static final int IS_TAKEN_REWARD_FIELD_NUMBER = 10;
     private boolean isTakenReward_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_taken_reward = 10;</code>
      * @return The isTakenReward.
      */
@@ -218,10 +186,6 @@ public final class GFBEALGFENJOuterClass {
     public static final int CUR_PROGRESS_FIELD_NUMBER = 11;
     private int curProgress_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cur_progress = 11;</code>
      * @return The curProgress.
      */
@@ -233,10 +197,6 @@ public final class GFBEALGFENJOuterClass {
     public static final int WATCHER_ID_FIELD_NUMBER = 13;
     private int watcherId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 watcher_id = 13;</code>
      * @return The watcherId.
      */
@@ -618,10 +578,6 @@ public final class GFBEALGFENJOuterClass {
 
       private int kMKENGHIONF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KMKENGHIONF = 4;</code>
        * @return The kMKENGHIONF.
        */
@@ -630,10 +586,6 @@ public final class GFBEALGFENJOuterClass {
         return kMKENGHIONF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KMKENGHIONF = 4;</code>
        * @param value The kMKENGHIONF to set.
        * @return This builder for chaining.
@@ -645,10 +597,6 @@ public final class GFBEALGFENJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KMKENGHIONF = 4;</code>
        * @return This builder for chaining.
        */
@@ -661,10 +609,6 @@ public final class GFBEALGFENJOuterClass {
 
       private int totalProgress_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 total_progress = 5;</code>
        * @return The totalProgress.
        */
@@ -673,10 +617,6 @@ public final class GFBEALGFENJOuterClass {
         return totalProgress_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 total_progress = 5;</code>
        * @param value The totalProgress to set.
        * @return This builder for chaining.
@@ -688,10 +628,6 @@ public final class GFBEALGFENJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 total_progress = 5;</code>
        * @return This builder for chaining.
        */
@@ -704,10 +640,6 @@ public final class GFBEALGFENJOuterClass {
 
       private boolean isTakenReward_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_taken_reward = 10;</code>
        * @return The isTakenReward.
        */
@@ -716,10 +648,6 @@ public final class GFBEALGFENJOuterClass {
         return isTakenReward_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_taken_reward = 10;</code>
        * @param value The isTakenReward to set.
        * @return This builder for chaining.
@@ -731,10 +659,6 @@ public final class GFBEALGFENJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_taken_reward = 10;</code>
        * @return This builder for chaining.
        */
@@ -747,10 +671,6 @@ public final class GFBEALGFENJOuterClass {
 
       private int curProgress_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cur_progress = 11;</code>
        * @return The curProgress.
        */
@@ -759,10 +679,6 @@ public final class GFBEALGFENJOuterClass {
         return curProgress_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cur_progress = 11;</code>
        * @param value The curProgress to set.
        * @return This builder for chaining.
@@ -774,10 +690,6 @@ public final class GFBEALGFENJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cur_progress = 11;</code>
        * @return This builder for chaining.
        */
@@ -790,10 +702,6 @@ public final class GFBEALGFENJOuterClass {
 
       private int watcherId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 watcher_id = 13;</code>
        * @return The watcherId.
        */
@@ -802,10 +710,6 @@ public final class GFBEALGFENJOuterClass {
         return watcherId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 watcher_id = 13;</code>
        * @param value The watcherId to set.
        * @return This builder for chaining.
@@ -817,10 +721,6 @@ public final class GFBEALGFENJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 watcher_id = 13;</code>
        * @return This builder for chaining.
        */

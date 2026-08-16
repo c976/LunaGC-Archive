@@ -19,60 +19,36 @@ public final class CPCOBNNADKLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOKMHIKMKCJ = 12;</code>
      * @return The lOKMHIKMKCJ.
      */
     int getLOKMHIKMKCJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 6;</code>
      * @return The cKOCCKMBGJN.
      */
     int getCKOCCKMBGJN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 10;</code>
      * @return The dALMDMCJNNK.
      */
     boolean getDALMDMCJNNK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HCALDBJPNDN = 15;</code>
      * @return The hCALDBJPNDN.
      */
     int getHCALDBJPNDN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 COBALEPPMGN = 8;</code>
      * @return The cOBALEPPMGN.
      */
@@ -188,10 +164,6 @@ public final class CPCOBNNADKLOuterClass {
     public static final int LOKMHIKMKCJ_FIELD_NUMBER = 12;
     private int lOKMHIKMKCJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOKMHIKMKCJ = 12;</code>
      * @return The lOKMHIKMKCJ.
      */
@@ -203,10 +175,6 @@ public final class CPCOBNNADKLOuterClass {
     public static final int CKOCCKMBGJN_FIELD_NUMBER = 6;
     private int cKOCCKMBGJN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 6;</code>
      * @return The cKOCCKMBGJN.
      */
@@ -218,10 +186,6 @@ public final class CPCOBNNADKLOuterClass {
     public static final int DALMDMCJNNK_FIELD_NUMBER = 10;
     private boolean dALMDMCJNNK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 10;</code>
      * @return The dALMDMCJNNK.
      */
@@ -233,10 +197,6 @@ public final class CPCOBNNADKLOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -248,10 +208,6 @@ public final class CPCOBNNADKLOuterClass {
     public static final int HCALDBJPNDN_FIELD_NUMBER = 15;
     private int hCALDBJPNDN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HCALDBJPNDN = 15;</code>
      * @return The hCALDBJPNDN.
      */
@@ -263,10 +219,6 @@ public final class CPCOBNNADKLOuterClass {
     public static final int COBALEPPMGN_FIELD_NUMBER = 8;
     private int cOBALEPPMGN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 COBALEPPMGN = 8;</code>
      * @return The cOBALEPPMGN.
      */
@@ -665,10 +617,6 @@ public final class CPCOBNNADKLOuterClass {
 
       private int lOKMHIKMKCJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOKMHIKMKCJ = 12;</code>
        * @return The lOKMHIKMKCJ.
        */
@@ -677,10 +625,6 @@ public final class CPCOBNNADKLOuterClass {
         return lOKMHIKMKCJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOKMHIKMKCJ = 12;</code>
        * @param value The lOKMHIKMKCJ to set.
        * @return This builder for chaining.
@@ -692,10 +636,6 @@ public final class CPCOBNNADKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOKMHIKMKCJ = 12;</code>
        * @return This builder for chaining.
        */
@@ -708,10 +648,6 @@ public final class CPCOBNNADKLOuterClass {
 
       private int cKOCCKMBGJN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 6;</code>
        * @return The cKOCCKMBGJN.
        */
@@ -720,10 +656,6 @@ public final class CPCOBNNADKLOuterClass {
         return cKOCCKMBGJN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 6;</code>
        * @param value The cKOCCKMBGJN to set.
        * @return This builder for chaining.
@@ -735,10 +667,6 @@ public final class CPCOBNNADKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 6;</code>
        * @return This builder for chaining.
        */
@@ -751,10 +679,6 @@ public final class CPCOBNNADKLOuterClass {
 
       private boolean dALMDMCJNNK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 10;</code>
        * @return The dALMDMCJNNK.
        */
@@ -763,10 +687,6 @@ public final class CPCOBNNADKLOuterClass {
         return dALMDMCJNNK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 10;</code>
        * @param value The dALMDMCJNNK to set.
        * @return This builder for chaining.
@@ -778,10 +698,6 @@ public final class CPCOBNNADKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 10;</code>
        * @return This builder for chaining.
        */
@@ -794,10 +710,6 @@ public final class CPCOBNNADKLOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
@@ -806,10 +718,6 @@ public final class CPCOBNNADKLOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -821,10 +729,6 @@ public final class CPCOBNNADKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
@@ -837,10 +741,6 @@ public final class CPCOBNNADKLOuterClass {
 
       private int hCALDBJPNDN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HCALDBJPNDN = 15;</code>
        * @return The hCALDBJPNDN.
        */
@@ -849,10 +749,6 @@ public final class CPCOBNNADKLOuterClass {
         return hCALDBJPNDN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HCALDBJPNDN = 15;</code>
        * @param value The hCALDBJPNDN to set.
        * @return This builder for chaining.
@@ -864,10 +760,6 @@ public final class CPCOBNNADKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HCALDBJPNDN = 15;</code>
        * @return This builder for chaining.
        */
@@ -880,10 +772,6 @@ public final class CPCOBNNADKLOuterClass {
 
       private int cOBALEPPMGN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 COBALEPPMGN = 8;</code>
        * @return The cOBALEPPMGN.
        */
@@ -892,10 +780,6 @@ public final class CPCOBNNADKLOuterClass {
         return cOBALEPPMGN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 COBALEPPMGN = 8;</code>
        * @param value The cOBALEPPMGN to set.
        * @return This builder for chaining.
@@ -907,10 +791,6 @@ public final class CPCOBNNADKLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 COBALEPPMGN = 8;</code>
        * @return This builder for chaining.
        */

@@ -19,30 +19,22 @@ public final class BCGDHDFEJPLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 max_combo = 8;</code>
      * @return The maxCombo.
      */
     int getMaxCombo();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HDIKBBEMGGA = 6;</code>
      * @return The hDIKBBEMGGA.
      */
     boolean getHDIKBBEMGGA();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 7;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 7;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
   }
   /**
    * Protobuf type {@code BCGDHDFEJPL}
@@ -96,7 +88,7 @@ public final class BCGDHDFEJPLOuterClass {
             }
             case 56: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 64: {
@@ -139,10 +131,6 @@ public final class BCGDHDFEJPLOuterClass {
     public static final int MAX_COMBO_FIELD_NUMBER = 8;
     private int maxCombo_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 max_combo = 8;</code>
      * @return The maxCombo.
      */
@@ -154,10 +142,6 @@ public final class BCGDHDFEJPLOuterClass {
     public static final int HDIKBBEMGGA_FIELD_NUMBER = 6;
     private boolean hDIKBBEMGGA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HDIKBBEMGGA = 6;</code>
      * @return The hDIKBBEMGGA.
      */
@@ -166,15 +150,15 @@ public final class BCGDHDFEJPLOuterClass {
       return hDIKBBEMGGA_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 7;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 7;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 7;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 7;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -194,8 +178,8 @@ public final class BCGDHDFEJPLOuterClass {
       if (hDIKBBEMGGA_ != false) {
         output.writeBool(6, hDIKBBEMGGA_);
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(7, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(7, ugcGuid_);
       }
       if (maxCombo_ != 0) {
         output.writeUInt32(8, maxCombo_);
@@ -213,9 +197,9 @@ public final class BCGDHDFEJPLOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(6, hDIKBBEMGGA_);
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, iFADGMHEFHF_);
+          .computeUInt32Size(7, ugcGuid_);
       }
       if (maxCombo_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -240,8 +224,8 @@ public final class BCGDHDFEJPLOuterClass {
           != other.getMaxCombo()) return false;
       if (getHDIKBBEMGGA()
           != other.getHDIKBBEMGGA()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -258,8 +242,8 @@ public final class BCGDHDFEJPLOuterClass {
       hash = (37 * hash) + HDIKBBEMGGA_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getHDIKBBEMGGA());
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -397,7 +381,7 @@ public final class BCGDHDFEJPLOuterClass {
 
         hDIKBBEMGGA_ = false;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         return this;
       }
@@ -427,7 +411,7 @@ public final class BCGDHDFEJPLOuterClass {
         emu.grasscutter.net.proto.BCGDHDFEJPLOuterClass.BCGDHDFEJPL result = new emu.grasscutter.net.proto.BCGDHDFEJPLOuterClass.BCGDHDFEJPL(this);
         result.maxCombo_ = maxCombo_;
         result.hDIKBBEMGGA_ = hDIKBBEMGGA_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         onBuilt();
         return result;
       }
@@ -482,8 +466,8 @@ public final class BCGDHDFEJPLOuterClass {
         if (other.getHDIKBBEMGGA() != false) {
           setHDIKBBEMGGA(other.getHDIKBBEMGGA());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -516,10 +500,6 @@ public final class BCGDHDFEJPLOuterClass {
 
       private int maxCombo_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 max_combo = 8;</code>
        * @return The maxCombo.
        */
@@ -528,10 +508,6 @@ public final class BCGDHDFEJPLOuterClass {
         return maxCombo_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 max_combo = 8;</code>
        * @param value The maxCombo to set.
        * @return This builder for chaining.
@@ -543,10 +519,6 @@ public final class BCGDHDFEJPLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 max_combo = 8;</code>
        * @return This builder for chaining.
        */
@@ -559,10 +531,6 @@ public final class BCGDHDFEJPLOuterClass {
 
       private boolean hDIKBBEMGGA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HDIKBBEMGGA = 6;</code>
        * @return The hDIKBBEMGGA.
        */
@@ -571,10 +539,6 @@ public final class BCGDHDFEJPLOuterClass {
         return hDIKBBEMGGA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HDIKBBEMGGA = 6;</code>
        * @param value The hDIKBBEMGGA to set.
        * @return This builder for chaining.
@@ -586,10 +550,6 @@ public final class BCGDHDFEJPLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HDIKBBEMGGA = 6;</code>
        * @return This builder for chaining.
        */
@@ -600,33 +560,33 @@ public final class BCGDHDFEJPLOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 7;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 7;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 7;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 7;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 7;</code>
+       * <code>uint32 ugc_guid = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
@@ -697,10 +657,10 @@ public final class BCGDHDFEJPLOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021BCGDHDFEJPL.proto\"J\n\013BCGDHDFEJPL\022\021\n\tma" +
-      "x_combo\030\010 \001(\r\022\023\n\013HDIKBBEMGGA\030\006 \001(\010\022\023\n\013IF" +
-      "ADGMHEFHF\030\007 \001(\rB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n\021BCGDHDFEJPL.proto\"G\n\013BCGDHDFEJPL\022\021\n\tma" +
+      "x_combo\030\010 \001(\r\022\023\n\013HDIKBBEMGGA\030\006 \001(\010\022\020\n\010ug" +
+      "c_guid\030\007 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -711,7 +671,7 @@ public final class BCGDHDFEJPLOuterClass {
     internal_static_BCGDHDFEJPL_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BCGDHDFEJPL_descriptor,
-        new java.lang.String[] { "MaxCombo", "HDIKBBEMGGA", "IFADGMHEFHF", });
+        new java.lang.String[] { "MaxCombo", "HDIKBBEMGGA", "UgcGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

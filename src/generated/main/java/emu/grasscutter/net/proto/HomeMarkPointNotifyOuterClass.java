@@ -19,52 +19,33 @@ public final class HomeMarkPointNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+     * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData> 
-        getCIPHMJGLJENList();
+        getMarkPointDataListList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+     * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
      */
-    emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData getCIPHMJGLJEN(int index);
+    emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData getMarkPointDataList(int index);
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+     * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
      */
-    int getCIPHMJGLJENCount();
+    int getMarkPointDataListCount();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+     * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder> 
-        getCIPHMJGLJENOrBuilderList();
+        getMarkPointDataListOrBuilderList();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+     * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
      */
-    emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder getCIPHMJGLJENOrBuilder(
+    emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder getMarkPointDataListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 7540
+   * CmdId: 23013
+   * Obf: GKDFNALJFOI
    * </pre>
    *
    * Protobuf type {@code HomeMarkPointNotify}
@@ -79,7 +60,7 @@ public final class HomeMarkPointNotifyOuterClass {
       super(builder);
     }
     private HomeMarkPointNotify() {
-      cIPHMJGLJEN_ = java.util.Collections.emptyList();
+      markPointDataList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -113,12 +94,12 @@ public final class HomeMarkPointNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 122: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cIPHMJGLJEN_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData>();
+                markPointDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              cIPHMJGLJEN_.add(
+              markPointDataList_.add(
                   input.readMessage(emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.parser(), extensionRegistry));
               break;
             }
@@ -138,7 +119,7 @@ public final class HomeMarkPointNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          cIPHMJGLJEN_ = java.util.Collections.unmodifiableList(cIPHMJGLJEN_);
+          markPointDataList_ = java.util.Collections.unmodifiableList(markPointDataList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -157,64 +138,44 @@ public final class HomeMarkPointNotifyOuterClass {
               emu.grasscutter.net.proto.HomeMarkPointNotifyOuterClass.HomeMarkPointNotify.class, emu.grasscutter.net.proto.HomeMarkPointNotifyOuterClass.HomeMarkPointNotify.Builder.class);
     }
 
-    public static final int CIPHMJGLJEN_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData> cIPHMJGLJEN_;
+    public static final int MARK_POINT_DATA_LIST_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData> markPointDataList_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+     * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData> getCIPHMJGLJENList() {
-      return cIPHMJGLJEN_;
+    public java.util.List<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData> getMarkPointDataListList() {
+      return markPointDataList_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+     * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder> 
-        getCIPHMJGLJENOrBuilderList() {
-      return cIPHMJGLJEN_;
+        getMarkPointDataListOrBuilderList() {
+      return markPointDataList_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+     * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
      */
     @java.lang.Override
-    public int getCIPHMJGLJENCount() {
-      return cIPHMJGLJEN_.size();
+    public int getMarkPointDataListCount() {
+      return markPointDataList_.size();
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+     * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData getCIPHMJGLJEN(int index) {
-      return cIPHMJGLJEN_.get(index);
+    public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData getMarkPointDataList(int index) {
+      return markPointDataList_.get(index);
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+     * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder getCIPHMJGLJENOrBuilder(
+    public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder getMarkPointDataListOrBuilder(
         int index) {
-      return cIPHMJGLJEN_.get(index);
+      return markPointDataList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -231,8 +192,8 @@ public final class HomeMarkPointNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < cIPHMJGLJEN_.size(); i++) {
-        output.writeMessage(15, cIPHMJGLJEN_.get(i));
+      for (int i = 0; i < markPointDataList_.size(); i++) {
+        output.writeMessage(2, markPointDataList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -243,9 +204,9 @@ public final class HomeMarkPointNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < cIPHMJGLJEN_.size(); i++) {
+      for (int i = 0; i < markPointDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, cIPHMJGLJEN_.get(i));
+          .computeMessageSize(2, markPointDataList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -262,8 +223,8 @@ public final class HomeMarkPointNotifyOuterClass {
       }
       emu.grasscutter.net.proto.HomeMarkPointNotifyOuterClass.HomeMarkPointNotify other = (emu.grasscutter.net.proto.HomeMarkPointNotifyOuterClass.HomeMarkPointNotify) obj;
 
-      if (!getCIPHMJGLJENList()
-          .equals(other.getCIPHMJGLJENList())) return false;
+      if (!getMarkPointDataListList()
+          .equals(other.getMarkPointDataListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,9 +236,9 @@ public final class HomeMarkPointNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getCIPHMJGLJENCount() > 0) {
-        hash = (37 * hash) + CIPHMJGLJEN_FIELD_NUMBER;
-        hash = (53 * hash) + getCIPHMJGLJENList().hashCode();
+      if (getMarkPointDataListCount() > 0) {
+        hash = (37 * hash) + MARK_POINT_DATA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getMarkPointDataListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -376,7 +337,8 @@ public final class HomeMarkPointNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7540
+     * CmdId: 23013
+     * Obf: GKDFNALJFOI
      * </pre>
      *
      * Protobuf type {@code HomeMarkPointNotify}
@@ -411,17 +373,17 @@ public final class HomeMarkPointNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getCIPHMJGLJENFieldBuilder();
+          getMarkPointDataListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (cIPHMJGLJENBuilder_ == null) {
-          cIPHMJGLJEN_ = java.util.Collections.emptyList();
+        if (markPointDataListBuilder_ == null) {
+          markPointDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          cIPHMJGLJENBuilder_.clear();
+          markPointDataListBuilder_.clear();
         }
         return this;
       }
@@ -450,14 +412,14 @@ public final class HomeMarkPointNotifyOuterClass {
       public emu.grasscutter.net.proto.HomeMarkPointNotifyOuterClass.HomeMarkPointNotify buildPartial() {
         emu.grasscutter.net.proto.HomeMarkPointNotifyOuterClass.HomeMarkPointNotify result = new emu.grasscutter.net.proto.HomeMarkPointNotifyOuterClass.HomeMarkPointNotify(this);
         int from_bitField0_ = bitField0_;
-        if (cIPHMJGLJENBuilder_ == null) {
+        if (markPointDataListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            cIPHMJGLJEN_ = java.util.Collections.unmodifiableList(cIPHMJGLJEN_);
+            markPointDataList_ = java.util.Collections.unmodifiableList(markPointDataList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.cIPHMJGLJEN_ = cIPHMJGLJEN_;
+          result.markPointDataList_ = markPointDataList_;
         } else {
-          result.cIPHMJGLJEN_ = cIPHMJGLJENBuilder_.build();
+          result.markPointDataList_ = markPointDataListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -507,29 +469,29 @@ public final class HomeMarkPointNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeMarkPointNotifyOuterClass.HomeMarkPointNotify other) {
         if (other == emu.grasscutter.net.proto.HomeMarkPointNotifyOuterClass.HomeMarkPointNotify.getDefaultInstance()) return this;
-        if (cIPHMJGLJENBuilder_ == null) {
-          if (!other.cIPHMJGLJEN_.isEmpty()) {
-            if (cIPHMJGLJEN_.isEmpty()) {
-              cIPHMJGLJEN_ = other.cIPHMJGLJEN_;
+        if (markPointDataListBuilder_ == null) {
+          if (!other.markPointDataList_.isEmpty()) {
+            if (markPointDataList_.isEmpty()) {
+              markPointDataList_ = other.markPointDataList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureCIPHMJGLJENIsMutable();
-              cIPHMJGLJEN_.addAll(other.cIPHMJGLJEN_);
+              ensureMarkPointDataListIsMutable();
+              markPointDataList_.addAll(other.markPointDataList_);
             }
             onChanged();
           }
         } else {
-          if (!other.cIPHMJGLJEN_.isEmpty()) {
-            if (cIPHMJGLJENBuilder_.isEmpty()) {
-              cIPHMJGLJENBuilder_.dispose();
-              cIPHMJGLJENBuilder_ = null;
-              cIPHMJGLJEN_ = other.cIPHMJGLJEN_;
+          if (!other.markPointDataList_.isEmpty()) {
+            if (markPointDataListBuilder_.isEmpty()) {
+              markPointDataListBuilder_.dispose();
+              markPointDataListBuilder_ = null;
+              markPointDataList_ = other.markPointDataList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              cIPHMJGLJENBuilder_ = 
+              markPointDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getCIPHMJGLJENFieldBuilder() : null;
+                   getMarkPointDataListFieldBuilder() : null;
             } else {
-              cIPHMJGLJENBuilder_.addAllMessages(other.cIPHMJGLJEN_);
+              markPointDataListBuilder_.addAllMessages(other.markPointDataList_);
             }
           }
         }
@@ -563,316 +525,244 @@ public final class HomeMarkPointNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData> cIPHMJGLJEN_ =
+      private java.util.List<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData> markPointDataList_ =
         java.util.Collections.emptyList();
-      private void ensureCIPHMJGLJENIsMutable() {
+      private void ensureMarkPointDataListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          cIPHMJGLJEN_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData>(cIPHMJGLJEN_);
+          markPointDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData>(markPointDataList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder> cIPHMJGLJENBuilder_;
+          emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder> markPointDataListBuilder_;
 
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData> getCIPHMJGLJENList() {
-        if (cIPHMJGLJENBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(cIPHMJGLJEN_);
+      public java.util.List<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData> getMarkPointDataListList() {
+        if (markPointDataListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(markPointDataList_);
         } else {
-          return cIPHMJGLJENBuilder_.getMessageList();
+          return markPointDataListBuilder_.getMessageList();
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public int getCIPHMJGLJENCount() {
-        if (cIPHMJGLJENBuilder_ == null) {
-          return cIPHMJGLJEN_.size();
+      public int getMarkPointDataListCount() {
+        if (markPointDataListBuilder_ == null) {
+          return markPointDataList_.size();
         } else {
-          return cIPHMJGLJENBuilder_.getCount();
+          return markPointDataListBuilder_.getCount();
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData getCIPHMJGLJEN(int index) {
-        if (cIPHMJGLJENBuilder_ == null) {
-          return cIPHMJGLJEN_.get(index);
+      public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData getMarkPointDataList(int index) {
+        if (markPointDataListBuilder_ == null) {
+          return markPointDataList_.get(index);
         } else {
-          return cIPHMJGLJENBuilder_.getMessage(index);
+          return markPointDataListBuilder_.getMessage(index);
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public Builder setCIPHMJGLJEN(
+      public Builder setMarkPointDataList(
           int index, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData value) {
-        if (cIPHMJGLJENBuilder_ == null) {
+        if (markPointDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCIPHMJGLJENIsMutable();
-          cIPHMJGLJEN_.set(index, value);
+          ensureMarkPointDataListIsMutable();
+          markPointDataList_.set(index, value);
           onChanged();
         } else {
-          cIPHMJGLJENBuilder_.setMessage(index, value);
+          markPointDataListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public Builder setCIPHMJGLJEN(
+      public Builder setMarkPointDataList(
           int index, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder builderForValue) {
-        if (cIPHMJGLJENBuilder_ == null) {
-          ensureCIPHMJGLJENIsMutable();
-          cIPHMJGLJEN_.set(index, builderForValue.build());
+        if (markPointDataListBuilder_ == null) {
+          ensureMarkPointDataListIsMutable();
+          markPointDataList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          cIPHMJGLJENBuilder_.setMessage(index, builderForValue.build());
+          markPointDataListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public Builder addCIPHMJGLJEN(emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData value) {
-        if (cIPHMJGLJENBuilder_ == null) {
+      public Builder addMarkPointDataList(emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData value) {
+        if (markPointDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCIPHMJGLJENIsMutable();
-          cIPHMJGLJEN_.add(value);
+          ensureMarkPointDataListIsMutable();
+          markPointDataList_.add(value);
           onChanged();
         } else {
-          cIPHMJGLJENBuilder_.addMessage(value);
+          markPointDataListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public Builder addCIPHMJGLJEN(
+      public Builder addMarkPointDataList(
           int index, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData value) {
-        if (cIPHMJGLJENBuilder_ == null) {
+        if (markPointDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCIPHMJGLJENIsMutable();
-          cIPHMJGLJEN_.add(index, value);
+          ensureMarkPointDataListIsMutable();
+          markPointDataList_.add(index, value);
           onChanged();
         } else {
-          cIPHMJGLJENBuilder_.addMessage(index, value);
+          markPointDataListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public Builder addCIPHMJGLJEN(
+      public Builder addMarkPointDataList(
           emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder builderForValue) {
-        if (cIPHMJGLJENBuilder_ == null) {
-          ensureCIPHMJGLJENIsMutable();
-          cIPHMJGLJEN_.add(builderForValue.build());
+        if (markPointDataListBuilder_ == null) {
+          ensureMarkPointDataListIsMutable();
+          markPointDataList_.add(builderForValue.build());
           onChanged();
         } else {
-          cIPHMJGLJENBuilder_.addMessage(builderForValue.build());
+          markPointDataListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public Builder addCIPHMJGLJEN(
+      public Builder addMarkPointDataList(
           int index, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder builderForValue) {
-        if (cIPHMJGLJENBuilder_ == null) {
-          ensureCIPHMJGLJENIsMutable();
-          cIPHMJGLJEN_.add(index, builderForValue.build());
+        if (markPointDataListBuilder_ == null) {
+          ensureMarkPointDataListIsMutable();
+          markPointDataList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          cIPHMJGLJENBuilder_.addMessage(index, builderForValue.build());
+          markPointDataListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public Builder addAllCIPHMJGLJEN(
+      public Builder addAllMarkPointDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData> values) {
-        if (cIPHMJGLJENBuilder_ == null) {
-          ensureCIPHMJGLJENIsMutable();
+        if (markPointDataListBuilder_ == null) {
+          ensureMarkPointDataListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, cIPHMJGLJEN_);
+              values, markPointDataList_);
           onChanged();
         } else {
-          cIPHMJGLJENBuilder_.addAllMessages(values);
+          markPointDataListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public Builder clearCIPHMJGLJEN() {
-        if (cIPHMJGLJENBuilder_ == null) {
-          cIPHMJGLJEN_ = java.util.Collections.emptyList();
+      public Builder clearMarkPointDataList() {
+        if (markPointDataListBuilder_ == null) {
+          markPointDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          cIPHMJGLJENBuilder_.clear();
+          markPointDataListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public Builder removeCIPHMJGLJEN(int index) {
-        if (cIPHMJGLJENBuilder_ == null) {
-          ensureCIPHMJGLJENIsMutable();
-          cIPHMJGLJEN_.remove(index);
+      public Builder removeMarkPointDataList(int index) {
+        if (markPointDataListBuilder_ == null) {
+          ensureMarkPointDataListIsMutable();
+          markPointDataList_.remove(index);
           onChanged();
         } else {
-          cIPHMJGLJENBuilder_.remove(index);
+          markPointDataListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder getCIPHMJGLJENBuilder(
+      public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder getMarkPointDataListBuilder(
           int index) {
-        return getCIPHMJGLJENFieldBuilder().getBuilder(index);
+        return getMarkPointDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder getCIPHMJGLJENOrBuilder(
+      public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder getMarkPointDataListOrBuilder(
           int index) {
-        if (cIPHMJGLJENBuilder_ == null) {
-          return cIPHMJGLJEN_.get(index);  } else {
-          return cIPHMJGLJENBuilder_.getMessageOrBuilder(index);
+        if (markPointDataListBuilder_ == null) {
+          return markPointDataList_.get(index);  } else {
+          return markPointDataListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder> 
-           getCIPHMJGLJENOrBuilderList() {
-        if (cIPHMJGLJENBuilder_ != null) {
-          return cIPHMJGLJENBuilder_.getMessageOrBuilderList();
+           getMarkPointDataListOrBuilderList() {
+        if (markPointDataListBuilder_ != null) {
+          return markPointDataListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(cIPHMJGLJEN_);
+          return java.util.Collections.unmodifiableList(markPointDataList_);
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder addCIPHMJGLJENBuilder() {
-        return getCIPHMJGLJENFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder addMarkPointDataListBuilder() {
+        return getMarkPointDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
-      public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder addCIPHMJGLJENBuilder(
+      public emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder addMarkPointDataListBuilder(
           int index) {
-        return getCIPHMJGLJENFieldBuilder().addBuilder(
+        return getMarkPointDataListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.getDefaultInstance());
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>repeated .HomeMarkPointSceneData CIPHMJGLJEN = 15;</code>
+       * <code>repeated .HomeMarkPointSceneData mark_point_data_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder> 
-           getCIPHMJGLJENBuilderList() {
-        return getCIPHMJGLJENFieldBuilder().getBuilderList();
+           getMarkPointDataListBuilderList() {
+        return getMarkPointDataListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder> 
-          getCIPHMJGLJENFieldBuilder() {
-        if (cIPHMJGLJENBuilder_ == null) {
-          cIPHMJGLJENBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getMarkPointDataListFieldBuilder() {
+        if (markPointDataListBuilder_ == null) {
+          markPointDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneData.Builder, emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.HomeMarkPointSceneDataOrBuilder>(
-                  cIPHMJGLJEN_,
+                  markPointDataList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          cIPHMJGLJEN_ = null;
+          markPointDataList_ = null;
         }
-        return cIPHMJGLJENBuilder_;
+        return markPointDataListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -942,10 +832,10 @@ public final class HomeMarkPointNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031HomeMarkPointNotify.proto\032\034HomeMarkPoi" +
-      "ntSceneData.proto\"C\n\023HomeMarkPointNotify" +
-      "\022,\n\013CIPHMJGLJEN\030\017 \003(\0132\027.HomeMarkPointSce" +
-      "neDataB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "ntSceneData.proto\"L\n\023HomeMarkPointNotify" +
+      "\0225\n\024mark_point_data_list\030\002 \003(\0132\027.HomeMar" +
+      "kPointSceneDataB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -957,7 +847,7 @@ public final class HomeMarkPointNotifyOuterClass {
     internal_static_HomeMarkPointNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeMarkPointNotify_descriptor,
-        new java.lang.String[] { "CIPHMJGLJEN", });
+        new java.lang.String[] { "MarkPointDataList", });
     emu.grasscutter.net.proto.HomeMarkPointSceneDataOuterClass.getDescriptor();
   }
 

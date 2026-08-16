@@ -20,48 +20,48 @@ public final class BreakoutActionTypeOuterClass {
   public enum BreakoutActionType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>AHELMHOPMEF_ACTION_TYPE_NONE = 0;</code>
+     * <code>BreakoutActionType_ACTION_TYPE_NONE = 0;</code>
      */
-    AHELMHOPMEF_ACTION_TYPE_NONE(0),
+    BreakoutActionType_ACTION_TYPE_NONE(0),
     /**
-     * <code>AHELMHOPMEF_ACTION_TYPE_LAUNCH_BALL = 1;</code>
+     * <code>BreakoutActionType_ACTION_TYPE_LAUNCH_BALL = 1;</code>
      */
-    AHELMHOPMEF_ACTION_TYPE_LAUNCH_BALL(1),
+    BreakoutActionType_ACTION_TYPE_LAUNCH_BALL(1),
     /**
-     * <code>AHELMHOPMEF_ACTION_TYPE_DESTROY_BALL = 2;</code>
+     * <code>BreakoutActionType_ACTION_TYPE_DESTROY_BALL = 2;</code>
      */
-    AHELMHOPMEF_ACTION_TYPE_DESTROY_BALL(2),
+    BreakoutActionType_ACTION_TYPE_DESTROY_BALL(2),
     /**
-     * <code>AHELMHOPMEF_ACTION_TYPE_FALLING_OBJECT = 3;</code>
+     * <code>BreakoutActionType_ACTION_TYPE_FALLING_OBJECT = 3;</code>
      */
-    AHELMHOPMEF_ACTION_TYPE_FALLING_OBJECT(3),
+    BreakoutActionType_ACTION_TYPE_FALLING_OBJECT(3),
     /**
-     * <code>AHELMHOPMEF_ACTION_TYPE_MISSILE = 4;</code>
+     * <code>BreakoutActionType_ACTION_TYPE_MISSILE = 4;</code>
      */
-    AHELMHOPMEF_ACTION_TYPE_MISSILE(4),
+    BreakoutActionType_ACTION_TYPE_MISSILE(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>AHELMHOPMEF_ACTION_TYPE_NONE = 0;</code>
+     * <code>BreakoutActionType_ACTION_TYPE_NONE = 0;</code>
      */
-    public static final int AHELMHOPMEF_ACTION_TYPE_NONE_VALUE = 0;
+    public static final int BreakoutActionType_ACTION_TYPE_NONE_VALUE = 0;
     /**
-     * <code>AHELMHOPMEF_ACTION_TYPE_LAUNCH_BALL = 1;</code>
+     * <code>BreakoutActionType_ACTION_TYPE_LAUNCH_BALL = 1;</code>
      */
-    public static final int AHELMHOPMEF_ACTION_TYPE_LAUNCH_BALL_VALUE = 1;
+    public static final int BreakoutActionType_ACTION_TYPE_LAUNCH_BALL_VALUE = 1;
     /**
-     * <code>AHELMHOPMEF_ACTION_TYPE_DESTROY_BALL = 2;</code>
+     * <code>BreakoutActionType_ACTION_TYPE_DESTROY_BALL = 2;</code>
      */
-    public static final int AHELMHOPMEF_ACTION_TYPE_DESTROY_BALL_VALUE = 2;
+    public static final int BreakoutActionType_ACTION_TYPE_DESTROY_BALL_VALUE = 2;
     /**
-     * <code>AHELMHOPMEF_ACTION_TYPE_FALLING_OBJECT = 3;</code>
+     * <code>BreakoutActionType_ACTION_TYPE_FALLING_OBJECT = 3;</code>
      */
-    public static final int AHELMHOPMEF_ACTION_TYPE_FALLING_OBJECT_VALUE = 3;
+    public static final int BreakoutActionType_ACTION_TYPE_FALLING_OBJECT_VALUE = 3;
     /**
-     * <code>AHELMHOPMEF_ACTION_TYPE_MISSILE = 4;</code>
+     * <code>BreakoutActionType_ACTION_TYPE_MISSILE = 4;</code>
      */
-    public static final int AHELMHOPMEF_ACTION_TYPE_MISSILE_VALUE = 4;
+    public static final int BreakoutActionType_ACTION_TYPE_MISSILE_VALUE = 4;
 
 
     public final int getNumber() {
@@ -88,11 +88,11 @@ public final class BreakoutActionTypeOuterClass {
      */
     public static BreakoutActionType forNumber(int value) {
       switch (value) {
-        case 0: return AHELMHOPMEF_ACTION_TYPE_NONE;
-        case 1: return AHELMHOPMEF_ACTION_TYPE_LAUNCH_BALL;
-        case 2: return AHELMHOPMEF_ACTION_TYPE_DESTROY_BALL;
-        case 3: return AHELMHOPMEF_ACTION_TYPE_FALLING_OBJECT;
-        case 4: return AHELMHOPMEF_ACTION_TYPE_MISSILE;
+        case 0: return BreakoutActionType_ACTION_TYPE_NONE;
+        case 1: return BreakoutActionType_ACTION_TYPE_LAUNCH_BALL;
+        case 2: return BreakoutActionType_ACTION_TYPE_DESTROY_BALL;
+        case 3: return BreakoutActionType_ACTION_TYPE_FALLING_OBJECT;
+        case 4: return BreakoutActionType_ACTION_TYPE_MISSILE;
         default: return null;
       }
     }
@@ -158,14 +158,14 @@ public final class BreakoutActionTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030BreakoutActionType.proto*\332\001\n\022BreakoutA" +
-      "ctionType\022 \n\034AHELMHOPMEF_ACTION_TYPE_NON" +
-      "E\020\000\022\'\n#AHELMHOPMEF_ACTION_TYPE_LAUNCH_BA" +
-      "LL\020\001\022(\n$AHELMHOPMEF_ACTION_TYPE_DESTROY_" +
-      "BALL\020\002\022*\n&AHELMHOPMEF_ACTION_TYPE_FALLIN" +
-      "G_OBJECT\020\003\022#\n\037AHELMHOPMEF_ACTION_TYPE_MI" +
-      "SSILE\020\004B\033\n\031emu.grasscutter.net.protob\006pr" +
-      "oto3"
+      "\n\030BreakoutActionType.proto*\375\001\n\022BreakoutA" +
+      "ctionType\022\'\n#BreakoutActionType_ACTION_T" +
+      "YPE_NONE\020\000\022.\n*BreakoutActionType_ACTION_" +
+      "TYPE_LAUNCH_BALL\020\001\022/\n+BreakoutActionType" +
+      "_ACTION_TYPE_DESTROY_BALL\020\002\0221\n-BreakoutA" +
+      "ctionType_ACTION_TYPE_FALLING_OBJECT\020\003\022*" +
+      "\n&BreakoutActionType_ACTION_TYPE_MISSILE" +
+      "\020\004B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,58 +19,17 @@ public final class AvatarExpeditionStartRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-     * @return A list containing the oLKMJMCEBPJ.
-     */
-    java.util.List<java.lang.Integer> getOLKMJMCEBPJList();
-    /**
-     * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-     * @return The count of oLKMJMCEBPJ.
-     */
-    int getOLKMJMCEBPJCount();
-    /**
-     * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-     * @param index The index of the element to return.
-     * @return The oLKMJMCEBPJ at the given index.
-     */
-    int getOLKMJMCEBPJ(int index);
-
-    /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> 
-        getNFDJBFGLLFMList();
-    /**
-     * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-     */
-    emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM getNFDJBFGLLFM(int index);
-    /**
-     * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-     */
-    int getNFDJBFGLLFMCount();
-    /**
-     * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder> 
-        getNFDJBFGLLFMOrBuilderList();
-    /**
-     * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-     */
-    emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder getNFDJBFGLLFMOrBuilder(
-        int index);
-
-    /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
      */
     int getExpeditionInfoMapCount();
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
      */
     boolean containsExpeditionInfoMap(
         long key);
@@ -81,19 +40,19 @@ public final class AvatarExpeditionStartRspOuterClass {
     java.util.Map<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo>
     getExpeditionInfoMap();
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
      */
     java.util.Map<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo>
     getExpeditionInfoMapMap();
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
      */
 
     emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo getExpeditionInfoMapOrDefault(
         long key,
         emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo defaultValue);
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
      */
 
     emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo getExpeditionInfoMapOrThrow(
@@ -101,7 +60,8 @@ public final class AvatarExpeditionStartRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 22242
+   * CmdId: 28415
+   * Obf: JOFFMPADDLP
    * </pre>
    *
    * Protobuf type {@code AvatarExpeditionStartRsp}
@@ -116,8 +76,6 @@ public final class AvatarExpeditionStartRspOuterClass {
       super(builder);
     }
     private AvatarExpeditionStartRsp() {
-      oLKMJMCEBPJ_ = emptyIntList();
-      nFDJBFGLLFM_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -151,52 +109,22 @@ public final class AvatarExpeditionStartRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                oLKMJMCEBPJ_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              oLKMJMCEBPJ_.addInt(input.readInt32());
-              break;
-            }
-            case 58: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                oLKMJMCEBPJ_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                oLKMJMCEBPJ_.addInt(input.readInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 88: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                nFDJBFGLLFM_ = new java.util.ArrayList<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              nFDJBFGLLFM_.add(
-                  input.readMessage(emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.parser(), extensionRegistry));
-              break;
-            }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 expeditionInfoMap_ = com.google.protobuf.MapField.newMapField(
                     ExpeditionInfoMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo>
               expeditionInfoMap__ = input.readMessage(
                   ExpeditionInfoMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               expeditionInfoMap_.getMutableMap().put(
                   expeditionInfoMap__.getKey(), expeditionInfoMap__.getValue());
+              break;
+            }
+            case 120: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -214,12 +142,6 @@ public final class AvatarExpeditionStartRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          oLKMJMCEBPJ_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          nFDJBFGLLFM_ = java.util.Collections.unmodifiableList(nFDJBFGLLFM_);
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -234,7 +156,7 @@ public final class AvatarExpeditionStartRspOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 13:
+        case 3:
           return internalGetExpeditionInfoMap();
         default:
           throw new RuntimeException(
@@ -249,38 +171,10 @@ public final class AvatarExpeditionStartRspOuterClass {
               emu.grasscutter.net.proto.AvatarExpeditionStartRspOuterClass.AvatarExpeditionStartRsp.class, emu.grasscutter.net.proto.AvatarExpeditionStartRspOuterClass.AvatarExpeditionStartRsp.Builder.class);
     }
 
-    public static final int OLKMJMCEBPJ_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList oLKMJMCEBPJ_;
-    /**
-     * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-     * @return A list containing the oLKMJMCEBPJ.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getOLKMJMCEBPJList() {
-      return oLKMJMCEBPJ_;
-    }
-    /**
-     * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-     * @return The count of oLKMJMCEBPJ.
-     */
-    public int getOLKMJMCEBPJCount() {
-      return oLKMJMCEBPJ_.size();
-    }
-    /**
-     * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-     * @param index The index of the element to return.
-     * @return The oLKMJMCEBPJ at the given index.
-     */
-    public int getOLKMJMCEBPJ(int index) {
-      return oLKMJMCEBPJ_.getInt(index);
-    }
-    private int oLKMJMCEBPJMemoizedSerializedSize = -1;
-
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -288,47 +182,7 @@ public final class AvatarExpeditionStartRspOuterClass {
       return retcode_;
     }
 
-    public static final int NFDJBFGLLFM_FIELD_NUMBER = 12;
-    private java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> nFDJBFGLLFM_;
-    /**
-     * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> getNFDJBFGLLFMList() {
-      return nFDJBFGLLFM_;
-    }
-    /**
-     * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder> 
-        getNFDJBFGLLFMOrBuilderList() {
-      return nFDJBFGLLFM_;
-    }
-    /**
-     * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-     */
-    @java.lang.Override
-    public int getNFDJBFGLLFMCount() {
-      return nFDJBFGLLFM_.size();
-    }
-    /**
-     * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM getNFDJBFGLLFM(int index) {
-      return nFDJBFGLLFM_.get(index);
-    }
-    /**
-     * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder getNFDJBFGLLFMOrBuilder(
-        int index) {
-      return nFDJBFGLLFM_.get(index);
-    }
-
-    public static final int EXPEDITION_INFO_MAP_FIELD_NUMBER = 13;
+    public static final int EXPEDITION_INFO_MAP_FIELD_NUMBER = 3;
     private static final class ExpeditionInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo> defaultEntry =
@@ -355,7 +209,7 @@ public final class AvatarExpeditionStartRspOuterClass {
       return internalGetExpeditionInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
      */
 
     @java.lang.Override
@@ -373,7 +227,7 @@ public final class AvatarExpeditionStartRspOuterClass {
       return getExpeditionInfoMapMap();
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
      */
     @java.lang.Override
 
@@ -381,7 +235,7 @@ public final class AvatarExpeditionStartRspOuterClass {
       return internalGetExpeditionInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
      */
     @java.lang.Override
 
@@ -394,7 +248,7 @@ public final class AvatarExpeditionStartRspOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
      */
     @java.lang.Override
 
@@ -423,26 +277,15 @@ public final class AvatarExpeditionStartRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      if (getOLKMJMCEBPJList().size() > 0) {
-        output.writeUInt32NoTag(58);
-        output.writeUInt32NoTag(oLKMJMCEBPJMemoizedSerializedSize);
-      }
-      for (int i = 0; i < oLKMJMCEBPJ_.size(); i++) {
-        output.writeInt32NoTag(oLKMJMCEBPJ_.getInt(i));
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
-      }
-      for (int i = 0; i < nFDJBFGLLFM_.size(); i++) {
-        output.writeMessage(12, nFDJBFGLLFM_.get(i));
-      }
       com.google.protobuf.GeneratedMessageV3
         .serializeLongMapTo(
           output,
           internalGetExpeditionInfoMap(),
           ExpeditionInfoMapDefaultEntryHolder.defaultEntry,
-          13);
+          3);
+      if (retcode_ != 0) {
+        output.writeInt32(15, retcode_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -452,28 +295,6 @@ public final class AvatarExpeditionStartRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < oLKMJMCEBPJ_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeInt32SizeNoTag(oLKMJMCEBPJ_.getInt(i));
-        }
-        size += dataSize;
-        if (!getOLKMJMCEBPJList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        oLKMJMCEBPJMemoizedSerializedSize = dataSize;
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
-      }
-      for (int i = 0; i < nFDJBFGLLFM_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, nFDJBFGLLFM_.get(i));
-      }
       for (java.util.Map.Entry<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo> entry
            : internalGetExpeditionInfoMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo>
@@ -482,7 +303,11 @@ public final class AvatarExpeditionStartRspOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(13, expeditionInfoMap__);
+            .computeMessageSize(3, expeditionInfoMap__);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -499,12 +324,8 @@ public final class AvatarExpeditionStartRspOuterClass {
       }
       emu.grasscutter.net.proto.AvatarExpeditionStartRspOuterClass.AvatarExpeditionStartRsp other = (emu.grasscutter.net.proto.AvatarExpeditionStartRspOuterClass.AvatarExpeditionStartRsp) obj;
 
-      if (!getOLKMJMCEBPJList()
-          .equals(other.getOLKMJMCEBPJList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!getNFDJBFGLLFMList()
-          .equals(other.getNFDJBFGLLFMList())) return false;
       if (!internalGetExpeditionInfoMap().equals(
           other.internalGetExpeditionInfoMap())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -518,16 +339,8 @@ public final class AvatarExpeditionStartRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getOLKMJMCEBPJCount() > 0) {
-        hash = (37 * hash) + OLKMJMCEBPJ_FIELD_NUMBER;
-        hash = (53 * hash) + getOLKMJMCEBPJList().hashCode();
-      }
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      if (getNFDJBFGLLFMCount() > 0) {
-        hash = (37 * hash) + NFDJBFGLLFM_FIELD_NUMBER;
-        hash = (53 * hash) + getNFDJBFGLLFMList().hashCode();
-      }
       if (!internalGetExpeditionInfoMap().getMap().isEmpty()) {
         hash = (37 * hash) + EXPEDITION_INFO_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetExpeditionInfoMap().hashCode();
@@ -629,7 +442,8 @@ public final class AvatarExpeditionStartRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22242
+     * CmdId: 28415
+     * Obf: JOFFMPADDLP
      * </pre>
      *
      * Protobuf type {@code AvatarExpeditionStartRsp}
@@ -647,7 +461,7 @@ public final class AvatarExpeditionStartRspOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 13:
+          case 3:
             return internalGetExpeditionInfoMap();
           default:
             throw new RuntimeException(
@@ -658,7 +472,7 @@ public final class AvatarExpeditionStartRspOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 13:
+          case 3:
             return internalGetMutableExpeditionInfoMap();
           default:
             throw new RuntimeException(
@@ -686,22 +500,13 @@ public final class AvatarExpeditionStartRspOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getNFDJBFGLLFMFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oLKMJMCEBPJ_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
 
-        if (nFDJBFGLLFMBuilder_ == null) {
-          nFDJBFGLLFM_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          nFDJBFGLLFMBuilder_.clear();
-        }
         internalGetMutableExpeditionInfoMap().clear();
         return this;
       }
@@ -730,21 +535,7 @@ public final class AvatarExpeditionStartRspOuterClass {
       public emu.grasscutter.net.proto.AvatarExpeditionStartRspOuterClass.AvatarExpeditionStartRsp buildPartial() {
         emu.grasscutter.net.proto.AvatarExpeditionStartRspOuterClass.AvatarExpeditionStartRsp result = new emu.grasscutter.net.proto.AvatarExpeditionStartRspOuterClass.AvatarExpeditionStartRsp(this);
         int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          oLKMJMCEBPJ_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.oLKMJMCEBPJ_ = oLKMJMCEBPJ_;
         result.retcode_ = retcode_;
-        if (nFDJBFGLLFMBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            nFDJBFGLLFM_ = java.util.Collections.unmodifiableList(nFDJBFGLLFM_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.nFDJBFGLLFM_ = nFDJBFGLLFM_;
-        } else {
-          result.nFDJBFGLLFM_ = nFDJBFGLLFMBuilder_.build();
-        }
         result.expeditionInfoMap_ = internalGetExpeditionInfoMap();
         result.expeditionInfoMap_.makeImmutable();
         onBuilt();
@@ -795,44 +586,8 @@ public final class AvatarExpeditionStartRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarExpeditionStartRspOuterClass.AvatarExpeditionStartRsp other) {
         if (other == emu.grasscutter.net.proto.AvatarExpeditionStartRspOuterClass.AvatarExpeditionStartRsp.getDefaultInstance()) return this;
-        if (!other.oLKMJMCEBPJ_.isEmpty()) {
-          if (oLKMJMCEBPJ_.isEmpty()) {
-            oLKMJMCEBPJ_ = other.oLKMJMCEBPJ_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureOLKMJMCEBPJIsMutable();
-            oLKMJMCEBPJ_.addAll(other.oLKMJMCEBPJ_);
-          }
-          onChanged();
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
-        }
-        if (nFDJBFGLLFMBuilder_ == null) {
-          if (!other.nFDJBFGLLFM_.isEmpty()) {
-            if (nFDJBFGLLFM_.isEmpty()) {
-              nFDJBFGLLFM_ = other.nFDJBFGLLFM_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureNFDJBFGLLFMIsMutable();
-              nFDJBFGLLFM_.addAll(other.nFDJBFGLLFM_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.nFDJBFGLLFM_.isEmpty()) {
-            if (nFDJBFGLLFMBuilder_.isEmpty()) {
-              nFDJBFGLLFMBuilder_.dispose();
-              nFDJBFGLLFMBuilder_ = null;
-              nFDJBFGLLFM_ = other.nFDJBFGLLFM_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              nFDJBFGLLFMBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getNFDJBFGLLFMFieldBuilder() : null;
-            } else {
-              nFDJBFGLLFMBuilder_.addAllMessages(other.nFDJBFGLLFM_);
-            }
-          }
         }
         internalGetMutableExpeditionInfoMap().mergeFrom(
             other.internalGetExpeditionInfoMap());
@@ -866,88 +621,9 @@ public final class AvatarExpeditionStartRspOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList oLKMJMCEBPJ_ = emptyIntList();
-      private void ensureOLKMJMCEBPJIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          oLKMJMCEBPJ_ = mutableCopy(oLKMJMCEBPJ_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-       * @return A list containing the oLKMJMCEBPJ.
-       */
-      public java.util.List<java.lang.Integer>
-          getOLKMJMCEBPJList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(oLKMJMCEBPJ_) : oLKMJMCEBPJ_;
-      }
-      /**
-       * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-       * @return The count of oLKMJMCEBPJ.
-       */
-      public int getOLKMJMCEBPJCount() {
-        return oLKMJMCEBPJ_.size();
-      }
-      /**
-       * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-       * @param index The index of the element to return.
-       * @return The oLKMJMCEBPJ at the given index.
-       */
-      public int getOLKMJMCEBPJ(int index) {
-        return oLKMJMCEBPJ_.getInt(index);
-      }
-      /**
-       * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-       * @param index The index to set the value at.
-       * @param value The oLKMJMCEBPJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOLKMJMCEBPJ(
-          int index, int value) {
-        ensureOLKMJMCEBPJIsMutable();
-        oLKMJMCEBPJ_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-       * @param value The oLKMJMCEBPJ to add.
-       * @return This builder for chaining.
-       */
-      public Builder addOLKMJMCEBPJ(int value) {
-        ensureOLKMJMCEBPJIsMutable();
-        oLKMJMCEBPJ_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-       * @param values The oLKMJMCEBPJ to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllOLKMJMCEBPJ(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOLKMJMCEBPJIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, oLKMJMCEBPJ_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated int32 OLKMJMCEBPJ = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOLKMJMCEBPJ() {
-        oLKMJMCEBPJ_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -955,7 +631,7 @@ public final class AvatarExpeditionStartRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -966,7 +642,7 @@ public final class AvatarExpeditionStartRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -974,246 +650,6 @@ public final class AvatarExpeditionStartRspOuterClass {
         retcode_ = 0;
         onChanged();
         return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> nFDJBFGLLFM_ =
-        java.util.Collections.emptyList();
-      private void ensureNFDJBFGLLFMIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          nFDJBFGLLFM_ = new java.util.ArrayList<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM>(nFDJBFGLLFM_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder> nFDJBFGLLFMBuilder_;
-
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> getNFDJBFGLLFMList() {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(nFDJBFGLLFM_);
-        } else {
-          return nFDJBFGLLFMBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public int getNFDJBFGLLFMCount() {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          return nFDJBFGLLFM_.size();
-        } else {
-          return nFDJBFGLLFMBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM getNFDJBFGLLFM(int index) {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          return nFDJBFGLLFM_.get(index);
-        } else {
-          return nFDJBFGLLFMBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public Builder setNFDJBFGLLFM(
-          int index, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM value) {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureNFDJBFGLLFMIsMutable();
-          nFDJBFGLLFM_.set(index, value);
-          onChanged();
-        } else {
-          nFDJBFGLLFMBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public Builder setNFDJBFGLLFM(
-          int index, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder builderForValue) {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          ensureNFDJBFGLLFMIsMutable();
-          nFDJBFGLLFM_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          nFDJBFGLLFMBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public Builder addNFDJBFGLLFM(emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM value) {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureNFDJBFGLLFMIsMutable();
-          nFDJBFGLLFM_.add(value);
-          onChanged();
-        } else {
-          nFDJBFGLLFMBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public Builder addNFDJBFGLLFM(
-          int index, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM value) {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureNFDJBFGLLFMIsMutable();
-          nFDJBFGLLFM_.add(index, value);
-          onChanged();
-        } else {
-          nFDJBFGLLFMBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public Builder addNFDJBFGLLFM(
-          emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder builderForValue) {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          ensureNFDJBFGLLFMIsMutable();
-          nFDJBFGLLFM_.add(builderForValue.build());
-          onChanged();
-        } else {
-          nFDJBFGLLFMBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public Builder addNFDJBFGLLFM(
-          int index, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder builderForValue) {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          ensureNFDJBFGLLFMIsMutable();
-          nFDJBFGLLFM_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          nFDJBFGLLFMBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public Builder addAllNFDJBFGLLFM(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM> values) {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          ensureNFDJBFGLLFMIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, nFDJBFGLLFM_);
-          onChanged();
-        } else {
-          nFDJBFGLLFMBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public Builder clearNFDJBFGLLFM() {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          nFDJBFGLLFM_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          nFDJBFGLLFMBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public Builder removeNFDJBFGLLFM(int index) {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          ensureNFDJBFGLLFMIsMutable();
-          nFDJBFGLLFM_.remove(index);
-          onChanged();
-        } else {
-          nFDJBFGLLFMBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder getNFDJBFGLLFMBuilder(
-          int index) {
-        return getNFDJBFGLLFMFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder getNFDJBFGLLFMOrBuilder(
-          int index) {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          return nFDJBFGLLFM_.get(index);  } else {
-          return nFDJBFGLLFMBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder> 
-           getNFDJBFGLLFMOrBuilderList() {
-        if (nFDJBFGLLFMBuilder_ != null) {
-          return nFDJBFGLLFMBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(nFDJBFGLLFM_);
-        }
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder addNFDJBFGLLFMBuilder() {
-        return getNFDJBFGLLFMFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder addNFDJBFGLLFMBuilder(
-          int index) {
-        return getNFDJBFGLLFMFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .DFOCJMAHOMM NFDJBFGLLFM = 12;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder> 
-           getNFDJBFGLLFMBuilderList() {
-        return getNFDJBFGLLFMFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder> 
-          getNFDJBFGLLFMFieldBuilder() {
-        if (nFDJBFGLLFMBuilder_ == null) {
-          nFDJBFGLLFMBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMM.Builder, emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.DFOCJMAHOMMOrBuilder>(
-                  nFDJBFGLLFM_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          nFDJBFGLLFM_ = null;
-        }
-        return nFDJBFGLLFMBuilder_;
       }
 
       private com.google.protobuf.MapField<
@@ -1243,7 +679,7 @@ public final class AvatarExpeditionStartRspOuterClass {
         return internalGetExpeditionInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
        */
 
       @java.lang.Override
@@ -1261,7 +697,7 @@ public final class AvatarExpeditionStartRspOuterClass {
         return getExpeditionInfoMapMap();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1269,7 +705,7 @@ public final class AvatarExpeditionStartRspOuterClass {
         return internalGetExpeditionInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1282,7 +718,7 @@ public final class AvatarExpeditionStartRspOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1303,7 +739,7 @@ public final class AvatarExpeditionStartRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
        */
 
       public Builder removeExpeditionInfoMap(
@@ -1322,7 +758,7 @@ public final class AvatarExpeditionStartRspOuterClass {
         return internalGetMutableExpeditionInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
        */
       public Builder putExpeditionInfoMap(
           long key,
@@ -1334,7 +770,7 @@ public final class AvatarExpeditionStartRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 13;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 3;</code>
        */
 
       public Builder putAllExpeditionInfoMap(
@@ -1416,28 +852,25 @@ public final class AvatarExpeditionStartRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036AvatarExpeditionStartRsp.proto\032\032Avatar" +
-      "ExpeditionInfo.proto\032\021DFOCJMAHOMM.proto\"" +
-      "\203\002\n\030AvatarExpeditionStartRsp\022\023\n\013OLKMJMCE" +
-      "BPJ\030\007 \003(\005\022\017\n\007retcode\030\013 \001(\005\022!\n\013NFDJBFGLLF" +
-      "M\030\014 \003(\0132\014.DFOCJMAHOMM\022M\n\023expedition_info" +
-      "_map\030\r \003(\01320.AvatarExpeditionStartRsp.Ex" +
-      "peditionInfoMapEntry\032O\n\026ExpeditionInfoMa" +
-      "pEntry\022\013\n\003key\030\001 \001(\004\022$\n\005value\030\002 \001(\0132\025.Ava" +
-      "tarExpeditionInfo:\0028\001B\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "ExpeditionInfo.proto\"\313\001\n\030AvatarExpeditio" +
+      "nStartRsp\022\017\n\007retcode\030\017 \001(\005\022M\n\023expedition" +
+      "_info_map\030\003 \003(\01320.AvatarExpeditionStartR" +
+      "sp.ExpeditionInfoMapEntry\032O\n\026ExpeditionI" +
+      "nfoMapEntry\022\013\n\003key\030\001 \001(\004\022$\n\005value\030\002 \001(\0132" +
+      "\025.AvatarExpeditionInfo:\0028\001B\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.getDescriptor(),
         });
     internal_static_AvatarExpeditionStartRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AvatarExpeditionStartRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarExpeditionStartRsp_descriptor,
-        new java.lang.String[] { "OLKMJMCEBPJ", "Retcode", "NFDJBFGLLFM", "ExpeditionInfoMap", });
+        new java.lang.String[] { "Retcode", "ExpeditionInfoMap", });
     internal_static_AvatarExpeditionStartRsp_ExpeditionInfoMapEntry_descriptor =
       internal_static_AvatarExpeditionStartRsp_descriptor.getNestedTypes().get(0);
     internal_static_AvatarExpeditionStartRsp_ExpeditionInfoMapEntry_fieldAccessorTable = new
@@ -1445,7 +878,6 @@ public final class AvatarExpeditionStartRspOuterClass {
         internal_static_AvatarExpeditionStartRsp_ExpeditionInfoMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.DFOCJMAHOMMOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

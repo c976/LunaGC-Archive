@@ -43,29 +43,33 @@ public final class FireworksLaunchSchemeDataOuterClass {
         int index);
 
     /**
-     * <code>repeated uint32 fireworks_id_list = 15;</code>
+     * <code>uint32 scheme_id = 12;</code>
+     * @return The schemeId.
+     */
+    int getSchemeId();
+
+    /**
+     * <code>repeated uint32 fireworks_id_list = 3;</code>
      * @return A list containing the fireworksIdList.
      */
     java.util.List<java.lang.Integer> getFireworksIdListList();
     /**
-     * <code>repeated uint32 fireworks_id_list = 15;</code>
+     * <code>repeated uint32 fireworks_id_list = 3;</code>
      * @return The count of fireworksIdList.
      */
     int getFireworksIdListCount();
     /**
-     * <code>repeated uint32 fireworks_id_list = 15;</code>
+     * <code>repeated uint32 fireworks_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The fireworksIdList at the given index.
      */
     int getFireworksIdList(int index);
-
-    /**
-     * <code>uint32 scheme_id = 5;</code>
-     * @return The schemeId.
-     */
-    int getSchemeId();
   }
   /**
+   * <pre>
+   * Obf: AOPBHNBLGOE
+   * </pre>
+   *
    * Protobuf type {@code FireworksLaunchSchemeData}
    */
   public static final class FireworksLaunchSchemeData extends
@@ -113,7 +117,28 @@ public final class FireworksLaunchSchemeDataOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 24: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                fireworksIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              fireworksIdList_.addInt(input.readUInt32());
+              break;
+            }
+            case 26: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                fireworksIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                fireworksIdList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 96: {
 
               schemeId_ = input.readUInt32();
               break;
@@ -125,27 +150,6 @@ public final class FireworksLaunchSchemeDataOuterClass {
               }
               launchParamList_.add(
                   input.readMessage(emu.grasscutter.net.proto.FireworksLaunchParamOuterClass.FireworksLaunchParam.parser(), extensionRegistry));
-              break;
-            }
-            case 120: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                fireworksIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              fireworksIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 122: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                fireworksIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                fireworksIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
               break;
             }
             default: {
@@ -163,11 +167,11 @@ public final class FireworksLaunchSchemeDataOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          launchParamList_ = java.util.Collections.unmodifiableList(launchParamList_);
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           fireworksIdList_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          launchParamList_ = java.util.Collections.unmodifiableList(launchParamList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -226,10 +230,21 @@ public final class FireworksLaunchSchemeDataOuterClass {
       return launchParamList_.get(index);
     }
 
-    public static final int FIREWORKS_ID_LIST_FIELD_NUMBER = 15;
+    public static final int SCHEME_ID_FIELD_NUMBER = 12;
+    private int schemeId_;
+    /**
+     * <code>uint32 scheme_id = 12;</code>
+     * @return The schemeId.
+     */
+    @java.lang.Override
+    public int getSchemeId() {
+      return schemeId_;
+    }
+
+    public static final int FIREWORKS_ID_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList fireworksIdList_;
     /**
-     * <code>repeated uint32 fireworks_id_list = 15;</code>
+     * <code>repeated uint32 fireworks_id_list = 3;</code>
      * @return A list containing the fireworksIdList.
      */
     @java.lang.Override
@@ -238,14 +253,14 @@ public final class FireworksLaunchSchemeDataOuterClass {
       return fireworksIdList_;
     }
     /**
-     * <code>repeated uint32 fireworks_id_list = 15;</code>
+     * <code>repeated uint32 fireworks_id_list = 3;</code>
      * @return The count of fireworksIdList.
      */
     public int getFireworksIdListCount() {
       return fireworksIdList_.size();
     }
     /**
-     * <code>repeated uint32 fireworks_id_list = 15;</code>
+     * <code>repeated uint32 fireworks_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The fireworksIdList at the given index.
      */
@@ -253,17 +268,6 @@ public final class FireworksLaunchSchemeDataOuterClass {
       return fireworksIdList_.getInt(index);
     }
     private int fireworksIdListMemoizedSerializedSize = -1;
-
-    public static final int SCHEME_ID_FIELD_NUMBER = 5;
-    private int schemeId_;
-    /**
-     * <code>uint32 scheme_id = 5;</code>
-     * @return The schemeId.
-     */
-    @java.lang.Override
-    public int getSchemeId() {
-      return schemeId_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -280,18 +284,18 @@ public final class FireworksLaunchSchemeDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (schemeId_ != 0) {
-        output.writeUInt32(5, schemeId_);
-      }
-      for (int i = 0; i < launchParamList_.size(); i++) {
-        output.writeMessage(14, launchParamList_.get(i));
-      }
       if (getFireworksIdListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(fireworksIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < fireworksIdList_.size(); i++) {
         output.writeUInt32NoTag(fireworksIdList_.getInt(i));
+      }
+      if (schemeId_ != 0) {
+        output.writeUInt32(12, schemeId_);
+      }
+      for (int i = 0; i < launchParamList_.size(); i++) {
+        output.writeMessage(14, launchParamList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -302,14 +306,6 @@ public final class FireworksLaunchSchemeDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (schemeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, schemeId_);
-      }
-      for (int i = 0; i < launchParamList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, launchParamList_.get(i));
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < fireworksIdList_.size(); i++) {
@@ -323,6 +319,14 @@ public final class FireworksLaunchSchemeDataOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         fireworksIdListMemoizedSerializedSize = dataSize;
+      }
+      if (schemeId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, schemeId_);
+      }
+      for (int i = 0; i < launchParamList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, launchParamList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -341,10 +345,10 @@ public final class FireworksLaunchSchemeDataOuterClass {
 
       if (!getLaunchParamListList()
           .equals(other.getLaunchParamListList())) return false;
-      if (!getFireworksIdListList()
-          .equals(other.getFireworksIdListList())) return false;
       if (getSchemeId()
           != other.getSchemeId()) return false;
+      if (!getFireworksIdListList()
+          .equals(other.getFireworksIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -360,12 +364,12 @@ public final class FireworksLaunchSchemeDataOuterClass {
         hash = (37 * hash) + LAUNCH_PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getLaunchParamListList().hashCode();
       }
+      hash = (37 * hash) + SCHEME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSchemeId();
       if (getFireworksIdListCount() > 0) {
         hash = (37 * hash) + FIREWORKS_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFireworksIdListList().hashCode();
       }
-      hash = (37 * hash) + SCHEME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSchemeId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -462,6 +466,10 @@ public final class FireworksLaunchSchemeDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: AOPBHNBLGOE
+     * </pre>
+     *
      * Protobuf type {@code FireworksLaunchSchemeData}
      */
     public static final class Builder extends
@@ -506,10 +514,10 @@ public final class FireworksLaunchSchemeDataOuterClass {
         } else {
           launchParamListBuilder_.clear();
         }
-        fireworksIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         schemeId_ = 0;
 
+        fireworksIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -546,12 +554,12 @@ public final class FireworksLaunchSchemeDataOuterClass {
         } else {
           result.launchParamList_ = launchParamListBuilder_.build();
         }
+        result.schemeId_ = schemeId_;
         if (((bitField0_ & 0x00000002) != 0)) {
           fireworksIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.fireworksIdList_ = fireworksIdList_;
-        result.schemeId_ = schemeId_;
         onBuilt();
         return result;
       }
@@ -626,6 +634,9 @@ public final class FireworksLaunchSchemeDataOuterClass {
             }
           }
         }
+        if (other.getSchemeId() != 0) {
+          setSchemeId(other.getSchemeId());
+        }
         if (!other.fireworksIdList_.isEmpty()) {
           if (fireworksIdList_.isEmpty()) {
             fireworksIdList_ = other.fireworksIdList_;
@@ -635,9 +646,6 @@ public final class FireworksLaunchSchemeDataOuterClass {
             fireworksIdList_.addAll(other.fireworksIdList_);
           }
           onChanged();
-        }
-        if (other.getSchemeId() != 0) {
-          setSchemeId(other.getSchemeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -909,6 +917,37 @@ public final class FireworksLaunchSchemeDataOuterClass {
         return launchParamListBuilder_;
       }
 
+      private int schemeId_ ;
+      /**
+       * <code>uint32 scheme_id = 12;</code>
+       * @return The schemeId.
+       */
+      @java.lang.Override
+      public int getSchemeId() {
+        return schemeId_;
+      }
+      /**
+       * <code>uint32 scheme_id = 12;</code>
+       * @param value The schemeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSchemeId(int value) {
+        
+        schemeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scheme_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSchemeId() {
+        
+        schemeId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList fireworksIdList_ = emptyIntList();
       private void ensureFireworksIdListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
@@ -917,7 +956,7 @@ public final class FireworksLaunchSchemeDataOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 fireworks_id_list = 15;</code>
+       * <code>repeated uint32 fireworks_id_list = 3;</code>
        * @return A list containing the fireworksIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -926,14 +965,14 @@ public final class FireworksLaunchSchemeDataOuterClass {
                  java.util.Collections.unmodifiableList(fireworksIdList_) : fireworksIdList_;
       }
       /**
-       * <code>repeated uint32 fireworks_id_list = 15;</code>
+       * <code>repeated uint32 fireworks_id_list = 3;</code>
        * @return The count of fireworksIdList.
        */
       public int getFireworksIdListCount() {
         return fireworksIdList_.size();
       }
       /**
-       * <code>repeated uint32 fireworks_id_list = 15;</code>
+       * <code>repeated uint32 fireworks_id_list = 3;</code>
        * @param index The index of the element to return.
        * @return The fireworksIdList at the given index.
        */
@@ -941,7 +980,7 @@ public final class FireworksLaunchSchemeDataOuterClass {
         return fireworksIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 fireworks_id_list = 15;</code>
+       * <code>repeated uint32 fireworks_id_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The fireworksIdList to set.
        * @return This builder for chaining.
@@ -954,7 +993,7 @@ public final class FireworksLaunchSchemeDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fireworks_id_list = 15;</code>
+       * <code>repeated uint32 fireworks_id_list = 3;</code>
        * @param value The fireworksIdList to add.
        * @return This builder for chaining.
        */
@@ -965,7 +1004,7 @@ public final class FireworksLaunchSchemeDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fireworks_id_list = 15;</code>
+       * <code>repeated uint32 fireworks_id_list = 3;</code>
        * @param values The fireworksIdList to add.
        * @return This builder for chaining.
        */
@@ -978,43 +1017,12 @@ public final class FireworksLaunchSchemeDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fireworks_id_list = 15;</code>
+       * <code>repeated uint32 fireworks_id_list = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearFireworksIdList() {
         fireworksIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
-      private int schemeId_ ;
-      /**
-       * <code>uint32 scheme_id = 5;</code>
-       * @return The schemeId.
-       */
-      @java.lang.Override
-      public int getSchemeId() {
-        return schemeId_;
-      }
-      /**
-       * <code>uint32 scheme_id = 5;</code>
-       * @param value The schemeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSchemeId(int value) {
-        
-        schemeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scheme_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSchemeId() {
-        
-        schemeId_ = 0;
         onChanged();
         return this;
       }
@@ -1088,8 +1096,8 @@ public final class FireworksLaunchSchemeDataOuterClass {
       "\n\037FireworksLaunchSchemeData.proto\032\032Firew" +
       "orksLaunchParam.proto\"{\n\031FireworksLaunch" +
       "SchemeData\0220\n\021launch_param_list\030\016 \003(\0132\025." +
-      "FireworksLaunchParam\022\031\n\021fireworks_id_lis" +
-      "t\030\017 \003(\r\022\021\n\tscheme_id\030\005 \001(\rB\033\n\031emu.grassc" +
+      "FireworksLaunchParam\022\021\n\tscheme_id\030\014 \001(\r\022" +
+      "\031\n\021fireworks_id_list\030\003 \003(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1102,7 +1110,7 @@ public final class FireworksLaunchSchemeDataOuterClass {
     internal_static_FireworksLaunchSchemeData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FireworksLaunchSchemeData_descriptor,
-        new java.lang.String[] { "LaunchParamList", "FireworksIdList", "SchemeId", });
+        new java.lang.String[] { "LaunchParamList", "SchemeId", "FireworksIdList", });
     emu.grasscutter.net.proto.FireworksLaunchParamOuterClass.getDescriptor();
   }
 

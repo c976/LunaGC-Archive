@@ -19,20 +19,12 @@ public final class DGDLGGMFOGNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 3;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PCFKHMFDNPI = 12;</code>
      * @return The pCFKHMFDNPI.
      */
@@ -128,10 +120,6 @@ public final class DGDLGGMFOGNOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 3;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 3;</code>
      * @return The openTime.
      */
@@ -143,10 +131,6 @@ public final class DGDLGGMFOGNOuterClass {
     public static final int PCFKHMFDNPI_FIELD_NUMBER = 12;
     private int pCFKHMFDNPI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PCFKHMFDNPI = 12;</code>
      * @return The pCFKHMFDNPI.
      */
@@ -476,10 +460,6 @@ public final class DGDLGGMFOGNOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 3;</code>
        * @return The openTime.
        */
@@ -488,10 +468,6 @@ public final class DGDLGGMFOGNOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 3;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -503,10 +479,6 @@ public final class DGDLGGMFOGNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 3;</code>
        * @return This builder for chaining.
        */
@@ -519,10 +491,6 @@ public final class DGDLGGMFOGNOuterClass {
 
       private int pCFKHMFDNPI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PCFKHMFDNPI = 12;</code>
        * @return The pCFKHMFDNPI.
        */
@@ -531,10 +499,6 @@ public final class DGDLGGMFOGNOuterClass {
         return pCFKHMFDNPI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PCFKHMFDNPI = 12;</code>
        * @param value The pCFKHMFDNPI to set.
        * @return This builder for chaining.
@@ -546,10 +510,6 @@ public final class DGDLGGMFOGNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PCFKHMFDNPI = 12;</code>
        * @return This builder for chaining.
        */

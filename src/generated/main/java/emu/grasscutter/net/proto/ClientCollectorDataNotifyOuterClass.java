@@ -20,51 +20,51 @@ public final class ClientCollectorDataNotifyOuterClass {
 
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+     * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData> 
-        getPKOLFEIOGKDList();
+        getClientCollectorDataListList();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+     * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
      */
-    emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData getPKOLFEIOGKD(int index);
+    emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData getClientCollectorDataList(int index);
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+     * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
      */
-    int getPKOLFEIOGKDCount();
+    int getClientCollectorDataListCount();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+     * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder> 
-        getPKOLFEIOGKDOrBuilderList();
+        getClientCollectorDataListOrBuilderList();
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+     * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
      */
-    emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder getPKOLFEIOGKDOrBuilder(
+    emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder getClientCollectorDataListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 7852
+   * CmdId: 23422
    * </pre>
    *
    * Protobuf type {@code ClientCollectorDataNotify}
@@ -79,7 +79,7 @@ public final class ClientCollectorDataNotifyOuterClass {
       super(builder);
     }
     private ClientCollectorDataNotify() {
-      pKOLFEIOGKD_ = java.util.Collections.emptyList();
+      clientCollectorDataList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -113,12 +113,12 @@ public final class ClientCollectorDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                pKOLFEIOGKD_ = new java.util.ArrayList<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData>();
+                clientCollectorDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              pKOLFEIOGKD_.add(
+              clientCollectorDataList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.parser(), extensionRegistry));
               break;
             }
@@ -138,7 +138,7 @@ public final class ClientCollectorDataNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          pKOLFEIOGKD_ = java.util.Collections.unmodifiableList(pKOLFEIOGKD_);
+          clientCollectorDataList_ = java.util.Collections.unmodifiableList(clientCollectorDataList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -157,64 +157,64 @@ public final class ClientCollectorDataNotifyOuterClass {
               emu.grasscutter.net.proto.ClientCollectorDataNotifyOuterClass.ClientCollectorDataNotify.class, emu.grasscutter.net.proto.ClientCollectorDataNotifyOuterClass.ClientCollectorDataNotify.Builder.class);
     }
 
-    public static final int PKOLFEIOGKD_FIELD_NUMBER = 8;
-    private java.util.List<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData> pKOLFEIOGKD_;
+    public static final int CLIENT_COLLECTOR_DATA_LIST_FIELD_NUMBER = 11;
+    private java.util.List<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData> clientCollectorDataList_;
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+     * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData> getPKOLFEIOGKDList() {
-      return pKOLFEIOGKD_;
+    public java.util.List<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData> getClientCollectorDataListList() {
+      return clientCollectorDataList_;
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+     * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder> 
-        getPKOLFEIOGKDOrBuilderList() {
-      return pKOLFEIOGKD_;
+        getClientCollectorDataListOrBuilderList() {
+      return clientCollectorDataList_;
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+     * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
      */
     @java.lang.Override
-    public int getPKOLFEIOGKDCount() {
-      return pKOLFEIOGKD_.size();
+    public int getClientCollectorDataListCount() {
+      return clientCollectorDataList_.size();
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+     * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData getPKOLFEIOGKD(int index) {
-      return pKOLFEIOGKD_.get(index);
+    public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData getClientCollectorDataList(int index) {
+      return clientCollectorDataList_.get(index);
     }
     /**
      * <pre>
-     * offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+     * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder getPKOLFEIOGKDOrBuilder(
+    public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder getClientCollectorDataListOrBuilder(
         int index) {
-      return pKOLFEIOGKD_.get(index);
+      return clientCollectorDataList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -231,8 +231,8 @@ public final class ClientCollectorDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < pKOLFEIOGKD_.size(); i++) {
-        output.writeMessage(8, pKOLFEIOGKD_.get(i));
+      for (int i = 0; i < clientCollectorDataList_.size(); i++) {
+        output.writeMessage(11, clientCollectorDataList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -243,9 +243,9 @@ public final class ClientCollectorDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < pKOLFEIOGKD_.size(); i++) {
+      for (int i = 0; i < clientCollectorDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, pKOLFEIOGKD_.get(i));
+          .computeMessageSize(11, clientCollectorDataList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -262,8 +262,8 @@ public final class ClientCollectorDataNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ClientCollectorDataNotifyOuterClass.ClientCollectorDataNotify other = (emu.grasscutter.net.proto.ClientCollectorDataNotifyOuterClass.ClientCollectorDataNotify) obj;
 
-      if (!getPKOLFEIOGKDList()
-          .equals(other.getPKOLFEIOGKDList())) return false;
+      if (!getClientCollectorDataListList()
+          .equals(other.getClientCollectorDataListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,9 +275,9 @@ public final class ClientCollectorDataNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getPKOLFEIOGKDCount() > 0) {
-        hash = (37 * hash) + PKOLFEIOGKD_FIELD_NUMBER;
-        hash = (53 * hash) + getPKOLFEIOGKDList().hashCode();
+      if (getClientCollectorDataListCount() > 0) {
+        hash = (37 * hash) + CLIENT_COLLECTOR_DATA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getClientCollectorDataListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -376,7 +376,7 @@ public final class ClientCollectorDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7852
+     * CmdId: 23422
      * </pre>
      *
      * Protobuf type {@code ClientCollectorDataNotify}
@@ -411,17 +411,17 @@ public final class ClientCollectorDataNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getPKOLFEIOGKDFieldBuilder();
+          getClientCollectorDataListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (pKOLFEIOGKDBuilder_ == null) {
-          pKOLFEIOGKD_ = java.util.Collections.emptyList();
+        if (clientCollectorDataListBuilder_ == null) {
+          clientCollectorDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          pKOLFEIOGKDBuilder_.clear();
+          clientCollectorDataListBuilder_.clear();
         }
         return this;
       }
@@ -450,14 +450,14 @@ public final class ClientCollectorDataNotifyOuterClass {
       public emu.grasscutter.net.proto.ClientCollectorDataNotifyOuterClass.ClientCollectorDataNotify buildPartial() {
         emu.grasscutter.net.proto.ClientCollectorDataNotifyOuterClass.ClientCollectorDataNotify result = new emu.grasscutter.net.proto.ClientCollectorDataNotifyOuterClass.ClientCollectorDataNotify(this);
         int from_bitField0_ = bitField0_;
-        if (pKOLFEIOGKDBuilder_ == null) {
+        if (clientCollectorDataListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            pKOLFEIOGKD_ = java.util.Collections.unmodifiableList(pKOLFEIOGKD_);
+            clientCollectorDataList_ = java.util.Collections.unmodifiableList(clientCollectorDataList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.pKOLFEIOGKD_ = pKOLFEIOGKD_;
+          result.clientCollectorDataList_ = clientCollectorDataList_;
         } else {
-          result.pKOLFEIOGKD_ = pKOLFEIOGKDBuilder_.build();
+          result.clientCollectorDataList_ = clientCollectorDataListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -507,29 +507,29 @@ public final class ClientCollectorDataNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ClientCollectorDataNotifyOuterClass.ClientCollectorDataNotify other) {
         if (other == emu.grasscutter.net.proto.ClientCollectorDataNotifyOuterClass.ClientCollectorDataNotify.getDefaultInstance()) return this;
-        if (pKOLFEIOGKDBuilder_ == null) {
-          if (!other.pKOLFEIOGKD_.isEmpty()) {
-            if (pKOLFEIOGKD_.isEmpty()) {
-              pKOLFEIOGKD_ = other.pKOLFEIOGKD_;
+        if (clientCollectorDataListBuilder_ == null) {
+          if (!other.clientCollectorDataList_.isEmpty()) {
+            if (clientCollectorDataList_.isEmpty()) {
+              clientCollectorDataList_ = other.clientCollectorDataList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensurePKOLFEIOGKDIsMutable();
-              pKOLFEIOGKD_.addAll(other.pKOLFEIOGKD_);
+              ensureClientCollectorDataListIsMutable();
+              clientCollectorDataList_.addAll(other.clientCollectorDataList_);
             }
             onChanged();
           }
         } else {
-          if (!other.pKOLFEIOGKD_.isEmpty()) {
-            if (pKOLFEIOGKDBuilder_.isEmpty()) {
-              pKOLFEIOGKDBuilder_.dispose();
-              pKOLFEIOGKDBuilder_ = null;
-              pKOLFEIOGKD_ = other.pKOLFEIOGKD_;
+          if (!other.clientCollectorDataList_.isEmpty()) {
+            if (clientCollectorDataListBuilder_.isEmpty()) {
+              clientCollectorDataListBuilder_.dispose();
+              clientCollectorDataListBuilder_ = null;
+              clientCollectorDataList_ = other.clientCollectorDataList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              pKOLFEIOGKDBuilder_ = 
+              clientCollectorDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getPKOLFEIOGKDFieldBuilder() : null;
+                   getClientCollectorDataListFieldBuilder() : null;
             } else {
-              pKOLFEIOGKDBuilder_.addAllMessages(other.pKOLFEIOGKD_);
+              clientCollectorDataListBuilder_.addAllMessages(other.clientCollectorDataList_);
             }
           }
         }
@@ -563,316 +563,316 @@ public final class ClientCollectorDataNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData> pKOLFEIOGKD_ =
+      private java.util.List<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData> clientCollectorDataList_ =
         java.util.Collections.emptyList();
-      private void ensurePKOLFEIOGKDIsMutable() {
+      private void ensureClientCollectorDataListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          pKOLFEIOGKD_ = new java.util.ArrayList<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData>(pKOLFEIOGKD_);
+          clientCollectorDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData>(clientCollectorDataList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder> pKOLFEIOGKDBuilder_;
+          emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder> clientCollectorDataListBuilder_;
 
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData> getPKOLFEIOGKDList() {
-        if (pKOLFEIOGKDBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(pKOLFEIOGKD_);
+      public java.util.List<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData> getClientCollectorDataListList() {
+        if (clientCollectorDataListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(clientCollectorDataList_);
         } else {
-          return pKOLFEIOGKDBuilder_.getMessageList();
+          return clientCollectorDataListBuilder_.getMessageList();
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public int getPKOLFEIOGKDCount() {
-        if (pKOLFEIOGKDBuilder_ == null) {
-          return pKOLFEIOGKD_.size();
+      public int getClientCollectorDataListCount() {
+        if (clientCollectorDataListBuilder_ == null) {
+          return clientCollectorDataList_.size();
         } else {
-          return pKOLFEIOGKDBuilder_.getCount();
+          return clientCollectorDataListBuilder_.getCount();
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData getPKOLFEIOGKD(int index) {
-        if (pKOLFEIOGKDBuilder_ == null) {
-          return pKOLFEIOGKD_.get(index);
+      public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData getClientCollectorDataList(int index) {
+        if (clientCollectorDataListBuilder_ == null) {
+          return clientCollectorDataList_.get(index);
         } else {
-          return pKOLFEIOGKDBuilder_.getMessage(index);
+          return clientCollectorDataListBuilder_.getMessage(index);
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public Builder setPKOLFEIOGKD(
+      public Builder setClientCollectorDataList(
           int index, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData value) {
-        if (pKOLFEIOGKDBuilder_ == null) {
+        if (clientCollectorDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensurePKOLFEIOGKDIsMutable();
-          pKOLFEIOGKD_.set(index, value);
+          ensureClientCollectorDataListIsMutable();
+          clientCollectorDataList_.set(index, value);
           onChanged();
         } else {
-          pKOLFEIOGKDBuilder_.setMessage(index, value);
+          clientCollectorDataListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public Builder setPKOLFEIOGKD(
+      public Builder setClientCollectorDataList(
           int index, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder builderForValue) {
-        if (pKOLFEIOGKDBuilder_ == null) {
-          ensurePKOLFEIOGKDIsMutable();
-          pKOLFEIOGKD_.set(index, builderForValue.build());
+        if (clientCollectorDataListBuilder_ == null) {
+          ensureClientCollectorDataListIsMutable();
+          clientCollectorDataList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          pKOLFEIOGKDBuilder_.setMessage(index, builderForValue.build());
+          clientCollectorDataListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public Builder addPKOLFEIOGKD(emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData value) {
-        if (pKOLFEIOGKDBuilder_ == null) {
+      public Builder addClientCollectorDataList(emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData value) {
+        if (clientCollectorDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensurePKOLFEIOGKDIsMutable();
-          pKOLFEIOGKD_.add(value);
+          ensureClientCollectorDataListIsMutable();
+          clientCollectorDataList_.add(value);
           onChanged();
         } else {
-          pKOLFEIOGKDBuilder_.addMessage(value);
+          clientCollectorDataListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public Builder addPKOLFEIOGKD(
+      public Builder addClientCollectorDataList(
           int index, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData value) {
-        if (pKOLFEIOGKDBuilder_ == null) {
+        if (clientCollectorDataListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensurePKOLFEIOGKDIsMutable();
-          pKOLFEIOGKD_.add(index, value);
+          ensureClientCollectorDataListIsMutable();
+          clientCollectorDataList_.add(index, value);
           onChanged();
         } else {
-          pKOLFEIOGKDBuilder_.addMessage(index, value);
+          clientCollectorDataListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public Builder addPKOLFEIOGKD(
+      public Builder addClientCollectorDataList(
           emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder builderForValue) {
-        if (pKOLFEIOGKDBuilder_ == null) {
-          ensurePKOLFEIOGKDIsMutable();
-          pKOLFEIOGKD_.add(builderForValue.build());
+        if (clientCollectorDataListBuilder_ == null) {
+          ensureClientCollectorDataListIsMutable();
+          clientCollectorDataList_.add(builderForValue.build());
           onChanged();
         } else {
-          pKOLFEIOGKDBuilder_.addMessage(builderForValue.build());
+          clientCollectorDataListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public Builder addPKOLFEIOGKD(
+      public Builder addClientCollectorDataList(
           int index, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder builderForValue) {
-        if (pKOLFEIOGKDBuilder_ == null) {
-          ensurePKOLFEIOGKDIsMutable();
-          pKOLFEIOGKD_.add(index, builderForValue.build());
+        if (clientCollectorDataListBuilder_ == null) {
+          ensureClientCollectorDataListIsMutable();
+          clientCollectorDataList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          pKOLFEIOGKDBuilder_.addMessage(index, builderForValue.build());
+          clientCollectorDataListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public Builder addAllPKOLFEIOGKD(
+      public Builder addAllClientCollectorDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData> values) {
-        if (pKOLFEIOGKDBuilder_ == null) {
-          ensurePKOLFEIOGKDIsMutable();
+        if (clientCollectorDataListBuilder_ == null) {
+          ensureClientCollectorDataListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, pKOLFEIOGKD_);
+              values, clientCollectorDataList_);
           onChanged();
         } else {
-          pKOLFEIOGKDBuilder_.addAllMessages(values);
+          clientCollectorDataListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public Builder clearPKOLFEIOGKD() {
-        if (pKOLFEIOGKDBuilder_ == null) {
-          pKOLFEIOGKD_ = java.util.Collections.emptyList();
+      public Builder clearClientCollectorDataList() {
+        if (clientCollectorDataListBuilder_ == null) {
+          clientCollectorDataList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          pKOLFEIOGKDBuilder_.clear();
+          clientCollectorDataListBuilder_.clear();
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public Builder removePKOLFEIOGKD(int index) {
-        if (pKOLFEIOGKDBuilder_ == null) {
-          ensurePKOLFEIOGKDIsMutable();
-          pKOLFEIOGKD_.remove(index);
+      public Builder removeClientCollectorDataList(int index) {
+        if (clientCollectorDataListBuilder_ == null) {
+          ensureClientCollectorDataListIsMutable();
+          clientCollectorDataList_.remove(index);
           onChanged();
         } else {
-          pKOLFEIOGKDBuilder_.remove(index);
+          clientCollectorDataListBuilder_.remove(index);
         }
         return this;
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder getPKOLFEIOGKDBuilder(
+      public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder getClientCollectorDataListBuilder(
           int index) {
-        return getPKOLFEIOGKDFieldBuilder().getBuilder(index);
+        return getClientCollectorDataListFieldBuilder().getBuilder(index);
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder getPKOLFEIOGKDOrBuilder(
+      public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder getClientCollectorDataListOrBuilder(
           int index) {
-        if (pKOLFEIOGKDBuilder_ == null) {
-          return pKOLFEIOGKD_.get(index);  } else {
-          return pKOLFEIOGKDBuilder_.getMessageOrBuilder(index);
+        if (clientCollectorDataListBuilder_ == null) {
+          return clientCollectorDataList_.get(index);  } else {
+          return clientCollectorDataListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder> 
-           getPKOLFEIOGKDOrBuilderList() {
-        if (pKOLFEIOGKDBuilder_ != null) {
-          return pKOLFEIOGKDBuilder_.getMessageOrBuilderList();
+           getClientCollectorDataListOrBuilderList() {
+        if (clientCollectorDataListBuilder_ != null) {
+          return clientCollectorDataListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(pKOLFEIOGKD_);
+          return java.util.Collections.unmodifiableList(clientCollectorDataList_);
         }
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder addPKOLFEIOGKDBuilder() {
-        return getPKOLFEIOGKDFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder addClientCollectorDataListBuilder() {
+        return getClientCollectorDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.getDefaultInstance());
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
-      public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder addPKOLFEIOGKDBuilder(
+      public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder addClientCollectorDataListBuilder(
           int index) {
-        return getPKOLFEIOGKDFieldBuilder().addBuilder(
+        return getClientCollectorDataListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.getDefaultInstance());
       }
       /**
        * <pre>
-       * offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>repeated .ClientCollectorData PKOLFEIOGKD = 8;</code>
+       * <code>repeated .ClientCollectorData client_collector_data_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder> 
-           getPKOLFEIOGKDBuilderList() {
-        return getPKOLFEIOGKDFieldBuilder().getBuilderList();
+           getClientCollectorDataListBuilderList() {
+        return getClientCollectorDataListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder> 
-          getPKOLFEIOGKDFieldBuilder() {
-        if (pKOLFEIOGKDBuilder_ == null) {
-          pKOLFEIOGKDBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getClientCollectorDataListFieldBuilder() {
+        if (clientCollectorDataListBuilder_ == null) {
+          clientCollectorDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder>(
-                  pKOLFEIOGKD_,
+                  clientCollectorDataList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          pKOLFEIOGKD_ = null;
+          clientCollectorDataList_ = null;
         }
-        return pKOLFEIOGKDBuilder_;
+        return clientCollectorDataListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -942,10 +942,10 @@ public final class ClientCollectorDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037ClientCollectorDataNotify.proto\032\031Clien" +
-      "tCollectorData.proto\"F\n\031ClientCollectorD" +
-      "ataNotify\022)\n\013PKOLFEIOGKD\030\010 \003(\0132\024.ClientC" +
-      "ollectorDataB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "tCollectorData.proto\"U\n\031ClientCollectorD" +
+      "ataNotify\0228\n\032client_collector_data_list\030" +
+      "\013 \003(\0132\024.ClientCollectorDataB\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -957,7 +957,7 @@ public final class ClientCollectorDataNotifyOuterClass {
     internal_static_ClientCollectorDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientCollectorDataNotify_descriptor,
-        new java.lang.String[] { "PKOLFEIOGKD", });
+        new java.lang.String[] { "ClientCollectorDataList", });
     emu.grasscutter.net.proto.ClientCollectorDataOuterClass.getDescriptor();
   }
 

@@ -19,44 +19,24 @@ public final class FHHFEICEDJDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI> 
         getAvatarListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
      */
     emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI getAvatarList(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
      */
     int getAvatarListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPIOrBuilder> 
         getAvatarListOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
      */
     emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPIOrBuilder getAvatarListOrBuilder(
@@ -156,10 +136,6 @@ public final class FHHFEICEDJDOuterClass {
     public static final int AVATAR_LIST_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI> avatarList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
      */
     @java.lang.Override
@@ -167,10 +143,6 @@ public final class FHHFEICEDJDOuterClass {
       return avatarList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
      */
     @java.lang.Override
@@ -179,10 +151,6 @@ public final class FHHFEICEDJDOuterClass {
       return avatarList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
      */
     @java.lang.Override
@@ -190,10 +158,6 @@ public final class FHHFEICEDJDOuterClass {
       return avatarList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
      */
     @java.lang.Override
@@ -201,10 +165,6 @@ public final class FHHFEICEDJDOuterClass {
       return avatarList_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
      */
     @java.lang.Override
@@ -568,10 +528,6 @@ public final class FHHFEICEDJDOuterClass {
           emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI, emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI.Builder, emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPIOrBuilder> avatarListBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI> getAvatarListList() {
@@ -582,10 +538,6 @@ public final class FHHFEICEDJDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public int getAvatarListCount() {
@@ -596,10 +548,6 @@ public final class FHHFEICEDJDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI getAvatarList(int index) {
@@ -610,10 +558,6 @@ public final class FHHFEICEDJDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public Builder setAvatarList(
@@ -631,10 +575,6 @@ public final class FHHFEICEDJDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public Builder setAvatarList(
@@ -649,10 +589,6 @@ public final class FHHFEICEDJDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public Builder addAvatarList(emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI value) {
@@ -669,10 +605,6 @@ public final class FHHFEICEDJDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public Builder addAvatarList(
@@ -690,10 +622,6 @@ public final class FHHFEICEDJDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public Builder addAvatarList(
@@ -708,10 +636,6 @@ public final class FHHFEICEDJDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public Builder addAvatarList(
@@ -726,10 +650,6 @@ public final class FHHFEICEDJDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public Builder addAllAvatarList(
@@ -745,10 +665,6 @@ public final class FHHFEICEDJDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public Builder clearAvatarList() {
@@ -762,10 +678,6 @@ public final class FHHFEICEDJDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public Builder removeAvatarList(int index) {
@@ -779,10 +691,6 @@ public final class FHHFEICEDJDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI.Builder getAvatarListBuilder(
@@ -790,10 +698,6 @@ public final class FHHFEICEDJDOuterClass {
         return getAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPIOrBuilder getAvatarListOrBuilder(
@@ -804,10 +708,6 @@ public final class FHHFEICEDJDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPIOrBuilder> 
@@ -819,10 +719,6 @@ public final class FHHFEICEDJDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI.Builder addAvatarListBuilder() {
@@ -830,10 +726,6 @@ public final class FHHFEICEDJDOuterClass {
             emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI.Builder addAvatarListBuilder(
@@ -842,10 +734,6 @@ public final class FHHFEICEDJDOuterClass {
             index, emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KFIFCHPJHPI avatar_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.KFIFCHPJHPIOuterClass.KFIFCHPJHPI.Builder> 

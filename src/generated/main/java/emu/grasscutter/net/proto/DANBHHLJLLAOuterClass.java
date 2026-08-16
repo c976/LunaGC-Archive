@@ -19,50 +19,30 @@ public final class DANBHHLJLLAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 12;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 6;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool CEEBFADNFAG = 8;</code>
      * @return The cEEBFADNFAG.
      */
     boolean getCEEBFADNFAG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool MHIPFEMIHMK = 4;</code>
      * @return The mHIPFEMIHMK.
      */
     boolean getMHIPFEMIHMK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 2;</code>
      * @return The hBILFAMJDKG.
      */
@@ -173,10 +153,6 @@ public final class DANBHHLJLLAOuterClass {
     public static final int ID_FIELD_NUMBER = 12;
     private int id_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 12;</code>
      * @return The id.
      */
@@ -188,10 +164,6 @@ public final class DANBHHLJLLAOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 6;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 6;</code>
      * @return The isFinished.
      */
@@ -203,10 +175,6 @@ public final class DANBHHLJLLAOuterClass {
     public static final int CEEBFADNFAG_FIELD_NUMBER = 8;
     private boolean cEEBFADNFAG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool CEEBFADNFAG = 8;</code>
      * @return The cEEBFADNFAG.
      */
@@ -218,10 +186,6 @@ public final class DANBHHLJLLAOuterClass {
     public static final int MHIPFEMIHMK_FIELD_NUMBER = 4;
     private boolean mHIPFEMIHMK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool MHIPFEMIHMK = 4;</code>
      * @return The mHIPFEMIHMK.
      */
@@ -233,10 +197,6 @@ public final class DANBHHLJLLAOuterClass {
     public static final int HBILFAMJDKG_FIELD_NUMBER = 2;
     private int hBILFAMJDKG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 2;</code>
      * @return The hBILFAMJDKG.
      */
@@ -620,10 +580,6 @@ public final class DANBHHLJLLAOuterClass {
 
       private int id_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 12;</code>
        * @return The id.
        */
@@ -632,10 +588,6 @@ public final class DANBHHLJLLAOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 12;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -647,10 +599,6 @@ public final class DANBHHLJLLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 12;</code>
        * @return This builder for chaining.
        */
@@ -663,10 +611,6 @@ public final class DANBHHLJLLAOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 6;</code>
        * @return The isFinished.
        */
@@ -675,10 +619,6 @@ public final class DANBHHLJLLAOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 6;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -690,10 +630,6 @@ public final class DANBHHLJLLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 6;</code>
        * @return This builder for chaining.
        */
@@ -706,10 +642,6 @@ public final class DANBHHLJLLAOuterClass {
 
       private boolean cEEBFADNFAG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool CEEBFADNFAG = 8;</code>
        * @return The cEEBFADNFAG.
        */
@@ -718,10 +650,6 @@ public final class DANBHHLJLLAOuterClass {
         return cEEBFADNFAG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool CEEBFADNFAG = 8;</code>
        * @param value The cEEBFADNFAG to set.
        * @return This builder for chaining.
@@ -733,10 +661,6 @@ public final class DANBHHLJLLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool CEEBFADNFAG = 8;</code>
        * @return This builder for chaining.
        */
@@ -749,10 +673,6 @@ public final class DANBHHLJLLAOuterClass {
 
       private boolean mHIPFEMIHMK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MHIPFEMIHMK = 4;</code>
        * @return The mHIPFEMIHMK.
        */
@@ -761,10 +681,6 @@ public final class DANBHHLJLLAOuterClass {
         return mHIPFEMIHMK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MHIPFEMIHMK = 4;</code>
        * @param value The mHIPFEMIHMK to set.
        * @return This builder for chaining.
@@ -776,10 +692,6 @@ public final class DANBHHLJLLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MHIPFEMIHMK = 4;</code>
        * @return This builder for chaining.
        */
@@ -792,10 +704,6 @@ public final class DANBHHLJLLAOuterClass {
 
       private int hBILFAMJDKG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 2;</code>
        * @return The hBILFAMJDKG.
        */
@@ -804,10 +712,6 @@ public final class DANBHHLJLLAOuterClass {
         return hBILFAMJDKG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 2;</code>
        * @param value The hBILFAMJDKG to set.
        * @return This builder for chaining.
@@ -819,10 +723,6 @@ public final class DANBHHLJLLAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 2;</code>
        * @return This builder for chaining.
        */

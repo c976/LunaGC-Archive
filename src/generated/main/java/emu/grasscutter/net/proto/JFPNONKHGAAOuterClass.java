@@ -19,30 +19,18 @@ public final class JFPNONKHGAAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ECFCFIOBOMA = 4;</code>
      * @return The eCFCFIOBOMA.
      */
     int getECFCFIOBOMA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 2;</code>
      * @return The oMEBOHLACPH.
      */
     int getOMEBOHLACPH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 5;</code>
      * @return The openTime.
      */
@@ -143,10 +131,6 @@ public final class JFPNONKHGAAOuterClass {
     public static final int ECFCFIOBOMA_FIELD_NUMBER = 4;
     private int eCFCFIOBOMA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ECFCFIOBOMA = 4;</code>
      * @return The eCFCFIOBOMA.
      */
@@ -158,10 +142,6 @@ public final class JFPNONKHGAAOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 2;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 2;</code>
      * @return The oMEBOHLACPH.
      */
@@ -173,10 +153,6 @@ public final class JFPNONKHGAAOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 5;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 5;</code>
      * @return The openTime.
      */
@@ -523,10 +499,6 @@ public final class JFPNONKHGAAOuterClass {
 
       private int eCFCFIOBOMA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECFCFIOBOMA = 4;</code>
        * @return The eCFCFIOBOMA.
        */
@@ -535,10 +507,6 @@ public final class JFPNONKHGAAOuterClass {
         return eCFCFIOBOMA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECFCFIOBOMA = 4;</code>
        * @param value The eCFCFIOBOMA to set.
        * @return This builder for chaining.
@@ -550,10 +518,6 @@ public final class JFPNONKHGAAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECFCFIOBOMA = 4;</code>
        * @return This builder for chaining.
        */
@@ -566,10 +530,6 @@ public final class JFPNONKHGAAOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 2;</code>
        * @return The oMEBOHLACPH.
        */
@@ -578,10 +538,6 @@ public final class JFPNONKHGAAOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 2;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -593,10 +549,6 @@ public final class JFPNONKHGAAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 2;</code>
        * @return This builder for chaining.
        */
@@ -609,10 +561,6 @@ public final class JFPNONKHGAAOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 5;</code>
        * @return The openTime.
        */
@@ -621,10 +569,6 @@ public final class JFPNONKHGAAOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 5;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -636,10 +580,6 @@ public final class JFPNONKHGAAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 5;</code>
        * @return This builder for chaining.
        */

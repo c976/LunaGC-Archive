@@ -19,171 +19,99 @@ public final class PIKOPKBKIPHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ> 
         getPAFCCMBKMKMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
      */
     emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ getPAFCCMBKMKM(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
      */
     int getPAFCCMBKMKMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJOrBuilder> 
         getPAFCCMBKMKMOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
      */
     emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJOrBuilder getPAFCCMBKMKMOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
      * @return Whether the fJENNLIACPD field is set.
      */
     boolean hasFJENNLIACPD();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
      * @return The fJENNLIACPD.
      */
     emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ getFJENNLIACPD();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
      */
     emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJOrBuilder getFJENNLIACPDOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DPLLEMFLFND = 15;</code>
      * @return The dPLLEMFLFND.
      */
     int getDPLLEMFLFND();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BGDHLMOENMG = 3;</code>
      * @return The bGDHLMOENMG.
      */
     int getBGDHLMOENMG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DNKDELPNOBK = 6;</code>
      * @return The dNKDELPNOBK.
      */
     int getDNKDELPNOBK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CELKMIEGJIF = 4;</code>
      * @return The cELKMIEGJIF.
      */
     int getCELKMIEGJIF();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DEIDJJBEFOD = 7;</code>
      * @return The dEIDJJBEFOD.
      */
     int getDEIDJJBEFOD();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 14;</code>
      * @return The dALMDMCJNNK.
      */
     boolean getDALMDMCJNNK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool MFGNHIMCJEJ = 12;</code>
      * @return The mFGNHIMCJEJ.
      */
     boolean getMFGNHIMCJEJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FJBELBEGPHJ = 1;</code>
      * @return The fJBELBEGPHJ.
      */
     boolean getFJBELBEGPHJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool LMNIJHIDKFF = 10;</code>
      * @return The lMNIJHIDKFF.
      */
@@ -346,10 +274,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int PAFCCMBKMKM_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ> pAFCCMBKMKM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
      */
     @java.lang.Override
@@ -357,10 +281,6 @@ public final class PIKOPKBKIPHOuterClass {
       return pAFCCMBKMKM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
      */
     @java.lang.Override
@@ -369,10 +289,6 @@ public final class PIKOPKBKIPHOuterClass {
       return pAFCCMBKMKM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
      */
     @java.lang.Override
@@ -380,10 +296,6 @@ public final class PIKOPKBKIPHOuterClass {
       return pAFCCMBKMKM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
      */
     @java.lang.Override
@@ -391,10 +303,6 @@ public final class PIKOPKBKIPHOuterClass {
       return pAFCCMBKMKM_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
      */
     @java.lang.Override
@@ -406,10 +314,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int FJENNLIACPD_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ fJENNLIACPD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
      * @return Whether the fJENNLIACPD field is set.
      */
@@ -418,10 +322,6 @@ public final class PIKOPKBKIPHOuterClass {
       return fJENNLIACPD_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
      * @return The fJENNLIACPD.
      */
@@ -430,10 +330,6 @@ public final class PIKOPKBKIPHOuterClass {
       return fJENNLIACPD_ == null ? emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ.getDefaultInstance() : fJENNLIACPD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
      */
     @java.lang.Override
@@ -444,10 +340,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 9;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
@@ -459,10 +351,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int DPLLEMFLFND_FIELD_NUMBER = 15;
     private int dPLLEMFLFND_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DPLLEMFLFND = 15;</code>
      * @return The dPLLEMFLFND.
      */
@@ -474,10 +362,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int BGDHLMOENMG_FIELD_NUMBER = 3;
     private int bGDHLMOENMG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BGDHLMOENMG = 3;</code>
      * @return The bGDHLMOENMG.
      */
@@ -489,10 +373,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int DNKDELPNOBK_FIELD_NUMBER = 6;
     private int dNKDELPNOBK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DNKDELPNOBK = 6;</code>
      * @return The dNKDELPNOBK.
      */
@@ -504,10 +384,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int CELKMIEGJIF_FIELD_NUMBER = 4;
     private int cELKMIEGJIF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CELKMIEGJIF = 4;</code>
      * @return The cELKMIEGJIF.
      */
@@ -519,10 +395,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int DEIDJJBEFOD_FIELD_NUMBER = 7;
     private int dEIDJJBEFOD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DEIDJJBEFOD = 7;</code>
      * @return The dEIDJJBEFOD.
      */
@@ -534,10 +406,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int DALMDMCJNNK_FIELD_NUMBER = 14;
     private boolean dALMDMCJNNK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DALMDMCJNNK = 14;</code>
      * @return The dALMDMCJNNK.
      */
@@ -549,10 +417,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int MFGNHIMCJEJ_FIELD_NUMBER = 12;
     private boolean mFGNHIMCJEJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool MFGNHIMCJEJ = 12;</code>
      * @return The mFGNHIMCJEJ.
      */
@@ -564,10 +428,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int FJBELBEGPHJ_FIELD_NUMBER = 1;
     private boolean fJBELBEGPHJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FJBELBEGPHJ = 1;</code>
      * @return The fJBELBEGPHJ.
      */
@@ -579,10 +439,6 @@ public final class PIKOPKBKIPHOuterClass {
     public static final int LMNIJHIDKFF_FIELD_NUMBER = 10;
     private boolean lMNIJHIDKFF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool LMNIJHIDKFF = 10;</code>
      * @return The lMNIJHIDKFF.
      */
@@ -1150,10 +1006,6 @@ public final class PIKOPKBKIPHOuterClass {
           emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ, emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ.Builder, emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJOrBuilder> pAFCCMBKMKMBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ> getPAFCCMBKMKMList() {
@@ -1164,10 +1016,6 @@ public final class PIKOPKBKIPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public int getPAFCCMBKMKMCount() {
@@ -1178,10 +1026,6 @@ public final class PIKOPKBKIPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ getPAFCCMBKMKM(int index) {
@@ -1192,10 +1036,6 @@ public final class PIKOPKBKIPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public Builder setPAFCCMBKMKM(
@@ -1213,10 +1053,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public Builder setPAFCCMBKMKM(
@@ -1231,10 +1067,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public Builder addPAFCCMBKMKM(emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ value) {
@@ -1251,10 +1083,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public Builder addPAFCCMBKMKM(
@@ -1272,10 +1100,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public Builder addPAFCCMBKMKM(
@@ -1290,10 +1114,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public Builder addPAFCCMBKMKM(
@@ -1308,10 +1128,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public Builder addAllPAFCCMBKMKM(
@@ -1327,10 +1143,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public Builder clearPAFCCMBKMKM() {
@@ -1344,10 +1156,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public Builder removePAFCCMBKMKM(int index) {
@@ -1361,10 +1169,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ.Builder getPAFCCMBKMKMBuilder(
@@ -1372,10 +1176,6 @@ public final class PIKOPKBKIPHOuterClass {
         return getPAFCCMBKMKMFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJOrBuilder getPAFCCMBKMKMOrBuilder(
@@ -1386,10 +1186,6 @@ public final class PIKOPKBKIPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJOrBuilder> 
@@ -1401,10 +1197,6 @@ public final class PIKOPKBKIPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ.Builder addPAFCCMBKMKMBuilder() {
@@ -1412,10 +1204,6 @@ public final class PIKOPKBKIPHOuterClass {
             emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ.Builder addPAFCCMBKMKMBuilder(
@@ -1424,10 +1212,6 @@ public final class PIKOPKBKIPHOuterClass {
             index, emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGHLHIGMLCJ PAFCCMBKMKM = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ.Builder> 
@@ -1453,10 +1237,6 @@ public final class PIKOPKBKIPHOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ, emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ.Builder, emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJOrBuilder> fJENNLIACPDBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
        * @return Whether the fJENNLIACPD field is set.
        */
@@ -1464,10 +1244,6 @@ public final class PIKOPKBKIPHOuterClass {
         return fJENNLIACPDBuilder_ != null || fJENNLIACPD_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
        * @return The fJENNLIACPD.
        */
@@ -1479,10 +1255,6 @@ public final class PIKOPKBKIPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
        */
       public Builder setFJENNLIACPD(emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ value) {
@@ -1499,10 +1271,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
        */
       public Builder setFJENNLIACPD(
@@ -1517,10 +1285,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
        */
       public Builder mergeFJENNLIACPD(emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ value) {
@@ -1539,10 +1303,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
        */
       public Builder clearFJENNLIACPD() {
@@ -1557,10 +1317,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
        */
       public emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJ.Builder getFJENNLIACPDBuilder() {
@@ -1569,10 +1325,6 @@ public final class PIKOPKBKIPHOuterClass {
         return getFJENNLIACPDFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
        */
       public emu.grasscutter.net.proto.JGHLHIGMLCJOuterClass.JGHLHIGMLCJOrBuilder getFJENNLIACPDOrBuilder() {
@@ -1584,10 +1336,6 @@ public final class PIKOPKBKIPHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.JGHLHIGMLCJ FJENNLIACPD = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1606,10 +1354,6 @@ public final class PIKOPKBKIPHOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 9;</code>
        * @return The levelId.
        */
@@ -1618,10 +1362,6 @@ public final class PIKOPKBKIPHOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 9;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1633,10 +1373,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 9;</code>
        * @return This builder for chaining.
        */
@@ -1649,10 +1385,6 @@ public final class PIKOPKBKIPHOuterClass {
 
       private int dPLLEMFLFND_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DPLLEMFLFND = 15;</code>
        * @return The dPLLEMFLFND.
        */
@@ -1661,10 +1393,6 @@ public final class PIKOPKBKIPHOuterClass {
         return dPLLEMFLFND_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DPLLEMFLFND = 15;</code>
        * @param value The dPLLEMFLFND to set.
        * @return This builder for chaining.
@@ -1676,10 +1404,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DPLLEMFLFND = 15;</code>
        * @return This builder for chaining.
        */
@@ -1692,10 +1416,6 @@ public final class PIKOPKBKIPHOuterClass {
 
       private int bGDHLMOENMG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGDHLMOENMG = 3;</code>
        * @return The bGDHLMOENMG.
        */
@@ -1704,10 +1424,6 @@ public final class PIKOPKBKIPHOuterClass {
         return bGDHLMOENMG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGDHLMOENMG = 3;</code>
        * @param value The bGDHLMOENMG to set.
        * @return This builder for chaining.
@@ -1719,10 +1435,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGDHLMOENMG = 3;</code>
        * @return This builder for chaining.
        */
@@ -1735,10 +1447,6 @@ public final class PIKOPKBKIPHOuterClass {
 
       private int dNKDELPNOBK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DNKDELPNOBK = 6;</code>
        * @return The dNKDELPNOBK.
        */
@@ -1747,10 +1455,6 @@ public final class PIKOPKBKIPHOuterClass {
         return dNKDELPNOBK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DNKDELPNOBK = 6;</code>
        * @param value The dNKDELPNOBK to set.
        * @return This builder for chaining.
@@ -1762,10 +1466,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DNKDELPNOBK = 6;</code>
        * @return This builder for chaining.
        */
@@ -1778,10 +1478,6 @@ public final class PIKOPKBKIPHOuterClass {
 
       private int cELKMIEGJIF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CELKMIEGJIF = 4;</code>
        * @return The cELKMIEGJIF.
        */
@@ -1790,10 +1486,6 @@ public final class PIKOPKBKIPHOuterClass {
         return cELKMIEGJIF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CELKMIEGJIF = 4;</code>
        * @param value The cELKMIEGJIF to set.
        * @return This builder for chaining.
@@ -1805,10 +1497,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CELKMIEGJIF = 4;</code>
        * @return This builder for chaining.
        */
@@ -1821,10 +1509,6 @@ public final class PIKOPKBKIPHOuterClass {
 
       private int dEIDJJBEFOD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DEIDJJBEFOD = 7;</code>
        * @return The dEIDJJBEFOD.
        */
@@ -1833,10 +1517,6 @@ public final class PIKOPKBKIPHOuterClass {
         return dEIDJJBEFOD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DEIDJJBEFOD = 7;</code>
        * @param value The dEIDJJBEFOD to set.
        * @return This builder for chaining.
@@ -1848,10 +1528,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DEIDJJBEFOD = 7;</code>
        * @return This builder for chaining.
        */
@@ -1864,10 +1540,6 @@ public final class PIKOPKBKIPHOuterClass {
 
       private boolean dALMDMCJNNK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 14;</code>
        * @return The dALMDMCJNNK.
        */
@@ -1876,10 +1548,6 @@ public final class PIKOPKBKIPHOuterClass {
         return dALMDMCJNNK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 14;</code>
        * @param value The dALMDMCJNNK to set.
        * @return This builder for chaining.
@@ -1891,10 +1559,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DALMDMCJNNK = 14;</code>
        * @return This builder for chaining.
        */
@@ -1907,10 +1571,6 @@ public final class PIKOPKBKIPHOuterClass {
 
       private boolean mFGNHIMCJEJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MFGNHIMCJEJ = 12;</code>
        * @return The mFGNHIMCJEJ.
        */
@@ -1919,10 +1579,6 @@ public final class PIKOPKBKIPHOuterClass {
         return mFGNHIMCJEJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MFGNHIMCJEJ = 12;</code>
        * @param value The mFGNHIMCJEJ to set.
        * @return This builder for chaining.
@@ -1934,10 +1590,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool MFGNHIMCJEJ = 12;</code>
        * @return This builder for chaining.
        */
@@ -1950,10 +1602,6 @@ public final class PIKOPKBKIPHOuterClass {
 
       private boolean fJBELBEGPHJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FJBELBEGPHJ = 1;</code>
        * @return The fJBELBEGPHJ.
        */
@@ -1962,10 +1610,6 @@ public final class PIKOPKBKIPHOuterClass {
         return fJBELBEGPHJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FJBELBEGPHJ = 1;</code>
        * @param value The fJBELBEGPHJ to set.
        * @return This builder for chaining.
@@ -1977,10 +1621,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FJBELBEGPHJ = 1;</code>
        * @return This builder for chaining.
        */
@@ -1993,10 +1633,6 @@ public final class PIKOPKBKIPHOuterClass {
 
       private boolean lMNIJHIDKFF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LMNIJHIDKFF = 10;</code>
        * @return The lMNIJHIDKFF.
        */
@@ -2005,10 +1641,6 @@ public final class PIKOPKBKIPHOuterClass {
         return lMNIJHIDKFF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LMNIJHIDKFF = 10;</code>
        * @param value The lMNIJHIDKFF to set.
        * @return This builder for chaining.
@@ -2020,10 +1652,6 @@ public final class PIKOPKBKIPHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LMNIJHIDKFF = 10;</code>
        * @return This builder for chaining.
        */

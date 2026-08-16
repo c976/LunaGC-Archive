@@ -19,18 +19,15 @@ public final class MonsterForceAlertNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 monster_entity_id = 12;</code>
+     * <code>uint32 monster_entity_id = 8;</code>
      * @return The monsterEntityId.
      */
     int getMonsterEntityId();
   }
   /**
    * <pre>
-   * CmdId: 22640
+   * CmdId: 3111
+   * Obf: PKIMGJKJMFE
    * </pre>
    *
    * Protobuf type {@code MonsterForceAlertNotify}
@@ -77,7 +74,7 @@ public final class MonsterForceAlertNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 64: {
 
               monsterEntityId_ = input.readUInt32();
               break;
@@ -114,14 +111,10 @@ public final class MonsterForceAlertNotifyOuterClass {
               emu.grasscutter.net.proto.MonsterForceAlertNotifyOuterClass.MonsterForceAlertNotify.class, emu.grasscutter.net.proto.MonsterForceAlertNotifyOuterClass.MonsterForceAlertNotify.Builder.class);
     }
 
-    public static final int MONSTER_ENTITY_ID_FIELD_NUMBER = 12;
+    public static final int MONSTER_ENTITY_ID_FIELD_NUMBER = 8;
     private int monsterEntityId_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 monster_entity_id = 12;</code>
+     * <code>uint32 monster_entity_id = 8;</code>
      * @return The monsterEntityId.
      */
     @java.lang.Override
@@ -144,7 +137,7 @@ public final class MonsterForceAlertNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (monsterEntityId_ != 0) {
-        output.writeUInt32(12, monsterEntityId_);
+        output.writeUInt32(8, monsterEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -157,7 +150,7 @@ public final class MonsterForceAlertNotifyOuterClass {
       size = 0;
       if (monsterEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, monsterEntityId_);
+          .computeUInt32Size(8, monsterEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -286,7 +279,8 @@ public final class MonsterForceAlertNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22640
+     * CmdId: 3111
+     * Obf: PKIMGJKJMFE
      * </pre>
      *
      * Protobuf type {@code MonsterForceAlertNotify}
@@ -437,11 +431,7 @@ public final class MonsterForceAlertNotifyOuterClass {
 
       private int monsterEntityId_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 monster_entity_id = 12;</code>
+       * <code>uint32 monster_entity_id = 8;</code>
        * @return The monsterEntityId.
        */
       @java.lang.Override
@@ -449,11 +439,7 @@ public final class MonsterForceAlertNotifyOuterClass {
         return monsterEntityId_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 monster_entity_id = 12;</code>
+       * <code>uint32 monster_entity_id = 8;</code>
        * @param value The monsterEntityId to set.
        * @return This builder for chaining.
        */
@@ -464,11 +450,7 @@ public final class MonsterForceAlertNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 monster_entity_id = 12;</code>
+       * <code>uint32 monster_entity_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMonsterEntityId() {
@@ -546,7 +528,7 @@ public final class MonsterForceAlertNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035MonsterForceAlertNotify.proto\"4\n\027Monst" +
       "erForceAlertNotify\022\031\n\021monster_entity_id\030" +
-      "\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,74 +19,42 @@ public final class ADGPIOIDKENOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE> 
         getLECHLBOPCJBList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
      */
     emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE getLECHLBOPCJB(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
      */
     int getLECHLBOPCJBCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKEOrBuilder> 
         getLECHLBOPCJBOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
      */
     emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKEOrBuilder getLECHLBOPCJBOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AEKADMBGKBI = 7;</code>
      * @return The aEKADMBGKBI.
      */
     int getAEKADMBGKBI();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LFBCKCGJKLE = 13;</code>
      * @return The lFBCKCGJKLE.
      */
     int getLFBCKCGJKLE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 NLAKKHAHFCD = 12;</code>
      * @return The nLAKKHAHFCD.
      */
@@ -201,10 +169,6 @@ public final class ADGPIOIDKENOuterClass {
     public static final int LECHLBOPCJB_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE> lECHLBOPCJB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
      */
     @java.lang.Override
@@ -212,10 +176,6 @@ public final class ADGPIOIDKENOuterClass {
       return lECHLBOPCJB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
      */
     @java.lang.Override
@@ -224,10 +184,6 @@ public final class ADGPIOIDKENOuterClass {
       return lECHLBOPCJB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
      */
     @java.lang.Override
@@ -235,10 +191,6 @@ public final class ADGPIOIDKENOuterClass {
       return lECHLBOPCJB_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
      */
     @java.lang.Override
@@ -246,10 +198,6 @@ public final class ADGPIOIDKENOuterClass {
       return lECHLBOPCJB_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
      */
     @java.lang.Override
@@ -261,10 +209,6 @@ public final class ADGPIOIDKENOuterClass {
     public static final int AEKADMBGKBI_FIELD_NUMBER = 7;
     private int aEKADMBGKBI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AEKADMBGKBI = 7;</code>
      * @return The aEKADMBGKBI.
      */
@@ -276,10 +220,6 @@ public final class ADGPIOIDKENOuterClass {
     public static final int LFBCKCGJKLE_FIELD_NUMBER = 13;
     private int lFBCKCGJKLE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LFBCKCGJKLE = 13;</code>
      * @return The lFBCKCGJKLE.
      */
@@ -291,10 +231,6 @@ public final class ADGPIOIDKENOuterClass {
     public static final int NLAKKHAHFCD_FIELD_NUMBER = 12;
     private int nLAKKHAHFCD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 NLAKKHAHFCD = 12;</code>
      * @return The nLAKKHAHFCD.
      */
@@ -709,10 +645,6 @@ public final class ADGPIOIDKENOuterClass {
           emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE, emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE.Builder, emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKEOrBuilder> lECHLBOPCJBBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE> getLECHLBOPCJBList() {
@@ -723,10 +655,6 @@ public final class ADGPIOIDKENOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public int getLECHLBOPCJBCount() {
@@ -737,10 +665,6 @@ public final class ADGPIOIDKENOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE getLECHLBOPCJB(int index) {
@@ -751,10 +675,6 @@ public final class ADGPIOIDKENOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public Builder setLECHLBOPCJB(
@@ -772,10 +692,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public Builder setLECHLBOPCJB(
@@ -790,10 +706,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public Builder addLECHLBOPCJB(emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE value) {
@@ -810,10 +722,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public Builder addLECHLBOPCJB(
@@ -831,10 +739,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public Builder addLECHLBOPCJB(
@@ -849,10 +753,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public Builder addLECHLBOPCJB(
@@ -867,10 +767,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public Builder addAllLECHLBOPCJB(
@@ -886,10 +782,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public Builder clearLECHLBOPCJB() {
@@ -903,10 +795,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public Builder removeLECHLBOPCJB(int index) {
@@ -920,10 +808,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE.Builder getLECHLBOPCJBBuilder(
@@ -931,10 +815,6 @@ public final class ADGPIOIDKENOuterClass {
         return getLECHLBOPCJBFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKEOrBuilder getLECHLBOPCJBOrBuilder(
@@ -945,10 +825,6 @@ public final class ADGPIOIDKENOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKEOrBuilder> 
@@ -960,10 +836,6 @@ public final class ADGPIOIDKENOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE.Builder addLECHLBOPCJBBuilder() {
@@ -971,10 +843,6 @@ public final class ADGPIOIDKENOuterClass {
             emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE.Builder addLECHLBOPCJBBuilder(
@@ -983,10 +851,6 @@ public final class ADGPIOIDKENOuterClass {
             index, emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .GHLNJPGDFKE LECHLBOPCJB = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GHLNJPGDFKEOuterClass.GHLNJPGDFKE.Builder> 
@@ -1010,10 +874,6 @@ public final class ADGPIOIDKENOuterClass {
 
       private int aEKADMBGKBI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AEKADMBGKBI = 7;</code>
        * @return The aEKADMBGKBI.
        */
@@ -1022,10 +882,6 @@ public final class ADGPIOIDKENOuterClass {
         return aEKADMBGKBI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AEKADMBGKBI = 7;</code>
        * @param value The aEKADMBGKBI to set.
        * @return This builder for chaining.
@@ -1037,10 +893,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AEKADMBGKBI = 7;</code>
        * @return This builder for chaining.
        */
@@ -1053,10 +905,6 @@ public final class ADGPIOIDKENOuterClass {
 
       private int lFBCKCGJKLE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LFBCKCGJKLE = 13;</code>
        * @return The lFBCKCGJKLE.
        */
@@ -1065,10 +913,6 @@ public final class ADGPIOIDKENOuterClass {
         return lFBCKCGJKLE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LFBCKCGJKLE = 13;</code>
        * @param value The lFBCKCGJKLE to set.
        * @return This builder for chaining.
@@ -1080,10 +924,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LFBCKCGJKLE = 13;</code>
        * @return This builder for chaining.
        */
@@ -1096,10 +936,6 @@ public final class ADGPIOIDKENOuterClass {
 
       private int nLAKKHAHFCD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NLAKKHAHFCD = 12;</code>
        * @return The nLAKKHAHFCD.
        */
@@ -1108,10 +944,6 @@ public final class ADGPIOIDKENOuterClass {
         return nLAKKHAHFCD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NLAKKHAHFCD = 12;</code>
        * @param value The nLAKKHAHFCD to set.
        * @return This builder for chaining.
@@ -1123,10 +955,6 @@ public final class ADGPIOIDKENOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NLAKKHAHFCD = 12;</code>
        * @return This builder for chaining.
        */

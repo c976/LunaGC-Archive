@@ -19,28 +19,16 @@ public final class ACCCCLFEMPEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 POMJLNHFCHG = 11;</code>
      * @return A list containing the pOMJLNHFCHG.
      */
     java.util.List<java.lang.Integer> getPOMJLNHFCHGList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 POMJLNHFCHG = 11;</code>
      * @return The count of pOMJLNHFCHG.
      */
     int getPOMJLNHFCHGCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 POMJLNHFCHG = 11;</code>
      * @param index The index of the element to return.
      * @return The pOMJLNHFCHG at the given index.
@@ -48,30 +36,18 @@ public final class ACCCCLFEMPEOuterClass {
     int getPOMJLNHFCHG(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
@@ -198,10 +174,6 @@ public final class ACCCCLFEMPEOuterClass {
     public static final int POMJLNHFCHG_FIELD_NUMBER = 11;
     private com.google.protobuf.Internal.IntList pOMJLNHFCHG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 POMJLNHFCHG = 11;</code>
      * @return A list containing the pOMJLNHFCHG.
      */
@@ -211,10 +183,6 @@ public final class ACCCCLFEMPEOuterClass {
       return pOMJLNHFCHG_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 POMJLNHFCHG = 11;</code>
      * @return The count of pOMJLNHFCHG.
      */
@@ -222,10 +190,6 @@ public final class ACCCCLFEMPEOuterClass {
       return pOMJLNHFCHG_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 POMJLNHFCHG = 11;</code>
      * @param index The index of the element to return.
      * @return The pOMJLNHFCHG at the given index.
@@ -238,10 +202,6 @@ public final class ACCCCLFEMPEOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 13;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
@@ -253,10 +213,6 @@ public final class ACCCCLFEMPEOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 4;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
@@ -268,10 +224,6 @@ public final class ACCCCLFEMPEOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 7;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
@@ -673,10 +625,6 @@ public final class ACCCCLFEMPEOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 POMJLNHFCHG = 11;</code>
        * @return A list containing the pOMJLNHFCHG.
        */
@@ -686,10 +634,6 @@ public final class ACCCCLFEMPEOuterClass {
                  java.util.Collections.unmodifiableList(pOMJLNHFCHG_) : pOMJLNHFCHG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 POMJLNHFCHG = 11;</code>
        * @return The count of pOMJLNHFCHG.
        */
@@ -697,10 +641,6 @@ public final class ACCCCLFEMPEOuterClass {
         return pOMJLNHFCHG_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 POMJLNHFCHG = 11;</code>
        * @param index The index of the element to return.
        * @return The pOMJLNHFCHG at the given index.
@@ -709,10 +649,6 @@ public final class ACCCCLFEMPEOuterClass {
         return pOMJLNHFCHG_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 POMJLNHFCHG = 11;</code>
        * @param index The index to set the value at.
        * @param value The pOMJLNHFCHG to set.
@@ -726,10 +662,6 @@ public final class ACCCCLFEMPEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 POMJLNHFCHG = 11;</code>
        * @param value The pOMJLNHFCHG to add.
        * @return This builder for chaining.
@@ -741,10 +673,6 @@ public final class ACCCCLFEMPEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 POMJLNHFCHG = 11;</code>
        * @param values The pOMJLNHFCHG to add.
        * @return This builder for chaining.
@@ -758,10 +686,6 @@ public final class ACCCCLFEMPEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 POMJLNHFCHG = 11;</code>
        * @return This builder for chaining.
        */
@@ -774,10 +698,6 @@ public final class ACCCCLFEMPEOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @return The levelId.
        */
@@ -786,10 +706,6 @@ public final class ACCCCLFEMPEOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -801,10 +717,6 @@ public final class ACCCCLFEMPEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @return This builder for chaining.
        */
@@ -817,10 +729,6 @@ public final class ACCCCLFEMPEOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return The isFinish.
        */
@@ -829,10 +737,6 @@ public final class ACCCCLFEMPEOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -844,10 +748,6 @@ public final class ACCCCLFEMPEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return This builder for chaining.
        */
@@ -860,10 +760,6 @@ public final class ACCCCLFEMPEOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return The isOpen.
        */
@@ -872,10 +768,6 @@ public final class ACCCCLFEMPEOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -887,10 +779,6 @@ public final class ACCCCLFEMPEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return This builder for chaining.
        */

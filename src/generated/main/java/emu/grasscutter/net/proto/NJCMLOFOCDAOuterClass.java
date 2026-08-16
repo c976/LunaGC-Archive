@@ -19,124 +19,72 @@ public final class NJCMLOFOCDAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD> 
         getHEHBHPHBDFPList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
      */
     emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD getHEHBHPHBDFP(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
      */
     int getHEHBHPHBDFPCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMDOrBuilder> 
         getHEHBHPHBDFPOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
      */
     emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMDOrBuilder getHEHBHPHBDFPOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CCBKNFBMAMK = 4;</code>
      * @return The cCBKNFBMAMK.
      */
     int getCCBKNFBMAMK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KBJHMNDKKPF = 12;</code>
      * @return The kBJHMNDKKPF.
      */
     int getKBJHMNDKKPF();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OAEADHAKELH = 3;</code>
      * @return The oAEADHAKELH.
      */
     int getOAEADHAKELH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FGBFGGGMNJC = 10;</code>
      * @return The fGBFGGGMNJC.
      */
     int getFGBFGGGMNJC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GDIFJEAGFJM = 11;</code>
      * @return The gDIFJEAGFJM.
      */
     int getGDIFJEAGFJM();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 5;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -276,10 +224,6 @@ public final class NJCMLOFOCDAOuterClass {
     public static final int HEHBHPHBDFP_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD> hEHBHPHBDFP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
      */
     @java.lang.Override
@@ -287,10 +231,6 @@ public final class NJCMLOFOCDAOuterClass {
       return hEHBHPHBDFP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
      */
     @java.lang.Override
@@ -299,10 +239,6 @@ public final class NJCMLOFOCDAOuterClass {
       return hEHBHPHBDFP_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
      */
     @java.lang.Override
@@ -310,10 +246,6 @@ public final class NJCMLOFOCDAOuterClass {
       return hEHBHPHBDFP_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
      */
     @java.lang.Override
@@ -321,10 +253,6 @@ public final class NJCMLOFOCDAOuterClass {
       return hEHBHPHBDFP_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
      */
     @java.lang.Override
@@ -336,10 +264,6 @@ public final class NJCMLOFOCDAOuterClass {
     public static final int CCBKNFBMAMK_FIELD_NUMBER = 4;
     private int cCBKNFBMAMK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CCBKNFBMAMK = 4;</code>
      * @return The cCBKNFBMAMK.
      */
@@ -351,10 +275,6 @@ public final class NJCMLOFOCDAOuterClass {
     public static final int KBJHMNDKKPF_FIELD_NUMBER = 12;
     private int kBJHMNDKKPF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KBJHMNDKKPF = 12;</code>
      * @return The kBJHMNDKKPF.
      */
@@ -366,10 +286,6 @@ public final class NJCMLOFOCDAOuterClass {
     public static final int OAEADHAKELH_FIELD_NUMBER = 3;
     private int oAEADHAKELH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OAEADHAKELH = 3;</code>
      * @return The oAEADHAKELH.
      */
@@ -381,10 +297,6 @@ public final class NJCMLOFOCDAOuterClass {
     public static final int FGBFGGGMNJC_FIELD_NUMBER = 10;
     private int fGBFGGGMNJC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 FGBFGGGMNJC = 10;</code>
      * @return The fGBFGGGMNJC.
      */
@@ -396,10 +308,6 @@ public final class NJCMLOFOCDAOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 8;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
@@ -411,10 +319,6 @@ public final class NJCMLOFOCDAOuterClass {
     public static final int GDIFJEAGFJM_FIELD_NUMBER = 11;
     private int gDIFJEAGFJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 GDIFJEAGFJM = 11;</code>
      * @return The gDIFJEAGFJM.
      */
@@ -426,10 +330,6 @@ public final class NJCMLOFOCDAOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 5;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 5;</code>
      * @return The isFinish.
      */
@@ -441,10 +341,6 @@ public final class NJCMLOFOCDAOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -946,10 +842,6 @@ public final class NJCMLOFOCDAOuterClass {
           emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD, emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.Builder, emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMDOrBuilder> hEHBHPHBDFPBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD> getHEHBHPHBDFPList() {
@@ -960,10 +852,6 @@ public final class NJCMLOFOCDAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public int getHEHBHPHBDFPCount() {
@@ -974,10 +862,6 @@ public final class NJCMLOFOCDAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD getHEHBHPHBDFP(int index) {
@@ -988,10 +872,6 @@ public final class NJCMLOFOCDAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public Builder setHEHBHPHBDFP(
@@ -1009,10 +889,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public Builder setHEHBHPHBDFP(
@@ -1027,10 +903,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public Builder addHEHBHPHBDFP(emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD value) {
@@ -1047,10 +919,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public Builder addHEHBHPHBDFP(
@@ -1068,10 +936,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public Builder addHEHBHPHBDFP(
@@ -1086,10 +950,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public Builder addHEHBHPHBDFP(
@@ -1104,10 +964,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public Builder addAllHEHBHPHBDFP(
@@ -1123,10 +979,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public Builder clearHEHBHPHBDFP() {
@@ -1140,10 +992,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public Builder removeHEHBHPHBDFP(int index) {
@@ -1157,10 +1005,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.Builder getHEHBHPHBDFPBuilder(
@@ -1168,10 +1012,6 @@ public final class NJCMLOFOCDAOuterClass {
         return getHEHBHPHBDFPFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMDOrBuilder getHEHBHPHBDFPOrBuilder(
@@ -1182,10 +1022,6 @@ public final class NJCMLOFOCDAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMDOrBuilder> 
@@ -1197,10 +1033,6 @@ public final class NJCMLOFOCDAOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.Builder addHEHBHPHBDFPBuilder() {
@@ -1208,10 +1040,6 @@ public final class NJCMLOFOCDAOuterClass {
             emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.Builder addHEHBHPHBDFPBuilder(
@@ -1220,10 +1048,6 @@ public final class NJCMLOFOCDAOuterClass {
             index, emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JGAJEMMPJMD HEHBHPHBDFP = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JGAJEMMPJMDOuterClass.JGAJEMMPJMD.Builder> 
@@ -1247,10 +1071,6 @@ public final class NJCMLOFOCDAOuterClass {
 
       private int cCBKNFBMAMK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CCBKNFBMAMK = 4;</code>
        * @return The cCBKNFBMAMK.
        */
@@ -1259,10 +1079,6 @@ public final class NJCMLOFOCDAOuterClass {
         return cCBKNFBMAMK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CCBKNFBMAMK = 4;</code>
        * @param value The cCBKNFBMAMK to set.
        * @return This builder for chaining.
@@ -1274,10 +1090,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CCBKNFBMAMK = 4;</code>
        * @return This builder for chaining.
        */
@@ -1290,10 +1102,6 @@ public final class NJCMLOFOCDAOuterClass {
 
       private int kBJHMNDKKPF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KBJHMNDKKPF = 12;</code>
        * @return The kBJHMNDKKPF.
        */
@@ -1302,10 +1110,6 @@ public final class NJCMLOFOCDAOuterClass {
         return kBJHMNDKKPF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KBJHMNDKKPF = 12;</code>
        * @param value The kBJHMNDKKPF to set.
        * @return This builder for chaining.
@@ -1317,10 +1121,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KBJHMNDKKPF = 12;</code>
        * @return This builder for chaining.
        */
@@ -1333,10 +1133,6 @@ public final class NJCMLOFOCDAOuterClass {
 
       private int oAEADHAKELH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OAEADHAKELH = 3;</code>
        * @return The oAEADHAKELH.
        */
@@ -1345,10 +1141,6 @@ public final class NJCMLOFOCDAOuterClass {
         return oAEADHAKELH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OAEADHAKELH = 3;</code>
        * @param value The oAEADHAKELH to set.
        * @return This builder for chaining.
@@ -1360,10 +1152,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OAEADHAKELH = 3;</code>
        * @return This builder for chaining.
        */
@@ -1376,10 +1164,6 @@ public final class NJCMLOFOCDAOuterClass {
 
       private int fGBFGGGMNJC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FGBFGGGMNJC = 10;</code>
        * @return The fGBFGGGMNJC.
        */
@@ -1388,10 +1172,6 @@ public final class NJCMLOFOCDAOuterClass {
         return fGBFGGGMNJC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FGBFGGGMNJC = 10;</code>
        * @param value The fGBFGGGMNJC to set.
        * @return This builder for chaining.
@@ -1403,10 +1183,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 FGBFGGGMNJC = 10;</code>
        * @return This builder for chaining.
        */
@@ -1419,10 +1195,6 @@ public final class NJCMLOFOCDAOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @return The levelId.
        */
@@ -1431,10 +1203,6 @@ public final class NJCMLOFOCDAOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1446,10 +1214,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 8;</code>
        * @return This builder for chaining.
        */
@@ -1462,10 +1226,6 @@ public final class NJCMLOFOCDAOuterClass {
 
       private int gDIFJEAGFJM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GDIFJEAGFJM = 11;</code>
        * @return The gDIFJEAGFJM.
        */
@@ -1474,10 +1234,6 @@ public final class NJCMLOFOCDAOuterClass {
         return gDIFJEAGFJM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GDIFJEAGFJM = 11;</code>
        * @param value The gDIFJEAGFJM to set.
        * @return This builder for chaining.
@@ -1489,10 +1245,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 GDIFJEAGFJM = 11;</code>
        * @return This builder for chaining.
        */
@@ -1505,10 +1257,6 @@ public final class NJCMLOFOCDAOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 5;</code>
        * @return The isFinish.
        */
@@ -1517,10 +1265,6 @@ public final class NJCMLOFOCDAOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 5;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1532,10 +1276,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 5;</code>
        * @return This builder for chaining.
        */
@@ -1548,10 +1288,6 @@ public final class NJCMLOFOCDAOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
@@ -1560,10 +1296,6 @@ public final class NJCMLOFOCDAOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1575,10 +1307,6 @@ public final class NJCMLOFOCDAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */

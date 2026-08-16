@@ -19,30 +19,18 @@ public final class DHFNEBLOOOGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cost_time = 12;</code>
      * @return The costTime.
      */
     int getCostTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 13;</code>
      * @return The isFinished.
      */
@@ -143,10 +131,6 @@ public final class DHFNEBLOOOGOuterClass {
     public static final int COST_TIME_FIELD_NUMBER = 12;
     private int costTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cost_time = 12;</code>
      * @return The costTime.
      */
@@ -158,10 +142,6 @@ public final class DHFNEBLOOOGOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 6;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
@@ -173,10 +153,6 @@ public final class DHFNEBLOOOGOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 13;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 13;</code>
      * @return The isFinished.
      */
@@ -524,10 +500,6 @@ public final class DHFNEBLOOOGOuterClass {
 
       private int costTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 12;</code>
        * @return The costTime.
        */
@@ -536,10 +508,6 @@ public final class DHFNEBLOOOGOuterClass {
         return costTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 12;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class DHFNEBLOOOGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 12;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class DHFNEBLOOOGOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @return The levelId.
        */
@@ -579,10 +539,6 @@ public final class DHFNEBLOOOGOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class DHFNEBLOOOGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class DHFNEBLOOOGOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 13;</code>
        * @return The isFinished.
        */
@@ -622,10 +570,6 @@ public final class DHFNEBLOOOGOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 13;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class DHFNEBLOOOGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 13;</code>
        * @return This builder for chaining.
        */

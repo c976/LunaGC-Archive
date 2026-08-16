@@ -19,36 +19,24 @@ public final class GLMANIBPOPDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 IFADGMHEFHF = 15;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 15;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 1;</code>
      * @return The isFinished.
      */
@@ -116,7 +104,7 @@ public final class GLMANIBPOPDOuterClass {
             }
             case 120: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -151,24 +139,20 @@ public final class GLMANIBPOPDOuterClass {
               emu.grasscutter.net.proto.GLMANIBPOPDOuterClass.GLMANIBPOPD.class, emu.grasscutter.net.proto.GLMANIBPOPDOuterClass.GLMANIBPOPD.Builder.class);
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 15;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 15;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 15;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 15;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 11;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
@@ -180,10 +164,6 @@ public final class GLMANIBPOPDOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 4;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
@@ -195,10 +175,6 @@ public final class GLMANIBPOPDOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 1;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 1;</code>
      * @return The isFinished.
      */
@@ -230,8 +206,8 @@ public final class GLMANIBPOPDOuterClass {
       if (levelId_ != 0) {
         output.writeUInt32(11, levelId_);
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(15, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(15, ugcGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -254,9 +230,9 @@ public final class GLMANIBPOPDOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, levelId_);
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, iFADGMHEFHF_);
+          .computeUInt32Size(15, ugcGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -273,8 +249,8 @@ public final class GLMANIBPOPDOuterClass {
       }
       emu.grasscutter.net.proto.GLMANIBPOPDOuterClass.GLMANIBPOPD other = (emu.grasscutter.net.proto.GLMANIBPOPDOuterClass.GLMANIBPOPD) obj;
 
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (getIsOpen()
@@ -292,8 +268,8 @@ public final class GLMANIBPOPDOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
@@ -435,7 +411,7 @@ public final class GLMANIBPOPDOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         levelId_ = 0;
 
@@ -469,7 +445,7 @@ public final class GLMANIBPOPDOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GLMANIBPOPDOuterClass.GLMANIBPOPD buildPartial() {
         emu.grasscutter.net.proto.GLMANIBPOPDOuterClass.GLMANIBPOPD result = new emu.grasscutter.net.proto.GLMANIBPOPDOuterClass.GLMANIBPOPD(this);
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         result.levelId_ = levelId_;
         result.isOpen_ = isOpen_;
         result.isFinished_ = isFinished_;
@@ -521,8 +497,8 @@ public final class GLMANIBPOPDOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GLMANIBPOPDOuterClass.GLMANIBPOPD other) {
         if (other == emu.grasscutter.net.proto.GLMANIBPOPDOuterClass.GLMANIBPOPD.getDefaultInstance()) return this;
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
@@ -562,43 +538,39 @@ public final class GLMANIBPOPDOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 15;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 15;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 15;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 15;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 15;</code>
+       * <code>uint32 ugc_guid = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return The levelId.
        */
@@ -607,10 +579,6 @@ public final class GLMANIBPOPDOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -622,10 +590,6 @@ public final class GLMANIBPOPDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */
@@ -638,10 +602,6 @@ public final class GLMANIBPOPDOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return The isOpen.
        */
@@ -650,10 +610,6 @@ public final class GLMANIBPOPDOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -665,10 +621,6 @@ public final class GLMANIBPOPDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return This builder for chaining.
        */
@@ -681,10 +633,6 @@ public final class GLMANIBPOPDOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 1;</code>
        * @return The isFinished.
        */
@@ -693,10 +641,6 @@ public final class GLMANIBPOPDOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 1;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -708,10 +652,6 @@ public final class GLMANIBPOPDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 1;</code>
        * @return This builder for chaining.
        */
@@ -788,10 +728,10 @@ public final class GLMANIBPOPDOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021GLMANIBPOPD.proto\"Z\n\013GLMANIBPOPD\022\023\n\013IF" +
-      "ADGMHEFHF\030\017 \001(\r\022\020\n\010level_id\030\013 \001(\r\022\017\n\007is_" +
-      "open\030\004 \001(\010\022\023\n\013is_finished\030\001 \001(\010B\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\021GLMANIBPOPD.proto\"W\n\013GLMANIBPOPD\022\020\n\010ug" +
+      "c_guid\030\017 \001(\r\022\020\n\010level_id\030\013 \001(\r\022\017\n\007is_ope" +
+      "n\030\004 \001(\010\022\023\n\013is_finished\030\001 \001(\010B\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -802,7 +742,7 @@ public final class GLMANIBPOPDOuterClass {
     internal_static_GLMANIBPOPD_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GLMANIBPOPD_descriptor,
-        new java.lang.String[] { "IFADGMHEFHF", "LevelId", "IsOpen", "IsFinished", });
+        new java.lang.String[] { "UgcGuid", "LevelId", "IsOpen", "IsFinished", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

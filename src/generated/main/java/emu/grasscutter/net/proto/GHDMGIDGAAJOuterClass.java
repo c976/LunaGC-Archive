@@ -19,66 +19,38 @@ public final class GHDMGIDGAAJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 14;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 14;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 14;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.GCBGNOCGPFA type = 4;</code>
      * @return The enum numeric value on the wire for type.
      */
     int getTypeValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.GCBGNOCGPFA type = 4;</code>
      * @return The type.
      */
     emu.grasscutter.net.proto.GCBGNOCGPFAOuterClass.GCBGNOCGPFA getType();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 index = 3;</code>
      * @return The index.
      */
     int getIndex();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 area_id = 9;</code>
      * @return The areaId.
      */
@@ -194,10 +166,6 @@ public final class GHDMGIDGAAJOuterClass {
     public static final int POS_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 14;</code>
      * @return Whether the pos field is set.
      */
@@ -206,10 +174,6 @@ public final class GHDMGIDGAAJOuterClass {
       return pos_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 14;</code>
      * @return The pos.
      */
@@ -218,10 +182,6 @@ public final class GHDMGIDGAAJOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 14;</code>
      */
     @java.lang.Override
@@ -232,10 +192,6 @@ public final class GHDMGIDGAAJOuterClass {
     public static final int TYPE_FIELD_NUMBER = 4;
     private int type_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.GCBGNOCGPFA type = 4;</code>
      * @return The enum numeric value on the wire for type.
      */
@@ -243,10 +199,6 @@ public final class GHDMGIDGAAJOuterClass {
       return type_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.GCBGNOCGPFA type = 4;</code>
      * @return The type.
      */
@@ -259,10 +211,6 @@ public final class GHDMGIDGAAJOuterClass {
     public static final int INDEX_FIELD_NUMBER = 3;
     private int index_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 index = 3;</code>
      * @return The index.
      */
@@ -274,10 +222,6 @@ public final class GHDMGIDGAAJOuterClass {
     public static final int AREA_ID_FIELD_NUMBER = 9;
     private int areaId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 area_id = 9;</code>
      * @return The areaId.
      */
@@ -655,10 +599,6 @@ public final class GHDMGIDGAAJOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 14;</code>
        * @return Whether the pos field is set.
        */
@@ -666,10 +606,6 @@ public final class GHDMGIDGAAJOuterClass {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 14;</code>
        * @return The pos.
        */
@@ -681,10 +617,6 @@ public final class GHDMGIDGAAJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 14;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -701,10 +633,6 @@ public final class GHDMGIDGAAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 14;</code>
        */
       public Builder setPos(
@@ -719,10 +647,6 @@ public final class GHDMGIDGAAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 14;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -741,10 +665,6 @@ public final class GHDMGIDGAAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 14;</code>
        */
       public Builder clearPos() {
@@ -759,10 +679,6 @@ public final class GHDMGIDGAAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
@@ -771,10 +687,6 @@ public final class GHDMGIDGAAJOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -786,10 +698,6 @@ public final class GHDMGIDGAAJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -808,10 +716,6 @@ public final class GHDMGIDGAAJOuterClass {
 
       private int type_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.GCBGNOCGPFA type = 4;</code>
        * @return The enum numeric value on the wire for type.
        */
@@ -819,10 +723,6 @@ public final class GHDMGIDGAAJOuterClass {
         return type_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.GCBGNOCGPFA type = 4;</code>
        * @param value The enum numeric value on the wire for type to set.
        * @return This builder for chaining.
@@ -834,10 +734,6 @@ public final class GHDMGIDGAAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.GCBGNOCGPFA type = 4;</code>
        * @return The type.
        */
@@ -848,10 +744,6 @@ public final class GHDMGIDGAAJOuterClass {
         return result == null ? emu.grasscutter.net.proto.GCBGNOCGPFAOuterClass.GCBGNOCGPFA.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.GCBGNOCGPFA type = 4;</code>
        * @param value The type to set.
        * @return This builder for chaining.
@@ -866,10 +758,6 @@ public final class GHDMGIDGAAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.GCBGNOCGPFA type = 4;</code>
        * @return This builder for chaining.
        */
@@ -882,10 +770,6 @@ public final class GHDMGIDGAAJOuterClass {
 
       private int index_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 index = 3;</code>
        * @return The index.
        */
@@ -894,10 +778,6 @@ public final class GHDMGIDGAAJOuterClass {
         return index_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 index = 3;</code>
        * @param value The index to set.
        * @return This builder for chaining.
@@ -909,10 +789,6 @@ public final class GHDMGIDGAAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 index = 3;</code>
        * @return This builder for chaining.
        */
@@ -925,10 +801,6 @@ public final class GHDMGIDGAAJOuterClass {
 
       private int areaId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 area_id = 9;</code>
        * @return The areaId.
        */
@@ -937,10 +809,6 @@ public final class GHDMGIDGAAJOuterClass {
         return areaId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 area_id = 9;</code>
        * @param value The areaId to set.
        * @return This builder for chaining.
@@ -952,10 +820,6 @@ public final class GHDMGIDGAAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 area_id = 9;</code>
        * @return This builder for chaining.
        */

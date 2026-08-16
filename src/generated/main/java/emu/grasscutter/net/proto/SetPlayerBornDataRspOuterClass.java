@@ -19,10 +19,6 @@ public final class SetPlayerBornDataRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
@@ -30,7 +26,7 @@ public final class SetPlayerBornDataRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 26836
+   * CmdId: 4259
    * </pre>
    *
    * Protobuf type {@code SetPlayerBornDataRsp}
@@ -117,10 +113,6 @@ public final class SetPlayerBornDataRspOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
@@ -286,7 +278,7 @@ public final class SetPlayerBornDataRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26836
+     * CmdId: 4259
      * </pre>
      *
      * Protobuf type {@code SetPlayerBornDataRsp}
@@ -437,10 +429,6 @@ public final class SetPlayerBornDataRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
@@ -449,10 +437,6 @@ public final class SetPlayerBornDataRspOuterClass {
         return retcode_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
@@ -464,10 +448,6 @@ public final class SetPlayerBornDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */

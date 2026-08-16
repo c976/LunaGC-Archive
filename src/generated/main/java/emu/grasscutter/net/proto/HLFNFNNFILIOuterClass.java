@@ -19,28 +19,16 @@ public final class HLFNFNNFILIOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
      * @return A list containing the bKGIKFGMNAL.
      */
     java.util.List<java.lang.Integer> getBKGIKFGMNALList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
      * @return The count of bKGIKFGMNAL.
      */
     int getBKGIKFGMNALCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
      * @param index The index of the element to return.
      * @return The bKGIKFGMNAL at the given index.
@@ -48,28 +36,16 @@ public final class HLFNFNNFILIOuterClass {
     int getBKGIKFGMNAL(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
      * @return A list containing the kNHMFLKKJBM.
      */
     java.util.List<java.lang.Integer> getKNHMFLKKJBMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
      * @return The count of kNHMFLKKJBM.
      */
     int getKNHMFLKKJBMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
      * @param index The index of the element to return.
      * @return The kNHMFLKKJBM at the given index.
@@ -77,20 +53,12 @@ public final class HLFNFNNFILIOuterClass {
     int getKNHMFLKKJBM(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 APGLCKCJEKH = 2;</code>
      * @return The aPGLCKCJEKH.
      */
     int getAPGLCKCJEKH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
@@ -237,10 +205,6 @@ public final class HLFNFNNFILIOuterClass {
     public static final int BKGIKFGMNAL_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList bKGIKFGMNAL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
      * @return A list containing the bKGIKFGMNAL.
      */
@@ -250,10 +214,6 @@ public final class HLFNFNNFILIOuterClass {
       return bKGIKFGMNAL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
      * @return The count of bKGIKFGMNAL.
      */
@@ -261,10 +221,6 @@ public final class HLFNFNNFILIOuterClass {
       return bKGIKFGMNAL_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
      * @param index The index of the element to return.
      * @return The bKGIKFGMNAL at the given index.
@@ -277,10 +233,6 @@ public final class HLFNFNNFILIOuterClass {
     public static final int KNHMFLKKJBM_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList kNHMFLKKJBM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
      * @return A list containing the kNHMFLKKJBM.
      */
@@ -290,10 +242,6 @@ public final class HLFNFNNFILIOuterClass {
       return kNHMFLKKJBM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
      * @return The count of kNHMFLKKJBM.
      */
@@ -301,10 +249,6 @@ public final class HLFNFNNFILIOuterClass {
       return kNHMFLKKJBM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
      * @param index The index of the element to return.
      * @return The kNHMFLKKJBM at the given index.
@@ -317,10 +261,6 @@ public final class HLFNFNNFILIOuterClass {
     public static final int APGLCKCJEKH_FIELD_NUMBER = 2;
     private int aPGLCKCJEKH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 APGLCKCJEKH = 2;</code>
      * @return The aPGLCKCJEKH.
      */
@@ -332,10 +272,6 @@ public final class HLFNFNNFILIOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
@@ -762,10 +698,6 @@ public final class HLFNFNNFILIOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
        * @return A list containing the bKGIKFGMNAL.
        */
@@ -775,10 +707,6 @@ public final class HLFNFNNFILIOuterClass {
                  java.util.Collections.unmodifiableList(bKGIKFGMNAL_) : bKGIKFGMNAL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
        * @return The count of bKGIKFGMNAL.
        */
@@ -786,10 +714,6 @@ public final class HLFNFNNFILIOuterClass {
         return bKGIKFGMNAL_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
        * @param index The index of the element to return.
        * @return The bKGIKFGMNAL at the given index.
@@ -798,10 +722,6 @@ public final class HLFNFNNFILIOuterClass {
         return bKGIKFGMNAL_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
        * @param index The index to set the value at.
        * @param value The bKGIKFGMNAL to set.
@@ -815,10 +735,6 @@ public final class HLFNFNNFILIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
        * @param value The bKGIKFGMNAL to add.
        * @return This builder for chaining.
@@ -830,10 +746,6 @@ public final class HLFNFNNFILIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
        * @param values The bKGIKFGMNAL to add.
        * @return This builder for chaining.
@@ -847,10 +759,6 @@ public final class HLFNFNNFILIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 BKGIKFGMNAL = 14;</code>
        * @return This builder for chaining.
        */
@@ -869,10 +777,6 @@ public final class HLFNFNNFILIOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
        * @return A list containing the kNHMFLKKJBM.
        */
@@ -882,10 +786,6 @@ public final class HLFNFNNFILIOuterClass {
                  java.util.Collections.unmodifiableList(kNHMFLKKJBM_) : kNHMFLKKJBM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
        * @return The count of kNHMFLKKJBM.
        */
@@ -893,10 +793,6 @@ public final class HLFNFNNFILIOuterClass {
         return kNHMFLKKJBM_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
        * @param index The index of the element to return.
        * @return The kNHMFLKKJBM at the given index.
@@ -905,10 +801,6 @@ public final class HLFNFNNFILIOuterClass {
         return kNHMFLKKJBM_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
        * @param index The index to set the value at.
        * @param value The kNHMFLKKJBM to set.
@@ -922,10 +814,6 @@ public final class HLFNFNNFILIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
        * @param value The kNHMFLKKJBM to add.
        * @return This builder for chaining.
@@ -937,10 +825,6 @@ public final class HLFNFNNFILIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
        * @param values The kNHMFLKKJBM to add.
        * @return This builder for chaining.
@@ -954,10 +838,6 @@ public final class HLFNFNNFILIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 KNHMFLKKJBM = 7;</code>
        * @return This builder for chaining.
        */
@@ -970,10 +850,6 @@ public final class HLFNFNNFILIOuterClass {
 
       private int aPGLCKCJEKH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 APGLCKCJEKH = 2;</code>
        * @return The aPGLCKCJEKH.
        */
@@ -982,10 +858,6 @@ public final class HLFNFNNFILIOuterClass {
         return aPGLCKCJEKH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 APGLCKCJEKH = 2;</code>
        * @param value The aPGLCKCJEKH to set.
        * @return This builder for chaining.
@@ -997,10 +869,6 @@ public final class HLFNFNNFILIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 APGLCKCJEKH = 2;</code>
        * @return This builder for chaining.
        */
@@ -1013,10 +881,6 @@ public final class HLFNFNNFILIOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
@@ -1025,10 +889,6 @@ public final class HLFNFNNFILIOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1040,10 +900,6 @@ public final class HLFNFNNFILIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */

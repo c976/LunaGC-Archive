@@ -19,30 +19,18 @@ public final class OFFICPDHBCIOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 route_id = 9;</code>
      * @return The routeId.
      */
     int getRouteId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 11;</code>
      * @return The isFinish.
      */
@@ -143,10 +131,6 @@ public final class OFFICPDHBCIOuterClass {
     public static final int ROUTE_ID_FIELD_NUMBER = 9;
     private int routeId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 route_id = 9;</code>
      * @return The routeId.
      */
@@ -158,10 +142,6 @@ public final class OFFICPDHBCIOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 5;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
@@ -173,10 +153,6 @@ public final class OFFICPDHBCIOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 11;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 11;</code>
      * @return The isFinish.
      */
@@ -525,10 +501,6 @@ public final class OFFICPDHBCIOuterClass {
 
       private int routeId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 route_id = 9;</code>
        * @return The routeId.
        */
@@ -537,10 +509,6 @@ public final class OFFICPDHBCIOuterClass {
         return routeId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 route_id = 9;</code>
        * @param value The routeId to set.
        * @return This builder for chaining.
@@ -552,10 +520,6 @@ public final class OFFICPDHBCIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 route_id = 9;</code>
        * @return This builder for chaining.
        */
@@ -568,10 +532,6 @@ public final class OFFICPDHBCIOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return The isOpen.
        */
@@ -580,10 +540,6 @@ public final class OFFICPDHBCIOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -595,10 +551,6 @@ public final class OFFICPDHBCIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return This builder for chaining.
        */
@@ -611,10 +563,6 @@ public final class OFFICPDHBCIOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @return The isFinish.
        */
@@ -623,10 +571,6 @@ public final class OFFICPDHBCIOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -638,10 +582,6 @@ public final class OFFICPDHBCIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 11;</code>
        * @return This builder for chaining.
        */

@@ -19,54 +19,30 @@ public final class JPKKOMPKNCHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN> 
         getGGOKKDEKPJMList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
      */
     emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN getGGOKKDEKPJM(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
      */
     int getGGOKKDEKPJMCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNENOrBuilder> 
         getGGOKKDEKPJMOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
      */
     emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNENOrBuilder getGGOKKDEKPJMOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DCEPCGLNGPE = 8;</code>
      * @return The dCEPCGLNGPE.
      */
@@ -171,10 +147,6 @@ public final class JPKKOMPKNCHOuterClass {
     public static final int GGOKKDEKPJM_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN> gGOKKDEKPJM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
      */
     @java.lang.Override
@@ -182,10 +154,6 @@ public final class JPKKOMPKNCHOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
      */
     @java.lang.Override
@@ -194,10 +162,6 @@ public final class JPKKOMPKNCHOuterClass {
       return gGOKKDEKPJM_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
      */
     @java.lang.Override
@@ -205,10 +169,6 @@ public final class JPKKOMPKNCHOuterClass {
       return gGOKKDEKPJM_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
      */
     @java.lang.Override
@@ -216,10 +176,6 @@ public final class JPKKOMPKNCHOuterClass {
       return gGOKKDEKPJM_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
      */
     @java.lang.Override
@@ -231,10 +187,6 @@ public final class JPKKOMPKNCHOuterClass {
     public static final int DCEPCGLNGPE_FIELD_NUMBER = 8;
     private boolean dCEPCGLNGPE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool DCEPCGLNGPE = 8;</code>
      * @return The dCEPCGLNGPE.
      */
@@ -616,10 +568,6 @@ public final class JPKKOMPKNCHOuterClass {
           emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN, emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN.Builder, emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNENOrBuilder> gGOKKDEKPJMBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN> getGGOKKDEKPJMList() {
@@ -630,10 +578,6 @@ public final class JPKKOMPKNCHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public int getGGOKKDEKPJMCount() {
@@ -644,10 +588,6 @@ public final class JPKKOMPKNCHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN getGGOKKDEKPJM(int index) {
@@ -658,10 +598,6 @@ public final class JPKKOMPKNCHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -679,10 +615,6 @@ public final class JPKKOMPKNCHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public Builder setGGOKKDEKPJM(
@@ -697,10 +629,6 @@ public final class JPKKOMPKNCHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public Builder addGGOKKDEKPJM(emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN value) {
@@ -717,10 +645,6 @@ public final class JPKKOMPKNCHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -738,10 +662,6 @@ public final class JPKKOMPKNCHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -756,10 +676,6 @@ public final class JPKKOMPKNCHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public Builder addGGOKKDEKPJM(
@@ -774,10 +690,6 @@ public final class JPKKOMPKNCHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public Builder addAllGGOKKDEKPJM(
@@ -793,10 +705,6 @@ public final class JPKKOMPKNCHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public Builder clearGGOKKDEKPJM() {
@@ -810,10 +718,6 @@ public final class JPKKOMPKNCHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public Builder removeGGOKKDEKPJM(int index) {
@@ -827,10 +731,6 @@ public final class JPKKOMPKNCHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN.Builder getGGOKKDEKPJMBuilder(
@@ -838,10 +738,6 @@ public final class JPKKOMPKNCHOuterClass {
         return getGGOKKDEKPJMFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNENOrBuilder getGGOKKDEKPJMOrBuilder(
@@ -852,10 +748,6 @@ public final class JPKKOMPKNCHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNENOrBuilder> 
@@ -867,10 +759,6 @@ public final class JPKKOMPKNCHOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN.Builder addGGOKKDEKPJMBuilder() {
@@ -878,10 +766,6 @@ public final class JPKKOMPKNCHOuterClass {
             emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN.Builder addGGOKKDEKPJMBuilder(
@@ -890,10 +774,6 @@ public final class JPKKOMPKNCHOuterClass {
             index, emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .JDIDDFNMNEN GGOKKDEKPJM = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JDIDDFNMNENOuterClass.JDIDDFNMNEN.Builder> 
@@ -917,10 +797,6 @@ public final class JPKKOMPKNCHOuterClass {
 
       private boolean dCEPCGLNGPE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DCEPCGLNGPE = 8;</code>
        * @return The dCEPCGLNGPE.
        */
@@ -929,10 +805,6 @@ public final class JPKKOMPKNCHOuterClass {
         return dCEPCGLNGPE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DCEPCGLNGPE = 8;</code>
        * @param value The dCEPCGLNGPE to set.
        * @return This builder for chaining.
@@ -944,10 +816,6 @@ public final class JPKKOMPKNCHOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool DCEPCGLNGPE = 8;</code>
        * @return This builder for chaining.
        */

@@ -19,28 +19,16 @@ public final class MHEPPFLCCIJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 id_index_list = 6;</code>
      * @return A list containing the idIndexList.
      */
     java.util.List<java.lang.Integer> getIdIndexListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 id_index_list = 6;</code>
      * @return The count of idIndexList.
      */
     int getIdIndexListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 id_index_list = 6;</code>
      * @param index The index of the element to return.
      * @return The idIndexList at the given index.
@@ -48,229 +36,129 @@ public final class MHEPPFLCCIJOuterClass {
     int getIdIndexList(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA> 
         getPlayerInfoListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
      */
     emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA getPlayerInfoList(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
      */
     int getPlayerInfoListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOAOrBuilder> 
         getPlayerInfoListOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
      */
     emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOAOrBuilder getPlayerInfoListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG> 
         getEntityListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
      */
     emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG getEntityList(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
      */
     int getEntityListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNGOrBuilder> 
         getEntityListOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
      */
     emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNGOrBuilder getEntityListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .AIENJALHGBF action_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF> 
         getActionListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .AIENJALHGBF action_list = 4;</code>
      */
     emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF getActionList(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .AIENJALHGBF action_list = 4;</code>
      */
     int getActionListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .AIENJALHGBF action_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBFOrBuilder> 
         getActionListOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .AIENJALHGBF action_list = 4;</code>
      */
     emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBFOrBuilder getActionListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
      * @return Whether the lMFMKKAPMEN field is set.
      */
     boolean hasLMFMKKAPMEN();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
      * @return The lMFMKKAPMEN.
      */
     emu.grasscutter.net.proto.BOMFPFEPDPJOuterClass.BOMFPFEPDPJ getLMFMKKAPMEN();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
      */
     emu.grasscutter.net.proto.BOMFPFEPDPJOuterClass.BOMFPFEPDPJOrBuilder getLMFMKKAPMENOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 raw_client_game_time = 7;</code>
      * @return The rawClientGameTime.
      */
     int getRawClientGameTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 wave_index = 9;</code>
      * @return The waveIndex.
      */
     int getWaveIndex();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 client_game_time = 1;</code>
      * @return The clientGameTime.
      */
     long getClientGameTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 GLNCDLJJGMP = 11;</code>
      * @return The gLNCDLJJGMP.
      */
     int getGLNCDLJJGMP();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 BCPDEBNNBEC = 12;</code>
      * @return The bCPDEBNNBEC.
      */
     int getBCPDEBNNBEC();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 5;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 server_game_time = 2;</code>
      * @return The serverGameTime.
      */
@@ -469,10 +357,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int ID_INDEX_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList idIndexList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 id_index_list = 6;</code>
      * @return A list containing the idIndexList.
      */
@@ -482,10 +366,6 @@ public final class MHEPPFLCCIJOuterClass {
       return idIndexList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 id_index_list = 6;</code>
      * @return The count of idIndexList.
      */
@@ -493,10 +373,6 @@ public final class MHEPPFLCCIJOuterClass {
       return idIndexList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 id_index_list = 6;</code>
      * @param index The index of the element to return.
      * @return The idIndexList at the given index.
@@ -509,10 +385,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int PLAYER_INFO_LIST_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA> playerInfoList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
      */
     @java.lang.Override
@@ -520,10 +392,6 @@ public final class MHEPPFLCCIJOuterClass {
       return playerInfoList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
      */
     @java.lang.Override
@@ -532,10 +400,6 @@ public final class MHEPPFLCCIJOuterClass {
       return playerInfoList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
      */
     @java.lang.Override
@@ -543,10 +407,6 @@ public final class MHEPPFLCCIJOuterClass {
       return playerInfoList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
      */
     @java.lang.Override
@@ -554,10 +414,6 @@ public final class MHEPPFLCCIJOuterClass {
       return playerInfoList_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
      */
     @java.lang.Override
@@ -569,10 +425,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int ENTITY_LIST_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG> entityList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
      */
     @java.lang.Override
@@ -580,10 +432,6 @@ public final class MHEPPFLCCIJOuterClass {
       return entityList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
      */
     @java.lang.Override
@@ -592,10 +440,6 @@ public final class MHEPPFLCCIJOuterClass {
       return entityList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
      */
     @java.lang.Override
@@ -603,10 +447,6 @@ public final class MHEPPFLCCIJOuterClass {
       return entityList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
      */
     @java.lang.Override
@@ -614,10 +454,6 @@ public final class MHEPPFLCCIJOuterClass {
       return entityList_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
      */
     @java.lang.Override
@@ -629,10 +465,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int ACTION_LIST_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF> actionList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .AIENJALHGBF action_list = 4;</code>
      */
     @java.lang.Override
@@ -640,10 +472,6 @@ public final class MHEPPFLCCIJOuterClass {
       return actionList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .AIENJALHGBF action_list = 4;</code>
      */
     @java.lang.Override
@@ -652,10 +480,6 @@ public final class MHEPPFLCCIJOuterClass {
       return actionList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .AIENJALHGBF action_list = 4;</code>
      */
     @java.lang.Override
@@ -663,10 +487,6 @@ public final class MHEPPFLCCIJOuterClass {
       return actionList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .AIENJALHGBF action_list = 4;</code>
      */
     @java.lang.Override
@@ -674,10 +494,6 @@ public final class MHEPPFLCCIJOuterClass {
       return actionList_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .AIENJALHGBF action_list = 4;</code>
      */
     @java.lang.Override
@@ -689,10 +505,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int LMFMKKAPMEN_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.BOMFPFEPDPJOuterClass.BOMFPFEPDPJ lMFMKKAPMEN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
      * @return Whether the lMFMKKAPMEN field is set.
      */
@@ -701,10 +513,6 @@ public final class MHEPPFLCCIJOuterClass {
       return lMFMKKAPMEN_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
      * @return The lMFMKKAPMEN.
      */
@@ -713,10 +521,6 @@ public final class MHEPPFLCCIJOuterClass {
       return lMFMKKAPMEN_ == null ? emu.grasscutter.net.proto.BOMFPFEPDPJOuterClass.BOMFPFEPDPJ.getDefaultInstance() : lMFMKKAPMEN_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
      */
     @java.lang.Override
@@ -727,10 +531,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int RAW_CLIENT_GAME_TIME_FIELD_NUMBER = 7;
     private int rawClientGameTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 raw_client_game_time = 7;</code>
      * @return The rawClientGameTime.
      */
@@ -742,10 +542,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int WAVE_INDEX_FIELD_NUMBER = 9;
     private int waveIndex_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 wave_index = 9;</code>
      * @return The waveIndex.
      */
@@ -757,10 +553,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int CLIENT_GAME_TIME_FIELD_NUMBER = 1;
     private long clientGameTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 client_game_time = 1;</code>
      * @return The clientGameTime.
      */
@@ -772,10 +564,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int GLNCDLJJGMP_FIELD_NUMBER = 11;
     private int gLNCDLJJGMP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 GLNCDLJJGMP = 11;</code>
      * @return The gLNCDLJJGMP.
      */
@@ -787,10 +575,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int BCPDEBNNBEC_FIELD_NUMBER = 12;
     private int bCPDEBNNBEC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 BCPDEBNNBEC = 12;</code>
      * @return The bCPDEBNNBEC.
      */
@@ -802,10 +586,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 5;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 5;</code>
      * @return The isFinish.
      */
@@ -817,10 +597,6 @@ public final class MHEPPFLCCIJOuterClass {
     public static final int SERVER_GAME_TIME_FIELD_NUMBER = 2;
     private long serverGameTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint64 server_game_time = 2;</code>
      * @return The serverGameTime.
      */
@@ -1486,10 +1262,6 @@ public final class MHEPPFLCCIJOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 id_index_list = 6;</code>
        * @return A list containing the idIndexList.
        */
@@ -1499,10 +1271,6 @@ public final class MHEPPFLCCIJOuterClass {
                  java.util.Collections.unmodifiableList(idIndexList_) : idIndexList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 id_index_list = 6;</code>
        * @return The count of idIndexList.
        */
@@ -1510,10 +1278,6 @@ public final class MHEPPFLCCIJOuterClass {
         return idIndexList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 id_index_list = 6;</code>
        * @param index The index of the element to return.
        * @return The idIndexList at the given index.
@@ -1522,10 +1286,6 @@ public final class MHEPPFLCCIJOuterClass {
         return idIndexList_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 id_index_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The idIndexList to set.
@@ -1539,10 +1299,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 id_index_list = 6;</code>
        * @param value The idIndexList to add.
        * @return This builder for chaining.
@@ -1554,10 +1310,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 id_index_list = 6;</code>
        * @param values The idIndexList to add.
        * @return This builder for chaining.
@@ -1571,10 +1323,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 id_index_list = 6;</code>
        * @return This builder for chaining.
        */
@@ -1598,10 +1346,6 @@ public final class MHEPPFLCCIJOuterClass {
           emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA, emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA.Builder, emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOAOrBuilder> playerInfoListBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA> getPlayerInfoListList() {
@@ -1612,10 +1356,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public int getPlayerInfoListCount() {
@@ -1626,10 +1366,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA getPlayerInfoList(int index) {
@@ -1640,10 +1376,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public Builder setPlayerInfoList(
@@ -1661,10 +1393,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public Builder setPlayerInfoList(
@@ -1679,10 +1407,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public Builder addPlayerInfoList(emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA value) {
@@ -1699,10 +1423,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public Builder addPlayerInfoList(
@@ -1720,10 +1440,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public Builder addPlayerInfoList(
@@ -1738,10 +1454,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public Builder addPlayerInfoList(
@@ -1756,10 +1468,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public Builder addAllPlayerInfoList(
@@ -1775,10 +1483,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public Builder clearPlayerInfoList() {
@@ -1792,10 +1496,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public Builder removePlayerInfoList(int index) {
@@ -1809,10 +1509,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA.Builder getPlayerInfoListBuilder(
@@ -1820,10 +1516,6 @@ public final class MHEPPFLCCIJOuterClass {
         return getPlayerInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOAOrBuilder getPlayerInfoListOrBuilder(
@@ -1834,10 +1526,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOAOrBuilder> 
@@ -1849,10 +1537,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA.Builder addPlayerInfoListBuilder() {
@@ -1860,10 +1544,6 @@ public final class MHEPPFLCCIJOuterClass {
             emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA.Builder addPlayerInfoListBuilder(
@@ -1872,10 +1552,6 @@ public final class MHEPPFLCCIJOuterClass {
             index, emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .KANIKHPMOOA player_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.KANIKHPMOOAOuterClass.KANIKHPMOOA.Builder> 
@@ -1910,10 +1586,6 @@ public final class MHEPPFLCCIJOuterClass {
           emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG, emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG.Builder, emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNGOrBuilder> entityListBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG> getEntityListList() {
@@ -1924,10 +1596,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public int getEntityListCount() {
@@ -1938,10 +1606,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG getEntityList(int index) {
@@ -1952,10 +1616,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public Builder setEntityList(
@@ -1973,10 +1633,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public Builder setEntityList(
@@ -1991,10 +1647,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public Builder addEntityList(emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG value) {
@@ -2011,10 +1663,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public Builder addEntityList(
@@ -2032,10 +1680,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public Builder addEntityList(
@@ -2050,10 +1694,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public Builder addEntityList(
@@ -2068,10 +1708,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public Builder addAllEntityList(
@@ -2087,10 +1723,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public Builder clearEntityList() {
@@ -2104,10 +1736,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public Builder removeEntityList(int index) {
@@ -2121,10 +1749,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG.Builder getEntityListBuilder(
@@ -2132,10 +1756,6 @@ public final class MHEPPFLCCIJOuterClass {
         return getEntityListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNGOrBuilder getEntityListOrBuilder(
@@ -2146,10 +1766,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNGOrBuilder> 
@@ -2161,10 +1777,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG.Builder addEntityListBuilder() {
@@ -2172,10 +1784,6 @@ public final class MHEPPFLCCIJOuterClass {
             emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG.Builder addEntityListBuilder(
@@ -2184,10 +1792,6 @@ public final class MHEPPFLCCIJOuterClass {
             index, emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .BKFNFCGEJNG entity_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BKFNFCGEJNGOuterClass.BKFNFCGEJNG.Builder> 
@@ -2222,10 +1826,6 @@ public final class MHEPPFLCCIJOuterClass {
           emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF, emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF.Builder, emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBFOrBuilder> actionListBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF> getActionListList() {
@@ -2236,10 +1836,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public int getActionListCount() {
@@ -2250,10 +1846,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF getActionList(int index) {
@@ -2264,10 +1856,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public Builder setActionList(
@@ -2285,10 +1873,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public Builder setActionList(
@@ -2303,10 +1887,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public Builder addActionList(emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF value) {
@@ -2323,10 +1903,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public Builder addActionList(
@@ -2344,10 +1920,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public Builder addActionList(
@@ -2362,10 +1934,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public Builder addActionList(
@@ -2380,10 +1948,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public Builder addAllActionList(
@@ -2399,10 +1963,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public Builder clearActionList() {
@@ -2416,10 +1976,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public Builder removeActionList(int index) {
@@ -2433,10 +1989,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF.Builder getActionListBuilder(
@@ -2444,10 +1996,6 @@ public final class MHEPPFLCCIJOuterClass {
         return getActionListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBFOrBuilder getActionListOrBuilder(
@@ -2458,10 +2006,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBFOrBuilder> 
@@ -2473,10 +2017,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF.Builder addActionListBuilder() {
@@ -2484,10 +2024,6 @@ public final class MHEPPFLCCIJOuterClass {
             emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF.Builder addActionListBuilder(
@@ -2496,10 +2032,6 @@ public final class MHEPPFLCCIJOuterClass {
             index, emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .AIENJALHGBF action_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AIENJALHGBFOuterClass.AIENJALHGBF.Builder> 
@@ -2525,10 +2057,6 @@ public final class MHEPPFLCCIJOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BOMFPFEPDPJOuterClass.BOMFPFEPDPJ, emu.grasscutter.net.proto.BOMFPFEPDPJOuterClass.BOMFPFEPDPJ.Builder, emu.grasscutter.net.proto.BOMFPFEPDPJOuterClass.BOMFPFEPDPJOrBuilder> lMFMKKAPMENBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
        * @return Whether the lMFMKKAPMEN field is set.
        */
@@ -2536,10 +2064,6 @@ public final class MHEPPFLCCIJOuterClass {
         return lMFMKKAPMENBuilder_ != null || lMFMKKAPMEN_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
        * @return The lMFMKKAPMEN.
        */
@@ -2551,10 +2075,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
        */
       public Builder setLMFMKKAPMEN(emu.grasscutter.net.proto.BOMFPFEPDPJOuterClass.BOMFPFEPDPJ value) {
@@ -2571,10 +2091,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
        */
       public Builder setLMFMKKAPMEN(
@@ -2589,10 +2105,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
        */
       public Builder mergeLMFMKKAPMEN(emu.grasscutter.net.proto.BOMFPFEPDPJOuterClass.BOMFPFEPDPJ value) {
@@ -2611,10 +2123,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
        */
       public Builder clearLMFMKKAPMEN() {
@@ -2629,10 +2137,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
        */
       public emu.grasscutter.net.proto.BOMFPFEPDPJOuterClass.BOMFPFEPDPJ.Builder getLMFMKKAPMENBuilder() {
@@ -2641,10 +2145,6 @@ public final class MHEPPFLCCIJOuterClass {
         return getLMFMKKAPMENFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
        */
       public emu.grasscutter.net.proto.BOMFPFEPDPJOuterClass.BOMFPFEPDPJOrBuilder getLMFMKKAPMENOrBuilder() {
@@ -2656,10 +2156,6 @@ public final class MHEPPFLCCIJOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BOMFPFEPDPJ LMFMKKAPMEN = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -2678,10 +2174,6 @@ public final class MHEPPFLCCIJOuterClass {
 
       private int rawClientGameTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 raw_client_game_time = 7;</code>
        * @return The rawClientGameTime.
        */
@@ -2690,10 +2182,6 @@ public final class MHEPPFLCCIJOuterClass {
         return rawClientGameTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 raw_client_game_time = 7;</code>
        * @param value The rawClientGameTime to set.
        * @return This builder for chaining.
@@ -2705,10 +2193,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 raw_client_game_time = 7;</code>
        * @return This builder for chaining.
        */
@@ -2721,10 +2205,6 @@ public final class MHEPPFLCCIJOuterClass {
 
       private int waveIndex_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 wave_index = 9;</code>
        * @return The waveIndex.
        */
@@ -2733,10 +2213,6 @@ public final class MHEPPFLCCIJOuterClass {
         return waveIndex_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 wave_index = 9;</code>
        * @param value The waveIndex to set.
        * @return This builder for chaining.
@@ -2748,10 +2224,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 wave_index = 9;</code>
        * @return This builder for chaining.
        */
@@ -2764,10 +2236,6 @@ public final class MHEPPFLCCIJOuterClass {
 
       private long clientGameTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 client_game_time = 1;</code>
        * @return The clientGameTime.
        */
@@ -2776,10 +2244,6 @@ public final class MHEPPFLCCIJOuterClass {
         return clientGameTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 client_game_time = 1;</code>
        * @param value The clientGameTime to set.
        * @return This builder for chaining.
@@ -2791,10 +2255,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 client_game_time = 1;</code>
        * @return This builder for chaining.
        */
@@ -2807,10 +2267,6 @@ public final class MHEPPFLCCIJOuterClass {
 
       private int gLNCDLJJGMP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 GLNCDLJJGMP = 11;</code>
        * @return The gLNCDLJJGMP.
        */
@@ -2819,10 +2275,6 @@ public final class MHEPPFLCCIJOuterClass {
         return gLNCDLJJGMP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 GLNCDLJJGMP = 11;</code>
        * @param value The gLNCDLJJGMP to set.
        * @return This builder for chaining.
@@ -2834,10 +2286,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 GLNCDLJJGMP = 11;</code>
        * @return This builder for chaining.
        */
@@ -2850,10 +2298,6 @@ public final class MHEPPFLCCIJOuterClass {
 
       private int bCPDEBNNBEC_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 BCPDEBNNBEC = 12;</code>
        * @return The bCPDEBNNBEC.
        */
@@ -2862,10 +2306,6 @@ public final class MHEPPFLCCIJOuterClass {
         return bCPDEBNNBEC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 BCPDEBNNBEC = 12;</code>
        * @param value The bCPDEBNNBEC to set.
        * @return This builder for chaining.
@@ -2877,10 +2317,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 BCPDEBNNBEC = 12;</code>
        * @return This builder for chaining.
        */
@@ -2893,10 +2329,6 @@ public final class MHEPPFLCCIJOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 5;</code>
        * @return The isFinish.
        */
@@ -2905,10 +2337,6 @@ public final class MHEPPFLCCIJOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 5;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -2920,10 +2348,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 5;</code>
        * @return This builder for chaining.
        */
@@ -2936,10 +2360,6 @@ public final class MHEPPFLCCIJOuterClass {
 
       private long serverGameTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 server_game_time = 2;</code>
        * @return The serverGameTime.
        */
@@ -2948,10 +2368,6 @@ public final class MHEPPFLCCIJOuterClass {
         return serverGameTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 server_game_time = 2;</code>
        * @param value The serverGameTime to set.
        * @return This builder for chaining.
@@ -2963,10 +2379,6 @@ public final class MHEPPFLCCIJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint64 server_game_time = 2;</code>
        * @return This builder for chaining.
        */

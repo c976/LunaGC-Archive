@@ -19,28 +19,16 @@ public final class GetProfilePictureDataRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @return A list containing the specialProfilePictureList.
      */
     java.util.List<java.lang.Integer> getSpecialProfilePictureListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @return The count of specialProfilePictureList.
      */
     int getSpecialProfilePictureListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @param index The index of the element to return.
      * @return The specialProfilePictureList at the given index.
@@ -48,10 +36,6 @@ public final class GetProfilePictureDataRspOuterClass {
     int getSpecialProfilePictureList(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
@@ -59,7 +43,7 @@ public final class GetProfilePictureDataRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 0000
+   * CmdId: 7323
    * </pre>
    *
    * Protobuf type {@code GetProfilePictureDataRsp}
@@ -172,10 +156,6 @@ public final class GetProfilePictureDataRspOuterClass {
     public static final int SPECIAL_PROFILE_PICTURE_LIST_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList specialProfilePictureList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @return A list containing the specialProfilePictureList.
      */
@@ -185,10 +165,6 @@ public final class GetProfilePictureDataRspOuterClass {
       return specialProfilePictureList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @return The count of specialProfilePictureList.
      */
@@ -196,10 +172,6 @@ public final class GetProfilePictureDataRspOuterClass {
       return specialProfilePictureList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @param index The index of the element to return.
      * @return The specialProfilePictureList at the given index.
@@ -212,10 +184,6 @@ public final class GetProfilePictureDataRspOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
@@ -409,7 +377,7 @@ public final class GetProfilePictureDataRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 0000
+     * CmdId: 7323
      * </pre>
      *
      * Protobuf type {@code GetProfilePictureDataRsp}
@@ -585,10 +553,6 @@ public final class GetProfilePictureDataRspOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @return A list containing the specialProfilePictureList.
        */
@@ -598,10 +562,6 @@ public final class GetProfilePictureDataRspOuterClass {
                  java.util.Collections.unmodifiableList(specialProfilePictureList_) : specialProfilePictureList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @return The count of specialProfilePictureList.
        */
@@ -609,10 +569,6 @@ public final class GetProfilePictureDataRspOuterClass {
         return specialProfilePictureList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @param index The index of the element to return.
        * @return The specialProfilePictureList at the given index.
@@ -621,10 +577,6 @@ public final class GetProfilePictureDataRspOuterClass {
         return specialProfilePictureList_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @param index The index to set the value at.
        * @param value The specialProfilePictureList to set.
@@ -638,10 +590,6 @@ public final class GetProfilePictureDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @param value The specialProfilePictureList to add.
        * @return This builder for chaining.
@@ -653,10 +601,6 @@ public final class GetProfilePictureDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @param values The specialProfilePictureList to add.
        * @return This builder for chaining.
@@ -670,10 +614,6 @@ public final class GetProfilePictureDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @return This builder for chaining.
        */
@@ -686,10 +626,6 @@ public final class GetProfilePictureDataRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
@@ -698,10 +634,6 @@ public final class GetProfilePictureDataRspOuterClass {
         return retcode_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
@@ -713,10 +645,6 @@ public final class GetProfilePictureDataRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */

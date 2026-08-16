@@ -19,40 +19,24 @@ public final class EEMOPCKCKMBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 11;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OLJMLPBFGLD = 3;</code>
      * @return The oLJMLPBFGLD.
      */
     int getOLJMLPBFGLD();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BGLKPPKJCNF = 1;</code>
      * @return The bGLKPPKJCNF.
      */
@@ -158,10 +142,6 @@ public final class EEMOPCKCKMBOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 11;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 11;</code>
      * @return The isOpen.
      */
@@ -173,10 +153,6 @@ public final class EEMOPCKCKMBOuterClass {
     public static final int OLJMLPBFGLD_FIELD_NUMBER = 3;
     private int oLJMLPBFGLD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OLJMLPBFGLD = 3;</code>
      * @return The oLJMLPBFGLD.
      */
@@ -188,10 +164,6 @@ public final class EEMOPCKCKMBOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
@@ -203,10 +175,6 @@ public final class EEMOPCKCKMBOuterClass {
     public static final int BGLKPPKJCNF_FIELD_NUMBER = 1;
     private int bGLKPPKJCNF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BGLKPPKJCNF = 1;</code>
      * @return The bGLKPPKJCNF.
      */
@@ -571,10 +539,6 @@ public final class EEMOPCKCKMBOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 11;</code>
        * @return The isOpen.
        */
@@ -583,10 +547,6 @@ public final class EEMOPCKCKMBOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 11;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -598,10 +558,6 @@ public final class EEMOPCKCKMBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 11;</code>
        * @return This builder for chaining.
        */
@@ -614,10 +570,6 @@ public final class EEMOPCKCKMBOuterClass {
 
       private int oLJMLPBFGLD_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OLJMLPBFGLD = 3;</code>
        * @return The oLJMLPBFGLD.
        */
@@ -626,10 +578,6 @@ public final class EEMOPCKCKMBOuterClass {
         return oLJMLPBFGLD_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OLJMLPBFGLD = 3;</code>
        * @param value The oLJMLPBFGLD to set.
        * @return This builder for chaining.
@@ -641,10 +589,6 @@ public final class EEMOPCKCKMBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OLJMLPBFGLD = 3;</code>
        * @return This builder for chaining.
        */
@@ -657,10 +601,6 @@ public final class EEMOPCKCKMBOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
@@ -669,10 +609,6 @@ public final class EEMOPCKCKMBOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -684,10 +620,6 @@ public final class EEMOPCKCKMBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
@@ -700,10 +632,6 @@ public final class EEMOPCKCKMBOuterClass {
 
       private int bGLKPPKJCNF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGLKPPKJCNF = 1;</code>
        * @return The bGLKPPKJCNF.
        */
@@ -712,10 +640,6 @@ public final class EEMOPCKCKMBOuterClass {
         return bGLKPPKJCNF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGLKPPKJCNF = 1;</code>
        * @param value The bGLKPPKJCNF to set.
        * @return This builder for chaining.
@@ -727,10 +651,6 @@ public final class EEMOPCKCKMBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGLKPPKJCNF = 1;</code>
        * @return This builder for chaining.
        */

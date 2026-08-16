@@ -20,17 +20,17 @@ public final class UnionCmdOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>bytes body = 14;</code>
+     * <code>bytes body = 12;</code>
      * @return The body.
      */
     com.google.protobuf.ByteString getBody();
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 message_id = 10;</code>
@@ -89,7 +89,7 @@ public final class UnionCmdOuterClass {
               messageId_ = input.readUInt32();
               break;
             }
-            case 114: {
+            case 98: {
 
               body_ = input.readBytes();
               break;
@@ -126,14 +126,14 @@ public final class UnionCmdOuterClass {
               emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.class, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder.class);
     }
 
-    public static final int BODY_FIELD_NUMBER = 14;
+    public static final int BODY_FIELD_NUMBER = 12;
     private com.google.protobuf.ByteString body_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>bytes body = 14;</code>
+     * <code>bytes body = 12;</code>
      * @return The body.
      */
     @java.lang.Override
@@ -145,7 +145,7 @@ public final class UnionCmdOuterClass {
     private int messageId_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 message_id = 10;</code>
@@ -174,7 +174,7 @@ public final class UnionCmdOuterClass {
         output.writeUInt32(10, messageId_);
       }
       if (!body_.isEmpty()) {
-        output.writeBytes(14, body_);
+        output.writeBytes(12, body_);
       }
       unknownFields.writeTo(output);
     }
@@ -191,7 +191,7 @@ public final class UnionCmdOuterClass {
       }
       if (!body_.isEmpty()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(14, body_);
+          .computeBytesSize(12, body_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -478,10 +478,10 @@ public final class UnionCmdOuterClass {
       private com.google.protobuf.ByteString body_ = com.google.protobuf.ByteString.EMPTY;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>bytes body = 14;</code>
+       * <code>bytes body = 12;</code>
        * @return The body.
        */
       @java.lang.Override
@@ -490,10 +490,10 @@ public final class UnionCmdOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>bytes body = 14;</code>
+       * <code>bytes body = 12;</code>
        * @param value The body to set.
        * @return This builder for chaining.
        */
@@ -508,10 +508,10 @@ public final class UnionCmdOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>bytes body = 14;</code>
+       * <code>bytes body = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearBody() {
@@ -524,7 +524,7 @@ public final class UnionCmdOuterClass {
       private int messageId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 message_id = 10;</code>
@@ -536,7 +536,7 @@ public final class UnionCmdOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 message_id = 10;</code>
@@ -551,7 +551,7 @@ public final class UnionCmdOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 message_id = 10;</code>
@@ -630,7 +630,7 @@ public final class UnionCmdOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016UnionCmd.proto\",\n\010UnionCmd\022\014\n\004body\030\016 \001" +
+      "\n\016UnionCmd.proto\",\n\010UnionCmd\022\014\n\004body\030\014 \001" +
       "(\014\022\022\n\nmessage_id\030\n \001(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };

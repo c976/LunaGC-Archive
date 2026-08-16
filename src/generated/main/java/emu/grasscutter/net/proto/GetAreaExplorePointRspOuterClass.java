@@ -20,28 +20,57 @@ public final class GetAreaExplorePointRspOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 area_id_list = 3;</code>
+     * <code>repeated uint32 explore_point_list = 11;</code>
+     * @return A list containing the explorePointList.
+     */
+    java.util.List<java.lang.Integer> getExplorePointListList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0    
+     * </pre>
+     *
+     * <code>repeated uint32 explore_point_list = 11;</code>
+     * @return The count of explorePointList.
+     */
+    int getExplorePointListCount();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0    
+     * </pre>
+     *
+     * <code>repeated uint32 explore_point_list = 11;</code>
+     * @param index The index of the element to return.
+     * @return The explorePointList at the given index.
+     */
+    int getExplorePointList(int index);
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0    
+     * </pre>
+     *
+     * <code>repeated uint32 area_id_list = 7;</code>
      * @return A list containing the areaIdList.
      */
     java.util.List<java.lang.Integer> getAreaIdListList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 area_id_list = 3;</code>
+     * <code>repeated uint32 area_id_list = 7;</code>
      * @return The count of areaIdList.
      */
     int getAreaIdListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 area_id_list = 3;</code>
+     * <code>repeated uint32 area_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The areaIdList at the given index.
      */
@@ -49,46 +78,17 @@ public final class GetAreaExplorePointRspOuterClass {
 
     /**
      * <pre>
-     * offset: 40
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-     * @return A list containing the bAMCGGDJOLH.
-     */
-    java.util.List<java.lang.Integer> getBAMCGGDJOLHList();
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-     * @return The count of bAMCGGDJOLH.
-     */
-    int getBAMCGGDJOLHCount();
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-     * @param index The index of the element to return.
-     * @return The bAMCGGDJOLH at the given index.
-     */
-    int getBAMCGGDJOLH(int index);
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 26852
+   * CmdId: 9845
    * </pre>
    *
    * Protobuf type {@code GetAreaExplorePointRsp}
@@ -103,8 +103,8 @@ public final class GetAreaExplorePointRspOuterClass {
       super(builder);
     }
     private GetAreaExplorePointRsp() {
+      explorePointList_ = emptyIntList();
       areaIdList_ = emptyIntList();
-      bAMCGGDJOLH_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -138,20 +138,25 @@ public final class GetAreaExplorePointRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 48: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 56: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 areaIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               areaIdList_.addInt(input.readUInt32());
               break;
             }
-            case 26: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 areaIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 areaIdList_.addInt(input.readUInt32());
@@ -159,30 +164,25 @@ public final class GetAreaExplorePointRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 112: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                bAMCGGDJOLH_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+            case 88: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                explorePointList_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
-              bAMCGGDJOLH_.addInt(input.readUInt32());
+              explorePointList_.addInt(input.readUInt32());
               break;
             }
-            case 114: {
+            case 90: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                bAMCGGDJOLH_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                explorePointList_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                bAMCGGDJOLH_.addInt(input.readUInt32());
+                explorePointList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 120: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -200,11 +200,11 @@ public final class GetAreaExplorePointRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           areaIdList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          bAMCGGDJOLH_.makeImmutable(); // C
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          explorePointList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -223,14 +223,54 @@ public final class GetAreaExplorePointRspOuterClass {
               emu.grasscutter.net.proto.GetAreaExplorePointRspOuterClass.GetAreaExplorePointRsp.class, emu.grasscutter.net.proto.GetAreaExplorePointRspOuterClass.GetAreaExplorePointRsp.Builder.class);
     }
 
-    public static final int AREA_ID_LIST_FIELD_NUMBER = 3;
+    public static final int EXPLORE_POINT_LIST_FIELD_NUMBER = 11;
+    private com.google.protobuf.Internal.IntList explorePointList_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0    
+     * </pre>
+     *
+     * <code>repeated uint32 explore_point_list = 11;</code>
+     * @return A list containing the explorePointList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getExplorePointListList() {
+      return explorePointList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0    
+     * </pre>
+     *
+     * <code>repeated uint32 explore_point_list = 11;</code>
+     * @return The count of explorePointList.
+     */
+    public int getExplorePointListCount() {
+      return explorePointList_.size();
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0    
+     * </pre>
+     *
+     * <code>repeated uint32 explore_point_list = 11;</code>
+     * @param index The index of the element to return.
+     * @return The explorePointList at the given index.
+     */
+    public int getExplorePointList(int index) {
+      return explorePointList_.getInt(index);
+    }
+    private int explorePointListMemoizedSerializedSize = -1;
+
+    public static final int AREA_ID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList areaIdList_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 area_id_list = 3;</code>
+     * <code>repeated uint32 area_id_list = 7;</code>
      * @return A list containing the areaIdList.
      */
     @java.lang.Override
@@ -240,10 +280,10 @@ public final class GetAreaExplorePointRspOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 area_id_list = 3;</code>
+     * <code>repeated uint32 area_id_list = 7;</code>
      * @return The count of areaIdList.
      */
     public int getAreaIdListCount() {
@@ -251,10 +291,10 @@ public final class GetAreaExplorePointRspOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>repeated uint32 area_id_list = 3;</code>
+     * <code>repeated uint32 area_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The areaIdList at the given index.
      */
@@ -263,54 +303,14 @@ public final class GetAreaExplorePointRspOuterClass {
     }
     private int areaIdListMemoizedSerializedSize = -1;
 
-    public static final int BAMCGGDJOLH_FIELD_NUMBER = 14;
-    private com.google.protobuf.Internal.IntList bAMCGGDJOLH_;
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-     * @return A list containing the bAMCGGDJOLH.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getBAMCGGDJOLHList() {
-      return bAMCGGDJOLH_;
-    }
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-     * @return The count of bAMCGGDJOLH.
-     */
-    public int getBAMCGGDJOLHCount() {
-      return bAMCGGDJOLH_.size();
-    }
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-     * @param index The index of the element to return.
-     * @return The bAMCGGDJOLH at the given index.
-     */
-    public int getBAMCGGDJOLH(int index) {
-      return bAMCGGDJOLH_.getInt(index);
-    }
-    private int bAMCGGDJOLHMemoizedSerializedSize = -1;
-
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -333,22 +333,22 @@ public final class GetAreaExplorePointRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (retcode_ != 0) {
+        output.writeInt32(6, retcode_);
+      }
       if (getAreaIdListList().size() > 0) {
-        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(areaIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < areaIdList_.size(); i++) {
         output.writeUInt32NoTag(areaIdList_.getInt(i));
       }
-      if (getBAMCGGDJOLHList().size() > 0) {
-        output.writeUInt32NoTag(114);
-        output.writeUInt32NoTag(bAMCGGDJOLHMemoizedSerializedSize);
+      if (getExplorePointListList().size() > 0) {
+        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(explorePointListMemoizedSerializedSize);
       }
-      for (int i = 0; i < bAMCGGDJOLH_.size(); i++) {
-        output.writeUInt32NoTag(bAMCGGDJOLH_.getInt(i));
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+      for (int i = 0; i < explorePointList_.size(); i++) {
+        output.writeUInt32NoTag(explorePointList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -359,6 +359,10 @@ public final class GetAreaExplorePointRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, retcode_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < areaIdList_.size(); i++) {
@@ -375,21 +379,17 @@ public final class GetAreaExplorePointRspOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < bAMCGGDJOLH_.size(); i++) {
+        for (int i = 0; i < explorePointList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(bAMCGGDJOLH_.getInt(i));
+            .computeUInt32SizeNoTag(explorePointList_.getInt(i));
         }
         size += dataSize;
-        if (!getBAMCGGDJOLHList().isEmpty()) {
+        if (!getExplorePointListList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        bAMCGGDJOLHMemoizedSerializedSize = dataSize;
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+        explorePointListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -406,10 +406,10 @@ public final class GetAreaExplorePointRspOuterClass {
       }
       emu.grasscutter.net.proto.GetAreaExplorePointRspOuterClass.GetAreaExplorePointRsp other = (emu.grasscutter.net.proto.GetAreaExplorePointRspOuterClass.GetAreaExplorePointRsp) obj;
 
+      if (!getExplorePointListList()
+          .equals(other.getExplorePointListList())) return false;
       if (!getAreaIdListList()
           .equals(other.getAreaIdListList())) return false;
-      if (!getBAMCGGDJOLHList()
-          .equals(other.getBAMCGGDJOLHList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -423,13 +423,13 @@ public final class GetAreaExplorePointRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getExplorePointListCount() > 0) {
+        hash = (37 * hash) + EXPLORE_POINT_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getExplorePointListList().hashCode();
+      }
       if (getAreaIdListCount() > 0) {
         hash = (37 * hash) + AREA_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAreaIdListList().hashCode();
-      }
-      if (getBAMCGGDJOLHCount() > 0) {
-        hash = (37 * hash) + BAMCGGDJOLH_FIELD_NUMBER;
-        hash = (53 * hash) + getBAMCGGDJOLHList().hashCode();
       }
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
@@ -530,7 +530,7 @@ public final class GetAreaExplorePointRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26852
+     * CmdId: 9845
      * </pre>
      *
      * Protobuf type {@code GetAreaExplorePointRsp}
@@ -570,9 +570,9 @@ public final class GetAreaExplorePointRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        areaIdList_ = emptyIntList();
+        explorePointList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        bAMCGGDJOLH_ = emptyIntList();
+        areaIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         retcode_ = 0;
 
@@ -604,15 +604,15 @@ public final class GetAreaExplorePointRspOuterClass {
         emu.grasscutter.net.proto.GetAreaExplorePointRspOuterClass.GetAreaExplorePointRsp result = new emu.grasscutter.net.proto.GetAreaExplorePointRspOuterClass.GetAreaExplorePointRsp(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          areaIdList_.makeImmutable();
+          explorePointList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.areaIdList_ = areaIdList_;
+        result.explorePointList_ = explorePointList_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          bAMCGGDJOLH_.makeImmutable();
+          areaIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.bAMCGGDJOLH_ = bAMCGGDJOLH_;
+        result.areaIdList_ = areaIdList_;
         result.retcode_ = retcode_;
         onBuilt();
         return result;
@@ -662,23 +662,23 @@ public final class GetAreaExplorePointRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetAreaExplorePointRspOuterClass.GetAreaExplorePointRsp other) {
         if (other == emu.grasscutter.net.proto.GetAreaExplorePointRspOuterClass.GetAreaExplorePointRsp.getDefaultInstance()) return this;
-        if (!other.areaIdList_.isEmpty()) {
-          if (areaIdList_.isEmpty()) {
-            areaIdList_ = other.areaIdList_;
+        if (!other.explorePointList_.isEmpty()) {
+          if (explorePointList_.isEmpty()) {
+            explorePointList_ = other.explorePointList_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureAreaIdListIsMutable();
-            areaIdList_.addAll(other.areaIdList_);
+            ensureExplorePointListIsMutable();
+            explorePointList_.addAll(other.explorePointList_);
           }
           onChanged();
         }
-        if (!other.bAMCGGDJOLH_.isEmpty()) {
-          if (bAMCGGDJOLH_.isEmpty()) {
-            bAMCGGDJOLH_ = other.bAMCGGDJOLH_;
+        if (!other.areaIdList_.isEmpty()) {
+          if (areaIdList_.isEmpty()) {
+            areaIdList_ = other.areaIdList_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureBAMCGGDJOLHIsMutable();
-            bAMCGGDJOLH_.addAll(other.bAMCGGDJOLH_);
+            ensureAreaIdListIsMutable();
+            areaIdList_.addAll(other.areaIdList_);
           }
           onChanged();
         }
@@ -715,32 +715,139 @@ public final class GetAreaExplorePointRspOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList areaIdList_ = emptyIntList();
-      private void ensureAreaIdListIsMutable() {
+      private com.google.protobuf.Internal.IntList explorePointList_ = emptyIntList();
+      private void ensureExplorePointListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          areaIdList_ = mutableCopy(areaIdList_);
+          explorePointList_ = mutableCopy(explorePointList_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 area_id_list = 3;</code>
+       * <code>repeated uint32 explore_point_list = 11;</code>
+       * @return A list containing the explorePointList.
+       */
+      public java.util.List<java.lang.Integer>
+          getExplorePointListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(explorePointList_) : explorePointList_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0    
+       * </pre>
+       *
+       * <code>repeated uint32 explore_point_list = 11;</code>
+       * @return The count of explorePointList.
+       */
+      public int getExplorePointListCount() {
+        return explorePointList_.size();
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0    
+       * </pre>
+       *
+       * <code>repeated uint32 explore_point_list = 11;</code>
+       * @param index The index of the element to return.
+       * @return The explorePointList at the given index.
+       */
+      public int getExplorePointList(int index) {
+        return explorePointList_.getInt(index);
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0    
+       * </pre>
+       *
+       * <code>repeated uint32 explore_point_list = 11;</code>
+       * @param index The index to set the value at.
+       * @param value The explorePointList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setExplorePointList(
+          int index, int value) {
+        ensureExplorePointListIsMutable();
+        explorePointList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0    
+       * </pre>
+       *
+       * <code>repeated uint32 explore_point_list = 11;</code>
+       * @param value The explorePointList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addExplorePointList(int value) {
+        ensureExplorePointListIsMutable();
+        explorePointList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0    
+       * </pre>
+       *
+       * <code>repeated uint32 explore_point_list = 11;</code>
+       * @param values The explorePointList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllExplorePointList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureExplorePointListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, explorePointList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0    
+       * </pre>
+       *
+       * <code>repeated uint32 explore_point_list = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearExplorePointList() {
+        explorePointList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList areaIdList_ = emptyIntList();
+      private void ensureAreaIdListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          areaIdList_ = mutableCopy(areaIdList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0    
+       * </pre>
+       *
+       * <code>repeated uint32 area_id_list = 7;</code>
        * @return A list containing the areaIdList.
        */
       public java.util.List<java.lang.Integer>
           getAreaIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(areaIdList_) : areaIdList_;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 area_id_list = 3;</code>
+       * <code>repeated uint32 area_id_list = 7;</code>
        * @return The count of areaIdList.
        */
       public int getAreaIdListCount() {
@@ -748,10 +855,10 @@ public final class GetAreaExplorePointRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 area_id_list = 3;</code>
+       * <code>repeated uint32 area_id_list = 7;</code>
        * @param index The index of the element to return.
        * @return The areaIdList at the given index.
        */
@@ -760,10 +867,10 @@ public final class GetAreaExplorePointRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 area_id_list = 3;</code>
+       * <code>repeated uint32 area_id_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The areaIdList to set.
        * @return This builder for chaining.
@@ -777,10 +884,10 @@ public final class GetAreaExplorePointRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 area_id_list = 3;</code>
+       * <code>repeated uint32 area_id_list = 7;</code>
        * @param value The areaIdList to add.
        * @return This builder for chaining.
        */
@@ -792,10 +899,10 @@ public final class GetAreaExplorePointRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 area_id_list = 3;</code>
+       * <code>repeated uint32 area_id_list = 7;</code>
        * @param values The areaIdList to add.
        * @return This builder for chaining.
        */
@@ -809,121 +916,14 @@ public final class GetAreaExplorePointRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>repeated uint32 area_id_list = 3;</code>
+       * <code>repeated uint32 area_id_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaIdList() {
         areaIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList bAMCGGDJOLH_ = emptyIntList();
-      private void ensureBAMCGGDJOLHIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          bAMCGGDJOLH_ = mutableCopy(bAMCGGDJOLH_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-       * @return A list containing the bAMCGGDJOLH.
-       */
-      public java.util.List<java.lang.Integer>
-          getBAMCGGDJOLHList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(bAMCGGDJOLH_) : bAMCGGDJOLH_;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-       * @return The count of bAMCGGDJOLH.
-       */
-      public int getBAMCGGDJOLHCount() {
-        return bAMCGGDJOLH_.size();
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-       * @param index The index of the element to return.
-       * @return The bAMCGGDJOLH at the given index.
-       */
-      public int getBAMCGGDJOLH(int index) {
-        return bAMCGGDJOLH_.getInt(index);
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-       * @param index The index to set the value at.
-       * @param value The bAMCGGDJOLH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBAMCGGDJOLH(
-          int index, int value) {
-        ensureBAMCGGDJOLHIsMutable();
-        bAMCGGDJOLH_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-       * @param value The bAMCGGDJOLH to add.
-       * @return This builder for chaining.
-       */
-      public Builder addBAMCGGDJOLH(int value) {
-        ensureBAMCGGDJOLHIsMutable();
-        bAMCGGDJOLH_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-       * @param values The bAMCGGDJOLH to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllBAMCGGDJOLH(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureBAMCGGDJOLHIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, bAMCGGDJOLH_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>repeated uint32 BAMCGGDJOLH = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBAMCGGDJOLH() {
-        bAMCGGDJOLH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -932,10 +932,10 @@ public final class GetAreaExplorePointRspOuterClass {
       private int retcode_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -944,10 +944,10 @@ public final class GetAreaExplorePointRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -959,10 +959,10 @@ public final class GetAreaExplorePointRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -1038,10 +1038,10 @@ public final class GetAreaExplorePointRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034GetAreaExplorePointRsp.proto\"T\n\026GetAre" +
-      "aExplorePointRsp\022\024\n\014area_id_list\030\003 \003(\r\022\023" +
-      "\n\013BAMCGGDJOLH\030\016 \003(\r\022\017\n\007retcode\030\017 \001(\005B\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "\n\034GetAreaExplorePointRsp.proto\"[\n\026GetAre" +
+      "aExplorePointRsp\022\032\n\022explore_point_list\030\013" +
+      " \003(\r\022\024\n\014area_id_list\030\007 \003(\r\022\017\n\007retcode\030\006 " +
+      "\001(\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1052,7 +1052,7 @@ public final class GetAreaExplorePointRspOuterClass {
     internal_static_GetAreaExplorePointRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetAreaExplorePointRsp_descriptor,
-        new java.lang.String[] { "AreaIdList", "BAMCGGDJOLH", "Retcode", });
+        new java.lang.String[] { "ExplorePointList", "AreaIdList", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

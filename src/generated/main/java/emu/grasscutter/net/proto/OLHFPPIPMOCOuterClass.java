@@ -19,28 +19,16 @@ public final class OLHFPPIPMOCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
      * @return A list containing the jJIIBMLIBJC.
      */
     java.util.List<java.lang.Integer> getJJIIBMLIBJCList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
      * @return The count of jJIIBMLIBJC.
      */
     int getJJIIBMLIBJCCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
      * @param index The index of the element to return.
      * @return The jJIIBMLIBJC at the given index.
@@ -48,79 +36,47 @@ public final class OLHFPPIPMOCOuterClass {
     int getJJIIBMLIBJC(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool LBONMKPEFDK = 1;</code>
      * @return The lBONMKPEFDK.
      */
     boolean getLBONMKPEFDK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EJOFCJAAMAF = 6;</code>
      * @return The eJOFCJAAMAF.
      */
     int getEJOFCJAAMAF();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AFOLCHGGNBJ = 10;</code>
      * @return The aFOLCHGGNBJ.
      */
     int getAFOLCHGGNBJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BCIEMCLCDND HPNFNHGAMGA = 8;</code>
      * @return The enum numeric value on the wire for hPNFNHGAMGA.
      */
     int getHPNFNHGAMGAValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BCIEMCLCDND HPNFNHGAMGA = 8;</code>
      * @return The hPNFNHGAMGA.
      */
     emu.grasscutter.net.proto.BCIEMCLCDNDOuterClass.BCIEMCLCDND getHPNFNHGAMGA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MAPILIHJGMM = 5;</code>
      * @return The mAPILIHJGMM.
      */
     int getMAPILIHJGMM();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CECAGFEFJDA = 14;</code>
      * @return The cECAGFEFJDA.
      */
     int getCECAGFEFJDA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PBLFHCLNOEK = 9;</code>
      * @return The pBLFHCLNOEK.
      */
@@ -269,10 +225,6 @@ public final class OLHFPPIPMOCOuterClass {
     public static final int JJIIBMLIBJC_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList jJIIBMLIBJC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
      * @return A list containing the jJIIBMLIBJC.
      */
@@ -282,10 +234,6 @@ public final class OLHFPPIPMOCOuterClass {
       return jJIIBMLIBJC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
      * @return The count of jJIIBMLIBJC.
      */
@@ -293,10 +241,6 @@ public final class OLHFPPIPMOCOuterClass {
       return jJIIBMLIBJC_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
      * @param index The index of the element to return.
      * @return The jJIIBMLIBJC at the given index.
@@ -309,10 +253,6 @@ public final class OLHFPPIPMOCOuterClass {
     public static final int LBONMKPEFDK_FIELD_NUMBER = 1;
     private boolean lBONMKPEFDK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool LBONMKPEFDK = 1;</code>
      * @return The lBONMKPEFDK.
      */
@@ -324,10 +264,6 @@ public final class OLHFPPIPMOCOuterClass {
     public static final int EJOFCJAAMAF_FIELD_NUMBER = 6;
     private int eJOFCJAAMAF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EJOFCJAAMAF = 6;</code>
      * @return The eJOFCJAAMAF.
      */
@@ -339,10 +275,6 @@ public final class OLHFPPIPMOCOuterClass {
     public static final int AFOLCHGGNBJ_FIELD_NUMBER = 10;
     private int aFOLCHGGNBJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AFOLCHGGNBJ = 10;</code>
      * @return The aFOLCHGGNBJ.
      */
@@ -354,10 +286,6 @@ public final class OLHFPPIPMOCOuterClass {
     public static final int HPNFNHGAMGA_FIELD_NUMBER = 8;
     private int hPNFNHGAMGA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BCIEMCLCDND HPNFNHGAMGA = 8;</code>
      * @return The enum numeric value on the wire for hPNFNHGAMGA.
      */
@@ -365,10 +293,6 @@ public final class OLHFPPIPMOCOuterClass {
       return hPNFNHGAMGA_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BCIEMCLCDND HPNFNHGAMGA = 8;</code>
      * @return The hPNFNHGAMGA.
      */
@@ -381,10 +305,6 @@ public final class OLHFPPIPMOCOuterClass {
     public static final int MAPILIHJGMM_FIELD_NUMBER = 5;
     private int mAPILIHJGMM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 MAPILIHJGMM = 5;</code>
      * @return The mAPILIHJGMM.
      */
@@ -396,10 +316,6 @@ public final class OLHFPPIPMOCOuterClass {
     public static final int CECAGFEFJDA_FIELD_NUMBER = 14;
     private int cECAGFEFJDA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CECAGFEFJDA = 14;</code>
      * @return The cECAGFEFJDA.
      */
@@ -411,10 +327,6 @@ public final class OLHFPPIPMOCOuterClass {
     public static final int PBLFHCLNOEK_FIELD_NUMBER = 9;
     private int pBLFHCLNOEK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PBLFHCLNOEK = 9;</code>
      * @return The pBLFHCLNOEK.
      */
@@ -882,10 +794,6 @@ public final class OLHFPPIPMOCOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
        * @return A list containing the jJIIBMLIBJC.
        */
@@ -895,10 +803,6 @@ public final class OLHFPPIPMOCOuterClass {
                  java.util.Collections.unmodifiableList(jJIIBMLIBJC_) : jJIIBMLIBJC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
        * @return The count of jJIIBMLIBJC.
        */
@@ -906,10 +810,6 @@ public final class OLHFPPIPMOCOuterClass {
         return jJIIBMLIBJC_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
        * @param index The index of the element to return.
        * @return The jJIIBMLIBJC at the given index.
@@ -918,10 +818,6 @@ public final class OLHFPPIPMOCOuterClass {
         return jJIIBMLIBJC_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
        * @param index The index to set the value at.
        * @param value The jJIIBMLIBJC to set.
@@ -935,10 +831,6 @@ public final class OLHFPPIPMOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
        * @param value The jJIIBMLIBJC to add.
        * @return This builder for chaining.
@@ -950,10 +842,6 @@ public final class OLHFPPIPMOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
        * @param values The jJIIBMLIBJC to add.
        * @return This builder for chaining.
@@ -967,10 +855,6 @@ public final class OLHFPPIPMOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 JJIIBMLIBJC = 7;</code>
        * @return This builder for chaining.
        */
@@ -983,10 +867,6 @@ public final class OLHFPPIPMOCOuterClass {
 
       private boolean lBONMKPEFDK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LBONMKPEFDK = 1;</code>
        * @return The lBONMKPEFDK.
        */
@@ -995,10 +875,6 @@ public final class OLHFPPIPMOCOuterClass {
         return lBONMKPEFDK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LBONMKPEFDK = 1;</code>
        * @param value The lBONMKPEFDK to set.
        * @return This builder for chaining.
@@ -1010,10 +886,6 @@ public final class OLHFPPIPMOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool LBONMKPEFDK = 1;</code>
        * @return This builder for chaining.
        */
@@ -1026,10 +898,6 @@ public final class OLHFPPIPMOCOuterClass {
 
       private int eJOFCJAAMAF_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EJOFCJAAMAF = 6;</code>
        * @return The eJOFCJAAMAF.
        */
@@ -1038,10 +906,6 @@ public final class OLHFPPIPMOCOuterClass {
         return eJOFCJAAMAF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EJOFCJAAMAF = 6;</code>
        * @param value The eJOFCJAAMAF to set.
        * @return This builder for chaining.
@@ -1053,10 +917,6 @@ public final class OLHFPPIPMOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EJOFCJAAMAF = 6;</code>
        * @return This builder for chaining.
        */
@@ -1069,10 +929,6 @@ public final class OLHFPPIPMOCOuterClass {
 
       private int aFOLCHGGNBJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AFOLCHGGNBJ = 10;</code>
        * @return The aFOLCHGGNBJ.
        */
@@ -1081,10 +937,6 @@ public final class OLHFPPIPMOCOuterClass {
         return aFOLCHGGNBJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AFOLCHGGNBJ = 10;</code>
        * @param value The aFOLCHGGNBJ to set.
        * @return This builder for chaining.
@@ -1096,10 +948,6 @@ public final class OLHFPPIPMOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AFOLCHGGNBJ = 10;</code>
        * @return This builder for chaining.
        */
@@ -1112,10 +960,6 @@ public final class OLHFPPIPMOCOuterClass {
 
       private int hPNFNHGAMGA_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BCIEMCLCDND HPNFNHGAMGA = 8;</code>
        * @return The enum numeric value on the wire for hPNFNHGAMGA.
        */
@@ -1123,10 +967,6 @@ public final class OLHFPPIPMOCOuterClass {
         return hPNFNHGAMGA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BCIEMCLCDND HPNFNHGAMGA = 8;</code>
        * @param value The enum numeric value on the wire for hPNFNHGAMGA to set.
        * @return This builder for chaining.
@@ -1138,10 +978,6 @@ public final class OLHFPPIPMOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BCIEMCLCDND HPNFNHGAMGA = 8;</code>
        * @return The hPNFNHGAMGA.
        */
@@ -1152,10 +988,6 @@ public final class OLHFPPIPMOCOuterClass {
         return result == null ? emu.grasscutter.net.proto.BCIEMCLCDNDOuterClass.BCIEMCLCDND.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BCIEMCLCDND HPNFNHGAMGA = 8;</code>
        * @param value The hPNFNHGAMGA to set.
        * @return This builder for chaining.
@@ -1170,10 +1002,6 @@ public final class OLHFPPIPMOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BCIEMCLCDND HPNFNHGAMGA = 8;</code>
        * @return This builder for chaining.
        */
@@ -1186,10 +1014,6 @@ public final class OLHFPPIPMOCOuterClass {
 
       private int mAPILIHJGMM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MAPILIHJGMM = 5;</code>
        * @return The mAPILIHJGMM.
        */
@@ -1198,10 +1022,6 @@ public final class OLHFPPIPMOCOuterClass {
         return mAPILIHJGMM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MAPILIHJGMM = 5;</code>
        * @param value The mAPILIHJGMM to set.
        * @return This builder for chaining.
@@ -1213,10 +1033,6 @@ public final class OLHFPPIPMOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 MAPILIHJGMM = 5;</code>
        * @return This builder for chaining.
        */
@@ -1229,10 +1045,6 @@ public final class OLHFPPIPMOCOuterClass {
 
       private int cECAGFEFJDA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CECAGFEFJDA = 14;</code>
        * @return The cECAGFEFJDA.
        */
@@ -1241,10 +1053,6 @@ public final class OLHFPPIPMOCOuterClass {
         return cECAGFEFJDA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CECAGFEFJDA = 14;</code>
        * @param value The cECAGFEFJDA to set.
        * @return This builder for chaining.
@@ -1256,10 +1064,6 @@ public final class OLHFPPIPMOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CECAGFEFJDA = 14;</code>
        * @return This builder for chaining.
        */
@@ -1272,10 +1076,6 @@ public final class OLHFPPIPMOCOuterClass {
 
       private int pBLFHCLNOEK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PBLFHCLNOEK = 9;</code>
        * @return The pBLFHCLNOEK.
        */
@@ -1284,10 +1084,6 @@ public final class OLHFPPIPMOCOuterClass {
         return pBLFHCLNOEK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PBLFHCLNOEK = 9;</code>
        * @param value The pBLFHCLNOEK to set.
        * @return This builder for chaining.
@@ -1299,10 +1095,6 @@ public final class OLHFPPIPMOCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PBLFHCLNOEK = 9;</code>
        * @return This builder for chaining.
        */

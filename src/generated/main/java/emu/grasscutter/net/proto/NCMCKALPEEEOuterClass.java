@@ -19,28 +19,16 @@ public final class NCMCKALPEEEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLPOFCOODJL = 12;</code>
      * @return A list containing the hLPOFCOODJL.
      */
     java.util.List<java.lang.Integer> getHLPOFCOODJLList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLPOFCOODJL = 12;</code>
      * @return The count of hLPOFCOODJL.
      */
     int getHLPOFCOODJLCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLPOFCOODJL = 12;</code>
      * @param index The index of the element to return.
      * @return The hLPOFCOODJL at the given index.
@@ -48,67 +36,39 @@ public final class NCMCKALPEEEOuterClass {
     int getHLPOFCOODJL(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 15;</code>
      * @return Whether the center field is set.
      */
     boolean hasCenter();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 15;</code>
      * @return The center.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 15;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 13;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LNCDLHAFFKE = 8;</code>
      * @return The lNCDLHAFFKE.
      */
     int getLNCDLHAFFKE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JAMNIKAJCCI = 9;</code>
      * @return The jAMNIKAJCCI.
      */
@@ -253,10 +213,6 @@ public final class NCMCKALPEEEOuterClass {
     public static final int HLPOFCOODJL_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList hLPOFCOODJL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLPOFCOODJL = 12;</code>
      * @return A list containing the hLPOFCOODJL.
      */
@@ -266,10 +222,6 @@ public final class NCMCKALPEEEOuterClass {
       return hLPOFCOODJL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLPOFCOODJL = 12;</code>
      * @return The count of hLPOFCOODJL.
      */
@@ -277,10 +229,6 @@ public final class NCMCKALPEEEOuterClass {
       return hLPOFCOODJL_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 HLPOFCOODJL = 12;</code>
      * @param index The index of the element to return.
      * @return The hLPOFCOODJL at the given index.
@@ -293,10 +241,6 @@ public final class NCMCKALPEEEOuterClass {
     public static final int CENTER_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 15;</code>
      * @return Whether the center field is set.
      */
@@ -305,10 +249,6 @@ public final class NCMCKALPEEEOuterClass {
       return center_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 15;</code>
      * @return The center.
      */
@@ -317,10 +257,6 @@ public final class NCMCKALPEEEOuterClass {
       return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 15;</code>
      */
     @java.lang.Override
@@ -331,10 +267,6 @@ public final class NCMCKALPEEEOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 13;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 13;</code>
      * @return The openTime.
      */
@@ -346,10 +278,6 @@ public final class NCMCKALPEEEOuterClass {
     public static final int LNCDLHAFFKE_FIELD_NUMBER = 8;
     private int lNCDLHAFFKE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LNCDLHAFFKE = 8;</code>
      * @return The lNCDLHAFFKE.
      */
@@ -361,10 +289,6 @@ public final class NCMCKALPEEEOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -376,10 +300,6 @@ public final class NCMCKALPEEEOuterClass {
     public static final int JAMNIKAJCCI_FIELD_NUMBER = 9;
     private boolean jAMNIKAJCCI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JAMNIKAJCCI = 9;</code>
      * @return The jAMNIKAJCCI.
      */
@@ -828,10 +748,6 @@ public final class NCMCKALPEEEOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLPOFCOODJL = 12;</code>
        * @return A list containing the hLPOFCOODJL.
        */
@@ -841,10 +757,6 @@ public final class NCMCKALPEEEOuterClass {
                  java.util.Collections.unmodifiableList(hLPOFCOODJL_) : hLPOFCOODJL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLPOFCOODJL = 12;</code>
        * @return The count of hLPOFCOODJL.
        */
@@ -852,10 +764,6 @@ public final class NCMCKALPEEEOuterClass {
         return hLPOFCOODJL_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLPOFCOODJL = 12;</code>
        * @param index The index of the element to return.
        * @return The hLPOFCOODJL at the given index.
@@ -864,10 +772,6 @@ public final class NCMCKALPEEEOuterClass {
         return hLPOFCOODJL_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLPOFCOODJL = 12;</code>
        * @param index The index to set the value at.
        * @param value The hLPOFCOODJL to set.
@@ -881,10 +785,6 @@ public final class NCMCKALPEEEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLPOFCOODJL = 12;</code>
        * @param value The hLPOFCOODJL to add.
        * @return This builder for chaining.
@@ -896,10 +796,6 @@ public final class NCMCKALPEEEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLPOFCOODJL = 12;</code>
        * @param values The hLPOFCOODJL to add.
        * @return This builder for chaining.
@@ -913,10 +809,6 @@ public final class NCMCKALPEEEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 HLPOFCOODJL = 12;</code>
        * @return This builder for chaining.
        */
@@ -931,10 +823,6 @@ public final class NCMCKALPEEEOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> centerBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 15;</code>
        * @return Whether the center field is set.
        */
@@ -942,10 +830,6 @@ public final class NCMCKALPEEEOuterClass {
         return centerBuilder_ != null || center_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 15;</code>
        * @return The center.
        */
@@ -957,10 +841,6 @@ public final class NCMCKALPEEEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 15;</code>
        */
       public Builder setCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -977,10 +857,6 @@ public final class NCMCKALPEEEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 15;</code>
        */
       public Builder setCenter(
@@ -995,10 +871,6 @@ public final class NCMCKALPEEEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 15;</code>
        */
       public Builder mergeCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -1017,10 +889,6 @@ public final class NCMCKALPEEEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 15;</code>
        */
       public Builder clearCenter() {
@@ -1035,10 +903,6 @@ public final class NCMCKALPEEEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCenterBuilder() {
@@ -1047,10 +911,6 @@ public final class NCMCKALPEEEOuterClass {
         return getCenterFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
@@ -1062,10 +922,6 @@ public final class NCMCKALPEEEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1084,10 +940,6 @@ public final class NCMCKALPEEEOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @return The openTime.
        */
@@ -1096,10 +948,6 @@ public final class NCMCKALPEEEOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -1111,10 +959,6 @@ public final class NCMCKALPEEEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 13;</code>
        * @return This builder for chaining.
        */
@@ -1127,10 +971,6 @@ public final class NCMCKALPEEEOuterClass {
 
       private int lNCDLHAFFKE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LNCDLHAFFKE = 8;</code>
        * @return The lNCDLHAFFKE.
        */
@@ -1139,10 +979,6 @@ public final class NCMCKALPEEEOuterClass {
         return lNCDLHAFFKE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LNCDLHAFFKE = 8;</code>
        * @param value The lNCDLHAFFKE to set.
        * @return This builder for chaining.
@@ -1154,10 +990,6 @@ public final class NCMCKALPEEEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LNCDLHAFFKE = 8;</code>
        * @return This builder for chaining.
        */
@@ -1170,10 +1002,6 @@ public final class NCMCKALPEEEOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
@@ -1182,10 +1010,6 @@ public final class NCMCKALPEEEOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1197,10 +1021,6 @@ public final class NCMCKALPEEEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
@@ -1213,10 +1033,6 @@ public final class NCMCKALPEEEOuterClass {
 
       private boolean jAMNIKAJCCI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JAMNIKAJCCI = 9;</code>
        * @return The jAMNIKAJCCI.
        */
@@ -1225,10 +1041,6 @@ public final class NCMCKALPEEEOuterClass {
         return jAMNIKAJCCI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JAMNIKAJCCI = 9;</code>
        * @param value The jAMNIKAJCCI to set.
        * @return This builder for chaining.
@@ -1240,10 +1052,6 @@ public final class NCMCKALPEEEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JAMNIKAJCCI = 9;</code>
        * @return This builder for chaining.
        */

@@ -19,53 +19,33 @@ public final class CGDCBNLKKHBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 6;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 12;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 12;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 7;</code>
      * @return The id.
      */
@@ -141,7 +121,7 @@ public final class CGDCBNLKKHBOuterClass {
             }
             case 96: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -179,10 +159,6 @@ public final class CGDCBNLKKHBOuterClass {
     public static final int POS_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      * @return Whether the pos field is set.
      */
@@ -191,10 +167,6 @@ public final class CGDCBNLKKHBOuterClass {
       return pos_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      * @return The pos.
      */
@@ -203,10 +175,6 @@ public final class CGDCBNLKKHBOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector pos = 9;</code>
      */
     @java.lang.Override
@@ -217,10 +185,6 @@ public final class CGDCBNLKKHBOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 6;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 6;</code>
      * @return The openTime.
      */
@@ -229,24 +193,20 @@ public final class CGDCBNLKKHBOuterClass {
       return openTime_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 12;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 12;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 12;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 12;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     public static final int ID_FIELD_NUMBER = 7;
     private int id_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 7;</code>
      * @return The id.
      */
@@ -278,8 +238,8 @@ public final class CGDCBNLKKHBOuterClass {
       if (pos_ != null) {
         output.writeMessage(9, getPos());
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(12, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(12, ugcGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -302,9 +262,9 @@ public final class CGDCBNLKKHBOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, getPos());
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, iFADGMHEFHF_);
+          .computeUInt32Size(12, ugcGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -328,8 +288,8 @@ public final class CGDCBNLKKHBOuterClass {
       }
       if (getOpenTime()
           != other.getOpenTime()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (getId()
           != other.getId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -349,8 +309,8 @@ public final class CGDCBNLKKHBOuterClass {
       }
       hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getOpenTime();
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -494,7 +454,7 @@ public final class CGDCBNLKKHBOuterClass {
         }
         openTime_ = 0;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         id_ = 0;
 
@@ -530,7 +490,7 @@ public final class CGDCBNLKKHBOuterClass {
           result.pos_ = posBuilder_.build();
         }
         result.openTime_ = openTime_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         result.id_ = id_;
         onBuilt();
         return result;
@@ -586,8 +546,8 @@ public final class CGDCBNLKKHBOuterClass {
         if (other.getOpenTime() != 0) {
           setOpenTime(other.getOpenTime());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         if (other.getId() != 0) {
           setId(other.getId());
@@ -625,10 +585,6 @@ public final class CGDCBNLKKHBOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        * @return Whether the pos field is set.
        */
@@ -636,10 +592,6 @@ public final class CGDCBNLKKHBOuterClass {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        * @return The pos.
        */
@@ -651,10 +603,6 @@ public final class CGDCBNLKKHBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -671,10 +619,6 @@ public final class CGDCBNLKKHBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder setPos(
@@ -689,10 +633,6 @@ public final class CGDCBNLKKHBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -711,10 +651,6 @@ public final class CGDCBNLKKHBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public Builder clearPos() {
@@ -729,10 +665,6 @@ public final class CGDCBNLKKHBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
@@ -741,10 +673,6 @@ public final class CGDCBNLKKHBOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -756,10 +684,6 @@ public final class CGDCBNLKKHBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector pos = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -778,10 +702,6 @@ public final class CGDCBNLKKHBOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 6;</code>
        * @return The openTime.
        */
@@ -790,10 +710,6 @@ public final class CGDCBNLKKHBOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 6;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -805,10 +721,6 @@ public final class CGDCBNLKKHBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 6;</code>
        * @return This builder for chaining.
        */
@@ -819,43 +731,39 @@ public final class CGDCBNLKKHBOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 12;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 12;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 12;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 12;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 12;</code>
+       * <code>uint32 ugc_guid = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
       private int id_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 7;</code>
        * @return The id.
        */
@@ -864,10 +772,6 @@ public final class CGDCBNLKKHBOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 7;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -879,10 +783,6 @@ public final class CGDCBNLKKHBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 7;</code>
        * @return This builder for chaining.
        */
@@ -959,10 +859,10 @@ public final class CGDCBNLKKHBOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021CGDCBNLKKHB.proto\032\014Vector.proto\"W\n\013CGD" +
+      "\n\021CGDCBNLKKHB.proto\032\014Vector.proto\"T\n\013CGD" +
       "CBNLKKHB\022\024\n\003pos\030\t \001(\0132\007.Vector\022\021\n\topen_t" +
-      "ime\030\006 \001(\r\022\023\n\013IFADGMHEFHF\030\014 \001(\r\022\n\n\002id\030\007 \001" +
-      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "ime\030\006 \001(\r\022\020\n\010ugc_guid\030\014 \001(\r\022\n\n\002id\030\007 \001(\rB" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -974,7 +874,7 @@ public final class CGDCBNLKKHBOuterClass {
     internal_static_CGDCBNLKKHB_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CGDCBNLKKHB_descriptor,
-        new java.lang.String[] { "Pos", "OpenTime", "IFADGMHEFHF", "Id", });
+        new java.lang.String[] { "Pos", "OpenTime", "UgcGuid", "Id", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

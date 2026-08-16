@@ -19,56 +19,40 @@ public final class HomeAvatarRewardEventInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 guid = 14;</code>
+     * <code>uint32 guid = 11;</code>
      * @return The guid.
      */
     int getGuid();
 
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 avatar_id = 8;</code>
-     * @return The avatarId.
-     */
-    int getAvatarId();
-
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 event_id = 1;</code>
+     * <code>uint32 event_id = 8;</code>
      * @return The eventId.
      */
     int getEventId();
 
     /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>uint32 suite_id = 6;</code>
+     * <code>uint32 avatar_id = 5;</code>
+     * @return The avatarId.
+     */
+    int getAvatarId();
+
+    /**
+     * <code>uint32 random_position = 1;</code>
+     * @return The randomPosition.
+     */
+    int getRandomPosition();
+
+    /**
+     * <code>uint32 suite_id = 3;</code>
      * @return The suiteId.
      */
     int getSuiteId();
-
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>uint32 JPHCKNDFKFA = 7;</code>
-     * @return The jPHCKNDFKFA.
-     */
-    int getJPHCKNDFKFA();
   }
   /**
+   * <pre>
+   * Obf: HOLFHPKHFLL
+   * </pre>
+   *
    * Protobuf type {@code HomeAvatarRewardEventInfo}
    */
   public static final class HomeAvatarRewardEventInfo extends
@@ -115,25 +99,25 @@ public final class HomeAvatarRewardEventInfoOuterClass {
               break;
             case 8: {
 
-              eventId_ = input.readUInt32();
+              randomPosition_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 24: {
 
               suiteId_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              jPHCKNDFKFA_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 40: {
 
               avatarId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 64: {
+
+              eventId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
 
               guid_ = input.readUInt32();
               break;
@@ -170,14 +154,10 @@ public final class HomeAvatarRewardEventInfoOuterClass {
               emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.class, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder.class);
     }
 
-    public static final int GUID_FIELD_NUMBER = 14;
+    public static final int GUID_FIELD_NUMBER = 11;
     private int guid_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 guid = 14;</code>
+     * <code>uint32 guid = 11;</code>
      * @return The guid.
      */
     @java.lang.Override
@@ -185,29 +165,10 @@ public final class HomeAvatarRewardEventInfoOuterClass {
       return guid_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 8;
-    private int avatarId_;
-    /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 avatar_id = 8;</code>
-     * @return The avatarId.
-     */
-    @java.lang.Override
-    public int getAvatarId() {
-      return avatarId_;
-    }
-
-    public static final int EVENT_ID_FIELD_NUMBER = 1;
+    public static final int EVENT_ID_FIELD_NUMBER = 8;
     private int eventId_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>uint32 event_id = 1;</code>
+     * <code>uint32 event_id = 8;</code>
      * @return The eventId.
      */
     @java.lang.Override
@@ -215,34 +176,37 @@ public final class HomeAvatarRewardEventInfoOuterClass {
       return eventId_;
     }
 
-    public static final int SUITE_ID_FIELD_NUMBER = 6;
+    public static final int AVATAR_ID_FIELD_NUMBER = 5;
+    private int avatarId_;
+    /**
+     * <code>uint32 avatar_id = 5;</code>
+     * @return The avatarId.
+     */
+    @java.lang.Override
+    public int getAvatarId() {
+      return avatarId_;
+    }
+
+    public static final int RANDOM_POSITION_FIELD_NUMBER = 1;
+    private int randomPosition_;
+    /**
+     * <code>uint32 random_position = 1;</code>
+     * @return The randomPosition.
+     */
+    @java.lang.Override
+    public int getRandomPosition() {
+      return randomPosition_;
+    }
+
+    public static final int SUITE_ID_FIELD_NUMBER = 3;
     private int suiteId_;
     /**
-     * <pre>
-     * offset: 44
-     * </pre>
-     *
-     * <code>uint32 suite_id = 6;</code>
+     * <code>uint32 suite_id = 3;</code>
      * @return The suiteId.
      */
     @java.lang.Override
     public int getSuiteId() {
       return suiteId_;
-    }
-
-    public static final int JPHCKNDFKFA_FIELD_NUMBER = 7;
-    private int jPHCKNDFKFA_;
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>uint32 JPHCKNDFKFA = 7;</code>
-     * @return The jPHCKNDFKFA.
-     */
-    @java.lang.Override
-    public int getJPHCKNDFKFA() {
-      return jPHCKNDFKFA_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -259,20 +223,20 @@ public final class HomeAvatarRewardEventInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (eventId_ != 0) {
-        output.writeUInt32(1, eventId_);
+      if (randomPosition_ != 0) {
+        output.writeUInt32(1, randomPosition_);
       }
       if (suiteId_ != 0) {
-        output.writeUInt32(6, suiteId_);
-      }
-      if (jPHCKNDFKFA_ != 0) {
-        output.writeUInt32(7, jPHCKNDFKFA_);
+        output.writeUInt32(3, suiteId_);
       }
       if (avatarId_ != 0) {
-        output.writeUInt32(8, avatarId_);
+        output.writeUInt32(5, avatarId_);
+      }
+      if (eventId_ != 0) {
+        output.writeUInt32(8, eventId_);
       }
       if (guid_ != 0) {
-        output.writeUInt32(14, guid_);
+        output.writeUInt32(11, guid_);
       }
       unknownFields.writeTo(output);
     }
@@ -283,25 +247,25 @@ public final class HomeAvatarRewardEventInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eventId_ != 0) {
+      if (randomPosition_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, eventId_);
+          .computeUInt32Size(1, randomPosition_);
       }
       if (suiteId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, suiteId_);
-      }
-      if (jPHCKNDFKFA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, jPHCKNDFKFA_);
+          .computeUInt32Size(3, suiteId_);
       }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, avatarId_);
+          .computeUInt32Size(5, avatarId_);
+      }
+      if (eventId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, eventId_);
       }
       if (guid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, guid_);
+          .computeUInt32Size(11, guid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -320,14 +284,14 @@ public final class HomeAvatarRewardEventInfoOuterClass {
 
       if (getGuid()
           != other.getGuid()) return false;
-      if (getAvatarId()
-          != other.getAvatarId()) return false;
       if (getEventId()
           != other.getEventId()) return false;
+      if (getAvatarId()
+          != other.getAvatarId()) return false;
+      if (getRandomPosition()
+          != other.getRandomPosition()) return false;
       if (getSuiteId()
           != other.getSuiteId()) return false;
-      if (getJPHCKNDFKFA()
-          != other.getJPHCKNDFKFA()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -341,14 +305,14 @@ public final class HomeAvatarRewardEventInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + getGuid();
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarId();
       hash = (37 * hash) + EVENT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEventId();
+      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + RANDOM_POSITION_FIELD_NUMBER;
+      hash = (53 * hash) + getRandomPosition();
       hash = (37 * hash) + SUITE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSuiteId();
-      hash = (37 * hash) + JPHCKNDFKFA_FIELD_NUMBER;
-      hash = (53 * hash) + getJPHCKNDFKFA();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -445,6 +409,10 @@ public final class HomeAvatarRewardEventInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: HOLFHPKHFLL
+     * </pre>
+     *
      * Protobuf type {@code HomeAvatarRewardEventInfo}
      */
     public static final class Builder extends
@@ -484,13 +452,13 @@ public final class HomeAvatarRewardEventInfoOuterClass {
         super.clear();
         guid_ = 0;
 
-        avatarId_ = 0;
-
         eventId_ = 0;
 
-        suiteId_ = 0;
+        avatarId_ = 0;
 
-        jPHCKNDFKFA_ = 0;
+        randomPosition_ = 0;
+
+        suiteId_ = 0;
 
         return this;
       }
@@ -519,10 +487,10 @@ public final class HomeAvatarRewardEventInfoOuterClass {
       public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo buildPartial() {
         emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo result = new emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo(this);
         result.guid_ = guid_;
-        result.avatarId_ = avatarId_;
         result.eventId_ = eventId_;
+        result.avatarId_ = avatarId_;
+        result.randomPosition_ = randomPosition_;
         result.suiteId_ = suiteId_;
-        result.jPHCKNDFKFA_ = jPHCKNDFKFA_;
         onBuilt();
         return result;
       }
@@ -574,17 +542,17 @@ public final class HomeAvatarRewardEventInfoOuterClass {
         if (other.getGuid() != 0) {
           setGuid(other.getGuid());
         }
-        if (other.getAvatarId() != 0) {
-          setAvatarId(other.getAvatarId());
-        }
         if (other.getEventId() != 0) {
           setEventId(other.getEventId());
         }
+        if (other.getAvatarId() != 0) {
+          setAvatarId(other.getAvatarId());
+        }
+        if (other.getRandomPosition() != 0) {
+          setRandomPosition(other.getRandomPosition());
+        }
         if (other.getSuiteId() != 0) {
           setSuiteId(other.getSuiteId());
-        }
-        if (other.getJPHCKNDFKFA() != 0) {
-          setJPHCKNDFKFA(other.getJPHCKNDFKFA());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -617,11 +585,7 @@ public final class HomeAvatarRewardEventInfoOuterClass {
 
       private int guid_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 guid = 14;</code>
+       * <code>uint32 guid = 11;</code>
        * @return The guid.
        */
       @java.lang.Override
@@ -629,11 +593,7 @@ public final class HomeAvatarRewardEventInfoOuterClass {
         return guid_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 guid = 14;</code>
+       * <code>uint32 guid = 11;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
        */
@@ -644,11 +604,7 @@ public final class HomeAvatarRewardEventInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 guid = 14;</code>
+       * <code>uint32 guid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
@@ -658,56 +614,9 @@ public final class HomeAvatarRewardEventInfoOuterClass {
         return this;
       }
 
-      private int avatarId_ ;
-      /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 avatar_id = 8;</code>
-       * @return The avatarId.
-       */
-      @java.lang.Override
-      public int getAvatarId() {
-        return avatarId_;
-      }
-      /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 avatar_id = 8;</code>
-       * @param value The avatarId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarId(int value) {
-        
-        avatarId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 avatar_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarId() {
-        
-        avatarId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int eventId_ ;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 event_id = 1;</code>
+       * <code>uint32 event_id = 8;</code>
        * @return The eventId.
        */
       @java.lang.Override
@@ -715,11 +624,7 @@ public final class HomeAvatarRewardEventInfoOuterClass {
         return eventId_;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 event_id = 1;</code>
+       * <code>uint32 event_id = 8;</code>
        * @param value The eventId to set.
        * @return This builder for chaining.
        */
@@ -730,11 +635,7 @@ public final class HomeAvatarRewardEventInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>uint32 event_id = 1;</code>
+       * <code>uint32 event_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearEventId() {
@@ -744,13 +645,71 @@ public final class HomeAvatarRewardEventInfoOuterClass {
         return this;
       }
 
+      private int avatarId_ ;
+      /**
+       * <code>uint32 avatar_id = 5;</code>
+       * @return The avatarId.
+       */
+      @java.lang.Override
+      public int getAvatarId() {
+        return avatarId_;
+      }
+      /**
+       * <code>uint32 avatar_id = 5;</code>
+       * @param value The avatarId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarId(int value) {
+        
+        avatarId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 avatar_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarId() {
+        
+        avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int randomPosition_ ;
+      /**
+       * <code>uint32 random_position = 1;</code>
+       * @return The randomPosition.
+       */
+      @java.lang.Override
+      public int getRandomPosition() {
+        return randomPosition_;
+      }
+      /**
+       * <code>uint32 random_position = 1;</code>
+       * @param value The randomPosition to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRandomPosition(int value) {
+        
+        randomPosition_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 random_position = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRandomPosition() {
+        
+        randomPosition_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int suiteId_ ;
       /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 suite_id = 6;</code>
+       * <code>uint32 suite_id = 3;</code>
        * @return The suiteId.
        */
       @java.lang.Override
@@ -758,11 +717,7 @@ public final class HomeAvatarRewardEventInfoOuterClass {
         return suiteId_;
       }
       /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 suite_id = 6;</code>
+       * <code>uint32 suite_id = 3;</code>
        * @param value The suiteId to set.
        * @return This builder for chaining.
        */
@@ -773,59 +728,12 @@ public final class HomeAvatarRewardEventInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 44
-       * </pre>
-       *
-       * <code>uint32 suite_id = 6;</code>
+       * <code>uint32 suite_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSuiteId() {
         
         suiteId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int jPHCKNDFKFA_ ;
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>uint32 JPHCKNDFKFA = 7;</code>
-       * @return The jPHCKNDFKFA.
-       */
-      @java.lang.Override
-      public int getJPHCKNDFKFA() {
-        return jPHCKNDFKFA_;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>uint32 JPHCKNDFKFA = 7;</code>
-       * @param value The jPHCKNDFKFA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJPHCKNDFKFA(int value) {
-        
-        jPHCKNDFKFA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>uint32 JPHCKNDFKFA = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJPHCKNDFKFA() {
-        
-        jPHCKNDFKFA_ = 0;
         onChanged();
         return this;
       }
@@ -896,11 +804,11 @@ public final class HomeAvatarRewardEventInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037HomeAvatarRewardEventInfo.proto\"u\n\031Hom" +
-      "eAvatarRewardEventInfo\022\014\n\004guid\030\016 \001(\r\022\021\n\t" +
-      "avatar_id\030\010 \001(\r\022\020\n\010event_id\030\001 \001(\r\022\020\n\010sui" +
-      "te_id\030\006 \001(\r\022\023\n\013JPHCKNDFKFA\030\007 \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\037HomeAvatarRewardEventInfo.proto\"y\n\031Hom" +
+      "eAvatarRewardEventInfo\022\014\n\004guid\030\013 \001(\r\022\020\n\010" +
+      "event_id\030\010 \001(\r\022\021\n\tavatar_id\030\005 \001(\r\022\027\n\017ran" +
+      "dom_position\030\001 \001(\r\022\020\n\010suite_id\030\003 \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -911,7 +819,7 @@ public final class HomeAvatarRewardEventInfoOuterClass {
     internal_static_HomeAvatarRewardEventInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeAvatarRewardEventInfo_descriptor,
-        new java.lang.String[] { "Guid", "AvatarId", "EventId", "SuiteId", "JPHCKNDFKFA", });
+        new java.lang.String[] { "Guid", "EventId", "AvatarId", "RandomPosition", "SuiteId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,28 +19,16 @@ public final class OLEECNGDJAJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AOIINLGFCDE = 10;</code>
      * @return A list containing the aOIINLGFCDE.
      */
     java.util.List<java.lang.Integer> getAOIINLGFCDEList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AOIINLGFCDE = 10;</code>
      * @return The count of aOIINLGFCDE.
      */
     int getAOIINLGFCDECount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AOIINLGFCDE = 10;</code>
      * @param index The index of the element to return.
      * @return The aOIINLGFCDE at the given index.
@@ -48,28 +36,16 @@ public final class OLEECNGDJAJOuterClass {
     int getAOIINLGFCDE(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 6;</code>
      * @return A list containing the oKHHCHLABNF.
      */
     java.util.List<java.lang.Integer> getOKHHCHLABNFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 6;</code>
      * @return The count of oKHHCHLABNF.
      */
     int getOKHHCHLABNFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 6;</code>
      * @param index The index of the element to return.
      * @return The oKHHCHLABNF at the given index.
@@ -77,69 +53,41 @@ public final class OLEECNGDJAJOuterClass {
     int getOKHHCHLABNF(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PGFCHCFNMOL = 9;</code>
      * @return The pGFCHCFNMOL.
      */
     int getPGFCHCFNMOL();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KHJOGDOHFPJ = 7;</code>
      * @return The kHJOGDOHFPJ.
      */
     int getKHJOGDOHFPJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 8;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFCOJBIIADM OFJEHFIAOFH = 4;</code>
      * @return The enum numeric value on the wire for oFJEHFIAOFH.
      */
     int getOFJEHFIAOFHValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFCOJBIIADM OFJEHFIAOFH = 4;</code>
      * @return The oFJEHFIAOFH.
      */
     emu.grasscutter.net.proto.IFCOJBIIADMOuterClass.IFCOJBIIADM getOFJEHFIAOFH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FMMKCGAIHCH = 1;</code>
      * @return The fMMKCGAIHCH.
      */
     boolean getFMMKCGAIHCH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HFBLBLAALMN = 2;</code>
      * @return The hFBLBLAALMN.
      */
@@ -308,10 +256,6 @@ public final class OLEECNGDJAJOuterClass {
     public static final int AOIINLGFCDE_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList aOIINLGFCDE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AOIINLGFCDE = 10;</code>
      * @return A list containing the aOIINLGFCDE.
      */
@@ -321,10 +265,6 @@ public final class OLEECNGDJAJOuterClass {
       return aOIINLGFCDE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AOIINLGFCDE = 10;</code>
      * @return The count of aOIINLGFCDE.
      */
@@ -332,10 +272,6 @@ public final class OLEECNGDJAJOuterClass {
       return aOIINLGFCDE_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AOIINLGFCDE = 10;</code>
      * @param index The index of the element to return.
      * @return The aOIINLGFCDE at the given index.
@@ -348,10 +284,6 @@ public final class OLEECNGDJAJOuterClass {
     public static final int OKHHCHLABNF_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList oKHHCHLABNF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 6;</code>
      * @return A list containing the oKHHCHLABNF.
      */
@@ -361,10 +293,6 @@ public final class OLEECNGDJAJOuterClass {
       return oKHHCHLABNF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 6;</code>
      * @return The count of oKHHCHLABNF.
      */
@@ -372,10 +300,6 @@ public final class OLEECNGDJAJOuterClass {
       return oKHHCHLABNF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 6;</code>
      * @param index The index of the element to return.
      * @return The oKHHCHLABNF at the given index.
@@ -388,10 +312,6 @@ public final class OLEECNGDJAJOuterClass {
     public static final int PGFCHCFNMOL_FIELD_NUMBER = 9;
     private int pGFCHCFNMOL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PGFCHCFNMOL = 9;</code>
      * @return The pGFCHCFNMOL.
      */
@@ -403,10 +323,6 @@ public final class OLEECNGDJAJOuterClass {
     public static final int KHJOGDOHFPJ_FIELD_NUMBER = 7;
     private int kHJOGDOHFPJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KHJOGDOHFPJ = 7;</code>
      * @return The kHJOGDOHFPJ.
      */
@@ -418,10 +334,6 @@ public final class OLEECNGDJAJOuterClass {
     public static final int ID_FIELD_NUMBER = 8;
     private int id_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 8;</code>
      * @return The id.
      */
@@ -433,10 +345,6 @@ public final class OLEECNGDJAJOuterClass {
     public static final int OFJEHFIAOFH_FIELD_NUMBER = 4;
     private int oFJEHFIAOFH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFCOJBIIADM OFJEHFIAOFH = 4;</code>
      * @return The enum numeric value on the wire for oFJEHFIAOFH.
      */
@@ -444,10 +352,6 @@ public final class OLEECNGDJAJOuterClass {
       return oFJEHFIAOFH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFCOJBIIADM OFJEHFIAOFH = 4;</code>
      * @return The oFJEHFIAOFH.
      */
@@ -460,10 +364,6 @@ public final class OLEECNGDJAJOuterClass {
     public static final int FMMKCGAIHCH_FIELD_NUMBER = 1;
     private boolean fMMKCGAIHCH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FMMKCGAIHCH = 1;</code>
      * @return The fMMKCGAIHCH.
      */
@@ -475,10 +375,6 @@ public final class OLEECNGDJAJOuterClass {
     public static final int HFBLBLAALMN_FIELD_NUMBER = 2;
     private boolean hFBLBLAALMN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HFBLBLAALMN = 2;</code>
      * @return The hFBLBLAALMN.
      */
@@ -974,10 +870,6 @@ public final class OLEECNGDJAJOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AOIINLGFCDE = 10;</code>
        * @return A list containing the aOIINLGFCDE.
        */
@@ -987,10 +879,6 @@ public final class OLEECNGDJAJOuterClass {
                  java.util.Collections.unmodifiableList(aOIINLGFCDE_) : aOIINLGFCDE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AOIINLGFCDE = 10;</code>
        * @return The count of aOIINLGFCDE.
        */
@@ -998,10 +886,6 @@ public final class OLEECNGDJAJOuterClass {
         return aOIINLGFCDE_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AOIINLGFCDE = 10;</code>
        * @param index The index of the element to return.
        * @return The aOIINLGFCDE at the given index.
@@ -1010,10 +894,6 @@ public final class OLEECNGDJAJOuterClass {
         return aOIINLGFCDE_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AOIINLGFCDE = 10;</code>
        * @param index The index to set the value at.
        * @param value The aOIINLGFCDE to set.
@@ -1027,10 +907,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AOIINLGFCDE = 10;</code>
        * @param value The aOIINLGFCDE to add.
        * @return This builder for chaining.
@@ -1042,10 +918,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AOIINLGFCDE = 10;</code>
        * @param values The aOIINLGFCDE to add.
        * @return This builder for chaining.
@@ -1059,10 +931,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AOIINLGFCDE = 10;</code>
        * @return This builder for chaining.
        */
@@ -1081,10 +949,6 @@ public final class OLEECNGDJAJOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 6;</code>
        * @return A list containing the oKHHCHLABNF.
        */
@@ -1094,10 +958,6 @@ public final class OLEECNGDJAJOuterClass {
                  java.util.Collections.unmodifiableList(oKHHCHLABNF_) : oKHHCHLABNF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 6;</code>
        * @return The count of oKHHCHLABNF.
        */
@@ -1105,10 +965,6 @@ public final class OLEECNGDJAJOuterClass {
         return oKHHCHLABNF_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 6;</code>
        * @param index The index of the element to return.
        * @return The oKHHCHLABNF at the given index.
@@ -1117,10 +973,6 @@ public final class OLEECNGDJAJOuterClass {
         return oKHHCHLABNF_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 6;</code>
        * @param index The index to set the value at.
        * @param value The oKHHCHLABNF to set.
@@ -1134,10 +986,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 6;</code>
        * @param value The oKHHCHLABNF to add.
        * @return This builder for chaining.
@@ -1149,10 +997,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 6;</code>
        * @param values The oKHHCHLABNF to add.
        * @return This builder for chaining.
@@ -1166,10 +1010,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 6;</code>
        * @return This builder for chaining.
        */
@@ -1182,10 +1022,6 @@ public final class OLEECNGDJAJOuterClass {
 
       private int pGFCHCFNMOL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGFCHCFNMOL = 9;</code>
        * @return The pGFCHCFNMOL.
        */
@@ -1194,10 +1030,6 @@ public final class OLEECNGDJAJOuterClass {
         return pGFCHCFNMOL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGFCHCFNMOL = 9;</code>
        * @param value The pGFCHCFNMOL to set.
        * @return This builder for chaining.
@@ -1209,10 +1041,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGFCHCFNMOL = 9;</code>
        * @return This builder for chaining.
        */
@@ -1225,10 +1053,6 @@ public final class OLEECNGDJAJOuterClass {
 
       private int kHJOGDOHFPJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KHJOGDOHFPJ = 7;</code>
        * @return The kHJOGDOHFPJ.
        */
@@ -1237,10 +1061,6 @@ public final class OLEECNGDJAJOuterClass {
         return kHJOGDOHFPJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KHJOGDOHFPJ = 7;</code>
        * @param value The kHJOGDOHFPJ to set.
        * @return This builder for chaining.
@@ -1252,10 +1072,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KHJOGDOHFPJ = 7;</code>
        * @return This builder for chaining.
        */
@@ -1268,10 +1084,6 @@ public final class OLEECNGDJAJOuterClass {
 
       private int id_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 8;</code>
        * @return The id.
        */
@@ -1280,10 +1092,6 @@ public final class OLEECNGDJAJOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 8;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -1295,10 +1103,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 8;</code>
        * @return This builder for chaining.
        */
@@ -1311,10 +1115,6 @@ public final class OLEECNGDJAJOuterClass {
 
       private int oFJEHFIAOFH_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFCOJBIIADM OFJEHFIAOFH = 4;</code>
        * @return The enum numeric value on the wire for oFJEHFIAOFH.
        */
@@ -1322,10 +1122,6 @@ public final class OLEECNGDJAJOuterClass {
         return oFJEHFIAOFH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFCOJBIIADM OFJEHFIAOFH = 4;</code>
        * @param value The enum numeric value on the wire for oFJEHFIAOFH to set.
        * @return This builder for chaining.
@@ -1337,10 +1133,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFCOJBIIADM OFJEHFIAOFH = 4;</code>
        * @return The oFJEHFIAOFH.
        */
@@ -1351,10 +1143,6 @@ public final class OLEECNGDJAJOuterClass {
         return result == null ? emu.grasscutter.net.proto.IFCOJBIIADMOuterClass.IFCOJBIIADM.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFCOJBIIADM OFJEHFIAOFH = 4;</code>
        * @param value The oFJEHFIAOFH to set.
        * @return This builder for chaining.
@@ -1369,10 +1157,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFCOJBIIADM OFJEHFIAOFH = 4;</code>
        * @return This builder for chaining.
        */
@@ -1385,10 +1169,6 @@ public final class OLEECNGDJAJOuterClass {
 
       private boolean fMMKCGAIHCH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FMMKCGAIHCH = 1;</code>
        * @return The fMMKCGAIHCH.
        */
@@ -1397,10 +1177,6 @@ public final class OLEECNGDJAJOuterClass {
         return fMMKCGAIHCH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FMMKCGAIHCH = 1;</code>
        * @param value The fMMKCGAIHCH to set.
        * @return This builder for chaining.
@@ -1412,10 +1188,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FMMKCGAIHCH = 1;</code>
        * @return This builder for chaining.
        */
@@ -1428,10 +1200,6 @@ public final class OLEECNGDJAJOuterClass {
 
       private boolean hFBLBLAALMN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HFBLBLAALMN = 2;</code>
        * @return The hFBLBLAALMN.
        */
@@ -1440,10 +1208,6 @@ public final class OLEECNGDJAJOuterClass {
         return hFBLBLAALMN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HFBLBLAALMN = 2;</code>
        * @param value The hFBLBLAALMN to set.
        * @return This builder for chaining.
@@ -1455,10 +1219,6 @@ public final class OLEECNGDJAJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HFBLBLAALMN = 2;</code>
        * @return This builder for chaining.
        */

@@ -19,34 +19,30 @@ public final class KAOKKGOFLPCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+     * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH> 
-        getJOICAGLPIDGList();
+        getCampListList();
     /**
-     * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+     * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
      */
-    emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH getJOICAGLPIDG(int index);
+    emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH getCampList(int index);
     /**
-     * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+     * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
      */
-    int getJOICAGLPIDGCount();
+    int getCampListCount();
     /**
-     * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+     * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder> 
-        getJOICAGLPIDGOrBuilderList();
+        getCampListOrBuilderList();
     /**
-     * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+     * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
      */
-    emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder getJOICAGLPIDGOrBuilder(
+    emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder getCampListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PGJIIHHNGIP = 3;</code>
      * @return The pGJIIHHNGIP.
      */
@@ -65,7 +61,7 @@ public final class KAOKKGOFLPCOuterClass {
       super(builder);
     }
     private KAOKKGOFLPC() {
-      jOICAGLPIDG_ = java.util.Collections.emptyList();
+      campList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -106,10 +102,10 @@ public final class KAOKKGOFLPCOuterClass {
             }
             case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                jOICAGLPIDG_ = new java.util.ArrayList<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH>();
+                campList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              jOICAGLPIDG_.add(
+              campList_.add(
                   input.readMessage(emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.parser(), extensionRegistry));
               break;
             }
@@ -129,7 +125,7 @@ public final class KAOKKGOFLPCOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          jOICAGLPIDG_ = java.util.Collections.unmodifiableList(jOICAGLPIDG_);
+          campList_ = java.util.Collections.unmodifiableList(campList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -148,53 +144,49 @@ public final class KAOKKGOFLPCOuterClass {
               emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC.class, emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC.Builder.class);
     }
 
-    public static final int JOICAGLPIDG_FIELD_NUMBER = 6;
-    private java.util.List<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH> jOICAGLPIDG_;
+    public static final int CAMP_LIST_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH> campList_;
     /**
-     * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+     * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH> getJOICAGLPIDGList() {
-      return jOICAGLPIDG_;
+    public java.util.List<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH> getCampListList() {
+      return campList_;
     }
     /**
-     * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+     * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder> 
-        getJOICAGLPIDGOrBuilderList() {
-      return jOICAGLPIDG_;
+        getCampListOrBuilderList() {
+      return campList_;
     }
     /**
-     * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+     * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
      */
     @java.lang.Override
-    public int getJOICAGLPIDGCount() {
-      return jOICAGLPIDG_.size();
+    public int getCampListCount() {
+      return campList_.size();
     }
     /**
-     * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+     * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH getJOICAGLPIDG(int index) {
-      return jOICAGLPIDG_.get(index);
+    public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH getCampList(int index) {
+      return campList_.get(index);
     }
     /**
-     * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+     * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder getJOICAGLPIDGOrBuilder(
+    public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder getCampListOrBuilder(
         int index) {
-      return jOICAGLPIDG_.get(index);
+      return campList_.get(index);
     }
 
     public static final int PGJIIHHNGIP_FIELD_NUMBER = 3;
     private int pGJIIHHNGIP_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PGJIIHHNGIP = 3;</code>
      * @return The pGJIIHHNGIP.
      */
@@ -220,8 +212,8 @@ public final class KAOKKGOFLPCOuterClass {
       if (pGJIIHHNGIP_ != 0) {
         output.writeUInt32(3, pGJIIHHNGIP_);
       }
-      for (int i = 0; i < jOICAGLPIDG_.size(); i++) {
-        output.writeMessage(6, jOICAGLPIDG_.get(i));
+      for (int i = 0; i < campList_.size(); i++) {
+        output.writeMessage(6, campList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -236,9 +228,9 @@ public final class KAOKKGOFLPCOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, pGJIIHHNGIP_);
       }
-      for (int i = 0; i < jOICAGLPIDG_.size(); i++) {
+      for (int i = 0; i < campList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, jOICAGLPIDG_.get(i));
+          .computeMessageSize(6, campList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -255,8 +247,8 @@ public final class KAOKKGOFLPCOuterClass {
       }
       emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC other = (emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC) obj;
 
-      if (!getJOICAGLPIDGList()
-          .equals(other.getJOICAGLPIDGList())) return false;
+      if (!getCampListList()
+          .equals(other.getCampListList())) return false;
       if (getPGJIIHHNGIP()
           != other.getPGJIIHHNGIP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -270,9 +262,9 @@ public final class KAOKKGOFLPCOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getJOICAGLPIDGCount() > 0) {
-        hash = (37 * hash) + JOICAGLPIDG_FIELD_NUMBER;
-        hash = (53 * hash) + getJOICAGLPIDGList().hashCode();
+      if (getCampListCount() > 0) {
+        hash = (37 * hash) + CAMP_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getCampListList().hashCode();
       }
       hash = (37 * hash) + PGJIIHHNGIP_FIELD_NUMBER;
       hash = (53 * hash) + getPGJIIHHNGIP();
@@ -404,17 +396,17 @@ public final class KAOKKGOFLPCOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getJOICAGLPIDGFieldBuilder();
+          getCampListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (jOICAGLPIDGBuilder_ == null) {
-          jOICAGLPIDG_ = java.util.Collections.emptyList();
+        if (campListBuilder_ == null) {
+          campList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          jOICAGLPIDGBuilder_.clear();
+          campListBuilder_.clear();
         }
         pGJIIHHNGIP_ = 0;
 
@@ -445,14 +437,14 @@ public final class KAOKKGOFLPCOuterClass {
       public emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC buildPartial() {
         emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC result = new emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC(this);
         int from_bitField0_ = bitField0_;
-        if (jOICAGLPIDGBuilder_ == null) {
+        if (campListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            jOICAGLPIDG_ = java.util.Collections.unmodifiableList(jOICAGLPIDG_);
+            campList_ = java.util.Collections.unmodifiableList(campList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.jOICAGLPIDG_ = jOICAGLPIDG_;
+          result.campList_ = campList_;
         } else {
-          result.jOICAGLPIDG_ = jOICAGLPIDGBuilder_.build();
+          result.campList_ = campListBuilder_.build();
         }
         result.pGJIIHHNGIP_ = pGJIIHHNGIP_;
         onBuilt();
@@ -503,29 +495,29 @@ public final class KAOKKGOFLPCOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC other) {
         if (other == emu.grasscutter.net.proto.KAOKKGOFLPCOuterClass.KAOKKGOFLPC.getDefaultInstance()) return this;
-        if (jOICAGLPIDGBuilder_ == null) {
-          if (!other.jOICAGLPIDG_.isEmpty()) {
-            if (jOICAGLPIDG_.isEmpty()) {
-              jOICAGLPIDG_ = other.jOICAGLPIDG_;
+        if (campListBuilder_ == null) {
+          if (!other.campList_.isEmpty()) {
+            if (campList_.isEmpty()) {
+              campList_ = other.campList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureJOICAGLPIDGIsMutable();
-              jOICAGLPIDG_.addAll(other.jOICAGLPIDG_);
+              ensureCampListIsMutable();
+              campList_.addAll(other.campList_);
             }
             onChanged();
           }
         } else {
-          if (!other.jOICAGLPIDG_.isEmpty()) {
-            if (jOICAGLPIDGBuilder_.isEmpty()) {
-              jOICAGLPIDGBuilder_.dispose();
-              jOICAGLPIDGBuilder_ = null;
-              jOICAGLPIDG_ = other.jOICAGLPIDG_;
+          if (!other.campList_.isEmpty()) {
+            if (campListBuilder_.isEmpty()) {
+              campListBuilder_.dispose();
+              campListBuilder_ = null;
+              campList_ = other.campList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              jOICAGLPIDGBuilder_ = 
+              campListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getJOICAGLPIDGFieldBuilder() : null;
+                   getCampListFieldBuilder() : null;
             } else {
-              jOICAGLPIDGBuilder_.addAllMessages(other.jOICAGLPIDG_);
+              campListBuilder_.addAllMessages(other.campList_);
             }
           }
         }
@@ -562,252 +554,248 @@ public final class KAOKKGOFLPCOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH> jOICAGLPIDG_ =
+      private java.util.List<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH> campList_ =
         java.util.Collections.emptyList();
-      private void ensureJOICAGLPIDGIsMutable() {
+      private void ensureCampListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          jOICAGLPIDG_ = new java.util.ArrayList<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH>(jOICAGLPIDG_);
+          campList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH>(campList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder> jOICAGLPIDGBuilder_;
+          emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder> campListBuilder_;
 
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH> getJOICAGLPIDGList() {
-        if (jOICAGLPIDGBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(jOICAGLPIDG_);
+      public java.util.List<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH> getCampListList() {
+        if (campListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(campList_);
         } else {
-          return jOICAGLPIDGBuilder_.getMessageList();
+          return campListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public int getJOICAGLPIDGCount() {
-        if (jOICAGLPIDGBuilder_ == null) {
-          return jOICAGLPIDG_.size();
+      public int getCampListCount() {
+        if (campListBuilder_ == null) {
+          return campList_.size();
         } else {
-          return jOICAGLPIDGBuilder_.getCount();
+          return campListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH getJOICAGLPIDG(int index) {
-        if (jOICAGLPIDGBuilder_ == null) {
-          return jOICAGLPIDG_.get(index);
+      public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH getCampList(int index) {
+        if (campListBuilder_ == null) {
+          return campList_.get(index);
         } else {
-          return jOICAGLPIDGBuilder_.getMessage(index);
+          return campListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public Builder setJOICAGLPIDG(
+      public Builder setCampList(
           int index, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH value) {
-        if (jOICAGLPIDGBuilder_ == null) {
+        if (campListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureJOICAGLPIDGIsMutable();
-          jOICAGLPIDG_.set(index, value);
+          ensureCampListIsMutable();
+          campList_.set(index, value);
           onChanged();
         } else {
-          jOICAGLPIDGBuilder_.setMessage(index, value);
+          campListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public Builder setJOICAGLPIDG(
+      public Builder setCampList(
           int index, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder builderForValue) {
-        if (jOICAGLPIDGBuilder_ == null) {
-          ensureJOICAGLPIDGIsMutable();
-          jOICAGLPIDG_.set(index, builderForValue.build());
+        if (campListBuilder_ == null) {
+          ensureCampListIsMutable();
+          campList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          jOICAGLPIDGBuilder_.setMessage(index, builderForValue.build());
+          campListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public Builder addJOICAGLPIDG(emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH value) {
-        if (jOICAGLPIDGBuilder_ == null) {
+      public Builder addCampList(emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH value) {
+        if (campListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureJOICAGLPIDGIsMutable();
-          jOICAGLPIDG_.add(value);
+          ensureCampListIsMutable();
+          campList_.add(value);
           onChanged();
         } else {
-          jOICAGLPIDGBuilder_.addMessage(value);
+          campListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public Builder addJOICAGLPIDG(
+      public Builder addCampList(
           int index, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH value) {
-        if (jOICAGLPIDGBuilder_ == null) {
+        if (campListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureJOICAGLPIDGIsMutable();
-          jOICAGLPIDG_.add(index, value);
+          ensureCampListIsMutable();
+          campList_.add(index, value);
           onChanged();
         } else {
-          jOICAGLPIDGBuilder_.addMessage(index, value);
+          campListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public Builder addJOICAGLPIDG(
+      public Builder addCampList(
           emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder builderForValue) {
-        if (jOICAGLPIDGBuilder_ == null) {
-          ensureJOICAGLPIDGIsMutable();
-          jOICAGLPIDG_.add(builderForValue.build());
+        if (campListBuilder_ == null) {
+          ensureCampListIsMutable();
+          campList_.add(builderForValue.build());
           onChanged();
         } else {
-          jOICAGLPIDGBuilder_.addMessage(builderForValue.build());
+          campListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public Builder addJOICAGLPIDG(
+      public Builder addCampList(
           int index, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder builderForValue) {
-        if (jOICAGLPIDGBuilder_ == null) {
-          ensureJOICAGLPIDGIsMutable();
-          jOICAGLPIDG_.add(index, builderForValue.build());
+        if (campListBuilder_ == null) {
+          ensureCampListIsMutable();
+          campList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          jOICAGLPIDGBuilder_.addMessage(index, builderForValue.build());
+          campListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public Builder addAllJOICAGLPIDG(
+      public Builder addAllCampList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH> values) {
-        if (jOICAGLPIDGBuilder_ == null) {
-          ensureJOICAGLPIDGIsMutable();
+        if (campListBuilder_ == null) {
+          ensureCampListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, jOICAGLPIDG_);
+              values, campList_);
           onChanged();
         } else {
-          jOICAGLPIDGBuilder_.addAllMessages(values);
+          campListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public Builder clearJOICAGLPIDG() {
-        if (jOICAGLPIDGBuilder_ == null) {
-          jOICAGLPIDG_ = java.util.Collections.emptyList();
+      public Builder clearCampList() {
+        if (campListBuilder_ == null) {
+          campList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          jOICAGLPIDGBuilder_.clear();
+          campListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public Builder removeJOICAGLPIDG(int index) {
-        if (jOICAGLPIDGBuilder_ == null) {
-          ensureJOICAGLPIDGIsMutable();
-          jOICAGLPIDG_.remove(index);
+      public Builder removeCampList(int index) {
+        if (campListBuilder_ == null) {
+          ensureCampListIsMutable();
+          campList_.remove(index);
           onChanged();
         } else {
-          jOICAGLPIDGBuilder_.remove(index);
+          campListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder getJOICAGLPIDGBuilder(
+      public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder getCampListBuilder(
           int index) {
-        return getJOICAGLPIDGFieldBuilder().getBuilder(index);
+        return getCampListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder getJOICAGLPIDGOrBuilder(
+      public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder getCampListOrBuilder(
           int index) {
-        if (jOICAGLPIDGBuilder_ == null) {
-          return jOICAGLPIDG_.get(index);  } else {
-          return jOICAGLPIDGBuilder_.getMessageOrBuilder(index);
+        if (campListBuilder_ == null) {
+          return campList_.get(index);  } else {
+          return campListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder> 
-           getJOICAGLPIDGOrBuilderList() {
-        if (jOICAGLPIDGBuilder_ != null) {
-          return jOICAGLPIDGBuilder_.getMessageOrBuilderList();
+           getCampListOrBuilderList() {
+        if (campListBuilder_ != null) {
+          return campListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(jOICAGLPIDG_);
+          return java.util.Collections.unmodifiableList(campList_);
         }
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder addJOICAGLPIDGBuilder() {
-        return getJOICAGLPIDGFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder addCampListBuilder() {
+        return getCampListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.getDefaultInstance());
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
-      public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder addJOICAGLPIDGBuilder(
+      public emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder addCampListBuilder(
           int index) {
-        return getJOICAGLPIDGFieldBuilder().addBuilder(
+        return getCampListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.getDefaultInstance());
       }
       /**
-       * <code>repeated .DAHNACCLDLH JOICAGLPIDG = 6;</code>
+       * <code>repeated .DAHNACCLDLH camp_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder> 
-           getJOICAGLPIDGBuilderList() {
-        return getJOICAGLPIDGFieldBuilder().getBuilderList();
+           getCampListBuilderList() {
+        return getCampListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder> 
-          getJOICAGLPIDGFieldBuilder() {
-        if (jOICAGLPIDGBuilder_ == null) {
-          jOICAGLPIDGBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getCampListFieldBuilder() {
+        if (campListBuilder_ == null) {
+          campListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLH.Builder, emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.DAHNACCLDLHOrBuilder>(
-                  jOICAGLPIDG_,
+                  campList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          jOICAGLPIDG_ = null;
+          campList_ = null;
         }
-        return jOICAGLPIDGBuilder_;
+        return campListBuilder_;
       }
 
       private int pGJIIHHNGIP_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGJIIHHNGIP = 3;</code>
        * @return The pGJIIHHNGIP.
        */
@@ -816,10 +804,6 @@ public final class KAOKKGOFLPCOuterClass {
         return pGJIIHHNGIP_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGJIIHHNGIP = 3;</code>
        * @param value The pGJIIHHNGIP to set.
        * @return This builder for chaining.
@@ -831,10 +815,6 @@ public final class KAOKKGOFLPCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGJIIHHNGIP = 3;</code>
        * @return This builder for chaining.
        */
@@ -911,10 +891,10 @@ public final class KAOKKGOFLPCOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021KAOKKGOFLPC.proto\032\021DAHNACCLDLH.proto\"E" +
-      "\n\013KAOKKGOFLPC\022!\n\013JOICAGLPIDG\030\006 \003(\0132\014.DAH" +
-      "NACCLDLH\022\023\n\013PGJIIHHNGIP\030\003 \001(\rB\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "\n\021KAOKKGOFLPC.proto\032\021DAHNACCLDLH.proto\"C" +
+      "\n\013KAOKKGOFLPC\022\037\n\tcamp_list\030\006 \003(\0132\014.DAHNA" +
+      "CCLDLH\022\023\n\013PGJIIHHNGIP\030\003 \001(\rB\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -926,7 +906,7 @@ public final class KAOKKGOFLPCOuterClass {
     internal_static_KAOKKGOFLPC_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_KAOKKGOFLPC_descriptor,
-        new java.lang.String[] { "JOICAGLPIDG", "PGJIIHHNGIP", });
+        new java.lang.String[] { "CampList", "PGJIIHHNGIP", });
     emu.grasscutter.net.proto.DAHNACCLDLHOuterClass.getDescriptor();
   }
 

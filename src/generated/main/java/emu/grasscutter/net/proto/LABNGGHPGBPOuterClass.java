@@ -19,80 +19,48 @@ public final class LABNGGHPGBPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> 
         getMJIOOMMMANDList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
      */
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN getMJIOOMMMAND(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
      */
     int getMJIOOMMMANDCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> 
         getMJIOOMMMANDOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
      */
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder getMJIOOMMMANDOrBuilder(
         int index);
 
     /**
-     * <code>uint32 IFADGMHEFHF = 4;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 4;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 9;</code>
      * @return The isFinish.
      */
@@ -161,7 +129,7 @@ public final class LABNGGHPGBPOuterClass {
             }
             case 32: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             case 40: {
@@ -212,10 +180,6 @@ public final class LABNGGHPGBPOuterClass {
     public static final int MJIOOMMMAND_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> mJIOOMMMAND_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
      */
     @java.lang.Override
@@ -223,10 +187,6 @@ public final class LABNGGHPGBPOuterClass {
       return mJIOOMMMAND_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
      */
     @java.lang.Override
@@ -235,10 +195,6 @@ public final class LABNGGHPGBPOuterClass {
       return mJIOOMMMAND_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
      */
     @java.lang.Override
@@ -246,10 +202,6 @@ public final class LABNGGHPGBPOuterClass {
       return mJIOOMMMAND_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
      */
     @java.lang.Override
@@ -257,10 +209,6 @@ public final class LABNGGHPGBPOuterClass {
       return mJIOOMMMAND_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
      */
     @java.lang.Override
@@ -269,24 +217,20 @@ public final class LABNGGHPGBPOuterClass {
       return mJIOOMMMAND_.get(index);
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 4;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 4;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 4;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 4;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
@@ -298,10 +242,6 @@ public final class LABNGGHPGBPOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -313,10 +253,6 @@ public final class LABNGGHPGBPOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 9;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 9;</code>
      * @return The isFinish.
      */
@@ -345,8 +281,8 @@ public final class LABNGGHPGBPOuterClass {
       for (int i = 0; i < mJIOOMMMAND_.size(); i++) {
         output.writeMessage(2, mJIOOMMMAND_.get(i));
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(4, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(4, ugcGuid_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(5, levelId_);
@@ -371,9 +307,9 @@ public final class LABNGGHPGBPOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, mJIOOMMMAND_.get(i));
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, iFADGMHEFHF_);
+          .computeUInt32Size(4, ugcGuid_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -400,8 +336,8 @@ public final class LABNGGHPGBPOuterClass {
 
       if (!getMJIOOMMMANDList()
           .equals(other.getMJIOOMMMANDList())) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (getIsOpen()
@@ -423,8 +359,8 @@ public final class LABNGGHPGBPOuterClass {
         hash = (37 * hash) + MJIOOMMMAND_FIELD_NUMBER;
         hash = (53 * hash) + getMJIOOMMMANDList().hashCode();
       }
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
@@ -573,7 +509,7 @@ public final class LABNGGHPGBPOuterClass {
         } else {
           mJIOOMMMANDBuilder_.clear();
         }
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         levelId_ = 0;
 
@@ -617,7 +553,7 @@ public final class LABNGGHPGBPOuterClass {
         } else {
           result.mJIOOMMMAND_ = mJIOOMMMANDBuilder_.build();
         }
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         result.levelId_ = levelId_;
         result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
@@ -695,8 +631,8 @@ public final class LABNGGHPGBPOuterClass {
             }
           }
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
@@ -750,10 +686,6 @@ public final class LABNGGHPGBPOuterClass {
           emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> mJIOOMMMANDBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> getMJIOOMMMANDList() {
@@ -764,10 +696,6 @@ public final class LABNGGHPGBPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public int getMJIOOMMMANDCount() {
@@ -778,10 +706,6 @@ public final class LABNGGHPGBPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN getMJIOOMMMAND(int index) {
@@ -792,10 +716,6 @@ public final class LABNGGHPGBPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public Builder setMJIOOMMMAND(
@@ -813,10 +733,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public Builder setMJIOOMMMAND(
@@ -831,10 +747,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public Builder addMJIOOMMMAND(emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN value) {
@@ -851,10 +763,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public Builder addMJIOOMMMAND(
@@ -872,10 +780,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public Builder addMJIOOMMMAND(
@@ -890,10 +794,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public Builder addMJIOOMMMAND(
@@ -908,10 +808,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public Builder addAllMJIOOMMMAND(
@@ -927,10 +823,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public Builder clearMJIOOMMMAND() {
@@ -944,10 +836,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public Builder removeMJIOOMMMAND(int index) {
@@ -961,10 +849,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder getMJIOOMMMANDBuilder(
@@ -972,10 +856,6 @@ public final class LABNGGHPGBPOuterClass {
         return getMJIOOMMMANDFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder getMJIOOMMMANDOrBuilder(
@@ -986,10 +866,6 @@ public final class LABNGGHPGBPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> 
@@ -1001,10 +877,6 @@ public final class LABNGGHPGBPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder addMJIOOMMMANDBuilder() {
@@ -1012,10 +884,6 @@ public final class LABNGGHPGBPOuterClass {
             emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder addMJIOOMMMANDBuilder(
@@ -1024,10 +892,6 @@ public final class LABNGGHPGBPOuterClass {
             index, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN MJIOOMMMAND = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder> 
@@ -1049,43 +913,39 @@ public final class LABNGGHPGBPOuterClass {
         return mJIOOMMMANDBuilder_;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 4;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 4;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 4;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 4;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 4;</code>
+       * <code>uint32 ugc_guid = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
@@ -1094,10 +954,6 @@ public final class LABNGGHPGBPOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1109,10 +965,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
@@ -1125,10 +977,6 @@ public final class LABNGGHPGBPOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
@@ -1137,10 +985,6 @@ public final class LABNGGHPGBPOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1152,10 +996,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
@@ -1168,10 +1008,6 @@ public final class LABNGGHPGBPOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 9;</code>
        * @return The isFinish.
        */
@@ -1180,10 +1016,6 @@ public final class LABNGGHPGBPOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 9;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1195,10 +1027,6 @@ public final class LABNGGHPGBPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 9;</code>
        * @return This builder for chaining.
        */
@@ -1275,11 +1103,11 @@ public final class LABNGGHPGBPOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021LABNGGHPGBP.proto\032\021NFICKHNFNLN.proto\"{" +
+      "\n\021LABNGGHPGBP.proto\032\021NFICKHNFNLN.proto\"x" +
       "\n\013LABNGGHPGBP\022!\n\013MJIOOMMMAND\030\002 \003(\0132\014.NFI" +
-      "CKHNFNLN\022\023\n\013IFADGMHEFHF\030\004 \001(\r\022\020\n\010level_i" +
-      "d\030\005 \001(\r\022\017\n\007is_open\030\001 \001(\010\022\021\n\tis_finish\030\t " +
-      "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "CKHNFNLN\022\020\n\010ugc_guid\030\004 \001(\r\022\020\n\010level_id\030\005" +
+      " \001(\r\022\017\n\007is_open\030\001 \001(\010\022\021\n\tis_finish\030\t \001(\010" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1291,7 +1119,7 @@ public final class LABNGGHPGBPOuterClass {
     internal_static_LABNGGHPGBP_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LABNGGHPGBP_descriptor,
-        new java.lang.String[] { "MJIOOMMMAND", "IFADGMHEFHF", "LevelId", "IsOpen", "IsFinish", });
+        new java.lang.String[] { "MJIOOMMMAND", "UgcGuid", "LevelId", "IsOpen", "IsFinish", });
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.getDescriptor();
   }
 

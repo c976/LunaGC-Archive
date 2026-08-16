@@ -19,40 +19,24 @@ public final class JBFAEBGMJFAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EEIGMFFIKJA = 13;</code>
      * @return The eEIGMFFIKJA.
      */
     int getEEIGMFFIKJA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 5;</code>
      * @return The lOHAJIABHDJ.
      */
     int getLOHAJIABHDJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 15;</code>
      * @return The finishTime.
      */
     int getFinishTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 6;</code>
      * @return The isFinish.
      */
@@ -158,10 +142,6 @@ public final class JBFAEBGMJFAOuterClass {
     public static final int EEIGMFFIKJA_FIELD_NUMBER = 13;
     private int eEIGMFFIKJA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 EEIGMFFIKJA = 13;</code>
      * @return The eEIGMFFIKJA.
      */
@@ -173,10 +153,6 @@ public final class JBFAEBGMJFAOuterClass {
     public static final int LOHAJIABHDJ_FIELD_NUMBER = 5;
     private int lOHAJIABHDJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 5;</code>
      * @return The lOHAJIABHDJ.
      */
@@ -188,10 +164,6 @@ public final class JBFAEBGMJFAOuterClass {
     public static final int FINISH_TIME_FIELD_NUMBER = 15;
     private int finishTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 15;</code>
      * @return The finishTime.
      */
@@ -203,10 +175,6 @@ public final class JBFAEBGMJFAOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 6;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 6;</code>
      * @return The isFinish.
      */
@@ -571,10 +539,6 @@ public final class JBFAEBGMJFAOuterClass {
 
       private int eEIGMFFIKJA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EEIGMFFIKJA = 13;</code>
        * @return The eEIGMFFIKJA.
        */
@@ -583,10 +547,6 @@ public final class JBFAEBGMJFAOuterClass {
         return eEIGMFFIKJA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EEIGMFFIKJA = 13;</code>
        * @param value The eEIGMFFIKJA to set.
        * @return This builder for chaining.
@@ -598,10 +558,6 @@ public final class JBFAEBGMJFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 EEIGMFFIKJA = 13;</code>
        * @return This builder for chaining.
        */
@@ -614,10 +570,6 @@ public final class JBFAEBGMJFAOuterClass {
 
       private int lOHAJIABHDJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 5;</code>
        * @return The lOHAJIABHDJ.
        */
@@ -626,10 +578,6 @@ public final class JBFAEBGMJFAOuterClass {
         return lOHAJIABHDJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 5;</code>
        * @param value The lOHAJIABHDJ to set.
        * @return This builder for chaining.
@@ -641,10 +589,6 @@ public final class JBFAEBGMJFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 5;</code>
        * @return This builder for chaining.
        */
@@ -657,10 +601,6 @@ public final class JBFAEBGMJFAOuterClass {
 
       private int finishTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 15;</code>
        * @return The finishTime.
        */
@@ -669,10 +609,6 @@ public final class JBFAEBGMJFAOuterClass {
         return finishTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 15;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
@@ -684,10 +620,6 @@ public final class JBFAEBGMJFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 15;</code>
        * @return This builder for chaining.
        */
@@ -700,10 +632,6 @@ public final class JBFAEBGMJFAOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 6;</code>
        * @return The isFinish.
        */
@@ -712,10 +640,6 @@ public final class JBFAEBGMJFAOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 6;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -727,10 +651,6 @@ public final class JBFAEBGMJFAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 6;</code>
        * @return This builder for chaining.
        */

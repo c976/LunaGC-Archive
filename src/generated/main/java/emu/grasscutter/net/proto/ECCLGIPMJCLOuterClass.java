@@ -19,30 +19,18 @@ public final class ECCLGIPMJCLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 costume_id = 5;</code>
      * @return The costumeId.
      */
     int getCostumeId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_id = 2;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_type = 10;</code>
      * @return The avatarType.
      */
@@ -143,10 +131,6 @@ public final class ECCLGIPMJCLOuterClass {
     public static final int COSTUME_ID_FIELD_NUMBER = 5;
     private int costumeId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 costume_id = 5;</code>
      * @return The costumeId.
      */
@@ -158,10 +142,6 @@ public final class ECCLGIPMJCLOuterClass {
     public static final int AVATAR_ID_FIELD_NUMBER = 2;
     private int avatarId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_id = 2;</code>
      * @return The avatarId.
      */
@@ -173,10 +153,6 @@ public final class ECCLGIPMJCLOuterClass {
     public static final int AVATAR_TYPE_FIELD_NUMBER = 10;
     private int avatarType_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 avatar_type = 10;</code>
      * @return The avatarType.
      */
@@ -523,10 +499,6 @@ public final class ECCLGIPMJCLOuterClass {
 
       private int costumeId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 costume_id = 5;</code>
        * @return The costumeId.
        */
@@ -535,10 +507,6 @@ public final class ECCLGIPMJCLOuterClass {
         return costumeId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 costume_id = 5;</code>
        * @param value The costumeId to set.
        * @return This builder for chaining.
@@ -550,10 +518,6 @@ public final class ECCLGIPMJCLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 costume_id = 5;</code>
        * @return This builder for chaining.
        */
@@ -566,10 +530,6 @@ public final class ECCLGIPMJCLOuterClass {
 
       private int avatarId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 2;</code>
        * @return The avatarId.
        */
@@ -578,10 +538,6 @@ public final class ECCLGIPMJCLOuterClass {
         return avatarId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 2;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
@@ -593,10 +549,6 @@ public final class ECCLGIPMJCLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_id = 2;</code>
        * @return This builder for chaining.
        */
@@ -609,10 +561,6 @@ public final class ECCLGIPMJCLOuterClass {
 
       private int avatarType_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_type = 10;</code>
        * @return The avatarType.
        */
@@ -621,10 +569,6 @@ public final class ECCLGIPMJCLOuterClass {
         return avatarType_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_type = 10;</code>
        * @param value The avatarType to set.
        * @return This builder for chaining.
@@ -636,10 +580,6 @@ public final class ECCLGIPMJCLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 avatar_type = 10;</code>
        * @return This builder for chaining.
        */

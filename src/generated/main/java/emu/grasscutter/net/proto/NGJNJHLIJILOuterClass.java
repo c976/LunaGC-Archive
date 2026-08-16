@@ -19,36 +19,24 @@ public final class NGJNJHLIJILOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ANNBKMPDJCG = 1;</code>
      * @return The aNNBKMPDJCG.
      */
     int getANNBKMPDJCG();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 12;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 12;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
@@ -116,7 +104,7 @@ public final class NGJNJHLIJILOuterClass {
             }
             case 96: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -154,10 +142,6 @@ public final class NGJNJHLIJILOuterClass {
     public static final int ANNBKMPDJCG_FIELD_NUMBER = 1;
     private int aNNBKMPDJCG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ANNBKMPDJCG = 1;</code>
      * @return The aNNBKMPDJCG.
      */
@@ -166,24 +150,20 @@ public final class NGJNJHLIJILOuterClass {
       return aNNBKMPDJCG_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 12;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 12;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 12;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 12;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 9;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
@@ -195,10 +175,6 @@ public final class NGJNJHLIJILOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 10;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
@@ -230,8 +206,8 @@ public final class NGJNJHLIJILOuterClass {
       if (isFinish_ != false) {
         output.writeBool(10, isFinish_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(12, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(12, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -254,9 +230,9 @@ public final class NGJNJHLIJILOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(10, isFinish_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, eGHGENOJNEK_);
+          .computeUInt32Size(12, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -275,8 +251,8 @@ public final class NGJNJHLIJILOuterClass {
 
       if (getANNBKMPDJCG()
           != other.getANNBKMPDJCG()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getIsFinish()
@@ -294,8 +270,8 @@ public final class NGJNJHLIJILOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ANNBKMPDJCG_FIELD_NUMBER;
       hash = (53 * hash) + getANNBKMPDJCG();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -437,7 +413,7 @@ public final class NGJNJHLIJILOuterClass {
         super.clear();
         aNNBKMPDJCG_ = 0;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         isOpen_ = false;
 
@@ -470,7 +446,7 @@ public final class NGJNJHLIJILOuterClass {
       public emu.grasscutter.net.proto.NGJNJHLIJILOuterClass.NGJNJHLIJIL buildPartial() {
         emu.grasscutter.net.proto.NGJNJHLIJILOuterClass.NGJNJHLIJIL result = new emu.grasscutter.net.proto.NGJNJHLIJILOuterClass.NGJNJHLIJIL(this);
         result.aNNBKMPDJCG_ = aNNBKMPDJCG_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
         onBuilt();
@@ -524,8 +500,8 @@ public final class NGJNJHLIJILOuterClass {
         if (other.getANNBKMPDJCG() != 0) {
           setANNBKMPDJCG(other.getANNBKMPDJCG());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -564,10 +540,6 @@ public final class NGJNJHLIJILOuterClass {
 
       private int aNNBKMPDJCG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ANNBKMPDJCG = 1;</code>
        * @return The aNNBKMPDJCG.
        */
@@ -576,10 +548,6 @@ public final class NGJNJHLIJILOuterClass {
         return aNNBKMPDJCG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ANNBKMPDJCG = 1;</code>
        * @param value The aNNBKMPDJCG to set.
        * @return This builder for chaining.
@@ -591,10 +559,6 @@ public final class NGJNJHLIJILOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ANNBKMPDJCG = 1;</code>
        * @return This builder for chaining.
        */
@@ -605,43 +569,39 @@ public final class NGJNJHLIJILOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 12;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 12;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 12;</code>
+       * <code>uint32 stage_id = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @return The isOpen.
        */
@@ -650,10 +610,6 @@ public final class NGJNJHLIJILOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -665,10 +621,6 @@ public final class NGJNJHLIJILOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 9;</code>
        * @return This builder for chaining.
        */
@@ -681,10 +633,6 @@ public final class NGJNJHLIJILOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @return The isFinish.
        */
@@ -693,10 +641,6 @@ public final class NGJNJHLIJILOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -708,10 +652,6 @@ public final class NGJNJHLIJILOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @return This builder for chaining.
        */
@@ -788,10 +728,10 @@ public final class NGJNJHLIJILOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021NGJNJHLIJIL.proto\"[\n\013NGJNJHLIJIL\022\023\n\013AN" +
-      "NBKMPDJCG\030\001 \001(\r\022\023\n\013EGHGENOJNEK\030\014 \001(\r\022\017\n\007" +
-      "is_open\030\t \001(\010\022\021\n\tis_finish\030\n \001(\010B\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\021NGJNJHLIJIL.proto\"X\n\013NGJNJHLIJIL\022\023\n\013AN" +
+      "NBKMPDJCG\030\001 \001(\r\022\020\n\010stage_id\030\014 \001(\r\022\017\n\007is_" +
+      "open\030\t \001(\010\022\021\n\tis_finish\030\n \001(\010B\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -802,7 +742,7 @@ public final class NGJNJHLIJILOuterClass {
     internal_static_NGJNJHLIJIL_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_NGJNJHLIJIL_descriptor,
-        new java.lang.String[] { "ANNBKMPDJCG", "EGHGENOJNEK", "IsOpen", "IsFinish", });
+        new java.lang.String[] { "ANNBKMPDJCG", "StageId", "IsOpen", "IsFinish", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

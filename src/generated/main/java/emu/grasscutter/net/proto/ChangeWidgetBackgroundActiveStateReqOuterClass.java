@@ -19,30 +19,18 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>bool is_active = 9;</code>
+     * <code>bool is_active = 1;</code>
      * @return The isActive.
      */
     boolean getIsActive();
 
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 material_id = 3;</code>
+     * <code>uint32 material_id = 15;</code>
      * @return The materialId.
      */
     int getMaterialId();
   }
   /**
-   * <pre>
-   * CmdId: 4166
-   * </pre>
-   *
    * Protobuf type {@code ChangeWidgetBackgroundActiveStateReq}
    */
   public static final class ChangeWidgetBackgroundActiveStateReq extends
@@ -87,14 +75,14 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              materialId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 8: {
 
               isActive_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              materialId_ = input.readUInt32();
               break;
             }
             default: {
@@ -129,14 +117,10 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
               emu.grasscutter.net.proto.ChangeWidgetBackgroundActiveStateReqOuterClass.ChangeWidgetBackgroundActiveStateReq.class, emu.grasscutter.net.proto.ChangeWidgetBackgroundActiveStateReqOuterClass.ChangeWidgetBackgroundActiveStateReq.Builder.class);
     }
 
-    public static final int IS_ACTIVE_FIELD_NUMBER = 9;
+    public static final int IS_ACTIVE_FIELD_NUMBER = 1;
     private boolean isActive_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>bool is_active = 9;</code>
+     * <code>bool is_active = 1;</code>
      * @return The isActive.
      */
     @java.lang.Override
@@ -144,14 +128,10 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
       return isActive_;
     }
 
-    public static final int MATERIAL_ID_FIELD_NUMBER = 3;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 15;
     private int materialId_;
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 material_id = 3;</code>
+     * <code>uint32 material_id = 15;</code>
      * @return The materialId.
      */
     @java.lang.Override
@@ -173,11 +153,11 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (materialId_ != 0) {
-        output.writeUInt32(3, materialId_);
-      }
       if (isActive_ != false) {
-        output.writeBool(9, isActive_);
+        output.writeBool(1, isActive_);
+      }
+      if (materialId_ != 0) {
+        output.writeUInt32(15, materialId_);
       }
       unknownFields.writeTo(output);
     }
@@ -188,13 +168,13 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (materialId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, materialId_);
-      }
       if (isActive_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isActive_);
+          .computeBoolSize(1, isActive_);
+      }
+      if (materialId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, materialId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -327,10 +307,6 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 4166
-     * </pre>
-     *
      * Protobuf type {@code ChangeWidgetBackgroundActiveStateReq}
      */
     public static final class Builder extends
@@ -485,11 +461,7 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
 
       private boolean isActive_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>bool is_active = 9;</code>
+       * <code>bool is_active = 1;</code>
        * @return The isActive.
        */
       @java.lang.Override
@@ -497,11 +469,7 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
         return isActive_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>bool is_active = 9;</code>
+       * <code>bool is_active = 1;</code>
        * @param value The isActive to set.
        * @return This builder for chaining.
        */
@@ -512,11 +480,7 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>bool is_active = 9;</code>
+       * <code>bool is_active = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsActive() {
@@ -528,11 +492,7 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
 
       private int materialId_ ;
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 material_id = 3;</code>
+       * <code>uint32 material_id = 15;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -540,11 +500,7 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
         return materialId_;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 material_id = 3;</code>
+       * <code>uint32 material_id = 15;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -555,11 +511,7 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 material_id = 3;</code>
+       * <code>uint32 material_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
@@ -637,7 +589,7 @@ public final class ChangeWidgetBackgroundActiveStateReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n*ChangeWidgetBackgroundActiveStateReq.p" +
       "roto\"N\n$ChangeWidgetBackgroundActiveStat" +
-      "eReq\022\021\n\tis_active\030\t \001(\010\022\023\n\013material_id\030\003" +
+      "eReq\022\021\n\tis_active\030\001 \001(\010\022\023\n\013material_id\030\017" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

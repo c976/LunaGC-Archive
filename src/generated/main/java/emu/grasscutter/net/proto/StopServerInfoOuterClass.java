@@ -20,7 +20,7 @@ public final class StopServerInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>string content_msg = 4;</code>
@@ -29,7 +29,7 @@ public final class StopServerInfoOuterClass {
     java.lang.String getContentMsg();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>string content_msg = 4;</code>
@@ -40,7 +40,7 @@ public final class StopServerInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>string url = 3;</code>
@@ -49,7 +49,7 @@ public final class StopServerInfoOuterClass {
     java.lang.String getUrl();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>string url = 3;</code>
@@ -60,23 +60,23 @@ public final class StopServerInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>uint32 stop_begin_time = 1;</code>
-     * @return The stopBeginTime.
-     */
-    int getStopBeginTime();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>uint32 stop_end_time = 2;</code>
      * @return The stopEndTime.
      */
     int getStopEndTime();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>uint32 stop_begin_time = 1;</code>
+     * @return The stopBeginTime.
+     */
+    int getStopBeginTime();
   }
   /**
    * Protobuf type {@code StopServerInfo}
@@ -183,7 +183,7 @@ public final class StopServerInfoOuterClass {
     private volatile java.lang.Object contentMsg_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>string content_msg = 4;</code>
@@ -204,7 +204,7 @@ public final class StopServerInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>string content_msg = 4;</code>
@@ -229,7 +229,7 @@ public final class StopServerInfoOuterClass {
     private volatile java.lang.Object url_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>string url = 3;</code>
@@ -250,7 +250,7 @@ public final class StopServerInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>string url = 3;</code>
@@ -271,26 +271,11 @@ public final class StopServerInfoOuterClass {
       }
     }
 
-    public static final int STOP_BEGIN_TIME_FIELD_NUMBER = 1;
-    private int stopBeginTime_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>uint32 stop_begin_time = 1;</code>
-     * @return The stopBeginTime.
-     */
-    @java.lang.Override
-    public int getStopBeginTime() {
-      return stopBeginTime_;
-    }
-
     public static final int STOP_END_TIME_FIELD_NUMBER = 2;
     private int stopEndTime_;
     /**
      * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
      * <code>uint32 stop_end_time = 2;</code>
@@ -299,6 +284,21 @@ public final class StopServerInfoOuterClass {
     @java.lang.Override
     public int getStopEndTime() {
       return stopEndTime_;
+    }
+
+    public static final int STOP_BEGIN_TIME_FIELD_NUMBER = 1;
+    private int stopBeginTime_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0       
+     * </pre>
+     *
+     * <code>uint32 stop_begin_time = 1;</code>
+     * @return The stopBeginTime.
+     */
+    @java.lang.Override
+    public int getStopBeginTime() {
+      return stopBeginTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -369,10 +369,10 @@ public final class StopServerInfoOuterClass {
           .equals(other.getContentMsg())) return false;
       if (!getUrl()
           .equals(other.getUrl())) return false;
-      if (getStopBeginTime()
-          != other.getStopBeginTime()) return false;
       if (getStopEndTime()
           != other.getStopEndTime()) return false;
+      if (getStopBeginTime()
+          != other.getStopBeginTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -388,10 +388,10 @@ public final class StopServerInfoOuterClass {
       hash = (53 * hash) + getContentMsg().hashCode();
       hash = (37 * hash) + URL_FIELD_NUMBER;
       hash = (53 * hash) + getUrl().hashCode();
-      hash = (37 * hash) + STOP_BEGIN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getStopBeginTime();
       hash = (37 * hash) + STOP_END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getStopEndTime();
+      hash = (37 * hash) + STOP_BEGIN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStopBeginTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -529,9 +529,9 @@ public final class StopServerInfoOuterClass {
 
         url_ = "";
 
-        stopBeginTime_ = 0;
-
         stopEndTime_ = 0;
+
+        stopBeginTime_ = 0;
 
         return this;
       }
@@ -561,8 +561,8 @@ public final class StopServerInfoOuterClass {
         emu.grasscutter.net.proto.StopServerInfoOuterClass.StopServerInfo result = new emu.grasscutter.net.proto.StopServerInfoOuterClass.StopServerInfo(this);
         result.contentMsg_ = contentMsg_;
         result.url_ = url_;
-        result.stopBeginTime_ = stopBeginTime_;
         result.stopEndTime_ = stopEndTime_;
+        result.stopBeginTime_ = stopBeginTime_;
         onBuilt();
         return result;
       }
@@ -619,11 +619,11 @@ public final class StopServerInfoOuterClass {
           url_ = other.url_;
           onChanged();
         }
-        if (other.getStopBeginTime() != 0) {
-          setStopBeginTime(other.getStopBeginTime());
-        }
         if (other.getStopEndTime() != 0) {
           setStopEndTime(other.getStopEndTime());
+        }
+        if (other.getStopBeginTime() != 0) {
+          setStopBeginTime(other.getStopBeginTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -657,7 +657,7 @@ public final class StopServerInfoOuterClass {
       private java.lang.Object contentMsg_ = "";
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>string content_msg = 4;</code>
@@ -677,7 +677,7 @@ public final class StopServerInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>string content_msg = 4;</code>
@@ -698,7 +698,7 @@ public final class StopServerInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>string content_msg = 4;</code>
@@ -717,7 +717,7 @@ public final class StopServerInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>string content_msg = 4;</code>
@@ -731,7 +731,7 @@ public final class StopServerInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>string content_msg = 4;</code>
@@ -753,7 +753,7 @@ public final class StopServerInfoOuterClass {
       private java.lang.Object url_ = "";
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>string url = 3;</code>
@@ -773,7 +773,7 @@ public final class StopServerInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>string url = 3;</code>
@@ -794,7 +794,7 @@ public final class StopServerInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>string url = 3;</code>
@@ -813,7 +813,7 @@ public final class StopServerInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>string url = 3;</code>
@@ -827,7 +827,7 @@ public final class StopServerInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>string url = 3;</code>
@@ -846,53 +846,10 @@ public final class StopServerInfoOuterClass {
         return this;
       }
 
-      private int stopBeginTime_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>uint32 stop_begin_time = 1;</code>
-       * @return The stopBeginTime.
-       */
-      @java.lang.Override
-      public int getStopBeginTime() {
-        return stopBeginTime_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>uint32 stop_begin_time = 1;</code>
-       * @param value The stopBeginTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStopBeginTime(int value) {
-        
-        stopBeginTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>uint32 stop_begin_time = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStopBeginTime() {
-        
-        stopBeginTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int stopEndTime_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>uint32 stop_end_time = 2;</code>
@@ -904,7 +861,7 @@ public final class StopServerInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>uint32 stop_end_time = 2;</code>
@@ -919,7 +876,7 @@ public final class StopServerInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
        * <code>uint32 stop_end_time = 2;</code>
@@ -928,6 +885,49 @@ public final class StopServerInfoOuterClass {
       public Builder clearStopEndTime() {
         
         stopEndTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int stopBeginTime_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0       
+       * </pre>
+       *
+       * <code>uint32 stop_begin_time = 1;</code>
+       * @return The stopBeginTime.
+       */
+      @java.lang.Override
+      public int getStopBeginTime() {
+        return stopBeginTime_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0       
+       * </pre>
+       *
+       * <code>uint32 stop_begin_time = 1;</code>
+       * @param value The stopBeginTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStopBeginTime(int value) {
+        
+        stopBeginTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0       
+       * </pre>
+       *
+       * <code>uint32 stop_begin_time = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStopBeginTime() {
+        
+        stopBeginTime_ = 0;
         onChanged();
         return this;
       }
@@ -999,8 +999,8 @@ public final class StopServerInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024StopServerInfo.proto\"b\n\016StopServerInfo" +
-      "\022\023\n\013content_msg\030\004 \001(\t\022\013\n\003url\030\003 \001(\t\022\027\n\017st" +
-      "op_begin_time\030\001 \001(\r\022\025\n\rstop_end_time\030\002 \001" +
+      "\022\023\n\013content_msg\030\004 \001(\t\022\013\n\003url\030\003 \001(\t\022\025\n\rst" +
+      "op_end_time\030\002 \001(\r\022\027\n\017stop_begin_time\030\001 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1012,7 +1012,7 @@ public final class StopServerInfoOuterClass {
     internal_static_StopServerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StopServerInfo_descriptor,
-        new java.lang.String[] { "ContentMsg", "Url", "StopBeginTime", "StopEndTime", });
+        new java.lang.String[] { "ContentMsg", "Url", "StopEndTime", "StopBeginTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

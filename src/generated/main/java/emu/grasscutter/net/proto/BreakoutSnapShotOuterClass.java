@@ -20,327 +20,7 @@ public final class BreakoutSnapShotOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>repeated .BreakoutAction action_list = 5;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> 
-        getActionListList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>repeated .BreakoutAction action_list = 5;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction getActionList(int index);
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>repeated .BreakoutAction action_list = 5;</code>
-     */
-    int getActionListCount();
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>repeated .BreakoutAction action_list = 5;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder> 
-        getActionListOrBuilderList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>repeated .BreakoutAction action_list = 5;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder getActionListOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> 
-        getBallElementReactionListList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter getBallElementReactionList(int index);
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
-     */
-    int getBallElementReactionListCount();
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder> 
-        getBallElementReactionListOrBuilderList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder getBallElementReactionListOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-     * @return A list containing the oJHOIJNIKOK.
-     */
-    java.util.List<java.lang.Integer> getOJHOIJNIKOKList();
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-     * @return The count of oJHOIJNIKOK.
-     */
-    int getOJHOIJNIKOKCount();
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-     * @param index The index of the element to return.
-     * @return The oJHOIJNIKOK at the given index.
-     */
-    int getOJHOIJNIKOK(int index);
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> 
-        getDynamicObjectListList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getDynamicObjectList(int index);
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-     */
-    int getDynamicObjectListCount();
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
-        getDynamicObjectListOrBuilderList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getDynamicObjectListOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> 
-        getBallListList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getBallList(int index);
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
-     */
-    int getBallListCount();
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
-        getBallListOrBuilderList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getBallListOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 72
-     * </pre>
-     *
-     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-     * @return Whether the mNJLILHPGIB field is set.
-     */
-    boolean hasMNJLILHPGIB();
-    /**
-     * <pre>
-     *6.3.0 // offset: 72
-     * </pre>
-     *
-     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-     * @return The mNJLILHPGIB.
-     */
-    emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB getMNJLILHPGIB();
-    /**
-     * <pre>
-     *6.3.0 // offset: 72
-     * </pre>
-     *
-     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-     */
-    emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder getMNJLILHPGIBOrBuilder();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> 
-        getSpawnPointListList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint getSpawnPointList(int index);
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-     */
-    int getSpawnPointListCount();
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder> 
-        getSpawnPointListOrBuilderList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder getSpawnPointListOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> 
-        getBrickElementReactionListList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter getBrickElementReactionList(int index);
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
-     */
-    int getBrickElementReactionListCount();
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder> 
-        getBrickElementReactionListOrBuilderList();
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder getBrickElementReactionListOrBuilder(
-        int index);
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 96
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 id_index_list = 19;</code>
@@ -349,7 +29,7 @@ public final class BreakoutSnapShotOuterClass {
     java.util.List<java.lang.Integer> getIdIndexListList();
     /**
      * <pre>
-     *6.3.0 // offset: 96
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 id_index_list = 19;</code>
@@ -358,7 +38,7 @@ public final class BreakoutSnapShotOuterClass {
     int getIdIndexListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 96
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 id_index_list = 19;</code>
@@ -369,51 +49,51 @@ public final class BreakoutSnapShotOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 104
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> 
-        getPhysicalObjectListList();
+    java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> 
+        getSpawnPointListList();
     /**
      * <pre>
-     *6.3.0 // offset: 104
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
      */
-    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getPhysicalObjectList(int index);
+    emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint getSpawnPointList(int index);
     /**
      * <pre>
-     *6.3.0 // offset: 104
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
      */
-    int getPhysicalObjectListCount();
+    int getSpawnPointListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 104
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
-        getPhysicalObjectListOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder> 
+        getSpawnPointListOrBuilderList();
     /**
      * <pre>
-     *6.3.0 // offset: 104
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
      */
-    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getPhysicalObjectListOrBuilder(
+    emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder getSpawnPointListOrBuilder(
         int index);
 
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
@@ -422,7 +102,7 @@ public final class BreakoutSnapShotOuterClass {
         getUidInfoListList();
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
@@ -430,7 +110,7 @@ public final class BreakoutSnapShotOuterClass {
     emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo getUidInfoList(int index);
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
@@ -438,7 +118,7 @@ public final class BreakoutSnapShotOuterClass {
     int getUidInfoListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
@@ -447,7 +127,7 @@ public final class BreakoutSnapShotOuterClass {
         getUidInfoListOrBuilderList();
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
@@ -457,17 +137,303 @@ public final class BreakoutSnapShotOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 120
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 score = 8;</code>
-     * @return The score.
+     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
      */
-    int getScore();
+    java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> 
+        getBallElementReactionListList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter getBallElementReactionList(int index);
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
+     */
+    int getBallElementReactionListCount();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder> 
+        getBallElementReactionListOrBuilderList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder getBallElementReactionListOrBuilder(
+        int index);
 
     /**
      * <pre>
-     *6.3.0 // offset: 128
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> 
+        getBallListList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getBallList(int index);
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
+     */
+    int getBallListCount();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
+        getBallListOrBuilderList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getBallListOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> 
+        getBrickElementReactionListList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter getBrickElementReactionList(int index);
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
+     */
+    int getBrickElementReactionListCount();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder> 
+        getBrickElementReactionListOrBuilderList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder getBrickElementReactionListOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated int32 OEFDIKGIDPD = 21;</code>
+     * @return A list containing the oEFDIKGIDPD.
+     */
+    java.util.List<java.lang.Integer> getOEFDIKGIDPDList();
+    /**
+     * <code>repeated int32 OEFDIKGIDPD = 21;</code>
+     * @return The count of oEFDIKGIDPD.
+     */
+    int getOEFDIKGIDPDCount();
+    /**
+     * <code>repeated int32 OEFDIKGIDPD = 21;</code>
+     * @param index The index of the element to return.
+     * @return The oEFDIKGIDPD at the given index.
+     */
+    int getOEFDIKGIDPD(int index);
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> 
+        getDynamicObjectListList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getDynamicObjectList(int index);
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+     */
+    int getDynamicObjectListCount();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
+        getDynamicObjectListOrBuilderList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getDynamicObjectListOrBuilder(
+        int index);
+
+    /**
+     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+     * @return Whether the mNJLILHPGIB field is set.
+     */
+    boolean hasMNJLILHPGIB();
+    /**
+     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+     * @return The mNJLILHPGIB.
+     */
+    emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB getMNJLILHPGIB();
+    /**
+     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+     */
+    emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder getMNJLILHPGIBOrBuilder();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>repeated .BreakoutAction action_list = 5;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> 
+        getActionListList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>repeated .BreakoutAction action_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction getActionList(int index);
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>repeated .BreakoutAction action_list = 5;</code>
+     */
+    int getActionListCount();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>repeated .BreakoutAction action_list = 5;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder> 
+        getActionListOrBuilderList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>repeated .BreakoutAction action_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder getActionListOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> 
+        getPhysicalObjectListList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getPhysicalObjectList(int index);
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     */
+    int getPhysicalObjectListCount();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
+        getPhysicalObjectListOrBuilderList();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getPhysicalObjectListOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint64 client_game_time = 1;</code>
@@ -477,7 +443,7 @@ public final class BreakoutSnapShotOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 136
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 wave_index = 6;</code>
@@ -487,17 +453,7 @@ public final class BreakoutSnapShotOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 140
-     * </pre>
-     *
-     * <code>int32 raw_client_game_time = 20;</code>
-     * @return The rawClientGameTime.
-     */
-    int getRawClientGameTime();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 144
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>bool is_finish = 7;</code>
@@ -507,47 +463,17 @@ public final class BreakoutSnapShotOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 148
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 life_count = 11;</code>
-     * @return The lifeCount.
+     * <code>int32 raw_client_game_time = 20;</code>
+     * @return The rawClientGameTime.
      */
-    int getLifeCount();
+    int getRawClientGameTime();
 
     /**
      * <pre>
-     *6.3.0 // offset: 152
-     * </pre>
-     *
-     * <code>uint32 remaining_boss_hp = 14;</code>
-     * @return The remainingBossHp.
-     */
-    int getRemainingBossHp();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 156
-     * </pre>
-     *
-     * <code>uint32 max_combo = 10;</code>
-     * @return The maxCombo.
-     */
-    int getMaxCombo();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 160
-     * </pre>
-     *
-     * <code>uint64 server_game_time = 2;</code>
-     * @return The serverGameTime.
-     */
-    long getServerGameTime();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 168
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 wave_suite_index = 12;</code>
@@ -557,13 +483,63 @@ public final class BreakoutSnapShotOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 172
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>uint32 life_count = 11;</code>
+     * @return The lifeCount.
+     */
+    int getLifeCount();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 score = 8;</code>
+     * @return The score.
+     */
+    int getScore();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 combo = 9;</code>
      * @return The combo.
      */
     int getCombo();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint64 server_game_time = 2;</code>
+     * @return The serverGameTime.
+     */
+    long getServerGameTime();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>uint32 remaining_boss_hp = 14;</code>
+     * @return The remainingBossHp.
+     */
+    int getRemainingBossHp();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 max_combo = 10;</code>
+     * @return The maxCombo.
+     */
+    int getMaxCombo();
   }
   /**
    * Protobuf type {@code BreakoutSnapShot}
@@ -578,16 +554,16 @@ public final class BreakoutSnapShotOuterClass {
       super(builder);
     }
     private BreakoutSnapShot() {
-      actionList_ = java.util.Collections.emptyList();
-      ballElementReactionList_ = java.util.Collections.emptyList();
-      oJHOIJNIKOK_ = emptyIntList();
-      dynamicObjectList_ = java.util.Collections.emptyList();
-      ballList_ = java.util.Collections.emptyList();
-      spawnPointList_ = java.util.Collections.emptyList();
-      brickElementReactionList_ = java.util.Collections.emptyList();
       idIndexList_ = emptyIntList();
-      physicalObjectList_ = java.util.Collections.emptyList();
+      spawnPointList_ = java.util.Collections.emptyList();
       uidInfoList_ = java.util.Collections.emptyList();
+      ballElementReactionList_ = java.util.Collections.emptyList();
+      ballList_ = java.util.Collections.emptyList();
+      brickElementReactionList_ = java.util.Collections.emptyList();
+      oEFDIKGIDPD_ = emptyIntList();
+      dynamicObjectList_ = java.util.Collections.emptyList();
+      actionList_ = java.util.Collections.emptyList();
+      physicalObjectList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -641,18 +617,18 @@ public final class BreakoutSnapShotOuterClass {
               break;
             }
             case 34: {
-              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000200) != 0)) {
                 physicalObjectList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject>();
-                mutable_bitField0_ |= 0x00000100;
+                mutable_bitField0_ |= 0x00000200;
               }
               physicalObjectList_.add(
                   input.readMessage(emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.parser(), extensionRegistry));
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
                 actionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000100;
               }
               actionList_.add(
                   input.readMessage(emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.parser(), extensionRegistry));
@@ -694,9 +670,9 @@ public final class BreakoutSnapShotOuterClass {
               break;
             }
             case 106: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 spawnPointList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint>();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000002;
               }
               spawnPointList_.add(
                   input.readMessage(emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.parser(), extensionRegistry));
@@ -708,45 +684,45 @@ public final class BreakoutSnapShotOuterClass {
               break;
             }
             case 122: {
-              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
                 brickElementReactionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter>();
-                mutable_bitField0_ |= 0x00000040;
+                mutable_bitField0_ |= 0x00000020;
               }
               brickElementReactionList_.add(
                   input.readMessage(emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter.parser(), extensionRegistry));
               break;
             }
             case 130: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 ballElementReactionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000008;
               }
               ballElementReactionList_.add(
                   input.readMessage(emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter.parser(), extensionRegistry));
               break;
             }
             case 138: {
-              if (!((mutable_bitField0_ & 0x00000200) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 uidInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo>();
-                mutable_bitField0_ |= 0x00000200;
+                mutable_bitField0_ |= 0x00000004;
               }
               uidInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.parser(), extensionRegistry));
               break;
             }
             case 146: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
                 dynamicObjectList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject>();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000080;
               }
               dynamicObjectList_.add(
                   input.readMessage(emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.parser(), extensionRegistry));
               break;
             }
             case 152: {
-              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 idIndexList_ = newIntList();
-                mutable_bitField0_ |= 0x00000080;
+                mutable_bitField0_ |= 0x00000001;
               }
               idIndexList_.addInt(input.readUInt32());
               break;
@@ -754,9 +730,9 @@ public final class BreakoutSnapShotOuterClass {
             case 154: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000080) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 idIndexList_ = newIntList();
-                mutable_bitField0_ |= 0x00000080;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 idIndexList_.addInt(input.readUInt32());
@@ -770,22 +746,22 @@ public final class BreakoutSnapShotOuterClass {
               break;
             }
             case 168: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                oJHOIJNIKOK_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
+              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+                oEFDIKGIDPD_ = newIntList();
+                mutable_bitField0_ |= 0x00000040;
               }
-              oJHOIJNIKOK_.addInt(input.readInt32());
+              oEFDIKGIDPD_.addInt(input.readInt32());
               break;
             }
             case 170: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                oJHOIJNIKOK_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
+              if (!((mutable_bitField0_ & 0x00000040) != 0) && input.getBytesUntilLimit() > 0) {
+                oEFDIKGIDPD_ = newIntList();
+                mutable_bitField0_ |= 0x00000040;
               }
               while (input.getBytesUntilLimit() > 0) {
-                oJHOIJNIKOK_.addInt(input.readInt32());
+                oEFDIKGIDPD_.addInt(input.readInt32());
               }
               input.popLimit(limit);
               break;
@@ -821,32 +797,32 @@ public final class BreakoutSnapShotOuterClass {
         if (((mutable_bitField0_ & 0x00000010) != 0)) {
           ballList_ = java.util.Collections.unmodifiableList(ballList_);
         }
-        if (((mutable_bitField0_ & 0x00000100) != 0)) {
+        if (((mutable_bitField0_ & 0x00000200) != 0)) {
           physicalObjectList_ = java.util.Collections.unmodifiableList(physicalObjectList_);
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000100) != 0)) {
           actionList_ = java.util.Collections.unmodifiableList(actionList_);
         }
-        if (((mutable_bitField0_ & 0x00000020) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           spawnPointList_ = java.util.Collections.unmodifiableList(spawnPointList_);
         }
-        if (((mutable_bitField0_ & 0x00000040) != 0)) {
+        if (((mutable_bitField0_ & 0x00000020) != 0)) {
           brickElementReactionList_ = java.util.Collections.unmodifiableList(brickElementReactionList_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
           ballElementReactionList_ = java.util.Collections.unmodifiableList(ballElementReactionList_);
         }
-        if (((mutable_bitField0_ & 0x00000200) != 0)) {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
           uidInfoList_ = java.util.Collections.unmodifiableList(uidInfoList_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00000080) != 0)) {
           dynamicObjectList_ = java.util.Collections.unmodifiableList(dynamicObjectList_);
         }
-        if (((mutable_bitField0_ & 0x00000080) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           idIndexList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          oJHOIJNIKOK_.makeImmutable(); // C
+        if (((mutable_bitField0_ & 0x00000040) != 0)) {
+          oEFDIKGIDPD_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -865,449 +841,11 @@ public final class BreakoutSnapShotOuterClass {
               emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.class, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder.class);
     }
 
-    public static final int ACTION_LIST_FIELD_NUMBER = 5;
-    private java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> actionList_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>repeated .BreakoutAction action_list = 5;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> getActionListList() {
-      return actionList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>repeated .BreakoutAction action_list = 5;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder> 
-        getActionListOrBuilderList() {
-      return actionList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>repeated .BreakoutAction action_list = 5;</code>
-     */
-    @java.lang.Override
-    public int getActionListCount() {
-      return actionList_.size();
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>repeated .BreakoutAction action_list = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction getActionList(int index) {
-      return actionList_.get(index);
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>repeated .BreakoutAction action_list = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder getActionListOrBuilder(
-        int index) {
-      return actionList_.get(index);
-    }
-
-    public static final int BALL_ELEMENT_REACTION_LIST_FIELD_NUMBER = 16;
-    private java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> ballElementReactionList_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> getBallElementReactionListList() {
-      return ballElementReactionList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder> 
-        getBallElementReactionListOrBuilderList() {
-      return ballElementReactionList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
-     */
-    @java.lang.Override
-    public int getBallElementReactionListCount() {
-      return ballElementReactionList_.size();
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter getBallElementReactionList(int index) {
-      return ballElementReactionList_.get(index);
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder getBallElementReactionListOrBuilder(
-        int index) {
-      return ballElementReactionList_.get(index);
-    }
-
-    public static final int OJHOIJNIKOK_FIELD_NUMBER = 21;
-    private com.google.protobuf.Internal.IntList oJHOIJNIKOK_;
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-     * @return A list containing the oJHOIJNIKOK.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getOJHOIJNIKOKList() {
-      return oJHOIJNIKOK_;
-    }
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-     * @return The count of oJHOIJNIKOK.
-     */
-    public int getOJHOIJNIKOKCount() {
-      return oJHOIJNIKOK_.size();
-    }
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-     * @param index The index of the element to return.
-     * @return The oJHOIJNIKOK at the given index.
-     */
-    public int getOJHOIJNIKOK(int index) {
-      return oJHOIJNIKOK_.getInt(index);
-    }
-    private int oJHOIJNIKOKMemoizedSerializedSize = -1;
-
-    public static final int DYNAMIC_OBJECT_LIST_FIELD_NUMBER = 18;
-    private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> dynamicObjectList_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> getDynamicObjectListList() {
-      return dynamicObjectList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
-        getDynamicObjectListOrBuilderList() {
-      return dynamicObjectList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-     */
-    @java.lang.Override
-    public int getDynamicObjectListCount() {
-      return dynamicObjectList_.size();
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getDynamicObjectList(int index) {
-      return dynamicObjectList_.get(index);
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getDynamicObjectListOrBuilder(
-        int index) {
-      return dynamicObjectList_.get(index);
-    }
-
-    public static final int BALL_LIST_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> ballList_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> getBallListList() {
-      return ballList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
-        getBallListOrBuilderList() {
-      return ballList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
-     */
-    @java.lang.Override
-    public int getBallListCount() {
-      return ballList_.size();
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getBallList(int index) {
-      return ballList_.get(index);
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getBallListOrBuilder(
-        int index) {
-      return ballList_.get(index);
-    }
-
-    public static final int MNJLILHPGIB_FIELD_NUMBER = 43412;
-    private emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB mNJLILHPGIB_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 72
-     * </pre>
-     *
-     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-     * @return Whether the mNJLILHPGIB field is set.
-     */
-    @java.lang.Override
-    public boolean hasMNJLILHPGIB() {
-      return mNJLILHPGIB_ != null;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 72
-     * </pre>
-     *
-     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-     * @return The mNJLILHPGIB.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB getMNJLILHPGIB() {
-      return mNJLILHPGIB_ == null ? emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.getDefaultInstance() : mNJLILHPGIB_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 72
-     * </pre>
-     *
-     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder getMNJLILHPGIBOrBuilder() {
-      return getMNJLILHPGIB();
-    }
-
-    public static final int SPAWN_POINT_LIST_FIELD_NUMBER = 13;
-    private java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> spawnPointList_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> getSpawnPointListList() {
-      return spawnPointList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder> 
-        getSpawnPointListOrBuilderList() {
-      return spawnPointList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-     */
-    @java.lang.Override
-    public int getSpawnPointListCount() {
-      return spawnPointList_.size();
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint getSpawnPointList(int index) {
-      return spawnPointList_.get(index);
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder getSpawnPointListOrBuilder(
-        int index) {
-      return spawnPointList_.get(index);
-    }
-
-    public static final int BRICK_ELEMENT_REACTION_LIST_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> brickElementReactionList_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> getBrickElementReactionListList() {
-      return brickElementReactionList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder> 
-        getBrickElementReactionListOrBuilderList() {
-      return brickElementReactionList_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
-     */
-    @java.lang.Override
-    public int getBrickElementReactionListCount() {
-      return brickElementReactionList_.size();
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter getBrickElementReactionList(int index) {
-      return brickElementReactionList_.get(index);
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder getBrickElementReactionListOrBuilder(
-        int index) {
-      return brickElementReactionList_.get(index);
-    }
-
     public static final int ID_INDEX_LIST_FIELD_NUMBER = 19;
     private com.google.protobuf.Internal.IntList idIndexList_;
     /**
      * <pre>
-     *6.3.0 // offset: 96
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 id_index_list = 19;</code>
@@ -1320,7 +858,7 @@ public final class BreakoutSnapShotOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 96
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 id_index_list = 19;</code>
@@ -1331,7 +869,7 @@ public final class BreakoutSnapShotOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 96
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated uint32 id_index_list = 19;</code>
@@ -1343,71 +881,71 @@ public final class BreakoutSnapShotOuterClass {
     }
     private int idIndexListMemoizedSerializedSize = -1;
 
-    public static final int PHYSICAL_OBJECT_LIST_FIELD_NUMBER = 4;
-    private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> physicalObjectList_;
+    public static final int SPAWN_POINT_LIST_FIELD_NUMBER = 13;
+    private java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> spawnPointList_;
     /**
      * <pre>
-     *6.3.0 // offset: 104
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> getPhysicalObjectListList() {
-      return physicalObjectList_;
+    public java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> getSpawnPointListList() {
+      return spawnPointList_;
     }
     /**
      * <pre>
-     *6.3.0 // offset: 104
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
-        getPhysicalObjectListOrBuilderList() {
-      return physicalObjectList_;
+    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder> 
+        getSpawnPointListOrBuilderList() {
+      return spawnPointList_;
     }
     /**
      * <pre>
-     *6.3.0 // offset: 104
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
      */
     @java.lang.Override
-    public int getPhysicalObjectListCount() {
-      return physicalObjectList_.size();
+    public int getSpawnPointListCount() {
+      return spawnPointList_.size();
     }
     /**
      * <pre>
-     *6.3.0 // offset: 104
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getPhysicalObjectList(int index) {
-      return physicalObjectList_.get(index);
+    public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint getSpawnPointList(int index) {
+      return spawnPointList_.get(index);
     }
     /**
      * <pre>
-     *6.3.0 // offset: 104
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getPhysicalObjectListOrBuilder(
+    public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder getSpawnPointListOrBuilder(
         int index) {
-      return physicalObjectList_.get(index);
+      return spawnPointList_.get(index);
     }
 
     public static final int UID_INFO_LIST_FIELD_NUMBER = 17;
     private java.util.List<emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo> uidInfoList_;
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
@@ -1418,7 +956,7 @@ public final class BreakoutSnapShotOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
@@ -1430,7 +968,7 @@ public final class BreakoutSnapShotOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
@@ -1441,7 +979,7 @@ public final class BreakoutSnapShotOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
@@ -1452,7 +990,7 @@ public final class BreakoutSnapShotOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 112
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
@@ -1463,26 +1001,425 @@ public final class BreakoutSnapShotOuterClass {
       return uidInfoList_.get(index);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 8;
-    private int score_;
+    public static final int BALL_ELEMENT_REACTION_LIST_FIELD_NUMBER = 16;
+    private java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> ballElementReactionList_;
     /**
      * <pre>
-     *6.3.0 // offset: 120
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 score = 8;</code>
-     * @return The score.
+     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
      */
     @java.lang.Override
-    public int getScore() {
-      return score_;
+    public java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> getBallElementReactionListList() {
+      return ballElementReactionList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder> 
+        getBallElementReactionListOrBuilderList() {
+      return ballElementReactionList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
+     */
+    @java.lang.Override
+    public int getBallElementReactionListCount() {
+      return ballElementReactionList_.size();
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter getBallElementReactionList(int index) {
+      return ballElementReactionList_.get(index);
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder getBallElementReactionListOrBuilder(
+        int index) {
+      return ballElementReactionList_.get(index);
+    }
+
+    public static final int BALL_LIST_FIELD_NUMBER = 3;
+    private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> ballList_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> getBallListList() {
+      return ballList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
+        getBallListOrBuilderList() {
+      return ballList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
+     */
+    @java.lang.Override
+    public int getBallListCount() {
+      return ballList_.size();
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getBallList(int index) {
+      return ballList_.get(index);
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getBallListOrBuilder(
+        int index) {
+      return ballList_.get(index);
+    }
+
+    public static final int BRICK_ELEMENT_REACTION_LIST_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> brickElementReactionList_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> getBrickElementReactionListList() {
+      return brickElementReactionList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder> 
+        getBrickElementReactionListOrBuilderList() {
+      return brickElementReactionList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
+     */
+    @java.lang.Override
+    public int getBrickElementReactionListCount() {
+      return brickElementReactionList_.size();
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter getBrickElementReactionList(int index) {
+      return brickElementReactionList_.get(index);
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder getBrickElementReactionListOrBuilder(
+        int index) {
+      return brickElementReactionList_.get(index);
+    }
+
+    public static final int OEFDIKGIDPD_FIELD_NUMBER = 21;
+    private com.google.protobuf.Internal.IntList oEFDIKGIDPD_;
+    /**
+     * <code>repeated int32 OEFDIKGIDPD = 21;</code>
+     * @return A list containing the oEFDIKGIDPD.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getOEFDIKGIDPDList() {
+      return oEFDIKGIDPD_;
+    }
+    /**
+     * <code>repeated int32 OEFDIKGIDPD = 21;</code>
+     * @return The count of oEFDIKGIDPD.
+     */
+    public int getOEFDIKGIDPDCount() {
+      return oEFDIKGIDPD_.size();
+    }
+    /**
+     * <code>repeated int32 OEFDIKGIDPD = 21;</code>
+     * @param index The index of the element to return.
+     * @return The oEFDIKGIDPD at the given index.
+     */
+    public int getOEFDIKGIDPD(int index) {
+      return oEFDIKGIDPD_.getInt(index);
+    }
+    private int oEFDIKGIDPDMemoizedSerializedSize = -1;
+
+    public static final int DYNAMIC_OBJECT_LIST_FIELD_NUMBER = 18;
+    private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> dynamicObjectList_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> getDynamicObjectListList() {
+      return dynamicObjectList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
+        getDynamicObjectListOrBuilderList() {
+      return dynamicObjectList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+     */
+    @java.lang.Override
+    public int getDynamicObjectListCount() {
+      return dynamicObjectList_.size();
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getDynamicObjectList(int index) {
+      return dynamicObjectList_.get(index);
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getDynamicObjectListOrBuilder(
+        int index) {
+      return dynamicObjectList_.get(index);
+    }
+
+    public static final int MNJLILHPGIB_FIELD_NUMBER = 43412;
+    private emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB mNJLILHPGIB_;
+    /**
+     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+     * @return Whether the mNJLILHPGIB field is set.
+     */
+    @java.lang.Override
+    public boolean hasMNJLILHPGIB() {
+      return mNJLILHPGIB_ != null;
+    }
+    /**
+     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+     * @return The mNJLILHPGIB.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB getMNJLILHPGIB() {
+      return mNJLILHPGIB_ == null ? emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.getDefaultInstance() : mNJLILHPGIB_;
+    }
+    /**
+     * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder getMNJLILHPGIBOrBuilder() {
+      return getMNJLILHPGIB();
+    }
+
+    public static final int ACTION_LIST_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> actionList_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>repeated .BreakoutAction action_list = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> getActionListList() {
+      return actionList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>repeated .BreakoutAction action_list = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder> 
+        getActionListOrBuilderList() {
+      return actionList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>repeated .BreakoutAction action_list = 5;</code>
+     */
+    @java.lang.Override
+    public int getActionListCount() {
+      return actionList_.size();
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>repeated .BreakoutAction action_list = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction getActionList(int index) {
+      return actionList_.get(index);
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>repeated .BreakoutAction action_list = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder getActionListOrBuilder(
+        int index) {
+      return actionList_.get(index);
+    }
+
+    public static final int PHYSICAL_OBJECT_LIST_FIELD_NUMBER = 4;
+    private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> physicalObjectList_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> getPhysicalObjectListList() {
+      return physicalObjectList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
+        getPhysicalObjectListOrBuilderList() {
+      return physicalObjectList_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     */
+    @java.lang.Override
+    public int getPhysicalObjectListCount() {
+      return physicalObjectList_.size();
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getPhysicalObjectList(int index) {
+      return physicalObjectList_.get(index);
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getPhysicalObjectListOrBuilder(
+        int index) {
+      return physicalObjectList_.get(index);
     }
 
     public static final int CLIENT_GAME_TIME_FIELD_NUMBER = 1;
     private long clientGameTime_;
     /**
      * <pre>
-     *6.3.0 // offset: 128
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint64 client_game_time = 1;</code>
@@ -1497,7 +1434,7 @@ public final class BreakoutSnapShotOuterClass {
     private int waveIndex_;
     /**
      * <pre>
-     *6.3.0 // offset: 136
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 wave_index = 6;</code>
@@ -1508,26 +1445,11 @@ public final class BreakoutSnapShotOuterClass {
       return waveIndex_;
     }
 
-    public static final int RAW_CLIENT_GAME_TIME_FIELD_NUMBER = 20;
-    private int rawClientGameTime_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 140
-     * </pre>
-     *
-     * <code>int32 raw_client_game_time = 20;</code>
-     * @return The rawClientGameTime.
-     */
-    @java.lang.Override
-    public int getRawClientGameTime() {
-      return rawClientGameTime_;
-    }
-
     public static final int IS_FINISH_FIELD_NUMBER = 7;
     private boolean isFinish_;
     /**
      * <pre>
-     *6.3.0 // offset: 144
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>bool is_finish = 7;</code>
@@ -1538,11 +1460,41 @@ public final class BreakoutSnapShotOuterClass {
       return isFinish_;
     }
 
+    public static final int RAW_CLIENT_GAME_TIME_FIELD_NUMBER = 20;
+    private int rawClientGameTime_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>int32 raw_client_game_time = 20;</code>
+     * @return The rawClientGameTime.
+     */
+    @java.lang.Override
+    public int getRawClientGameTime() {
+      return rawClientGameTime_;
+    }
+
+    public static final int WAVE_SUITE_INDEX_FIELD_NUMBER = 12;
+    private int waveSuiteIndex_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>uint32 wave_suite_index = 12;</code>
+     * @return The waveSuiteIndex.
+     */
+    @java.lang.Override
+    public int getWaveSuiteIndex() {
+      return waveSuiteIndex_;
+    }
+
     public static final int LIFE_COUNT_FIELD_NUMBER = 11;
     private int lifeCount_;
     /**
      * <pre>
-     *6.3.0 // offset: 148
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 life_count = 11;</code>
@@ -1553,11 +1505,56 @@ public final class BreakoutSnapShotOuterClass {
       return lifeCount_;
     }
 
+    public static final int SCORE_FIELD_NUMBER = 8;
+    private int score_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 score = 8;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
+    }
+
+    public static final int COMBO_FIELD_NUMBER = 9;
+    private int combo_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 combo = 9;</code>
+     * @return The combo.
+     */
+    @java.lang.Override
+    public int getCombo() {
+      return combo_;
+    }
+
+    public static final int SERVER_GAME_TIME_FIELD_NUMBER = 2;
+    private long serverGameTime_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint64 server_game_time = 2;</code>
+     * @return The serverGameTime.
+     */
+    @java.lang.Override
+    public long getServerGameTime() {
+      return serverGameTime_;
+    }
+
     public static final int REMAINING_BOSS_HP_FIELD_NUMBER = 14;
     private int remainingBossHp_;
     /**
      * <pre>
-     *6.3.0 // offset: 152
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>uint32 remaining_boss_hp = 14;</code>
@@ -1572,7 +1569,7 @@ public final class BreakoutSnapShotOuterClass {
     private int maxCombo_;
     /**
      * <pre>
-     *6.3.0 // offset: 156
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 max_combo = 10;</code>
@@ -1581,51 +1578,6 @@ public final class BreakoutSnapShotOuterClass {
     @java.lang.Override
     public int getMaxCombo() {
       return maxCombo_;
-    }
-
-    public static final int SERVER_GAME_TIME_FIELD_NUMBER = 2;
-    private long serverGameTime_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 160
-     * </pre>
-     *
-     * <code>uint64 server_game_time = 2;</code>
-     * @return The serverGameTime.
-     */
-    @java.lang.Override
-    public long getServerGameTime() {
-      return serverGameTime_;
-    }
-
-    public static final int WAVE_SUITE_INDEX_FIELD_NUMBER = 12;
-    private int waveSuiteIndex_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 168
-     * </pre>
-     *
-     * <code>uint32 wave_suite_index = 12;</code>
-     * @return The waveSuiteIndex.
-     */
-    @java.lang.Override
-    public int getWaveSuiteIndex() {
-      return waveSuiteIndex_;
-    }
-
-    public static final int COMBO_FIELD_NUMBER = 9;
-    private int combo_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 172
-     * </pre>
-     *
-     * <code>uint32 combo = 9;</code>
-     * @return The combo.
-     */
-    @java.lang.Override
-    public int getCombo() {
-      return combo_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1707,12 +1659,12 @@ public final class BreakoutSnapShotOuterClass {
       if (rawClientGameTime_ != 0) {
         output.writeInt32(20, rawClientGameTime_);
       }
-      if (getOJHOIJNIKOKList().size() > 0) {
+      if (getOEFDIKGIDPDList().size() > 0) {
         output.writeUInt32NoTag(170);
-        output.writeUInt32NoTag(oJHOIJNIKOKMemoizedSerializedSize);
+        output.writeUInt32NoTag(oEFDIKGIDPDMemoizedSerializedSize);
       }
-      for (int i = 0; i < oJHOIJNIKOK_.size(); i++) {
-        output.writeInt32NoTag(oJHOIJNIKOK_.getInt(i));
+      for (int i = 0; i < oEFDIKGIDPD_.size(); i++) {
+        output.writeInt32NoTag(oEFDIKGIDPD_.getInt(i));
       }
       if (mNJLILHPGIB_ != null) {
         output.writeMessage(43412, getMNJLILHPGIB());
@@ -1818,17 +1770,17 @@ public final class BreakoutSnapShotOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < oJHOIJNIKOK_.size(); i++) {
+        for (int i = 0; i < oEFDIKGIDPD_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeInt32SizeNoTag(oJHOIJNIKOK_.getInt(i));
+            .computeInt32SizeNoTag(oEFDIKGIDPD_.getInt(i));
         }
         size += dataSize;
-        if (!getOJHOIJNIKOKList().isEmpty()) {
+        if (!getOEFDIKGIDPDList().isEmpty()) {
           size += 2;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        oJHOIJNIKOKMemoizedSerializedSize = dataSize;
+        oEFDIKGIDPDMemoizedSerializedSize = dataSize;
       }
       if (mNJLILHPGIB_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -1849,53 +1801,53 @@ public final class BreakoutSnapShotOuterClass {
       }
       emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot other = (emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot) obj;
 
-      if (!getActionListList()
-          .equals(other.getActionListList())) return false;
+      if (!getIdIndexListList()
+          .equals(other.getIdIndexListList())) return false;
+      if (!getSpawnPointListList()
+          .equals(other.getSpawnPointListList())) return false;
+      if (!getUidInfoListList()
+          .equals(other.getUidInfoListList())) return false;
       if (!getBallElementReactionListList()
           .equals(other.getBallElementReactionListList())) return false;
-      if (!getOJHOIJNIKOKList()
-          .equals(other.getOJHOIJNIKOKList())) return false;
-      if (!getDynamicObjectListList()
-          .equals(other.getDynamicObjectListList())) return false;
       if (!getBallListList()
           .equals(other.getBallListList())) return false;
+      if (!getBrickElementReactionListList()
+          .equals(other.getBrickElementReactionListList())) return false;
+      if (!getOEFDIKGIDPDList()
+          .equals(other.getOEFDIKGIDPDList())) return false;
+      if (!getDynamicObjectListList()
+          .equals(other.getDynamicObjectListList())) return false;
       if (hasMNJLILHPGIB() != other.hasMNJLILHPGIB()) return false;
       if (hasMNJLILHPGIB()) {
         if (!getMNJLILHPGIB()
             .equals(other.getMNJLILHPGIB())) return false;
       }
-      if (!getSpawnPointListList()
-          .equals(other.getSpawnPointListList())) return false;
-      if (!getBrickElementReactionListList()
-          .equals(other.getBrickElementReactionListList())) return false;
-      if (!getIdIndexListList()
-          .equals(other.getIdIndexListList())) return false;
+      if (!getActionListList()
+          .equals(other.getActionListList())) return false;
       if (!getPhysicalObjectListList()
           .equals(other.getPhysicalObjectListList())) return false;
-      if (!getUidInfoListList()
-          .equals(other.getUidInfoListList())) return false;
-      if (getScore()
-          != other.getScore()) return false;
       if (getClientGameTime()
           != other.getClientGameTime()) return false;
       if (getWaveIndex()
           != other.getWaveIndex()) return false;
-      if (getRawClientGameTime()
-          != other.getRawClientGameTime()) return false;
       if (getIsFinish()
           != other.getIsFinish()) return false;
+      if (getRawClientGameTime()
+          != other.getRawClientGameTime()) return false;
+      if (getWaveSuiteIndex()
+          != other.getWaveSuiteIndex()) return false;
       if (getLifeCount()
           != other.getLifeCount()) return false;
+      if (getScore()
+          != other.getScore()) return false;
+      if (getCombo()
+          != other.getCombo()) return false;
+      if (getServerGameTime()
+          != other.getServerGameTime()) return false;
       if (getRemainingBossHp()
           != other.getRemainingBossHp()) return false;
       if (getMaxCombo()
           != other.getMaxCombo()) return false;
-      if (getServerGameTime()
-          != other.getServerGameTime()) return false;
-      if (getWaveSuiteIndex()
-          != other.getWaveSuiteIndex()) return false;
-      if (getCombo()
-          != other.getCombo()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1907,75 +1859,75 @@ public final class BreakoutSnapShotOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getActionListCount() > 0) {
-        hash = (37 * hash) + ACTION_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getActionListList().hashCode();
-      }
-      if (getBallElementReactionListCount() > 0) {
-        hash = (37 * hash) + BALL_ELEMENT_REACTION_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getBallElementReactionListList().hashCode();
-      }
-      if (getOJHOIJNIKOKCount() > 0) {
-        hash = (37 * hash) + OJHOIJNIKOK_FIELD_NUMBER;
-        hash = (53 * hash) + getOJHOIJNIKOKList().hashCode();
-      }
-      if (getDynamicObjectListCount() > 0) {
-        hash = (37 * hash) + DYNAMIC_OBJECT_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getDynamicObjectListList().hashCode();
-      }
-      if (getBallListCount() > 0) {
-        hash = (37 * hash) + BALL_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getBallListList().hashCode();
-      }
-      if (hasMNJLILHPGIB()) {
-        hash = (37 * hash) + MNJLILHPGIB_FIELD_NUMBER;
-        hash = (53 * hash) + getMNJLILHPGIB().hashCode();
+      if (getIdIndexListCount() > 0) {
+        hash = (37 * hash) + ID_INDEX_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getIdIndexListList().hashCode();
       }
       if (getSpawnPointListCount() > 0) {
         hash = (37 * hash) + SPAWN_POINT_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSpawnPointListList().hashCode();
       }
+      if (getUidInfoListCount() > 0) {
+        hash = (37 * hash) + UID_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getUidInfoListList().hashCode();
+      }
+      if (getBallElementReactionListCount() > 0) {
+        hash = (37 * hash) + BALL_ELEMENT_REACTION_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getBallElementReactionListList().hashCode();
+      }
+      if (getBallListCount() > 0) {
+        hash = (37 * hash) + BALL_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getBallListList().hashCode();
+      }
       if (getBrickElementReactionListCount() > 0) {
         hash = (37 * hash) + BRICK_ELEMENT_REACTION_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBrickElementReactionListList().hashCode();
       }
-      if (getIdIndexListCount() > 0) {
-        hash = (37 * hash) + ID_INDEX_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getIdIndexListList().hashCode();
+      if (getOEFDIKGIDPDCount() > 0) {
+        hash = (37 * hash) + OEFDIKGIDPD_FIELD_NUMBER;
+        hash = (53 * hash) + getOEFDIKGIDPDList().hashCode();
+      }
+      if (getDynamicObjectListCount() > 0) {
+        hash = (37 * hash) + DYNAMIC_OBJECT_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getDynamicObjectListList().hashCode();
+      }
+      if (hasMNJLILHPGIB()) {
+        hash = (37 * hash) + MNJLILHPGIB_FIELD_NUMBER;
+        hash = (53 * hash) + getMNJLILHPGIB().hashCode();
+      }
+      if (getActionListCount() > 0) {
+        hash = (37 * hash) + ACTION_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getActionListList().hashCode();
       }
       if (getPhysicalObjectListCount() > 0) {
         hash = (37 * hash) + PHYSICAL_OBJECT_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getPhysicalObjectListList().hashCode();
       }
-      if (getUidInfoListCount() > 0) {
-        hash = (37 * hash) + UID_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getUidInfoListList().hashCode();
-      }
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
       hash = (37 * hash) + CLIENT_GAME_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getClientGameTime());
       hash = (37 * hash) + WAVE_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getWaveIndex();
-      hash = (37 * hash) + RAW_CLIENT_GAME_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getRawClientGameTime();
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
+      hash = (37 * hash) + RAW_CLIENT_GAME_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getRawClientGameTime();
+      hash = (37 * hash) + WAVE_SUITE_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getWaveSuiteIndex();
       hash = (37 * hash) + LIFE_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getLifeCount();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + COMBO_FIELD_NUMBER;
+      hash = (53 * hash) + getCombo();
+      hash = (37 * hash) + SERVER_GAME_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getServerGameTime());
       hash = (37 * hash) + REMAINING_BOSS_HP_FIELD_NUMBER;
       hash = (53 * hash) + getRemainingBossHp();
       hash = (37 * hash) + MAX_COMBO_FIELD_NUMBER;
       hash = (53 * hash) + getMaxCombo();
-      hash = (37 * hash) + SERVER_GAME_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getServerGameTime());
-      hash = (37 * hash) + WAVE_SUITE_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getWaveSuiteIndex();
-      hash = (37 * hash) + COMBO_FIELD_NUMBER;
-      hash = (53 * hash) + getCombo();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -2104,38 +2056,38 @@ public final class BreakoutSnapShotOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getActionListFieldBuilder();
-          getBallElementReactionListFieldBuilder();
-          getDynamicObjectListFieldBuilder();
-          getBallListFieldBuilder();
           getSpawnPointListFieldBuilder();
-          getBrickElementReactionListFieldBuilder();
-          getPhysicalObjectListFieldBuilder();
           getUidInfoListFieldBuilder();
+          getBallElementReactionListFieldBuilder();
+          getBallListFieldBuilder();
+          getBrickElementReactionListFieldBuilder();
+          getDynamicObjectListFieldBuilder();
+          getActionListFieldBuilder();
+          getPhysicalObjectListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (actionListBuilder_ == null) {
-          actionList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+        idIndexList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (spawnPointListBuilder_ == null) {
+          spawnPointList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
-          actionListBuilder_.clear();
+          spawnPointListBuilder_.clear();
+        }
+        if (uidInfoListBuilder_ == null) {
+          uidInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          uidInfoListBuilder_.clear();
         }
         if (ballElementReactionListBuilder_ == null) {
           ballElementReactionList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          ballElementReactionListBuilder_.clear();
-        }
-        oJHOIJNIKOK_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        if (dynamicObjectListBuilder_ == null) {
-          dynamicObjectList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000008);
         } else {
-          dynamicObjectListBuilder_.clear();
+          ballElementReactionListBuilder_.clear();
         }
         if (ballListBuilder_ == null) {
           ballList_ = java.util.Collections.emptyList();
@@ -2143,59 +2095,59 @@ public final class BreakoutSnapShotOuterClass {
         } else {
           ballListBuilder_.clear();
         }
+        if (brickElementReactionListBuilder_ == null) {
+          brickElementReactionList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+        } else {
+          brickElementReactionListBuilder_.clear();
+        }
+        oEFDIKGIDPD_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000040);
+        if (dynamicObjectListBuilder_ == null) {
+          dynamicObjectList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+        } else {
+          dynamicObjectListBuilder_.clear();
+        }
         if (mNJLILHPGIBBuilder_ == null) {
           mNJLILHPGIB_ = null;
         } else {
           mNJLILHPGIB_ = null;
           mNJLILHPGIBBuilder_ = null;
         }
-        if (spawnPointListBuilder_ == null) {
-          spawnPointList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
+        if (actionListBuilder_ == null) {
+          actionList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
         } else {
-          spawnPointListBuilder_.clear();
+          actionListBuilder_.clear();
         }
-        if (brickElementReactionListBuilder_ == null) {
-          brickElementReactionList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000040);
-        } else {
-          brickElementReactionListBuilder_.clear();
-        }
-        idIndexList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000080);
         if (physicalObjectListBuilder_ == null) {
           physicalObjectList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000100);
+          bitField0_ = (bitField0_ & ~0x00000200);
         } else {
           physicalObjectListBuilder_.clear();
         }
-        if (uidInfoListBuilder_ == null) {
-          uidInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000200);
-        } else {
-          uidInfoListBuilder_.clear();
-        }
-        score_ = 0;
-
         clientGameTime_ = 0L;
 
         waveIndex_ = 0;
 
-        rawClientGameTime_ = 0;
-
         isFinish_ = false;
 
+        rawClientGameTime_ = 0;
+
+        waveSuiteIndex_ = 0;
+
         lifeCount_ = 0;
+
+        score_ = 0;
+
+        combo_ = 0;
+
+        serverGameTime_ = 0L;
 
         remainingBossHp_ = 0;
 
         maxCombo_ = 0;
-
-        serverGameTime_ = 0L;
-
-        waveSuiteIndex_ = 0;
-
-        combo_ = 0;
 
         return this;
       }
@@ -2224,37 +2176,37 @@ public final class BreakoutSnapShotOuterClass {
       public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot buildPartial() {
         emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot result = new emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot(this);
         int from_bitField0_ = bitField0_;
-        if (actionListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            actionList_ = java.util.Collections.unmodifiableList(actionList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+        if (((bitField0_ & 0x00000001) != 0)) {
+          idIndexList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.idIndexList_ = idIndexList_;
+        if (spawnPointListBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            spawnPointList_ = java.util.Collections.unmodifiableList(spawnPointList_);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
-          result.actionList_ = actionList_;
+          result.spawnPointList_ = spawnPointList_;
         } else {
-          result.actionList_ = actionListBuilder_.build();
+          result.spawnPointList_ = spawnPointListBuilder_.build();
+        }
+        if (uidInfoListBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0)) {
+            uidInfoList_ = java.util.Collections.unmodifiableList(uidInfoList_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.uidInfoList_ = uidInfoList_;
+        } else {
+          result.uidInfoList_ = uidInfoListBuilder_.build();
         }
         if (ballElementReactionListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000008) != 0)) {
             ballElementReactionList_ = java.util.Collections.unmodifiableList(ballElementReactionList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000008);
           }
           result.ballElementReactionList_ = ballElementReactionList_;
         } else {
           result.ballElementReactionList_ = ballElementReactionListBuilder_.build();
-        }
-        if (((bitField0_ & 0x00000004) != 0)) {
-          oJHOIJNIKOK_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        }
-        result.oJHOIJNIKOK_ = oJHOIJNIKOK_;
-        if (dynamicObjectListBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) != 0)) {
-            dynamicObjectList_ = java.util.Collections.unmodifiableList(dynamicObjectList_);
-            bitField0_ = (bitField0_ & ~0x00000008);
-          }
-          result.dynamicObjectList_ = dynamicObjectList_;
-        } else {
-          result.dynamicObjectList_ = dynamicObjectListBuilder_.build();
         }
         if (ballListBuilder_ == null) {
           if (((bitField0_ & 0x00000010) != 0)) {
@@ -2265,63 +2217,63 @@ public final class BreakoutSnapShotOuterClass {
         } else {
           result.ballList_ = ballListBuilder_.build();
         }
-        if (mNJLILHPGIBBuilder_ == null) {
-          result.mNJLILHPGIB_ = mNJLILHPGIB_;
-        } else {
-          result.mNJLILHPGIB_ = mNJLILHPGIBBuilder_.build();
-        }
-        if (spawnPointListBuilder_ == null) {
-          if (((bitField0_ & 0x00000020) != 0)) {
-            spawnPointList_ = java.util.Collections.unmodifiableList(spawnPointList_);
-            bitField0_ = (bitField0_ & ~0x00000020);
-          }
-          result.spawnPointList_ = spawnPointList_;
-        } else {
-          result.spawnPointList_ = spawnPointListBuilder_.build();
-        }
         if (brickElementReactionListBuilder_ == null) {
-          if (((bitField0_ & 0x00000040) != 0)) {
+          if (((bitField0_ & 0x00000020) != 0)) {
             brickElementReactionList_ = java.util.Collections.unmodifiableList(brickElementReactionList_);
-            bitField0_ = (bitField0_ & ~0x00000040);
+            bitField0_ = (bitField0_ & ~0x00000020);
           }
           result.brickElementReactionList_ = brickElementReactionList_;
         } else {
           result.brickElementReactionList_ = brickElementReactionListBuilder_.build();
         }
-        if (((bitField0_ & 0x00000080) != 0)) {
-          idIndexList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000080);
+        if (((bitField0_ & 0x00000040) != 0)) {
+          oEFDIKGIDPD_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000040);
         }
-        result.idIndexList_ = idIndexList_;
-        if (physicalObjectListBuilder_ == null) {
+        result.oEFDIKGIDPD_ = oEFDIKGIDPD_;
+        if (dynamicObjectListBuilder_ == null) {
+          if (((bitField0_ & 0x00000080) != 0)) {
+            dynamicObjectList_ = java.util.Collections.unmodifiableList(dynamicObjectList_);
+            bitField0_ = (bitField0_ & ~0x00000080);
+          }
+          result.dynamicObjectList_ = dynamicObjectList_;
+        } else {
+          result.dynamicObjectList_ = dynamicObjectListBuilder_.build();
+        }
+        if (mNJLILHPGIBBuilder_ == null) {
+          result.mNJLILHPGIB_ = mNJLILHPGIB_;
+        } else {
+          result.mNJLILHPGIB_ = mNJLILHPGIBBuilder_.build();
+        }
+        if (actionListBuilder_ == null) {
           if (((bitField0_ & 0x00000100) != 0)) {
-            physicalObjectList_ = java.util.Collections.unmodifiableList(physicalObjectList_);
+            actionList_ = java.util.Collections.unmodifiableList(actionList_);
             bitField0_ = (bitField0_ & ~0x00000100);
+          }
+          result.actionList_ = actionList_;
+        } else {
+          result.actionList_ = actionListBuilder_.build();
+        }
+        if (physicalObjectListBuilder_ == null) {
+          if (((bitField0_ & 0x00000200) != 0)) {
+            physicalObjectList_ = java.util.Collections.unmodifiableList(physicalObjectList_);
+            bitField0_ = (bitField0_ & ~0x00000200);
           }
           result.physicalObjectList_ = physicalObjectList_;
         } else {
           result.physicalObjectList_ = physicalObjectListBuilder_.build();
         }
-        if (uidInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000200) != 0)) {
-            uidInfoList_ = java.util.Collections.unmodifiableList(uidInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000200);
-          }
-          result.uidInfoList_ = uidInfoList_;
-        } else {
-          result.uidInfoList_ = uidInfoListBuilder_.build();
-        }
-        result.score_ = score_;
         result.clientGameTime_ = clientGameTime_;
         result.waveIndex_ = waveIndex_;
-        result.rawClientGameTime_ = rawClientGameTime_;
         result.isFinish_ = isFinish_;
+        result.rawClientGameTime_ = rawClientGameTime_;
+        result.waveSuiteIndex_ = waveSuiteIndex_;
         result.lifeCount_ = lifeCount_;
+        result.score_ = score_;
+        result.combo_ = combo_;
+        result.serverGameTime_ = serverGameTime_;
         result.remainingBossHp_ = remainingBossHp_;
         result.maxCombo_ = maxCombo_;
-        result.serverGameTime_ = serverGameTime_;
-        result.waveSuiteIndex_ = waveSuiteIndex_;
-        result.combo_ = combo_;
         onBuilt();
         return result;
       }
@@ -2370,29 +2322,65 @@ public final class BreakoutSnapShotOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot other) {
         if (other == emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.getDefaultInstance()) return this;
-        if (actionListBuilder_ == null) {
-          if (!other.actionList_.isEmpty()) {
-            if (actionList_.isEmpty()) {
-              actionList_ = other.actionList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+        if (!other.idIndexList_.isEmpty()) {
+          if (idIndexList_.isEmpty()) {
+            idIndexList_ = other.idIndexList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureIdIndexListIsMutable();
+            idIndexList_.addAll(other.idIndexList_);
+          }
+          onChanged();
+        }
+        if (spawnPointListBuilder_ == null) {
+          if (!other.spawnPointList_.isEmpty()) {
+            if (spawnPointList_.isEmpty()) {
+              spawnPointList_ = other.spawnPointList_;
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
-              ensureActionListIsMutable();
-              actionList_.addAll(other.actionList_);
+              ensureSpawnPointListIsMutable();
+              spawnPointList_.addAll(other.spawnPointList_);
             }
             onChanged();
           }
         } else {
-          if (!other.actionList_.isEmpty()) {
-            if (actionListBuilder_.isEmpty()) {
-              actionListBuilder_.dispose();
-              actionListBuilder_ = null;
-              actionList_ = other.actionList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              actionListBuilder_ = 
+          if (!other.spawnPointList_.isEmpty()) {
+            if (spawnPointListBuilder_.isEmpty()) {
+              spawnPointListBuilder_.dispose();
+              spawnPointListBuilder_ = null;
+              spawnPointList_ = other.spawnPointList_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              spawnPointListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getActionListFieldBuilder() : null;
+                   getSpawnPointListFieldBuilder() : null;
             } else {
-              actionListBuilder_.addAllMessages(other.actionList_);
+              spawnPointListBuilder_.addAllMessages(other.spawnPointList_);
+            }
+          }
+        }
+        if (uidInfoListBuilder_ == null) {
+          if (!other.uidInfoList_.isEmpty()) {
+            if (uidInfoList_.isEmpty()) {
+              uidInfoList_ = other.uidInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureUidInfoListIsMutable();
+              uidInfoList_.addAll(other.uidInfoList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.uidInfoList_.isEmpty()) {
+            if (uidInfoListBuilder_.isEmpty()) {
+              uidInfoListBuilder_.dispose();
+              uidInfoListBuilder_ = null;
+              uidInfoList_ = other.uidInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              uidInfoListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getUidInfoListFieldBuilder() : null;
+            } else {
+              uidInfoListBuilder_.addAllMessages(other.uidInfoList_);
             }
           }
         }
@@ -2400,7 +2388,7 @@ public final class BreakoutSnapShotOuterClass {
           if (!other.ballElementReactionList_.isEmpty()) {
             if (ballElementReactionList_.isEmpty()) {
               ballElementReactionList_ = other.ballElementReactionList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000008);
             } else {
               ensureBallElementReactionListIsMutable();
               ballElementReactionList_.addAll(other.ballElementReactionList_);
@@ -2413,48 +2401,12 @@ public final class BreakoutSnapShotOuterClass {
               ballElementReactionListBuilder_.dispose();
               ballElementReactionListBuilder_ = null;
               ballElementReactionList_ = other.ballElementReactionList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000008);
               ballElementReactionListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getBallElementReactionListFieldBuilder() : null;
             } else {
               ballElementReactionListBuilder_.addAllMessages(other.ballElementReactionList_);
-            }
-          }
-        }
-        if (!other.oJHOIJNIKOK_.isEmpty()) {
-          if (oJHOIJNIKOK_.isEmpty()) {
-            oJHOIJNIKOK_ = other.oJHOIJNIKOK_;
-            bitField0_ = (bitField0_ & ~0x00000004);
-          } else {
-            ensureOJHOIJNIKOKIsMutable();
-            oJHOIJNIKOK_.addAll(other.oJHOIJNIKOK_);
-          }
-          onChanged();
-        }
-        if (dynamicObjectListBuilder_ == null) {
-          if (!other.dynamicObjectList_.isEmpty()) {
-            if (dynamicObjectList_.isEmpty()) {
-              dynamicObjectList_ = other.dynamicObjectList_;
-              bitField0_ = (bitField0_ & ~0x00000008);
-            } else {
-              ensureDynamicObjectListIsMutable();
-              dynamicObjectList_.addAll(other.dynamicObjectList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.dynamicObjectList_.isEmpty()) {
-            if (dynamicObjectListBuilder_.isEmpty()) {
-              dynamicObjectListBuilder_.dispose();
-              dynamicObjectListBuilder_ = null;
-              dynamicObjectList_ = other.dynamicObjectList_;
-              bitField0_ = (bitField0_ & ~0x00000008);
-              dynamicObjectListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getDynamicObjectListFieldBuilder() : null;
-            } else {
-              dynamicObjectListBuilder_.addAllMessages(other.dynamicObjectList_);
             }
           }
         }
@@ -2484,40 +2436,11 @@ public final class BreakoutSnapShotOuterClass {
             }
           }
         }
-        if (other.hasMNJLILHPGIB()) {
-          mergeMNJLILHPGIB(other.getMNJLILHPGIB());
-        }
-        if (spawnPointListBuilder_ == null) {
-          if (!other.spawnPointList_.isEmpty()) {
-            if (spawnPointList_.isEmpty()) {
-              spawnPointList_ = other.spawnPointList_;
-              bitField0_ = (bitField0_ & ~0x00000020);
-            } else {
-              ensureSpawnPointListIsMutable();
-              spawnPointList_.addAll(other.spawnPointList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.spawnPointList_.isEmpty()) {
-            if (spawnPointListBuilder_.isEmpty()) {
-              spawnPointListBuilder_.dispose();
-              spawnPointListBuilder_ = null;
-              spawnPointList_ = other.spawnPointList_;
-              bitField0_ = (bitField0_ & ~0x00000020);
-              spawnPointListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getSpawnPointListFieldBuilder() : null;
-            } else {
-              spawnPointListBuilder_.addAllMessages(other.spawnPointList_);
-            }
-          }
-        }
         if (brickElementReactionListBuilder_ == null) {
           if (!other.brickElementReactionList_.isEmpty()) {
             if (brickElementReactionList_.isEmpty()) {
               brickElementReactionList_ = other.brickElementReactionList_;
-              bitField0_ = (bitField0_ & ~0x00000040);
+              bitField0_ = (bitField0_ & ~0x00000020);
             } else {
               ensureBrickElementReactionListIsMutable();
               brickElementReactionList_.addAll(other.brickElementReactionList_);
@@ -2530,7 +2453,7 @@ public final class BreakoutSnapShotOuterClass {
               brickElementReactionListBuilder_.dispose();
               brickElementReactionListBuilder_ = null;
               brickElementReactionList_ = other.brickElementReactionList_;
-              bitField0_ = (bitField0_ & ~0x00000040);
+              bitField0_ = (bitField0_ & ~0x00000020);
               brickElementReactionListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getBrickElementReactionListFieldBuilder() : null;
@@ -2539,21 +2462,76 @@ public final class BreakoutSnapShotOuterClass {
             }
           }
         }
-        if (!other.idIndexList_.isEmpty()) {
-          if (idIndexList_.isEmpty()) {
-            idIndexList_ = other.idIndexList_;
-            bitField0_ = (bitField0_ & ~0x00000080);
+        if (!other.oEFDIKGIDPD_.isEmpty()) {
+          if (oEFDIKGIDPD_.isEmpty()) {
+            oEFDIKGIDPD_ = other.oEFDIKGIDPD_;
+            bitField0_ = (bitField0_ & ~0x00000040);
           } else {
-            ensureIdIndexListIsMutable();
-            idIndexList_.addAll(other.idIndexList_);
+            ensureOEFDIKGIDPDIsMutable();
+            oEFDIKGIDPD_.addAll(other.oEFDIKGIDPD_);
           }
           onChanged();
+        }
+        if (dynamicObjectListBuilder_ == null) {
+          if (!other.dynamicObjectList_.isEmpty()) {
+            if (dynamicObjectList_.isEmpty()) {
+              dynamicObjectList_ = other.dynamicObjectList_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+            } else {
+              ensureDynamicObjectListIsMutable();
+              dynamicObjectList_.addAll(other.dynamicObjectList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.dynamicObjectList_.isEmpty()) {
+            if (dynamicObjectListBuilder_.isEmpty()) {
+              dynamicObjectListBuilder_.dispose();
+              dynamicObjectListBuilder_ = null;
+              dynamicObjectList_ = other.dynamicObjectList_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+              dynamicObjectListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getDynamicObjectListFieldBuilder() : null;
+            } else {
+              dynamicObjectListBuilder_.addAllMessages(other.dynamicObjectList_);
+            }
+          }
+        }
+        if (other.hasMNJLILHPGIB()) {
+          mergeMNJLILHPGIB(other.getMNJLILHPGIB());
+        }
+        if (actionListBuilder_ == null) {
+          if (!other.actionList_.isEmpty()) {
+            if (actionList_.isEmpty()) {
+              actionList_ = other.actionList_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+            } else {
+              ensureActionListIsMutable();
+              actionList_.addAll(other.actionList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.actionList_.isEmpty()) {
+            if (actionListBuilder_.isEmpty()) {
+              actionListBuilder_.dispose();
+              actionListBuilder_ = null;
+              actionList_ = other.actionList_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+              actionListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getActionListFieldBuilder() : null;
+            } else {
+              actionListBuilder_.addAllMessages(other.actionList_);
+            }
+          }
         }
         if (physicalObjectListBuilder_ == null) {
           if (!other.physicalObjectList_.isEmpty()) {
             if (physicalObjectList_.isEmpty()) {
               physicalObjectList_ = other.physicalObjectList_;
-              bitField0_ = (bitField0_ & ~0x00000100);
+              bitField0_ = (bitField0_ & ~0x00000200);
             } else {
               ensurePhysicalObjectListIsMutable();
               physicalObjectList_.addAll(other.physicalObjectList_);
@@ -2566,7 +2544,7 @@ public final class BreakoutSnapShotOuterClass {
               physicalObjectListBuilder_.dispose();
               physicalObjectListBuilder_ = null;
               physicalObjectList_ = other.physicalObjectList_;
-              bitField0_ = (bitField0_ & ~0x00000100);
+              bitField0_ = (bitField0_ & ~0x00000200);
               physicalObjectListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPhysicalObjectListFieldBuilder() : null;
@@ -2575,64 +2553,38 @@ public final class BreakoutSnapShotOuterClass {
             }
           }
         }
-        if (uidInfoListBuilder_ == null) {
-          if (!other.uidInfoList_.isEmpty()) {
-            if (uidInfoList_.isEmpty()) {
-              uidInfoList_ = other.uidInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000200);
-            } else {
-              ensureUidInfoListIsMutable();
-              uidInfoList_.addAll(other.uidInfoList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.uidInfoList_.isEmpty()) {
-            if (uidInfoListBuilder_.isEmpty()) {
-              uidInfoListBuilder_.dispose();
-              uidInfoListBuilder_ = null;
-              uidInfoList_ = other.uidInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000200);
-              uidInfoListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUidInfoListFieldBuilder() : null;
-            } else {
-              uidInfoListBuilder_.addAllMessages(other.uidInfoList_);
-            }
-          }
-        }
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
-        }
         if (other.getClientGameTime() != 0L) {
           setClientGameTime(other.getClientGameTime());
         }
         if (other.getWaveIndex() != 0) {
           setWaveIndex(other.getWaveIndex());
         }
-        if (other.getRawClientGameTime() != 0) {
-          setRawClientGameTime(other.getRawClientGameTime());
-        }
         if (other.getIsFinish() != false) {
           setIsFinish(other.getIsFinish());
         }
+        if (other.getRawClientGameTime() != 0) {
+          setRawClientGameTime(other.getRawClientGameTime());
+        }
+        if (other.getWaveSuiteIndex() != 0) {
+          setWaveSuiteIndex(other.getWaveSuiteIndex());
+        }
         if (other.getLifeCount() != 0) {
           setLifeCount(other.getLifeCount());
+        }
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
+        }
+        if (other.getCombo() != 0) {
+          setCombo(other.getCombo());
+        }
+        if (other.getServerGameTime() != 0L) {
+          setServerGameTime(other.getServerGameTime());
         }
         if (other.getRemainingBossHp() != 0) {
           setRemainingBossHp(other.getRemainingBossHp());
         }
         if (other.getMaxCombo() != 0) {
           setMaxCombo(other.getMaxCombo());
-        }
-        if (other.getServerGameTime() != 0L) {
-          setServerGameTime(other.getServerGameTime());
-        }
-        if (other.getWaveSuiteIndex() != 0) {
-          setWaveSuiteIndex(other.getWaveSuiteIndex());
-        }
-        if (other.getCombo() != 0) {
-          setCombo(other.getCombo());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2664,324 +2616,743 @@ public final class BreakoutSnapShotOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> actionList_ =
-        java.util.Collections.emptyList();
-      private void ensureActionListIsMutable() {
+      private com.google.protobuf.Internal.IntList idIndexList_ = emptyIntList();
+      private void ensureIdIndexListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          actionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction>(actionList_);
+          idIndexList_ = mutableCopy(idIndexList_);
           bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated uint32 id_index_list = 19;</code>
+       * @return A list containing the idIndexList.
+       */
+      public java.util.List<java.lang.Integer>
+          getIdIndexListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(idIndexList_) : idIndexList_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated uint32 id_index_list = 19;</code>
+       * @return The count of idIndexList.
+       */
+      public int getIdIndexListCount() {
+        return idIndexList_.size();
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated uint32 id_index_list = 19;</code>
+       * @param index The index of the element to return.
+       * @return The idIndexList at the given index.
+       */
+      public int getIdIndexList(int index) {
+        return idIndexList_.getInt(index);
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated uint32 id_index_list = 19;</code>
+       * @param index The index to set the value at.
+       * @param value The idIndexList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIdIndexList(
+          int index, int value) {
+        ensureIdIndexListIsMutable();
+        idIndexList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated uint32 id_index_list = 19;</code>
+       * @param value The idIndexList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addIdIndexList(int value) {
+        ensureIdIndexListIsMutable();
+        idIndexList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated uint32 id_index_list = 19;</code>
+       * @param values The idIndexList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllIdIndexList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureIdIndexListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, idIndexList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated uint32 id_index_list = 19;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIdIndexList() {
+        idIndexList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> spawnPointList_ =
+        java.util.Collections.emptyList();
+      private void ensureSpawnPointListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          spawnPointList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint>(spawnPointList_);
+          bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder> actionListBuilder_;
+          emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder> spawnPointListBuilder_;
 
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> getActionListList() {
-        if (actionListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(actionList_);
+      public java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> getSpawnPointListList() {
+        if (spawnPointListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(spawnPointList_);
         } else {
-          return actionListBuilder_.getMessageList();
+          return spawnPointListBuilder_.getMessageList();
         }
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public int getActionListCount() {
-        if (actionListBuilder_ == null) {
-          return actionList_.size();
+      public int getSpawnPointListCount() {
+        if (spawnPointListBuilder_ == null) {
+          return spawnPointList_.size();
         } else {
-          return actionListBuilder_.getCount();
+          return spawnPointListBuilder_.getCount();
         }
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction getActionList(int index) {
-        if (actionListBuilder_ == null) {
-          return actionList_.get(index);
+      public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint getSpawnPointList(int index) {
+        if (spawnPointListBuilder_ == null) {
+          return spawnPointList_.get(index);
         } else {
-          return actionListBuilder_.getMessage(index);
+          return spawnPointListBuilder_.getMessage(index);
         }
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public Builder setActionList(
-          int index, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction value) {
-        if (actionListBuilder_ == null) {
+      public Builder setSpawnPointList(
+          int index, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint value) {
+        if (spawnPointListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureActionListIsMutable();
-          actionList_.set(index, value);
+          ensureSpawnPointListIsMutable();
+          spawnPointList_.set(index, value);
           onChanged();
         } else {
-          actionListBuilder_.setMessage(index, value);
+          spawnPointListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public Builder setActionList(
-          int index, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder builderForValue) {
-        if (actionListBuilder_ == null) {
-          ensureActionListIsMutable();
-          actionList_.set(index, builderForValue.build());
+      public Builder setSpawnPointList(
+          int index, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder builderForValue) {
+        if (spawnPointListBuilder_ == null) {
+          ensureSpawnPointListIsMutable();
+          spawnPointList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          actionListBuilder_.setMessage(index, builderForValue.build());
+          spawnPointListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public Builder addActionList(emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction value) {
-        if (actionListBuilder_ == null) {
+      public Builder addSpawnPointList(emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint value) {
+        if (spawnPointListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureActionListIsMutable();
-          actionList_.add(value);
+          ensureSpawnPointListIsMutable();
+          spawnPointList_.add(value);
           onChanged();
         } else {
-          actionListBuilder_.addMessage(value);
+          spawnPointListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public Builder addActionList(
-          int index, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction value) {
-        if (actionListBuilder_ == null) {
+      public Builder addSpawnPointList(
+          int index, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint value) {
+        if (spawnPointListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureActionListIsMutable();
-          actionList_.add(index, value);
+          ensureSpawnPointListIsMutable();
+          spawnPointList_.add(index, value);
           onChanged();
         } else {
-          actionListBuilder_.addMessage(index, value);
+          spawnPointListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public Builder addActionList(
-          emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder builderForValue) {
-        if (actionListBuilder_ == null) {
-          ensureActionListIsMutable();
-          actionList_.add(builderForValue.build());
+      public Builder addSpawnPointList(
+          emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder builderForValue) {
+        if (spawnPointListBuilder_ == null) {
+          ensureSpawnPointListIsMutable();
+          spawnPointList_.add(builderForValue.build());
           onChanged();
         } else {
-          actionListBuilder_.addMessage(builderForValue.build());
+          spawnPointListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public Builder addActionList(
-          int index, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder builderForValue) {
-        if (actionListBuilder_ == null) {
-          ensureActionListIsMutable();
-          actionList_.add(index, builderForValue.build());
+      public Builder addSpawnPointList(
+          int index, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder builderForValue) {
+        if (spawnPointListBuilder_ == null) {
+          ensureSpawnPointListIsMutable();
+          spawnPointList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          actionListBuilder_.addMessage(index, builderForValue.build());
+          spawnPointListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public Builder addAllActionList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> values) {
-        if (actionListBuilder_ == null) {
-          ensureActionListIsMutable();
+      public Builder addAllSpawnPointList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> values) {
+        if (spawnPointListBuilder_ == null) {
+          ensureSpawnPointListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, actionList_);
+              values, spawnPointList_);
           onChanged();
         } else {
-          actionListBuilder_.addAllMessages(values);
+          spawnPointListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public Builder clearActionList() {
-        if (actionListBuilder_ == null) {
-          actionList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+      public Builder clearSpawnPointList() {
+        if (spawnPointListBuilder_ == null) {
+          spawnPointList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
-          actionListBuilder_.clear();
+          spawnPointListBuilder_.clear();
         }
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public Builder removeActionList(int index) {
-        if (actionListBuilder_ == null) {
-          ensureActionListIsMutable();
-          actionList_.remove(index);
+      public Builder removeSpawnPointList(int index) {
+        if (spawnPointListBuilder_ == null) {
+          ensureSpawnPointListIsMutable();
+          spawnPointList_.remove(index);
           onChanged();
         } else {
-          actionListBuilder_.remove(index);
+          spawnPointListBuilder_.remove(index);
         }
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder getActionListBuilder(
+      public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder getSpawnPointListBuilder(
           int index) {
-        return getActionListFieldBuilder().getBuilder(index);
+        return getSpawnPointListFieldBuilder().getBuilder(index);
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder getActionListOrBuilder(
+      public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder getSpawnPointListOrBuilder(
           int index) {
-        if (actionListBuilder_ == null) {
-          return actionList_.get(index);  } else {
-          return actionListBuilder_.getMessageOrBuilder(index);
+        if (spawnPointListBuilder_ == null) {
+          return spawnPointList_.get(index);  } else {
+          return spawnPointListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder> 
-           getActionListOrBuilderList() {
-        if (actionListBuilder_ != null) {
-          return actionListBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder> 
+           getSpawnPointListOrBuilderList() {
+        if (spawnPointListBuilder_ != null) {
+          return spawnPointListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(actionList_);
+          return java.util.Collections.unmodifiableList(spawnPointList_);
         }
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder addActionListBuilder() {
-        return getActionListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.getDefaultInstance());
+      public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder addSpawnPointListBuilder() {
+        return getSpawnPointListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.getDefaultInstance());
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder addActionListBuilder(
+      public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder addSpawnPointListBuilder(
           int index) {
-        return getActionListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.getDefaultInstance());
+        return getSpawnPointListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.getDefaultInstance());
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .BreakoutAction action_list = 5;</code>
+       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder> 
-           getActionListBuilderList() {
-        return getActionListFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder> 
+           getSpawnPointListBuilderList() {
+        return getSpawnPointListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder> 
-          getActionListFieldBuilder() {
-        if (actionListBuilder_ == null) {
-          actionListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder>(
-                  actionList_,
-                  ((bitField0_ & 0x00000001) != 0),
+          emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder> 
+          getSpawnPointListFieldBuilder() {
+        if (spawnPointListBuilder_ == null) {
+          spawnPointListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder>(
+                  spawnPointList_,
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
-          actionList_ = null;
+          spawnPointList_ = null;
         }
-        return actionListBuilder_;
+        return spawnPointListBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo> uidInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureUidInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          uidInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo>(uidInfoList_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfoOrBuilder> uidInfoListBuilder_;
+
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo> getUidInfoListList() {
+        if (uidInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(uidInfoList_);
+        } else {
+          return uidInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public int getUidInfoListCount() {
+        if (uidInfoListBuilder_ == null) {
+          return uidInfoList_.size();
+        } else {
+          return uidInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo getUidInfoList(int index) {
+        if (uidInfoListBuilder_ == null) {
+          return uidInfoList_.get(index);
+        } else {
+          return uidInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public Builder setUidInfoList(
+          int index, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo value) {
+        if (uidInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUidInfoListIsMutable();
+          uidInfoList_.set(index, value);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public Builder setUidInfoList(
+          int index, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder builderForValue) {
+        if (uidInfoListBuilder_ == null) {
+          ensureUidInfoListIsMutable();
+          uidInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          uidInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public Builder addUidInfoList(emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo value) {
+        if (uidInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUidInfoListIsMutable();
+          uidInfoList_.add(value);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public Builder addUidInfoList(
+          int index, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo value) {
+        if (uidInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUidInfoListIsMutable();
+          uidInfoList_.add(index, value);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public Builder addUidInfoList(
+          emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder builderForValue) {
+        if (uidInfoListBuilder_ == null) {
+          ensureUidInfoListIsMutable();
+          uidInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          uidInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public Builder addUidInfoList(
+          int index, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder builderForValue) {
+        if (uidInfoListBuilder_ == null) {
+          ensureUidInfoListIsMutable();
+          uidInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          uidInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public Builder addAllUidInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo> values) {
+        if (uidInfoListBuilder_ == null) {
+          ensureUidInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, uidInfoList_);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public Builder clearUidInfoList() {
+        if (uidInfoListBuilder_ == null) {
+          uidInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public Builder removeUidInfoList(int index) {
+        if (uidInfoListBuilder_ == null) {
+          ensureUidInfoListIsMutable();
+          uidInfoList_.remove(index);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder getUidInfoListBuilder(
+          int index) {
+        return getUidInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfoOrBuilder getUidInfoListOrBuilder(
+          int index) {
+        if (uidInfoListBuilder_ == null) {
+          return uidInfoList_.get(index);  } else {
+          return uidInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfoOrBuilder> 
+           getUidInfoListOrBuilderList() {
+        if (uidInfoListBuilder_ != null) {
+          return uidInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(uidInfoList_);
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder addUidInfoListBuilder() {
+        return getUidInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder addUidInfoListBuilder(
+          int index) {
+        return getUidInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder> 
+           getUidInfoListBuilderList() {
+        return getUidInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfoOrBuilder> 
+          getUidInfoListFieldBuilder() {
+        if (uidInfoListBuilder_ == null) {
+          uidInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfoOrBuilder>(
+                  uidInfoList_,
+                  ((bitField0_ & 0x00000004) != 0),
+                  getParentForChildren(),
+                  isClean());
+          uidInfoList_ = null;
+        }
+        return uidInfoListBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> ballElementReactionList_ =
         java.util.Collections.emptyList();
       private void ensureBallElementReactionListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000008) != 0)) {
           ballElementReactionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter>(ballElementReactionList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000008;
          }
       }
 
@@ -2990,7 +3361,7 @@ public final class BreakoutSnapShotOuterClass {
 
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3004,7 +3375,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3018,7 +3389,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3032,7 +3403,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3053,7 +3424,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3071,7 +3442,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3091,7 +3462,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3112,7 +3483,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3130,7 +3501,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3148,7 +3519,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3167,7 +3538,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3175,7 +3546,7 @@ public final class BreakoutSnapShotOuterClass {
       public Builder clearBallElementReactionList() {
         if (ballElementReactionListBuilder_ == null) {
           ballElementReactionList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000008);
           onChanged();
         } else {
           ballElementReactionListBuilder_.clear();
@@ -3184,7 +3555,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3201,7 +3572,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3212,7 +3583,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3226,7 +3597,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3241,7 +3612,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3252,7 +3623,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3264,7 +3635,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter ball_element_reaction_list = 16;</code>
@@ -3280,431 +3651,12 @@ public final class BreakoutSnapShotOuterClass {
           ballElementReactionListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter, emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter.Builder, emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder>(
                   ballElementReactionList_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
                   isClean());
           ballElementReactionList_ = null;
         }
         return ballElementReactionListBuilder_;
-      }
-
-      private com.google.protobuf.Internal.IntList oJHOIJNIKOK_ = emptyIntList();
-      private void ensureOJHOIJNIKOKIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          oJHOIJNIKOK_ = mutableCopy(oJHOIJNIKOK_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-       * @return A list containing the oJHOIJNIKOK.
-       */
-      public java.util.List<java.lang.Integer>
-          getOJHOIJNIKOKList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(oJHOIJNIKOK_) : oJHOIJNIKOK_;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-       * @return The count of oJHOIJNIKOK.
-       */
-      public int getOJHOIJNIKOKCount() {
-        return oJHOIJNIKOK_.size();
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-       * @param index The index of the element to return.
-       * @return The oJHOIJNIKOK at the given index.
-       */
-      public int getOJHOIJNIKOK(int index) {
-        return oJHOIJNIKOK_.getInt(index);
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-       * @param index The index to set the value at.
-       * @param value The oJHOIJNIKOK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOJHOIJNIKOK(
-          int index, int value) {
-        ensureOJHOIJNIKOKIsMutable();
-        oJHOIJNIKOK_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-       * @param value The oJHOIJNIKOK to add.
-       * @return This builder for chaining.
-       */
-      public Builder addOJHOIJNIKOK(int value) {
-        ensureOJHOIJNIKOKIsMutable();
-        oJHOIJNIKOK_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-       * @param values The oJHOIJNIKOK to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllOJHOIJNIKOK(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOJHOIJNIKOKIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, oJHOIJNIKOK_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>repeated int32 OJHOIJNIKOK = 21;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOJHOIJNIKOK() {
-        oJHOIJNIKOK_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> dynamicObjectList_ =
-        java.util.Collections.emptyList();
-      private void ensureDynamicObjectListIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
-          dynamicObjectList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject>(dynamicObjectList_);
-          bitField0_ |= 0x00000008;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> dynamicObjectListBuilder_;
-
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> getDynamicObjectListList() {
-        if (dynamicObjectListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(dynamicObjectList_);
-        } else {
-          return dynamicObjectListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public int getDynamicObjectListCount() {
-        if (dynamicObjectListBuilder_ == null) {
-          return dynamicObjectList_.size();
-        } else {
-          return dynamicObjectListBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getDynamicObjectList(int index) {
-        if (dynamicObjectListBuilder_ == null) {
-          return dynamicObjectList_.get(index);
-        } else {
-          return dynamicObjectListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public Builder setDynamicObjectList(
-          int index, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject value) {
-        if (dynamicObjectListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureDynamicObjectListIsMutable();
-          dynamicObjectList_.set(index, value);
-          onChanged();
-        } else {
-          dynamicObjectListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public Builder setDynamicObjectList(
-          int index, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder builderForValue) {
-        if (dynamicObjectListBuilder_ == null) {
-          ensureDynamicObjectListIsMutable();
-          dynamicObjectList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          dynamicObjectListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public Builder addDynamicObjectList(emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject value) {
-        if (dynamicObjectListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureDynamicObjectListIsMutable();
-          dynamicObjectList_.add(value);
-          onChanged();
-        } else {
-          dynamicObjectListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public Builder addDynamicObjectList(
-          int index, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject value) {
-        if (dynamicObjectListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureDynamicObjectListIsMutable();
-          dynamicObjectList_.add(index, value);
-          onChanged();
-        } else {
-          dynamicObjectListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public Builder addDynamicObjectList(
-          emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder builderForValue) {
-        if (dynamicObjectListBuilder_ == null) {
-          ensureDynamicObjectListIsMutable();
-          dynamicObjectList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          dynamicObjectListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public Builder addDynamicObjectList(
-          int index, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder builderForValue) {
-        if (dynamicObjectListBuilder_ == null) {
-          ensureDynamicObjectListIsMutable();
-          dynamicObjectList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          dynamicObjectListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public Builder addAllDynamicObjectList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> values) {
-        if (dynamicObjectListBuilder_ == null) {
-          ensureDynamicObjectListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, dynamicObjectList_);
-          onChanged();
-        } else {
-          dynamicObjectListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public Builder clearDynamicObjectList() {
-        if (dynamicObjectListBuilder_ == null) {
-          dynamicObjectList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
-          onChanged();
-        } else {
-          dynamicObjectListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public Builder removeDynamicObjectList(int index) {
-        if (dynamicObjectListBuilder_ == null) {
-          ensureDynamicObjectListIsMutable();
-          dynamicObjectList_.remove(index);
-          onChanged();
-        } else {
-          dynamicObjectListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder getDynamicObjectListBuilder(
-          int index) {
-        return getDynamicObjectListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getDynamicObjectListOrBuilder(
-          int index) {
-        if (dynamicObjectListBuilder_ == null) {
-          return dynamicObjectList_.get(index);  } else {
-          return dynamicObjectListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
-           getDynamicObjectListOrBuilderList() {
-        if (dynamicObjectListBuilder_ != null) {
-          return dynamicObjectListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(dynamicObjectList_);
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder addDynamicObjectListBuilder() {
-        return getDynamicObjectListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder addDynamicObjectListBuilder(
-          int index) {
-        return getDynamicObjectListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder> 
-           getDynamicObjectListBuilderList() {
-        return getDynamicObjectListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
-          getDynamicObjectListFieldBuilder() {
-        if (dynamicObjectListBuilder_ == null) {
-          dynamicObjectListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder>(
-                  dynamicObjectList_,
-                  ((bitField0_ & 0x00000008) != 0),
-                  getParentForChildren(),
-                  isClean());
-          dynamicObjectList_ = null;
-        }
-        return dynamicObjectListBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> ballList_ =
@@ -3721,7 +3673,7 @@ public final class BreakoutSnapShotOuterClass {
 
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3735,7 +3687,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3749,7 +3701,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3763,7 +3715,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3784,7 +3736,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3802,7 +3754,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3822,7 +3774,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3843,7 +3795,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3861,7 +3813,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3879,7 +3831,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3898,7 +3850,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3915,7 +3867,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3932,7 +3884,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3943,7 +3895,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3957,7 +3909,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3972,7 +3924,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3983,7 +3935,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -3995,7 +3947,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject ball_list = 3;</code>
@@ -4019,479 +3971,12 @@ public final class BreakoutSnapShotOuterClass {
         return ballListBuilder_;
       }
 
-      private emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB mNJLILHPGIB_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.Builder, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder> mNJLILHPGIBBuilder_;
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-       * @return Whether the mNJLILHPGIB field is set.
-       */
-      public boolean hasMNJLILHPGIB() {
-        return mNJLILHPGIBBuilder_ != null || mNJLILHPGIB_ != null;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-       * @return The mNJLILHPGIB.
-       */
-      public emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB getMNJLILHPGIB() {
-        if (mNJLILHPGIBBuilder_ == null) {
-          return mNJLILHPGIB_ == null ? emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.getDefaultInstance() : mNJLILHPGIB_;
-        } else {
-          return mNJLILHPGIBBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-       */
-      public Builder setMNJLILHPGIB(emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB value) {
-        if (mNJLILHPGIBBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          mNJLILHPGIB_ = value;
-          onChanged();
-        } else {
-          mNJLILHPGIBBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-       */
-      public Builder setMNJLILHPGIB(
-          emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.Builder builderForValue) {
-        if (mNJLILHPGIBBuilder_ == null) {
-          mNJLILHPGIB_ = builderForValue.build();
-          onChanged();
-        } else {
-          mNJLILHPGIBBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-       */
-      public Builder mergeMNJLILHPGIB(emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB value) {
-        if (mNJLILHPGIBBuilder_ == null) {
-          if (mNJLILHPGIB_ != null) {
-            mNJLILHPGIB_ =
-              emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.newBuilder(mNJLILHPGIB_).mergeFrom(value).buildPartial();
-          } else {
-            mNJLILHPGIB_ = value;
-          }
-          onChanged();
-        } else {
-          mNJLILHPGIBBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-       */
-      public Builder clearMNJLILHPGIB() {
-        if (mNJLILHPGIBBuilder_ == null) {
-          mNJLILHPGIB_ = null;
-          onChanged();
-        } else {
-          mNJLILHPGIB_ = null;
-          mNJLILHPGIBBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-       */
-      public emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.Builder getMNJLILHPGIBBuilder() {
-        
-        onChanged();
-        return getMNJLILHPGIBFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-       */
-      public emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder getMNJLILHPGIBOrBuilder() {
-        if (mNJLILHPGIBBuilder_ != null) {
-          return mNJLILHPGIBBuilder_.getMessageOrBuilder();
-        } else {
-          return mNJLILHPGIB_ == null ?
-              emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.getDefaultInstance() : mNJLILHPGIB_;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.Builder, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder> 
-          getMNJLILHPGIBFieldBuilder() {
-        if (mNJLILHPGIBBuilder_ == null) {
-          mNJLILHPGIBBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.Builder, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder>(
-                  getMNJLILHPGIB(),
-                  getParentForChildren(),
-                  isClean());
-          mNJLILHPGIB_ = null;
-        }
-        return mNJLILHPGIBBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> spawnPointList_ =
-        java.util.Collections.emptyList();
-      private void ensureSpawnPointListIsMutable() {
-        if (!((bitField0_ & 0x00000020) != 0)) {
-          spawnPointList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint>(spawnPointList_);
-          bitField0_ |= 0x00000020;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder> spawnPointListBuilder_;
-
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> getSpawnPointListList() {
-        if (spawnPointListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(spawnPointList_);
-        } else {
-          return spawnPointListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public int getSpawnPointListCount() {
-        if (spawnPointListBuilder_ == null) {
-          return spawnPointList_.size();
-        } else {
-          return spawnPointListBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint getSpawnPointList(int index) {
-        if (spawnPointListBuilder_ == null) {
-          return spawnPointList_.get(index);
-        } else {
-          return spawnPointListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public Builder setSpawnPointList(
-          int index, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint value) {
-        if (spawnPointListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSpawnPointListIsMutable();
-          spawnPointList_.set(index, value);
-          onChanged();
-        } else {
-          spawnPointListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public Builder setSpawnPointList(
-          int index, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder builderForValue) {
-        if (spawnPointListBuilder_ == null) {
-          ensureSpawnPointListIsMutable();
-          spawnPointList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          spawnPointListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public Builder addSpawnPointList(emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint value) {
-        if (spawnPointListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSpawnPointListIsMutable();
-          spawnPointList_.add(value);
-          onChanged();
-        } else {
-          spawnPointListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public Builder addSpawnPointList(
-          int index, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint value) {
-        if (spawnPointListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureSpawnPointListIsMutable();
-          spawnPointList_.add(index, value);
-          onChanged();
-        } else {
-          spawnPointListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public Builder addSpawnPointList(
-          emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder builderForValue) {
-        if (spawnPointListBuilder_ == null) {
-          ensureSpawnPointListIsMutable();
-          spawnPointList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          spawnPointListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public Builder addSpawnPointList(
-          int index, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder builderForValue) {
-        if (spawnPointListBuilder_ == null) {
-          ensureSpawnPointListIsMutable();
-          spawnPointList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          spawnPointListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public Builder addAllSpawnPointList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint> values) {
-        if (spawnPointListBuilder_ == null) {
-          ensureSpawnPointListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, spawnPointList_);
-          onChanged();
-        } else {
-          spawnPointListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public Builder clearSpawnPointList() {
-        if (spawnPointListBuilder_ == null) {
-          spawnPointList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
-          onChanged();
-        } else {
-          spawnPointListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public Builder removeSpawnPointList(int index) {
-        if (spawnPointListBuilder_ == null) {
-          ensureSpawnPointListIsMutable();
-          spawnPointList_.remove(index);
-          onChanged();
-        } else {
-          spawnPointListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder getSpawnPointListBuilder(
-          int index) {
-        return getSpawnPointListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder getSpawnPointListOrBuilder(
-          int index) {
-        if (spawnPointListBuilder_ == null) {
-          return spawnPointList_.get(index);  } else {
-          return spawnPointListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder> 
-           getSpawnPointListOrBuilderList() {
-        if (spawnPointListBuilder_ != null) {
-          return spawnPointListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(spawnPointList_);
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder addSpawnPointListBuilder() {
-        return getSpawnPointListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder addSpawnPointListBuilder(
-          int index) {
-        return getSpawnPointListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 80
-       * </pre>
-       *
-       * <code>repeated .BreakoutSpawnPoint spawn_point_list = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder> 
-           getSpawnPointListBuilderList() {
-        return getSpawnPointListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder> 
-          getSpawnPointListFieldBuilder() {
-        if (spawnPointListBuilder_ == null) {
-          spawnPointListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPointOrBuilder>(
-                  spawnPointList_,
-                  ((bitField0_ & 0x00000020) != 0),
-                  getParentForChildren(),
-                  isClean());
-          spawnPointList_ = null;
-        }
-        return spawnPointListBuilder_;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter> brickElementReactionList_ =
         java.util.Collections.emptyList();
       private void ensureBrickElementReactionListIsMutable() {
-        if (!((bitField0_ & 0x00000040) != 0)) {
+        if (!((bitField0_ & 0x00000020) != 0)) {
           brickElementReactionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter>(brickElementReactionList_);
-          bitField0_ |= 0x00000040;
+          bitField0_ |= 0x00000020;
          }
       }
 
@@ -4500,7 +3985,7 @@ public final class BreakoutSnapShotOuterClass {
 
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4514,7 +3999,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4528,7 +4013,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4542,7 +4027,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4563,7 +4048,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4581,7 +4066,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4601,7 +4086,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4622,7 +4107,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4640,7 +4125,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4658,7 +4143,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4677,7 +4162,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4685,7 +4170,7 @@ public final class BreakoutSnapShotOuterClass {
       public Builder clearBrickElementReactionList() {
         if (brickElementReactionListBuilder_ == null) {
           brickElementReactionList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00000020);
           onChanged();
         } else {
           brickElementReactionListBuilder_.clear();
@@ -4694,7 +4179,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4711,7 +4196,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4722,7 +4207,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4736,7 +4221,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4751,7 +4236,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4762,7 +4247,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4774,7 +4259,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutElementReactionCounter brick_element_reaction_list = 15;</code>
@@ -4790,7 +4275,7 @@ public final class BreakoutSnapShotOuterClass {
           brickElementReactionListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter, emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter.Builder, emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounterOrBuilder>(
                   brickElementReactionList_,
-                  ((bitField0_ & 0x00000040) != 0),
+                  ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
                   isClean());
           brickElementReactionList_ = null;
@@ -4798,119 +4283,834 @@ public final class BreakoutSnapShotOuterClass {
         return brickElementReactionListBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList idIndexList_ = emptyIntList();
-      private void ensureIdIndexListIsMutable() {
-        if (!((bitField0_ & 0x00000080) != 0)) {
-          idIndexList_ = mutableCopy(idIndexList_);
-          bitField0_ |= 0x00000080;
+      private com.google.protobuf.Internal.IntList oEFDIKGIDPD_ = emptyIntList();
+      private void ensureOEFDIKGIDPDIsMutable() {
+        if (!((bitField0_ & 0x00000040) != 0)) {
+          oEFDIKGIDPD_ = mutableCopy(oEFDIKGIDPD_);
+          bitField0_ |= 0x00000040;
          }
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 96
-       * </pre>
-       *
-       * <code>repeated uint32 id_index_list = 19;</code>
-       * @return A list containing the idIndexList.
+       * <code>repeated int32 OEFDIKGIDPD = 21;</code>
+       * @return A list containing the oEFDIKGIDPD.
        */
       public java.util.List<java.lang.Integer>
-          getIdIndexListList() {
-        return ((bitField0_ & 0x00000080) != 0) ?
-                 java.util.Collections.unmodifiableList(idIndexList_) : idIndexList_;
+          getOEFDIKGIDPDList() {
+        return ((bitField0_ & 0x00000040) != 0) ?
+                 java.util.Collections.unmodifiableList(oEFDIKGIDPD_) : oEFDIKGIDPD_;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 96
-       * </pre>
-       *
-       * <code>repeated uint32 id_index_list = 19;</code>
-       * @return The count of idIndexList.
+       * <code>repeated int32 OEFDIKGIDPD = 21;</code>
+       * @return The count of oEFDIKGIDPD.
        */
-      public int getIdIndexListCount() {
-        return idIndexList_.size();
+      public int getOEFDIKGIDPDCount() {
+        return oEFDIKGIDPD_.size();
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 96
-       * </pre>
-       *
-       * <code>repeated uint32 id_index_list = 19;</code>
+       * <code>repeated int32 OEFDIKGIDPD = 21;</code>
        * @param index The index of the element to return.
-       * @return The idIndexList at the given index.
+       * @return The oEFDIKGIDPD at the given index.
        */
-      public int getIdIndexList(int index) {
-        return idIndexList_.getInt(index);
+      public int getOEFDIKGIDPD(int index) {
+        return oEFDIKGIDPD_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 96
-       * </pre>
-       *
-       * <code>repeated uint32 id_index_list = 19;</code>
+       * <code>repeated int32 OEFDIKGIDPD = 21;</code>
        * @param index The index to set the value at.
-       * @param value The idIndexList to set.
+       * @param value The oEFDIKGIDPD to set.
        * @return This builder for chaining.
        */
-      public Builder setIdIndexList(
+      public Builder setOEFDIKGIDPD(
           int index, int value) {
-        ensureIdIndexListIsMutable();
-        idIndexList_.setInt(index, value);
+        ensureOEFDIKGIDPDIsMutable();
+        oEFDIKGIDPD_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 96
-       * </pre>
-       *
-       * <code>repeated uint32 id_index_list = 19;</code>
-       * @param value The idIndexList to add.
+       * <code>repeated int32 OEFDIKGIDPD = 21;</code>
+       * @param value The oEFDIKGIDPD to add.
        * @return This builder for chaining.
        */
-      public Builder addIdIndexList(int value) {
-        ensureIdIndexListIsMutable();
-        idIndexList_.addInt(value);
+      public Builder addOEFDIKGIDPD(int value) {
+        ensureOEFDIKGIDPDIsMutable();
+        oEFDIKGIDPD_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 96
-       * </pre>
-       *
-       * <code>repeated uint32 id_index_list = 19;</code>
-       * @param values The idIndexList to add.
+       * <code>repeated int32 OEFDIKGIDPD = 21;</code>
+       * @param values The oEFDIKGIDPD to add.
        * @return This builder for chaining.
        */
-      public Builder addAllIdIndexList(
+      public Builder addAllOEFDIKGIDPD(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureIdIndexListIsMutable();
+        ensureOEFDIKGIDPDIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, idIndexList_);
+            values, oEFDIKGIDPD_);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *6.3.0 // offset: 96
-       * </pre>
-       *
-       * <code>repeated uint32 id_index_list = 19;</code>
+       * <code>repeated int32 OEFDIKGIDPD = 21;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIdIndexList() {
-        idIndexList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000080);
+      public Builder clearOEFDIKGIDPD() {
+        oEFDIKGIDPD_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000040);
         onChanged();
         return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> dynamicObjectList_ =
+        java.util.Collections.emptyList();
+      private void ensureDynamicObjectListIsMutable() {
+        if (!((bitField0_ & 0x00000080) != 0)) {
+          dynamicObjectList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject>(dynamicObjectList_);
+          bitField0_ |= 0x00000080;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> dynamicObjectListBuilder_;
+
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> getDynamicObjectListList() {
+        if (dynamicObjectListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(dynamicObjectList_);
+        } else {
+          return dynamicObjectListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public int getDynamicObjectListCount() {
+        if (dynamicObjectListBuilder_ == null) {
+          return dynamicObjectList_.size();
+        } else {
+          return dynamicObjectListBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject getDynamicObjectList(int index) {
+        if (dynamicObjectListBuilder_ == null) {
+          return dynamicObjectList_.get(index);
+        } else {
+          return dynamicObjectListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public Builder setDynamicObjectList(
+          int index, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject value) {
+        if (dynamicObjectListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDynamicObjectListIsMutable();
+          dynamicObjectList_.set(index, value);
+          onChanged();
+        } else {
+          dynamicObjectListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public Builder setDynamicObjectList(
+          int index, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder builderForValue) {
+        if (dynamicObjectListBuilder_ == null) {
+          ensureDynamicObjectListIsMutable();
+          dynamicObjectList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          dynamicObjectListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public Builder addDynamicObjectList(emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject value) {
+        if (dynamicObjectListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDynamicObjectListIsMutable();
+          dynamicObjectList_.add(value);
+          onChanged();
+        } else {
+          dynamicObjectListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public Builder addDynamicObjectList(
+          int index, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject value) {
+        if (dynamicObjectListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDynamicObjectListIsMutable();
+          dynamicObjectList_.add(index, value);
+          onChanged();
+        } else {
+          dynamicObjectListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public Builder addDynamicObjectList(
+          emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder builderForValue) {
+        if (dynamicObjectListBuilder_ == null) {
+          ensureDynamicObjectListIsMutable();
+          dynamicObjectList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          dynamicObjectListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public Builder addDynamicObjectList(
+          int index, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder builderForValue) {
+        if (dynamicObjectListBuilder_ == null) {
+          ensureDynamicObjectListIsMutable();
+          dynamicObjectList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          dynamicObjectListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public Builder addAllDynamicObjectList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> values) {
+        if (dynamicObjectListBuilder_ == null) {
+          ensureDynamicObjectListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, dynamicObjectList_);
+          onChanged();
+        } else {
+          dynamicObjectListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public Builder clearDynamicObjectList() {
+        if (dynamicObjectListBuilder_ == null) {
+          dynamicObjectList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+          onChanged();
+        } else {
+          dynamicObjectListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public Builder removeDynamicObjectList(int index) {
+        if (dynamicObjectListBuilder_ == null) {
+          ensureDynamicObjectListIsMutable();
+          dynamicObjectList_.remove(index);
+          onChanged();
+        } else {
+          dynamicObjectListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder getDynamicObjectListBuilder(
+          int index) {
+        return getDynamicObjectListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getDynamicObjectListOrBuilder(
+          int index) {
+        if (dynamicObjectListBuilder_ == null) {
+          return dynamicObjectList_.get(index);  } else {
+          return dynamicObjectListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
+           getDynamicObjectListOrBuilderList() {
+        if (dynamicObjectListBuilder_ != null) {
+          return dynamicObjectListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(dynamicObjectList_);
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder addDynamicObjectListBuilder() {
+        return getDynamicObjectListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder addDynamicObjectListBuilder(
+          int index) {
+        return getDynamicObjectListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>repeated .BreakoutPhysicalObject dynamic_object_list = 18;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder> 
+           getDynamicObjectListBuilderList() {
+        return getDynamicObjectListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder> 
+          getDynamicObjectListFieldBuilder() {
+        if (dynamicObjectListBuilder_ == null) {
+          dynamicObjectListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder>(
+                  dynamicObjectList_,
+                  ((bitField0_ & 0x00000080) != 0),
+                  getParentForChildren(),
+                  isClean());
+          dynamicObjectList_ = null;
+        }
+        return dynamicObjectListBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB mNJLILHPGIB_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.Builder, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder> mNJLILHPGIBBuilder_;
+      /**
+       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+       * @return Whether the mNJLILHPGIB field is set.
+       */
+      public boolean hasMNJLILHPGIB() {
+        return mNJLILHPGIBBuilder_ != null || mNJLILHPGIB_ != null;
+      }
+      /**
+       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+       * @return The mNJLILHPGIB.
+       */
+      public emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB getMNJLILHPGIB() {
+        if (mNJLILHPGIBBuilder_ == null) {
+          return mNJLILHPGIB_ == null ? emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.getDefaultInstance() : mNJLILHPGIB_;
+        } else {
+          return mNJLILHPGIBBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+       */
+      public Builder setMNJLILHPGIB(emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB value) {
+        if (mNJLILHPGIBBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          mNJLILHPGIB_ = value;
+          onChanged();
+        } else {
+          mNJLILHPGIBBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+       */
+      public Builder setMNJLILHPGIB(
+          emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.Builder builderForValue) {
+        if (mNJLILHPGIBBuilder_ == null) {
+          mNJLILHPGIB_ = builderForValue.build();
+          onChanged();
+        } else {
+          mNJLILHPGIBBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+       */
+      public Builder mergeMNJLILHPGIB(emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB value) {
+        if (mNJLILHPGIBBuilder_ == null) {
+          if (mNJLILHPGIB_ != null) {
+            mNJLILHPGIB_ =
+              emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.newBuilder(mNJLILHPGIB_).mergeFrom(value).buildPartial();
+          } else {
+            mNJLILHPGIB_ = value;
+          }
+          onChanged();
+        } else {
+          mNJLILHPGIBBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+       */
+      public Builder clearMNJLILHPGIB() {
+        if (mNJLILHPGIBBuilder_ == null) {
+          mNJLILHPGIB_ = null;
+          onChanged();
+        } else {
+          mNJLILHPGIB_ = null;
+          mNJLILHPGIBBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+       */
+      public emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.Builder getMNJLILHPGIBBuilder() {
+        
+        onChanged();
+        return getMNJLILHPGIBFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+       */
+      public emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder getMNJLILHPGIBOrBuilder() {
+        if (mNJLILHPGIBBuilder_ != null) {
+          return mNJLILHPGIBBuilder_.getMessageOrBuilder();
+        } else {
+          return mNJLILHPGIB_ == null ?
+              emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.getDefaultInstance() : mNJLILHPGIB_;
+        }
+      }
+      /**
+       * <code>.HMNFHHAKOJB MNJLILHPGIB = 43412;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.Builder, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder> 
+          getMNJLILHPGIBFieldBuilder() {
+        if (mNJLILHPGIBBuilder_ == null) {
+          mNJLILHPGIBBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJB.Builder, emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.HMNFHHAKOJBOrBuilder>(
+                  getMNJLILHPGIB(),
+                  getParentForChildren(),
+                  isClean());
+          mNJLILHPGIB_ = null;
+        }
+        return mNJLILHPGIBBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> actionList_ =
+        java.util.Collections.emptyList();
+      private void ensureActionListIsMutable() {
+        if (!((bitField0_ & 0x00000100) != 0)) {
+          actionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction>(actionList_);
+          bitField0_ |= 0x00000100;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder> actionListBuilder_;
+
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> getActionListList() {
+        if (actionListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(actionList_);
+        } else {
+          return actionListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public int getActionListCount() {
+        if (actionListBuilder_ == null) {
+          return actionList_.size();
+        } else {
+          return actionListBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction getActionList(int index) {
+        if (actionListBuilder_ == null) {
+          return actionList_.get(index);
+        } else {
+          return actionListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public Builder setActionList(
+          int index, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction value) {
+        if (actionListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActionListIsMutable();
+          actionList_.set(index, value);
+          onChanged();
+        } else {
+          actionListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public Builder setActionList(
+          int index, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder builderForValue) {
+        if (actionListBuilder_ == null) {
+          ensureActionListIsMutable();
+          actionList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          actionListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public Builder addActionList(emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction value) {
+        if (actionListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActionListIsMutable();
+          actionList_.add(value);
+          onChanged();
+        } else {
+          actionListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public Builder addActionList(
+          int index, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction value) {
+        if (actionListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActionListIsMutable();
+          actionList_.add(index, value);
+          onChanged();
+        } else {
+          actionListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public Builder addActionList(
+          emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder builderForValue) {
+        if (actionListBuilder_ == null) {
+          ensureActionListIsMutable();
+          actionList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          actionListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public Builder addActionList(
+          int index, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder builderForValue) {
+        if (actionListBuilder_ == null) {
+          ensureActionListIsMutable();
+          actionList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          actionListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public Builder addAllActionList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction> values) {
+        if (actionListBuilder_ == null) {
+          ensureActionListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, actionList_);
+          onChanged();
+        } else {
+          actionListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public Builder clearActionList() {
+        if (actionListBuilder_ == null) {
+          actionList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+          onChanged();
+        } else {
+          actionListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public Builder removeActionList(int index) {
+        if (actionListBuilder_ == null) {
+          ensureActionListIsMutable();
+          actionList_.remove(index);
+          onChanged();
+        } else {
+          actionListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder getActionListBuilder(
+          int index) {
+        return getActionListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder getActionListOrBuilder(
+          int index) {
+        if (actionListBuilder_ == null) {
+          return actionList_.get(index);  } else {
+          return actionListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder> 
+           getActionListOrBuilderList() {
+        if (actionListBuilder_ != null) {
+          return actionListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(actionList_);
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder addActionListBuilder() {
+        return getActionListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder addActionListBuilder(
+          int index) {
+        return getActionListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>repeated .BreakoutAction action_list = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder> 
+           getActionListBuilderList() {
+        return getActionListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder> 
+          getActionListFieldBuilder() {
+        if (actionListBuilder_ == null) {
+          actionListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutActionOrBuilder>(
+                  actionList_,
+                  ((bitField0_ & 0x00000100) != 0),
+                  getParentForChildren(),
+                  isClean());
+          actionList_ = null;
+        }
+        return actionListBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> physicalObjectList_ =
         java.util.Collections.emptyList();
       private void ensurePhysicalObjectListIsMutable() {
-        if (!((bitField0_ & 0x00000100) != 0)) {
+        if (!((bitField0_ & 0x00000200) != 0)) {
           physicalObjectList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject>(physicalObjectList_);
-          bitField0_ |= 0x00000100;
+          bitField0_ |= 0x00000200;
          }
       }
 
@@ -4919,7 +5119,7 @@ public final class BreakoutSnapShotOuterClass {
 
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -4933,7 +5133,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -4947,7 +5147,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -4961,7 +5161,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -4982,7 +5182,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5000,7 +5200,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5020,7 +5220,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5041,7 +5241,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5059,7 +5259,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5077,7 +5277,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5096,7 +5296,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5104,7 +5304,7 @@ public final class BreakoutSnapShotOuterClass {
       public Builder clearPhysicalObjectList() {
         if (physicalObjectListBuilder_ == null) {
           physicalObjectList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000100);
+          bitField0_ = (bitField0_ & ~0x00000200);
           onChanged();
         } else {
           physicalObjectListBuilder_.clear();
@@ -5113,7 +5313,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5130,7 +5330,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5141,7 +5341,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5155,7 +5355,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5170,7 +5370,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5181,7 +5381,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5193,7 +5393,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 104
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>repeated .BreakoutPhysicalObject physical_object_list = 4;</code>
@@ -5209,7 +5409,7 @@ public final class BreakoutSnapShotOuterClass {
           physicalObjectListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject.Builder, emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder>(
                   physicalObjectList_,
-                  ((bitField0_ & 0x00000100) != 0),
+                  ((bitField0_ & 0x00000200) != 0),
                   getParentForChildren(),
                   isClean());
           physicalObjectList_ = null;
@@ -5217,365 +5417,10 @@ public final class BreakoutSnapShotOuterClass {
         return physicalObjectListBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo> uidInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureUidInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000200) != 0)) {
-          uidInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo>(uidInfoList_);
-          bitField0_ |= 0x00000200;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfoOrBuilder> uidInfoListBuilder_;
-
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo> getUidInfoListList() {
-        if (uidInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(uidInfoList_);
-        } else {
-          return uidInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public int getUidInfoListCount() {
-        if (uidInfoListBuilder_ == null) {
-          return uidInfoList_.size();
-        } else {
-          return uidInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo getUidInfoList(int index) {
-        if (uidInfoListBuilder_ == null) {
-          return uidInfoList_.get(index);
-        } else {
-          return uidInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public Builder setUidInfoList(
-          int index, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo value) {
-        if (uidInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUidInfoListIsMutable();
-          uidInfoList_.set(index, value);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public Builder setUidInfoList(
-          int index, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder builderForValue) {
-        if (uidInfoListBuilder_ == null) {
-          ensureUidInfoListIsMutable();
-          uidInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          uidInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public Builder addUidInfoList(emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo value) {
-        if (uidInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUidInfoListIsMutable();
-          uidInfoList_.add(value);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public Builder addUidInfoList(
-          int index, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo value) {
-        if (uidInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUidInfoListIsMutable();
-          uidInfoList_.add(index, value);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public Builder addUidInfoList(
-          emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder builderForValue) {
-        if (uidInfoListBuilder_ == null) {
-          ensureUidInfoListIsMutable();
-          uidInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          uidInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public Builder addUidInfoList(
-          int index, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder builderForValue) {
-        if (uidInfoListBuilder_ == null) {
-          ensureUidInfoListIsMutable();
-          uidInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          uidInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public Builder addAllUidInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo> values) {
-        if (uidInfoListBuilder_ == null) {
-          ensureUidInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, uidInfoList_);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public Builder clearUidInfoList() {
-        if (uidInfoListBuilder_ == null) {
-          uidInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000200);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public Builder removeUidInfoList(int index) {
-        if (uidInfoListBuilder_ == null) {
-          ensureUidInfoListIsMutable();
-          uidInfoList_.remove(index);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder getUidInfoListBuilder(
-          int index) {
-        return getUidInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfoOrBuilder getUidInfoListOrBuilder(
-          int index) {
-        if (uidInfoListBuilder_ == null) {
-          return uidInfoList_.get(index);  } else {
-          return uidInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfoOrBuilder> 
-           getUidInfoListOrBuilderList() {
-        if (uidInfoListBuilder_ != null) {
-          return uidInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(uidInfoList_);
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder addUidInfoListBuilder() {
-        return getUidInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder addUidInfoListBuilder(
-          int index) {
-        return getUidInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 112
-       * </pre>
-       *
-       * <code>repeated .BreakoutSyncConnectUidInfo uid_info_list = 17;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder> 
-           getUidInfoListBuilderList() {
-        return getUidInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfoOrBuilder> 
-          getUidInfoListFieldBuilder() {
-        if (uidInfoListBuilder_ == null) {
-          uidInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfoOrBuilder>(
-                  uidInfoList_,
-                  ((bitField0_ & 0x00000200) != 0),
-                  getParentForChildren(),
-                  isClean());
-          uidInfoList_ = null;
-        }
-        return uidInfoListBuilder_;
-      }
-
-      private int score_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 120
-       * </pre>
-       *
-       * <code>uint32 score = 8;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 120
-       * </pre>
-       *
-       * <code>uint32 score = 8;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 120
-       * </pre>
-       *
-       * <code>uint32 score = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
       private long clientGameTime_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 128
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint64 client_game_time = 1;</code>
@@ -5587,7 +5432,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 128
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint64 client_game_time = 1;</code>
@@ -5602,7 +5447,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 128
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint64 client_game_time = 1;</code>
@@ -5618,7 +5463,7 @@ public final class BreakoutSnapShotOuterClass {
       private int waveIndex_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 136
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 wave_index = 6;</code>
@@ -5630,7 +5475,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 136
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 wave_index = 6;</code>
@@ -5645,7 +5490,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 136
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 wave_index = 6;</code>
@@ -5658,53 +5503,10 @@ public final class BreakoutSnapShotOuterClass {
         return this;
       }
 
-      private int rawClientGameTime_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 140
-       * </pre>
-       *
-       * <code>int32 raw_client_game_time = 20;</code>
-       * @return The rawClientGameTime.
-       */
-      @java.lang.Override
-      public int getRawClientGameTime() {
-        return rawClientGameTime_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 140
-       * </pre>
-       *
-       * <code>int32 raw_client_game_time = 20;</code>
-       * @param value The rawClientGameTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRawClientGameTime(int value) {
-        
-        rawClientGameTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 140
-       * </pre>
-       *
-       * <code>int32 raw_client_game_time = 20;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRawClientGameTime() {
-        
-        rawClientGameTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isFinish_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 144
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>bool is_finish = 7;</code>
@@ -5716,7 +5518,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 144
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>bool is_finish = 7;</code>
@@ -5731,7 +5533,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 144
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>bool is_finish = 7;</code>
@@ -5744,10 +5546,96 @@ public final class BreakoutSnapShotOuterClass {
         return this;
       }
 
+      private int rawClientGameTime_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>int32 raw_client_game_time = 20;</code>
+       * @return The rawClientGameTime.
+       */
+      @java.lang.Override
+      public int getRawClientGameTime() {
+        return rawClientGameTime_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>int32 raw_client_game_time = 20;</code>
+       * @param value The rawClientGameTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRawClientGameTime(int value) {
+        
+        rawClientGameTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>int32 raw_client_game_time = 20;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRawClientGameTime() {
+        
+        rawClientGameTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int waveSuiteIndex_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>uint32 wave_suite_index = 12;</code>
+       * @return The waveSuiteIndex.
+       */
+      @java.lang.Override
+      public int getWaveSuiteIndex() {
+        return waveSuiteIndex_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>uint32 wave_suite_index = 12;</code>
+       * @param value The waveSuiteIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setWaveSuiteIndex(int value) {
+        
+        waveSuiteIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>uint32 wave_suite_index = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearWaveSuiteIndex() {
+        
+        waveSuiteIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int lifeCount_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 148
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 life_count = 11;</code>
@@ -5759,7 +5647,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 148
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 life_count = 11;</code>
@@ -5774,7 +5662,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 148
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 life_count = 11;</code>
@@ -5787,10 +5675,139 @@ public final class BreakoutSnapShotOuterClass {
         return this;
       }
 
+      private int score_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 score = 8;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 score = 8;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 score = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int combo_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 combo = 9;</code>
+       * @return The combo.
+       */
+      @java.lang.Override
+      public int getCombo() {
+        return combo_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 combo = 9;</code>
+       * @param value The combo to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCombo(int value) {
+        
+        combo_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 combo = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCombo() {
+        
+        combo_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long serverGameTime_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint64 server_game_time = 2;</code>
+       * @return The serverGameTime.
+       */
+      @java.lang.Override
+      public long getServerGameTime() {
+        return serverGameTime_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint64 server_game_time = 2;</code>
+       * @param value The serverGameTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setServerGameTime(long value) {
+        
+        serverGameTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint64 server_game_time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearServerGameTime() {
+        
+        serverGameTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
       private int remainingBossHp_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 152
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 remaining_boss_hp = 14;</code>
@@ -5802,7 +5819,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 152
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 remaining_boss_hp = 14;</code>
@@ -5817,7 +5834,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 152
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>uint32 remaining_boss_hp = 14;</code>
@@ -5833,7 +5850,7 @@ public final class BreakoutSnapShotOuterClass {
       private int maxCombo_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 156
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 max_combo = 10;</code>
@@ -5845,7 +5862,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 156
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 max_combo = 10;</code>
@@ -5860,7 +5877,7 @@ public final class BreakoutSnapShotOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 156
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 max_combo = 10;</code>
@@ -5869,135 +5886,6 @@ public final class BreakoutSnapShotOuterClass {
       public Builder clearMaxCombo() {
         
         maxCombo_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long serverGameTime_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 160
-       * </pre>
-       *
-       * <code>uint64 server_game_time = 2;</code>
-       * @return The serverGameTime.
-       */
-      @java.lang.Override
-      public long getServerGameTime() {
-        return serverGameTime_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 160
-       * </pre>
-       *
-       * <code>uint64 server_game_time = 2;</code>
-       * @param value The serverGameTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setServerGameTime(long value) {
-        
-        serverGameTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 160
-       * </pre>
-       *
-       * <code>uint64 server_game_time = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearServerGameTime() {
-        
-        serverGameTime_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int waveSuiteIndex_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 168
-       * </pre>
-       *
-       * <code>uint32 wave_suite_index = 12;</code>
-       * @return The waveSuiteIndex.
-       */
-      @java.lang.Override
-      public int getWaveSuiteIndex() {
-        return waveSuiteIndex_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 168
-       * </pre>
-       *
-       * <code>uint32 wave_suite_index = 12;</code>
-       * @param value The waveSuiteIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWaveSuiteIndex(int value) {
-        
-        waveSuiteIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 168
-       * </pre>
-       *
-       * <code>uint32 wave_suite_index = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWaveSuiteIndex() {
-        
-        waveSuiteIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int combo_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 172
-       * </pre>
-       *
-       * <code>uint32 combo = 9;</code>
-       * @return The combo.
-       */
-      @java.lang.Override
-      public int getCombo() {
-        return combo_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 172
-       * </pre>
-       *
-       * <code>uint32 combo = 9;</code>
-       * @param value The combo to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCombo(int value) {
-        
-        combo_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 172
-       * </pre>
-       *
-       * <code>uint32 combo = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCombo() {
-        
-        combo_ = 0;
         onChanged();
         return this;
       }
@@ -6068,55 +5956,55 @@ public final class BreakoutSnapShotOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026BreakoutSnapShot.proto\032\024BreakoutAction" +
-      ".proto\032$BreakoutElementReactionCounter.p" +
-      "roto\032\034BreakoutPhysicalObject.proto\032\030Brea" +
-      "koutSpawnPoint.proto\032 BreakoutSyncConnec" +
-      "tUidInfo.proto\032\021HMNFHHAKOJB.proto\"\203\006\n\020Br" +
-      "eakoutSnapShot\022$\n\013action_list\030\005 \003(\0132\017.Br" +
-      "eakoutAction\022C\n\032ball_element_reaction_li" +
-      "st\030\020 \003(\0132\037.BreakoutElementReactionCounte" +
-      "r\022\023\n\013OJHOIJNIKOK\030\025 \003(\005\0224\n\023dynamic_object" +
-      "_list\030\022 \003(\0132\027.BreakoutPhysicalObject\022*\n\t" +
-      "ball_list\030\003 \003(\0132\027.BreakoutPhysicalObject" +
-      "\022#\n\013MNJLILHPGIB\030\224\323\002 \001(\0132\014.HMNFHHAKOJB\022-\n" +
+      "\n\026BreakoutSnapShot.proto\032\030BreakoutSpawnP" +
+      "oint.proto\032 BreakoutSyncConnectUidInfo.p" +
+      "roto\032$BreakoutElementReactionCounter.pro" +
+      "to\032\034BreakoutPhysicalObject.proto\032\021HMNFHH" +
+      "AKOJB.proto\032\024BreakoutAction.proto\"\203\006\n\020Br" +
+      "eakoutSnapShot\022\025\n\rid_index_list\030\023 \003(\r\022-\n" +
       "\020spawn_point_list\030\r \003(\0132\023.BreakoutSpawnP" +
-      "oint\022D\n\033brick_element_reaction_list\030\017 \003(" +
-      "\0132\037.BreakoutElementReactionCounter\022\025\n\rid" +
-      "_index_list\030\023 \003(\r\0225\n\024physical_object_lis" +
-      "t\030\004 \003(\0132\027.BreakoutPhysicalObject\0222\n\ruid_" +
-      "info_list\030\021 \003(\0132\033.BreakoutSyncConnectUid" +
-      "Info\022\r\n\005score\030\010 \001(\r\022\030\n\020client_game_time\030" +
-      "\001 \001(\004\022\022\n\nwave_index\030\006 \001(\r\022\034\n\024raw_client_" +
-      "game_time\030\024 \001(\005\022\021\n\tis_finish\030\007 \001(\010\022\022\n\nli" +
-      "fe_count\030\013 \001(\r\022\031\n\021remaining_boss_hp\030\016 \001(" +
-      "\r\022\021\n\tmax_combo\030\n \001(\r\022\030\n\020server_game_time" +
-      "\030\002 \001(\004\022\030\n\020wave_suite_index\030\014 \001(\r\022\r\n\005comb" +
-      "o\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oint\0222\n\ruid_info_list\030\021 \003(\0132\033.BreakoutSy" +
+      "ncConnectUidInfo\022C\n\032ball_element_reactio" +
+      "n_list\030\020 \003(\0132\037.BreakoutElementReactionCo" +
+      "unter\022*\n\tball_list\030\003 \003(\0132\027.BreakoutPhysi" +
+      "calObject\022D\n\033brick_element_reaction_list" +
+      "\030\017 \003(\0132\037.BreakoutElementReactionCounter\022" +
+      "\023\n\013OEFDIKGIDPD\030\025 \003(\005\0224\n\023dynamic_object_l" +
+      "ist\030\022 \003(\0132\027.BreakoutPhysicalObject\022#\n\013MN" +
+      "JLILHPGIB\030\224\323\002 \001(\0132\014.HMNFHHAKOJB\022$\n\013actio" +
+      "n_list\030\005 \003(\0132\017.BreakoutAction\0225\n\024physica" +
+      "l_object_list\030\004 \003(\0132\027.BreakoutPhysicalOb" +
+      "ject\022\030\n\020client_game_time\030\001 \001(\004\022\022\n\nwave_i" +
+      "ndex\030\006 \001(\r\022\021\n\tis_finish\030\007 \001(\010\022\034\n\024raw_cli" +
+      "ent_game_time\030\024 \001(\005\022\030\n\020wave_suite_index\030" +
+      "\014 \001(\r\022\022\n\nlife_count\030\013 \001(\r\022\r\n\005score\030\010 \001(\r" +
+      "\022\r\n\005combo\030\t \001(\r\022\030\n\020server_game_time\030\002 \001(" +
+      "\004\022\031\n\021remaining_boss_hp\030\016 \001(\r\022\021\n\tmax_comb" +
+      "o\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.BreakoutActionOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BreakoutActionOuterClass.getDescriptor(),
         });
     internal_static_BreakoutSnapShot_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_BreakoutSnapShot_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BreakoutSnapShot_descriptor,
-        new java.lang.String[] { "ActionList", "BallElementReactionList", "OJHOIJNIKOK", "DynamicObjectList", "BallList", "MNJLILHPGIB", "SpawnPointList", "BrickElementReactionList", "IdIndexList", "PhysicalObjectList", "UidInfoList", "Score", "ClientGameTime", "WaveIndex", "RawClientGameTime", "IsFinish", "LifeCount", "RemainingBossHp", "MaxCombo", "ServerGameTime", "WaveSuiteIndex", "Combo", });
-    emu.grasscutter.net.proto.BreakoutActionOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.getDescriptor();
+        new java.lang.String[] { "IdIndexList", "SpawnPointList", "UidInfoList", "BallElementReactionList", "BallList", "BrickElementReactionList", "OEFDIKGIDPD", "DynamicObjectList", "MNJLILHPGIB", "ActionList", "PhysicalObjectList", "ClientGameTime", "WaveIndex", "IsFinish", "RawClientGameTime", "WaveSuiteIndex", "LifeCount", "Score", "Combo", "ServerGameTime", "RemainingBossHp", "MaxCombo", });
     emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.getDescriptor();
     emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HMNFHHAKOJBOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.BreakoutActionOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

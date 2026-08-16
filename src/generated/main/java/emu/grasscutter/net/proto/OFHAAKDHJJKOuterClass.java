@@ -19,20 +19,12 @@ public final class OFHAAKDHJJKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BDDDDCMDIKB = 3;</code>
      * @return The bDDDDCMDIKB.
      */
     int getBDDDDCMDIKB();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CEIGPPALLAL = 13;</code>
      * @return The cEIGPPALLAL.
      */
@@ -128,10 +120,6 @@ public final class OFHAAKDHJJKOuterClass {
     public static final int BDDDDCMDIKB_FIELD_NUMBER = 3;
     private int bDDDDCMDIKB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BDDDDCMDIKB = 3;</code>
      * @return The bDDDDCMDIKB.
      */
@@ -143,10 +131,6 @@ public final class OFHAAKDHJJKOuterClass {
     public static final int CEIGPPALLAL_FIELD_NUMBER = 13;
     private int cEIGPPALLAL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CEIGPPALLAL = 13;</code>
      * @return The cEIGPPALLAL.
      */
@@ -476,10 +460,6 @@ public final class OFHAAKDHJJKOuterClass {
 
       private int bDDDDCMDIKB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BDDDDCMDIKB = 3;</code>
        * @return The bDDDDCMDIKB.
        */
@@ -488,10 +468,6 @@ public final class OFHAAKDHJJKOuterClass {
         return bDDDDCMDIKB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BDDDDCMDIKB = 3;</code>
        * @param value The bDDDDCMDIKB to set.
        * @return This builder for chaining.
@@ -503,10 +479,6 @@ public final class OFHAAKDHJJKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BDDDDCMDIKB = 3;</code>
        * @return This builder for chaining.
        */
@@ -519,10 +491,6 @@ public final class OFHAAKDHJJKOuterClass {
 
       private int cEIGPPALLAL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CEIGPPALLAL = 13;</code>
        * @return The cEIGPPALLAL.
        */
@@ -531,10 +499,6 @@ public final class OFHAAKDHJJKOuterClass {
         return cEIGPPALLAL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CEIGPPALLAL = 13;</code>
        * @param value The cEIGPPALLAL to set.
        * @return This builder for chaining.
@@ -546,10 +510,6 @@ public final class OFHAAKDHJJKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CEIGPPALLAL = 13;</code>
        * @return This builder for chaining.
        */

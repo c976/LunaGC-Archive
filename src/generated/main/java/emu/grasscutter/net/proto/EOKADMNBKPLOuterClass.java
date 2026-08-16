@@ -19,60 +19,36 @@ public final class EOKADMNBKPLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 12;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 11;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HPDHFLPGLFO = 8;</code>
      * @return The hPDHFLPGLFO.
      */
     int getHPDHFLPGLFO();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KOKGMAGFJCM = 14;</code>
      * @return The kOKGMAGFJCM.
      */
@@ -188,10 +164,6 @@ public final class EOKADMNBKPLOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 12;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 12;</code>
      * @return The openTime.
      */
@@ -203,10 +175,6 @@ public final class EOKADMNBKPLOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 7;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
@@ -218,10 +186,6 @@ public final class EOKADMNBKPLOuterClass {
     public static final int IS_FINISHED_FIELD_NUMBER = 11;
     private boolean isFinished_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finished = 11;</code>
      * @return The isFinished.
      */
@@ -233,10 +197,6 @@ public final class EOKADMNBKPLOuterClass {
     public static final int HPDHFLPGLFO_FIELD_NUMBER = 8;
     private int hPDHFLPGLFO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HPDHFLPGLFO = 8;</code>
      * @return The hPDHFLPGLFO.
      */
@@ -248,10 +208,6 @@ public final class EOKADMNBKPLOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 6;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
@@ -263,10 +219,6 @@ public final class EOKADMNBKPLOuterClass {
     public static final int KOKGMAGFJCM_FIELD_NUMBER = 14;
     private int kOKGMAGFJCM_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 KOKGMAGFJCM = 14;</code>
      * @return The kOKGMAGFJCM.
      */
@@ -666,10 +618,6 @@ public final class EOKADMNBKPLOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 12;</code>
        * @return The openTime.
        */
@@ -678,10 +626,6 @@ public final class EOKADMNBKPLOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 12;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -693,10 +637,6 @@ public final class EOKADMNBKPLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 12;</code>
        * @return This builder for chaining.
        */
@@ -709,10 +649,6 @@ public final class EOKADMNBKPLOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return The isOpen.
        */
@@ -721,10 +657,6 @@ public final class EOKADMNBKPLOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -736,10 +668,6 @@ public final class EOKADMNBKPLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 7;</code>
        * @return This builder for chaining.
        */
@@ -752,10 +680,6 @@ public final class EOKADMNBKPLOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 11;</code>
        * @return The isFinished.
        */
@@ -764,10 +688,6 @@ public final class EOKADMNBKPLOuterClass {
         return isFinished_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 11;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
@@ -779,10 +699,6 @@ public final class EOKADMNBKPLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finished = 11;</code>
        * @return This builder for chaining.
        */
@@ -795,10 +711,6 @@ public final class EOKADMNBKPLOuterClass {
 
       private int hPDHFLPGLFO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPDHFLPGLFO = 8;</code>
        * @return The hPDHFLPGLFO.
        */
@@ -807,10 +719,6 @@ public final class EOKADMNBKPLOuterClass {
         return hPDHFLPGLFO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPDHFLPGLFO = 8;</code>
        * @param value The hPDHFLPGLFO to set.
        * @return This builder for chaining.
@@ -822,10 +730,6 @@ public final class EOKADMNBKPLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HPDHFLPGLFO = 8;</code>
        * @return This builder for chaining.
        */
@@ -838,10 +742,6 @@ public final class EOKADMNBKPLOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @return The levelId.
        */
@@ -850,10 +750,6 @@ public final class EOKADMNBKPLOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -865,10 +761,6 @@ public final class EOKADMNBKPLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 6;</code>
        * @return This builder for chaining.
        */
@@ -881,10 +773,6 @@ public final class EOKADMNBKPLOuterClass {
 
       private int kOKGMAGFJCM_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KOKGMAGFJCM = 14;</code>
        * @return The kOKGMAGFJCM.
        */
@@ -893,10 +781,6 @@ public final class EOKADMNBKPLOuterClass {
         return kOKGMAGFJCM_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KOKGMAGFJCM = 14;</code>
        * @param value The kOKGMAGFJCM to set.
        * @return This builder for chaining.
@@ -908,10 +792,6 @@ public final class EOKADMNBKPLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 KOKGMAGFJCM = 14;</code>
        * @return This builder for chaining.
        */

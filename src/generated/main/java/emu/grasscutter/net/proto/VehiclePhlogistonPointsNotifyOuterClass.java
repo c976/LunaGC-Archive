@@ -19,30 +19,18 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>float cur_phlogiston = 9;</code>
+     * <code>float cur_phlogiston = 11;</code>
      * @return The curPhlogiston.
      */
     float getCurPhlogiston();
 
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
-   * <pre>
-   * CmdId: 9210
-   * </pre>
-   *
    * Protobuf type {@code VehiclePhlogistonPointsNotify}
    */
   public static final class VehiclePhlogistonPointsNotify extends
@@ -87,14 +75,14 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 77: {
-
-              curPhlogiston_ = input.readFloat();
-              break;
-            }
-            case 80: {
+            case 16: {
 
               entityId_ = input.readUInt32();
+              break;
+            }
+            case 93: {
+
+              curPhlogiston_ = input.readFloat();
               break;
             }
             default: {
@@ -129,14 +117,10 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
               emu.grasscutter.net.proto.VehiclePhlogistonPointsNotifyOuterClass.VehiclePhlogistonPointsNotify.class, emu.grasscutter.net.proto.VehiclePhlogistonPointsNotifyOuterClass.VehiclePhlogistonPointsNotify.Builder.class);
     }
 
-    public static final int CUR_PHLOGISTON_FIELD_NUMBER = 9;
+    public static final int CUR_PHLOGISTON_FIELD_NUMBER = 11;
     private float curPhlogiston_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>float cur_phlogiston = 9;</code>
+     * <code>float cur_phlogiston = 11;</code>
      * @return The curPhlogiston.
      */
     @java.lang.Override
@@ -144,14 +128,10 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
       return curPhlogiston_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    public static final int ENTITY_ID_FIELD_NUMBER = 2;
     private int entityId_;
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -173,11 +153,11 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (curPhlogiston_ != 0F) {
-        output.writeFloat(9, curPhlogiston_);
-      }
       if (entityId_ != 0) {
-        output.writeUInt32(10, entityId_);
+        output.writeUInt32(2, entityId_);
+      }
+      if (curPhlogiston_ != 0F) {
+        output.writeFloat(11, curPhlogiston_);
       }
       unknownFields.writeTo(output);
     }
@@ -188,13 +168,13 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (curPhlogiston_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(9, curPhlogiston_);
-      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, entityId_);
+          .computeUInt32Size(2, entityId_);
+      }
+      if (curPhlogiston_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(11, curPhlogiston_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -328,10 +308,6 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 9210
-     * </pre>
-     *
      * Protobuf type {@code VehiclePhlogistonPointsNotify}
      */
     public static final class Builder extends
@@ -486,11 +462,7 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
 
       private float curPhlogiston_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>float cur_phlogiston = 9;</code>
+       * <code>float cur_phlogiston = 11;</code>
        * @return The curPhlogiston.
        */
       @java.lang.Override
@@ -498,11 +470,7 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
         return curPhlogiston_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>float cur_phlogiston = 9;</code>
+       * <code>float cur_phlogiston = 11;</code>
        * @param value The curPhlogiston to set.
        * @return This builder for chaining.
        */
@@ -513,11 +481,7 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>float cur_phlogiston = 9;</code>
+       * <code>float cur_phlogiston = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurPhlogiston() {
@@ -529,11 +493,7 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -541,11 +501,7 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -556,11 +512,7 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -638,7 +590,7 @@ public final class VehiclePhlogistonPointsNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#VehiclePhlogistonPointsNotify.proto\"J\n" +
       "\035VehiclePhlogistonPointsNotify\022\026\n\016cur_ph" +
-      "logiston\030\t \001(\002\022\021\n\tentity_id\030\n \001(\rB\033\n\031emu" +
+      "logiston\030\013 \001(\002\022\021\n\tentity_id\030\002 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

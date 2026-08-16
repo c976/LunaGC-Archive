@@ -19,104 +19,60 @@ public final class MIBBLDJIBHOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> 
         getDFJKAHIIDNLList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
      */
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN getDFJKAHIIDNL(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
      */
     int getDFJKAHIIDNLCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> 
         getDFJKAHIIDNLOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
      */
     emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder getDFJKAHIIDNLOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 15;</code>
      * @return The oMEBOHLACPH.
      */
     int getOMEBOHLACPH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 JNBGBHPMIEI = 5;</code>
      * @return The jNBGBHPMIEI.
      */
     int getJNBGBHPMIEI();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PLAJDMMKEPL = 6;</code>
      * @return The pLAJDMMKEPL.
      */
@@ -246,10 +202,6 @@ public final class MIBBLDJIBHOOuterClass {
     public static final int DFJKAHIIDNL_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> dFJKAHIIDNL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
      */
     @java.lang.Override
@@ -257,10 +209,6 @@ public final class MIBBLDJIBHOOuterClass {
       return dFJKAHIIDNL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
      */
     @java.lang.Override
@@ -269,10 +217,6 @@ public final class MIBBLDJIBHOOuterClass {
       return dFJKAHIIDNL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
      */
     @java.lang.Override
@@ -280,10 +224,6 @@ public final class MIBBLDJIBHOOuterClass {
       return dFJKAHIIDNL_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
      */
     @java.lang.Override
@@ -291,10 +231,6 @@ public final class MIBBLDJIBHOOuterClass {
       return dFJKAHIIDNL_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
      */
     @java.lang.Override
@@ -306,10 +242,6 @@ public final class MIBBLDJIBHOOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 15;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 15;</code>
      * @return The oMEBOHLACPH.
      */
@@ -321,10 +253,6 @@ public final class MIBBLDJIBHOOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -336,10 +264,6 @@ public final class MIBBLDJIBHOOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 14;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
@@ -351,10 +275,6 @@ public final class MIBBLDJIBHOOuterClass {
     public static final int JNBGBHPMIEI_FIELD_NUMBER = 5;
     private int jNBGBHPMIEI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 JNBGBHPMIEI = 5;</code>
      * @return The jNBGBHPMIEI.
      */
@@ -366,10 +286,6 @@ public final class MIBBLDJIBHOOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 13;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
@@ -381,10 +297,6 @@ public final class MIBBLDJIBHOOuterClass {
     public static final int PLAJDMMKEPL_FIELD_NUMBER = 6;
     private int pLAJDMMKEPL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PLAJDMMKEPL = 6;</code>
      * @return The pLAJDMMKEPL.
      */
@@ -852,10 +764,6 @@ public final class MIBBLDJIBHOOuterClass {
           emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> dFJKAHIIDNLBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN> getDFJKAHIIDNLList() {
@@ -866,10 +774,6 @@ public final class MIBBLDJIBHOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public int getDFJKAHIIDNLCount() {
@@ -880,10 +784,6 @@ public final class MIBBLDJIBHOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN getDFJKAHIIDNL(int index) {
@@ -894,10 +794,6 @@ public final class MIBBLDJIBHOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public Builder setDFJKAHIIDNL(
@@ -915,10 +811,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public Builder setDFJKAHIIDNL(
@@ -933,10 +825,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public Builder addDFJKAHIIDNL(emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN value) {
@@ -953,10 +841,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public Builder addDFJKAHIIDNL(
@@ -974,10 +858,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public Builder addDFJKAHIIDNL(
@@ -992,10 +872,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public Builder addDFJKAHIIDNL(
@@ -1010,10 +886,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public Builder addAllDFJKAHIIDNL(
@@ -1029,10 +901,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public Builder clearDFJKAHIIDNL() {
@@ -1046,10 +914,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public Builder removeDFJKAHIIDNL(int index) {
@@ -1063,10 +927,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder getDFJKAHIIDNLBuilder(
@@ -1074,10 +934,6 @@ public final class MIBBLDJIBHOOuterClass {
         return getDFJKAHIIDNLFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder getDFJKAHIIDNLOrBuilder(
@@ -1088,10 +944,6 @@ public final class MIBBLDJIBHOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLNOrBuilder> 
@@ -1103,10 +955,6 @@ public final class MIBBLDJIBHOOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder addDFJKAHIIDNLBuilder() {
@@ -1114,10 +962,6 @@ public final class MIBBLDJIBHOOuterClass {
             emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder addDFJKAHIIDNLBuilder(
@@ -1126,10 +970,6 @@ public final class MIBBLDJIBHOOuterClass {
             index, emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NFICKHNFNLN DFJKAHIIDNL = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NFICKHNFNLNOuterClass.NFICKHNFNLN.Builder> 
@@ -1153,10 +993,6 @@ public final class MIBBLDJIBHOOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 15;</code>
        * @return The oMEBOHLACPH.
        */
@@ -1165,10 +1001,6 @@ public final class MIBBLDJIBHOOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 15;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -1180,10 +1012,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 15;</code>
        * @return This builder for chaining.
        */
@@ -1196,10 +1024,6 @@ public final class MIBBLDJIBHOOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
@@ -1208,10 +1032,6 @@ public final class MIBBLDJIBHOOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1223,10 +1043,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
@@ -1239,10 +1055,6 @@ public final class MIBBLDJIBHOOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return The isFinish.
        */
@@ -1251,10 +1063,6 @@ public final class MIBBLDJIBHOOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1266,10 +1074,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return This builder for chaining.
        */
@@ -1282,10 +1086,6 @@ public final class MIBBLDJIBHOOuterClass {
 
       private int jNBGBHPMIEI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JNBGBHPMIEI = 5;</code>
        * @return The jNBGBHPMIEI.
        */
@@ -1294,10 +1094,6 @@ public final class MIBBLDJIBHOOuterClass {
         return jNBGBHPMIEI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JNBGBHPMIEI = 5;</code>
        * @param value The jNBGBHPMIEI to set.
        * @return This builder for chaining.
@@ -1309,10 +1105,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JNBGBHPMIEI = 5;</code>
        * @return This builder for chaining.
        */
@@ -1325,10 +1117,6 @@ public final class MIBBLDJIBHOOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @return The levelId.
        */
@@ -1337,10 +1125,6 @@ public final class MIBBLDJIBHOOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1352,10 +1136,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 13;</code>
        * @return This builder for chaining.
        */
@@ -1368,10 +1148,6 @@ public final class MIBBLDJIBHOOuterClass {
 
       private int pLAJDMMKEPL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PLAJDMMKEPL = 6;</code>
        * @return The pLAJDMMKEPL.
        */
@@ -1380,10 +1156,6 @@ public final class MIBBLDJIBHOOuterClass {
         return pLAJDMMKEPL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PLAJDMMKEPL = 6;</code>
        * @param value The pLAJDMMKEPL to set.
        * @return This builder for chaining.
@@ -1395,10 +1167,6 @@ public final class MIBBLDJIBHOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PLAJDMMKEPL = 6;</code>
        * @return This builder for chaining.
        */

@@ -19,28 +19,16 @@ public final class MINHNFHALBIOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 4;</code>
      * @return A list containing the affixList.
      */
     java.util.List<java.lang.Integer> getAffixListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 4;</code>
      * @return The count of affixList.
      */
     int getAffixListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 4;</code>
      * @param index The index of the element to return.
      * @return The affixList at the given index.
@@ -48,20 +36,12 @@ public final class MINHNFHALBIOuterClass {
     int getAffixList(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 monster_id = 15;</code>
      * @return The monsterId.
      */
     int getMonsterId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level = 12;</code>
      * @return The level.
      */
@@ -183,10 +163,6 @@ public final class MINHNFHALBIOuterClass {
     public static final int AFFIX_LIST_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList affixList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 4;</code>
      * @return A list containing the affixList.
      */
@@ -196,10 +172,6 @@ public final class MINHNFHALBIOuterClass {
       return affixList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 4;</code>
      * @return The count of affixList.
      */
@@ -207,10 +179,6 @@ public final class MINHNFHALBIOuterClass {
       return affixList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 affix_list = 4;</code>
      * @param index The index of the element to return.
      * @return The affixList at the given index.
@@ -223,10 +191,6 @@ public final class MINHNFHALBIOuterClass {
     public static final int MONSTER_ID_FIELD_NUMBER = 15;
     private int monsterId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 monster_id = 15;</code>
      * @return The monsterId.
      */
@@ -238,10 +202,6 @@ public final class MINHNFHALBIOuterClass {
     public static final int LEVEL_FIELD_NUMBER = 12;
     private int level_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level = 12;</code>
      * @return The level.
      */
@@ -624,10 +584,6 @@ public final class MINHNFHALBIOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 4;</code>
        * @return A list containing the affixList.
        */
@@ -637,10 +593,6 @@ public final class MINHNFHALBIOuterClass {
                  java.util.Collections.unmodifiableList(affixList_) : affixList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 4;</code>
        * @return The count of affixList.
        */
@@ -648,10 +600,6 @@ public final class MINHNFHALBIOuterClass {
         return affixList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 4;</code>
        * @param index The index of the element to return.
        * @return The affixList at the given index.
@@ -660,10 +608,6 @@ public final class MINHNFHALBIOuterClass {
         return affixList_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 4;</code>
        * @param index The index to set the value at.
        * @param value The affixList to set.
@@ -677,10 +621,6 @@ public final class MINHNFHALBIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 4;</code>
        * @param value The affixList to add.
        * @return This builder for chaining.
@@ -692,10 +632,6 @@ public final class MINHNFHALBIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 4;</code>
        * @param values The affixList to add.
        * @return This builder for chaining.
@@ -709,10 +645,6 @@ public final class MINHNFHALBIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 affix_list = 4;</code>
        * @return This builder for chaining.
        */
@@ -725,10 +657,6 @@ public final class MINHNFHALBIOuterClass {
 
       private int monsterId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 monster_id = 15;</code>
        * @return The monsterId.
        */
@@ -737,10 +665,6 @@ public final class MINHNFHALBIOuterClass {
         return monsterId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 monster_id = 15;</code>
        * @param value The monsterId to set.
        * @return This builder for chaining.
@@ -752,10 +676,6 @@ public final class MINHNFHALBIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 monster_id = 15;</code>
        * @return This builder for chaining.
        */
@@ -768,10 +688,6 @@ public final class MINHNFHALBIOuterClass {
 
       private int level_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level = 12;</code>
        * @return The level.
        */
@@ -780,10 +696,6 @@ public final class MINHNFHALBIOuterClass {
         return level_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level = 12;</code>
        * @param value The level to set.
        * @return This builder for chaining.
@@ -795,10 +707,6 @@ public final class MINHNFHALBIOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level = 12;</code>
        * @return This builder for chaining.
        */

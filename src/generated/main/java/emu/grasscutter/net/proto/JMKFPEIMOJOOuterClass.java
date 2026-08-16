@@ -19,30 +19,18 @@ public final class JMKFPEIMOJOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 6;</code>
      * @return The lOHAJIABHDJ.
      */
     int getLOHAJIABHDJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cost_time = 1;</code>
      * @return The costTime.
      */
     int getCostTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
@@ -143,10 +131,6 @@ public final class JMKFPEIMOJOOuterClass {
     public static final int LOHAJIABHDJ_FIELD_NUMBER = 6;
     private int lOHAJIABHDJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LOHAJIABHDJ = 6;</code>
      * @return The lOHAJIABHDJ.
      */
@@ -158,10 +142,6 @@ public final class JMKFPEIMOJOOuterClass {
     public static final int COST_TIME_FIELD_NUMBER = 1;
     private int costTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 cost_time = 1;</code>
      * @return The costTime.
      */
@@ -173,10 +153,6 @@ public final class JMKFPEIMOJOOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 5;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
@@ -524,10 +500,6 @@ public final class JMKFPEIMOJOOuterClass {
 
       private int lOHAJIABHDJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 6;</code>
        * @return The lOHAJIABHDJ.
        */
@@ -536,10 +508,6 @@ public final class JMKFPEIMOJOOuterClass {
         return lOHAJIABHDJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 6;</code>
        * @param value The lOHAJIABHDJ to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class JMKFPEIMOJOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LOHAJIABHDJ = 6;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class JMKFPEIMOJOOuterClass {
 
       private int costTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 1;</code>
        * @return The costTime.
        */
@@ -579,10 +539,6 @@ public final class JMKFPEIMOJOOuterClass {
         return costTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 1;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class JMKFPEIMOJOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 cost_time = 1;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class JMKFPEIMOJOOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return The isOpen.
        */
@@ -622,10 +570,6 @@ public final class JMKFPEIMOJOOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class JMKFPEIMOJOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return This builder for chaining.
        */

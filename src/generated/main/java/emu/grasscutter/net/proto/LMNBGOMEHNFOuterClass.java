@@ -19,20 +19,16 @@ public final class LMNBGOMEHNFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 9;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 9;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
   }
   /**
    * Protobuf type {@code LMNBGOMEHNF}
@@ -86,7 +82,7 @@ public final class LMNBGOMEHNFOuterClass {
             }
             case 72: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -124,10 +120,6 @@ public final class LMNBGOMEHNFOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -136,15 +128,15 @@ public final class LMNBGOMEHNFOuterClass {
       return isOpen_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 9;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 9;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 9;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 9;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -164,8 +156,8 @@ public final class LMNBGOMEHNFOuterClass {
       if (isOpen_ != false) {
         output.writeBool(1, isOpen_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(9, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(9, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -180,9 +172,9 @@ public final class LMNBGOMEHNFOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(1, isOpen_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, eGHGENOJNEK_);
+          .computeUInt32Size(9, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -201,8 +193,8 @@ public final class LMNBGOMEHNFOuterClass {
 
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -217,8 +209,8 @@ public final class LMNBGOMEHNFOuterClass {
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -354,7 +346,7 @@ public final class LMNBGOMEHNFOuterClass {
         super.clear();
         isOpen_ = false;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         return this;
       }
@@ -383,7 +375,7 @@ public final class LMNBGOMEHNFOuterClass {
       public emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF buildPartial() {
         emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF result = new emu.grasscutter.net.proto.LMNBGOMEHNFOuterClass.LMNBGOMEHNF(this);
         result.isOpen_ = isOpen_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -435,8 +427,8 @@ public final class LMNBGOMEHNFOuterClass {
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -469,10 +461,6 @@ public final class LMNBGOMEHNFOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
@@ -481,10 +469,6 @@ public final class LMNBGOMEHNFOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -496,10 +480,6 @@ public final class LMNBGOMEHNFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
@@ -510,33 +490,33 @@ public final class LMNBGOMEHNFOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 9;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 9;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 9;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 9;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 9;</code>
+       * <code>uint32 stage_id = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -607,9 +587,9 @@ public final class LMNBGOMEHNFOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021LMNBGOMEHNF.proto\"3\n\013LMNBGOMEHNF\022\017\n\007is" +
-      "_open\030\001 \001(\010\022\023\n\013EGHGENOJNEK\030\t \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\n\021LMNBGOMEHNF.proto\"0\n\013LMNBGOMEHNF\022\017\n\007is" +
+      "_open\030\001 \001(\010\022\020\n\010stage_id\030\t \001(\rB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -620,7 +600,7 @@ public final class LMNBGOMEHNFOuterClass {
     internal_static_LMNBGOMEHNF_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LMNBGOMEHNF_descriptor,
-        new java.lang.String[] { "IsOpen", "EGHGENOJNEK", });
+        new java.lang.String[] { "IsOpen", "StageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

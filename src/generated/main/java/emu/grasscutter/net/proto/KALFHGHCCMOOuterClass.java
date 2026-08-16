@@ -19,36 +19,24 @@ public final class KALFHGHCCMOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 EGHGENOJNEK = 13;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 13;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 15;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
@@ -111,7 +99,7 @@ public final class KALFHGHCCMOOuterClass {
             }
             case 104: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 120: {
@@ -151,24 +139,20 @@ public final class KALFHGHCCMOOuterClass {
               emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO.class, emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO.Builder.class);
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 13;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 13;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 13;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 13;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -180,10 +164,6 @@ public final class KALFHGHCCMOOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 15;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 15;</code>
      * @return The isFinish.
      */
@@ -195,10 +175,6 @@ public final class KALFHGHCCMOOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 4;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
@@ -227,8 +203,8 @@ public final class KALFHGHCCMOOuterClass {
       if (isOpen_ != false) {
         output.writeBool(6, isOpen_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(13, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(13, stageId_);
       }
       if (isFinish_ != false) {
         output.writeBool(15, isFinish_);
@@ -250,9 +226,9 @@ public final class KALFHGHCCMOOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(6, isOpen_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, eGHGENOJNEK_);
+          .computeUInt32Size(13, stageId_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -273,8 +249,8 @@ public final class KALFHGHCCMOOuterClass {
       }
       emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO other = (emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO) obj;
 
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getIsFinish()
@@ -292,8 +268,8 @@ public final class KALFHGHCCMOOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -435,7 +411,7 @@ public final class KALFHGHCCMOOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         isOpen_ = false;
 
@@ -469,7 +445,7 @@ public final class KALFHGHCCMOOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO buildPartial() {
         emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO result = new emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO(this);
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
         result.levelId_ = levelId_;
@@ -521,8 +497,8 @@ public final class KALFHGHCCMOOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO other) {
         if (other == emu.grasscutter.net.proto.KALFHGHCCMOOuterClass.KALFHGHCCMO.getDefaultInstance()) return this;
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -562,43 +538,39 @@ public final class KALFHGHCCMOOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 13;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 13;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 13;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 13;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 13;</code>
+       * <code>uint32 stage_id = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
@@ -607,10 +579,6 @@ public final class KALFHGHCCMOOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -622,10 +590,6 @@ public final class KALFHGHCCMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
@@ -638,10 +602,6 @@ public final class KALFHGHCCMOOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 15;</code>
        * @return The isFinish.
        */
@@ -650,10 +610,6 @@ public final class KALFHGHCCMOOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 15;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -665,10 +621,6 @@ public final class KALFHGHCCMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 15;</code>
        * @return This builder for chaining.
        */
@@ -681,10 +633,6 @@ public final class KALFHGHCCMOOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 4;</code>
        * @return The levelId.
        */
@@ -693,10 +641,6 @@ public final class KALFHGHCCMOOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 4;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -708,10 +652,6 @@ public final class KALFHGHCCMOOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 4;</code>
        * @return This builder for chaining.
        */
@@ -788,10 +728,10 @@ public final class KALFHGHCCMOOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021KALFHGHCCMO.proto\"X\n\013KALFHGHCCMO\022\023\n\013EG" +
-      "HGENOJNEK\030\r \001(\r\022\017\n\007is_open\030\006 \001(\010\022\021\n\tis_f" +
-      "inish\030\017 \001(\010\022\020\n\010level_id\030\004 \001(\rB\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "\n\021KALFHGHCCMO.proto\"U\n\013KALFHGHCCMO\022\020\n\010st" +
+      "age_id\030\r \001(\r\022\017\n\007is_open\030\006 \001(\010\022\021\n\tis_fini" +
+      "sh\030\017 \001(\010\022\020\n\010level_id\030\004 \001(\rB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -802,7 +742,7 @@ public final class KALFHGHCCMOOuterClass {
     internal_static_KALFHGHCCMO_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_KALFHGHCCMO_descriptor,
-        new java.lang.String[] { "EGHGENOJNEK", "IsOpen", "IsFinish", "LevelId", });
+        new java.lang.String[] { "StageId", "IsOpen", "IsFinish", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

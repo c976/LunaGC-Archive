@@ -19,80 +19,48 @@ public final class PIOMCMDPDHDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD> 
         getGIFBEDJMGOLList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
      */
     emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD getGIFBEDJMGOL(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
      */
     int getGIFBEDJMGOLCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJDOrBuilder> 
         getGIFBEDJMGOLOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
      */
     emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJDOrBuilder getGIFBEDJMGOLOrBuilder(
         int index);
 
     /**
-     * <code>uint32 EGHGENOJNEK = 9;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 9;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 14;</code>
      * @return The oMEBOHLACPH.
      */
     int getOMEBOHLACPH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 13;</code>
      * @return The isFinish.
      */
@@ -161,7 +129,7 @@ public final class PIOMCMDPDHDOuterClass {
             }
             case 72: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 104: {
@@ -212,10 +180,6 @@ public final class PIOMCMDPDHDOuterClass {
     public static final int GIFBEDJMGOL_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD> gIFBEDJMGOL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
      */
     @java.lang.Override
@@ -223,10 +187,6 @@ public final class PIOMCMDPDHDOuterClass {
       return gIFBEDJMGOL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
      */
     @java.lang.Override
@@ -235,10 +195,6 @@ public final class PIOMCMDPDHDOuterClass {
       return gIFBEDJMGOL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
      */
     @java.lang.Override
@@ -246,10 +202,6 @@ public final class PIOMCMDPDHDOuterClass {
       return gIFBEDJMGOL_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
      */
     @java.lang.Override
@@ -257,10 +209,6 @@ public final class PIOMCMDPDHDOuterClass {
       return gIFBEDJMGOL_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
      */
     @java.lang.Override
@@ -269,24 +217,20 @@ public final class PIOMCMDPDHDOuterClass {
       return gIFBEDJMGOL_.get(index);
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 9;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 9;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 9;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 9;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int OMEBOHLACPH_FIELD_NUMBER = 14;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 14;</code>
      * @return The oMEBOHLACPH.
      */
@@ -298,10 +242,6 @@ public final class PIOMCMDPDHDOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 5;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
@@ -313,10 +253,6 @@ public final class PIOMCMDPDHDOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 13;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 13;</code>
      * @return The isFinish.
      */
@@ -345,8 +281,8 @@ public final class PIOMCMDPDHDOuterClass {
       for (int i = 0; i < gIFBEDJMGOL_.size(); i++) {
         output.writeMessage(7, gIFBEDJMGOL_.get(i));
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(9, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(9, stageId_);
       }
       if (isFinish_ != false) {
         output.writeBool(13, isFinish_);
@@ -371,9 +307,9 @@ public final class PIOMCMDPDHDOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, gIFBEDJMGOL_.get(i));
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, eGHGENOJNEK_);
+          .computeUInt32Size(9, stageId_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -400,8 +336,8 @@ public final class PIOMCMDPDHDOuterClass {
 
       if (!getGIFBEDJMGOLList()
           .equals(other.getGIFBEDJMGOLList())) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getOMEBOHLACPH()
           != other.getOMEBOHLACPH()) return false;
       if (getIsOpen()
@@ -423,8 +359,8 @@ public final class PIOMCMDPDHDOuterClass {
         hash = (37 * hash) + GIFBEDJMGOL_FIELD_NUMBER;
         hash = (53 * hash) + getGIFBEDJMGOLList().hashCode();
       }
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + OMEBOHLACPH_FIELD_NUMBER;
       hash = (53 * hash) + getOMEBOHLACPH();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
@@ -573,7 +509,7 @@ public final class PIOMCMDPDHDOuterClass {
         } else {
           gIFBEDJMGOLBuilder_.clear();
         }
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         oMEBOHLACPH_ = 0;
 
@@ -617,7 +553,7 @@ public final class PIOMCMDPDHDOuterClass {
         } else {
           result.gIFBEDJMGOL_ = gIFBEDJMGOLBuilder_.build();
         }
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.oMEBOHLACPH_ = oMEBOHLACPH_;
         result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
@@ -695,8 +631,8 @@ public final class PIOMCMDPDHDOuterClass {
             }
           }
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getOMEBOHLACPH() != 0) {
           setOMEBOHLACPH(other.getOMEBOHLACPH());
@@ -750,10 +686,6 @@ public final class PIOMCMDPDHDOuterClass {
           emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD, emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD.Builder, emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJDOrBuilder> gIFBEDJMGOLBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD> getGIFBEDJMGOLList() {
@@ -764,10 +696,6 @@ public final class PIOMCMDPDHDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public int getGIFBEDJMGOLCount() {
@@ -778,10 +706,6 @@ public final class PIOMCMDPDHDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD getGIFBEDJMGOL(int index) {
@@ -792,10 +716,6 @@ public final class PIOMCMDPDHDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public Builder setGIFBEDJMGOL(
@@ -813,10 +733,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public Builder setGIFBEDJMGOL(
@@ -831,10 +747,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public Builder addGIFBEDJMGOL(emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD value) {
@@ -851,10 +763,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public Builder addGIFBEDJMGOL(
@@ -872,10 +780,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public Builder addGIFBEDJMGOL(
@@ -890,10 +794,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public Builder addGIFBEDJMGOL(
@@ -908,10 +808,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public Builder addAllGIFBEDJMGOL(
@@ -927,10 +823,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public Builder clearGIFBEDJMGOL() {
@@ -944,10 +836,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public Builder removeGIFBEDJMGOL(int index) {
@@ -961,10 +849,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD.Builder getGIFBEDJMGOLBuilder(
@@ -972,10 +856,6 @@ public final class PIOMCMDPDHDOuterClass {
         return getGIFBEDJMGOLFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJDOrBuilder getGIFBEDJMGOLOrBuilder(
@@ -986,10 +866,6 @@ public final class PIOMCMDPDHDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJDOrBuilder> 
@@ -1001,10 +877,6 @@ public final class PIOMCMDPDHDOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD.Builder addGIFBEDJMGOLBuilder() {
@@ -1012,10 +884,6 @@ public final class PIOMCMDPDHDOuterClass {
             emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD.Builder addGIFBEDJMGOLBuilder(
@@ -1024,10 +892,6 @@ public final class PIOMCMDPDHDOuterClass {
             index, emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .FHHFEICEDJD GIFBEDJMGOL = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.FHHFEICEDJD.Builder> 
@@ -1049,43 +913,39 @@ public final class PIOMCMDPDHDOuterClass {
         return gIFBEDJMGOLBuilder_;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 9;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 9;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 9;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 9;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 9;</code>
+       * <code>uint32 stage_id = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @return The oMEBOHLACPH.
        */
@@ -1094,10 +954,6 @@ public final class PIOMCMDPDHDOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -1109,10 +965,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 14;</code>
        * @return This builder for chaining.
        */
@@ -1125,10 +977,6 @@ public final class PIOMCMDPDHDOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return The isOpen.
        */
@@ -1137,10 +985,6 @@ public final class PIOMCMDPDHDOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1152,10 +996,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 5;</code>
        * @return This builder for chaining.
        */
@@ -1168,10 +1008,6 @@ public final class PIOMCMDPDHDOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 13;</code>
        * @return The isFinish.
        */
@@ -1180,10 +1016,6 @@ public final class PIOMCMDPDHDOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 13;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1195,10 +1027,6 @@ public final class PIOMCMDPDHDOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 13;</code>
        * @return This builder for chaining.
        */
@@ -1275,12 +1103,11 @@ public final class PIOMCMDPDHDOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021PIOMCMDPDHD.proto\032\021FHHFEICEDJD.proto\"~" +
+      "\n\021PIOMCMDPDHD.proto\032\021FHHFEICEDJD.proto\"{" +
       "\n\013PIOMCMDPDHD\022!\n\013GIFBEDJMGOL\030\007 \003(\0132\014.FHH" +
-      "FEICEDJD\022\023\n\013EGHGENOJNEK\030\t \001(\r\022\023\n\013OMEBOHL" +
-      "ACPH\030\016 \001(\r\022\017\n\007is_open\030\005 \001(\010\022\021\n\tis_finish" +
-      "\030\r \001(\010B\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "FEICEDJD\022\020\n\010stage_id\030\t \001(\r\022\023\n\013OMEBOHLACP" +
+      "H\030\016 \001(\r\022\017\n\007is_open\030\005 \001(\010\022\021\n\tis_finish\030\r " +
+      "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1292,7 +1119,7 @@ public final class PIOMCMDPDHDOuterClass {
     internal_static_PIOMCMDPDHD_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PIOMCMDPDHD_descriptor,
-        new java.lang.String[] { "GIFBEDJMGOL", "EGHGENOJNEK", "OMEBOHLACPH", "IsOpen", "IsFinish", });
+        new java.lang.String[] { "GIFBEDJMGOL", "StageId", "OMEBOHLACPH", "IsOpen", "IsFinish", });
     emu.grasscutter.net.proto.FHHFEICEDJDOuterClass.getDescriptor();
   }
 

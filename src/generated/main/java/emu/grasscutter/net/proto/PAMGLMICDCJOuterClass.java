@@ -19,20 +19,12 @@ public final class PAMGLMICDCJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CBPIHEGCNLL = 1;</code>
      * @return The cBPIHEGCNLL.
      */
     int getCBPIHEGCNLL();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BGDOCMFCIHK = 6;</code>
      * @return The bGDOCMFCIHK.
      */
@@ -128,10 +120,6 @@ public final class PAMGLMICDCJOuterClass {
     public static final int CBPIHEGCNLL_FIELD_NUMBER = 1;
     private int cBPIHEGCNLL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CBPIHEGCNLL = 1;</code>
      * @return The cBPIHEGCNLL.
      */
@@ -143,10 +131,6 @@ public final class PAMGLMICDCJOuterClass {
     public static final int BGDOCMFCIHK_FIELD_NUMBER = 6;
     private int bGDOCMFCIHK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 BGDOCMFCIHK = 6;</code>
      * @return The bGDOCMFCIHK.
      */
@@ -476,10 +460,6 @@ public final class PAMGLMICDCJOuterClass {
 
       private int cBPIHEGCNLL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CBPIHEGCNLL = 1;</code>
        * @return The cBPIHEGCNLL.
        */
@@ -488,10 +468,6 @@ public final class PAMGLMICDCJOuterClass {
         return cBPIHEGCNLL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CBPIHEGCNLL = 1;</code>
        * @param value The cBPIHEGCNLL to set.
        * @return This builder for chaining.
@@ -503,10 +479,6 @@ public final class PAMGLMICDCJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CBPIHEGCNLL = 1;</code>
        * @return This builder for chaining.
        */
@@ -519,10 +491,6 @@ public final class PAMGLMICDCJOuterClass {
 
       private int bGDOCMFCIHK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGDOCMFCIHK = 6;</code>
        * @return The bGDOCMFCIHK.
        */
@@ -531,10 +499,6 @@ public final class PAMGLMICDCJOuterClass {
         return bGDOCMFCIHK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGDOCMFCIHK = 6;</code>
        * @param value The bGDOCMFCIHK to set.
        * @return This builder for chaining.
@@ -546,10 +510,6 @@ public final class PAMGLMICDCJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 BGDOCMFCIHK = 6;</code>
        * @return This builder for chaining.
        */

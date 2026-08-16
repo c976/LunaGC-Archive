@@ -19,14 +19,15 @@ public final class UnlockPersonalLineReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 personal_line_id = 14;</code>
+     * <code>uint32 personal_line_id = 12;</code>
      * @return The personalLineId.
      */
     int getPersonalLineId();
   }
   /**
    * <pre>
-   * CmdId: 29993
+   * CmdId: 1085
+   * Obf: JHKJAJEABJK
    * </pre>
    *
    * Protobuf type {@code UnlockPersonalLineReq}
@@ -73,7 +74,7 @@ public final class UnlockPersonalLineReqOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 96: {
 
               personalLineId_ = input.readUInt32();
               break;
@@ -110,10 +111,10 @@ public final class UnlockPersonalLineReqOuterClass {
               emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq.class, emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq.Builder.class);
     }
 
-    public static final int PERSONAL_LINE_ID_FIELD_NUMBER = 14;
+    public static final int PERSONAL_LINE_ID_FIELD_NUMBER = 12;
     private int personalLineId_;
     /**
-     * <code>uint32 personal_line_id = 14;</code>
+     * <code>uint32 personal_line_id = 12;</code>
      * @return The personalLineId.
      */
     @java.lang.Override
@@ -136,7 +137,7 @@ public final class UnlockPersonalLineReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (personalLineId_ != 0) {
-        output.writeUInt32(14, personalLineId_);
+        output.writeUInt32(12, personalLineId_);
       }
       unknownFields.writeTo(output);
     }
@@ -149,7 +150,7 @@ public final class UnlockPersonalLineReqOuterClass {
       size = 0;
       if (personalLineId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, personalLineId_);
+          .computeUInt32Size(12, personalLineId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,7 +279,8 @@ public final class UnlockPersonalLineReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29993
+     * CmdId: 1085
+     * Obf: JHKJAJEABJK
      * </pre>
      *
      * Protobuf type {@code UnlockPersonalLineReq}
@@ -429,7 +431,7 @@ public final class UnlockPersonalLineReqOuterClass {
 
       private int personalLineId_ ;
       /**
-       * <code>uint32 personal_line_id = 14;</code>
+       * <code>uint32 personal_line_id = 12;</code>
        * @return The personalLineId.
        */
       @java.lang.Override
@@ -437,7 +439,7 @@ public final class UnlockPersonalLineReqOuterClass {
         return personalLineId_;
       }
       /**
-       * <code>uint32 personal_line_id = 14;</code>
+       * <code>uint32 personal_line_id = 12;</code>
        * @param value The personalLineId to set.
        * @return This builder for chaining.
        */
@@ -448,7 +450,7 @@ public final class UnlockPersonalLineReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 personal_line_id = 14;</code>
+       * <code>uint32 personal_line_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearPersonalLineId() {
@@ -525,7 +527,7 @@ public final class UnlockPersonalLineReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033UnlockPersonalLineReq.proto\"1\n\025UnlockP" +
-      "ersonalLineReq\022\030\n\020personal_line_id\030\016 \001(\r" +
+      "ersonalLineReq\022\030\n\020personal_line_id\030\014 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

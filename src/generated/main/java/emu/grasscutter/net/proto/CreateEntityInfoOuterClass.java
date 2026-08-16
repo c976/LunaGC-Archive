@@ -19,100 +19,6 @@ public final class CreateEntityInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>.Vector pos = 6;</code>
-     * @return Whether the pos field is set.
-     */
-    boolean hasPos();
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>.Vector pos = 6;</code>
-     * @return The pos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>.Vector pos = 6;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
-
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector rot = 7;</code>
-     * @return Whether the rot field is set.
-     */
-    boolean hasRot();
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector rot = 7;</code>
-     * @return The rot.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector rot = 7;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
-
-    /**
-     * <pre>
-     * offset: 64
-     * </pre>
-     *
-     * <code>uint32 room_id = 11;</code>
-     * @return The roomId.
-     */
-    int getRoomId();
-
-    /**
-     * <pre>
-     * offset: 68
-     * </pre>
-     *
-     * <code>uint32 client_unique_id = 12;</code>
-     * @return The clientUniqueId.
-     */
-    int getClientUniqueId();
-
-    /**
-     * <pre>
-     * offset: 80
-     * </pre>
-     *
-     * <code>uint32 scene_id = 10;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
-
-    /**
-     * <pre>
-     * offset: 84
-     * </pre>
-     *
-     * <code>uint32 level = 5;</code>
-     * @return The level.
-     */
-    int getLevel();
-
-    /**
      * <code>uint32 monster_id = 1;</code>
      * @return Whether the monsterId field is set.
      */
@@ -157,25 +63,81 @@ public final class CreateEntityInfoOuterClass {
     int getItemId();
 
     /**
-     * <code>.CreateGadgetInfo gadget = 13;</code>
+     * <code>uint32 level = 5;</code>
+     * @return The level.
+     */
+    int getLevel();
+
+    /**
+     * <code>.Vector pos = 6;</code>
+     * @return Whether the pos field is set.
+     */
+    boolean hasPos();
+    /**
+     * <code>.Vector pos = 6;</code>
+     * @return The pos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    /**
+     * <code>.Vector pos = 6;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+
+    /**
+     * <code>.Vector rot = 7;</code>
+     * @return Whether the rot field is set.
+     */
+    boolean hasRot();
+    /**
+     * <code>.Vector rot = 7;</code>
+     * @return The rot.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
+    /**
+     * <code>.Vector rot = 7;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
+
+    /**
+     * <code>uint32 scene_id = 10;</code>
+     * @return The sceneId.
+     */
+    int getSceneId();
+
+    /**
+     * <code>uint32 room_id = 11;</code>
+     * @return The roomId.
+     */
+    int getRoomId();
+
+    /**
+     * <code>uint32 client_unique_id = 12;</code>
+     * @return The clientUniqueId.
+     */
+    int getClientUniqueId();
+
+    /**
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
      * @return Whether the gadget field is set.
      */
     boolean hasGadget();
     /**
-     * <code>.CreateGadgetInfo gadget = 13;</code>
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
      * @return The gadget.
      */
     emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo getGadget();
     /**
-     * <code>.CreateGadgetInfo gadget = 13;</code>
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
      */
     emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder getGadgetOrBuilder();
 
     public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.EntityCase getEntityCase();
-
-    public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.JIKBGHODFJJCase getJIKBGHODFJJCase();
   }
   /**
+   * <pre>
+   * Obf: CIDLLJOHEFL
+   * </pre>
+   *
    * Protobuf type {@code CreateEntityInfo}
    */
   public static final class CreateEntityInfo extends
@@ -210,6 +172,7 @@ public final class CreateEntityInfoOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -288,16 +251,15 @@ public final class CreateEntityInfoOuterClass {
             }
             case 106: {
               emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder subBuilder = null;
-              if (jIKBGHODFJJCase_ == 13) {
-                subBuilder = ((emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo) jIKBGHODFJJ_).toBuilder();
+              if (((bitField0_ & 0x00000001) != 0)) {
+                subBuilder = gadget_.toBuilder();
               }
-              jIKBGHODFJJ_ =
-                  input.readMessage(emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.parser(), extensionRegistry);
+              gadget_ = input.readMessage(emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo) jIKBGHODFJJ_);
-                jIKBGHODFJJ_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(gadget_);
+                gadget_ = subBuilder.buildPartial();
               }
-              jIKBGHODFJJCase_ = 13;
+              bitField0_ |= 0x00000001;
               break;
             }
             default: {
@@ -332,6 +294,7 @@ public final class CreateEntityInfoOuterClass {
               emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.class, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder.class);
     }
 
+    private int bitField0_;
     private int entityCase_ = 0;
     private java.lang.Object entity_;
     public enum EntityCase
@@ -375,181 +338,6 @@ public final class CreateEntityInfoOuterClass {
     getEntityCase() {
       return EntityCase.forNumber(
           entityCase_);
-    }
-
-    private int jIKBGHODFJJCase_ = 0;
-    private java.lang.Object jIKBGHODFJJ_;
-    public enum JIKBGHODFJJCase
-        implements com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      GADGET(13),
-      JIKBGHODFJJ_NOT_SET(0);
-      private final int value;
-      private JIKBGHODFJJCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static JIKBGHODFJJCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static JIKBGHODFJJCase forNumber(int value) {
-        switch (value) {
-          case 13: return GADGET;
-          case 0: return JIKBGHODFJJ_NOT_SET;
-          default: return null;
-        }
-      }
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public JIKBGHODFJJCase
-    getJIKBGHODFJJCase() {
-      return JIKBGHODFJJCase.forNumber(
-          jIKBGHODFJJCase_);
-    }
-
-    public static final int POS_FIELD_NUMBER = 6;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>.Vector pos = 6;</code>
-     * @return Whether the pos field is set.
-     */
-    @java.lang.Override
-    public boolean hasPos() {
-      return pos_ != null;
-    }
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>.Vector pos = 6;</code>
-     * @return The pos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-    }
-    /**
-     * <pre>
-     * offset: 48
-     * </pre>
-     *
-     * <code>.Vector pos = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-      return getPos();
-    }
-
-    public static final int ROT_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector rot = 7;</code>
-     * @return Whether the rot field is set.
-     */
-    @java.lang.Override
-    public boolean hasRot() {
-      return rot_ != null;
-    }
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector rot = 7;</code>
-     * @return The rot.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
-      return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
-    }
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.Vector rot = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
-      return getRot();
-    }
-
-    public static final int ROOM_ID_FIELD_NUMBER = 11;
-    private int roomId_;
-    /**
-     * <pre>
-     * offset: 64
-     * </pre>
-     *
-     * <code>uint32 room_id = 11;</code>
-     * @return The roomId.
-     */
-    @java.lang.Override
-    public int getRoomId() {
-      return roomId_;
-    }
-
-    public static final int CLIENT_UNIQUE_ID_FIELD_NUMBER = 12;
-    private int clientUniqueId_;
-    /**
-     * <pre>
-     * offset: 68
-     * </pre>
-     *
-     * <code>uint32 client_unique_id = 12;</code>
-     * @return The clientUniqueId.
-     */
-    @java.lang.Override
-    public int getClientUniqueId() {
-      return clientUniqueId_;
-    }
-
-    public static final int SCENE_ID_FIELD_NUMBER = 10;
-    private int sceneId_;
-    /**
-     * <pre>
-     * offset: 80
-     * </pre>
-     *
-     * <code>uint32 scene_id = 10;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    public static final int LEVEL_FIELD_NUMBER = 5;
-    private int level_;
-    /**
-     * <pre>
-     * offset: 84
-     * </pre>
-     *
-     * <code>uint32 level = 5;</code>
-     * @return The level.
-     */
-    @java.lang.Override
-    public int getLevel() {
-      return level_;
     }
 
     public static final int MONSTER_ID_FIELD_NUMBER = 1;
@@ -636,35 +424,126 @@ public final class CreateEntityInfoOuterClass {
       return 0;
     }
 
-    public static final int GADGET_FIELD_NUMBER = 13;
+    public static final int LEVEL_FIELD_NUMBER = 5;
+    private int level_;
     /**
-     * <code>.CreateGadgetInfo gadget = 13;</code>
+     * <code>uint32 level = 5;</code>
+     * @return The level.
+     */
+    @java.lang.Override
+    public int getLevel() {
+      return level_;
+    }
+
+    public static final int POS_FIELD_NUMBER = 6;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+    /**
+     * <code>.Vector pos = 6;</code>
+     * @return Whether the pos field is set.
+     */
+    @java.lang.Override
+    public boolean hasPos() {
+      return pos_ != null;
+    }
+    /**
+     * <code>.Vector pos = 6;</code>
+     * @return The pos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    }
+    /**
+     * <code>.Vector pos = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+      return getPos();
+    }
+
+    public static final int ROT_FIELD_NUMBER = 7;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
+    /**
+     * <code>.Vector rot = 7;</code>
+     * @return Whether the rot field is set.
+     */
+    @java.lang.Override
+    public boolean hasRot() {
+      return rot_ != null;
+    }
+    /**
+     * <code>.Vector rot = 7;</code>
+     * @return The rot.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
+      return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
+    }
+    /**
+     * <code>.Vector rot = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
+      return getRot();
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 10;
+    private int sceneId_;
+    /**
+     * <code>uint32 scene_id = 10;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
+
+    public static final int ROOM_ID_FIELD_NUMBER = 11;
+    private int roomId_;
+    /**
+     * <code>uint32 room_id = 11;</code>
+     * @return The roomId.
+     */
+    @java.lang.Override
+    public int getRoomId() {
+      return roomId_;
+    }
+
+    public static final int CLIENT_UNIQUE_ID_FIELD_NUMBER = 12;
+    private int clientUniqueId_;
+    /**
+     * <code>uint32 client_unique_id = 12;</code>
+     * @return The clientUniqueId.
+     */
+    @java.lang.Override
+    public int getClientUniqueId() {
+      return clientUniqueId_;
+    }
+
+    public static final int GADGET_FIELD_NUMBER = 13;
+    private emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo gadget_;
+    /**
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
      * @return Whether the gadget field is set.
      */
     @java.lang.Override
     public boolean hasGadget() {
-      return jIKBGHODFJJCase_ == 13;
+      return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.CreateGadgetInfo gadget = 13;</code>
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
      * @return The gadget.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo getGadget() {
-      if (jIKBGHODFJJCase_ == 13) {
-         return (emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo) jIKBGHODFJJ_;
-      }
-      return emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance();
+      return gadget_ == null ? emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance() : gadget_;
     }
     /**
-     * <code>.CreateGadgetInfo gadget = 13;</code>
+     * <code>optional .CreateGadgetInfo gadget = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder getGadgetOrBuilder() {
-      if (jIKBGHODFJJCase_ == 13) {
-         return (emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo) jIKBGHODFJJ_;
-      }
-      return emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance();
+      return gadget_ == null ? emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance() : gadget_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -715,8 +594,8 @@ public final class CreateEntityInfoOuterClass {
       if (clientUniqueId_ != 0) {
         output.writeUInt32(12, clientUniqueId_);
       }
-      if (jIKBGHODFJJCase_ == 13) {
-        output.writeMessage(13, (emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo) jIKBGHODFJJ_);
+      if (((bitField0_ & 0x00000001) != 0)) {
+        output.writeMessage(13, getGadget());
       }
       unknownFields.writeTo(output);
     }
@@ -771,9 +650,9 @@ public final class CreateEntityInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, clientUniqueId_);
       }
-      if (jIKBGHODFJJCase_ == 13) {
+      if (((bitField0_ & 0x00000001) != 0)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, (emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo) jIKBGHODFJJ_);
+          .computeMessageSize(13, getGadget());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -790,6 +669,8 @@ public final class CreateEntityInfoOuterClass {
       }
       emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo other = (emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo) obj;
 
+      if (getLevel()
+          != other.getLevel()) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
@@ -800,14 +681,17 @@ public final class CreateEntityInfoOuterClass {
         if (!getRot()
             .equals(other.getRot())) return false;
       }
+      if (getSceneId()
+          != other.getSceneId()) return false;
       if (getRoomId()
           != other.getRoomId()) return false;
       if (getClientUniqueId()
           != other.getClientUniqueId()) return false;
-      if (getSceneId()
-          != other.getSceneId()) return false;
-      if (getLevel()
-          != other.getLevel()) return false;
+      if (hasGadget() != other.hasGadget()) return false;
+      if (hasGadget()) {
+        if (!getGadget()
+            .equals(other.getGadget())) return false;
+      }
       if (!getEntityCase().equals(other.getEntityCase())) return false;
       switch (entityCase_) {
         case 1:
@@ -829,15 +713,6 @@ public final class CreateEntityInfoOuterClass {
         case 0:
         default:
       }
-      if (!getJIKBGHODFJJCase().equals(other.getJIKBGHODFJJCase())) return false;
-      switch (jIKBGHODFJJCase_) {
-        case 13:
-          if (!getGadget()
-              .equals(other.getGadget())) return false;
-          break;
-        case 0:
-        default:
-      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -849,6 +724,8 @@ public final class CreateEntityInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
@@ -857,14 +734,16 @@ public final class CreateEntityInfoOuterClass {
         hash = (37 * hash) + ROT_FIELD_NUMBER;
         hash = (53 * hash) + getRot().hashCode();
       }
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
       hash = (37 * hash) + ROOM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRoomId();
       hash = (37 * hash) + CLIENT_UNIQUE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getClientUniqueId();
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
+      if (hasGadget()) {
+        hash = (37 * hash) + GADGET_FIELD_NUMBER;
+        hash = (53 * hash) + getGadget().hashCode();
+      }
       switch (entityCase_) {
         case 1:
           hash = (37 * hash) + MONSTER_ID_FIELD_NUMBER;
@@ -881,14 +760,6 @@ public final class CreateEntityInfoOuterClass {
         case 4:
           hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
           hash = (53 * hash) + getItemId();
-          break;
-        case 0:
-        default:
-      }
-      switch (jIKBGHODFJJCase_) {
-        case 13:
-          hash = (37 * hash) + GADGET_FIELD_NUMBER;
-          hash = (53 * hash) + getGadget().hashCode();
           break;
         case 0:
         default:
@@ -989,6 +860,10 @@ public final class CreateEntityInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: CIDLLJOHEFL
+     * </pre>
+     *
      * Protobuf type {@code CreateEntityInfo}
      */
     public static final class Builder extends
@@ -1021,11 +896,14 @@ public final class CreateEntityInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getGadgetFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        level_ = 0;
+
         if (posBuilder_ == null) {
           pos_ = null;
         } else {
@@ -1038,18 +916,20 @@ public final class CreateEntityInfoOuterClass {
           rot_ = null;
           rotBuilder_ = null;
         }
+        sceneId_ = 0;
+
         roomId_ = 0;
 
         clientUniqueId_ = 0;
 
-        sceneId_ = 0;
-
-        level_ = 0;
-
+        if (gadgetBuilder_ == null) {
+          gadget_ = null;
+        } else {
+          gadgetBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
         entityCase_ = 0;
         entity_ = null;
-        jIKBGHODFJJCase_ = 0;
-        jIKBGHODFJJ_ = null;
         return this;
       }
 
@@ -1076,20 +956,8 @@ public final class CreateEntityInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo buildPartial() {
         emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo result = new emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo(this);
-        if (posBuilder_ == null) {
-          result.pos_ = pos_;
-        } else {
-          result.pos_ = posBuilder_.build();
-        }
-        if (rotBuilder_ == null) {
-          result.rot_ = rot_;
-        } else {
-          result.rot_ = rotBuilder_.build();
-        }
-        result.roomId_ = roomId_;
-        result.clientUniqueId_ = clientUniqueId_;
-        result.sceneId_ = sceneId_;
-        result.level_ = level_;
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         if (entityCase_ == 1) {
           result.entity_ = entity_;
         }
@@ -1102,15 +970,30 @@ public final class CreateEntityInfoOuterClass {
         if (entityCase_ == 4) {
           result.entity_ = entity_;
         }
-        if (jIKBGHODFJJCase_ == 13) {
-          if (gadgetBuilder_ == null) {
-            result.jIKBGHODFJJ_ = jIKBGHODFJJ_;
-          } else {
-            result.jIKBGHODFJJ_ = gadgetBuilder_.build();
-          }
+        result.level_ = level_;
+        if (posBuilder_ == null) {
+          result.pos_ = pos_;
+        } else {
+          result.pos_ = posBuilder_.build();
         }
+        if (rotBuilder_ == null) {
+          result.rot_ = rot_;
+        } else {
+          result.rot_ = rotBuilder_.build();
+        }
+        result.sceneId_ = sceneId_;
+        result.roomId_ = roomId_;
+        result.clientUniqueId_ = clientUniqueId_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          if (gadgetBuilder_ == null) {
+            result.gadget_ = gadget_;
+          } else {
+            result.gadget_ = gadgetBuilder_.build();
+          }
+          to_bitField0_ |= 0x00000001;
+        }
+        result.bitField0_ = to_bitField0_;
         result.entityCase_ = entityCase_;
-        result.jIKBGHODFJJCase_ = jIKBGHODFJJCase_;
         onBuilt();
         return result;
       }
@@ -1159,11 +1042,17 @@ public final class CreateEntityInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo other) {
         if (other == emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.getDefaultInstance()) return this;
+        if (other.getLevel() != 0) {
+          setLevel(other.getLevel());
+        }
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
         if (other.hasRot()) {
           mergeRot(other.getRot());
+        }
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
         }
         if (other.getRoomId() != 0) {
           setRoomId(other.getRoomId());
@@ -1171,11 +1060,8 @@ public final class CreateEntityInfoOuterClass {
         if (other.getClientUniqueId() != 0) {
           setClientUniqueId(other.getClientUniqueId());
         }
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
-        }
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
+        if (other.hasGadget()) {
+          mergeGadget(other.getGadget());
         }
         switch (other.getEntityCase()) {
           case MONSTER_ID: {
@@ -1195,15 +1081,6 @@ public final class CreateEntityInfoOuterClass {
             break;
           }
           case ENTITY_NOT_SET: {
-            break;
-          }
-        }
-        switch (other.getJIKBGHODFJJCase()) {
-          case GADGET: {
-            mergeGadget(other.getGadget());
-            break;
-          }
-          case JIKBGHODFJJ_NOT_SET: {
             break;
           }
         }
@@ -1250,503 +1127,7 @@ public final class CreateEntityInfoOuterClass {
         return this;
       }
 
-      private int jIKBGHODFJJCase_ = 0;
-      private java.lang.Object jIKBGHODFJJ_;
-      public JIKBGHODFJJCase
-          getJIKBGHODFJJCase() {
-        return JIKBGHODFJJCase.forNumber(
-            jIKBGHODFJJCase_);
-      }
-
-      public Builder clearJIKBGHODFJJ() {
-        jIKBGHODFJJCase_ = 0;
-        jIKBGHODFJJ_ = null;
-        onChanged();
-        return this;
-      }
-
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>.Vector pos = 6;</code>
-       * @return Whether the pos field is set.
-       */
-      public boolean hasPos() {
-        return posBuilder_ != null || pos_ != null;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>.Vector pos = 6;</code>
-       * @return The pos.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-        if (posBuilder_ == null) {
-          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        } else {
-          return posBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>.Vector pos = 6;</code>
-       */
-      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pos_ = value;
-          onChanged();
-        } else {
-          posBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>.Vector pos = 6;</code>
-       */
-      public Builder setPos(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (posBuilder_ == null) {
-          pos_ = builderForValue.build();
-          onChanged();
-        } else {
-          posBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>.Vector pos = 6;</code>
-       */
-      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (pos_ != null) {
-            pos_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(pos_).mergeFrom(value).buildPartial();
-          } else {
-            pos_ = value;
-          }
-          onChanged();
-        } else {
-          posBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>.Vector pos = 6;</code>
-       */
-      public Builder clearPos() {
-        if (posBuilder_ == null) {
-          pos_ = null;
-          onChanged();
-        } else {
-          pos_ = null;
-          posBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>.Vector pos = 6;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
-        
-        onChanged();
-        return getPosFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>.Vector pos = 6;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-        if (posBuilder_ != null) {
-          return posBuilder_.getMessageOrBuilder();
-        } else {
-          return pos_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 48
-       * </pre>
-       *
-       * <code>.Vector pos = 6;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getPosFieldBuilder() {
-        if (posBuilder_ == null) {
-          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getPos(),
-                  getParentForChildren(),
-                  isClean());
-          pos_ = null;
-        }
-        return posBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector rot = 7;</code>
-       * @return Whether the rot field is set.
-       */
-      public boolean hasRot() {
-        return rotBuilder_ != null || rot_ != null;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector rot = 7;</code>
-       * @return The rot.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
-        if (rotBuilder_ == null) {
-          return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
-        } else {
-          return rotBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector rot = 7;</code>
-       */
-      public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (rotBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          rot_ = value;
-          onChanged();
-        } else {
-          rotBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector rot = 7;</code>
-       */
-      public Builder setRot(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (rotBuilder_ == null) {
-          rot_ = builderForValue.build();
-          onChanged();
-        } else {
-          rotBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector rot = 7;</code>
-       */
-      public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (rotBuilder_ == null) {
-          if (rot_ != null) {
-            rot_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(rot_).mergeFrom(value).buildPartial();
-          } else {
-            rot_ = value;
-          }
-          onChanged();
-        } else {
-          rotBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector rot = 7;</code>
-       */
-      public Builder clearRot() {
-        if (rotBuilder_ == null) {
-          rot_ = null;
-          onChanged();
-        } else {
-          rot_ = null;
-          rotBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector rot = 7;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
-        
-        onChanged();
-        return getRotFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector rot = 7;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
-        if (rotBuilder_ != null) {
-          return rotBuilder_.getMessageOrBuilder();
-        } else {
-          return rot_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
-        }
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.Vector rot = 7;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getRotFieldBuilder() {
-        if (rotBuilder_ == null) {
-          rotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getRot(),
-                  getParentForChildren(),
-                  isClean());
-          rot_ = null;
-        }
-        return rotBuilder_;
-      }
-
-      private int roomId_ ;
-      /**
-       * <pre>
-       * offset: 64
-       * </pre>
-       *
-       * <code>uint32 room_id = 11;</code>
-       * @return The roomId.
-       */
-      @java.lang.Override
-      public int getRoomId() {
-        return roomId_;
-      }
-      /**
-       * <pre>
-       * offset: 64
-       * </pre>
-       *
-       * <code>uint32 room_id = 11;</code>
-       * @param value The roomId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRoomId(int value) {
-        
-        roomId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 64
-       * </pre>
-       *
-       * <code>uint32 room_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRoomId() {
-        
-        roomId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int clientUniqueId_ ;
-      /**
-       * <pre>
-       * offset: 68
-       * </pre>
-       *
-       * <code>uint32 client_unique_id = 12;</code>
-       * @return The clientUniqueId.
-       */
-      @java.lang.Override
-      public int getClientUniqueId() {
-        return clientUniqueId_;
-      }
-      /**
-       * <pre>
-       * offset: 68
-       * </pre>
-       *
-       * <code>uint32 client_unique_id = 12;</code>
-       * @param value The clientUniqueId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientUniqueId(int value) {
-        
-        clientUniqueId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 68
-       * </pre>
-       *
-       * <code>uint32 client_unique_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearClientUniqueId() {
-        
-        clientUniqueId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int sceneId_ ;
-      /**
-       * <pre>
-       * offset: 80
-       * </pre>
-       *
-       * <code>uint32 scene_id = 10;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <pre>
-       * offset: 80
-       * </pre>
-       *
-       * <code>uint32 scene_id = 10;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 80
-       * </pre>
-       *
-       * <code>uint32 scene_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int level_ ;
-      /**
-       * <pre>
-       * offset: 84
-       * </pre>
-       *
-       * <code>uint32 level = 5;</code>
-       * @return The level.
-       */
-      @java.lang.Override
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <pre>
-       * offset: 84
-       * </pre>
-       *
-       * <code>uint32 level = 5;</code>
-       * @param value The level to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevel(int value) {
-        
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 84
-       * </pre>
-       *
-       * <code>uint32 level = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevel() {
-        
-        level_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       /**
        * <code>uint32 monster_id = 1;</code>
@@ -1912,144 +1293,485 @@ public final class CreateEntityInfoOuterClass {
         return this;
       }
 
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder> gadgetBuilder_;
+      private int level_ ;
       /**
-       * <code>.CreateGadgetInfo gadget = 13;</code>
-       * @return Whether the gadget field is set.
+       * <code>uint32 level = 5;</code>
+       * @return The level.
        */
       @java.lang.Override
-      public boolean hasGadget() {
-        return jIKBGHODFJJCase_ == 13;
+      public int getLevel() {
+        return level_;
       }
       /**
-       * <code>.CreateGadgetInfo gadget = 13;</code>
-       * @return The gadget.
+       * <code>uint32 level = 5;</code>
+       * @param value The level to set.
+       * @return This builder for chaining.
        */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo getGadget() {
-        if (gadgetBuilder_ == null) {
-          if (jIKBGHODFJJCase_ == 13) {
-            return (emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo) jIKBGHODFJJ_;
-          }
-          return emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance();
+      public Builder setLevel(int value) {
+        
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevel() {
+        
+        level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
+      /**
+       * <code>.Vector pos = 6;</code>
+       * @return Whether the pos field is set.
+       */
+      public boolean hasPos() {
+        return posBuilder_ != null || pos_ != null;
+      }
+      /**
+       * <code>.Vector pos = 6;</code>
+       * @return The pos.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+        if (posBuilder_ == null) {
+          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
         } else {
-          if (jIKBGHODFJJCase_ == 13) {
-            return gadgetBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance();
+          return posBuilder_.getMessage();
         }
       }
       /**
-       * <code>.CreateGadgetInfo gadget = 13;</code>
+       * <code>.Vector pos = 6;</code>
+       */
+      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pos_ = value;
+          onChanged();
+        } else {
+          posBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 6;</code>
+       */
+      public Builder setPos(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (posBuilder_ == null) {
+          pos_ = builderForValue.build();
+          onChanged();
+        } else {
+          posBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 6;</code>
+       */
+      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (pos_ != null) {
+            pos_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(pos_).mergeFrom(value).buildPartial();
+          } else {
+            pos_ = value;
+          }
+          onChanged();
+        } else {
+          posBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 6;</code>
+       */
+      public Builder clearPos() {
+        if (posBuilder_ == null) {
+          pos_ = null;
+          onChanged();
+        } else {
+          pos_ = null;
+          posBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 6;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
+        
+        onChanged();
+        return getPosFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector pos = 6;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+        if (posBuilder_ != null) {
+          return posBuilder_.getMessageOrBuilder();
+        } else {
+          return pos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        }
+      }
+      /**
+       * <code>.Vector pos = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getPosFieldBuilder() {
+        if (posBuilder_ == null) {
+          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getPos(),
+                  getParentForChildren(),
+                  isClean());
+          pos_ = null;
+        }
+        return posBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
+      /**
+       * <code>.Vector rot = 7;</code>
+       * @return Whether the rot field is set.
+       */
+      public boolean hasRot() {
+        return rotBuilder_ != null || rot_ != null;
+      }
+      /**
+       * <code>.Vector rot = 7;</code>
+       * @return The rot.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
+        if (rotBuilder_ == null) {
+          return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
+        } else {
+          return rotBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector rot = 7;</code>
+       */
+      public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (rotBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          rot_ = value;
+          onChanged();
+        } else {
+          rotBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector rot = 7;</code>
+       */
+      public Builder setRot(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (rotBuilder_ == null) {
+          rot_ = builderForValue.build();
+          onChanged();
+        } else {
+          rotBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector rot = 7;</code>
+       */
+      public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (rotBuilder_ == null) {
+          if (rot_ != null) {
+            rot_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(rot_).mergeFrom(value).buildPartial();
+          } else {
+            rot_ = value;
+          }
+          onChanged();
+        } else {
+          rotBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector rot = 7;</code>
+       */
+      public Builder clearRot() {
+        if (rotBuilder_ == null) {
+          rot_ = null;
+          onChanged();
+        } else {
+          rot_ = null;
+          rotBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector rot = 7;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
+        
+        onChanged();
+        return getRotFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector rot = 7;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
+        if (rotBuilder_ != null) {
+          return rotBuilder_.getMessageOrBuilder();
+        } else {
+          return rot_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
+        }
+      }
+      /**
+       * <code>.Vector rot = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getRotFieldBuilder() {
+        if (rotBuilder_ == null) {
+          rotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getRot(),
+                  getParentForChildren(),
+                  isClean());
+          rot_ = null;
+        }
+        return rotBuilder_;
+      }
+
+      private int sceneId_ ;
+      /**
+       * <code>uint32 scene_id = 10;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>uint32 scene_id = 10;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+        
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        
+        sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int roomId_ ;
+      /**
+       * <code>uint32 room_id = 11;</code>
+       * @return The roomId.
+       */
+      @java.lang.Override
+      public int getRoomId() {
+        return roomId_;
+      }
+      /**
+       * <code>uint32 room_id = 11;</code>
+       * @param value The roomId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRoomId(int value) {
+        
+        roomId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 room_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRoomId() {
+        
+        roomId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int clientUniqueId_ ;
+      /**
+       * <code>uint32 client_unique_id = 12;</code>
+       * @return The clientUniqueId.
+       */
+      @java.lang.Override
+      public int getClientUniqueId() {
+        return clientUniqueId_;
+      }
+      /**
+       * <code>uint32 client_unique_id = 12;</code>
+       * @param value The clientUniqueId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientUniqueId(int value) {
+        
+        clientUniqueId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 client_unique_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearClientUniqueId() {
+        
+        clientUniqueId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo gadget_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder> gadgetBuilder_;
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
+       * @return Whether the gadget field is set.
+       */
+      public boolean hasGadget() {
+        return ((bitField0_ & 0x00000001) != 0);
+      }
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
+       * @return The gadget.
+       */
+      public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo getGadget() {
+        if (gadgetBuilder_ == null) {
+          return gadget_ == null ? emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance() : gadget_;
+        } else {
+          return gadgetBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
        */
       public Builder setGadget(emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo value) {
         if (gadgetBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          jIKBGHODFJJ_ = value;
+          gadget_ = value;
           onChanged();
         } else {
           gadgetBuilder_.setMessage(value);
         }
-        jIKBGHODFJJCase_ = 13;
+        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>.CreateGadgetInfo gadget = 13;</code>
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
        */
       public Builder setGadget(
           emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder builderForValue) {
         if (gadgetBuilder_ == null) {
-          jIKBGHODFJJ_ = builderForValue.build();
+          gadget_ = builderForValue.build();
           onChanged();
         } else {
           gadgetBuilder_.setMessage(builderForValue.build());
         }
-        jIKBGHODFJJCase_ = 13;
+        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>.CreateGadgetInfo gadget = 13;</code>
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
        */
       public Builder mergeGadget(emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo value) {
         if (gadgetBuilder_ == null) {
-          if (jIKBGHODFJJCase_ == 13 &&
-              jIKBGHODFJJ_ != emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance()) {
-            jIKBGHODFJJ_ = emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.newBuilder((emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo) jIKBGHODFJJ_)
-                .mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000001) != 0) &&
+              gadget_ != null &&
+              gadget_ != emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance()) {
+            gadget_ =
+              emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.newBuilder(gadget_).mergeFrom(value).buildPartial();
           } else {
-            jIKBGHODFJJ_ = value;
+            gadget_ = value;
           }
           onChanged();
         } else {
-          if (jIKBGHODFJJCase_ == 13) {
-            gadgetBuilder_.mergeFrom(value);
-          }
-          gadgetBuilder_.setMessage(value);
+          gadgetBuilder_.mergeFrom(value);
         }
-        jIKBGHODFJJCase_ = 13;
+        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>.CreateGadgetInfo gadget = 13;</code>
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
        */
       public Builder clearGadget() {
         if (gadgetBuilder_ == null) {
-          if (jIKBGHODFJJCase_ == 13) {
-            jIKBGHODFJJCase_ = 0;
-            jIKBGHODFJJ_ = null;
-            onChanged();
-          }
+          gadget_ = null;
+          onChanged();
         } else {
-          if (jIKBGHODFJJCase_ == 13) {
-            jIKBGHODFJJCase_ = 0;
-            jIKBGHODFJJ_ = null;
-          }
           gadgetBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
       /**
-       * <code>.CreateGadgetInfo gadget = 13;</code>
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
        */
       public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder getGadgetBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
         return getGadgetFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CreateGadgetInfo gadget = 13;</code>
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
        */
-      @java.lang.Override
       public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder getGadgetOrBuilder() {
-        if ((jIKBGHODFJJCase_ == 13) && (gadgetBuilder_ != null)) {
+        if (gadgetBuilder_ != null) {
           return gadgetBuilder_.getMessageOrBuilder();
         } else {
-          if (jIKBGHODFJJCase_ == 13) {
-            return (emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo) jIKBGHODFJJ_;
-          }
-          return emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance();
+          return gadget_ == null ?
+              emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance() : gadget_;
         }
       }
       /**
-       * <code>.CreateGadgetInfo gadget = 13;</code>
+       * <code>optional .CreateGadgetInfo gadget = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder> 
           getGadgetFieldBuilder() {
         if (gadgetBuilder_ == null) {
-          if (!(jIKBGHODFJJCase_ == 13)) {
-            jIKBGHODFJJ_ = emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.getDefaultInstance();
-          }
           gadgetBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Builder, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfoOrBuilder>(
-                  (emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo) jIKBGHODFJJ_,
+                  getGadget(),
                   getParentForChildren(),
                   isClean());
-          jIKBGHODFJJ_ = null;
+          gadget_ = null;
         }
-        jIKBGHODFJJCase_ = 13;
-        onChanged();;
         return gadgetBuilder_;
       }
       @java.lang.Override
@@ -2119,31 +1841,31 @@ public final class CreateEntityInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026CreateEntityInfo.proto\032\026CreateGadgetIn" +
-      "fo.proto\032\014Vector.proto\"\230\002\n\020CreateEntityI" +
-      "nfo\022\024\n\003pos\030\006 \001(\0132\007.Vector\022\024\n\003rot\030\007 \001(\0132\007" +
-      ".Vector\022\017\n\007room_id\030\013 \001(\r\022\030\n\020client_uniqu" +
-      "e_id\030\014 \001(\r\022\020\n\010scene_id\030\n \001(\r\022\r\n\005level\030\005 " +
-      "\001(\r\022\024\n\nmonster_id\030\001 \001(\rH\000\022\020\n\006npc_id\030\002 \001(" +
+      "\n\026CreateEntityInfo.proto\032\014Vector.proto\032\026" +
+      "CreateGadgetInfo.proto\"\227\002\n\020CreateEntityI" +
+      "nfo\022\024\n\nmonster_id\030\001 \001(\rH\000\022\020\n\006npc_id\030\002 \001(" +
       "\rH\000\022\023\n\tgadget_id\030\003 \001(\rH\000\022\021\n\007item_id\030\004 \001(" +
-      "\rH\000\022#\n\006gadget\030\r \001(\0132\021.CreateGadgetInfoH\001" +
-      "B\010\n\006entityB\r\n\013JIKBGHODFJJB\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\rH\000\022\r\n\005level\030\005 \001(\r\022\024\n\003pos\030\006 \001(\0132\007.Vector" +
+      "\022\024\n\003rot\030\007 \001(\0132\007.Vector\022\020\n\010scene_id\030\n \001(\r" +
+      "\022\017\n\007room_id\030\013 \001(\r\022\030\n\020client_unique_id\030\014 " +
+      "\001(\r\022&\n\006gadget\030\r \001(\0132\021.CreateGadgetInfoH\001" +
+      "\210\001\001B\010\n\006entityB\t\n\007_gadgetB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.getDescriptor(),
         });
     internal_static_CreateEntityInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_CreateEntityInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CreateEntityInfo_descriptor,
-        new java.lang.String[] { "Pos", "Rot", "RoomId", "ClientUniqueId", "SceneId", "Level", "MonsterId", "NpcId", "GadgetId", "ItemId", "Gadget", "Entity", "JIKBGHODFJJ", });
-    emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "MonsterId", "NpcId", "GadgetId", "ItemId", "Level", "Pos", "Rot", "SceneId", "RoomId", "ClientUniqueId", "Gadget", "Entity", "Gadget", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

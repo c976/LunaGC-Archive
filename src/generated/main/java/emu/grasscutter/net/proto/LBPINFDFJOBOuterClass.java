@@ -19,20 +19,12 @@ public final class LBPINFDFJOBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 12;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
@@ -128,10 +120,6 @@ public final class LBPINFDFJOBOuterClass {
     public static final int ID_FIELD_NUMBER = 12;
     private int id_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 12;</code>
      * @return The id.
      */
@@ -143,10 +131,6 @@ public final class LBPINFDFJOBOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 10;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 10;</code>
      * @return The isFinish.
      */
@@ -477,10 +461,6 @@ public final class LBPINFDFJOBOuterClass {
 
       private int id_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 12;</code>
        * @return The id.
        */
@@ -489,10 +469,6 @@ public final class LBPINFDFJOBOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 12;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -504,10 +480,6 @@ public final class LBPINFDFJOBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 12;</code>
        * @return This builder for chaining.
        */
@@ -520,10 +492,6 @@ public final class LBPINFDFJOBOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @return The isFinish.
        */
@@ -532,10 +500,6 @@ public final class LBPINFDFJOBOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -547,10 +511,6 @@ public final class LBPINFDFJOBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 10;</code>
        * @return This builder for chaining.
        */

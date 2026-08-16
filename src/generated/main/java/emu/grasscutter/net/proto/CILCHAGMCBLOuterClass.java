@@ -19,67 +19,39 @@ public final class CILCHAGMCBLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 13;</code>
      * @return Whether the center field is set.
      */
     boolean hasCenter();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 13;</code>
      * @return The center.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getCenter();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 13;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LNCDLHAFFKE = 15;</code>
      * @return The lNCDLHAFFKE.
      */
     int getLNCDLHAFFKE();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JAMNIKAJCCI = 9;</code>
      * @return The jAMNIKAJCCI.
      */
     boolean getJAMNIKAJCCI();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 5;</code>
      * @return The openTime.
      */
@@ -198,10 +170,6 @@ public final class CILCHAGMCBLOuterClass {
     public static final int CENTER_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 13;</code>
      * @return Whether the center field is set.
      */
@@ -210,10 +178,6 @@ public final class CILCHAGMCBLOuterClass {
       return center_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 13;</code>
      * @return The center.
      */
@@ -222,10 +186,6 @@ public final class CILCHAGMCBLOuterClass {
       return center_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : center_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.Vector center = 13;</code>
      */
     @java.lang.Override
@@ -236,10 +196,6 @@ public final class CILCHAGMCBLOuterClass {
     public static final int LNCDLHAFFKE_FIELD_NUMBER = 15;
     private int lNCDLHAFFKE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LNCDLHAFFKE = 15;</code>
      * @return The lNCDLHAFFKE.
      */
@@ -251,10 +207,6 @@ public final class CILCHAGMCBLOuterClass {
     public static final int JAMNIKAJCCI_FIELD_NUMBER = 9;
     private boolean jAMNIKAJCCI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool JAMNIKAJCCI = 9;</code>
      * @return The jAMNIKAJCCI.
      */
@@ -266,10 +218,6 @@ public final class CILCHAGMCBLOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 8;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
@@ -281,10 +229,6 @@ public final class CILCHAGMCBLOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 5;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 5;</code>
      * @return The openTime.
      */
@@ -682,10 +626,6 @@ public final class CILCHAGMCBLOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> centerBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 13;</code>
        * @return Whether the center field is set.
        */
@@ -693,10 +633,6 @@ public final class CILCHAGMCBLOuterClass {
         return centerBuilder_ != null || center_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 13;</code>
        * @return The center.
        */
@@ -708,10 +644,6 @@ public final class CILCHAGMCBLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 13;</code>
        */
       public Builder setCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -728,10 +660,6 @@ public final class CILCHAGMCBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 13;</code>
        */
       public Builder setCenter(
@@ -746,10 +674,6 @@ public final class CILCHAGMCBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 13;</code>
        */
       public Builder mergeCenter(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
@@ -768,10 +692,6 @@ public final class CILCHAGMCBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 13;</code>
        */
       public Builder clearCenter() {
@@ -786,10 +706,6 @@ public final class CILCHAGMCBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 13;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getCenterBuilder() {
@@ -798,10 +714,6 @@ public final class CILCHAGMCBLOuterClass {
         return getCenterFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 13;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getCenterOrBuilder() {
@@ -813,10 +725,6 @@ public final class CILCHAGMCBLOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.Vector center = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -835,10 +743,6 @@ public final class CILCHAGMCBLOuterClass {
 
       private int lNCDLHAFFKE_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LNCDLHAFFKE = 15;</code>
        * @return The lNCDLHAFFKE.
        */
@@ -847,10 +751,6 @@ public final class CILCHAGMCBLOuterClass {
         return lNCDLHAFFKE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LNCDLHAFFKE = 15;</code>
        * @param value The lNCDLHAFFKE to set.
        * @return This builder for chaining.
@@ -862,10 +762,6 @@ public final class CILCHAGMCBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LNCDLHAFFKE = 15;</code>
        * @return This builder for chaining.
        */
@@ -878,10 +774,6 @@ public final class CILCHAGMCBLOuterClass {
 
       private boolean jAMNIKAJCCI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JAMNIKAJCCI = 9;</code>
        * @return The jAMNIKAJCCI.
        */
@@ -890,10 +782,6 @@ public final class CILCHAGMCBLOuterClass {
         return jAMNIKAJCCI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JAMNIKAJCCI = 9;</code>
        * @param value The jAMNIKAJCCI to set.
        * @return This builder for chaining.
@@ -905,10 +793,6 @@ public final class CILCHAGMCBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool JAMNIKAJCCI = 9;</code>
        * @return This builder for chaining.
        */
@@ -921,10 +805,6 @@ public final class CILCHAGMCBLOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @return The isOpen.
        */
@@ -933,10 +813,6 @@ public final class CILCHAGMCBLOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -948,10 +824,6 @@ public final class CILCHAGMCBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 8;</code>
        * @return This builder for chaining.
        */
@@ -964,10 +836,6 @@ public final class CILCHAGMCBLOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 5;</code>
        * @return The openTime.
        */
@@ -976,10 +844,6 @@ public final class CILCHAGMCBLOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 5;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -991,10 +855,6 @@ public final class CILCHAGMCBLOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 5;</code>
        * @return This builder for chaining.
        */

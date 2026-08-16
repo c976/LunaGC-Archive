@@ -19,72 +19,40 @@ public final class ICJPCENFCKPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE> 
         getELPMGGELCJCList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
      */
     emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE getELPMGGELCJC(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
      */
     int getELPMGGELCJCCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKEOrBuilder> 
         getELPMGGELCJCOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
      */
     emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKEOrBuilder getELPMGGELCJCOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NKANPKPPFKL = 14;</code>
      * @return A list containing the nKANPKPPFKL.
      */
     java.util.List<java.lang.Integer> getNKANPKPPFKLList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NKANPKPPFKL = 14;</code>
      * @return The count of nKANPKPPFKL.
      */
     int getNKANPKPPFKLCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NKANPKPPFKL = 14;</code>
      * @param index The index of the element to return.
      * @return The nKANPKPPFKL at the given index.
@@ -92,28 +60,16 @@ public final class ICJPCENFCKPOuterClass {
     int getNKANPKPPFKL(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
      * @return A list containing the mKFGJCEPOOF.
      */
     java.util.List<java.lang.Integer> getMKFGJCEPOOFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
      * @return The count of mKFGJCEPOOF.
      */
     int getMKFGJCEPOOFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
      * @param index The index of the element to return.
      * @return The mKFGJCEPOOF at the given index.
@@ -121,20 +77,12 @@ public final class ICJPCENFCKPOuterClass {
     int getMKFGJCEPOOF(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 JPOHOJELPGO = 5;</code>
      * @return The jPOHOJELPGO.
      */
     int getJPOHOJELPGO();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IJEHGNHEKND = 4;</code>
      * @return The iJEHGNHEKND.
      */
@@ -294,10 +242,6 @@ public final class ICJPCENFCKPOuterClass {
     public static final int ELPMGGELCJC_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE> eLPMGGELCJC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
      */
     @java.lang.Override
@@ -305,10 +249,6 @@ public final class ICJPCENFCKPOuterClass {
       return eLPMGGELCJC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
      */
     @java.lang.Override
@@ -317,10 +257,6 @@ public final class ICJPCENFCKPOuterClass {
       return eLPMGGELCJC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
      */
     @java.lang.Override
@@ -328,10 +264,6 @@ public final class ICJPCENFCKPOuterClass {
       return eLPMGGELCJC_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
      */
     @java.lang.Override
@@ -339,10 +271,6 @@ public final class ICJPCENFCKPOuterClass {
       return eLPMGGELCJC_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
      */
     @java.lang.Override
@@ -354,10 +282,6 @@ public final class ICJPCENFCKPOuterClass {
     public static final int NKANPKPPFKL_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList nKANPKPPFKL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NKANPKPPFKL = 14;</code>
      * @return A list containing the nKANPKPPFKL.
      */
@@ -367,10 +291,6 @@ public final class ICJPCENFCKPOuterClass {
       return nKANPKPPFKL_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NKANPKPPFKL = 14;</code>
      * @return The count of nKANPKPPFKL.
      */
@@ -378,10 +298,6 @@ public final class ICJPCENFCKPOuterClass {
       return nKANPKPPFKL_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 NKANPKPPFKL = 14;</code>
      * @param index The index of the element to return.
      * @return The nKANPKPPFKL at the given index.
@@ -394,10 +310,6 @@ public final class ICJPCENFCKPOuterClass {
     public static final int MKFGJCEPOOF_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList mKFGJCEPOOF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
      * @return A list containing the mKFGJCEPOOF.
      */
@@ -407,10 +319,6 @@ public final class ICJPCENFCKPOuterClass {
       return mKFGJCEPOOF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
      * @return The count of mKFGJCEPOOF.
      */
@@ -418,10 +326,6 @@ public final class ICJPCENFCKPOuterClass {
       return mKFGJCEPOOF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
      * @param index The index of the element to return.
      * @return The mKFGJCEPOOF at the given index.
@@ -434,10 +338,6 @@ public final class ICJPCENFCKPOuterClass {
     public static final int JPOHOJELPGO_FIELD_NUMBER = 5;
     private int jPOHOJELPGO_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 JPOHOJELPGO = 5;</code>
      * @return The jPOHOJELPGO.
      */
@@ -449,10 +349,6 @@ public final class ICJPCENFCKPOuterClass {
     public static final int IJEHGNHEKND_FIELD_NUMBER = 4;
     private int iJEHGNHEKND_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 IJEHGNHEKND = 4;</code>
      * @return The iJEHGNHEKND.
      */
@@ -939,10 +835,6 @@ public final class ICJPCENFCKPOuterClass {
           emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE, emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE.Builder, emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKEOrBuilder> eLPMGGELCJCBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE> getELPMGGELCJCList() {
@@ -953,10 +845,6 @@ public final class ICJPCENFCKPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public int getELPMGGELCJCCount() {
@@ -967,10 +855,6 @@ public final class ICJPCENFCKPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE getELPMGGELCJC(int index) {
@@ -981,10 +865,6 @@ public final class ICJPCENFCKPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public Builder setELPMGGELCJC(
@@ -1002,10 +882,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public Builder setELPMGGELCJC(
@@ -1020,10 +896,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public Builder addELPMGGELCJC(emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE value) {
@@ -1040,10 +912,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public Builder addELPMGGELCJC(
@@ -1061,10 +929,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public Builder addELPMGGELCJC(
@@ -1079,10 +943,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public Builder addELPMGGELCJC(
@@ -1097,10 +957,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public Builder addAllELPMGGELCJC(
@@ -1116,10 +972,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public Builder clearELPMGGELCJC() {
@@ -1133,10 +985,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public Builder removeELPMGGELCJC(int index) {
@@ -1150,10 +998,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE.Builder getELPMGGELCJCBuilder(
@@ -1161,10 +1005,6 @@ public final class ICJPCENFCKPOuterClass {
         return getELPMGGELCJCFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKEOrBuilder getELPMGGELCJCOrBuilder(
@@ -1175,10 +1015,6 @@ public final class ICJPCENFCKPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKEOrBuilder> 
@@ -1190,10 +1026,6 @@ public final class ICJPCENFCKPOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE.Builder addELPMGGELCJCBuilder() {
@@ -1201,10 +1033,6 @@ public final class ICJPCENFCKPOuterClass {
             emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE.Builder addELPMGGELCJCBuilder(
@@ -1213,10 +1041,6 @@ public final class ICJPCENFCKPOuterClass {
             index, emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .MIKCNEOJJKE ELPMGGELCJC = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MIKCNEOJJKEOuterClass.MIKCNEOJJKE.Builder> 
@@ -1246,10 +1070,6 @@ public final class ICJPCENFCKPOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NKANPKPPFKL = 14;</code>
        * @return A list containing the nKANPKPPFKL.
        */
@@ -1259,10 +1079,6 @@ public final class ICJPCENFCKPOuterClass {
                  java.util.Collections.unmodifiableList(nKANPKPPFKL_) : nKANPKPPFKL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NKANPKPPFKL = 14;</code>
        * @return The count of nKANPKPPFKL.
        */
@@ -1270,10 +1086,6 @@ public final class ICJPCENFCKPOuterClass {
         return nKANPKPPFKL_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NKANPKPPFKL = 14;</code>
        * @param index The index of the element to return.
        * @return The nKANPKPPFKL at the given index.
@@ -1282,10 +1094,6 @@ public final class ICJPCENFCKPOuterClass {
         return nKANPKPPFKL_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NKANPKPPFKL = 14;</code>
        * @param index The index to set the value at.
        * @param value The nKANPKPPFKL to set.
@@ -1299,10 +1107,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NKANPKPPFKL = 14;</code>
        * @param value The nKANPKPPFKL to add.
        * @return This builder for chaining.
@@ -1314,10 +1118,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NKANPKPPFKL = 14;</code>
        * @param values The nKANPKPPFKL to add.
        * @return This builder for chaining.
@@ -1331,10 +1131,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 NKANPKPPFKL = 14;</code>
        * @return This builder for chaining.
        */
@@ -1353,10 +1149,6 @@ public final class ICJPCENFCKPOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
        * @return A list containing the mKFGJCEPOOF.
        */
@@ -1366,10 +1158,6 @@ public final class ICJPCENFCKPOuterClass {
                  java.util.Collections.unmodifiableList(mKFGJCEPOOF_) : mKFGJCEPOOF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
        * @return The count of mKFGJCEPOOF.
        */
@@ -1377,10 +1165,6 @@ public final class ICJPCENFCKPOuterClass {
         return mKFGJCEPOOF_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
        * @param index The index of the element to return.
        * @return The mKFGJCEPOOF at the given index.
@@ -1389,10 +1173,6 @@ public final class ICJPCENFCKPOuterClass {
         return mKFGJCEPOOF_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
        * @param index The index to set the value at.
        * @param value The mKFGJCEPOOF to set.
@@ -1406,10 +1186,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
        * @param value The mKFGJCEPOOF to add.
        * @return This builder for chaining.
@@ -1421,10 +1197,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
        * @param values The mKFGJCEPOOF to add.
        * @return This builder for chaining.
@@ -1438,10 +1210,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 MKFGJCEPOOF = 1;</code>
        * @return This builder for chaining.
        */
@@ -1454,10 +1222,6 @@ public final class ICJPCENFCKPOuterClass {
 
       private int jPOHOJELPGO_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JPOHOJELPGO = 5;</code>
        * @return The jPOHOJELPGO.
        */
@@ -1466,10 +1230,6 @@ public final class ICJPCENFCKPOuterClass {
         return jPOHOJELPGO_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JPOHOJELPGO = 5;</code>
        * @param value The jPOHOJELPGO to set.
        * @return This builder for chaining.
@@ -1481,10 +1241,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JPOHOJELPGO = 5;</code>
        * @return This builder for chaining.
        */
@@ -1497,10 +1253,6 @@ public final class ICJPCENFCKPOuterClass {
 
       private int iJEHGNHEKND_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IJEHGNHEKND = 4;</code>
        * @return The iJEHGNHEKND.
        */
@@ -1509,10 +1261,6 @@ public final class ICJPCENFCKPOuterClass {
         return iJEHGNHEKND_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IJEHGNHEKND = 4;</code>
        * @param value The iJEHGNHEKND to set.
        * @return This builder for chaining.
@@ -1524,10 +1272,6 @@ public final class ICJPCENFCKPOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 IJEHGNHEKND = 4;</code>
        * @return This builder for chaining.
        */

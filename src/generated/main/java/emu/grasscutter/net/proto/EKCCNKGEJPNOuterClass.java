@@ -19,40 +19,24 @@ public final class EKCCNKGEJPNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 8;</code>
      * @return The cKOCCKMBGJN.
      */
@@ -158,10 +142,6 @@ public final class EKCCNKGEJPNOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 14;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
@@ -173,10 +153,6 @@ public final class EKCCNKGEJPNOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 10;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
@@ -188,10 +164,6 @@ public final class EKCCNKGEJPNOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
@@ -203,10 +175,6 @@ public final class EKCCNKGEJPNOuterClass {
     public static final int CKOCCKMBGJN_FIELD_NUMBER = 8;
     private int cKOCCKMBGJN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 CKOCCKMBGJN = 8;</code>
      * @return The cKOCCKMBGJN.
      */
@@ -572,10 +540,6 @@ public final class EKCCNKGEJPNOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return The isFinish.
        */
@@ -584,10 +548,6 @@ public final class EKCCNKGEJPNOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -599,10 +559,6 @@ public final class EKCCNKGEJPNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return This builder for chaining.
        */
@@ -615,10 +571,6 @@ public final class EKCCNKGEJPNOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @return The isOpen.
        */
@@ -627,10 +579,6 @@ public final class EKCCNKGEJPNOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -642,10 +590,6 @@ public final class EKCCNKGEJPNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @return This builder for chaining.
        */
@@ -658,10 +602,6 @@ public final class EKCCNKGEJPNOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
@@ -670,10 +610,6 @@ public final class EKCCNKGEJPNOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -685,10 +621,6 @@ public final class EKCCNKGEJPNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
@@ -701,10 +633,6 @@ public final class EKCCNKGEJPNOuterClass {
 
       private int cKOCCKMBGJN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 8;</code>
        * @return The cKOCCKMBGJN.
        */
@@ -713,10 +641,6 @@ public final class EKCCNKGEJPNOuterClass {
         return cKOCCKMBGJN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 8;</code>
        * @param value The cKOCCKMBGJN to set.
        * @return This builder for chaining.
@@ -728,10 +652,6 @@ public final class EKCCNKGEJPNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 CKOCCKMBGJN = 8;</code>
        * @return This builder for chaining.
        */

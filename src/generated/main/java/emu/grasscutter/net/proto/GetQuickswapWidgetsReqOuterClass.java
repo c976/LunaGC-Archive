@@ -19,10 +19,6 @@ public final class GetQuickswapWidgetsReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * <pre>
-   * CmdId: 1189
-   * </pre>
-   *
    * Protobuf type {@code GetQuickswapWidgetsReq}
    */
   public static final class GetQuickswapWidgetsReq extends
@@ -244,10 +240,6 @@ public final class GetQuickswapWidgetsReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 1189
-     * </pre>
-     *
      * Protobuf type {@code GetQuickswapWidgetsReq}
      */
     public static final class Builder extends

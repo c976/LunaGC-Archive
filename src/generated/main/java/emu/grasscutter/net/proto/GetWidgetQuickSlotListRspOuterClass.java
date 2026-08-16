@@ -19,39 +19,35 @@ public final class GetWidgetQuickSlotListRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 material_id_list = 4;</code>
+     * <code>repeated uint32 material_id_list = 13;</code>
      * @return A list containing the materialIdList.
      */
     java.util.List<java.lang.Integer> getMaterialIdListList();
     /**
-     * <code>repeated uint32 material_id_list = 4;</code>
+     * <code>repeated uint32 material_id_list = 13;</code>
      * @return The count of materialIdList.
      */
     int getMaterialIdListCount();
     /**
-     * <code>repeated uint32 material_id_list = 4;</code>
+     * <code>repeated uint32 material_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The materialIdList at the given index.
      */
     int getMaterialIdList(int index);
 
     /**
-     * <code>uint32 Unk3700_EHHHNEBOJIL = 8;</code>
-     * @return The unk3700EHHHNEBOJIL.
-     */
-    int getUnk3700EHHHNEBOJIL();
-
-    /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 Unk3700_EHHHNEBOJIL = 4;</code>
+     * @return The unk3700EHHHNEBOJIL.
+     */
+    int getUnk3700EHHHNEBOJIL();
   }
   /**
-   * <pre>
-   * CmdId: 21891
-   * </pre>
-   *
    * Protobuf type {@code GetWidgetQuickSlotListRsp}
    */
   public static final class GetWidgetQuickSlotListRsp extends
@@ -98,7 +94,17 @@ public final class GetWidgetQuickSlotListRspOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
             case 32: {
+
+              unk3700EHHHNEBOJIL_ = input.readUInt32();
+              break;
+            }
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 materialIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +112,7 @@ public final class GetWidgetQuickSlotListRspOuterClass {
               materialIdList_.addInt(input.readUInt32());
               break;
             }
-            case 34: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -117,16 +123,6 @@ public final class GetWidgetQuickSlotListRspOuterClass {
                 materialIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 64: {
-
-              unk3700EHHHNEBOJIL_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -164,10 +160,10 @@ public final class GetWidgetQuickSlotListRspOuterClass {
               emu.grasscutter.net.proto.GetWidgetQuickSlotListRspOuterClass.GetWidgetQuickSlotListRsp.class, emu.grasscutter.net.proto.GetWidgetQuickSlotListRspOuterClass.GetWidgetQuickSlotListRsp.Builder.class);
     }
 
-    public static final int MATERIAL_ID_LIST_FIELD_NUMBER = 4;
+    public static final int MATERIAL_ID_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList materialIdList_;
     /**
-     * <code>repeated uint32 material_id_list = 4;</code>
+     * <code>repeated uint32 material_id_list = 13;</code>
      * @return A list containing the materialIdList.
      */
     @java.lang.Override
@@ -176,14 +172,14 @@ public final class GetWidgetQuickSlotListRspOuterClass {
       return materialIdList_;
     }
     /**
-     * <code>repeated uint32 material_id_list = 4;</code>
+     * <code>repeated uint32 material_id_list = 13;</code>
      * @return The count of materialIdList.
      */
     public int getMaterialIdListCount() {
       return materialIdList_.size();
     }
     /**
-     * <code>repeated uint32 material_id_list = 4;</code>
+     * <code>repeated uint32 material_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The materialIdList at the given index.
      */
@@ -192,26 +188,26 @@ public final class GetWidgetQuickSlotListRspOuterClass {
     }
     private int materialIdListMemoizedSerializedSize = -1;
 
-    public static final int UNK3700_EHHHNEBOJIL_FIELD_NUMBER = 8;
-    private int unk3700EHHHNEBOJIL_;
-    /**
-     * <code>uint32 Unk3700_EHHHNEBOJIL = 8;</code>
-     * @return The unk3700EHHHNEBOJIL.
-     */
-    @java.lang.Override
-    public int getUnk3700EHHHNEBOJIL() {
-      return unk3700EHHHNEBOJIL_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int UNK3700_EHHHNEBOJIL_FIELD_NUMBER = 4;
+    private int unk3700EHHHNEBOJIL_;
+    /**
+     * <code>uint32 Unk3700_EHHHNEBOJIL = 4;</code>
+     * @return The unk3700EHHHNEBOJIL.
+     */
+    @java.lang.Override
+    public int getUnk3700EHHHNEBOJIL() {
+      return unk3700EHHHNEBOJIL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -229,18 +225,18 @@ public final class GetWidgetQuickSlotListRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (retcode_ != 0) {
+        output.writeInt32(1, retcode_);
+      }
+      if (unk3700EHHHNEBOJIL_ != 0) {
+        output.writeUInt32(4, unk3700EHHHNEBOJIL_);
+      }
       if (getMaterialIdListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(materialIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < materialIdList_.size(); i++) {
         output.writeUInt32NoTag(materialIdList_.getInt(i));
-      }
-      if (unk3700EHHHNEBOJIL_ != 0) {
-        output.writeUInt32(8, unk3700EHHHNEBOJIL_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -251,6 +247,14 @@ public final class GetWidgetQuickSlotListRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, retcode_);
+      }
+      if (unk3700EHHHNEBOJIL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, unk3700EHHHNEBOJIL_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < materialIdList_.size(); i++) {
@@ -264,14 +268,6 @@ public final class GetWidgetQuickSlotListRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         materialIdListMemoizedSerializedSize = dataSize;
-      }
-      if (unk3700EHHHNEBOJIL_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, unk3700EHHHNEBOJIL_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -290,10 +286,10 @@ public final class GetWidgetQuickSlotListRspOuterClass {
 
       if (!getMaterialIdListList()
           .equals(other.getMaterialIdListList())) return false;
-      if (getUnk3700EHHHNEBOJIL()
-          != other.getUnk3700EHHHNEBOJIL()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getUnk3700EHHHNEBOJIL()
+          != other.getUnk3700EHHHNEBOJIL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -309,10 +305,10 @@ public final class GetWidgetQuickSlotListRspOuterClass {
         hash = (37 * hash) + MATERIAL_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getMaterialIdListList().hashCode();
       }
-      hash = (37 * hash) + UNK3700_EHHHNEBOJIL_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3700EHHHNEBOJIL();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + UNK3700_EHHHNEBOJIL_FIELD_NUMBER;
+      hash = (53 * hash) + getUnk3700EHHHNEBOJIL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -409,10 +405,6 @@ public final class GetWidgetQuickSlotListRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 21891
-     * </pre>
-     *
      * Protobuf type {@code GetWidgetQuickSlotListRsp}
      */
     public static final class Builder extends
@@ -452,9 +444,9 @@ public final class GetWidgetQuickSlotListRspOuterClass {
         super.clear();
         materialIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        unk3700EHHHNEBOJIL_ = 0;
-
         retcode_ = 0;
+
+        unk3700EHHHNEBOJIL_ = 0;
 
         return this;
       }
@@ -488,8 +480,8 @@ public final class GetWidgetQuickSlotListRspOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.materialIdList_ = materialIdList_;
-        result.unk3700EHHHNEBOJIL_ = unk3700EHHHNEBOJIL_;
         result.retcode_ = retcode_;
+        result.unk3700EHHHNEBOJIL_ = unk3700EHHHNEBOJIL_;
         onBuilt();
         return result;
       }
@@ -548,11 +540,11 @@ public final class GetWidgetQuickSlotListRspOuterClass {
           }
           onChanged();
         }
-        if (other.getUnk3700EHHHNEBOJIL() != 0) {
-          setUnk3700EHHHNEBOJIL(other.getUnk3700EHHHNEBOJIL());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getUnk3700EHHHNEBOJIL() != 0) {
+          setUnk3700EHHHNEBOJIL(other.getUnk3700EHHHNEBOJIL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -592,7 +584,7 @@ public final class GetWidgetQuickSlotListRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 material_id_list = 4;</code>
+       * <code>repeated uint32 material_id_list = 13;</code>
        * @return A list containing the materialIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -601,14 +593,14 @@ public final class GetWidgetQuickSlotListRspOuterClass {
                  java.util.Collections.unmodifiableList(materialIdList_) : materialIdList_;
       }
       /**
-       * <code>repeated uint32 material_id_list = 4;</code>
+       * <code>repeated uint32 material_id_list = 13;</code>
        * @return The count of materialIdList.
        */
       public int getMaterialIdListCount() {
         return materialIdList_.size();
       }
       /**
-       * <code>repeated uint32 material_id_list = 4;</code>
+       * <code>repeated uint32 material_id_list = 13;</code>
        * @param index The index of the element to return.
        * @return The materialIdList at the given index.
        */
@@ -616,7 +608,7 @@ public final class GetWidgetQuickSlotListRspOuterClass {
         return materialIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 material_id_list = 4;</code>
+       * <code>repeated uint32 material_id_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The materialIdList to set.
        * @return This builder for chaining.
@@ -629,7 +621,7 @@ public final class GetWidgetQuickSlotListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 material_id_list = 4;</code>
+       * <code>repeated uint32 material_id_list = 13;</code>
        * @param value The materialIdList to add.
        * @return This builder for chaining.
        */
@@ -640,7 +632,7 @@ public final class GetWidgetQuickSlotListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 material_id_list = 4;</code>
+       * <code>repeated uint32 material_id_list = 13;</code>
        * @param values The materialIdList to add.
        * @return This builder for chaining.
        */
@@ -653,7 +645,7 @@ public final class GetWidgetQuickSlotListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 material_id_list = 4;</code>
+       * <code>repeated uint32 material_id_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialIdList() {
@@ -663,40 +655,9 @@ public final class GetWidgetQuickSlotListRspOuterClass {
         return this;
       }
 
-      private int unk3700EHHHNEBOJIL_ ;
-      /**
-       * <code>uint32 Unk3700_EHHHNEBOJIL = 8;</code>
-       * @return The unk3700EHHHNEBOJIL.
-       */
-      @java.lang.Override
-      public int getUnk3700EHHHNEBOJIL() {
-        return unk3700EHHHNEBOJIL_;
-      }
-      /**
-       * <code>uint32 Unk3700_EHHHNEBOJIL = 8;</code>
-       * @param value The unk3700EHHHNEBOJIL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3700EHHHNEBOJIL(int value) {
-        
-        unk3700EHHHNEBOJIL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 Unk3700_EHHHNEBOJIL = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3700EHHHNEBOJIL() {
-        
-        unk3700EHHHNEBOJIL_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -704,7 +665,7 @@ public final class GetWidgetQuickSlotListRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -715,12 +676,43 @@ public final class GetWidgetQuickSlotListRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int unk3700EHHHNEBOJIL_ ;
+      /**
+       * <code>uint32 Unk3700_EHHHNEBOJIL = 4;</code>
+       * @return The unk3700EHHHNEBOJIL.
+       */
+      @java.lang.Override
+      public int getUnk3700EHHHNEBOJIL() {
+        return unk3700EHHHNEBOJIL_;
+      }
+      /**
+       * <code>uint32 Unk3700_EHHHNEBOJIL = 4;</code>
+       * @param value The unk3700EHHHNEBOJIL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUnk3700EHHHNEBOJIL(int value) {
+        
+        unk3700EHHHNEBOJIL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 Unk3700_EHHHNEBOJIL = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUnk3700EHHHNEBOJIL() {
+        
+        unk3700EHHHNEBOJIL_ = 0;
         onChanged();
         return this;
       }
@@ -793,8 +785,8 @@ public final class GetWidgetQuickSlotListRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037GetWidgetQuickSlotListRsp.proto\"c\n\031Get" +
       "WidgetQuickSlotListRsp\022\030\n\020material_id_li" +
-      "st\030\004 \003(\r\022\033\n\023Unk3700_EHHHNEBOJIL\030\010 \001(\r\022\017\n" +
-      "\007retcode\030\014 \001(\005B\033\n\031emu.grasscutter.net.pr" +
+      "st\030\r \003(\r\022\017\n\007retcode\030\001 \001(\005\022\033\n\023Unk3700_EHH" +
+      "HNEBOJIL\030\004 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -806,7 +798,7 @@ public final class GetWidgetQuickSlotListRspOuterClass {
     internal_static_GetWidgetQuickSlotListRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetWidgetQuickSlotListRsp_descriptor,
-        new java.lang.String[] { "MaterialIdList", "Unk3700EHHHNEBOJIL", "Retcode", });
+        new java.lang.String[] { "MaterialIdList", "Retcode", "Unk3700EHHHNEBOJIL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,34 +20,7 @@ public final class SceneWeaponInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-     * @return Whether the abilityInfo field is set.
-     */
-    boolean hasAbilityInfo();
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-     * @return The abilityInfo.
-     */
-    emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo getAbilityInfo();
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-     */
-    emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getAbilityInfoOrBuilder();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -56,7 +29,7 @@ public final class SceneWeaponInfoOuterClass {
     boolean hasRendererChangedInfo();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -65,7 +38,7 @@ public final class SceneWeaponInfoOuterClass {
     emu.grasscutter.net.proto.EntityRendererChangedInfoOuterClass.EntityRendererChangedInfo getRendererChangedInfo();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -74,7 +47,34 @@ public final class SceneWeaponInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+     * @return Whether the abilityInfo field is set.
+     */
+    boolean hasAbilityInfo();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+     * @return The abilityInfo.
+     */
+    emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo getAbilityInfo();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+     */
+    emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getAbilityInfoOrBuilder();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -82,7 +82,7 @@ public final class SceneWeaponInfoOuterClass {
     int getAffixMapCount();
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -97,7 +97,7 @@ public final class SceneWeaponInfoOuterClass {
     getAffixMap();
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -106,7 +106,7 @@ public final class SceneWeaponInfoOuterClass {
     getAffixMapMap();
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -117,7 +117,7 @@ public final class SceneWeaponInfoOuterClass {
         int defaultValue);
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -128,7 +128,23 @@ public final class SceneWeaponInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 56
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 item_id = 3;</code>
+     * @return The itemId.
+     */
+    int getItemId();
+
+    /**
+     * <code>bool HHGDIOOEBMJ = 10;</code>
+     * @return The hHGDIOOEBMJ.
+     */
+    boolean getHHGDIOOEBMJ();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint64 guid = 4;</code>
@@ -138,7 +154,7 @@ public final class SceneWeaponInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 64
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 gadget_id = 2;</code>
@@ -148,27 +164,17 @@ public final class SceneWeaponInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 68
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 promote_level = 6;</code>
-     * @return The promoteLevel.
+     * <code>uint32 entity_id = 1;</code>
+     * @return The entityId.
      */
-    int getPromoteLevel();
+    int getEntityId();
 
     /**
      * <pre>
-     *6.3.0 // offset: 72
-     * </pre>
-     *
-     * <code>uint32 item_id = 3;</code>
-     * @return The itemId.
-     */
-    int getItemId();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 76
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 level = 5;</code>
@@ -178,33 +184,13 @@ public final class SceneWeaponInfoOuterClass {
 
     /**
      * <pre>
-     * offset: 80
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 weapon_skin_id = 11;</code>
-     * @return The weaponSkinId.
+     * <code>uint32 promote_level = 6;</code>
+     * @return The promoteLevel.
      */
-    int getWeaponSkinId();
-
-    /**
-     * <pre>
-     * offset: 84
-     * </pre>
-     *
-     * <code>bool JHPLJPIFMBM = 10;</code>
-     * @return The jHPLJPIFMBM.
-     */
-    boolean getJHPLJPIFMBM();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>uint32 entity_id = 1;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
+    int getPromoteLevel();
   }
   /**
    * Protobuf type {@code SceneWeaponInfo}
@@ -323,12 +309,7 @@ public final class SceneWeaponInfoOuterClass {
             }
             case 80: {
 
-              jHPLJPIFMBM_ = input.readBool();
-              break;
-            }
-            case 88: {
-
-              weaponSkinId_ = input.readUInt32();
+              hHGDIOOEBMJ_ = input.readBool();
               break;
             }
             default: {
@@ -375,49 +356,11 @@ public final class SceneWeaponInfoOuterClass {
               emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.class, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder.class);
     }
 
-    public static final int ABILITY_INFO_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo abilityInfo_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-     * @return Whether the abilityInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasAbilityInfo() {
-      return abilityInfo_ != null;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-     * @return The abilityInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo getAbilityInfo() {
-      return abilityInfo_ == null ? emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.getDefaultInstance() : abilityInfo_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getAbilityInfoOrBuilder() {
-      return getAbilityInfo();
-    }
-
     public static final int RENDERER_CHANGED_INFO_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.EntityRendererChangedInfoOuterClass.EntityRendererChangedInfo rendererChangedInfo_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -429,7 +372,7 @@ public final class SceneWeaponInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -441,7 +384,7 @@ public final class SceneWeaponInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -449,6 +392,44 @@ public final class SceneWeaponInfoOuterClass {
     @java.lang.Override
     public emu.grasscutter.net.proto.EntityRendererChangedInfoOuterClass.EntityRendererChangedInfoOrBuilder getRendererChangedInfoOrBuilder() {
       return getRendererChangedInfo();
+    }
+
+    public static final int ABILITY_INFO_FIELD_NUMBER = 7;
+    private emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo abilityInfo_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+     * @return Whether the abilityInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasAbilityInfo() {
+      return abilityInfo_ != null;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+     * @return The abilityInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo getAbilityInfo() {
+      return abilityInfo_ == null ? emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.getDefaultInstance() : abilityInfo_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getAbilityInfoOrBuilder() {
+      return getAbilityInfo();
     }
 
     public static final int AFFIX_MAP_FIELD_NUMBER = 8;
@@ -479,7 +460,7 @@ public final class SceneWeaponInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -501,7 +482,7 @@ public final class SceneWeaponInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -513,7 +494,7 @@ public final class SceneWeaponInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -530,7 +511,7 @@ public final class SceneWeaponInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -548,11 +529,37 @@ public final class SceneWeaponInfoOuterClass {
       return map.get(key);
     }
 
+    public static final int ITEM_ID_FIELD_NUMBER = 3;
+    private int itemId_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 item_id = 3;</code>
+     * @return The itemId.
+     */
+    @java.lang.Override
+    public int getItemId() {
+      return itemId_;
+    }
+
+    public static final int HHGDIOOEBMJ_FIELD_NUMBER = 10;
+    private boolean hHGDIOOEBMJ_;
+    /**
+     * <code>bool HHGDIOOEBMJ = 10;</code>
+     * @return The hHGDIOOEBMJ.
+     */
+    @java.lang.Override
+    public boolean getHHGDIOOEBMJ() {
+      return hHGDIOOEBMJ_;
+    }
+
     public static final int GUID_FIELD_NUMBER = 4;
     private long guid_;
     /**
      * <pre>
-     *6.3.0 // offset: 56
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint64 guid = 4;</code>
@@ -567,7 +574,7 @@ public final class SceneWeaponInfoOuterClass {
     private int gadgetId_;
     /**
      * <pre>
-     *6.3.0 // offset: 64
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 gadget_id = 2;</code>
@@ -578,41 +585,26 @@ public final class SceneWeaponInfoOuterClass {
       return gadgetId_;
     }
 
-    public static final int PROMOTE_LEVEL_FIELD_NUMBER = 6;
-    private int promoteLevel_;
+    public static final int ENTITY_ID_FIELD_NUMBER = 1;
+    private int entityId_;
     /**
      * <pre>
-     *6.3.0 // offset: 68
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 promote_level = 6;</code>
-     * @return The promoteLevel.
+     * <code>uint32 entity_id = 1;</code>
+     * @return The entityId.
      */
     @java.lang.Override
-    public int getPromoteLevel() {
-      return promoteLevel_;
-    }
-
-    public static final int ITEM_ID_FIELD_NUMBER = 3;
-    private int itemId_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 72
-     * </pre>
-     *
-     * <code>uint32 item_id = 3;</code>
-     * @return The itemId.
-     */
-    @java.lang.Override
-    public int getItemId() {
-      return itemId_;
+    public int getEntityId() {
+      return entityId_;
     }
 
     public static final int LEVEL_FIELD_NUMBER = 5;
     private int level_;
     /**
      * <pre>
-     *6.3.0 // offset: 76
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 level = 5;</code>
@@ -623,49 +615,19 @@ public final class SceneWeaponInfoOuterClass {
       return level_;
     }
 
-    public static final int WEAPON_SKIN_ID_FIELD_NUMBER = 11;
-    private int weaponSkinId_;
+    public static final int PROMOTE_LEVEL_FIELD_NUMBER = 6;
+    private int promoteLevel_;
     /**
      * <pre>
-     * offset: 80
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 weapon_skin_id = 11;</code>
-     * @return The weaponSkinId.
+     * <code>uint32 promote_level = 6;</code>
+     * @return The promoteLevel.
      */
     @java.lang.Override
-    public int getWeaponSkinId() {
-      return weaponSkinId_;
-    }
-
-    public static final int JHPLJPIFMBM_FIELD_NUMBER = 10;
-    private boolean jHPLJPIFMBM_;
-    /**
-     * <pre>
-     * offset: 84
-     * </pre>
-     *
-     * <code>bool JHPLJPIFMBM = 10;</code>
-     * @return The jHPLJPIFMBM.
-     */
-    @java.lang.Override
-    public boolean getJHPLJPIFMBM() {
-      return jHPLJPIFMBM_;
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 1;
-    private int entityId_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>uint32 entity_id = 1;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
+    public int getPromoteLevel() {
+      return promoteLevel_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -712,11 +674,8 @@ public final class SceneWeaponInfoOuterClass {
       if (rendererChangedInfo_ != null) {
         output.writeMessage(9, getRendererChangedInfo());
       }
-      if (jHPLJPIFMBM_ != false) {
-        output.writeBool(10, jHPLJPIFMBM_);
-      }
-      if (weaponSkinId_ != 0) {
-        output.writeUInt32(11, weaponSkinId_);
+      if (hHGDIOOEBMJ_ != false) {
+        output.writeBool(10, hHGDIOOEBMJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -769,13 +728,9 @@ public final class SceneWeaponInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, getRendererChangedInfo());
       }
-      if (jHPLJPIFMBM_ != false) {
+      if (hHGDIOOEBMJ_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, jHPLJPIFMBM_);
-      }
-      if (weaponSkinId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, weaponSkinId_);
+          .computeBoolSize(10, hHGDIOOEBMJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -792,34 +747,32 @@ public final class SceneWeaponInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo other = (emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo) obj;
 
-      if (hasAbilityInfo() != other.hasAbilityInfo()) return false;
-      if (hasAbilityInfo()) {
-        if (!getAbilityInfo()
-            .equals(other.getAbilityInfo())) return false;
-      }
       if (hasRendererChangedInfo() != other.hasRendererChangedInfo()) return false;
       if (hasRendererChangedInfo()) {
         if (!getRendererChangedInfo()
             .equals(other.getRendererChangedInfo())) return false;
       }
+      if (hasAbilityInfo() != other.hasAbilityInfo()) return false;
+      if (hasAbilityInfo()) {
+        if (!getAbilityInfo()
+            .equals(other.getAbilityInfo())) return false;
+      }
       if (!internalGetAffixMap().equals(
           other.internalGetAffixMap())) return false;
+      if (getItemId()
+          != other.getItemId()) return false;
+      if (getHHGDIOOEBMJ()
+          != other.getHHGDIOOEBMJ()) return false;
       if (getGuid()
           != other.getGuid()) return false;
       if (getGadgetId()
           != other.getGadgetId()) return false;
-      if (getPromoteLevel()
-          != other.getPromoteLevel()) return false;
-      if (getItemId()
-          != other.getItemId()) return false;
-      if (getLevel()
-          != other.getLevel()) return false;
-      if (getWeaponSkinId()
-          != other.getWeaponSkinId()) return false;
-      if (getJHPLJPIFMBM()
-          != other.getJHPLJPIFMBM()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (getLevel()
+          != other.getLevel()) return false;
+      if (getPromoteLevel()
+          != other.getPromoteLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -831,36 +784,34 @@ public final class SceneWeaponInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasAbilityInfo()) {
-        hash = (37 * hash) + ABILITY_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getAbilityInfo().hashCode();
-      }
       if (hasRendererChangedInfo()) {
         hash = (37 * hash) + RENDERER_CHANGED_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getRendererChangedInfo().hashCode();
+      }
+      if (hasAbilityInfo()) {
+        hash = (37 * hash) + ABILITY_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getAbilityInfo().hashCode();
       }
       if (!internalGetAffixMap().getMap().isEmpty()) {
         hash = (37 * hash) + AFFIX_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetAffixMap().hashCode();
       }
+      hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getItemId();
+      hash = (37 * hash) + HHGDIOOEBMJ_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getHHGDIOOEBMJ());
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getGuid());
       hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetId();
-      hash = (37 * hash) + PROMOTE_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getPromoteLevel();
-      hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getItemId();
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
-      hash = (37 * hash) + WEAPON_SKIN_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getWeaponSkinId();
-      hash = (37 * hash) + JHPLJPIFMBM_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getJHPLJPIFMBM());
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
+      hash = (37 * hash) + PROMOTE_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getPromoteLevel();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1016,34 +967,32 @@ public final class SceneWeaponInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (abilityInfoBuilder_ == null) {
-          abilityInfo_ = null;
-        } else {
-          abilityInfo_ = null;
-          abilityInfoBuilder_ = null;
-        }
         if (rendererChangedInfoBuilder_ == null) {
           rendererChangedInfo_ = null;
         } else {
           rendererChangedInfo_ = null;
           rendererChangedInfoBuilder_ = null;
         }
+        if (abilityInfoBuilder_ == null) {
+          abilityInfo_ = null;
+        } else {
+          abilityInfo_ = null;
+          abilityInfoBuilder_ = null;
+        }
         internalGetMutableAffixMap().clear();
+        itemId_ = 0;
+
+        hHGDIOOEBMJ_ = false;
+
         guid_ = 0L;
 
         gadgetId_ = 0;
 
-        promoteLevel_ = 0;
-
-        itemId_ = 0;
+        entityId_ = 0;
 
         level_ = 0;
 
-        weaponSkinId_ = 0;
-
-        jHPLJPIFMBM_ = false;
-
-        entityId_ = 0;
+        promoteLevel_ = 0;
 
         return this;
       }
@@ -1072,26 +1021,25 @@ public final class SceneWeaponInfoOuterClass {
       public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo buildPartial() {
         emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo result = new emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo(this);
         int from_bitField0_ = bitField0_;
-        if (abilityInfoBuilder_ == null) {
-          result.abilityInfo_ = abilityInfo_;
-        } else {
-          result.abilityInfo_ = abilityInfoBuilder_.build();
-        }
         if (rendererChangedInfoBuilder_ == null) {
           result.rendererChangedInfo_ = rendererChangedInfo_;
         } else {
           result.rendererChangedInfo_ = rendererChangedInfoBuilder_.build();
         }
+        if (abilityInfoBuilder_ == null) {
+          result.abilityInfo_ = abilityInfo_;
+        } else {
+          result.abilityInfo_ = abilityInfoBuilder_.build();
+        }
         result.affixMap_ = internalGetAffixMap();
         result.affixMap_.makeImmutable();
+        result.itemId_ = itemId_;
+        result.hHGDIOOEBMJ_ = hHGDIOOEBMJ_;
         result.guid_ = guid_;
         result.gadgetId_ = gadgetId_;
-        result.promoteLevel_ = promoteLevel_;
-        result.itemId_ = itemId_;
-        result.level_ = level_;
-        result.weaponSkinId_ = weaponSkinId_;
-        result.jHPLJPIFMBM_ = jHPLJPIFMBM_;
         result.entityId_ = entityId_;
+        result.level_ = level_;
+        result.promoteLevel_ = promoteLevel_;
         onBuilt();
         return result;
       }
@@ -1140,37 +1088,34 @@ public final class SceneWeaponInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo other) {
         if (other == emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.getDefaultInstance()) return this;
-        if (other.hasAbilityInfo()) {
-          mergeAbilityInfo(other.getAbilityInfo());
-        }
         if (other.hasRendererChangedInfo()) {
           mergeRendererChangedInfo(other.getRendererChangedInfo());
         }
+        if (other.hasAbilityInfo()) {
+          mergeAbilityInfo(other.getAbilityInfo());
+        }
         internalGetMutableAffixMap().mergeFrom(
             other.internalGetAffixMap());
+        if (other.getItemId() != 0) {
+          setItemId(other.getItemId());
+        }
+        if (other.getHHGDIOOEBMJ() != false) {
+          setHHGDIOOEBMJ(other.getHHGDIOOEBMJ());
+        }
         if (other.getGuid() != 0L) {
           setGuid(other.getGuid());
         }
         if (other.getGadgetId() != 0) {
           setGadgetId(other.getGadgetId());
         }
-        if (other.getPromoteLevel() != 0) {
-          setPromoteLevel(other.getPromoteLevel());
-        }
-        if (other.getItemId() != 0) {
-          setItemId(other.getItemId());
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         if (other.getLevel() != 0) {
           setLevel(other.getLevel());
         }
-        if (other.getWeaponSkinId() != 0) {
-          setWeaponSkinId(other.getWeaponSkinId());
-        }
-        if (other.getJHPLJPIFMBM() != false) {
-          setJHPLJPIFMBM(other.getJHPLJPIFMBM());
-        }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
+        if (other.getPromoteLevel() != 0) {
+          setPromoteLevel(other.getPromoteLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1202,167 +1147,12 @@ public final class SceneWeaponInfoOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo abilityInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder> abilityInfoBuilder_;
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-       * @return Whether the abilityInfo field is set.
-       */
-      public boolean hasAbilityInfo() {
-        return abilityInfoBuilder_ != null || abilityInfo_ != null;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-       * @return The abilityInfo.
-       */
-      public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo getAbilityInfo() {
-        if (abilityInfoBuilder_ == null) {
-          return abilityInfo_ == null ? emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.getDefaultInstance() : abilityInfo_;
-        } else {
-          return abilityInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-       */
-      public Builder setAbilityInfo(emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo value) {
-        if (abilityInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          abilityInfo_ = value;
-          onChanged();
-        } else {
-          abilityInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-       */
-      public Builder setAbilityInfo(
-          emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder builderForValue) {
-        if (abilityInfoBuilder_ == null) {
-          abilityInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          abilityInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-       */
-      public Builder mergeAbilityInfo(emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo value) {
-        if (abilityInfoBuilder_ == null) {
-          if (abilityInfo_ != null) {
-            abilityInfo_ =
-              emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.newBuilder(abilityInfo_).mergeFrom(value).buildPartial();
-          } else {
-            abilityInfo_ = value;
-          }
-          onChanged();
-        } else {
-          abilityInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-       */
-      public Builder clearAbilityInfo() {
-        if (abilityInfoBuilder_ == null) {
-          abilityInfo_ = null;
-          onChanged();
-        } else {
-          abilityInfo_ = null;
-          abilityInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-       */
-      public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder getAbilityInfoBuilder() {
-        
-        onChanged();
-        return getAbilityInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-       */
-      public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getAbilityInfoOrBuilder() {
-        if (abilityInfoBuilder_ != null) {
-          return abilityInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return abilityInfo_ == null ?
-              emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.getDefaultInstance() : abilityInfo_;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 32
-       * </pre>
-       *
-       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder> 
-          getAbilityInfoFieldBuilder() {
-        if (abilityInfoBuilder_ == null) {
-          abilityInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder>(
-                  getAbilityInfo(),
-                  getParentForChildren(),
-                  isClean());
-          abilityInfo_ = null;
-        }
-        return abilityInfoBuilder_;
-      }
-
       private emu.grasscutter.net.proto.EntityRendererChangedInfoOuterClass.EntityRendererChangedInfo rendererChangedInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EntityRendererChangedInfoOuterClass.EntityRendererChangedInfo, emu.grasscutter.net.proto.EntityRendererChangedInfoOuterClass.EntityRendererChangedInfo.Builder, emu.grasscutter.net.proto.EntityRendererChangedInfoOuterClass.EntityRendererChangedInfoOrBuilder> rendererChangedInfoBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -1373,7 +1163,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -1388,7 +1178,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -1408,7 +1198,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -1426,7 +1216,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -1448,7 +1238,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -1466,7 +1256,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -1478,7 +1268,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -1493,7 +1283,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.EntityRendererChangedInfo renderer_changed_info = 9;</code>
@@ -1510,6 +1300,161 @@ public final class SceneWeaponInfoOuterClass {
           rendererChangedInfo_ = null;
         }
         return rendererChangedInfoBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo abilityInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder> abilityInfoBuilder_;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+       * @return Whether the abilityInfo field is set.
+       */
+      public boolean hasAbilityInfo() {
+        return abilityInfoBuilder_ != null || abilityInfo_ != null;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+       * @return The abilityInfo.
+       */
+      public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo getAbilityInfo() {
+        if (abilityInfoBuilder_ == null) {
+          return abilityInfo_ == null ? emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.getDefaultInstance() : abilityInfo_;
+        } else {
+          return abilityInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+       */
+      public Builder setAbilityInfo(emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo value) {
+        if (abilityInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          abilityInfo_ = value;
+          onChanged();
+        } else {
+          abilityInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+       */
+      public Builder setAbilityInfo(
+          emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder builderForValue) {
+        if (abilityInfoBuilder_ == null) {
+          abilityInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          abilityInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+       */
+      public Builder mergeAbilityInfo(emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo value) {
+        if (abilityInfoBuilder_ == null) {
+          if (abilityInfo_ != null) {
+            abilityInfo_ =
+              emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.newBuilder(abilityInfo_).mergeFrom(value).buildPartial();
+          } else {
+            abilityInfo_ = value;
+          }
+          onChanged();
+        } else {
+          abilityInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+       */
+      public Builder clearAbilityInfo() {
+        if (abilityInfoBuilder_ == null) {
+          abilityInfo_ = null;
+          onChanged();
+        } else {
+          abilityInfo_ = null;
+          abilityInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+       */
+      public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder getAbilityInfoBuilder() {
+        
+        onChanged();
+        return getAbilityInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+       */
+      public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getAbilityInfoOrBuilder() {
+        if (abilityInfoBuilder_ != null) {
+          return abilityInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return abilityInfo_ == null ?
+              emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.getDefaultInstance() : abilityInfo_;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.AbilitySyncStateInfo ability_info = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder> 
+          getAbilityInfoFieldBuilder() {
+        if (abilityInfoBuilder_ == null) {
+          abilityInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder>(
+                  getAbilityInfo(),
+                  getParentForChildren(),
+                  isClean());
+          abilityInfo_ = null;
+        }
+        return abilityInfoBuilder_;
       }
 
       private com.google.protobuf.MapField<
@@ -1540,7 +1485,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -1562,7 +1507,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -1574,7 +1519,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -1591,7 +1536,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -1616,7 +1561,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -1639,7 +1584,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -1655,7 +1600,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>map&lt;uint32, uint32&gt; affix_map = 8;</code>
@@ -1668,10 +1613,84 @@ public final class SceneWeaponInfoOuterClass {
         return this;
       }
 
+      private int itemId_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 item_id = 3;</code>
+       * @return The itemId.
+       */
+      @java.lang.Override
+      public int getItemId() {
+        return itemId_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 item_id = 3;</code>
+       * @param value The itemId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setItemId(int value) {
+        
+        itemId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 item_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearItemId() {
+        
+        itemId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean hHGDIOOEBMJ_ ;
+      /**
+       * <code>bool HHGDIOOEBMJ = 10;</code>
+       * @return The hHGDIOOEBMJ.
+       */
+      @java.lang.Override
+      public boolean getHHGDIOOEBMJ() {
+        return hHGDIOOEBMJ_;
+      }
+      /**
+       * <code>bool HHGDIOOEBMJ = 10;</code>
+       * @param value The hHGDIOOEBMJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHHGDIOOEBMJ(boolean value) {
+        
+        hHGDIOOEBMJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool HHGDIOOEBMJ = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHHGDIOOEBMJ() {
+        
+        hHGDIOOEBMJ_ = false;
+        onChanged();
+        return this;
+      }
+
       private long guid_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 56
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint64 guid = 4;</code>
@@ -1683,7 +1702,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 56
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint64 guid = 4;</code>
@@ -1698,7 +1717,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 56
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint64 guid = 4;</code>
@@ -1714,7 +1733,7 @@ public final class SceneWeaponInfoOuterClass {
       private int gadgetId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 gadget_id = 2;</code>
@@ -1726,7 +1745,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 gadget_id = 2;</code>
@@ -1741,7 +1760,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 gadget_id = 2;</code>
@@ -1754,225 +1773,10 @@ public final class SceneWeaponInfoOuterClass {
         return this;
       }
 
-      private int promoteLevel_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 68
-       * </pre>
-       *
-       * <code>uint32 promote_level = 6;</code>
-       * @return The promoteLevel.
-       */
-      @java.lang.Override
-      public int getPromoteLevel() {
-        return promoteLevel_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 68
-       * </pre>
-       *
-       * <code>uint32 promote_level = 6;</code>
-       * @param value The promoteLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPromoteLevel(int value) {
-        
-        promoteLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 68
-       * </pre>
-       *
-       * <code>uint32 promote_level = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPromoteLevel() {
-        
-        promoteLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int itemId_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>uint32 item_id = 3;</code>
-       * @return The itemId.
-       */
-      @java.lang.Override
-      public int getItemId() {
-        return itemId_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>uint32 item_id = 3;</code>
-       * @param value The itemId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setItemId(int value) {
-        
-        itemId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>uint32 item_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearItemId() {
-        
-        itemId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int level_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 76
-       * </pre>
-       *
-       * <code>uint32 level = 5;</code>
-       * @return The level.
-       */
-      @java.lang.Override
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 76
-       * </pre>
-       *
-       * <code>uint32 level = 5;</code>
-       * @param value The level to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevel(int value) {
-        
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 76
-       * </pre>
-       *
-       * <code>uint32 level = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevel() {
-        
-        level_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int weaponSkinId_ ;
-      /**
-       * <pre>
-       * offset: 80
-       * </pre>
-       *
-       * <code>uint32 weapon_skin_id = 11;</code>
-       * @return The weaponSkinId.
-       */
-      @java.lang.Override
-      public int getWeaponSkinId() {
-        return weaponSkinId_;
-      }
-      /**
-       * <pre>
-       * offset: 80
-       * </pre>
-       *
-       * <code>uint32 weapon_skin_id = 11;</code>
-       * @param value The weaponSkinId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWeaponSkinId(int value) {
-        
-        weaponSkinId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 80
-       * </pre>
-       *
-       * <code>uint32 weapon_skin_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWeaponSkinId() {
-        
-        weaponSkinId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean jHPLJPIFMBM_ ;
-      /**
-       * <pre>
-       * offset: 84
-       * </pre>
-       *
-       * <code>bool JHPLJPIFMBM = 10;</code>
-       * @return The jHPLJPIFMBM.
-       */
-      @java.lang.Override
-      public boolean getJHPLJPIFMBM() {
-        return jHPLJPIFMBM_;
-      }
-      /**
-       * <pre>
-       * offset: 84
-       * </pre>
-       *
-       * <code>bool JHPLJPIFMBM = 10;</code>
-       * @param value The jHPLJPIFMBM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJHPLJPIFMBM(boolean value) {
-        
-        jHPLJPIFMBM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 84
-       * </pre>
-       *
-       * <code>bool JHPLJPIFMBM = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJHPLJPIFMBM() {
-        
-        jHPLJPIFMBM_ = false;
-        onChanged();
-        return this;
-      }
-
       private int entityId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 entity_id = 1;</code>
@@ -1984,7 +1788,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 entity_id = 1;</code>
@@ -1999,7 +1803,7 @@ public final class SceneWeaponInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>uint32 entity_id = 1;</code>
@@ -2008,6 +1812,92 @@ public final class SceneWeaponInfoOuterClass {
       public Builder clearEntityId() {
         
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int level_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 level = 5;</code>
+       * @return The level.
+       */
+      @java.lang.Override
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 level = 5;</code>
+       * @param value The level to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevel(int value) {
+        
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 level = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevel() {
+        
+        level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int promoteLevel_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 promote_level = 6;</code>
+       * @return The promoteLevel.
+       */
+      @java.lang.Override
+      public int getPromoteLevel() {
+        return promoteLevel_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 promote_level = 6;</code>
+       * @param value The promoteLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPromoteLevel(int value) {
+        
+        promoteLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 promote_level = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPromoteLevel() {
+        
+        promoteLevel_ = 0;
         onChanged();
         return this;
       }
@@ -2083,40 +1973,39 @@ public final class SceneWeaponInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025SceneWeaponInfo.proto\032\032AbilitySyncStat" +
-      "eInfo.proto\032\037EntityRendererChangedInfo.p" +
-      "roto\"\365\002\n\017SceneWeaponInfo\022+\n\014ability_info" +
-      "\030\007 \001(\0132\025.AbilitySyncStateInfo\0229\n\025rendere" +
-      "r_changed_info\030\t \001(\0132\032.EntityRendererCha" +
-      "ngedInfo\0221\n\taffix_map\030\010 \003(\0132\036.SceneWeapo" +
-      "nInfo.AffixMapEntry\022\014\n\004guid\030\004 \001(\004\022\021\n\tgad" +
-      "get_id\030\002 \001(\r\022\025\n\rpromote_level\030\006 \001(\r\022\017\n\007i" +
-      "tem_id\030\003 \001(\r\022\r\n\005level\030\005 \001(\r\022\026\n\016weapon_sk" +
-      "in_id\030\013 \001(\r\022\023\n\013JHPLJPIFMBM\030\n \001(\010\022\021\n\tenti" +
-      "ty_id\030\001 \001(\r\032/\n\rAffixMapEntry\022\013\n\003key\030\001 \001(" +
-      "\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\025SceneWeaponInfo.proto\032\037EntityRendererC" +
+      "hangedInfo.proto\032\032AbilitySyncStateInfo.p" +
+      "roto\"\335\002\n\017SceneWeaponInfo\0229\n\025renderer_cha" +
+      "nged_info\030\t \001(\0132\032.EntityRendererChangedI" +
+      "nfo\022+\n\014ability_info\030\007 \001(\0132\025.AbilitySyncS" +
+      "tateInfo\0221\n\taffix_map\030\010 \003(\0132\036.SceneWeapo" +
+      "nInfo.AffixMapEntry\022\017\n\007item_id\030\003 \001(\r\022\023\n\013" +
+      "HHGDIOOEBMJ\030\n \001(\010\022\014\n\004guid\030\004 \001(\004\022\021\n\tgadge" +
+      "t_id\030\002 \001(\r\022\021\n\tentity_id\030\001 \001(\r\022\r\n\005level\030\005" +
+      " \001(\r\022\025\n\rpromote_level\030\006 \001(\r\032/\n\rAffixMapE" +
+      "ntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.EntityRendererChangedInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.getDescriptor(),
         });
     internal_static_SceneWeaponInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SceneWeaponInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneWeaponInfo_descriptor,
-        new java.lang.String[] { "AbilityInfo", "RendererChangedInfo", "AffixMap", "Guid", "GadgetId", "PromoteLevel", "ItemId", "Level", "WeaponSkinId", "JHPLJPIFMBM", "EntityId", });
+        new java.lang.String[] { "RendererChangedInfo", "AbilityInfo", "AffixMap", "ItemId", "HHGDIOOEBMJ", "Guid", "GadgetId", "EntityId", "Level", "PromoteLevel", });
     internal_static_SceneWeaponInfo_AffixMapEntry_descriptor =
       internal_static_SceneWeaponInfo_descriptor.getNestedTypes().get(0);
     internal_static_SceneWeaponInfo_AffixMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneWeaponInfo_AffixMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.EntityRendererChangedInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,18 +19,10 @@ public final class JGLNJLMPCOKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
      */
     int getCMHPEBGFFMKCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
      */
     boolean containsCMHPEBGFFMK(
@@ -42,19 +34,11 @@ public final class JGLNJLMPCOKOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.NGJNJHLIJILOuterClass.NGJNJHLIJIL>
     getCMHPEBGFFMK();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.NGJNJHLIJILOuterClass.NGJNJHLIJIL>
     getCMHPEBGFFMKMap();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
      */
 
@@ -62,10 +46,6 @@ public final class JGLNJLMPCOKOuterClass {
         int key,
         emu.grasscutter.net.proto.NGJNJHLIJILOuterClass.NGJNJHLIJIL defaultValue);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
      */
 
@@ -73,36 +53,24 @@ public final class JGLNJLMPCOKOuterClass {
         int key);
 
     /**
-     * <code>uint32 EGHGENOJNEK = 11;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 11;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 9;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
@@ -161,7 +129,7 @@ public final class JGLNJLMPCOKOuterClass {
             }
             case 88: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 96: {
@@ -258,10 +226,6 @@ public final class JGLNJLMPCOKOuterClass {
       return internalGetCMHPEBGFFMK().getMap().size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
      */
 
@@ -280,10 +244,6 @@ public final class JGLNJLMPCOKOuterClass {
       return getCMHPEBGFFMKMap();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
      */
     @java.lang.Override
@@ -292,10 +252,6 @@ public final class JGLNJLMPCOKOuterClass {
       return internalGetCMHPEBGFFMK().getMap();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
      */
     @java.lang.Override
@@ -309,10 +265,6 @@ public final class JGLNJLMPCOKOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
      */
     @java.lang.Override
@@ -328,24 +280,20 @@ public final class JGLNJLMPCOKOuterClass {
       return map.get(key);
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 11;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 11;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 11;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 11;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int OPEN_TIME_FIELD_NUMBER = 9;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 9;</code>
      * @return The openTime.
      */
@@ -357,10 +305,6 @@ public final class JGLNJLMPCOKOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 14;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
@@ -372,10 +316,6 @@ public final class JGLNJLMPCOKOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 12;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
@@ -401,8 +341,8 @@ public final class JGLNJLMPCOKOuterClass {
       if (openTime_ != 0) {
         output.writeUInt32(9, openTime_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(11, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(11, stageId_);
       }
       if (isOpen_ != false) {
         output.writeBool(12, isOpen_);
@@ -429,9 +369,9 @@ public final class JGLNJLMPCOKOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, openTime_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, eGHGENOJNEK_);
+          .computeUInt32Size(11, stageId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -468,8 +408,8 @@ public final class JGLNJLMPCOKOuterClass {
 
       if (!internalGetCMHPEBGFFMK().equals(
           other.internalGetCMHPEBGFFMK())) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getOpenTime()
           != other.getOpenTime()) return false;
       if (getIsFinish()
@@ -491,8 +431,8 @@ public final class JGLNJLMPCOKOuterClass {
         hash = (37 * hash) + CMHPEBGFFMK_FIELD_NUMBER;
         hash = (53 * hash) + internalGetCMHPEBGFFMK().hashCode();
       }
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getOpenTime();
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
@@ -657,7 +597,7 @@ public final class JGLNJLMPCOKOuterClass {
       public Builder clear() {
         super.clear();
         internalGetMutableCMHPEBGFFMK().clear();
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         openTime_ = 0;
 
@@ -694,7 +634,7 @@ public final class JGLNJLMPCOKOuterClass {
         int from_bitField0_ = bitField0_;
         result.cMHPEBGFFMK_ = internalGetCMHPEBGFFMK();
         result.cMHPEBGFFMK_.makeImmutable();
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.openTime_ = openTime_;
         result.isFinish_ = isFinish_;
         result.isOpen_ = isOpen_;
@@ -748,8 +688,8 @@ public final class JGLNJLMPCOKOuterClass {
         if (other == emu.grasscutter.net.proto.JGLNJLMPCOKOuterClass.JGLNJLMPCOK.getDefaultInstance()) return this;
         internalGetMutableCMHPEBGFFMK().mergeFrom(
             other.internalGetCMHPEBGFFMK());
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getOpenTime() != 0) {
           setOpenTime(other.getOpenTime());
@@ -817,10 +757,6 @@ public final class JGLNJLMPCOKOuterClass {
         return internalGetCMHPEBGFFMK().getMap().size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
        */
 
@@ -839,10 +775,6 @@ public final class JGLNJLMPCOKOuterClass {
         return getCMHPEBGFFMKMap();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
        */
       @java.lang.Override
@@ -851,10 +783,6 @@ public final class JGLNJLMPCOKOuterClass {
         return internalGetCMHPEBGFFMK().getMap();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
        */
       @java.lang.Override
@@ -868,10 +796,6 @@ public final class JGLNJLMPCOKOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
        */
       @java.lang.Override
@@ -893,10 +817,6 @@ public final class JGLNJLMPCOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
        */
 
@@ -916,10 +836,6 @@ public final class JGLNJLMPCOKOuterClass {
         return internalGetMutableCMHPEBGFFMK().getMutableMap();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
        */
       public Builder putCMHPEBGFFMK(
@@ -932,10 +848,6 @@ public final class JGLNJLMPCOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>map&lt;uint32, .NGJNJHLIJIL&gt; CMHPEBGFFMK = 15;</code>
        */
 
@@ -946,43 +858,39 @@ public final class JGLNJLMPCOKOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 11;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 11;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 11;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 11;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 11;</code>
+       * <code>uint32 stage_id = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 9;</code>
        * @return The openTime.
        */
@@ -991,10 +899,6 @@ public final class JGLNJLMPCOKOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 9;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -1006,10 +910,6 @@ public final class JGLNJLMPCOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 9;</code>
        * @return This builder for chaining.
        */
@@ -1022,10 +922,6 @@ public final class JGLNJLMPCOKOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return The isFinish.
        */
@@ -1034,10 +930,6 @@ public final class JGLNJLMPCOKOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1049,10 +941,6 @@ public final class JGLNJLMPCOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 14;</code>
        * @return This builder for chaining.
        */
@@ -1065,10 +953,6 @@ public final class JGLNJLMPCOKOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @return The isOpen.
        */
@@ -1077,10 +961,6 @@ public final class JGLNJLMPCOKOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1092,10 +972,6 @@ public final class JGLNJLMPCOKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @return This builder for chaining.
        */
@@ -1177,14 +1053,14 @@ public final class JGLNJLMPCOKOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021JGLNJLMPCOK.proto\032\021NGJNJHLIJIL.proto\"\317" +
+      "\n\021JGLNJLMPCOK.proto\032\021NGJNJHLIJIL.proto\"\314" +
       "\001\n\013JGLNJLMPCOK\0222\n\013CMHPEBGFFMK\030\017 \003(\0132\035.JG" +
-      "LNJLMPCOK.CMHPEBGFFMKEntry\022\023\n\013EGHGENOJNE" +
-      "K\030\013 \001(\r\022\021\n\topen_time\030\t \001(\r\022\021\n\tis_finish\030" +
-      "\016 \001(\010\022\017\n\007is_open\030\014 \001(\010\032@\n\020CMHPEBGFFMKEnt" +
-      "ry\022\013\n\003key\030\001 \001(\r\022\033\n\005value\030\002 \001(\0132\014.NGJNJHL" +
-      "IJIL:\0028\001B\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "LNJLMPCOK.CMHPEBGFFMKEntry\022\020\n\010stage_id\030\013" +
+      " \001(\r\022\021\n\topen_time\030\t \001(\r\022\021\n\tis_finish\030\016 \001" +
+      "(\010\022\017\n\007is_open\030\014 \001(\010\032@\n\020CMHPEBGFFMKEntry\022" +
+      "\013\n\003key\030\001 \001(\r\022\033\n\005value\030\002 \001(\0132\014.NGJNJHLIJI" +
+      "L:\0028\001B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1196,7 +1072,7 @@ public final class JGLNJLMPCOKOuterClass {
     internal_static_JGLNJLMPCOK_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_JGLNJLMPCOK_descriptor,
-        new java.lang.String[] { "CMHPEBGFFMK", "EGHGENOJNEK", "OpenTime", "IsFinish", "IsOpen", });
+        new java.lang.String[] { "CMHPEBGFFMK", "StageId", "OpenTime", "IsFinish", "IsOpen", });
     internal_static_JGLNJLMPCOK_CMHPEBGFFMKEntry_descriptor =
       internal_static_JGLNJLMPCOK_descriptor.getNestedTypes().get(0);
     internal_static_JGLNJLMPCOK_CMHPEBGFFMKEntry_fieldAccessorTable = new

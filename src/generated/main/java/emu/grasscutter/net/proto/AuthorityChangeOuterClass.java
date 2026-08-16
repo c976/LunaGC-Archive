@@ -20,47 +20,47 @@ public final class AuthorityChangeOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+     * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
      * @return Whether the entityAuthorityInfo field is set.
      */
     boolean hasEntityAuthorityInfo();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+     * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
      * @return The entityAuthorityInfo.
      */
     emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo getEntityAuthorityInfo();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+     * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
      */
     emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder getEntityAuthorityInfoOrBuilder();
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 9;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
      * <pre>
-     *6.3.0 // offset: 44
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 authority_peer_id = 3;</code>
+     * <code>uint32 authority_peer_id = 12;</code>
      * @return The authorityPeerId.
      */
     int getAuthorityPeerId();
@@ -110,17 +110,12 @@ public final class AuthorityChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              authorityPeerId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 72: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 106: {
+            case 82: {
               emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder subBuilder = null;
               if (entityAuthorityInfo_ != null) {
                 subBuilder = entityAuthorityInfo_.toBuilder();
@@ -131,6 +126,11 @@ public final class AuthorityChangeOuterClass {
                 entityAuthorityInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 96: {
+
+              authorityPeerId_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,14 +165,14 @@ public final class AuthorityChangeOuterClass {
               emu.grasscutter.net.proto.AuthorityChangeOuterClass.AuthorityChange.class, emu.grasscutter.net.proto.AuthorityChangeOuterClass.AuthorityChange.Builder.class);
     }
 
-    public static final int ENTITY_AUTHORITY_INFO_FIELD_NUMBER = 13;
+    public static final int ENTITY_AUTHORITY_INFO_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo entityAuthorityInfo_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+     * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
      * @return Whether the entityAuthorityInfo field is set.
      */
     @java.lang.Override
@@ -181,10 +181,10 @@ public final class AuthorityChangeOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+     * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
      * @return The entityAuthorityInfo.
      */
     @java.lang.Override
@@ -193,24 +193,24 @@ public final class AuthorityChangeOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+     * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder getEntityAuthorityInfoOrBuilder() {
       return getEntityAuthorityInfo();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    public static final int ENTITY_ID_FIELD_NUMBER = 9;
     private int entityId_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 9;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -218,14 +218,14 @@ public final class AuthorityChangeOuterClass {
       return entityId_;
     }
 
-    public static final int AUTHORITY_PEER_ID_FIELD_NUMBER = 3;
+    public static final int AUTHORITY_PEER_ID_FIELD_NUMBER = 12;
     private int authorityPeerId_;
     /**
      * <pre>
-     *6.3.0 // offset: 44
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>uint32 authority_peer_id = 3;</code>
+     * <code>uint32 authority_peer_id = 12;</code>
      * @return The authorityPeerId.
      */
     @java.lang.Override
@@ -247,14 +247,14 @@ public final class AuthorityChangeOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (authorityPeerId_ != 0) {
-        output.writeUInt32(3, authorityPeerId_);
-      }
       if (entityId_ != 0) {
-        output.writeUInt32(10, entityId_);
+        output.writeUInt32(9, entityId_);
       }
       if (entityAuthorityInfo_ != null) {
-        output.writeMessage(13, getEntityAuthorityInfo());
+        output.writeMessage(10, getEntityAuthorityInfo());
+      }
+      if (authorityPeerId_ != 0) {
+        output.writeUInt32(12, authorityPeerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -265,17 +265,17 @@ public final class AuthorityChangeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (authorityPeerId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, authorityPeerId_);
-      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, entityId_);
+          .computeUInt32Size(9, entityId_);
       }
       if (entityAuthorityInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getEntityAuthorityInfo());
+          .computeMessageSize(10, getEntityAuthorityInfo());
+      }
+      if (authorityPeerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, authorityPeerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -587,10 +587,10 @@ public final class AuthorityChangeOuterClass {
           emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder> entityAuthorityInfoBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+       * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
        * @return Whether the entityAuthorityInfo field is set.
        */
       public boolean hasEntityAuthorityInfo() {
@@ -598,10 +598,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+       * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
        * @return The entityAuthorityInfo.
        */
       public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo getEntityAuthorityInfo() {
@@ -613,10 +613,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+       * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
        */
       public Builder setEntityAuthorityInfo(emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo value) {
         if (entityAuthorityInfoBuilder_ == null) {
@@ -633,10 +633,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+       * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
        */
       public Builder setEntityAuthorityInfo(
           emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder builderForValue) {
@@ -651,10 +651,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+       * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
        */
       public Builder mergeEntityAuthorityInfo(emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo value) {
         if (entityAuthorityInfoBuilder_ == null) {
@@ -673,10 +673,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+       * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
        */
       public Builder clearEntityAuthorityInfo() {
         if (entityAuthorityInfoBuilder_ == null) {
@@ -691,10 +691,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+       * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
        */
       public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder getEntityAuthorityInfoBuilder() {
         
@@ -703,10 +703,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+       * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
        */
       public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder getEntityAuthorityInfoOrBuilder() {
         if (entityAuthorityInfoBuilder_ != null) {
@@ -718,10 +718,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.EntityAuthorityInfo entity_authority_info = 13;</code>
+       * <code>.EntityAuthorityInfo entity_authority_info = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder> 
@@ -740,10 +740,10 @@ public final class AuthorityChangeOuterClass {
       private int entityId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 9;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -752,10 +752,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 9;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -767,10 +767,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -783,10 +783,10 @@ public final class AuthorityChangeOuterClass {
       private int authorityPeerId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 authority_peer_id = 3;</code>
+       * <code>uint32 authority_peer_id = 12;</code>
        * @return The authorityPeerId.
        */
       @java.lang.Override
@@ -795,10 +795,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 authority_peer_id = 3;</code>
+       * <code>uint32 authority_peer_id = 12;</code>
        * @param value The authorityPeerId to set.
        * @return This builder for chaining.
        */
@@ -810,10 +810,10 @@ public final class AuthorityChangeOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 44
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>uint32 authority_peer_id = 3;</code>
+       * <code>uint32 authority_peer_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearAuthorityPeerId() {
@@ -891,9 +891,9 @@ public final class AuthorityChangeOuterClass {
     java.lang.String[] descriptorData = {
       "\n\025AuthorityChange.proto\032\031EntityAuthority" +
       "Info.proto\"t\n\017AuthorityChange\0223\n\025entity_" +
-      "authority_info\030\r \001(\0132\024.EntityAuthorityIn" +
-      "fo\022\021\n\tentity_id\030\n \001(\r\022\031\n\021authority_peer_" +
-      "id\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "authority_info\030\n \001(\0132\024.EntityAuthorityIn" +
+      "fo\022\021\n\tentity_id\030\t \001(\r\022\031\n\021authority_peer_" +
+      "id\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

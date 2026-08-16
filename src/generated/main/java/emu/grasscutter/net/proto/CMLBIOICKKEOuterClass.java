@@ -19,72 +19,40 @@ public final class CMLBIOICKKEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK> 
         getKBGJCPOKLFBList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
      */
     emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK getKBGJCPOKLFB(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
      */
     int getKBGJCPOKLFBCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDKOrBuilder> 
         getKBGJCPOKLFBOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
      */
     emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDKOrBuilder getKBGJCPOKLFBOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 skill_id_list = 10;</code>
      * @return A list containing the skillIdList.
      */
     java.util.List<java.lang.Integer> getSkillIdListList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 skill_id_list = 10;</code>
      * @return The count of skillIdList.
      */
     int getSkillIdListCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 skill_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
@@ -210,10 +178,6 @@ public final class CMLBIOICKKEOuterClass {
     public static final int KBGJCPOKLFB_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK> kBGJCPOKLFB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
      */
     @java.lang.Override
@@ -221,10 +185,6 @@ public final class CMLBIOICKKEOuterClass {
       return kBGJCPOKLFB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
      */
     @java.lang.Override
@@ -233,10 +193,6 @@ public final class CMLBIOICKKEOuterClass {
       return kBGJCPOKLFB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
      */
     @java.lang.Override
@@ -244,10 +200,6 @@ public final class CMLBIOICKKEOuterClass {
       return kBGJCPOKLFB_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
      */
     @java.lang.Override
@@ -255,10 +207,6 @@ public final class CMLBIOICKKEOuterClass {
       return kBGJCPOKLFB_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
      */
     @java.lang.Override
@@ -270,10 +218,6 @@ public final class CMLBIOICKKEOuterClass {
     public static final int SKILL_ID_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList skillIdList_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 skill_id_list = 10;</code>
      * @return A list containing the skillIdList.
      */
@@ -283,10 +227,6 @@ public final class CMLBIOICKKEOuterClass {
       return skillIdList_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 skill_id_list = 10;</code>
      * @return The count of skillIdList.
      */
@@ -294,10 +234,6 @@ public final class CMLBIOICKKEOuterClass {
       return skillIdList_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 skill_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The skillIdList at the given index.
@@ -707,10 +643,6 @@ public final class CMLBIOICKKEOuterClass {
           emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK, emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK.Builder, emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDKOrBuilder> kBGJCPOKLFBBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK> getKBGJCPOKLFBList() {
@@ -721,10 +653,6 @@ public final class CMLBIOICKKEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public int getKBGJCPOKLFBCount() {
@@ -735,10 +663,6 @@ public final class CMLBIOICKKEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK getKBGJCPOKLFB(int index) {
@@ -749,10 +673,6 @@ public final class CMLBIOICKKEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public Builder setKBGJCPOKLFB(
@@ -770,10 +690,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public Builder setKBGJCPOKLFB(
@@ -788,10 +704,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public Builder addKBGJCPOKLFB(emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK value) {
@@ -808,10 +720,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -829,10 +737,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -847,10 +751,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -865,10 +765,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public Builder addAllKBGJCPOKLFB(
@@ -884,10 +780,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public Builder clearKBGJCPOKLFB() {
@@ -901,10 +793,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public Builder removeKBGJCPOKLFB(int index) {
@@ -918,10 +806,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK.Builder getKBGJCPOKLFBBuilder(
@@ -929,10 +813,6 @@ public final class CMLBIOICKKEOuterClass {
         return getKBGJCPOKLFBFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDKOrBuilder getKBGJCPOKLFBOrBuilder(
@@ -943,10 +823,6 @@ public final class CMLBIOICKKEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDKOrBuilder> 
@@ -958,10 +834,6 @@ public final class CMLBIOICKKEOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK.Builder addKBGJCPOKLFBBuilder() {
@@ -969,10 +841,6 @@ public final class CMLBIOICKKEOuterClass {
             emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK.Builder addKBGJCPOKLFBBuilder(
@@ -981,10 +849,6 @@ public final class CMLBIOICKKEOuterClass {
             index, emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .NLFDCDOJHDK KBGJCPOKLFB = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NLFDCDOJHDKOuterClass.NLFDCDOJHDK.Builder> 
@@ -1014,10 +878,6 @@ public final class CMLBIOICKKEOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 skill_id_list = 10;</code>
        * @return A list containing the skillIdList.
        */
@@ -1027,10 +887,6 @@ public final class CMLBIOICKKEOuterClass {
                  java.util.Collections.unmodifiableList(skillIdList_) : skillIdList_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 skill_id_list = 10;</code>
        * @return The count of skillIdList.
        */
@@ -1038,10 +894,6 @@ public final class CMLBIOICKKEOuterClass {
         return skillIdList_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 skill_id_list = 10;</code>
        * @param index The index of the element to return.
        * @return The skillIdList at the given index.
@@ -1050,10 +902,6 @@ public final class CMLBIOICKKEOuterClass {
         return skillIdList_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 skill_id_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The skillIdList to set.
@@ -1067,10 +915,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 skill_id_list = 10;</code>
        * @param value The skillIdList to add.
        * @return This builder for chaining.
@@ -1082,10 +926,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 skill_id_list = 10;</code>
        * @param values The skillIdList to add.
        * @return This builder for chaining.
@@ -1099,10 +939,6 @@ public final class CMLBIOICKKEOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 skill_id_list = 10;</code>
        * @return This builder for chaining.
        */

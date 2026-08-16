@@ -20,34 +20,34 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+     * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
      * @return Whether the progressDetail field is set.
      */
     boolean hasProgressDetail();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+     * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
      * @return The progressDetail.
      */
     emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail getProgressDetail();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+     * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
      */
     emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetailOrBuilder getProgressDetailOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 26862
+   * CmdId: 8558
    * </pre>
    *
    * Protobuf type {@code FungusFighterRuntimeDataNotify}
@@ -94,7 +94,7 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
+            case 90: {
               emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail.Builder subBuilder = null;
               if (progressDetail_ != null) {
                 subBuilder = progressDetail_.toBuilder();
@@ -139,14 +139,14 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
               emu.grasscutter.net.proto.FungusFighterRuntimeDataNotifyOuterClass.FungusFighterRuntimeDataNotify.class, emu.grasscutter.net.proto.FungusFighterRuntimeDataNotifyOuterClass.FungusFighterRuntimeDataNotify.Builder.class);
     }
 
-    public static final int PROGRESS_DETAIL_FIELD_NUMBER = 10;
+    public static final int PROGRESS_DETAIL_FIELD_NUMBER = 11;
     private emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail progressDetail_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+     * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
      * @return Whether the progressDetail field is set.
      */
     @java.lang.Override
@@ -155,10 +155,10 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+     * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
      * @return The progressDetail.
      */
     @java.lang.Override
@@ -167,10 +167,10 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0       
      * </pre>
      *
-     * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+     * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetailOrBuilder getProgressDetailOrBuilder() {
@@ -192,7 +192,7 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (progressDetail_ != null) {
-        output.writeMessage(10, getProgressDetail());
+        output.writeMessage(11, getProgressDetail());
       }
       unknownFields.writeTo(output);
     }
@@ -205,7 +205,7 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
       size = 0;
       if (progressDetail_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getProgressDetail());
+          .computeMessageSize(11, getProgressDetail());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,7 +339,7 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26862
+     * CmdId: 8558
      * </pre>
      *
      * Protobuf type {@code FungusFighterRuntimeDataNotify}
@@ -501,10 +501,10 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
           emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail, emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail.Builder, emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetailOrBuilder> progressDetailBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+       * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
        * @return Whether the progressDetail field is set.
        */
       public boolean hasProgressDetail() {
@@ -512,10 +512,10 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+       * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
        * @return The progressDetail.
        */
       public emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail getProgressDetail() {
@@ -527,10 +527,10 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+       * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
        */
       public Builder setProgressDetail(emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail value) {
         if (progressDetailBuilder_ == null) {
@@ -547,10 +547,10 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+       * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
        */
       public Builder setProgressDetail(
           emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail.Builder builderForValue) {
@@ -565,10 +565,10 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+       * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
        */
       public Builder mergeProgressDetail(emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail value) {
         if (progressDetailBuilder_ == null) {
@@ -587,10 +587,10 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+       * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
        */
       public Builder clearProgressDetail() {
         if (progressDetailBuilder_ == null) {
@@ -605,10 +605,10 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+       * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
        */
       public emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail.Builder getProgressDetailBuilder() {
         
@@ -617,10 +617,10 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+       * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
        */
       public emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetailOrBuilder getProgressDetailOrBuilder() {
         if (progressDetailBuilder_ != null) {
@@ -632,10 +632,10 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0       
        * </pre>
        *
-       * <code>.FungusTrainingProgressDetail progress_detail = 10;</code>
+       * <code>.FungusTrainingProgressDetail progress_detail = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail, emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail.Builder, emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetailOrBuilder> 
@@ -720,7 +720,7 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
       "\n$FungusFighterRuntimeDataNotify.proto\032\"" +
       "FungusTrainingProgressDetail.proto\"X\n\036Fu" +
       "ngusFighterRuntimeDataNotify\0226\n\017progress" +
-      "_detail\030\n \001(\0132\035.FungusTrainingProgressDe" +
+      "_detail\030\013 \001(\0132\035.FungusTrainingProgressDe" +
       "tailB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

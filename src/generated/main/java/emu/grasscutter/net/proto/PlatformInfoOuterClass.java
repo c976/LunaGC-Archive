@@ -20,88 +20,7 @@ public final class PlatformInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.Vector start_pos = 7;</code>
-     * @return Whether the startPos field is set.
-     */
-    boolean hasStartPos();
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.Vector start_pos = 7;</code>
-     * @return The startPos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getStartPos();
-    /**
-     * <pre>
-     *6.3.0 // offset: 32
-     * </pre>
-     *
-     * <code>.Vector start_pos = 7;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getStartPosOrBuilder();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>.Vector pos_offset = 11;</code>
-     * @return Whether the posOffset field is set.
-     */
-    boolean hasPosOffset();
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>.Vector pos_offset = 11;</code>
-     * @return The posOffset.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPosOffset();
-    /**
-     * <pre>
-     *6.3.0 // offset: 40
-     * </pre>
-     *
-     * <code>.Vector pos_offset = 11;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOffsetOrBuilder();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>.Route route = 15;</code>
-     * @return Whether the route field is set.
-     */
-    boolean hasRoute();
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>.Route route = 15;</code>
-     * @return The route.
-     */
-    emu.grasscutter.net.proto.RouteOuterClass.Route getRoute();
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>.Route route = 15;</code>
-     */
-    emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder getRouteOrBuilder();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.MathQuaternion start_rot = 9;</code>
@@ -110,7 +29,7 @@ public final class PlatformInfoOuterClass {
     boolean hasStartRot();
     /**
      * <pre>
-     *6.3.0 // offset: 56
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.MathQuaternion start_rot = 9;</code>
@@ -119,7 +38,7 @@ public final class PlatformInfoOuterClass {
     emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getStartRot();
     /**
      * <pre>
-     *6.3.0 // offset: 56
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.MathQuaternion start_rot = 9;</code>
@@ -128,7 +47,34 @@ public final class PlatformInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 64
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.Route route = 15;</code>
+     * @return Whether the route field is set.
+     */
+    boolean hasRoute();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.Route route = 15;</code>
+     * @return The route.
+     */
+    emu.grasscutter.net.proto.RouteOuterClass.Route getRoute();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.Route route = 15;</code>
+     */
+    emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder getRouteOrBuilder();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.MathQuaternion rot_offset = 12;</code>
@@ -137,7 +83,7 @@ public final class PlatformInfoOuterClass {
     boolean hasRotOffset();
     /**
      * <pre>
-     *6.3.0 // offset: 64
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.MathQuaternion rot_offset = 12;</code>
@@ -146,7 +92,7 @@ public final class PlatformInfoOuterClass {
     emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getRotOffset();
     /**
      * <pre>
-     *6.3.0 // offset: 64
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.MathQuaternion rot_offset = 12;</code>
@@ -155,66 +101,61 @@ public final class PlatformInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 72
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 start_route_time = 3;</code>
-     * @return The startRouteTime.
+     * <code>.Vector start_pos = 7;</code>
+     * @return Whether the startPos field is set.
      */
-    int getStartRouteTime();
+    boolean hasStartPos();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.Vector start_pos = 7;</code>
+     * @return The startPos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getStartPos();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.Vector start_pos = 7;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getStartPosOrBuilder();
 
     /**
      * <pre>
-     *6.3.0 // offset: 76
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
-     * <code>uint32 stop_scene_time = 10;</code>
-     * @return The stopSceneTime.
+     * <code>.Vector pos_offset = 11;</code>
+     * @return Whether the posOffset field is set.
      */
-    int getStopSceneTime();
+    boolean hasPosOffset();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.Vector pos_offset = 11;</code>
+     * @return The posOffset.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPosOffset();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.Vector pos_offset = 11;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOffsetOrBuilder();
 
     /**
      * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>int32 start_index = 2;</code>
-     * @return The startIndex.
-     */
-    int getStartIndex();
-
-    /**
-     * <pre>
-     * offset: 84
-     * </pre>
-     *
-     * <code>uint32 speed = 16;</code>
-     * @return The speed.
-     */
-    int getSpeed();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>.MovingPlatformType moving_platform_type = 13;</code>
-     * @return The enum numeric value on the wire for movingPlatformType.
-     */
-    int getMovingPlatformTypeValue();
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>.MovingPlatformType moving_platform_type = 13;</code>
-     * @return The movingPlatformType.
-     */
-    emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType getMovingPlatformType();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 92
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 start_scene_time = 4;</code>
@@ -224,7 +165,17 @@ public final class PlatformInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 96
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>int32 start_index = 2;</code>
+     * @return The startIndex.
+     */
+    int getStartIndex();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>bool is_active = 14;</code>
@@ -234,7 +185,7 @@ public final class PlatformInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 97
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>bool is_started = 8;</code>
@@ -244,13 +195,62 @@ public final class PlatformInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 100
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 route_id = 1;</code>
      * @return The routeId.
      */
     int getRouteId();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>uint32 start_route_time = 3;</code>
+     * @return The startRouteTime.
+     */
+    int getStartRouteTime();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.MovingPlatformType moving_platform_type = 13;</code>
+     * @return The enum numeric value on the wire for movingPlatformType.
+     */
+    int getMovingPlatformTypeValue();
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.MovingPlatformType moving_platform_type = 13;</code>
+     * @return The movingPlatformType.
+     */
+    emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType getMovingPlatformType();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>uint32 stop_scene_time = 10;</code>
+     * @return The stopSceneTime.
+     */
+    int getStopSceneTime();
+
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 point_id = 16;</code>
+     * @return The pointId.
+     */
+    int getPointId();
   }
   /**
    * Protobuf type {@code PlatformInfo}
@@ -406,7 +406,7 @@ public final class PlatformInfoOuterClass {
             }
             case 128: {
 
-              speed_ = input.readUInt32();
+              pointId_ = input.readUInt32();
               break;
             }
             default: {
@@ -441,11 +441,125 @@ public final class PlatformInfoOuterClass {
               emu.grasscutter.net.proto.PlatformInfoOuterClass.PlatformInfo.class, emu.grasscutter.net.proto.PlatformInfoOuterClass.PlatformInfo.Builder.class);
     }
 
+    public static final int START_ROT_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion startRot_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.MathQuaternion start_rot = 9;</code>
+     * @return Whether the startRot field is set.
+     */
+    @java.lang.Override
+    public boolean hasStartRot() {
+      return startRot_ != null;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.MathQuaternion start_rot = 9;</code>
+     * @return The startRot.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getStartRot() {
+      return startRot_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : startRot_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.MathQuaternion start_rot = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getStartRotOrBuilder() {
+      return getStartRot();
+    }
+
+    public static final int ROUTE_FIELD_NUMBER = 15;
+    private emu.grasscutter.net.proto.RouteOuterClass.Route route_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.Route route = 15;</code>
+     * @return Whether the route field is set.
+     */
+    @java.lang.Override
+    public boolean hasRoute() {
+      return route_ != null;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.Route route = 15;</code>
+     * @return The route.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RouteOuterClass.Route getRoute() {
+      return route_ == null ? emu.grasscutter.net.proto.RouteOuterClass.Route.getDefaultInstance() : route_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.Route route = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder getRouteOrBuilder() {
+      return getRoute();
+    }
+
+    public static final int ROT_OFFSET_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion rotOffset_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.MathQuaternion rot_offset = 12;</code>
+     * @return Whether the rotOffset field is set.
+     */
+    @java.lang.Override
+    public boolean hasRotOffset() {
+      return rotOffset_ != null;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.MathQuaternion rot_offset = 12;</code>
+     * @return The rotOffset.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getRotOffset() {
+      return rotOffset_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : rotOffset_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>.MathQuaternion rot_offset = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getRotOffsetOrBuilder() {
+      return getRotOffset();
+    }
+
     public static final int START_POS_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector startPos_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.Vector start_pos = 7;</code>
@@ -457,7 +571,7 @@ public final class PlatformInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.Vector start_pos = 7;</code>
@@ -469,7 +583,7 @@ public final class PlatformInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.Vector start_pos = 7;</code>
@@ -483,7 +597,7 @@ public final class PlatformInfoOuterClass {
     private emu.grasscutter.net.proto.VectorOuterClass.Vector posOffset_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.Vector pos_offset = 11;</code>
@@ -495,7 +609,7 @@ public final class PlatformInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.Vector pos_offset = 11;</code>
@@ -507,7 +621,7 @@ public final class PlatformInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0          
      * </pre>
      *
      * <code>.Vector pos_offset = 11;</code>
@@ -517,212 +631,11 @@ public final class PlatformInfoOuterClass {
       return getPosOffset();
     }
 
-    public static final int ROUTE_FIELD_NUMBER = 15;
-    private emu.grasscutter.net.proto.RouteOuterClass.Route route_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>.Route route = 15;</code>
-     * @return Whether the route field is set.
-     */
-    @java.lang.Override
-    public boolean hasRoute() {
-      return route_ != null;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>.Route route = 15;</code>
-     * @return The route.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RouteOuterClass.Route getRoute() {
-      return route_ == null ? emu.grasscutter.net.proto.RouteOuterClass.Route.getDefaultInstance() : route_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>.Route route = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder getRouteOrBuilder() {
-      return getRoute();
-    }
-
-    public static final int START_ROT_FIELD_NUMBER = 9;
-    private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion startRot_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>.MathQuaternion start_rot = 9;</code>
-     * @return Whether the startRot field is set.
-     */
-    @java.lang.Override
-    public boolean hasStartRot() {
-      return startRot_ != null;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>.MathQuaternion start_rot = 9;</code>
-     * @return The startRot.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getStartRot() {
-      return startRot_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : startRot_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 56
-     * </pre>
-     *
-     * <code>.MathQuaternion start_rot = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getStartRotOrBuilder() {
-      return getStartRot();
-    }
-
-    public static final int ROT_OFFSET_FIELD_NUMBER = 12;
-    private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion rotOffset_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>.MathQuaternion rot_offset = 12;</code>
-     * @return Whether the rotOffset field is set.
-     */
-    @java.lang.Override
-    public boolean hasRotOffset() {
-      return rotOffset_ != null;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>.MathQuaternion rot_offset = 12;</code>
-     * @return The rotOffset.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getRotOffset() {
-      return rotOffset_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : rotOffset_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>.MathQuaternion rot_offset = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getRotOffsetOrBuilder() {
-      return getRotOffset();
-    }
-
-    public static final int START_ROUTE_TIME_FIELD_NUMBER = 3;
-    private int startRouteTime_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 72
-     * </pre>
-     *
-     * <code>uint32 start_route_time = 3;</code>
-     * @return The startRouteTime.
-     */
-    @java.lang.Override
-    public int getStartRouteTime() {
-      return startRouteTime_;
-    }
-
-    public static final int STOP_SCENE_TIME_FIELD_NUMBER = 10;
-    private int stopSceneTime_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 76
-     * </pre>
-     *
-     * <code>uint32 stop_scene_time = 10;</code>
-     * @return The stopSceneTime.
-     */
-    @java.lang.Override
-    public int getStopSceneTime() {
-      return stopSceneTime_;
-    }
-
-    public static final int START_INDEX_FIELD_NUMBER = 2;
-    private int startIndex_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 80
-     * </pre>
-     *
-     * <code>int32 start_index = 2;</code>
-     * @return The startIndex.
-     */
-    @java.lang.Override
-    public int getStartIndex() {
-      return startIndex_;
-    }
-
-    public static final int SPEED_FIELD_NUMBER = 16;
-    private int speed_;
-    /**
-     * <pre>
-     * offset: 84
-     * </pre>
-     *
-     * <code>uint32 speed = 16;</code>
-     * @return The speed.
-     */
-    @java.lang.Override
-    public int getSpeed() {
-      return speed_;
-    }
-
-    public static final int MOVING_PLATFORM_TYPE_FIELD_NUMBER = 13;
-    private int movingPlatformType_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>.MovingPlatformType moving_platform_type = 13;</code>
-     * @return The enum numeric value on the wire for movingPlatformType.
-     */
-    @java.lang.Override public int getMovingPlatformTypeValue() {
-      return movingPlatformType_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 88
-     * </pre>
-     *
-     * <code>.MovingPlatformType moving_platform_type = 13;</code>
-     * @return The movingPlatformType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType getMovingPlatformType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType result = emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType.valueOf(movingPlatformType_);
-      return result == null ? emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType.UNRECOGNIZED : result;
-    }
-
     public static final int START_SCENE_TIME_FIELD_NUMBER = 4;
     private int startSceneTime_;
     /**
      * <pre>
-     *6.3.0 // offset: 92
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 start_scene_time = 4;</code>
@@ -733,11 +646,26 @@ public final class PlatformInfoOuterClass {
       return startSceneTime_;
     }
 
+    public static final int START_INDEX_FIELD_NUMBER = 2;
+    private int startIndex_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>int32 start_index = 2;</code>
+     * @return The startIndex.
+     */
+    @java.lang.Override
+    public int getStartIndex() {
+      return startIndex_;
+    }
+
     public static final int IS_ACTIVE_FIELD_NUMBER = 14;
     private boolean isActive_;
     /**
      * <pre>
-     *6.3.0 // offset: 96
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>bool is_active = 14;</code>
@@ -752,7 +680,7 @@ public final class PlatformInfoOuterClass {
     private boolean isStarted_;
     /**
      * <pre>
-     *6.3.0 // offset: 97
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>bool is_started = 8;</code>
@@ -767,7 +695,7 @@ public final class PlatformInfoOuterClass {
     private int routeId_;
     /**
      * <pre>
-     *6.3.0 // offset: 100
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
      * <code>uint32 route_id = 1;</code>
@@ -776,6 +704,78 @@ public final class PlatformInfoOuterClass {
     @java.lang.Override
     public int getRouteId() {
       return routeId_;
+    }
+
+    public static final int START_ROUTE_TIME_FIELD_NUMBER = 3;
+    private int startRouteTime_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>uint32 start_route_time = 3;</code>
+     * @return The startRouteTime.
+     */
+    @java.lang.Override
+    public int getStartRouteTime() {
+      return startRouteTime_;
+    }
+
+    public static final int MOVING_PLATFORM_TYPE_FIELD_NUMBER = 13;
+    private int movingPlatformType_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.MovingPlatformType moving_platform_type = 13;</code>
+     * @return The enum numeric value on the wire for movingPlatformType.
+     */
+    @java.lang.Override public int getMovingPlatformTypeValue() {
+      return movingPlatformType_;
+    }
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>.MovingPlatformType moving_platform_type = 13;</code>
+     * @return The movingPlatformType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType getMovingPlatformType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType result = emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType.valueOf(movingPlatformType_);
+      return result == null ? emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType.UNRECOGNIZED : result;
+    }
+
+    public static final int STOP_SCENE_TIME_FIELD_NUMBER = 10;
+    private int stopSceneTime_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0          
+     * </pre>
+     *
+     * <code>uint32 stop_scene_time = 10;</code>
+     * @return The stopSceneTime.
+     */
+    @java.lang.Override
+    public int getStopSceneTime() {
+      return stopSceneTime_;
+    }
+
+    public static final int POINT_ID_FIELD_NUMBER = 16;
+    private int pointId_;
+    /**
+     * <pre>
+     *6.5.5 //6.4.0 //6.5.0           
+     * </pre>
+     *
+     * <code>uint32 point_id = 16;</code>
+     * @return The pointId.
+     */
+    @java.lang.Override
+    public int getPointId() {
+      return pointId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -822,7 +822,7 @@ public final class PlatformInfoOuterClass {
       if (rotOffset_ != null) {
         output.writeMessage(12, getRotOffset());
       }
-      if (movingPlatformType_ != emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType.MOVING_PLATFORM_TYPE_NONE.getNumber()) {
+      if (movingPlatformType_ != emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType.MovingPlatformType_MOVING_PLATFORM_NONE.getNumber()) {
         output.writeEnum(13, movingPlatformType_);
       }
       if (isActive_ != false) {
@@ -831,8 +831,8 @@ public final class PlatformInfoOuterClass {
       if (route_ != null) {
         output.writeMessage(15, getRoute());
       }
-      if (speed_ != 0) {
-        output.writeUInt32(16, speed_);
+      if (pointId_ != 0) {
+        output.writeUInt32(16, pointId_);
       }
       unknownFields.writeTo(output);
     }
@@ -883,7 +883,7 @@ public final class PlatformInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, getRotOffset());
       }
-      if (movingPlatformType_ != emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType.MOVING_PLATFORM_TYPE_NONE.getNumber()) {
+      if (movingPlatformType_ != emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.MovingPlatformType.MovingPlatformType_MOVING_PLATFORM_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(13, movingPlatformType_);
       }
@@ -895,9 +895,9 @@ public final class PlatformInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(15, getRoute());
       }
-      if (speed_ != 0) {
+      if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(16, speed_);
+          .computeUInt32Size(16, pointId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -914,6 +914,21 @@ public final class PlatformInfoOuterClass {
       }
       emu.grasscutter.net.proto.PlatformInfoOuterClass.PlatformInfo other = (emu.grasscutter.net.proto.PlatformInfoOuterClass.PlatformInfo) obj;
 
+      if (hasStartRot() != other.hasStartRot()) return false;
+      if (hasStartRot()) {
+        if (!getStartRot()
+            .equals(other.getStartRot())) return false;
+      }
+      if (hasRoute() != other.hasRoute()) return false;
+      if (hasRoute()) {
+        if (!getRoute()
+            .equals(other.getRoute())) return false;
+      }
+      if (hasRotOffset() != other.hasRotOffset()) return false;
+      if (hasRotOffset()) {
+        if (!getRotOffset()
+            .equals(other.getRotOffset())) return false;
+      }
       if (hasStartPos() != other.hasStartPos()) return false;
       if (hasStartPos()) {
         if (!getStartPos()
@@ -924,38 +939,23 @@ public final class PlatformInfoOuterClass {
         if (!getPosOffset()
             .equals(other.getPosOffset())) return false;
       }
-      if (hasRoute() != other.hasRoute()) return false;
-      if (hasRoute()) {
-        if (!getRoute()
-            .equals(other.getRoute())) return false;
-      }
-      if (hasStartRot() != other.hasStartRot()) return false;
-      if (hasStartRot()) {
-        if (!getStartRot()
-            .equals(other.getStartRot())) return false;
-      }
-      if (hasRotOffset() != other.hasRotOffset()) return false;
-      if (hasRotOffset()) {
-        if (!getRotOffset()
-            .equals(other.getRotOffset())) return false;
-      }
-      if (getStartRouteTime()
-          != other.getStartRouteTime()) return false;
-      if (getStopSceneTime()
-          != other.getStopSceneTime()) return false;
-      if (getStartIndex()
-          != other.getStartIndex()) return false;
-      if (getSpeed()
-          != other.getSpeed()) return false;
-      if (movingPlatformType_ != other.movingPlatformType_) return false;
       if (getStartSceneTime()
           != other.getStartSceneTime()) return false;
+      if (getStartIndex()
+          != other.getStartIndex()) return false;
       if (getIsActive()
           != other.getIsActive()) return false;
       if (getIsStarted()
           != other.getIsStarted()) return false;
       if (getRouteId()
           != other.getRouteId()) return false;
+      if (getStartRouteTime()
+          != other.getStartRouteTime()) return false;
+      if (movingPlatformType_ != other.movingPlatformType_) return false;
+      if (getStopSceneTime()
+          != other.getStopSceneTime()) return false;
+      if (getPointId()
+          != other.getPointId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -967,6 +967,18 @@ public final class PlatformInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasStartRot()) {
+        hash = (37 * hash) + START_ROT_FIELD_NUMBER;
+        hash = (53 * hash) + getStartRot().hashCode();
+      }
+      if (hasRoute()) {
+        hash = (37 * hash) + ROUTE_FIELD_NUMBER;
+        hash = (53 * hash) + getRoute().hashCode();
+      }
+      if (hasRotOffset()) {
+        hash = (37 * hash) + ROT_OFFSET_FIELD_NUMBER;
+        hash = (53 * hash) + getRotOffset().hashCode();
+      }
       if (hasStartPos()) {
         hash = (37 * hash) + START_POS_FIELD_NUMBER;
         hash = (53 * hash) + getStartPos().hashCode();
@@ -975,30 +987,10 @@ public final class PlatformInfoOuterClass {
         hash = (37 * hash) + POS_OFFSET_FIELD_NUMBER;
         hash = (53 * hash) + getPosOffset().hashCode();
       }
-      if (hasRoute()) {
-        hash = (37 * hash) + ROUTE_FIELD_NUMBER;
-        hash = (53 * hash) + getRoute().hashCode();
-      }
-      if (hasStartRot()) {
-        hash = (37 * hash) + START_ROT_FIELD_NUMBER;
-        hash = (53 * hash) + getStartRot().hashCode();
-      }
-      if (hasRotOffset()) {
-        hash = (37 * hash) + ROT_OFFSET_FIELD_NUMBER;
-        hash = (53 * hash) + getRotOffset().hashCode();
-      }
-      hash = (37 * hash) + START_ROUTE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getStartRouteTime();
-      hash = (37 * hash) + STOP_SCENE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getStopSceneTime();
-      hash = (37 * hash) + START_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getStartIndex();
-      hash = (37 * hash) + SPEED_FIELD_NUMBER;
-      hash = (53 * hash) + getSpeed();
-      hash = (37 * hash) + MOVING_PLATFORM_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + movingPlatformType_;
       hash = (37 * hash) + START_SCENE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getStartSceneTime();
+      hash = (37 * hash) + START_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getStartIndex();
       hash = (37 * hash) + IS_ACTIVE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsActive());
@@ -1007,6 +999,14 @@ public final class PlatformInfoOuterClass {
           getIsStarted());
       hash = (37 * hash) + ROUTE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRouteId();
+      hash = (37 * hash) + START_ROUTE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStartRouteTime();
+      hash = (37 * hash) + MOVING_PLATFORM_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + movingPlatformType_;
+      hash = (37 * hash) + STOP_SCENE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStopSceneTime();
+      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPointId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1140,6 +1140,24 @@ public final class PlatformInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        if (startRotBuilder_ == null) {
+          startRot_ = null;
+        } else {
+          startRot_ = null;
+          startRotBuilder_ = null;
+        }
+        if (routeBuilder_ == null) {
+          route_ = null;
+        } else {
+          route_ = null;
+          routeBuilder_ = null;
+        }
+        if (rotOffsetBuilder_ == null) {
+          rotOffset_ = null;
+        } else {
+          rotOffset_ = null;
+          rotOffsetBuilder_ = null;
+        }
         if (startPosBuilder_ == null) {
           startPos_ = null;
         } else {
@@ -1152,41 +1170,23 @@ public final class PlatformInfoOuterClass {
           posOffset_ = null;
           posOffsetBuilder_ = null;
         }
-        if (routeBuilder_ == null) {
-          route_ = null;
-        } else {
-          route_ = null;
-          routeBuilder_ = null;
-        }
-        if (startRotBuilder_ == null) {
-          startRot_ = null;
-        } else {
-          startRot_ = null;
-          startRotBuilder_ = null;
-        }
-        if (rotOffsetBuilder_ == null) {
-          rotOffset_ = null;
-        } else {
-          rotOffset_ = null;
-          rotOffsetBuilder_ = null;
-        }
-        startRouteTime_ = 0;
-
-        stopSceneTime_ = 0;
+        startSceneTime_ = 0;
 
         startIndex_ = 0;
-
-        speed_ = 0;
-
-        movingPlatformType_ = 0;
-
-        startSceneTime_ = 0;
 
         isActive_ = false;
 
         isStarted_ = false;
 
         routeId_ = 0;
+
+        startRouteTime_ = 0;
+
+        movingPlatformType_ = 0;
+
+        stopSceneTime_ = 0;
+
+        pointId_ = 0;
 
         return this;
       }
@@ -1214,6 +1214,21 @@ public final class PlatformInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlatformInfoOuterClass.PlatformInfo buildPartial() {
         emu.grasscutter.net.proto.PlatformInfoOuterClass.PlatformInfo result = new emu.grasscutter.net.proto.PlatformInfoOuterClass.PlatformInfo(this);
+        if (startRotBuilder_ == null) {
+          result.startRot_ = startRot_;
+        } else {
+          result.startRot_ = startRotBuilder_.build();
+        }
+        if (routeBuilder_ == null) {
+          result.route_ = route_;
+        } else {
+          result.route_ = routeBuilder_.build();
+        }
+        if (rotOffsetBuilder_ == null) {
+          result.rotOffset_ = rotOffset_;
+        } else {
+          result.rotOffset_ = rotOffsetBuilder_.build();
+        }
         if (startPosBuilder_ == null) {
           result.startPos_ = startPos_;
         } else {
@@ -1224,30 +1239,15 @@ public final class PlatformInfoOuterClass {
         } else {
           result.posOffset_ = posOffsetBuilder_.build();
         }
-        if (routeBuilder_ == null) {
-          result.route_ = route_;
-        } else {
-          result.route_ = routeBuilder_.build();
-        }
-        if (startRotBuilder_ == null) {
-          result.startRot_ = startRot_;
-        } else {
-          result.startRot_ = startRotBuilder_.build();
-        }
-        if (rotOffsetBuilder_ == null) {
-          result.rotOffset_ = rotOffset_;
-        } else {
-          result.rotOffset_ = rotOffsetBuilder_.build();
-        }
-        result.startRouteTime_ = startRouteTime_;
-        result.stopSceneTime_ = stopSceneTime_;
-        result.startIndex_ = startIndex_;
-        result.speed_ = speed_;
-        result.movingPlatformType_ = movingPlatformType_;
         result.startSceneTime_ = startSceneTime_;
+        result.startIndex_ = startIndex_;
         result.isActive_ = isActive_;
         result.isStarted_ = isStarted_;
         result.routeId_ = routeId_;
+        result.startRouteTime_ = startRouteTime_;
+        result.movingPlatformType_ = movingPlatformType_;
+        result.stopSceneTime_ = stopSceneTime_;
+        result.pointId_ = pointId_;
         onBuilt();
         return result;
       }
@@ -1296,38 +1296,26 @@ public final class PlatformInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlatformInfoOuterClass.PlatformInfo other) {
         if (other == emu.grasscutter.net.proto.PlatformInfoOuterClass.PlatformInfo.getDefaultInstance()) return this;
+        if (other.hasStartRot()) {
+          mergeStartRot(other.getStartRot());
+        }
+        if (other.hasRoute()) {
+          mergeRoute(other.getRoute());
+        }
+        if (other.hasRotOffset()) {
+          mergeRotOffset(other.getRotOffset());
+        }
         if (other.hasStartPos()) {
           mergeStartPos(other.getStartPos());
         }
         if (other.hasPosOffset()) {
           mergePosOffset(other.getPosOffset());
         }
-        if (other.hasRoute()) {
-          mergeRoute(other.getRoute());
-        }
-        if (other.hasStartRot()) {
-          mergeStartRot(other.getStartRot());
-        }
-        if (other.hasRotOffset()) {
-          mergeRotOffset(other.getRotOffset());
-        }
-        if (other.getStartRouteTime() != 0) {
-          setStartRouteTime(other.getStartRouteTime());
-        }
-        if (other.getStopSceneTime() != 0) {
-          setStopSceneTime(other.getStopSceneTime());
+        if (other.getStartSceneTime() != 0) {
+          setStartSceneTime(other.getStartSceneTime());
         }
         if (other.getStartIndex() != 0) {
           setStartIndex(other.getStartIndex());
-        }
-        if (other.getSpeed() != 0) {
-          setSpeed(other.getSpeed());
-        }
-        if (other.movingPlatformType_ != 0) {
-          setMovingPlatformTypeValue(other.getMovingPlatformTypeValue());
-        }
-        if (other.getStartSceneTime() != 0) {
-          setStartSceneTime(other.getStartSceneTime());
         }
         if (other.getIsActive() != false) {
           setIsActive(other.getIsActive());
@@ -1337,6 +1325,18 @@ public final class PlatformInfoOuterClass {
         }
         if (other.getRouteId() != 0) {
           setRouteId(other.getRouteId());
+        }
+        if (other.getStartRouteTime() != 0) {
+          setStartRouteTime(other.getStartRouteTime());
+        }
+        if (other.movingPlatformType_ != 0) {
+          setMovingPlatformTypeValue(other.getMovingPlatformTypeValue());
+        }
+        if (other.getStopSceneTime() != 0) {
+          setStopSceneTime(other.getStopSceneTime());
+        }
+        if (other.getPointId() != 0) {
+          setPointId(other.getPointId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1367,12 +1367,477 @@ public final class PlatformInfoOuterClass {
         return this;
       }
 
+      private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion startRot_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> startRotBuilder_;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion start_rot = 9;</code>
+       * @return Whether the startRot field is set.
+       */
+      public boolean hasStartRot() {
+        return startRotBuilder_ != null || startRot_ != null;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion start_rot = 9;</code>
+       * @return The startRot.
+       */
+      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getStartRot() {
+        if (startRotBuilder_ == null) {
+          return startRot_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : startRot_;
+        } else {
+          return startRotBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion start_rot = 9;</code>
+       */
+      public Builder setStartRot(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
+        if (startRotBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          startRot_ = value;
+          onChanged();
+        } else {
+          startRotBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion start_rot = 9;</code>
+       */
+      public Builder setStartRot(
+          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder builderForValue) {
+        if (startRotBuilder_ == null) {
+          startRot_ = builderForValue.build();
+          onChanged();
+        } else {
+          startRotBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion start_rot = 9;</code>
+       */
+      public Builder mergeStartRot(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
+        if (startRotBuilder_ == null) {
+          if (startRot_ != null) {
+            startRot_ =
+              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.newBuilder(startRot_).mergeFrom(value).buildPartial();
+          } else {
+            startRot_ = value;
+          }
+          onChanged();
+        } else {
+          startRotBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion start_rot = 9;</code>
+       */
+      public Builder clearStartRot() {
+        if (startRotBuilder_ == null) {
+          startRot_ = null;
+          onChanged();
+        } else {
+          startRot_ = null;
+          startRotBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion start_rot = 9;</code>
+       */
+      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder getStartRotBuilder() {
+        
+        onChanged();
+        return getStartRotFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion start_rot = 9;</code>
+       */
+      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getStartRotOrBuilder() {
+        if (startRotBuilder_ != null) {
+          return startRotBuilder_.getMessageOrBuilder();
+        } else {
+          return startRot_ == null ?
+              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : startRot_;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion start_rot = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> 
+          getStartRotFieldBuilder() {
+        if (startRotBuilder_ == null) {
+          startRotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder>(
+                  getStartRot(),
+                  getParentForChildren(),
+                  isClean());
+          startRot_ = null;
+        }
+        return startRotBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.RouteOuterClass.Route route_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.RouteOuterClass.Route, emu.grasscutter.net.proto.RouteOuterClass.Route.Builder, emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder> routeBuilder_;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.Route route = 15;</code>
+       * @return Whether the route field is set.
+       */
+      public boolean hasRoute() {
+        return routeBuilder_ != null || route_ != null;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.Route route = 15;</code>
+       * @return The route.
+       */
+      public emu.grasscutter.net.proto.RouteOuterClass.Route getRoute() {
+        if (routeBuilder_ == null) {
+          return route_ == null ? emu.grasscutter.net.proto.RouteOuterClass.Route.getDefaultInstance() : route_;
+        } else {
+          return routeBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.Route route = 15;</code>
+       */
+      public Builder setRoute(emu.grasscutter.net.proto.RouteOuterClass.Route value) {
+        if (routeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          route_ = value;
+          onChanged();
+        } else {
+          routeBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.Route route = 15;</code>
+       */
+      public Builder setRoute(
+          emu.grasscutter.net.proto.RouteOuterClass.Route.Builder builderForValue) {
+        if (routeBuilder_ == null) {
+          route_ = builderForValue.build();
+          onChanged();
+        } else {
+          routeBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.Route route = 15;</code>
+       */
+      public Builder mergeRoute(emu.grasscutter.net.proto.RouteOuterClass.Route value) {
+        if (routeBuilder_ == null) {
+          if (route_ != null) {
+            route_ =
+              emu.grasscutter.net.proto.RouteOuterClass.Route.newBuilder(route_).mergeFrom(value).buildPartial();
+          } else {
+            route_ = value;
+          }
+          onChanged();
+        } else {
+          routeBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.Route route = 15;</code>
+       */
+      public Builder clearRoute() {
+        if (routeBuilder_ == null) {
+          route_ = null;
+          onChanged();
+        } else {
+          route_ = null;
+          routeBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.Route route = 15;</code>
+       */
+      public emu.grasscutter.net.proto.RouteOuterClass.Route.Builder getRouteBuilder() {
+        
+        onChanged();
+        return getRouteFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.Route route = 15;</code>
+       */
+      public emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder getRouteOrBuilder() {
+        if (routeBuilder_ != null) {
+          return routeBuilder_.getMessageOrBuilder();
+        } else {
+          return route_ == null ?
+              emu.grasscutter.net.proto.RouteOuterClass.Route.getDefaultInstance() : route_;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>.Route route = 15;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.RouteOuterClass.Route, emu.grasscutter.net.proto.RouteOuterClass.Route.Builder, emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder> 
+          getRouteFieldBuilder() {
+        if (routeBuilder_ == null) {
+          routeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.RouteOuterClass.Route, emu.grasscutter.net.proto.RouteOuterClass.Route.Builder, emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder>(
+                  getRoute(),
+                  getParentForChildren(),
+                  isClean());
+          route_ = null;
+        }
+        return routeBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion rotOffset_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> rotOffsetBuilder_;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion rot_offset = 12;</code>
+       * @return Whether the rotOffset field is set.
+       */
+      public boolean hasRotOffset() {
+        return rotOffsetBuilder_ != null || rotOffset_ != null;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion rot_offset = 12;</code>
+       * @return The rotOffset.
+       */
+      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getRotOffset() {
+        if (rotOffsetBuilder_ == null) {
+          return rotOffset_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : rotOffset_;
+        } else {
+          return rotOffsetBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion rot_offset = 12;</code>
+       */
+      public Builder setRotOffset(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
+        if (rotOffsetBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          rotOffset_ = value;
+          onChanged();
+        } else {
+          rotOffsetBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion rot_offset = 12;</code>
+       */
+      public Builder setRotOffset(
+          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder builderForValue) {
+        if (rotOffsetBuilder_ == null) {
+          rotOffset_ = builderForValue.build();
+          onChanged();
+        } else {
+          rotOffsetBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion rot_offset = 12;</code>
+       */
+      public Builder mergeRotOffset(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
+        if (rotOffsetBuilder_ == null) {
+          if (rotOffset_ != null) {
+            rotOffset_ =
+              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.newBuilder(rotOffset_).mergeFrom(value).buildPartial();
+          } else {
+            rotOffset_ = value;
+          }
+          onChanged();
+        } else {
+          rotOffsetBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion rot_offset = 12;</code>
+       */
+      public Builder clearRotOffset() {
+        if (rotOffsetBuilder_ == null) {
+          rotOffset_ = null;
+          onChanged();
+        } else {
+          rotOffset_ = null;
+          rotOffsetBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion rot_offset = 12;</code>
+       */
+      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder getRotOffsetBuilder() {
+        
+        onChanged();
+        return getRotOffsetFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion rot_offset = 12;</code>
+       */
+      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getRotOffsetOrBuilder() {
+        if (rotOffsetBuilder_ != null) {
+          return rotOffsetBuilder_.getMessageOrBuilder();
+        } else {
+          return rotOffset_ == null ?
+              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : rotOffset_;
+        }
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>.MathQuaternion rot_offset = 12;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> 
+          getRotOffsetFieldBuilder() {
+        if (rotOffsetBuilder_ == null) {
+          rotOffsetBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder>(
+                  getRotOffset(),
+                  getParentForChildren(),
+                  isClean());
+          rotOffset_ = null;
+        }
+        return rotOffsetBuilder_;
+      }
+
       private emu.grasscutter.net.proto.VectorOuterClass.Vector startPos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> startPosBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector start_pos = 7;</code>
@@ -1383,7 +1848,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector start_pos = 7;</code>
@@ -1398,7 +1863,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector start_pos = 7;</code>
@@ -1418,7 +1883,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector start_pos = 7;</code>
@@ -1436,7 +1901,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector start_pos = 7;</code>
@@ -1458,7 +1923,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector start_pos = 7;</code>
@@ -1476,7 +1941,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector start_pos = 7;</code>
@@ -1488,7 +1953,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector start_pos = 7;</code>
@@ -1503,7 +1968,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector start_pos = 7;</code>
@@ -1527,7 +1992,7 @@ public final class PlatformInfoOuterClass {
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posOffsetBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector pos_offset = 11;</code>
@@ -1538,7 +2003,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector pos_offset = 11;</code>
@@ -1553,7 +2018,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector pos_offset = 11;</code>
@@ -1573,7 +2038,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector pos_offset = 11;</code>
@@ -1591,7 +2056,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector pos_offset = 11;</code>
@@ -1613,7 +2078,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector pos_offset = 11;</code>
@@ -1631,7 +2096,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector pos_offset = 11;</code>
@@ -1643,7 +2108,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector pos_offset = 11;</code>
@@ -1658,7 +2123,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
        * <code>.Vector pos_offset = 11;</code>
@@ -1677,553 +2142,45 @@ public final class PlatformInfoOuterClass {
         return posOffsetBuilder_;
       }
 
-      private emu.grasscutter.net.proto.RouteOuterClass.Route route_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.RouteOuterClass.Route, emu.grasscutter.net.proto.RouteOuterClass.Route.Builder, emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder> routeBuilder_;
+      private int startSceneTime_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>.Route route = 15;</code>
-       * @return Whether the route field is set.
-       */
-      public boolean hasRoute() {
-        return routeBuilder_ != null || route_ != null;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>.Route route = 15;</code>
-       * @return The route.
-       */
-      public emu.grasscutter.net.proto.RouteOuterClass.Route getRoute() {
-        if (routeBuilder_ == null) {
-          return route_ == null ? emu.grasscutter.net.proto.RouteOuterClass.Route.getDefaultInstance() : route_;
-        } else {
-          return routeBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>.Route route = 15;</code>
-       */
-      public Builder setRoute(emu.grasscutter.net.proto.RouteOuterClass.Route value) {
-        if (routeBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          route_ = value;
-          onChanged();
-        } else {
-          routeBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>.Route route = 15;</code>
-       */
-      public Builder setRoute(
-          emu.grasscutter.net.proto.RouteOuterClass.Route.Builder builderForValue) {
-        if (routeBuilder_ == null) {
-          route_ = builderForValue.build();
-          onChanged();
-        } else {
-          routeBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>.Route route = 15;</code>
-       */
-      public Builder mergeRoute(emu.grasscutter.net.proto.RouteOuterClass.Route value) {
-        if (routeBuilder_ == null) {
-          if (route_ != null) {
-            route_ =
-              emu.grasscutter.net.proto.RouteOuterClass.Route.newBuilder(route_).mergeFrom(value).buildPartial();
-          } else {
-            route_ = value;
-          }
-          onChanged();
-        } else {
-          routeBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>.Route route = 15;</code>
-       */
-      public Builder clearRoute() {
-        if (routeBuilder_ == null) {
-          route_ = null;
-          onChanged();
-        } else {
-          route_ = null;
-          routeBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>.Route route = 15;</code>
-       */
-      public emu.grasscutter.net.proto.RouteOuterClass.Route.Builder getRouteBuilder() {
-        
-        onChanged();
-        return getRouteFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>.Route route = 15;</code>
-       */
-      public emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder getRouteOrBuilder() {
-        if (routeBuilder_ != null) {
-          return routeBuilder_.getMessageOrBuilder();
-        } else {
-          return route_ == null ?
-              emu.grasscutter.net.proto.RouteOuterClass.Route.getDefaultInstance() : route_;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>.Route route = 15;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.RouteOuterClass.Route, emu.grasscutter.net.proto.RouteOuterClass.Route.Builder, emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder> 
-          getRouteFieldBuilder() {
-        if (routeBuilder_ == null) {
-          routeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.RouteOuterClass.Route, emu.grasscutter.net.proto.RouteOuterClass.Route.Builder, emu.grasscutter.net.proto.RouteOuterClass.RouteOrBuilder>(
-                  getRoute(),
-                  getParentForChildren(),
-                  isClean());
-          route_ = null;
-        }
-        return routeBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion startRot_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> startRotBuilder_;
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>.MathQuaternion start_rot = 9;</code>
-       * @return Whether the startRot field is set.
-       */
-      public boolean hasStartRot() {
-        return startRotBuilder_ != null || startRot_ != null;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>.MathQuaternion start_rot = 9;</code>
-       * @return The startRot.
-       */
-      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getStartRot() {
-        if (startRotBuilder_ == null) {
-          return startRot_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : startRot_;
-        } else {
-          return startRotBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>.MathQuaternion start_rot = 9;</code>
-       */
-      public Builder setStartRot(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
-        if (startRotBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          startRot_ = value;
-          onChanged();
-        } else {
-          startRotBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>.MathQuaternion start_rot = 9;</code>
-       */
-      public Builder setStartRot(
-          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder builderForValue) {
-        if (startRotBuilder_ == null) {
-          startRot_ = builderForValue.build();
-          onChanged();
-        } else {
-          startRotBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>.MathQuaternion start_rot = 9;</code>
-       */
-      public Builder mergeStartRot(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
-        if (startRotBuilder_ == null) {
-          if (startRot_ != null) {
-            startRot_ =
-              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.newBuilder(startRot_).mergeFrom(value).buildPartial();
-          } else {
-            startRot_ = value;
-          }
-          onChanged();
-        } else {
-          startRotBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>.MathQuaternion start_rot = 9;</code>
-       */
-      public Builder clearStartRot() {
-        if (startRotBuilder_ == null) {
-          startRot_ = null;
-          onChanged();
-        } else {
-          startRot_ = null;
-          startRotBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>.MathQuaternion start_rot = 9;</code>
-       */
-      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder getStartRotBuilder() {
-        
-        onChanged();
-        return getStartRotFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>.MathQuaternion start_rot = 9;</code>
-       */
-      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getStartRotOrBuilder() {
-        if (startRotBuilder_ != null) {
-          return startRotBuilder_.getMessageOrBuilder();
-        } else {
-          return startRot_ == null ?
-              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : startRot_;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 56
-       * </pre>
-       *
-       * <code>.MathQuaternion start_rot = 9;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> 
-          getStartRotFieldBuilder() {
-        if (startRotBuilder_ == null) {
-          startRotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder>(
-                  getStartRot(),
-                  getParentForChildren(),
-                  isClean());
-          startRot_ = null;
-        }
-        return startRotBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion rotOffset_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> rotOffsetBuilder_;
-      /**
-       * <pre>
-       *6.3.0 // offset: 64
-       * </pre>
-       *
-       * <code>.MathQuaternion rot_offset = 12;</code>
-       * @return Whether the rotOffset field is set.
-       */
-      public boolean hasRotOffset() {
-        return rotOffsetBuilder_ != null || rotOffset_ != null;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 64
-       * </pre>
-       *
-       * <code>.MathQuaternion rot_offset = 12;</code>
-       * @return The rotOffset.
-       */
-      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getRotOffset() {
-        if (rotOffsetBuilder_ == null) {
-          return rotOffset_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : rotOffset_;
-        } else {
-          return rotOffsetBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 64
-       * </pre>
-       *
-       * <code>.MathQuaternion rot_offset = 12;</code>
-       */
-      public Builder setRotOffset(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
-        if (rotOffsetBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          rotOffset_ = value;
-          onChanged();
-        } else {
-          rotOffsetBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 64
-       * </pre>
-       *
-       * <code>.MathQuaternion rot_offset = 12;</code>
-       */
-      public Builder setRotOffset(
-          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder builderForValue) {
-        if (rotOffsetBuilder_ == null) {
-          rotOffset_ = builderForValue.build();
-          onChanged();
-        } else {
-          rotOffsetBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 64
-       * </pre>
-       *
-       * <code>.MathQuaternion rot_offset = 12;</code>
-       */
-      public Builder mergeRotOffset(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
-        if (rotOffsetBuilder_ == null) {
-          if (rotOffset_ != null) {
-            rotOffset_ =
-              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.newBuilder(rotOffset_).mergeFrom(value).buildPartial();
-          } else {
-            rotOffset_ = value;
-          }
-          onChanged();
-        } else {
-          rotOffsetBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 64
-       * </pre>
-       *
-       * <code>.MathQuaternion rot_offset = 12;</code>
-       */
-      public Builder clearRotOffset() {
-        if (rotOffsetBuilder_ == null) {
-          rotOffset_ = null;
-          onChanged();
-        } else {
-          rotOffset_ = null;
-          rotOffsetBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 64
-       * </pre>
-       *
-       * <code>.MathQuaternion rot_offset = 12;</code>
-       */
-      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder getRotOffsetBuilder() {
-        
-        onChanged();
-        return getRotOffsetFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 64
-       * </pre>
-       *
-       * <code>.MathQuaternion rot_offset = 12;</code>
-       */
-      public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getRotOffsetOrBuilder() {
-        if (rotOffsetBuilder_ != null) {
-          return rotOffsetBuilder_.getMessageOrBuilder();
-        } else {
-          return rotOffset_ == null ?
-              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : rotOffset_;
-        }
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 64
-       * </pre>
-       *
-       * <code>.MathQuaternion rot_offset = 12;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> 
-          getRotOffsetFieldBuilder() {
-        if (rotOffsetBuilder_ == null) {
-          rotOffsetBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder>(
-                  getRotOffset(),
-                  getParentForChildren(),
-                  isClean());
-          rotOffset_ = null;
-        }
-        return rotOffsetBuilder_;
-      }
-
-      private int startRouteTime_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 72
-       * </pre>
-       *
-       * <code>uint32 start_route_time = 3;</code>
-       * @return The startRouteTime.
+       * <code>uint32 start_scene_time = 4;</code>
+       * @return The startSceneTime.
        */
       @java.lang.Override
-      public int getStartRouteTime() {
-        return startRouteTime_;
+      public int getStartSceneTime() {
+        return startSceneTime_;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 72
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 start_route_time = 3;</code>
-       * @param value The startRouteTime to set.
+       * <code>uint32 start_scene_time = 4;</code>
+       * @param value The startSceneTime to set.
        * @return This builder for chaining.
        */
-      public Builder setStartRouteTime(int value) {
+      public Builder setStartSceneTime(int value) {
         
-        startRouteTime_ = value;
+        startSceneTime_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 72
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 start_route_time = 3;</code>
+       * <code>uint32 start_scene_time = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearStartRouteTime() {
+      public Builder clearStartSceneTime() {
         
-        startRouteTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int stopSceneTime_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 76
-       * </pre>
-       *
-       * <code>uint32 stop_scene_time = 10;</code>
-       * @return The stopSceneTime.
-       */
-      @java.lang.Override
-      public int getStopSceneTime() {
-        return stopSceneTime_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 76
-       * </pre>
-       *
-       * <code>uint32 stop_scene_time = 10;</code>
-       * @param value The stopSceneTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStopSceneTime(int value) {
-        
-        stopSceneTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 76
-       * </pre>
-       *
-       * <code>uint32 stop_scene_time = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStopSceneTime() {
-        
-        stopSceneTime_ = 0;
+        startSceneTime_ = 0;
         onChanged();
         return this;
       }
@@ -2231,7 +2188,7 @@ public final class PlatformInfoOuterClass {
       private int startIndex_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 80
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>int32 start_index = 2;</code>
@@ -2243,7 +2200,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 80
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>int32 start_index = 2;</code>
@@ -2258,7 +2215,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 80
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>int32 start_index = 2;</code>
@@ -2271,45 +2228,174 @@ public final class PlatformInfoOuterClass {
         return this;
       }
 
-      private int speed_ ;
+      private boolean isActive_ ;
       /**
        * <pre>
-       * offset: 84
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 speed = 16;</code>
-       * @return The speed.
+       * <code>bool is_active = 14;</code>
+       * @return The isActive.
        */
       @java.lang.Override
-      public int getSpeed() {
-        return speed_;
+      public boolean getIsActive() {
+        return isActive_;
       }
       /**
        * <pre>
-       * offset: 84
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 speed = 16;</code>
-       * @param value The speed to set.
+       * <code>bool is_active = 14;</code>
+       * @param value The isActive to set.
        * @return This builder for chaining.
        */
-      public Builder setSpeed(int value) {
+      public Builder setIsActive(boolean value) {
         
-        speed_ = value;
+        isActive_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * offset: 84
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 speed = 16;</code>
+       * <code>bool is_active = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSpeed() {
+      public Builder clearIsActive() {
         
-        speed_ = 0;
+        isActive_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isStarted_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>bool is_started = 8;</code>
+       * @return The isStarted.
+       */
+      @java.lang.Override
+      public boolean getIsStarted() {
+        return isStarted_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>bool is_started = 8;</code>
+       * @param value The isStarted to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsStarted(boolean value) {
+        
+        isStarted_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>bool is_started = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsStarted() {
+        
+        isStarted_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int routeId_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 route_id = 1;</code>
+       * @return The routeId.
+       */
+      @java.lang.Override
+      public int getRouteId() {
+        return routeId_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 route_id = 1;</code>
+       * @param value The routeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRouteId(int value) {
+        
+        routeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0           
+       * </pre>
+       *
+       * <code>uint32 route_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRouteId() {
+        
+        routeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int startRouteTime_ ;
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>uint32 start_route_time = 3;</code>
+       * @return The startRouteTime.
+       */
+      @java.lang.Override
+      public int getStartRouteTime() {
+        return startRouteTime_;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>uint32 start_route_time = 3;</code>
+       * @param value The startRouteTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStartRouteTime(int value) {
+        
+        startRouteTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5 //6.4.0 //6.5.0          
+       * </pre>
+       *
+       * <code>uint32 start_route_time = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStartRouteTime() {
+        
+        startRouteTime_ = 0;
         onChanged();
         return this;
       }
@@ -2317,7 +2403,7 @@ public final class PlatformInfoOuterClass {
       private int movingPlatformType_ = 0;
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.MovingPlatformType moving_platform_type = 13;</code>
@@ -2328,7 +2414,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.MovingPlatformType moving_platform_type = 13;</code>
@@ -2343,7 +2429,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.MovingPlatformType moving_platform_type = 13;</code>
@@ -2357,7 +2443,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.MovingPlatformType moving_platform_type = 13;</code>
@@ -2375,7 +2461,7 @@ public final class PlatformInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 88
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
        * <code>.MovingPlatformType moving_platform_type = 13;</code>
@@ -2388,174 +2474,88 @@ public final class PlatformInfoOuterClass {
         return this;
       }
 
-      private int startSceneTime_ ;
+      private int stopSceneTime_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 92
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 start_scene_time = 4;</code>
-       * @return The startSceneTime.
+       * <code>uint32 stop_scene_time = 10;</code>
+       * @return The stopSceneTime.
        */
       @java.lang.Override
-      public int getStartSceneTime() {
-        return startSceneTime_;
+      public int getStopSceneTime() {
+        return stopSceneTime_;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 92
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 start_scene_time = 4;</code>
-       * @param value The startSceneTime to set.
+       * <code>uint32 stop_scene_time = 10;</code>
+       * @param value The stopSceneTime to set.
        * @return This builder for chaining.
        */
-      public Builder setStartSceneTime(int value) {
+      public Builder setStopSceneTime(int value) {
         
-        startSceneTime_ = value;
+        stopSceneTime_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 92
+       *6.5.5 //6.4.0 //6.5.0          
        * </pre>
        *
-       * <code>uint32 start_scene_time = 4;</code>
+       * <code>uint32 stop_scene_time = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearStartSceneTime() {
+      public Builder clearStopSceneTime() {
         
-        startSceneTime_ = 0;
+        stopSceneTime_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean isActive_ ;
+      private int pointId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 96
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>bool is_active = 14;</code>
-       * @return The isActive.
+       * <code>uint32 point_id = 16;</code>
+       * @return The pointId.
        */
       @java.lang.Override
-      public boolean getIsActive() {
-        return isActive_;
+      public int getPointId() {
+        return pointId_;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 96
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>bool is_active = 14;</code>
-       * @param value The isActive to set.
+       * <code>uint32 point_id = 16;</code>
+       * @param value The pointId to set.
        * @return This builder for chaining.
        */
-      public Builder setIsActive(boolean value) {
+      public Builder setPointId(int value) {
         
-        isActive_ = value;
+        pointId_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 96
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>bool is_active = 14;</code>
+       * <code>uint32 point_id = 16;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsActive() {
+      public Builder clearPointId() {
         
-        isActive_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isStarted_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 97
-       * </pre>
-       *
-       * <code>bool is_started = 8;</code>
-       * @return The isStarted.
-       */
-      @java.lang.Override
-      public boolean getIsStarted() {
-        return isStarted_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 97
-       * </pre>
-       *
-       * <code>bool is_started = 8;</code>
-       * @param value The isStarted to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsStarted(boolean value) {
-        
-        isStarted_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 97
-       * </pre>
-       *
-       * <code>bool is_started = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsStarted() {
-        
-        isStarted_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int routeId_ ;
-      /**
-       * <pre>
-       *6.3.0 // offset: 100
-       * </pre>
-       *
-       * <code>uint32 route_id = 1;</code>
-       * @return The routeId.
-       */
-      @java.lang.Override
-      public int getRouteId() {
-        return routeId_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 100
-       * </pre>
-       *
-       * <code>uint32 route_id = 1;</code>
-       * @param value The routeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRouteId(int value) {
-        
-        routeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 100
-       * </pre>
-       *
-       * <code>uint32 route_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRouteId() {
-        
-        routeId_ = 0;
+        pointId_ = 0;
         onChanged();
         return this;
       }
@@ -2627,38 +2627,38 @@ public final class PlatformInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022PlatformInfo.proto\032\024MathQuaternion.pro" +
-      "to\032\030MovingPlatformType.proto\032\013Route.prot" +
-      "o\032\014Vector.proto\"\204\003\n\014PlatformInfo\022\032\n\tstar" +
-      "t_pos\030\007 \001(\0132\007.Vector\022\033\n\npos_offset\030\013 \001(\013" +
-      "2\007.Vector\022\025\n\005route\030\017 \001(\0132\006.Route\022\"\n\tstar" +
-      "t_rot\030\t \001(\0132\017.MathQuaternion\022#\n\nrot_offs" +
-      "et\030\014 \001(\0132\017.MathQuaternion\022\030\n\020start_route" +
-      "_time\030\003 \001(\r\022\027\n\017stop_scene_time\030\n \001(\r\022\023\n\013" +
-      "start_index\030\002 \001(\005\022\r\n\005speed\030\020 \001(\r\0221\n\024movi" +
-      "ng_platform_type\030\r \001(\0162\023.MovingPlatformT" +
-      "ype\022\030\n\020start_scene_time\030\004 \001(\r\022\021\n\tis_acti" +
-      "ve\030\016 \001(\010\022\022\n\nis_started\030\010 \001(\010\022\020\n\010route_id" +
-      "\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "to\032\013Route.proto\032\014Vector.proto\032\030MovingPla" +
+      "tformType.proto\"\207\003\n\014PlatformInfo\022\"\n\tstar" +
+      "t_rot\030\t \001(\0132\017.MathQuaternion\022\025\n\005route\030\017 " +
+      "\001(\0132\006.Route\022#\n\nrot_offset\030\014 \001(\0132\017.MathQu" +
+      "aternion\022\032\n\tstart_pos\030\007 \001(\0132\007.Vector\022\033\n\n" +
+      "pos_offset\030\013 \001(\0132\007.Vector\022\030\n\020start_scene" +
+      "_time\030\004 \001(\r\022\023\n\013start_index\030\002 \001(\005\022\021\n\tis_a" +
+      "ctive\030\016 \001(\010\022\022\n\nis_started\030\010 \001(\010\022\020\n\010route" +
+      "_id\030\001 \001(\r\022\030\n\020start_route_time\030\003 \001(\r\0221\n\024m" +
+      "oving_platform_type\030\r \001(\0162\023.MovingPlatfo" +
+      "rmType\022\027\n\017stop_scene_time\030\n \001(\r\022\020\n\010point" +
+      "_id\030\020 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.MathQuaternionOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.RouteOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.getDescriptor(),
         });
     internal_static_PlatformInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PlatformInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlatformInfo_descriptor,
-        new java.lang.String[] { "StartPos", "PosOffset", "Route", "StartRot", "RotOffset", "StartRouteTime", "StopSceneTime", "StartIndex", "Speed", "MovingPlatformType", "StartSceneTime", "IsActive", "IsStarted", "RouteId", });
+        new java.lang.String[] { "StartRot", "Route", "RotOffset", "StartPos", "PosOffset", "StartSceneTime", "StartIndex", "IsActive", "IsStarted", "RouteId", "StartRouteTime", "MovingPlatformType", "StopSceneTime", "PointId", });
     emu.grasscutter.net.proto.MathQuaternionOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.RouteOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MovingPlatformTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

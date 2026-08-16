@@ -19,10 +19,6 @@ public final class KDLAPAGEBBJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 start_time = 11;</code>
      * @return The startTime.
      */
@@ -113,10 +109,6 @@ public final class KDLAPAGEBBJOuterClass {
     public static final int START_TIME_FIELD_NUMBER = 11;
     private int startTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 start_time = 11;</code>
      * @return The startTime.
      */
@@ -429,10 +421,6 @@ public final class KDLAPAGEBBJOuterClass {
 
       private int startTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 11;</code>
        * @return The startTime.
        */
@@ -441,10 +429,6 @@ public final class KDLAPAGEBBJOuterClass {
         return startTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 11;</code>
        * @param value The startTime to set.
        * @return This builder for chaining.
@@ -456,10 +440,6 @@ public final class KDLAPAGEBBJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 start_time = 11;</code>
        * @return This builder for chaining.
        */

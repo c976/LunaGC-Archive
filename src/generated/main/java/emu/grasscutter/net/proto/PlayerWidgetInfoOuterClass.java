@@ -20,54 +20,54 @@ public final class PlayerWidgetInfoOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .WidgetSlotData slot_list = 3;</code>
+     * <code>repeated .WidgetSlotData slot_list = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData> 
         getSlotListList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .WidgetSlotData slot_list = 3;</code>
+     * <code>repeated .WidgetSlotData slot_list = 13;</code>
      */
     emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData getSlotList(int index);
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .WidgetSlotData slot_list = 3;</code>
+     * <code>repeated .WidgetSlotData slot_list = 13;</code>
      */
     int getSlotListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .WidgetSlotData slot_list = 3;</code>
+     * <code>repeated .WidgetSlotData slot_list = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotDataOrBuilder> 
         getSlotListOrBuilderList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .WidgetSlotData slot_list = 3;</code>
+     * <code>repeated .WidgetSlotData slot_list = 13;</code>
      */
     emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotDataOrBuilder getSlotListOrBuilder(
         int index);
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 uid = 10;</code>
+     * <code>uint32 uid = 4;</code>
      * @return The uid.
      */
     int getUid();
@@ -119,18 +119,18 @@ public final class PlayerWidgetInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 32: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 slotList_ = new java.util.ArrayList<emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData>();
                 mutable_bitField0_ |= 0x00000001;
               }
               slotList_.add(
                   input.readMessage(emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData.parser(), extensionRegistry));
-              break;
-            }
-            case 80: {
-
-              uid_ = input.readUInt32();
               break;
             }
             default: {
@@ -168,14 +168,14 @@ public final class PlayerWidgetInfoOuterClass {
               emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.class, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.Builder.class);
     }
 
-    public static final int SLOT_LIST_FIELD_NUMBER = 3;
+    public static final int SLOT_LIST_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData> slotList_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .WidgetSlotData slot_list = 3;</code>
+     * <code>repeated .WidgetSlotData slot_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData> getSlotListList() {
@@ -183,10 +183,10 @@ public final class PlayerWidgetInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .WidgetSlotData slot_list = 3;</code>
+     * <code>repeated .WidgetSlotData slot_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotDataOrBuilder> 
@@ -195,10 +195,10 @@ public final class PlayerWidgetInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .WidgetSlotData slot_list = 3;</code>
+     * <code>repeated .WidgetSlotData slot_list = 13;</code>
      */
     @java.lang.Override
     public int getSlotListCount() {
@@ -206,10 +206,10 @@ public final class PlayerWidgetInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .WidgetSlotData slot_list = 3;</code>
+     * <code>repeated .WidgetSlotData slot_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData getSlotList(int index) {
@@ -217,10 +217,10 @@ public final class PlayerWidgetInfoOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>repeated .WidgetSlotData slot_list = 3;</code>
+     * <code>repeated .WidgetSlotData slot_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotDataOrBuilder getSlotListOrBuilder(
@@ -228,14 +228,14 @@ public final class PlayerWidgetInfoOuterClass {
       return slotList_.get(index);
     }
 
-    public static final int UID_FIELD_NUMBER = 10;
+    public static final int UID_FIELD_NUMBER = 4;
     private int uid_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5 //6.4.0 //6.5.0           
      * </pre>
      *
-     * <code>uint32 uid = 10;</code>
+     * <code>uint32 uid = 4;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -257,11 +257,11 @@ public final class PlayerWidgetInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < slotList_.size(); i++) {
-        output.writeMessage(3, slotList_.get(i));
-      }
       if (uid_ != 0) {
-        output.writeUInt32(10, uid_);
+        output.writeUInt32(4, uid_);
+      }
+      for (int i = 0; i < slotList_.size(); i++) {
+        output.writeMessage(13, slotList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -272,13 +272,13 @@ public final class PlayerWidgetInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < slotList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, slotList_.get(i));
-      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, uid_);
+          .computeUInt32Size(4, uid_);
+      }
+      for (int i = 0; i < slotList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, slotList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -616,10 +616,10 @@ public final class PlayerWidgetInfoOuterClass {
 
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData> getSlotListList() {
         if (slotListBuilder_ == null) {
@@ -630,10 +630,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public int getSlotListCount() {
         if (slotListBuilder_ == null) {
@@ -644,10 +644,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData getSlotList(int index) {
         if (slotListBuilder_ == null) {
@@ -658,10 +658,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public Builder setSlotList(
           int index, emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData value) {
@@ -679,10 +679,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public Builder setSlotList(
           int index, emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData.Builder builderForValue) {
@@ -697,10 +697,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public Builder addSlotList(emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData value) {
         if (slotListBuilder_ == null) {
@@ -717,10 +717,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public Builder addSlotList(
           int index, emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData value) {
@@ -738,10 +738,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public Builder addSlotList(
           emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData.Builder builderForValue) {
@@ -756,10 +756,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public Builder addSlotList(
           int index, emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData.Builder builderForValue) {
@@ -774,10 +774,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public Builder addAllSlotList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData> values) {
@@ -793,10 +793,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public Builder clearSlotList() {
         if (slotListBuilder_ == null) {
@@ -810,10 +810,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public Builder removeSlotList(int index) {
         if (slotListBuilder_ == null) {
@@ -827,10 +827,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData.Builder getSlotListBuilder(
           int index) {
@@ -838,10 +838,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotDataOrBuilder getSlotListOrBuilder(
           int index) {
@@ -852,10 +852,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotDataOrBuilder> 
            getSlotListOrBuilderList() {
@@ -867,10 +867,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData.Builder addSlotListBuilder() {
         return getSlotListFieldBuilder().addBuilder(
@@ -878,10 +878,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData.Builder addSlotListBuilder(
           int index) {
@@ -890,10 +890,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>repeated .WidgetSlotData slot_list = 3;</code>
+       * <code>repeated .WidgetSlotData slot_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.WidgetSlotDataOuterClass.WidgetSlotData.Builder> 
            getSlotListBuilderList() {
@@ -917,10 +917,10 @@ public final class PlayerWidgetInfoOuterClass {
       private int uid_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 uid = 10;</code>
+       * <code>uint32 uid = 4;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -929,10 +929,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 uid = 10;</code>
+       * <code>uint32 uid = 4;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -944,10 +944,10 @@ public final class PlayerWidgetInfoOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5 //6.4.0 //6.5.0           
        * </pre>
        *
-       * <code>uint32 uid = 10;</code>
+       * <code>uint32 uid = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -1025,7 +1025,7 @@ public final class PlayerWidgetInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026PlayerWidgetInfo.proto\032\024WidgetSlotData" +
       ".proto\"C\n\020PlayerWidgetInfo\022\"\n\tslot_list\030" +
-      "\003 \003(\0132\017.WidgetSlotData\022\013\n\003uid\030\n \001(\rB\033\n\031e" +
+      "\r \003(\0132\017.WidgetSlotData\022\013\n\003uid\030\004 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

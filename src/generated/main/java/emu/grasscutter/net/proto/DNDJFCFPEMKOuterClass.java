@@ -19,28 +19,16 @@ public final class DNDJFCFPEMKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
      * @return Whether the nJDKKBAHHBD field is set.
      */
     boolean hasNJDKKBAHHBD();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
      * @return The nJDKKBAHHBD.
      */
     emu.grasscutter.net.proto.OHLHICJIAFOOuterClass.OHLHICJIAFO getNJDKKBAHHBD();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
      */
     emu.grasscutter.net.proto.OHLHICJIAFOOuterClass.OHLHICJIAFOOrBuilder getNJDKKBAHHBDOrBuilder();
@@ -138,10 +126,6 @@ public final class DNDJFCFPEMKOuterClass {
     public static final int NJDKKBAHHBD_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.OHLHICJIAFOOuterClass.OHLHICJIAFO nJDKKBAHHBD_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
      * @return Whether the nJDKKBAHHBD field is set.
      */
@@ -150,10 +134,6 @@ public final class DNDJFCFPEMKOuterClass {
       return nJDKKBAHHBD_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
      * @return The nJDKKBAHHBD.
      */
@@ -162,10 +142,6 @@ public final class DNDJFCFPEMKOuterClass {
       return nJDKKBAHHBD_ == null ? emu.grasscutter.net.proto.OHLHICJIAFOOuterClass.OHLHICJIAFO.getDefaultInstance() : nJDKKBAHHBD_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
      */
     @java.lang.Override
@@ -492,10 +468,6 @@ public final class DNDJFCFPEMKOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OHLHICJIAFOOuterClass.OHLHICJIAFO, emu.grasscutter.net.proto.OHLHICJIAFOOuterClass.OHLHICJIAFO.Builder, emu.grasscutter.net.proto.OHLHICJIAFOOuterClass.OHLHICJIAFOOrBuilder> nJDKKBAHHBDBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
        * @return Whether the nJDKKBAHHBD field is set.
        */
@@ -503,10 +475,6 @@ public final class DNDJFCFPEMKOuterClass {
         return nJDKKBAHHBDBuilder_ != null || nJDKKBAHHBD_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
        * @return The nJDKKBAHHBD.
        */
@@ -518,10 +486,6 @@ public final class DNDJFCFPEMKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
        */
       public Builder setNJDKKBAHHBD(emu.grasscutter.net.proto.OHLHICJIAFOOuterClass.OHLHICJIAFO value) {
@@ -538,10 +502,6 @@ public final class DNDJFCFPEMKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
        */
       public Builder setNJDKKBAHHBD(
@@ -556,10 +516,6 @@ public final class DNDJFCFPEMKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
        */
       public Builder mergeNJDKKBAHHBD(emu.grasscutter.net.proto.OHLHICJIAFOOuterClass.OHLHICJIAFO value) {
@@ -578,10 +534,6 @@ public final class DNDJFCFPEMKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
        */
       public Builder clearNJDKKBAHHBD() {
@@ -596,10 +548,6 @@ public final class DNDJFCFPEMKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
        */
       public emu.grasscutter.net.proto.OHLHICJIAFOOuterClass.OHLHICJIAFO.Builder getNJDKKBAHHBDBuilder() {
@@ -608,10 +556,6 @@ public final class DNDJFCFPEMKOuterClass {
         return getNJDKKBAHHBDFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
        */
       public emu.grasscutter.net.proto.OHLHICJIAFOOuterClass.OHLHICJIAFOOrBuilder getNJDKKBAHHBDOrBuilder() {
@@ -623,10 +567,6 @@ public final class DNDJFCFPEMKOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.OHLHICJIAFO NJDKKBAHHBD = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<

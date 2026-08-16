@@ -19,30 +19,22 @@ public final class FBMMEBGBFFBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LDPAEIGCDBJ = 7;</code>
      * @return The lDPAEIGCDBJ.
      */
     int getLDPAEIGCDBJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HDIKBBEMGGA = 3;</code>
      * @return The hDIKBBEMGGA.
      */
     boolean getHDIKBBEMGGA();
 
     /**
-     * <code>uint32 IFADGMHEFHF = 12;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 12;</code>
+     * @return The ugcGuid.
      */
-    int getIFADGMHEFHF();
+    int getUgcGuid();
   }
   /**
    * Protobuf type {@code FBMMEBGBFFB}
@@ -101,7 +93,7 @@ public final class FBMMEBGBFFBOuterClass {
             }
             case 96: {
 
-              iFADGMHEFHF_ = input.readUInt32();
+              ugcGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +131,6 @@ public final class FBMMEBGBFFBOuterClass {
     public static final int LDPAEIGCDBJ_FIELD_NUMBER = 7;
     private int lDPAEIGCDBJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LDPAEIGCDBJ = 7;</code>
      * @return The lDPAEIGCDBJ.
      */
@@ -154,10 +142,6 @@ public final class FBMMEBGBFFBOuterClass {
     public static final int HDIKBBEMGGA_FIELD_NUMBER = 3;
     private boolean hDIKBBEMGGA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool HDIKBBEMGGA = 3;</code>
      * @return The hDIKBBEMGGA.
      */
@@ -166,15 +150,15 @@ public final class FBMMEBGBFFBOuterClass {
       return hDIKBBEMGGA_;
     }
 
-    public static final int IFADGMHEFHF_FIELD_NUMBER = 12;
-    private int iFADGMHEFHF_;
+    public static final int UGC_GUID_FIELD_NUMBER = 12;
+    private int ugcGuid_;
     /**
-     * <code>uint32 IFADGMHEFHF = 12;</code>
-     * @return The iFADGMHEFHF.
+     * <code>uint32 ugc_guid = 12;</code>
+     * @return The ugcGuid.
      */
     @java.lang.Override
-    public int getIFADGMHEFHF() {
-      return iFADGMHEFHF_;
+    public int getUgcGuid() {
+      return ugcGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,8 +181,8 @@ public final class FBMMEBGBFFBOuterClass {
       if (lDPAEIGCDBJ_ != 0) {
         output.writeUInt32(7, lDPAEIGCDBJ_);
       }
-      if (iFADGMHEFHF_ != 0) {
-        output.writeUInt32(12, iFADGMHEFHF_);
+      if (ugcGuid_ != 0) {
+        output.writeUInt32(12, ugcGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -217,9 +201,9 @@ public final class FBMMEBGBFFBOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, lDPAEIGCDBJ_);
       }
-      if (iFADGMHEFHF_ != 0) {
+      if (ugcGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, iFADGMHEFHF_);
+          .computeUInt32Size(12, ugcGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -240,8 +224,8 @@ public final class FBMMEBGBFFBOuterClass {
           != other.getLDPAEIGCDBJ()) return false;
       if (getHDIKBBEMGGA()
           != other.getHDIKBBEMGGA()) return false;
-      if (getIFADGMHEFHF()
-          != other.getIFADGMHEFHF()) return false;
+      if (getUgcGuid()
+          != other.getUgcGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -258,8 +242,8 @@ public final class FBMMEBGBFFBOuterClass {
       hash = (37 * hash) + HDIKBBEMGGA_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getHDIKBBEMGGA());
-      hash = (37 * hash) + IFADGMHEFHF_FIELD_NUMBER;
-      hash = (53 * hash) + getIFADGMHEFHF();
+      hash = (37 * hash) + UGC_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getUgcGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -397,7 +381,7 @@ public final class FBMMEBGBFFBOuterClass {
 
         hDIKBBEMGGA_ = false;
 
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
 
         return this;
       }
@@ -427,7 +411,7 @@ public final class FBMMEBGBFFBOuterClass {
         emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB result = new emu.grasscutter.net.proto.FBMMEBGBFFBOuterClass.FBMMEBGBFFB(this);
         result.lDPAEIGCDBJ_ = lDPAEIGCDBJ_;
         result.hDIKBBEMGGA_ = hDIKBBEMGGA_;
-        result.iFADGMHEFHF_ = iFADGMHEFHF_;
+        result.ugcGuid_ = ugcGuid_;
         onBuilt();
         return result;
       }
@@ -482,8 +466,8 @@ public final class FBMMEBGBFFBOuterClass {
         if (other.getHDIKBBEMGGA() != false) {
           setHDIKBBEMGGA(other.getHDIKBBEMGGA());
         }
-        if (other.getIFADGMHEFHF() != 0) {
-          setIFADGMHEFHF(other.getIFADGMHEFHF());
+        if (other.getUgcGuid() != 0) {
+          setUgcGuid(other.getUgcGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -516,10 +500,6 @@ public final class FBMMEBGBFFBOuterClass {
 
       private int lDPAEIGCDBJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LDPAEIGCDBJ = 7;</code>
        * @return The lDPAEIGCDBJ.
        */
@@ -528,10 +508,6 @@ public final class FBMMEBGBFFBOuterClass {
         return lDPAEIGCDBJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LDPAEIGCDBJ = 7;</code>
        * @param value The lDPAEIGCDBJ to set.
        * @return This builder for chaining.
@@ -543,10 +519,6 @@ public final class FBMMEBGBFFBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LDPAEIGCDBJ = 7;</code>
        * @return This builder for chaining.
        */
@@ -559,10 +531,6 @@ public final class FBMMEBGBFFBOuterClass {
 
       private boolean hDIKBBEMGGA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HDIKBBEMGGA = 3;</code>
        * @return The hDIKBBEMGGA.
        */
@@ -571,10 +539,6 @@ public final class FBMMEBGBFFBOuterClass {
         return hDIKBBEMGGA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HDIKBBEMGGA = 3;</code>
        * @param value The hDIKBBEMGGA to set.
        * @return This builder for chaining.
@@ -586,10 +550,6 @@ public final class FBMMEBGBFFBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool HDIKBBEMGGA = 3;</code>
        * @return This builder for chaining.
        */
@@ -600,33 +560,33 @@ public final class FBMMEBGBFFBOuterClass {
         return this;
       }
 
-      private int iFADGMHEFHF_ ;
+      private int ugcGuid_ ;
       /**
-       * <code>uint32 IFADGMHEFHF = 12;</code>
-       * @return The iFADGMHEFHF.
+       * <code>uint32 ugc_guid = 12;</code>
+       * @return The ugcGuid.
        */
       @java.lang.Override
-      public int getIFADGMHEFHF() {
-        return iFADGMHEFHF_;
+      public int getUgcGuid() {
+        return ugcGuid_;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 12;</code>
-       * @param value The iFADGMHEFHF to set.
+       * <code>uint32 ugc_guid = 12;</code>
+       * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setIFADGMHEFHF(int value) {
+      public Builder setUgcGuid(int value) {
         
-        iFADGMHEFHF_ = value;
+        ugcGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFADGMHEFHF = 12;</code>
+       * <code>uint32 ugc_guid = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFADGMHEFHF() {
+      public Builder clearUgcGuid() {
         
-        iFADGMHEFHF_ = 0;
+        ugcGuid_ = 0;
         onChanged();
         return this;
       }
@@ -697,10 +657,10 @@ public final class FBMMEBGBFFBOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021FBMMEBGBFFB.proto\"L\n\013FBMMEBGBFFB\022\023\n\013LD" +
-      "PAEIGCDBJ\030\007 \001(\r\022\023\n\013HDIKBBEMGGA\030\003 \001(\010\022\023\n\013" +
-      "IFADGMHEFHF\030\014 \001(\rB\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\n\021FBMMEBGBFFB.proto\"I\n\013FBMMEBGBFFB\022\023\n\013LD" +
+      "PAEIGCDBJ\030\007 \001(\r\022\023\n\013HDIKBBEMGGA\030\003 \001(\010\022\020\n\010" +
+      "ugc_guid\030\014 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -711,7 +671,7 @@ public final class FBMMEBGBFFBOuterClass {
     internal_static_FBMMEBGBFFB_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FBMMEBGBFFB_descriptor,
-        new java.lang.String[] { "LDPAEIGCDBJ", "HDIKBBEMGGA", "IFADGMHEFHF", });
+        new java.lang.String[] { "LDPAEIGCDBJ", "HDIKBBEMGGA", "UgcGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

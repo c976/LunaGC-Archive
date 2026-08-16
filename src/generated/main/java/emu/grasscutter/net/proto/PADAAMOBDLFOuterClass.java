@@ -19,30 +19,18 @@ public final class PADAAMOBDLFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 dungeon_id = 10;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 1;</code>
      * @return The oMEBOHLACPH.
      */
     int getOMEBOHLACPH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
@@ -143,10 +131,6 @@ public final class PADAAMOBDLFOuterClass {
     public static final int DUNGEON_ID_FIELD_NUMBER = 10;
     private int dungeonId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 dungeon_id = 10;</code>
      * @return The dungeonId.
      */
@@ -158,10 +142,6 @@ public final class PADAAMOBDLFOuterClass {
     public static final int OMEBOHLACPH_FIELD_NUMBER = 1;
     private int oMEBOHLACPH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OMEBOHLACPH = 1;</code>
      * @return The oMEBOHLACPH.
      */
@@ -173,10 +153,6 @@ public final class PADAAMOBDLFOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 4;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
@@ -524,10 +500,6 @@ public final class PADAAMOBDLFOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 10;</code>
        * @return The dungeonId.
        */
@@ -536,10 +508,6 @@ public final class PADAAMOBDLFOuterClass {
         return dungeonId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 10;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class PADAAMOBDLFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 dungeon_id = 10;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class PADAAMOBDLFOuterClass {
 
       private int oMEBOHLACPH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 1;</code>
        * @return The oMEBOHLACPH.
        */
@@ -579,10 +539,6 @@ public final class PADAAMOBDLFOuterClass {
         return oMEBOHLACPH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 1;</code>
        * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class PADAAMOBDLFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OMEBOHLACPH = 1;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class PADAAMOBDLFOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return The isOpen.
        */
@@ -622,10 +570,6 @@ public final class PADAAMOBDLFOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class PADAAMOBDLFOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 4;</code>
        * @return This builder for chaining.
        */

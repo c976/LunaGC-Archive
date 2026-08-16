@@ -19,62 +19,39 @@ public final class HomeResourceNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>.HomeResource HKDGHEDBPNL = 3;</code>
-     * @return Whether the hKDGHEDBPNL field is set.
+     * <code>.HomeResource fetter_exp = 1;</code>
+     * @return Whether the fetterExp field is set.
      */
-    boolean hasHKDGHEDBPNL();
+    boolean hasFetterExp();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>.HomeResource HKDGHEDBPNL = 3;</code>
-     * @return The hKDGHEDBPNL.
+     * <code>.HomeResource fetter_exp = 1;</code>
+     * @return The fetterExp.
      */
-    emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getHKDGHEDBPNL();
+    emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getFetterExp();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>.HomeResource HKDGHEDBPNL = 3;</code>
+     * <code>.HomeResource fetter_exp = 1;</code>
      */
-    emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getHKDGHEDBPNLOrBuilder();
+    emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getFetterExpOrBuilder();
 
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.HomeResource EIJNEDADFGP = 6;</code>
-     * @return Whether the eIJNEDADFGP field is set.
+     * <code>.HomeResource home_coin = 12;</code>
+     * @return Whether the homeCoin field is set.
      */
-    boolean hasEIJNEDADFGP();
+    boolean hasHomeCoin();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.HomeResource EIJNEDADFGP = 6;</code>
-     * @return The eIJNEDADFGP.
+     * <code>.HomeResource home_coin = 12;</code>
+     * @return The homeCoin.
      */
-    emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getEIJNEDADFGP();
+    emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getHomeCoin();
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.HomeResource EIJNEDADFGP = 6;</code>
+     * <code>.HomeResource home_coin = 12;</code>
      */
-    emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getEIJNEDADFGPOrBuilder();
+    emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getHomeCoinOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 26346
+   * CmdId: 5204
+   * Obf: MCCGNBOJCCK
    * </pre>
    *
    * Protobuf type {@code HomeResourceNotify}
@@ -121,28 +98,28 @@ public final class HomeResourceNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 10: {
               emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder subBuilder = null;
-              if (hKDGHEDBPNL_ != null) {
-                subBuilder = hKDGHEDBPNL_.toBuilder();
+              if (fetterExp_ != null) {
+                subBuilder = fetterExp_.toBuilder();
               }
-              hKDGHEDBPNL_ = input.readMessage(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.parser(), extensionRegistry);
+              fetterExp_ = input.readMessage(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(hKDGHEDBPNL_);
-                hKDGHEDBPNL_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(fetterExp_);
+                fetterExp_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 50: {
+            case 98: {
               emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder subBuilder = null;
-              if (eIJNEDADFGP_ != null) {
-                subBuilder = eIJNEDADFGP_.toBuilder();
+              if (homeCoin_ != null) {
+                subBuilder = homeCoin_.toBuilder();
               }
-              eIJNEDADFGP_ = input.readMessage(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.parser(), extensionRegistry);
+              homeCoin_ = input.readMessage(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(eIJNEDADFGP_);
-                eIJNEDADFGP_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(homeCoin_);
+                homeCoin_ = subBuilder.buildPartial();
               }
 
               break;
@@ -179,80 +156,56 @@ public final class HomeResourceNotifyOuterClass {
               emu.grasscutter.net.proto.HomeResourceNotifyOuterClass.HomeResourceNotify.class, emu.grasscutter.net.proto.HomeResourceNotifyOuterClass.HomeResourceNotify.Builder.class);
     }
 
-    public static final int HKDGHEDBPNL_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource hKDGHEDBPNL_;
+    public static final int FETTER_EXP_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource fetterExp_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>.HomeResource HKDGHEDBPNL = 3;</code>
-     * @return Whether the hKDGHEDBPNL field is set.
+     * <code>.HomeResource fetter_exp = 1;</code>
+     * @return Whether the fetterExp field is set.
      */
     @java.lang.Override
-    public boolean hasHKDGHEDBPNL() {
-      return hKDGHEDBPNL_ != null;
+    public boolean hasFetterExp() {
+      return fetterExp_ != null;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>.HomeResource HKDGHEDBPNL = 3;</code>
-     * @return The hKDGHEDBPNL.
+     * <code>.HomeResource fetter_exp = 1;</code>
+     * @return The fetterExp.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getHKDGHEDBPNL() {
-      return hKDGHEDBPNL_ == null ? emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : hKDGHEDBPNL_;
+    public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getFetterExp() {
+      return fetterExp_ == null ? emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : fetterExp_;
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>.HomeResource HKDGHEDBPNL = 3;</code>
+     * <code>.HomeResource fetter_exp = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getHKDGHEDBPNLOrBuilder() {
-      return getHKDGHEDBPNL();
+    public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getFetterExpOrBuilder() {
+      return getFetterExp();
     }
 
-    public static final int EIJNEDADFGP_FIELD_NUMBER = 6;
-    private emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource eIJNEDADFGP_;
+    public static final int HOME_COIN_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource homeCoin_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.HomeResource EIJNEDADFGP = 6;</code>
-     * @return Whether the eIJNEDADFGP field is set.
+     * <code>.HomeResource home_coin = 12;</code>
+     * @return Whether the homeCoin field is set.
      */
     @java.lang.Override
-    public boolean hasEIJNEDADFGP() {
-      return eIJNEDADFGP_ != null;
+    public boolean hasHomeCoin() {
+      return homeCoin_ != null;
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.HomeResource EIJNEDADFGP = 6;</code>
-     * @return The eIJNEDADFGP.
+     * <code>.HomeResource home_coin = 12;</code>
+     * @return The homeCoin.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getEIJNEDADFGP() {
-      return eIJNEDADFGP_ == null ? emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : eIJNEDADFGP_;
+    public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getHomeCoin() {
+      return homeCoin_ == null ? emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : homeCoin_;
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>.HomeResource EIJNEDADFGP = 6;</code>
+     * <code>.HomeResource home_coin = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getEIJNEDADFGPOrBuilder() {
-      return getEIJNEDADFGP();
+    public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getHomeCoinOrBuilder() {
+      return getHomeCoin();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -269,11 +222,11 @@ public final class HomeResourceNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hKDGHEDBPNL_ != null) {
-        output.writeMessage(3, getHKDGHEDBPNL());
+      if (fetterExp_ != null) {
+        output.writeMessage(1, getFetterExp());
       }
-      if (eIJNEDADFGP_ != null) {
-        output.writeMessage(6, getEIJNEDADFGP());
+      if (homeCoin_ != null) {
+        output.writeMessage(12, getHomeCoin());
       }
       unknownFields.writeTo(output);
     }
@@ -284,13 +237,13 @@ public final class HomeResourceNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hKDGHEDBPNL_ != null) {
+      if (fetterExp_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getHKDGHEDBPNL());
+          .computeMessageSize(1, getFetterExp());
       }
-      if (eIJNEDADFGP_ != null) {
+      if (homeCoin_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getEIJNEDADFGP());
+          .computeMessageSize(12, getHomeCoin());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,15 +260,15 @@ public final class HomeResourceNotifyOuterClass {
       }
       emu.grasscutter.net.proto.HomeResourceNotifyOuterClass.HomeResourceNotify other = (emu.grasscutter.net.proto.HomeResourceNotifyOuterClass.HomeResourceNotify) obj;
 
-      if (hasHKDGHEDBPNL() != other.hasHKDGHEDBPNL()) return false;
-      if (hasHKDGHEDBPNL()) {
-        if (!getHKDGHEDBPNL()
-            .equals(other.getHKDGHEDBPNL())) return false;
+      if (hasFetterExp() != other.hasFetterExp()) return false;
+      if (hasFetterExp()) {
+        if (!getFetterExp()
+            .equals(other.getFetterExp())) return false;
       }
-      if (hasEIJNEDADFGP() != other.hasEIJNEDADFGP()) return false;
-      if (hasEIJNEDADFGP()) {
-        if (!getEIJNEDADFGP()
-            .equals(other.getEIJNEDADFGP())) return false;
+      if (hasHomeCoin() != other.hasHomeCoin()) return false;
+      if (hasHomeCoin()) {
+        if (!getHomeCoin()
+            .equals(other.getHomeCoin())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -328,13 +281,13 @@ public final class HomeResourceNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasHKDGHEDBPNL()) {
-        hash = (37 * hash) + HKDGHEDBPNL_FIELD_NUMBER;
-        hash = (53 * hash) + getHKDGHEDBPNL().hashCode();
+      if (hasFetterExp()) {
+        hash = (37 * hash) + FETTER_EXP_FIELD_NUMBER;
+        hash = (53 * hash) + getFetterExp().hashCode();
       }
-      if (hasEIJNEDADFGP()) {
-        hash = (37 * hash) + EIJNEDADFGP_FIELD_NUMBER;
-        hash = (53 * hash) + getEIJNEDADFGP().hashCode();
+      if (hasHomeCoin()) {
+        hash = (37 * hash) + HOME_COIN_FIELD_NUMBER;
+        hash = (53 * hash) + getHomeCoin().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -433,7 +386,8 @@ public final class HomeResourceNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26346
+     * CmdId: 5204
+     * Obf: MCCGNBOJCCK
      * </pre>
      *
      * Protobuf type {@code HomeResourceNotify}
@@ -473,17 +427,17 @@ public final class HomeResourceNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (hKDGHEDBPNLBuilder_ == null) {
-          hKDGHEDBPNL_ = null;
+        if (fetterExpBuilder_ == null) {
+          fetterExp_ = null;
         } else {
-          hKDGHEDBPNL_ = null;
-          hKDGHEDBPNLBuilder_ = null;
+          fetterExp_ = null;
+          fetterExpBuilder_ = null;
         }
-        if (eIJNEDADFGPBuilder_ == null) {
-          eIJNEDADFGP_ = null;
+        if (homeCoinBuilder_ == null) {
+          homeCoin_ = null;
         } else {
-          eIJNEDADFGP_ = null;
-          eIJNEDADFGPBuilder_ = null;
+          homeCoin_ = null;
+          homeCoinBuilder_ = null;
         }
         return this;
       }
@@ -511,15 +465,15 @@ public final class HomeResourceNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeResourceNotifyOuterClass.HomeResourceNotify buildPartial() {
         emu.grasscutter.net.proto.HomeResourceNotifyOuterClass.HomeResourceNotify result = new emu.grasscutter.net.proto.HomeResourceNotifyOuterClass.HomeResourceNotify(this);
-        if (hKDGHEDBPNLBuilder_ == null) {
-          result.hKDGHEDBPNL_ = hKDGHEDBPNL_;
+        if (fetterExpBuilder_ == null) {
+          result.fetterExp_ = fetterExp_;
         } else {
-          result.hKDGHEDBPNL_ = hKDGHEDBPNLBuilder_.build();
+          result.fetterExp_ = fetterExpBuilder_.build();
         }
-        if (eIJNEDADFGPBuilder_ == null) {
-          result.eIJNEDADFGP_ = eIJNEDADFGP_;
+        if (homeCoinBuilder_ == null) {
+          result.homeCoin_ = homeCoin_;
         } else {
-          result.eIJNEDADFGP_ = eIJNEDADFGPBuilder_.build();
+          result.homeCoin_ = homeCoinBuilder_.build();
         }
         onBuilt();
         return result;
@@ -569,11 +523,11 @@ public final class HomeResourceNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeResourceNotifyOuterClass.HomeResourceNotify other) {
         if (other == emu.grasscutter.net.proto.HomeResourceNotifyOuterClass.HomeResourceNotify.getDefaultInstance()) return this;
-        if (other.hasHKDGHEDBPNL()) {
-          mergeHKDGHEDBPNL(other.getHKDGHEDBPNL());
+        if (other.hasFetterExp()) {
+          mergeFetterExp(other.getFetterExp());
         }
-        if (other.hasEIJNEDADFGP()) {
-          mergeEIJNEDADFGP(other.getEIJNEDADFGP());
+        if (other.hasHomeCoin()) {
+          mergeHomeCoin(other.getHomeCoin());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -604,314 +558,242 @@ public final class HomeResourceNotifyOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource hKDGHEDBPNL_;
+      private emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource fetterExp_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder> hKDGHEDBPNLBuilder_;
+          emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder> fetterExpBuilder_;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>.HomeResource HKDGHEDBPNL = 3;</code>
-       * @return Whether the hKDGHEDBPNL field is set.
+       * <code>.HomeResource fetter_exp = 1;</code>
+       * @return Whether the fetterExp field is set.
        */
-      public boolean hasHKDGHEDBPNL() {
-        return hKDGHEDBPNLBuilder_ != null || hKDGHEDBPNL_ != null;
+      public boolean hasFetterExp() {
+        return fetterExpBuilder_ != null || fetterExp_ != null;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>.HomeResource HKDGHEDBPNL = 3;</code>
-       * @return The hKDGHEDBPNL.
+       * <code>.HomeResource fetter_exp = 1;</code>
+       * @return The fetterExp.
        */
-      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getHKDGHEDBPNL() {
-        if (hKDGHEDBPNLBuilder_ == null) {
-          return hKDGHEDBPNL_ == null ? emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : hKDGHEDBPNL_;
+      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getFetterExp() {
+        if (fetterExpBuilder_ == null) {
+          return fetterExp_ == null ? emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : fetterExp_;
         } else {
-          return hKDGHEDBPNLBuilder_.getMessage();
+          return fetterExpBuilder_.getMessage();
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>.HomeResource HKDGHEDBPNL = 3;</code>
+       * <code>.HomeResource fetter_exp = 1;</code>
        */
-      public Builder setHKDGHEDBPNL(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource value) {
-        if (hKDGHEDBPNLBuilder_ == null) {
+      public Builder setFetterExp(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource value) {
+        if (fetterExpBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          hKDGHEDBPNL_ = value;
+          fetterExp_ = value;
           onChanged();
         } else {
-          hKDGHEDBPNLBuilder_.setMessage(value);
+          fetterExpBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>.HomeResource HKDGHEDBPNL = 3;</code>
+       * <code>.HomeResource fetter_exp = 1;</code>
        */
-      public Builder setHKDGHEDBPNL(
+      public Builder setFetterExp(
           emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder builderForValue) {
-        if (hKDGHEDBPNLBuilder_ == null) {
-          hKDGHEDBPNL_ = builderForValue.build();
+        if (fetterExpBuilder_ == null) {
+          fetterExp_ = builderForValue.build();
           onChanged();
         } else {
-          hKDGHEDBPNLBuilder_.setMessage(builderForValue.build());
+          fetterExpBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>.HomeResource HKDGHEDBPNL = 3;</code>
+       * <code>.HomeResource fetter_exp = 1;</code>
        */
-      public Builder mergeHKDGHEDBPNL(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource value) {
-        if (hKDGHEDBPNLBuilder_ == null) {
-          if (hKDGHEDBPNL_ != null) {
-            hKDGHEDBPNL_ =
-              emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.newBuilder(hKDGHEDBPNL_).mergeFrom(value).buildPartial();
+      public Builder mergeFetterExp(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource value) {
+        if (fetterExpBuilder_ == null) {
+          if (fetterExp_ != null) {
+            fetterExp_ =
+              emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.newBuilder(fetterExp_).mergeFrom(value).buildPartial();
           } else {
-            hKDGHEDBPNL_ = value;
+            fetterExp_ = value;
           }
           onChanged();
         } else {
-          hKDGHEDBPNLBuilder_.mergeFrom(value);
+          fetterExpBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>.HomeResource HKDGHEDBPNL = 3;</code>
+       * <code>.HomeResource fetter_exp = 1;</code>
        */
-      public Builder clearHKDGHEDBPNL() {
-        if (hKDGHEDBPNLBuilder_ == null) {
-          hKDGHEDBPNL_ = null;
+      public Builder clearFetterExp() {
+        if (fetterExpBuilder_ == null) {
+          fetterExp_ = null;
           onChanged();
         } else {
-          hKDGHEDBPNL_ = null;
-          hKDGHEDBPNLBuilder_ = null;
+          fetterExp_ = null;
+          fetterExpBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>.HomeResource HKDGHEDBPNL = 3;</code>
+       * <code>.HomeResource fetter_exp = 1;</code>
        */
-      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder getHKDGHEDBPNLBuilder() {
+      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder getFetterExpBuilder() {
         
         onChanged();
-        return getHKDGHEDBPNLFieldBuilder().getBuilder();
+        return getFetterExpFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>.HomeResource HKDGHEDBPNL = 3;</code>
+       * <code>.HomeResource fetter_exp = 1;</code>
        */
-      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getHKDGHEDBPNLOrBuilder() {
-        if (hKDGHEDBPNLBuilder_ != null) {
-          return hKDGHEDBPNLBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getFetterExpOrBuilder() {
+        if (fetterExpBuilder_ != null) {
+          return fetterExpBuilder_.getMessageOrBuilder();
         } else {
-          return hKDGHEDBPNL_ == null ?
-              emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : hKDGHEDBPNL_;
+          return fetterExp_ == null ?
+              emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : fetterExp_;
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>.HomeResource HKDGHEDBPNL = 3;</code>
+       * <code>.HomeResource fetter_exp = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder> 
-          getHKDGHEDBPNLFieldBuilder() {
-        if (hKDGHEDBPNLBuilder_ == null) {
-          hKDGHEDBPNLBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getFetterExpFieldBuilder() {
+        if (fetterExpBuilder_ == null) {
+          fetterExpBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder>(
-                  getHKDGHEDBPNL(),
+                  getFetterExp(),
                   getParentForChildren(),
                   isClean());
-          hKDGHEDBPNL_ = null;
+          fetterExp_ = null;
         }
-        return hKDGHEDBPNLBuilder_;
+        return fetterExpBuilder_;
       }
 
-      private emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource eIJNEDADFGP_;
+      private emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource homeCoin_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder> eIJNEDADFGPBuilder_;
+          emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder> homeCoinBuilder_;
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.HomeResource EIJNEDADFGP = 6;</code>
-       * @return Whether the eIJNEDADFGP field is set.
+       * <code>.HomeResource home_coin = 12;</code>
+       * @return Whether the homeCoin field is set.
        */
-      public boolean hasEIJNEDADFGP() {
-        return eIJNEDADFGPBuilder_ != null || eIJNEDADFGP_ != null;
+      public boolean hasHomeCoin() {
+        return homeCoinBuilder_ != null || homeCoin_ != null;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.HomeResource EIJNEDADFGP = 6;</code>
-       * @return The eIJNEDADFGP.
+       * <code>.HomeResource home_coin = 12;</code>
+       * @return The homeCoin.
        */
-      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getEIJNEDADFGP() {
-        if (eIJNEDADFGPBuilder_ == null) {
-          return eIJNEDADFGP_ == null ? emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : eIJNEDADFGP_;
+      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource getHomeCoin() {
+        if (homeCoinBuilder_ == null) {
+          return homeCoin_ == null ? emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : homeCoin_;
         } else {
-          return eIJNEDADFGPBuilder_.getMessage();
+          return homeCoinBuilder_.getMessage();
         }
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.HomeResource EIJNEDADFGP = 6;</code>
+       * <code>.HomeResource home_coin = 12;</code>
        */
-      public Builder setEIJNEDADFGP(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource value) {
-        if (eIJNEDADFGPBuilder_ == null) {
+      public Builder setHomeCoin(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource value) {
+        if (homeCoinBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          eIJNEDADFGP_ = value;
+          homeCoin_ = value;
           onChanged();
         } else {
-          eIJNEDADFGPBuilder_.setMessage(value);
+          homeCoinBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.HomeResource EIJNEDADFGP = 6;</code>
+       * <code>.HomeResource home_coin = 12;</code>
        */
-      public Builder setEIJNEDADFGP(
+      public Builder setHomeCoin(
           emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder builderForValue) {
-        if (eIJNEDADFGPBuilder_ == null) {
-          eIJNEDADFGP_ = builderForValue.build();
+        if (homeCoinBuilder_ == null) {
+          homeCoin_ = builderForValue.build();
           onChanged();
         } else {
-          eIJNEDADFGPBuilder_.setMessage(builderForValue.build());
+          homeCoinBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.HomeResource EIJNEDADFGP = 6;</code>
+       * <code>.HomeResource home_coin = 12;</code>
        */
-      public Builder mergeEIJNEDADFGP(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource value) {
-        if (eIJNEDADFGPBuilder_ == null) {
-          if (eIJNEDADFGP_ != null) {
-            eIJNEDADFGP_ =
-              emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.newBuilder(eIJNEDADFGP_).mergeFrom(value).buildPartial();
+      public Builder mergeHomeCoin(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource value) {
+        if (homeCoinBuilder_ == null) {
+          if (homeCoin_ != null) {
+            homeCoin_ =
+              emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.newBuilder(homeCoin_).mergeFrom(value).buildPartial();
           } else {
-            eIJNEDADFGP_ = value;
+            homeCoin_ = value;
           }
           onChanged();
         } else {
-          eIJNEDADFGPBuilder_.mergeFrom(value);
+          homeCoinBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.HomeResource EIJNEDADFGP = 6;</code>
+       * <code>.HomeResource home_coin = 12;</code>
        */
-      public Builder clearEIJNEDADFGP() {
-        if (eIJNEDADFGPBuilder_ == null) {
-          eIJNEDADFGP_ = null;
+      public Builder clearHomeCoin() {
+        if (homeCoinBuilder_ == null) {
+          homeCoin_ = null;
           onChanged();
         } else {
-          eIJNEDADFGP_ = null;
-          eIJNEDADFGPBuilder_ = null;
+          homeCoin_ = null;
+          homeCoinBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.HomeResource EIJNEDADFGP = 6;</code>
+       * <code>.HomeResource home_coin = 12;</code>
        */
-      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder getEIJNEDADFGPBuilder() {
+      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder getHomeCoinBuilder() {
         
         onChanged();
-        return getEIJNEDADFGPFieldBuilder().getBuilder();
+        return getHomeCoinFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.HomeResource EIJNEDADFGP = 6;</code>
+       * <code>.HomeResource home_coin = 12;</code>
        */
-      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getEIJNEDADFGPOrBuilder() {
-        if (eIJNEDADFGPBuilder_ != null) {
-          return eIJNEDADFGPBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder getHomeCoinOrBuilder() {
+        if (homeCoinBuilder_ != null) {
+          return homeCoinBuilder_.getMessageOrBuilder();
         } else {
-          return eIJNEDADFGP_ == null ?
-              emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : eIJNEDADFGP_;
+          return homeCoin_ == null ?
+              emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance() : homeCoin_;
         }
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>.HomeResource EIJNEDADFGP = 6;</code>
+       * <code>.HomeResource home_coin = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder> 
-          getEIJNEDADFGPFieldBuilder() {
-        if (eIJNEDADFGPBuilder_ == null) {
-          eIJNEDADFGPBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getHomeCoinFieldBuilder() {
+        if (homeCoinBuilder_ == null) {
+          homeCoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResourceOrBuilder>(
-                  getEIJNEDADFGP(),
+                  getHomeCoin(),
                   getParentForChildren(),
                   isClean());
-          eIJNEDADFGP_ = null;
+          homeCoin_ = null;
         }
-        return eIJNEDADFGPBuilder_;
+        return homeCoinBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -981,10 +863,10 @@ public final class HomeResourceNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030HomeResourceNotify.proto\032\022HomeResource" +
-      ".proto\"\\\n\022HomeResourceNotify\022\"\n\013HKDGHEDB" +
-      "PNL\030\003 \001(\0132\r.HomeResource\022\"\n\013EIJNEDADFGP\030" +
-      "\006 \001(\0132\r.HomeResourceB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      ".proto\"Y\n\022HomeResourceNotify\022!\n\nfetter_e" +
+      "xp\030\001 \001(\0132\r.HomeResource\022 \n\thome_coin\030\014 \001" +
+      "(\0132\r.HomeResourceB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -996,7 +878,7 @@ public final class HomeResourceNotifyOuterClass {
     internal_static_HomeResourceNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeResourceNotify_descriptor,
-        new java.lang.String[] { "HKDGHEDBPNL", "EIJNEDADFGP", });
+        new java.lang.String[] { "FetterExp", "HomeCoin", });
     emu.grasscutter.net.proto.HomeResourceOuterClass.getDescriptor();
   }
 

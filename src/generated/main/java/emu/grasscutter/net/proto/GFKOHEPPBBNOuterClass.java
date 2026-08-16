@@ -19,50 +19,30 @@ public final class GFKOHEPPBBNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 5;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LMLPJNHHHCG = 9;</code>
      * @return The lMLPJNHHHCG.
      */
     int getLMLPJNHHHCG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ECFCFIOBOMA = 7;</code>
      * @return The eCFCFIOBOMA.
      */
     int getECFCFIOBOMA();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 progress = 11;</code>
      * @return The progress.
      */
@@ -173,10 +153,6 @@ public final class GFKOHEPPBBNOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 5;
     private int openTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 open_time = 5;</code>
      * @return The openTime.
      */
@@ -188,10 +164,6 @@ public final class GFKOHEPPBBNOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
@@ -203,10 +175,6 @@ public final class GFKOHEPPBBNOuterClass {
     public static final int LMLPJNHHHCG_FIELD_NUMBER = 9;
     private int lMLPJNHHHCG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LMLPJNHHHCG = 9;</code>
      * @return The lMLPJNHHHCG.
      */
@@ -218,10 +186,6 @@ public final class GFKOHEPPBBNOuterClass {
     public static final int ECFCFIOBOMA_FIELD_NUMBER = 7;
     private int eCFCFIOBOMA_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ECFCFIOBOMA = 7;</code>
      * @return The eCFCFIOBOMA.
      */
@@ -233,10 +197,6 @@ public final class GFKOHEPPBBNOuterClass {
     public static final int PROGRESS_FIELD_NUMBER = 11;
     private int progress_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 progress = 11;</code>
      * @return The progress.
      */
@@ -618,10 +578,6 @@ public final class GFKOHEPPBBNOuterClass {
 
       private int openTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 5;</code>
        * @return The openTime.
        */
@@ -630,10 +586,6 @@ public final class GFKOHEPPBBNOuterClass {
         return openTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 5;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
@@ -645,10 +597,6 @@ public final class GFKOHEPPBBNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 open_time = 5;</code>
        * @return This builder for chaining.
        */
@@ -661,10 +609,6 @@ public final class GFKOHEPPBBNOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
@@ -673,10 +617,6 @@ public final class GFKOHEPPBBNOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -688,10 +628,6 @@ public final class GFKOHEPPBBNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
@@ -704,10 +640,6 @@ public final class GFKOHEPPBBNOuterClass {
 
       private int lMLPJNHHHCG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LMLPJNHHHCG = 9;</code>
        * @return The lMLPJNHHHCG.
        */
@@ -716,10 +648,6 @@ public final class GFKOHEPPBBNOuterClass {
         return lMLPJNHHHCG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LMLPJNHHHCG = 9;</code>
        * @param value The lMLPJNHHHCG to set.
        * @return This builder for chaining.
@@ -731,10 +659,6 @@ public final class GFKOHEPPBBNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LMLPJNHHHCG = 9;</code>
        * @return This builder for chaining.
        */
@@ -747,10 +671,6 @@ public final class GFKOHEPPBBNOuterClass {
 
       private int eCFCFIOBOMA_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECFCFIOBOMA = 7;</code>
        * @return The eCFCFIOBOMA.
        */
@@ -759,10 +679,6 @@ public final class GFKOHEPPBBNOuterClass {
         return eCFCFIOBOMA_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECFCFIOBOMA = 7;</code>
        * @param value The eCFCFIOBOMA to set.
        * @return This builder for chaining.
@@ -774,10 +690,6 @@ public final class GFKOHEPPBBNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ECFCFIOBOMA = 7;</code>
        * @return This builder for chaining.
        */
@@ -790,10 +702,6 @@ public final class GFKOHEPPBBNOuterClass {
 
       private int progress_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 progress = 11;</code>
        * @return The progress.
        */
@@ -802,10 +710,6 @@ public final class GFKOHEPPBBNOuterClass {
         return progress_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 progress = 11;</code>
        * @param value The progress to set.
        * @return This builder for chaining.
@@ -817,10 +721,6 @@ public final class GFKOHEPPBBNOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 progress = 11;</code>
        * @return This builder for chaining.
        */

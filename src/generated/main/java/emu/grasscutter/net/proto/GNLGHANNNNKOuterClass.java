@@ -19,26 +19,18 @@ public final class GNLGHANNNNKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 EGHGENOJNEK = 8;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 8;</code>
+     * @return The stageId.
      */
-    int getEGHGENOJNEK();
+    int getStageId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 6;</code>
      * @return The finishTime.
      */
@@ -96,7 +88,7 @@ public final class GNLGHANNNNKOuterClass {
             }
             case 64: {
 
-              eGHGENOJNEK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 80: {
@@ -139,10 +131,6 @@ public final class GNLGHANNNNKOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 10;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 10;</code>
      * @return The isOpen.
      */
@@ -151,24 +139,20 @@ public final class GNLGHANNNNKOuterClass {
       return isOpen_;
     }
 
-    public static final int EGHGENOJNEK_FIELD_NUMBER = 8;
-    private int eGHGENOJNEK_;
+    public static final int STAGE_ID_FIELD_NUMBER = 8;
+    private int stageId_;
     /**
-     * <code>uint32 EGHGENOJNEK = 8;</code>
-     * @return The eGHGENOJNEK.
+     * <code>uint32 stage_id = 8;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getEGHGENOJNEK() {
-      return eGHGENOJNEK_;
+    public int getStageId() {
+      return stageId_;
     }
 
     public static final int FINISH_TIME_FIELD_NUMBER = 6;
     private int finishTime_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 finish_time = 6;</code>
      * @return The finishTime.
      */
@@ -194,8 +178,8 @@ public final class GNLGHANNNNKOuterClass {
       if (finishTime_ != 0) {
         output.writeUInt32(6, finishTime_);
       }
-      if (eGHGENOJNEK_ != 0) {
-        output.writeUInt32(8, eGHGENOJNEK_);
+      if (stageId_ != 0) {
+        output.writeUInt32(8, stageId_);
       }
       if (isOpen_ != false) {
         output.writeBool(10, isOpen_);
@@ -213,9 +197,9 @@ public final class GNLGHANNNNKOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, finishTime_);
       }
-      if (eGHGENOJNEK_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, eGHGENOJNEK_);
+          .computeUInt32Size(8, stageId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -238,8 +222,8 @@ public final class GNLGHANNNNKOuterClass {
 
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (getEGHGENOJNEK()
-          != other.getEGHGENOJNEK()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (getFinishTime()
           != other.getFinishTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -256,8 +240,8 @@ public final class GNLGHANNNNKOuterClass {
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + EGHGENOJNEK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGHGENOJNEK();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + FINISH_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getFinishTime();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -395,7 +379,7 @@ public final class GNLGHANNNNKOuterClass {
         super.clear();
         isOpen_ = false;
 
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
 
         finishTime_ = 0;
 
@@ -426,7 +410,7 @@ public final class GNLGHANNNNKOuterClass {
       public emu.grasscutter.net.proto.GNLGHANNNNKOuterClass.GNLGHANNNNK buildPartial() {
         emu.grasscutter.net.proto.GNLGHANNNNKOuterClass.GNLGHANNNNK result = new emu.grasscutter.net.proto.GNLGHANNNNKOuterClass.GNLGHANNNNK(this);
         result.isOpen_ = isOpen_;
-        result.eGHGENOJNEK_ = eGHGENOJNEK_;
+        result.stageId_ = stageId_;
         result.finishTime_ = finishTime_;
         onBuilt();
         return result;
@@ -479,8 +463,8 @@ public final class GNLGHANNNNKOuterClass {
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        if (other.getEGHGENOJNEK() != 0) {
-          setEGHGENOJNEK(other.getEGHGENOJNEK());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         if (other.getFinishTime() != 0) {
           setFinishTime(other.getFinishTime());
@@ -516,10 +500,6 @@ public final class GNLGHANNNNKOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @return The isOpen.
        */
@@ -528,10 +508,6 @@ public final class GNLGHANNNNKOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -543,10 +519,6 @@ public final class GNLGHANNNNKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 10;</code>
        * @return This builder for chaining.
        */
@@ -557,43 +529,39 @@ public final class GNLGHANNNNKOuterClass {
         return this;
       }
 
-      private int eGHGENOJNEK_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 EGHGENOJNEK = 8;</code>
-       * @return The eGHGENOJNEK.
+       * <code>uint32 stage_id = 8;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getEGHGENOJNEK() {
-        return eGHGENOJNEK_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 8;</code>
-       * @param value The eGHGENOJNEK to set.
+       * <code>uint32 stage_id = 8;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setEGHGENOJNEK(int value) {
+      public Builder setStageId(int value) {
         
-        eGHGENOJNEK_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EGHGENOJNEK = 8;</code>
+       * <code>uint32 stage_id = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEGHGENOJNEK() {
+      public Builder clearStageId() {
         
-        eGHGENOJNEK_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
 
       private int finishTime_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 6;</code>
        * @return The finishTime.
        */
@@ -602,10 +570,6 @@ public final class GNLGHANNNNKOuterClass {
         return finishTime_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 6;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
@@ -617,10 +581,6 @@ public final class GNLGHANNNNKOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 finish_time = 6;</code>
        * @return This builder for chaining.
        */
@@ -697,10 +657,10 @@ public final class GNLGHANNNNKOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021GNLGHANNNNK.proto\"H\n\013GNLGHANNNNK\022\017\n\007is" +
-      "_open\030\n \001(\010\022\023\n\013EGHGENOJNEK\030\010 \001(\r\022\023\n\013fini" +
-      "sh_time\030\006 \001(\rB\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n\021GNLGHANNNNK.proto\"E\n\013GNLGHANNNNK\022\017\n\007is" +
+      "_open\030\n \001(\010\022\020\n\010stage_id\030\010 \001(\r\022\023\n\013finish_" +
+      "time\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -711,7 +671,7 @@ public final class GNLGHANNNNKOuterClass {
     internal_static_GNLGHANNNNK_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GNLGHANNNNK_descriptor,
-        new java.lang.String[] { "IsOpen", "EGHGENOJNEK", "FinishTime", });
+        new java.lang.String[] { "IsOpen", "StageId", "FinishTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

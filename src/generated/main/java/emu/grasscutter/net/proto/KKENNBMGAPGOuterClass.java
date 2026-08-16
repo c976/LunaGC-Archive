@@ -19,74 +19,42 @@ public final class KKENNBMGAPGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ> 
         getAGHJJHCGFCEList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
      */
     emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ getAGHJJHCGFCE(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
      */
     int getAGHJJHCGFCECount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJOrBuilder> 
         getAGHJJHCGFCEOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
      */
     emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJOrBuilder getAGHJJHCGFCEOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OCHOMFGOBOK = 15;</code>
      * @return The oCHOMFGOBOK.
      */
     int getOCHOMFGOBOK();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AGHBGAEAPNB = 6;</code>
      * @return The aGHBGAEAPNB.
      */
     int getAGHBGAEAPNB();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
@@ -201,10 +169,6 @@ public final class KKENNBMGAPGOuterClass {
     public static final int AGHJJHCGFCE_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ> aGHJJHCGFCE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
      */
     @java.lang.Override
@@ -212,10 +176,6 @@ public final class KKENNBMGAPGOuterClass {
       return aGHJJHCGFCE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
      */
     @java.lang.Override
@@ -224,10 +184,6 @@ public final class KKENNBMGAPGOuterClass {
       return aGHJJHCGFCE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
      */
     @java.lang.Override
@@ -235,10 +191,6 @@ public final class KKENNBMGAPGOuterClass {
       return aGHJJHCGFCE_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
      */
     @java.lang.Override
@@ -246,10 +198,6 @@ public final class KKENNBMGAPGOuterClass {
       return aGHJJHCGFCE_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
      */
     @java.lang.Override
@@ -261,10 +209,6 @@ public final class KKENNBMGAPGOuterClass {
     public static final int OCHOMFGOBOK_FIELD_NUMBER = 15;
     private int oCHOMFGOBOK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 OCHOMFGOBOK = 15;</code>
      * @return The oCHOMFGOBOK.
      */
@@ -276,10 +220,6 @@ public final class KKENNBMGAPGOuterClass {
     public static final int AGHBGAEAPNB_FIELD_NUMBER = 6;
     private int aGHBGAEAPNB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 AGHBGAEAPNB = 6;</code>
      * @return The aGHBGAEAPNB.
      */
@@ -291,10 +231,6 @@ public final class KKENNBMGAPGOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
@@ -709,10 +645,6 @@ public final class KKENNBMGAPGOuterClass {
           emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ, emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ.Builder, emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJOrBuilder> aGHJJHCGFCEBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ> getAGHJJHCGFCEList() {
@@ -723,10 +655,6 @@ public final class KKENNBMGAPGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public int getAGHJJHCGFCECount() {
@@ -737,10 +665,6 @@ public final class KKENNBMGAPGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ getAGHJJHCGFCE(int index) {
@@ -751,10 +675,6 @@ public final class KKENNBMGAPGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public Builder setAGHJJHCGFCE(
@@ -772,10 +692,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public Builder setAGHJJHCGFCE(
@@ -790,10 +706,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public Builder addAGHJJHCGFCE(emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ value) {
@@ -810,10 +722,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public Builder addAGHJJHCGFCE(
@@ -831,10 +739,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public Builder addAGHJJHCGFCE(
@@ -849,10 +753,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public Builder addAGHJJHCGFCE(
@@ -867,10 +767,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public Builder addAllAGHJJHCGFCE(
@@ -886,10 +782,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public Builder clearAGHJJHCGFCE() {
@@ -903,10 +795,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public Builder removeAGHJJHCGFCE(int index) {
@@ -920,10 +808,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ.Builder getAGHJJHCGFCEBuilder(
@@ -931,10 +815,6 @@ public final class KKENNBMGAPGOuterClass {
         return getAGHJJHCGFCEFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJOrBuilder getAGHJJHCGFCEOrBuilder(
@@ -945,10 +825,6 @@ public final class KKENNBMGAPGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJOrBuilder> 
@@ -960,10 +836,6 @@ public final class KKENNBMGAPGOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ.Builder addAGHJJHCGFCEBuilder() {
@@ -971,10 +843,6 @@ public final class KKENNBMGAPGOuterClass {
             emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ.Builder addAGHJJHCGFCEBuilder(
@@ -983,10 +851,6 @@ public final class KKENNBMGAPGOuterClass {
             index, emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .PAMGLMICDCJ AGHJJHCGFCE = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PAMGLMICDCJOuterClass.PAMGLMICDCJ.Builder> 
@@ -1010,10 +874,6 @@ public final class KKENNBMGAPGOuterClass {
 
       private int oCHOMFGOBOK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCHOMFGOBOK = 15;</code>
        * @return The oCHOMFGOBOK.
        */
@@ -1022,10 +882,6 @@ public final class KKENNBMGAPGOuterClass {
         return oCHOMFGOBOK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCHOMFGOBOK = 15;</code>
        * @param value The oCHOMFGOBOK to set.
        * @return This builder for chaining.
@@ -1037,10 +893,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 OCHOMFGOBOK = 15;</code>
        * @return This builder for chaining.
        */
@@ -1053,10 +905,6 @@ public final class KKENNBMGAPGOuterClass {
 
       private int aGHBGAEAPNB_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AGHBGAEAPNB = 6;</code>
        * @return The aGHBGAEAPNB.
        */
@@ -1065,10 +913,6 @@ public final class KKENNBMGAPGOuterClass {
         return aGHBGAEAPNB_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AGHBGAEAPNB = 6;</code>
        * @param value The aGHBGAEAPNB to set.
        * @return This builder for chaining.
@@ -1080,10 +924,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 AGHBGAEAPNB = 6;</code>
        * @return This builder for chaining.
        */
@@ -1096,10 +936,6 @@ public final class KKENNBMGAPGOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
@@ -1108,10 +944,6 @@ public final class KKENNBMGAPGOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1123,10 +955,6 @@ public final class KKENNBMGAPGOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */

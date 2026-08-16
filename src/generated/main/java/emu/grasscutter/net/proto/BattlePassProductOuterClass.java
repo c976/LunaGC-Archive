@@ -19,19 +19,11 @@ public final class BattlePassProductOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string INBAJBDMBPL = 20630;</code>
      * @return The iNBAJBDMBPL.
      */
     java.lang.String getINBAJBDMBPL();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string INBAJBDMBPL = 20630;</code>
      * @return The bytes for iNBAJBDMBPL.
      */
@@ -39,19 +31,11 @@ public final class BattlePassProductOuterClass {
         getINBAJBDMBPLBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string JGEJPPIADOL = 14598;</code>
      * @return The jGEJPPIADOL.
      */
     java.lang.String getJGEJPPIADOL();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string JGEJPPIADOL = 14598;</code>
      * @return The bytes for jGEJPPIADOL.
      */
@@ -59,19 +43,11 @@ public final class BattlePassProductOuterClass {
         getJGEJPPIADOLBytes();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string MJLEGCBKLKI = 76743;</code>
      * @return The mJLEGCBKLKI.
      */
     java.lang.String getMJLEGCBKLKI();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string MJLEGCBKLKI = 76743;</code>
      * @return The bytes for mJLEGCBKLKI.
      */
@@ -179,10 +155,6 @@ public final class BattlePassProductOuterClass {
     public static final int INBAJBDMBPL_FIELD_NUMBER = 20630;
     private volatile java.lang.Object iNBAJBDMBPL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string INBAJBDMBPL = 20630;</code>
      * @return The iNBAJBDMBPL.
      */
@@ -200,10 +172,6 @@ public final class BattlePassProductOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string INBAJBDMBPL = 20630;</code>
      * @return The bytes for iNBAJBDMBPL.
      */
@@ -225,10 +193,6 @@ public final class BattlePassProductOuterClass {
     public static final int JGEJPPIADOL_FIELD_NUMBER = 14598;
     private volatile java.lang.Object jGEJPPIADOL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string JGEJPPIADOL = 14598;</code>
      * @return The jGEJPPIADOL.
      */
@@ -246,10 +210,6 @@ public final class BattlePassProductOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string JGEJPPIADOL = 14598;</code>
      * @return The bytes for jGEJPPIADOL.
      */
@@ -271,10 +231,6 @@ public final class BattlePassProductOuterClass {
     public static final int MJLEGCBKLKI_FIELD_NUMBER = 76743;
     private volatile java.lang.Object mJLEGCBKLKI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string MJLEGCBKLKI = 76743;</code>
      * @return The mJLEGCBKLKI.
      */
@@ -292,10 +248,6 @@ public final class BattlePassProductOuterClass {
       }
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>string MJLEGCBKLKI = 76743;</code>
      * @return The bytes for mJLEGCBKLKI.
      */
@@ -652,10 +604,6 @@ public final class BattlePassProductOuterClass {
 
       private java.lang.Object iNBAJBDMBPL_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string INBAJBDMBPL = 20630;</code>
        * @return The iNBAJBDMBPL.
        */
@@ -672,10 +620,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string INBAJBDMBPL = 20630;</code>
        * @return The bytes for iNBAJBDMBPL.
        */
@@ -693,10 +637,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string INBAJBDMBPL = 20630;</code>
        * @param value The iNBAJBDMBPL to set.
        * @return This builder for chaining.
@@ -712,10 +652,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string INBAJBDMBPL = 20630;</code>
        * @return This builder for chaining.
        */
@@ -726,10 +662,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string INBAJBDMBPL = 20630;</code>
        * @param value The bytes for iNBAJBDMBPL to set.
        * @return This builder for chaining.
@@ -748,10 +680,6 @@ public final class BattlePassProductOuterClass {
 
       private java.lang.Object jGEJPPIADOL_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string JGEJPPIADOL = 14598;</code>
        * @return The jGEJPPIADOL.
        */
@@ -768,10 +696,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string JGEJPPIADOL = 14598;</code>
        * @return The bytes for jGEJPPIADOL.
        */
@@ -789,10 +713,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string JGEJPPIADOL = 14598;</code>
        * @param value The jGEJPPIADOL to set.
        * @return This builder for chaining.
@@ -808,10 +728,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string JGEJPPIADOL = 14598;</code>
        * @return This builder for chaining.
        */
@@ -822,10 +738,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string JGEJPPIADOL = 14598;</code>
        * @param value The bytes for jGEJPPIADOL to set.
        * @return This builder for chaining.
@@ -844,10 +756,6 @@ public final class BattlePassProductOuterClass {
 
       private java.lang.Object mJLEGCBKLKI_ = "";
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string MJLEGCBKLKI = 76743;</code>
        * @return The mJLEGCBKLKI.
        */
@@ -864,10 +772,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string MJLEGCBKLKI = 76743;</code>
        * @return The bytes for mJLEGCBKLKI.
        */
@@ -885,10 +789,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string MJLEGCBKLKI = 76743;</code>
        * @param value The mJLEGCBKLKI to set.
        * @return This builder for chaining.
@@ -904,10 +804,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string MJLEGCBKLKI = 76743;</code>
        * @return This builder for chaining.
        */
@@ -918,10 +814,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>string MJLEGCBKLKI = 76743;</code>
        * @param value The bytes for mJLEGCBKLKI to set.
        * @return This builder for chaining.

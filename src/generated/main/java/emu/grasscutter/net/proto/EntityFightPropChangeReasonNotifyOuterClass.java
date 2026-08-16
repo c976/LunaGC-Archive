@@ -20,28 +20,28 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>repeated uint32 param_list = 15;</code>
+     * <code>repeated uint32 param_list = 14;</code>
      * @return A list containing the paramList.
      */
     java.util.List<java.lang.Integer> getParamListList();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>repeated uint32 param_list = 15;</code>
+     * <code>repeated uint32 param_list = 14;</code>
      * @return The count of paramList.
      */
     int getParamListCount();
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>repeated uint32 param_list = 15;</code>
+     * <code>repeated uint32 param_list = 14;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
@@ -49,150 +49,152 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
 
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5
      * </pre>
      *
-     * <code>.PropChangeDetailInfo detail_info = 4;</code>
+     * <code>.JMPGPKCBGKP detail_info = 3;</code>
      * @return Whether the detailInfo field is set.
      */
     boolean hasDetailInfo();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5
      * </pre>
      *
-     * <code>.PropChangeDetailInfo detail_info = 4;</code>
+     * <code>.JMPGPKCBGKP detail_info = 3;</code>
      * @return The detailInfo.
      */
-    emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo getDetailInfo();
+    emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP getDetailInfo();
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5
      * </pre>
      *
-     * <code>.PropChangeDetailInfo detail_info = 4;</code>
+     * <code>.JMPGPKCBGKP detail_info = 3;</code>
      */
-    emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfoOrBuilder getDetailInfoOrBuilder();
+    emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKPOrBuilder getDetailInfoOrBuilder();
 
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5
      * </pre>
      *
-     * <code>.ChangeHpReason change_hp_reason = 3;</code>
-     * @return The enum numeric value on the wire for changeHpReason.
-     */
-    int getChangeHpReasonValue();
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>.ChangeHpReason change_hp_reason = 3;</code>
-     * @return The changeHpReason.
-     */
-    emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason getChangeHpReason();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 52
-     * </pre>
-     *
-     * <code>float prop_delta = 13;</code>
-     * @return The propDelta.
-     */
-    float getPropDelta();
-
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.ChangeHpDebtsReason change_hp_debts_reason = 14;</code>
-     * @return The enum numeric value on the wire for changeHpDebtsReason.
-     */
-    int getChangeHpDebtsReasonValue();
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.ChangeHpDebtsReason change_hp_debts_reason = 14;</code>
-     * @return The changeHpDebtsReason.
-     */
-    emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason getChangeHpDebtsReason();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 60
-     * </pre>
-     *
-     * <code>.ChangeEnergyReason change_energy_reason = 6;</code>
-     * @return The enum numeric value on the wire for changeEnergyReason.
-     */
-    int getChangeEnergyReasonValue();
-    /**
-     * <pre>
-     *6.3.0 // offset: 60
-     * </pre>
-     *
-     * <code>.ChangeEnergyReason change_energy_reason = 6;</code>
-     * @return The changeEnergyReason.
-     */
-    emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason getChangeEnergyReason();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>.PropChangeReason reason = 12;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    int getReasonValue();
-    /**
-     * <pre>
-     *6.3.0 // offset: 64
-     * </pre>
-     *
-     * <code>.PropChangeReason reason = 12;</code>
-     * @return The reason.
-     */
-    emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason getReason();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 68
-     * </pre>
-     *
-     * <code>uint32 entity_id = 7;</code>
+     * <code>uint32 entity_id = 15;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
      * <pre>
-     *6.3.0 // offset: 72
+     *6.5.5
      * </pre>
      *
-     * <code>uint32 prop_type = 11;</code>
+     * <code>float prop_delta = 5;</code>
+     * @return The propDelta.
+     */
+    float getPropDelta();
+
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>.PropChangeReason reason = 10;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    int getReasonValue();
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>.PropChangeReason reason = 10;</code>
+     * @return The reason.
+     */
+    emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason getReason();
+
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>.ChangeEnergyReason change_energy_reson = 13;</code>
+     * @return The enum numeric value on the wire for changeEnergyReson.
+     */
+    int getChangeEnergyResonValue();
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>.ChangeEnergyReason change_energy_reson = 13;</code>
+     * @return The changeEnergyReson.
+     */
+    emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason getChangeEnergyReson();
+
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>uint32 DKAJGOLMCMP = 1;</code>
+     * @return The dKAJGOLMCMP.
+     */
+    int getDKAJGOLMCMP();
+
+    /**
+     * <code>.ChangeHpDebtsReason change_hp_debts_reason = 12;</code>
+     * @return The enum numeric value on the wire for changeHpDebtsReason.
+     */
+    int getChangeHpDebtsReasonValue();
+    /**
+     * <code>.ChangeHpDebtsReason change_hp_debts_reason = 12;</code>
+     * @return The changeHpDebtsReason.
+     */
+    emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason getChangeHpDebtsReason();
+
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>uint32 prop_type = 9;</code>
      * @return The propType.
      */
     int getPropType();
 
     /**
      * <pre>
-     *6.3.0 // offset: 76
+     *6.5.5
      * </pre>
      *
-     * <code>float paid_hp_debts = 5;</code>
-     * @return The paidHpDebts.
+     * <code>.ChangeHpReason change_hp_reason = 8;</code>
+     * @return The enum numeric value on the wire for changeHpReason.
      */
-    float getPaidHpDebts();
+    int getChangeHpReasonValue();
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>.ChangeHpReason change_hp_reason = 8;</code>
+     * @return The changeHpReason.
+     */
+    emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason getChangeHpReason();
+
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>float EPODMGNPAIE = 2;</code>
+     * @return The ePODMGNPAIE.
+     */
+    float getEPODMGNPAIE();
   }
   /**
    * <pre>
-   * CmdId: 23758
+   * CmdID: 27992
    * </pre>
    *
    * Protobuf type {@code EntityFightPropChangeReasonNotify}
@@ -208,10 +210,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
     }
     private EntityFightPropChangeReasonNotify() {
       paramList_ = emptyIntList();
-      changeHpReason_ = 0;
-      changeHpDebtsReason_ = 0;
-      changeEnergyReason_ = 0;
       reason_ = 0;
+      changeEnergyReson_ = 0;
+      changeHpDebtsReason_ = 0;
+      changeHpReason_ = 0;
     }
 
     @java.lang.Override
@@ -245,18 +247,22 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-              int rawValue = input.readEnum();
+            case 8: {
 
-              changeHpReason_ = rawValue;
+              dKAJGOLMCMP_ = input.readUInt32();
               break;
             }
-            case 34: {
-              emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.Builder subBuilder = null;
+            case 21: {
+
+              ePODMGNPAIE_ = input.readFloat();
+              break;
+            }
+            case 26: {
+              emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP.Builder subBuilder = null;
               if (detailInfo_ != null) {
                 subBuilder = detailInfo_.toBuilder();
               }
-              detailInfo_ = input.readMessage(emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.parser(), extensionRegistry);
+              detailInfo_ = input.readMessage(emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(detailInfo_);
                 detailInfo_ = subBuilder.buildPartial();
@@ -266,43 +272,39 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
             }
             case 45: {
 
-              paidHpDebts_ = input.readFloat();
+              propDelta_ = input.readFloat();
               break;
             }
-            case 48: {
+            case 64: {
               int rawValue = input.readEnum();
 
-              changeEnergyReason_ = rawValue;
+              changeHpReason_ = rawValue;
               break;
             }
-            case 56: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 72: {
 
               propType_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 80: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 109: {
-
-              propDelta_ = input.readFloat();
-              break;
-            }
-            case 112: {
+            case 96: {
               int rawValue = input.readEnum();
 
               changeHpDebtsReason_ = rawValue;
               break;
             }
-            case 120: {
+            case 104: {
+              int rawValue = input.readEnum();
+
+              changeEnergyReson_ = rawValue;
+              break;
+            }
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 paramList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -310,7 +312,7 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
               paramList_.addInt(input.readUInt32());
               break;
             }
-            case 122: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -321,6 +323,11 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
                 paramList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 120: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -358,14 +365,14 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
               emu.grasscutter.net.proto.EntityFightPropChangeReasonNotifyOuterClass.EntityFightPropChangeReasonNotify.class, emu.grasscutter.net.proto.EntityFightPropChangeReasonNotifyOuterClass.EntityFightPropChangeReasonNotify.Builder.class);
     }
 
-    public static final int PARAM_LIST_FIELD_NUMBER = 15;
+    public static final int PARAM_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList paramList_;
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>repeated uint32 param_list = 15;</code>
+     * <code>repeated uint32 param_list = 14;</code>
      * @return A list containing the paramList.
      */
     @java.lang.Override
@@ -375,10 +382,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>repeated uint32 param_list = 15;</code>
+     * <code>repeated uint32 param_list = 14;</code>
      * @return The count of paramList.
      */
     public int getParamListCount() {
@@ -386,10 +393,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 32
+     *6.5.5
      * </pre>
      *
-     * <code>repeated uint32 param_list = 15;</code>
+     * <code>repeated uint32 param_list = 14;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
@@ -398,14 +405,14 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
     }
     private int paramListMemoizedSerializedSize = -1;
 
-    public static final int DETAIL_INFO_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo detailInfo_;
+    public static final int DETAIL_INFO_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP detailInfo_;
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5
      * </pre>
      *
-     * <code>.PropChangeDetailInfo detail_info = 4;</code>
+     * <code>.JMPGPKCBGKP detail_info = 3;</code>
      * @return Whether the detailInfo field is set.
      */
     @java.lang.Override
@@ -414,63 +421,51 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5
      * </pre>
      *
-     * <code>.PropChangeDetailInfo detail_info = 4;</code>
+     * <code>.JMPGPKCBGKP detail_info = 3;</code>
      * @return The detailInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo getDetailInfo() {
-      return detailInfo_ == null ? emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.getDefaultInstance() : detailInfo_;
+    public emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP getDetailInfo() {
+      return detailInfo_ == null ? emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP.getDefaultInstance() : detailInfo_;
     }
     /**
      * <pre>
-     *6.3.0 // offset: 40
+     *6.5.5
      * </pre>
      *
-     * <code>.PropChangeDetailInfo detail_info = 4;</code>
+     * <code>.JMPGPKCBGKP detail_info = 3;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfoOrBuilder getDetailInfoOrBuilder() {
+    public emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKPOrBuilder getDetailInfoOrBuilder() {
       return getDetailInfo();
     }
 
-    public static final int CHANGE_HP_REASON_FIELD_NUMBER = 3;
-    private int changeHpReason_;
+    public static final int ENTITY_ID_FIELD_NUMBER = 15;
+    private int entityId_;
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5
      * </pre>
      *
-     * <code>.ChangeHpReason change_hp_reason = 3;</code>
-     * @return The enum numeric value on the wire for changeHpReason.
+     * <code>uint32 entity_id = 15;</code>
+     * @return The entityId.
      */
-    @java.lang.Override public int getChangeHpReasonValue() {
-      return changeHpReason_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>.ChangeHpReason change_hp_reason = 3;</code>
-     * @return The changeHpReason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason getChangeHpReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason result = emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.valueOf(changeHpReason_);
-      return result == null ? emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.UNRECOGNIZED : result;
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
     }
 
-    public static final int PROP_DELTA_FIELD_NUMBER = 13;
+    public static final int PROP_DELTA_FIELD_NUMBER = 5;
     private float propDelta_;
     /**
      * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5
      * </pre>
      *
-     * <code>float prop_delta = 13;</code>
+     * <code>float prop_delta = 5;</code>
      * @return The propDelta.
      */
     @java.lang.Override
@@ -478,68 +473,14 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       return propDelta_;
     }
 
-    public static final int CHANGE_HP_DEBTS_REASON_FIELD_NUMBER = 14;
-    private int changeHpDebtsReason_;
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.ChangeHpDebtsReason change_hp_debts_reason = 14;</code>
-     * @return The enum numeric value on the wire for changeHpDebtsReason.
-     */
-    @java.lang.Override public int getChangeHpDebtsReasonValue() {
-      return changeHpDebtsReason_;
-    }
-    /**
-     * <pre>
-     * offset: 56
-     * </pre>
-     *
-     * <code>.ChangeHpDebtsReason change_hp_debts_reason = 14;</code>
-     * @return The changeHpDebtsReason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason getChangeHpDebtsReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason result = emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.valueOf(changeHpDebtsReason_);
-      return result == null ? emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.UNRECOGNIZED : result;
-    }
-
-    public static final int CHANGE_ENERGY_REASON_FIELD_NUMBER = 6;
-    private int changeEnergyReason_;
-    /**
-     * <pre>
-     *6.3.0 // offset: 60
-     * </pre>
-     *
-     * <code>.ChangeEnergyReason change_energy_reason = 6;</code>
-     * @return The enum numeric value on the wire for changeEnergyReason.
-     */
-    @java.lang.Override public int getChangeEnergyReasonValue() {
-      return changeEnergyReason_;
-    }
-    /**
-     * <pre>
-     *6.3.0 // offset: 60
-     * </pre>
-     *
-     * <code>.ChangeEnergyReason change_energy_reason = 6;</code>
-     * @return The changeEnergyReason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason getChangeEnergyReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason result = emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.valueOf(changeEnergyReason_);
-      return result == null ? emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.UNRECOGNIZED : result;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 12;
+    public static final int REASON_FIELD_NUMBER = 10;
     private int reason_;
     /**
      * <pre>
-     *6.3.0 // offset: 64
+     *6.5.5
      * </pre>
      *
-     * <code>.PropChangeReason reason = 12;</code>
+     * <code>.PropChangeReason reason = 10;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
@@ -547,10 +488,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
     }
     /**
      * <pre>
-     *6.3.0 // offset: 64
+     *6.5.5
      * </pre>
      *
-     * <code>.PropChangeReason reason = 12;</code>
+     * <code>.PropChangeReason reason = 10;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason getReason() {
@@ -559,29 +500,75 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason.UNRECOGNIZED : result;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 7;
-    private int entityId_;
+    public static final int CHANGE_ENERGY_RESON_FIELD_NUMBER = 13;
+    private int changeEnergyReson_;
     /**
      * <pre>
-     *6.3.0 // offset: 68
+     *6.5.5
      * </pre>
      *
-     * <code>uint32 entity_id = 7;</code>
-     * @return The entityId.
+     * <code>.ChangeEnergyReason change_energy_reson = 13;</code>
+     * @return The enum numeric value on the wire for changeEnergyReson.
      */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
+    @java.lang.Override public int getChangeEnergyResonValue() {
+      return changeEnergyReson_;
+    }
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>.ChangeEnergyReason change_energy_reson = 13;</code>
+     * @return The changeEnergyReson.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason getChangeEnergyReson() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason result = emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.valueOf(changeEnergyReson_);
+      return result == null ? emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.UNRECOGNIZED : result;
     }
 
-    public static final int PROP_TYPE_FIELD_NUMBER = 11;
+    public static final int DKAJGOLMCMP_FIELD_NUMBER = 1;
+    private int dKAJGOLMCMP_;
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>uint32 DKAJGOLMCMP = 1;</code>
+     * @return The dKAJGOLMCMP.
+     */
+    @java.lang.Override
+    public int getDKAJGOLMCMP() {
+      return dKAJGOLMCMP_;
+    }
+
+    public static final int CHANGE_HP_DEBTS_REASON_FIELD_NUMBER = 12;
+    private int changeHpDebtsReason_;
+    /**
+     * <code>.ChangeHpDebtsReason change_hp_debts_reason = 12;</code>
+     * @return The enum numeric value on the wire for changeHpDebtsReason.
+     */
+    @java.lang.Override public int getChangeHpDebtsReasonValue() {
+      return changeHpDebtsReason_;
+    }
+    /**
+     * <code>.ChangeHpDebtsReason change_hp_debts_reason = 12;</code>
+     * @return The changeHpDebtsReason.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason getChangeHpDebtsReason() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason result = emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.valueOf(changeHpDebtsReason_);
+      return result == null ? emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.UNRECOGNIZED : result;
+    }
+
+    public static final int PROP_TYPE_FIELD_NUMBER = 9;
     private int propType_;
     /**
      * <pre>
-     *6.3.0 // offset: 72
+     *6.5.5
      * </pre>
      *
-     * <code>uint32 prop_type = 11;</code>
+     * <code>uint32 prop_type = 9;</code>
      * @return The propType.
      */
     @java.lang.Override
@@ -589,19 +576,46 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       return propType_;
     }
 
-    public static final int PAID_HP_DEBTS_FIELD_NUMBER = 5;
-    private float paidHpDebts_;
+    public static final int CHANGE_HP_REASON_FIELD_NUMBER = 8;
+    private int changeHpReason_;
     /**
      * <pre>
-     *6.3.0 // offset: 76
+     *6.5.5
      * </pre>
      *
-     * <code>float paid_hp_debts = 5;</code>
-     * @return The paidHpDebts.
+     * <code>.ChangeHpReason change_hp_reason = 8;</code>
+     * @return The enum numeric value on the wire for changeHpReason.
+     */
+    @java.lang.Override public int getChangeHpReasonValue() {
+      return changeHpReason_;
+    }
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>.ChangeHpReason change_hp_reason = 8;</code>
+     * @return The changeHpReason.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason getChangeHpReason() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason result = emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.valueOf(changeHpReason_);
+      return result == null ? emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.UNRECOGNIZED : result;
+    }
+
+    public static final int EPODMGNPAIE_FIELD_NUMBER = 2;
+    private float ePODMGNPAIE_;
+    /**
+     * <pre>
+     *6.5.5
+     * </pre>
+     *
+     * <code>float EPODMGNPAIE = 2;</code>
+     * @return The ePODMGNPAIE.
      */
     @java.lang.Override
-    public float getPaidHpDebts() {
-      return paidHpDebts_;
+    public float getEPODMGNPAIE() {
+      return ePODMGNPAIE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -619,39 +633,42 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (changeHpReason_ != emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.CHANGE_HP_NONE.getNumber()) {
-        output.writeEnum(3, changeHpReason_);
+      if (dKAJGOLMCMP_ != 0) {
+        output.writeUInt32(1, dKAJGOLMCMP_);
+      }
+      if (ePODMGNPAIE_ != 0F) {
+        output.writeFloat(2, ePODMGNPAIE_);
       }
       if (detailInfo_ != null) {
-        output.writeMessage(4, getDetailInfo());
-      }
-      if (paidHpDebts_ != 0F) {
-        output.writeFloat(5, paidHpDebts_);
-      }
-      if (changeEnergyReason_ != emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.CHANGE_ENERGY_REASON_NONE.getNumber()) {
-        output.writeEnum(6, changeEnergyReason_);
-      }
-      if (entityId_ != 0) {
-        output.writeUInt32(7, entityId_);
-      }
-      if (propType_ != 0) {
-        output.writeUInt32(11, propType_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason.PROP_CHANGE_REASON_NONE.getNumber()) {
-        output.writeEnum(12, reason_);
+        output.writeMessage(3, getDetailInfo());
       }
       if (propDelta_ != 0F) {
-        output.writeFloat(13, propDelta_);
+        output.writeFloat(5, propDelta_);
       }
-      if (changeHpDebtsReason_ != emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_NONE.getNumber()) {
-        output.writeEnum(14, changeHpDebtsReason_);
+      if (changeHpReason_ != emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.ChangeHpReason_CHANGE_HP_NONE.getNumber()) {
+        output.writeEnum(8, changeHpReason_);
+      }
+      if (propType_ != 0) {
+        output.writeUInt32(9, propType_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason.PropChangeReason_PROP_CHANGE_NONE.getNumber()) {
+        output.writeEnum(10, reason_);
+      }
+      if (changeHpDebtsReason_ != emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_REASON_CHANGE_HP_DEBTS_NONE.getNumber()) {
+        output.writeEnum(12, changeHpDebtsReason_);
+      }
+      if (changeEnergyReson_ != emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.ChangeEnergyReason_CHANGE_ENERGY_NONE.getNumber()) {
+        output.writeEnum(13, changeEnergyReson_);
       }
       if (getParamListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(paramListMemoizedSerializedSize);
       }
       for (int i = 0; i < paramList_.size(); i++) {
         output.writeUInt32NoTag(paramList_.getInt(i));
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(15, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -662,41 +679,41 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (changeHpReason_ != emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.CHANGE_HP_NONE.getNumber()) {
+      if (dKAJGOLMCMP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, changeHpReason_);
+          .computeUInt32Size(1, dKAJGOLMCMP_);
+      }
+      if (ePODMGNPAIE_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(2, ePODMGNPAIE_);
       }
       if (detailInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getDetailInfo());
-      }
-      if (paidHpDebts_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(5, paidHpDebts_);
-      }
-      if (changeEnergyReason_ != emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.CHANGE_ENERGY_REASON_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(6, changeEnergyReason_);
-      }
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, entityId_);
-      }
-      if (propType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, propType_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason.PROP_CHANGE_REASON_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, reason_);
+          .computeMessageSize(3, getDetailInfo());
       }
       if (propDelta_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(13, propDelta_);
+          .computeFloatSize(5, propDelta_);
       }
-      if (changeHpDebtsReason_ != emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_NONE.getNumber()) {
+      if (changeHpReason_ != emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.ChangeHpReason_CHANGE_HP_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, changeHpDebtsReason_);
+          .computeEnumSize(8, changeHpReason_);
+      }
+      if (propType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, propType_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason.PropChangeReason_PROP_CHANGE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(10, reason_);
+      }
+      if (changeHpDebtsReason_ != emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_REASON_CHANGE_HP_DEBTS_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(12, changeHpDebtsReason_);
+      }
+      if (changeEnergyReson_ != emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.ChangeEnergyReason_CHANGE_ENERGY_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(13, changeEnergyReson_);
       }
       {
         int dataSize = 0;
@@ -711,6 +728,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         paramListMemoizedSerializedSize = dataSize;
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -734,20 +755,22 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
         if (!getDetailInfo()
             .equals(other.getDetailInfo())) return false;
       }
-      if (changeHpReason_ != other.changeHpReason_) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
       if (java.lang.Float.floatToIntBits(getPropDelta())
           != java.lang.Float.floatToIntBits(
               other.getPropDelta())) return false;
-      if (changeHpDebtsReason_ != other.changeHpDebtsReason_) return false;
-      if (changeEnergyReason_ != other.changeEnergyReason_) return false;
       if (reason_ != other.reason_) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
+      if (changeEnergyReson_ != other.changeEnergyReson_) return false;
+      if (getDKAJGOLMCMP()
+          != other.getDKAJGOLMCMP()) return false;
+      if (changeHpDebtsReason_ != other.changeHpDebtsReason_) return false;
       if (getPropType()
           != other.getPropType()) return false;
-      if (java.lang.Float.floatToIntBits(getPaidHpDebts())
+      if (changeHpReason_ != other.changeHpReason_) return false;
+      if (java.lang.Float.floatToIntBits(getEPODMGNPAIE())
           != java.lang.Float.floatToIntBits(
-              other.getPaidHpDebts())) return false;
+              other.getEPODMGNPAIE())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -767,24 +790,26 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
         hash = (37 * hash) + DETAIL_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getDetailInfo().hashCode();
       }
-      hash = (37 * hash) + CHANGE_HP_REASON_FIELD_NUMBER;
-      hash = (53 * hash) + changeHpReason_;
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       hash = (37 * hash) + PROP_DELTA_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getPropDelta());
-      hash = (37 * hash) + CHANGE_HP_DEBTS_REASON_FIELD_NUMBER;
-      hash = (53 * hash) + changeHpDebtsReason_;
-      hash = (37 * hash) + CHANGE_ENERGY_REASON_FIELD_NUMBER;
-      hash = (53 * hash) + changeEnergyReason_;
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + CHANGE_ENERGY_RESON_FIELD_NUMBER;
+      hash = (53 * hash) + changeEnergyReson_;
+      hash = (37 * hash) + DKAJGOLMCMP_FIELD_NUMBER;
+      hash = (53 * hash) + getDKAJGOLMCMP();
+      hash = (37 * hash) + CHANGE_HP_DEBTS_REASON_FIELD_NUMBER;
+      hash = (53 * hash) + changeHpDebtsReason_;
       hash = (37 * hash) + PROP_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getPropType();
-      hash = (37 * hash) + PAID_HP_DEBTS_FIELD_NUMBER;
+      hash = (37 * hash) + CHANGE_HP_REASON_FIELD_NUMBER;
+      hash = (53 * hash) + changeHpReason_;
+      hash = (37 * hash) + EPODMGNPAIE_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getPaidHpDebts());
+          getEPODMGNPAIE());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -882,7 +907,7 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23758
+     * CmdID: 27992
      * </pre>
      *
      * Protobuf type {@code EntityFightPropChangeReasonNotify}
@@ -930,21 +955,23 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
           detailInfo_ = null;
           detailInfoBuilder_ = null;
         }
-        changeHpReason_ = 0;
+        entityId_ = 0;
 
         propDelta_ = 0F;
 
-        changeHpDebtsReason_ = 0;
-
-        changeEnergyReason_ = 0;
-
         reason_ = 0;
 
-        entityId_ = 0;
+        changeEnergyReson_ = 0;
+
+        dKAJGOLMCMP_ = 0;
+
+        changeHpDebtsReason_ = 0;
 
         propType_ = 0;
 
-        paidHpDebts_ = 0F;
+        changeHpReason_ = 0;
+
+        ePODMGNPAIE_ = 0F;
 
         return this;
       }
@@ -983,14 +1010,15 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
         } else {
           result.detailInfo_ = detailInfoBuilder_.build();
         }
-        result.changeHpReason_ = changeHpReason_;
-        result.propDelta_ = propDelta_;
-        result.changeHpDebtsReason_ = changeHpDebtsReason_;
-        result.changeEnergyReason_ = changeEnergyReason_;
-        result.reason_ = reason_;
         result.entityId_ = entityId_;
+        result.propDelta_ = propDelta_;
+        result.reason_ = reason_;
+        result.changeEnergyReson_ = changeEnergyReson_;
+        result.dKAJGOLMCMP_ = dKAJGOLMCMP_;
+        result.changeHpDebtsReason_ = changeHpDebtsReason_;
         result.propType_ = propType_;
-        result.paidHpDebts_ = paidHpDebts_;
+        result.changeHpReason_ = changeHpReason_;
+        result.ePODMGNPAIE_ = ePODMGNPAIE_;
         onBuilt();
         return result;
       }
@@ -1052,29 +1080,32 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
         if (other.hasDetailInfo()) {
           mergeDetailInfo(other.getDetailInfo());
         }
-        if (other.changeHpReason_ != 0) {
-          setChangeHpReasonValue(other.getChangeHpReasonValue());
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         if (other.getPropDelta() != 0F) {
           setPropDelta(other.getPropDelta());
         }
-        if (other.changeHpDebtsReason_ != 0) {
-          setChangeHpDebtsReasonValue(other.getChangeHpDebtsReasonValue());
-        }
-        if (other.changeEnergyReason_ != 0) {
-          setChangeEnergyReasonValue(other.getChangeEnergyReasonValue());
-        }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
+        if (other.changeEnergyReson_ != 0) {
+          setChangeEnergyResonValue(other.getChangeEnergyResonValue());
+        }
+        if (other.getDKAJGOLMCMP() != 0) {
+          setDKAJGOLMCMP(other.getDKAJGOLMCMP());
+        }
+        if (other.changeHpDebtsReason_ != 0) {
+          setChangeHpDebtsReasonValue(other.getChangeHpDebtsReasonValue());
         }
         if (other.getPropType() != 0) {
           setPropType(other.getPropType());
         }
-        if (other.getPaidHpDebts() != 0F) {
-          setPaidHpDebts(other.getPaidHpDebts());
+        if (other.changeHpReason_ != 0) {
+          setChangeHpReasonValue(other.getChangeHpReasonValue());
+        }
+        if (other.getEPODMGNPAIE() != 0F) {
+          setEPODMGNPAIE(other.getEPODMGNPAIE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1115,10 +1146,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>repeated uint32 param_list = 15;</code>
+       * <code>repeated uint32 param_list = 14;</code>
        * @return A list containing the paramList.
        */
       public java.util.List<java.lang.Integer>
@@ -1128,10 +1159,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>repeated uint32 param_list = 15;</code>
+       * <code>repeated uint32 param_list = 14;</code>
        * @return The count of paramList.
        */
       public int getParamListCount() {
@@ -1139,10 +1170,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>repeated uint32 param_list = 15;</code>
+       * <code>repeated uint32 param_list = 14;</code>
        * @param index The index of the element to return.
        * @return The paramList at the given index.
        */
@@ -1151,10 +1182,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>repeated uint32 param_list = 15;</code>
+       * <code>repeated uint32 param_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The paramList to set.
        * @return This builder for chaining.
@@ -1168,10 +1199,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>repeated uint32 param_list = 15;</code>
+       * <code>repeated uint32 param_list = 14;</code>
        * @param value The paramList to add.
        * @return This builder for chaining.
        */
@@ -1183,10 +1214,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>repeated uint32 param_list = 15;</code>
+       * <code>repeated uint32 param_list = 14;</code>
        * @param values The paramList to add.
        * @return This builder for chaining.
        */
@@ -1200,10 +1231,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 32
+       *6.5.5
        * </pre>
        *
-       * <code>repeated uint32 param_list = 15;</code>
+       * <code>repeated uint32 param_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearParamList() {
@@ -1213,15 +1244,15 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo detailInfo_;
+      private emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP detailInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo, emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.Builder, emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfoOrBuilder> detailInfoBuilder_;
+          emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP, emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP.Builder, emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKPOrBuilder> detailInfoBuilder_;
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeDetailInfo detail_info = 4;</code>
+       * <code>.JMPGPKCBGKP detail_info = 3;</code>
        * @return Whether the detailInfo field is set.
        */
       public boolean hasDetailInfo() {
@@ -1229,27 +1260,27 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeDetailInfo detail_info = 4;</code>
+       * <code>.JMPGPKCBGKP detail_info = 3;</code>
        * @return The detailInfo.
        */
-      public emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo getDetailInfo() {
+      public emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP getDetailInfo() {
         if (detailInfoBuilder_ == null) {
-          return detailInfo_ == null ? emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.getDefaultInstance() : detailInfo_;
+          return detailInfo_ == null ? emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP.getDefaultInstance() : detailInfo_;
         } else {
           return detailInfoBuilder_.getMessage();
         }
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeDetailInfo detail_info = 4;</code>
+       * <code>.JMPGPKCBGKP detail_info = 3;</code>
        */
-      public Builder setDetailInfo(emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo value) {
+      public Builder setDetailInfo(emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP value) {
         if (detailInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1264,13 +1295,13 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeDetailInfo detail_info = 4;</code>
+       * <code>.JMPGPKCBGKP detail_info = 3;</code>
        */
       public Builder setDetailInfo(
-          emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.Builder builderForValue) {
+          emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP.Builder builderForValue) {
         if (detailInfoBuilder_ == null) {
           detailInfo_ = builderForValue.build();
           onChanged();
@@ -1282,16 +1313,16 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeDetailInfo detail_info = 4;</code>
+       * <code>.JMPGPKCBGKP detail_info = 3;</code>
        */
-      public Builder mergeDetailInfo(emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo value) {
+      public Builder mergeDetailInfo(emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP value) {
         if (detailInfoBuilder_ == null) {
           if (detailInfo_ != null) {
             detailInfo_ =
-              emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.newBuilder(detailInfo_).mergeFrom(value).buildPartial();
+              emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP.newBuilder(detailInfo_).mergeFrom(value).buildPartial();
           } else {
             detailInfo_ = value;
           }
@@ -1304,10 +1335,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeDetailInfo detail_info = 4;</code>
+       * <code>.JMPGPKCBGKP detail_info = 3;</code>
        */
       public Builder clearDetailInfo() {
         if (detailInfoBuilder_ == null) {
@@ -1322,44 +1353,44 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeDetailInfo detail_info = 4;</code>
+       * <code>.JMPGPKCBGKP detail_info = 3;</code>
        */
-      public emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.Builder getDetailInfoBuilder() {
+      public emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP.Builder getDetailInfoBuilder() {
         
         onChanged();
         return getDetailInfoFieldBuilder().getBuilder();
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeDetailInfo detail_info = 4;</code>
+       * <code>.JMPGPKCBGKP detail_info = 3;</code>
        */
-      public emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfoOrBuilder getDetailInfoOrBuilder() {
+      public emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKPOrBuilder getDetailInfoOrBuilder() {
         if (detailInfoBuilder_ != null) {
           return detailInfoBuilder_.getMessageOrBuilder();
         } else {
           return detailInfo_ == null ?
-              emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.getDefaultInstance() : detailInfo_;
+              emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP.getDefaultInstance() : detailInfo_;
         }
       }
       /**
        * <pre>
-       *6.3.0 // offset: 40
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeDetailInfo detail_info = 4;</code>
+       * <code>.JMPGPKCBGKP detail_info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo, emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.Builder, emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfoOrBuilder> 
+          emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP, emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP.Builder, emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKPOrBuilder> 
           getDetailInfoFieldBuilder() {
         if (detailInfoBuilder_ == null) {
           detailInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo, emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.Builder, emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfoOrBuilder>(
+              emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP, emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKP.Builder, emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.JMPGPKCBGKPOrBuilder>(
                   getDetailInfo(),
                   getParentForChildren(),
                   isClean());
@@ -1368,76 +1399,45 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
         return detailInfoBuilder_;
       }
 
-      private int changeHpReason_ = 0;
+      private int entityId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5
        * </pre>
        *
-       * <code>.ChangeHpReason change_hp_reason = 3;</code>
-       * @return The enum numeric value on the wire for changeHpReason.
-       */
-      @java.lang.Override public int getChangeHpReasonValue() {
-        return changeHpReason_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>.ChangeHpReason change_hp_reason = 3;</code>
-       * @param value The enum numeric value on the wire for changeHpReason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChangeHpReasonValue(int value) {
-        
-        changeHpReason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 48
-       * </pre>
-       *
-       * <code>.ChangeHpReason change_hp_reason = 3;</code>
-       * @return The changeHpReason.
+       * <code>uint32 entity_id = 15;</code>
+       * @return The entityId.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason getChangeHpReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason result = emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.valueOf(changeHpReason_);
-        return result == null ? emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.UNRECOGNIZED : result;
+      public int getEntityId() {
+        return entityId_;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5
        * </pre>
        *
-       * <code>.ChangeHpReason change_hp_reason = 3;</code>
-       * @param value The changeHpReason to set.
+       * <code>uint32 entity_id = 15;</code>
+       * @param value The entityId to set.
        * @return This builder for chaining.
        */
-      public Builder setChangeHpReason(emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
+      public Builder setEntityId(int value) {
         
-        changeHpReason_ = value.getNumber();
+        entityId_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5
        * </pre>
        *
-       * <code>.ChangeHpReason change_hp_reason = 3;</code>
+       * <code>uint32 entity_id = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChangeHpReason() {
+      public Builder clearEntityId() {
         
-        changeHpReason_ = 0;
+        entityId_ = 0;
         onChanged();
         return this;
       }
@@ -1445,10 +1445,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       private float propDelta_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5
        * </pre>
        *
-       * <code>float prop_delta = 13;</code>
+       * <code>float prop_delta = 5;</code>
        * @return The propDelta.
        */
       @java.lang.Override
@@ -1457,10 +1457,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5
        * </pre>
        *
-       * <code>float prop_delta = 13;</code>
+       * <code>float prop_delta = 5;</code>
        * @param value The propDelta to set.
        * @return This builder for chaining.
        */
@@ -1472,10 +1472,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5
        * </pre>
        *
-       * <code>float prop_delta = 13;</code>
+       * <code>float prop_delta = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearPropDelta() {
@@ -1485,161 +1485,13 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
         return this;
       }
 
-      private int changeHpDebtsReason_ = 0;
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.ChangeHpDebtsReason change_hp_debts_reason = 14;</code>
-       * @return The enum numeric value on the wire for changeHpDebtsReason.
-       */
-      @java.lang.Override public int getChangeHpDebtsReasonValue() {
-        return changeHpDebtsReason_;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.ChangeHpDebtsReason change_hp_debts_reason = 14;</code>
-       * @param value The enum numeric value on the wire for changeHpDebtsReason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChangeHpDebtsReasonValue(int value) {
-        
-        changeHpDebtsReason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.ChangeHpDebtsReason change_hp_debts_reason = 14;</code>
-       * @return The changeHpDebtsReason.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason getChangeHpDebtsReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason result = emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.valueOf(changeHpDebtsReason_);
-        return result == null ? emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.UNRECOGNIZED : result;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.ChangeHpDebtsReason change_hp_debts_reason = 14;</code>
-       * @param value The changeHpDebtsReason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChangeHpDebtsReason(emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        changeHpDebtsReason_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * offset: 56
-       * </pre>
-       *
-       * <code>.ChangeHpDebtsReason change_hp_debts_reason = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChangeHpDebtsReason() {
-        
-        changeHpDebtsReason_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int changeEnergyReason_ = 0;
-      /**
-       * <pre>
-       *6.3.0 // offset: 60
-       * </pre>
-       *
-       * <code>.ChangeEnergyReason change_energy_reason = 6;</code>
-       * @return The enum numeric value on the wire for changeEnergyReason.
-       */
-      @java.lang.Override public int getChangeEnergyReasonValue() {
-        return changeEnergyReason_;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 60
-       * </pre>
-       *
-       * <code>.ChangeEnergyReason change_energy_reason = 6;</code>
-       * @param value The enum numeric value on the wire for changeEnergyReason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChangeEnergyReasonValue(int value) {
-        
-        changeEnergyReason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 60
-       * </pre>
-       *
-       * <code>.ChangeEnergyReason change_energy_reason = 6;</code>
-       * @return The changeEnergyReason.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason getChangeEnergyReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason result = emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.valueOf(changeEnergyReason_);
-        return result == null ? emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.UNRECOGNIZED : result;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 60
-       * </pre>
-       *
-       * <code>.ChangeEnergyReason change_energy_reason = 6;</code>
-       * @param value The changeEnergyReason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChangeEnergyReason(emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        changeEnergyReason_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *6.3.0 // offset: 60
-       * </pre>
-       *
-       * <code>.ChangeEnergyReason change_energy_reason = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChangeEnergyReason() {
-        
-        changeEnergyReason_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int reason_ = 0;
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeReason reason = 12;</code>
+       * <code>.PropChangeReason reason = 10;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
@@ -1647,10 +1499,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeReason reason = 12;</code>
+       * <code>.PropChangeReason reason = 10;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -1662,10 +1514,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeReason reason = 12;</code>
+       * <code>.PropChangeReason reason = 10;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -1676,10 +1528,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeReason reason = 12;</code>
+       * <code>.PropChangeReason reason = 10;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -1694,10 +1546,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 64
+       *6.5.5
        * </pre>
        *
-       * <code>.PropChangeReason reason = 12;</code>
+       * <code>.PropChangeReason reason = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -1707,45 +1559,173 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
         return this;
       }
 
-      private int entityId_ ;
+      private int changeEnergyReson_ = 0;
       /**
        * <pre>
-       *6.3.0 // offset: 68
+       *6.5.5
        * </pre>
        *
-       * <code>uint32 entity_id = 7;</code>
-       * @return The entityId.
+       * <code>.ChangeEnergyReason change_energy_reson = 13;</code>
+       * @return The enum numeric value on the wire for changeEnergyReson.
        */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
+      @java.lang.Override public int getChangeEnergyResonValue() {
+        return changeEnergyReson_;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 68
+       *6.5.5
        * </pre>
        *
-       * <code>uint32 entity_id = 7;</code>
-       * @param value The entityId to set.
+       * <code>.ChangeEnergyReason change_energy_reson = 13;</code>
+       * @param value The enum numeric value on the wire for changeEnergyReson to set.
        * @return This builder for chaining.
        */
-      public Builder setEntityId(int value) {
+      public Builder setChangeEnergyResonValue(int value) {
         
-        entityId_ = value;
+        changeEnergyReson_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 68
+       *6.5.5
        * </pre>
        *
-       * <code>uint32 entity_id = 7;</code>
+       * <code>.ChangeEnergyReason change_energy_reson = 13;</code>
+       * @return The changeEnergyReson.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason getChangeEnergyReson() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason result = emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.valueOf(changeEnergyReson_);
+        return result == null ? emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       *6.5.5
+       * </pre>
+       *
+       * <code>.ChangeEnergyReason change_energy_reson = 13;</code>
+       * @param value The changeEnergyReson to set.
        * @return This builder for chaining.
        */
-      public Builder clearEntityId() {
+      public Builder setChangeEnergyReson(emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
         
-        entityId_ = 0;
+        changeEnergyReson_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5
+       * </pre>
+       *
+       * <code>.ChangeEnergyReason change_energy_reson = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChangeEnergyReson() {
+        
+        changeEnergyReson_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dKAJGOLMCMP_ ;
+      /**
+       * <pre>
+       *6.5.5
+       * </pre>
+       *
+       * <code>uint32 DKAJGOLMCMP = 1;</code>
+       * @return The dKAJGOLMCMP.
+       */
+      @java.lang.Override
+      public int getDKAJGOLMCMP() {
+        return dKAJGOLMCMP_;
+      }
+      /**
+       * <pre>
+       *6.5.5
+       * </pre>
+       *
+       * <code>uint32 DKAJGOLMCMP = 1;</code>
+       * @param value The dKAJGOLMCMP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDKAJGOLMCMP(int value) {
+        
+        dKAJGOLMCMP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5
+       * </pre>
+       *
+       * <code>uint32 DKAJGOLMCMP = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDKAJGOLMCMP() {
+        
+        dKAJGOLMCMP_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int changeHpDebtsReason_ = 0;
+      /**
+       * <code>.ChangeHpDebtsReason change_hp_debts_reason = 12;</code>
+       * @return The enum numeric value on the wire for changeHpDebtsReason.
+       */
+      @java.lang.Override public int getChangeHpDebtsReasonValue() {
+        return changeHpDebtsReason_;
+      }
+      /**
+       * <code>.ChangeHpDebtsReason change_hp_debts_reason = 12;</code>
+       * @param value The enum numeric value on the wire for changeHpDebtsReason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChangeHpDebtsReasonValue(int value) {
+        
+        changeHpDebtsReason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ChangeHpDebtsReason change_hp_debts_reason = 12;</code>
+       * @return The changeHpDebtsReason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason getChangeHpDebtsReason() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason result = emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.valueOf(changeHpDebtsReason_);
+        return result == null ? emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.ChangeHpDebtsReason change_hp_debts_reason = 12;</code>
+       * @param value The changeHpDebtsReason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChangeHpDebtsReason(emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        changeHpDebtsReason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ChangeHpDebtsReason change_hp_debts_reason = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChangeHpDebtsReason() {
+        
+        changeHpDebtsReason_ = 0;
         onChanged();
         return this;
       }
@@ -1753,10 +1733,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       private int propType_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 72
+       *6.5.5
        * </pre>
        *
-       * <code>uint32 prop_type = 11;</code>
+       * <code>uint32 prop_type = 9;</code>
        * @return The propType.
        */
       @java.lang.Override
@@ -1765,10 +1745,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 72
+       *6.5.5
        * </pre>
        *
-       * <code>uint32 prop_type = 11;</code>
+       * <code>uint32 prop_type = 9;</code>
        * @param value The propType to set.
        * @return This builder for chaining.
        */
@@ -1780,10 +1760,10 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 72
+       *6.5.5
        * </pre>
        *
-       * <code>uint32 prop_type = 11;</code>
+       * <code>uint32 prop_type = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearPropType() {
@@ -1793,45 +1773,119 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
         return this;
       }
 
-      private float paidHpDebts_ ;
+      private int changeHpReason_ = 0;
       /**
        * <pre>
-       *6.3.0 // offset: 76
+       *6.5.5
        * </pre>
        *
-       * <code>float paid_hp_debts = 5;</code>
-       * @return The paidHpDebts.
+       * <code>.ChangeHpReason change_hp_reason = 8;</code>
+       * @return The enum numeric value on the wire for changeHpReason.
        */
-      @java.lang.Override
-      public float getPaidHpDebts() {
-        return paidHpDebts_;
+      @java.lang.Override public int getChangeHpReasonValue() {
+        return changeHpReason_;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 76
+       *6.5.5
        * </pre>
        *
-       * <code>float paid_hp_debts = 5;</code>
-       * @param value The paidHpDebts to set.
+       * <code>.ChangeHpReason change_hp_reason = 8;</code>
+       * @param value The enum numeric value on the wire for changeHpReason to set.
        * @return This builder for chaining.
        */
-      public Builder setPaidHpDebts(float value) {
+      public Builder setChangeHpReasonValue(int value) {
         
-        paidHpDebts_ = value;
+        changeHpReason_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       *6.3.0 // offset: 76
+       *6.5.5
        * </pre>
        *
-       * <code>float paid_hp_debts = 5;</code>
+       * <code>.ChangeHpReason change_hp_reason = 8;</code>
+       * @return The changeHpReason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason getChangeHpReason() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason result = emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.valueOf(changeHpReason_);
+        return result == null ? emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason.UNRECOGNIZED : result;
+      }
+      /**
+       * <pre>
+       *6.5.5
+       * </pre>
+       *
+       * <code>.ChangeHpReason change_hp_reason = 8;</code>
+       * @param value The changeHpReason to set.
        * @return This builder for chaining.
        */
-      public Builder clearPaidHpDebts() {
+      public Builder setChangeHpReason(emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
         
-        paidHpDebts_ = 0F;
+        changeHpReason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5
+       * </pre>
+       *
+       * <code>.ChangeHpReason change_hp_reason = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChangeHpReason() {
+        
+        changeHpReason_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float ePODMGNPAIE_ ;
+      /**
+       * <pre>
+       *6.5.5
+       * </pre>
+       *
+       * <code>float EPODMGNPAIE = 2;</code>
+       * @return The ePODMGNPAIE.
+       */
+      @java.lang.Override
+      public float getEPODMGNPAIE() {
+        return ePODMGNPAIE_;
+      }
+      /**
+       * <pre>
+       *6.5.5
+       * </pre>
+       *
+       * <code>float EPODMGNPAIE = 2;</code>
+       * @param value The ePODMGNPAIE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEPODMGNPAIE(float value) {
+        
+        ePODMGNPAIE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *6.5.5
+       * </pre>
+       *
+       * <code>float EPODMGNPAIE = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEPODMGNPAIE() {
+        
+        ePODMGNPAIE_ = 0F;
         onChanged();
         return this;
       }
@@ -1903,41 +1957,46 @@ public final class EntityFightPropChangeReasonNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'EntityFightPropChangeReasonNotify.prot" +
-      "o\032\030ChangeEnergyReason.proto\032\031ChangeHpDeb" +
-      "tsReason.proto\032\024ChangeHpReason.proto\032\032Pr" +
-      "opChangeDetailInfo.proto\032\026PropChangeReas" +
-      "on.proto\"\353\002\n!EntityFightPropChangeReason" +
-      "Notify\022\022\n\nparam_list\030\017 \003(\r\022*\n\013detail_inf" +
-      "o\030\004 \001(\0132\025.PropChangeDetailInfo\022)\n\020change" +
-      "_hp_reason\030\003 \001(\0162\017.ChangeHpReason\022\022\n\npro" +
-      "p_delta\030\r \001(\002\0224\n\026change_hp_debts_reason\030" +
-      "\016 \001(\0162\024.ChangeHpDebtsReason\0221\n\024change_en" +
-      "ergy_reason\030\006 \001(\0162\023.ChangeEnergyReason\022!" +
-      "\n\006reason\030\014 \001(\0162\021.PropChangeReason\022\021\n\tent" +
-      "ity_id\030\007 \001(\r\022\021\n\tprop_type\030\013 \001(\r\022\025\n\rpaid_" +
-      "hp_debts\030\005 \001(\002B\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "o\032\032PropChangeDetailInfo.proto\032\030ChangeEne" +
+      "rgyReason.proto\032\024ChangeHpReason.proto\032\023C" +
+      "hangeHpDebts.proto\032\021JMPGPKCBGKP.proto\032\026P" +
+      "ropChangeReason.proto\032\031ChangeHpDebtsReas" +
+      "on.proto\"\364\002\n!EntityFightPropChangeReason" +
+      "Notify\022\022\n\nparam_list\030\016 \003(\r\022!\n\013detail_inf" +
+      "o\030\003 \001(\0132\014.JMPGPKCBGKP\022\021\n\tentity_id\030\017 \001(\r" +
+      "\022\022\n\nprop_delta\030\005 \001(\002\022!\n\006reason\030\n \001(\0162\021.P" +
+      "ropChangeReason\0220\n\023change_energy_reson\030\r" +
+      " \001(\0162\023.ChangeEnergyReason\022\023\n\013DKAJGOLMCMP" +
+      "\030\001 \001(\r\0224\n\026change_hp_debts_reason\030\014 \001(\0162\024" +
+      ".ChangeHpDebtsReason\022\021\n\tprop_type\030\t \001(\r\022" +
+      ")\n\020change_hp_reason\030\010 \001(\0162\017.ChangeHpReas" +
+      "on\022\023\n\013EPODMGNPAIE\030\002 \001(\002B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.ChangeHpReasonOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ChangeHpReasonOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ChangeHpDebtsOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.PropChangeReasonOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.getDescriptor(),
         });
     internal_static_EntityFightPropChangeReasonNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_EntityFightPropChangeReasonNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EntityFightPropChangeReasonNotify_descriptor,
-        new java.lang.String[] { "ParamList", "DetailInfo", "ChangeHpReason", "PropDelta", "ChangeHpDebtsReason", "ChangeEnergyReason", "Reason", "EntityId", "PropType", "PaidHpDebts", });
-    emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.ChangeHpReasonOuterClass.getDescriptor();
+        new java.lang.String[] { "ParamList", "DetailInfo", "EntityId", "PropDelta", "Reason", "ChangeEnergyReson", "DKAJGOLMCMP", "ChangeHpDebtsReason", "PropType", "ChangeHpReason", "EPODMGNPAIE", });
     emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ChangeHpReasonOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ChangeHpDebtsOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.JMPGPKCBGKPOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PropChangeReasonOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

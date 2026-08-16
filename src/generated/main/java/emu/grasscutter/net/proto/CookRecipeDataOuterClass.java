@@ -19,26 +19,22 @@ public final class CookRecipeDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 FPPPNMPIJDK = 8;</code>
-     * @return The fPPPNMPIJDK.
+     * <code>uint32 recipe_id = 5;</code>
+     * @return The recipeId.
      */
-    int getFPPPNMPIJDK();
+    int getRecipeId();
 
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 PGFLDHAKLPE = 12;</code>
-     * @return The pGFLDHAKLPE.
+     * <code>uint32 proficiency = 10;</code>
+     * @return The proficiency.
      */
-    int getPGFLDHAKLPE();
+    int getProficiency();
   }
   /**
+   * <pre>
+   * Obf: LOFGLBBMMAL
+   * </pre>
+   *
    * Protobuf type {@code CookRecipeData}
    */
   public static final class CookRecipeData extends
@@ -83,14 +79,14 @@ public final class CookRecipeDataOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 40: {
 
-              fPPPNMPIJDK_ = input.readUInt32();
+              recipeId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 80: {
 
-              pGFLDHAKLPE_ = input.readUInt32();
+              proficiency_ = input.readUInt32();
               break;
             }
             default: {
@@ -125,34 +121,26 @@ public final class CookRecipeDataOuterClass {
               emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.class, emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.Builder.class);
     }
 
-    public static final int FPPPNMPIJDK_FIELD_NUMBER = 8;
-    private int fPPPNMPIJDK_;
+    public static final int RECIPE_ID_FIELD_NUMBER = 5;
+    private int recipeId_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>uint32 FPPPNMPIJDK = 8;</code>
-     * @return The fPPPNMPIJDK.
+     * <code>uint32 recipe_id = 5;</code>
+     * @return The recipeId.
      */
     @java.lang.Override
-    public int getFPPPNMPIJDK() {
-      return fPPPNMPIJDK_;
+    public int getRecipeId() {
+      return recipeId_;
     }
 
-    public static final int PGFLDHAKLPE_FIELD_NUMBER = 12;
-    private int pGFLDHAKLPE_;
+    public static final int PROFICIENCY_FIELD_NUMBER = 10;
+    private int proficiency_;
     /**
-     * <pre>
-     * offset: 36
-     * </pre>
-     *
-     * <code>uint32 PGFLDHAKLPE = 12;</code>
-     * @return The pGFLDHAKLPE.
+     * <code>uint32 proficiency = 10;</code>
+     * @return The proficiency.
      */
     @java.lang.Override
-    public int getPGFLDHAKLPE() {
-      return pGFLDHAKLPE_;
+    public int getProficiency() {
+      return proficiency_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -169,11 +157,11 @@ public final class CookRecipeDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (fPPPNMPIJDK_ != 0) {
-        output.writeUInt32(8, fPPPNMPIJDK_);
+      if (recipeId_ != 0) {
+        output.writeUInt32(5, recipeId_);
       }
-      if (pGFLDHAKLPE_ != 0) {
-        output.writeUInt32(12, pGFLDHAKLPE_);
+      if (proficiency_ != 0) {
+        output.writeUInt32(10, proficiency_);
       }
       unknownFields.writeTo(output);
     }
@@ -184,13 +172,13 @@ public final class CookRecipeDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (fPPPNMPIJDK_ != 0) {
+      if (recipeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, fPPPNMPIJDK_);
+          .computeUInt32Size(5, recipeId_);
       }
-      if (pGFLDHAKLPE_ != 0) {
+      if (proficiency_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, pGFLDHAKLPE_);
+          .computeUInt32Size(10, proficiency_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -207,10 +195,10 @@ public final class CookRecipeDataOuterClass {
       }
       emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData other = (emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData) obj;
 
-      if (getFPPPNMPIJDK()
-          != other.getFPPPNMPIJDK()) return false;
-      if (getPGFLDHAKLPE()
-          != other.getPGFLDHAKLPE()) return false;
+      if (getRecipeId()
+          != other.getRecipeId()) return false;
+      if (getProficiency()
+          != other.getProficiency()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -222,10 +210,10 @@ public final class CookRecipeDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FPPPNMPIJDK_FIELD_NUMBER;
-      hash = (53 * hash) + getFPPPNMPIJDK();
-      hash = (37 * hash) + PGFLDHAKLPE_FIELD_NUMBER;
-      hash = (53 * hash) + getPGFLDHAKLPE();
+      hash = (37 * hash) + RECIPE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRecipeId();
+      hash = (37 * hash) + PROFICIENCY_FIELD_NUMBER;
+      hash = (53 * hash) + getProficiency();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -322,6 +310,10 @@ public final class CookRecipeDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: LOFGLBBMMAL
+     * </pre>
+     *
      * Protobuf type {@code CookRecipeData}
      */
     public static final class Builder extends
@@ -359,9 +351,9 @@ public final class CookRecipeDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        fPPPNMPIJDK_ = 0;
+        recipeId_ = 0;
 
-        pGFLDHAKLPE_ = 0;
+        proficiency_ = 0;
 
         return this;
       }
@@ -389,8 +381,8 @@ public final class CookRecipeDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData buildPartial() {
         emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData result = new emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData(this);
-        result.fPPPNMPIJDK_ = fPPPNMPIJDK_;
-        result.pGFLDHAKLPE_ = pGFLDHAKLPE_;
+        result.recipeId_ = recipeId_;
+        result.proficiency_ = proficiency_;
         onBuilt();
         return result;
       }
@@ -439,11 +431,11 @@ public final class CookRecipeDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData other) {
         if (other == emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.getDefaultInstance()) return this;
-        if (other.getFPPPNMPIJDK() != 0) {
-          setFPPPNMPIJDK(other.getFPPPNMPIJDK());
+        if (other.getRecipeId() != 0) {
+          setRecipeId(other.getRecipeId());
         }
-        if (other.getPGFLDHAKLPE() != 0) {
-          setPGFLDHAKLPE(other.getPGFLDHAKLPE());
+        if (other.getProficiency() != 0) {
+          setProficiency(other.getProficiency());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -474,88 +466,64 @@ public final class CookRecipeDataOuterClass {
         return this;
       }
 
-      private int fPPPNMPIJDK_ ;
+      private int recipeId_ ;
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 FPPPNMPIJDK = 8;</code>
-       * @return The fPPPNMPIJDK.
+       * <code>uint32 recipe_id = 5;</code>
+       * @return The recipeId.
        */
       @java.lang.Override
-      public int getFPPPNMPIJDK() {
-        return fPPPNMPIJDK_;
+      public int getRecipeId() {
+        return recipeId_;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 FPPPNMPIJDK = 8;</code>
-       * @param value The fPPPNMPIJDK to set.
+       * <code>uint32 recipe_id = 5;</code>
+       * @param value The recipeId to set.
        * @return This builder for chaining.
        */
-      public Builder setFPPPNMPIJDK(int value) {
+      public Builder setRecipeId(int value) {
         
-        fPPPNMPIJDK_ = value;
+        recipeId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>uint32 FPPPNMPIJDK = 8;</code>
+       * <code>uint32 recipe_id = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFPPPNMPIJDK() {
+      public Builder clearRecipeId() {
         
-        fPPPNMPIJDK_ = 0;
+        recipeId_ = 0;
         onChanged();
         return this;
       }
 
-      private int pGFLDHAKLPE_ ;
+      private int proficiency_ ;
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 PGFLDHAKLPE = 12;</code>
-       * @return The pGFLDHAKLPE.
+       * <code>uint32 proficiency = 10;</code>
+       * @return The proficiency.
        */
       @java.lang.Override
-      public int getPGFLDHAKLPE() {
-        return pGFLDHAKLPE_;
+      public int getProficiency() {
+        return proficiency_;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 PGFLDHAKLPE = 12;</code>
-       * @param value The pGFLDHAKLPE to set.
+       * <code>uint32 proficiency = 10;</code>
+       * @param value The proficiency to set.
        * @return This builder for chaining.
        */
-      public Builder setPGFLDHAKLPE(int value) {
+      public Builder setProficiency(int value) {
         
-        pGFLDHAKLPE_ = value;
+        proficiency_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 36
-       * </pre>
-       *
-       * <code>uint32 PGFLDHAKLPE = 12;</code>
+       * <code>uint32 proficiency = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPGFLDHAKLPE() {
+      public Builder clearProficiency() {
         
-        pGFLDHAKLPE_ = 0;
+        proficiency_ = 0;
         onChanged();
         return this;
       }
@@ -626,9 +594,9 @@ public final class CookRecipeDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024CookRecipeData.proto\":\n\016CookRecipeData" +
-      "\022\023\n\013FPPPNMPIJDK\030\010 \001(\r\022\023\n\013PGFLDHAKLPE\030\014 \001" +
-      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\024CookRecipeData.proto\"8\n\016CookRecipeData" +
+      "\022\021\n\trecipe_id\030\005 \001(\r\022\023\n\013proficiency\030\n \001(\r" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -639,7 +607,7 @@ public final class CookRecipeDataOuterClass {
     internal_static_CookRecipeData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CookRecipeData_descriptor,
-        new java.lang.String[] { "FPPPNMPIJDK", "PGFLDHAKLPE", });
+        new java.lang.String[] { "RecipeId", "Proficiency", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

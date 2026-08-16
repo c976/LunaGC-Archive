@@ -20,29 +20,21 @@ public final class ToTheMoonEnterSceneReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 scene_id = 12;</code>
+     * <code>uint32 scene_id = 11;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 NCBKKEAFGKL = 38670;</code>
      * @return The nCBKKEAFGKL.
      */
     int getNCBKKEAFGKL();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 JJDKCJNCKEK = 58570;</code>
      * @return The jJDKCJNCKEK.
      */
@@ -50,10 +42,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
 
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 version = 10;</code>
+     * <code>uint32 version = 12;</code>
      * @return The version.
      */
     int getVersion();
@@ -107,14 +99,14 @@ public final class ToTheMoonEnterSceneReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 88: {
 
-              version_ = input.readUInt32();
+              sceneId_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              sceneId_ = input.readUInt32();
+              version_ = input.readUInt32();
               break;
             }
             case 309360: {
@@ -159,14 +151,14 @@ public final class ToTheMoonEnterSceneReqOuterClass {
               emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq.class, emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 12;
+    public static final int SCENE_ID_FIELD_NUMBER = 11;
     private int sceneId_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 scene_id = 12;</code>
+     * <code>uint32 scene_id = 11;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -177,10 +169,6 @@ public final class ToTheMoonEnterSceneReqOuterClass {
     public static final int NCBKKEAFGKL_FIELD_NUMBER = 38670;
     private int nCBKKEAFGKL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 NCBKKEAFGKL = 38670;</code>
      * @return The nCBKKEAFGKL.
      */
@@ -192,10 +180,6 @@ public final class ToTheMoonEnterSceneReqOuterClass {
     public static final int JJDKCJNCKEK_FIELD_NUMBER = 58570;
     private int jJDKCJNCKEK_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 JJDKCJNCKEK = 58570;</code>
      * @return The jJDKCJNCKEK.
      */
@@ -204,14 +188,14 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       return jJDKCJNCKEK_;
     }
 
-    public static final int VERSION_FIELD_NUMBER = 10;
+    public static final int VERSION_FIELD_NUMBER = 12;
     private int version_;
     /**
      * <pre>
-     *6.3.0
+     *6.5.5 //6.4.0 //6.5.0     
      * </pre>
      *
-     * <code>uint32 version = 10;</code>
+     * <code>uint32 version = 12;</code>
      * @return The version.
      */
     @java.lang.Override
@@ -233,11 +217,11 @@ public final class ToTheMoonEnterSceneReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (version_ != 0) {
-        output.writeUInt32(10, version_);
-      }
       if (sceneId_ != 0) {
-        output.writeUInt32(12, sceneId_);
+        output.writeUInt32(11, sceneId_);
+      }
+      if (version_ != 0) {
+        output.writeUInt32(12, version_);
       }
       if (nCBKKEAFGKL_ != 0) {
         output.writeUInt32(38670, nCBKKEAFGKL_);
@@ -254,13 +238,13 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (version_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, version_);
-      }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, sceneId_);
+          .computeUInt32Size(11, sceneId_);
+      }
+      if (version_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, version_);
       }
       if (nCBKKEAFGKL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -579,10 +563,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       private int sceneId_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 scene_id = 12;</code>
+       * <code>uint32 scene_id = 11;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -591,10 +575,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 scene_id = 12;</code>
+       * <code>uint32 scene_id = 11;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -606,10 +590,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 scene_id = 12;</code>
+       * <code>uint32 scene_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -621,10 +605,6 @@ public final class ToTheMoonEnterSceneReqOuterClass {
 
       private int nCBKKEAFGKL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NCBKKEAFGKL = 38670;</code>
        * @return The nCBKKEAFGKL.
        */
@@ -633,10 +613,6 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return nCBKKEAFGKL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NCBKKEAFGKL = 38670;</code>
        * @param value The nCBKKEAFGKL to set.
        * @return This builder for chaining.
@@ -648,10 +624,6 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 NCBKKEAFGKL = 38670;</code>
        * @return This builder for chaining.
        */
@@ -664,10 +636,6 @@ public final class ToTheMoonEnterSceneReqOuterClass {
 
       private int jJDKCJNCKEK_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JJDKCJNCKEK = 58570;</code>
        * @return The jJDKCJNCKEK.
        */
@@ -676,10 +644,6 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return jJDKCJNCKEK_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JJDKCJNCKEK = 58570;</code>
        * @param value The jJDKCJNCKEK to set.
        * @return This builder for chaining.
@@ -691,10 +655,6 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 JJDKCJNCKEK = 58570;</code>
        * @return This builder for chaining.
        */
@@ -708,10 +668,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       private int version_ ;
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 version = 10;</code>
+       * <code>uint32 version = 12;</code>
        * @return The version.
        */
       @java.lang.Override
@@ -720,10 +680,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 version = 10;</code>
+       * <code>uint32 version = 12;</code>
        * @param value The version to set.
        * @return This builder for chaining.
        */
@@ -735,10 +695,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       }
       /**
        * <pre>
-       *6.3.0
+       *6.5.5 //6.4.0 //6.5.0     
        * </pre>
        *
-       * <code>uint32 version = 10;</code>
+       * <code>uint32 version = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearVersion() {
@@ -815,9 +775,9 @@ public final class ToTheMoonEnterSceneReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ToTheMoonEnterSceneReq.proto\"i\n\026ToTheM" +
-      "oonEnterSceneReq\022\020\n\010scene_id\030\014 \001(\r\022\025\n\013NC" +
+      "oonEnterSceneReq\022\020\n\010scene_id\030\013 \001(\r\022\025\n\013NC" +
       "BKKEAFGKL\030\216\256\002 \001(\r\022\025\n\013JJDKCJNCKEK\030\312\311\003 \001(\r" +
-      "\022\017\n\007version\030\n \001(\rB\033\n\031emu.grasscutter.net" +
+      "\022\017\n\007version\030\014 \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

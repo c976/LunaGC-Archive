@@ -19,28 +19,16 @@ public final class HLJBGEHDOFCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 9;</code>
      * @return A list containing the oKHHCHLABNF.
      */
     java.util.List<java.lang.Integer> getOKHHCHLABNFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 9;</code>
      * @return The count of oKHHCHLABNF.
      */
     int getOKHHCHLABNFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 9;</code>
      * @param index The index of the element to return.
      * @return The oKHHCHLABNF at the given index.
@@ -48,49 +36,29 @@ public final class HLJBGEHDOFCOuterClass {
     int getOKHHCHLABNF(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 13;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PGFCHCFNMOL = 11;</code>
      * @return The pGFCHCFNMOL.
      */
     int getPGFCHCFNMOL();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FMMKCGAIHCH = 12;</code>
      * @return The fMMKCGAIHCH.
      */
     boolean getFMMKCGAIHCH();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFCOJBIIADM OFJEHFIAOFH = 8;</code>
      * @return The enum numeric value on the wire for oFJEHFIAOFH.
      */
     int getOFJEHFIAOFHValue();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFCOJBIIADM OFJEHFIAOFH = 8;</code>
      * @return The oFJEHFIAOFH.
      */
@@ -224,10 +192,6 @@ public final class HLJBGEHDOFCOuterClass {
     public static final int OKHHCHLABNF_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList oKHHCHLABNF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 9;</code>
      * @return A list containing the oKHHCHLABNF.
      */
@@ -237,10 +201,6 @@ public final class HLJBGEHDOFCOuterClass {
       return oKHHCHLABNF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 9;</code>
      * @return The count of oKHHCHLABNF.
      */
@@ -248,10 +208,6 @@ public final class HLJBGEHDOFCOuterClass {
       return oKHHCHLABNF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OKHHCHLABNF = 9;</code>
      * @param index The index of the element to return.
      * @return The oKHHCHLABNF at the given index.
@@ -264,10 +220,6 @@ public final class HLJBGEHDOFCOuterClass {
     public static final int ID_FIELD_NUMBER = 13;
     private int id_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 id = 13;</code>
      * @return The id.
      */
@@ -279,10 +231,6 @@ public final class HLJBGEHDOFCOuterClass {
     public static final int PGFCHCFNMOL_FIELD_NUMBER = 11;
     private int pGFCHCFNMOL_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PGFCHCFNMOL = 11;</code>
      * @return The pGFCHCFNMOL.
      */
@@ -294,10 +242,6 @@ public final class HLJBGEHDOFCOuterClass {
     public static final int FMMKCGAIHCH_FIELD_NUMBER = 12;
     private boolean fMMKCGAIHCH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool FMMKCGAIHCH = 12;</code>
      * @return The fMMKCGAIHCH.
      */
@@ -309,10 +253,6 @@ public final class HLJBGEHDOFCOuterClass {
     public static final int OFJEHFIAOFH_FIELD_NUMBER = 8;
     private int oFJEHFIAOFH_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFCOJBIIADM OFJEHFIAOFH = 8;</code>
      * @return The enum numeric value on the wire for oFJEHFIAOFH.
      */
@@ -320,10 +260,6 @@ public final class HLJBGEHDOFCOuterClass {
       return oFJEHFIAOFH_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.IFCOJBIIADM OFJEHFIAOFH = 8;</code>
      * @return The oFJEHFIAOFH.
      */
@@ -741,10 +677,6 @@ public final class HLJBGEHDOFCOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 9;</code>
        * @return A list containing the oKHHCHLABNF.
        */
@@ -754,10 +686,6 @@ public final class HLJBGEHDOFCOuterClass {
                  java.util.Collections.unmodifiableList(oKHHCHLABNF_) : oKHHCHLABNF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 9;</code>
        * @return The count of oKHHCHLABNF.
        */
@@ -765,10 +693,6 @@ public final class HLJBGEHDOFCOuterClass {
         return oKHHCHLABNF_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 9;</code>
        * @param index The index of the element to return.
        * @return The oKHHCHLABNF at the given index.
@@ -777,10 +701,6 @@ public final class HLJBGEHDOFCOuterClass {
         return oKHHCHLABNF_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 9;</code>
        * @param index The index to set the value at.
        * @param value The oKHHCHLABNF to set.
@@ -794,10 +714,6 @@ public final class HLJBGEHDOFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 9;</code>
        * @param value The oKHHCHLABNF to add.
        * @return This builder for chaining.
@@ -809,10 +725,6 @@ public final class HLJBGEHDOFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 9;</code>
        * @param values The oKHHCHLABNF to add.
        * @return This builder for chaining.
@@ -826,10 +738,6 @@ public final class HLJBGEHDOFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OKHHCHLABNF = 9;</code>
        * @return This builder for chaining.
        */
@@ -842,10 +750,6 @@ public final class HLJBGEHDOFCOuterClass {
 
       private int id_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 13;</code>
        * @return The id.
        */
@@ -854,10 +758,6 @@ public final class HLJBGEHDOFCOuterClass {
         return id_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 13;</code>
        * @param value The id to set.
        * @return This builder for chaining.
@@ -869,10 +769,6 @@ public final class HLJBGEHDOFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 id = 13;</code>
        * @return This builder for chaining.
        */
@@ -885,10 +781,6 @@ public final class HLJBGEHDOFCOuterClass {
 
       private int pGFCHCFNMOL_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGFCHCFNMOL = 11;</code>
        * @return The pGFCHCFNMOL.
        */
@@ -897,10 +789,6 @@ public final class HLJBGEHDOFCOuterClass {
         return pGFCHCFNMOL_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGFCHCFNMOL = 11;</code>
        * @param value The pGFCHCFNMOL to set.
        * @return This builder for chaining.
@@ -912,10 +800,6 @@ public final class HLJBGEHDOFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PGFCHCFNMOL = 11;</code>
        * @return This builder for chaining.
        */
@@ -928,10 +812,6 @@ public final class HLJBGEHDOFCOuterClass {
 
       private boolean fMMKCGAIHCH_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FMMKCGAIHCH = 12;</code>
        * @return The fMMKCGAIHCH.
        */
@@ -940,10 +820,6 @@ public final class HLJBGEHDOFCOuterClass {
         return fMMKCGAIHCH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FMMKCGAIHCH = 12;</code>
        * @param value The fMMKCGAIHCH to set.
        * @return This builder for chaining.
@@ -955,10 +831,6 @@ public final class HLJBGEHDOFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool FMMKCGAIHCH = 12;</code>
        * @return This builder for chaining.
        */
@@ -971,10 +843,6 @@ public final class HLJBGEHDOFCOuterClass {
 
       private int oFJEHFIAOFH_ = 0;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFCOJBIIADM OFJEHFIAOFH = 8;</code>
        * @return The enum numeric value on the wire for oFJEHFIAOFH.
        */
@@ -982,10 +850,6 @@ public final class HLJBGEHDOFCOuterClass {
         return oFJEHFIAOFH_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFCOJBIIADM OFJEHFIAOFH = 8;</code>
        * @param value The enum numeric value on the wire for oFJEHFIAOFH to set.
        * @return This builder for chaining.
@@ -997,10 +861,6 @@ public final class HLJBGEHDOFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFCOJBIIADM OFJEHFIAOFH = 8;</code>
        * @return The oFJEHFIAOFH.
        */
@@ -1011,10 +871,6 @@ public final class HLJBGEHDOFCOuterClass {
         return result == null ? emu.grasscutter.net.proto.IFCOJBIIADMOuterClass.IFCOJBIIADM.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFCOJBIIADM OFJEHFIAOFH = 8;</code>
        * @param value The oFJEHFIAOFH to set.
        * @return This builder for chaining.
@@ -1029,10 +885,6 @@ public final class HLJBGEHDOFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.IFCOJBIIADM OFJEHFIAOFH = 8;</code>
        * @return This builder for chaining.
        */

@@ -19,77 +19,45 @@ public final class GHNIPGHEPFCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BEHMNJDHOBM detail_info = 4;</code>
      * @return Whether the detailInfo field is set.
      */
     boolean hasDetailInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BEHMNJDHOBM detail_info = 4;</code>
      * @return The detailInfo.
      */
     emu.grasscutter.net.proto.BEHMNJDHOBMOuterClass.BEHMNJDHOBM getDetailInfo();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BEHMNJDHOBM detail_info = 4;</code>
      */
     emu.grasscutter.net.proto.BEHMNJDHOBMOuterClass.BEHMNJDHOBMOrBuilder getDetailInfoOrBuilder();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ACJFNLCELDN = 6;</code>
      * @return The aCJFNLCELDN.
      */
     int getACJFNLCELDN();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DPEKCEIHCAJ = 15;</code>
      * @return The dPEKCEIHCAJ.
      */
     int getDPEKCEIHCAJ();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PCFKHMFDNPI = 2;</code>
      * @return The pCFKHMFDNPI.
      */
@@ -213,10 +181,6 @@ public final class GHNIPGHEPFCOuterClass {
     public static final int DETAIL_INFO_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.BEHMNJDHOBMOuterClass.BEHMNJDHOBM detailInfo_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BEHMNJDHOBM detail_info = 4;</code>
      * @return Whether the detailInfo field is set.
      */
@@ -225,10 +189,6 @@ public final class GHNIPGHEPFCOuterClass {
       return detailInfo_ != null;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BEHMNJDHOBM detail_info = 4;</code>
      * @return The detailInfo.
      */
@@ -237,10 +197,6 @@ public final class GHNIPGHEPFCOuterClass {
       return detailInfo_ == null ? emu.grasscutter.net.proto.BEHMNJDHOBMOuterClass.BEHMNJDHOBM.getDefaultInstance() : detailInfo_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>.BEHMNJDHOBM detail_info = 4;</code>
      */
     @java.lang.Override
@@ -251,10 +207,6 @@ public final class GHNIPGHEPFCOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 12;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
@@ -266,10 +218,6 @@ public final class GHNIPGHEPFCOuterClass {
     public static final int ACJFNLCELDN_FIELD_NUMBER = 6;
     private int aCJFNLCELDN_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 ACJFNLCELDN = 6;</code>
      * @return The aCJFNLCELDN.
      */
@@ -281,10 +229,6 @@ public final class GHNIPGHEPFCOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 7;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
@@ -296,10 +240,6 @@ public final class GHNIPGHEPFCOuterClass {
     public static final int DPEKCEIHCAJ_FIELD_NUMBER = 15;
     private int dPEKCEIHCAJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 DPEKCEIHCAJ = 15;</code>
      * @return The dPEKCEIHCAJ.
      */
@@ -311,10 +251,6 @@ public final class GHNIPGHEPFCOuterClass {
     public static final int PCFKHMFDNPI_FIELD_NUMBER = 2;
     private int pCFKHMFDNPI_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 PCFKHMFDNPI = 2;</code>
      * @return The pCFKHMFDNPI.
      */
@@ -728,10 +664,6 @@ public final class GHNIPGHEPFCOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BEHMNJDHOBMOuterClass.BEHMNJDHOBM, emu.grasscutter.net.proto.BEHMNJDHOBMOuterClass.BEHMNJDHOBM.Builder, emu.grasscutter.net.proto.BEHMNJDHOBMOuterClass.BEHMNJDHOBMOrBuilder> detailInfoBuilder_;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BEHMNJDHOBM detail_info = 4;</code>
        * @return Whether the detailInfo field is set.
        */
@@ -739,10 +671,6 @@ public final class GHNIPGHEPFCOuterClass {
         return detailInfoBuilder_ != null || detailInfo_ != null;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BEHMNJDHOBM detail_info = 4;</code>
        * @return The detailInfo.
        */
@@ -754,10 +682,6 @@ public final class GHNIPGHEPFCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BEHMNJDHOBM detail_info = 4;</code>
        */
       public Builder setDetailInfo(emu.grasscutter.net.proto.BEHMNJDHOBMOuterClass.BEHMNJDHOBM value) {
@@ -774,10 +698,6 @@ public final class GHNIPGHEPFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BEHMNJDHOBM detail_info = 4;</code>
        */
       public Builder setDetailInfo(
@@ -792,10 +712,6 @@ public final class GHNIPGHEPFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BEHMNJDHOBM detail_info = 4;</code>
        */
       public Builder mergeDetailInfo(emu.grasscutter.net.proto.BEHMNJDHOBMOuterClass.BEHMNJDHOBM value) {
@@ -814,10 +730,6 @@ public final class GHNIPGHEPFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BEHMNJDHOBM detail_info = 4;</code>
        */
       public Builder clearDetailInfo() {
@@ -832,10 +744,6 @@ public final class GHNIPGHEPFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BEHMNJDHOBM detail_info = 4;</code>
        */
       public emu.grasscutter.net.proto.BEHMNJDHOBMOuterClass.BEHMNJDHOBM.Builder getDetailInfoBuilder() {
@@ -844,10 +752,6 @@ public final class GHNIPGHEPFCOuterClass {
         return getDetailInfoFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BEHMNJDHOBM detail_info = 4;</code>
        */
       public emu.grasscutter.net.proto.BEHMNJDHOBMOuterClass.BEHMNJDHOBMOrBuilder getDetailInfoOrBuilder() {
@@ -859,10 +763,6 @@ public final class GHNIPGHEPFCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>.BEHMNJDHOBM detail_info = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -881,10 +781,6 @@ public final class GHNIPGHEPFCOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @return The isOpen.
        */
@@ -893,10 +789,6 @@ public final class GHNIPGHEPFCOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -908,10 +800,6 @@ public final class GHNIPGHEPFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 12;</code>
        * @return This builder for chaining.
        */
@@ -924,10 +812,6 @@ public final class GHNIPGHEPFCOuterClass {
 
       private int aCJFNLCELDN_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ACJFNLCELDN = 6;</code>
        * @return The aCJFNLCELDN.
        */
@@ -936,10 +820,6 @@ public final class GHNIPGHEPFCOuterClass {
         return aCJFNLCELDN_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ACJFNLCELDN = 6;</code>
        * @param value The aCJFNLCELDN to set.
        * @return This builder for chaining.
@@ -951,10 +831,6 @@ public final class GHNIPGHEPFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 ACJFNLCELDN = 6;</code>
        * @return This builder for chaining.
        */
@@ -967,10 +843,6 @@ public final class GHNIPGHEPFCOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 7;</code>
        * @return The levelId.
        */
@@ -979,10 +851,6 @@ public final class GHNIPGHEPFCOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 7;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -994,10 +862,6 @@ public final class GHNIPGHEPFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 7;</code>
        * @return This builder for chaining.
        */
@@ -1010,10 +874,6 @@ public final class GHNIPGHEPFCOuterClass {
 
       private int dPEKCEIHCAJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DPEKCEIHCAJ = 15;</code>
        * @return The dPEKCEIHCAJ.
        */
@@ -1022,10 +882,6 @@ public final class GHNIPGHEPFCOuterClass {
         return dPEKCEIHCAJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DPEKCEIHCAJ = 15;</code>
        * @param value The dPEKCEIHCAJ to set.
        * @return This builder for chaining.
@@ -1037,10 +893,6 @@ public final class GHNIPGHEPFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 DPEKCEIHCAJ = 15;</code>
        * @return This builder for chaining.
        */
@@ -1053,10 +905,6 @@ public final class GHNIPGHEPFCOuterClass {
 
       private int pCFKHMFDNPI_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PCFKHMFDNPI = 2;</code>
        * @return The pCFKHMFDNPI.
        */
@@ -1065,10 +913,6 @@ public final class GHNIPGHEPFCOuterClass {
         return pCFKHMFDNPI_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PCFKHMFDNPI = 2;</code>
        * @param value The pCFKHMFDNPI to set.
        * @return This builder for chaining.
@@ -1080,10 +924,6 @@ public final class GHNIPGHEPFCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 PCFKHMFDNPI = 2;</code>
        * @return This builder for chaining.
        */

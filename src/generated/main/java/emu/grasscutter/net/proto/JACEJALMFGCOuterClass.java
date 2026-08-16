@@ -19,54 +19,30 @@ public final class JACEJALMFGCOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC> 
         getBAKFBBJHLHCList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
      */
     emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC getBAKFBBJHLHC(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
      */
     int getBAKFBBJHLHCCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOICOrBuilder> 
         getBAKFBBJHLHCOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
      */
     emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOICOrBuilder getBAKFBBJHLHCOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LCAJIJCPOFJ = 9;</code>
      * @return The lCAJIJCPOFJ.
      */
@@ -171,10 +147,6 @@ public final class JACEJALMFGCOuterClass {
     public static final int BAKFBBJHLHC_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC> bAKFBBJHLHC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
      */
     @java.lang.Override
@@ -182,10 +154,6 @@ public final class JACEJALMFGCOuterClass {
       return bAKFBBJHLHC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
      */
     @java.lang.Override
@@ -194,10 +162,6 @@ public final class JACEJALMFGCOuterClass {
       return bAKFBBJHLHC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
      */
     @java.lang.Override
@@ -205,10 +169,6 @@ public final class JACEJALMFGCOuterClass {
       return bAKFBBJHLHC_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
      */
     @java.lang.Override
@@ -216,10 +176,6 @@ public final class JACEJALMFGCOuterClass {
       return bAKFBBJHLHC_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
      */
     @java.lang.Override
@@ -231,10 +187,6 @@ public final class JACEJALMFGCOuterClass {
     public static final int LCAJIJCPOFJ_FIELD_NUMBER = 9;
     private int lCAJIJCPOFJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 LCAJIJCPOFJ = 9;</code>
      * @return The lCAJIJCPOFJ.
      */
@@ -615,10 +567,6 @@ public final class JACEJALMFGCOuterClass {
           emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC, emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC.Builder, emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOICOrBuilder> bAKFBBJHLHCBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC> getBAKFBBJHLHCList() {
@@ -629,10 +577,6 @@ public final class JACEJALMFGCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public int getBAKFBBJHLHCCount() {
@@ -643,10 +587,6 @@ public final class JACEJALMFGCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC getBAKFBBJHLHC(int index) {
@@ -657,10 +597,6 @@ public final class JACEJALMFGCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public Builder setBAKFBBJHLHC(
@@ -678,10 +614,6 @@ public final class JACEJALMFGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public Builder setBAKFBBJHLHC(
@@ -696,10 +628,6 @@ public final class JACEJALMFGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public Builder addBAKFBBJHLHC(emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC value) {
@@ -716,10 +644,6 @@ public final class JACEJALMFGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public Builder addBAKFBBJHLHC(
@@ -737,10 +661,6 @@ public final class JACEJALMFGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public Builder addBAKFBBJHLHC(
@@ -755,10 +675,6 @@ public final class JACEJALMFGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public Builder addBAKFBBJHLHC(
@@ -773,10 +689,6 @@ public final class JACEJALMFGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public Builder addAllBAKFBBJHLHC(
@@ -792,10 +704,6 @@ public final class JACEJALMFGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public Builder clearBAKFBBJHLHC() {
@@ -809,10 +717,6 @@ public final class JACEJALMFGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public Builder removeBAKFBBJHLHC(int index) {
@@ -826,10 +730,6 @@ public final class JACEJALMFGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC.Builder getBAKFBBJHLHCBuilder(
@@ -837,10 +737,6 @@ public final class JACEJALMFGCOuterClass {
         return getBAKFBBJHLHCFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOICOrBuilder getBAKFBBJHLHCOrBuilder(
@@ -851,10 +747,6 @@ public final class JACEJALMFGCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOICOrBuilder> 
@@ -866,10 +758,6 @@ public final class JACEJALMFGCOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC.Builder addBAKFBBJHLHCBuilder() {
@@ -877,10 +765,6 @@ public final class JACEJALMFGCOuterClass {
             emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC.Builder addBAKFBBJHLHCBuilder(
@@ -889,10 +773,6 @@ public final class JACEJALMFGCOuterClass {
             index, emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .LLNNPDEJOIC BAKFBBJHLHC = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.LLNNPDEJOICOuterClass.LLNNPDEJOIC.Builder> 
@@ -916,10 +796,6 @@ public final class JACEJALMFGCOuterClass {
 
       private int lCAJIJCPOFJ_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LCAJIJCPOFJ = 9;</code>
        * @return The lCAJIJCPOFJ.
        */
@@ -928,10 +804,6 @@ public final class JACEJALMFGCOuterClass {
         return lCAJIJCPOFJ_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LCAJIJCPOFJ = 9;</code>
        * @param value The lCAJIJCPOFJ to set.
        * @return This builder for chaining.
@@ -943,10 +815,6 @@ public final class JACEJALMFGCOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 LCAJIJCPOFJ = 9;</code>
        * @return This builder for chaining.
        */

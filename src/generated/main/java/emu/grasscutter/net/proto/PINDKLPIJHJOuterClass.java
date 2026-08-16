@@ -19,28 +19,16 @@ public final class PINDKLPIJHJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
      * @return A list containing the eAFNNLOAGAC.
      */
     java.util.List<java.lang.Integer> getEAFNNLOAGACList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
      * @return The count of eAFNNLOAGAC.
      */
     int getEAFNNLOAGACCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
      * @param index The index of the element to return.
      * @return The eAFNNLOAGAC at the given index.
@@ -48,28 +36,16 @@ public final class PINDKLPIJHJOuterClass {
     int getEAFNNLOAGAC(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
      * @return A list containing the aIOAAPOOOHE.
      */
     java.util.List<java.lang.Integer> getAIOAAPOOOHEList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
      * @return The count of aIOAAPOOOHE.
      */
     int getAIOAAPOOOHECount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
      * @param index The index of the element to return.
      * @return The aIOAAPOOOHE at the given index.
@@ -77,28 +53,16 @@ public final class PINDKLPIJHJOuterClass {
     int getAIOAAPOOOHE(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OOOAPFIENMC = 8;</code>
      * @return A list containing the oOOAPFIENMC.
      */
     java.util.List<java.lang.Integer> getOOOAPFIENMCList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OOOAPFIENMC = 8;</code>
      * @return The count of oOOAPFIENMC.
      */
     int getOOOAPFIENMCCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OOOAPFIENMC = 8;</code>
      * @param index The index of the element to return.
      * @return The oOOAPFIENMC at the given index.
@@ -106,28 +70,16 @@ public final class PINDKLPIJHJOuterClass {
     int getOOOAPFIENMC(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FAGAABFJLMF = 7;</code>
      * @return A list containing the fAGAABFJLMF.
      */
     java.util.List<java.lang.Integer> getFAGAABFJLMFList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FAGAABFJLMF = 7;</code>
      * @return The count of fAGAABFJLMF.
      */
     int getFAGAABFJLMFCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FAGAABFJLMF = 7;</code>
      * @param index The index of the element to return.
      * @return The fAGAABFJLMF at the given index.
@@ -135,40 +87,24 @@ public final class PINDKLPIJHJOuterClass {
     int getFAGAABFJLMF(int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 11;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
@@ -375,10 +311,6 @@ public final class PINDKLPIJHJOuterClass {
     public static final int EAFNNLOAGAC_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList eAFNNLOAGAC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
      * @return A list containing the eAFNNLOAGAC.
      */
@@ -388,10 +320,6 @@ public final class PINDKLPIJHJOuterClass {
       return eAFNNLOAGAC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
      * @return The count of eAFNNLOAGAC.
      */
@@ -399,10 +327,6 @@ public final class PINDKLPIJHJOuterClass {
       return eAFNNLOAGAC_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
      * @param index The index of the element to return.
      * @return The eAFNNLOAGAC at the given index.
@@ -415,10 +339,6 @@ public final class PINDKLPIJHJOuterClass {
     public static final int AIOAAPOOOHE_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList aIOAAPOOOHE_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
      * @return A list containing the aIOAAPOOOHE.
      */
@@ -428,10 +348,6 @@ public final class PINDKLPIJHJOuterClass {
       return aIOAAPOOOHE_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
      * @return The count of aIOAAPOOOHE.
      */
@@ -439,10 +355,6 @@ public final class PINDKLPIJHJOuterClass {
       return aIOAAPOOOHE_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
      * @param index The index of the element to return.
      * @return The aIOAAPOOOHE at the given index.
@@ -455,10 +367,6 @@ public final class PINDKLPIJHJOuterClass {
     public static final int OOOAPFIENMC_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList oOOAPFIENMC_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OOOAPFIENMC = 8;</code>
      * @return A list containing the oOOAPFIENMC.
      */
@@ -468,10 +376,6 @@ public final class PINDKLPIJHJOuterClass {
       return oOOAPFIENMC_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OOOAPFIENMC = 8;</code>
      * @return The count of oOOAPFIENMC.
      */
@@ -479,10 +383,6 @@ public final class PINDKLPIJHJOuterClass {
       return oOOAPFIENMC_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 OOOAPFIENMC = 8;</code>
      * @param index The index of the element to return.
      * @return The oOOAPFIENMC at the given index.
@@ -495,10 +395,6 @@ public final class PINDKLPIJHJOuterClass {
     public static final int FAGAABFJLMF_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList fAGAABFJLMF_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FAGAABFJLMF = 7;</code>
      * @return A list containing the fAGAABFJLMF.
      */
@@ -508,10 +404,6 @@ public final class PINDKLPIJHJOuterClass {
       return fAGAABFJLMF_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FAGAABFJLMF = 7;</code>
      * @return The count of fAGAABFJLMF.
      */
@@ -519,10 +411,6 @@ public final class PINDKLPIJHJOuterClass {
       return fAGAABFJLMF_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated uint32 FAGAABFJLMF = 7;</code>
      * @param index The index of the element to return.
      * @return The fAGAABFJLMF at the given index.
@@ -535,10 +423,6 @@ public final class PINDKLPIJHJOuterClass {
     public static final int SCORE_FIELD_NUMBER = 11;
     private int score_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 score = 11;</code>
      * @return The score.
      */
@@ -550,10 +434,6 @@ public final class PINDKLPIJHJOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 15;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
@@ -565,10 +445,6 @@ public final class PINDKLPIJHJOuterClass {
     public static final int IS_FINISH_FIELD_NUMBER = 4;
     private boolean isFinish_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
@@ -580,10 +456,6 @@ public final class PINDKLPIJHJOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 2;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
@@ -1134,10 +1006,6 @@ public final class PINDKLPIJHJOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
        * @return A list containing the eAFNNLOAGAC.
        */
@@ -1147,10 +1015,6 @@ public final class PINDKLPIJHJOuterClass {
                  java.util.Collections.unmodifiableList(eAFNNLOAGAC_) : eAFNNLOAGAC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
        * @return The count of eAFNNLOAGAC.
        */
@@ -1158,10 +1022,6 @@ public final class PINDKLPIJHJOuterClass {
         return eAFNNLOAGAC_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
        * @param index The index of the element to return.
        * @return The eAFNNLOAGAC at the given index.
@@ -1170,10 +1030,6 @@ public final class PINDKLPIJHJOuterClass {
         return eAFNNLOAGAC_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
        * @param index The index to set the value at.
        * @param value The eAFNNLOAGAC to set.
@@ -1187,10 +1043,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
        * @param value The eAFNNLOAGAC to add.
        * @return This builder for chaining.
@@ -1202,10 +1054,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
        * @param values The eAFNNLOAGAC to add.
        * @return This builder for chaining.
@@ -1219,10 +1067,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 EAFNNLOAGAC = 1;</code>
        * @return This builder for chaining.
        */
@@ -1241,10 +1085,6 @@ public final class PINDKLPIJHJOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
        * @return A list containing the aIOAAPOOOHE.
        */
@@ -1254,10 +1094,6 @@ public final class PINDKLPIJHJOuterClass {
                  java.util.Collections.unmodifiableList(aIOAAPOOOHE_) : aIOAAPOOOHE_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
        * @return The count of aIOAAPOOOHE.
        */
@@ -1265,10 +1101,6 @@ public final class PINDKLPIJHJOuterClass {
         return aIOAAPOOOHE_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
        * @param index The index of the element to return.
        * @return The aIOAAPOOOHE at the given index.
@@ -1277,10 +1109,6 @@ public final class PINDKLPIJHJOuterClass {
         return aIOAAPOOOHE_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
        * @param index The index to set the value at.
        * @param value The aIOAAPOOOHE to set.
@@ -1294,10 +1122,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
        * @param value The aIOAAPOOOHE to add.
        * @return This builder for chaining.
@@ -1309,10 +1133,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
        * @param values The aIOAAPOOOHE to add.
        * @return This builder for chaining.
@@ -1326,10 +1146,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 AIOAAPOOOHE = 10;</code>
        * @return This builder for chaining.
        */
@@ -1348,10 +1164,6 @@ public final class PINDKLPIJHJOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OOOAPFIENMC = 8;</code>
        * @return A list containing the oOOAPFIENMC.
        */
@@ -1361,10 +1173,6 @@ public final class PINDKLPIJHJOuterClass {
                  java.util.Collections.unmodifiableList(oOOAPFIENMC_) : oOOAPFIENMC_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OOOAPFIENMC = 8;</code>
        * @return The count of oOOAPFIENMC.
        */
@@ -1372,10 +1180,6 @@ public final class PINDKLPIJHJOuterClass {
         return oOOAPFIENMC_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OOOAPFIENMC = 8;</code>
        * @param index The index of the element to return.
        * @return The oOOAPFIENMC at the given index.
@@ -1384,10 +1188,6 @@ public final class PINDKLPIJHJOuterClass {
         return oOOAPFIENMC_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OOOAPFIENMC = 8;</code>
        * @param index The index to set the value at.
        * @param value The oOOAPFIENMC to set.
@@ -1401,10 +1201,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OOOAPFIENMC = 8;</code>
        * @param value The oOOAPFIENMC to add.
        * @return This builder for chaining.
@@ -1416,10 +1212,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OOOAPFIENMC = 8;</code>
        * @param values The oOOAPFIENMC to add.
        * @return This builder for chaining.
@@ -1433,10 +1225,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 OOOAPFIENMC = 8;</code>
        * @return This builder for chaining.
        */
@@ -1455,10 +1243,6 @@ public final class PINDKLPIJHJOuterClass {
          }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FAGAABFJLMF = 7;</code>
        * @return A list containing the fAGAABFJLMF.
        */
@@ -1468,10 +1252,6 @@ public final class PINDKLPIJHJOuterClass {
                  java.util.Collections.unmodifiableList(fAGAABFJLMF_) : fAGAABFJLMF_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FAGAABFJLMF = 7;</code>
        * @return The count of fAGAABFJLMF.
        */
@@ -1479,10 +1259,6 @@ public final class PINDKLPIJHJOuterClass {
         return fAGAABFJLMF_.size();
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FAGAABFJLMF = 7;</code>
        * @param index The index of the element to return.
        * @return The fAGAABFJLMF at the given index.
@@ -1491,10 +1267,6 @@ public final class PINDKLPIJHJOuterClass {
         return fAGAABFJLMF_.getInt(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FAGAABFJLMF = 7;</code>
        * @param index The index to set the value at.
        * @param value The fAGAABFJLMF to set.
@@ -1508,10 +1280,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FAGAABFJLMF = 7;</code>
        * @param value The fAGAABFJLMF to add.
        * @return This builder for chaining.
@@ -1523,10 +1291,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FAGAABFJLMF = 7;</code>
        * @param values The fAGAABFJLMF to add.
        * @return This builder for chaining.
@@ -1540,10 +1304,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated uint32 FAGAABFJLMF = 7;</code>
        * @return This builder for chaining.
        */
@@ -1556,10 +1316,6 @@ public final class PINDKLPIJHJOuterClass {
 
       private int score_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 11;</code>
        * @return The score.
        */
@@ -1568,10 +1324,6 @@ public final class PINDKLPIJHJOuterClass {
         return score_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 11;</code>
        * @param value The score to set.
        * @return This builder for chaining.
@@ -1583,10 +1335,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 score = 11;</code>
        * @return This builder for chaining.
        */
@@ -1599,10 +1347,6 @@ public final class PINDKLPIJHJOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return The isOpen.
        */
@@ -1611,10 +1355,6 @@ public final class PINDKLPIJHJOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -1626,10 +1366,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 15;</code>
        * @return This builder for chaining.
        */
@@ -1642,10 +1378,6 @@ public final class PINDKLPIJHJOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return The isFinish.
        */
@@ -1654,10 +1386,6 @@ public final class PINDKLPIJHJOuterClass {
         return isFinish_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
@@ -1669,10 +1397,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_finish = 4;</code>
        * @return This builder for chaining.
        */
@@ -1685,10 +1409,6 @@ public final class PINDKLPIJHJOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 2;</code>
        * @return The levelId.
        */
@@ -1697,10 +1417,6 @@ public final class PINDKLPIJHJOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 2;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -1712,10 +1428,6 @@ public final class PINDKLPIJHJOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 2;</code>
        * @return This builder for chaining.
        */

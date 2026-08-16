@@ -19,88 +19,48 @@ public final class EGAONNPNFCBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK> 
         getJPIDLOBGPDJList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
      */
     emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK getJPIDLOBGPDJ(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
      */
     int getJPIDLOBGPDJCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJKOrBuilder> 
         getJPIDLOBGPDJOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
      */
     emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJKOrBuilder getJPIDLOBGPDJOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD> 
         getKBGJCPOKLFBList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
      */
     emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD getKBGJCPOKLFB(int index);
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
      */
     int getKBGJCPOKLFBCount();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGDOrBuilder> 
         getKBGJCPOKLFBOrBuilderList();
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
      */
     emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGDOrBuilder getKBGJCPOKLFBOrBuilder(
@@ -213,10 +173,6 @@ public final class EGAONNPNFCBOuterClass {
     public static final int JPIDLOBGPDJ_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK> jPIDLOBGPDJ_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
      */
     @java.lang.Override
@@ -224,10 +180,6 @@ public final class EGAONNPNFCBOuterClass {
       return jPIDLOBGPDJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
      */
     @java.lang.Override
@@ -236,10 +188,6 @@ public final class EGAONNPNFCBOuterClass {
       return jPIDLOBGPDJ_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
      */
     @java.lang.Override
@@ -247,10 +195,6 @@ public final class EGAONNPNFCBOuterClass {
       return jPIDLOBGPDJ_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
      */
     @java.lang.Override
@@ -258,10 +202,6 @@ public final class EGAONNPNFCBOuterClass {
       return jPIDLOBGPDJ_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
      */
     @java.lang.Override
@@ -273,10 +213,6 @@ public final class EGAONNPNFCBOuterClass {
     public static final int KBGJCPOKLFB_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD> kBGJCPOKLFB_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
      */
     @java.lang.Override
@@ -284,10 +220,6 @@ public final class EGAONNPNFCBOuterClass {
       return kBGJCPOKLFB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
      */
     @java.lang.Override
@@ -296,10 +228,6 @@ public final class EGAONNPNFCBOuterClass {
       return kBGJCPOKLFB_;
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
      */
     @java.lang.Override
@@ -307,10 +235,6 @@ public final class EGAONNPNFCBOuterClass {
       return kBGJCPOKLFB_.size();
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
      */
     @java.lang.Override
@@ -318,10 +242,6 @@ public final class EGAONNPNFCBOuterClass {
       return kBGJCPOKLFB_.get(index);
     }
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
      */
     @java.lang.Override
@@ -740,10 +660,6 @@ public final class EGAONNPNFCBOuterClass {
           emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK, emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK.Builder, emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJKOrBuilder> jPIDLOBGPDJBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK> getJPIDLOBGPDJList() {
@@ -754,10 +670,6 @@ public final class EGAONNPNFCBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public int getJPIDLOBGPDJCount() {
@@ -768,10 +680,6 @@ public final class EGAONNPNFCBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK getJPIDLOBGPDJ(int index) {
@@ -782,10 +690,6 @@ public final class EGAONNPNFCBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public Builder setJPIDLOBGPDJ(
@@ -803,10 +707,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public Builder setJPIDLOBGPDJ(
@@ -821,10 +721,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public Builder addJPIDLOBGPDJ(emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK value) {
@@ -841,10 +737,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public Builder addJPIDLOBGPDJ(
@@ -862,10 +754,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public Builder addJPIDLOBGPDJ(
@@ -880,10 +768,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public Builder addJPIDLOBGPDJ(
@@ -898,10 +782,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public Builder addAllJPIDLOBGPDJ(
@@ -917,10 +797,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public Builder clearJPIDLOBGPDJ() {
@@ -934,10 +810,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public Builder removeJPIDLOBGPDJ(int index) {
@@ -951,10 +823,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK.Builder getJPIDLOBGPDJBuilder(
@@ -962,10 +830,6 @@ public final class EGAONNPNFCBOuterClass {
         return getJPIDLOBGPDJFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJKOrBuilder getJPIDLOBGPDJOrBuilder(
@@ -976,10 +840,6 @@ public final class EGAONNPNFCBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJKOrBuilder> 
@@ -991,10 +851,6 @@ public final class EGAONNPNFCBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK.Builder addJPIDLOBGPDJBuilder() {
@@ -1002,10 +858,6 @@ public final class EGAONNPNFCBOuterClass {
             emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK.Builder addJPIDLOBGPDJBuilder(
@@ -1014,10 +866,6 @@ public final class EGAONNPNFCBOuterClass {
             index, emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .OFHAAKDHJJK JPIDLOBGPDJ = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OFHAAKDHJJKOuterClass.OFHAAKDHJJK.Builder> 
@@ -1052,10 +900,6 @@ public final class EGAONNPNFCBOuterClass {
           emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD, emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD.Builder, emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGDOrBuilder> kBGJCPOKLFBBuilder_;
 
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD> getKBGJCPOKLFBList() {
@@ -1066,10 +910,6 @@ public final class EGAONNPNFCBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public int getKBGJCPOKLFBCount() {
@@ -1080,10 +920,6 @@ public final class EGAONNPNFCBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD getKBGJCPOKLFB(int index) {
@@ -1094,10 +930,6 @@ public final class EGAONNPNFCBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public Builder setKBGJCPOKLFB(
@@ -1115,10 +947,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public Builder setKBGJCPOKLFB(
@@ -1133,10 +961,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public Builder addKBGJCPOKLFB(emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD value) {
@@ -1153,10 +977,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -1174,10 +994,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -1192,10 +1008,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public Builder addKBGJCPOKLFB(
@@ -1210,10 +1022,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public Builder addAllKBGJCPOKLFB(
@@ -1229,10 +1037,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public Builder clearKBGJCPOKLFB() {
@@ -1246,10 +1050,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public Builder removeKBGJCPOKLFB(int index) {
@@ -1263,10 +1063,6 @@ public final class EGAONNPNFCBOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD.Builder getKBGJCPOKLFBBuilder(
@@ -1274,10 +1070,6 @@ public final class EGAONNPNFCBOuterClass {
         return getKBGJCPOKLFBFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGDOrBuilder getKBGJCPOKLFBOrBuilder(
@@ -1288,10 +1080,6 @@ public final class EGAONNPNFCBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGDOrBuilder> 
@@ -1303,10 +1091,6 @@ public final class EGAONNPNFCBOuterClass {
         }
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD.Builder addKBGJCPOKLFBBuilder() {
@@ -1314,10 +1098,6 @@ public final class EGAONNPNFCBOuterClass {
             emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD.Builder addKBGJCPOKLFBBuilder(
@@ -1326,10 +1106,6 @@ public final class EGAONNPNFCBOuterClass {
             index, emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD.getDefaultInstance());
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>repeated .HJCKJNOBMGD KBGJCPOKLFB = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HJCKJNOBMGDOuterClass.HJCKJNOBMGD.Builder> 

@@ -19,68 +19,52 @@ public final class RequestLiveInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>string KKOEMLHDAAJ = 12;</code>
-     * @return The kKOEMLHDAAJ.
+     * <code>string live_url = 8;</code>
+     * @return The liveUrl.
      */
-    java.lang.String getKKOEMLHDAAJ();
+    java.lang.String getLiveUrl();
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>string KKOEMLHDAAJ = 12;</code>
-     * @return The bytes for kKOEMLHDAAJ.
+     * <code>string live_url = 8;</code>
+     * @return The bytes for liveUrl.
      */
     com.google.protobuf.ByteString
-        getKKOEMLHDAAJBytes();
+        getLiveUrlBytes();
+
+    /**
+     * <code>string spare_live_url = 10;</code>
+     * @return The spareLiveUrl.
+     */
+    java.lang.String getSpareLiveUrl();
+    /**
+     * <code>string spare_live_url = 10;</code>
+     * @return The bytes for spareLiveUrl.
+     */
+    com.google.protobuf.ByteString
+        getSpareLiveUrlBytes();
 
     /**
      * <pre>
-     * offset: 40
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>string GCDOEBMKIBO = 7;</code>
-     * @return The gCDOEBMKIBO.
-     */
-    java.lang.String getGCDOEBMKIBO();
-    /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>string GCDOEBMKIBO = 7;</code>
-     * @return The bytes for gCDOEBMKIBO.
-     */
-    com.google.protobuf.ByteString
-        getGCDOEBMKIBOBytes();
-
-    /**
-     * <pre>
-     *6.3.0 // offset: 48
-     * </pre>
-     *
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
      * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>uint32 live_id = 11;</code>
+     * <code>uint32 live_id = 15;</code>
      * @return The liveId.
      */
     int getLiveId();
   }
   /**
    * <pre>
-   * CmdId: 24095
+   * CmdId: 27558
    * </pre>
    *
    * Protobuf type {@code RequestLiveInfoRsp}
@@ -95,8 +79,8 @@ public final class RequestLiveInfoRspOuterClass {
       super(builder);
     }
     private RequestLiveInfoRsp() {
-      kKOEMLHDAAJ_ = "";
-      gCDOEBMKIBO_ = "";
+      liveUrl_ = "";
+      spareLiveUrl_ = "";
     }
 
     @java.lang.Override
@@ -129,26 +113,26 @@ public final class RequestLiveInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              gCDOEBMKIBO_ = s;
-              break;
-            }
-            case 88: {
-
-              liveId_ = input.readUInt32();
-              break;
-            }
-            case 98: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              kKOEMLHDAAJ_ = s;
-              break;
-            }
-            case 112: {
+            case 24: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 66: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              liveUrl_ = s;
+              break;
+            }
+            case 82: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              spareLiveUrl_ = s;
+              break;
+            }
+            case 120: {
+
+              liveId_ = input.readUInt32();
               break;
             }
             default: {
@@ -183,106 +167,90 @@ public final class RequestLiveInfoRspOuterClass {
               emu.grasscutter.net.proto.RequestLiveInfoRspOuterClass.RequestLiveInfoRsp.class, emu.grasscutter.net.proto.RequestLiveInfoRspOuterClass.RequestLiveInfoRsp.Builder.class);
     }
 
-    public static final int KKOEMLHDAAJ_FIELD_NUMBER = 12;
-    private volatile java.lang.Object kKOEMLHDAAJ_;
+    public static final int LIVE_URL_FIELD_NUMBER = 8;
+    private volatile java.lang.Object liveUrl_;
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>string KKOEMLHDAAJ = 12;</code>
-     * @return The kKOEMLHDAAJ.
+     * <code>string live_url = 8;</code>
+     * @return The liveUrl.
      */
     @java.lang.Override
-    public java.lang.String getKKOEMLHDAAJ() {
-      java.lang.Object ref = kKOEMLHDAAJ_;
+    public java.lang.String getLiveUrl() {
+      java.lang.Object ref = liveUrl_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        kKOEMLHDAAJ_ = s;
+        liveUrl_ = s;
         return s;
       }
     }
     /**
-     * <pre>
-     * offset: 32
-     * </pre>
-     *
-     * <code>string KKOEMLHDAAJ = 12;</code>
-     * @return The bytes for kKOEMLHDAAJ.
+     * <code>string live_url = 8;</code>
+     * @return The bytes for liveUrl.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getKKOEMLHDAAJBytes() {
-      java.lang.Object ref = kKOEMLHDAAJ_;
+        getLiveUrlBytes() {
+      java.lang.Object ref = liveUrl_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        kKOEMLHDAAJ_ = b;
+        liveUrl_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int GCDOEBMKIBO_FIELD_NUMBER = 7;
-    private volatile java.lang.Object gCDOEBMKIBO_;
+    public static final int SPARE_LIVE_URL_FIELD_NUMBER = 10;
+    private volatile java.lang.Object spareLiveUrl_;
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>string GCDOEBMKIBO = 7;</code>
-     * @return The gCDOEBMKIBO.
+     * <code>string spare_live_url = 10;</code>
+     * @return The spareLiveUrl.
      */
     @java.lang.Override
-    public java.lang.String getGCDOEBMKIBO() {
-      java.lang.Object ref = gCDOEBMKIBO_;
+    public java.lang.String getSpareLiveUrl() {
+      java.lang.Object ref = spareLiveUrl_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        gCDOEBMKIBO_ = s;
+        spareLiveUrl_ = s;
         return s;
       }
     }
     /**
-     * <pre>
-     * offset: 40
-     * </pre>
-     *
-     * <code>string GCDOEBMKIBO = 7;</code>
-     * @return The bytes for gCDOEBMKIBO.
+     * <code>string spare_live_url = 10;</code>
+     * @return The bytes for spareLiveUrl.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getGCDOEBMKIBOBytes() {
-      java.lang.Object ref = gCDOEBMKIBO_;
+        getSpareLiveUrlBytes() {
+      java.lang.Object ref = spareLiveUrl_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        gCDOEBMKIBO_ = b;
+        spareLiveUrl_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
      * <pre>
-     *6.3.0 // offset: 48
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -290,14 +258,14 @@ public final class RequestLiveInfoRspOuterClass {
       return retcode_;
     }
 
-    public static final int LIVE_ID_FIELD_NUMBER = 11;
+    public static final int LIVE_ID_FIELD_NUMBER = 15;
     private int liveId_;
     /**
      * <pre>
-     *6.3.0 // offset: 52
+     *6.5.5 //6.4.0 //6.5.0    
      * </pre>
      *
-     * <code>uint32 live_id = 11;</code>
+     * <code>uint32 live_id = 15;</code>
      * @return The liveId.
      */
     @java.lang.Override
@@ -319,17 +287,17 @@ public final class RequestLiveInfoRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gCDOEBMKIBO_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, gCDOEBMKIBO_);
+      if (retcode_ != 0) {
+        output.writeInt32(3, retcode_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(liveUrl_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, liveUrl_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(spareLiveUrl_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, spareLiveUrl_);
       }
       if (liveId_ != 0) {
-        output.writeUInt32(11, liveId_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(kKOEMLHDAAJ_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, kKOEMLHDAAJ_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeUInt32(15, liveId_);
       }
       unknownFields.writeTo(output);
     }
@@ -340,19 +308,19 @@ public final class RequestLiveInfoRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gCDOEBMKIBO_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, gCDOEBMKIBO_);
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, retcode_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(liveUrl_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, liveUrl_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(spareLiveUrl_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, spareLiveUrl_);
       }
       if (liveId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, liveId_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(kKOEMLHDAAJ_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, kKOEMLHDAAJ_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeUInt32Size(15, liveId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -369,10 +337,10 @@ public final class RequestLiveInfoRspOuterClass {
       }
       emu.grasscutter.net.proto.RequestLiveInfoRspOuterClass.RequestLiveInfoRsp other = (emu.grasscutter.net.proto.RequestLiveInfoRspOuterClass.RequestLiveInfoRsp) obj;
 
-      if (!getKKOEMLHDAAJ()
-          .equals(other.getKKOEMLHDAAJ())) return false;
-      if (!getGCDOEBMKIBO()
-          .equals(other.getGCDOEBMKIBO())) return false;
+      if (!getLiveUrl()
+          .equals(other.getLiveUrl())) return false;
+      if (!getSpareLiveUrl()
+          .equals(other.getSpareLiveUrl())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getLiveId()
@@ -388,10 +356,10 @@ public final class RequestLiveInfoRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + KKOEMLHDAAJ_FIELD_NUMBER;
-      hash = (53 * hash) + getKKOEMLHDAAJ().hashCode();
-      hash = (37 * hash) + GCDOEBMKIBO_FIELD_NUMBER;
-      hash = (53 * hash) + getGCDOEBMKIBO().hashCode();
+      hash = (37 * hash) + LIVE_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getLiveUrl().hashCode();
+      hash = (37 * hash) + SPARE_LIVE_URL_FIELD_NUMBER;
+      hash = (53 * hash) + getSpareLiveUrl().hashCode();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + LIVE_ID_FIELD_NUMBER;
@@ -493,7 +461,7 @@ public final class RequestLiveInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24095
+     * CmdId: 27558
      * </pre>
      *
      * Protobuf type {@code RequestLiveInfoRsp}
@@ -533,9 +501,9 @@ public final class RequestLiveInfoRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        kKOEMLHDAAJ_ = "";
+        liveUrl_ = "";
 
-        gCDOEBMKIBO_ = "";
+        spareLiveUrl_ = "";
 
         retcode_ = 0;
 
@@ -567,8 +535,8 @@ public final class RequestLiveInfoRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RequestLiveInfoRspOuterClass.RequestLiveInfoRsp buildPartial() {
         emu.grasscutter.net.proto.RequestLiveInfoRspOuterClass.RequestLiveInfoRsp result = new emu.grasscutter.net.proto.RequestLiveInfoRspOuterClass.RequestLiveInfoRsp(this);
-        result.kKOEMLHDAAJ_ = kKOEMLHDAAJ_;
-        result.gCDOEBMKIBO_ = gCDOEBMKIBO_;
+        result.liveUrl_ = liveUrl_;
+        result.spareLiveUrl_ = spareLiveUrl_;
         result.retcode_ = retcode_;
         result.liveId_ = liveId_;
         onBuilt();
@@ -619,12 +587,12 @@ public final class RequestLiveInfoRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RequestLiveInfoRspOuterClass.RequestLiveInfoRsp other) {
         if (other == emu.grasscutter.net.proto.RequestLiveInfoRspOuterClass.RequestLiveInfoRsp.getDefaultInstance()) return this;
-        if (!other.getKKOEMLHDAAJ().isEmpty()) {
-          kKOEMLHDAAJ_ = other.kKOEMLHDAAJ_;
+        if (!other.getLiveUrl().isEmpty()) {
+          liveUrl_ = other.liveUrl_;
           onChanged();
         }
-        if (!other.getGCDOEBMKIBO().isEmpty()) {
-          gCDOEBMKIBO_ = other.gCDOEBMKIBO_;
+        if (!other.getSpareLiveUrl().isEmpty()) {
+          spareLiveUrl_ = other.spareLiveUrl_;
           onChanged();
         }
         if (other.getRetcode() != 0) {
@@ -662,194 +630,154 @@ public final class RequestLiveInfoRspOuterClass {
         return this;
       }
 
-      private java.lang.Object kKOEMLHDAAJ_ = "";
+      private java.lang.Object liveUrl_ = "";
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string KKOEMLHDAAJ = 12;</code>
-       * @return The kKOEMLHDAAJ.
+       * <code>string live_url = 8;</code>
+       * @return The liveUrl.
        */
-      public java.lang.String getKKOEMLHDAAJ() {
-        java.lang.Object ref = kKOEMLHDAAJ_;
+      public java.lang.String getLiveUrl() {
+        java.lang.Object ref = liveUrl_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          kKOEMLHDAAJ_ = s;
+          liveUrl_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string KKOEMLHDAAJ = 12;</code>
-       * @return The bytes for kKOEMLHDAAJ.
+       * <code>string live_url = 8;</code>
+       * @return The bytes for liveUrl.
        */
       public com.google.protobuf.ByteString
-          getKKOEMLHDAAJBytes() {
-        java.lang.Object ref = kKOEMLHDAAJ_;
+          getLiveUrlBytes() {
+        java.lang.Object ref = liveUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          kKOEMLHDAAJ_ = b;
+          liveUrl_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string KKOEMLHDAAJ = 12;</code>
-       * @param value The kKOEMLHDAAJ to set.
+       * <code>string live_url = 8;</code>
+       * @param value The liveUrl to set.
        * @return This builder for chaining.
        */
-      public Builder setKKOEMLHDAAJ(
+      public Builder setLiveUrl(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        kKOEMLHDAAJ_ = value;
+        liveUrl_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string KKOEMLHDAAJ = 12;</code>
+       * <code>string live_url = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKKOEMLHDAAJ() {
+      public Builder clearLiveUrl() {
         
-        kKOEMLHDAAJ_ = getDefaultInstance().getKKOEMLHDAAJ();
+        liveUrl_ = getDefaultInstance().getLiveUrl();
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 32
-       * </pre>
-       *
-       * <code>string KKOEMLHDAAJ = 12;</code>
-       * @param value The bytes for kKOEMLHDAAJ to set.
+       * <code>string live_url = 8;</code>
+       * @param value The bytes for liveUrl to set.
        * @return This builder for chaining.
        */
-      public Builder setKKOEMLHDAAJBytes(
+      public Builder setLiveUrlBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        kKOEMLHDAAJ_ = value;
+        liveUrl_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object gCDOEBMKIBO_ = "";
+      private java.lang.Object spareLiveUrl_ = "";
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>string GCDOEBMKIBO = 7;</code>
-       * @return The gCDOEBMKIBO.
+       * <code>string spare_live_url = 10;</code>
+       * @return The spareLiveUrl.
        */
-      public java.lang.String getGCDOEBMKIBO() {
-        java.lang.Object ref = gCDOEBMKIBO_;
+      public java.lang.String getSpareLiveUrl() {
+        java.lang.Object ref = spareLiveUrl_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          gCDOEBMKIBO_ = s;
+          spareLiveUrl_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>string GCDOEBMKIBO = 7;</code>
-       * @return The bytes for gCDOEBMKIBO.
+       * <code>string spare_live_url = 10;</code>
+       * @return The bytes for spareLiveUrl.
        */
       public com.google.protobuf.ByteString
-          getGCDOEBMKIBOBytes() {
-        java.lang.Object ref = gCDOEBMKIBO_;
+          getSpareLiveUrlBytes() {
+        java.lang.Object ref = spareLiveUrl_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          gCDOEBMKIBO_ = b;
+          spareLiveUrl_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>string GCDOEBMKIBO = 7;</code>
-       * @param value The gCDOEBMKIBO to set.
+       * <code>string spare_live_url = 10;</code>
+       * @param value The spareLiveUrl to set.
        * @return This builder for chaining.
        */
-      public Builder setGCDOEBMKIBO(
+      public Builder setSpareLiveUrl(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        gCDOEBMKIBO_ = value;
+        spareLiveUrl_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>string GCDOEBMKIBO = 7;</code>
+       * <code>string spare_live_url = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGCDOEBMKIBO() {
+      public Builder clearSpareLiveUrl() {
         
-        gCDOEBMKIBO_ = getDefaultInstance().getGCDOEBMKIBO();
+        spareLiveUrl_ = getDefaultInstance().getSpareLiveUrl();
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * offset: 40
-       * </pre>
-       *
-       * <code>string GCDOEBMKIBO = 7;</code>
-       * @param value The bytes for gCDOEBMKIBO to set.
+       * <code>string spare_live_url = 10;</code>
+       * @param value The bytes for spareLiveUrl to set.
        * @return This builder for chaining.
        */
-      public Builder setGCDOEBMKIBOBytes(
+      public Builder setSpareLiveUrlBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        gCDOEBMKIBO_ = value;
+        spareLiveUrl_ = value;
         onChanged();
         return this;
       }
@@ -857,10 +785,10 @@ public final class RequestLiveInfoRspOuterClass {
       private int retcode_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -869,10 +797,10 @@ public final class RequestLiveInfoRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -884,10 +812,10 @@ public final class RequestLiveInfoRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 48
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -900,10 +828,10 @@ public final class RequestLiveInfoRspOuterClass {
       private int liveId_ ;
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>uint32 live_id = 11;</code>
+       * <code>uint32 live_id = 15;</code>
        * @return The liveId.
        */
       @java.lang.Override
@@ -912,10 +840,10 @@ public final class RequestLiveInfoRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>uint32 live_id = 11;</code>
+       * <code>uint32 live_id = 15;</code>
        * @param value The liveId to set.
        * @return This builder for chaining.
        */
@@ -927,10 +855,10 @@ public final class RequestLiveInfoRspOuterClass {
       }
       /**
        * <pre>
-       *6.3.0 // offset: 52
+       *6.5.5 //6.4.0 //6.5.0    
        * </pre>
        *
-       * <code>uint32 live_id = 11;</code>
+       * <code>uint32 live_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearLiveId() {
@@ -1007,8 +935,8 @@ public final class RequestLiveInfoRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030RequestLiveInfoRsp.proto\"`\n\022RequestLiv" +
-      "eInfoRsp\022\023\n\013KKOEMLHDAAJ\030\014 \001(\t\022\023\n\013GCDOEBM" +
-      "KIBO\030\007 \001(\t\022\017\n\007retcode\030\016 \001(\005\022\017\n\007live_id\030\013" +
+      "eInfoRsp\022\020\n\010live_url\030\010 \001(\t\022\026\n\016spare_live" +
+      "_url\030\n \001(\t\022\017\n\007retcode\030\003 \001(\005\022\017\n\007live_id\030\017" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
@@ -1021,7 +949,7 @@ public final class RequestLiveInfoRspOuterClass {
     internal_static_RequestLiveInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RequestLiveInfoRsp_descriptor,
-        new java.lang.String[] { "KKOEMLHDAAJ", "GCDOEBMKIBO", "Retcode", "LiveId", });
+        new java.lang.String[] { "LiveUrl", "SpareLiveUrl", "Retcode", "LiveId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

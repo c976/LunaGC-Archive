@@ -19,30 +19,18 @@ public final class BCBFDLNMBPAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 6;</code>
      * @return The hBILFAMJDKG.
      */
     int getHBILFAMJDKG();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
@@ -143,10 +131,6 @@ public final class BCBFDLNMBPAOuterClass {
     public static final int HBILFAMJDKG_FIELD_NUMBER = 6;
     private int hBILFAMJDKG_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 HBILFAMJDKG = 6;</code>
      * @return The hBILFAMJDKG.
      */
@@ -158,10 +142,6 @@ public final class BCBFDLNMBPAOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
@@ -173,10 +153,6 @@ public final class BCBFDLNMBPAOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 2;
     private int levelId_;
     /**
-     * <pre>
-     *6.3.0
-     * </pre>
-     *
      * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
@@ -524,10 +500,6 @@ public final class BCBFDLNMBPAOuterClass {
 
       private int hBILFAMJDKG_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 6;</code>
        * @return The hBILFAMJDKG.
        */
@@ -536,10 +508,6 @@ public final class BCBFDLNMBPAOuterClass {
         return hBILFAMJDKG_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 6;</code>
        * @param value The hBILFAMJDKG to set.
        * @return This builder for chaining.
@@ -551,10 +519,6 @@ public final class BCBFDLNMBPAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 HBILFAMJDKG = 6;</code>
        * @return This builder for chaining.
        */
@@ -567,10 +531,6 @@ public final class BCBFDLNMBPAOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
@@ -579,10 +539,6 @@ public final class BCBFDLNMBPAOuterClass {
         return isOpen_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
@@ -594,10 +550,6 @@ public final class BCBFDLNMBPAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
@@ -610,10 +562,6 @@ public final class BCBFDLNMBPAOuterClass {
 
       private int levelId_ ;
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 2;</code>
        * @return The levelId.
        */
@@ -622,10 +570,6 @@ public final class BCBFDLNMBPAOuterClass {
         return levelId_;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 2;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
@@ -637,10 +581,6 @@ public final class BCBFDLNMBPAOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *6.3.0
-       * </pre>
-       *
        * <code>uint32 level_id = 2;</code>
        * @return This builder for chaining.
        */

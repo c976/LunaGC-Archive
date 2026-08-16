@@ -19,37 +19,37 @@ public final class MBHNKJBJNPDOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+     * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
      */
-    int getCKILOBNBMPKCount();
+    int getMusicGameRecordMapCount();
     /**
-     * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+     * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
      */
-    boolean containsCKILOBNBMPK(
+    boolean containsMusicGameRecordMap(
         int key);
     /**
-     * Use {@link #getCKILOBNBMPKMap()} instead.
+     * Use {@link #getMusicGameRecordMapMap()} instead.
      */
     @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL>
-    getCKILOBNBMPK();
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord>
+    getMusicGameRecordMap();
     /**
-     * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+     * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
      */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL>
-    getCKILOBNBMPKMap();
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord>
+    getMusicGameRecordMapMap();
     /**
-     * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+     * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
      */
 
-    emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL getCKILOBNBMPKOrDefault(
+    emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord getMusicGameRecordMapOrDefault(
         int key,
-        emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL defaultValue);
+        emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord defaultValue);
     /**
-     * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+     * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
      */
 
-    emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL getCKILOBNBMPKOrThrow(
+    emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord getMusicGameRecordMapOrThrow(
         int key);
   }
   /**
@@ -100,15 +100,15 @@ public final class MBHNKJBJNPDOuterClass {
               break;
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cKILOBNBMPK_ = com.google.protobuf.MapField.newMapField(
-                    CKILOBNBMPKDefaultEntryHolder.defaultEntry);
+                musicGameRecordMap_ = com.google.protobuf.MapField.newMapField(
+                    MusicGameRecordMapDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
-              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL>
-              cKILOBNBMPK__ = input.readMessage(
-                  CKILOBNBMPKDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              cKILOBNBMPK_.getMutableMap().put(
-                  cKILOBNBMPK__.getKey(), cKILOBNBMPK__.getValue());
+              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord>
+              musicGameRecordMap__ = input.readMessage(
+                  MusicGameRecordMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              musicGameRecordMap_.getMutableMap().put(
+                  musicGameRecordMap__.getKey(), musicGameRecordMap__.getValue());
               break;
             }
             default: {
@@ -141,7 +141,7 @@ public final class MBHNKJBJNPDOuterClass {
         int number) {
       switch (number) {
         case 3:
-          return internalGetCKILOBNBMPK();
+          return internalGetMusicGameRecordMap();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -155,81 +155,81 @@ public final class MBHNKJBJNPDOuterClass {
               emu.grasscutter.net.proto.MBHNKJBJNPDOuterClass.MBHNKJBJNPD.class, emu.grasscutter.net.proto.MBHNKJBJNPDOuterClass.MBHNKJBJNPD.Builder.class);
     }
 
-    public static final int CKILOBNBMPK_FIELD_NUMBER = 3;
-    private static final class CKILOBNBMPKDefaultEntryHolder {
+    public static final int MUSIC_GAME_RECORD_MAP_FIELD_NUMBER = 3;
+    private static final class MusicGameRecordMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
-          java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> defaultEntry =
+          java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> defaultEntry =
               com.google.protobuf.MapEntry
-              .<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL>newDefaultInstance(
-                  emu.grasscutter.net.proto.MBHNKJBJNPDOuterClass.internal_static_MBHNKJBJNPD_CKILOBNBMPKEntry_descriptor, 
+              .<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord>newDefaultInstance(
+                  emu.grasscutter.net.proto.MBHNKJBJNPDOuterClass.internal_static_MBHNKJBJNPD_MusicGameRecordMapEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL.getDefaultInstance());
+                  emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord.getDefaultInstance());
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> cKILOBNBMPK_;
-    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL>
-    internalGetCKILOBNBMPK() {
-      if (cKILOBNBMPK_ == null) {
+        java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> musicGameRecordMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord>
+    internalGetMusicGameRecordMap() {
+      if (musicGameRecordMap_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            CKILOBNBMPKDefaultEntryHolder.defaultEntry);
+            MusicGameRecordMapDefaultEntryHolder.defaultEntry);
       }
-      return cKILOBNBMPK_;
+      return musicGameRecordMap_;
     }
 
-    public int getCKILOBNBMPKCount() {
-      return internalGetCKILOBNBMPK().getMap().size();
+    public int getMusicGameRecordMapCount() {
+      return internalGetMusicGameRecordMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+     * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
      */
 
     @java.lang.Override
-    public boolean containsCKILOBNBMPK(
+    public boolean containsMusicGameRecordMap(
         int key) {
       
-      return internalGetCKILOBNBMPK().getMap().containsKey(key);
+      return internalGetMusicGameRecordMap().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getCKILOBNBMPKMap()} instead.
+     * Use {@link #getMusicGameRecordMapMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> getCKILOBNBMPK() {
-      return getCKILOBNBMPKMap();
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> getMusicGameRecordMap() {
+      return getMusicGameRecordMapMap();
     }
     /**
-     * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+     * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> getCKILOBNBMPKMap() {
-      return internalGetCKILOBNBMPK().getMap();
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> getMusicGameRecordMapMap() {
+      return internalGetMusicGameRecordMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+     * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL getCKILOBNBMPKOrDefault(
+    public emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord getMusicGameRecordMapOrDefault(
         int key,
-        emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL defaultValue) {
+        emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord defaultValue) {
       
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> map =
-          internalGetCKILOBNBMPK().getMap();
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> map =
+          internalGetMusicGameRecordMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+     * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL getCKILOBNBMPKOrThrow(
+    public emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord getMusicGameRecordMapOrThrow(
         int key) {
       
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> map =
-          internalGetCKILOBNBMPK().getMap();
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> map =
+          internalGetMusicGameRecordMap().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
@@ -253,8 +253,8 @@ public final class MBHNKJBJNPDOuterClass {
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetCKILOBNBMPK(),
-          CKILOBNBMPKDefaultEntryHolder.defaultEntry,
+          internalGetMusicGameRecordMap(),
+          MusicGameRecordMapDefaultEntryHolder.defaultEntry,
           3);
       unknownFields.writeTo(output);
     }
@@ -265,15 +265,15 @@ public final class MBHNKJBJNPDOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> entry
-           : internalGetCKILOBNBMPK().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL>
-        cKILOBNBMPK__ = CKILOBNBMPKDefaultEntryHolder.defaultEntry.newBuilderForType()
+      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> entry
+           : internalGetMusicGameRecordMap().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord>
+        musicGameRecordMap__ = MusicGameRecordMapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(3, cKILOBNBMPK__);
+            .computeMessageSize(3, musicGameRecordMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -290,8 +290,8 @@ public final class MBHNKJBJNPDOuterClass {
       }
       emu.grasscutter.net.proto.MBHNKJBJNPDOuterClass.MBHNKJBJNPD other = (emu.grasscutter.net.proto.MBHNKJBJNPDOuterClass.MBHNKJBJNPD) obj;
 
-      if (!internalGetCKILOBNBMPK().equals(
-          other.internalGetCKILOBNBMPK())) return false;
+      if (!internalGetMusicGameRecordMap().equals(
+          other.internalGetMusicGameRecordMap())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,9 +303,9 @@ public final class MBHNKJBJNPDOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetCKILOBNBMPK().getMap().isEmpty()) {
-        hash = (37 * hash) + CKILOBNBMPK_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetCKILOBNBMPK().hashCode();
+      if (!internalGetMusicGameRecordMap().getMap().isEmpty()) {
+        hash = (37 * hash) + MUSIC_GAME_RECORD_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetMusicGameRecordMap().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -419,7 +419,7 @@ public final class MBHNKJBJNPDOuterClass {
           int number) {
         switch (number) {
           case 3:
-            return internalGetCKILOBNBMPK();
+            return internalGetMusicGameRecordMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -430,7 +430,7 @@ public final class MBHNKJBJNPDOuterClass {
           int number) {
         switch (number) {
           case 3:
-            return internalGetMutableCKILOBNBMPK();
+            return internalGetMutableMusicGameRecordMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -462,7 +462,7 @@ public final class MBHNKJBJNPDOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableCKILOBNBMPK().clear();
+        internalGetMutableMusicGameRecordMap().clear();
         return this;
       }
 
@@ -490,8 +490,8 @@ public final class MBHNKJBJNPDOuterClass {
       public emu.grasscutter.net.proto.MBHNKJBJNPDOuterClass.MBHNKJBJNPD buildPartial() {
         emu.grasscutter.net.proto.MBHNKJBJNPDOuterClass.MBHNKJBJNPD result = new emu.grasscutter.net.proto.MBHNKJBJNPDOuterClass.MBHNKJBJNPD(this);
         int from_bitField0_ = bitField0_;
-        result.cKILOBNBMPK_ = internalGetCKILOBNBMPK();
-        result.cKILOBNBMPK_.makeImmutable();
+        result.musicGameRecordMap_ = internalGetMusicGameRecordMap();
+        result.musicGameRecordMap_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -540,8 +540,8 @@ public final class MBHNKJBJNPDOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MBHNKJBJNPDOuterClass.MBHNKJBJNPD other) {
         if (other == emu.grasscutter.net.proto.MBHNKJBJNPDOuterClass.MBHNKJBJNPD.getDefaultInstance()) return this;
-        internalGetMutableCKILOBNBMPK().mergeFrom(
-            other.internalGetCKILOBNBMPK());
+        internalGetMutableMusicGameRecordMap().mergeFrom(
+            other.internalGetMusicGameRecordMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -573,99 +573,99 @@ public final class MBHNKJBJNPDOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> cKILOBNBMPK_;
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL>
-      internalGetCKILOBNBMPK() {
-        if (cKILOBNBMPK_ == null) {
+          java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> musicGameRecordMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord>
+      internalGetMusicGameRecordMap() {
+        if (musicGameRecordMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              CKILOBNBMPKDefaultEntryHolder.defaultEntry);
+              MusicGameRecordMapDefaultEntryHolder.defaultEntry);
         }
-        return cKILOBNBMPK_;
+        return musicGameRecordMap_;
       }
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL>
-      internalGetMutableCKILOBNBMPK() {
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord>
+      internalGetMutableMusicGameRecordMap() {
         onChanged();;
-        if (cKILOBNBMPK_ == null) {
-          cKILOBNBMPK_ = com.google.protobuf.MapField.newMapField(
-              CKILOBNBMPKDefaultEntryHolder.defaultEntry);
+        if (musicGameRecordMap_ == null) {
+          musicGameRecordMap_ = com.google.protobuf.MapField.newMapField(
+              MusicGameRecordMapDefaultEntryHolder.defaultEntry);
         }
-        if (!cKILOBNBMPK_.isMutable()) {
-          cKILOBNBMPK_ = cKILOBNBMPK_.copy();
+        if (!musicGameRecordMap_.isMutable()) {
+          musicGameRecordMap_ = musicGameRecordMap_.copy();
         }
-        return cKILOBNBMPK_;
+        return musicGameRecordMap_;
       }
 
-      public int getCKILOBNBMPKCount() {
-        return internalGetCKILOBNBMPK().getMap().size();
+      public int getMusicGameRecordMapCount() {
+        return internalGetMusicGameRecordMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+       * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
        */
 
       @java.lang.Override
-      public boolean containsCKILOBNBMPK(
+      public boolean containsMusicGameRecordMap(
           int key) {
         
-        return internalGetCKILOBNBMPK().getMap().containsKey(key);
+        return internalGetMusicGameRecordMap().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getCKILOBNBMPKMap()} instead.
+       * Use {@link #getMusicGameRecordMapMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> getCKILOBNBMPK() {
-        return getCKILOBNBMPKMap();
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> getMusicGameRecordMap() {
+        return getMusicGameRecordMapMap();
       }
       /**
-       * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+       * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> getCKILOBNBMPKMap() {
-        return internalGetCKILOBNBMPK().getMap();
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> getMusicGameRecordMapMap() {
+        return internalGetMusicGameRecordMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+       * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL getCKILOBNBMPKOrDefault(
+      public emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord getMusicGameRecordMapOrDefault(
           int key,
-          emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL defaultValue) {
+          emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord defaultValue) {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> map =
-            internalGetCKILOBNBMPK().getMap();
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> map =
+            internalGetMusicGameRecordMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+       * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL getCKILOBNBMPKOrThrow(
+      public emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord getMusicGameRecordMapOrThrow(
           int key) {
         
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> map =
-            internalGetCKILOBNBMPK().getMap();
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> map =
+            internalGetMusicGameRecordMap().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearCKILOBNBMPK() {
-        internalGetMutableCKILOBNBMPK().getMutableMap()
+      public Builder clearMusicGameRecordMap() {
+        internalGetMutableMusicGameRecordMap().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+       * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
        */
 
-      public Builder removeCKILOBNBMPK(
+      public Builder removeMusicGameRecordMap(
           int key) {
         
-        internalGetMutableCKILOBNBMPK().getMutableMap()
+        internalGetMutableMusicGameRecordMap().getMutableMap()
             .remove(key);
         return this;
       }
@@ -673,29 +673,29 @@ public final class MBHNKJBJNPDOuterClass {
        * Use alternate mutation accessors instead.
        */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL>
-      getMutableCKILOBNBMPK() {
-        return internalGetMutableCKILOBNBMPK().getMutableMap();
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord>
+      getMutableMusicGameRecordMap() {
+        return internalGetMutableMusicGameRecordMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+       * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
        */
-      public Builder putCKILOBNBMPK(
+      public Builder putMusicGameRecordMap(
           int key,
-          emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL value) {
+          emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord value) {
         
         if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableCKILOBNBMPK().getMutableMap()
+        internalGetMutableMusicGameRecordMap().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, .INBCKOKCHCL&gt; CKILOBNBMPK = 3;</code>
+       * <code>map&lt;uint32, .MusicGameRecord&gt; music_game_record_map = 3;</code>
        */
 
-      public Builder putAllCKILOBNBMPK(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.INBCKOKCHCL> values) {
-        internalGetMutableCKILOBNBMPK().getMutableMap()
+      public Builder putAllMusicGameRecordMap(
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.MusicGameRecordOuterClass.MusicGameRecord> values) {
+        internalGetMutableMusicGameRecordMap().getMutableMap()
             .putAll(values);
         return this;
       }
@@ -758,10 +758,10 @@ public final class MBHNKJBJNPDOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_MBHNKJBJNPD_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MBHNKJBJNPD_CKILOBNBMPKEntry_descriptor;
+    internal_static_MBHNKJBJNPD_MusicGameRecordMapEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MBHNKJBJNPD_CKILOBNBMPKEntry_fieldAccessorTable;
+      internal_static_MBHNKJBJNPD_MusicGameRecordMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -771,31 +771,32 @@ public final class MBHNKJBJNPDOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MBHNKJBJNPD.proto\032\021INBCKOKCHCL.proto\"\203" +
-      "\001\n\013MBHNKJBJNPD\0222\n\013CKILOBNBMPK\030\003 \003(\0132\035.MB" +
-      "HNKJBJNPD.CKILOBNBMPKEntry\032@\n\020CKILOBNBMP" +
-      "KEntry\022\013\n\003key\030\001 \001(\r\022\033\n\005value\030\002 \001(\0132\014.INB" +
-      "CKOKCHCL:\0028\001B\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\n\021MBHNKJBJNPD.proto\032\025MusicGameRecord.pro" +
+      "to\"\237\001\n\013MBHNKJBJNPD\022C\n\025music_game_record_" +
+      "map\030\003 \003(\0132$.MBHNKJBJNPD.MusicGameRecordM" +
+      "apEntry\032K\n\027MusicGameRecordMapEntry\022\013\n\003ke" +
+      "y\030\001 \001(\r\022\037\n\005value\030\002 \001(\0132\020.MusicGameRecord" +
+      ":\0028\001B\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MusicGameRecordOuterClass.getDescriptor(),
         });
     internal_static_MBHNKJBJNPD_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_MBHNKJBJNPD_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MBHNKJBJNPD_descriptor,
-        new java.lang.String[] { "CKILOBNBMPK", });
-    internal_static_MBHNKJBJNPD_CKILOBNBMPKEntry_descriptor =
+        new java.lang.String[] { "MusicGameRecordMap", });
+    internal_static_MBHNKJBJNPD_MusicGameRecordMapEntry_descriptor =
       internal_static_MBHNKJBJNPD_descriptor.getNestedTypes().get(0);
-    internal_static_MBHNKJBJNPD_CKILOBNBMPKEntry_fieldAccessorTable = new
+    internal_static_MBHNKJBJNPD_MusicGameRecordMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MBHNKJBJNPD_CKILOBNBMPKEntry_descriptor,
+        internal_static_MBHNKJBJNPD_MusicGameRecordMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.INBCKOKCHCLOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MusicGameRecordOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
