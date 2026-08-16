@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 20029
+// Version: 4.6.0
+// Obfs: LNEBPLKCKLJ
+message GetGachaInfoReq {
+}
