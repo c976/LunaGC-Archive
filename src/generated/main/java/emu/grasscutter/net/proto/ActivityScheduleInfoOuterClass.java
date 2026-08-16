@@ -18,54 +18,14 @@ public final class ActivityScheduleInfoOuterClass {
       // @@protoc_insertion_point(interface_extends:ActivityScheduleInfo)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0        
-     * </pre>
-     *
-     * <code>uint32 schedule_id = 12;</code>
-     * @return The scheduleId.
-     */
     int getScheduleId();
 
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0       
-     * </pre>
-     *
-     * <code>uint32 activity_id = 1;</code>
-     * @return The activityId.
-     */
     int getActivityId();
 
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0        
-     * </pre>
-     *
-     * <code>uint32 end_time = 10;</code>
-     * @return The endTime.
-     */
     int getEndTime();
 
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0        
-     * </pre>
-     *
-     * <code>bool is_open = 13;</code>
-     * @return The isOpen.
-     */
     boolean getIsOpen();
 
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0        
-     * </pre>
-     *
-     * <code>uint32 begin_time = 15;</code>
-     * @return The beginTime.
-     */
     int getBeginTime();
   }
   /**
@@ -113,27 +73,27 @@ public final class ActivityScheduleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
               activityId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 96: {
 
               endTime_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 104: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 64: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 120: {
+            case 48: {
 
               beginTime_ = input.readUInt32();
               break;
@@ -170,76 +130,41 @@ public final class ActivityScheduleInfoOuterClass {
               emu.grasscutter.net.proto.ActivityScheduleInfoOuterClass.ActivityScheduleInfo.class, emu.grasscutter.net.proto.ActivityScheduleInfoOuterClass.ActivityScheduleInfo.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 12;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 13;
     private int scheduleId_;
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0        
-     * </pre>
-     *
-     * <code>uint32 schedule_id = 12;</code>
-     * @return The scheduleId.
-     */
+
     @java.lang.Override
     public int getScheduleId() {
       return scheduleId_;
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 1;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 2;
     private int activityId_;
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0       
-     * </pre>
-     *
-     * <code>uint32 activity_id = 1;</code>
-     * @return The activityId.
-     */
+
     @java.lang.Override
     public int getActivityId() {
       return activityId_;
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 10;
+    public static final int END_TIME_FIELD_NUMBER = 12;
     private int endTime_;
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0        
-     * </pre>
-     *
-     * <code>uint32 end_time = 10;</code>
-     * @return The endTime.
-     */
+
     @java.lang.Override
     public int getEndTime() {
       return endTime_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 13;
+    public static final int IS_OPEN_FIELD_NUMBER = 8;
     private boolean isOpen_;
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0        
-     * </pre>
-     *
-     * <code>bool is_open = 13;</code>
-     * @return The isOpen.
-     */
+
     @java.lang.Override
     public boolean getIsOpen() {
       return isOpen_;
     }
 
-    public static final int BEGIN_TIME_FIELD_NUMBER = 15;
+    public static final int BEGIN_TIME_FIELD_NUMBER = 6;
     private int beginTime_;
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0        
-     * </pre>
-     *
-     * <code>uint32 begin_time = 15;</code>
-     * @return The beginTime.
-     */
+
     @java.lang.Override
     public int getBeginTime() {
       return beginTime_;
@@ -260,19 +185,19 @@ public final class ActivityScheduleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(1, activityId_);
+        output.writeUInt32(2, activityId_);
       }
       if (endTime_ != 0) {
-        output.writeUInt32(10, endTime_);
+        output.writeUInt32(12, endTime_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(12, scheduleId_);
+        output.writeUInt32(13, scheduleId_);
       }
       if (isOpen_ != false) {
-        output.writeBool(13, isOpen_);
+        output.writeBool(8, isOpen_);
       }
       if (beginTime_ != 0) {
-        output.writeUInt32(15, beginTime_);
+        output.writeUInt32(6, beginTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -285,23 +210,23 @@ public final class ActivityScheduleInfoOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, activityId_);
+          .computeUInt32Size(2, activityId_);
       }
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, endTime_);
+          .computeUInt32Size(12, endTime_);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, scheduleId_);
+          .computeUInt32Size(13, scheduleId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isOpen_);
+          .computeBoolSize(8, isOpen_);
       }
       if (beginTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, beginTime_);
+          .computeUInt32Size(6, beginTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -617,215 +542,105 @@ public final class ActivityScheduleInfoOuterClass {
       }
 
       private int scheduleId_ ;
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>uint32 schedule_id = 12;</code>
-       * @return The scheduleId.
-       */
+
       @java.lang.Override
       public int getScheduleId() {
         return scheduleId_;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>uint32 schedule_id = 12;</code>
-       * @param value The scheduleId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setScheduleId(int value) {
-        
+
         scheduleId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>uint32 schedule_id = 12;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearScheduleId() {
-        
+
         scheduleId_ = 0;
         onChanged();
         return this;
       }
 
       private int activityId_ ;
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0       
-       * </pre>
-       *
-       * <code>uint32 activity_id = 1;</code>
-       * @return The activityId.
-       */
+
       @java.lang.Override
       public int getActivityId() {
         return activityId_;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0       
-       * </pre>
-       *
-       * <code>uint32 activity_id = 1;</code>
-       * @param value The activityId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setActivityId(int value) {
-        
+
         activityId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0       
-       * </pre>
-       *
-       * <code>uint32 activity_id = 1;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearActivityId() {
-        
+
         activityId_ = 0;
         onChanged();
         return this;
       }
 
       private int endTime_ ;
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>uint32 end_time = 10;</code>
-       * @return The endTime.
-       */
+
       @java.lang.Override
       public int getEndTime() {
         return endTime_;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>uint32 end_time = 10;</code>
-       * @param value The endTime to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setEndTime(int value) {
-        
+
         endTime_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>uint32 end_time = 10;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearEndTime() {
-        
+
         endTime_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>bool is_open = 13;</code>
-       * @return The isOpen.
-       */
+
       @java.lang.Override
       public boolean getIsOpen() {
         return isOpen_;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>bool is_open = 13;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setIsOpen(boolean value) {
-        
+
         isOpen_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>bool is_open = 13;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearIsOpen() {
-        
+
         isOpen_ = false;
         onChanged();
         return this;
       }
 
       private int beginTime_ ;
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>uint32 begin_time = 15;</code>
-       * @return The beginTime.
-       */
+
       @java.lang.Override
       public int getBeginTime() {
         return beginTime_;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>uint32 begin_time = 15;</code>
-       * @param value The beginTime to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setBeginTime(int value) {
-        
+
         beginTime_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0        
-       * </pre>
-       *
-       * <code>uint32 begin_time = 15;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearBeginTime() {
-        
+
         beginTime_ = 0;
         onChanged();
         return this;
@@ -841,7 +656,6 @@ public final class ActivityScheduleInfoOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:ActivityScheduleInfo)
     }
@@ -885,7 +699,7 @@ public final class ActivityScheduleInfoOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_ActivityScheduleInfo_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ActivityScheduleInfo_fieldAccessorTable;
 
@@ -898,9 +712,9 @@ public final class ActivityScheduleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ActivityScheduleInfo.proto\"w\n\024Activity" +
-      "ScheduleInfo\022\023\n\013schedule_id\030\014 \001(\r\022\023\n\013act" +
-      "ivity_id\030\001 \001(\r\022\020\n\010end_time\030\n \001(\r\022\017\n\007is_o" +
-      "pen\030\r \001(\010\022\022\n\nbegin_time\030\017 \001(\rB\033\n\031emu.gra" +
+      "ScheduleInfo\022\023\n\013schedule_id\030\r \001(\r\022\023\n\013act" +
+      "ivity_id\030\002 \001(\r\022\020\n\010end_time\030\014 \001(\r\022\017\n\007is_o" +
+      "pen\030\010 \001(\010\022\022\n\nbegin_time\030\006 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

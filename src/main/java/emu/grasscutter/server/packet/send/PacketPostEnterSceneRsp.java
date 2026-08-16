@@ -10,17 +10,13 @@ public class PacketPostEnterSceneRsp extends BasePacket {
         super(PacketOpcodes.PostEnterSceneRsp);
 
         int maskedToken = (player.getEnterSceneToken() ^ 59003) + 18565;
+        int maskedRetcode = (0 - 3964) ^ 29623;
 
-        PostEnterSceneRsp p =
-                PostEnterSceneRsp.newBuilder()
-                    .setEnterSceneToken(maskedToken)
-                    .build();
-
-        //
-        // On moving to new scene:
-        // Unfreeze dungeon entry points that have already been unlocked in this scene.
         player.unfreezeUnlockedScenePoints();
 
-        this.setData(p);
+        this.setData(PostEnterSceneRsp.newBuilder()
+            .setEnterSceneToken(maskedToken)
+            .setRetcode(maskedRetcode)
+            .build());
     }
 }

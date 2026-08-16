@@ -22,7 +22,7 @@ public class HandlerSceneTransToPointReq extends PacketHandler {
         if (scenePointEntry != null) {
             if (player
                     .getCurHomeWorld()
-                    .isInHome(player)) { // if the player is in home, make the player go back
+                    .isInHome(player)) {
                 session
                         .getServer()
                         .getHomeWorldMPSystem()

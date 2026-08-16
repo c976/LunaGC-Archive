@@ -18,22 +18,10 @@ public final class ExitTransPointRegionNotifyOuterClass {
       // @@protoc_insertion_point(interface_extends:ExitTransPointRegionNotify)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <pre>
-     *6.5.5     
-     * </pre>
-     *
-     * <code>uint32 point_id = 7;</code>
-     * @return The pointId.
-     */
     int getPointId();
 
     /**
-     * <pre>
-     *6.5.5     
-     * </pre>
-     *
-     * <code>uint32 scene_id = 13;</code>
+     * <code>uint32 scene_id = 6;</code>
      * @return The sceneId.
      */
     int getSceneId();
@@ -87,14 +75,14 @@ public final class ExitTransPointRegionNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              pointId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 88: {
 
               sceneId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              pointId_ = input.readUInt32();
               break;
             }
             default: {
@@ -129,29 +117,18 @@ public final class ExitTransPointRegionNotifyOuterClass {
               emu.grasscutter.net.proto.ExitTransPointRegionNotifyOuterClass.ExitTransPointRegionNotify.class, emu.grasscutter.net.proto.ExitTransPointRegionNotifyOuterClass.ExitTransPointRegionNotify.Builder.class);
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 7;
+    public static final int POINT_ID_FIELD_NUMBER = 12;
     private int pointId_;
-    /**
-     * <pre>
-     *6.5.5     
-     * </pre>
-     *
-     * <code>uint32 point_id = 7;</code>
-     * @return The pointId.
-     */
+
     @java.lang.Override
     public int getPointId() {
       return pointId_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 13;
+    public static final int SCENE_ID_FIELD_NUMBER = 11;
     private int sceneId_;
     /**
-     * <pre>
-     *6.5.5     
-     * </pre>
-     *
-     * <code>uint32 scene_id = 13;</code>
+     * <code>uint32 scene_id = 6;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -173,11 +150,11 @@ public final class ExitTransPointRegionNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pointId_ != 0) {
-        output.writeUInt32(7, pointId_);
-      }
       if (sceneId_ != 0) {
-        output.writeUInt32(13, sceneId_);
+        output.writeUInt32(11, sceneId_);
+      }
+      if (pointId_ != 0) {
+        output.writeUInt32(12, pointId_);
       }
       unknownFields.writeTo(output);
     }
@@ -188,13 +165,13 @@ public final class ExitTransPointRegionNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pointId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, pointId_);
-      }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, sceneId_);
+          .computeUInt32Size(11, sceneId_);
+      }
+      if (pointId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, pointId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -483,43 +460,21 @@ public final class ExitTransPointRegionNotifyOuterClass {
       }
 
       private int pointId_ ;
-      /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>uint32 point_id = 7;</code>
-       * @return The pointId.
-       */
+
       @java.lang.Override
       public int getPointId() {
         return pointId_;
       }
-      /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>uint32 point_id = 7;</code>
-       * @param value The pointId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setPointId(int value) {
-        
+
         pointId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>uint32 point_id = 7;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearPointId() {
-        
+
         pointId_ = 0;
         onChanged();
         return this;
@@ -527,11 +482,7 @@ public final class ExitTransPointRegionNotifyOuterClass {
 
       private int sceneId_ ;
       /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 6;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -539,30 +490,22 @@ public final class ExitTransPointRegionNotifyOuterClass {
         return sceneId_;
       }
       /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 6;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
       public Builder setSceneId(int value) {
-        
+
         sceneId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
-        
+
         sceneId_ = 0;
         onChanged();
         return this;
@@ -578,7 +521,6 @@ public final class ExitTransPointRegionNotifyOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:ExitTransPointRegionNotify)
     }
@@ -622,7 +564,7 @@ public final class ExitTransPointRegionNotifyOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_ExitTransPointRegionNotify_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ExitTransPointRegionNotify_fieldAccessorTable;
 
@@ -635,8 +577,8 @@ public final class ExitTransPointRegionNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n ExitTransPointRegionNotify.proto\"@\n\032Ex" +
-      "itTransPointRegionNotify\022\020\n\010point_id\030\007 \001" +
-      "(\r\022\020\n\010scene_id\030\r \001(\rB\033\n\031emu.grasscutter." +
+      "itTransPointRegionNotify\022\020\n\010point_id\030\010 \001" +
+      "(\r\022\020\n\010scene_id\030\006 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

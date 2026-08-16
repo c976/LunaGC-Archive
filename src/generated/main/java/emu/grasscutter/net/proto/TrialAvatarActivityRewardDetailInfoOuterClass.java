@@ -18,44 +18,12 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
       // @@protoc_insertion_point(interface_extends:TrialAvatarActivityRewardDetailInfo)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0           
-     * </pre>
-     *
-     * <code>uint32 trial_avatar_index_id = 4;</code>
-     * @return The trialAvatarIndexId.
-     */
     int getTrialAvatarIndexId();
 
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0           
-     * </pre>
-     *
-     * <code>uint32 reward_id = 3;</code>
-     * @return The rewardId.
-     */
     int getRewardId();
 
-    /**
-     * <pre>
-     *6.5.5     
-     * </pre>
-     *
-     * <code>bool passed_dungeon = 9;</code>
-     * @return The passedDungeon.
-     */
     boolean getPassedDungeon();
 
-    /**
-     * <pre>
-     *6.5.5     
-     * </pre>
-     *
-     * <code>bool received_reward = 14;</code>
-     * @return The receivedReward.
-     */
     boolean getReceivedReward();
   }
   /**
@@ -103,6 +71,11 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              receivedReward_ = input.readBool();
+              break;
+            }
             case 24: {
 
               rewardId_ = input.readUInt32();
@@ -113,14 +86,9 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
               trialAvatarIndexId_ = input.readUInt32();
               break;
             }
-            case 72: {
-
-              passedDungeon_ = input.readBool();
-              break;
-            }
             case 112: {
 
-              receivedReward_ = input.readBool();
+              passedDungeon_ = input.readBool();
               break;
             }
             default: {
@@ -157,14 +125,7 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
 
     public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 4;
     private int trialAvatarIndexId_;
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0           
-     * </pre>
-     *
-     * <code>uint32 trial_avatar_index_id = 4;</code>
-     * @return The trialAvatarIndexId.
-     */
+
     @java.lang.Override
     public int getTrialAvatarIndexId() {
       return trialAvatarIndexId_;
@@ -172,44 +133,23 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
 
     public static final int REWARD_ID_FIELD_NUMBER = 3;
     private int rewardId_;
-    /**
-     * <pre>
-     *6.5.5 //6.4.0 //6.5.0           
-     * </pre>
-     *
-     * <code>uint32 reward_id = 3;</code>
-     * @return The rewardId.
-     */
+
     @java.lang.Override
     public int getRewardId() {
       return rewardId_;
     }
 
-    public static final int PASSED_DUNGEON_FIELD_NUMBER = 9;
+    public static final int PASSED_DUNGEON_FIELD_NUMBER = 14;
     private boolean passedDungeon_;
-    /**
-     * <pre>
-     *6.5.5     
-     * </pre>
-     *
-     * <code>bool passed_dungeon = 9;</code>
-     * @return The passedDungeon.
-     */
+
     @java.lang.Override
     public boolean getPassedDungeon() {
       return passedDungeon_;
     }
 
-    public static final int RECEIVED_REWARD_FIELD_NUMBER = 14;
+    public static final int RECEIVED_REWARD_FIELD_NUMBER = 1;
     private boolean receivedReward_;
-    /**
-     * <pre>
-     *6.5.5     
-     * </pre>
-     *
-     * <code>bool received_reward = 14;</code>
-     * @return The receivedReward.
-     */
+
     @java.lang.Override
     public boolean getReceivedReward() {
       return receivedReward_;
@@ -229,6 +169,9 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (receivedReward_ != false) {
+        output.writeBool(1, receivedReward_);
+      }
       if (rewardId_ != 0) {
         output.writeUInt32(3, rewardId_);
       }
@@ -236,10 +179,7 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
         output.writeUInt32(4, trialAvatarIndexId_);
       }
       if (passedDungeon_ != false) {
-        output.writeBool(9, passedDungeon_);
-      }
-      if (receivedReward_ != false) {
-        output.writeBool(14, receivedReward_);
+        output.writeBool(14, passedDungeon_);
       }
       unknownFields.writeTo(output);
     }
@@ -250,6 +190,10 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (receivedReward_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, receivedReward_);
+      }
       if (rewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, rewardId_);
@@ -260,11 +204,7 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
       }
       if (passedDungeon_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, passedDungeon_);
-      }
-      if (receivedReward_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, receivedReward_);
+          .computeBoolSize(14, passedDungeon_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -571,172 +511,84 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
       }
 
       private int trialAvatarIndexId_ ;
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0           
-       * </pre>
-       *
-       * <code>uint32 trial_avatar_index_id = 4;</code>
-       * @return The trialAvatarIndexId.
-       */
+
       @java.lang.Override
       public int getTrialAvatarIndexId() {
         return trialAvatarIndexId_;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0           
-       * </pre>
-       *
-       * <code>uint32 trial_avatar_index_id = 4;</code>
-       * @param value The trialAvatarIndexId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setTrialAvatarIndexId(int value) {
-        
+
         trialAvatarIndexId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0           
-       * </pre>
-       *
-       * <code>uint32 trial_avatar_index_id = 4;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearTrialAvatarIndexId() {
-        
+
         trialAvatarIndexId_ = 0;
         onChanged();
         return this;
       }
 
       private int rewardId_ ;
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0           
-       * </pre>
-       *
-       * <code>uint32 reward_id = 3;</code>
-       * @return The rewardId.
-       */
+
       @java.lang.Override
       public int getRewardId() {
         return rewardId_;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0           
-       * </pre>
-       *
-       * <code>uint32 reward_id = 3;</code>
-       * @param value The rewardId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setRewardId(int value) {
-        
+
         rewardId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *6.5.5 //6.4.0 //6.5.0           
-       * </pre>
-       *
-       * <code>uint32 reward_id = 3;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearRewardId() {
-        
+
         rewardId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean passedDungeon_ ;
-      /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>bool passed_dungeon = 9;</code>
-       * @return The passedDungeon.
-       */
+
       @java.lang.Override
       public boolean getPassedDungeon() {
         return passedDungeon_;
       }
-      /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>bool passed_dungeon = 9;</code>
-       * @param value The passedDungeon to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setPassedDungeon(boolean value) {
-        
+
         passedDungeon_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>bool passed_dungeon = 9;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearPassedDungeon() {
-        
+
         passedDungeon_ = false;
         onChanged();
         return this;
       }
 
       private boolean receivedReward_ ;
-      /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>bool received_reward = 14;</code>
-       * @return The receivedReward.
-       */
+
       @java.lang.Override
       public boolean getReceivedReward() {
         return receivedReward_;
       }
-      /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>bool received_reward = 14;</code>
-       * @param value The receivedReward to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setReceivedReward(boolean value) {
-        
+
         receivedReward_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *6.5.5     
-       * </pre>
-       *
-       * <code>bool received_reward = 14;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearReceivedReward() {
-        
+
         receivedReward_ = false;
         onChanged();
         return this;
@@ -752,7 +604,6 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:TrialAvatarActivityRewardDetailInfo)
     }
@@ -796,7 +647,7 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_TrialAvatarActivityRewardDetailInfo_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_TrialAvatarActivityRewardDetailInfo_fieldAccessorTable;
 
@@ -811,8 +662,8 @@ public final class TrialAvatarActivityRewardDetailInfoOuterClass {
       "\n)TrialAvatarActivityRewardDetailInfo.pr" +
       "oto\"\210\001\n#TrialAvatarActivityRewardDetailI" +
       "nfo\022\035\n\025trial_avatar_index_id\030\004 \001(\r\022\021\n\tre" +
-      "ward_id\030\003 \001(\r\022\026\n\016passed_dungeon\030\t \001(\010\022\027\n" +
-      "\017received_reward\030\016 \001(\010B\033\n\031emu.grasscutte" +
+      "ward_id\030\003 \001(\r\022\026\n\016passed_dungeon\030\016 \001(\010\022\027\n" +
+      "\017received_reward\030\001 \001(\010B\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

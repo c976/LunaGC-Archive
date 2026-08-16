@@ -1,4 +1,4 @@
-# LunaGC-6.5.0 WIP
+# LunaGC-6.6.0 WIP
 
 ## Note from the maintainer
 Might update to latest occasionally, depends on how I'm feeling and my situation. Of course, I post the protocol buffer definitions on [GitLab](https://gitlab.com/kitkat-multiverse/genshin-protocol) and translations. Contact me at my [Discord](https://discord.gg/5Rfyjrt5aB)
@@ -18,10 +18,10 @@ Contribute if you want/can...
 
 ## Main Requirements
 
-- Get [Java 21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
+- Get [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - Get [MongoDB Community Server](https://www.mongodb.com/try/download/community)
 - Get [NodeJS](https://nodejs.org/dist/v20.15.0/node-v20.15.0-x64.msi) (For handbook generation)
-- Get game version REL6.5.0
+- Get game version REL6.6.0
 - Make sure to install java and set the environment variables.
 - Build the server (refer to "Compile the actual server" in this guide.)
 - Download the [Resources](https://github.com/kitkat033/LunaGC-Resources), make a new folder called `resources` in the downloaded LunaGC folder and then extract the resources in that new folder.
@@ -31,11 +31,10 @@ Contribute if you want/can...
 - Have fun (or don't)
 
 ### Patching the game
-#### The patch won't redirect HoYoPass requests, so you may need an external proxy for now.
 - Install [**Rust**](https://rust-lang.org/learn/get-started/) and **Cargo** (comes with rustup)
 - Go to the `patch/` folder (make sure you have cloned this repository with the `--recurse-submodules` flag)
 - Run `cargo build --release` to build the DLL at `target/release`
-- Inject the DLL into the game. You can do this by renaming the patch to `Astrolabe.dll` and putting it in the game folder.
+- Inject the DLL into the game. You can do this by renaming the patch to `Astrolabe.dll` and putting it in the game folder at `GenshinImpact_Data/Plugins`. Make sure you back up the old `Astrolabe.dll` in the plugins folder.
 
 ### Getting started
 
@@ -52,7 +51,7 @@ Contribute if you want/can...
 
 **Requirements**:
 
-[Java Development Kit 21 | JDK](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html) or higher
+[Java Development Kit 17 | JDK](https://oracle.com/java/technologies/javase/jdk17-archive-downloads.html) or higher
 
 - **Sidenote**: Handbook generation may fail on some systems. To disable handbook generation, append `-PskipHandbook=1` to the `gradlew jar` command.
 

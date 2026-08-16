@@ -15,6 +15,7 @@ public class AvatarData extends GameResource {
 
     private String iconName;
     @Getter private String bodyType;
+    @Getter private String useType;
     @Getter private String qualityType;
     @Getter private int chargeEfficiency;
     @Getter private int initialWeapon;
@@ -28,6 +29,7 @@ public class AvatarData extends GameResource {
     @Getter private String avatarIdentityType;
     @Getter private List<Integer> avatarPromoteRewardLevelList;
     @Getter private List<Integer> avatarPromoteRewardIdList;
+    @Getter private List<String> tags;
 
     @Getter
     private long nameTextMapHash;
