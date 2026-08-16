@@ -1,8 +1,8 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
 
-// 4.7.0
+// 5.0.0
 message BreakoutElementReactionCounter {
-	uint32 element_reaction = 1;
-	uint32 count = 2;
+    uint32 element_reaction = 1;
+    uint32 count = 2;
 }

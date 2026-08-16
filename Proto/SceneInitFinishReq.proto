@@ -1,8 +1,7 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
 
-// 4.7.0
-// CmdId: 21370
+
 message SceneInitFinishReq {
-	uint32 enter_scene_token = 12;
+    uint32 enter_scene_token = 10;
 }

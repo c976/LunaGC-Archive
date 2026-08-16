@@ -7,7 +7,6 @@ import "FriendEnterHomeOption.proto";
 import "ProfilePicture.proto";
 import "PlatformType.proto";
 
-// 4.7.0
 message FriendBrief {
 	uint32 uid = 1;
 	string nickname = 2;

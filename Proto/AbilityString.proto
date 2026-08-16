@@ -1,10 +1,11 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
 
-// 4.7.0
+// 5.0.0
+// CmdId: 
 message AbilityString {
-	oneof type {
-		string str = 1;
-		uint32 hash = 2;
-	}
+    oneof type {
+        string str = 1;
+        uint32 hash = 2;
+    }
 }

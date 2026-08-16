@@ -3,9 +3,7 @@ option java_package = "emu.grasscutter.net.proto";
 
 import "Shop.proto";
 
-// 4.7.0
-// CmdId: 27397
 message GetShopRsp {
-	Shop shop = 11;
-	int32 retcode = 14;
+	Shop shop = 1;
+	int32 retcode = 12;
 }

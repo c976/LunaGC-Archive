@@ -4,7 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 import "AbilityString.proto";
 import "AbilityScalarType.proto";
 
-// 4.7.0
 message AbilityScalarValueEntry {
 	AbilityString key = 1;
 	AbilityScalarType value_type = 2;
@@ -15,9 +14,8 @@ message AbilityScalarValueEntry {
 		uint32 uint_value = 6;
 	}
 }
-/*
-message AbilityScalarValueEntry {
-	AbilityString key = 1;
-	float float_value = 3;
-}
-*/
+
+//message AbilityScalarValueEntry {
+//    AbilityString key = 1;
+//    float float_value = 3;
+//}

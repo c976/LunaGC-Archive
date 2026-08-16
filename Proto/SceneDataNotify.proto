@@ -1,12 +1,10 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
 
-import "MapLayerInfo.proto";
 
-// 4.7.0
-// CmdId: 23591
 message SceneDataNotify {
-	repeated string level_config_name_list = 2;
-	MapLayerInfo map_layer_info = 8;
-	repeated uint32 scene_tag_id_list = 14;
+    repeated uint32 scene_tag_id_list = 5;
+    repeated string level_config_name_list = 9;
+    //PHJGPIPOKAA GALJCIMKFCH = 10;//MapLayer
+    //CGMAOKBGOHO DFNDKDAFEJO = 15;
 }

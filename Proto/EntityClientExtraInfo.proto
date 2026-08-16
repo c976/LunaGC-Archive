@@ -3,7 +3,7 @@ option java_package = "emu.grasscutter.net.proto";
 
 import "Vector.proto";
 
-// 4.7.0
+// 5.0.0
 message EntityClientExtraInfo {
-	Vector skill_anchor_position = 1;
+    Vector skill_anchor_position = 1;
 }

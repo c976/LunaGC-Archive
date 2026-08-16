@@ -1,9 +1,10 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
 
+
 import "FetterData.proto";
 
-// 4.7.0
+
 message AvatarFetterInfo {
 	uint32 exp_number = 1;
 	uint32 exp_level = 2;

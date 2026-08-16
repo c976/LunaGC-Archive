@@ -7,7 +7,6 @@ import "SocialShowAvatarInfo.proto";
 import "FriendEnterHomeOption.proto";
 import "ProfilePicture.proto";
 
-// 4.7.0
 message SocialDetail {
 	uint32 uid = 1;
 	string nickname = 2;
@@ -35,7 +34,11 @@ message SocialDetail {
 	FriendEnterHomeOption friend_enter_home_option = 24;
 	ProfilePicture profile_picture = 25;
 	string ip_code = 26;
-	uint32 FPBKNPMLEPC = 27;
-	uint32 BNBFADNNNNA = 28;
-	uint32 NHFIPHHHOEF = 32;
+	uint32 CMOBLNACDIE = 27;
+	uint32 GEGBOECJJMO = 28;
+	uint32 MBOLLDBJPCP = 32;
+	bool is_show_constellation_num = 33;
+	uint32 FLMFEMCAFHB = 34;
+	uint32 MOBMAJIJJGL = 35;
+	//GBNIKBFHHKP GFKFJJOADMH = 36;
 }

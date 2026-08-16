@@ -1,7 +1,7 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
 
-// 4.7.0
+
 enum ForwardType {
 	FORWARD_TYPE_LOCAL = 0;
 	FORWARD_TYPE_TO_ALL = 1;

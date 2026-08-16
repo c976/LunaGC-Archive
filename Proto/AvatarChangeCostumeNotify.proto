@@ -3,8 +3,6 @@ option java_package = "emu.grasscutter.net.proto";
 
 import "SceneEntityInfo.proto";
 
-// 4.7.0
-// CmdId: 29175
 message AvatarChangeCostumeNotify {
-	SceneEntityInfo entity_info = 2;
+	SceneEntityInfo entity_info = 15;
 }
