@@ -150,7 +150,7 @@ public class ConfigContainer {
         public boolean startImmediately = false;
 
         public String bindAddress = "0.0.0.0";
-        public int bindPort = 443;
+        public int bindPort = 8088;
 
         /* This is the address used in URLs. */
         public String accessAddress = "127.0.0.1";
@@ -164,7 +164,7 @@ public class ConfigContainer {
 
     public static class Game {
         public String bindAddress = "0.0.0.0";
-        public int bindPort = 22102;
+        public int bindPort = 22101;
 
         /* This is the address used in the default region. */
         public String accessAddress = "127.0.0.1";
@@ -173,6 +173,8 @@ public class ConfigContainer {
 
         /* Enabling this will generate a unique packet encryption key for each player. */
         public boolean useUniquePacketKey = true;
+
+        public boolean useXorEncryption = false;
 
         /* Entities within a certain range will be loaded for the player */
         public int loadEntitiesForPlayerRange = 300;
@@ -251,7 +253,7 @@ public class ConfigContainer {
     public static class Encryption {
         public boolean useEncryption = false;
         /* Should 'https' be appended to URLs? */
-        public boolean useInRouting = true;
+        public boolean useInRouting = false;
         public String keystore = "./keystore.p12";
         public String keystorePassword = "123456";
     }
@@ -360,22 +362,16 @@ public class ConfigContainer {
 
     public static class JoinOptions {
         public int[] welcomeEmotes = {2007, 1002, 4010};
-        public String welcomeMessage = "Welcome to a LunaGC 4.6.0";
+        public String welcomeMessage = "Welcome to a LunaGC 4.7.0";
         public JoinOptions.Mail welcomeMail = new JoinOptions.Mail();
 
         public static class Mail {
-            public String title = "Welcome to a LunaGC 4.6.0";
+            public String title = "Welcome to a LunaGC 4.7.0";
             public String content = """
-                    Hi there!\r
-                    First of all, welcome to Grasscutter. If you have any issues, please let us know so that Lawnmower can help you! \r
-                    \r
-                    Check out our:\r
-                    <type="browser" text="Discord" href="https://discord.gg/T5vZU6UyeG"/>
+                    Hi there!\r\nWelcome to LunaGC!
                     """;
             public String sender = "Kei-Luna";
             public emu.grasscutter.game.mail.Mail.MailItem[] items = {
-                new emu.grasscutter.game.mail.Mail.MailItem(13509, 1, 1),
-                new emu.grasscutter.game.mail.Mail.MailItem(201, 99999, 1)
             };
         }
     }
@@ -387,7 +383,7 @@ public class ConfigContainer {
         public int worldLevel = 0;
 
         public String nickName = "LunaGC";
-        public String signature = "Welcome to a LunaGC";
+        public String signature = "Welcome to LunaGC";
     }
 
     public static class Files {
