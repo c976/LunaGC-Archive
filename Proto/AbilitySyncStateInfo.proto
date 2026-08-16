@@ -1,5 +1,4 @@
 syntax = "proto3";
-
 option java_package = "emu.grasscutter.net.proto";
 
 import "AbilityScalarValueEntry.proto";
@@ -7,6 +6,7 @@ import "AbilityAppliedAbility.proto";
 import "AbilityAppliedModifier.proto";
 import "AbilityMixinRecoverInfo.proto";
 
+// 4.7.0
 message AbilitySyncStateInfo {
 	bool is_inited = 1;
 	repeated AbilityScalarValueEntry dynamic_value_map = 2;

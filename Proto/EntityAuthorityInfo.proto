@@ -1,12 +1,14 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
+
 import "AbilitySyncStateInfo.proto";
 import "EntityRendererChangedInfo.proto";
 import "SceneEntityAiInfo.proto";
 import "Vector.proto";
 import "AnimatorParameterValueInfoPair.proto";
 import "EntityClientExtraInfo.proto";
-// Obf: DHLPFKPHPNF
+
+// 4.7.0
 message EntityAuthorityInfo {
 	AbilitySyncStateInfo ability_info = 1;
 	EntityRendererChangedInfo renderer_changed_info = 2;

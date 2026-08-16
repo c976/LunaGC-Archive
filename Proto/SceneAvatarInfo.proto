@@ -5,7 +5,8 @@ import "SceneReliquaryInfo.proto";
 import "ServerBuff.proto";
 import "CurVehicleInfo.proto";
 import "AvatarExcelInfo.proto";
-// Obf: JGKPGDAONID
+
+// 4.7.0
 message SceneAvatarInfo {
 	uint32 uid = 1;
 	uint32 avatar_id = 2;

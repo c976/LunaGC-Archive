@@ -3,7 +3,7 @@ option java_package = "emu.grasscutter.net.proto";
 
 import "AbilityScalarValueEntry.proto";
 
-// 4.6.0
+// 4.7.0
 message AbilityMetaReInitOverrideMap {
-	repeated AbilityScalarValueEntry override_map = 15;
+	repeated AbilityScalarValueEntry override_map = 10;
 }

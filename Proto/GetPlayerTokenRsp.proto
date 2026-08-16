@@ -1,17 +1,18 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
 
-// 4.6.0
-// CmdId: 4867
+// 4.7.0
+// CmdId: 322
 message GetPlayerTokenRsp {
-	string country_code = 1096;
-	uint32 key_id = 1411;
-	string client_ip_str = 703;
-	string server_rand_key = 1118;
-	string token = 14;
-	string account_uid = 3;
-	string sign = 477;
-	uint32 uid = 13;
-	string client_version_random_key = 207;
-	uint32 platform_type = 15; //15 or 1795
+	string account_uid = 9;
+	string server_rand_key = 910;
+	string sign = 414;
+	bytes security_cmd_buffer = 3;
+	string client_ip_str = 1950;
+	string token = 2;
+	uint32 key_id = 720;
+	string client_version_random_key = 1402;
+	string country_code = 254;
+	uint32 uid = 4;
+	uint32 platform_type = 14;
 }

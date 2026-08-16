@@ -3,10 +3,10 @@ option java_package = "emu.grasscutter.net.proto";
 
 import "AvatarTeam.proto";
 
-// 4.6.0
-// CmdId: 3135
+// 4.7.0
+// CmdId: 26224
 message AvatarTeamAllDataNotify {
-	map<uint32, AvatarTeam> avatar_team_map = 5;
-	repeated uint64 temp_avatar_guid_list = 12;
-	repeated uint32 backup_avatar_team_order_list = 13;
+	repeated uint64 temp_avatar_guid_list = 1;
+	map<uint32, AvatarTeam> avatar_team_map = 4;
+	repeated uint32 backup_avatar_team_order_list = 8;
 }

@@ -3,8 +3,8 @@ option java_package = "emu.grasscutter.net.proto";
 
 import "WidgetSlotData.proto";
 
-// 4.6.0
+// 4.7.0
 message PlayerWidgetInfo {
-	repeated WidgetSlotData slot_list = 1;
-	uint32 uid = 5;
+	repeated WidgetSlotData slot_list = 9;
+	uint32 uid = 10;
 }

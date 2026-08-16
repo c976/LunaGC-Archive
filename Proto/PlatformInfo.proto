@@ -1,10 +1,12 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
+
 import "Vector.proto";
 import "MathQuaternion.proto";
 import "MovingPlatformType.proto";
 import "Route.proto";
-// Obf: NEACNMDIMDL
+
+// 4.7.0
 message PlatformInfo {
 	uint32 route_id = 1;
 	int32 start_index = 2;

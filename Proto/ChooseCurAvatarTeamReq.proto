@@ -1,8 +1,8 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
 
-// 4.6.0
-// CmdId: 7877
+// CmdId: 27622
+// 4.7.0
 message ChooseCurAvatarTeamReq {
-	uint32 team_id = 10;
+	uint32 team_id = 8;
 }

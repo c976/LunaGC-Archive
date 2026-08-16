@@ -1,5 +1,6 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
+
 import "GadgetBornType.proto";
 //import "Item.proto";
 import "GatherGadgetInfo.proto";
@@ -30,6 +31,8 @@ import "GadgetPlayInfo.proto";
 //import "GDGKKLFMJKH.proto";
 //import "OMBIJJLAHFB.proto";
 //import "BDOCPDNCIEF.proto";
+
+// 4.7.0
 message SceneGadgetInfo {
 	uint32 gadget_id = 1;
 	uint32 group_id = 2;

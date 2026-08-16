@@ -3,9 +3,9 @@ option java_package = "emu.grasscutter.net.proto";
 
 import "SocialDetail.proto";
 
-// 4.6.0
-// CmdId: 323
+// 4.7.0
+// CmdId: 1804
 message GetPlayerSocialDetailRsp {
-	int32 retcode = 9;
+	int32 retcode = 1;
 	SocialDetail detail_data = 13;
 }

@@ -1,17 +1,15 @@
 syntax = "proto3";
-
 option java_package = "emu.grasscutter.net.proto";
 
-import "DungeonEntryInfo.proto";
 import "DungeonEntryPointInfo.proto";
+import "DungeonEntryInfo.proto";
 
-// CmdId: 21310
-// Version: 4.6.0
-// Obfs: OABAOIFOJML
+// 4.7.0
+// CmdId: 27078
 message DungeonEntryInfoRsp {
-	uint32 recommend_dungeon_id = 2;
-	repeated DungeonEntryInfo dungeon_entry_list = 6;
-	int32 retcode = 8;
-	uint32 point_id = 9;
+	int32 retcode = 2;
+	uint32 recommend_dungeon_id = 10;
 	repeated DungeonEntryPointInfo dungeon_entry_point_list = 11;
+	repeated DungeonEntryInfo dungeon_entry_list = 14;
+	uint32 point_id = 15;
 }

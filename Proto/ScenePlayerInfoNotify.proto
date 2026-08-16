@@ -3,8 +3,8 @@ option java_package = "emu.grasscutter.net.proto";
 
 import "ScenePlayerInfo.proto";
 
-// 4.6.0
-// CmdId: 4358
+// 4.7.0
+// CmdId: 21623
 message ScenePlayerInfoNotify {
 	repeated ScenePlayerInfo player_info_list = 13;
 }

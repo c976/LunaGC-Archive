@@ -1,5 +1,6 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
+
 import "ProtEntityType.proto";
 import "MotionInfo.proto";
 import "PropPair.proto";
@@ -13,7 +14,8 @@ import "EntityClientData.proto";
 import "EntityEnvironmentInfo.proto";
 import "EntityAuthorityInfo.proto";
 import "ServerBuff.proto";
-// Obf: DGPPPPBJILO
+
+// 4.7.0
 message SceneEntityInfo {
 	ProtEntityType entity_type = 1;
 	uint32 entity_id = 2;

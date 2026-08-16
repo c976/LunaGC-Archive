@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-// 4.6.0
-// CmdId: 22682
-message AvatarGainFlycloakNotify {
-	uint32 flycloak_id = 4;
-}

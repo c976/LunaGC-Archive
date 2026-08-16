@@ -1,7 +1,7 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
 
-// 4.6.0
+// 4.7.0
 enum ChangeHpDebts {
 	CHANGE_HP_DEBTS_NONE = 0;
 	CHANGE_HP_DEBTS_PAY = 1;

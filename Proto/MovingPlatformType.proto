@@ -1,6 +1,7 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: FMMMMIIKELD
+
+// 4.7.0
 enum MovingPlatformType {
 	MOVING_PLATFORM_TYPE_NONE = 0;
 	MOVING_PLATFORM_TYPE_USE_CONFIG = 1;

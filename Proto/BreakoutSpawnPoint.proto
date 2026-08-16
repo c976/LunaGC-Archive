@@ -1,7 +1,9 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
+
 import "BreakoutPhysicalObject.proto";
-// Obf: COLAAGNOBFN
+
+// 4.7.0
 message BreakoutSpawnPoint {
 	uint32 id = 1;
 	uint32 brick_suite_id = 2;

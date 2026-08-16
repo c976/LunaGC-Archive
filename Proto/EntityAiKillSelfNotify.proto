@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-// Obf: KCBLONBAAEL
-// CmdId: 29500
-message EntityAiKillSelfNotify {
-    uint32 entity_id = 9;
-}

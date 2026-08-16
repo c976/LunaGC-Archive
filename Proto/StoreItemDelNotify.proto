@@ -3,9 +3,9 @@ option java_package = "emu.grasscutter.net.proto";
 
 import "StoreType.proto";
 
-// 4.6.0
-// CmdId: 23904
+// 4.7.0
+// CmdId: 27723
 message StoreItemDelNotify {
-	repeated uint64 guid_list = 7;
-	StoreType store_type = 13;
+	StoreType store_type = 3;
+	repeated uint64 guid_list = 13;
 }

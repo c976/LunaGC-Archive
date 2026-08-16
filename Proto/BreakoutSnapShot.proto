@@ -1,11 +1,13 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
+
 import "BreakoutPhysicalObject.proto";
 import "BreakoutAction.proto";
 import "BreakoutSpawnPoint.proto";
 import "BreakoutElementReactionCounter.proto";
 import "BreakoutSyncConnectUidInfo.proto";
-// Obf: OLKOKCBEABM
+
+// 4.7.0
 message BreakoutSnapShot {
 	uint64 client_game_time = 1;
 	uint64 server_game_time = 2;

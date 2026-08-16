@@ -1,6 +1,7 @@
 syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: OGLAIMNKFEK
+
+// 4.7.0
 enum PropChangeReason {
 	PROP_CHANGE_REASON_NONE = 0;
 	PROP_CHANGE_REASON_STATUE_RECOVER = 1;

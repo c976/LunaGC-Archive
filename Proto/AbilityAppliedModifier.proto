@@ -5,8 +5,7 @@ import "AbilityString.proto";
 import "AbilityAttachedModifier.proto";
 import "ModifierDurability.proto";
 
-
-// 4.6.0
+// 4.7.0
 message AbilityAppliedModifier {
 	int32 modifier_local_id = 1;
 	uint32 parent_ability_entity_id = 2;
@@ -21,5 +20,5 @@ message AbilityAppliedModifier {
 	ModifierDurability modifier_durability = 11;
 	uint32 sbuff_uid = 12;
 	bool is_serverbuff_modifier = 13;
-	bool IAPDOPJIGFF = 14;
+	bool IILBHFODNKJ = 14;
 }
