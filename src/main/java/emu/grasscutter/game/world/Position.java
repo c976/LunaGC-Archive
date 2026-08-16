@@ -7,6 +7,7 @@ import emu.grasscutter.net.proto.VectorOuterClass.Vector;
 import emu.grasscutter.utils.Utils;
 import java.io.Serializable;
 import java.util.List;
+import org.luaj.vm2.LuaTable;
 import lombok.*;
 import lombok.experimental.Accessors;
 
@@ -83,6 +84,10 @@ public class Position implements Serializable {
         this.set(pos);
     }
 
+    public Position(LuaTable pos) {
+        this.set(pos.get("x").tofloat(), pos.get("y").tofloat(), pos.get("z").tofloat());
+    }
+
     public Position set(float x, float y) {
         this.x = x;
         this.y = y;
@@ -155,6 +160,17 @@ public class Position implements Serializable {
 
     public boolean equal3d(Position other) {
         return getX() == other.getX() && getY() == other.getY() && getZ() == other.getZ();
+    }
+
+    public float sqDist(Position b) {
+        float dx = this.x - b.x;
+        float dy = this.y - b.y;
+        float dz = this.z - b.z;
+        return dx * dx + dy * dy + dz * dz;
+    }
+
+    public int bucket(int rank) {
+        return ((int)this.x >> rank) ^ ((int)this.y >> rank) ^ ((int)this.z >> rank);
     }
 
     public double computeDistance(Position b) {

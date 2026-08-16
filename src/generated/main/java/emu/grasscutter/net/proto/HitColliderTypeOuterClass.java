@@ -15,10 +15,6 @@ public final class HitColliderTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   *4.7.0
-   * </pre>
-   *
    * Protobuf enum {@code HitColliderType}
    */
   public enum HitColliderType

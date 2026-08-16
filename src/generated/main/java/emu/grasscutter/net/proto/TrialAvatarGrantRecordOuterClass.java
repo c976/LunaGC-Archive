@@ -32,7 +32,7 @@ public final class TrialAvatarGrantRecordOuterClass {
   }
   /**
    * <pre>
-   *4.7.0
+   * 5.0.0
    * </pre>
    *
    * Protobuf type {@code TrialAvatarGrantRecord}
@@ -545,7 +545,7 @@ public final class TrialAvatarGrantRecordOuterClass {
     }
     /**
      * <pre>
-     *4.7.0
+     * 5.0.0
      * </pre>
      *
      * Protobuf type {@code TrialAvatarGrantRecord}

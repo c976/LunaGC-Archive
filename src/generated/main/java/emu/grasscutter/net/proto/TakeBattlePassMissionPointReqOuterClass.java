@@ -19,17 +19,17 @@ public final class TakeBattlePassMissionPointReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 mission_id_list = 8;</code>
+     * <code>repeated uint32 mission_id_list = 5;</code>
      * @return A list containing the missionIdList.
      */
     java.util.List<java.lang.Integer> getMissionIdListList();
     /**
-     * <code>repeated uint32 mission_id_list = 8;</code>
+     * <code>repeated uint32 mission_id_list = 5;</code>
      * @return The count of missionIdList.
      */
     int getMissionIdListCount();
     /**
-     * <code>repeated uint32 mission_id_list = 8;</code>
+     * <code>repeated uint32 mission_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The missionIdList at the given index.
      */
@@ -37,8 +37,9 @@ public final class TakeBattlePassMissionPointReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 20564
-   *4.7.0
+   * CmdId: 24391
+   * Version: 4.6.0
+   * Obfs: PCPEGKIEPPG
    * </pre>
    *
    * Protobuf type {@code TakeBattlePassMissionPointReq}
@@ -87,7 +88,7 @@ public final class TakeBattlePassMissionPointReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 40: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 missionIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -95,7 +96,7 @@ public final class TakeBattlePassMissionPointReqOuterClass {
               missionIdList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -143,10 +144,10 @@ public final class TakeBattlePassMissionPointReqOuterClass {
               emu.grasscutter.net.proto.TakeBattlePassMissionPointReqOuterClass.TakeBattlePassMissionPointReq.class, emu.grasscutter.net.proto.TakeBattlePassMissionPointReqOuterClass.TakeBattlePassMissionPointReq.Builder.class);
     }
 
-    public static final int MISSION_ID_LIST_FIELD_NUMBER = 8;
+    public static final int MISSION_ID_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList missionIdList_;
     /**
-     * <code>repeated uint32 mission_id_list = 8;</code>
+     * <code>repeated uint32 mission_id_list = 5;</code>
      * @return A list containing the missionIdList.
      */
     @java.lang.Override
@@ -155,14 +156,14 @@ public final class TakeBattlePassMissionPointReqOuterClass {
       return missionIdList_;
     }
     /**
-     * <code>repeated uint32 mission_id_list = 8;</code>
+     * <code>repeated uint32 mission_id_list = 5;</code>
      * @return The count of missionIdList.
      */
     public int getMissionIdListCount() {
       return missionIdList_.size();
     }
     /**
-     * <code>repeated uint32 mission_id_list = 8;</code>
+     * <code>repeated uint32 mission_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The missionIdList at the given index.
      */
@@ -187,7 +188,7 @@ public final class TakeBattlePassMissionPointReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getMissionIdListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(missionIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < missionIdList_.size(); i++) {
@@ -345,8 +346,9 @@ public final class TakeBattlePassMissionPointReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20564
-     *4.7.0
+     * CmdId: 24391
+     * Version: 4.6.0
+     * Obfs: PCPEGKIEPPG
      * </pre>
      *
      * Protobuf type {@code TakeBattlePassMissionPointReq}
@@ -516,7 +518,7 @@ public final class TakeBattlePassMissionPointReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 mission_id_list = 8;</code>
+       * <code>repeated uint32 mission_id_list = 5;</code>
        * @return A list containing the missionIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +527,14 @@ public final class TakeBattlePassMissionPointReqOuterClass {
                  java.util.Collections.unmodifiableList(missionIdList_) : missionIdList_;
       }
       /**
-       * <code>repeated uint32 mission_id_list = 8;</code>
+       * <code>repeated uint32 mission_id_list = 5;</code>
        * @return The count of missionIdList.
        */
       public int getMissionIdListCount() {
         return missionIdList_.size();
       }
       /**
-       * <code>repeated uint32 mission_id_list = 8;</code>
+       * <code>repeated uint32 mission_id_list = 5;</code>
        * @param index The index of the element to return.
        * @return The missionIdList at the given index.
        */
@@ -540,7 +542,7 @@ public final class TakeBattlePassMissionPointReqOuterClass {
         return missionIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 mission_id_list = 8;</code>
+       * <code>repeated uint32 mission_id_list = 5;</code>
        * @param index The index to set the value at.
        * @param value The missionIdList to set.
        * @return This builder for chaining.
@@ -553,7 +555,7 @@ public final class TakeBattlePassMissionPointReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mission_id_list = 8;</code>
+       * <code>repeated uint32 mission_id_list = 5;</code>
        * @param value The missionIdList to add.
        * @return This builder for chaining.
        */
@@ -564,7 +566,7 @@ public final class TakeBattlePassMissionPointReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mission_id_list = 8;</code>
+       * <code>repeated uint32 mission_id_list = 5;</code>
        * @param values The missionIdList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +579,7 @@ public final class TakeBattlePassMissionPointReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mission_id_list = 8;</code>
+       * <code>repeated uint32 mission_id_list = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearMissionIdList() {
@@ -655,7 +657,7 @@ public final class TakeBattlePassMissionPointReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n#TakeBattlePassMissionPointReq.proto\"8\n" +
       "\035TakeBattlePassMissionPointReq\022\027\n\017missio" +
-      "n_id_list\030\010 \003(\rB\033\n\031emu.grasscutter.net.p" +
+      "n_id_list\030\005 \003(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -43,28 +43,23 @@ public final class AchievementAllDataNotifyOuterClass {
         int index);
 
     /**
-     * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+     * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
      * @return A list containing the rewardTakenGoalIdList.
      */
     java.util.List<java.lang.Integer> getRewardTakenGoalIdListList();
     /**
-     * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+     * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
      * @return The count of rewardTakenGoalIdList.
      */
     int getRewardTakenGoalIdListCount();
     /**
-     * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+     * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The rewardTakenGoalIdList at the given index.
      */
     int getRewardTakenGoalIdList(int index);
   }
   /**
-   * <pre>
-   * CmdId: 7450
-   *4.7.0
-   * </pre>
-   *
    * Protobuf type {@code AchievementAllDataNotify}
    */
   public static final class AchievementAllDataNotify extends
@@ -121,7 +116,7 @@ public final class AchievementAllDataNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.AchievementOuterClass.Achievement.parser(), extensionRegistry));
               break;
             }
-            case 96: {
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 rewardTakenGoalIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -129,7 +124,7 @@ public final class AchievementAllDataNotifyOuterClass {
               rewardTakenGoalIdList_.addInt(input.readUInt32());
               break;
             }
-            case 98: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -220,10 +215,10 @@ public final class AchievementAllDataNotifyOuterClass {
       return achievementList_.get(index);
     }
 
-    public static final int REWARD_TAKEN_GOAL_ID_LIST_FIELD_NUMBER = 12;
+    public static final int REWARD_TAKEN_GOAL_ID_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList rewardTakenGoalIdList_;
     /**
-     * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+     * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
      * @return A list containing the rewardTakenGoalIdList.
      */
     @java.lang.Override
@@ -232,14 +227,14 @@ public final class AchievementAllDataNotifyOuterClass {
       return rewardTakenGoalIdList_;
     }
     /**
-     * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+     * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
      * @return The count of rewardTakenGoalIdList.
      */
     public int getRewardTakenGoalIdListCount() {
       return rewardTakenGoalIdList_.size();
     }
     /**
-     * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+     * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The rewardTakenGoalIdList at the given index.
      */
@@ -267,7 +262,7 @@ public final class AchievementAllDataNotifyOuterClass {
         output.writeMessage(8, achievementList_.get(i));
       }
       if (getRewardTakenGoalIdListList().size() > 0) {
-        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(rewardTakenGoalIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < rewardTakenGoalIdList_.size(); i++) {
@@ -434,11 +429,6 @@ public final class AchievementAllDataNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 7450
-     *4.7.0
-     * </pre>
-     *
      * Protobuf type {@code AchievementAllDataNotify}
      */
     public static final class Builder extends
@@ -888,7 +878,7 @@ public final class AchievementAllDataNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+       * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
        * @return A list containing the rewardTakenGoalIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -897,14 +887,14 @@ public final class AchievementAllDataNotifyOuterClass {
                  java.util.Collections.unmodifiableList(rewardTakenGoalIdList_) : rewardTakenGoalIdList_;
       }
       /**
-       * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+       * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
        * @return The count of rewardTakenGoalIdList.
        */
       public int getRewardTakenGoalIdListCount() {
         return rewardTakenGoalIdList_.size();
       }
       /**
-       * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+       * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
        * @param index The index of the element to return.
        * @return The rewardTakenGoalIdList at the given index.
        */
@@ -912,7 +902,7 @@ public final class AchievementAllDataNotifyOuterClass {
         return rewardTakenGoalIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+       * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The rewardTakenGoalIdList to set.
        * @return This builder for chaining.
@@ -925,7 +915,7 @@ public final class AchievementAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+       * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
        * @param value The rewardTakenGoalIdList to add.
        * @return This builder for chaining.
        */
@@ -936,7 +926,7 @@ public final class AchievementAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+       * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
        * @param values The rewardTakenGoalIdList to add.
        * @return This builder for chaining.
        */
@@ -949,7 +939,7 @@ public final class AchievementAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_taken_goal_id_list = 12;</code>
+       * <code>repeated uint32 reward_taken_goal_id_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardTakenGoalIdList() {
@@ -1028,7 +1018,7 @@ public final class AchievementAllDataNotifyOuterClass {
       "\n\036AchievementAllDataNotify.proto\032\021Achiev" +
       "ement.proto\"e\n\030AchievementAllDataNotify\022" +
       "&\n\020achievement_list\030\010 \003(\0132\014.Achievement\022" +
-      "!\n\031reward_taken_goal_id_list\030\014 \003(\rB\033\n\031em" +
+      "!\n\031reward_taken_goal_id_list\030\017 \003(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

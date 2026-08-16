@@ -35,9 +35,11 @@ public class ConfigContainer {
      *              HTTP server should start immediately.
      * Version 13 - 'game.useUniquePacketKey' was added to control whether the
      *              encryption key used for packets is a constant or randomly generated.
+     * Version 14 - 'game.timeout' was added to control the UDP client timeout.
+     * Version 15 - Discard 'server.fastRequire'.
      */
     private static int version() {
-        return 13;
+        return 15;
     }
 
     /**
@@ -117,12 +119,6 @@ public class ConfigContainer {
         public ServerRunMode runMode = ServerRunMode.HYBRID;
         public boolean logCommands = false;
 
-        /**
-         * If enabled, the 'require' Lua function will load the script's compiled varient into the context. (faster; doesn't work as well)
-         * If disabled, all 'require' calls will be replaced with the referenced script's source. (slower; works better)
-         */
-        public boolean fastRequire = true;
-
         public HTTP http = new HTTP();
         public Game game = new Game();
 
@@ -140,6 +136,7 @@ public class ConfigContainer {
         public boolean autoCreate = false;
         public boolean EXPERIMENTAL_RealPassword = false;
         public String[] defaultPermissions = {};
+        public String playerEmail = "grasscutter.io";
         public int maxPlayer = -1;
     }
 
@@ -174,7 +171,7 @@ public class ConfigContainer {
         /* Enabling this will generate a unique packet encryption key for each player. */
         public boolean useUniquePacketKey = true;
 
-        public boolean useXorEncryption = false;
+        public boolean useXorEncryption = true;
 
         /* Entities within a certain range will be loaded for the player */
         public int loadEntitiesForPlayerRange = 300;
@@ -184,6 +181,9 @@ public class ConfigContainer {
 
         /* Kcp internal work interval (milliseconds) */
         public int kcpInterval = 20;
+        /* Time to wait (in seconds) before terminating a connection. */
+        public long timeout = 30;
+
         /* Controls whether packets should be logged in console or not */
         public ServerDebugMode logPackets = ServerDebugMode.NONE;
         /* Show packet payload in console or no (in any case the payload is shown in encrypted view) */
@@ -199,7 +199,7 @@ public class ConfigContainer {
 
         public VisionOptions[] visionOptions = new VisionOptions[] {
             new VisionOptions("VISION_LEVEL_NORMAL"         , 80    , 20),
-            new VisionOptions("VISION_LEVEL_LITTLE_REMOTE"  , 16    , 40),
+            new VisionOptions("VISION_LEVEL_LITTLE_REMOTE"  , 160    , 40),
             new VisionOptions("VISION_LEVEL_REMOTE"         , 1000  , 250),
             new VisionOptions("VISION_LEVEL_SUPER"          , 4000  , 1000),
             new VisionOptions("VISION_LEVEL_NEARBY"         , 40    , 20),
@@ -270,10 +270,10 @@ public class ConfigContainer {
     public static class GameOptions {
         public InventoryLimits inventoryLimits = new InventoryLimits();
         public AvatarLimits avatarLimits = new AvatarLimits();
-        public int sceneEntityLimit = 1000; // Unenforced. TODO: Implement.
+        public int sceneEntityLimit = 65535; // Unenforced. TODO: Implement.
 
         public boolean watchGachaConfig = false;
-        public boolean enableShopItems = false;
+        public boolean enableShopItems = true;
         public boolean staminaUsage = true;
         public boolean energyUsage = true;
         public boolean fishhookTeleport = true;
@@ -307,13 +307,14 @@ public class ConfigContainer {
 
         public static class ResinOptions {
             public boolean resinUsage = false;
-            public int cap = 160;
+            /* Increased to 200 in version 4.8 */
+            public int cap = 200;
             public int rechargeTime = 480;
         }
 
         public static class Questing {
             /* Should questing behavior be used? */
-            public boolean enabled = false;
+            public boolean enabled = true;
         }
 
         public static class HandbookOptions {
@@ -362,11 +363,11 @@ public class ConfigContainer {
 
     public static class JoinOptions {
         public int[] welcomeEmotes = {2007, 1002, 4010};
-        public String welcomeMessage = "Welcome to a LunaGC 4.7.0";
+        public String welcomeMessage = "Welcome to a LunaGC 5.0.0";
         public JoinOptions.Mail welcomeMail = new JoinOptions.Mail();
 
         public static class Mail {
-            public String title = "Welcome to a LunaGC 4.7.0";
+            public String title = "Welcome to a LunaGC 5.0.0";
             public String content = """
                     Hi there!\r\nWelcome to LunaGC!
                     """;
@@ -382,7 +383,7 @@ public class ConfigContainer {
         public int adventureRank = 1;
         public int worldLevel = 0;
 
-        public String nickName = "LunaGC";
+        public String nickName = "";
         public String signature = "Welcome to LunaGC";
     }
 

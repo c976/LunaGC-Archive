@@ -44,7 +44,6 @@ public final class AbilityManager extends BasePlayerManager {
                         FastThreadLocalThread::new,
                         new ThreadPoolExecutor.AbortPolicy());
 
-        registerHandlers();
     }
 
     @Getter private boolean abilityInvulnerable = false;
@@ -54,6 +53,7 @@ public final class AbilityManager extends BasePlayerManager {
     public AbilityManager(Player player) {
         super(player);
         removePendingEnergyClear();
+        registerHandlers();
     }
 
     public void removePendingEnergyClear() {
@@ -108,14 +108,14 @@ public final class AbilityManager extends BasePlayerManager {
         }
     }
 
-    public static void registerHandlers() {
+    public void registerHandlers() {
         var handlerClassesAction = Grasscutter.reflector.getSubTypesOf(AbilityActionHandler.class);
 
         for (var obj : handlerClassesAction) {
             try {
                 if (obj.isAnnotationPresent(AbilityAction.class)) {
                     AbilityModifierAction.Type abilityAction = obj.getAnnotation(AbilityAction.class).value();
-                    actionHandlers.put(abilityAction, obj.getDeclaredConstructor().newInstance());
+                    actionHandlers.put(abilityAction, obj.getDeclaredConstructor().newInstance().setManager(this));
                 } else {
                     return;
                 }
@@ -141,11 +141,13 @@ public final class AbilityManager extends BasePlayerManager {
 
     public void executeAction(
             Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
+        if (action.type == null)
+            return;
         var handler = actionHandlers.get(action.type);
         if (handler == null || ability == null) {
             if (DebugConstants.LOG_MISSING_ABILITY_HANDLERS) {
                 Grasscutter.getLogger()
-                        .debug("Missing ability action handler for {} (invoker: {}).", action.type, ability);
+                        .warn("Missing ability action handler for {} (invoker: {}).", action.type, ability);
             }
 
             return;
@@ -155,7 +157,7 @@ public final class AbilityManager extends BasePlayerManager {
                 () -> {
                     if (!handler.execute(ability, action, abilityData, target)) {
                         Grasscutter.getLogger()
-                                .debug("Ability execute action failed for {} at {}.", action.type, ability);
+                                .warn("Ability execute action failed for {} at {}.", action.type, ability);
                     }
                 });
     }
@@ -172,7 +174,7 @@ public final class AbilityManager extends BasePlayerManager {
                 () -> {
                     if (!handler.execute(ability, mixinData, abilityData)) {
                         Grasscutter.getLogger()
-                                .error("Ability execute action failed for {} at {}.", mixinData.type, ability);
+                                .warn("Ability execute action failed for {} at {}.", mixinData.type, ability);
                     }
                 });
     }
@@ -235,7 +237,7 @@ public final class AbilityManager extends BasePlayerManager {
             default -> {
                 if (DebugConstants.LOG_MISSING_ABILITIES) {
                     Grasscutter.getLogger()
-                            .trace("Missing invoke handler for ability {}.", invoke.getArgumentType().name());
+                            .warn("Missing invoke handler for ability {}.", invoke.getArgumentType().name());
                 }
             }
         }
@@ -246,7 +248,7 @@ public final class AbilityManager extends BasePlayerManager {
 
         var entity = this.player.getScene().getEntityById(invoke.getEntityId());
         if (entity == null) {
-            Grasscutter.getLogger().trace("Entity not found: {}", invoke.getEntityId());
+            Grasscutter.getLogger().warn("Entity not found: {}", invoke.getEntityId());
             return;
         }
 
@@ -270,8 +272,9 @@ public final class AbilityManager extends BasePlayerManager {
         }
 
         if (ability == null) {
-            Grasscutter.getLogger()
-                    .trace(
+            if (DebugConstants.LOG_MISSING_ABILITIES)
+                Grasscutter.getLogger()
+                    .error(
                             "Ability not found: ability {} modifier {}",
                             head.getInstancedAbilityId(),
                             head.getInstancedModifierId());
@@ -294,8 +297,9 @@ public final class AbilityManager extends BasePlayerManager {
             }
         }
 
-        Grasscutter.getLogger()
-                .trace(
+        if (DebugConstants.LOG_MISSING_ABILITIES)
+            Grasscutter.getLogger()
+                .error(
                         "Action or mixin not found: local_id {} ability {} actions to ids {}",
                         head.getLocalId(),
                         ability.getData().abilityName,
@@ -361,14 +365,14 @@ public final class AbilityManager extends BasePlayerManager {
     }
 
     private void setAbilityOverrideValue(Ability ability, AbilityScalarValueEntry valueChange) {
-        if (valueChange.getValueType() != AbilityScalarType.ABILITY_SCALAR_TYPE_FLOAT && valueChange.getValueType() != AbilityScalarType.ABILITY_SCALAR_TYPE_UNKNOW) {
+        if (valueChange.getValueType() != AbilityScalarType.ABILITY_SCALAR_TYPE_FLOAT) {
             Grasscutter.getLogger().trace("Scalar type not supported: {}", valueChange.getValueType());
 
             return;
         }
 
         if (!valueChange.getKey().hasStr()) {
-            Grasscutter.getLogger().trace("TODO: Calculate all the ability value hashes");
+            Grasscutter.getLogger().warn("TODO: Calculate all the ability value hashes");
 
             return;
         }
@@ -387,13 +391,15 @@ public final class AbilityManager extends BasePlayerManager {
         var head = invoke.getHead();
 
         if (entity == null) {
-            Grasscutter.getLogger().trace("Entity not found: {}", invoke.getEntityId());
+            Grasscutter.getLogger().error("Entity not found: {}", invoke.getEntityId());
             return;
         }
 
         var instancedAbilityIndex = head.getInstancedAbilityId() - 1;
         if (instancedAbilityIndex >= entity.getInstancedAbilities().size()) {
-            Grasscutter.getLogger().trace("Ability not found {}", head.getInstancedAbilityId());
+            if (DebugConstants.LOG_MISSING_ABILITIES)
+                Grasscutter.getLogger().error(
+                    "Ability not found {} in {}", head.getInstancedAbilityId(), entity);
             return;
         }
 
@@ -408,13 +414,15 @@ public final class AbilityManager extends BasePlayerManager {
         var head = invoke.getHead();
 
         if (entity == null) {
-            Grasscutter.getLogger().trace("Entity not found: {}", invoke.getEntityId());
+            Grasscutter.getLogger().error("Entity not found: {}", invoke.getEntityId());
             return;
         }
 
         var instancedAbilityIndex = head.getInstancedAbilityId() - 1;
         if (instancedAbilityIndex >= entity.getInstancedAbilities().size()) {
-            Grasscutter.getLogger().trace("Ability not found {}", head.getInstancedAbilityId());
+            if (DebugConstants.LOG_MISSING_ABILITIES)
+                Grasscutter.getLogger().error(
+                    "Ability not found {} in {}", head.getInstancedAbilityId(), entity);
             return;
         }
 
@@ -435,14 +443,14 @@ public final class AbilityManager extends BasePlayerManager {
 
         if (head.getIsServerbuffModifier()) {
             // TODO
-            Grasscutter.getLogger().trace("TODO: Handle serverbuff modifier");
+            Grasscutter.getLogger().warn("TODO: Handle serverbuff modifier");
             return;
         }
 
         var entity = this.player.getScene().getEntityById(invoke.getEntityId());
         if (entity == null) {
             if (DebugConstants.LOG_ABILITIES) {
-                Grasscutter.getLogger().debug("Entity not found: {}", invoke.getEntityId());
+                Grasscutter.getLogger().warn("Entity not found: {}", invoke.getEntityId());
             }
 
             return;
@@ -474,20 +482,21 @@ public final class AbilityManager extends BasePlayerManager {
 
             if (instancedAbilityData == null) {
                 // Search for the parent ability
-
                 // TODO: Research about hash
-                instancedAbilityData = GameData.getAbilityData(modChange.getParentAbilityName().getStr());
+                instancedAbilityData = GameData.getAbilityData(Ability.getAbilityName(modChange.getParentAbilityName()));
             }
 
             if (instancedAbilityData == null) {
-                Grasscutter.getLogger().trace("No ability found");
+                if (DebugConstants.LOG_MISSING_ABILITIES)
+                    Grasscutter.getLogger().error("No ability found in {}", entity);
                 return; // TODO: Display error message
             }
 
             var modifierArray = instancedAbilityData.modifiers.values().toArray();
             if (modChange.getModifierLocalId() >= modifierArray.length) {
-                Grasscutter.getLogger()
-                        .trace("Modifier local id {} not found", modChange.getModifierLocalId());
+                if (DebugConstants.LOG_MISSING_ABILITIES)
+                    Grasscutter.getLogger()
+                        .error("Modifier local id {} not found in ability {}", modChange.getModifierLocalId(), instancedAbilityData.abilityName);
                 return;
             }
 
@@ -531,7 +540,7 @@ public final class AbilityManager extends BasePlayerManager {
             entity.getInstancedModifiers().remove(head.getInstancedModifierId());
         } else {
             // TODO: Display error message
-            Grasscutter.getLogger().debug("Unknown action");
+            Grasscutter.getLogger().warn("Unknown action");
         }
     }
 
@@ -585,7 +594,7 @@ public final class AbilityManager extends BasePlayerManager {
 
         if (entity == null) {
             if (DebugConstants.LOG_ABILITIES)
-                Grasscutter.getLogger().debug("Entity not found: {}", invoke.getEntityId());
+                Grasscutter.getLogger().error("Entity not found: {}", invoke.getEntityId());
             return;
         }
 
@@ -594,7 +603,7 @@ public final class AbilityManager extends BasePlayerManager {
         var ability = GameData.getAbilityData(abilityName);
         if (ability == null) {
             if (DebugConstants.LOG_MISSING_ABILITIES)
-                Grasscutter.getLogger().debug("Ability not found: {}", abilityName);
+                Grasscutter.getLogger().error("Ability not found: {}", abilityName);
             return;
         }
 
@@ -613,7 +622,7 @@ public final class AbilityManager extends BasePlayerManager {
         var entity = scene.getEntityById(invoke.getEntityId());
         if (entity == null) {
             Grasscutter.getLogger()
-                    .trace("Entity of ID {} was not found in the scene.", invoke.getEntityId());
+                    .warn("Entity of ID {} was not found in the scene.", invoke.getEntityId());
             return;
         }
 
@@ -626,7 +635,7 @@ public final class AbilityManager extends BasePlayerManager {
                 // It bugs revival due to resetting HP to max when
                 // the avatar should just stay dead.
                 Grasscutter.getLogger()
-                        .trace("Entity of ID {} is EntityAvatar. Ignoring", invoke.getEntityId());
+                        .warn("Entity of ID {} is EntityAvatar. Ignoring", invoke.getEntityId());
                 return;
             }
             entity.setFightProperty(

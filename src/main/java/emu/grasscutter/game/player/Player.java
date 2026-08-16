@@ -447,6 +447,7 @@ public class Player implements PlayerHook, FieldFetch {
     public void setHeadImage(int picture) {
         this.headImage = picture;
         this.updateProfile();
+        this.save();
     }
 
     public void setSignature(String signature) {
@@ -582,7 +583,7 @@ public class Player implements PlayerHook, FieldFetch {
             withQuesting ? 10000 : 24000);
         this.setOrFetch(PlayerProperty.PROP_DIVE_MAX_STAMINA,
                 withQuesting ? 10000 : 0);
-        this.setOrFetch(PlayerProperty.PROP_PLAYER_RESIN, 160);
+        this.setOrFetch(PlayerProperty.PROP_PLAYER_RESIN, 200);
 
         // The player's current stamina is always their max stamina.
         this.setProperty(PlayerProperty.PROP_CUR_PERSIST_STAMINA,
@@ -690,15 +691,16 @@ public class Player implements PlayerHook, FieldFetch {
         int currentLevel = this.getLevel();
 
         int newWorldLevel =
-            (currentLevel >= 55) ? 8 :
-                (currentLevel >= 50) ? 7 :
-                    (currentLevel >= 45) ? 6 :
-                        (currentLevel >= 40) ? 5 :
-                            (currentLevel >= 35) ? 4 :
-                                (currentLevel >= 30) ? 3 :
-                                    (currentLevel >= 25) ? 2 :
-                                        (currentLevel >= 20) ? 1 :
-                                            0;
+            (currentLevel >= 58) ? 9 :
+                (currentLevel >= 55) ? 8 :
+                    (currentLevel >= 50) ? 7 :
+                        (currentLevel >= 45) ? 6 :
+                            (currentLevel >= 40) ? 5 :
+                                (currentLevel >= 35) ? 4 :
+                                    (currentLevel >= 30) ? 3 :
+                                        (currentLevel >= 25) ? 2 :
+                                            (currentLevel >= 20) ? 1 :
+                                                0;
 
         if (newWorldLevel != currentWorldLevel) {
             this.setWorldLevel(newWorldLevel);
@@ -1070,7 +1072,7 @@ public class Player implements PlayerHook, FieldFetch {
             .setMpSettingType(this.getMpSetting())
             .setNameCardId(this.getNameCardId())
             .setSignature(this.getSignature())
-            .setProfilePicture(ProfilePicture.newBuilder().setAvatarId(this.getHeadImage()));
+            .setProfilePicture(ProfilePicture.newBuilder().setHeadImageId(this.getHeadImage()));
 
         if (this.getWorld() != null) {
             onlineInfo.setCurPlayerNumInWorld(getWorld().getPlayerCount());
@@ -1125,7 +1127,7 @@ public class Player implements PlayerHook, FieldFetch {
 
         return SocialDetail.newBuilder()
             .setUid(this.getUid())
-            .setProfilePicture(ProfilePicture.newBuilder().setAvatarId(this.getHeadImage()))
+            .setProfilePicture(ProfilePicture.newBuilder().setHeadImageId(this.getHeadImage()))
             .setNickname(this.getNickname())
             .setSignature(this.getSignature())
             .setLevel(this.getLevel())

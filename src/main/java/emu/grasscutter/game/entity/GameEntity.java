@@ -21,7 +21,7 @@ import lombok.*;
 
 public abstract class GameEntity {
     @Getter private final Scene scene;
-    @Getter protected int id;
+    @Getter public int id;
     @Getter @Setter private SpawnDataEntry spawnEntry;
 
     @Getter @Setter private int blockId;
@@ -33,7 +33,7 @@ public abstract class GameEntity {
     @Getter @Setter private int lastMoveReliableSeq;
 
     @Getter @Setter private boolean lockHP;
-    private boolean limbo;
+    private boolean limbo = true;
     private float limboHpThreshold;
 
     @Setter(AccessLevel.PROTECTED)
@@ -114,8 +114,10 @@ public abstract class GameEntity {
     }
 
     protected void setLimbo(float hpThreshold) {
-        limbo = true;
-        limboHpThreshold = hpThreshold;
+        if (hpThreshold >= .0f) {
+            limbo = true;
+            limboHpThreshold = hpThreshold;
+        } else limbo = false;
     }
 
     public void onAddAbilityModifier(AbilityModifier data) {
@@ -189,7 +191,7 @@ public abstract class GameEntity {
         float curHp = getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
         if (limbo) {
             float maxHp = getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
-            float curRatio = curHp / maxHp;
+            float curRatio = maxHp > 1e-9 ? curHp / maxHp : .0f;
             if (curRatio > limboHpThreshold) {
                 // OK if this hit takes HP below threshold.
                 effectiveDamage = event.getDamage();
@@ -207,7 +209,7 @@ public abstract class GameEntity {
         this.addFightProperty(FightProperty.FIGHT_PROP_CUR_HP, -effectiveDamage);
 
         this.lastAttackType = attackType;
-        this.checkIfDead();
+        if (effectiveDamage != 0) this.checkIfDead();
         this.runLuaCallbacks(event);
 
         // Packets
@@ -384,7 +386,7 @@ public abstract class GameEntity {
 
     @Override
     public String toString() {
-        return "Entity ID: %s; Group ID: %s; Config ID: %s"
-                .formatted(this.getId(), this.getGroupId(), this.getConfigId());
+        return "Entity: %s; ID: %s; Group ID: %s; Config ID: %s"
+                .formatted(this.getEntityTypeId(), this.getId(), this.getGroupId(), this.getConfigId());
     }
 }

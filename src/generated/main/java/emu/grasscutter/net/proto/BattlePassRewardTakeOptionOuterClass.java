@@ -19,7 +19,7 @@ public final class BattlePassRewardTakeOptionOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 option_idx = 4;</code>
+     * <code>uint32 option_idx = 3;</code>
      * @return The optionIdx.
      */
     int getOptionIdx();
@@ -40,6 +40,11 @@ public final class BattlePassRewardTakeOptionOuterClass {
     emu.grasscutter.net.proto.BattlePassRewardTagOuterClass.BattlePassRewardTagOrBuilder getTagOrBuilder();
   }
   /**
+   * <pre>
+   * Version: 4.6.0
+   * Obfs: LAAGOMCGIPI
+   * </pre>
+   *
    * Protobuf type {@code BattlePassRewardTakeOption}
    */
   public static final class BattlePassRewardTakeOption extends
@@ -84,7 +89,7 @@ public final class BattlePassRewardTakeOptionOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
 
               optionIdx_ = input.readUInt32();
               break;
@@ -134,10 +139,10 @@ public final class BattlePassRewardTakeOptionOuterClass {
               emu.grasscutter.net.proto.BattlePassRewardTakeOptionOuterClass.BattlePassRewardTakeOption.class, emu.grasscutter.net.proto.BattlePassRewardTakeOptionOuterClass.BattlePassRewardTakeOption.Builder.class);
     }
 
-    public static final int OPTION_IDX_FIELD_NUMBER = 4;
+    public static final int OPTION_IDX_FIELD_NUMBER = 3;
     private int optionIdx_;
     /**
-     * <code>uint32 option_idx = 4;</code>
+     * <code>uint32 option_idx = 3;</code>
      * @return The optionIdx.
      */
     @java.lang.Override
@@ -186,7 +191,7 @@ public final class BattlePassRewardTakeOptionOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (optionIdx_ != 0) {
-        output.writeUInt32(4, optionIdx_);
+        output.writeUInt32(3, optionIdx_);
       }
       if (tag_ != null) {
         output.writeMessage(11, getTag());
@@ -202,7 +207,7 @@ public final class BattlePassRewardTakeOptionOuterClass {
       size = 0;
       if (optionIdx_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, optionIdx_);
+          .computeUInt32Size(3, optionIdx_);
       }
       if (tag_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -343,6 +348,11 @@ public final class BattlePassRewardTakeOptionOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 4.6.0
+     * Obfs: LAAGOMCGIPI
+     * </pre>
+     *
      * Protobuf type {@code BattlePassRewardTakeOption}
      */
     public static final class Builder extends
@@ -505,7 +515,7 @@ public final class BattlePassRewardTakeOptionOuterClass {
 
       private int optionIdx_ ;
       /**
-       * <code>uint32 option_idx = 4;</code>
+       * <code>uint32 option_idx = 3;</code>
        * @return The optionIdx.
        */
       @java.lang.Override
@@ -513,7 +523,7 @@ public final class BattlePassRewardTakeOptionOuterClass {
         return optionIdx_;
       }
       /**
-       * <code>uint32 option_idx = 4;</code>
+       * <code>uint32 option_idx = 3;</code>
        * @param value The optionIdx to set.
        * @return This builder for chaining.
        */
@@ -524,7 +534,7 @@ public final class BattlePassRewardTakeOptionOuterClass {
         return this;
       }
       /**
-       * <code>uint32 option_idx = 4;</code>
+       * <code>uint32 option_idx = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearOptionIdx() {
@@ -721,7 +731,7 @@ public final class BattlePassRewardTakeOptionOuterClass {
     java.lang.String[] descriptorData = {
       "\n BattlePassRewardTakeOption.proto\032\031Batt" +
       "lePassRewardTag.proto\"S\n\032BattlePassRewar" +
-      "dTakeOption\022\022\n\noption_idx\030\004 \001(\r\022!\n\003tag\030\013" +
+      "dTakeOption\022\022\n\noption_idx\030\003 \001(\r\022!\n\003tag\030\013" +
       " \001(\0132\024.BattlePassRewardTagB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };

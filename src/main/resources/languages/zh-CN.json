@@ -150,6 +150,11 @@
       "not_found": "找不到公告 %s。",
       "description": "向所有在线玩家发送公告，或者管理服务器的公告"
     },
+    "buff": {
+      "info": "现有 %s 条buff。",
+      "add_buff": "添加 %s。",
+      "remove_buff": "移除buff %s。"
+    },
     "clear": {
       "weapons": "已清除 %s 的武器。",
       "artifacts": "已清除 %s 的圣遗物。",
@@ -158,6 +163,7 @@
       "displays": "已清空 %s 的屏幕。",
       "virtuals": "已清除 %s 的所有货币和经验值。",
       "everything": "已清除 %s 的所有物品。",
+      "item": "已清除 %s 的%s个%s。",
       "description": "从你的背包中删除所有未装备且已解锁的物品，包括稀有物品"
     },
     "coop": {
@@ -230,7 +236,7 @@
       "description": "添加或移除指定玩家的权限"
     },
     "position": {
-      "success": "坐标：%s, %s, %s\n旋转：%s, %s, %s\n场景 ID：%s",
+      "success": "坐标：%s, %s, %s\n旋转：%s, %s, %s\n场景 ID：%s, 区域 ID：%s, 地区 ID：%s\n区块：%s\n群组：%s",
       "description": "获取所在位置和旋转信息"
     },
     "quest": {

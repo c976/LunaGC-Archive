@@ -421,25 +421,27 @@ public final class AvatarInfoOuterClass {
 
     /**
      * <pre>
-     *NPNPJNHOFAB JACMFBKJANM = 28;
+     *JNHGJAIIMGJ PINDEGAFOAE = 28;
      * </pre>
      *
-     * <code>uint32 HIMOJHLCKGB = 29;</code>
-     * @return The hIMOJHLCKGB.
+     * <code>uint32 ABLFJPMKKDA = 29;</code>
+     * @return The aBLFJPMKKDA.
      */
-    int getHIMOJHLCKGB();
+    int getABLFJPMKKDA();
 
     /**
-     * <code>uint32 OLGFIIKLEOM = 30;</code>
-     * @return The oLGFIIKLEOM.
+     * <code>uint32 GCHGLANNHMC = 30;</code>
+     * @return The gCHGLANNHMC.
      */
-    int getOLGFIIKLEOM();
+    int getGCHGLANNHMC();
+
+    /**
+     * <code>uint32 KCINBOMOIGL = 31;</code>
+     * @return The kCINBOMOIGL.
+     */
+    int getKCINBOMOIGL();
   }
   /**
-   * <pre>
-   *4.7.0
-   * </pre>
-   *
    * Protobuf type {@code AvatarInfo}
    */
   public static final class AvatarInfo extends
@@ -773,12 +775,17 @@ public final class AvatarInfoOuterClass {
             }
             case 232: {
 
-              hIMOJHLCKGB_ = input.readUInt32();
+              aBLFJPMKKDA_ = input.readUInt32();
               break;
             }
             case 240: {
 
-              oLGFIIKLEOM_ = input.readUInt32();
+              gCHGLANNHMC_ = input.readUInt32();
+              break;
+            }
+            case 248: {
+
+              kCINBOMOIGL_ = input.readUInt32();
               break;
             }
             default: {
@@ -1654,30 +1661,41 @@ public final class AvatarInfoOuterClass {
       return animHash_;
     }
 
-    public static final int HIMOJHLCKGB_FIELD_NUMBER = 29;
-    private int hIMOJHLCKGB_;
+    public static final int ABLFJPMKKDA_FIELD_NUMBER = 29;
+    private int aBLFJPMKKDA_;
     /**
      * <pre>
-     *NPNPJNHOFAB JACMFBKJANM = 28;
+     *JNHGJAIIMGJ PINDEGAFOAE = 28;
      * </pre>
      *
-     * <code>uint32 HIMOJHLCKGB = 29;</code>
-     * @return The hIMOJHLCKGB.
+     * <code>uint32 ABLFJPMKKDA = 29;</code>
+     * @return The aBLFJPMKKDA.
      */
     @java.lang.Override
-    public int getHIMOJHLCKGB() {
-      return hIMOJHLCKGB_;
+    public int getABLFJPMKKDA() {
+      return aBLFJPMKKDA_;
     }
 
-    public static final int OLGFIIKLEOM_FIELD_NUMBER = 30;
-    private int oLGFIIKLEOM_;
+    public static final int GCHGLANNHMC_FIELD_NUMBER = 30;
+    private int gCHGLANNHMC_;
     /**
-     * <code>uint32 OLGFIIKLEOM = 30;</code>
-     * @return The oLGFIIKLEOM.
+     * <code>uint32 GCHGLANNHMC = 30;</code>
+     * @return The gCHGLANNHMC.
      */
     @java.lang.Override
-    public int getOLGFIIKLEOM() {
-      return oLGFIIKLEOM_;
+    public int getGCHGLANNHMC() {
+      return gCHGLANNHMC_;
+    }
+
+    public static final int KCINBOMOIGL_FIELD_NUMBER = 31;
+    private int kCINBOMOIGL_;
+    /**
+     * <code>uint32 KCINBOMOIGL = 31;</code>
+     * @return The kCINBOMOIGL.
+     */
+    @java.lang.Override
+    public int getKCINBOMOIGL() {
+      return kCINBOMOIGL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1808,11 +1826,14 @@ public final class AvatarInfoOuterClass {
       if (animHash_ != 0) {
         output.writeUInt32(27, animHash_);
       }
-      if (hIMOJHLCKGB_ != 0) {
-        output.writeUInt32(29, hIMOJHLCKGB_);
+      if (aBLFJPMKKDA_ != 0) {
+        output.writeUInt32(29, aBLFJPMKKDA_);
       }
-      if (oLGFIIKLEOM_ != 0) {
-        output.writeUInt32(30, oLGFIIKLEOM_);
+      if (gCHGLANNHMC_ != 0) {
+        output.writeUInt32(30, gCHGLANNHMC_);
+      }
+      if (kCINBOMOIGL_ != 0) {
+        output.writeUInt32(31, kCINBOMOIGL_);
       }
       unknownFields.writeTo(output);
     }
@@ -2007,13 +2028,17 @@ public final class AvatarInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(27, animHash_);
       }
-      if (hIMOJHLCKGB_ != 0) {
+      if (aBLFJPMKKDA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(29, hIMOJHLCKGB_);
+          .computeUInt32Size(29, aBLFJPMKKDA_);
       }
-      if (oLGFIIKLEOM_ != 0) {
+      if (gCHGLANNHMC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(30, oLGFIIKLEOM_);
+          .computeUInt32Size(30, gCHGLANNHMC_);
+      }
+      if (kCINBOMOIGL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(31, kCINBOMOIGL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2090,10 +2115,12 @@ public final class AvatarInfoOuterClass {
       }
       if (getAnimHash()
           != other.getAnimHash()) return false;
-      if (getHIMOJHLCKGB()
-          != other.getHIMOJHLCKGB()) return false;
-      if (getOLGFIIKLEOM()
-          != other.getOLGFIIKLEOM()) return false;
+      if (getABLFJPMKKDA()
+          != other.getABLFJPMKKDA()) return false;
+      if (getGCHGLANNHMC()
+          != other.getGCHGLANNHMC()) return false;
+      if (getKCINBOMOIGL()
+          != other.getKCINBOMOIGL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -2187,10 +2214,12 @@ public final class AvatarInfoOuterClass {
       }
       hash = (37 * hash) + ANIM_HASH_FIELD_NUMBER;
       hash = (53 * hash) + getAnimHash();
-      hash = (37 * hash) + HIMOJHLCKGB_FIELD_NUMBER;
-      hash = (53 * hash) + getHIMOJHLCKGB();
-      hash = (37 * hash) + OLGFIIKLEOM_FIELD_NUMBER;
-      hash = (53 * hash) + getOLGFIIKLEOM();
+      hash = (37 * hash) + ABLFJPMKKDA_FIELD_NUMBER;
+      hash = (53 * hash) + getABLFJPMKKDA();
+      hash = (37 * hash) + GCHGLANNHMC_FIELD_NUMBER;
+      hash = (53 * hash) + getGCHGLANNHMC();
+      hash = (37 * hash) + KCINBOMOIGL_FIELD_NUMBER;
+      hash = (53 * hash) + getKCINBOMOIGL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -2287,10 +2316,6 @@ public final class AvatarInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     *4.7.0
-     * </pre>
-     *
      * Protobuf type {@code AvatarInfo}
      */
     public static final class Builder extends
@@ -2430,9 +2455,11 @@ public final class AvatarInfoOuterClass {
         }
         animHash_ = 0;
 
-        hIMOJHLCKGB_ = 0;
+        aBLFJPMKKDA_ = 0;
 
-        oLGFIIKLEOM_ = 0;
+        gCHGLANNHMC_ = 0;
+
+        kCINBOMOIGL_ = 0;
 
         return this;
       }
@@ -2532,8 +2559,9 @@ public final class AvatarInfoOuterClass {
           result.excelInfo_ = excelInfoBuilder_.build();
         }
         result.animHash_ = animHash_;
-        result.hIMOJHLCKGB_ = hIMOJHLCKGB_;
-        result.oLGFIIKLEOM_ = oLGFIIKLEOM_;
+        result.aBLFJPMKKDA_ = aBLFJPMKKDA_;
+        result.gCHGLANNHMC_ = gCHGLANNHMC_;
+        result.kCINBOMOIGL_ = kCINBOMOIGL_;
         onBuilt();
         return result;
       }
@@ -2713,11 +2741,14 @@ public final class AvatarInfoOuterClass {
         if (other.getAnimHash() != 0) {
           setAnimHash(other.getAnimHash());
         }
-        if (other.getHIMOJHLCKGB() != 0) {
-          setHIMOJHLCKGB(other.getHIMOJHLCKGB());
+        if (other.getABLFJPMKKDA() != 0) {
+          setABLFJPMKKDA(other.getABLFJPMKKDA());
         }
-        if (other.getOLGFIIKLEOM() != 0) {
-          setOLGFIIKLEOM(other.getOLGFIIKLEOM());
+        if (other.getGCHGLANNHMC() != 0) {
+          setGCHGLANNHMC(other.getGCHGLANNHMC());
+        }
+        if (other.getKCINBOMOIGL() != 0) {
+          setKCINBOMOIGL(other.getKCINBOMOIGL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -4776,76 +4807,107 @@ public final class AvatarInfoOuterClass {
         return this;
       }
 
-      private int hIMOJHLCKGB_ ;
+      private int aBLFJPMKKDA_ ;
       /**
        * <pre>
-       *NPNPJNHOFAB JACMFBKJANM = 28;
+       *JNHGJAIIMGJ PINDEGAFOAE = 28;
        * </pre>
        *
-       * <code>uint32 HIMOJHLCKGB = 29;</code>
-       * @return The hIMOJHLCKGB.
+       * <code>uint32 ABLFJPMKKDA = 29;</code>
+       * @return The aBLFJPMKKDA.
        */
       @java.lang.Override
-      public int getHIMOJHLCKGB() {
-        return hIMOJHLCKGB_;
+      public int getABLFJPMKKDA() {
+        return aBLFJPMKKDA_;
       }
       /**
        * <pre>
-       *NPNPJNHOFAB JACMFBKJANM = 28;
+       *JNHGJAIIMGJ PINDEGAFOAE = 28;
        * </pre>
        *
-       * <code>uint32 HIMOJHLCKGB = 29;</code>
-       * @param value The hIMOJHLCKGB to set.
+       * <code>uint32 ABLFJPMKKDA = 29;</code>
+       * @param value The aBLFJPMKKDA to set.
        * @return This builder for chaining.
        */
-      public Builder setHIMOJHLCKGB(int value) {
+      public Builder setABLFJPMKKDA(int value) {
         
-        hIMOJHLCKGB_ = value;
+        aBLFJPMKKDA_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       *NPNPJNHOFAB JACMFBKJANM = 28;
+       *JNHGJAIIMGJ PINDEGAFOAE = 28;
        * </pre>
        *
-       * <code>uint32 HIMOJHLCKGB = 29;</code>
+       * <code>uint32 ABLFJPMKKDA = 29;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHIMOJHLCKGB() {
+      public Builder clearABLFJPMKKDA() {
         
-        hIMOJHLCKGB_ = 0;
+        aBLFJPMKKDA_ = 0;
         onChanged();
         return this;
       }
 
-      private int oLGFIIKLEOM_ ;
+      private int gCHGLANNHMC_ ;
       /**
-       * <code>uint32 OLGFIIKLEOM = 30;</code>
-       * @return The oLGFIIKLEOM.
+       * <code>uint32 GCHGLANNHMC = 30;</code>
+       * @return The gCHGLANNHMC.
        */
       @java.lang.Override
-      public int getOLGFIIKLEOM() {
-        return oLGFIIKLEOM_;
+      public int getGCHGLANNHMC() {
+        return gCHGLANNHMC_;
       }
       /**
-       * <code>uint32 OLGFIIKLEOM = 30;</code>
-       * @param value The oLGFIIKLEOM to set.
+       * <code>uint32 GCHGLANNHMC = 30;</code>
+       * @param value The gCHGLANNHMC to set.
        * @return This builder for chaining.
        */
-      public Builder setOLGFIIKLEOM(int value) {
+      public Builder setGCHGLANNHMC(int value) {
         
-        oLGFIIKLEOM_ = value;
+        gCHGLANNHMC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OLGFIIKLEOM = 30;</code>
+       * <code>uint32 GCHGLANNHMC = 30;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOLGFIIKLEOM() {
+      public Builder clearGCHGLANNHMC() {
         
-        oLGFIIKLEOM_ = 0;
+        gCHGLANNHMC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kCINBOMOIGL_ ;
+      /**
+       * <code>uint32 KCINBOMOIGL = 31;</code>
+       * @return The kCINBOMOIGL.
+       */
+      @java.lang.Override
+      public int getKCINBOMOIGL() {
+        return kCINBOMOIGL_;
+      }
+      /**
+       * <code>uint32 KCINBOMOIGL = 31;</code>
+       * @param value The kCINBOMOIGL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKCINBOMOIGL(int value) {
+        
+        kCINBOMOIGL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 KCINBOMOIGL = 31;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKCINBOMOIGL() {
+        
+        kCINBOMOIGL_ = 0;
         onChanged();
         return this;
       }
@@ -4941,11 +5003,11 @@ public final class AvatarInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020AvatarInfo.proto\032\017PropValue.proto\032\025Tri" +
-      "alAvatarInfo.proto\032\025AvatarSkillInfo.prot" +
+      "\n\020AvatarInfo.proto\032\017PropValue.proto\032\025Ava" +
+      "tarSkillInfo.proto\032\025TrialAvatarInfo.prot" +
       "o\032\026AvatarFetterInfo.proto\032\033AvatarExpedit" +
       "ionState.proto\032\032AvatarEquipAffixInfo.pro" +
-      "to\032\025AvatarExcelInfo.proto\"\330\t\n\nAvatarInfo" +
+      "to\032\025AvatarExcelInfo.proto\"\355\t\n\nAvatarInfo" +
       "\022\021\n\tavatar_id\030\001 \001(\r\022\014\n\004guid\030\002 \001(\004\022*\n\010pro" +
       "p_map\030\003 \003(\0132\030.AvatarInfo.PropMapEntry\022\022\n" +
       "\nlife_state\030\004 \001(\r\022\027\n\017equip_guid_list\030\005 \003" +
@@ -4968,23 +5030,24 @@ public final class AvatarInfoOuterClass {
       "orn_time\030\027 \001(\r\022#\n\033pending_promote_reward" +
       "_list\030\030 \003(\r\022\022\n\ncostume_id\030\031 \001(\r\022$\n\nexcel" +
       "_info\030\032 \001(\0132\020.AvatarExcelInfo\022\021\n\tanim_ha" +
-      "sh\030\033 \001(\r\022\023\n\013HIMOJHLCKGB\030\035 \001(\r\022\023\n\013OLGFIIK" +
-      "LEOM\030\036 \001(\r\032:\n\014PropMapEntry\022\013\n\003key\030\001 \001(\r\022" +
-      "\031\n\005value\030\002 \001(\0132\n.PropValue:\0028\001\0323\n\021FightP" +
-      "ropMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\002:" +
-      "\0028\001\032A\n\rSkillMapEntry\022\013\n\003key\030\001 \001(\r\022\037\n\005val" +
-      "ue\030\002 \001(\0132\020.AvatarSkillInfo:\0028\001\0324\n\022SkillL" +
-      "evelMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r" +
-      ":\0028\001\032>\n\034ProudSkillExtraLevelMapEntry\022\013\n\003" +
-      "key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "sh\030\033 \001(\r\022\023\n\013ABLFJPMKKDA\030\035 \001(\r\022\023\n\013GCHGLAN" +
+      "NHMC\030\036 \001(\r\022\023\n\013KCINBOMOIGL\030\037 \001(\r\032:\n\014PropM" +
+      "apEntry\022\013\n\003key\030\001 \001(\r\022\031\n\005value\030\002 \001(\0132\n.Pr" +
+      "opValue:\0028\001\0323\n\021FightPropMapEntry\022\013\n\003key\030" +
+      "\001 \001(\r\022\r\n\005value\030\002 \001(\002:\0028\001\032A\n\rSkillMapEntr" +
+      "y\022\013\n\003key\030\001 \001(\r\022\037\n\005value\030\002 \001(\0132\020.AvatarSk" +
+      "illInfo:\0028\001\0324\n\022SkillLevelMapEntry\022\013\n\003key" +
+      "\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\032>\n\034ProudSkillE" +
+      "xtraLevelMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030" +
+      "\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.PropValueOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.getDescriptor(),
@@ -4995,7 +5058,7 @@ public final class AvatarInfoOuterClass {
     internal_static_AvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarInfo_descriptor,
-        new java.lang.String[] { "AvatarId", "Guid", "PropMap", "LifeState", "EquipGuidList", "TalentIdList", "FightPropMap", "TrialAvatarInfo", "SkillMap", "SkillDepotId", "FetterInfo", "CoreProudSkillLevel", "InherentProudSkillList", "SkillLevelMap", "ExpeditionState", "ProudSkillExtraLevelMap", "IsFocus", "AvatarType", "TeamResonanceList", "WearingFlycloakId", "EquipAffixList", "BornTime", "PendingPromoteRewardList", "CostumeId", "ExcelInfo", "AnimHash", "HIMOJHLCKGB", "OLGFIIKLEOM", });
+        new java.lang.String[] { "AvatarId", "Guid", "PropMap", "LifeState", "EquipGuidList", "TalentIdList", "FightPropMap", "TrialAvatarInfo", "SkillMap", "SkillDepotId", "FetterInfo", "CoreProudSkillLevel", "InherentProudSkillList", "SkillLevelMap", "ExpeditionState", "ProudSkillExtraLevelMap", "IsFocus", "AvatarType", "TeamResonanceList", "WearingFlycloakId", "EquipAffixList", "BornTime", "PendingPromoteRewardList", "CostumeId", "ExcelInfo", "AnimHash", "ABLFJPMKKDA", "GCHGLANNHMC", "KCINBOMOIGL", });
     internal_static_AvatarInfo_PropMapEntry_descriptor =
       internal_static_AvatarInfo_descriptor.getNestedTypes().get(0);
     internal_static_AvatarInfo_PropMapEntry_fieldAccessorTable = new
@@ -5027,8 +5090,8 @@ public final class AvatarInfoOuterClass {
         internal_static_AvatarInfo_ProudSkillExtraLevelMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     emu.grasscutter.net.proto.PropValueOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.getDescriptor();
