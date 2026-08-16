@@ -49,6 +49,29 @@ public final class GameServerPacketHandler {
     public void handle(GameSession session, int opcode, byte[] header, byte[] payload) {
         PacketHandler handler = this.handlers.get(opcode);
 
+        // This used to announce every opcode that arrived along with a dump of its fields, which is
+        // how the 7.0 inbound map was recovered from a single client launch. That job is done, so it
+        // is down to debug: only unhandled opcodes, once each, and no payload dump.
+        if (handler == null && unannounced.add(opcode)) {
+            // The field numbers are what identify the message: a Req we have no 7.0 CmdId for still
+            // has a known 6.7 shape, so the numbers on the wire name it without any guessing. Said
+            // once per opcode, so walking through a feature lists exactly what it needs.
+            String fields;
+            try {
+                fields =
+                        com.google.protobuf.UnknownFieldSet.parseFrom(payload).asMap().keySet().toString();
+            } catch (Exception e) {
+                fields = "<unparsed>";
+            }
+            Grasscutter.getLogger()
+                    .info(
+                            "{} ({}) arrived and nothing handles it - {} bytes, fields {}",
+                            PacketOpcodesUtils.getOpcodeName(opcode),
+                            opcode,
+                            payload.length,
+                            fields);
+        }
+
         if (handler != null) {
             try {
 
@@ -96,16 +119,9 @@ public final class GameServerPacketHandler {
             return;
         }
 
-        // Nothing answers this one, so the player's action does nothing. Said once per opcode, at a
-        // level that is actually visible: this is also how the CmdId of an unimplemented feature is
-        // discovered - go and use the feature in game, and the client names the packet it wanted.
-        if (unannounced.add(opcode)) {
-            Grasscutter.getLogger()
-                    .info(
-                            "Nothing handles {} ({}), so the client got no answer.",
-                            PacketOpcodesUtils.getOpcodeName(opcode),
-                            opcode);
-        }
+        // Nothing answers this one, so the player's action does nothing - already reported above,
+        // along with the fields, which is how the CmdId of an unimplemented feature is discovered:
+        // go and use the feature in game, and the client names the packet it wanted.
     }
 
     /** Opcodes already reported as unhandled, so the log says it once rather than every packet. */
